@@ -16,7 +16,7 @@ vocabulary-agent-roles:
     title:
       cs: Role agenta
       en: Agent roles
-  - source: ccmm_agent_role.yaml
+  - source: ccmm_agent_roles.yaml
 
 vocabulary-title-types:
   - writer: vocabulary
@@ -26,7 +26,7 @@ vocabulary-title-types:
     title:
       cs: Typy názvů
       en: Title types
-  - source: ccmm_alternate_title.yaml
+  - source: ccmm_alternate_title_types.yaml
 
 vocabulary-contributor-types:
   - writer: vocabulary
@@ -36,7 +36,7 @@ vocabulary-contributor-types:
     title:
       cs: Typy přispěvatelů
       en: Contributor types
-  - source: ccmm_contributor_type.yaml
+  - source: ccmm_contributor_types.yaml
 
 vocabulary-file-types:
   - writer: vocabulary
@@ -70,13 +70,13 @@ vocabulary-licenses:
 
 vocabulary-location-relation:
   - writer: vocabulary
-    vocabulary: location-relations
+    vocabulary: location-relation-types
     pid_type: v-lr
     update: true
     title:
       cs: Vztah k lokalitě
       en: Location relation
-  - source: ccmm_location_relation.yaml
+  - source: ccmm_location_relation_types.yaml
 
 vocabulary-relation-types:
   - writer: vocabulary
@@ -86,7 +86,7 @@ vocabulary-relation-types:
     title:
       cs: Typy vztahů
       en: Relation types
-  - source: ccmm_relation_type.yaml
+  - source: ccmm_relation_types.yaml
 
 vocabulary-resource-types:
   - writer: vocabulary
@@ -106,7 +106,7 @@ vocabulary-subject-categories:
     title:
       cs: Kategorie předmětů
       en: Subject categories
-  - source: ccmm_subject_category.yaml
+  - source: ccmm_subject_categories.yaml
 
 vocabulary-subject-schemes:
   - writer: vocabulary
@@ -120,10 +120,10 @@ vocabulary-subject-schemes:
 
 vocabulary-time-reference:
   - writer: vocabulary
-    vocabulary: time-references
+    vocabulary: time-reference-types
     pid_type: v-tr
     update: true
     title:
       cs: Časové reference
       en: Time references
-  - source: ccmm_time_reference.yaml
+  - source: ccmm_time_reference_types.yaml
