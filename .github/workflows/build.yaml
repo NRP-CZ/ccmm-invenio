@@ -1,0 +1,75 @@
+name: Build and test
+
+on:
+  workflow_call:
+    inputs:
+      oarepo:
+        description: OARepo version (11, 12, ...)
+        required: true
+        default: 12
+        type: string
+
+env:
+  OAREPO_VERSION: ${{ inputs.oarepo }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          # This path is specific to Ubuntu
+          path: ~/.cache/pip
+          # Look to see if there is a cache hit for the corresponding requirements file
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+            ${{ runner.os }}-
+
+      - name: Configure sysctl limits
+        run: |
+          sudo swapoff -a
+          sudo sysctl -w vm.swappiness=1
+          sudo sysctl -w fs.file-max=262144
+          sudo sysctl -w vm.max_map_count=262144
+
+      - name: Runs Opensearch
+        uses: ankane/setup-opensearch@v1
+        with:
+          plugins: analysis-icu
+
+      - name: Start Redis
+        uses: supercharge/redis-github-action@1.7.0
+        with:
+          redis-version: ${{ matrix.redis-version }}
+
+      - name: Run tests
+        run: |
+          ./run-tests.sh
+
+      - name: Build package to publish
+        run: |
+          .venv-builder/bin/python setup.py sdist bdist_wheel
+
+      - name: Freeze packages
+        run: |
+          .venv-builder/bin/pip freeze > requirements.txt
+          .venv-tests/bin/pip freeze >>requirements.txt
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: requirements.txt
+          path: requirements.txt

@@ -1,0 +1,346 @@
+description:
+  cs: ''
+  en: 'Person with knowledge of how to access, troubleshoot, or otherwise field issues
+    related to the resource.
+
+    May also be the “Point of Contact” in an organisation that controls access to
+    the resource, if that organisation is different from the Publisher, Distributor,
+    and Data Manager.'
+id: ContactPerson
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ContactPerson
+title:
+  cs: Kontaktní osoba
+  en: Contact Person
+---
+description:
+  cs: ''
+  en: 'Person/institution responsible for finding or gathering/collecting data under
+    the guidelines of the author(s) or Principal Investigator (PI).
+
+    May also be used when crediting survey conductors, interviewers, event or condition
+    observers, or persons responsible for monitoring key instrument data.'
+id: DataCollector
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCollector
+title:
+  cs: Sběratel dat
+  en: Data Collector
+---
+description:
+  cs: ''
+  en: 'Person tasked with reviewing, enhancing, cleaning, or standardizing metadata
+    and the associated data submitted for storage, use, and maintenance within a data
+    centre or repository.
+
+    While the DataManager is concerned with digital maintenance, the DataCurator’s
+    role encompasses quality assurance focused on content and metadata. DataCurator
+    responsibilities include: checking completeness of the submitted dataset against
+    the content as described by the submitter; verifying standard metadata according
+    to the applicable system or schema; adding or verifying specialized metadata to
+    add value and ensure access across disciplines; and determining how the metadata
+    might map to search engines, database products, and automated feeds.
+
+
+    Repository managers as well as data librarians working in the repository fall
+    within this category.'
+id: DataCurator
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCurator
+title:
+  cs: Kurátor dat
+  en: Data Curator
+---
+description:
+  cs: ''
+  en: 'Person (or organisation with a staff of data managers, such as a data centre)
+    responsible for maintaining the finished resource.
+
+    The work done by this person or organisation ensures that the resource is periodically
+    “refreshed” in terms of software/hardware support, is kept available or is protected
+    from unauthorized access, is stored in accordance with industry standards, and
+    is handled in accordance with the records management requirements applicable to
+    it.'
+id: DataManager
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager
+title:
+  cs: Manažer dat
+  en: Data Manager
+---
+description:
+  cs: ''
+  en: 'Institution tasked with responsibility to generate/disseminate copies of the
+    resource in either electronic or print form.
+
+    Works stored in more than one archive/repository may credit each as a distributor.'
+id: Distributor
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Distributor
+title:
+  cs: Distributor
+  en: Distributor
+---
+description:
+  cs: ''
+  en: 'A person who oversees the details related to the publication format of the
+    resource.
+
+    Note: if the Editor is to be credited in place of multiple creators, the Editor’s
+    name may be supplied as Creator, with “(Ed.)” appended to the name.'
+id: Editor
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Editor
+title:
+  cs: Editor
+  en: Editor
+---
+description:
+  cs: ''
+  en: 'Typically, the organisation allowing the resource to be available on the internet
+    through the provision of its hardware/software/operating support.
+
+    This role normally falls on the University, research center or organization where
+    the data center/data repository belongs.'
+id: HostingInstitution
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/HostingInstitution
+title:
+  cs: Hostující instituce
+  en: Hosting Institution
+---
+description:
+  cs: ''
+  en: 'Typically, a person or organisation responsible for the artistry and form of
+    a media product.
+
+    In the data industry, this may be a company “producing” DVDs that package data
+    for future dissemination by a distributor.'
+id: Producer
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Producer
+title:
+  cs: Producent
+  en: Producer
+---
+description:
+  cs: ''
+  en: 'Person officially designated as head of project team or sub- project team instrumental
+    in the work necessary to development of the resource.
+
+    The Project Leader is not “removed” from the work that resulted in the resource;
+    he or she remains intimately involved throughout the life of the particular project
+    team.'
+id: ProjectLeader
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectLeader
+title:
+  cs: Vedoucí projektu
+  en: Project Leader
+---
+description:
+  cs: ''
+  en: 'Person officially designated as manager of a project. Project may consist of
+    one or many project teams and sub-teams.
+
+    The manager of a project normally has more administrative responsibility than
+    actual work involvement.'
+id: ProjectManager
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectManager
+title:
+  cs: Projektový manažer
+  en: Project Manager
+---
+description:
+  cs: ''
+  en: 'Person on the membership list of a designated project/project team.
+
+    This vocabulary may or may not indicate the quality, quantity, or substance of
+    the person’s involvement.'
+id: ProjectMember
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectMember
+title:
+  cs: Člen projektového týmu
+  en: Project Member
+---
+description:
+  cs: ''
+  en: 'Institution/organisation officially appointed by a Registration Authority to
+    handle specific tasks within a defined area of responsibility.
+
+    DataCite is a Registration Agency for the International DOI Foundation (IDF).
+    One of DataCite’s tasks is to assign DOI prefixes to the allocating agents who
+    then assign the full, specific character string to data clients, provide metadata
+    back to the DataCite registry, etc.'
+id: RegistrationAgency
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAgency
+title:
+  cs: Registrační agentura
+  en: Registration Agency
+---
+description:
+  cs: ''
+  en: 'A standards-setting body from which Registration Agencies obtain official recognition
+    and guidance.
+
+    The IDF serves as the Registration Authority for the International Standards Organisation
+    (ISO) in the area/domain of Digital Object Identifiers.'
+id: RegistrationAuthority
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAuthority
+title:
+  cs: Registrační autorita
+  en: Registration Authority
+---
+description:
+  cs: ''
+  en: 'A person without a specifically defined role in the development of the resource,
+    but who is someone the author wishes to recognize.
+
+    Usage Notes: This person could be an author’s intellectual mentor, a person providing
+    intellectual leadership in the discipline or subject domain, etc.'
+id: RelatedPerson
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RelatedPerson
+title:
+  cs: Související osoba
+  en: Related Person
+---
+description:
+  cs: ''
+  en: 'A person involved in analysing data or the results of an experiment or formal
+    study. May indicate an intern or assistant to one of the authors who helped with
+    research but who was not so “key” as to be listed as an author.
+
+    Should be a person, not an institution. Note that a person involved in the gathering
+    of data would fall under the contributorType “DataCollector.” The researcher may
+    find additional data online and correlate it to the data collected for the experiment
+    or study, for example.'
+id: Researcher
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Researcher
+title:
+  cs: Výzkumník
+  en: Researcher
+---
+description:
+  cs: ''
+  en: 'Typically refers to a group of individuals with a lab, department, or division
+    that has a specifically defined focus of activity.
+
+    May operate at a narrower level of scope; may or may not hold less administrative
+    responsibility than a project team.'
+id: ResearchGroup
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ResearchGroup
+title:
+  cs: Výzkumná skupina
+  en: Research Group
+---
+description:
+  cs: ''
+  en: Person or institution owning or managing property rights, including intellectual
+    property rights over the resource.
+id: RightsHolder
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RightsHolder
+title:
+  cs: Majitel práv
+  en: Rights Holder
+---
+description:
+  cs: ''
+  en: 'Person or organisation that issued a contract or under the auspices of which
+    a work has been written, printed, published, developed, etc.
+
+    Includes organisations that provide in-kind support, through donation, provision
+    of people or a facility or instrumentation necessary for the development of the
+    resource, etc.'
+id: Sponsor
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Sponsor
+title:
+  cs: Sponzor
+  en: Sponsor
+---
+description:
+  cs: ''
+  en: Designated administrator over one or more groups/teams working to produce a
+    resource, or over one or more steps of a development process.
+id: Supervisor
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Supervisor
+title:
+  cs: Supervizor
+  en: Supervisor
+---
+description:
+  cs: ''
+  en: 'A person, organization, or automated system responsible for converting the
+    content of a resource from one language into another, preserving its meaning and
+    intended message.
+
+    This contributor type should be applied to DOI metadata for a resource which has
+    been translated from another resource.'
+id: Translator
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Translator
+title:
+  cs: Překladatel
+  en: Translator
+---
+description:
+  cs: ''
+  en: A Work Package is a recognized data product, not all of which is included in
+    publication. The package, instead, may include notes, discarded documents, etc.
+    The Work Package Leader is responsible for ensuring the comprehensive contents,
+    versioning, and availability of the Work Package during the development of the
+    resource.
+id: WorkPackageLeader
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/WorkPackageLeader
+title:
+  cs: Vedoucí pracovního balíku
+  en: Work Package Leader
+---
+description:
+  cs: ''
+  en: 'Any person or institution making a significant contribution to the development
+    and/or maintenance of the resource, but whose contribution is not adequately described
+    by any of the other values for contributorType.
+
+    Could be a photographer, artist, or writer whose contribution helped to publicize
+    the resource (as opposed to creating it), a reviewer of the resource, someone
+    providing administrative services to the author (such as depositing updates into
+    an online repository, analysing usage, etc.), or one of many other roles.'
+id: Other
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Other
+title:
+  cs: Jiná role
+  en: Other

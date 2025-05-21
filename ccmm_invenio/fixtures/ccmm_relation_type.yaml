@@ -1,0 +1,417 @@
+description:
+  cs: ''
+  en: ''
+id: IsVersionOf
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVersionOf
+title:
+  cs: je verzí
+  en: is version of
+---
+description:
+  cs: ''
+  en: ''
+id: HasVersion
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasVersion
+title:
+  cs: má verzi
+  en: has version
+---
+description:
+  cs: ''
+  en: ''
+id: IsPartOf
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPartOf
+title:
+  cs: je součástí
+  en: is part of
+---
+description:
+  cs: ''
+  en: ''
+id: HasPart
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasPart
+title:
+  cs: má část/i
+  en: has part
+---
+description:
+  cs: ''
+  en: ''
+id: IsReviewedBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReviewedBy
+title:
+  cs: je recenzován (čím)
+  en: is reviewed by
+---
+description:
+  cs: ''
+  en: ''
+id: Reviews
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Reviews
+title:
+  cs: recenzuje (co)
+  en: reviews
+---
+description:
+  cs: ''
+  en: ''
+id: IsCompiledBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCompiledBy
+title:
+  cs: kompilován (čím)
+  en: is compiled by
+---
+description:
+  cs: ''
+  en: ''
+id: Compiles
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Compiles
+title:
+  cs: kompiluje (co)
+  en: compiles
+---
+description:
+  cs: ''
+  en: ''
+id: IsReferencedBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy
+title:
+  cs: je na něj odkazováno z (čeho)
+  en: is referenced by
+---
+description:
+  cs: ''
+  en: ''
+id: References
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/References
+title:
+  cs: odkazuje (na co)
+  en: references
+---
+description:
+  cs: ''
+  en: ''
+id: IsCitedBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCitedBy
+title:
+  cs: je citován (čím)
+  en: is cited by
+---
+description:
+  cs: ''
+  en: ''
+id: Cites
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Cites
+title:
+  cs: cituje (co)
+  en: cites
+---
+description:
+  cs: ''
+  en: ''
+id: IsSupplementTo
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementTo
+title:
+  cs: je doplňkem k (čemu)
+  en: is supplement to
+---
+description:
+  cs: ''
+  en: ''
+id: IsSupplementedBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementedBy
+title:
+  cs: má doplněk
+  en: is supplemented by
+---
+description:
+  cs: ''
+  en: ''
+id: Describes
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Describes
+title:
+  cs: popisuje (co)
+  en: describes
+---
+description:
+  cs: ''
+  en: ''
+id: IsDescribedBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDescribedBy
+title:
+  cs: je popsán (čím)
+  en: is described by
+---
+description:
+  cs: ''
+  en: ''
+id: IsPublishedIn
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPublishedIn
+title:
+  cs: je publikován v
+  en: is published in
+---
+description:
+  cs: ''
+  en: ''
+id: IsRequiredBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsRequiredBy
+title:
+  cs: je požadován (čím)
+  en: is required by
+---
+description:
+  cs: ''
+  en: ''
+id: Requires
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Requires
+title:
+  cs: požaduje (co)
+  en: requires
+---
+description:
+  cs: ''
+  en: ''
+id: IsContinuedBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsContinuedBy
+title:
+  cs: je pokračováním (čeho)
+  en: is continued by
+---
+description:
+  cs: ''
+  en: ''
+id: Continues
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Continues
+title:
+  cs: pokračuje (čím)
+  en: continues
+---
+description:
+  cs: ''
+  en: ''
+id: HasMetadata
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata
+title:
+  cs: má metadata
+  en: has metadata
+---
+description:
+  cs: ''
+  en: ''
+id: IsMetadataFor
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsMetadataFor
+title:
+  cs: je metadaty pro
+  en: is metadata for
+---
+description:
+  cs: ''
+  en: ''
+id: IsNewVersionOf
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsNewVersionOf
+title:
+  cs: je novou verzí (čeho)
+  en: is new version of
+---
+description:
+  cs: ''
+  en: ''
+id: IsPreviousVersionOf
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPreviousVersionOf
+title:
+  cs: je předchozí verzí (čeho)
+  en: is previous version of
+---
+description:
+  cs: ''
+  en: ''
+id: IsDocumentedBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDocumentedBy
+title:
+  cs: je zdokumentován (čím)
+  en: is documented by
+---
+description:
+  cs: ''
+  en: ''
+id: Documents
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Documents
+title:
+  cs: dokumentuje (co)
+  en: documents
+---
+description:
+  cs: ''
+  en: ''
+id: IsVariantFormOf
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVariantFormOf
+title:
+  cs: je variantou (čeho)
+  en: is variant form of
+---
+description:
+  cs: ''
+  en: ''
+id: IsOriginalFormOf
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsOriginalFormOf
+title:
+  cs: je původní variantou (čeho)
+  en: is original form of
+---
+description:
+  cs: ''
+  en: ''
+id: IsIdenticalTo
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsIdenticalTo
+title:
+  cs: je identický s
+  en: is identical to
+---
+description:
+  cs: ''
+  en: ''
+id: IsDerivedFrom
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom
+title:
+  cs: je odvozen od (čeho)
+  en: is derived from
+---
+description:
+  cs: ''
+  en: ''
+id: IsSourceOf
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSourceOf
+title:
+  cs: je zdrojem odvozené verze
+  en: is source of
+---
+description:
+  cs: ''
+  en: ''
+id: Obsoletes
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Obsoletes
+title:
+  cs: nahrazuje (co)
+  en: obsoletes
+---
+description:
+  cs: ''
+  en: ''
+id: IsObsoletedBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsObsoletedBy
+title:
+  cs: je nahrazen (čím)
+  en: is obsoleted by
+---
+description:
+  cs: ''
+  en: ''
+id: IsTranslationOf
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsTranslationOf
+title:
+  cs: je překladem (čeho)
+  en: is translation of
+---
+description:
+  cs: ''
+  en: ''
+id: HasTranslation
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasTranslation
+title:
+  cs: má překlad
+  en: has translation
+---
+description:
+  cs: ''
+  en: ''
+id: IsCollectedBy
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy
+title:
+  cs: je sbírán (čím)
+  en: is collected by
+---
+description:
+  cs: ''
+  en: ''
+id: Collects
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Collects
+title:
+  cs: sbírá
+  en: collects

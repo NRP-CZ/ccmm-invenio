@@ -1,0 +1,49 @@
+description:
+  cs: Jedná se o vztah k lokaci, které se týkají obsahově daná data. Dataset obsahuje
+    data o dané lokaci.
+  en: This is a relationship to a location that relates to the content of the data.
+    The dataset contains data about the given location.
+id: Refers
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
+  iri: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Refers
+title:
+  cs: Týká se lokace
+  en: Refers to the location
+---
+description:
+  cs: Jedná se o určení lokace, kde byla daná data zaznamenána (naměřena, sesbírána...).
+  en: This is the determination of the location where the data was collected (measured,
+    recorded, observed etc.).
+id: Collected
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
+  iri: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected
+title:
+  cs: Získáno v lokaci
+  en: Collected in
+---
+description:
+  cs: Jedná se o určení lokace, kde byla daná data po sběru či naměření dále zpracována.
+  en: This is the determination of the location where the data was further processed
+    after collection or measurement.
+id: Processed
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
+  iri: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Processed
+title:
+  cs: Zpracováno v lokaci
+  en: Processed at location
+---
+description:
+  cs: Jedná se o určení lokace, kde byla daná data po sběru, naměření či zpracování
+    uložena a jsou trvale uchovávána.
+  en: This is the determination of the location where the data is permanently stored
+    after collection, measurement or processing.
+id: Stored
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
+  iri: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Stored
+title:
+  cs: Uchováno v lokaci
+  en: Stored at location

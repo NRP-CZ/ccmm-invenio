@@ -1,0 +1,3334 @@
+description:
+  cs: ''
+  en: ''
+id: '10000'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000
+title:
+  cs: Přírodní vědy
+  en: Natural sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10000'
+id: '10100'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100
+title:
+  cs: Matematika
+  en: Mathematics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10100'
+id: '10101'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10101
+title:
+  cs: Čistá matematika
+  en: Pure mathematics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10100'
+id: '10102'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10102
+title:
+  cs: Aplikovaná matematika
+  en: Applied mathematics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10100'
+id: '10103'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10103
+title:
+  cs: Pravděpodobnost a statistika
+  en: Statistics and probability
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10000'
+id: '10200'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200
+title:
+  cs: Počítačové vědy a informační věda
+  en: Computer and information sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10200'
+id: '10201'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200/10201
+title:
+  cs: Počítačové vědy, informační věda, bioinformatika
+  en: Computer sciences, information science, bioinformathics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10000'
+id: '10300'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300
+title:
+  cs: Fyzikální vědy
+  en: Physical sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10300'
+id: '10301'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10301
+title:
+  cs: Atomová fyzika, molekulární a chemická fyzika (fyzika atomů a molekul včetně
+    srážek, interakcí s radiací, magnetická rezonance, Mössbauerův jev)
+  en: Atomic, molecular and chemical physics (physics of atoms and molecules including
+    collision, interaction with radiation, magnetic resonances, Mössbauer effect)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10300'
+id: '10302'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10302
+title:
+  cs: Fyzika kondenzovaných látek (zahrnuje fyziku pevných látek, supravodivost)
+  en: Condensed matter physics (including formerly solid state physics, supercond.)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10300'
+id: '10303'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10303
+title:
+  cs: Fyzika částic
+  en: Particles and field physics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10300'
+id: '10304'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10304
+title:
+  cs: Atomová fyzika
+  en: Nuclear physics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10300'
+id: '10305'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10305
+title:
+  cs: Fyzika kapalin a plazmatu (zahrnuje fyziku povrchů)
+  en: Fluids and plasma physics (including surface physics)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10300'
+id: '10306'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10306
+title:
+  cs: Optika (zahrnuje laserovou optiku, kvantovou optiku)
+  en: Optics (including laser optics and quantum optics)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10300'
+id: '10307'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10307
+title:
+  cs: Akustika
+  en: Acoustics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10300'
+id: '10308'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10308
+title:
+  cs: Astronomie (zahrnuje astrofyziku, vědu o vesmíru)
+  en: Astronomy (including astrophysics, space science)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10000'
+id: '10400'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400
+title:
+  cs: Chemické vědy
+  en: Chemical sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10400'
+id: '10401'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10401
+title:
+  cs: Organická chemie
+  en: Organic chemistry
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10400'
+id: '10402'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10402
+title:
+  cs: Anorganická a jaderná chemie
+  en: Inorganic and nuclear chemistry
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10400'
+id: '10403'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10403
+title:
+  cs: Fyzikální chemie
+  en: Physical chemistry
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10400'
+id: '10404'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10404
+title:
+  cs: Chemie polymerů
+  en: Polymer science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10400'
+id: '10405'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10405
+title:
+  cs: Elektrochemie (zahrnuje suché články, baterie, palivové články, korozní kovy,
+    elektrolýzu)
+  en: Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10400'
+id: '10406'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10406
+title:
+  cs: Analytická chemie
+  en: Analytical chemistry
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10000'
+id: '10500'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500
+title:
+  cs: Vědy o Zemi a související environmentální vědy
+  en: Earth and related environmental sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10501'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10501
+title:
+  cs: Hydrologie
+  en: Hydrology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10502'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10502
+title:
+  cs: Oceánografie
+  en: Oceanography
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10503'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10503
+title:
+  cs: Vodní zdroje
+  en: Water resources
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10504'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10504
+title:
+  cs: Mineralogie
+  en: Mineralogy
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10505'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10505
+title:
+  cs: Geologie
+  en: Geology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10506'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10506
+title:
+  cs: Paleontologie
+  en: Paleontology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10507'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10507
+title:
+  cs: Vulkanologie
+  en: Volcanology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10508'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10508
+title:
+  cs: Fyzická geografie
+  en: Physical geography
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10509'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509
+title:
+  cs: Meteorologie, vědy o atmosféře
+  en: Meteorology and atmospheric sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10510'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10510
+title:
+  cs: Výzkum klimatu
+  en: Climatic research
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10500'
+id: '10511'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10511
+title:
+  cs: Environmentální vědy
+  en: Environmental sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10000'
+id: '10600'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600
+title:
+  cs: Biologie
+  en: Biological sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10601'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10601
+title:
+  cs: Buněčná biologie
+  en: Cell biology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10602'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10602
+title:
+  cs: Biologie (teoretická, matematická, termální, kryobiologie, biologický rytmus),
+    evoluční biologie
+  en: Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm),
+    evolutionary biology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10603'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10603
+title:
+  cs: Genetika a dědičnost
+  en: Genetics and heredity
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10604'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10604
+title:
+  cs: Reprodukční biologie
+  en: Reproductive biology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10605'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10605
+title:
+  cs: Vývojová biologie
+  en: Developmental biology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10606'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10606
+title:
+  cs: Mikrobiologie
+  en: Microbiology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10607'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10607
+title:
+  cs: Virologie
+  en: Virology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10608'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10608
+title:
+  cs: Biochemie a molekulární biologie
+  en: Biochemistry and molecular biology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10609'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10609
+title:
+  cs: Biochemické výzkumné metody
+  en: Biochemical research methods
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10610'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10610
+title:
+  cs: Biofyzika
+  en: Biophysics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10611'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10611
+title:
+  cs: Botanika
+  en: Plant sciences, botany
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10612'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10612
+title:
+  cs: Mykologie
+  en: Mycology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10613'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10613
+title:
+  cs: Zoologie
+  en: Zoology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10614'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10614
+title:
+  cs: Behaviorální biologie
+  en: Behavioral sciences biology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10615'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10615
+title:
+  cs: Ornitologie
+  en: Ornithology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10616'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10616
+title:
+  cs: Entomologie
+  en: Entomology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10617'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10617
+title:
+  cs: Mořská biologie, sladkovodní biologie, limnologie
+  en: Marine biology, freshwater biology, limnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10618'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10618
+title:
+  cs: Ekologie
+  en: Ecology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10619'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10619
+title:
+  cs: Ochrana biodiverzity
+  en: Biodiversity conservation
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10600'
+id: '10620'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10620
+title:
+  cs: Ostatní biologické vědy
+  en: Other biological topics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '10000'
+id: '10700'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10700
+title:
+  cs: Ostatní přírodní vědy
+  en: Other natural sciences
+---
+description:
+  cs: ''
+  en: ''
+id: '20000'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000
+title:
+  cs: Technické vědy, inženýrství
+  en: Engineering and technology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '20100'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100
+title:
+  cs: Stavební inženýrství
+  en: Civil engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20100'
+id: '20101'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20101
+title:
+  cs: Stavební inženýrství
+  en: Civil engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20100'
+id: '20102'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20102
+title:
+  cs: Konstrukční inženýrství, výstavba měst
+  en: Construction engineering, municipal and structural engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20100'
+id: '20103'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20103
+title:
+  cs: Architektura
+  en: Architecture engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20100'
+id: '20104'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20104
+title:
+  cs: Dopravní inženýrství
+  en: Transport engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '20200'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200
+title:
+  cs: Elektrotechnika, elektronika
+  en: Electrical engineering, electronic engineering, information engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20200'
+id: '20201'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20201
+title:
+  cs: Elektrotechnika, elektronika
+  en: Electrical and electronic engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20200'
+id: '20202'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20202
+title:
+  cs: Sdělovací technika a systémy
+  en: Communication engineering and systems
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20200'
+id: '20203'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20203
+title:
+  cs: Telekomunikace
+  en: Telecommunications
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20200'
+id: '20204'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20204
+title:
+  cs: Robotika a automatické řízení
+  en: Robotics and automatic control
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20200'
+id: '20205'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20205
+title:
+  cs: Automatizace a kontrola systémů
+  en: Automation and control systems
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20200'
+id: '20206'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20206
+title:
+  cs: Počítačový hardware a architektura
+  en: Computer hardware and architecture
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '20300'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300
+title:
+  cs: Strojní inženýrství
+  en: Mechanical engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20300'
+id: '20301'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20301
+title:
+  cs: Strojní inženýrství
+  en: Mechanical engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20300'
+id: '20302'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20302
+title:
+  cs: Aplikovaná mechanika
+  en: Applied mechanics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20300'
+id: '20303'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20303
+title:
+  cs: Termodynamika
+  en: Thermodynamics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20300'
+id: '20304'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20304
+title:
+  cs: Letecké inženýrství
+  en: Aerospace engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20300'
+id: '20305'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20305
+title:
+  cs: Jaderné inženýrství
+  en: Nuclear related engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20300'
+id: '20306'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20306
+title:
+  cs: Audio inženýrství, analýzy spolehlivosti
+  en: Audio engineering, reliability analysis
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '20400'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400
+title:
+  cs: Chemické inženýrství
+  en: Chemical engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20400'
+id: '20401'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20401
+title:
+  cs: Chemické inženýrství (rostliny, výrobky)
+  en: Chemical engineering (plants, products)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20400'
+id: '20402'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20402
+title:
+  cs: Chemické procesní inženýrství
+  en: Chemical process engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '20500'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500
+title:
+  cs: Materiálové inženýrství
+  en: Materials engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20500'
+id: '20501'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20501
+title:
+  cs: Materiálové inženýrství
+  en: Materials engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20500'
+id: '20502'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20502
+title:
+  cs: Papír a dřevo
+  en: Paper and wood
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20500'
+id: '20503'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20503
+title:
+  cs: Textilie (zahrnuje umělá barviva, barvy, vlákna)
+  en: Textiles (including synthetic dyes, colours, fibres)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20500'
+id: '20504'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20504
+title:
+  cs: Keramika
+  en: Ceramics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20500'
+id: '20505'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20505
+title:
+  cs: Kompozity (zahrnuje lamináty, vyztužené plasty, cermety, kombinovaná přírodní
+    a umělá vlákna a tkaniny, plněné kompozity)
+  en: Composites (including laminates, reinforced plastics, cermets, combined natural
+    and synthetic fibre fabrics; filled composites)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20500'
+id: '20506'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20506
+title:
+  cs: Nátěry a fólie
+  en: Coating and films
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '20600'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600
+title:
+  cs: Lékařské inženýrství
+  en: Medical engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20600'
+id: '20601'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20601
+title:
+  cs: Lékařské inženýrství
+  en: Medical engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20600'
+id: '20602'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20602
+title:
+  cs: Lékařské laboratorní technologie (laboratorní analýzy vzorků, diagnostické technologie)
+  en: Medical laboratory technology (including laboratory samples analysis, diagnostic
+    technologies)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '20700'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700
+title:
+  cs: Environmentální inženýrství
+  en: Environmental engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20700'
+id: '20701'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20701
+title:
+  cs: Environmentální a geologické inženýrství, geotechnika
+  en: Environmental and geological engineering, geotechnics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20700'
+id: '20702'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20702
+title:
+  cs: Ropné inženýrství (paliva, oleje)
+  en: Petroleum engineering (fuel, oils)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20700'
+id: '20703'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20703
+title:
+  cs: Těžba a zpracování minerálů
+  en: Mining and mineral processing
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20700'
+id: '20704'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20704
+title:
+  cs: Energie a paliva
+  en: Energy and fuels
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20700'
+id: '20705'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20705
+title:
+  cs: Dálkový průzkum Země
+  en: Remote sensing
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20700'
+id: '20706'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20706
+title:
+  cs: Námořní inženýrství, mořská plavidla
+  en: Marine engineering, sea vessels
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20700'
+id: '20707'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20707
+title:
+  cs: Oceánské inženýrství
+  en: Ocean engineering
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '20800'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800
+title:
+  cs: Environmentální biotechnologie
+  en: Environmental biotechnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20800'
+id: '20801'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20801
+title:
+  cs: Environmentální biotechnologie
+  en: Environmental biotechnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20800'
+id: '20802'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20802
+title:
+  cs: Bioléčba, diagnostické biotechnologie (zlomky DNA a biosenzory) v environmentálním
+    managementu
+  en: Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices)
+    in environmental management
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20800'
+id: '20803'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20803
+title:
+  cs: Environmentální biotechnologie související s etikou
+  en: Environmental biotechnology related ethics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '20900'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900
+title:
+  cs: Průmyslové biotechnologie
+  en: Industrial biotechnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20900'
+id: '20901'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20901
+title:
+  cs: Průmyslové biotechnologie
+  en: Industrial biotechnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20900'
+id: '20902'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20902
+title:
+  cs: Technologie biovýroby (průmyslové procesy spoléhající se na biologické činitele
+    k řízení procesů), biokatalyzátory, fermentace
+  en: Bioprocessing technologies (industrial processes relying on biological agents
+    to drive the process) biocatalysis, fermentation
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20900'
+id: '20903'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20903
+title:
+  cs: Biovýrobky (výrobky, které jsou vyráběny s použitím biologických materiálů jako
+    výchozích produktů), biomateriály, bioplasty, biopaliva, bioodvozené celkové a
+    čisté chemikálie, bioodvozené nové materiály
+  en: Bioproducts (products that are manufactured using biological material as feedstock)
+    biomaterials, bioplastics, biofuels, bioderived bulk and fine chemicals, bio-derived
+    novel materials
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '21000'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000
+title:
+  cs: Nanotechnologie
+  en: Nano-technology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '21000'
+id: '21001'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21001
+title:
+  cs: Nanomateriály (výroba a vlastnosti)
+  en: Nano-materials (production and properties)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '21000'
+id: '21002'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21002
+title:
+  cs: Nanoprocesy (aplikace v nanoměřítku)
+  en: Nano-processes (applications on nano-scale)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '20000'
+id: '21100'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100
+title:
+  cs: Ostatní inženýrství a technologie
+  en: Other engineering and technologies
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '21100'
+id: '21101'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100/21101
+title:
+  cs: Výrobky potravinářského průmyslu a nápoje
+  en: Food and beverages
+---
+description:
+  cs: ''
+  en: ''
+id: '30000'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000
+title:
+  cs: Lékařské vědy
+  en: Medical and health sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30000'
+id: '30100'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100
+title:
+  cs: Základní medicína
+  en: Basic medicine
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30100'
+id: '30101'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30101
+title:
+  cs: Genetika člověka
+  en: Human genetics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30100'
+id: '30102'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30102
+title:
+  cs: Imunologie
+  en: Immunology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30100'
+id: '30103'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30103
+title:
+  cs: Neurovědy (zahrnuje psychofyziologii)
+  en: Neurosciences (including psychophysiology)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30100'
+id: '30104'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30104
+title:
+  cs: Farmakologie a farmacie
+  en: Pharmacology and pharmacy
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30100'
+id: '30105'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30105
+title:
+  cs: Fyziologie (zahrnující cytologii)
+  en: Physiology (including cytology)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30100'
+id: '30106'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30106
+title:
+  cs: Anatomie a morfologie
+  en: Anatomy and morphology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30100'
+id: '30107'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30107
+title:
+  cs: Lékařská chemie
+  en: Medicinal chemistry
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30100'
+id: '30108'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30108
+title:
+  cs: Toxikologie
+  en: Toxicology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30100'
+id: '30109'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30109
+title:
+  cs: Patologie
+  en: Pathology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30000'
+id: '30200'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200
+title:
+  cs: Klinická medicína
+  en: Clinical medicine
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30201'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30201
+title:
+  cs: Srdeční a kardiovaskulární systémy
+  en: Cardiac and cardiovascular systems
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30202'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30202
+title:
+  cs: Endokrinologie a metabolismus (zahrnuje cukrovku, hormony)
+  en: Endocrinology and metabolism (including diabetes, hormones)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30203'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30203
+title:
+  cs: Dýchací ústrojí
+  en: Respiratory systems
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30204'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30204
+title:
+  cs: Onkologie
+  en: Oncology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30205'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30205
+title:
+  cs: Hematologie
+  en: Hematology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30206'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30206
+title:
+  cs: Otorinolaryngologie
+  en: Otorhinolaryngology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30207'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30207
+title:
+  cs: Oftalmologie
+  en: Ophthalmology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30208'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30208
+title:
+  cs: Stomatologie, ústní chirurgie a lékařství
+  en: Dentistry, oral surgery and medicine
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30209'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30209
+title:
+  cs: Pediatrie
+  en: Paediatrics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30210'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30210
+title:
+  cs: Klinická neurologie
+  en: Clinical neurology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30211'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30211
+title:
+  cs: Ortopedie
+  en: Orthopaedics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30212'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30212
+title:
+  cs: Chirurgie
+  en: Surgery
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30213'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30213
+title:
+  cs: Transplantace
+  en: Transplantation
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30214'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30214
+title:
+  cs: Porodnictví a gynekologie
+  en: Obstetrics and gynaecology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30215'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30215
+title:
+  cs: Psychiatrie
+  en: Psychiatry
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30216'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30216
+title:
+  cs: Dermatologie a pohlavní nemoci
+  en: Dermatology and venereal diseases
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30217'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30217
+title:
+  cs: Urologie a nefrologie
+  en: Urology and nephrology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30218'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30218
+title:
+  cs: Všeobecné a vnitřní lékařství
+  en: General and internal medicine
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30219'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30219
+title:
+  cs: Gastroenterologie a hepatologie
+  en: Gastroenterology and hepatology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30220'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30220
+title:
+  cs: Andrologie
+  en: Andrology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30221'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30221
+title:
+  cs: Urgentní medicína a pohotovostní medicína
+  en: Critical care medicine and emergency medicine
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30223'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30223
+title:
+  cs: Anesteziologie
+  en: Anaesthesiology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30224'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30224
+title:
+  cs: Radiologie, nukleární medicína a lékařské zobrazování
+  en: Radiology, nuclear medicine and medical imaging
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30225'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30225
+title:
+  cs: Alergologie
+  en: Allergy
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30226'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30226
+title:
+  cs: Revmatologie
+  en: Rheumatology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30227'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30227
+title:
+  cs: Geriatrie a gerontologie
+  en: Geriatrics and gerontology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30229'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30229
+title:
+  cs: Celostní a alternativní medicína (alternativní praktické systémy)
+  en: Integrative and complementary medicine (alternative practice systems)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30200'
+id: '30230'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30230
+title:
+  cs: Ostatní klinická lékařská témata
+  en: Other clinical medicine subjects
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30000'
+id: '30300'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300
+title:
+  cs: Zdravotní vědy
+  en: Health sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30301'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30301
+title:
+  cs: Sociální biolékařské vědy (plánované rodičovství, sexuální zdraví, psychoonkologie,
+    politické a sociální jevy biolékařského výzkumu)
+  en: Social biomedical sciences (includes family planning, sexual health, psycho-oncology,
+    political and social effects of biomedical research)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30302'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30302
+title:
+  cs: Epidemiologie
+  en: Epidemiology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30303'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30303
+title:
+  cs: Infekční onemocnění
+  en: Infectious diseases
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30304'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304
+title:
+  cs: Veřejné a environmentální zdraví
+  en: Public and environmental health
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30305'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30305
+title:
+  cs: Ochrana zdraví při práci
+  en: Occupational health
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30306'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30306
+title:
+  cs: Sport a fitness
+  en: Sport and fitness sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30307'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30307
+title:
+  cs: Ošetřovatelství
+  en: Nursing
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30308'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30308
+title:
+  cs: Výživa, nauka o dietě
+  en: Nutrition, dietetics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30309'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30309
+title:
+  cs: Tropické lékařství
+  en: Tropical medicine
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30310'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30310
+title:
+  cs: Parazitologie
+  en: Parasitology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30311'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30311
+title:
+  cs: Lékařská etika
+  en: Medical ethics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30300'
+id: '30312'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30312
+title:
+  cs: Zneužívání návykových látek
+  en: Substance abuse
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30000'
+id: '30400'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400
+title:
+  cs: Lékařské biotechnologie
+  en: Medical biotechnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30400'
+id: '30401'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30401
+title:
+  cs: Biotechnologie související se zdravím
+  en: Health-related biotechnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30400'
+id: '30402'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30402
+title:
+  cs: Technologie zahrnující manipulace s buňkami, tkáněmi, orgány nebo celými organismy
+    (asistovaná reprodukce)
+  en: Technologies involving the manipulation of cells, tissues, organs or the whole
+    organism (assisted reproduction)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30400'
+id: '30403'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30403
+title:
+  cs: Technologie zahrnující identifikace činností DNA, proteinů a enzymů a jejich
+    vlivy na nápor nemocí a zachování pocitů zdraví (genová diagnostika a terapeutické
+    zákroky, farmakogenomika, genová terapeutika)
+  en: Technologies involving identifying the functioning of DNA, proteins and enzymes
+    and how they influence the onset of disease and maintenance of well-being (gene-based
+    diagnostics and therapeutic interventions - pharmacogenomics, gene-based therapeutics)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30400'
+id: '30404'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30404
+title:
+  cs: Biomateriály (související s lékařskými implantáty, přístroji, senzory)
+  en: Biomaterials (as related to medical implants, devices, sensors)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30400'
+id: '30405'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30405
+title:
+  cs: Lékařské biotechnologie související s etikou
+  en: Medical biotechnology related ethics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30000'
+id: '30500'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500
+title:
+  cs: Ostatní lékařské vědy
+  en: Other medical sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30500'
+id: '30501'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30501
+title:
+  cs: Soudní lékařství
+  en: Forensic science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '30500'
+id: '30502'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30502
+title:
+  cs: Ostatní lékařské vědy
+  en: Other medical science
+---
+description:
+  cs: ''
+  en: ''
+id: '40000'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000
+title:
+  cs: Zemědělské a veterinární vědy
+  en: Agricultural and veterinary sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40000'
+id: '40100'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100
+title:
+  cs: Zemědělství, lesnictví, rybářství
+  en: Agriculture, forestry and fisheries
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40100'
+id: '40101'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40101
+title:
+  cs: Zemědělství
+  en: Agriculture
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40100'
+id: '40102'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40102
+title:
+  cs: Lesnictví
+  en: Forestry
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40100'
+id: '40103'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40103
+title:
+  cs: Rybářství
+  en: Fishery
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40100'
+id: '40104'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40104
+title:
+  cs: Půdoznalství
+  en: Soil science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40100'
+id: '40105'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40105
+title:
+  cs: Zahradnictví, vinařství
+  en: Horticulture, viticulture
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40100'
+id: '40106'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40106
+title:
+  cs: Agronomie, šlechtění a ochrana rostlin
+  en: Agronomy, plant breeding and plant protection
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40000'
+id: '40200'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200
+title:
+  cs: Vědy o zvířatech a mléce
+  en: Animal and dairy science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40200'
+id: '40201'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40201
+title:
+  cs: Vědy o zvířatech a mléce
+  en: Animal and dairy science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40200'
+id: '40202'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40202
+title:
+  cs: Domácí zvířata
+  en: Pets
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40200'
+id: '40203'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40203
+title:
+  cs: Chovatelství
+  en: Husbandry
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40000'
+id: '40300'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300
+title:
+  cs: Veterinární věda
+  en: Veterinary science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40300'
+id: '40301'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300/40301
+title:
+  cs: Veterinární věda
+  en: Veterinary science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40000'
+id: '40400'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400
+title:
+  cs: Zemědělské biotechnologie
+  en: Agricultural biotechnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40400'
+id: '40401'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40401
+title:
+  cs: Zemědělské biotechnologie a biotechnologie potravin
+  en: Agricultural biotechnology and food biotechnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40400'
+id: '40402'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40402
+title:
+  cs: Technologie genetických modifikací (plodiny a dobytek), klonování dobytka, ukazatele
+    selekce, diagnostika (zlomky DNA a biosenzory pro brzkou/přesnou detekci nemocí),
+    technologie zpracování biomasy, biohospodářství
+  en: GM technology (crops and livestock), livestock cloning, marker assisted selection,
+    diagnostics (DNA chips and biosensing devices for the early/accurate detection
+    of diseases) biomass feedstock production technologies, biopharming
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40400'
+id: '40403'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40403
+title:
+  cs: Zemědělské biotechnologie související s etikou
+  en: Agricultural biotechnology related ethics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '40000'
+id: '40500'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40500
+title:
+  cs: Ostatní zemědělské vědy
+  en: Other agricultural sciences
+---
+description:
+  cs: ''
+  en: ''
+id: '50000'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000
+title:
+  cs: Společenské vědy
+  en: Social sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50000'
+id: '50100'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100
+title:
+  cs: Psychologie a kognitivní věda
+  en: Psychology and cognitive sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50100'
+id: '50101'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50101
+title:
+  cs: Psychologie (zahrnuje vztahy mezi člověkem a strojem)
+  en: Psychology (including human - machine relations)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50100'
+id: '50102'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50102
+title:
+  cs: Speciální psychologie (zahrnuje terapii pro učení, řeč, poslech, zrakové a jiné
+    fyzické a mentální handicapy)
+  en: Psychology, special (including therapy for learning, speech, hearing, visual
+    and other physical and mental disabilities)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50100'
+id: '50103'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50103
+title:
+  cs: Kognitivní vědy
+  en: Cognitive sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50000'
+id: '50200'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200
+title:
+  cs: Ekonomie a podnikání
+  en: Economics and business
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50200'
+id: '50201'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50201
+title:
+  cs: Ekonomická teorice
+  en: Economic theory
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50200'
+id: '50202'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50202
+title:
+  cs: Aplikovaná ekonomie, ekonometrie
+  en: Applied economics, econometrics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50200'
+id: '50203'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50203
+title:
+  cs: Pracovní vztahy
+  en: Industrial relations
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50200'
+id: '50204'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50204
+title:
+  cs: Podnikání a management
+  en: Business and management
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50200'
+id: '50205'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50205
+title:
+  cs: Účetnictví
+  en: Accounting
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50200'
+id: '50206'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50206
+title:
+  cs: Finance
+  en: Finance
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50000'
+id: '50300'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300
+title:
+  cs: Vzdělávání
+  en: Education
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50300'
+id: '50301'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50301
+title:
+  cs: Všeobecné vzdělávání (zahrnuje výcvik, pedagogiku, didaktiku, vzdělávací systémy)
+  en: Education, general (including training, pedagogy, didactics and education systems)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50300'
+id: '50302'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50302
+title:
+  cs: Speciální vzdělávání (pro nadané osoby, pro osoby s poruchami učení)
+  en: Education, special (to gifted persons, those with learning disabilities)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50000'
+id: '50400'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400
+title:
+  cs: Sociologie
+  en: Sociology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50400'
+id: '50401'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50401
+title:
+  cs: Sociologie
+  en: Sociology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50400'
+id: '50402'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50402
+title:
+  cs: Demografie
+  en: Demography
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50400'
+id: '50403'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50403
+title:
+  cs: Sociální témata (studie žen a pohlaví, sociální problémy, studie rodin, sociální
+    práce)
+  en: Social topics (women´s and gender studies, social issues, family studies social
+    work)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50400'
+id: '50404'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50404
+title:
+  cs: Antropologie, etnologie
+  en: Anthropology, ethnology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50000'
+id: '50500'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500
+title:
+  cs: Právo
+  en: Law
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50500'
+id: '50501'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50501
+title:
+  cs: Právo
+  en: Law
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50500'
+id: '50502'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50502
+title:
+  cs: Kriminologie, penologie
+  en: Criminology, penology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50000'
+id: '50600'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600
+title:
+  cs: Politologie
+  en: Political science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50600'
+id: '50601'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50601
+title:
+  cs: Politologie
+  en: Political science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50600'
+id: '50602'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50602
+title:
+  cs: Veřejná správa
+  en: Public administration
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50600'
+id: '50603'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50603
+title:
+  cs: Teorie organizace
+  en: Organisation theory
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50000'
+id: '50700'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700
+title:
+  cs: Sociální a ekonomická geografie
+  en: Social and economic geography
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50700'
+id: '50701'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50701
+title:
+  cs: Kulturní a ekonomická geografie
+  en: Cultural and economic geography
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50700'
+id: '50702'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50702
+title:
+  cs: Urbanismus (plánování a rozvoj)
+  en: Urban studies (planning and development)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50700'
+id: '50703'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50703
+title:
+  cs: Plánování dopravy a sociální hlediska dopravy
+  en: Transport planning and social aspects of transport
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50700'
+id: '50704'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50704
+title:
+  cs: Environmentální vědy (sociální hlediska)
+  en: Environmental sciences (social aspects)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50000'
+id: '50800'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800
+title:
+  cs: Média a komunikace
+  en: Media and communications
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50800'
+id: '50801'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50801
+title:
+  cs: Žurnalistika
+  en: Journalism
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50800'
+id: '50802'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50802
+title:
+  cs: Mediální a sociokulturní komunikace
+  en: Media and socio-cultural communication
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50800'
+id: '50803'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50803
+title:
+  cs: Informační věda (sociální aspekty)
+  en: Information science (social aspects)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50800'
+id: '50804'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50804
+title:
+  cs: Knihovnictví
+  en: Library science
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50000'
+id: '50900'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900
+title:
+  cs: Ostatní společenské vědy
+  en: Other social sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50900'
+id: '50901'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50901
+title:
+  cs: Ostatní společenské vědy
+  en: Other social sciences
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '50900'
+id: '50902'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50902
+title:
+  cs: Společenské vědy interdisciplinární
+  en: Social sciences, interdisciplinary
+---
+description:
+  cs: ''
+  en: ''
+id: '60000'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000
+title:
+  cs: Humanitní vědy a umění
+  en: Humanities and the arts
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60000'
+id: '60100'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100
+title:
+  cs: Historie a archeologie
+  en: History and archaeology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60100'
+id: '60101'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60101
+title:
+  cs: Historie
+  en: History
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60100'
+id: '60102'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60102
+title:
+  cs: Archeologie
+  en: Archaeology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60000'
+id: '60200'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200
+title:
+  cs: Jazyky a literatura
+  en: Languages and literature
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60200'
+id: '60201'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60201
+title:
+  cs: Všeobecné jazykové studie
+  en: General language studies
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60200'
+id: '60202'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60202
+title:
+  cs: Specifické jazyky
+  en: Specific languages
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60200'
+id: '60203'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60203
+title:
+  cs: Lingvistika
+  en: Linguistics
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60200'
+id: '60204'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60204
+title:
+  cs: Všeobecné studie literatury
+  en: General literature studies
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60200'
+id: '60205'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60205
+title:
+  cs: Teorie literatury
+  en: Literary theory
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60200'
+id: '60206'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60206
+title:
+  cs: Specifická literatura
+  en: Specific literatures
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60000'
+id: '60300'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300
+title:
+  cs: Filozofie, etika a náboženství
+  en: Philosophy, ethics and religion
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60300'
+id: '60301'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60301
+title:
+  cs: Filozofie, dějiny a filozofie vědy a techniky
+  en: Philosophy, history and philosophy of science and technology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60300'
+id: '60302'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60302
+title:
+  cs: Etika (vyjma etiky související s příslušnými kategoriemi)
+  en: Ethics (except ethics related to specific subfields)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60300'
+id: '60303'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60303
+title:
+  cs: Teologie
+  en: Theology
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60300'
+id: '60304'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60304
+title:
+  cs: Religionistika
+  en: Religious studies
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60000'
+id: '60400'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400
+title:
+  cs: Umění (umění, dějiny umění, múzická umění, hudba)
+  en: Arts (arts, history of arts, performing arts, music)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60400'
+id: '60401'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60401
+title:
+  cs: Umění, dějiny umění
+  en: Arts, art history
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60400'
+id: '60402'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60402
+title:
+  cs: Architektonický design
+  en: Architectural design
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60400'
+id: '60403'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60403
+title:
+  cs: Múzická umění (muzikologie, divadelní věda, dramaturgie)
+  en: Performing arts studies (musicology, theater science, dramaturgy)
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60400'
+id: '60404'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60404
+title:
+  cs: Folkloristika
+  en: Folklore studies
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60400'
+id: '60405'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60405
+title:
+  cs: Film, rádio a televize
+  en: Studies on film, radio and television
+---
+description:
+  cs: ''
+  en: ''
+hierarchy:
+  parent: '60000'
+id: '60500'
+props:
+  base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60500
+title:
+  cs: Ostatní humanitní vědy a obory umění
+  en: Other humanities and the arts

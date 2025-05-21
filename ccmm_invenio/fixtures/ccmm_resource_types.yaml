@@ -1,0 +1,1536 @@
+description:
+  en: 'Plans, drawing or set of drawings showing how something e.g. building, product
+    is to be made and how it will work and look. [Source: Adapted from https://dictionary.cambridge.org/dictionary/english/design]'
+id: 542X-3S04
+props:
+  iri: http://purl.org/coar/resource_type/542X-3S04
+title:
+  cs: design
+  en: design
+---
+description:
+  en: A device, tool or apparatus used to obtain, measure and/or analyze data. Source
+    https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#instrument
+id: 8KJG-QS0Y
+props:
+  iri: http://purl.org/coar/resource_type/8KJG-QS0Y
+title:
+  cs: research instrument
+  en: research instrument
+---
+description:
+  en: 'Data that are used as primary sources to support technical or scientific enquiry,
+    research, scholarship, or artistic activity, and that are used as evidence in
+    the research process and/or are commonly accepted in the research community as
+    necessary to validate research findings and results. [Source: https://casrai.org/term/research-data]'
+id: EHVM-H119
+props:
+  iri: http://purl.org/coar/resource_type/EHVM-H119
+title:
+  cs: research data
+  en: research data
+---
+description:
+  en: 'A work of visual arts and performing arts, including musical works; dramatic
+    works; pantomimes and choreographic works; motion picture and other audiovisual
+    works; pictorial, graphic, sculptural and architectural works. Adapted from Law
+    Insider: https://www.lawinsider.com/dictionary/artistic-works'
+id: F8RT-TJK0
+props:
+  iri: http://purl.org/coar/resource_type/F8RT-TJK0
+title:
+  cs: artistic work
+  en: artistic work
+---
+description:
+  en: All types of schemes for organizing information and promoting knowledge management.
+    Knowledge organization systems include classification schemes that organize materials
+    at a general level (such as books on a shelf), subject headings that provide more
+    detailed access, and authority files that control variant versions of key information
+    (such as geographic names and personal names). They also include less-traditional
+    schemes, such as semantic artifacts, semantic networks and ontologies. https://www.clir.org/pubs/reports/pub91/1knowledge/
+id: GSZA-Y7V7
+props:
+  iri: http://purl.org/coar/resource_type/GSZA-Y7V7
+title:
+  cs: knowledge organization system
+  en: knowledge organization system
+---
+description:
+  en: 'A sign used to distinguish the goods or services of one undertaking from those
+
+    of others. A trademark may consist of words and combinations of words (for
+
+    instance, names or slogans), logos, figures and images, letters, numbers,
+
+    sounds, or, in rare instances, smells or moving images, or a combination thereof.
+    [Source: https://www.wipo.int/trademarks/en]'
+id: H6QP-SC1X
+props:
+  iri: http://purl.org/coar/resource_type/H6QP-SC1X
+title:
+  cs: trademark
+  en: trademark
+---
+description:
+  en: An aggregation of resources, which may encompass collections of one resourceType
+    as well as those of mixed types. A collection is described as a group; its parts
+    may also be separately described. https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#collection
+id: RMP5-3GQ6
+props:
+  iri: http://purl.org/coar/resource_type/RMP5-3GQ6
+title:
+  cs: collection
+  en: collection
+---
+description:
+  en: 'Physical samples include biological specimens, rock or mineral specimens, soil
+    or sediment cores, plants and seeds, water quality samples, archaeological artefacts,
+    or DNA and human tissue samples. Samples may be used in analyses and can be destroyed
+    in this process, whereas specimens are preserved curated objects that can be continuously
+    studied.
+
+    Source: 23 Things Physical Samples https://eprints.gla.ac.uk/309016/1/309016.pdf'
+id: S7R1-K5P0
+props:
+  iri: http://purl.org/coar/resource_type/S7R1-K5P0
+title:
+  cs: physical sample
+  en: physical sample
+---
+description:
+  en: 'Any material representing the whole or part of the earth or any celestial body
+    at any scale. Cartographic materials include two- and three-dimensional maps and
+    plans (including maps of imaginary places); aeronautical, navigational, and celestial
+    charts; atlases; globes; block diagrams; sections; aerial photographs with a cartographic
+    purpose; bird''s-eye views (map views), etc. [Source: http://www.loc.gov/marc/cfmap.html]'
+id: c_12cc
+props:
+  iri: http://purl.org/coar/resource_type/c_12cc
+title:
+  cs: kartografický dokument
+  en: cartographic material
+---
+description:
+  en: 'A set of exclusive rights granted by law to applicants for inventions that
+    are
+
+    new, non-obvious and commercially applicable. A patent is valid for a limited
+
+    period (generally 20 years), during which time patent holders can commercially
+
+    exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+id: c_15cd
+props:
+  iri: http://purl.org/coar/resource_type/c_15cd
+  zenodo: publication-patent
+  zenodo-publication-patent: 'true'
+title:
+  cs: patent
+  en: patent
+---
+description:
+  en: A resource type that is not included in existing terms. [COAR definition]
+id: c_1843
+props:
+  iri: http://purl.org/coar/resource_type/c_1843
+  zenodo: event, model, other, physicalobject, publication-other
+  zenodo-event: 'true'
+  zenodo-model: 'true'
+  zenodo-other: 'true'
+  zenodo-physicalobject: 'true'
+  zenodo-publication-other: 'true'
+title:
+  cs: ostatní
+  en: other
+---
+description:
+  en: 'A resource primarily intended to be heard. Examples include a music playback
+    file format, an audio compact disc, and recorded speech or sounds. [Source: http://dublincore.org/documents/dcmi-terms/#dcmitype-Sound]'
+id: c_18cc
+props:
+  iri: http://purl.org/coar/resource_type/c_18cc
+  zenodo: audio
+  zenodo-audio: 'true'
+title:
+  cs: zvuk
+  en: sound
+---
+description:
+  en: 'A resource consisting primarily of words for reading. Examples include books,
+    letters, dissertations, poems, newspapers, articles, archives of mailing lists.
+    Note that facsimiles or images of texts are still of the genre Text. [Source:
+    http://purl.org/dc/dcmitype/Text]'
+id: c_18cf
+props:
+  iri: http://purl.org/coar/resource_type/c_18cf
+  zenodo: publication, publication-annotationcollection, publication-datapaper, publication-milestone,
+    publication-standard, publication-taxonomictreatment
+  zenodo-publication: 'true'
+  zenodo-publication-annotationcollection: 'true'
+  zenodo-publication-datapaper: 'true'
+  zenodo-publication-milestone: 'true'
+  zenodo-publication-standard: 'true'
+  zenodo-publication-taxonomictreatment: 'true'
+title:
+  cs: text
+  en: text
+---
+description:
+  en: 'A report to a funding agency is a document written by beneficiaries of project
+    grants. The reporting documents can be e.g. periodic reports about progress of
+    scientific and technical work and final report. For deliverables use ‘Project
+    deliverable’. [Source: http://ec.europa.eu/research/participants/fp7documents/funding-guide/6_projects/reports/reports_en.htm
+    ]'
+id: c_18hj
+props:
+  iri: http://purl.org/coar/resource_type/c_18hj
+title:
+  cs: zpráva pro poskytovatele podpory
+  en: report to funding agency
+---
+description:
+  en: 'Other types of report may include Business Plans Technical Specifications,
+    data management plans, recommendation reports, white papers, annual reports, auditor''s
+    reports, workplace reports, census reports, trip reports, progress reports, investigative
+    reports, budget reports, policy reports, demographic reports, credit reports,
+    appraisal reports, inspection reports, military reports, bound reports, etc. [Source:
+    https://en.wikipedia.org/wiki/Report]'
+id: c_18wq
+props:
+  iri: http://purl.org/coar/resource_type/c_18wq
+title:
+  cs: jiná zpráva
+  en: other type of report
+---
+description:
+  en: An internal report is a record of findings collected for internal use. It is
+    not designed to be made public and may include confidential or proprietary information.
+id: c_18ww
+props:
+  iri: http://purl.org/coar/resource_type/c_18ww
+title:
+  cs: interní zpráva
+  en: internal report
+---
+description:
+  en: 'A periodical is a serial publication with its own distinctive title, characterized
+    by a variety of contents and contributors, and issued at regular intervals. (Adapted
+    from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]'
+id: c_2659
+props:
+  iri: http://purl.org/coar/resource_type/c_2659
+title:
+  cs: periodikum
+  en: periodical
+---
+description:
+  en: A discussion between a reporter, host, panel, or audience and a newsmaker, author,
+    or celebrity, recorded (edited or unedited) in print, on film or video, as transcript
+    or as a sound recording. (Adapted from ODLIS)
+id: c_26e4
+props:
+  iri: http://purl.org/coar/resource_type/c_26e4
+title:
+  cs: interview
+  en: interview
+---
+description:
+  en: 'A recorded sequence of connected steps, which may be automated, specifying
+    a reliably repeatable sequence of operations to be undertaken when conducting
+    a particular job, for example an in silico investigation that extracts and processes
+    information from a number of bioinformatics databases. [Source: Adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e6123]'
+id: c_393c
+props:
+  iri: http://purl.org/coar/resource_type/c_393c
+  zenodo: workflow
+  zenodo-workflow: 'true'
+title:
+  cs: pracovní postup
+  en: workflow
+---
+description:
+  en: A contribution to a journal denotes a work published in a journal. If applicable
+    sub-terms should be chosen.
+id: c_3e5a
+props:
+  iri: http://purl.org/coar/resource_type/c_3e5a
+title:
+  cs: příspěvek v časopisu
+  en: contribution to journal
+---
+description:
+  en: 'A computer program in source code (text) or compiled form. [Source: http://purl.org/dc/dcmitype/Software]'
+id: c_5ce6
+props:
+  iri: http://purl.org/coar/resource_type/c_5ce6
+  zenodo: image-diagram, software, software-computationalnotebook
+  zenodo-image-diagram: 'true'
+  zenodo-software: 'true'
+  zenodo-software-computationalnotebook: 'true'
+title:
+  cs: software
+  en: software
+---
+description:
+  en: part of a report
+id: c_ba1f
+props:
+  iri: http://purl.org/coar/resource_type/c_ba1f
+title:
+  cs: report part
+  en: report part
+---
+description:
+  en: 'A visual representation other than text, including all types of moving image
+    and still image. [Source: Adapted from  http://purl.org/dc/dcmitype/Image]'
+id: c_c513
+props:
+  iri: http://purl.org/coar/resource_type/c_c513
+  zenodo: image
+  zenodo-image: 'true'
+title:
+  cs: obraz
+  en: image
+---
+description:
+  en: 'A collection of related facts and data encoded in a defined structure. [Source:
+    Adapted from http://purl.org/spar/fabio/Dataset]'
+id: c_ddb1
+props:
+  iri: http://purl.org/coar/resource_type/c_ddb1
+  zenodo: dataset
+  zenodo-dataset: 'true'
+title:
+  cs: datová sada
+  en: dataset
+---
+description:
+  en: 'A resource requiring interaction from the user to be understood, executed,
+    or experienced. Examples include forms on Web pages, applets, multimedia learning
+    objects, chat services, or virtual reality environments. [Source: http://purl.org/dc/dcmitype/InteractiveResource]'
+id: c_e059
+props:
+  iri: http://purl.org/coar/resource_type/c_e059
+title:
+  cs: learning object
+  en: learning object
+---
+description:
+  en: 'A resource requiring interaction from the user to be understood, executed,
+    or experienced. Examples include forms on Web pages, applets, multimedia learning
+    objects, chat services, or virtual reality environments.
+
+    Source: http://purl.org/dc/dcmitype/InteractiveResource'
+id: c_e9a0
+props:
+  iri: http://purl.org/coar/resource_type/c_e9a0
+title:
+  cs: interaktivní zdroj
+  en: interactive resource
+---
+description:
+  en: A set of judicial proceedings that record, physically or digitally, and in an
+    orderly fashion, the development of a process or procedural actions so that they
+    may be recorded and examined by the parties. This would include the set of judicial
+    proceedings and any item within that set as a physical or electronic court document.
+    Adapted from https://dpej.rae.es/lema/expediente-judicial with input from https://www.supremecourt.gov/case_documents.aspx
+hierarchy:
+  parent: RMP5-3GQ6
+id: 1YTN-RJZE
+props:
+  iri: http://purl.org/coar/resource_type/1YTN-RJZE
+title:
+  cs: court documents
+  en: court documents
+---
+description:
+  en: 'Geospatial data are any type of data with spatial coordinates that allow them
+    to be mapped to the Earth''s surface. They can represent physical objects, discrete
+    areas or continuous surfaces. Discrete geospatial data are usually represented
+    using vector data consisting of points, lines and polygons, while continuous geospatial
+    data are usually represented by raster data, consisting of a grid of cells that
+    each has its own value. Any number of applications in a wide range of areas produce
+    geospatial data, such as GIS, Remote Sensing equipment, GPS units, archaeological
+    total stations, manual mapping and computer-aided design (CAD), in a number of
+    formats, including images, vector, text, and tabular data. Vector-based geospatial
+    data include tables listing archaeological sites along with their coordinates,
+    text-based files (e.g., XML) containing coordinates and topology for historic
+    road networks, voting figures for political parties by administrative area. Raster-based
+    geospatial data include satellite images, aerial photographs, scanned maps, and
+    digital maps of elevations, vegetation, land-use, sea surface temperatures, air
+    pollution, soil-types, etc. [Source: https://ddialliance.org/Specification/DDI-CV/GeneralDataFormat_2.0.html]'
+hierarchy:
+  parent: c_ddb1
+id: 2H0M-X761
+props:
+  iri: http://purl.org/coar/resource_type/2H0M-X761
+title:
+  cs: geospatial data
+  en: geospatial data
+---
+description:
+  en: 'Data resulting from the experimental research method involving the manipulation
+    of some or all of the independent variables included in the hypotheses. [Source:
+    Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+hierarchy:
+  parent: c_ddb1
+id: 63NG-B465
+props:
+  iri: http://purl.org/coar/resource_type/63NG-B465
+title:
+  cs: experimental data
+  en: experimental data
+---
+description:
+  en: 'A written record of words spoken in court proceedings or in a speech, interview,
+    broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]'
+hierarchy:
+  parent: c_18cf
+id: 6NC7-GK9S
+props:
+  iri: http://purl.org/coar/resource_type/6NC7-GK9S
+title:
+  cs: transcription
+  en: transcription
+---
+description:
+  en: 'A special form of patent right granted by a state or jurisdiction to an inventor
+    or the inventor’s assignee for a fixed period of time. The terms and conditions
+    for granting a utility model are slightly different from those for normal patents
+    (including a shorter term of protection and less stringent patentability requirements).
+    The term can also describe what are known in certain countries as “petty patents,”
+    “short-term patents” or “innovation patents.” [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+hierarchy:
+  parent: c_15cd
+id: 9DKX-KSAF
+props:
+  iri: http://purl.org/coar/resource_type/9DKX-KSAF
+title:
+  cs: utility model
+  en: utility model
+---
+description:
+  en: 'Genomic data refers to the genome and DNA data of an organism. They are used
+    in bioinformatics for collecting, storing and processing the genomes of living
+    things. Genomic data is a more extensive term than sequencing data. However genomic
+    data mostly come from sequencing techniques. It may include non-sequencing data
+    such as data from microarrays, data from real-time PCR panels and data from pharmacogenomics
+    studies. [Source: Adapted from https://www.techopedia.com/definition/31247/genomic-data]'
+hierarchy:
+  parent: c_ddb1
+id: A8F1-NPV9
+props:
+  iri: http://purl.org/coar/resource_type/A8F1-NPV9
+title:
+  cs: genomic data
+  en: genomic data
+---
+description:
+  en: 'Statistics that relate to broad classes, groups, or categories. The data are
+    averaged, totaled, or otherwise derived from individual-level data, and it is
+    no longer possible to distinguish the characteristics of individuals within those
+    classes, groups, or categories. For example, the number and age group of the unemployed
+    in specific geographic regions, or national level statistics on the occurrence
+    of specific offences, originally derived from the statistics of individual police
+    districts. [Source: https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+hierarchy:
+  parent: c_ddb1
+id: ACF7-8YT9
+props:
+  iri: http://purl.org/coar/resource_type/ACF7-8YT9
+title:
+  cs: aggregated data
+  en: aggregated data
+---
+description:
+  en: 'Qualitative data (textual, video, audio or still-image) originally produced
+    for other purposes into quantitative data (expressed in unit-by-variable matrices)
+    by using coding techniques in accordance with pre-defined categorization schemes.
+    For example, coded party manifesto data like the "European Parliament Election
+    Study 2009, Manifesto Study" (doi:10.4232/1.10204)". [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+hierarchy:
+  parent: c_ddb1
+id: AM6W-6QAW
+props:
+  iri: http://purl.org/coar/resource_type/AM6W-6QAW
+title:
+  cs: encoded data
+  en: encoded data
+---
+description:
+  en: "Layout-design (topography) means the three-dimensional disposition, however\
+    \ expressed, of \nthe elements of an integrated circuit (at least one of which\
+    \ is an active element) and of some or all of the interconnections of an integrated\
+    \ circuit, or such a three-dimensional disposition prepared for \nan integrated\
+    \ circuit intended for manufacture [Source: https://www.wipo.int/edocs/lexdocs/laws/en/hk/hk028en.pdf]"
+hierarchy:
+  parent: 542X-3S04
+id: BW7T-YM2G
+props:
+  iri: http://purl.org/coar/resource_type/BW7T-YM2G
+title:
+  cs: layout design
+  en: layout design
+---
+description:
+  en: 'A patent granted to any person who has invented any new and non-obvious ornamental
+    design for an article of manufacture. The design patent protects only the appearance
+    of an article, but not its structural or functional features. [Source: Adapted
+    from https://www.uspto.gov/patents/basics/types-patent-applications/design-patent-application-guide#def]'
+hierarchy:
+  parent: c_15cd
+id: C53B-JCY5
+props:
+  iri: http://purl.org/coar/resource_type/C53B-JCY5
+title:
+  cs: design patent
+  en: design patent
+---
+description:
+  en: 'Data registered by mechanical or electronic means, in a form that allows the
+    information to be retrieved and/or reproduced. For example, images or sounds on
+    disc or magnetic tape. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+hierarchy:
+  parent: c_ddb1
+id: CQMR-7K63
+props:
+  iri: http://purl.org/coar/resource_type/CQMR-7K63
+title:
+  cs: recorded data
+  en: recorded data
+---
+description:
+  en: 'Data resulting from assessing specific properties (or characteristics) of beings,
+    things, phenomena, (and/ or processes) by applying pre-established standards and/or
+    specialized instruments or techniques. [Source: Adapted from  https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+hierarchy:
+  parent: c_ddb1
+id: DD58-GFSX
+props:
+  iri: http://purl.org/coar/resource_type/DD58-GFSX
+title:
+  cs: measurement and test data
+  en: measurement and test data
+---
+description:
+  en: 'Data resulting from observational research, which involves collecting observations
+    as they occur (for example, observing behaviors, events, development of condition
+    or disease, etc.), without attempting to manipulate any of the independent variables.
+    [Source:  Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+hierarchy:
+  parent: c_ddb1
+id: FF4C-28RK
+props:
+  iri: http://purl.org/coar/resource_type/FF4C-28RK
+title:
+  cs: observational data
+  en: observational data
+---
+description:
+  en: 'Data collected or assembled from multiple, often heterogeneous sources that
+    have one or more reference points in common, and at least one of the sources was
+    originally produced for other purposes. The data are incorporated in a new entity.
+    For example, providing data on the number of universities in the last 150 years
+    using a variety of available sources (e.g. finance documents, official statistics,
+    university registers), combining survey data with information about geographical
+    areas from official statistics (e.g. population density, doctors per capita, etc.),
+    or using RSS to collect blog posts or tweets, etc. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+hierarchy:
+  parent: c_ddb1
+id: FXF3-D3G7
+props:
+  iri: http://purl.org/coar/resource_type/FXF3-D3G7
+title:
+  cs: compiled data
+  en: compiled data
+---
+description:
+  en: 'Plant variety protection, also called a "plant breeder''s right" (PBR), is
+    a form of intellectual property right granted to the breeder of a new plant variety
+    . According to this right, certain acts concerning the exploitation of the protected
+    variety require the prior authorization of the breeder. Plant variety protection
+    is an independent sui generis form of protection, tailored to protect new plant
+    varieties and has certain features in common with other intellectual property
+    rights. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+hierarchy:
+  parent: c_15cd
+id: GPQ7-G5VE
+props:
+  iri: http://purl.org/coar/resource_type/GPQ7-G5VE
+title:
+  cs: plant variety protection
+  en: plant variety protection
+---
+description:
+  en: 'A laboratory notebook (colloq. lab notebook or lab book) is a primary record
+    of research. Researchers use a lab notebook to document their hypotheses, experiments
+    and initial analysis or interpretation of these experiments. This label is used
+    both for traditional and electronic laboratory notebook. [Source: Adapted from
+    https://en.wikipedia.org/wiki/Lab_notebook]'
+hierarchy:
+  parent: c_ddb1
+id: H41Y-FW7B
+props:
+  iri: http://purl.org/coar/resource_type/H41Y-FW7B
+title:
+  cs: laboratory notebook
+  en: laboratory notebook
+---
+description:
+  en: 'Industrial designs are applied to a wide variety of industrial products and
+    handicrafts. They refer to the ornamental or aesthetic aspects of a useful article,including
+    compositions of lines or colors or any three-dimensional forms that give a special
+    appearance to a product or handicraft. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+hierarchy:
+  parent: 542X-3S04
+id: JBNF-DYAD
+props:
+  iri: http://purl.org/coar/resource_type/JBNF-DYAD
+title:
+  cs: industrial design
+  en: industrial design
+---
+description:
+  en: 'In order to obtain a patent, a software invention must not fall under other
+    non-patentable subject matter (for example, abstract ideas or mathematical theories)
+    and has to fulfill the other substantive patentability criteria (for example,
+    novelty, inventive step [non-obviousness] and industrial applicability [usefulness]).
+    [Source: https://www.wipo.int/patents/en/faq_patents.html]'
+hierarchy:
+  parent: c_15cd
+id: MW8G-3CR8
+props:
+  iri: http://purl.org/coar/resource_type/MW8G-3CR8
+title:
+  cs: software patent
+  en: software patent
+---
+description:
+  en: 'Data resulting from a survey, which is defined as an investigation about the
+    characteristics of a given population by means of collecting data from a sample
+    of that population and estimating their characteristics through the systematic
+    use of statistical methodology. Included are censuses, sample surveys, the collection
+    of data from administrative records and derived statistical activities as well
+    as questionnaires. [Source: Adapted from https://stats.oecd.org/glossary/detail.asp?ID=2620]'
+hierarchy:
+  parent: c_ddb1
+id: NHD0-W6SY
+props:
+  iri: http://purl.org/coar/resource_type/NHD0-W6SY
+title:
+  cs: survey data
+  en: survey data
+---
+description:
+  en: 'Source code is any collection of code, with or without comments, written using
+    a human-readable programming language, usually as plain text. [Source: https://en.wikipedia.org/wiki/Source_code]'
+hierarchy:
+  parent: c_5ce6
+id: QH80-2R4E
+props:
+  iri: http://purl.org/coar/resource_type/QH80-2R4E
+title:
+  cs: source code
+  en: source code
+---
+description:
+  en: A resource type that is not included in existing terms under the top concept
+    "Text". [COAR definition]
+hierarchy:
+  parent: c_18cf
+id: QX5C-AR31
+props:
+  iri: http://purl.org/coar/resource_type/QX5C-AR31
+title:
+  cs: other periodical
+  en: other periodical
+---
+description:
+  en: 'A patent application filed through the WIPO-administered Patent Cooperation
+    Treaty (PCT), also known as an international application. [Source: Adapted from
+    https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+hierarchy:
+  parent: c_15cd
+id: SB3Y-W4EH
+props:
+  iri: http://purl.org/coar/resource_type/SB3Y-W4EH
+title:
+  cs: PCT application
+  en: PCT application
+---
+description:
+  en: 'Data resulting from modeling or imitative representation of real-world processes,
+    events, or systems, often using computer programs. For example, a program modeling
+    household consumption responses to indirect tax changes; or a dataset on hypothetical
+    patients and their drug exposure, background conditions, and known adverse events.
+    [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+hierarchy:
+  parent: c_ddb1
+id: W2XT-7017
+props:
+  iri: http://purl.org/coar/resource_type/W2XT-7017
+title:
+  cs: simulation data
+  en: simulation data
+---
+description:
+  en: 'A collection of historical records and primary source documents. Documents
+    may be tangible or digital. Adapted from “archive (groupings)” in Getty AAT: https://www.getty.edu/vow/AATFullDisplay?find=maiolica&logic=AND&note=&subjectid=300375748'
+hierarchy:
+  parent: RMP5-3GQ6
+id: YC9F-HGCF
+props:
+  iri: http://purl.org/coar/resource_type/YC9F-HGCF
+title:
+  cs: archival collection
+  en: archival collection
+---
+description:
+  en: 'A patent granted to anyone who has invented or discovered and asexually reproduced
+    any distinct and new variety of plant, including cultivated sports, mutants, hybrids,
+    and newly found seedlings, other than a tuber-propagated plant or a plant found
+    in an uncultivated state. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/general-information-about-35-usc-161#heading-1]'
+hierarchy:
+  parent: c_15cd
+id: Z907-YMBB
+props:
+  iri: http://purl.org/coar/resource_type/Z907-YMBB
+title:
+  cs: plant patent
+  en: plant patent
+---
+description:
+  en: 'A manuscript is a work of any kind (text, inscription, music score, map, etc.)
+    written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]'
+hierarchy:
+  parent: c_18cf
+id: c_0040
+props:
+  iri: http://purl.org/coar/resource_type/c_0040
+title:
+  cs: manuscript
+  en: manuscript
+---
+description:
+  en: 'A journal is a serial publication devoted to disseminating original research
+    and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]'
+hierarchy:
+  parent: c_18cf
+id: c_0640
+props:
+  iri: http://purl.org/coar/resource_type/c_0640
+  zenodo: publication-journal
+  zenodo-publication-journal: 'true'
+title:
+  cs: odborné periodikum
+  en: journal
+---
+description:
+  en: 'A brief description of important new research, also known as “communication”.
+    [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]'
+hierarchy:
+  parent: c_18cf
+id: c_0857
+props:
+  iri: http://purl.org/coar/resource_type/c_0857
+title:
+  cs: dopis
+  en: letter
+---
+description:
+  en: 'An annotation in the sense of a legal note is a legally explanatory comment
+    on a decision handed down by a court or arbitral tribunal. [Source: DRIVER info:eu-repo
+    definition]'
+hierarchy:
+  parent: c_18cf
+id: c_1162
+props:
+  iri: http://purl.org/coar/resource_type/c_1162
+  zenodo: annotationcollection, publication-annotation
+  zenodo-annotationcollection: 'true'
+  zenodo-publication-annotation: 'true'
+title:
+  cs: právní komentář rozsudku nebo rozhodnutí
+  en: annotation
+---
+description:
+  en: 'Defined as a representation normally to scale and on a flat medium, of a selection
+    of material or abstract features on, or in relation to, the surface of the earth
+    or of another celestial body. [Source: https://www.loc.gov/marc/bibliographic/bd007a.html]'
+hierarchy:
+  parent: c_12cc
+id: c_12cd
+props:
+  iri: http://purl.org/coar/resource_type/c_12cd
+title:
+  cs: mapa
+  en: map
+---
+description:
+  en: 'Musical composition can refer to an original piece of music, the structure
+    of a musical piece, or the process of creating a new piece of music. [Source:
+    https://en.wikipedia.org/wiki/Musical_composition ]'
+hierarchy:
+  parent: c_18cc
+id: c_18cd
+props:
+  iri: http://purl.org/coar/resource_type/c_18cd
+title:
+  cs: hudební skladba
+  en: musical composition
+---
+description:
+  en: 'Symbols used to write music, as in a music score, and to express mathematical
+    concepts.
+
+    [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_n.aspx]'
+hierarchy:
+  parent: c_18cf
+id: c_18cw
+props:
+  iri: http://purl.org/coar/resource_type/c_18cw
+title:
+  cs: hudební zápis
+  en: musical notation
+---
+description:
+  en: 'A popular interest periodical usually containing articles on a variety of topics,
+    written by various authors in a nonscholarly style or a trade publication, unlike
+    a consumer publication, covers a specific topic for people who work in that particular
+    field or industry. [Source: Adapted from https://www.thebalance.com/what-is-a-trade-publication-exactly-2316039
+    and http://www.abc-clio.com/ODLIS/odlis_m.aspx]'
+hierarchy:
+  parent: c_18cf
+id: c_2cd9
+props:
+  iri: http://purl.org/coar/resource_type/c_2cd9
+  zenodo: image-drawing
+  zenodo-image-drawing: 'true'
+title:
+  cs: magazine
+  en: magazine
+---
+description:
+  en: 'A non-serial publication that is complete in one volume or a designated finite
+    number of volumes. [Source: Adapted from http://purl.org/eprint/type/Book]'
+hierarchy:
+  parent: c_18cf
+id: c_2f33
+props:
+  iri: http://purl.org/coar/resource_type/c_2f33
+  zenodo: publication-book
+  zenodo-publication-book: 'true'
+title:
+  cs: kniha
+  en: book
+---
+description:
+  en: 'A non-peer reviewed periodical, usually published daily or weekly, consisting
+    primarily of editorials and news items concerning current or recent events and
+    matters of public interest. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4291]'
+hierarchy:
+  parent: c_18cf
+id: c_2fe3
+props:
+  iri: http://purl.org/coar/resource_type/c_2fe3
+title:
+  cs: newspaper
+  en: newspaper
+---
+description:
+  en: 'A defined chapter or section of a book, usually with a separate title or number.
+    [Source: http://purl.org/spar/fabio/BookChapter]'
+hierarchy:
+  parent: c_2f33
+id: c_3248
+props:
+  iri: http://purl.org/coar/resource_type/c_3248
+  zenodo: publication-section
+  zenodo-publication-section: 'true'
+title:
+  cs: část knihy
+  en: book part
+---
+description:
+  en: 'A book authored by a student containing a formal presentations of research
+    outputs submitted for examination in completion of a course of study at an institution
+    of higher education, to fulfil the requirements for an academic degree. Also known
+    as a dissertation. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e5748]'
+hierarchy:
+  parent: c_18cf
+id: c_46ec
+props:
+  iri: http://purl.org/coar/resource_type/c_46ec
+  zenodo: publication-dissertation, publication-doctorthesis, publication-thesis
+  zenodo-publication-dissertation: 'true'
+  zenodo-publication-doctorthesis: 'true'
+  zenodo-publication-thesis: 'true'
+title:
+  cs: kvalifikační práce
+  en: thesis
+---
+description:
+  en: 'A letter addressed to the editor and comments on or discussed an item previously
+    published by that periodical, or of interest to its readership. [Source: Adapted
+    from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e3803]'
+hierarchy:
+  parent: c_0640
+id: c_545b
+props:
+  iri: http://purl.org/coar/resource_type/c_545b
+title:
+  cs: dopis redakci
+  en: letter to the editor
+---
+description:
+  en: 'An article, typically the realization of a research paper reporting original
+    research findings, published in a journal issue. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646]'
+hierarchy:
+  parent: c_0640
+id: c_6501
+props:
+  iri: http://purl.org/coar/resource_type/c_6501
+  zenodo: publication-article
+  zenodo-publication-article: 'true'
+title:
+  cs: článek v odborném časopisu
+  en: journal article
+---
+description:
+  en: 'A piece of writing or other item of content published on a blog. [Source: https://www.lexico.com/definition/blog_post]'
+hierarchy:
+  parent: c_18cf
+id: c_6947
+props:
+  iri: http://purl.org/coar/resource_type/c_6947
+title:
+  cs: blog post
+  en: blog post
+---
+description:
+  en: 'Technical documentation refers to any type of documentation that describes
+    handling, functionality and architecture of a technical product or a product under
+    development or use. [Source: https://en.wikipedia.org/wiki/Technical_documentation]'
+hierarchy:
+  parent: c_18cf
+id: c_71bd
+props:
+  iri: http://purl.org/coar/resource_type/c_71bd
+  zenodo: publication-softwaredocumentation
+  zenodo-publication-softwaredocumentation: 'true'
+title:
+  cs: technická dokumentace
+  en: technical documentation
+---
+description:
+  en: 'A thesis reporting a research project undertaken as part of an undergraduate
+    course of education leading to a bachelor''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2181]'
+hierarchy:
+  parent: c_46ec
+id: c_7a1f
+props:
+  iri: http://purl.org/coar/resource_type/c_7a1f
+  zenodo: publication-bachelorthesis
+  zenodo-publication-bachelorthesis: 'true'
+title:
+  cs: bakalářská práce
+  en: bachelor thesis
+---
+description:
+  en: A formal correction to an error introduced by the author into a previously published
+    document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)
+hierarchy:
+  parent: c_6501
+id: c_7acd
+props:
+  iri: http://purl.org/coar/resource_type/c_7acd
+title:
+  cs: corrigendum
+  en: corrigendum
+---
+description:
+  en: 'A collection of related web pages containing text, images, videos and/or other
+    digital assets that are addressed relative to a common Uniform Resource Locator
+    (URL). A web site is hosted on at least one web server, accessible via a network
+    such as the Internet or a private local area network.
+
+    [Source: http://purl.org/spar/fabio/WebSite]'
+hierarchy:
+  parent: c_e9a0
+id: c_7ad9
+props:
+  iri: http://purl.org/coar/resource_type/c_7ad9
+title:
+  cs: webové sídlo
+  en: website
+---
+description:
+  en: 'A software paper should include the rationale for the development of the tool
+    and details of the code used for its construction. [Source: Adapted from https://f1000research.com/for-authors/article-guidelines/software-tool-articles
+    ]'
+hierarchy:
+  parent: c_6501
+id: c_7bab
+props:
+  iri: http://purl.org/coar/resource_type/c_7bab
+title:
+  cs: software paper
+  en: software paper
+---
+description:
+  en: 'A working or discussion paper circulated publicly or among a group of peers.
+    Certain disciplines, for example economics, issue working papers in series. [Source:
+    http://www.ukoln.ac.uk/repositories/digirep/index/Eprints_Type_Vocabulary_Encoding_Scheme#:~:text=http%3A//purl.org/eprint/type/WorkingPaper]'
+hierarchy:
+  parent: c_18cf
+id: c_8042
+props:
+  iri: http://purl.org/coar/resource_type/c_8042
+  zenodo: publication-workingpaper
+  zenodo-publication-workingpaper: 'true'
+title:
+  cs: pracovní dokument
+  en: working paper
+---
+description:
+  en: 'A preprint is a scientific manuscript without peer-review and has not yet been
+    accepted by a journal, typicaly submitted to a public server/ repository by the
+    author. [Source: Adapted from https://asapbio.org/preprint-info/preprint-faq#qaef-637]'
+hierarchy:
+  parent: c_18cf
+id: c_816b
+props:
+  iri: http://purl.org/coar/resource_type/c_816b
+  zenodo: publication-preprint
+  zenodo-publication-preprint: 'true'
+title:
+  cs: preprint
+  en: preprint
+---
+description:
+  en: 'Transcription of an oral presentation/talk intended to present information
+    or teach people about a particular subject, for example by a university or college
+    teacher. [Source: Adopted from https://en.wikipedia.org/wiki/Lecture]'
+hierarchy:
+  parent: c_18cf
+id: c_8544
+props:
+  iri: http://purl.org/coar/resource_type/c_8544
+  zenodo: publication-abstract, publication-lecture
+  zenodo-publication-abstract: 'true'
+  zenodo-publication-lecture: 'true'
+title:
+  cs: přednáška
+  en: lecture
+---
+description:
+  en: 'A list of the books and articles that have been used by someone when writing
+    a particular book or article [Source: https://dictionary.cambridge.org/dictionary/english/bibliography]'
+hierarchy:
+  parent: c_18cf
+id: c_86bc
+props:
+  iri: http://purl.org/coar/resource_type/c_86bc
+title:
+  cs: bibliografie
+  en: bibliography
+---
+description:
+  en: 'A moving display, either generated dynamically by a computer program or formed
+    from a series of pre-recorded still images imparting an impression of motion when
+    shown in succession. [Source: http://purl.org/spar/fabio/MovingImage]'
+hierarchy:
+  parent: c_c513
+id: c_8a7e
+props:
+  iri: http://purl.org/coar/resource_type/c_8a7e
+title:
+  cs: pohyblivý obraz
+  en: moving image
+---
+description:
+  en: 'A report is a separately published record of research findings, research still
+    in progress, policy developments and events, or other technical findings, usually
+    bearing a report number and sometimes a grant number assigned by the funding agency.
+    Also, an official record of the activities of a committee or corporate entity,
+    the proceedings of a government body, or an investigation by an agency, whether
+    published or private, usually archived or submitted to a higher authority, voluntarily
+    or under mandate. In a more general sense, any formal account of facts or information
+    related to a specific event or phenomenon, sometimes given at regular intervals.
+    [Source: http://lu.com/odlis/odlis_R.cfm#report ]'
+hierarchy:
+  parent: c_18cf
+id: c_93fc
+props:
+  iri: http://purl.org/coar/resource_type/c_93fc
+  zenodo: publication-report
+  zenodo-publication-report: 'true'
+title:
+  cs: zpráva
+  en: report
+---
+description:
+  en: Work consisting of a news item appearing in a general-interest newspaper or
+    other general news periodical, containing information of current and timely interest
+    in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html )
+hierarchy:
+  parent: c_2fe3
+id: c_998f
+props:
+  iri: http://purl.org/coar/resource_type/c_998f
+title:
+  cs: newspaper article
+  en: newspaper article
+---
+description:
+  en: 'A formal statement describing how research data will be managed and documented
+    throughout a research project and the terms regarding the subsequent deposit of
+    the data with a data repository for long-term management and preservation. [Source:
+    https://casrai.org/rdm-glossary]'
+hierarchy:
+  parent: c_93fc
+id: c_ab20
+props:
+  iri: http://purl.org/coar/resource_type/c_ab20
+title:
+  cs: data management plan
+  en: data management plan
+---
+description:
+  en: 'A brief essay expressing the opinion or position of the chief editor(s) of
+    a (academic) journal with respect to a current political, social, cultural, or
+    professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx
+    ]'
+hierarchy:
+  parent: c_0640
+id: c_b239
+props:
+  iri: http://purl.org/coar/resource_type/c_b239
+title:
+  cs: úvodník
+  en: editorial
+---
+description:
+  en: 'A research proposal is a document proposing a research project, generally in
+    the sciences or academia, and generally constitutes a request for sponsorship
+    of that research. [Source: https://en.wikipedia.org/wiki/Research_proposal]'
+hierarchy:
+  parent: c_18cf
+id: c_baaf
+props:
+  iri: http://purl.org/coar/resource_type/c_baaf
+  zenodo: publication-proposal
+  zenodo-publication-proposal: 'true'
+title:
+  cs: návrh výzkumného projektu
+  en: research proposal
+---
+description:
+  en: 'A thesis reporting a research project undertaken as part of a graduate course
+    of education leading to a master''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4057]'
+hierarchy:
+  parent: c_46ec
+id: c_bdcc
+props:
+  iri: http://purl.org/coar/resource_type/c_bdcc
+  zenodo: publication-mastersthesis
+  zenodo-publication-mastersthesis: 'true'
+title:
+  cs: diplomová práce
+  en: master thesis
+---
+description:
+  en: A data paper is a scholarly publication describing a particular dataset or group
+    of dataset, published in the form of a peer-reviewed article in a scholarly journal.
+    The main purpose of a data paper is to describe data, the circumstances of their
+    collection, and information related to data features, access and potential reuse.
+    Adapted from https://en.wikipedia.org/wiki/Data_paper and http://www.gbif.org/publishing-data/data-papers
+hierarchy:
+  parent: c_6501
+id: c_beb9
+props:
+  iri: http://purl.org/coar/resource_type/c_beb9
+title:
+  cs: článek o datové sadě
+  en: data paper
+---
+description:
+  en: All kind of digital resources contributed to a conference, like conference presentation
+    (slides), conference report, conference lecture, abstracts, demonstrations. For
+    conference papers, posters or proceedings the specific sub-concepts should be
+    used. [COAR definition]
+hierarchy:
+  parent: c_18cf
+id: c_c94f
+props:
+  iri: http://purl.org/coar/resource_type/c_c94f
+  zenodo: presentation
+  zenodo-presentation: 'true'
+title:
+  cs: conference output
+  en: conference output
+---
+description:
+  en: 'Software that is used to generate, process or analyse results that you intend
+    to appear in a publication (either in a journal, conference paper, monograph,
+    book or thesis). Research software can be anything from a few lines of code written
+    by yourself, to a professionally developed software package. [Source: https://datashare.ed.ac.uk/handle/10283/785]'
+hierarchy:
+  parent: c_5ce6
+id: c_c950
+props:
+  iri: http://purl.org/coar/resource_type/c_c950
+title:
+  cs: research software
+  en: research software
+---
+description:
+  en: 'Data resulting from a research study in which one or more human subjects are
+    prospectively assigned to one or more interventions (which may include placebo
+    or other control) to evaluate the effects of those interventions on health-related
+    biomedical or behavioral outcomes. [Source: Adapted from https://grants.nih.gov/policy/clinical-trials/definition.htm]'
+hierarchy:
+  parent: c_ddb1
+id: c_cb28
+props:
+  iri: http://purl.org/coar/resource_type/c_cb28
+title:
+  cs: clinical trial data
+  en: clinical trial data
+---
+description:
+  en: 'A thesis reporting the research undertaken during a period of graduate study
+    leading to a doctoral degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3051]'
+hierarchy:
+  parent: c_46ec
+id: c_db06
+props:
+  iri: http://purl.org/coar/resource_type/c_db06
+title:
+  cs: disertační práce
+  en: doctoral thesis
+---
+description:
+  en: 'A review article is a secondary source, that is, it is written about other
+    articles, and does not report original research of its own. [Source: Adapted from
+    http://apus.libanswers.com/faq/2324]'
+hierarchy:
+  parent: c_6501
+id: c_dcae04bc
+props:
+  iri: http://purl.org/coar/resource_type/c_dcae04bc
+title:
+  cs: přehledový článek
+  en: review article
+---
+description:
+  en: 'A recorded static visual representation. This class of image includes diagrams,
+    drawings, graphs, graphic designs, plans, photographs and prints. [Source: Adapted
+    from  http://purl.org/spar/fabio/StillImage]'
+hierarchy:
+  parent: c_c513
+id: c_ecc8
+props:
+  iri: http://purl.org/coar/resource_type/c_ecc8
+  zenodo: image-figure, image-plot
+  zenodo-image-figure: 'true'
+  zenodo-image-plot: 'true'
+title:
+  cs: nepohyblivý obraz
+  en: still image
+---
+description:
+  en: 'A review of others'' published work. [Source: Adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e5273]'
+hierarchy:
+  parent: c_18cf
+id: c_efa0
+props:
+  iri: http://purl.org/coar/resource_type/c_efa0
+  zenodo: peerreview, publication-peerreview
+  zenodo-peerreview: 'true'
+  zenodo-publication-peerreview: 'true'
+title:
+  cs: recenze
+  en: review
+---
+description:
+  en: 'Conference proceedings is the official record of a conference meeting. It is
+    a collection of documents which corresponds to the presentations given at the
+    conference. It may include additional content. [Source: http://www.ieee.org/documents/confprocdefined.pdf
+    ]'
+hierarchy:
+  parent: c_c94f
+id: c_f744
+props:
+  iri: http://purl.org/coar/resource_type/c_f744
+  zenodo: publication-conferenceproceeding
+  zenodo-publication-conferenceproceeding: 'true'
+title:
+  cs: sborník konference
+  en: conference proceedings
+---
+description:
+  en: An Item appearing in a magazine (a general interest or specific focus periodical).
+    This item is often shorter in length, is submitted by in-house and external authors.
+    Adapted from MAGAZINE Definition & Meaning - Black's Law Dictionary (thelawdictionary.org)
+hierarchy:
+  parent: c_2cd9
+id: 43KC-T6DC
+props:
+  iri: http://purl.org/coar/resource_type/43KC-T6DC
+title:
+  cs: magazine article
+  en: magazine article
+---
+description:
+  en: 'A commentary is a more in-depth analysis written to draw attention to a work
+    already published. Commentaries are somewhat like “reviews” in that the author
+    presents his or her analysis of a work and why it  would be of interest to a specific
+    audience. [Source: https://www.enago.com/academy/perspective-opinion-and-commentary-pieces]'
+hierarchy:
+  parent: c_efa0
+id: D97F-VB57
+props:
+  iri: http://purl.org/coar/resource_type/D97F-VB57
+title:
+  cs: commentary
+  en: commentary
+---
+description:
+  en: In the context of systematic reviews and meta-analyses, a protocol is a document
+    that presents an explicit plan for a systematic review. The protocol details the
+    rationale and a priori methodological and analytical approach of the review. https://www.bmj.com/content/349/bmj.g7647
+hierarchy:
+  parent: c_93fc
+id: DX5J-TA9R
+props:
+  iri: http://purl.org/coar/resource_type/DX5J-TA9R
+title:
+  cs: knowledge synthesis protocol
+  en: knowledge synthesis protocol
+---
+description:
+  en: 'An evaluation of scientific, academic, or professional work by others working
+    in the same field. [Source: Adopted from https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf]'
+hierarchy:
+  parent: c_efa0
+id: H9BQ-739P
+props:
+  iri: http://purl.org/coar/resource_type/H9BQ-739P
+title:
+  cs: peer review
+  en: peer review
+---
+description:
+  en: 'A set of slides containing text, tables or figures, designed to communicate
+    ideas or research results, for projection and viewing by an audience at a conference,
+    symposium, seminar, lecture, workshop or other gatherings. [Source: Adapted from
+    hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e4880]'
+hierarchy:
+  parent: c_c94f
+id: R60J-J5BD
+props:
+  iri: http://purl.org/coar/resource_type/R60J-J5BD
+title:
+  cs: conference presentation
+  en: conference presentation
+---
+description:
+  en: 'The protocol is a detailed plan of the research study including a project summary,
+    project description covering the rationale, objectives, methodology, data management
+    and analysis, ethical considerations, gender issues and references. [Source: Adapted
+    from https://www.who.int/publications/i/item/a-practical-guide-for-health-researchers]'
+hierarchy:
+  parent: c_93fc
+id: YZ1N-ZFT9
+props:
+  iri: http://purl.org/coar/resource_type/YZ1N-ZFT9
+title:
+  cs: research protocol
+  en: research protocol
+---
+description:
+  en: Media that makes use of images (usually "moving"), with or without sound, over
+    a period of playback time. [Source :https://support.contributors.jstor.org/hc/en-us/articles/11971132444439-JSTOR-Content-and-Resource-Types]
+hierarchy:
+  parent: c_8a7e
+id: c_12ce
+props:
+  iri: http://purl.org/coar/resource_type/c_12ce
+  zenodo: video
+  zenodo-video: 'true'
+title:
+  cs: video
+  en: video
+---
+description:
+  en: 'A policy report presents what is known about a particular issue or problem.
+    It assembles facts and evidence to help readers understand complex issues and
+    form a response. It might aim to be neutral, or it might aim to persuade readers
+    in a particular direction. [Source: https://www.uow.edu.au/student/learning-co-op/assessments/policy-report/#]'
+hierarchy:
+  parent: c_93fc
+id: c_186u
+props:
+  iri: http://purl.org/coar/resource_type/c_186u
+title:
+  cs: zpráva k politice nebo strategii
+  en: policy report
+---
+description:
+  en: 'A display poster, typically containing text with illustrative figures and/or
+    tables, usually reporting research results or proposing hypotheses, submitted
+    for acceptance to and/or presented at a conference, seminar, symposium, workshop
+    or similar event. Use this label when the poster is not published in a proceeding.
+    [Source: http://purl.org/spar/fabio/ConferencePoster]'
+hierarchy:
+  parent: c_c94f
+id: c_18co
+props:
+  iri: http://purl.org/coar/resource_type/c_18co
+title:
+  cs: konferenční poster nezahrnutý ve sborníku
+  en: conference poster not in proceedings
+---
+description:
+  en: 'A paper, typically the realization of a research paper reporting original research
+    findings. Use this label when the paper is not published in a proceeding. [Source:
+    Adapted from http://purl.org/spar/fabio/ConferencePaper]'
+hierarchy:
+  parent: c_c94f
+id: c_18cp
+props:
+  iri: http://purl.org/coar/resource_type/c_18cp
+title:
+  cs: konferenční příspěvek nezahrnutý ve sborníku
+  en: conference paper not in proceedings
+---
+description:
+  en: 'A document that describes the process, progress, or results of technical or
+    scientific research or the state of a technical or scientific research problem.
+    It might also include recommendations and conclusions of the research. [Source:
+    http://guides.library.cornell.edu/ecommons/types]'
+hierarchy:
+  parent: c_93fc
+id: c_18gh
+props:
+  iri: http://purl.org/coar/resource_type/c_18gh
+  zenodo: publication-technicalnote
+  zenodo-publication-technicalnote: 'true'
+title:
+  cs: technická zpráva
+  en: technical report
+---
+description:
+  en: 'A document containing a project report, intended to be delivered to a customer
+    or funding agency describing the results achieved within a specific project. [Source:
+    https://sparontologies.github.io/fabio/current/fabio.html#d4e5183]'
+hierarchy:
+  parent: c_93fc
+id: c_18op
+props:
+  iri: http://purl.org/coar/resource_type/c_18op
+  zenodo: publication-deliverable
+  zenodo-publication-deliverable: 'true'
+title:
+  cs: výstup projektu
+  en: project deliverable
+---
+description:
+  en: 'It is publication that reports on the findings of a research project or alternatively
+    scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]'
+hierarchy:
+  parent: c_93fc
+id: c_18ws
+props:
+  iri: http://purl.org/coar/resource_type/c_18ws
+title:
+  cs: výzkumná zpráva
+  en: research report
+---
+description:
+  en: 'A formal note distributed internally to one or more persons in a company, agency,
+    organization, or institution, with a header indicating the date it was sent and
+    stating to whom it is addressed (To:), from whom it is sent (From:), and the subject
+    of the text (Re:). Unlike a letter, a memo does not require a full salutation
+    or signature at the end of the text--the sender may simply initial his or her
+    name in the header. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx#memorandum]'
+hierarchy:
+  parent: c_93fc
+id: c_18wz
+props:
+  iri: http://purl.org/coar/resource_type/c_18wz
+title:
+  cs: memorandum
+  en: memorandum
+---
+description:
+  en: A research article is a primary source, that is, it reports the methods and
+    results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)
+hierarchy:
+  parent: c_6501
+id: c_2df8fbb1
+props:
+  iri: http://purl.org/coar/resource_type/c_2df8fbb1
+title:
+  cs: původní článek
+  en: research article
+---
+description:
+  en: 'A paper, published within a conference proceeding, typically the realization
+    of a research paper reporting original research findings. [Source: Adapted from
+    https://sparontologies.github.io/fabio/current/fabio.html#d4e2635]'
+hierarchy:
+  parent: c_f744
+id: c_5794
+props:
+  iri: http://purl.org/coar/resource_type/c_5794
+  zenodo: publication-conferencepaper
+  zenodo-publication-conferencepaper: 'true'
+title:
+  cs: příspěvek na konferenci
+  en: conference paper
+---
+description:
+  en: 'A display poster, published within a conference proceeding, typically containing
+    text with illustrative figures and/or tables, usually reporting research results
+    or proposing hypotheses, submitted for acceptance to and/or presented at a conference,
+    seminar, symposium, workshop or similar event. [Source: Adapted https://sparontologies.github.io/fabio/current/fabio.html#d4e2648]'
+hierarchy:
+  parent: c_f744
+id: c_6670
+props:
+  iri: http://purl.org/coar/resource_type/c_6670
+  zenodo: poster
+  zenodo-poster: 'true'
+title:
+  cs: poster na konferenci
+  en: conference poster
+---
+description:
+  en: 'A work that reports on the results of a research study to evaluate interventions
+    or exposures on biomedical or health-related outcomes. The two main types of clinical
+    studies are interventional studies (clinical trials) and observational studies.
+    While most clinical studies concern humans, this publication type may be used
+    for clinical veterinary articles meeting the requisites for humans. [Source: https://www.ncbi.nlm.nih.gov/mesh/2009830]'
+hierarchy:
+  parent: c_93fc
+id: c_7877
+props:
+  iri: http://purl.org/coar/resource_type/c_7877
+title:
+  cs: clinical study
+  en: clinical study
+---
+description:
+  en: 'A written review and critical analysis of the content, scope and quality of
+    a book or other monographic work. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300]'
+hierarchy:
+  parent: c_efa0
+id: c_ba08
+props:
+  iri: http://purl.org/coar/resource_type/c_ba08
+title:
+  cs: recenze knihy
+  en: book review

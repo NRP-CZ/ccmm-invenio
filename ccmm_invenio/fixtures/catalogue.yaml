@@ -1,0 +1,129 @@
+vocabulary-access-rights:
+  - writer: vocabulary
+    vocabulary: access-rights
+    pid_type: v-ar
+    update: true
+    title:
+      cs: Přístupová práva
+      en: Access rights
+  - source: ccmm_access_rights.yaml
+
+vocabulary-agent-roles:
+  - writer: vocabulary
+    vocabulary: agent-roles
+    pid_type: v-agr
+    update: true
+    title:
+      cs: Role agenta
+      en: Agent roles
+  - source: ccmm_agent_role.yaml
+
+vocabulary-title-types:
+  - writer: vocabulary
+    vocabulary: title-types
+    pid_type: v-tt
+    update: true
+    title:
+      cs: Typy názvů
+      en: Title types
+  - source: ccmm_alternate_title.yaml
+
+vocabulary-contributor-types:
+  - writer: vocabulary
+    vocabulary: contributor-types
+    pid_type: v-ct
+    update: true
+    title:
+      cs: Typy přispěvatelů
+      en: Contributor types
+  - source: ccmm_contributor_type.yaml
+
+vocabulary-file-types:
+  - writer: vocabulary
+    vocabulary: file-types
+    pid_type: v-ft
+    update: true
+    title:
+      cs: Typy souborů
+      en: File types
+  - source: ccmm_file_types.yaml
+
+vocabulary-languages:
+  - writer: vocabulary
+    vocabulary: languages
+    pid_type: v-lan
+    update: true
+    title:
+      cs: Jazyky
+      en: Languages
+  - source: ccmm_languages.yaml
+
+vocabulary-licenses:
+  - writer: vocabulary
+    vocabulary: licenses
+    pid_type: v-lic
+    update: true
+    title:
+      cs: Licence
+      en: Licenses
+  - source: ccmm_licenses.yaml
+
+vocabulary-location-relation:
+  - writer: vocabulary
+    vocabulary: location-relations
+    pid_type: v-lr
+    update: true
+    title:
+      cs: Vztah k lokalitě
+      en: Location relation
+  - source: ccmm_location_relation.yaml
+
+vocabulary-relation-types:
+  - writer: vocabulary
+    vocabulary: relation-types
+    pid_type: v-rel
+    update: true
+    title:
+      cs: Typy vztahů
+      en: Relation types
+  - source: ccmm_relation_type.yaml
+
+vocabulary-resource-types:
+  - writer: vocabulary
+    vocabulary: resource-types
+    pid_type: v-res
+    update: true
+    title:
+      cs: Typy zdrojů
+      en: Resource types
+  - source: ccmm_resource_types.yaml
+
+vocabulary-subject-categories:
+  - writer: vocabulary
+    vocabulary: subject-categories
+    pid_type: v-suc
+    update: true
+    title:
+      cs: Kategorie předmětů
+      en: Subject categories
+  - source: ccmm_subject_category.yaml
+
+vocabulary-subject-schemes:
+  - writer: vocabulary
+    vocabulary: subject-schemes
+    pid_type: v-sus
+    update: true
+    title:
+      cs: Schémata předmětů
+      en: Subject schemes
+  - source: ccmm_subject_schemes.yaml
+
+vocabulary-time-reference:
+  - writer: vocabulary
+    vocabulary: time-references
+    pid_type: v-tr
+    update: true
+    title:
+      cs: Časové reference
+      en: Time references
+  - source: ccmm_time_reference.yaml

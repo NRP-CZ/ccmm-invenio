@@ -1,0 +1,54 @@
+description:
+  en: Metadata only access refers to a resource in which access is limited to metadata
+    only. The resource itself is described by the metadata, but neither is directly
+    available through the system or platform nor can be referenced to an open access
+    copy in an external journal or trustworthy archive.
+id: c_14cb
+props:
+  iri: http://purl.org/coar/access_right/c_14cb
+title:
+  cs: pouze metadata
+  en: metadata only access
+---
+description:
+  en: 'Restricted access refers to a resource that is available in a system but with
+    some type of restriction for full open access. This type of access can occur in
+    a number of different situations. Some examples are described below:
+
+    The user must log-in to the system in order to access the resource
+
+    The user must send an email to the author or system administrator to access the
+    resource
+
+    Access to the resource is restricted to a specific community (e.g. limited to
+    a university community)'
+id: c_16ec
+props:
+  iri: http://purl.org/coar/access_right/c_16ec
+title:
+  cs: omezený přístup
+  en: restricted access
+---
+description:
+  en: Open access refers to a resource that is immediately and permanently online,
+    and free for all on the Web, without financial and technical barriers.The resource
+    is either stored in the repository or referenced to an external journal or trustworthy
+    archive.
+id: c_abf2
+props:
+  iri: http://purl.org/coar/access_right/c_abf2
+title:
+  cs: otevřený přístup
+  en: open access
+---
+description:
+  en: Embargoed access refers to a resource that is metadata only access until released
+    for open access on a certain date. Embargoes can be required by publishers and
+    funders policies, or set by the author (e.g such as in the case of theses and
+    dissertations).
+id: c_f1cf
+props:
+  iri: http://purl.org/coar/access_right/c_f1cf
+title:
+  cs: odložené zpřístupnění
+  en: embargoed access
