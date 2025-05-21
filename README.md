@@ -9,7 +9,9 @@ This library provides:
 
 ## Installation
 
+```bash
 pip install ccmm-invenio
+```
 
 ## Usage
 

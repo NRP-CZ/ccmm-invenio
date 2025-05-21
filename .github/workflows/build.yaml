@@ -55,11 +55,10 @@ jobs:
 
       - name: Build package to publish
         run: |
-          .venv-builder/bin/python setup.py sdist bdist_wheel
+          .venv-tests/bin/python setup.py sdist bdist_wheel
 
       - name: Freeze packages
         run: |
-          .venv-builder/bin/pip freeze > requirements.txt
           .venv-tests/bin/pip freeze >>requirements.txt
 
       - name: Archive production artifacts
