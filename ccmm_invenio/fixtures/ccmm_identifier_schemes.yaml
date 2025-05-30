@@ -1,0 +1,44 @@
+id: ror
+title:
+  cs: ROR
+  en: ROR
+props:
+  iri: https://ror.org/
+---
+id: orcid
+title:
+  cs: ORCID
+  en: ORCID
+props:
+  iri: https://orcid.org/
+---
+id: doi
+title:
+  cs: DataCite DOI
+  en: DataCite DOI
+props:
+  iri: https://doi.org/
+---
+id: ares
+title:
+  cs: ARES
+  en: ARES
+description:
+  cs: Administrativní registr ekonomických subjektů
+  en: Administrative Register of Economic Subjects
+props:
+  iri: https://ares.gov.cz/
+---
+id: scopusID
+title:
+  cs: Scopus ID
+  en: Scopus ID
+props:
+  iri: https://www.scopus.com/
+---
+id: researcherID
+title:
+  cs: Researcher ID
+  en: Researcher ID
+props:
+  iri: https://www.webofscience.com/

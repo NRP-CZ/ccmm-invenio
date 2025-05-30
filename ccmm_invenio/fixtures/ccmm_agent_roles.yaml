@@ -1,399 +1,430 @@
 description:
-  cs: ''
-  en: The main researchers involved in producing the data, or the authors of the publication,
+  cs: ""
+  en:
+    The main researchers involved in producing the data, or the authors of the publication,
     in priority order. For instruments this is the manufacturer or developer of the
     instrument. To supply multiple creators, repeat this property.
 id: Creator
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Creator
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator
 title:
   cs: Autor
   en: Creator
 ---
 description:
-  cs: ''
-  en: The name of the entity that holds, archives, publishes, prints, distributes,
+  cs: ""
+  en:
+    The name of the entity that holds, archives, publishes, prints, distributes,
     releases, issues, or produces the resource. This property will be used to formulate
     the citation, so consider the prominence of the role.
 id: Publisher
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Publisher
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher
 title:
   cs: Vydavatel
   en: Publisher
 ---
 description:
-  cs: ''
-  en: The institution or person responsible for collecting, managing, distributing,
+  cs: ""
+  en:
+    The institution or person responsible for collecting, managing, distributing,
     or otherwise contributing to the development of the resource. To supply multiple
     contributors, repeat this property.
 id: Contributor
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Contributor
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor
 title:
-  cs: ''
+  cs: ""
   en: Contributor
 ---
 description:
-  cs: ''
-  en: 'Person with knowledge of how to access, troubleshoot, or otherwise field issues
-    related to the resource.
-
-    May also be the “Point of Contact” in an organisation that controls access to
-    the resource, if that organisation is different from the Publisher, Distributor,
-    and Data Manager.'
+  cs: ""
+  en:
+    "Person with knowledge of how to access, troubleshoot, or otherwise field issues\
+    \ related to the resource.\nMay also be the \u201CPoint of Contact\u201D in an\
+    \ organisation that controls access to the resource, if that organisation is different\
+    \ from the Publisher, Distributor, and Data Manager."
 hierarchy:
   parent: Contributor
 id: ContactPerson
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: ContactPerson
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ContactPerson
 title:
-  cs: Kontaktní osoba
+  cs: "Kontaktn\xED osoba"
   en: Contact Person
 ---
 description:
-  cs: ''
-  en: 'Person/institution responsible for finding or gathering/collecting data under
+  cs: ""
+  en:
+    "Person/institution responsible for finding or gathering/collecting data under
     the guidelines of the author(s) or Principal Investigator (PI).
 
     May also be used when crediting survey conductors, interviewers, event or condition
-    observers, or persons responsible for monitoring key instrument data.'
+    observers, or persons responsible for monitoring key instrument data."
 hierarchy:
   parent: Contributor
 id: DataCollector
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: DataCollector
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCollector
 title:
-  cs: Sběratel dat
+  cs: "Sb\u011Bratel dat"
   en: Data Collector
 ---
 description:
-  cs: ''
-  en: 'Person tasked with reviewing, enhancing, cleaning, or standardizing metadata
-    and the associated data submitted for storage, use, and maintenance within a data
-    centre or repository.
-
-    While the DataManager is concerned with digital maintenance, the DataCurator’s
-    role encompasses quality assurance focused on content and metadata. DataCurator
-    responsibilities include: checking completeness of the submitted dataset against
-    the content as described by the submitter; verifying standard metadata according
-    to the applicable system or schema; adding or verifying specialized metadata to
-    add value and ensure access across disciplines; and determining how the metadata
-    might map to search engines, database products, and automated feeds.
-
-
-    Repository managers as well as data librarians working in the repository fall
-    within this category.'
+  cs: ""
+  en:
+    "Person tasked with reviewing, enhancing, cleaning, or standardizing metadata\
+    \ and the associated data submitted for storage, use, and maintenance within a\
+    \ data centre or repository.\nWhile the DataManager is concerned with digital\
+    \ maintenance, the DataCurator\u2019s role encompasses quality assurance focused\
+    \ on content and metadata. DataCurator responsibilities include: checking completeness\
+    \ of the submitted dataset against the content as described by the submitter;\
+    \ verifying standard metadata according to the applicable system or schema; adding\
+    \ or verifying specialized metadata to add value and ensure access across disciplines;\
+    \ and determining how the metadata might map to search engines, database products,\
+    \ and automated feeds.\n\nRepository managers as well as data librarians working\
+    \ in the repository fall within this category."
 hierarchy:
   parent: Contributor
 id: DataCurator
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: DataCurator
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCurator
 title:
-  cs: Kurátor dat
+  cs: "Kur\xE1tor dat"
   en: Data Curator
 ---
 description:
-  cs: ''
-  en: 'Person (or organisation with a staff of data managers, such as a data centre)
-    responsible for maintaining the finished resource.
-
-    The work done by this person or organisation ensures that the resource is periodically
-    “refreshed” in terms of software/hardware support, is kept available or is protected
-    from unauthorized access, is stored in accordance with industry standards, and
-    is handled in accordance with the records management requirements applicable to
-    it.'
+  cs: ""
+  en:
+    "Person (or organisation with a staff of data managers, such as a data centre)\
+    \ responsible for maintaining the finished resource.\nThe work done by this person\
+    \ or organisation ensures that the resource is periodically \u201Crefreshed\u201D\
+    \ in terms of software/hardware support, is kept available or is protected from\
+    \ unauthorized access, is stored in accordance with industry standards, and is\
+    \ handled in accordance with the records management requirements applicable to\
+    \ it."
 hierarchy:
   parent: Contributor
 id: DataManager
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: DataManager
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager
 title:
-  cs: Manažer dat
+  cs: "Mana\u017Eer dat"
   en: Data Manager
 ---
 description:
-  cs: ''
-  en: 'Institution tasked with responsibility to generate/disseminate copies of the
+  cs: ""
+  en:
+    "Institution tasked with responsibility to generate/disseminate copies of the
     resource in either electronic or print form.
 
-    Works stored in more than one archive/repository may credit each as a distributor.'
+    Works stored in more than one archive/repository may credit each as a distributor."
 hierarchy:
   parent: Contributor
 id: Distributor
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Distributor
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Distributor
 title:
   cs: Distributor
   en: Distributor
 ---
 description:
-  cs: ''
-  en: 'A person who oversees the details related to the publication format of the
-    resource.
-
-    Note: if the Editor is to be credited in place of multiple creators, the Editor’s
-    name may be supplied as Creator, with “(Ed.)” appended to the name.'
+  cs: ""
+  en:
+    "A person who oversees the details related to the publication format of the\
+    \ resource.\nNote: if the Editor is to be credited in place of multiple creators,\
+    \ the Editor\u2019s name may be supplied as Creator, with \u201C(Ed.)\u201D appended\
+    \ to the name."
 hierarchy:
   parent: Contributor
 id: Editor
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Editor
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Editor
 title:
   cs: Editor
   en: Editor
 ---
 description:
-  cs: ''
-  en: 'Typically, the organisation allowing the resource to be available on the internet
+  cs: ""
+  en:
+    "Typically, the organisation allowing the resource to be available on the internet
     through the provision of its hardware/software/operating support.
 
     This role normally falls on the University, research center or organization where
-    the data center/data repository belongs.'
+    the data center/data repository belongs."
 hierarchy:
   parent: Contributor
 id: HostingInstitution
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: HostingInstitution
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/HostingInstitution
 title:
-  cs: Hostující instituce
+  cs: "Hostuj\xEDc\xED instituce"
   en: Hosting Institution
 ---
 description:
-  cs: ''
-  en: 'Typically, a person or organisation responsible for the artistry and form of
-    a media product.
-
-    In the data industry, this may be a company “producing” DVDs that package data
-    for future dissemination by a distributor.'
+  cs: ""
+  en:
+    "Typically, a person or organisation responsible for the artistry and form of\
+    \ a media product.\nIn the data industry, this may be a company \u201Cproducing\u201D\
+    \ DVDs that package data for future dissemination by a distributor."
 hierarchy:
   parent: Contributor
 id: Producer
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Producer
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Producer
 title:
   cs: Producent
   en: Producer
 ---
 description:
-  cs: ''
-  en: 'Person officially designated as head of project team or sub- project team instrumental
-    in the work necessary to development of the resource.
-
-    The Project Leader is not “removed” from the work that resulted in the resource;
-    he or she remains intimately involved throughout the life of the particular project
-    team.'
+  cs: ""
+  en:
+    "Person officially designated as head of project team or sub- project team instrumental\
+    \ in the work necessary to development of the resource.\nThe Project Leader is\
+    \ not \u201Cremoved\u201D from the work that resulted in the resource; he or she\
+    \ remains intimately involved throughout the life of the particular project team."
 hierarchy:
   parent: Contributor
 id: ProjectLeader
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: ProjectLeader
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectLeader
 title:
-  cs: Vedoucí projektu
+  cs: "Vedouc\xED projektu"
   en: Project Leader
 ---
 description:
-  cs: ''
-  en: 'Person officially designated as manager of a project. Project may consist of
+  cs: ""
+  en:
+    "Person officially designated as manager of a project. Project may consist of
     one or many project teams and sub-teams.
 
     The manager of a project normally has more administrative responsibility than
-    actual work involvement.'
+    actual work involvement."
 hierarchy:
   parent: Contributor
 id: ProjectManager
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: ProjectManager
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectManager
 title:
-  cs: Projektový manažer
+  cs: "Projektov\xFD mana\u017Eer"
   en: Project Manager
 ---
 description:
-  cs: ''
-  en: 'Person on the membership list of a designated project/project team.
-
-    This vocabulary may or may not indicate the quality, quantity, or substance of
-    the person’s involvement.'
+  cs: ""
+  en:
+    "Person on the membership list of a designated project/project team.\nThis vocabulary\
+    \ may or may not indicate the quality, quantity, or substance of the person\u2019\
+    s involvement."
 hierarchy:
   parent: Contributor
 id: ProjectMember
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: ProjectMember
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectMember
 title:
-  cs: Člen projektového týmu
+  cs: "\u010Clen projektov\xE9ho t\xFDmu"
   en: Project Member
 ---
 description:
-  cs: ''
-  en: 'Institution/organisation officially appointed by a Registration Authority to
-    handle specific tasks within a defined area of responsibility.
-
-    DataCite is a Registration Agency for the International DOI Foundation (IDF).
-    One of DataCite’s tasks is to assign DOI prefixes to the allocating agents who
-    then assign the full, specific character string to data clients, provide metadata
-    back to the DataCite registry, etc.'
+  cs: ""
+  en:
+    "Institution/organisation officially appointed by a Registration Authority to\
+    \ handle specific tasks within a defined area of responsibility.\nDataCite is\
+    \ a Registration Agency for the International DOI Foundation (IDF). One of DataCite\u2019\
+    s tasks is to assign DOI prefixes to the allocating agents who then assign the\
+    \ full, specific character string to data clients, provide metadata back to the\
+    \ DataCite registry, etc."
 hierarchy:
   parent: Contributor
 id: RegistrationAgency
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: RegistrationAgency
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAgency
 title:
-  cs: Registrační agentura
+  cs: "Registra\u010Dn\xED agentura"
   en: Registration Agency
 ---
 description:
-  cs: ''
-  en: 'A standards-setting body from which Registration Agencies obtain official recognition
+  cs: ""
+  en:
+    "A standards-setting body from which Registration Agencies obtain official recognition
     and guidance.
 
     The IDF serves as the Registration Authority for the International Standards Organisation
-    (ISO) in the area/domain of Digital Object Identifiers.'
+    (ISO) in the area/domain of Digital Object Identifiers."
 hierarchy:
   parent: Contributor
 id: RegistrationAuthority
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: RegistrationAuthority
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAuthority
 title:
-  cs: Registrační autorita
+  cs: "Registra\u010Dn\xED autorita"
   en: Registration Authority
 ---
 description:
-  cs: ''
-  en: 'A person without a specifically defined role in the development of the resource,
-    but who is someone the author wishes to recognize.
-
-    Usage Notes: This person could be an author’s intellectual mentor, a person providing
-    intellectual leadership in the discipline or subject domain, etc.'
+  cs: ""
+  en:
+    "A person without a specifically defined role in the development of the resource,\
+    \ but who is someone the author wishes to recognize.\nUsage Notes: This person\
+    \ could be an author\u2019s intellectual mentor, a person providing intellectual\
+    \ leadership in the discipline or subject domain, etc."
 hierarchy:
   parent: Contributor
 id: RelatedPerson
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: RelatedPerson
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RelatedPerson
 title:
-  cs: Související osoba
+  cs: "Souvisej\xEDc\xED osoba"
   en: Related Person
 ---
 description:
-  cs: ''
-  en: 'A person involved in analysing data or the results of an experiment or formal
-    study. May indicate an intern or assistant to one of the authors who helped with
-    research but who was not so “key” as to be listed as an author.
-
-    Should be a person, not an institution. Note that a person involved in the gathering
-    of data would fall under the contributorType “DataCollector.” The researcher may
-    find additional data online and correlate it to the data collected for the experiment
-    or study, for example.'
+  cs: ""
+  en:
+    "A person involved in analysing data or the results of an experiment or formal\
+    \ study. May indicate an intern or assistant to one of the authors who helped\
+    \ with research but who was not so \u201Ckey\u201D as to be listed as an author.\n\
+    Should be a person, not an institution. Note that a person involved in the gathering\
+    \ of data would fall under the contributorType \u201CDataCollector.\u201D The\
+    \ researcher may find additional data online and correlate it to the data collected\
+    \ for the experiment or study, for example."
 hierarchy:
   parent: Contributor
 id: Researcher
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Researcher
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Researcher
 title:
-  cs: Výzkumník
+  cs: "V\xFDzkumn\xEDk"
   en: Researcher
 ---
 description:
-  cs: ''
-  en: 'Typically refers to a group of individuals with a lab, department, or division
+  cs: ""
+  en:
+    "Typically refers to a group of individuals with a lab, department, or division
     that has a specifically defined focus of activity.
 
     May operate at a narrower level of scope; may or may not hold less administrative
-    responsibility than a project team.'
+    responsibility than a project team."
 hierarchy:
   parent: Contributor
 id: ResearchGroup
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: ResearchGroup
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ResearchGroup
 title:
-  cs: Výzkumná skupina
+  cs: "V\xFDzkumn\xE1 skupina"
   en: Research Group
 ---
 description:
-  cs: ''
-  en: Person or institution owning or managing property rights, including intellectual
+  cs: ""
+  en:
+    Person or institution owning or managing property rights, including intellectual
     property rights over the resource.
 hierarchy:
   parent: Contributor
 id: RightsHolder
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: RightsHolder
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RightsHolder
 title:
-  cs: Majitel práv
+  cs: "Majitel pr\xE1v"
   en: Rights Holder
 ---
 description:
-  cs: ''
-  en: 'Person or organisation that issued a contract or under the auspices of which
+  cs: ""
+  en:
+    "Person or organisation that issued a contract or under the auspices of which
     a work has been written, printed, published, developed, etc.
 
     Includes organisations that provide in-kind support, through donation, provision
     of people or a facility or instrumentation necessary for the development of the
-    resource, etc.'
+    resource, etc."
 hierarchy:
   parent: Contributor
 id: Sponsor
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Sponsor
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Sponsor
 title:
   cs: Sponzor
   en: Sponsor
 ---
 description:
-  cs: ''
-  en: Designated administrator over one or more groups/teams working to produce a
+  cs: ""
+  en:
+    Designated administrator over one or more groups/teams working to produce a
     resource, or over one or more steps of a development process.
 hierarchy:
   parent: Contributor
 id: Supervisor
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Supervisor
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Supervisor
 title:
   cs: Supervizor
   en: Supervisor
 ---
 description:
-  cs: ''
-  en: 'A person, organization, or automated system responsible for converting the
+  cs: ""
+  en:
+    "A person, organization, or automated system responsible for converting the
     content of a resource from one language into another, preserving its meaning and
     intended message.
 
     This contributor type should be applied to DOI metadata for a resource which has
-    been translated from another resource.'
+    been translated from another resource."
 hierarchy:
   parent: Contributor
 id: Translator
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Translator
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Translator
 title:
-  cs: Překladatel
+  cs: "P\u0159ekladatel"
   en: Translator
 ---
 description:
-  cs: ''
-  en: A Work Package is a recognized data product, not all of which is included in
+  cs: ""
+  en:
+    A Work Package is a recognized data product, not all of which is included in
     publication. The package, instead, may include notes, discarded documents, etc.
     The Work Package Leader is responsible for ensuring the comprehensive contents,
     versioning, and availability of the Work Package during the development of the
@@ -403,27 +434,30 @@ hierarchy:
 id: WorkPackageLeader
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: WorkPackageLeader
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/WorkPackageLeader
 title:
-  cs: Vedoucí pracovního balíku
+  cs: "Vedouc\xED pracovn\xEDho bal\xEDku"
   en: Work Package Leader
 ---
 description:
-  cs: ''
-  en: 'Any person or institution making a significant contribution to the development
+  cs: ""
+  en:
+    "Any person or institution making a significant contribution to the development
     and/or maintenance of the resource, but whose contribution is not adequately described
     by any of the other values for contributorType.
 
     Could be a photographer, artist, or writer whose contribution helped to publicize
     the resource (as opposed to creating it), a reviewer of the resource, someone
     providing administrative services to the author (such as depositing updates into
-    an online repository, analysing usage, etc.), or one of many other roles.'
+    an online repository, analysing usage, etc.), or one of many other roles."
 hierarchy:
   parent: Contributor
 id: Other
 props:
   base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  dataCiteCode: Other
   iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Other
 title:
-  cs: Jiná role
+  cs: "Jin\xE1 role"
   en: Other

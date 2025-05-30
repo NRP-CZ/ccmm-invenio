@@ -1,0 +1,9 @@
+# coar access rights is not available in czech, so we need to add it manually
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix access: <http://purl.org/coar/access_right/> .
+
+access:c_14cb skos:prefLabel "pouze metadata"@cs .
+access:c_16ec skos:prefLabel "omezený přístup"@cs .
+access:c_abf2 skos:prefLabel "otevřený přístup"@cs .
+access:c_f1cf skos:prefLabel "odložené zpřístupnění"@cs .

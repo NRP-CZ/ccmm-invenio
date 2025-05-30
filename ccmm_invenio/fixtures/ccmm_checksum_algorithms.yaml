@@ -1,0 +1,529 @@
+id: q4040382
+props:
+  iri: http://www.wikidata.org/entity/Q4040382
+title:
+  en: Q4040382
+---
+description:
+  en: family of authenticated ciphers
+id: ascon
+props:
+  iri: http://www.wikidata.org/entity/Q116757386
+title:
+  en: Ascon
+---
+description:
+  en: cryptographic hash function
+id: blake
+props:
+  iri: http://www.wikidata.org/entity/Q108544539
+title:
+  en: BLAKE
+---
+description:
+  en: cryptographic hash function
+id: blake2
+props:
+  iri: http://www.wikidata.org/entity/Q81575703
+title:
+  en: BLAKE2
+---
+description:
+  en: cryptographic hash function
+id: blake2b
+props:
+  iri: http://www.wikidata.org/entity/Q111508990
+title:
+  en: BLAKE2b
+---
+description:
+  en: cryptographic hash function
+id: blake2bp
+props:
+  iri: http://www.wikidata.org/entity/Q111509026
+title:
+  en: BLAKE2bp
+---
+description:
+  en: cryptographic hash function
+id: blake2s
+props:
+  iri: http://www.wikidata.org/entity/Q111508995
+title:
+  en: BLAKE2s
+---
+description:
+  en: cryptographic hash function
+id: blake2sp
+props:
+  iri: http://www.wikidata.org/entity/Q111509027
+title:
+  en: BLAKE2sp
+---
+description:
+  en: cryptographic hash function
+id: blake2x
+props:
+  iri: http://www.wikidata.org/entity/Q111509029
+title:
+  en: BLAKE2x
+---
+description:
+  en: cryptographic hash function
+id: blake3
+props:
+  iri: http://www.wikidata.org/entity/Q81575705
+title:
+  en: BLAKE3
+---
+description:
+  en: hash function
+id: blue_midnight_wish
+props:
+  iri: http://www.wikidata.org/entity/Q16525572
+title:
+  en: Blue Midnight Wish
+---
+description:
+  en: obsolete cryptographic hash function
+id: elliptic_curve_only_hash
+props:
+  iri: http://www.wikidata.org/entity/Q5365792
+title:
+  en: Elliptic curve only hash
+---
+description:
+  en: family of cryptographic hash functions
+id: fast_syndrome_based_hash
+props:
+  iri: http://www.wikidata.org/entity/Q5436992
+title:
+  en: Fast Syndrome Based Hash
+---
+description:
+  en: Russian cryptographic hash function standard
+id: gost_r_3411-94_and_gost_34311-95
+props:
+  iri: http://www.wikidata.org/entity/Q3756229
+title:
+  en: GOST R 34.11-94 and GOST 34.311-95
+---
+description:
+  en: cryptographic hash function
+id: groestl
+props:
+  iri: http://www.wikidata.org/entity/Q1551743
+title:
+  en: "Gr\xF8stl"
+---
+description:
+  en: design method for cryptographic hash functions
+id: haifa_construction
+props:
+  iri: http://www.wikidata.org/entity/Q15400317
+title:
+  en: HAIFA construction
+---
+description:
+  en: cryptographic hash function
+id: has-160
+props:
+  iri: http://www.wikidata.org/entity/Q1051625
+title:
+  en: HAS-160
+---
+description:
+  en: cryptographic hash function
+id: haval
+props:
+  iri: http://www.wikidata.org/entity/Q675690
+title:
+  en: HAVAL
+---
+description:
+  en: cryptographic hash function designed by Hongjun Wu
+id: jh
+props:
+  iri: http://www.wikidata.org/entity/Q4041729
+title:
+  en: JH
+---
+description:
+  en: cryptographic hash function
+id: kmac
+props:
+  iri: http://www.wikidata.org/entity/Q131904300
+title:
+  en: KMAC
+---
+description:
+  en: Ukrainian cryptographic hash function standard
+id: kupyna
+props:
+  iri: http://www.wikidata.org/entity/Q21157922
+title:
+  en: Kupyna
+---
+description:
+  en: obsolete cryptographic hash function
+id: md2
+props:
+  iri: http://www.wikidata.org/entity/Q741247
+title:
+  en: MD2
+---
+description:
+  en: obsolete cryptographic hash function
+id: md4
+props:
+  iri: http://www.wikidata.org/entity/Q1144542
+title:
+  en: MD4
+---
+description:
+  en: message-digest hashing algorithm
+id: md5
+props:
+  iri: http://www.wikidata.org/entity/Q185235
+title:
+  en: MD5
+---
+description:
+  en: cryptographic hash function
+id: md6
+props:
+  iri: http://www.wikidata.org/entity/Q2031069
+title:
+  en: MD6
+---
+description:
+  en: cryptographic hash function, based on an arbitrary block cipher
+id: mdc-2
+props:
+  iri: http://www.wikidata.org/entity/Q3841252
+title:
+  en: MDC-2
+---
+description:
+  en: method of building collision-resistant cryptographic hash functions
+id: merkle-damgard_construction
+props:
+  iri: http://www.wikidata.org/entity/Q1757463
+title:
+  en: "Merkle\u2013Damg\xE5rd construction"
+---
+description:
+  en: group of cryptographic protocols
+id: message_digest
+props:
+  iri: http://www.wikidata.org/entity/Q1923906
+title:
+  en: Message Digest
+---
+description:
+  en: obsolete cryptographic hash function
+id: n-hash
+props:
+  iri: http://www.wikidata.org/entity/Q2354940
+title:
+  en: N-Hash
+---
+description:
+  en: classified U.S. cryptographic algorithms
+id: nsa_suite_a_cryptography
+props:
+  iri: http://www.wikidata.org/entity/Q16934823
+title:
+  en: NSA Suite A Cryptography
+---
+description:
+  en: cryptographic hash function
+id: parallelhash
+props:
+  iri: http://www.wikidata.org/entity/Q131904308
+title:
+  en: ParallelHash
+---
+description:
+  en: property of cryptographic hash functions
+id: puzzle_friendliness
+props:
+  iri: http://www.wikidata.org/entity/Q124518107
+title:
+  en: Puzzle friendliness
+---
+description:
+  en: family of lightweight cryptographic hash functions
+id: quark
+props:
+  iri: http://www.wikidata.org/entity/Q30678451
+title:
+  en: Quark
+---
+description:
+  en: cryptographic hash function
+id: ripemd
+props:
+  iri: http://www.wikidata.org/entity/Q2124306
+title:
+  en: RIPEMD
+---
+description:
+  en: cryptographic hash function
+id: ripemd-128
+props:
+  iri: http://www.wikidata.org/entity/Q3415207
+title:
+  en: RIPEMD-128
+---
+description:
+  en: cryptographic hash function
+id: ripemd-160
+props:
+  iri: http://www.wikidata.org/entity/Q20745583
+title:
+  en: RIPEMD-160
+---
+description:
+  en: cryptographic hash function
+id: ripemd-256
+props:
+  iri: http://www.wikidata.org/entity/Q7888922
+title:
+  en: RIPEMD-256
+---
+id: ripemd-320
+props:
+  iri: http://www.wikidata.org/entity/Q4047856
+title:
+  en: RIPEMD-320
+---
+description:
+  en: family of cryptographic hash functions
+id: sha_hash_functions
+props:
+  iri: http://www.wikidata.org/entity/Q387688
+title:
+  en: SHA hash functions
+---
+description:
+  en: set of cryptographic hash functions designed by the NSA
+id: sha-2
+props:
+  iri: http://www.wikidata.org/entity/Q1968605
+title:
+  en: SHA-2
+---
+description:
+  en: cryptographic hash function
+id: sha-224
+props:
+  iri: http://www.wikidata.org/entity/Q110651417
+title:
+  en: SHA-224
+---
+description:
+  en: cryptographic hash function
+id: sha-256
+props:
+  iri: http://www.wikidata.org/entity/Q110651361
+title:
+  en: SHA-256
+---
+description:
+  en: cryptographic hash function
+id: sha-384
+props:
+  iri: http://www.wikidata.org/entity/Q110651380
+title:
+  en: SHA-384
+---
+description:
+  en: cryptographic hash function
+id: sha-512
+props:
+  iri: http://www.wikidata.org/entity/Q110651371
+title:
+  en: SHA-512
+---
+description:
+  en: cryptographic hash function
+id: sha-512/224
+props:
+  iri: http://www.wikidata.org/entity/Q110651434
+title:
+  en: SHA-512/224
+---
+description:
+  en: cryptographic hash function
+id: sha-512/256
+props:
+  iri: http://www.wikidata.org/entity/Q110651437
+title:
+  en: SHA-512/256
+---
+description:
+  en: cryptographic hash function
+id: sha3-224
+props:
+  iri: http://www.wikidata.org/entity/Q110651442
+title:
+  en: SHA3-224
+---
+description:
+  en: cryptographic hash function
+id: sha3-256
+props:
+  iri: http://www.wikidata.org/entity/Q110651443
+title:
+  en: SHA3-256
+---
+description:
+  en: cryptographic hash function
+id: sha3-384
+props:
+  iri: http://www.wikidata.org/entity/Q110651447
+title:
+  en: SHA3-384
+---
+description:
+  en: cryptographic hash function
+id: sha3-512
+props:
+  iri: http://www.wikidata.org/entity/Q110651449
+title:
+  en: SHA3-512
+---
+description:
+  en: cryptographic hash function
+id: shake128
+props:
+  iri: http://www.wikidata.org/entity/Q110651451
+title:
+  en: SHAKE128
+---
+description:
+  en: cryptographic hash function
+id: shake256
+props:
+  iri: http://www.wikidata.org/entity/Q110651453
+title:
+  en: SHAKE256
+---
+id: shavite-3
+props:
+  iri: http://www.wikidata.org/entity/Q16530359
+title:
+  en: SHAvite-3
+---
+description:
+  en: cryptographic hash function
+id: smash
+props:
+  iri: http://www.wikidata.org/entity/Q7391081
+title:
+  en: SMASH
+---
+description:
+  en: cryptographic hash function
+id: shangmi_3
+props:
+  iri: http://www.wikidata.org/entity/Q28410000
+title:
+  en: ShangMi 3
+---
+description:
+  en: cryptographic hash function
+id: skein
+props:
+  iri: http://www.wikidata.org/entity/Q1142190
+title:
+  en: Skein
+---
+description:
+  en: cryptographic hash function
+id: snefru
+props:
+  iri: http://www.wikidata.org/entity/Q1432392
+title:
+  en: Snefru
+---
+description:
+  en: Russian cryptographic hash function standard
+id: streebog
+props:
+  iri: http://www.wikidata.org/entity/Q16635204
+title:
+  en: Streebog
+---
+description:
+  en: cryptographic hash function
+id: tiger
+props:
+  iri: http://www.wikidata.org/entity/Q1935697
+title:
+  en: Tiger
+---
+description:
+  en: cryptographic hash function
+id: tuplehash
+props:
+  iri: http://www.wikidata.org/entity/Q131904302
+title:
+  en: TupleHash
+---
+description:
+  en: cryptographic hash function
+id: very_smooth_hash
+props:
+  iri: http://www.wikidata.org/entity/Q3553011
+title:
+  en: Very smooth hash
+---
+description:
+  en: cryptographic hash function
+id: whirlpool
+props:
+  iri: http://www.wikidata.org/entity/Q1893324
+title:
+  en: Whirlpool
+---
+description:
+  en: cryptographic hash function
+id: cshake
+props:
+  iri: http://www.wikidata.org/entity/Q131904294
+title:
+  en: cSHAKE
+---
+description:
+  en: cryptographic hash function that is designed to resist collision
+id: collision_resistant_hash
+props:
+  iri: http://www.wikidata.org/entity/Q85929139
+title:
+  en: collision resistant hash
+---
+description:
+  en: functions both usable as cryptographic hash and stream cypher
+id: cryptographic_hash_and_stream_cipher_function
+props:
+  iri: http://www.wikidata.org/entity/Q19845304
+title:
+  en: cryptographic hash and stream cipher function
+---
+description:
+  en: cryptographic hash function created by composing SHA-256 with itself
+id: double_sha-256
+props:
+  iri: http://www.wikidata.org/entity/Q124624061
+title:
+  en: double SHA-256
+---
+description:
+  en: password-based key derivation function
+id: yescrypt
+props:
+  iri: http://www.wikidata.org/entity/Q110734564
+title:
+  en: yescrypt

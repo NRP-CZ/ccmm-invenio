@@ -127,3 +127,23 @@ vocabulary-time-reference:
       cs: Časové reference
       en: Time references
   - source: ccmm_time_reference_types.yaml
+
+vocabulary-identifier-schemes:
+  - writer: vocabulary
+    vocabulary: identifier-schemes
+    pid_type: v-ids
+    update: true
+    title:
+      cs: Schémata identifikátorů
+      en: Identifier schemes
+  - source: ccmm_identifier_schemes.yaml
+
+vocabulary-checksum-algorithms:
+  - writer: vocabulary
+    vocabulary: checksum-algorithms
+    pid_type: v-csa
+    update: true
+    title:
+      cs: Algoritmy kontrolních součtů
+      en: Checksum algorithms
+  - source: ccmm_checksum_algorithms.yaml
