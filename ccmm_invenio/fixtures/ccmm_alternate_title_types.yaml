@@ -1,7 +1,9 @@
 description:
-  cs: Alternativní název datasetu - může se jednat o uvedení nebo naopak rozepsání
+  cs:
+    Alternativní název datasetu - může se jednat o uvedení nebo naopak rozepsání
     zkratky, přepisem číslených hodnot atd.
-  en: Alternative dataset title - could be abbreviations, transcribing numerical values,
+  en:
+    Alternative dataset title - could be abbreviations, transcribing numerical values,
     etc.
 id: AlternativeTitle
 props:
