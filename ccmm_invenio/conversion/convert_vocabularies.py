@@ -23,43 +23,45 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
 
     converters: list[tuple[VocabularyReader, Path]] = [
         (
+            # TODO: the CSV does not include dataCiteCode, we needd to add it there !!!
             CSVReader("Agent Role", root_dir / "input/CCMM_slovniky(AgentRole).csv"),
-            root_dir / "fixtures/ccmm_agent_role.yaml",
+            root_dir / "fixtures/ccmm_agent_roles.yaml",
         ),
         (
             CSVReader(
                 "Alternate Title",
                 root_dir / "input/CCMM_slovniky(AlternateTitle).csv",
             ),
-            root_dir / "fixtures/ccmm_alternate_title.yaml",
+            root_dir / "fixtures/ccmm_alternate_title_types.yaml",
         ),
         (
             CSVReader(
                 "Location Relation",
                 root_dir / "input/CCMM_slovniky(LocationRelation).csv",
             ),
-            root_dir / "fixtures/ccmm_location_relation.yaml",
+            root_dir / "fixtures/ccmm_location_relation_types.yaml",
         ),
         (
             CSVReader(
                 "Relation Type",
                 root_dir / "input/CCMM_slovniky(RelationType).csv",
+                extra=[root_dir / "input/addon_relation_types.csv"],
             ),
-            root_dir / "fixtures/ccmm_relation_type.yaml",
+            root_dir / "fixtures/ccmm_relation_types.yaml",
         ),
         (
             CSVReader(
                 "Subject Category",
                 root_dir / "input/CCMM_slovniky(SubjectCategory).csv",
             ),
-            root_dir / "fixtures/ccmm_subject_category.yaml",
+            root_dir / "fixtures/ccmm_subject_categories.yaml",
         ),
         (
             CSVReader(
                 "Time Reference",
                 root_dir / "input/CCMM_slovniky(TimeReference).csv",
             ),
-            root_dir / "fixtures/ccmm_time_reference.yaml",
+            root_dir / "fixtures/ccmm_time_reference_types.yaml",
         ),
         (
             SPARQLReader(
@@ -153,7 +155,7 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
                     },
                 ),
             ),
-            root_dir / "fixtures/ccmm_contributor_type.yaml",
+            root_dir / "fixtures/ccmm_contributor_types.yaml",
         ),
     ]
 
