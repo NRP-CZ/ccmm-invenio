@@ -42,3 +42,38 @@ title:
   en: Researcher ID
 props:
   iri: https://www.webofscience.com/
+---
+id: iri
+title:
+  cs: IRI
+  en: IRI
+props:
+  iri: urn:iri
+---
+id: arxiv
+title:
+  cs: arXiv
+  en: arXiv
+props:
+  iri: https://arxiv.org/
+---
+id: isni
+title:
+  cs: ISNI
+  en: ISNI
+props:
+  iri: https://isni.org/
+---
+id: isbn
+title:
+  cs: ISBN
+  en: ISBN
+props:
+  iri: https://www.isbn-international.org/
+---
+id: issn
+title:
+  cs: ISSN
+  en: ISSN
+props:
+  iri: https://www.issn.org/
