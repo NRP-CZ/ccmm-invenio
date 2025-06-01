@@ -77,3 +77,10 @@ title:
   en: ISSN
 props:
   iri: https://www.issn.org/
+---
+id: handle
+title:
+  cs: Handle
+  en: Handle
+props:
+  iri: https://handle.net/
