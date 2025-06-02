@@ -114,6 +114,9 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
                     "zenodo": """
                         ?concept props:zenodo ?zenodo
                     """,
+                    "lindat": """
+                        ?concept props:lindat ?lindat
+                    """,
                 },
                 prefixes={
                     "props": "http://vocabs.ccmm.cz/props/",

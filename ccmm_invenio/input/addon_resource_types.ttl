@@ -56,3 +56,14 @@ coar_rt:c_c513 props:zenodo "image" .
 coar_rt:c_1843 props:zenodo "model" .
 coar_rt:c_5ce6 props:zenodo "software-computationalnotebook" .
 coar_rt:c_393c props:zenodo "workflow" .
+
+
+coar_rt:c_12ce props:lindat "clip" .            # video
+coar_rt:c_18cf props:lindat "corpus" .          # text
+coar_rt:c_5ce6 props:lindat "toolService" .     # software
+coar_rt:GSZA-Y7V7 props:lindat "lexicalConceptualResource" .    # knowledge organization system
+coar_rt:c_18cf props:lindat "languageDescription" . # text
+coar_rt:c_ddb1 props:lindat "Spreadsheet" .     # dataset
+coar_rt:c_ecc8 props:lindat "OBRAZ" .           # still image
+coar_rt:c_86bc props:lindat "bibliography" .    # bibliography
+coar_rt:c_e059 props:lindat "onlineCourse" .    # learning object

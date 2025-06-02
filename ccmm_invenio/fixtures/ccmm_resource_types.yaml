@@ -52,6 +52,7 @@ description:
 id: GSZA-Y7V7
 props:
   iri: http://purl.org/coar/resource_type/GSZA-Y7V7
+  lindat: lexicalConceptualResource
 title:
   cs: knowledge organization system
   en: knowledge organization system
@@ -164,6 +165,7 @@ description:
 id: c_18cf
 props:
   iri: http://purl.org/coar/resource_type/c_18cf
+  lindat: corpus, languageDescription
   zenodo: publication, publication-annotationcollection, publication-datapaper, publication-milestone,
     publication-standard, publication-taxonomictreatment
   zenodo-publication: 'true'
@@ -264,6 +266,7 @@ description:
 id: c_5ce6
 props:
   iri: http://purl.org/coar/resource_type/c_5ce6
+  lindat: toolService
   zenodo: image-diagram, software, software-computationalnotebook
   zenodo-image-diagram: 'true'
   zenodo-software: 'true'
@@ -299,6 +302,7 @@ description:
 id: c_ddb1
 props:
   iri: http://purl.org/coar/resource_type/c_ddb1
+  lindat: Spreadsheet
   zenodo: dataset
   zenodo-dataset: 'true'
 title:
@@ -312,6 +316,7 @@ description:
 id: c_e059
 props:
   iri: http://purl.org/coar/resource_type/c_e059
+  lindat: onlineCourse
 title:
   cs: learning object
   en: learning object
@@ -1032,6 +1037,7 @@ hierarchy:
 id: c_86bc
 props:
   iri: http://purl.org/coar/resource_type/c_86bc
+  lindat: bibliography
 title:
   cs: bibliografie
   en: bibliography
@@ -1233,6 +1239,7 @@ hierarchy:
 id: c_ecc8
 props:
   iri: http://purl.org/coar/resource_type/c_ecc8
+  lindat: OBRAZ
   zenodo: image-figure, image-plot
   zenodo-image-figure: 'true'
   zenodo-image-plot: 'true'
@@ -1358,6 +1365,7 @@ hierarchy:
 id: c_12ce
 props:
   iri: http://purl.org/coar/resource_type/c_12ce
+  lindat: clip
   zenodo: video
   zenodo-video: 'true'
 title:
