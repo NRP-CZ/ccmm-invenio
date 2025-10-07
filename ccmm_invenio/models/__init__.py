@@ -25,7 +25,7 @@ from oarepo_rdm.model.presets import rdm_minimal_preset
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
 
 if TYPE_CHECKING:
-    from collections.abc import Callable, Generator
+    from collections.abc import Generator
 
     from oarepo_model.builder import InvenioModelBuilder
     from oarepo_model.customizations import Customization
@@ -35,21 +35,21 @@ if TYPE_CHECKING:
 def ccmm_1_1_0() -> dict[str, Any]:
     """Return RDM specific model types."""
     return {
-        **from_yaml("1.1.0a1-2025-10-03/ccmm.yaml", __file__)(),
-        **from_yaml("1.1.0a1-2025-10-03/ccmm-vocabularies.yaml", __file__)(),
-        **from_yaml("1.1.0a1-2025-10-03/geojson-1.1.0.yaml", __file__)(),
-        **from_yaml("1.1.0a1-2025-10-03/gml-1.1.0.yaml", __file__)(),
+        **from_yaml("1.1.0a1-2025-10-03/ccmm.yaml", __file__),
+        **from_yaml("1.1.0a1-2025-10-03/ccmm-vocabularies.yaml", __file__),
+        **from_yaml("1.1.0a1-2025-10-03/geojson-1.1.0.yaml", __file__),
+        **from_yaml("1.1.0a1-2025-10-03/gml-1.1.0.yaml", __file__),
     }
 
 
 def ccmm_production_1_1_0() -> dict[str, Any]:
     """Return RDM specific model types."""
     return {
-        **from_yaml("1.1.0a1-2025-10-03/ccmm.yaml", __file__)(),
-        **from_yaml("1.1.0a1-2025-10-03/ccmm-invenio.yaml", __file__)(),
-        **from_yaml("1.1.0a1-2025-10-03/ccmm-vocabularies.yaml", __file__)(),
-        **from_yaml("1.1.0a1-2025-10-03/geojson-1.1.0.yaml", __file__)(),
-        **from_yaml("1.1.0a1-2025-10-03/gml-1.1.0.yaml", __file__)(),
+        **from_yaml("1.1.0a1-2025-10-03/ccmm.yaml", __file__),
+        **from_yaml("1.1.0a1-2025-10-03/ccmm-invenio.yaml", __file__),
+        **from_yaml("1.1.0a1-2025-10-03/ccmm-vocabularies.yaml", __file__),
+        **from_yaml("1.1.0a1-2025-10-03/geojson-1.1.0.yaml", __file__),
+        **from_yaml("1.1.0a1-2025-10-03/gml-1.1.0.yaml", __file__),
     }
 
 
@@ -70,7 +70,7 @@ class CCMMBaseMetadataPreset(FunctionalPreset):
     def before_populate_type_registry(
         self,
         model: InvenioModel,
-        types: list[dict[str, Any] | Callable[[], dict]],
+        types: list[dict[str, Any]],
         presets: list[type[Preset] | list[type[Preset]] | tuple[type[Preset]]],
         customizations: list[Customization],
         params: dict[str, Any],
