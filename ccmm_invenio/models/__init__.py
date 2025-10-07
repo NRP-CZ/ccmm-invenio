@@ -64,6 +64,7 @@ class CCMMBaseMetadataPreset(FunctionalPreset):
         """Perform extra action before the Invenio model is created."""
         if "metadata_type" not in params:
             params["metadata_type"] = self.metadata_type
+        params["types"].append(self.types)
 
     @override
     def before_populate_type_registry(
@@ -75,7 +76,6 @@ class CCMMBaseMetadataPreset(FunctionalPreset):
         params: dict[str, Any],
     ) -> None:
         """Perform extra action before populating the type registry."""
-        types.append(self.types)
         metadata_type = params["metadata_type"]
         merge_metadata(types, metadata_type, self.metadata_type)
 
