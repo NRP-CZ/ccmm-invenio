@@ -8,4 +8,8 @@ jobs:
   bump-test-publish:
     name: Bump, Test, and Publish the Release
     uses: oarepo/oarepo/.github/workflows/release.yaml@main
-    secrets: inherit
+    secrets: 
+      OAREPO_BUMP_VERSION_CLIENT_ID: ${{ secrets.OAREPO_BUMP_VERSION_CLIENT_ID }}
+      OAREPO_BUMP_VERSION_CLIENT_PASSWORD: ${{ secrets.OAREPO_BUMP_VERSION_CLIENT_PASSWORD }}
+      PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      
