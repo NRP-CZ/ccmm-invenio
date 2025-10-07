@@ -1,21 +1,36 @@
+#
+# Copyright (c) 2025 CESNET z.s.p.o.
+#
+# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
+#
+# ccmm-invenio is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+"""SPARQL reader for vocabularies."""
+
+from __future__ import annotations
+
 import logging
 from collections import defaultdict
 from functools import partial
 from pathlib import Path
-from typing import Any, Callable, cast
+from typing import TYPE_CHECKING, Any, cast
 from urllib.error import HTTPError, URLError
 
 from rdflib import SKOS, Graph, URIRef
-from tenacity import (
+from tenacity import (  # type: ignore[reportMissingImports]
     before_sleep_log,
     retry,
     retry_if_exception_type,
     stop_after_attempt,
     wait_exponential,
 )
-from tqdm.contrib.concurrent import process_map
+from tqdm.contrib.concurrent import process_map  # type: ignore[reportMissingImports]
 
 from .base import VocabularyReader
+
+if TYPE_CHECKING:
+    from collections.abc import Callable
 
 # Set up logging to see retry attempts
 logging.basicConfig(level=logging.INFO)
@@ -32,32 +47,37 @@ RETRY_CONFIG: dict[str, Any] = {
 
 
 @retry(**RETRY_CONFIG)
-def parse_source(url: str, format: str = "xml") -> Graph:
+def parse_source(
+    url: str,
+    format: str = "xml",  # noqa: A002 shadows built-in format
+) -> Graph:
     """Parse RDF with automatic retries for transient errors."""
     g = Graph()
     try:
         g.parse(url, format=format)
-        return g
     except Exception as e:
-        logger.warning(f"Attempt failed for {url}: {str(e)}")
+        logger.warning("Attempt failed for %s: %s", url, e)
         raise  # Re-raise for tenacity to handle
+    else:
+        return g
 
 
 def join_with_commas(prop: str, parent: dict[str, Any]) -> None:
+    """Join the values of the property with commas."""
     parent[prop] = ", ".join(sorted(parent[prop]))
 
 
 class SPARQLReader(VocabularyReader):
     """Download rdf locally, enrich it and call sparql to convert the RDF to Invenio YAML format."""
 
-    def __init__(
+    def __init__(  # noqa: PLR0913
         self,
         name: str,
         endpoint: str,
         skos_concept: str,
         extra: Path | None = None,  # turtle serialization of extra triples
         load_subgraphs: bool = True,
-        format: str = "xml",
+        format: str = "xml",  # noqa: A002 shadows built-in format
         extra_props: dict[str, str] | None = None,
         prefixes: dict[str, str] | None = None,
         array_resolution: Callable[[str, dict[str, Any]], None] = join_with_commas,
@@ -87,10 +107,10 @@ class SPARQLReader(VocabularyReader):
         self.prefixes = prefixes or {}
         self.array_resolution = array_resolution
 
-    def data(self) -> list[dict[str, str]]:
+    def data(  # noqa: PLR0915, PLR0912, C901 - too complex but temporary
+        self,
+    ) -> list[dict[str, str]]:
         """Convert CCMM from SPARQL to YAML that can be imported to NRP Invenio."""
-
-        # whole_graph: Graph = parse_source("file:///tmp/ccmm.ttl", format="turtle")
         whole_graph: Graph = parse_source(self.endpoint, format=self.format)
 
         if self.load_subgraphs:
@@ -99,12 +119,9 @@ class SPARQLReader(VocabularyReader):
         # add extra triples to the graph
         if self.extra:
             extra_graph = Graph()
-            with open(self.extra, "r", encoding="utf-8") as extra_file:
+            with Path(self.extra).open(encoding="utf-8") as extra_file:
                 extra_graph.parse(extra_file, format="turtle")
             whole_graph += extra_graph
-
-        # # save the whole graph to a turtle file /tmp/ccmm.ttl
-        # whole_graph.serialize("/tmp/ccmm.ttl", format="turtle")
 
         query = """
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -125,7 +142,7 @@ class SPARQLReader(VocabularyReader):
         { ?concept skos:altLabel ?altLabel_en }
         BIND(COALESCE(?prefLabel_en, ?altLabel_en) AS ?label_en)
     }
-    
+
     # Get Czech label (prefLabel first, then english label)
     OPTIONAL {
         { ?concept skos:prefLabel ?label_cs FILTER(lang(?label_cs) = "cs") }
@@ -135,7 +152,7 @@ class SPARQLReader(VocabularyReader):
     OPTIONAL {
         { ?concept skos:definition ?description_en FILTER(lang(?description_en) = "en") }
     }
-    
+
     # Get Czech description (skos:definition)
     OPTIONAL {
         { ?concept skos:definition ?description_cs FILTER(lang(?description_cs) = "cs") }
@@ -151,15 +168,13 @@ class SPARQLReader(VocabularyReader):
     {{extra_props_sparql}}
 
     }
-    
-    ORDER BY ?concept                                            
+
+    ORDER BY ?concept
                         """
 
         query = query.replace(
             "{{prefixes}}",
-            "\n".join(
-                f"PREFIX {key}: <{value}>" for key, value in self.prefixes.items()
-            ),
+            "\n".join(f"PREFIX {key}: <{value}>" for key, value in self.prefixes.items()),
         )
         query = query.replace(
             "{{extra_props}}",
@@ -177,8 +192,8 @@ class SPARQLReader(VocabularyReader):
         )
         converted: dict[str, Any] = {}
         by_iri: dict[str, str] = {}
-        for row in cast(tuple[Any, ...], rows):
-            row = [str(x) if x is not None else None for x in row]
+        for _row in cast("tuple[Any, ...]", rows):
+            row = [str(x) if x is not None else None for x in _row]
             (
                 iri,
                 title_cs,
@@ -221,7 +236,7 @@ class SPARQLReader(VocabularyReader):
             if "en" not in term["description"] and description_en:
                 term["description"]["en"] = description_en
 
-            for prop, value in zip(self.extra_props.keys(), row_props):
+            for prop, value in zip(self.extra_props.keys(), row_props, strict=False):
                 if value is not None:
                     term["props"][prop].add(str(value))
 
@@ -254,8 +269,7 @@ class SPARQLReader(VocabularyReader):
                 ret.append(term)
                 ret_ids.add(term["id"])
                 continue
-            else:
-                remaining.append(term)
+            remaining.append(term)
 
         while remaining:
             to_sort = remaining
@@ -269,15 +283,12 @@ class SPARQLReader(VocabularyReader):
                 else:
                     remaining.append(term)
             if len(to_sort) == len(remaining):
-                raise ValueError(
-                    f"There is a cycle in the hierarchy, please check the data: {remaining}"
-                )
+                raise ValueError(f"There is a cycle in the hierarchy, please check the data: {remaining}")
 
         return ret
 
     def _load_subgraphs(self, whole_graph: Graph) -> None:
         """Load all subgraphs from the SKOS concept scheme and merge them into the whole graph."""
-
         # Get all concepts
         scheme = URIRef(self.skos_concept)
         subjects = [str(x) for x in whole_graph.subjects(SKOS.inScheme, scheme)]
@@ -291,4 +302,4 @@ class SPARQLReader(VocabularyReader):
             leave=False,
             unit="subgraph",
         ):
-            whole_graph += cast(Graph, subject_graph)
+            whole_graph += cast("Graph", subject_graph)

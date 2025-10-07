@@ -1,0 +1,35 @@
+RawGMLEnvelopeType:
+  type: keyword
+  label:
+    en: "GML Envelope"
+    cs: "GML obálka"
+  help:
+    en: "A GML envelope is a container for GML features and their metadata serialized as XML."
+    cs: "GML obálka je kontejner pro GML prvky a jejich metadata serializovaná jako XML."
+
+RawGMLAbstractGeometry:
+  type: keyword
+  label:
+    en: "GML Abstract Geometry"
+    cs: "GML Abstraktní geometrie"
+  help:
+    en: "A GML abstract geometry is a geometric shape that is not tied to a specific coordinate system."
+    cs: "GML abstraktní geometrie je geometrický tvar, který není vázán na konkrétní souřadnicový systém."
+
+GMLEnvelopeType:
+  type: object
+  label:
+    en: "GML Envelope"
+    cs: "GML obálka"
+  help:
+    en: "A GML envelope is a container for GML features and their metadata serialized as XML."
+    cs: "GML obálka je kontejner pro GML prvky a jejich metadata serializovaná jako XML."
+  properties:
+    lowerCorner:
+      type: array
+      items:
+        type: double
+    upperCorner:
+      type: array
+      items:
+        type: double

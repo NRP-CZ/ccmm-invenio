@@ -1,24 +1,43 @@
+#
+# Copyright (c) 2025 CESNET z.s.p.o.
+#
+# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
+#
+# ccmm-invenio is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+"""Convert vocabularies from various sources to YAML fixtures."""
+
+from __future__ import annotations
+
+import logging
 import traceback
 from functools import partial
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import click
 import yaml
-from tqdm import tqdm
+from tqdm import tqdm  # type: ignore[reportMissingImports]
 
-from ccmm_invenio.conversion.base import VocabularyReader
-from ccmm_invenio.conversion.ccmm_copy import CopyReader  # noqa
-from ccmm_invenio.conversion.ccmm_csv import CSVReader  # noqa
-from ccmm_invenio.conversion.ccmm_filtered import (  # noqa
+from ccmm_invenio.conversion.ccmm_copy import CopyReader
+from ccmm_invenio.conversion.ccmm_csv import CSVReader
+from ccmm_invenio.conversion.ccmm_filtered import (
     DescendantsOfFilter,
     FilteredReader,
 )
-from ccmm_invenio.conversion.ccmm_sparql import SPARQLReader  # noqa
+from ccmm_invenio.conversion.ccmm_sparql import SPARQLReader
+
+if TYPE_CHECKING:
+    from ccmm_invenio.conversion.base import VocabularyReader
+
+log = logging.getLogger(__name__)
 
 
 @click.command()
 @click.argument("vocabulary_names", nargs=-1)
 def convert_vocabularies(vocabulary_names: list[str]) -> None:
+    """Convert vocabularies from various sources to YAML fixtures."""
     root_dir = Path(__file__).parent.parent
 
     converters: list[tuple[VocabularyReader, Path]] = [
@@ -153,9 +172,7 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
                 root_dir / "fixtures/ccmm_agent_role.yaml",
                 filter_cls=partial(
                     DescendantsOfFilter,
-                    descendants_of={
-                        "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor"
-                    },
+                    descendants_of={"https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor"},
                 ),
             ),
             root_dir / "fixtures/ccmm_contributor_types.yaml",
@@ -173,19 +190,20 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
             with_progress.set_description(reader.name)
             with_progress.refresh()
             data = reader.data()
-            with open(output_path, "w", encoding="utf-8") as output_file:
+            with Path(output_path).open("w", encoding="utf-8") as output_file:
                 yaml.safe_dump_all(
                     data,
                     output_file,
                     allow_unicode=True,
                     default_flow_style=False,
                 )
-        except Exception as e:
-            print(f"Error converting {reader.name}: {e}")
+        except Exception:
+            log.exception("Error converting %s", reader.name)
             traceback.print_exc()
 
 
 def zenodo_resource_type_array_resolution(prop: str, parent: dict[str, str]) -> None:
+    """Set zenodo properties from comma-separated values."""
     values = parent[prop]
     parent[prop] = ", ".join(sorted(values))
 

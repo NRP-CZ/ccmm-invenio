@@ -1,16 +1,31 @@
-from pathlib import Path
-from typing import Any, Callable
+#
+# Copyright (c) 2025 CESNET z.s.p.o.
+#
+# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
+#
+# ccmm-invenio is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+"""Read and filter vocabulary data."""
+
+from __future__ import annotations
+
+from typing import TYPE_CHECKING, Any
 
 import yaml
 
 from .base import VocabularyReader
+
+if TYPE_CHECKING:
+    from collections.abc import Callable
+    from pathlib import Path
 
 
 class FilterCls:
     """Base class for filter classes."""
 
     def __init__(self):
-        pass
+        """Initialize the filter."""
 
     def filter(self, items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         """Condition to filter items."""
@@ -32,9 +47,9 @@ class FilteredReader(VocabularyReader):
         self.input_file = input_file
         self.filter_cls = filter_cls
 
-    def data(self):
+    def data(self) -> Any:
         """Read the vocabulary data and apply the filter function."""
-        with open(self.input_file, "r", encoding="utf-8") as file:
+        with self.input_file.open(encoding="utf-8") as file:
             _data = list(yaml.safe_load_all(file))
 
         # Apply the filter function
@@ -61,6 +76,7 @@ class DescendantsOfFilter(FilterCls):
         self.descendants_of = descendants_of
 
     def filter(self, items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        """Filter items to include only those that are descendants of specified parents."""
         known_parents: set[str] = set()
 
         # register initial known parents

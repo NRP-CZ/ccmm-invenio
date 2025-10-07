@@ -1,0 +1,49 @@
+CCMMAccessRights:
+  type: vocabulary
+  vocabulary-type: access-rights
+CCMMAlternateTitleType:
+  type: vocabulary
+  vocabulary-type: alternate-title-types
+CCMMApplicationProfile:
+  type: vocabulary
+  vocabulary-type: application-profiles
+CCMMChecksumAlgorithm:
+  type: vocabulary
+  vocabulary-type: checksum-algorithms
+CCMMDateType:
+  type: vocabulary
+  vocabulary-type: date-types
+CCMMDescriptionType:
+  type: vocabulary
+  vocabulary-type: description-types
+CCMMFormat:
+  type: vocabulary
+  vocabulary-type: file-formats
+CCMMIdentifierScheme:
+  type: vocabulary
+  vocabulary-type: identifier-schemes
+CCMMLanguageSystem:
+  type: vocabulary
+  vocabulary-type: language-systems
+CCMMLocationRelationType:
+  type: vocabulary
+  vocabulary-type: location-relation-types
+CCMMRelationType:
+  type: vocabulary
+  vocabulary-type: relation-types
+CCMMMediaType:
+  type: vocabulary
+  vocabulary-type: media-types
+CCMMResourceAgentRoleType:
+  type: vocabulary
+  vocabulary-type: resource-agent-role-types
+CCMMResourceRelationType:
+  type: vocabulary
+  vocabulary-type: resource-relation-types
+CCMMResourceType:
+  type: vocabulary
+  vocabulary-type: resource-types
+CCMMSubjectScheme:
+  type: vocabulary
+  vocabulary-type: subject-schemes
+# TODO: license for production repositories

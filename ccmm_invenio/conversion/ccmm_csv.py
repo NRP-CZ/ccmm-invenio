@@ -1,31 +1,43 @@
+#
+# Copyright (c) 2025 CESNET z.s.p.o.
+#
+# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
+#
+# ccmm-invenio is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+"""CSV reader."""
+
+from __future__ import annotations
+
 import csv
-from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from .base import VocabularyReader
+
+if TYPE_CHECKING:
+    from pathlib import Path
 
 
 class CSVReader(VocabularyReader):
     """Read CCMM CSV files and convert them to YAML format."""
 
-    def __init__(
-        self, name: str, csv_path: Path, extra: list[Path] | None = None
-    ) -> None:
+    def __init__(self, name: str, csv_path: Path, extra: list[Path] | None = None) -> None:
+        """Initialize the reader."""
         super().__init__(name)
         self.csv_path = csv_path
         self.extra = extra or []
 
     def data(self) -> list[dict[str, str]]:
         """Convert CCMM CSV to YAML that can be imported to NRP Invenio."""
-
-        with open(self.csv_path, "r", encoding="utf-8-sig") as csv_file:
+        with self.csv_path.open(encoding="utf-8-sig") as csv_file:
             reader = csv.DictReader(csv_file, delimiter=";", quotechar='"')
             rows = list(reader)
 
         # Remove leading and trailing whitespace from all keys and values
         converted_data: list[dict[str, str]] = []
-        for row in rows:
-            row = {key.strip(): value.strip() for key, value in row.items() if key}
+        for _row in rows:
+            row = {key.strip(): value.strip() for key, value in _row.items() if key}
 
             # IRI;base IRI;parentId;id;title_cs;title_en;definition_cs;definition_en
             term_id = row.pop("id")
@@ -64,16 +76,10 @@ class CSVReader(VocabularyReader):
 
         converted_data_by_id = {term["id"]: term for term in converted_data}
         for extra_file in self.extra:
-            with open(extra_file, "r", encoding="utf-8-sig") as extra_csv_file:
-                extra_reader = csv.DictReader(
-                    extra_csv_file, delimiter=";", quotechar='"'
-                )
-                for extra_row in extra_reader:
-                    extra_row = {
-                        key.strip(): value.strip()
-                        for key, value in extra_row.items()
-                        if key
-                    }
+            with extra_file.open(encoding="utf-8-sig") as extra_csv_file:
+                extra_reader = csv.DictReader(extra_csv_file, delimiter=";", quotechar='"')
+                for _extra_row in extra_reader:
+                    extra_row = {key.strip(): value.strip() for key, value in _extra_row.items() if key}
                     term_id = extra_row.pop("id")
                     if term_id in converted_data_by_id:
                         converted = converted_data_by_id[term_id]

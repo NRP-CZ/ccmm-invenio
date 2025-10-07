@@ -1,0 +1,217 @@
+#
+# This file is a "production" version of the CCMM schema. It takes types from CCMM
+# wherever it makes sense from the invenio point of view. 
+# In many places, RDM fields are used instead so that we do not have to reimplement
+# the whole validation/ui logic.
+#
+# Even though IRIs are left in the schema, they are not used in the Invenio implementation.
+# Because we can not know what they mean, they are not shown on the UI detail page
+# nor they are editable in the UI forms
+#
+CCMMProductionDataset:
+  type: object
+  properties:
+    # iri:
+    # IRI is not used inside schema as it is 
+
+    # we use RDM publication date as it is, publication_year is derived from it
+    publication_date:
+      type: RDMPublicationDate
+      label:
+        en: Publication date
+        cs: Datum publikace
+
+    # we use RDM version
+    version:
+      type: RDMRecordVersion
+      label:
+        en: Record Version
+        cs: Verze záznamu
+
+    # taken from RDM
+    title:
+      type: RDMTitle
+      label:
+        en: Title
+        cs: Název
+
+    # publisher in ccmm is in qualified relations, in RDM it is a separate field
+    # in ccmm it is a complex structure (org, person, ...), in RDM it is just a string
+    # let's use RDMCreatibutor here and have the type locked in the UI
+    ccmm_publisher:
+      type: RDMCreatibutor
+      label:
+        en: Publisher
+        cs: Vydavatel
+      hint:
+        en: The entity responsible for making the resource available.
+        cs: Entita odpovědná za zpřístupnění zdroje.
+      help:
+        en: Provide the name of the organization or individual that published the dataset. This may differ from the creators or contributors.
+        cs: Uveďte název organizace nebo jednotlivce, který publikoval datovou sadu. To se může lišit od autorů nebo přispěvatelů.
+      ui:
+        options:
+          fixed_type: organization
+
+    # alternate_titles:
+    # we use RDM's additional_titles and re-format them for CCMM export
+    additional_titles:
+      type: RDMAdditionalTitles
+      label:
+        en: Additional titles
+        cs: Další názvy záznamu
+
+    # descriptions:
+    # we use invenio's additional_descriptions and re-format them for CCMM export
+    additional_descriptions:
+      type: RDMAdditionalDescriptions
+      label:
+        en: Additional descriptions
+        cs: Další popisy záznamu
+
+    # metadata_identifications:
+    # not present in production repository as it is constructed from the technical
+    # invenio metadata
+
+    # identifiers:
+    # invenio RDM identifiers are usede instead
+    identifiers:
+      label:
+        en: Identifiers
+        cs: Identifikátory
+      hint:
+        en: Alternate identifiers for the record.
+        cs: Alternativní identifikátory záznamu.
+      help:
+        en: Include any identifiers that reference this record, such as DOIs, Handles, or other scheme-based IDs.
+        cs: Uveďte jakékoliv identifikátory, které odkazují na tento záznam, jako jsou DOI, Handle nebo jiné identifikátory založené na schématu.
+      type: RDMIdentifiers
+
+    locations:
+      # taken from the CCMM as it is. Can not unify with RDM locations as they are missing
+      # too many metadata fields
+      type: array
+      items:
+        type: CCMMLocation
+      label:
+        en: Locations
+        cs: Lokace
+      hint:
+        en: Spatial coverage or place references.
+        cs: Prostorové pokrytí či odkazy na místa.
+      help:
+        en: Specify where the dataset applies or was collected. Use bounding boxes, geometries, and place names.
+        cs: Uveďte, čeho se data prostorově týkají nebo kde byla sbírána. Použijte ohraničující boxy, geometrie a názvy míst.
+
+    # provenances:
+    # not finalized in ccmm, therefore removed from production repositories
+
+    # qualified_relations:
+    # in Invenio, we have Creators and Contributors, not qualified relations
+    creators:
+      label:
+        en: Creators
+        cs: Autoři
+      type: RDMCreators
+
+    contributors:
+      label:
+        en: Contributors
+        cs: Přispěvatelé
+      type: RDMContributors
+
+    time_references:
+      # taken from the CCMM as it is, though some dates might come from invenio directly
+      # and should not be duplicated here.
+      # We can not use RDM "dates" here as they are missing multilingual labels and
+      # optionality in interval start/end
+      type: array
+      items:
+        type: CCMMTimeReference
+      label:
+        en: Time references
+        cs: Časové odkazy
+      hint:
+        en: Important dates or periods relating to the dataset.
+        cs: Důležité datumy nebo období vztahující se k datové sadě.
+      help:
+        en: Provide coverage periods, collection dates, or other temporal aspects, using instants or intervals.
+        cs: Uveďte období pokrytí, datumy sběru nebo jiné časové aspekty pomocí okamžiků či intervalů.
+
+    # taken from Invenio
+    subjects:
+      label:
+        en: Subjects
+        cs: Předměty
+      type: RDMSubjects
+
+    # validation_results:
+    # not finalized in ccmm, therefore removed from production repositories
+
+    # distributions:
+    # At the moment, in RDM we support only file distributions, not services.
+    # and files have their own API, so this is not used.
+
+    # funding_references:
+    # we use RDM funding
+    funding:
+      type: RDMFundings
+      label:
+        en: Funding references
+        cs: Financování
+      hint:
+        en: Information about grants or other funding sources supporting this research.
+        cs: Informace o grantech nebo jiných zdrojích financování podporujících tento výzkum.
+      help:
+        en: Include details of funding bodies, grant numbers, and related information.
+        cs: Uveďte podrobnosti o financujících institucích, číslech grantů a související informace.
+
+    # Can not be taken from RDM but we might to need a projection to RDM so that
+    # some parts from invenio can be reused
+    terms_of_use:
+      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasVersion
+      type: CCMMTermsOfUse
+      label:
+        en: Terms of use
+        cs: Podmínky užití
+      hint:
+        en: License, access rights, and usage conditions.
+        cs: Licence, přístupová práva a podmínky použití.
+      help:
+        en: Specify legal terms governing access and reuse. Include license documents and any restrictions.
+        cs: Uveďte právní podmínky upravující přístup a opětovné použití. Zahrňte licenční dokumenty a případná omezení.
+
+    # TODO: maybe use better related resources such as nr-docs ones. The reason is
+    # that CCMM is not capable of referencing an article in a journal correctly.
+    # for now commented out
+    # related_resources:
+    #   # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource
+    #   type: array
+    #   items:
+    #     type: Resource
+    #   label:
+    #     en: Related resources
+    #     cs: Související zdroje
+    #   hint:
+    #     en: Links to related datasets, publications, or services.
+    #     cs: Odkazy na související datové sady, publikace či služby.
+    #   help:
+    #     en: Add references to resources related by citation, derivation, supplement, or other relationships.
+    #     cs: Přidejte odkazy na zdroje související citací, odvozením, doplněním či jiným vztahem.
+
+    # taken from RDM
+    resource_type:
+      type: RDMResourceType
+      label:
+        en: Resource type
+        cs: Typ záznamu
+
+    # other_languages:
+    # primary_language:
+    # RDM uses "languages", we adopt the same (and for CCMM serialization take the
+    # first one as the primary language)
+    languages:
+      type: RDMLanguages
+      label:
+        en: Languages
+        cs: Jazyky

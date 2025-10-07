@@ -1,4 +1,47 @@
-[build_system]
-requires = ["setuptools", "wheel", "babel>2.8"]
-build-backend = "setuptools.build_meta"
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
+[project]
+name = "ccmm-invenio"
+dynamic = ["version"]
+description = "CCMM (Czech Core Metadata Model) components for NRP Invenio"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13"
+dependencies = [
+    "oarepo[rdm,tests]>=14.0.0,<15.0.0",
+    "oarepo-model>=0.1.0dev18",
+    "oarepo-rdm>=1.0.0dev0",
+]
+
+[project.urls]
+Homepage = "https://github.com/NRP-CZ/ccmm-invenio"
+
+[project.optional-dependencies]
+compile-vocabularies = [
+    "click",
+    "pyyaml",
+    "rdflib",
+    "tenacity",
+    "tqdm",
+]
+
+oarepo14= [
+    "oarepo>=14.0.0,<15.0.0",
+]
+
+tests = [
+    "pytest-invenio",
+]
+
+[project.entry-points."oarepo.fixtures"]
+ccmm_invenio = "ccmm_invenio.fixtures"
+
+[tool.hatch.version]
+path = "ccmm_invenio/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/ccmm_invenio",
+]
