@@ -1,86 +1,75 @@
-id: ror
-title:
-  cs: ROR
-  en: ROR
-props:
-  iri: https://ror.org/
----
-id: orcid
-title:
-  cs: ORCID
-  en: ORCID
-props:
-  iri: https://orcid.org/
----
-id: doi
-title:
-  cs: DataCite DOI
-  en: DataCite DOI
-props:
-  iri: https://doi.org/
----
-id: ares
-title:
-  cs: ARES
-  en: ARES
-description:
-  cs: Administrativní registr ekonomických subjektů
-  en: Administrative Register of Economic Subjects
-props:
-  iri: https://ares.gov.cz/
----
-id: scopusID
-title:
-  cs: Scopus ID
-  en: Scopus ID
-props:
-  iri: https://www.scopus.com/
----
-id: researcherID
-title:
-  cs: Researcher ID
-  en: Researcher ID
-props:
-  iri: https://www.webofscience.com/
----
-id: iri
-title:
-  cs: IRI
-  en: IRI
-props:
-  iri: urn:iri
----
-id: arxiv
-title:
-  cs: arXiv
-  en: arXiv
-props:
-  iri: https://arxiv.org/
----
-id: isni
-title:
-  cs: ISNI
-  en: ISNI
-props:
-  iri: https://isni.org/
----
-id: isbn
-title:
-  cs: ISBN
-  en: ISBN
-props:
-  iri: https://www.isbn-international.org/
----
-id: issn
-title:
-  cs: ISSN
-  en: ISSN
-props:
-  iri: https://www.issn.org/
----
-id: handle
-title:
-  cs: Handle
-  en: Handle
-props:
-  iri: https://handle.net/
+- id: ror
+  title:
+    cs: ROR
+    en: ROR
+  props:
+    iri: https://ror.org/
+- id: orcid
+  title:
+    cs: ORCID
+    en: ORCID
+  props:
+    iri: https://orcid.org/
+- id: doi
+  title:
+    cs: DataCite DOI
+    en: DataCite DOI
+  props:
+    iri: https://doi.org/
+- id: ares
+  title:
+    cs: ARES
+    en: ARES
+  description:
+    cs: Administrativní registr ekonomických subjektů
+    en: Administrative Register of Economic Subjects
+  props:
+    iri: https://ares.gov.cz/
+- id: scopusID
+  title:
+    cs: Scopus ID
+    en: Scopus ID
+  props:
+    iri: https://www.scopus.com/
+- id: researcherID
+  title:
+    cs: Researcher ID
+    en: Researcher ID
+  props:
+    iri: https://www.webofscience.com/
+- id: iri
+  title:
+    cs: IRI
+    en: IRI
+  props:
+    iri: urn:iri
+- id: arxiv
+  title:
+    cs: arXiv
+    en: arXiv
+  props:
+    iri: https://arxiv.org/
+- id: isni
+  title:
+    cs: ISNI
+    en: ISNI
+  props:
+    iri: https://isni.org/
+- id: isbn
+  title:
+    cs: ISBN
+    en: ISBN
+  props:
+    iri: https://www.isbn-international.org/
+- id: issn
+  title:
+    cs: ISSN
+    en: ISSN
+  props:
+    iri: https://www.issn.org/
+- id: handle
+  title:
+    cs: Handle
+    en: Handle
+  props:
+    iri: https://handle.net/
