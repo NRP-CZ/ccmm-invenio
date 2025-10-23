@@ -169,10 +169,12 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
         (
             FilteredReader(
                 "Contributor type",
-                root_dir / "fixtures/ccmm_agent_role.yaml",
+                root_dir / "fixtures/ccmm_agent_roles.yaml",
                 filter_cls=partial(
                     DescendantsOfFilter,
-                    descendants_of={"https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor"},
+                    descendants_of={
+                        "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor"
+                    },
                 ),
             ),
             root_dir / "fixtures/ccmm_contributor_types.yaml",
@@ -191,7 +193,7 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
             with_progress.refresh()
             data = reader.data()
             with Path(output_path).open("w", encoding="utf-8") as output_file:
-                yaml.safe_dump_all(
+                yaml.safe_dump(
                     data,
                     output_file,
                     allow_unicode=True,
