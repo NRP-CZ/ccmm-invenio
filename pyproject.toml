@@ -35,7 +35,7 @@ tests = [
     "pytest-invenio",
 ]
 
-[project.entry-points."oarepo.fixtures"]
+[project.entry-points."invenio_rdm_records.fixtures"]
 ccmm_invenio = "ccmm_invenio.fixtures"
 
 [tool.hatch.version]

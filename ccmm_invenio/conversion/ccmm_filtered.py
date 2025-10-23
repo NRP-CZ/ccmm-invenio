@@ -50,7 +50,7 @@ class FilteredReader(VocabularyReader):
     def data(self) -> Any:
         """Read the vocabulary data and apply the filter function."""
         with self.input_file.open(encoding="utf-8") as file:
-            _data = list(yaml.safe_load_all(file))
+            _data = list(yaml.safe_load(file))
 
         # Apply the filter function
         flt = self.filter_cls()

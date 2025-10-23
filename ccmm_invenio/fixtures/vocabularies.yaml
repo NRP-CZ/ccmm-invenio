@@ -1,0 +1,59 @@
+accessrights:
+  pid-type: v-ar
+  data-file: ccmm_access_rights.yaml
+
+resourceagentroletypes:
+  pid-type: v-agr
+  data-file: ccmm_agent_roles.yaml
+
+titletypes:
+  pid-type: v-tt
+  data-file: ccmm_alternate_title_types.yaml
+
+contributorsroles:
+  pid-type: v-ct
+  data-file: ccmm_contributor_types.yaml
+
+filetypes:
+  pid-type: v-ft
+  data-file: ccmm_file_types.yaml
+
+languages:
+  pid-type: v-lan
+  data-file: ccmm_languages.yaml
+
+licenses:
+  pid-type: v-lic
+  data-file: ccmm_licenses.yaml
+
+locationrelationtypes:
+  pid-type: v-lr
+  data-file: ccmm_location_relation_types.yaml
+
+relationtypes:
+  pid-type: v-rel
+  data-file: ccmm_relation_types.yaml
+
+resourcetypes:
+  pid-type: v-res
+  data-file: ccmm_resource_types.yaml
+
+subjectcategories:  # TODO: is this used? Whould not it be better to have Subject vocabulary?
+  pid-type: v-suc
+  data-file: ccmm_subject_categories.yaml
+
+subjectschemes:
+  pid-type: v-sus
+  data-file: ccmm_subject_schemes.yaml
+
+datetypes:
+  pid-type: v-dt
+  data-file: ccmm_time_reference_types.yaml
+
+identifierschemes:
+  pid-type: v-ids
+  data-file: ccmm_identifier_schemes.yaml
+
+checksumalgorithms:
+  pid-type: v-csa
+  data-file: ccmm_checksum_algorithms.yaml
