@@ -24,12 +24,24 @@ GMLEnvelopeType:
   help:
     en: "A GML envelope is a container for GML features and their metadata serialized as XML."
     cs: "GML obálka je kontejner pro GML prvky a jejich metadata serializovaná jako XML."
+  parser:
+    generate: false
   properties:
     lowerCorner:
-      type: array
-      items:
-        type: double
+      xml: "gml:lowerCorner"
+      type: keyword
     upperCorner:
-      type: array
-      items:
-        type: double
+      type: keyword
+      xml: "gml:upperCorner"
+
+      
+GMLSpaceSeparatedDoubleList:
+  type: array
+  items:
+    type: double
+  label:
+    en: "Coordinates"
+    cs: "Souřadnice"
+  help:
+    en: "A list of double-precision floating-point numbers separated by spaces."
+    cs: "Seznam desetinných čísel oddělený mezerami."

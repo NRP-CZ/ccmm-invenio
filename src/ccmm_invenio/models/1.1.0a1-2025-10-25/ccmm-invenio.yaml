@@ -139,6 +139,8 @@ CCMMProductionDataset:
         cs: Uveďte období pokrytí, datumy sběru nebo jiné časové aspekty pomocí okamžiků či intervalů.
 
     # taken from Invenio
+    # TODO: do we want to do it? Invenio does not have 
+    # i18n for subjects right now
     subjects:
       label:
         en: Subjects
@@ -180,6 +182,9 @@ CCMMProductionDataset:
       help:
         en: Specify legal terms governing access and reuse. Include license documents and any restrictions.
         cs: Uveďte právní podmínky upravující přístup a opětovné použití. Zahrňte licenční dokumenty a případná omezení.
+      # TODO: use RDMCreatibutor for contact_point, not CCMMAgent
+    
+
 
     # TODO: maybe use better related resources such as nr-docs ones. The reason is
     # that CCMM is not capable of referencing an article in a journal correctly.

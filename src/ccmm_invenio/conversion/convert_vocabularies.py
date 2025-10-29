@@ -172,9 +172,7 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
                 root_dir / "fixtures/ccmm_agent_roles.yaml",
                 filter_cls=partial(
                     DescendantsOfFilter,
-                    descendants_of={
-                        "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor"
-                    },
+                    descendants_of={"https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor"},
                 ),
             ),
             root_dir / "fixtures/ccmm_contributor_types.yaml",
