@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../description/schema.xsd"/>
+  <xs:include schemaLocation="../alternate-title/schema.xsd"/>
+  <xs:include schemaLocation="../metadata-record/schema.xsd"/>
+  <xs:include schemaLocation="../identifier/schema.xsd"/>
+  <xs:include schemaLocation="../location/schema.xsd"/>
+  <xs:include schemaLocation="../provenance-statement/schema.xsd"/>
+  <xs:include schemaLocation="../resource-to-agent-relationship/schema.xsd"/>
+  <xs:include schemaLocation="../time_reference/schema.xsd"/>
+  <xs:include schemaLocation="../subject/schema.xsd"/>
+  <xs:include schemaLocation="../validation-result/schema.xsd"/>
+  <xs:include schemaLocation="../distribution/schema.xsd"/>
+  <xs:include schemaLocation="../funding-reference/schema.xsd"/>
+  <xs:include schemaLocation="../terms-of-use/schema.xsd"/>
+  <xs:include schemaLocation="../resource/schema.xsd"/>
+  <xs:include schemaLocation="../resource-type/schema.xsd"/>
+  <xs:include schemaLocation="../language-system/schema.xsd"/>
+  <xs:complexType name="dataset" sawsdl:modelReference="http://www.w3.org/ns/dcat#Dataset">
+    <xs:annotation>
+      <xs:documentation xml:lang="ar">
+        قائمة بيانات - قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها
+      </xs:documentation>
+      <xs:documentation xml:lang="cs">
+        Datová sada - Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.
+      </xs:documentation>
+      <xs:documentation xml:lang="da">
+        Datasæt - En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer.
+      </xs:documentation>
+      <xs:documentation xml:lang="el">
+        Σύνολο Δεδομένων - Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές.
+      </xs:documentation>
+      <xs:documentation xml:lang="en">
+        Dataset - A collection of data, published or curated by a single source, and available for access or download in one or more representations.
+      </xs:documentation>
+      <xs:documentation xml:lang="es">
+        Conjunto de datos - Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos.
+      </xs:documentation>
+      <xs:documentation xml:lang="fr">
+        Jeu de données - Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats.
+      </xs:documentation>
+      <xs:documentation xml:lang="it">
+        Dataset - Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati.
+      </xs:documentation>
+      <xs:documentation xml:lang="ja">
+        データセット - 1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element name="publication_year" type="xs:gYear" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            publication year - The year when the item was or will be made publicly available.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="version" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/dcat#version">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            version - The version indicator (name or identifier) of a resource.
+          </xs:documentation>
+          <xs:documentation xml:lang="es">
+            El indicador de versión (nombre o identificador) del recurso.
+          </xs:documentation>
+          <xs:documentation xml:lang="it">
+            L'indicatore di versione (un nome o un identificatore) di una risorsa.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="title" type="xs:string" sawsdl:modelReference="http://purl.org/dc/terms/title">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            title - A name given to the dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="has_description" type="description" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasDescription">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has description - Relation to the description of a dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="alternate_title" type="alternate_title" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has alternate title
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" name="is_described_by" type="metadata_record" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#isDescribedBy">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            is described by - Inverse relation between dataset and metadata record.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" name="identifier" type="identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has identifier - has identifier
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="location" type="location" sawsdl:modelReference="http://purl.org/dc/terms/spatial">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has location - The geographical area covered by the dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="provenance" type="provenance_statement" sawsdl:modelReference="http://purl.org/dc/terms/provenance">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has provenance - A statement about the lineage of a Dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="2" maxOccurs="unbounded" name="qualified_relation" type="resource_to_agent_relationship" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            qualified relation - Link to a description of a relationship between dataset and an agent with the specification of the role of agent in this relationship.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" name="time_reference" type="time_reference" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has time reference - Reference to events related to the dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" name="subject" type="subject" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasSubject">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has subject - Dataset described using a subject.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="validation_result" type="validation_result" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasValidationResult">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has validation result - Reference to the report about the dataset validation.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="distribution" type="distribution" sawsdl:modelReference="http://www.w3.org/ns/dcat#distribution">
+        <xs:annotation>
+          <xs:documentation xml:lang="ar">
+            تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات
+          </xs:documentation>
+          <xs:documentation xml:lang="cs">
+            Dostupná distribuce datové sady.
+          </xs:documentation>
+          <xs:documentation xml:lang="da">
+            En tilgængelig repræsentation af datasættet.
+          </xs:documentation>
+          <xs:documentation xml:lang="el">
+            Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του.
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            has distribution - An available Distribution for the Dataset.
+          </xs:documentation>
+          <xs:documentation xml:lang="es">
+            Una distribución disponible del conjunto de datos.
+          </xs:documentation>
+          <xs:documentation xml:lang="fr">
+            Connecte un jeu de données à des distributions disponibles.
+          </xs:documentation>
+          <xs:documentation xml:lang="it">
+            Una distribuzione disponibile per il set di dati.
+          </xs:documentation>
+          <xs:documentation xml:lang="ja">
+            データセットを、その利用可能な配信に接続します。
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="funding_reference" type="funding_reference" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasFundingReference">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has funding reference - Has reference for funding of a dataset acquisition.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="terms_of_use" type="terms_of_use" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasVersion">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has terms of use - Terms under which the dataset may be accessed.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="related_resource" type="resource" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has related resource - Reference to the resource in any way related to the described dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="resource_type" type="resource_type" sawsdl:modelReference="http://purl.org/dc/terms/type">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has resource type - A resource type of the Dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="other_language" type="language_system" sawsdl:modelReference="http://purl.org/dc/terms/language">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has other language - Any other languages of the Dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="primary_language" type="language_system" sawsdl:modelReference="http://purl.org/dc/terms/language">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has other language - Any other languages of the Dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="dataset" type="dataset"/>
+</xs:schema>

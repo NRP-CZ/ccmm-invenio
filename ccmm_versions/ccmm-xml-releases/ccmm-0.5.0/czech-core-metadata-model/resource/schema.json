@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/resource/schema.json",
+  "title": "Resource",
+  "description": "Resource represents any resource, physical or digital, that is related to the described dataset. ",
+  "type": "object",
+  "required": [
+
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "type": "array",
+      "allOf": [
+        {
+          "contains": {
+            "const": "Resource"
+          }
+        },
+        {
+          "contains": {
+            "const": "Resource"
+          }
+        }
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "title": {
+      "title": "Title",
+      "description": "Title of the related item.",
+      "type": "string"
+    },
+    "resource_url": {
+      "title": "Resource URL",
+      "description": "Resolvable URL representing the resource, preferably human readable.",
+      "type": "string"
+    },
+    "qualified_relation": {
+      "title": "qualified relation",
+      "description": "Attachment of resource to the relationship.",
+      "type": "array",
+      "items": {
+        "$ref": "../resource-to-agent-relationship/schema.json"
+      }
+    },
+    "time_reference": {
+      "title": "has time reference",
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "../time_reference/schema.json"
+          },
+          {
+            "$ref": "../time_reference/schema.json"
+          }
+        ]
+      }
+    },
+    "identifier": {
+      "title": "has identifier",
+      "description": "has identifier",
+      "type": "array",
+      "items": {
+        "$ref": "../identifier/schema.json"
+      }
+    },
+    "resource_type": {
+      "$ref": "../resource-type/schema.json"
+    },
+    "resource_relation_type": {
+      "$ref": "../resource-relation-type/schema.json"
+    }
+  }
+}

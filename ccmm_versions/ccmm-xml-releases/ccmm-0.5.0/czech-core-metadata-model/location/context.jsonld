@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "bbox": {
+      "@id": "http://www.w3.org/ns/dcat#bbox",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "location_name": {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "xsd:string"
+    },
+    "location_relation_type": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/hasType",
+      "@context": "../location-relation-type/context.jsonld"
+    },
+    "geometry": {
+      "@id": "http://www.w3.org/ns/locn#geometry",
+      "@context": "../geometry/context.jsonld"
+    },
+    "related_object": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/hasRelatedResource",
+      "@container": "@set",
+      "@context": "../resource/context.jsonld"
+    },
+    "GeoLocation": {
+      "@id": "https://techlib.cz/vocabulary/datacite/Geolocation",
+      "@context": {}
+    },
+    "Location": {
+      "@id": "http://purl.org/dc/terms/Location",
+      "@context": {}
+    }
+  }
+}

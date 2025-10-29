@@ -1,0 +1,7 @@
+a is undefined
+
+xr.resolveWithContext@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:1892
+xr.resolve@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:2123
+generateJsonData@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:2862
+_at/<@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:2656
+generateToObject@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:831:9316

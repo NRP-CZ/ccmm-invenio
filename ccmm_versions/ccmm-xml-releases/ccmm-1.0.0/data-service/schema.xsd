@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/XML/1998/namespace"/>
+  <xs:include schemaLocation="../resource/schema.xsd"/>
+  <xs:complexType name="data_service" sawsdl:modelReference="http://www.w3.org/ns/dcat#DataService">
+    <xs:annotation>
+      <xs:documentation xml:lang="cs">
+        Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích.
+      </xs:documentation>
+      <xs:documentation xml:lang="da">
+        Datatjeneste - Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer.
+      </xs:documentation>
+      <xs:documentation xml:lang="en">
+        Data service - A collection of operations that provides access to one or more datasets or data processing functions.
+      </xs:documentation>
+      <xs:documentation xml:lang="es">
+        Servicio de datos - Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados.
+      </xs:documentation>
+      <xs:documentation xml:lang="it">
+        Servizio di dati - Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="label" sawsdl:modelReference="http://www.w3.org/2000/01/rdf-schema#label">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            label - Data service label
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" name="endpoint_url" type="resource" sawsdl:modelReference="http://www.w3.org/ns/dcat#endpointURL">
+        <xs:annotation>
+          <xs:documentation xml:lang="cs">
+            přístupový bod služby - Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web).
+          </xs:documentation>
+          <xs:documentation xml:lang="da">
+            tjenesteendpoint - Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI).
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            endpoint URL - The root location or primary endpoint of the service (an IRI).
+          </xs:documentation>
+          <xs:documentation xml:lang="es">
+            end-point del servicio - La posición raíz o end-point principal del servicio (una IRI web).
+          </xs:documentation>
+          <xs:documentation xml:lang="it">
+            end-point del servizio - La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web).
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="data_service" type="data_service"/>
+</xs:schema>

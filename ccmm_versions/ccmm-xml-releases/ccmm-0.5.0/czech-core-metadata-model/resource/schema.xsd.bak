@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../resource-to-agent-relationship/schema.xsd"/>
+  <xs:include schemaLocation="../time-reference/schema.xsd"/>
+  <xs:include schemaLocation="../identifier/schema.xsd"/>
+  <xs:complexType name="resource" sawsdl:modelReference="http://www.w3.org/2000/01/rdf-schema#Resource https://techlib.cz/vocabulary/datacite/Resource">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Resource - Resource represents any resource, physical or digital, that is related to the described dataset. 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" name="relationType" type="xs:string" sawsdl:modelReference="https://techlib.cz/vocabulary/ccmm/relationType">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            Relation type - Type of the relation between Dataset and related resource.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="type" type="xs:string" sawsdl:modelReference="https://techlib.cz/vocabulary/datacite/resourceType http://purl.org/dc/terms/type">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            Type - A description of the resource. Gets the value from controlled list https://datacite-metadata-schema.readthedocs.io/en/4.6/appendices/appendix-1/resourceTypeGeneral/.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="title" type="xs:string" sawsdl:modelReference="https://techlib.cz/vocabulary/datacite/relatedItemTitle">
+        <xs:annotation>
+          <xs:documentation xml:lang="">
+            Title
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            Title
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="resource_url" type="xs:anySimpleType">
+        <xs:annotation>
+          <xs:documentation xml:lang="">
+            Resource URL
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            Resource URL - Resolvable URL representing the resource, preferably human readable.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="qualified_relation" type="resource_to_agent_relationship" sawsdl:modelReference="https://techlib.cz/vocabulary/ccmm/qualifiedRelation">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            qualified relation - Attachment of resource to the relationship.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="time_reference" type="time_reference" sawsdl:modelReference="https://techlib.cz/vocabulary/ccmm/hasTimeReference">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has time reference
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier" type="identifier" sawsdl:modelReference="https://techlib.cz/vocabulary/ccmm/hasIdentifier">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has identifier - has identifier
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="resource" type="resource"/>
+</xs:schema>

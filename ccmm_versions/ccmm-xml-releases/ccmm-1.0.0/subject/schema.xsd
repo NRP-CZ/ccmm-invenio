@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/XML/1998/namespace"/>
+  <xs:include schemaLocation="../subject-scheme/schema.xsd"/>
+  <xs:complexType name="subject" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#Subject">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Subject - Subject, keyword, classification code, or key phrase describing the resource.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="definition" sawsdl:modelReference="http://www.w3.org/2004/02/skos/core#definition">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            definition - Definition of the subject in the given context.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" name="title" sawsdl:modelReference="http://purl.org/dc/terms/title">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            title - Title of the subject.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="classification_code" type="xs:string" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            classification code - The classification code used for notation of the subject term in the subject scheme.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="subject_scheme" type="subject_scheme" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#inSubjectScheme">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            in subject scheme - Belonging of the subject to the subject scheme.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="subject" type="subject"/>
+</xs:schema>

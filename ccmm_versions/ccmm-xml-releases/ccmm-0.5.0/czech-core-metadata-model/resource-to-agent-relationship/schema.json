@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/resource-to-agent-relationship/schema.json",
+  "title": "Resource to agent relationship",
+  "description": "An association class for attaching additional information to a relationship between Dataset and Agent.",
+  "type": "object",
+  "required": [
+    "role",
+    "relation"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Resource to agent relationship"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Resource to agent relationship"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "role": {
+      "$ref": "../resource-agent-role-type/schema.json"
+    },
+    "relation": {
+      "title": "relation",
+      "anyOf": [
+        {
+          "$ref": "../agent/schema.json"
+        },
+        {
+          "$ref": "../agent/schema.json"
+        },
+        {
+          "$ref": "../agent/schema.json"
+        }
+      ]
+    }
+  }
+}

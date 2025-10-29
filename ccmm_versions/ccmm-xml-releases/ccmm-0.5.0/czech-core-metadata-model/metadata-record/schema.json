@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/metadata-record/schema.json",
+  "title": "Metadata Record",
+  "description": "Description of the metadata record of the dataset. ",
+  "type": "object",
+  "required": [
+    "qualified_relation"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Katalogizační záznam"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Katalogizační záznam"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "date_updated": {
+      "title": "Date updated",
+      "description": "Date on which the resource was changed.",
+      "type": "array",
+      "items": {
+        "title": "Date",
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "date_created": {
+      "title": "Date created",
+      "description": "The date on which the metadata record was created.",
+      "type": "string",
+      "format": "date"
+    },
+    "original_repository": {
+      "title": "original repository",
+      "description": "Link to the repository from which the metadata were originally stored and curated.",
+      "type": "array",
+      "items": {
+        "$ref": "../repository/schema.json"
+      }
+    },
+    "conforms_to_standard": {
+      "title": "Conforms to standard",
+      "description": "An established standard to which the metadata record conforms.",
+      "type": "array",
+      "items": {
+        "$ref": "../application-profile/schema.json"
+      }
+    },
+    "qualified_relation": {
+      "title": "qualified relation",
+      "description": "Link to a description of a relationship between metadata record and agent.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "../resource-to-agent-relationship/schema.json"
+      }
+    },
+    "language": {
+      "title": "language",
+      "description": "A language used in the textual metadata describing titles, descriptions of the metadata record.",
+      "type": "array",
+      "items": {
+        "$ref": "../language-system/schema.json"
+      }
+    }
+  }
+}

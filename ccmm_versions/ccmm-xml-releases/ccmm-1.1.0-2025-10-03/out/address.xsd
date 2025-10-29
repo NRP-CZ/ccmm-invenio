@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="address">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="address_area" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="administrative_unit_level_1" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="administrative_unit_level_2" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="full_address" type="string"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="label">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="locator_designator" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="locator_name" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="po_box" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="post_code" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="post_name" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="thoroughfare" type="string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="address" type="address"/>
+</xs:schema>

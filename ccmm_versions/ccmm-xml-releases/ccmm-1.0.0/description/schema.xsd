@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../description-type/schema.xsd"/>
+  <xs:complexType name="description" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#Description">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Description - All additional information that does not fit in any of the other categories. May be used for technical information or detailed information associated with a scientific instrument.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element name="description_text" type="xs:string" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#descriptionText">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            description text - Text describing the resource.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="has_description_type" type="description_type" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has description type - Relation to the type of the description.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="description" type="description"/>
+</xs:schema>

@@ -1,0 +1,14 @@
+e is null
+
+Og/n<@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:28279
+Og@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:28265
+generatePropertyContext@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:29801
+generateClassesContext@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:32034
+generatePropertyContext@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:30581
+generateClassesContext@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:32034
+lst/<@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:29527
+generateToObject@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:34475
+generateToStream@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:33858
+generateToObject@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:830:8944
+generateToStream@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:830:9524
+generateArtefact@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:1587:60852

@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "name": {
+      "@id": "http://xmlns.com/foaf/0.1/name",
+      "@type": "xsd:string"
+    },
+    "has_identifier": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/hasIdentifier",
+      "@container": "@set",
+      "@context": "../identifier/context.jsonld"
+    },
+    "contact_point": {
+      "@id": "http://www.w3.org/ns/dcat#contactPoint",
+      "@container": "@set",
+      "@context": "../contact-details/context.jsonld"
+    },
+    "alternate_name": {
+      "@id": "http://www.w3.org/2006/vcard/ns#organization-name",
+      "@container": "@language"
+    },
+    "family_name": {
+      "@id": "http://www.w3.org/2006/vcard/ns#family-name",
+      "@type": "xsd:string"
+    },
+    "given_name": {
+      "@id": "http://www.w3.org/2006/vcard/ns#given-name",
+      "@type": "xsd:string"
+    },
+    "has_affiliation": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/hasAffiliation",
+      "@container": "@set",
+      "@context": "../organization/context.jsonld"
+    },
+    "Agent": {
+      "@id": "http://xmlns.com/foaf/0.1/Agent",
+      "@context": {}
+    },
+    "Organization": {
+      "@id": "http://www.w3.org/ns/prov#Organization",
+      "@context": {}
+    },
+    "Person": {
+      "@id": "http://www.w3.org/ns/prov#Person",
+      "@context": {}
+    }
+  }
+}

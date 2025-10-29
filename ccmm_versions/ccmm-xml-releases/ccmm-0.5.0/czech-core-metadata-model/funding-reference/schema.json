@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/funding-reference/schema.json",
+  "title": "Funding reference",
+  "description": "Information about financial support (funding) for the resource being registered.",
+  "type": "object",
+  "required": [
+    "funder"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Funding reference"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Funding reference"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "funding_program": {
+      "title": "Funding program",
+      "description": "Reference to the specific funding program.",
+      "type": "string"
+    },
+    "award_title": {
+      "title": "Award title",
+      "description": " The human readable title or name of the award (grant).",
+      "type": "string"
+    },
+    "local_identifier": {
+      "title": "Local identifier",
+      "description": "The code assigned by the funder to a sponsored award (grant).",
+      "type": "string"
+    },
+    "funder": {
+      "title": "has funder",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "../agent/schema.json"
+          },
+          {
+            "$ref": "../agent/schema.json"
+          },
+          {
+            "$ref": "../agent/schema.json"
+          }
+        ]
+      }
+    }
+  }
+}

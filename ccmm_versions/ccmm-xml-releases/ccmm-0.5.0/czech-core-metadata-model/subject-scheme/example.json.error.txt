@@ -1,0 +1,7 @@
+a is undefined
+
+wr.resolveWithContext@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:1892
+wr.resolve@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:2123
+generateJsonData@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:2862
+Xat/<@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:690:2656
+generateToObject@http://localhost:3001/data-specification-editor/assets/index-A_ylE6w5.js:830:9316

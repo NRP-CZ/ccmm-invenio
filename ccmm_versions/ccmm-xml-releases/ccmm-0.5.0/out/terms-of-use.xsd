@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="terms_of_use">
+    <xs:sequence>
+      <xs:element name="access_rights" type="access_rights"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="description" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="has_contact" type="agent"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      <xs:element name="license" type="license_document"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="terms_of_use" type="terms_of_use"/>
+</xs:schema>

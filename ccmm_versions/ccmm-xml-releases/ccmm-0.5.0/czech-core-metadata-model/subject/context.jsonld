@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "definition": {
+      "@id": "http://www.w3.org/2004/02/skos/core#definition",
+      "@container": "@language"
+    },
+    "title": {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "classification_code": {
+      "@id": "https://techlib.cz/vocabulary/datacite/subjectClassificationCode",
+      "@type": "xsd:string"
+    },
+    "scheme": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/inSubjectScheme",
+      "@context": "../subject-scheme/context.jsonld"
+    },
+    "Subject": {
+      "@id": "https://techlib.cz/vocabulary/datacite/Subject",
+      "@context": {}
+    }
+  }
+}

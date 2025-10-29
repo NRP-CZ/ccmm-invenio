@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/distribution/schema.json",
+  "anyOf": [
+    {
+      "title": "Distribution",
+      "description": "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).",
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "iri"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "const": "Distribuce"
+            },
+            {
+              "type": "array",
+              "contains": {
+                "const": "Distribuce"
+              },
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "title": "Distribution - data service",
+      "description": "Physical embodiment of the dataset as a particular data service. ",
+      "type": "object",
+      "required": [
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "iri"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "const": "Distribution - data service"
+            },
+            {
+              "type": "array",
+              "contains": {
+                "const": "Distribution - data service"
+              },
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "title": {
+          "title": "Title",
+          "description": "A name given to the distribution.",
+          "type": "object",
+          "required": [
+            "@value",
+            "@language"
+          ],
+          "properties": {
+            "@value": {
+              "title": "Text v daném jazyce",
+              "type": "string"
+            },
+            "@language": {
+              "title": "Jazyk textu",
+              "type": "string"
+            }
+          }
+        },
+        "description": {
+          "title": "Description",
+          "description": "A free-text account of the Distribution.",
+          "type": "array",
+          "items": {
+            "title": "Text",
+            "type": "object",
+            "additionalProperties": {
+              "title": "Hodnota v jiném jazyce",
+              "type": "string"
+            },
+            "required": [
+
+            ],
+            "properties": {
+              "cs": {
+                "title": "Hodnota v českém jazyce",
+                "type": "string"
+              },
+              "en": {
+                "title": "Hodnota v anglickém jazyce",
+                "type": "string"
+              }
+            }
+          }
+        },
+        "documentation": {
+          "title": "documentation",
+          "description": "A page or document about this Distribution.",
+          "type": "array",
+          "items": {
+            "$ref": "../documentation/schema.json"
+          }
+        },
+        "specification": {
+          "title": "specification",
+          "description": "An established standard to which the distribution conforms.",
+          "type": "array",
+          "items": {
+            "$ref": "../application-profile/schema.json"
+          }
+        },
+        "access_service": {
+          "title": "access service",
+          "description": "A site or end-point that gives access to the distribution of the dataset.",
+          "type": "array",
+          "items": {
+            "$ref": "../data-service/schema.json"
+          }
+        }
+      }
+    },
+    {
+      "title": "Distribution - downloadable file",
+      "description": "Physical embodiment of the dataset in a particular format. ",
+      "type": "object",
+      "required": [
+        "title",
+        "byte_size",
+        "access_url",
+        "format"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "iri"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "const": "Distribution - downloadable file"
+            },
+            {
+              "type": "array",
+              "contains": {
+                "const": "Distribution - downloadable file"
+              },
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "title": {
+          "title": "Title",
+          "description": "A name given to the distribution.",
+          "type": "object",
+          "required": [
+            "@value",
+            "@language"
+          ],
+          "properties": {
+            "@value": {
+              "title": "Text v daném jazyce",
+              "type": "string"
+            },
+            "@language": {
+              "title": "Jazyk textu",
+              "type": "string"
+            }
+          }
+        },
+        "byte_size": {
+          "title": "Byte size",
+          "description": "The size of a Distribution in bytes. ",
+          "type": "integer"
+        },
+        "checksum": {
+          "$ref": "../checksum/schema.json"
+        },
+        "conforms_to_schema": {
+          "title": "conforms to schema",
+          "description": "An established standard to which the distribution conforms.",
+          "type": "array",
+          "items": {
+            "$ref": "../application-profile/schema.json"
+          }
+        },
+        "media_type": {
+          "$ref": "../media-type/schema.json"
+        },
+        "access_url": {
+          "title": "access URL",
+          "description": "A URL that gives access to a Distribution of the Dataset.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "../file/schema.json"
+          }
+        },
+        "download_url": {
+          "title": "download URL",
+          "description": "A URL that is a direct link to a downloadable file in a given format.",
+          "type": "array",
+          "items": {
+            "$ref": "../file/schema.json"
+          }
+        },
+        "format": {
+          "$ref": "../format/schema.json"
+        }
+      }
+    }
+  ]
+}

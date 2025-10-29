@@ -1,0 +1,8 @@
+Property https://ofn.gov.cz/association/1742235175669-5df5-4314-aa6b has no interpretation!
+
+propertyToMatchCheckType@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:1539:9014
+propertyToMatch@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:1539:8357
+classToTemplate@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:1539:8081
+fromRoots@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:1539:6253
+jct@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:1539:5611
+generateToObject@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:1539:27455
