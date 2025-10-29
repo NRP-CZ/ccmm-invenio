@@ -39,9 +39,10 @@ tests = [
 ccmm_invenio = "ccmm_invenio.fixtures"
 
 [tool.hatch.version]
-path = "ccmm_invenio/__init__.py"
+path = "src/ccmm_invenio/__init__.py"
 
 [tool.hatch.build.targets.sdist]
-include = [
-    "/ccmm_invenio",
-]
+packages = ["src/ccmm_invenio"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ccmm_invenio"]
