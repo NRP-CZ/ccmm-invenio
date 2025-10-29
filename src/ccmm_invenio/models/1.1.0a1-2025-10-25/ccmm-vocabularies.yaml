@@ -4,9 +4,6 @@ CCMMAccessRights:
 CCMMAlternateTitleType:
   type: vocabulary
   vocabulary-type: titletypes # in RDM
-CCMMApplicationProfile:
-  type: vocabulary
-  vocabulary-type: applicationprofiles  # not in RDM
 CCMMChecksumAlgorithm:
   type: vocabulary
   vocabulary-type: checksumalgorithms  # not in RDM
