@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://techlib.cz/specification/ccmm/funder-identifier/schema.json",
+  "title": "Funder identifier",
+  "description": "Uniquely identifies a funding entity, according to various types.",
+  "type": "object",
+  "required": [
+
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Funder identifier"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Funder identifier"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "funder_name": {
+      "title": "Funder name",
+      "description": "Funder name",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "identifier": {
+      "title": "has identifier",
+      "description": "has identifier",
+      "type": "array",
+      "items": {
+        "$ref": "../identifier/schema.json"
+      }
+    }
+  }
+}

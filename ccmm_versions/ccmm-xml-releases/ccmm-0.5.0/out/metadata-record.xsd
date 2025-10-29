@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="metadata_record">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="conforms_to_standard" type="application_profile"/>
+      <xs:element minOccurs="0" name="date_created" type="date"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="date_updated" type="date"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="language" type="language_system"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="original_repository" type="repository"/>
+      <xs:element maxOccurs="unbounded" name="qualified_relation" type="resource_to_agent_relationship"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="metadata_record" type="metadata_record"/>
+</xs:schema>

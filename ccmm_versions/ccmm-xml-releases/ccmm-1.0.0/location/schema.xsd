@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"
+  elementFormDefault="unqualified" xmlns:sawsdl="http://www.w3.org/ns/sawsdl"
+  xmlns:gml="http://www.opengis.net/gml/3.2">
+  <xs:import namespace="http://www.opengis.net/gml/3.2"
+    schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <xs:include schemaLocation="../geometry/schema.xsd"/>
+  <xs:include schemaLocation="../resource/schema.xsd"/>
+  <xs:include schemaLocation="../location-relation-type/schema.xsd"/>
+  <xs:complexType name="location"
+    sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#Geolocation http://purl.org/dc/terms/Location">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Location - Spatial region, named place or geometry representation of a place related to the dataset. 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="bounding_box" type="gml:EnvelopeType"
+        sawsdl:modelReference="http://www.w3.org/ns/dcat#bbox">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            bounding box - Bounding box of the location geometry.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="name" type="xs:string"
+        sawsdl:modelReference="http://purl.org/dc/terms/title">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            name - Name of the spatial location.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="geometry" type="geometry"
+        sawsdl:modelReference="http://www.w3.org/ns/locn#geometry">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has geometry - The corresponding geometry for a resource.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="related_object" type="resource"
+        sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has related object - Relation to the spatial object.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="relation_type" type="relation_type"
+        sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasType">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has location relation type - Relation of the location to the dataset.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="location" type="location"/>
+</xs:schema>

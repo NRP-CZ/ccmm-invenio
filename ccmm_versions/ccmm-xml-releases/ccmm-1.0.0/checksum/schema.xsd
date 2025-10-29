@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:complexType name="checksum" sawsdl:modelReference="http://spdx.org/rdf/terms#Checksum">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Checksum - A value that allows the contents of a file to be authenticated.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element name="checksum_value" type="xs:hexBinary" sawsdl:modelReference="http://spdx.org/rdf/terms#checksumValue">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            checksum value - A lower case hexadecimal encoded digest value produced using a specific algorithm. 
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="algorithm" type="xs:anyURI" sawsdl:modelReference="http://spdx.org/rdf/terms#algorithm">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            uses algorithm - The algorithm used to produce the subject Checksum.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="checksum" type="checksum"/>
+</xs:schema>

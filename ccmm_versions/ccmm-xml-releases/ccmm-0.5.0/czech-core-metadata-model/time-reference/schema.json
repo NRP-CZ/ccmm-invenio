@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://techlib.cz/specification/ccmm/time-reference/schema.json",
+  "title": "Time reference",
+  "description": "A date on which something relative to the resource has happened.",
+  "type": "object",
+  "required": [
+    "date_type",
+    "date"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Time reference"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Time reference"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "date_information": {
+      "title": "Date information",
+      "description": "Additional information to the date in text form.",
+      "type": "string"
+    },
+    "date_type": {
+      "title": "Date type",
+      "description": "Type of the date.",
+      "type": "string"
+    },
+    "date": {
+      "title": "Date",
+      "description": "A point or period of time associated with an event in the lifecycle of the resource.",
+      "type": "string",
+      "format": "date"
+    }
+  }
+}

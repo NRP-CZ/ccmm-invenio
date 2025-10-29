@@ -1,0 +1,1943 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dsv: <https://w3id.org/dsv#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix cardinality: <https://w3id.org/dsv/cardinality#>.
+@prefix requirement: <https://w3id.org/dsv/requirement-level#>.
+@prefix role: <https://w3id.org/dsv/class-role#>.
+@prefix prof: <http://www.w3.org/ns/dx/prof/>.
+@prefix : <https://model.ccmm.cz/rd/>.
+
+
+<https://model.ccmm.cz/rd/> a prof:Profile, dsv:ApplicationProfile.
+:Dataset dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Conjunto de datos"@es, "Dataset"@en, "Dataset"@it, "Datová sada"@cs, "Jeu de données"@fr, "Σύνολο Δεδομένων"@el, "قائمة بيانات"@ar, "データセット"@ja, "Datasæt"@da;
+    skos:definition "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja, "A collection of data, published or curated by a single source, and available for access or download in one or more representations."@en, "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs, "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it, "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es, "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr, "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el, "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da;
+    a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://model.ccmm.cz/rd/Dataset.title> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Title"@en;
+    skos:definition "A name given to the resource."@en;
+    dsv:cardinality cardinality:11;
+    dsv:property dct:title;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Dataset.hasAlternateIdentifier> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/hasAlternateIdentifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/hasAlternateIdentifier>
+];
+    dsv:property <https://techlib.cz/vocabulary/datacite/hasAlternateIdentifier>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <plckn6gl38m7ufbi8u>.
+
+<https://model.ccmm.cz/rd/Dataset.description> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Description"@en;
+    skos:scopeNote "Description of a data set other than abstract, e.g. purpose of creation, sources, preffered usage etc."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource dct:description
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property dct:description;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
+
+<https://model.ccmm.cz/rd/Dataset.version> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Version"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource :undefined-identifier:
+];
+    dsv:cardinality cardinality:0n;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Dataset.publicationYear> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Publication year"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/relatedItemPublicationYear>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://techlib.cz/vocabulary/datacite/relatedItemPublicationYear>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#gYear>.
+
+<https://model.ccmm.cz/rd/Dataset.hasRelatedResource> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has related resource"@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasRelatedResource>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Resource.
+
+<https://model.ccmm.cz/rd/Dataset.hasTermsOfUse> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has terms of use"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/hasVersion>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://techlib.cz/vocabulary/datacite/hasVersion>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :TermsOfUse.
+
+<https://model.ccmm.cz/rd/Dataset.hasFundingReference> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/hasFundingReference>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/hasFundingReference>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://techlib.cz/vocabulary/datacite/hasFundingReference>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :FundingReference.
+
+<https://model.ccmm.cz/rd/Dataset.hasDistribution> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has distribution"@en;
+    skos:scopeNote "For the distribution of data in the form of files use instances of class Distribution – downloadable file. For the distribution of data as a service use instance of class Distribution – data service. "@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasDistribution>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Distribution.
+
+<https://model.ccmm.cz/rd/Dataset.hasValidationResult> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has validation result"@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasValidationResult>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ValidationResult.
+
+<https://model.ccmm.cz/rd/Dataset.hasSubject> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:scopeNote ""@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/hasSubject>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/hasSubject>
+];
+    dsv:property <https://techlib.cz/vocabulary/datacite/hasSubject>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Subject.
+
+<https://model.ccmm.cz/rd/Dataset.hasTimeReference> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has time reference"@en;
+    skos:scopeNote "Must contain at least one time reference with date type value \"Created\" from DataCIte controlled vocabulary https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/dateType/."@en;
+    dsv:cardinality cardinality:1n;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasTimeReference>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :TimeReference.
+
+<https://model.ccmm.cz/rd/Dataset.qualifiedRelation> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "qualified relation"@en;
+    skos:definition "Attachment of resource to the relationship."@en;
+    skos:scopeNote "Description of relationship between dataset and agent (e.g. creator, publisher, etc.). Controlled list of possible relations will be created soon. In the meantime use creator, publisher, or one from list of contributorType  from DataCite: https://datacite-metadata-schema.readthedocs.io/en/4.6/appendices/appendix-1/contributorType/)"@en;
+    dsv:cardinality dsv:nn;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/qualifiedRelation>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceToAgentRelationship.
+
+<https://model.ccmm.cz/rd/Dataset.provenance> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.provenance>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.provenance>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.provenance>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.provenance>
+];
+    dsv:cardinality cardinality:0n;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ProvenanceStatement.
+
+<https://model.ccmm.cz/rd/Dataset.hasLocation> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has location"@en;
+    skos:scopeNote "In the CCMM spatial coverage does not only cover the area of dataset, it may be connected to the dataset in some other way, e.g. the place from where the data were measured, administrative area to which the dataset  conforms or other."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage>, <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage>
+];
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Location.
+
+<https://model.ccmm.cz/rd/Dataset.hasIdentifier> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has identifier"@en;
+    skos:definition "has identifier"@en;
+    dsv:cardinality cardinality:1n;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasIdentifier>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Identifier.
+
+<https://model.ccmm.cz/rd/Dataset.isDescribedBy> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "is described by"@en;
+    skos:definition "Inverse relation between dataset and metadata record."@en;
+    dsv:cardinality cardinality:1n;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/isDescribedBy>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :MetadataRecord.
+
+<https://model.ccmm.cz/rd/Dataset.hasAlternateTitle> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has alternate title"@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasAlternateTitle>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :AlternateTitle.
+
+<https://model.ccmm.cz/rd/Dataset.primaryLanguage> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "primary language"@en;
+    skos:definition "A primary language of the Dataset."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.language>;
+    dsv:cardinality cardinality:01;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LanguageSystem.
+
+<https://model.ccmm.cz/rd/Dataset.otherLanguage> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "other language"@en;
+    skos:definition "Any other languages of the Dataset."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.language>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.language>
+];
+    dsv:cardinality cardinality:0n;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LanguageSystem.
+
+<https://model.ccmm.cz/rd/Dataset.resourceType> dsv:domain :Dataset;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has resource type"@en;
+    skos:definition "A resource type of the Dataset."@en;
+    skos:scopeNote "Use IRI identifier of a value from the register https://vocabularies.coar-repositories.org/resource_types/."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.type>;
+    dsv:cardinality cardinality:01;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceType.
+:Agent dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Agent>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Agent>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Agent>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Agent>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/Agent.contactPoint> dsv:domain :Agent;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/ns/dcat#contactPoint>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://www.w3.org/ns/dcat#contactPoint>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <http://www.w3.org/ns/dcat#contactPoint>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ContactDetails.
+
+<https://model.ccmm.cz/rd/Agent.hasIdentifier> dsv:domain :Agent;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has identifier"@en;
+    skos:definition "has identifier"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasIdentifier>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Identifier.
+
+<https://model.ccmm.cz/rd/Agent.name> dsv:domain :Agent;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Name"@en;
+    skos:definition "Name of the agent."@en;
+    skos:scopeNote "It is used for the official name of the agent. For Persons it is combination of first and family names."@en;
+    dsv:cardinality cardinality:11;
+    dsv:property <http://xmlns.com/foaf/0.1/name>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+:Person dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "Physical person. "@en;
+    skos:scopeNote ""@en;
+    dsv:specializes :Agent;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/ns/prov#Person>
+];
+    a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/prov#Person>.
+
+<https://model.ccmm.cz/rd/Person.GivenName> dsv:domain :Person;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Given name"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#given-name>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <http://www.w3.org/2006/vcard/ns#given-name>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Person.FamilyName> dsv:domain :Person;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Family name"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#family-name>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <http://www.w3.org/2006/vcard/ns#family-name>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Person.hasAffiliation> dsv:domain :Person;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has affiliation"@en;
+    skos:definition "Affiliation of the person to the organization."@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasAffiliation>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Organization.
+:Organization dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. "@en;
+    dsv:specializes :Agent;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Agent>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/ns/prov#Organization>
+];
+    a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/prov#Organization>.
+
+<https://model.ccmm.cz/rd/Organization.AlternateName> dsv:domain :Organization;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Alternate name"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#organization-name>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <http://www.w3.org/2006/vcard/ns#organization-name>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
+:TermsOfUse dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Terms of use"@en;
+    skos:definition "Terms of use defines overall conditions and rights regarding access and usage  of dataset. "@en;
+    skos:scopeNote "Class terms of use combines to classes from profiles DCAT-AP-CZ and DataCite. It shall be further extended. "@en;
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/datacite/Rights>.
+
+<https://model.ccmm.cz/rd/TermsOfUse.Description> dsv:domain :TermsOfUse;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "Descriptive text on details of rights and licensing."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource dct:description
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property dct:description;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
+
+<https://model.ccmm.cz/rd/TermsOfUse.contactPoint> dsv:domain :TermsOfUse;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Punto de contacto"@es, "has contact"@en, "kontaktní bod"@cs, "point de contact"@fr, "punto di contatto"@it, "σημείο επικοινωνίας"@el, "عنوان اتصال"@ar, "窓口"@ja, "kontaktpunkt"@da;
+    skos:definition "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es, "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it, "Contact person for the further details about the terms of use."@en, "Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard."@cs, "Relie un jeu de données à une information de contact utile en utilisant VCard."@fr, "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard."@el, "تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard"@ar, "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。"@ja, "Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales."@da;
+    dsv:property <http://www.w3.org/ns/dcat#contactPoint>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Agent.
+
+<https://model.ccmm.cz/rd/TermsOfUse.license> dsv:domain :TermsOfUse;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource dct:license
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource dct:license
+];
+    dsv:cardinality cardinality:11;
+    dsv:property dct:license;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LicenseDocument.
+
+<https://model.ccmm.cz/rd/TermsOfUse.accessRights> dsv:domain :TermsOfUse;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "access rights"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource dct:accessRights
+];
+    dsv:cardinality cardinality:11;
+    dsv:property dct:accessRights;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :AccessRights.
+:FundingReference dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/FundingReference>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/FundingReference>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/datacite/FundingReference>.
+
+<https://model.ccmm.cz/rd/FundingReference.localIdentifier> dsv:domain :FundingReference;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Local identifier"@en;
+    skos:definition "The code assigned by the funder to a sponsored award (grant)."@en;
+    skos:scopeNote "In case the award or grant has an ID or DOI, the full URL can be included."@en;
+    dsv:cardinality cardinality:01;
+    dsv:property <https://techlib.cz/vocabulary/datacite/awardNumber>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/FundingReference.awardTitle> dsv:domain :FundingReference;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Award title"@en;
+    skos:definition " The human readable title or name of the award (grant)."@en;
+    dsv:cardinality cardinality:01;
+    dsv:property <https://techlib.cz/vocabulary/datacite/awardTitle>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/FundingReference.hasFunder> dsv:domain :FundingReference;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has funder"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/hasFunderIdentifier>
+];
+    dsv:cardinality cardinality:1n;
+    dsv:property <https://techlib.cz/vocabulary/datacite/hasFunderIdentifier>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Agent.
+
+<https://model.ccmm.cz/rd/FundingReference.fundingProgram> dsv:domain :FundingReference;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Funding program"@en;
+    skos:definition "Reference to the specific funding program."@en;
+    dsv:cardinality cardinality:01;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#anyURI>.
+:Distribution dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/Distribution.title> dsv:domain :Distribution;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Title"@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title>
+];
+    dsv:cardinality cardinality:11;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:ValidationResult dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Validation result"@en;
+    skos:definition "Class describing the result of validation testing. It may include validation of metadata, data and/or web services accessing the data."@en;
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/ccmm/ValidationResult>.
+
+<https://model.ccmm.cz/rd/ValidationResult.label> dsv:domain :ValidationResult;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Validation result label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:Subject dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:scopeNote "Recommended approach is to use controlled list values, preferably in the form of IRI. "@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/Subject>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/Subject>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/datacite/Subject>.
+
+<https://model.ccmm.cz/rd/Subject.inSubjectScheme> dsv:domain :Subject;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "in subject scheme"@en;
+    dsv:cardinality cardinality:01;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/inSubjectScheme>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :SubjectScheme.
+
+<https://model.ccmm.cz/rd/Subject.classificationCode> dsv:domain :Subject;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Classification code"@en;
+    skos:definition "The classification code used for the subject term in the subject scheme."@en;
+    dsv:cardinality cardinality:01;
+    dsv:property <https://techlib.cz/vocabulary/datacite/subjectClassificationCode>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Subject.title> dsv:domain :Subject;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Title"@en;
+    skos:definition "Title of the subject"@en;
+    dsv:cardinality cardinality:1n;
+    dsv:property dct:title;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://model.ccmm.cz/rd/Subject.definition> dsv:domain :Subject;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Definition"@en;
+    skos:definition "Definition of the subject."@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property skos:definition;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
+:Resource dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Resource"@en;
+    skos:definition "Resource represents any resource, physical or digital, that is related to the described dataset. "@en;
+    skos:scopeNote "Class is used for description of the resource together with the type of relation, for which is used codelist. Distributions of the datasets SHALL NOT be modelled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. "@en;
+    a dsv:ClassProfile;
+    dsv:class rdfs:Resource, <https://techlib.cz/vocabulary/datacite/Resource>.
+
+<https://model.ccmm.cz/rd/Resource.title> dsv:domain :Resource;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Title"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/datacite/relatedItemTitle>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://techlib.cz/vocabulary/datacite/relatedItemTitle>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Resource.hasTimeReference> dsv:domain :Resource;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has time reference"@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasTimeReference>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :TimeReference.
+
+<https://model.ccmm.cz/rd/Resource.qualifiedRelation> dsv:domain :Resource;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "qualified relation"@en;
+    skos:definition "Attachment of resource to the relationship."@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/qualifiedRelation>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceToAgentRelationship.
+
+<https://model.ccmm.cz/rd/Resource.hasIdentifier> dsv:domain :Resource;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has identifier"@en;
+    skos:definition "has identifier"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasIdentifier>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Identifier.
+
+<https://model.ccmm.cz/rd/Resource.resourceURL> dsv:domain :Resource;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Resource URL"@en;
+    skos:definition "Resolvable URL representing the resource, preferably human readable."@en;
+    skos:scopeNote "In case it is filled, it must be filled the same in c:iri.\nIf more resolvable IRIs, Resource URL shall link to human readable version, machine readable ID is always in c:iri."@en;
+    dsv:cardinality cardinality:01;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://model.ccmm.cz/rd/Resource.type> dsv:domain :Resource;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has resource type"@en;
+    skos:definition "Type of the related resource."@en;
+    skos:scopeNote "Use IRI identifier of a value from the register https://vocabularies.coar-repositories.org/resource_types/."@en;
+    dsv:cardinality cardinality:01;
+    dsv:property dct:type;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceType.
+
+<https://model.ccmm.cz/rd/Resource.hasResourceRelationType> dsv:domain :Resource;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has resource relation type"@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/ccmm/hasType>
+];
+    dsv:cardinality cardinality:01;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasType>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceRelationType.
+:ResourceToAgentRelationship dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Resource to agent relationship"@en;
+    skos:definition "An association class for attaching additional information to a relationship between Dataset and Agent."@en;
+    skos:scopeNote "Use to characterize a relationship between datasets and agents, where the nature of the relationship is known but is not adequately characterized by the standard [DCTERMS] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [PROV-O] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)"@en;
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/ccmm/ResourceToAgentRelationship>.
+
+<https://model.ccmm.cz/rd/ResourceToAgentRelationship.relation> dsv:domain :ResourceToAgentRelationship;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "relation"@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Relationship.relation>;
+    dsv:cardinality cardinality:11;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Agent.
+
+<https://model.ccmm.cz/rd/DatasetToAgentRelationship.hadRole> dsv:domain :ResourceToAgentRelationship;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole>
+];
+    dsv:cardinality cardinality:11;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceAgentRoleType.
+:ResourceAgentRoleType dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Resource agent role type"@en;
+    skos:definition "Role of the agent in the relationship to the resource. "@en;
+    skos:scopeNote "Use value from code list NTK TBD."@en;
+    a dsv:ClassProfile;
+    dsv:class skos:Concept.
+
+<https://model.ccmm.cz/rd/ResourceAgentRoleType.label> dsv:domain :ResourceAgentRoleType;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Resource agent role type label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+:ContactDetails dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Contact details"@en;
+    skos:definition "Contact details such as telephone, e-mail address etc."@en;
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/ccmm/ContactDetails>.
+
+<https://model.ccmm.cz/rd/ContactDetails.phone> dsv:domain :ContactDetails;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Phone"@en;
+    skos:definition "Phone number"@en;
+    skos:scopeNote "Phone number in international format +xx(x) xxx xxx xxx"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/phone>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/ContactDetails.email> dsv:domain :ContactDetails;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Email"@en;
+    skos:definition "Email address."@en;
+    skos:scopeNote "Email address in standard format, e.g. john.doe@domain.com"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/email>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/ContactDetails.hasAddress> dsv:domain :ContactDetails;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#hasAddress>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#hasAddress>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <http://www.w3.org/2006/vcard/ns#hasAddress>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Address.
+
+<https://model.ccmm.cz/rd/ContactDetails.dataBox> dsv:domain :ContactDetails;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Data box"@en;
+    skos:definition "Code of the data box."@en;
+    skos:scopeNote ""@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/dataBox>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+:Address dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/ns/locn#Address>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://www.w3.org/ns/locn#Address>
+];
+    a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/locn#Address>.
+
+<https://model.ccmm.cz/rd/Address.label> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Address label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://model.ccmm.cz/rd/Address.fullAddress> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Full address"@en;
+    skos:definition "The complete address written as a string, with or without formatting."@en;
+    dsv:property <http://www.w3.org/ns/locn#fullAddress>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Address.poBox> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "The Post Office Box number."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/ns/locn#poBox>
+];
+    dsv:property <http://www.w3.org/ns/locn#poBox>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Address.thoroughfare> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Thoroughfare"@en;
+    skos:definition "An address component that represents the name of a passage or way through from one location to another. A thoroughfare is not necessarily a road, it might be a waterway or some other feature."@en;
+    dsv:property <http://www.w3.org/ns/locn#thoroughfare>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Address.locatorDesignator> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Locator designator"@en;
+    skos:definition "A number or a sequence of characters that uniquely identifies the locator within the relevant scope(s). The full identification of the locator could include one or more locator designators. "@en;
+    dsv:property <http://www.w3.org/ns/locn#locatorDesignator>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Address.locatorName> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Locator name"@en;
+    skos:definition "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building."@en;
+    dsv:property <http://www.w3.org/ns/locn#locatorName>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Address.addressArea> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Address area"@en;
+    skos:definition "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village."@en;
+    dsv:property <http://www.w3.org/ns/locn#addressArea>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Address.postName> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Post name"@en;
+    skos:definition "The key postal division of the address, usually the city. (INSPIRE's definition is \"One or more names created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\")."@en;
+    dsv:property <http://www.w3.org/ns/locn#postName>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Address.administrativeUnitLevel1> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Administrative unit level 1"@en;
+    skos:definition "The uppermost administrative unit for the address, almost always a country. The range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en;
+    skos:scopeNote "Best practice is to use the ISO 3166-1 code but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'United Kingdom' or 'UK' consistently throughout the data set and avoid mixing the two."@en;
+    dsv:property <http://www.w3.org/ns/locn#adminUnitL1>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Address.administrativeUnitLevel2> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Administrative unit level 2"@en;
+    skos:definition "The region of the address, usually a county, state or other such area that typically encompasses several localities. The range is a literal, conceptually defined by the INSPIRE Geographical Name data type."@en;
+    dsv:property <http://www.w3.org/ns/locn#adminUnitL2>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+
+<https://model.ccmm.cz/rd/Address.postCode> dsv:domain :Address;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Post code"@en;
+    skos:definition "The post code (a.k.a postal code, zip code etc.). Post codes are common elements in many countries' postal address systems."@en;
+    dsv:property <http://www.w3.org/ns/locn#postCode>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#string>.
+:MetadataRecord dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Metadata Record"@en, "Katalogizační záznam"@cs, "Record di catalogo"@it, "Registre du catalogue"@fr, "Registro del catálogo"@es, "Καταγραφή καταλόγου"@el, "سجل"@ar, "カタログ・レコード"@ja, "Katalogpost"@da;
+    skos:definition "1つのデータセットを記述したデータ・カタログ内のレコード。"@ja, "Description of the metadata record of the dataset. "@en, "Un record in un catalogo di dati che descrive un singolo dataset o servizio di dati."@it, "Un registre du catalogue ou une entrée du catalogue, décrivant un seul jeu de données."@fr, "Un registro en un catálogo de datos que describe un solo conjunto de datos o un servicio de datos."@es, "Záznam v datovém katalogu popisující jednu datovou sadu či datovou službu."@cs, "Μία καταγραφή ενός καταλόγου, η οποία περιγράφει ένα συγκεκριμένο σύνολο δεδομένων."@el, "En post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en datatjeneste."@da;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/MetadataRecord.conformsToStandard> dsv:domain :MetadataRecord;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Conforms to standard"@en;
+    skos:definition "An established standard to which the metadata record conforms."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo>
+];
+    dsv:cardinality cardinality:0n;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ApplicationProfile.
+
+<https://model.ccmm.cz/rd/MetadataRecord.originalRepository> dsv:domain :MetadataRecord;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "original repository"@en;
+    skos:definition "Link to the repository from which the metadata were originally stored and curated."@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/originalRepository>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Repository.
+
+<https://model.ccmm.cz/rd/MetadataRecord.DateCreated> dsv:domain :MetadataRecord;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Date created"@en;
+    skos:definition "The date on which the metadata record was created."@en;
+    dsv:cardinality cardinality:01;
+    dsv:property dct:created;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://model.ccmm.cz/rd/MetadataRecord.DateUpdated> dsv:domain :MetadataRecord;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Date updated"@en;
+    skos:scopeNote "The most recent date on which the metadata record was changed or modified."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource dct:modified
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property dct:modified;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+
+<https://model.ccmm.cz/rd/MetadataRecord.describes> dsv:domain :MetadataRecord;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "describes"@en;
+    skos:definition "Dataset described by the metadata record."@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/describes>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Dataset.
+
+<https://model.ccmm.cz/rd/MetadataRecord.qualifiedRelation> dsv:domain :MetadataRecord;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "Enlace a una descripción de la relación con otro recurso."@es, "Link a una descrizione di una relazione con un'altra risorsa."@it, "Link to a description of a relationship between metadata record and agent."@en, "Odkaz na popis vztahu s jiným zdrojem."@cs, "Reference til en beskrivelse af en relation til en anden ressource."@da;
+    skos:scopeNote "Relationship shall contain at least one agent with role \"DataManager\" from codelist https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/contributorType/."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation>
+];
+    dsv:cardinality cardinality:1n;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ResourceToAgentRelationship.
+
+<https://model.ccmm.cz/rd/MetadataRecord.language> dsv:domain :MetadataRecord;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "A language used in the textual metadata describing titles, descriptions of the metadata record."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.language>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.language>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.language>
+];
+    dsv:cardinality cardinality:0n;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LanguageSystem.
+:ApplicationProfile dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Application profile"@en;
+    skos:definition "A standard or other specification to which a metadata record conforms."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Standard>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Standard>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/ApplicationProfile.label> dsv:domain :ApplicationProfile;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Label of application profile"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:ProvenanceStatement dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/ProvenanceStatement.label> dsv:domain :ProvenanceStatement;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Provenance state label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:Repository dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Repository"@en, "Catalogo"@it, "Catalogue"@fr, "Catálogo"@es, "Katalog"@cs, "Κατάλογος"@el, "فهرس قوائم البيانات"@ar, "カタログ"@ja, "Katalog"@da;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/Repository.label> dsv:domain :Repository;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Repository label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:Distribution-DownloadableFile dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Distribution - downloadable file"@en;
+    skos:definition "Physical embodiment of the dataset in a particular format. "@en;
+    dsv:specializes :Distribution;
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/ccmm/Distribution-DownloadableFile>.
+
+<https://model.ccmm.cz/rd/Distribution-DownloadableFile.downloadUrl> dsv:domain :Distribution-DownloadableFile;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl>
+];
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :File.
+
+<https://model.ccmm.cz/rd/Distribution-DownloadableFile.accessUrl> dsv:domain :Distribution-DownloadableFile;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl>
+];
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :File.
+
+<https://model.ccmm.cz/rd/Distribution-DownloadableFile.mediaType> dsv:domain :Distribution-DownloadableFile;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType>
+];
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :MediaType.
+
+<https://model.ccmm.cz/rd/Distribution-DownloadableFile.byteSize> dsv:domain :Distribution-DownloadableFile;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Byte size"@en;
+    skos:definition "The size of a Distribution in bytes. "@en;
+    dsv:cardinality cardinality:11;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+
+<https://model.ccmm.cz/rd/Distribution-DownloadableFile.conformsToSchema> dsv:domain :Distribution-DownloadableFile;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "conforms to schema"@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas>
+];
+    dsv:cardinality cardinality:0n;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ApplicationProfile.
+
+<https://model.ccmm.cz/rd/Distribution-DataService.checksum> dsv:domain :Distribution-DownloadableFile;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.checksum>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.checksum>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.checksum>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.checksum>
+];
+    dsv:cardinality cardinality:01;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Checksum.
+
+<https://model.ccmm.cz/rd/Distribution-DownloadableFile.format> dsv:domain :Distribution-DownloadableFile;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has format"@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format>
+];
+    dsv:cardinality cardinality:11;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Format.
+:Distribution-DataService dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Distribution - data service"@en;
+    skos:definition "Physical embodiment of the dataset as a particular data service. "@en;
+    dsv:specializes :Distribution;
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/ccmm/Distribution-DataService>.
+
+<https://model.ccmm.cz/rd/Distribution-DataService.accessService> dsv:domain :Distribution-DataService;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService>
+];
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :DataService.
+
+<https://model.ccmm.cz/rd/Distribution-DataService.Description> dsv:domain :Distribution-DataService;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Description"@en;
+    skos:definition "A free-text account of the Distribution."@en;
+    skos:scopeNote "This property can be repeated for parallel language versions of the description. "@en;
+    dsv:cardinality cardinality:0n;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
+
+<https://model.ccmm.cz/rd/Distribution-DataService.specification> dsv:domain :Distribution-DataService;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "specification"@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas>
+];
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ApplicationProfile.
+
+<https://model.ccmm.cz/rd/Distribution-DataService.documentation> dsv:domain :Distribution-DataService;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.documentation>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.documentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.documentation>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.documentation>
+];
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Documentation.
+:File dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "File"@en;
+    skos:definition "Resource represents any resource, physical or digital, that is related to the described dataset. "@en;
+    skos:scopeNote "Class is used for description of the resource together with the type of relation, for which is used codelist. Distributions of the datasets SHALL NOT be modelled as related resource, but as a distribution. Use qualified resource property to link to the dataset class. "@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>;
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/File.label> dsv:domain :File;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "File label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:MediaType dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "A file format or physical medium."@en;
+    skos:scopeNote "Use IRI value from registry https://www.iana.org/assignments/media-types/media-types.xhtml."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/MediaType.label> dsv:domain :MediaType;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Media type label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:DataService dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#DataService>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/DataService.endpointUrl> dsv:domain :DataService;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl>
+];
+    dsv:cardinality cardinality:1n;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Resource.
+
+<https://model.ccmm.cz/rd/DataService.label> dsv:domain :DataService;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Data service label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:Documentation dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Documentation"@en;
+    skos:definition "A textual resource intended for human consumption that contains information about the data service."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Document>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Document>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/Documentation.label> dsv:domain :Documentation;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Documentation label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:SubjectScheme dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Subject scheme"@en;
+    skos:definition "Collection of subjects (keywords, concepts, classification codes) curated by a single source."@en;
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/ccmm/SubjectScheme>.
+
+<https://model.ccmm.cz/rd/SubjectScheme.label> dsv:domain :SubjectScheme;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Subject scheme label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:Location dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "Spatial region, named place or geometry representation of a place related to the dataset. "@en;
+    skos:scopeNote "Location is represented according to the Open Formal Standard for Spatial Data. Locations are represented as a reference to the named place, geographic region or specific geometry according to the standardized geometry object representation. \nEvery Location instance must have at least one of the following attributes/relations: bbox, location name, geometry and/or related object identifier."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Location>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Location>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/datacite/Geolocation>.
+
+<https://model.ccmm.cz/rd/Location.hasRelatedObject> dsv:domain :Location;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has related object"@en;
+    skos:scopeNote "The relation is provided by the identifier of the related object."@en;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasRelatedResource>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Resource.
+
+<https://model.ccmm.cz/rd/Location.name> dsv:domain :Location;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Location name"@en;
+    skos:definition "Name of the spatial location."@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property dct:title;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
+
+<https://model.ccmm.cz/rd/Location.bbox> dsv:domain :Location;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Bounding box"@en;
+    skos:definition "Bounding box of the location geometry."@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property <http://www.w3.org/ns/dcat#bbox>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://model.ccmm.cz/rd/Location.geometry> dsv:domain :Location;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Location.geometry>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Location.geometry>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Location.geometry>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Location.geometry>
+];
+    dsv:cardinality cardinality:01;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :Geometry.
+
+<https://model.ccmm.cz/rd/Location.hasType> dsv:domain :Location;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has location relation type"@en;
+    skos:definition "Reference to the value from location types codelist."@en;
+    dsv:cardinality cardinality:11;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasType>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :LocationRelationType.
+:Geometry dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "The Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Geometry>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Geometry>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Geometry>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/Geometry.label> dsv:domain :Geometry;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Geometry label"@en;
+    dsv:cardinality cardinality:0n;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:Identifier dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/ns/adms#Identifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://www.w3.org/ns/adms#Identifier>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource :undefined-identifier:
+];
+    a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/adms#Identifier>.
+
+<https://model.ccmm.cz/rd/Identifier.value> dsv:domain :Identifier;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Value"@en;
+    skos:definition "Value of the identifer within the given identifier scheme."@en;
+    dsv:cardinality cardinality:11;
+    dsv:property skos:notation;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://model.ccmm.cz/rd/Identifier.inScheme> dsv:domain :Identifier;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/ccmm/inScheme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/ccmm/inScheme>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/inScheme>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :IdentifierScheme.
+:AlternateTitle dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Alternate title"@en;
+    skos:definition "Alternate title of the resource."@en;
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/ccmm/AlternateTitle>.
+
+<https://model.ccmm.cz/rd/AlternateTitle.title> dsv:domain :AlternateTitle;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Title"@en;
+    skos:definition "A human-readable name for the subject."@en;
+    dsv:cardinality cardinality:1n;
+    dsv:property dct:title;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+
+<https://model.ccmm.cz/rd/AlternateTitle.hasType> dsv:domain :AlternateTitle;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has alternate title type"@en;
+    skos:definition "Reference to the alternate title type codelist."@en;
+    dsv:cardinality cardinality:01;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasType>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :AlternateTitleType.
+:Checksum dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Checksum>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Checksum>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Checksum>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Checksum>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/Checksum.checksumValue> dsv:domain :Checksum;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Checksum value"@en;
+    skos:definition "A lower case hexadecimal encoded digest value produced using a specific algorithm. "@en;
+    dsv:cardinality cardinality:11;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#hexBinary>.
+
+<https://model.ccmm.cz/rd/Checksum.algorithm> dsv:domain :Checksum;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Checksum.algorithm>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Checksum.algorithm>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Checksum.algorithm>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Checksum.algorithm>
+];
+    dsv:cardinality cardinality:11;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :ChecksumAlgorithm.
+:ChecksumAlgorithm dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm>
+];
+    a dsv:ClassProfile.
+:LicenseDocument dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:scopeNote;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/LicenseDocument.label> dsv:domain :LicenseDocument;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Label of the license document."@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:LocationRelationType dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Location relation type"@en;
+    skos:definition "Relation of the dataset to the resource."@en;
+    skos:scopeNote "Use value from codelist NTK TBD."@en;
+    a dsv:ClassProfile;
+    dsv:class skos:Concept.
+
+<https://model.ccmm.cz/rd/LocationRelationType.label> dsv:domain :LocationRelationType;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Label of location relation type"@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:AlternateTitleType dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Alternate title type"@en;
+    skos:definition "Type of alternate title."@en;
+    skos:scopeNote "Use value from codelist NTK TBD."@en;
+    a dsv:ClassProfile;
+    dsv:class skos:Concept.
+
+<https://model.ccmm.cz/rd/AlternateTitleType.label> dsv:domain :AlternateTitleType;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Alternate title type label."@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:DateType dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Date type"@en;
+    skos:definition "Type of a date in relation to the resource."@en;
+    skos:scopeNote "Use value from codelist NTK TBD."@en;
+    a dsv:ClassProfile;
+    dsv:class skos:Concept.
+
+<https://model.ccmm.cz/rd/DateType.label> dsv:domain :DateType;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Date type label"@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:ResourceType dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Resource type"@en;
+    skos:definition "Type of the resource."@en;
+    skos:scopeNote "Use IRI identifier of the resource typr from the codelist https://vocabularies.coar-repositories.org/resource_types/."@en;
+    a dsv:ClassProfile;
+    dsv:class skos:Concept.
+
+<https://model.ccmm.cz/rd/ResourceType.label> dsv:domain :ResourceType;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Resource type label"@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:ResourceRelationType dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Resource relation type"@en;
+    skos:definition "Type of the relation between the dataset and given resource."@en;
+    skos:scopeNote "Use value from the codelist NTK TBD."@en;
+    a dsv:ClassProfile;
+    dsv:class skos:Concept.
+
+<https://model.ccmm.cz/rd/ResourceRelationType.label> dsv:domain :ResourceRelationType;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Relation type label"@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:LanguageSystem dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Language system"@en;
+    skos:scopeNote "Use IRI identifier from the register http://publications.europa.eu/resource/authority/language."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>
+];
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/LanguageSystem.label> dsv:domain :LanguageSystem;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Language label"@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:Format dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Format"@en;
+    skos:definition "Format of downloadable file."@en;
+    skos:scopeNote "Use IRI identifier from the register http://publications.europa.eu/resource/dataset/file-type."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent>;
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/Format.label> dsv:domain :Format;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Label of format value."@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:AccessRights dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Access rights"@en;
+    skos:definition "Access rights to the resource."@en;
+    skos:scopeNote "Use IRI identifier from the register http://purl.org/coar/access_right/."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement>;
+    a dsv:ClassProfile.
+
+<https://model.ccmm.cz/rd/AccessRights.label> dsv:domain :AccessRights;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Label of the access rights value."@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.
+:TimeReference dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Time reference"@en, "entidad temporal"@es;
+    skos:definition "A temporal interval or instant on which something relevant to the resource has happened."@en, "Un intervalo temporal o un instante."@es;
+    a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/2006/time#TemporalEntity>.
+
+<https://model.ccmm.cz/rd/TimeReference.dateInformation> dsv:domain :TimeReference;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Date information"@en;
+    skos:definition "Additional information to the date in text form."@en;
+    dsv:cardinality cardinality:01;
+    dsv:property <https://techlib.cz/vocabulary/datacite/dateInformation>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
+
+<https://model.ccmm.cz/rd/TimeReference.hasType> dsv:domain :TimeReference;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "has date type"@en;
+    skos:definition "Reference to the codelist of date types."@en;
+    skos:scopeNote ""@en;
+    dsv:cardinality cardinality:11;
+    dsv:property <https://techlib.cz/vocabulary/ccmm/hasType>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :DateType.
+:TimeInstant dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Time instant"@en, "instante de tiempo."@es;
+    skos:definition "A temporal entity with zero extent or duration."@en, "Una entidad temporal con una extensión o duración cero."@es;
+    skos:scopeNote "Use for representation of time reference with zero extent or duration."@en;
+    dsv:specializes :TimeReference;
+    a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/2006/time#Instant>.
+
+<https://model.ccmm.cz/rd/TimeInstant.date> dsv:domain :TimeInstant;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Date"@en;
+    skos:definition "Position of an instant, expressed using xsd:date"@en;
+    dsv:cardinality cardinality:11;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
+:Interval dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:scopeNote "Use for representation of time reference represented as an interval."@en;
+    dsv:specializes :TimeReference, :TimeReference;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/2006/time#Interval>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://www.w3.org/2006/time#Interval>
+];
+    a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/2006/time#Interval>.
+
+<https://model.ccmm.cz/rd/TimeInterval.hasBeginning> dsv:domain :Interval;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:definition "Beginning of a temporal interval."@en, "Comienzo de una entidad temporal."@es;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/2006/time#hasBeginning>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <http://www.w3.org/2006/time#hasBeginning>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :TimeInstant.
+
+<https://model.ccmm.cz/rd/TimeInterval.hasEnd> dsv:domain :Interval;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <http://www.w3.org/2006/time#hasEnd>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <http://www.w3.org/2006/time#hasEnd>
+];
+    dsv:cardinality cardinality:11;
+    dsv:property <http://www.w3.org/2006/time#hasEnd>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange :TimeInstant.
+:IdentifierScheme dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:scopeNote "Use identifier scheme in the form of IRI identifier. There shall be methodology list of known sources."@en;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/ccmm/IdentifierScheme>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://techlib.cz/vocabulary/ccmm/IdentifierScheme>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://techlib.cz/vocabulary/ccmm/IdentifierScheme>.
+
+<https://model.ccmm.cz/rd/IdentifierScheme.label> dsv:domain :IdentifierScheme;
+    dct:isPartOf <https://model.ccmm.cz/rd/>;
+    a dsv:TermProfile;
+    skos:prefLabel "Label"@en;
+    skos:definition "Identifier scheme label"@en;
+    skos:scopeNote "E.g. DOI, ORCID etc..."@en;
+    dsv:property rdfs:label;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdf:langString.

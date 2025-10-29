@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="checksum">
+    <xs:sequence>
+      <xs:element name="algorithm" type="anyURI"/>
+      <xs:element name="checksum_value" type="hexBinary"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="checksum" type="checksum"/>
+</xs:schema>

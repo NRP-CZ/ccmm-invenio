@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="type">
+    <xs:choice>
+      <xs:element name="time_instant">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:choice>
+              <xs:element name="date" type="date"/>
+              <xs:element name="date_time" type="dateTime"/>
+            </xs:choice>
+            <xs:element minOccurs="0" name="date_information">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="date_type" type="date_type"/>
+            <xs:element minOccurs="0" name="iri" type="anyURI"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="time_interval">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="beginning_time_instant" type="time_instant"/>
+            <xs:element minOccurs="0" name="date_information">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="date_type" type="date_type"/>
+            <xs:element name="end_time_instant" type="time_instant"/>
+            <xs:element minOccurs="0" name="iri" type="anyURI"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="element" type="type"/>
+</xs:schema>

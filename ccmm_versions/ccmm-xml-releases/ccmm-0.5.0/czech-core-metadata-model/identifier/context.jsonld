@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "value": {
+      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+      "@type": "xsd:string"
+    },
+    "in_scheme": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/inScheme",
+      "@context": "../identifier-scheme/context.jsonld"
+    },
+    "Identifier": {
+      "@id": "http://www.w3.org/ns/adms#Identifier",
+      "@context": {}
+    }
+  }
+}

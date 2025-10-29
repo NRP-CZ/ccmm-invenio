@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="resource">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="identifier" type="identifier"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="qualified_relation" type="resource_to_agent_relationship"/>
+      <xs:element minOccurs="0" name="resource_relation_type" type="resource_relation_type"/>
+      <xs:element minOccurs="0" name="resource_type" type="resource_type"/>
+      <xs:element minOccurs="0" name="resource_url" type="anySimpleType"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="time_reference" type="time_reference"/>
+      <xs:element minOccurs="0" name="title" type="string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="resource" type="resource"/>
+</xs:schema>

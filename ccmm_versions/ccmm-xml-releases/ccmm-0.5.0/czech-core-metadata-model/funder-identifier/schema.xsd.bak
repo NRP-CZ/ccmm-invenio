@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="https://schemas.dataspecer.com/xsd/core/" schemaLocation="./2022-07.xsd"/>
+  <xs:complexType name="funder_identifier" sawsdl:modelReference="FunderIdentifier">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Funder identifier - Uniquely identifies a funding entity, according to various types.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="c:iri"/>
+      <xs:element minOccurs="0" name="funder_identifier_scheme_uri" type="xs:anyURI" sawsdl:modelReference="funderIdentifierSchemeUri">
+        <xs:annotation>
+          <xs:documentation xml:lang="">
+            Funder identifier scheme URI
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            The URI of the funder identifier scheme.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="funder_identifier_type" type="xs:string" sawsdl:modelReference="funderIdentifierType">
+        <xs:annotation>
+          <xs:documentation xml:lang="">
+            Funder identifier type
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            The type of the funderIdentifier.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="funder_identifier" type="funder_identifier"/>
+</xs:schema>

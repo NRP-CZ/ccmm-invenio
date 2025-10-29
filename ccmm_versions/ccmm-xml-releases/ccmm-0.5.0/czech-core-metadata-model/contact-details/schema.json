@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/contact-details/schema.json",
+  "title": "Contact details",
+  "description": "Contact details such as telephone, e-mail address etc.",
+  "type": "object",
+  "required": [
+
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Contact details"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Contact details"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "dataBox": {
+      "title": "Data box",
+      "description": "Code of the data box.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "email": {
+      "title": "Email",
+      "description": "Email address.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "phone": {
+      "title": "Phone",
+      "description": "Phone number",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "address": {
+      "title": "has address",
+      "description": "To specify the components of the delivery address for the object",
+      "type": "array",
+      "items": {
+        "$ref": "../address/schema.json"
+      }
+    }
+  }
+}

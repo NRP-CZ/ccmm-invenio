@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/XML/1998/namespace"/>
+  <xs:include schemaLocation="../identifier/schema.xsd"/>
+  <xs:include schemaLocation="../contact-details/schema.xsd"/>
+  <xs:include schemaLocation="../organization/schema.xsd"/>
+  <xs:complexType name="agent">
+    <xs:choice>
+      <xs:element name="organization">
+        <xs:complexType sawsdl:modelReference="http://www.w3.org/ns/prov#Organization http://xmlns.com/foaf/0.1/Agent">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              Organization - Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. 
+            </xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+            <xs:element name="name" type="xs:string" sawsdl:modelReference="http://xmlns.com/foaf/0.1/name">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  name - Name of the agent.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="alternate_name" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#organization-name">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  alternate name - To specify the organizational name associated with the object
+                </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier" type="identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has identifier - has identifier
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="contact_point" type="contact_details" sawsdl:modelReference="http://www.w3.org/ns/dcat#contactPoint">
+              <xs:annotation>
+                <xs:documentation xml:lang="ar">
+                  عنوان اتصال - تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard
+                </xs:documentation>
+                <xs:documentation xml:lang="cs">
+                  má kontaktní bod - Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="da">
+                  kontaktpunkt - Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales.
+                </xs:documentation>
+                <xs:documentation xml:lang="el">
+                  σημείο επικοινωνίας - Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="en">
+                  has contact point - Relevant contact information for the catalogued resource. 
+                </xs:documentation>
+                <xs:documentation xml:lang="es">
+                  Punto de contacto - Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="fr">
+                  point de contact - Relie un jeu de données à une information de contact utile en utilisant VCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="it">
+                  punto di contatto - Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="ja">
+                  窓口 - データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="person">
+        <xs:complexType sawsdl:modelReference="http://www.w3.org/ns/prov#Person">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              Person - Physical person. 
+            </xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+            <xs:element name="name" type="xs:string" sawsdl:modelReference="http://xmlns.com/foaf/0.1/name">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  name - Name of the agent.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="given_name" type="xs:string" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#given-name">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  given name - The given name associated with the person.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="family_name" type="xs:string" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#family-name">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  family name - The family name associated with the person.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier" type="identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has identifier - has identifier
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="contact_point" type="contact_details" sawsdl:modelReference="http://www.w3.org/ns/dcat#contactPoint">
+              <xs:annotation>
+                <xs:documentation xml:lang="ar">
+                  عنوان اتصال - تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard
+                </xs:documentation>
+                <xs:documentation xml:lang="cs">
+                  má kontaktní bod - Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="da">
+                  kontaktpunkt - Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales.
+                </xs:documentation>
+                <xs:documentation xml:lang="el">
+                  σημείο επικοινωνίας - Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="en">
+                  has contact point - Relevant contact information for the catalogued resource. 
+                </xs:documentation>
+                <xs:documentation xml:lang="es">
+                  Punto de contacto - Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="fr">
+                  point de contact - Relie un jeu de données à une information de contact utile en utilisant VCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="it">
+                  punto di contatto - Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard.
+                </xs:documentation>
+                <xs:documentation xml:lang="ja">
+                  窓口 - データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="affiliation" type="organization" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has affiliation - Affiliation of the person to an organization.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="agent" type="agent"/>
+</xs:schema>

@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/dataset/schema.json",
+  "title": "Dataset",
+  "description": "A collection of data, published or curated by a single source, and available for access or download in one or more representations.",
+  "type": "object",
+  "required": [
+    "publication_year",
+    "title",
+    "is_described_by",
+    "identifier",
+    "qualified_relation",
+    "time_reference",
+    "terms_of_use"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Datová sada"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Datová sada"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "publication_year": {
+      "title": "Publication year",
+      "description": "The year when the item was or will be made publicly available.",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "description": {
+      "title": "Description",
+      "description": "An account of the resource.",
+      "type": "array",
+      "items": {
+        "title": "Text",
+        "type": "object",
+        "additionalProperties": {
+          "title": "Hodnota v jiném jazyce",
+          "type": "string"
+        },
+        "required": [
+
+        ],
+        "properties": {
+          "cs": {
+            "title": "Hodnota v českém jazyce",
+            "type": "string"
+          },
+          "en": {
+            "title": "Hodnota v anglickém jazyce",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "title": {
+      "title": "Title",
+      "description": "A name given to the resource.",
+      "type": "string"
+    },
+    "alternate_title": {
+      "title": "has alternate title",
+      "type": "array",
+      "items": {
+        "$ref": "../alternate-title/schema.json"
+      }
+    },
+    "is_described_by": {
+      "title": "is described by",
+      "description": "Inverse relation between dataset and metadata record.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "../metadata-record/schema.json"
+      }
+    },
+    "identifier": {
+      "title": "has identifier",
+      "description": "has identifier",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "../identifier/schema.json"
+      }
+    },
+    "location": {
+      "title": "has location",
+      "description": "The geographical area covered by the dataset.",
+      "type": "array",
+      "items": {
+        "$ref": "../location/schema.json"
+      }
+    },
+    "provenance": {
+      "title": "provenance",
+      "description": "A statement about the lineage of a Dataset.",
+      "type": "array",
+      "items": {
+        "$ref": "../provenance-statement/schema.json"
+      }
+    },
+    "qualified_relation": {
+      "title": "qualified relation",
+      "description": "Attachment of resource to the relationship.",
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "$ref": "../resource-to-agent-relationship/schema.json"
+      }
+    },
+    "time_reference": {
+      "title": "has time reference",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "../time_reference/schema.json"
+          },
+          {
+            "$ref": "../time_reference/schema.json"
+          }
+        ]
+      }
+    },
+    "subject": {
+      "title": "has subject",
+      "type": "array",
+      "items": {
+        "$ref": "../subject/schema.json"
+      }
+    },
+    "validation_result": {
+      "title": "has validation result",
+      "type": "array",
+      "items": {
+        "$ref": "../validation-result/schema.json"
+      }
+    },
+    "distribution": {
+      "title": "has distribution",
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "../distribution/schema.json"
+          },
+          {
+            "$ref": "../distribution/schema.json"
+          },
+          {
+            "$ref": "../distribution/schema.json"
+          }
+        ]
+      }
+    },
+    "funding_reference": {
+      "title": "has funding reference",
+      "type": "array",
+      "items": {
+        "$ref": "../funding-reference/schema.json"
+      }
+    },
+    "terms_of_use": {
+      "$ref": "../terms-of-use/schema.json"
+    },
+    "related_resource": {
+      "title": "has related resource",
+      "type": "array",
+      "items": {
+        "$ref": "../resource/schema.json"
+      }
+    },
+    "resource_type": {
+      "$ref": "../resource-type/schema.json"
+    },
+    "other_language": {
+      "title": "other language",
+      "description": "Any other languages of the Dataset.",
+      "type": "array",
+      "items": {
+        "$ref": "../language-system/schema.json"
+      }
+    },
+    "primary_language": {
+      "$ref": "../language-system/schema.json"
+    }
+  }
+}

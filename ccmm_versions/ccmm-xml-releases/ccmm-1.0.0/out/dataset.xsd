@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="dataset">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="alternate_title" type="alternate_title"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="distribution" type="distribution"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="funding_reference" type="funding_reference"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="has_description" type="description"/>
+      <xs:element maxOccurs="unbounded" name="identifier" type="identifier"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      <xs:element maxOccurs="unbounded" name="is_described_by" type="metadata_record"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="location" type="location"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="other_language" type="language_system"/>
+      <xs:element minOccurs="0" name="primary_language" type="language_system"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="provenance" type="provenance_statement"/>
+      <xs:element name="publication_year" type="gYear"/>
+      <xs:element maxOccurs="unbounded" minOccurs="2" name="qualified_relation" type="resource_to_agent_relationship"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="related_resource" type="resource"/>
+      <xs:element minOccurs="0" name="resource_type" type="resource_type"/>
+      <xs:element maxOccurs="unbounded" name="subject" type="subject"/>
+      <xs:element name="terms_of_use" type="terms_of_use"/>
+      <xs:element maxOccurs="unbounded" name="time_reference" type="time_reference"/>
+      <xs:element name="title" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="validation_result" type="validation_result"/>
+      <xs:element minOccurs="0" name="version" type="string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="dataset" type="dataset"/>
+</xs:schema>

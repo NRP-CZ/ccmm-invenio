@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/checksum/schema.json",
+  "title": "Checksum",
+  "description": "A value that allows the contents of a file to be authenticated.",
+  "type": "object",
+  "required": [
+    "checksum_value",
+    "algorithm"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Checksum"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Checksum"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "checksum_value": {
+      "title": "Checksum value",
+      "description": "A lower case hexadecimal encoded digest value produced using a specific algorithm. ",
+      "type": "string"
+    },
+    "algorithm": {
+      "title": "algorithm",
+      "description": "The algorithm used to produce the subject Checksum.",
+      "type": "string",
+      "format": "iri"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../time-instant/schema.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/XML/1998/namespace"/>
+  <xs:include schemaLocation="../date-type/schema.xsd"/>
+  <xs:complexType name="time_reference">
+    <xs:choice>
+      <xs:element name="time_interval">
+        <xs:complexType sawsdl:modelReference="http://www.w3.org/2006/time#Interval">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              Time interval - A temporal entity with an extent or duration
+            </xs:documentation>
+            <xs:documentation xml:lang="es">
+              intervalo de tiempo - Una entidad temporal con una extensión o duración.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+            <xs:element name="beginning_time_instant" type="time_instant" sawsdl:modelReference="http://www.w3.org/2006/time#hasBeginning">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has beginning - Time instant representing the beginning of a temporal interval.
+                </xs:documentation>
+                <xs:documentation xml:lang="es">
+                  tiene principio - Comienzo de una entidad temporal.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="end_time_instant" type="time_instant" sawsdl:modelReference="http://www.w3.org/2006/time#hasEnd">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has end - Time instant representing the end of a temporal interval.
+                </xs:documentation>
+                <xs:documentation xml:lang="es">
+                  tiene fin - Final de una entidad temporal.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="date_information" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#dateInformation">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  date information - Additional information to the date in text form.
+                </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="date_type" type="date_type" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasType">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has date type - Reference to the codelist of date types.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="time_instant">
+        <xs:complexType sawsdl:modelReference="http://www.w3.org/2006/time#Instant">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">
+              Time instant - A temporal entity with zero extent or duration.
+            </xs:documentation>
+            <xs:documentation xml:lang="es">
+              instante de tiempo. - Una entidad temporal con una extensión o duración cero.
+            </xs:documentation>
+          </xs:annotation>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+            <xs:element minOccurs="0" name="date_information" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#dateInformation">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  date information - Additional information to the date in text form.
+                </xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="date_type" type="date_type" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasType">
+              <xs:annotation>
+                <xs:documentation xml:lang="en">
+                  has date type - Reference to the codelist of date types.
+                </xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:choice>
+              <xs:element name="date_time" type="xs:dateTime" sawsdl:modelReference="http://www.w3.org/2006/time#inXSDDateTime"/>
+              <xs:element name="date" type="xs:date" sawsdl:modelReference="http://www.w3.org/2006/time#inXSDDate"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="time_reference" type="time_reference"/>
+</xs:schema>
