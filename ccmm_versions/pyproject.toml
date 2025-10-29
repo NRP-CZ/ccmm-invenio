@@ -1,0 +1,12 @@
+[project]
+name = "ccmm-versions-diff"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.2.1",
+    "lxml>=6.0.0",
+    "xmldiff>=2.7.0",
+    "semver"
+]
