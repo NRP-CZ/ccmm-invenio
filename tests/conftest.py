@@ -9,6 +9,8 @@
 from __future__ import annotations
 
 import logging
+import re
+from typing import Any
 
 import pytest
 from flask_principal import Identity, Need, UserNeed
@@ -93,3 +95,20 @@ def search(search):
     """Search fixture."""
     update_all_records_mappings()
     return search
+
+
+@pytest.fixture(scope="module")
+def clean_strings():
+    def _clean_strings(s: Any) -> Any:
+        if isinstance(s, bytes):
+            s = s.decode("utf-8")
+        if isinstance(s, str):
+            # strip the string, replace sequences of 1+ whitespaces with a single space
+            return re.sub(r"\s+", " ", s.strip())
+        if isinstance(s, list):
+            return [_clean_strings(item) for item in s]
+        if isinstance(s, dict):
+            return {key: _clean_strings(value) for key, value in s.items()}
+        return s
+
+    return _clean_strings
