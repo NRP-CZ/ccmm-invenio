@@ -110,9 +110,9 @@ class CCMMIndexSettingsPreset(Preset):
         yield IndexNestedFieldsLimit(200)
 
 
-ccmm_nma_preset = [*rdm_minimal_preset, CCMMNMAPreset, CCMMIndexSettingsPreset]
+ccmm_nma_preset_1_1_0 = [*rdm_minimal_preset, CCMMNMAPreset, CCMMIndexSettingsPreset]
 
-ccmm_production_preset = [
+ccmm_production_preset_1_1_0 = [
     *rdm_minimal_preset,
     CCMMProductionPreset,
     CCMMIndexSettingsPreset,

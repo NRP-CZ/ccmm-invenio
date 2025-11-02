@@ -1,0 +1,563 @@
+<xml>
+<!-- Comparing schemas in directories: -->
+<!-- File time-representation.xsd is missing in ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out -->
+<!-- File distribution-downloadable-file.xsd is missing in ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out -->
+<!-- File distribution-data-service.xsd is missing in ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out -->
+<!-- File person.xsd is missing in ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out -->
+<!-- Files time-instant.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out and ccmm-xml-releases/ccmm-1.1.0-2025-11-02/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="time_instant" diff:delete="">
+      <xs:sequence>
+        <xs:choice>
+          <xs:element name="date" type="date"/>
+          <xs:element name="date_time" type="dateTime"/>
+        </xs:choice>
+        <xs:element minOccurs="0" name="date_information">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType diff:insert="" diff:rename="{http://www.w3.org/2001/XMLSchema}attribute" name="time_instant" diff:add-attr="name" diff:delete-attr="ref;use">
+      <xs:sequence diff:insert="">
+        <xs:choice diff:delete="">
+          <xs:element name="date" type="date"/>
+          <xs:element name="date_time" type="dateTime"/>
+        </xs:choice>
+        <xs:element minOccurs="0" name="date_information" diff:delete="">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required" diff:delete=""/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+        <xs:choice diff:insert="">
+          <xs:element name="date" type="date"/>
+          <xs:element name="date_time" type="dateTime"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="time_instant" diff:insert="">
+      <xs:sequence diff:delete="">
+        <xs:choice>
+          <xs:element name="date" type="date"/>
+          <xs:element name="date_time" type="dateTime"/>
+        </xs:choice>
+        <xs:element minOccurs="0" name="date_information">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required" diff:delete=""/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="time_instant" type="time_instant"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files time-interval.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out and ccmm-xml-releases/ccmm-1.1.0-2025-11-02/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="time_interval" diff:delete="">
+      <xs:sequence>
+        <xs:element name="beginning" type="time_instant"/>
+        <xs:element minOccurs="0" name="date_information">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="date_type" type="date_type"/>
+        <xs:element name="end" type="time_instant"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType diff:insert="" diff:rename="{http://www.w3.org/2001/XMLSchema}attribute" name="time_interval" diff:add-attr="name" diff:delete-attr="ref;use">
+      <xs:sequence diff:insert="">
+        <xs:element name="beginning" type="time_instant"/>
+        <xs:element minOccurs="0" name="date_information" diff:delete="">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required" diff:delete=""/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="date_type" type="date_type" diff:delete=""/>
+        <xs:element name="end" type="time_instant"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="time_interval" diff:insert="">
+      <xs:sequence diff:delete="">
+        <xs:element name="beginning" type="time_instant"/>
+        <xs:element minOccurs="0" name="date_information">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required" diff:delete=""/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="date_type" type="date_type"/>
+        <xs:element name="end" type="time_instant"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="time_interval" type="time_interval"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files checksum-algorithm.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out and ccmm-xml-releases/ccmm-1.1.0-2025-11-02/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="checksum_algorithm">
+      <xs:sequence>
+        <xs:element name="iri" type="anyURI"/>
+        <xs:element diff:insert="" maxOccurs="unbounded" diff:add-attr="maxOccurs;minOccurs;name" minOccurs="0" name="label">
+          <xs:complexType diff:insert="">
+            <xs:simpleContent diff:insert="">
+              <xs:extension diff:insert="" base="xs:string" diff:add-attr="base">
+                <xs:attribute diff:insert="" ref="xml:lang" diff:add-attr="ref;use" use="required"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="checksum_algorithm" type="checksum_algorithm"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files distribution.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out and ccmm-xml-releases/ccmm-1.1.0-2025-11-02/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="distribution" diff:delete="">
+      <xs:choice>
+        <xs:element name="distribution_data_service">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="access_service" type="data_service"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="description">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="documentation" type="documentation"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="specification" type="application_profile"/>
+              <xs:element name="title">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="distribution_downloadable_file">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="access_url" type="file"/>
+              <xs:element name="byte_size" type="integer"/>
+              <xs:element minOccurs="0" name="checksum" type="checksum"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="conforms_to_schema" type="application_profile"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="download_url" type="file"/>
+              <xs:element name="format" type="format"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element minOccurs="0" name="media_type" type="media_type"/>
+              <xs:element name="title">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="distribution" diff:insert="" diff:rename="{http://www.w3.org/2001/XMLSchema}element" diff:update-attr="name:description" diff:delete-attr="maxOccurs;minOccurs">
+      <xs:choice diff:insert="">
+        <xs:element diff:insert="" diff:rename="{http://www.w3.org/2001/XMLSchema}attribute" name="distribution_data_service" diff:add-attr="name;type" type="distribution_data_service" diff:delete-attr="ref;use"/>
+        <xs:element name="distribution_downloadable_file" type="distribution_downloadable_file" diff:insert="" diff:update-attr="name:documentation;type:documentation" diff:delete-attr="maxOccurs;minOccurs"/>
+        <xs:element name="distribution_data_service" diff:delete="">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="access_service" type="data_service"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="description" diff:delete="">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="documentation" type="documentation" diff:delete=""/>
+              <xs:element minOccurs="0" name="iri" type="anyURI" diff:delete=""/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="specification" type="application_profile"/>
+              <xs:element name="title">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required" diff:delete=""/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="distribution_downloadable_file" diff:delete="">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="access_url" type="file" diff:delete=""/>
+              <xs:element name="byte_size" type="integer" diff:delete=""/>
+              <xs:element minOccurs="0" name="checksum" type="checksum" diff:delete=""/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="conforms_to_schema" type="application_profile"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="download_url" type="file"/>
+              <xs:element name="format" type="format" diff:delete=""/>
+              <xs:element minOccurs="0" name="iri" type="anyURI" diff:delete=""/>
+              <xs:element minOccurs="0" name="media_type" type="media_type" diff:delete=""/>
+              <xs:element name="title">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required" diff:delete=""/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+      <xs:complexType>
+        <xs:simpleContent>
+          <xs:extension base="xs:string">
+            <xs:attribute ref="xml:lang" use="required" diff:delete=""/>
+          </xs:extension>
+        </xs:simpleContent>
+      </xs:complexType>
+    </xs:complexType>
+    <xs:complexType name="distribution" diff:insert="">
+      <xs:choice diff:delete="">
+        <xs:element name="distribution_data_service">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="access_service" type="data_service"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="description" diff:delete="">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="documentation" type="documentation"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="specification" type="application_profile"/>
+              <xs:element name="title">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="distribution_downloadable_file">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="access_url" type="file"/>
+              <xs:element name="byte_size" type="integer"/>
+              <xs:element minOccurs="0" name="checksum" type="checksum"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="conforms_to_schema" type="application_profile"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="download_url" type="file"/>
+              <xs:element name="format" type="format"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element minOccurs="0" name="media_type" type="media_type"/>
+              <xs:element name="title">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:element name="distribution" type="distribution"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files dataset.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out and ccmm-xml-releases/ccmm-1.1.0-2025-11-02/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="dataset">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="alternate_title" type="alternate_title"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="description" type="description"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="distribution" type="distribution"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="funding_reference" type="funding_reference"/>
+        <xs:element maxOccurs="unbounded" name="identifier" type="identifier"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="location" type="location"/>
+        <xs:element maxOccurs="unbounded" name="metadata_identification" type="metadata_record"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="other_language" type="language_system"/>
+        <xs:element minOccurs="0" name="primary_language" type="language_system"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="provenance" type="provenance_statement"/>
+        <xs:element name="publication_year" type="gYear"/>
+        <xs:element maxOccurs="unbounded" minOccurs="2" name="qualified_relation" type="resource_to_agent_relationship"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="related_resource" type="resource"/>
+        <xs:element minOccurs="0" name="resource_type" type="resource_type"/>
+        <xs:element maxOccurs="unbounded" name="subject" type="subject"/>
+        <xs:element name="terms_of_use" type="terms_of_use"/>
+        <xs:element maxOccurs="unbounded" name="time_reference" type="time_reference" diff:update-attr="type:type"/>
+        <xs:element name="title" type="string"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="validation_result" type="validation_result"/>
+        <xs:element minOccurs="0" name="version" type="string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="dataset" type="dataset"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files time-reference.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out and ccmm-xml-releases/ccmm-1.1.0-2025-11-02/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="time_reference" diff:update-attr="name:type">
+      <xs:sequence diff:rename="{http://www.w3.org/2001/XMLSchema}choice">
+        <xs:element minOccurs="0" name="date_information" diff:insert="">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="has_date_type" type="date_type" diff:insert="" diff:update-attr="name:element;type:type"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI" diff:insert=""/>
+        <xs:element name="temporal_representation" type="time_representation" diff:insert="" diff:update-attr="name:end_time_instant;type:time_instant"/>
+        <xs:element name="time_instant">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:choice>
+                <xs:element name="date" type="date"/>
+                <xs:element name="date_time" type="dateTime"/>
+              </xs:choice>
+              <xs:element minOccurs="0" name="date_information" diff:delete="">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="date_type" type="date_type"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI" diff:delete=""/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="time_interval">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="beginning_time_instant" type="time_instant"/>
+              <xs:element minOccurs="0" name="date_information">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="date_type" type="date_type"/>
+              <xs:element name="end_time_instant" type="time_instant" diff:delete=""/>
+              <xs:element minOccurs="0" name="iri" type="anyURI" diff:delete=""/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="time_reference" type="time_reference" diff:insert="" diff:update-attr="name:iri;type:anyURI" diff:delete-attr="minOccurs"/>
+    <xs:element name="element" type="type" diff:delete=""/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files metadata-record.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out and ccmm-xml-releases/ccmm-1.1.0-2025-11-02/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="metadata_record">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="conforms_to_standard" type="application_profile" diff:delete-attr="minOccurs"/>
+        <xs:element minOccurs="0" name="date_created" type="date"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="date_updated" type="date"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="language" type="language_system"/>
+        <xs:element name="original_repository" type="repository"/>
+        <xs:element maxOccurs="unbounded" name="qualified_relation" type="resource_to_agent_relationship"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="metadata_record" type="metadata_record"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files agent.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-10-25/out and ccmm-xml-releases/ccmm-1.1.0-2025-11-02/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="agent" diff:delete="">
+      <xs:choice>
+        <xs:element name="organization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="alternate_name">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="contact_point" type="contact_details"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="identifier" type="identifier"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element name="name" type="string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="person">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="affiliation" type="organization"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="contact_point" type="contact_details"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="family_name" type="string"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="given_name" type="string"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="identifier" type="identifier"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element name="name" type="string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="agent" diff:insert="" diff:rename="{http://www.w3.org/2001/XMLSchema}element" diff:update-attr="name:name" diff:delete-attr="type">
+      <xs:choice diff:insert="">
+        <xs:element name="organization" type="organization" diff:insert="" diff:update-attr="name:name;type:string"/>
+        <xs:element diff:insert="" diff:rename="{http://www.w3.org/2001/XMLSchema}attribute" name="person" diff:add-attr="name;type" type="person" diff:delete-attr="ref;use"/>
+        <xs:element name="organization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="alternate_name">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required" diff:delete=""/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="contact_point" type="contact_details"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="identifier" type="identifier"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element name="name" type="string" diff:delete=""/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="person">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="affiliation" type="organization"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="contact_point" type="contact_details"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="family_name" type="string"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="given_name" type="string"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="identifier" type="identifier"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element name="name" type="string" diff:delete=""/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="agent" diff:insert="">
+      <xs:choice diff:delete="">
+        <xs:element name="organization">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="alternate_name">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute ref="xml:lang" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="contact_point" type="contact_details"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="identifier" type="identifier"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element name="name" type="string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="person">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="affiliation" type="organization"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="contact_point" type="contact_details"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="family_name" type="string"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="given_name" type="string"/>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="identifier" type="identifier"/>
+              <xs:element minOccurs="0" name="iri" type="anyURI"/>
+              <xs:element name="name" type="string" diff:delete=""/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:element name="agent" type="agent"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+</xml>
