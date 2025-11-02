@@ -35,11 +35,8 @@ CCMMProductionDataset:
         en: Title
         cs: Název
 
-    # publisher in ccmm is in qualified relations, in RDM it is a separate field
-    # in ccmm it is a complex structure (org, person, ...), in RDM it is just a string
-    # let's use RDMCreatibutor here and have the type locked in the UI
-    ccmm_publisher:
-      type: RDMCreatibutor
+    publisher:
+      type: RDMPublisher
       label:
         en: Publisher
         cs: Vydavatel
@@ -49,9 +46,24 @@ CCMMProductionDataset:
       help:
         en: Provide the name of the organization or individual that published the dataset. This may differ from the creators or contributors.
         cs: Uveďte název organizace nebo jednotlivce, který publikoval datovou sadu. To se může lišit od autorů nebo přispěvatelů.
-      ui:
-        options:
-          fixed_type: organization
+
+    # publisher in ccmm is in qualified relations, in RDM it is a separate field
+    # in ccmm it is a complex structure (org, person, ...), in RDM it is just a string
+    # let's use RDMCreatibutor here and have the type locked in the UI
+    # ccmm_publisher:
+    #   type: RDMCreatibutor
+    #   label:
+    #     en: Publisher
+    #     cs: Vydavatel
+    #   hint:
+    #     en: The entity responsible for making the resource available.
+    #     cs: Entita odpovědná za zpřístupnění zdroje.
+    #   help:
+    #     en: Provide the name of the organization or individual that published the dataset. This may differ from the creators or contributors.
+    #     cs: Uveďte název organizace nebo jednotlivce, který publikoval datovou sadu. To se může lišit od autorů nebo přispěvatelů.
+    #   ui:
+    #     options:
+    #       fixed_type: organization
 
     # alternate_titles:
     # we use RDM's additional_titles and re-format them for CCMM export
@@ -210,6 +222,12 @@ CCMMProductionDataset:
       label:
         en: Resource type
         cs: Typ záznamu
+
+    ccmm_resource_type:
+      type: CCMMResourceType
+      label:
+        en: CCMM Resource type
+        cs: CCMM Typ záznamu
 
     # other_languages:
     # primary_language:

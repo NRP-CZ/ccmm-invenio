@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="resource_to_agent_relationship">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      <xs:element name="relation" type="agent"/>
+      <xs:element name="role" type="resource_agent_role_type"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="resource_to_agent_relationship" type="resource_to_agent_relationship"/>
+</xs:schema>

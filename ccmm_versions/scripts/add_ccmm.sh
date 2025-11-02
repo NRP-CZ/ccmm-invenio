@@ -24,10 +24,14 @@ echo "CCMM version $version cloned into $dirname"
 if [ -d .venv ] ; then rm -rf .venv ; fi
 uv venv .venv
 uv sync
+uv pip install -e .
 source .venv/bin/activate
 
 echo "Cleaning up sources..."
 python src/ccmm_versions/clean_all.py $dirname/ $dirname/out
+python src/ccmm_versions/merge_schemas.py $dirname/ merged/$version-$current_date.xsd
+
+cp merged/$version-$current_date.xsd ../src/ccmm_invenio/schemas/ccmm-$version-$current_date.xsd
 
 echo "Getting previous version..."
 previous_version_dir=$(python src/ccmm_versions/get_previous_version.py ccmm-xml-releases $dirname)
@@ -39,3 +43,12 @@ python src/ccmm_versions/diff_ccmm.py \
     ccmm-xml-releases/$previous_version_dir/out \
     $dirname/out  \
     diffs/$previous_version--$version-$current_date.xml 
+
+echo "Generating schema overview ..."
+python src/ccmm_versions/create_schema_overview.py \
+    $dirname/out \
+    summaries/ccmm-$version-$current_date.summary.md
+
+xmllint --noout \
+    --schema merged/$version-$current_date.xsd \
+    $dirname/ccmm_sample.xml || echo "Validation failed"
