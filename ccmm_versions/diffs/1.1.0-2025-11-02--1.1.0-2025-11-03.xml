@@ -1,0 +1,26 @@
+<xml>
+<!-- Comparing schemas in directories: -->
+<!-- Files time-reference.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-11-02/out and ccmm-xml-releases/ccmm-1.1.0-2025-11-03/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="time_reference">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="date_information">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="date_type" type="date_type" diff:update-attr="name:has_date_type"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+        <xs:element name="temporal_representation" type="time_representation"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="time_reference" type="time_reference"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+</xml>
