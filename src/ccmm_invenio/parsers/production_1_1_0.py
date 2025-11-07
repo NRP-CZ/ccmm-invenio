@@ -210,9 +210,13 @@ class CCMMXMLProductionParserBase:
         publication_year = metadata.pop("publication_year", None)
         created_date = next(
             (
-                tr.get("time_instant", {})
-                for tr in metadata.get("time_references", [])
-                if tr.get("date_type", {}).get("id") == "Created" and tr.get("time_instant") is not None
+                dt
+                for dt in (
+                    tr.get("temporal_representation", {}).get("time_instant")
+                    for tr in metadata.get("time_references", [])
+                    if tr.get("date_type", {}).get("id") == "Created"
+                )
+                if dt is not None
             ),
             None,
         )

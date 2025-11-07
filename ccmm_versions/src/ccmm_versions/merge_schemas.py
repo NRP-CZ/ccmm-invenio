@@ -27,9 +27,7 @@ def merge_schemas(input_dir: str, output_file: str) -> None:
         root_elements.append(load_xml_schema(str(xsd_file)))
     first_root = root_elements[0]
     canonical_representations = {
-        make_canonical_string(element)
-        for element in first_root
-        if getattr(element, "tag", None) is not None
+        make_canonical_string(element) for element in first_root if getattr(element, "tag", None) is not None
     }
     for other_root in root_elements[1:]:
         # add attributes that are not present in the first root
@@ -39,26 +37,8 @@ def merge_schemas(input_dir: str, output_file: str) -> None:
         # add missing namespace declarations
         for ns_decl in other_root.nsmap.items():
             if ns_decl[0] not in first_root.nsmap:
-                first_root = duplicate_with_new_namespace(
-                    first_root, ns_decl[0], ns_decl[1]
-                )
-        for element in other_root:
-            if getattr(element, "tag", None) is None:
-                continue
-            # check if the element is already present
-            canonical_element = make_canonical_string(element)
-            if canonical_element in canonical_representations:
-                if element.tag != "{http://www.w3.org/2001/XMLSchema}import":
-                    raise ValueError(
-                        f"Duplicate element found that is not an import: {etree.tostring(element).decode('utf-8')}"
-                    )
-                continue
-            canonical_representations.add(canonical_element)
-            # if the element is xs:import, add it to the beginning
-            if element.tag == "{http://www.w3.org/2001/XMLSchema}import":
-                first_root.insert(0, element)
-            else:
-                first_root.append(element)
+                first_root = duplicate_with_new_namespace(first_root, ns_decl[0], ns_decl[1])
+        merge_children(first_root, other_root, canonical_representations)
     tree = etree.ElementTree(first_root)
     tree.write(
         output_file,
@@ -68,23 +48,36 @@ def merge_schemas(input_dir: str, output_file: str) -> None:
     )
 
 
-def duplicate_with_new_namespace(
-    element: Element, prefix: str | None, uri: str
-) -> Element:
+def merge_children(first_root: Element, other_root: Element, canonical_representations: set[str]) -> None:
+    """Merge children of other_root into first_root, avoiding duplicates."""
+    for element in other_root:
+        if getattr(element, "tag", None) is None:
+            continue
+        # check if the element is already present
+        canonical_element = make_canonical_string(element)
+        if canonical_element in canonical_representations:
+            if element.tag != "{http://www.w3.org/2001/XMLSchema}import":
+                raise ValueError(
+                    f"Duplicate element found that is not an import: {etree.tostring(element).decode('utf-8')}"
+                )
+            continue
+        canonical_representations.add(canonical_element)
+        # if the element is xs:import, add it to the beginning
+        if element.tag == "{http://www.w3.org/2001/XMLSchema}import":
+            first_root.insert(0, element)
+        else:
+            first_root.append(element)
+
+
+def duplicate_with_new_namespace(element: Element, prefix: str | None, uri: str) -> Element:
     """Duplicate the given element adding a new namespace declaration."""
     click.secho(f"Adding namespace declaration: {prefix} -> {uri}", fg="blue")
     new_attrib = {**element.attrib}
-    # if prefix is None:
-    #     new_attrib["xmlns"] = uri
-    # else:
-    #     new_attrib[f"xmlns:{prefix}"] = uri
 
     new_element = etree.Element(
         element.tag,
         attrib=new_attrib,
-        nsmap=(
-            {**element.nsmap, prefix: uri} if prefix else {**element.nsmap, None: uri}
-        ),
+        nsmap=({**element.nsmap, prefix: uri} if prefix else {**element.nsmap, None: uri}),
     )
     for child in element:
         new_element.append(child)
@@ -109,9 +102,7 @@ def load_xml_schema(file_path: str) -> Element:
     parser = etree.XMLParser(remove_blank_text=True)
     tree = etree.parse(file_path, parser)
     # remove xs:include from everywhere
-    for include in tree.xpath(
-        "//xs:include", namespaces={"xs": "http://www.w3.org/2001/XMLSchema"}
-    ):
+    for include in tree.xpath("//xs:include", namespaces={"xs": "http://www.w3.org/2001/XMLSchema"}):
         parent = include.getparent()
         if parent is not None:
             parent.remove(include)

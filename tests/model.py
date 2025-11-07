@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from oarepo_model.api import model
 
-from ccmm_invenio.models import ccmm_nma_preset, ccmm_production_preset
+from ccmm_invenio.models import ccmm_nma_preset_1_1_0, ccmm_production_preset_1_1_0
 
 #
 # ccmm production model to be used in repositories
@@ -19,7 +19,7 @@ production_dataset = model(
     "production_dataset",
     version="1.1.0",
     presets=[
-        ccmm_production_preset,
+        ccmm_production_preset_1_1_0,
     ],
     configuration={},
     types=[
@@ -44,7 +44,7 @@ nma_dataset = model(
     "nma",
     version="1.1.0",
     presets=[
-        ccmm_nma_preset,
+        ccmm_nma_preset_1_1_0,
     ],
     configuration={},
     types=[

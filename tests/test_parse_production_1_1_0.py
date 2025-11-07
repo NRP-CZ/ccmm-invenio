@@ -15,9 +15,7 @@ from lxml.etree import fromstring
 from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
 
 vocab_items = {
-    "titletypes": {
-        "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"
-    },
+    "titletypes": {"https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"},
     "identifierschemes": {
         "https://doi.org/": "doi",
         "https://organization.cz/datasets/": "organization-specific-id",
@@ -38,9 +36,7 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created": "Created",
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected": "Collected",
     },
-    "descriptiontypes": {
-        "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"
-    },
+    "descriptiontypes": {"https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"},
     "fileformats": {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/GPKG": "GPKG"
@@ -49,9 +45,7 @@ vocab_items = {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/ZIP": "ZIP"
     },
-    "locationrelationtypes": {
-        "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"
-    },
+    "locationrelationtypes": {"https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"},
     "resourceagentroletypes": {
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager": "DataManager",
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator": "Creator",
@@ -66,9 +60,7 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/": "Frascati",
         "https://inspire.ec.europa.eu/theme/": "INSPIRE",
     },
-    "accessrights": {
-        "https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"
-    },
+    "accessrights": {"https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"},
 }
 
 
@@ -199,20 +191,22 @@ def test_parse_production_1_1_0(clean_strings):
                     ],
                     "license": {
                         "iri": "https://creativecommons.org/licenses/by/4.0/",
-                        "label": [
-                            {"lang": "en", "value": "Attribution 4.0 International"}
-                        ],
+                        "label": [{"lang": "en", "value": "Attribution 4.0 International"}],
                     },
                 },
                 "time_references": [
                     {
-                        "time_instant": {"date_time": "2025-04-27T12:00:01+02:00"},
+                        "temporal_representation": {
+                            "time_instant": {"date_time": "2025-04-27T12:00:01+02:00"},
+                        },
                         "date_type": {"id": "Created"},
                     },
                     {
-                        "time_interval": {
-                            "beginning": {"date": "2024-01-01"},
-                            "end": {"date": "2024-12-31"},
+                        "temporal_representation": {
+                            "time_interval": {
+                                "beginning": {"date": "2024-01-01"},
+                                "end": {"date": "2024-12-31"},
+                            },
                         },
                         "date_type": {"id": "Collected"},
                     },
@@ -233,7 +227,7 @@ def test_parse_production_1_1_0(clean_strings):
                         "description": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v\n"
                         "            roce 2024.",
                         "type": {"id": "abstract"},
-                        "lang": "und",
+                        "lang": "cs",
                     }
                 ],
                 "identifiers": [
@@ -251,9 +245,7 @@ def test_parse_production_1_1_0(clean_strings):
                             "type": "personal",
                             "given_name": "Jan",
                             "family_name": "Novák",
-                            "identifiers": [
-                                {"identifier": "0030-04X2-2030-4X26", "scheme": "orcid"}
-                            ],
+                            "identifiers": [{"identifier": "0030-04X2-2030-4X26", "scheme": "orcid"}],
                         },
                         "affiliations": [{"name": "Univerzita Karlova"}],
                     }
