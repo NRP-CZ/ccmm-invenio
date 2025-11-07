@@ -888,10 +888,10 @@ CCMMDistributionDataService:
       help:
         en: Provide URLs or resources that explain how to use the service, including formats, parameters, and examples.
         cs: Uveďte URL nebo zdroje vysvětlující použití služby, včetně formátů, parametrů a příkladů.
-    specifications:
+    conforms_to_specifications:
       # sawsdl:modelReference=http://purl.org/dc/terms/conformsTo
       type: array
-      xml: specification
+      xml: conforms_to_specification
       items:
         type: CCMMApplicationProfile
       label:
@@ -905,7 +905,7 @@ CCMMDistributionDataService:
         cs: Odkazujte na technické specifikace (např. OGC API Features, DCAT‑AP), které služba implementuje.
     title:
       # TODO: https://github.com/techlib/CCMM/issues/113
-      type: i18n
+      type: keyword
       label:
         en: Service title
         cs: Název služby
@@ -1031,7 +1031,7 @@ CCMMDistributionDownloadableFile:
         cs: Zvolte registrovaný IANA typ média, který nejlépe popisuje kódování souboru.
     title:
       # TODO: https://github.com/techlib/CCMM/issues/113
-      type: i18n
+      type: keyword
       label:
         en: File title
         cs: Název souboru
@@ -2008,18 +2008,6 @@ CCMMTimeInstant:
       help:
         en: Optional stable identifier for this instant.
         cs: Volitelný stabilní identifikátor pro tento okamžik.
-    date_information:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#dateInformation
-      type: i18n
-      label:
-        en: Date information
-        cs: Informace o datu
-      hint:
-        en: Free‑text context about the date.
-        cs: Volný text s kontextem k datu.
-      help:
-        en: Add clarifying notes about the date (e.g., “approximate”, “data collection ended”).
-        cs: Přidejte upřesňující poznámky k datu (např. „přibližně“, „sběr dat ukončen“).
     # choice of either date_time or date
     # TODO: we need to have a custom pre-load to validate that only one is present
     # alternative: use EDTF and represent it as edtf datetime
@@ -2039,6 +2027,7 @@ CCMMTimeInstant:
       label:
         en: Date
         cs: Datum
+
 CCMMTimeInterval:
   type: object
   xml: time_interval
@@ -2080,13 +2069,46 @@ CCMMTimeInterval:
       help:
         en: Provide the time instant marking when the period ends.
         cs: Uveďte časový okamžik označující konec období.
-    # note: unlike in CCMM XLM, we do not have date_type there, see
-    # https://github.com/techlib/CCMM/issues/107
+
 CCMMTimeReference:
-  # TODO: internal anonymous type in CCMM XML
   type: object
   xml: time_reference
   properties:
+    temporal_representation:
+      type: CCMMTimeRepresentation
+      required: true
+      label:
+        en: Temporal representation
+        cs: Časová reprezentace
+    date_type:
+      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#dateType
+      type: CCMMDateType
+      label:
+        en: Date type
+        cs: Typ data
+      hint:
+        en: Nature of the time reference.
+        cs: Povaha časového odkazu.
+      help:
+        en: Specify the type of date or period (e.g., creation, publication, validity).
+        cs: Uveďte typ data nebo období (např. vytvoření, zveřejnění, platnost).
+    date_information:
+      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#dateInformation
+      type: i18n
+      label:
+        en: Date information
+        cs: Informace o datu
+      hint:
+        en: Notes describing the period.
+        cs: Poznámky popisující období.
+      help:
+        en: Add context about uncertainty, partial dates, or special conditions of the period.
+        cs: Přidejte kontext o nejistotě, neúplných datech či zvláštních podmínkách období.
+
+CCMMTimeRepresentation:
+  type: object
+  properties:
+    # choice of either time_interval or time_instant, we need custom pre-load to validate that only one is present
     time_interval:
       type: CCMMTimeInterval
       label:
@@ -2109,32 +2131,7 @@ CCMMTimeReference:
       help:
         en: Link or define a single point in time relevant to the resource.
         cs: Propojte nebo definujte jediný časový bod relevantní ke zdroji.
-    date_information:
-      # TODO: in CCMM XML, this is under time_instant and time_interval
-      # see https://github.com/techlib/CCMM/issues/107
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#dateInformation
-      type: i18n
-      label:
-        en: Date information
-        cs: Informace o datu
-      hint:
-        en: Notes describing the period.
-        cs: Poznámky popisující období.
-      help:
-        en: Add context about uncertainty, partial dates, or special conditions of the period.
-        cs: Přidejte kontext o nejistotě, neúplných datech či zvláštních podmínkách období.
-    date_type:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#dateType
-      type: CCMMDateType
-      label:
-        en: Date type
-        cs: Typ data
-      hint:
-        en: Nature of the time reference.
-        cs: Povaha časového odkazu.
-      help:
-        en: Specify the type of date or period (e.g., creation, publication, validity).
-        cs: Uveďte typ data nebo období (např. vytvoření, zveřejnění, platnost).
+
 CCMMValidationResult:
   type: object
   xml: validation_result
