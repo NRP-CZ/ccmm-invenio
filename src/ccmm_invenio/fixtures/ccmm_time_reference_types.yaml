@@ -1,5 +1,5 @@
 - description:
-    cs: ''
+    
     en: 'The date that the publisher accepted the resource into their system.
 
       To indicate the start of an embargo period, use Accepted or Submitted, as appropriate.'
@@ -11,7 +11,7 @@
     cs: Datum přijetí datasetu
     en: Date Accepted
 - description:
-    cs: ''
+    
     en: 'The date the resource is made publicly available. May be a range.
 
       To indicate the end of an embargo period, use Available.'
@@ -23,7 +23,7 @@
     cs: Datum zveřejnění datasetu
     en: Date Available
 - description:
-    cs: ''
+    
     en: The specific, documented date at which the resource receives a copyrighted
       status, if applicable.
   id: Copyrighted
@@ -34,7 +34,7 @@
     cs: Datum udělení copyrightu
     en: Date Copyrighted
 - description:
-    cs: ''
+    
     en: 'The date in which the resource content was collected.
 
       To indicate precise or particular timeframes in which research was conducted.'
@@ -46,7 +46,7 @@
     cs: Datum sběru dat
     en: Date Collected
 - description:
-    cs: ''
+    
     en: 'The date range (start date) in which the resource content was collected.
 
       To indicate precise or particular timeframes in which research was conducted.'
@@ -58,7 +58,7 @@
     cs: Datum sběru dat (do)
     en: Date Collected Start
 - description:
-    cs: ''
+    
     en: 'The date range (end date) in which the resource content was collected.
 
       To indicate precise or particular timeframes in which research was conducted.'
@@ -70,7 +70,7 @@
     cs: Datum sběru dat (od)
     en: Date Collected End
 - description:
-    cs: ''
+    
     en: "The date that the resource content applies to, describes, or covers.\n To\
       \ indicate the temporal coverage of the resource, use Coverage. This may be\
       \ different from Collected."
@@ -82,7 +82,7 @@
     cs: Časové pokrytí datasetu
     en: Date Coverage
 - description:
-    cs: ''
+    
     en: "The date range (start date) that the resource content applies to, describes,\
       \ or covers.\n To indicate the temporal coverage of the resource, use Coverage.\
       \ This may be different from Collected."
@@ -94,7 +94,7 @@
     cs: Časové pokrytí datasetu (od)
     en: Date Coverage Start
 - description:
-    cs: ''
+    
     en: "The date range (end date) that the resource content applies to, describes,\
       \ or covers.\n To indicate the temporal coverage of the resource, use Coverage.\
       \ This may be different from Collected."
@@ -106,7 +106,7 @@
     cs: Časové pokrytí datasetu (do)
     en: Date Coverage End
 - description:
-    cs: ''
+    
     en: 'The date the resource itself was put together; this could refer to a timeframe
       in ancient history, a single date for a final component, e.g., the finalised
       file with all the data.
@@ -120,7 +120,7 @@
     cs: Datum vytvoření datasetu
     en: Date Created
 - description:
-    cs: ''
+    
     en: 'The date the resource itself was put together; this could refer to a timeframe
       in ancient history, the start date (of the range) for a final component, e.g.,
       the finalised file with all the data.
@@ -134,7 +134,7 @@
     cs: Datum vytvoření datasetu (od)
     en: Date Created Start
 - description:
-    cs: ''
+    
     en: 'The date the resource itself was put together; this could refer to a timeframe
       in ancient history, the end date (of the range) for a final component, e.g.,
       the finalised file with all the data.
@@ -148,7 +148,7 @@
     cs: Datum vytvoření datasetu (do)
     en: Date Created End
 - description:
-    cs: ''
+    
     en: The date that the resource is published or distributed, e.g., to a data centre.
   id: Issued
   props:
@@ -158,7 +158,7 @@
     cs: Datum vydání datasetu
     en: Date Issued
 - description:
-    cs: ''
+    
     en: 'The date the creator submits the resource to the publisher. This could be
       different from Accepted if the publisher then applies a selection process.
 
@@ -171,7 +171,7 @@
     cs: Datum podání datasetu
     en: Date Submitted
 - description:
-    cs: ''
+    
     en: The date of the last update to the resource, when the resource is being added
       to.
   id: Updated
@@ -182,7 +182,7 @@
     cs: Datum aktualizace datasetu
     en: Date Updated
 - description:
-    cs: ''
+    
     en: The date range (start date) of the last update to the resource, when the resource
       is being added to.
   id: UpdatedStart
@@ -193,7 +193,7 @@
     cs: Datum aktualizace datasetu (od)
     en: Date Updated Start
 - description:
-    cs: ''
+    
     en: The date range (end date) of the last update to the resource, when the resource
       is being added to.
   id: UpdatedEnd
@@ -204,7 +204,7 @@
     cs: Datum aktualizace datasetu (do)
     en: Date Updated End
 - description:
-    cs: ''
+    
     en: The date during which the dataset or resource is accurate.
   id: Valid
   props:
@@ -214,7 +214,7 @@
     cs: Datum platnosti datasetu
     en: Date Valid
 - description:
-    cs: ''
+    
     en: The date range (start date) during which the dataset or resource is accurate.
   id: ValidStart
   props:
@@ -224,7 +224,7 @@
     cs: Datum platnosti datasetu (od)
     en: Date Valid Start
 - description:
-    cs: ''
+    
     en: The date range (end date) during which the dataset or resource is accurate.
   id: ValidEnd
   props:
@@ -234,7 +234,7 @@
     cs: Datum platnosti datasetu (do)
     en: Date Valid End
 - description:
-    cs: ''
+    
     en: "The date the resource is removed.\n It is good practice to include a description\
       \ that indicates the reason for the retraction or withdrawal."
   id: Withdrawn
@@ -245,7 +245,7 @@
     cs: Datum odstranění datasetu
     en: Date Withdrawn
 - description:
-    cs: ''
+    
     en: Other date that does not fit into an existing category.
   id: Other
   props:
