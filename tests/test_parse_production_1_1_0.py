@@ -15,7 +15,9 @@ from lxml.etree import fromstring
 from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
 
 vocab_items = {
-    "titletypes": {"https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"},
+    "titletypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"
+    },
     "identifierschemes": {
         "https://doi.org/": "doi",
         "https://organization.cz/datasets/": "organization-specific-id",
@@ -36,7 +38,9 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created": "Created",
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected": "Collected",
     },
-    "descriptiontypes": {"https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"},
+    "descriptiontypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"
+    },
     "fileformats": {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/GPKG": "GPKG"
@@ -45,7 +49,9 @@ vocab_items = {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/ZIP": "ZIP"
     },
-    "locationrelationtypes": {"https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"},
+    "locationrelationtypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"
+    },
     "resourceagentroletypes": {
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager": "DataManager",
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator": "Creator",
@@ -60,12 +66,14 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/": "Frascati",
         "https://inspire.ec.europa.eu/theme/": "INSPIRE",
     },
-    "accessrights": {"https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"},
+    "accessrights": {
+        "https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"
+    },
 }
 
 
 def test_parse_production_1_1_0(clean_strings):
-    xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-10-25.xml"
+    xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
     root_el = fromstring(xml_file.read_bytes())
 
     def vocabulary_loader(vocabulary_type: str, iri: str) -> str:
@@ -191,7 +199,9 @@ def test_parse_production_1_1_0(clean_strings):
                     ],
                     "license": {
                         "iri": "https://creativecommons.org/licenses/by/4.0/",
-                        "label": [{"lang": "en", "value": "Attribution 4.0 International"}],
+                        "label": [
+                            {"lang": "en", "value": "Attribution 4.0 International"}
+                        ],
                     },
                 },
                 "time_references": [
@@ -241,7 +251,9 @@ def test_parse_production_1_1_0(clean_strings):
                             "type": "personal",
                             "given_name": "Jan",
                             "family_name": "Novák",
-                            "identifiers": [{"identifier": "0030-04X2-2030-4X26", "scheme": "orcid"}],
+                            "identifiers": [
+                                {"identifier": "0030-04X2-2030-4X26", "scheme": "orcid"}
+                            ],
                         },
                         "affiliations": [{"name": "Univerzita Karlova"}],
                     }
