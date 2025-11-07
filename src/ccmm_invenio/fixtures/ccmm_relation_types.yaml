@@ -1,5 +1,5 @@
 - description:
-    cs: ''
+    
     en: ''
   id: IsVersionOf
   props:
@@ -10,7 +10,7 @@
     cs: je verzí
     en: is version of
 - description:
-    cs: ''
+    
     en: ''
   id: HasVersion
   props:
@@ -21,7 +21,7 @@
     cs: má verzi
     en: has version
 - description:
-    cs: ''
+    
     en: ''
   id: IsPartOf
   props:
@@ -32,7 +32,7 @@
     cs: je součástí
     en: is part of
 - description:
-    cs: ''
+    
     en: ''
   id: HasPart
   props:
@@ -43,7 +43,7 @@
     cs: má část/i
     en: has part
 - description:
-    cs: ''
+    
     en: ''
   id: IsReviewedBy
   props:
@@ -54,7 +54,7 @@
     cs: je recenzován (čím)
     en: is reviewed by
 - description:
-    cs: ''
+    
     en: ''
   id: Reviews
   props:
@@ -65,7 +65,7 @@
     cs: recenzuje (co)
     en: reviews
 - description:
-    cs: ''
+    
     en: ''
   id: IsCompiledBy
   props:
@@ -76,7 +76,7 @@
     cs: kompilován (čím)
     en: is compiled by
 - description:
-    cs: ''
+    
     en: ''
   id: Compiles
   props:
@@ -87,7 +87,7 @@
     cs: kompiluje (co)
     en: compiles
 - description:
-    cs: ''
+    
     en: ''
   id: IsReferencedBy
   props:
@@ -98,7 +98,7 @@
     cs: je na něj odkazováno z (čeho)
     en: is referenced by
 - description:
-    cs: ''
+    
     en: ''
   id: References
   props:
@@ -109,7 +109,7 @@
     cs: odkazuje (na co)
     en: references
 - description:
-    cs: ''
+    
     en: ''
   id: IsCitedBy
   props:
@@ -120,7 +120,7 @@
     cs: je citován (čím)
     en: is cited by
 - description:
-    cs: ''
+    
     en: ''
   id: Cites
   props:
@@ -131,7 +131,7 @@
     cs: cituje (co)
     en: cites
 - description:
-    cs: ''
+    
     en: ''
   id: IsSupplementTo
   props:
@@ -142,7 +142,7 @@
     cs: je doplňkem k (čemu)
     en: is supplement to
 - description:
-    cs: ''
+    
     en: ''
   id: IsSupplementedBy
   props:
@@ -153,7 +153,7 @@
     cs: má doplněk
     en: is supplemented by
 - description:
-    cs: ''
+    
     en: ''
   id: Describes
   props:
@@ -164,7 +164,7 @@
     cs: popisuje (co)
     en: describes
 - description:
-    cs: ''
+    
     en: ''
   id: IsDescribedBy
   props:
@@ -175,7 +175,7 @@
     cs: je popsán (čím)
     en: is described by
 - description:
-    cs: ''
+    
     en: ''
   id: IsPublishedIn
   props:
@@ -186,7 +186,7 @@
     cs: je publikován v
     en: is published in
 - description:
-    cs: ''
+    
     en: ''
   id: IsRequiredBy
   props:
@@ -197,7 +197,7 @@
     cs: je požadován (čím)
     en: is required by
 - description:
-    cs: ''
+    
     en: ''
   id: Requires
   props:
@@ -208,7 +208,7 @@
     cs: požaduje (co)
     en: requires
 - description:
-    cs: ''
+    
     en: ''
   id: IsContinuedBy
   props:
@@ -219,7 +219,7 @@
     cs: je pokračováním (čeho)
     en: is continued by
 - description:
-    cs: ''
+    
     en: ''
   id: Continues
   props:
@@ -230,7 +230,7 @@
     cs: pokračuje (čím)
     en: continues
 - description:
-    cs: ''
+    
     en: ''
   id: HasMetadata
   props:
@@ -241,7 +241,7 @@
     cs: má metadata
     en: has metadata
 - description:
-    cs: ''
+    
     en: ''
   id: IsMetadataFor
   props:
@@ -252,7 +252,7 @@
     cs: je metadaty pro
     en: is metadata for
 - description:
-    cs: ''
+    
     en: ''
   id: IsNewVersionOf
   props:
@@ -263,7 +263,7 @@
     cs: je novou verzí (čeho)
     en: is new version of
 - description:
-    cs: ''
+    
     en: ''
   id: IsPreviousVersionOf
   props:
@@ -274,7 +274,7 @@
     cs: je předchozí verzí (čeho)
     en: is previous version of
 - description:
-    cs: ''
+    
     en: ''
   id: IsDocumentedBy
   props:
@@ -285,7 +285,7 @@
     cs: je zdokumentován (čím)
     en: is documented by
 - description:
-    cs: ''
+    
     en: ''
   id: Documents
   props:
@@ -296,7 +296,7 @@
     cs: dokumentuje (co)
     en: documents
 - description:
-    cs: ''
+    
     en: ''
   id: IsVariantFormOf
   props:
@@ -307,7 +307,7 @@
     cs: je variantou (čeho)
     en: is variant form of
 - description:
-    cs: ''
+    
     en: ''
   id: IsOriginalFormOf
   props:
@@ -318,7 +318,7 @@
     cs: je původní variantou (čeho)
     en: is original form of
 - description:
-    cs: ''
+    
     en: ''
   id: IsIdenticalTo
   props:
@@ -329,7 +329,7 @@
     cs: je identický s
     en: is identical to
 - description:
-    cs: ''
+    
     en: ''
   id: IsDerivedFrom
   props:
@@ -340,7 +340,7 @@
     cs: je odvozen od (čeho)
     en: is derived from
 - description:
-    cs: ''
+    
     en: ''
   id: IsSourceOf
   props:
@@ -351,7 +351,7 @@
     cs: je zdrojem odvozené verze
     en: is source of
 - description:
-    cs: ''
+    
     en: ''
   id: Obsoletes
   props:
@@ -362,7 +362,7 @@
     cs: nahrazuje (co)
     en: obsoletes
 - description:
-    cs: ''
+    
     en: ''
   id: IsObsoletedBy
   props:
@@ -373,7 +373,7 @@
     cs: je nahrazen (čím)
     en: is obsoleted by
 - description:
-    cs: ''
+    
     en: ''
   id: IsTranslationOf
   props:
@@ -383,7 +383,7 @@
     cs: je překladem (čeho)
     en: is translation of
 - description:
-    cs: ''
+    
     en: ''
   id: HasTranslation
   props:
@@ -393,7 +393,7 @@
     cs: má překlad
     en: has translation
 - description:
-    cs: ''
+    
     en: ''
   id: IsCollectedBy
   props:
@@ -403,7 +403,7 @@
     cs: je sbírán (čím)
     en: is collected by
 - description:
-    cs: ''
+    
     en: ''
   id: Collects
   props:

@@ -1,5 +1,5 @@
 - description:
-    cs: ''
+    
     en: ''
   id: '10000'
   props:
@@ -9,7 +9,7 @@
     cs: Přírodní vědy
     en: Natural sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10000'
@@ -21,7 +21,7 @@
     cs: Matematika
     en: Mathematics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10100'
@@ -33,7 +33,7 @@
     cs: Čistá matematika
     en: Pure mathematics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10100'
@@ -45,7 +45,7 @@
     cs: Aplikovaná matematika
     en: Applied mathematics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10100'
@@ -57,7 +57,7 @@
     cs: Pravděpodobnost a statistika
     en: Statistics and probability
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10000'
@@ -69,7 +69,7 @@
     cs: Počítačové vědy a informační věda
     en: Computer and information sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10200'
@@ -81,7 +81,7 @@
     cs: Počítačové vědy, informační věda, bioinformatika
     en: Computer sciences, information science, bioinformathics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10000'
@@ -93,7 +93,7 @@
     cs: Fyzikální vědy
     en: Physical sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10300'
@@ -107,7 +107,7 @@
     en: Atomic, molecular and chemical physics (physics of atoms and molecules including
       collision, interaction with radiation, magnetic resonances, Mössbauer effect)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10300'
@@ -119,7 +119,7 @@
     cs: Fyzika kondenzovaných látek (zahrnuje fyziku pevných látek, supravodivost)
     en: Condensed matter physics (including formerly solid state physics, supercond.)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10300'
@@ -131,7 +131,7 @@
     cs: Fyzika částic
     en: Particles and field physics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10300'
@@ -143,7 +143,7 @@
     cs: Atomová fyzika
     en: Nuclear physics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10300'
@@ -155,7 +155,7 @@
     cs: Fyzika kapalin a plazmatu (zahrnuje fyziku povrchů)
     en: Fluids and plasma physics (including surface physics)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10300'
@@ -167,7 +167,7 @@
     cs: Optika (zahrnuje laserovou optiku, kvantovou optiku)
     en: Optics (including laser optics and quantum optics)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10300'
@@ -179,7 +179,7 @@
     cs: Akustika
     en: Acoustics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10300'
@@ -191,7 +191,7 @@
     cs: Astronomie (zahrnuje astrofyziku, vědu o vesmíru)
     en: Astronomy (including astrophysics, space science)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10000'
@@ -203,7 +203,7 @@
     cs: Chemické vědy
     en: Chemical sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10400'
@@ -215,7 +215,7 @@
     cs: Organická chemie
     en: Organic chemistry
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10400'
@@ -227,7 +227,7 @@
     cs: Anorganická a jaderná chemie
     en: Inorganic and nuclear chemistry
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10400'
@@ -239,7 +239,7 @@
     cs: Fyzikální chemie
     en: Physical chemistry
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10400'
@@ -251,7 +251,7 @@
     cs: Chemie polymerů
     en: Polymer science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10400'
@@ -264,7 +264,7 @@
       elektrolýzu)
     en: Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10400'
@@ -276,7 +276,7 @@
     cs: Analytická chemie
     en: Analytical chemistry
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10000'
@@ -288,7 +288,7 @@
     cs: Vědy o Zemi a související environmentální vědy
     en: Earth and related environmental sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -300,7 +300,7 @@
     cs: Hydrologie
     en: Hydrology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -312,7 +312,7 @@
     cs: Oceánografie
     en: Oceanography
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -324,7 +324,7 @@
     cs: Vodní zdroje
     en: Water resources
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -336,7 +336,7 @@
     cs: Mineralogie
     en: Mineralogy
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -348,7 +348,7 @@
     cs: Geologie
     en: Geology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -360,7 +360,7 @@
     cs: Paleontologie
     en: Paleontology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -372,7 +372,7 @@
     cs: Vulkanologie
     en: Volcanology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -384,7 +384,7 @@
     cs: Fyzická geografie
     en: Physical geography
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -396,7 +396,7 @@
     cs: Meteorologie, vědy o atmosféře
     en: Meteorology and atmospheric sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -408,7 +408,7 @@
     cs: Výzkum klimatu
     en: Climatic research
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10500'
@@ -420,7 +420,7 @@
     cs: Environmentální vědy
     en: Environmental sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10000'
@@ -432,7 +432,7 @@
     cs: Biologie
     en: Biological sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -444,7 +444,7 @@
     cs: Buněčná biologie
     en: Cell biology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -458,7 +458,7 @@
     en: Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm),
       evolutionary biology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -470,7 +470,7 @@
     cs: Genetika a dědičnost
     en: Genetics and heredity
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -482,7 +482,7 @@
     cs: Reprodukční biologie
     en: Reproductive biology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -494,7 +494,7 @@
     cs: Vývojová biologie
     en: Developmental biology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -506,7 +506,7 @@
     cs: Mikrobiologie
     en: Microbiology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -518,7 +518,7 @@
     cs: Virologie
     en: Virology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -530,7 +530,7 @@
     cs: Biochemie a molekulární biologie
     en: Biochemistry and molecular biology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -542,7 +542,7 @@
     cs: Biochemické výzkumné metody
     en: Biochemical research methods
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -554,7 +554,7 @@
     cs: Biofyzika
     en: Biophysics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -566,7 +566,7 @@
     cs: Botanika
     en: Plant sciences, botany
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -578,7 +578,7 @@
     cs: Mykologie
     en: Mycology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -590,7 +590,7 @@
     cs: Zoologie
     en: Zoology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -602,7 +602,7 @@
     cs: Behaviorální biologie
     en: Behavioral sciences biology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -614,7 +614,7 @@
     cs: Ornitologie
     en: Ornithology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -626,7 +626,7 @@
     cs: Entomologie
     en: Entomology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -638,7 +638,7 @@
     cs: Mořská biologie, sladkovodní biologie, limnologie
     en: Marine biology, freshwater biology, limnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -650,7 +650,7 @@
     cs: Ekologie
     en: Ecology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -662,7 +662,7 @@
     cs: Ochrana biodiverzity
     en: Biodiversity conservation
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10600'
@@ -674,7 +674,7 @@
     cs: Ostatní biologické vědy
     en: Other biological topics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '10000'
@@ -686,7 +686,7 @@
     cs: Ostatní přírodní vědy
     en: Other natural sciences
 - description:
-    cs: ''
+    
     en: ''
   id: '20000'
   props:
@@ -696,7 +696,7 @@
     cs: Technické vědy, inženýrství
     en: Engineering and technology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -708,7 +708,7 @@
     cs: Stavební inženýrství
     en: Civil engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20100'
@@ -720,7 +720,7 @@
     cs: Stavební inženýrství
     en: Civil engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20100'
@@ -732,7 +732,7 @@
     cs: Konstrukční inženýrství, výstavba měst
     en: Construction engineering, municipal and structural engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20100'
@@ -744,7 +744,7 @@
     cs: Architektura
     en: Architecture engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20100'
@@ -756,7 +756,7 @@
     cs: Dopravní inženýrství
     en: Transport engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -768,7 +768,7 @@
     cs: Elektrotechnika, elektronika
     en: Electrical engineering, electronic engineering, information engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20200'
@@ -780,7 +780,7 @@
     cs: Elektrotechnika, elektronika
     en: Electrical and electronic engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20200'
@@ -792,7 +792,7 @@
     cs: Sdělovací technika a systémy
     en: Communication engineering and systems
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20200'
@@ -804,7 +804,7 @@
     cs: Telekomunikace
     en: Telecommunications
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20200'
@@ -816,7 +816,7 @@
     cs: Robotika a automatické řízení
     en: Robotics and automatic control
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20200'
@@ -828,7 +828,7 @@
     cs: Automatizace a kontrola systémů
     en: Automation and control systems
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20200'
@@ -840,7 +840,7 @@
     cs: Počítačový hardware a architektura
     en: Computer hardware and architecture
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -852,7 +852,7 @@
     cs: Strojní inženýrství
     en: Mechanical engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20300'
@@ -864,7 +864,7 @@
     cs: Strojní inženýrství
     en: Mechanical engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20300'
@@ -876,7 +876,7 @@
     cs: Aplikovaná mechanika
     en: Applied mechanics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20300'
@@ -888,7 +888,7 @@
     cs: Termodynamika
     en: Thermodynamics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20300'
@@ -900,7 +900,7 @@
     cs: Letecké inženýrství
     en: Aerospace engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20300'
@@ -912,7 +912,7 @@
     cs: Jaderné inženýrství
     en: Nuclear related engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20300'
@@ -924,7 +924,7 @@
     cs: Audio inženýrství, analýzy spolehlivosti
     en: Audio engineering, reliability analysis
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -936,7 +936,7 @@
     cs: Chemické inženýrství
     en: Chemical engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20400'
@@ -948,7 +948,7 @@
     cs: Chemické inženýrství (rostliny, výrobky)
     en: Chemical engineering (plants, products)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20400'
@@ -960,7 +960,7 @@
     cs: Chemické procesní inženýrství
     en: Chemical process engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -972,7 +972,7 @@
     cs: Materiálové inženýrství
     en: Materials engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20500'
@@ -984,7 +984,7 @@
     cs: Materiálové inženýrství
     en: Materials engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20500'
@@ -996,7 +996,7 @@
     cs: Papír a dřevo
     en: Paper and wood
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20500'
@@ -1008,7 +1008,7 @@
     cs: Textilie (zahrnuje umělá barviva, barvy, vlákna)
     en: Textiles (including synthetic dyes, colours, fibres)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20500'
@@ -1020,7 +1020,7 @@
     cs: Keramika
     en: Ceramics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20500'
@@ -1034,7 +1034,7 @@
     en: Composites (including laminates, reinforced plastics, cermets, combined natural
       and synthetic fibre fabrics; filled composites)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20500'
@@ -1046,7 +1046,7 @@
     cs: Nátěry a fólie
     en: Coating and films
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -1058,7 +1058,7 @@
     cs: Lékařské inženýrství
     en: Medical engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20600'
@@ -1070,7 +1070,7 @@
     cs: Lékařské inženýrství
     en: Medical engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20600'
@@ -1084,7 +1084,7 @@
     en: Medical laboratory technology (including laboratory samples analysis, diagnostic
       technologies)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -1096,7 +1096,7 @@
     cs: Environmentální inženýrství
     en: Environmental engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20700'
@@ -1108,7 +1108,7 @@
     cs: Environmentální a geologické inženýrství, geotechnika
     en: Environmental and geological engineering, geotechnics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20700'
@@ -1120,7 +1120,7 @@
     cs: Ropné inženýrství (paliva, oleje)
     en: Petroleum engineering (fuel, oils)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20700'
@@ -1132,7 +1132,7 @@
     cs: Těžba a zpracování minerálů
     en: Mining and mineral processing
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20700'
@@ -1144,7 +1144,7 @@
     cs: Energie a paliva
     en: Energy and fuels
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20700'
@@ -1156,7 +1156,7 @@
     cs: Dálkový průzkum Země
     en: Remote sensing
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20700'
@@ -1168,7 +1168,7 @@
     cs: Námořní inženýrství, mořská plavidla
     en: Marine engineering, sea vessels
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20700'
@@ -1180,7 +1180,7 @@
     cs: Oceánské inženýrství
     en: Ocean engineering
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -1192,7 +1192,7 @@
     cs: Environmentální biotechnologie
     en: Environmental biotechnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20800'
@@ -1204,7 +1204,7 @@
     cs: Environmentální biotechnologie
     en: Environmental biotechnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20800'
@@ -1218,7 +1218,7 @@
     en: Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices)
       in environmental management
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20800'
@@ -1230,7 +1230,7 @@
     cs: Environmentální biotechnologie související s etikou
     en: Environmental biotechnology related ethics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -1242,7 +1242,7 @@
     cs: Průmyslové biotechnologie
     en: Industrial biotechnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20900'
@@ -1254,7 +1254,7 @@
     cs: Průmyslové biotechnologie
     en: Industrial biotechnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20900'
@@ -1268,7 +1268,7 @@
     en: Bioprocessing technologies (industrial processes relying on biological agents
       to drive the process) biocatalysis, fermentation
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20900'
@@ -1284,7 +1284,7 @@
       biomaterials, bioplastics, biofuels, bioderived bulk and fine chemicals, bio-derived
       novel materials
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -1296,7 +1296,7 @@
     cs: Nanotechnologie
     en: Nano-technology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '21000'
@@ -1308,7 +1308,7 @@
     cs: Nanomateriály (výroba a vlastnosti)
     en: Nano-materials (production and properties)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '21000'
@@ -1320,7 +1320,7 @@
     cs: Nanoprocesy (aplikace v nanoměřítku)
     en: Nano-processes (applications on nano-scale)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '20000'
@@ -1332,7 +1332,7 @@
     cs: Ostatní inženýrství a technologie
     en: Other engineering and technologies
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '21100'
@@ -1344,7 +1344,7 @@
     cs: Výrobky potravinářského průmyslu a nápoje
     en: Food and beverages
 - description:
-    cs: ''
+    
     en: ''
   id: '30000'
   props:
@@ -1354,7 +1354,7 @@
     cs: Lékařské vědy
     en: Medical and health sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30000'
@@ -1366,7 +1366,7 @@
     cs: Základní medicína
     en: Basic medicine
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30100'
@@ -1378,7 +1378,7 @@
     cs: Genetika člověka
     en: Human genetics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30100'
@@ -1390,7 +1390,7 @@
     cs: Imunologie
     en: Immunology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30100'
@@ -1402,7 +1402,7 @@
     cs: Neurovědy (zahrnuje psychofyziologii)
     en: Neurosciences (including psychophysiology)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30100'
@@ -1414,7 +1414,7 @@
     cs: Farmakologie a farmacie
     en: Pharmacology and pharmacy
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30100'
@@ -1426,7 +1426,7 @@
     cs: Fyziologie (zahrnující cytologii)
     en: Physiology (including cytology)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30100'
@@ -1438,7 +1438,7 @@
     cs: Anatomie a morfologie
     en: Anatomy and morphology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30100'
@@ -1450,7 +1450,7 @@
     cs: Lékařská chemie
     en: Medicinal chemistry
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30100'
@@ -1462,7 +1462,7 @@
     cs: Toxikologie
     en: Toxicology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30100'
@@ -1474,7 +1474,7 @@
     cs: Patologie
     en: Pathology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30000'
@@ -1486,7 +1486,7 @@
     cs: Klinická medicína
     en: Clinical medicine
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1498,7 +1498,7 @@
     cs: Srdeční a kardiovaskulární systémy
     en: Cardiac and cardiovascular systems
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1510,7 +1510,7 @@
     cs: Endokrinologie a metabolismus (zahrnuje cukrovku, hormony)
     en: Endocrinology and metabolism (including diabetes, hormones)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1522,7 +1522,7 @@
     cs: Dýchací ústrojí
     en: Respiratory systems
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1534,7 +1534,7 @@
     cs: Onkologie
     en: Oncology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1546,7 +1546,7 @@
     cs: Hematologie
     en: Hematology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1558,7 +1558,7 @@
     cs: Otorinolaryngologie
     en: Otorhinolaryngology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1570,7 +1570,7 @@
     cs: Oftalmologie
     en: Ophthalmology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1582,7 +1582,7 @@
     cs: Stomatologie, ústní chirurgie a lékařství
     en: Dentistry, oral surgery and medicine
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1594,7 +1594,7 @@
     cs: Pediatrie
     en: Paediatrics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1606,7 +1606,7 @@
     cs: Klinická neurologie
     en: Clinical neurology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1618,7 +1618,7 @@
     cs: Ortopedie
     en: Orthopaedics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1630,7 +1630,7 @@
     cs: Chirurgie
     en: Surgery
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1642,7 +1642,7 @@
     cs: Transplantace
     en: Transplantation
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1654,7 +1654,7 @@
     cs: Porodnictví a gynekologie
     en: Obstetrics and gynaecology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1666,7 +1666,7 @@
     cs: Psychiatrie
     en: Psychiatry
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1678,7 +1678,7 @@
     cs: Dermatologie a pohlavní nemoci
     en: Dermatology and venereal diseases
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1690,7 +1690,7 @@
     cs: Urologie a nefrologie
     en: Urology and nephrology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1702,7 +1702,7 @@
     cs: Všeobecné a vnitřní lékařství
     en: General and internal medicine
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1714,7 +1714,7 @@
     cs: Gastroenterologie a hepatologie
     en: Gastroenterology and hepatology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1726,7 +1726,7 @@
     cs: Andrologie
     en: Andrology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1738,7 +1738,7 @@
     cs: Urgentní medicína a pohotovostní medicína
     en: Critical care medicine and emergency medicine
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1750,7 +1750,7 @@
     cs: Anesteziologie
     en: Anaesthesiology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1762,7 +1762,7 @@
     cs: Radiologie, nukleární medicína a lékařské zobrazování
     en: Radiology, nuclear medicine and medical imaging
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1774,7 +1774,7 @@
     cs: Alergologie
     en: Allergy
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1786,7 +1786,7 @@
     cs: Revmatologie
     en: Rheumatology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1798,7 +1798,7 @@
     cs: Geriatrie a gerontologie
     en: Geriatrics and gerontology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1810,7 +1810,7 @@
     cs: Celostní a alternativní medicína (alternativní praktické systémy)
     en: Integrative and complementary medicine (alternative practice systems)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30200'
@@ -1822,7 +1822,7 @@
     cs: Ostatní klinická lékařská témata
     en: Other clinical medicine subjects
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30000'
@@ -1834,7 +1834,7 @@
     cs: Zdravotní vědy
     en: Health sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1848,7 +1848,7 @@
     en: Social biomedical sciences (includes family planning, sexual health, psycho-oncology,
       political and social effects of biomedical research)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1860,7 +1860,7 @@
     cs: Epidemiologie
     en: Epidemiology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1872,7 +1872,7 @@
     cs: Infekční onemocnění
     en: Infectious diseases
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1884,7 +1884,7 @@
     cs: Veřejné a environmentální zdraví
     en: Public and environmental health
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1896,7 +1896,7 @@
     cs: Ochrana zdraví při práci
     en: Occupational health
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1908,7 +1908,7 @@
     cs: Sport a fitness
     en: Sport and fitness sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1920,7 +1920,7 @@
     cs: Ošetřovatelství
     en: Nursing
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1932,7 +1932,7 @@
     cs: Výživa, nauka o dietě
     en: Nutrition, dietetics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1944,7 +1944,7 @@
     cs: Tropické lékařství
     en: Tropical medicine
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1956,7 +1956,7 @@
     cs: Parazitologie
     en: Parasitology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1968,7 +1968,7 @@
     cs: Lékařská etika
     en: Medical ethics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30300'
@@ -1980,7 +1980,7 @@
     cs: Zneužívání návykových látek
     en: Substance abuse
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30000'
@@ -1992,7 +1992,7 @@
     cs: Lékařské biotechnologie
     en: Medical biotechnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30400'
@@ -2004,7 +2004,7 @@
     cs: Biotechnologie související se zdravím
     en: Health-related biotechnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30400'
@@ -2018,7 +2018,7 @@
     en: Technologies involving the manipulation of cells, tissues, organs or the whole
       organism (assisted reproduction)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30400'
@@ -2034,7 +2034,7 @@
       and how they influence the onset of disease and maintenance of well-being (gene-based
       diagnostics and therapeutic interventions - pharmacogenomics, gene-based therapeutics)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30400'
@@ -2046,7 +2046,7 @@
     cs: Biomateriály (související s lékařskými implantáty, přístroji, senzory)
     en: Biomaterials (as related to medical implants, devices, sensors)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30400'
@@ -2058,7 +2058,7 @@
     cs: Lékařské biotechnologie související s etikou
     en: Medical biotechnology related ethics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30000'
@@ -2070,7 +2070,7 @@
     cs: Ostatní lékařské vědy
     en: Other medical sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30500'
@@ -2082,7 +2082,7 @@
     cs: Soudní lékařství
     en: Forensic science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '30500'
@@ -2094,7 +2094,7 @@
     cs: Ostatní lékařské vědy
     en: Other medical science
 - description:
-    cs: ''
+    
     en: ''
   id: '40000'
   props:
@@ -2104,7 +2104,7 @@
     cs: Zemědělské a veterinární vědy
     en: Agricultural and veterinary sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40000'
@@ -2116,7 +2116,7 @@
     cs: Zemědělství, lesnictví, rybářství
     en: Agriculture, forestry and fisheries
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40100'
@@ -2128,7 +2128,7 @@
     cs: Zemědělství
     en: Agriculture
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40100'
@@ -2140,7 +2140,7 @@
     cs: Lesnictví
     en: Forestry
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40100'
@@ -2152,7 +2152,7 @@
     cs: Rybářství
     en: Fishery
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40100'
@@ -2164,7 +2164,7 @@
     cs: Půdoznalství
     en: Soil science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40100'
@@ -2176,7 +2176,7 @@
     cs: Zahradnictví, vinařství
     en: Horticulture, viticulture
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40100'
@@ -2188,7 +2188,7 @@
     cs: Agronomie, šlechtění a ochrana rostlin
     en: Agronomy, plant breeding and plant protection
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40000'
@@ -2200,7 +2200,7 @@
     cs: Vědy o zvířatech a mléce
     en: Animal and dairy science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40200'
@@ -2212,7 +2212,7 @@
     cs: Vědy o zvířatech a mléce
     en: Animal and dairy science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40200'
@@ -2224,7 +2224,7 @@
     cs: Domácí zvířata
     en: Pets
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40200'
@@ -2236,7 +2236,7 @@
     cs: Chovatelství
     en: Husbandry
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40000'
@@ -2248,7 +2248,7 @@
     cs: Veterinární věda
     en: Veterinary science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40300'
@@ -2260,7 +2260,7 @@
     cs: Veterinární věda
     en: Veterinary science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40000'
@@ -2272,7 +2272,7 @@
     cs: Zemědělské biotechnologie
     en: Agricultural biotechnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40400'
@@ -2284,7 +2284,7 @@
     cs: Zemědělské biotechnologie a biotechnologie potravin
     en: Agricultural biotechnology and food biotechnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40400'
@@ -2300,7 +2300,7 @@
       diagnostics (DNA chips and biosensing devices for the early/accurate detection
       of diseases) biomass feedstock production technologies, biopharming
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40400'
@@ -2312,7 +2312,7 @@
     cs: Zemědělské biotechnologie související s etikou
     en: Agricultural biotechnology related ethics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '40000'
@@ -2324,7 +2324,7 @@
     cs: Ostatní zemědělské vědy
     en: Other agricultural sciences
 - description:
-    cs: ''
+    
     en: ''
   id: '50000'
   props:
@@ -2334,7 +2334,7 @@
     cs: Společenské vědy
     en: Social sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50000'
@@ -2346,7 +2346,7 @@
     cs: Psychologie a kognitivní věda
     en: Psychology and cognitive sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50100'
@@ -2358,7 +2358,7 @@
     cs: Psychologie (zahrnuje vztahy mezi člověkem a strojem)
     en: Psychology (including human - machine relations)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50100'
@@ -2372,7 +2372,7 @@
     en: Psychology, special (including therapy for learning, speech, hearing, visual
       and other physical and mental disabilities)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50100'
@@ -2384,7 +2384,7 @@
     cs: Kognitivní vědy
     en: Cognitive sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50000'
@@ -2396,7 +2396,7 @@
     cs: Ekonomie a podnikání
     en: Economics and business
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50200'
@@ -2408,7 +2408,7 @@
     cs: Ekonomická teorice
     en: Economic theory
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50200'
@@ -2420,7 +2420,7 @@
     cs: Aplikovaná ekonomie, ekonometrie
     en: Applied economics, econometrics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50200'
@@ -2432,7 +2432,7 @@
     cs: Pracovní vztahy
     en: Industrial relations
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50200'
@@ -2444,7 +2444,7 @@
     cs: Podnikání a management
     en: Business and management
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50200'
@@ -2456,7 +2456,7 @@
     cs: Účetnictví
     en: Accounting
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50200'
@@ -2468,7 +2468,7 @@
     cs: Finance
     en: Finance
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50000'
@@ -2480,7 +2480,7 @@
     cs: Vzdělávání
     en: Education
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50300'
@@ -2493,7 +2493,7 @@
     en: Education, general (including training, pedagogy, didactics and education
       systems)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50300'
@@ -2505,7 +2505,7 @@
     cs: Speciální vzdělávání (pro nadané osoby, pro osoby s poruchami učení)
     en: Education, special (to gifted persons, those with learning disabilities)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50000'
@@ -2517,7 +2517,7 @@
     cs: Sociologie
     en: Sociology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50400'
@@ -2529,7 +2529,7 @@
     cs: Sociologie
     en: Sociology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50400'
@@ -2541,7 +2541,7 @@
     cs: Demografie
     en: Demography
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50400'
@@ -2555,7 +2555,7 @@
     en: Social topics (women´s and gender studies, social issues, family studies social
       work)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50400'
@@ -2567,7 +2567,7 @@
     cs: Antropologie, etnologie
     en: Anthropology, ethnology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50000'
@@ -2579,7 +2579,7 @@
     cs: Právo
     en: Law
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50500'
@@ -2591,7 +2591,7 @@
     cs: Právo
     en: Law
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50500'
@@ -2603,7 +2603,7 @@
     cs: Kriminologie, penologie
     en: Criminology, penology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50000'
@@ -2615,7 +2615,7 @@
     cs: Politologie
     en: Political science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50600'
@@ -2627,7 +2627,7 @@
     cs: Politologie
     en: Political science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50600'
@@ -2639,7 +2639,7 @@
     cs: Veřejná správa
     en: Public administration
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50600'
@@ -2651,7 +2651,7 @@
     cs: Teorie organizace
     en: Organisation theory
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50000'
@@ -2663,7 +2663,7 @@
     cs: Sociální a ekonomická geografie
     en: Social and economic geography
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50700'
@@ -2675,7 +2675,7 @@
     cs: Kulturní a ekonomická geografie
     en: Cultural and economic geography
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50700'
@@ -2687,7 +2687,7 @@
     cs: Urbanismus (plánování a rozvoj)
     en: Urban studies (planning and development)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50700'
@@ -2699,7 +2699,7 @@
     cs: Plánování dopravy a sociální hlediska dopravy
     en: Transport planning and social aspects of transport
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50700'
@@ -2711,7 +2711,7 @@
     cs: Environmentální vědy (sociální hlediska)
     en: Environmental sciences (social aspects)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50000'
@@ -2723,7 +2723,7 @@
     cs: Média a komunikace
     en: Media and communications
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50800'
@@ -2735,7 +2735,7 @@
     cs: Žurnalistika
     en: Journalism
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50800'
@@ -2747,7 +2747,7 @@
     cs: Mediální a sociokulturní komunikace
     en: Media and socio-cultural communication
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50800'
@@ -2759,7 +2759,7 @@
     cs: Informační věda (sociální aspekty)
     en: Information science (social aspects)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50800'
@@ -2771,7 +2771,7 @@
     cs: Knihovnictví
     en: Library science
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50000'
@@ -2783,7 +2783,7 @@
     cs: Ostatní společenské vědy
     en: Other social sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50900'
@@ -2795,7 +2795,7 @@
     cs: Ostatní společenské vědy
     en: Other social sciences
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '50900'
@@ -2807,7 +2807,7 @@
     cs: Společenské vědy interdisciplinární
     en: Social sciences, interdisciplinary
 - description:
-    cs: ''
+    
     en: ''
   id: '60000'
   props:
@@ -2817,7 +2817,7 @@
     cs: Humanitní vědy a umění
     en: Humanities and the arts
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60000'
@@ -2829,7 +2829,7 @@
     cs: Historie a archeologie
     en: History and archaeology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60100'
@@ -2841,7 +2841,7 @@
     cs: Historie
     en: History
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60100'
@@ -2853,7 +2853,7 @@
     cs: Archeologie
     en: Archaeology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60000'
@@ -2865,7 +2865,7 @@
     cs: Jazyky a literatura
     en: Languages and literature
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60200'
@@ -2877,7 +2877,7 @@
     cs: Všeobecné jazykové studie
     en: General language studies
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60200'
@@ -2889,7 +2889,7 @@
     cs: Specifické jazyky
     en: Specific languages
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60200'
@@ -2901,7 +2901,7 @@
     cs: Lingvistika
     en: Linguistics
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60200'
@@ -2913,7 +2913,7 @@
     cs: Všeobecné studie literatury
     en: General literature studies
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60200'
@@ -2925,7 +2925,7 @@
     cs: Teorie literatury
     en: Literary theory
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60200'
@@ -2937,7 +2937,7 @@
     cs: Specifická literatura
     en: Specific literatures
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60000'
@@ -2949,7 +2949,7 @@
     cs: Filozofie, etika a náboženství
     en: Philosophy, ethics and religion
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60300'
@@ -2961,7 +2961,7 @@
     cs: Filozofie, dějiny a filozofie vědy a techniky
     en: Philosophy, history and philosophy of science and technology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60300'
@@ -2973,7 +2973,7 @@
     cs: Etika (vyjma etiky související s příslušnými kategoriemi)
     en: Ethics (except ethics related to specific subfields)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60300'
@@ -2985,7 +2985,7 @@
     cs: Teologie
     en: Theology
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60300'
@@ -2997,7 +2997,7 @@
     cs: Religionistika
     en: Religious studies
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60000'
@@ -3009,7 +3009,7 @@
     cs: Umění (umění, dějiny umění, múzická umění, hudba)
     en: Arts (arts, history of arts, performing arts, music)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60400'
@@ -3021,7 +3021,7 @@
     cs: Umění, dějiny umění
     en: Arts, art history
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60400'
@@ -3033,7 +3033,7 @@
     cs: Architektonický design
     en: Architectural design
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60400'
@@ -3045,7 +3045,7 @@
     cs: Múzická umění (muzikologie, divadelní věda, dramaturgie)
     en: Performing arts studies (musicology, theater science, dramaturgy)
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60400'
@@ -3057,7 +3057,7 @@
     cs: Folkloristika
     en: Folklore studies
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60400'
@@ -3069,7 +3069,7 @@
     cs: Film, rádio a televize
     en: Studies on film, radio and television
 - description:
-    cs: ''
+    
     en: ''
   hierarchy:
     parent: '60000'
