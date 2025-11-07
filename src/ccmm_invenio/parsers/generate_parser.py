@@ -192,17 +192,26 @@ def is_field_array(field_definition: dict, ccmm_model: dict) -> bool:
 
 
 class_beginning = '''
+#
+# Copyright (c) 2025 CESNET z.s.p.o.
+#
+# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
+#
+# ccmm-invenio is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+"""Parser for CCMM XML version 1.1.0 for NMA."""
 from __future__ import annotations
 
-from typing import Any, override
+from typing import TYPE_CHECKING, Any, override
 
-from lxml.etree import _Element as Element
+from .base import CCMMXMLParser, QualifiedTag, VocabularyLoader, XMLNamespace, datatype_parser
 
-from .base import CCMMXMLParser, QualifiedTag, XMLNamespace, datatype_parser, VocabularyLoader
-
+if TYPE_CHECKING:
+    from lxml.etree import _Element as Element
 
 class CCMMXMLNMAParser(CCMMXMLParser):
-    """Parser for CCMM XML version 1.1.0 for production repository."""
+    """Parser for CCMM XML version 1.1.0 for NMA."""
 
     # ccmm namespace
     ns = XMLNamespace("https://schema.ccmm.cz/research-data/1.0")

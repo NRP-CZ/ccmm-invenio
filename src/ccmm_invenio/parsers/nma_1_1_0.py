@@ -6,26 +6,20 @@
 # ccmm-invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 #
-"""Parser for CCMM XML version 1.1.0 for the national metadata directory."""
+"""Parser for CCMM XML version 1.1.0 for NMA."""
 
 from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, override
 
-from .base import (
-    CCMMXMLParser,
-    QualifiedTag,
-    VocabularyLoader,
-    XMLNamespace,
-    datatype_parser,
-)
+from .base import CCMMXMLParser, QualifiedTag, VocabularyLoader, XMLNamespace, datatype_parser
 
 if TYPE_CHECKING:
     from lxml.etree import _Element as Element
 
 
 class CCMMXMLNMAParser(CCMMXMLParser):
-    """Parser for CCMM XML version 1.1.0 for national metadata directory."""
+    """Parser for CCMM XML version 1.1.0 for NMA."""
 
     # ccmm namespace
     ns = XMLNamespace("https://schema.ccmm.cz/research-data/1.0")
@@ -517,14 +511,14 @@ class CCMMXMLNMAParser(CCMMXMLParser):
                 cardinality="optional_array",
                 datatype="ccmmdocumentation",
             ),
-            "specifications": self.parse_field(
-                self.ns.specification,
+            "conforms_to_specifications": self.parse_field(
+                self.ns.conforms_to_specification,
                 children,
                 path,
                 cardinality="optional_array",
                 datatype="ccmmapplicationprofile",
             ),
-            "title": self.parse_i18n(
+            "title": self.parse_text_field(
                 self.ns.title,
                 children,
                 path,
@@ -590,7 +584,7 @@ class CCMMXMLNMAParser(CCMMXMLParser):
                 path,
                 cardinality="optional",
             ),
-            "title": self.parse_i18n(
+            "title": self.parse_text_field(
                 self.ns.title,
                 children,
                 path,
@@ -1125,12 +1119,6 @@ class CCMMXMLNMAParser(CCMMXMLParser):
                 path,
                 cardinality="optional",
             ),
-            "date_information": self.parse_i18n(
-                self.ns.date_information,
-                children,
-                path,
-                cardinality="optional",
-            ),
             "date_time": self.parse_field(
                 self.ns.date_time,
                 children,
@@ -1179,6 +1167,32 @@ class CCMMXMLNMAParser(CCMMXMLParser):
         """Parse an element of type time_reference to CCMMTimeReference."""
         children = self.children(el)
         return {
+            "temporal_representation": self.parse_field(
+                self.ns.temporal_representation,
+                children,
+                path,
+                cardinality="single",
+                datatype="ccmmtimerepresentation",
+            ),
+            "date_type": self.datetypes_parser.parse_field(
+                self.ns.date_type,
+                children,
+                path,
+                cardinality="optional",
+            ),
+            "date_information": self.parse_i18n(
+                self.ns.date_information,
+                children,
+                path,
+                cardinality="optional",
+            ),
+        }
+
+    @datatype_parser()
+    def parse_ccmmtimerepresentation(self, el: Element, path: list[QualifiedTag]) -> dict:
+        """Parse an element of type CCMMTimeRepresentation to CCMMTimeRepresentation."""
+        children = self.children(el)
+        return {
             "time_interval": self.parse_field(
                 self.ns.time_interval,
                 children,
@@ -1192,18 +1206,6 @@ class CCMMXMLNMAParser(CCMMXMLParser):
                 path,
                 cardinality="optional",
                 datatype="ccmmtimeinstant",
-            ),
-            "date_information": self.parse_i18n(
-                self.ns.date_information,
-                children,
-                path,
-                cardinality="optional",
-            ),
-            "date_type": self.datetypes_parser.parse_field(
-                self.ns.date_type,
-                children,
-                path,
-                cardinality="optional",
             ),
         }
 
