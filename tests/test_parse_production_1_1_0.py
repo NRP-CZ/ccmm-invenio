@@ -80,7 +80,6 @@ def test_parse_production_1_1_0(clean_strings):
     cleaned_expected = clean_strings(
         {
             "metadata": {
-                "iri": "https://organization.cz/dataset_server/dataset_id",
                 "locations": [
                     {
                         "bounding_boxes": [
@@ -260,7 +259,7 @@ def test_parse_production_1_1_0(clean_strings):
                     {
                         "funder": {"name": "Grantová agentura České republiky"},
                         "award": {
-                            "title": "Program for air pollution research",
+                            "title": {"en": "Program for air pollution research"},
                             "number": "https://doi.org/award-identifier",
                         },
                     }
