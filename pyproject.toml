@@ -13,6 +13,7 @@ dependencies = [
     "oarepo[rdm,tests]>=14.0.0,<15.0.0",
     "oarepo-model>=0.1.0dev18",
     "oarepo-rdm>=1.0.0dev0",
+    "langdetect>=1.0.9",
 ]
 
 [project.urls]

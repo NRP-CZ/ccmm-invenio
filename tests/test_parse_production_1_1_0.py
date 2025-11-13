@@ -13,9 +13,12 @@ from pathlib import Path
 from lxml.etree import fromstring
 
 from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
+from tests.model import production_dataset
 
 vocab_items = {
-    "titletypes": {"https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"},
+    "titletypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"
+    },
     "identifierschemes": {
         "https://doi.org/": "doi",
         "https://organization.cz/datasets/": "organization-specific-id",
@@ -36,7 +39,9 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created": "Created",
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected": "Collected",
     },
-    "descriptiontypes": {"https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"},
+    "descriptiontypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"
+    },
     "fileformats": {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/GPKG": "GPKG"
@@ -45,7 +50,9 @@ vocab_items = {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/ZIP": "ZIP"
     },
-    "locationrelationtypes": {"https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"},
+    "locationrelationtypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"
+    },
     "resourceagentroletypes": {
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager": "DataManager",
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator": "Creator",
@@ -60,7 +67,9 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/": "Frascati",
         "https://inspire.ec.europa.eu/theme/": "INSPIRE",
     },
-    "accessrights": {"https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"},
+    "accessrights": {
+        "https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"
+    },
 }
 
 
@@ -191,7 +200,9 @@ def test_parse_production_1_1_0(clean_strings):
                     ],
                     "license": {
                         "iri": "https://creativecommons.org/licenses/by/4.0/",
-                        "label": [{"lang": "en", "value": "Attribution 4.0 International"}],
+                        "label": [
+                            {"lang": "en", "value": "Attribution 4.0 International"}
+                        ],
                     },
                 },
                 "time_references": [
@@ -219,7 +230,7 @@ def test_parse_production_1_1_0(clean_strings):
                     {
                         "title": "Air quality measurements in Central Bohemian Region in 2024.",
                         "type": {"id": "translatedTitle"},
-                        "lang": "en",
+                        "lang": {"id": "en"},
                     }
                 ],
                 "additional_descriptions": [
@@ -227,58 +238,36 @@ def test_parse_production_1_1_0(clean_strings):
                         "description": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v\n"
                         "            roce 2024.",
                         "type": {"id": "abstract"},
-                        "lang": "cs",
+                        "lang": {"id": "cs"},
                     }
                 ],
                 "identifiers": [
-                    {"identifier": "25.45321", "scheme": "doi"},
-                    {
-                        "identifier": "air-q-cb-25-23",
-                        "scheme": "organization-specific-id",
-                    },
+                    {"identifier": "10.5281/zenodo.17594128", "scheme": "doi"}
                 ],
                 "creators": [
                     {
                         "role": {"id": "Creator"},
                         "person_or_org": {
-                            "name": "Novák",
+                            "name": "Šimek, Miroslav",
                             "type": "personal",
-                            "given_name": "Jan",
-                            "family_name": "Novák",
-                            "identifiers": [{"identifier": "0030-04X2-2030-4X26", "scheme": "orcid"}],
+                            "given_name": "Miroslav",
+                            "family_name": "Šimek",
+                            "identifiers": [
+                                {"identifier": "0000-0003-0852-6632", "scheme": "orcid"}
+                            ],
                         },
                         "affiliations": [{"name": "Univerzita Karlova"}],
                     }
                 ],
                 "subjects": [
                     {
-                        "iri": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509",
-                        "classification_code": "10511",
-                        "subject_scheme": {"id": "Frascati"},
-                        "title": [{"lang": "cs", "value": "Environmentální vědy"}],
+                        "id": "Frascati:10511",
+                        "subject": "Environmentální vědy",
                     },
-                    {"title": [{"lang": "cs", "value": "kvalita ovzduší"}]},
+                    {"subject": "kvalita ovzduší"},
                     {
-                        "iri": "http://inspire.ec.europa.eu/theme/ef",
-                        "classification_code": "EF",
-                        "definition": [
-                            {
-                                "lang": "en",
-                                "value": "Location and operation of environmental monitoring facilities\n"
-                                "            includes observation and measurement of emissions, "
-                                "of the state of environmental media\n"
-                                "            and of other ecosystem parameters (biodiversity, "
-                                "ecological conditions of vegetation,\n"
-                                "            etc.) by or on behalf of public authorities.",
-                            }
-                        ],
-                        "subject_scheme": {"id": "INSPIRE"},
-                        "title": [
-                            {
-                                "lang": "en",
-                                "value": "Environmental monitoring facilities",
-                            }
-                        ],
+                        "id": "INSPIRE:EF",
+                        "subject": "Environmental monitoring facilities",
                     },
                 ],
                 "funding": [
@@ -297,3 +286,16 @@ def test_parse_production_1_1_0(clean_strings):
     )
 
     assert cleaned_record == cleaned_expected
+
+
+def test_load_production_1_1_0(app, clean_strings):
+    xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
+    root_el = fromstring(xml_file.read_bytes())
+
+    def vocabulary_loader(vocabulary_type: str, iri: str) -> str:
+        return vocab_items[vocabulary_type][iri]
+
+    parser = CCMMXMLProductionParser(vocabulary_loader=vocabulary_loader)
+
+    record = parser.parse(root_el)
+    production_dataset.RecordSchema().load(record)

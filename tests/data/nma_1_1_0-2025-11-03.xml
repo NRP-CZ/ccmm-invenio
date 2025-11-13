@@ -61,22 +61,23 @@
     </metadata_identification>
     <identifier>
         <!-- identifier of dataset -->
-        <iri>https://doi.org/25.45321</iri>
-        <value>25.45321</value>
+        <iri>https://doi.org/10.5281/zenodo.17594128</iri>
+        <value>10.5281/zenodo.17594128</value>
         <scheme>
             <iri>https://doi.org/</iri>
             <label xml:lang="">DOI</label>
         </scheme>
     </identifier>
-    <identifier>
-        <!-- identifier of dataset within organization-->
+    <!-- identifier of dataset within organization-->
+    <!-- not configured inside invenio, so commented out -->
+    <!-- identifier>
         <iri>https://organization.cz/datasets/air-q-cb-25-23</iri>
         <value>air-q-cb-25-23</value>
         <scheme>
             <iri>https://organization.cz/datasets/</iri>
             <label xml:lang="cs">Organizační identifikační schéma</label>
         </scheme>
-    </identifier>
+    </identifier -->
     <version>1.0.23</version>
     <title>Kvalita ovzduší ve středních čechách 2024</title>
     <alternate_title>
@@ -91,18 +92,18 @@
         <relation>
             <person>
                 <identifier>
-                    <iri>https://orcid.org/0030-04X2-2030-4X26</iri>
-                    <value>0030-04X2-2030-4X26</value>
+                    <iri>https://orcid.org/0000-0003-0852-6632</iri>
+                    <value>0000-0003-0852-6632</value>
                     <scheme>
                         <iri>https://orcid.org/</iri>
                         <label xml:lang="">ORCID</label>
                     </scheme>
                 </identifier>
-                <name>Novák</name>
-                <given_name>Jan</given_name>
-                <family_name>Novák</family_name>
+                <name>Šimek, Miroslav</name>
+                <given_name>Miroslav</given_name>
+                <family_name>Šimek</family_name>
                 <contact_point>
-                    <email>jan.novak@email.com</email>
+                    <email>miroslav.simek@email.com</email>
                     <phone>+0112345678</phone>
                     <address>
                         <full_address>Dlouhá 15, 11000, Praha 1</full_address>
