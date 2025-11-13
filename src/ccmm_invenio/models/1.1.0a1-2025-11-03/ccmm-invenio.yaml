@@ -238,3 +238,46 @@ CCMMProductionDataset:
       label:
         en: Languages
         cs: Jazyky
+
+    # not supported now:
+    related_resources:
+      type: array
+      items:
+        type: dynamic-object
+      label:
+        en: Related resources
+        cs: Související zdroje
+      hint:
+        en: Links to related datasets, publications, or services.
+        cs: Odkazy na související datové sady, publikace či služby.
+      help:
+        en: Add references to resources related by citation, derivation, supplement, or other relationships.
+        cs: Přidejte odkazy na zdroje související citací, odvozením, doplněním či jiným vztahem.
+
+    provenances:
+      type: array
+      items:
+        type: dynamic-object
+      label:
+        en: Provenances
+        cs: Provenience
+      hint:
+        en: Information about the origin and custody of the dataset.
+        cs: Informace o původu a správě datové sady.
+      help:
+        en: Document the history, ownership, and changes to the dataset over time.
+        cs: Dokumentujte historii, vlastnictví a změny datové sady v průběhu času.
+
+    validation_results:
+      type: array
+      items:
+        type: dynamic-object
+      label:
+        en: Validation results
+        cs: Výsledky validace
+      hint:
+        en: Results from data quality assessments or validations.
+        cs: Výsledky hodnocení kvality dat nebo validací.
+      help:
+        en: Include reports or summaries of any data validation processes applied to the dataset.
+        cs: Uveďte zprávy nebo souhrny jakýchkoli procesů validace dat aplikovaných na datovou sadu.
