@@ -236,15 +236,10 @@ def test_parse_nma_1_1_0(clean_strings):
                 ],
                 "identifiers": [
                     {
-                        "iri": "https://doi.org/25.45321",
-                        "value": "25.45321",
+                        "iri": "https://doi.org/10.5281/zenodo.17594128",
+                        "value": "10.5281/zenodo.17594128",
                         "scheme": {"id": "doi"},
-                    },
-                    {
-                        "iri": "https://organization.cz/datasets/air-q-cb-25-23",
-                        "value": "air-q-cb-25-23",
-                        "scheme": {"id": "organization-specific-id"},
-                    },
+                    }
                 ],
                 "locations": [
                     {
@@ -385,20 +380,20 @@ def test_parse_nma_1_1_0(clean_strings):
                                 "contact_points": [
                                     {
                                         "addresses": [{"full_addresses": ["Dlouhá 15, 11000, Praha 1"]}],
-                                        "emails": ["jan.novak@email.com"],
+                                        "emails": ["miroslav.simek@email.com"],
                                         "phones": ["+0112345678"],
                                     }
                                 ],
-                                "family_names": ["Novák"],
-                                "given_names": ["Jan"],
+                                "family_names": ["Šimek"],
+                                "given_names": ["Miroslav"],
                                 "identifiers": [
                                     {
-                                        "iri": "https://orcid.org/0030-04X2-2030-4X26",
-                                        "value": "0030-04X2-2030-4X26",
+                                        "iri": "https://orcid.org/0000-0003-0852-6632",
+                                        "value": "0000-0003-0852-6632",
                                         "scheme": {"id": "orcid"},
                                     }
                                 ],
-                                "name": "Novák",
+                                "name": "Šimek, Miroslav",
                             }
                         },
                         "role": {"id": "Creator"},
