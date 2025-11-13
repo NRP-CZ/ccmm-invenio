@@ -13,6 +13,7 @@ from pathlib import Path
 from lxml.etree import fromstring
 
 from ccmm_invenio.parsers.nma_1_1_0 import CCMMXMLNMAParser
+from tests.model import nma_dataset
 
 vocab_items = {
     "titletypes": {"https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"},
@@ -235,15 +236,10 @@ def test_parse_nma_1_1_0(clean_strings):
                 ],
                 "identifiers": [
                     {
-                        "iri": "https://doi.org/25.45321",
-                        "value": "25.45321",
+                        "iri": "https://doi.org/10.5281/zenodo.17594128",
+                        "value": "10.5281/zenodo.17594128",
                         "scheme": {"id": "doi"},
-                    },
-                    {
-                        "iri": "https://organization.cz/datasets/air-q-cb-25-23",
-                        "value": "air-q-cb-25-23",
-                        "scheme": {"id": "organization-specific-id"},
-                    },
+                    }
                 ],
                 "locations": [
                     {
@@ -384,20 +380,20 @@ def test_parse_nma_1_1_0(clean_strings):
                                 "contact_points": [
                                     {
                                         "addresses": [{"full_addresses": ["Dlouhá 15, 11000, Praha 1"]}],
-                                        "emails": ["jan.novak@email.com"],
+                                        "emails": ["miroslav.simek@email.com"],
                                         "phones": ["+0112345678"],
                                     }
                                 ],
-                                "family_names": ["Novák"],
-                                "given_names": ["Jan"],
+                                "family_names": ["Šimek"],
+                                "given_names": ["Miroslav"],
                                 "identifiers": [
                                     {
-                                        "iri": "https://orcid.org/0030-04X2-2030-4X26",
-                                        "value": "0030-04X2-2030-4X26",
+                                        "iri": "https://orcid.org/0000-0003-0852-6632",
+                                        "value": "0000-0003-0852-6632",
                                         "scheme": {"id": "orcid"},
                                     }
                                 ],
-                                "name": "Novák",
+                                "name": "Šimek, Miroslav",
                             }
                         },
                         "role": {"id": "Creator"},
@@ -555,3 +551,13 @@ def test_parse_nma_1_1_0(clean_strings):
     )
 
     assert cleaned_record == cleaned_expected
+
+
+def test_load_nma_1_1_0(clean_strings):
+    xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
+    root_el = fromstring(xml_file.read_bytes())
+
+    parser = CCMMXMLNMAParser(vocabulary_loader=lambda vocab_type, iri: vocab_items[vocab_type][iri])
+
+    record = parser.parse(root_el)
+    nma_dataset.RecordSchema().load(record)

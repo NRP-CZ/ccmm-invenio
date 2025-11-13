@@ -38,6 +38,8 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING, Any
 
+import langdetect
+
 from .nma_1_1_0 import CCMMXMLNMAParser
 
 if TYPE_CHECKING:
@@ -116,6 +118,9 @@ class CCMMXMLProductionParserBase:
                 distributions,
             )
 
+        # iri not supported
+        metadata.pop("iri", None)
+
         return record
 
     def convert_additional_titles(self, metadata: dict[str, Any]) -> None:
@@ -134,7 +139,7 @@ class CCMMXMLProductionParserBase:
                 converted_title = {
                     "title": title_with_lang.get("value"),
                     "type": title.get("alternate_title_type"),
-                    "lang": title_with_lang.get("lang"),
+                    "lang": {"id": title_with_lang.get("lang")},
                 }
                 converted_additional_titles.append(converted_title)
 
@@ -156,7 +161,7 @@ class CCMMXMLProductionParserBase:
                 converted_desc = {
                     "description": desc_with_lang.get("value"),
                     "type": desc.get("description_type"),
-                    "lang": desc_with_lang.get("lang"),
+                    "lang": {"id": desc_with_lang.get("lang")},
                 }
                 converted_additional_descriptions.append(converted_desc)
 
@@ -437,17 +442,17 @@ class CCMMXMLProductionParserBase:
                 converted_subj = (
                     {
                         "id": vocabulary_id,
-                        "title": translated_title.get("value"),
+                        "subject": translated_title.get("value"),
                     }
                     if vocabulary_id
                     else {
-                        "title": translated_title.get("value"),
+                        "subject": translated_title.get("value"),
                     }
                 )
                 converted_subjects.append(converted_subj)
 
         if subjects:
-            metadata["subjects"] = subjects
+            metadata["subjects"] = converted_subjects
 
     def convert_funding(self, metadata: dict[str, Any]) -> None:
         """Convert funding from NMA format to RDM format."""
@@ -484,8 +489,12 @@ class CCMMXMLProductionParserBase:
                     converted_funders.append(person)
             award_title = fund.get("award_title")
             local_identifier = fund.get("local_identifier")
+            # TODO: CCMM's award title is not multilingual, but we need a multilingual title in RDM
+            lang = langdetect.detect(award_title) if award_title else "en"
+            if not lang:
+                lang = "en"  # fallback to english
             award = {
-                "title": award_title,
+                "title": {lang: award_title},
                 "number": local_identifier,
             }
             converted_fundings.extend(

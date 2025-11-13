@@ -29,10 +29,14 @@ GMLEnvelopeType:
   properties:
     lowerCorner:
       xml: "gml:lowerCorner"
-      type: keyword
+      type: array
+      items:
+        type: double
     upperCorner:
-      type: keyword
       xml: "gml:upperCorner"
+      type: array
+      items:
+        type: double
 
       
 GMLSpaceSeparatedDoubleList:

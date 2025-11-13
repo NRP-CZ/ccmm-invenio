@@ -13,6 +13,7 @@ from pathlib import Path
 from lxml.etree import fromstring
 
 from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
+from tests.model import production_dataset
 
 vocab_items = {
     "titletypes": {"https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"},
@@ -79,7 +80,6 @@ def test_parse_production_1_1_0(clean_strings):
     cleaned_expected = clean_strings(
         {
             "metadata": {
-                "iri": "https://organization.cz/dataset_server/dataset_id",
                 "locations": [
                     {
                         "bounding_boxes": [
@@ -219,7 +219,7 @@ def test_parse_production_1_1_0(clean_strings):
                     {
                         "title": "Air quality measurements in Central Bohemian Region in 2024.",
                         "type": {"id": "translatedTitle"},
-                        "lang": "en",
+                        "lang": {"id": "en"},
                     }
                 ],
                 "additional_descriptions": [
@@ -227,65 +227,39 @@ def test_parse_production_1_1_0(clean_strings):
                         "description": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v\n"
                         "            roce 2024.",
                         "type": {"id": "abstract"},
-                        "lang": "cs",
+                        "lang": {"id": "cs"},
                     }
                 ],
-                "identifiers": [
-                    {"identifier": "25.45321", "scheme": "doi"},
-                    {
-                        "identifier": "air-q-cb-25-23",
-                        "scheme": "organization-specific-id",
-                    },
-                ],
+                "identifiers": [{"identifier": "10.5281/zenodo.17594128", "scheme": "doi"}],
                 "creators": [
                     {
                         "role": {"id": "Creator"},
                         "person_or_org": {
-                            "name": "Novák",
+                            "name": "Šimek, Miroslav",
                             "type": "personal",
-                            "given_name": "Jan",
-                            "family_name": "Novák",
-                            "identifiers": [{"identifier": "0030-04X2-2030-4X26", "scheme": "orcid"}],
+                            "given_name": "Miroslav",
+                            "family_name": "Šimek",
+                            "identifiers": [{"identifier": "0000-0003-0852-6632", "scheme": "orcid"}],
                         },
                         "affiliations": [{"name": "Univerzita Karlova"}],
                     }
                 ],
                 "subjects": [
                     {
-                        "iri": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509",
-                        "classification_code": "10511",
-                        "subject_scheme": {"id": "Frascati"},
-                        "title": [{"lang": "cs", "value": "Environmentální vědy"}],
+                        "id": "Frascati:10511",
+                        "subject": "Environmentální vědy",
                     },
-                    {"title": [{"lang": "cs", "value": "kvalita ovzduší"}]},
+                    {"subject": "kvalita ovzduší"},
                     {
-                        "iri": "http://inspire.ec.europa.eu/theme/ef",
-                        "classification_code": "EF",
-                        "definition": [
-                            {
-                                "lang": "en",
-                                "value": "Location and operation of environmental monitoring facilities\n"
-                                "            includes observation and measurement of emissions, "
-                                "of the state of environmental media\n"
-                                "            and of other ecosystem parameters (biodiversity, "
-                                "ecological conditions of vegetation,\n"
-                                "            etc.) by or on behalf of public authorities.",
-                            }
-                        ],
-                        "subject_scheme": {"id": "INSPIRE"},
-                        "title": [
-                            {
-                                "lang": "en",
-                                "value": "Environmental monitoring facilities",
-                            }
-                        ],
+                        "id": "INSPIRE:EF",
+                        "subject": "Environmental monitoring facilities",
                     },
                 ],
                 "funding": [
                     {
                         "funder": {"name": "Grantová agentura České republiky"},
                         "award": {
-                            "title": "Program for air pollution research",
+                            "title": {"en": "Program for air pollution research"},
                             "number": "https://doi.org/award-identifier",
                         },
                     }
@@ -297,3 +271,16 @@ def test_parse_production_1_1_0(clean_strings):
     )
 
     assert cleaned_record == cleaned_expected
+
+
+def test_load_production_1_1_0(app, clean_strings):
+    xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
+    root_el = fromstring(xml_file.read_bytes())
+
+    def vocabulary_loader(vocabulary_type: str, iri: str) -> str:
+        return vocab_items[vocabulary_type][iri]
+
+    parser = CCMMXMLProductionParser(vocabulary_loader=vocabulary_loader)
+
+    record = parser.parse(root_el)
+    production_dataset.RecordSchema().load(record)
