@@ -97,7 +97,7 @@ CCMMProductionDataset:
       help:
         en: Include any identifiers that reference this record, such as DOIs, Handles, or other scheme-based IDs.
         cs: Uveďte jakékoliv identifikátory, které odkazují na tento záznam, jako jsou DOI, Handle nebo jiné identifikátory založené na schématu.
-      type: RDMIdentifiers
+      type: RDMRecordIdentifiers
 
     locations:
       # taken from the CCMM as it is. Can not unify with RDM locations as they are missing
