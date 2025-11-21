@@ -10,11 +10,14 @@
 
 from __future__ import annotations
 
-from typing import Any
+from typing import TYPE_CHECKING, Any, override
 
 from flask_resources import BaseListSchema, MarshmallowSerializer
 from flask_resources.serializers import JSONSerializer
 from invenio_rdm_records.resources.serializers.datacite import DataCite43Schema
+
+if TYPE_CHECKING:
+    from collections.abc import Mapping
 
 
 class CCMMProductionDataCiteJSONSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
@@ -36,3 +39,8 @@ class ProductionDataCiteSchema(DataCite43Schema):
 
     TODO: this will not work correctly !!!
     """
+
+    @override
+    def get_locations(self, obj: Mapping[str, Any]) -> list:
+        """Get locations."""
+        return []
