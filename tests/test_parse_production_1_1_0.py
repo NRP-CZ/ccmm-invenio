@@ -16,7 +16,9 @@ from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
 from tests.model import production_dataset
 
 vocab_items = {
-    "titletypes": {"https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"},
+    "titletypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"
+    },
     "identifierschemes": {
         "https://doi.org/": "doi",
         "https://organization.cz/datasets/": "organization-specific-id",
@@ -37,7 +39,9 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created": "Created",
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected": "Collected",
     },
-    "descriptiontypes": {"https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"},
+    "descriptiontypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"
+    },
     "fileformats": {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/GPKG": "GPKG"
@@ -46,7 +50,9 @@ vocab_items = {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/ZIP": "ZIP"
     },
-    "locationrelationtypes": {"https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"},
+    "locationrelationtypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"
+    },
     "resourceagentroletypes": {
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager": "DataManager",
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator": "Creator",
@@ -61,7 +67,9 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/": "Frascati",
         "https://inspire.ec.europa.eu/theme/": "INSPIRE",
     },
-    "accessrights": {"https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"},
+    "accessrights": {
+        "https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"
+    },
 }
 
 
@@ -185,13 +193,18 @@ def test_parse_production_1_1_0(clean_strings):
                     ],
                     "description": [
                         {
-                            "lang": "cs",
+                            "lang": {"id": "cs"},
                             "value": "Textový popis toho, jak je možné s datovou sadou\n            nakládat.",
                         }
                     ],
                     "license": {
                         "iri": "https://creativecommons.org/licenses/by/4.0/",
-                        "label": [{"lang": "en", "value": "Attribution 4.0 International"}],
+                        "label": [
+                            {
+                                "lang": {"id": "en"},
+                                "value": "Attribution 4.0 International",
+                            }
+                        ],
                     },
                 },
                 "time_references": [
@@ -230,7 +243,9 @@ def test_parse_production_1_1_0(clean_strings):
                         "lang": {"id": "cs"},
                     }
                 ],
-                "identifiers": [{"identifier": "10.5281/zenodo.17594128", "scheme": "doi"}],
+                "identifiers": [
+                    {"identifier": "10.5281/zenodo.17594128", "scheme": "doi"}
+                ],
                 "creators": [
                     {
                         "role": {"id": "Creator"},
@@ -239,7 +254,9 @@ def test_parse_production_1_1_0(clean_strings):
                             "type": "personal",
                             "given_name": "Miroslav",
                             "family_name": "Šimek",
-                            "identifiers": [{"identifier": "0000-0003-0852-6632", "scheme": "orcid"}],
+                            "identifiers": [
+                                {"identifier": "0000-0003-0852-6632", "scheme": "orcid"}
+                            ],
                         },
                         "affiliations": [{"name": "Univerzita Karlova"}],
                     }

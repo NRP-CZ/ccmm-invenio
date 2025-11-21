@@ -16,7 +16,9 @@ from ccmm_invenio.parsers.nma_1_1_0 import CCMMXMLNMAParser
 from tests.model import nma_dataset
 
 vocab_items = {
-    "titletypes": {"https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"},
+    "titletypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"
+    },
     "identifierschemes": {
         "https://doi.org/": "doi",
         "https://organization.cz/datasets/": "organization-specific-id",
@@ -37,7 +39,9 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created": "Created",
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected": "Collected",
     },
-    "descriptiontypes": {"https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"},
+    "descriptiontypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"
+    },
     "fileformats": {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/GPKG": "GPKG"
@@ -46,7 +50,9 @@ vocab_items = {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/ZIP": "ZIP"
     },
-    "locationrelationtypes": {"https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"},
+    "locationrelationtypes": {
+        "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"
+    },
     "resourceagentroletypes": {
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager": "DataManager",
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator": "Creator",
@@ -61,7 +67,9 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/": "Frascati",
         "https://inspire.ec.europa.eu/theme/": "INSPIRE",
     },
-    "accessrights": {"https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"},
+    "accessrights": {
+        "https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"
+    },
 }
 
 
@@ -69,7 +77,9 @@ def test_parse_nma_1_1_0(clean_strings):
     xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
     root_el = fromstring(xml_file.read_bytes())
 
-    parser = CCMMXMLNMAParser(vocabulary_loader=lambda vocab_type, iri: vocab_items[vocab_type][iri])
+    parser = CCMMXMLNMAParser(
+        vocabulary_loader=lambda vocab_type, iri: vocab_items[vocab_type][iri]
+    )
 
     record = parser.parse(root_el)
 
@@ -83,7 +93,7 @@ def test_parse_nma_1_1_0(clean_strings):
                         "alternate_title_type": {"id": "translatedTitle"},
                         "title": [
                             {
-                                "lang": "en",
+                                "lang": {"id": "en"},
                                 "value": "Air quality measurements in Central Bohemian Region in 2024.",
                             }
                         ],
@@ -93,7 +103,7 @@ def test_parse_nma_1_1_0(clean_strings):
                     {
                         "description_text": [
                             {
-                                "lang": "cs",
+                                "lang": {"id": "cs"},
                                 "value": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v\n"
                                 "            "
                                 "roce 2024.",
@@ -119,7 +129,7 @@ def test_parse_nma_1_1_0(clean_strings):
                             ],
                             "description": [
                                 {
-                                    "lang": "cs",
+                                    "lang": {"id": "cs"},
                                     "value": "Prohlížecí služba (WMS) byla vytvořena na základě dat ČHMÚ a\n"
                                     "                "
                                     "obsahuje vrstvy: 1) Zóny a aglomerace hodnocení "
@@ -152,7 +162,7 @@ def test_parse_nma_1_1_0(clean_strings):
                                     "iri": "",
                                     "label": [
                                         {
-                                            "lang": "cs",
+                                            "lang": {"id": "cs"},
                                             "value": "NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým\n"
                                             "                    "
                                             "se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, "
@@ -174,7 +184,7 @@ def test_parse_nma_1_1_0(clean_strings):
                                     "iri": "https://www.chmi.cz/o-nas/organizacni-struktura/usek-kvality-ovzdusi/oddeleni-informacniho-systemu-kvality-ovzdusi/odkazy",
                                     "label": [
                                         {
-                                            "lang": "cs",
+                                            "lang": {"id": "cs"},
                                             "value": "Oddělení informačního systému kvality ovzduší - odkazy",
                                         }
                                     ],
@@ -190,7 +200,7 @@ def test_parse_nma_1_1_0(clean_strings):
                                     "iri": "https://inspire.ec.europa.eu/schemas/ef/4.0/EnvironmentalMonitoringFacilities.xsd",
                                     "label": [
                                         {
-                                            "lang": "en",
+                                            "lang": {"id": "en"},
                                             "value": "Environmental monitoring facilities",
                                         }
                                     ],
@@ -201,11 +211,11 @@ def test_parse_nma_1_1_0(clean_strings):
                                     "iri": "https://geoportal.gov.cz/atom/CHMU/chmu_ovzdusi_AQ_data_epsg4258_2023.zip",
                                     "label": [
                                         {
-                                            "lang": "cs",
+                                            "lang": {"id": "cs"},
                                             "value": "Datová sada ve formátu Geopackage",
                                         },
                                         {
-                                            "lang": "en",
+                                            "lang": {"id": "en"},
                                             "value": "Dataset in Geopackage format",
                                         },
                                     ],
@@ -225,7 +235,9 @@ def test_parse_nma_1_1_0(clean_strings):
                             {
                                 "organization": {
                                     "iri": "https://ror.org/01pv73b02",
-                                    "identifiers": [{"value": "01pv73b02", "scheme": {"id": "ror"}}],
+                                    "identifiers": [
+                                        {"value": "01pv73b02", "scheme": {"id": "ror"}}
+                                    ],
                                     "name": "Grantová agentura České republiky",
                                 }
                             }
@@ -307,7 +319,7 @@ def test_parse_nma_1_1_0(clean_strings):
                                 "iri": "https://www.iso.org/standard/80275.html",
                                 "label": [
                                     {
-                                        "lang": "und",
+                                        "lang": {"id": "und"},
                                         "value": "ISO 19115-1:2014/Amd 2:2020",
                                     }
                                 ],
@@ -316,7 +328,9 @@ def test_parse_nma_1_1_0(clean_strings):
                         "date_created": "2025-04-28",
                         "date_updated": "2025-07-25",
                         "languages": [{"id": "CES"}],
-                        "original_repository": {"iri": "https://original-repository.cz"},
+                        "original_repository": {
+                            "iri": "https://original-repository.cz"
+                        },
                         "qualified_relations": [
                             {
                                 "relation": {
@@ -335,7 +349,13 @@ def test_parse_nma_1_1_0(clean_strings):
                                         ],
                                         "contact_points": [
                                             {
-                                                "addresses": [{"full_addresses": ["Dlouhá 15, 11000, Praha 1"]}],
+                                                "addresses": [
+                                                    {
+                                                        "full_addresses": [
+                                                            "Dlouhá 15, 11000, Praha 1"
+                                                        ]
+                                                    }
+                                                ],
                                                 "emails": ["jan.novak@email.com"],
                                                 "phones": ["+0112345678"],
                                             }
@@ -379,7 +399,13 @@ def test_parse_nma_1_1_0(clean_strings):
                                 ],
                                 "contact_points": [
                                     {
-                                        "addresses": [{"full_addresses": ["Dlouhá 15, 11000, Praha 1"]}],
+                                        "addresses": [
+                                            {
+                                                "full_addresses": [
+                                                    "Dlouhá 15, 11000, Praha 1"
+                                                ]
+                                            }
+                                        ],
                                         "emails": ["miroslav.simek@email.com"],
                                         "phones": ["+0112345678"],
                                     }
@@ -415,7 +441,13 @@ def test_parse_nma_1_1_0(clean_strings):
                                 ],
                                 "contact_points": [
                                     {
-                                        "addresses": [{"full_addresses": ["Pražská 3, 60200, Brno"]}],
+                                        "addresses": [
+                                            {
+                                                "full_addresses": [
+                                                    "Pražská 3, 60200, Brno"
+                                                ]
+                                            }
+                                        ],
                                         "emails": ["256384@muni.cz"],
                                         "phones": ["+420876543219"],
                                     }
@@ -471,15 +503,17 @@ def test_parse_nma_1_1_0(clean_strings):
                         "iri": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509",
                         "classification_code": "10511",
                         "subject_scheme": {"id": "Frascati"},
-                        "title": [{"lang": "cs", "value": "Environmentální vědy"}],
+                        "title": [
+                            {"lang": {"id": "cs"}, "value": "Environmentální vědy"}
+                        ],
                     },
-                    {"title": [{"lang": "cs", "value": "kvalita ovzduší"}]},
+                    {"title": [{"lang": {"id": "cs"}, "value": "kvalita ovzduší"}]},
                     {
                         "iri": "http://inspire.ec.europa.eu/theme/ef",
                         "classification_code": "EF",
                         "definition": [
                             {
-                                "lang": "en",
+                                "lang": {"id": "en"},
                                 "value": "Location and operation of environmental monitoring facilities\n"
                                 "            "
                                 "includes observation and measurement of emissions, "
@@ -494,7 +528,7 @@ def test_parse_nma_1_1_0(clean_strings):
                         "subject_scheme": {"id": "INSPIRE"},
                         "title": [
                             {
-                                "lang": "en",
+                                "lang": {"id": "en"},
                                 "value": "Environmental monitoring facilities",
                             }
                         ],
@@ -517,13 +551,18 @@ def test_parse_nma_1_1_0(clean_strings):
                     ],
                     "description": [
                         {
-                            "lang": "cs",
+                            "lang": {"id": "cs"},
                             "value": "Textový popis toho, jak je možné s datovou sadou\n            nakládat.",
                         }
                     ],
                     "license": {
                         "iri": "https://creativecommons.org/licenses/by/4.0/",
-                        "label": [{"lang": "en", "value": "Attribution 4.0 International"}],
+                        "label": [
+                            {
+                                "lang": {"id": "en"},
+                                "value": "Attribution 4.0 International",
+                            }
+                        ],
                     },
                 },
                 "time_references": [
@@ -557,7 +596,9 @@ def test_load_nma_1_1_0(clean_strings):
     xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
     root_el = fromstring(xml_file.read_bytes())
 
-    parser = CCMMXMLNMAParser(vocabulary_loader=lambda vocab_type, iri: vocab_items[vocab_type][iri])
+    parser = CCMMXMLNMAParser(
+        vocabulary_loader=lambda vocab_type, iri: vocab_items[vocab_type][iri]
+    )
 
     record = parser.parse(root_el)
     nma_dataset.RecordSchema().load(record)
