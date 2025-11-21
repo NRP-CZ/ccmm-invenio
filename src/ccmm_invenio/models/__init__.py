@@ -12,9 +12,11 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, override
 
+from invenio_i18n import lazy_gettext as _
 from oarepo_model import from_yaml
 from oarepo_model.api import FunctionalPreset
 from oarepo_model.customizations import (
+    AddMetadataExport,
     Customization,
     IndexNestedFieldsLimit,
     IndexTotalFieldsLimit,
@@ -23,6 +25,11 @@ from oarepo_model.model import InvenioModel
 from oarepo_model.presets import Preset
 from oarepo_rdm.model.presets import rdm_minimal_preset
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
+
+from ..serializers import (
+    CCMMNMADataCiteJSONSerializer_1_1_0,
+    CCMMProductionDataCiteJSONSerializer_1_1_0,
+)
 
 if TYPE_CHECKING:
     from collections.abc import Generator
@@ -80,6 +87,48 @@ class CCMMBaseMetadataPreset(FunctionalPreset):
         merge_metadata(types, metadata_type, self.metadata_type)
 
 
+class CCMMProductionCustomizationPreset(Preset):
+    """Preset for CCMM production metadata customizations."""
+
+    modifies = ("exports",)
+
+    @override
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Apply the preset."""
+        yield AddMetadataExport(
+            code="datacite",
+            name=_("Datacite export"),
+            mimetype="application/vnd.datacite.datacite+json",
+            serializer=CCMMProductionDataCiteJSONSerializer_1_1_0(),
+        )
+
+
+class CCMMNMACustomizationPreset(Preset):
+    """Preset for CCMM production metadata customizations."""
+
+    modifies = ("exports",)
+
+    @override
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Apply the preset."""
+        yield AddMetadataExport(
+            code="datacite",
+            name=_("Datacite export"),
+            mimetype="application/vnd.datacite.datacite+json",
+            serializer=CCMMNMADataCiteJSONSerializer_1_1_0(),
+        )
+
+
 class CCMMProductionPreset(CCMMBaseMetadataPreset):
     """Preset for CCMM production metadata."""
 
@@ -110,10 +159,16 @@ class CCMMIndexSettingsPreset(Preset):
         yield IndexNestedFieldsLimit(200)
 
 
-ccmm_nma_preset_1_1_0 = [*rdm_minimal_preset, CCMMNMAPreset, CCMMIndexSettingsPreset]
+ccmm_nma_preset_1_1_0 = [
+    *rdm_minimal_preset,
+    CCMMNMAPreset,
+    CCMMIndexSettingsPreset,
+    CCMMNMACustomizationPreset,
+]
 
 ccmm_production_preset_1_1_0 = [
     *rdm_minimal_preset,
     CCMMProductionPreset,
     CCMMIndexSettingsPreset,
+    CCMMProductionCustomizationPreset,
 ]
