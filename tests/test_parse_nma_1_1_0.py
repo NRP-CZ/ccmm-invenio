@@ -503,9 +503,7 @@ def test_parse_nma_1_1_0(clean_strings):
                         "iri": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509",
                         "classification_code": "10511",
                         "subject_scheme": {"id": "Frascati"},
-                        "title": [
-                            {"lang": {"id": "cs"}, "value": "Environmentální vědy"}
-                        ],
+                        "title": [{"lang": "cs", "value": "Environmentální vědy"}],
                     },
                     {"title": [{"lang": {"id": "cs"}, "value": "kvalita ovzduší"}]},
                     {

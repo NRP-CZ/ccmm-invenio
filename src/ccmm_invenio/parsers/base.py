@@ -696,7 +696,7 @@ class CCMMXMLParser:
             cardinality="array" if cardinality == "single" else "optional_array",
             datatype=self.i18ndict_datatype,
         )
-        multilingual_list: list[dict[str, str]] = []
+        multilingual_list: list[dict[str, dict[str, str] | str]] = []
         for item in ret:
             for k, v in item.items():
                 multilingual_list.append({"lang": {"id": k}, "value": v})
