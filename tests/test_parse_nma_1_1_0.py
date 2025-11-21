@@ -16,9 +16,7 @@ from ccmm_invenio.parsers.nma_1_1_0 import CCMMXMLNMAParser
 from tests.model import nma_dataset
 
 vocab_items = {
-    "titletypes": {
-        "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"
-    },
+    "titletypes": {"https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/translatedTitle": "translatedTitle"},
     "identifierschemes": {
         "https://doi.org/": "doi",
         "https://organization.cz/datasets/": "organization-specific-id",
@@ -39,9 +37,7 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created": "Created",
         "https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected": "Collected",
     },
-    "descriptiontypes": {
-        "https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"
-    },
+    "descriptiontypes": {"https://vocabs.ccmm.cz/registry/codelist/DescriptionType/abstract": "abstract"},
     "fileformats": {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/GPKG": "GPKG"
@@ -50,9 +46,7 @@ vocab_items = {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/ZIP": "ZIP"
     },
-    "locationrelationtypes": {
-        "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"
-    },
+    "locationrelationtypes": {"https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"},
     "resourceagentroletypes": {
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager": "DataManager",
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator": "Creator",
@@ -67,9 +61,7 @@ vocab_items = {
         "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/": "Frascati",
         "https://inspire.ec.europa.eu/theme/": "INSPIRE",
     },
-    "accessrights": {
-        "https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"
-    },
+    "accessrights": {"https://vocabularies.coar-repositories.org/access_rights/c_abf2/": "OpenAccess"},
 }
 
 
@@ -77,9 +69,7 @@ def test_parse_nma_1_1_0(clean_strings):
     xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
     root_el = fromstring(xml_file.read_bytes())
 
-    parser = CCMMXMLNMAParser(
-        vocabulary_loader=lambda vocab_type, iri: vocab_items[vocab_type][iri]
-    )
+    parser = CCMMXMLNMAParser(vocabulary_loader=lambda vocab_type, iri: vocab_items[vocab_type][iri])
 
     record = parser.parse(root_el)
 
@@ -235,9 +225,7 @@ def test_parse_nma_1_1_0(clean_strings):
                             {
                                 "organization": {
                                     "iri": "https://ror.org/01pv73b02",
-                                    "identifiers": [
-                                        {"value": "01pv73b02", "scheme": {"id": "ror"}}
-                                    ],
+                                    "identifiers": [{"value": "01pv73b02", "scheme": {"id": "ror"}}],
                                     "name": "Grantová agentura České republiky",
                                 }
                             }
@@ -328,9 +316,7 @@ def test_parse_nma_1_1_0(clean_strings):
                         "date_created": "2025-04-28",
                         "date_updated": "2025-07-25",
                         "languages": [{"id": "CES"}],
-                        "original_repository": {
-                            "iri": "https://original-repository.cz"
-                        },
+                        "original_repository": {"iri": "https://original-repository.cz"},
                         "qualified_relations": [
                             {
                                 "relation": {
@@ -349,13 +335,7 @@ def test_parse_nma_1_1_0(clean_strings):
                                         ],
                                         "contact_points": [
                                             {
-                                                "addresses": [
-                                                    {
-                                                        "full_addresses": [
-                                                            "Dlouhá 15, 11000, Praha 1"
-                                                        ]
-                                                    }
-                                                ],
+                                                "addresses": [{"full_addresses": ["Dlouhá 15, 11000, Praha 1"]}],
                                                 "emails": ["jan.novak@email.com"],
                                                 "phones": ["+0112345678"],
                                             }
@@ -399,13 +379,7 @@ def test_parse_nma_1_1_0(clean_strings):
                                 ],
                                 "contact_points": [
                                     {
-                                        "addresses": [
-                                            {
-                                                "full_addresses": [
-                                                    "Dlouhá 15, 11000, Praha 1"
-                                                ]
-                                            }
-                                        ],
+                                        "addresses": [{"full_addresses": ["Dlouhá 15, 11000, Praha 1"]}],
                                         "emails": ["miroslav.simek@email.com"],
                                         "phones": ["+0112345678"],
                                     }
@@ -441,13 +415,7 @@ def test_parse_nma_1_1_0(clean_strings):
                                 ],
                                 "contact_points": [
                                     {
-                                        "addresses": [
-                                            {
-                                                "full_addresses": [
-                                                    "Pražská 3, 60200, Brno"
-                                                ]
-                                            }
-                                        ],
+                                        "addresses": [{"full_addresses": ["Pražská 3, 60200, Brno"]}],
                                         "emails": ["256384@muni.cz"],
                                         "phones": ["+420876543219"],
                                     }
@@ -503,7 +471,7 @@ def test_parse_nma_1_1_0(clean_strings):
                         "iri": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509",
                         "classification_code": "10511",
                         "subject_scheme": {"id": "Frascati"},
-                        "title": [{"lang": "cs", "value": "Environmentální vědy"}],
+                        "title": [{"lang": {"id": "cs"}, "value": "Environmentální vědy"}],
                     },
                     {"title": [{"lang": {"id": "cs"}, "value": "kvalita ovzduší"}]},
                     {
@@ -594,9 +562,7 @@ def test_load_nma_1_1_0(clean_strings):
     xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
     root_el = fromstring(xml_file.read_bytes())
 
-    parser = CCMMXMLNMAParser(
-        vocabulary_loader=lambda vocab_type, iri: vocab_items[vocab_type][iri]
-    )
+    parser = CCMMXMLNMAParser(vocabulary_loader=lambda vocab_type, iri: vocab_items[vocab_type][iri])
 
     record = parser.parse(root_el)
     nma_dataset.RecordSchema().load(record)

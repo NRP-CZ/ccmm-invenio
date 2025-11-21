@@ -75,9 +75,7 @@ class QualifiedTag:
         if len(children) == 1:
             return children[0]
         if len(children) > 1:
-            raise ValueError(
-                f"Expected single child with tag '{self}', found multiple in element '{parent.tag}'"
-            )
+            raise ValueError(f"Expected single child with tag '{self}', found multiple in element '{parent.tag}'")
         return None
 
     @staticmethod
@@ -187,9 +185,7 @@ class VocabularyTag(QualifiedTag):
         tag: QualifiedTag,
         children: dict[QualifiedTag, list[Element]],
         path: list[QualifiedTag],
-        cardinality: Literal[
-            "single", "optional", "array", "optional_array"
-        ] = "single",
+        cardinality: Literal["single", "optional", "array", "optional_array"] = "single",
         **kwargs: Any,
     ) -> Any:
         """Find a child element with the given tag and parse its content."""
@@ -222,9 +218,7 @@ class VocabularyTag(QualifiedTag):
         except ParseError:
             raise
         except Exception as e:
-            raise ParseError(
-                f"Failed to parse content for {self.parser}: {tostring(el)}"
-            ) from e
+            raise ParseError(f"Failed to parse content for {self.parser}: {tostring(el)}") from e
 
 
 def raise_if_not_empty(*exceptions: QualifiedTag | str) -> Callable:
@@ -234,27 +228,18 @@ def raise_if_not_empty(*exceptions: QualifiedTag | str) -> Callable:
         """Wrap function to check for unexpected elements."""
 
         @wraps(f)
-        def wrapped(
-            self: CCMMXMLParser, el: Element, path: list[QualifiedTag], **kwargs: Any
-        ) -> Any:
+        def wrapped(self: CCMMXMLParser, el: Element, path: list[QualifiedTag], **kwargs: Any) -> Any:
             # Remove exceptions from the element before checking
             ret = f(self, el, path, **kwargs)
-            namespaced_exceptions = {
-                self.ns[exc] if isinstance(exc, str) else exc for exc in exceptions
-            }
+            namespaced_exceptions = {self.ns[exc] if isinstance(exc, str) else exc for exc in exceptions}
             for child in list(el.iterchildren()):
-                if (
-                    not isinstance(child.tag, str)
-                    or QualifiedTag.from_element(child) in namespaced_exceptions
-                ):
+                if not isinstance(child.tag, str) or QualifiedTag.from_element(child) in namespaced_exceptions:
                     child.getparent().remove(child)
 
             if len(el):
                 # serialize the element to string using lxml
                 stringified_el = tostring(el, encoding="unicode")
-                raise ValueError(
-                    f"Unexpected elements in path '{path}': {stringified_el}"
-                )
+                raise ValueError(f"Unexpected elements in path '{path}': {stringified_el}")
             return ret
 
         return wrapped  # type: ignore[return-value]
@@ -282,11 +267,7 @@ def remove_empty[T: Callable](f: T) -> T:
             return [
                 item
                 for item in ret
-                if not (
-                    item is None
-                    or (isinstance(item, dict) and not item)
-                    or (isinstance(item, list) and not item)
-                )
+                if not (item is None or (isinstance(item, dict) and not item) or (isinstance(item, list) and not item))
             ]
         return ret
 
@@ -404,9 +385,7 @@ class CCMMXMLParser:
 
         parser_func = self.parser_functions.get(dt)
         if not parser_func:
-            raise ValueError(
-                f"No parser function registered for datatype '{dt}' at path '{path}'"
-            )
+            raise ValueError(f"No parser function registered for datatype '{dt}' at path '{path}'")
         try:
             return parser_func(el, path, **kwargs)
         except ParseError:
@@ -424,9 +403,7 @@ class CCMMXMLParser:
         tag: QualifiedTag,
         children: dict[QualifiedTag, list[Element]],
         path: list[QualifiedTag],
-        cardinality: Literal[
-            "single", "optional", "array", "optional_array"
-        ] = "single",
+        cardinality: Literal["single", "optional", "array", "optional_array"] = "single",
         datatype: QualifiedTag | str | None = None,
         **kwargs: Any,
     ) -> Any:
@@ -436,22 +413,16 @@ class CCMMXMLParser:
             child_el.getparent().remove(child_el)
 
         if cardinality == "single":
-            return self._parse_single_required_child(
-                selected_children, tag, path, datatype, **kwargs
-            )
+            return self._parse_single_required_child(selected_children, tag, path, datatype, **kwargs)
         if cardinality == "optional":
-            return self._parse_single_optional_child(
-                selected_children, tag, path, datatype, **kwargs
-            )
+            return self._parse_single_optional_child(selected_children, tag, path, datatype, **kwargs)
         if cardinality in ("array", "optional_array"):
             ret = [
                 self.parse_content(child_el, [*path, tag], datatype=datatype, **kwargs)
                 for child_el in selected_children
             ]
             if cardinality == "array" and not ret:
-                raise ValueError(
-                    f"Missing required child elements '{tag}' at path '{path}'"
-                )
+                raise ValueError(f"Missing required child elements '{tag}' at path '{path}'")
             return ret
         raise ValueError(f"Unknown cardinality '{cardinality}' for tag '{tag}'")
 
@@ -466,16 +437,10 @@ class CCMMXMLParser:
         if not selected_children:
             raise ValueError(f"Missing required child element '{tag}' at path '{path}'")
         if len(selected_children) > 1:
-            raise ValueError(
-                f"Multiple child elements '{tag}' found at path '{path}', expected single"
-            )
-        ret = self.parse_content(
-            selected_children[0], [*path, tag], datatype=datatype, **kwargs
-        )
+            raise ValueError(f"Multiple child elements '{tag}' found at path '{path}', expected single")
+        ret = self.parse_content(selected_children[0], [*path, tag], datatype=datatype, **kwargs)
         if ret is None:
-            raise ValueError(
-                f"Child element '{tag}' at path '{path}' parsed to None, expected value"
-            )
+            raise ValueError(f"Child element '{tag}' at path '{path}' parsed to None, expected value")
         return ret
 
     def _parse_single_optional_child(
@@ -489,12 +454,8 @@ class CCMMXMLParser:
         if not selected_children:
             return None
         if len(selected_children) > 1:
-            raise ValueError(
-                f"Multiple child elements '{tag}' found at path '{path}', expected single or none"
-            )
-        return self.parse_content(
-            selected_children[0], [*path, tag], datatype=datatype, **kwargs
-        )
+            raise ValueError(f"Multiple child elements '{tag}' found at path '{path}', expected single or none")
+        return self.parse_content(selected_children[0], [*path, tag], datatype=datatype, **kwargs)
 
     #
     # Vocabulary parsers
@@ -533,9 +494,7 @@ class CCMMXMLParser:
             )
 
         """
-        tag = VocabularyTag(
-            namespace=self.vocabulary_ns.uri, tag=vocabulary_type, parser=self
-        )
+        tag = VocabularyTag(namespace=self.vocabulary_ns.uri, tag=vocabulary_type, parser=self)
         self.parser_functions[tag] = partial(
             self.parse_vocabulary_content,
             vocabulary_type=vocabulary_type,
@@ -553,9 +512,7 @@ class CCMMXMLParser:
         """Parse the content of a vocabulary element."""
         # Parse IRI (required for vocabulary items)
         children = self.children(el)
-        iri_value = self.parse_text_field(
-            self.ns.iri, children, path, cardinality="single"
-        )
+        iri_value = self.parse_text_field(self.ns.iri, children, path, cardinality="single")
 
         return {"id": self.vocabulary_loader(vocabulary_type, iri_value)}
 
@@ -620,9 +577,7 @@ class CCMMXMLParser:
         tag: QualifiedTag,
         children: dict[QualifiedTag, list[Element]],
         path: list[QualifiedTag],
-        cardinality: Literal[
-            "single", "optional", "array", "optional_array"
-        ] = "single",
+        cardinality: Literal["single", "optional", "array", "optional_array"] = "single",
         **kwargs: Any,
     ) -> str | None | list[str]:
         """Parse a simple text element."""
@@ -676,9 +631,7 @@ class CCMMXMLParser:
         for item in ret:
             i18ndict.update(item)
         if cardinality == "single" and not i18ndict:
-            raise ValueError(
-                f"Missing required multilingual field '{tag}' at path '{path}'"
-            )
+            raise ValueError(f"Missing required multilingual field '{tag}' at path '{path}'")
         return i18ndict
 
     def parse_multilingual(
@@ -701,9 +654,7 @@ class CCMMXMLParser:
             for k, v in item.items():
                 multilingual_list.append({"lang": {"id": k}, "value": v})
         if cardinality == "single" and not multilingual_list:
-            raise ValueError(
-                f"Missing required multilingual field '{tag}' at path '{path}'"
-            )
+            raise ValueError(f"Missing required multilingual field '{tag}' at path '{path}'")
         return multilingual_list
 
     def parse_i18n(
@@ -711,9 +662,7 @@ class CCMMXMLParser:
         tag: QualifiedTag,
         children: dict[QualifiedTag, list[Element]],
         path: list[QualifiedTag],
-        cardinality: Literal[
-            "single", "optional", "array", "optional_array"
-        ] = "single",
+        cardinality: Literal["single", "optional", "array", "optional_array"] = "single",
     ) -> list[dict[str, str]] | dict[str, str] | None:
         """Parse a i18nstr text element with xml:lang attributes."""
         ret = self.parse_field(
@@ -730,14 +679,10 @@ class CCMMXMLParser:
         if cardinality in ("single", "optional"):
             if not multilingual_list:
                 if cardinality == "single":
-                    raise ValueError(
-                        f"Missing required i18n field '{tag}' at path '{path}'"
-                    )
+                    raise ValueError(f"Missing required i18n field '{tag}' at path '{path}'")
                 return None
             if len(multilingual_list) > 1:
-                raise ValueError(
-                    f"Multiple entries for single i18n field '{tag}' at path '{path}'"
-                )
+                raise ValueError(f"Multiple entries for single i18n field '{tag}' at path '{path}'")
             return multilingual_list[0]
         if cardinality == "array" and not multilingual_list:
             raise ValueError(f"Missing required i18n field '{tag}' at path '{path}'")
@@ -750,9 +695,7 @@ class CCMMXMLParser:
         try:
             return int(text)
         except ValueError as e:
-            raise ValueError(
-                f"Failed to parse long integer at path '{path}': '{text}'"
-            ) from e
+            raise ValueError(f"Failed to parse long integer at path '{path}': '{text}'") from e
 
     @datatype_parser()
     def parse_int(self, el: Element, path: list[QualifiedTag]) -> int:
@@ -761,9 +704,7 @@ class CCMMXMLParser:
         try:
             return int(text)
         except ValueError as e:
-            raise ValueError(
-                f"Failed to parse integer at path '{path}': '{text}'"
-            ) from e
+            raise ValueError(f"Failed to parse integer at path '{path}': '{text}'") from e
 
     @datatype_parser()
     def parse_double(self, el: Element, path: list[QualifiedTag]) -> float:
@@ -772,9 +713,7 @@ class CCMMXMLParser:
         try:
             return float(text)
         except ValueError as e:
-            raise ValueError(
-                f"Failed to parse double at path '{path}': '{text}'"
-            ) from e
+            raise ValueError(f"Failed to parse double at path '{path}': '{text}'") from e
 
     @datatype_parser()
     def parse_date(self, el: Element, path: list[QualifiedTag]) -> str:
@@ -789,17 +728,13 @@ class CCMMXMLParser:
         return self.parse_text_content(el, path)
 
     @datatype_parser()
-    def parse_gmlspaceseparateddoublelist(
-        self, el: Element, path: list[QualifiedTag]
-    ) -> list[float]:
+    def parse_gmlspaceseparateddoublelist(self, el: Element, path: list[QualifiedTag]) -> list[float]:
         """Parse a GML space-separated double list element."""
         text = self.parse_text_content(el, path)
         try:
             return [float(x) for x in text.split()]
         except ValueError as e:
-            raise ValueError(
-                f"Failed to parse GML space-separated double list at path '{path}': '{text}'"
-            ) from e
+            raise ValueError(f"Failed to parse GML space-separated double list at path '{path}': '{text}'") from e
 
     @datatype_parser()
     def parse_gmlenvelopetype(self, el: Element, path: list[QualifiedTag]) -> dict:
@@ -823,9 +758,7 @@ class CCMMXMLParser:
         }
 
     @datatype_parser()
-    def parse_ccmmgeometry(
-        self, el: Element, path: list[QualifiedTag]
-    ) -> dict[str, Any]:
+    def parse_ccmmgeometry(self, el: Element, path: list[QualifiedTag]) -> dict[str, Any]:
         """Parse a CCMM geometry element."""
         children = self.children(el)
         ret = {
@@ -861,8 +794,6 @@ class CCMMXMLParser:
                 gml_children.append(child)
         if gml_children:
             if len(gml_children) > 1:
-                raise ValueError(
-                    f"Multiple GML geometry elements found at path '{path}', expected single"
-                )
+                raise ValueError(f"Multiple GML geometry elements found at path '{path}', expected single")
             ret["geometry"] = tostring(gml_children[0])
         return ret
