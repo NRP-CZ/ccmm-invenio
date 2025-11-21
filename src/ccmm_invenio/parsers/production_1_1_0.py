@@ -174,9 +174,7 @@ class CCMMXMLProductionParserBase:
         if converted_identifiers:
             metadata["identifiers"] = converted_identifiers
 
-    def convert_identifiers(
-        self, identifiers: list[dict[str, Any]]
-    ) -> list[dict[str, Any]]:
+    def convert_identifiers(self, identifiers: list[dict[str, Any]]) -> list[dict[str, Any]]:
         """Convert identifiers from NMA format to RDM format."""
         if not identifiers:
             return []
@@ -229,13 +227,9 @@ class CCMMXMLProductionParserBase:
         )
         publication_date: str | None = None
         if created_date:
-            date_value: str | None = created_date.get("date_time") or created_date.get(
-                "date"
-            )
+            date_value: str | None = created_date.get("date_time") or created_date.get("date")
             if date_value:
-                publication_date = (
-                    date_value.split("T")[0] if "T" in date_value else date_value
-                )
+                publication_date = date_value.split("T")[0] if "T" in date_value else date_value
         elif publication_year is not None:
             publication_date = f"{publication_year}-01-01"
 
@@ -256,13 +250,9 @@ class CCMMXMLProductionParserBase:
             return qualified_relations
 
         # in RDM, publisher is a simple string field
-        publishers = [
-            x.get("person", None) or x.get("organization", None) for x in selection
-        ]
+        publishers = [x.get("person", None) or x.get("organization", None) for x in selection]
         publishers = [p for p in publishers if p is not None]
-        publisher_names = [
-            p.get("name") for p in publishers if p and p.get("name") is not None
-        ]
+        publisher_names = [p.get("name") for p in publishers if p and p.get("name") is not None]
         if publisher_names:
             # take the first publisher only
             metadata["publisher"] = ", ".join(publisher_names)
@@ -303,9 +293,7 @@ class CCMMXMLProductionParserBase:
             return qualified_relations
 
         # in RDM, creators are a list of creators
-        creators = [
-            self.convert_qualified_relation_to_creatibutor(qr) for qr in selection
-        ]
+        creators = [self.convert_qualified_relation_to_creatibutor(qr) for qr in selection]
         if creators:
             metadata["creators"] = creators
 
@@ -326,9 +314,7 @@ class CCMMXMLProductionParserBase:
             return qualified_relations
 
         # in RDM, creators are a list of creators
-        contributors = [
-            self.convert_qualified_relation_to_creatibutor(qr) for qr in selection
-        ]
+        contributors = [self.convert_qualified_relation_to_creatibutor(qr) for qr in selection]
         if contributors:
             metadata["contributors"] = contributors
 
@@ -355,9 +341,7 @@ class CCMMXMLProductionParserBase:
             person_or_org = self.convert_organization(organization)
             affiliations = []
         else:
-            raise ValueError(
-                "Qualified relation must have either person or organization."
-            )
+            raise ValueError("Qualified relation must have either person or organization.")
 
         ret = {
             "role": role,
@@ -410,9 +394,7 @@ class CCMMXMLProductionParserBase:
         return {
             "name": organization.get("name"),
             "type": "organizational",
-            "identifiers": self.convert_identifiers(
-                organization.get("identifiers", [])
-            ),
+            "identifiers": self.convert_identifiers(organization.get("identifiers", [])),
         }
 
     def get_affiliation_by_identifiers(
@@ -431,11 +413,7 @@ class CCMMXMLProductionParserBase:
         primary_language = metadata.pop("primary_language", None)
         other_languages = metadata.pop("other_languages", [])
 
-        langs = (
-            [primary_language, *other_languages]
-            if primary_language
-            else other_languages
-        )
+        langs = [primary_language, *other_languages] if primary_language else other_languages
 
         if langs:
             metadata["languages"] = langs
@@ -458,9 +436,7 @@ class CCMMXMLProductionParserBase:
             subject_scheme = subj.get("subject_scheme", {}).get("id")
             multilingual_title = subj.get("title", [])
             vocabulary_id = (
-                f"{subject_scheme}:{classification_code}"
-                if classification_code and subject_scheme
-                else None
+                f"{subject_scheme}:{classification_code}" if classification_code and subject_scheme else None
             )
             for translated_title in multilingual_title:
                 converted_subj = (
@@ -496,9 +472,7 @@ class CCMMXMLProductionParserBase:
                 person = funder.get("person", {})
                 if organization:
                     funder_name = organization.get("name")
-                    funder_id = self.get_affiliation_by_identifiers(
-                        organization.get("identifiers", [])
-                    )
+                    funder_id = self.get_affiliation_by_identifiers(organization.get("identifiers", []))
                     converted_funders.append(
                         {
                             "id": funder_id,
