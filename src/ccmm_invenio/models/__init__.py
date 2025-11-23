@@ -18,8 +18,8 @@ from oarepo_model.api import FunctionalPreset
 from oarepo_model.customizations import (
     AddMetadataExport,
     Customization,
-    IndexNestedFieldsLimit,
-    IndexTotalFieldsLimit,
+    SetIndexNestedFieldsLimit,
+    SetIndexTotalFieldsLimit,
 )
 from oarepo_model.model import InvenioModel
 from oarepo_model.presets import Preset
@@ -155,8 +155,8 @@ class CCMMIndexSettingsPreset(Preset):
         model: InvenioModel,
         dependencies: dict[str, Any],
     ) -> Generator[Customization]:
-        yield IndexTotalFieldsLimit(2000)
-        yield IndexNestedFieldsLimit(200)
+        yield SetIndexTotalFieldsLimit(2000)
+        yield SetIndexNestedFieldsLimit(200)
 
 
 ccmm_nma_preset_1_1_0 = [
