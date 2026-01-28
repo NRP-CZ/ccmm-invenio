@@ -104,7 +104,7 @@ CCMMProductionDataset:
       # too many metadata fields
       type: array
       items:
-        type: CCMMLocation
+        type: RDMLocations
       label:
         en: Locations
         cs: Lokace
@@ -139,7 +139,7 @@ CCMMProductionDataset:
       # optionality in interval start/end
       type: array
       items:
-        type: CCMMTimeReference
+        type: RDMDates
       label:
         en: Time references
         cs: Časové odkazy
@@ -184,7 +184,7 @@ CCMMProductionDataset:
     # some parts from invenio can be reused
     terms_of_use:
       # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasVersion
-      type: CCMMTermsOfUse
+      type: RDMRights
       label:
         en: Terms of use
         cs: Podmínky užití
@@ -223,12 +223,6 @@ CCMMProductionDataset:
         en: Resource type
         cs: Typ záznamu
 
-    ccmm_resource_type:
-      type: CCMMResourceType
-      label:
-        en: CCMM Resource type
-        cs: CCMM Typ záznamu
-
     # other_languages:
     # primary_language:
     # RDM uses "languages", we adopt the same (and for CCMM serialization take the
@@ -241,9 +235,7 @@ CCMMProductionDataset:
 
     # not supported now:
     related_resources:
-      type: array
-      items:
-        type: dynamic-object
+      type: RDMRelatedIdentifiers
       label:
         en: Related resources
         cs: Související zdroje
@@ -253,31 +245,3 @@ CCMMProductionDataset:
       help:
         en: Add references to resources related by citation, derivation, supplement, or other relationships.
         cs: Přidejte odkazy na zdroje související citací, odvozením, doplněním či jiným vztahem.
-
-    provenances:
-      type: array
-      items:
-        type: dynamic-object
-      label:
-        en: Provenances
-        cs: Provenience
-      hint:
-        en: Information about the origin and custody of the dataset.
-        cs: Informace o původu a správě datové sady.
-      help:
-        en: Document the history, ownership, and changes to the dataset over time.
-        cs: Dokumentujte historii, vlastnictví a změny datové sady v průběhu času.
-
-    validation_results:
-      type: array
-      items:
-        type: dynamic-object
-      label:
-        en: Validation results
-        cs: Výsledky validace
-      hint:
-        en: Results from data quality assessments or validations.
-        cs: Výsledky hodnocení kvality dat nebo validací.
-      help:
-        en: Include reports or summaries of any data validation processes applied to the dataset.
-        cs: Uveďte zprávy nebo souhrny jakýchkoli procesů validace dat aplikovaných na datovou sadu.
