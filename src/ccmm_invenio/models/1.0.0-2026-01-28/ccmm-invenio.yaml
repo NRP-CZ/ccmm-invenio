@@ -100,11 +100,7 @@ CCMMProductionDataset:
       type: RDMRecordIdentifiers
 
     locations:
-      # taken from the CCMM as it is. Can not unify with RDM locations as they are missing
-      # too many metadata fields
-      type: array
-      items:
-        type: RDMLocations
+      type: RDMLocations
       label:
         en: Locations
         cs: Lokace
@@ -137,9 +133,8 @@ CCMMProductionDataset:
       # and should not be duplicated here.
       # We can not use RDM "dates" here as they are missing multilingual labels and
       # optionality in interval start/end
-      type: array
-      items:
-        type: RDMDates
+
+      type: RDMDates
       label:
         en: Time references
         cs: Časové odkazy
