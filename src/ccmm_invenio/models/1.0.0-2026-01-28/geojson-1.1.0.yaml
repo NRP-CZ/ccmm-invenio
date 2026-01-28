@@ -1,0 +1,157 @@
+# view-source:https://geojson.org/schema/Geometry.json
+# see https://github.com/mlaloux/Python-geo_interface-applications/blob/master/ogr_gml_to_geojson.py
+GeoJSONGeometry:
+  type: polymorphic
+  discriminator: type
+  oneOf:
+  - discriminator: Point
+    type: GeoJSONPoint
+  - discriminator: LineString
+    type: GeoJSONLineString
+  - discriminator: Polygon
+    type: GeoJSONPolygon
+  - discriminator: MultiPoint
+    type: GeoJSONMultiPoint
+  - discriminator: MultiLineString
+    type: GeoJSONMultiLineString
+  - discriminator: MultiPolygon
+    type: GeoJSONMultiPolygon
+
+GeoJSONBBox:
+  type: array
+  minItems: 4
+  items:
+    type: double
+
+GeoJSONPoint:
+  title: GeoJSON Point
+  type: object
+  properties:
+    type:
+      type: keyword
+      enum:
+      - Point
+      required: true
+    coordinates:
+      type: array
+      minItems: 2
+      items:
+        type: double
+      required: true
+    bbox:
+      type: GeoJSONBBox
+
+GeoJSONLineString:
+  title: GeoJSON LineString
+  type: object
+  properties:
+    type:
+      type: keyword
+      enum:
+      - LineString
+      required: true
+    coordinates:
+      type: array
+      minItems: 2
+      items:
+        type: array
+        minItems: 2
+        items:
+          type: double
+      required: true
+    bbox:
+      type: GeoJSONBBox
+
+GeoJSONPolygon:
+  title: GeoJSON Polygon
+  type: object
+  required:
+  - type
+  - coordinates
+  properties:
+    type:
+      type: keyword
+      enum:
+      - Polygon
+      required: true
+    coordinates:
+      type: array
+      items:
+        type: array
+        minItems: 4
+        items:
+          type: array
+          minItems: 2
+          items:
+            type: double
+      required: true
+    bbox:
+      type: GeoJSONBBox
+
+GeoJSONMultiPoint:
+  title: GeoJSON MultiPoint
+  type: object
+  properties:
+    type:
+      type: keyword
+      enum:
+      - MultiPoint
+    required: true
+    coordinates:
+      type: array
+      items:
+        type: array
+        minItems: 2
+        items:
+          type: double
+      required: true
+    bbox:
+      type: GeoJSONBBox
+
+GeoJSONMultiLineString:
+  title: GeoJSON MultiLineString
+  type: object
+  properties:
+    type:
+      type: keyword
+      enum:
+      - MultiLineString
+      required: true
+    coordinates:
+      type: array
+      items:
+        type: array
+        minItems: 2
+        items:
+          type: array
+          minItems: 2
+          items:
+            type: double
+      required: true
+    bbox:
+      type: GeoJSONBBox
+
+GeoJSONMultiPolygon:
+  title: GeoJSON MultiPolygon
+  type: object
+  properties:
+    type:
+      type: keyword
+      enum:
+      - MultiPolygon
+      required: true
+    coordinates:
+      type: array
+      items:
+        type: array
+        items:
+          type: array
+          minItems: 4
+          items:
+            type: array
+            minItems: 2
+            items:
+              type: double
+      required: true
+    bbox:
+      type: GeoJSONBBox
