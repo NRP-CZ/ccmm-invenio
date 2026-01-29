@@ -128,7 +128,7 @@ CCMMProductionDataset:
         cs: Přispěvatelé
       type: RDMContributors
 
-    time_references:
+    dates:
       # taken from the CCMM as it is, though some dates might come from invenio directly
       # and should not be duplicated here.
       # We can not use RDM "dates" here as they are missing multilingual labels and
@@ -136,8 +136,8 @@ CCMMProductionDataset:
 
       type: RDMDates
       label:
-        en: Time references
-        cs: Časové odkazy
+        en: Dates
+        cs: Data
       hint:
         en: Important dates or periods relating to the dataset.
         cs: Důležité datumy nebo období vztahující se k datové sadě.
@@ -177,12 +177,12 @@ CCMMProductionDataset:
 
     # Can not be taken from RDM but we might to need a projection to RDM so that
     # some parts from invenio can be reused
-    terms_of_use:
+    rights:
       # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasVersion
       type: RDMRights
       label:
-        en: Terms of use
-        cs: Podmínky užití
+        en: Rights
+        cs: Práva
       hint:
         en: License, access rights, and usage conditions.
         cs: Licence, přístupová práva a podmínky použití.
@@ -229,11 +229,11 @@ CCMMProductionDataset:
         cs: Jazyky
 
     # not supported now:
-    related_resources:
+    related_identifiers:
       type: RDMRelatedIdentifiers
       label:
-        en: Related resources
-        cs: Související zdroje
+        en: Related identifiers
+        cs: Související identifikátory
       hint:
         en: Links to related datasets, publications, or services.
         cs: Odkazy na související datové sady, publikace či služby.
