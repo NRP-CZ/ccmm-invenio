@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"
+  elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1"
+  xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../time-interval/schema.xsd"/>
+  <xs:include schemaLocation="../date-type/schema.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+  <xs:include schemaLocation="../time-representation/schema.xsd"/>
+  <xs:complexType name="time_reference"
+    sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#TimeReference">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Time reference - An object representing time reference relevant to some event related to the resource has happened.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element name="temporal_representation" type="ccmm:time_representation"
+        sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasTemporalRepresentation">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has temporal representation
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="date_type" type="ccmm:date_type"
+        sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasType">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has date type - Reference to the codelist of date types.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="date_information"
+        sawsdl:modelReference="https://model.ccmm.cz/vocabulary/datacite#dateInformation">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            date information - Additional information to the date in text form.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="time_reference" type="ccmm:time_reference"/>
+</xs:schema>

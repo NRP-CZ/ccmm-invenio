@@ -8,7 +8,145 @@
 # Because we can not know what they mean, they are not shown on the UI detail page
 # nor they are editable in the UI forms
 #
-CCMMProductionDataset:
+CCMMInvenioRelatedResource:
+  type: object
+  properties:
+
+    publication_date:
+      type: RDMPublicationDate
+      label:
+        en: Publication date
+        cs: Datum publikace
+
+    title:
+      type: RDMTitle
+      label:
+        en: Title
+        cs: Název
+
+    publisher:
+      type: RDMPublisher
+      label:
+        en: Publisher
+        cs: Vydavatel
+      hint:
+        en: The entity responsible for making the resource available.
+        cs: Entita odpovědná za zpřístupnění zdroje.
+      help:
+        en: Provide the name of the organization or individual that published the dataset. This may differ from the creators or contributors.
+        cs: Uveďte název organizace nebo jednotlivce, který publikoval datovou sadu. To se může lišit od autorů nebo přispěvatelů.
+
+    additional_titles:
+      type: RDMAdditionalTitles
+      label:
+        en: Additional titles
+        cs: Další názvy záznamu
+
+    additional_descriptions:
+      type: RDMAdditionalDescriptions
+      label:
+        en: Additional descriptions
+        cs: Další popisy záznamu
+
+
+    identifiers:
+      label:
+        en: Identifiers
+        cs: Identifikátory
+      hint:
+        en: Alternate identifiers for the record.
+        cs: Alternativní identifikátory záznamu.
+      help:
+        en: Include any identifiers that reference this record, such as DOIs, Handles, or other scheme-based IDs.
+        cs: Uveďte jakékoliv identifikátory, které odkazují na tento záznam, jako jsou DOI, Handle nebo jiné identifikátory založené na schématu.
+      type: RDMRecordIdentifiers
+
+    locations:
+      type: RDMLocations
+      label:
+        en: Locations
+        cs: Lokace
+      hint:
+        en: Spatial coverage or place references.
+        cs: Prostorové pokrytí či odkazy na místa.
+      help:
+        en: Specify where the dataset applies or was collected. Use bounding boxes, geometries, and place names.
+        cs: Uveďte, čeho se data prostorově týkají nebo kde byla sbírána. Použijte ohraničující boxy, geometrie a názvy míst.
+
+    creators:
+      label:
+        en: Creators
+        cs: Autoři
+      type: RDMCreators
+
+    contributors:
+      label:
+        en: Contributors
+        cs: Přispěvatelé
+      type: RDMContributors
+
+    dates:
+      type: RDMDates
+      label:
+        en: Dates
+        cs: Data
+      hint:
+        en: Important dates or periods relating to the dataset.
+        cs: Důležité datumy nebo období vztahující se k datové sadě.
+      help:
+        en: Provide coverage periods, collection dates, or other temporal aspects, using instants or intervals.
+        cs: Uveďte období pokrytí, datumy sběru nebo jiné časové aspekty pomocí okamžiků či intervalů.
+
+    subjects:
+      label:
+        en: Subjects
+        cs: Předměty
+      type: RDMSubjects
+
+    funding:
+      type: RDMFundings
+      label:
+        en: Funding references
+        cs: Financování
+      hint:
+        en: Information about grants or other funding sources supporting this research.
+        cs: Informace o grantech nebo jiných zdrojích financování podporujících tento výzkum.
+      help:
+        en: Include details of funding bodies, grant numbers, and related information.
+        cs: Uveďte podrobnosti o financujících institucích, číslech grantů a související informace.
+
+    rights:
+      type: RDMRights
+      label:
+        en: Rights
+        cs: Práva
+      hint:
+        en: License, access rights, and usage conditions.
+        cs: Licence, přístupová práva a podmínky použití.
+      help:
+        en: Specify legal terms governing access and reuse. Include license documents and any restrictions.
+        cs: Uveďte právní podmínky upravující přístup a opětovné použití. Zahrňte licenční dokumenty a případná omezení.
+
+    resource_type:
+      type: RDMResourceType
+      label:
+        en: Resource type
+        cs: Typ záznamu
+
+    languages:
+      type: RDMLanguages
+      label:
+        en: Languages
+        cs: Jazyky
+
+    relation_type:
+      type: vocabulary
+      vocabulary-type: relationtypes
+      label:
+        en: Relation type
+        cs: Typ vztahu
+
+CCMMDataset:
   type: object
   properties:
     # iri:
@@ -177,21 +315,6 @@ CCMMProductionDataset:
 
     # Can not be taken from RDM but we might to need a projection to RDM so that
     # some parts from invenio can be reused
-    rights:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasVersion
-      type: RDMRights
-      label:
-        en: Rights
-        cs: Práva
-      hint:
-        en: License, access rights, and usage conditions.
-        cs: Licence, přístupová práva a podmínky použití.
-      help:
-        en: Specify legal terms governing access and reuse. Include license documents and any restrictions.
-        cs: Uveďte právní podmínky upravující přístup a opětovné použití. Zahrňte licenční dokumenty a případná omezení.
-      # TODO: use RDMCreatibutor for contact_point, not CCMMAgent
-
-
 
     # TODO: maybe use better related resources such as nr-docs ones. The reason is
     # that CCMM is not capable of referencing an article in a journal correctly.
@@ -240,3 +363,30 @@ CCMMProductionDataset:
       help:
         en: Add references to resources related by citation, derivation, supplement, or other relationships.
         cs: Přidejte odkazy na zdroje související citací, odvozením, doplněním či jiným vztahem.
+
+    related_resources:
+      type: array
+      items:
+        type: CCMMInvenioRelatedResource
+      label:
+        en: Related resources
+        cs: Související datové sady, publikace či služby
+      hint:
+        en: Links to related datasets, publications, or services.
+        cs: Odkazy na související datové sady, publikace či služby.
+      help:
+        en: Add references to resources related by citation, derivation, supplement, or other relationships.
+        cs: Přidejte odkazy na zdroje související citací, odvozením, doplněním či jiným vztahem.
+
+    rights:
+      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasVersion
+      type: RDMRights
+      label:
+        en: Rights
+        cs: Práva
+      hint:
+        en: License, access rights, and usage conditions.
+        cs: Licence, přístupová práva a podmínky použití.
+      help:
+        en: Specify legal terms governing access and reuse. Include license documents and any restrictions.
+        cs: Uveďte právní podmínky upravující přístup a opětovné použití. Zahrňte licenční dokumenty a případná omezení.
