@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="contact_details">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="address" type="address"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="data_box" type="string"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="email" type="string"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="phone" type="string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="contact_details" type="contact_details"/>
+</xs:schema>

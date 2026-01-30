@@ -49,6 +49,9 @@ python src/ccmm_versions/create_schema_overview.py \
     $dirname/out \
     summaries/ccmm-$version-$current_date.summary.md
 
+ls $dirname/metadata-samples/xml/ | while read; do
+
 xmllint --noout \
     --schema merged/$version-$current_date.xsd \
-    $dirname/ccmm_sample.xml || echo "Validation failed"
+    $dirname/metadata-samples/xml/$REPLY || echo "Validation failed"
+done

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:complexType name="time_instant" sawsdl:modelReference="http://www.w3.org/2006/time#Instant">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Time instant - A temporal entity with zero extent or duration.
+      </xs:documentation>
+      <xs:documentation xml:lang="es">
+        instante de tiempo. - Una entidad temporal con una extensión o duración cero.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:choice>
+        <xs:element name="date_time" type="xs:dateTime" sawsdl:modelReference="http://www.w3.org/2006/time#inXSDDateTime"/>
+        <xs:element name="date" type="xs:date" sawsdl:modelReference="http://www.w3.org/2006/time#inXSDDate"/>
+      </xs:choice>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="time_instant" type="ccmm:time_instant"/>
+</xs:schema>

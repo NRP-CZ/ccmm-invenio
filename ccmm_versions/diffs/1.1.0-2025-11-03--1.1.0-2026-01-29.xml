@@ -1,0 +1,121 @@
+<xml>
+<!-- Comparing schemas in directories: -->
+<!-- File resource.xsd is missing in ccmm-xml-releases/ccmm-1.1.0-2026-01-29/out -->
+<!-- File related-resource.xsd is missing in ccmm-xml-releases/ccmm-1.1.0-2025-11-03/out -->
+<!-- Files identifier.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-11-03/out and ccmm-xml-releases/ccmm-1.1.0-2026-01-29/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="identifier">
+      <xs:sequence>
+        <xs:element diff:insert="" minOccurs="0" diff:add-attr="minOccurs;name;type" name="authorized" type="boolean"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+        <xs:element name="scheme" type="identifier_scheme"/>
+        <xs:element name="value" type="string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="identifier" type="identifier"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files checksum.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-11-03/out and ccmm-xml-releases/ccmm-1.1.0-2026-01-29/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="checksum">
+      <xs:sequence>
+        <xs:element name="algorithm" type="checksum_algorithm" diff:update-attr="type:anyURI"/>
+        <xs:element name="checksum_value" type="hexBinary"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="checksum" type="checksum"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files dataset.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-11-03/out and ccmm-xml-releases/ccmm-1.1.0-2026-01-29/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="dataset">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="alternate_title" type="alternate_title"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="description" type="description"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="distribution" type="distribution"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="funding_reference" type="funding_reference"/>
+        <xs:element maxOccurs="unbounded" name="identifier" type="identifier"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="location" type="location"/>
+        <xs:element maxOccurs="unbounded" name="metadata_identification" type="metadata_record"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="other_language" type="language_system"/>
+        <xs:element minOccurs="0" name="primary_language" type="language_system"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="provenance" type="provenance_statement"/>
+        <xs:element name="publication_year" type="gYear"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="qualified_relation" type="resource_to_agent_relationship" diff:update-attr="minOccurs:2"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="related_resource" type="related_resource" diff:update-attr="type:resource"/>
+        <xs:element minOccurs="0" name="resource_type" type="resource_type"/>
+        <xs:element maxOccurs="unbounded" name="subject" type="subject"/>
+        <xs:element name="terms_of_use" type="terms_of_use"/>
+        <xs:element maxOccurs="unbounded" name="time_reference" type="time_reference"/>
+        <xs:element name="title" type="string"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="validation_result" type="validation_result"/>
+        <xs:element minOccurs="0" name="version" type="string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="dataset" type="dataset"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files contact-details.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-11-03/out and ccmm-xml-releases/ccmm-1.1.0-2026-01-29/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="contact_details">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="address" type="address"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="data_box" type="string" diff:update-attr="name:dataBox"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="email" type="string"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="phone" type="string"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="contact_details" type="contact_details"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files data-service.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-11-03/out and ccmm-xml-releases/ccmm-1.1.0-2026-01-29/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="data_service">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="endpoint_url" type="related_resource" diff:update-attr="type:resource"/>
+        <xs:element name="iri" type="anyURI"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="label">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="xml:lang" use="required"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="data_service" type="data_service"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+<!-- Files location.xsd differ between ccmm-xml-releases/ccmm-1.1.0-2025-11-03/out and ccmm-xml-releases/ccmm-1.1.0-2026-01-29/out -->
+  <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:diff="http://namespaces.shoobx.com/diff">
+    <xs:complexType name="location">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="bounding_box" type="EnvelopeType"/>
+        <xs:element minOccurs="0" name="geometry" type="geometry"/>
+        <xs:element minOccurs="0" name="iri" type="anyURI"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="name" type="string"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" name="related_object" type="related_resource" diff:update-attr="type:resource"/>
+        <xs:element name="relation_type" type="relation_type"/>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:element name="location" type="location"/>
+  </xs:schema>
+  
+<!-- End of differences for file -->
+
+</xml>
