@@ -42,21 +42,21 @@ if TYPE_CHECKING:
 def ccmm_1_1_0() -> dict[str, Any]:
     """Return RDM specific model types."""
     return {
-        **from_yaml("1.1.0a1-2025-11-03/ccmm.yaml", __file__),
-        **from_yaml("1.1.0a1-2025-11-03/ccmm-vocabularies.yaml", __file__),
-        **from_yaml("1.1.0a1-2025-11-03/geojson-1.1.0.yaml", __file__),
-        **from_yaml("1.1.0a1-2025-11-03/gml-1.1.0.yaml", __file__),
+        **from_yaml("1.1.0-2026-01-29/ccmm.yaml", __file__),
+        **from_yaml("1.1.0-2026-01-29/ccmm-vocabularies.yaml", __file__),
+        **from_yaml("1.1.0-2026-01-29/geojson-1.1.0.yaml", __file__),
+        **from_yaml("1.1.0-2026-01-29/gml-1.1.0.yaml", __file__),
     }
 
 
 def ccmm_production_1_1_0() -> dict[str, Any]:
     """Return RDM specific model types."""
     return {
-        **from_yaml("1.1.0a1-2025-11-03/ccmm.yaml", __file__),
-        **from_yaml("1.1.0a1-2025-11-03/ccmm-invenio.yaml", __file__),
-        **from_yaml("1.1.0a1-2025-11-03/ccmm-vocabularies.yaml", __file__),
-        **from_yaml("1.1.0a1-2025-11-03/geojson-1.1.0.yaml", __file__),
-        **from_yaml("1.1.0a1-2025-11-03/gml-1.1.0.yaml", __file__),
+        **from_yaml("1.1.0-2026-01-29/ccmm.yaml", __file__),
+        **from_yaml("1.1.0-2026-01-29/ccmm-invenio.yaml", __file__),
+        **from_yaml("1.1.0-2026-01-29/ccmm-vocabularies.yaml", __file__),
+        **from_yaml("1.1.0-2026-01-29/geojson-1.1.0.yaml", __file__),
+        **from_yaml("1.1.0-2026-01-29/gml-1.1.0.yaml", __file__),
     }
 
 

@@ -307,7 +307,9 @@ CCMMChecksum:
       # sawsdl:modelReference=http://spdx.org/rdf/terms#algorithm
       # TODO: in CCMM XML, this is not a vocabulary item, it is a simple URI. 
       # Here we represent it as vocabulary for better data quality.
-      type: keyword
+      type: CCMMChecksumAlgorithm
+      xml: algorithm
+      required: true
       label:
         en: Algorithm
         cs: Algoritmus
@@ -359,7 +361,7 @@ CCMMContactDetails:
       help:
         en: Link one or more address records that describe where the contact point is located or can receive mail.
         cs: Propojte jednu nebo více adres popisujících, kde se kontaktní místo nachází nebo kam lze doručovat poštu.
-    dataBoxes:
+    data_boxes:
       # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#dataBox
       type: array
       xml: data_box
@@ -428,7 +430,7 @@ CCMMDataService:
       required: true
       min_items: 1
       items:
-        type: CCMMResource
+        type: CCMMRelatedResource
       label:
         en: Endpoint URLs
         cs: URL endpointů
@@ -634,8 +636,6 @@ CCMMDataSet:
       # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation
       type: array
       xml: qualified_relation
-      required: true
-      min_items: 1
       items:
         type: CCMMResourceToAgentRelationship
       label:
@@ -652,7 +652,7 @@ CCMMDataSet:
       type: array
       xml: related_resource
       items:
-        type: CCMMResource
+        type: CCMMRelatedResource
       label:
         en: Related resources
         cs: Související zdroje
@@ -915,6 +915,36 @@ CCMMDistributionDataService:
       help:
         en: Provide a concise service title for users to recognize the distribution.
         cs: Uveďte stručný název služby, aby uživatelé rozpoznali distribuční způsob.
+CCMMChecksumAlgorithm:
+  type: object
+  xml: checksum_algorithm
+  properties:
+    iri:
+      type: keyword
+      required: true
+      label:
+        en: IRI
+        cs: IRI
+      hint:
+        en: Persistent IRI of the checksum algorithm.
+        cs: Perzistentní IRI algoritmu kontrolního součtu.
+      help:
+        en: Provide a resolvable URI identifying the algorithm.
+        cs: Uveďte dohledatelné URI identifikující algoritmus.
+
+    label:
+      # sawsdl:modelReference=http://www.w3.org/2000/01/rdf-schema#label
+      type: multilingual
+      xml: label
+      label:
+        en: Label
+        cs: Popisek
+      hint:
+        en: Human-readable name of the algorithm.
+        cs: Lidsky čitelný název algoritmu.
+      help:
+        en: Provide the algorithm name; use language tags where applicable.
+        cs: Uveďte název algoritmu; pokud je relevantní, použijte jazykové mutace.
 CCMMDistributionDownloadableFile:
   # https://github.com/techlib/CCMM/issues/110
   type: object
@@ -1255,6 +1285,19 @@ CCMMIdentifier:
       help:
         en: Choose the identifier type (e.g., DOI, Handle, URN, ISBN) to support validation and linking.
         cs: Zvolte typ identifikátoru (např. DOI, Handle, URN, ISBN) pro podporu validace a prolinkování.
+    authorized:
+      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#authorized
+      type: boolean
+      xml: authorized
+      label:
+        en: Authorized
+        cs: Autorizovaný
+      hint:
+        en: Specifies whether the identifier is authorized by the subject it represents.
+        cs: Určuje, zda je identifikátor autorizovaný subjektem, který reprezentuje.
+      help:
+        en: Use true if the represented person/organization officially claims/uses this identifier.
+        cs: Nastavte, pokud osoba/organizace tento identifikátor oficiálně používá nebo uvádí.
 CCMMLicenseDocument:
   type: object
   xml: license_document
@@ -1344,7 +1387,7 @@ CCMMLocation:
       type: array
       xml: related_object
       items:
-        type: CCMMResource
+        type: CCMMRelatedResource
       label:
         en: Related resources
         cs: Související zdroje
@@ -1696,7 +1739,7 @@ CCMMRepository:
       help:
         en: Provide the public name of the repository.
         cs: Uveďte veřejný název repozitáře.
-CCMMResource:
+CCMMRelatedResource:
   type: object
   xml: resource
   properties:
