@@ -133,7 +133,7 @@ class CCMMProductionPreset(CCMMBaseMetadataPreset):
     """Preset for CCMM production metadata."""
 
     types = ccmm_production_1_1_0()
-    metadata_type = "CCMMProductionDataset"
+    metadata_type = "CCMMDataset"
 
 
 class CCMMNMAPreset(CCMMBaseMetadataPreset):
