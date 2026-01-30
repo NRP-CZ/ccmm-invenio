@@ -46,6 +46,9 @@ vocab_items = {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/ZIP": "ZIP"
     },
+    "checksumalgorithms": {
+        "https://www.iana.org/go/rfc6920": "rfc6920",
+    },
     "locationrelationtypes": {"https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"},
     "resourceagentroletypes": {
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager": "DataManager",
@@ -182,7 +185,7 @@ def test_parse_nma_1_1_0(clean_strings):
                             ],
                             "byte_size": 256,
                             "checksum": {
-                                "algorithm": "https://www.iana.org/go/rfc6920",
+                                "algorithm": {'id': 'rfc6920'},
                                 "checksum_value": "9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938",
                             },
                             "conforms_to_schemas": [

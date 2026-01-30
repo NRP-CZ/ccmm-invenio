@@ -464,7 +464,10 @@
             <byte_size>256</byte_size>
             <checksum>
                 <checksum_value>9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938</checksum_value>
-                <algorithm>https://www.iana.org/go/rfc6920</algorithm>
+                <algorithm>
+                    <iri>https://www.iana.org/go/rfc6920</iri>
+
+                </algorithm>
             </checksum>
         </distribution_downloadable_file>
     </distribution>
