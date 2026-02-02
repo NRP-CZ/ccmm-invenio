@@ -130,7 +130,7 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
 
     from typing import Any
 
-    def convert_locations(self, metadata: dict[str, Any]) -> None:
+    def convert_locations(self, metadata: dict[str, Any]) -> None:  # noqa: PLR0912, C901
         """Convert locations from old format to RDMLocations (without geometry)."""
         locations = metadata.pop("locations", [])
         if not locations:
@@ -139,7 +139,7 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
         converted_features = []
         for loc in locations:
             place = None
-            #or???
+            # or???
             names = loc.get("names", [])
             if isinstance(names, list) and names:
                 place = names[0]
@@ -178,13 +178,15 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
 
                         geometry_value = {
                             "type": "Polygon",
-                            "coordinates": [[
-                                [minx, miny],
-                                [maxx, miny],
-                                [maxx, maxy],
-                                [minx, maxy],
-                                [minx, miny],
-                            ]],
+                            "coordinates": [
+                                [
+                                    [minx, miny],
+                                    [maxx, miny],
+                                    [maxx, maxy],
+                                    [minx, maxy],
+                                    [minx, miny],
+                                ]
+                            ],
                         }
             relation_type = loc.get("relation_type", {})
 
@@ -204,14 +206,12 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
 
     def convert_time_references(self, metadata: dict[str, Any]) -> None:
         """Convert time_references to RDM dates."""
-
         time_references = metadata.pop("time_references", [])
         if not time_references:
             return
 
         converted_dates = []
         for ref in time_references:
-
             date_type = ref.get("date_type", None)
 
             date_value = None
@@ -242,6 +242,7 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
             metadata["dates"] = converted_dates
 
     def convert_terms_of_use(self, metadata: dict[str, Any]) -> None:
+        """Convert terms_of_use to RDM dates."""
         terms_of_use = metadata.pop("terms_of_use", None)
         if terms_of_use is not None:
             metadata["rights"] = [{"id": terms_of_use["license"]["iri"]}]
@@ -337,7 +338,6 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
         # for now, we keep our hierarchical resource types
 
         metadata["resource_type"] = resource_type
-
 
     def convert_publication_date(self, metadata: dict[str, Any]) -> None:
         """Convert publication date from NMA format to RDM format."""
@@ -664,7 +664,6 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
                 identifiers.append({"identifier": resource_url})
                 seen.add(resource_url)
 
-
             converted_resource = {
                 "title": title,
                 "identifiers": identifiers,
@@ -674,11 +673,8 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
             if resource_type:
                 converted_resource["resource_type"] = resource_type
 
-
             if converted_resource:
                 converted_resources.append(converted_resource)
 
         if converted_resources:
             metadata["related_resources"] = converted_resources
-
-
