@@ -69,7 +69,7 @@ vocab_items = {
 
 
 def test_parse_production_1_1_0(clean_strings):
-    xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
+    xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2026-01-29.xml"
     root_el = fromstring(xml_file.read_bytes())
 
     def vocabulary_loader(vocabulary_type: str, iri: str) -> str:
@@ -210,7 +210,7 @@ def test_parse_production_1_1_0(clean_strings):
 
 
 def test_load_production_1_1_0(app, clean_strings):
-    xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2025-11-03.xml"
+    xml_file = Path(__file__).parent / "data" / "nma_1_1_0-2026-01-29.xml"
     root_el = fromstring(xml_file.read_bytes())
 
     def vocabulary_loader(vocabulary_type: str, iri: str) -> str:
