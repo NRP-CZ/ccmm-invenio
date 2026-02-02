@@ -51,7 +51,7 @@ if TYPE_CHECKING:
 log = logging.getLogger(__name__)
 
 
-class CCMMXMLProductionParserBase:
+class CCMMXMLProductionParser(CCMMXMLNMAParser):
     """Parser for CCMM XML version 1.1.0 for production repository."""
 
     def parse(self, xml_root: Element) -> dict[str, Any]:
@@ -87,11 +87,16 @@ class CCMMXMLProductionParserBase:
         self.convert_resource_type(metadata)
         self.convert_languages(metadata)
 
+        self.convert_locations(metadata)
+        self.convert_provenances(metadata)
+        self.convert_validation_results(metadata)
+        self.convert_time_references(metadata)
+        self.convert_terms_of_use(metadata)
+
         # Parts that are unchanged from NMA
         #
         # version is already parsed in NMA in the same format
         # title is already parsed in NMA in the same format
-        # locations are already parsed in NMA, we use them as they are
         # provenances are already parsed in NMA, we use them as they are
         # time references are already parsed in NMA, we use them as they are
         # validation_results are already parsed in NMA, we use them as they are
@@ -123,6 +128,124 @@ class CCMMXMLProductionParserBase:
 
         return record
 
+    from typing import Any
+
+    def convert_locations(self, metadata: dict[str, Any]) -> None:
+        """Convert locations from old format to RDMLocations (without geometry)."""
+        locations = metadata.pop("locations", [])
+        if not locations:
+            return
+
+        converted_features = []
+        for loc in locations:
+            place = None
+            #or???
+            names = loc.get("names", [])
+            if isinstance(names, list) and names:
+                place = names[0]
+
+            related_objects = loc.get("related_objects", []) or []
+            if not place and related_objects:
+                place = related_objects[0].get("title")
+
+            identifiers = []
+            for ro in related_objects:
+                iri = ro.get("iri")
+                if iri:
+                    identifiers.append(
+                        {
+                            "scheme": "iri",
+                            "identifier": iri,
+                        }
+                    )
+
+            geometry_value = None
+
+            geom_container = loc.get("geometry", {}) or {}
+            raw_geom = geom_container.get("geometry")
+            if isinstance(raw_geom, dict) and raw_geom.get("type") and raw_geom.get("coordinates") is not None:
+                geometry_value = raw_geom
+
+            if geometry_value is None:
+                bboxes = loc.get("bounding_boxes", []) or []
+                if bboxes:
+                    bbox = bboxes[0]
+                    lower = bbox.get("lowerCorner")
+                    upper = bbox.get("upperCorner")
+                    if lower and upper:
+                        minx, miny = lower
+                        maxx, maxy = upper
+
+                        geometry_value = {
+                            "type": "Polygon",
+                            "coordinates": [[
+                                [minx, miny],
+                                [maxx, miny],
+                                [maxx, maxy],
+                                [minx, maxy],
+                                [minx, miny],
+                            ]],
+                        }
+            relation_type = loc.get("relation_type", {})
+
+            converted_feature = {}
+            if place:
+                converted_feature["place"] = place
+            if identifiers:
+                converted_feature["identifiers"] = identifiers
+            if geometry_value:
+                converted_feature["geometry"] = geometry_value
+            if relation_type:
+                converted_feature["description"] = relation_type["id"]
+
+            converted_features.append(converted_feature)
+
+        metadata["locations"] = {"features": converted_features}
+
+    def convert_time_references(self, metadata: dict[str, Any]) -> None:
+        """Convert time_references to RDM dates."""
+
+        time_references = metadata.pop("time_references", [])
+        if not time_references:
+            return
+
+        converted_dates = []
+        for ref in time_references:
+
+            date_type = ref.get("date_type", None)
+
+            date_value = None
+            temporal = ref.get("temporal_representation", {}) or {}
+
+            time_instant = temporal.get("time_instant")
+            if isinstance(time_instant, dict) and time_instant.get("date_time"):
+                dt = time_instant.get("date_time")
+                if dt:
+                    date_value = dt.split("T", 1)[0]
+
+            if date_value is None:
+                time_interval = temporal.get("time_interval")
+                if isinstance(time_interval, dict):
+                    beginning = time_interval.get("beginning", {}) or {}
+                    begin_date = beginning.get("date")
+                    if begin_date:
+                        date_value = str(begin_date)
+
+            if date_value and date_type:
+                converted_date = {
+                    "date": date_value,
+                    "type": date_type,
+                }
+                converted_dates.append(converted_date)
+
+        if converted_dates:
+            metadata["dates"] = converted_dates
+
+    def convert_terms_of_use(self, metadata: dict[str, Any]) -> None:
+        terms_of_use = metadata.pop("terms_of_use", None)
+        if terms_of_use is not None:
+            metadata["rights"] = [{"id": terms_of_use["license"]["iri"]}]
+
     def convert_additional_titles(self, metadata: dict[str, Any]) -> None:
         """Convert additional titles from NMA format to production format."""
         # RDM's additional_titles are called alternate_titles in NMA
@@ -144,6 +267,14 @@ class CCMMXMLProductionParserBase:
                 converted_additional_titles.append(converted_title)
 
         metadata["additional_titles"] = converted_additional_titles
+
+    def convert_provenances(self, metadata: dict[str, Any]) -> None:
+        """Remove provenances."""
+        metadata.pop("provenances", None)
+
+    def convert_validation_results(self, metadata: dict[str, Any]) -> None:
+        """Remove provenances."""
+        metadata.pop("validation_results", None)
 
     def convert_additional_descriptions(self, metadata: dict[str, Any]) -> None:
         """Convert additional descriptions from NMA format to RDM format."""
@@ -206,6 +337,7 @@ class CCMMXMLProductionParserBase:
         # for now, we keep our hierarchical resource types
 
         metadata["resource_type"] = resource_type
+
 
     def convert_publication_date(self, metadata: dict[str, Any]) -> None:
         """Convert publication date from NMA format to RDM format."""
@@ -508,15 +640,45 @@ class CCMMXMLProductionParserBase:
             metadata["funding"] = converted_fundings
 
     def convert_related_resources(self, metadata: dict[str, Any]) -> None:
-        """Convert related resources from NMA format to nr-docs format.
+        """Convert related_resources to CCMMInvenioRelatedResource format."""
+        related_resources = metadata.pop("related_resources", [])
+        if not related_resources:
+            return
 
-        Currently this method is empty, we need to figure out
-        if we want to do any conversion here.
+        converted_resources = []
+        for res in related_resources:
+            title = res.get("title", None)
+            resource_type = res.get("resource_type", None)
+            relation_type = res.get("resource_relation_type", None)
 
-        We can not use RDM as RDM has only related identifiers
-        and we need more information here.
-        """
+            identifiers = []
+            seen = set()
+
+            iri = res.get("iri", None)
+            if iri and iri not in seen:
+                identifiers.append({"identifier": iri})
+                seen.add(iri)
+
+            resource_url = res.get("resource_url", None)
+            if resource_url and resource_url not in seen:
+                identifiers.append({"identifier": resource_url})
+                seen.add(resource_url)
 
 
-class CCMMXMLProductionParser(CCMMXMLProductionParserBase, CCMMXMLNMAParser):
-    """Parser for CCMM XML version 1.1.0 for production repository."""
+            converted_resource = {
+                "title": title,
+                "identifiers": identifiers,
+            }
+            if relation_type:
+                converted_resource["relation_type"] = relation_type
+            if resource_type:
+                converted_resource["resource_type"] = resource_type
+
+
+            if converted_resource:
+                converted_resources.append(converted_resource)
+
+        if converted_resources:
+            metadata["related_resources"] = converted_resources
+
+
