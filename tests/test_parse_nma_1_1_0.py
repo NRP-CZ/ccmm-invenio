@@ -185,7 +185,7 @@ def test_parse_nma_1_1_0(clean_strings):
                             ],
                             "byte_size": 256,
                             "checksum": {
-                                "algorithm": {'id': 'rfc6920'},
+                                "algorithm": {"id": "rfc6920"},
                                 "checksum_value": "9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938",
                             },
                             "conforms_to_schemas": [
