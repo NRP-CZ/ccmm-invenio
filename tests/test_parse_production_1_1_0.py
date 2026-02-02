@@ -46,6 +46,9 @@ vocab_items = {
         "https://op.europa.eu/web/eu-vocabularies/concept/-/resource?"
         "uri=http://publications.europa.eu/resource/authority/file-type/ZIP": "ZIP"
     },
+    "checksumalgorithms": {
+        "https://www.iana.org/go/rfc6920": "rfc6920",
+    },
     "locationrelationtypes": {"https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected": "Collected"},
     "resourceagentroletypes": {
         "https://vocabs.ccmm.cz/registry/codelist/AgentRole/DataManager": "DataManager",
@@ -77,202 +80,65 @@ def test_parse_production_1_1_0(clean_strings):
     record = parser.parse(root_el)
 
     cleaned_record = clean_strings(record)
+
     cleaned_expected = clean_strings(
-        {
-            "metadata": {
-                "locations": [
-                    {
-                        "bounding_boxes": [
-                            {
-                                "lowerCorner": [13.394972457505816, 49.50127042751268],
-                                "upperCorner": [15.585575400519133, 50.61421606255462],
-                            }
-                        ],
-                        "geometry": {
-                            "geometry": b'<gml:MultiSurface xmlns:gml="http://www.opengis.net/gml/3.2"'
-                            b' gml:id="MS.AU.2.27"'
-                            b' srsName="http://www.opengis.net/def/crs/EPSG/0/5514"'
-                            b' srsDimension="2">\n'
-                            b"                "
-                            b"<gml:surfaceMember>\n"
-                            b"                    "
-                            b'<gml:Polygon gml:id="S.AU.2.27.1">\n'
-                            b"                        "
-                            b"<gml:exterior>\n"
-                            b"                            "
-                            b"<gml:LinearRing>\n"
-                            b"                                "
-                            b"<gml:posList>"
-                            b"-700345.18 -989088.81 -700397.4 -989124.72 -700413.72\n"
-                            b"                                    "
-                            b"-989135.06 -700460.36 -989161.37 -700464.2 -989163.4 -700499.66\n"
-                            b"                                    "
-                            b"-989177.78 -700543.38 -989185.44 -700547.56 -989186.17\n"
-                            b"                                    "
-                            b"-734005.2 -1034221.4 -734000.7 -1034206.55 -733990.88 -1034174.1\n"
-                            b"                                    "
-                            b"-733982.57 -1034166.93 -733980.5 -1034165.15 -733970.63\n"
-                            b"                                    "
-                            b"-1034131.76 -733969.44 -1034127.73 -733973.52 -1034126.34\n"
-                            b"                                    "
-                            b"-733972.62 -1034123.26</gml:posList>\n"
-                            b"                            "
-                            b"</gml:LinearRing>\n"
-                            b"                        "
-                            b"</gml:exterior>\n"
-                            b"                    "
-                            b"</gml:Polygon>\n"
-                            b"                "
-                            b"</gml:surfaceMember>\n"
-                            b"            "
-                            b"</gml:MultiSurface>\n"
-                            b"            "
-                        },
-                        "names": ["Středočeský kraj"],
-                        "related_objects": [
-                            {
-                                "iri": "https://vdp.cuzk.gov.cz/vdp/ruian/vusc/27",
-                                "title": "Středočeský kraj",
-                            }
-                        ],
-                        "relation_type": {"id": "Collected"},
-                    }
-                ],
-                "provenances": [{}],
-                "related_resources": [
-                    {
-                        "iri": "http://data.europa.eu/eli/dir/2008/50/oj",
-                        "resource_relation_type": {"id": "IsReferencedBy"},
-                        "resource_type": {"id": "Software"},
-                        "resource_url": 'https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050"%26"qid=1754039487879',
-                        "title": "Směrnice Evropského parlamentu a Rady 2008/50/ES ze dne 21. května 2008 o kvalitě\n"
-                        "            vnějšího ovzduší a čistším ovzduší pro Evropu",
-                    },
-                    {
-                        "resource_type": {"id": "PhysicalObject"},
-                        "resource_url": "https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu",
-                        "title": "ENVI LVS1 Sampler pro odběr prašného aerosolu",
-                    },
-                    {
-                        "iri": "https://opendata.chmi.cz/air_quality/now/data/",
-                        "resource_relation_type": {"id": "IsDerivedFrom"},
-                        "resource_type": {"id": "ObservationData"},
-                        "resource_url": "https://opendata.chmi.cz/air_quality/",
-                        "title": "Kvalita ovzduší – aktuální hodinové údaje",  # noqa RUF001
-                    },
-                    {
-                        "iri": "https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7",
-                        "resource_relation_type": {"id": "HasMetadata"},
-                        "resource_url": "https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7",
-                        "title": "Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích\n"  # noqa RUF001
-                        "            stanicích",
-                    },
-                ],
-                "terms_of_use": {
-                    "access_rights": {"id": "OpenAccess"},
-                    "contact_points": [
-                        {
-                            "person": {
-                                "contact_points": [
-                                    {
-                                        "emails": ["pavlina.dolezalova@organizace.cz"],
-                                        "phones": ["+420784512963"],
-                                    }
-                                ],
-                                "name": "Pavlína Doležalová",
-                            }
-                        }
-                    ],
-                    "description": [
-                        {
-                            "lang": {"id": "cs"},
-                            "value": "Textový popis toho, jak je možné s datovou sadou\n            nakládat.",
-                        }
-                    ],
-                    "license": {
-                        "iri": "https://creativecommons.org/licenses/by/4.0/",
-                        "label": [
-                            {
-                                "lang": {"id": "en"},
-                                "value": "Attribution 4.0 International",
-                            }
-                        ],
-                    },
-                },
-                "time_references": [
-                    {
-                        "temporal_representation": {
-                            "time_instant": {"date_time": "2025-04-27T12:00:01+02:00"},
-                        },
-                        "date_type": {"id": "Created"},
-                    },
-                    {
-                        "temporal_representation": {
-                            "time_interval": {
-                                "beginning": {"date": "2024-01-01"},
-                                "end": {"date": "2024-12-31"},
-                            },
-                        },
-                        "date_type": {"id": "Collected"},
-                    },
-                ],
-                "title": "Kvalita ovzduší ve středních čechách 2024",
-                "validation_results": [{}],
-                "version": "1.0.23",
-                "publication_date": "2025-04-27",
-                "additional_titles": [
-                    {
-                        "title": "Air quality measurements in Central Bohemian Region in 2024.",
-                        "type": {"id": "translatedTitle"},
-                        "lang": {"id": "en"},
-                    }
-                ],
-                "additional_descriptions": [
-                    {
-                        "description": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v\n"
-                        "            roce 2024.",
-                        "type": {"id": "abstract"},
-                        "lang": {"id": "cs"},
-                    }
-                ],
-                "identifiers": [{"identifier": "10.5281/zenodo.17594128", "scheme": "doi"}],
-                "creators": [
-                    {
-                        "role": {"id": "Creator"},
-                        "person_or_org": {
-                            "name": "Šimek, Miroslav",
-                            "type": "personal",
-                            "given_name": "Miroslav",
-                            "family_name": "Šimek",
-                            "identifiers": [{"identifier": "0000-0003-0852-6632", "scheme": "orcid"}],
-                        },
-                        "affiliations": [{"name": "Univerzita Karlova"}],
-                    }
-                ],
-                "subjects": [
-                    {
-                        "id": "Frascati:10511",
-                        "subject": "Environmentální vědy",
-                    },
-                    {"subject": "kvalita ovzduší"},
-                    {
-                        "id": "INSPIRE:EF",
-                        "subject": "Environmental monitoring facilities",
-                    },
-                ],
-                "funding": [
-                    {
-                        "funder": {"name": "Grantová agentura České republiky"},
-                        "award": {
-                            "title": {"en": "Program for air pollution research"},
-                            "number": "https://doi.org/award-identifier",
-                        },
-                    }
-                ],
-                "resource_type": {"id": "Dataset"},
-                "languages": [{"id": "CES"}, {"id": "ENG"}],
-            }
-        }
+        {'metadata': {'title': 'Kvalita ovzduší ve středních čechách 2024', 'version': '1.0.23',
+                      'publication_date': '2025-04-27', 'additional_titles': [
+                {'title': 'Air quality measurements in Central Bohemian Region in 2024.',
+                 'type': {'id': 'translatedTitle'},
+                 'lang': {'id': 'en'}}], 'additional_descriptions': [
+                {'description': 'Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v roce 2024.',
+                 'type': {'id': 'abstract'}, 'lang': {'id': 'cs'}}],
+                      'identifiers': [{'identifier': '10.5281/zenodo.17594128', 'scheme': 'doi'}],
+                      'creators': [{'role': {'id': 'Creator'},
+                                    'person_or_org': {'name': 'Šimek, Miroslav', 'type': 'personal',
+                                                      'given_name': 'Miroslav', 'family_name': 'Šimek',
+                                                      'identifiers': [
+                                                          {'identifier': '0000-0003-0852-6632',
+                                                           'scheme': 'orcid'}]},
+                                    'affiliations': [{'name': 'Univerzita Karlova'}]}],
+                      'subjects': [{'id': 'Frascati:10511', 'subject': 'Environmentální vědy'},
+                                   {'subject': 'kvalita ovzduší'}, {'id': 'INSPIRE:EF',
+                                                                    'subject': 'Environmental monitoring facilities'}],
+                      'funding': [{'funder': {'name': 'Grantová agentura České republiky'},
+                                   'award': {'title': {'en': 'Program for air pollution research'},
+                                             'number': 'https://doi.org/award-identifier'}}],
+                      'related_resources': [{
+                          'title': 'Směrnice Evropského parlamentu a Rady 2008/50/ES ze dne 21. května 2008 o kvalitě vnějšího ovzduší a čistším ovzduší pro Evropu',
+                          'identifiers': [{
+                              'identifier': 'http://data.europa.eu/eli/dir/2008/50/oj'},
+                              {
+                                  'identifier': 'https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050"%26"qid=1754039487879'}],
+                          'relation_type': {'id': 'IsReferencedBy'},
+                          'resource_type': {'id': 'Software'}},
+                          {'title': 'ENVI LVS1 Sampler pro odběr prašného aerosolu',
+                           'identifiers': [{
+                               'identifier': 'https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu'}],
+                           'resource_type': {'id': 'PhysicalObject'}},
+                          {'title': 'Kvalita ovzduší – aktuální hodinové údaje',
+                           'identifiers': [{
+                               'identifier': 'https://opendata.chmi.cz/air_quality/now/data/'},
+                               {
+                                   'identifier': 'https://opendata.chmi.cz/air_quality/'}],
+                           'relation_type': {'id': 'IsDerivedFrom'},
+                           'resource_type': {'id': 'ObservationData'}}, {
+                              'title': 'Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích stanicích',
+                              'identifiers': [{
+                                  'identifier': 'https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7'}],
+                              'relation_type': {'id': 'HasMetadata'}}],
+                      'resource_type': {'id': 'Dataset'}, 'languages': [{'id': 'CES'}, {'id': 'ENG'}],
+                      'locations': {'features': [{'place': 'Středočeský kraj', 'identifiers': [
+                          {'scheme': 'iri', 'identifier': 'https://vdp.cuzk.gov.cz/vdp/ruian/vusc/27'}],
+                                                  'geometry': {'type': 'Polygon', 'coordinates': [
+                                                      [[13.394972457505816, 49.50127042751268],
+                                                       [15.585575400519133, 49.50127042751268],
+                                                       [15.585575400519133, 50.61421606255462],
+                                                       [13.394972457505816, 50.61421606255462],
+                                                       [13.394972457505816, 49.50127042751268]]]},
+                                                  'description': 'Collected'}]},
+                      'dates': [{'date': '2025-04-27', 'type': {'id': 'Created'}},
+                                {'date': '2024-01-01', 'type': {'id': 'Collected'}}],
+                      'rights': [{'id': 'https://creativecommons.org/licenses/by/4.0/'}]}}
     )
 
     assert cleaned_record == cleaned_expected
