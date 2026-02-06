@@ -57,3 +57,7 @@ identifierschemes:
 checksumalgorithms:
   pid-type: v-csa
   data-file: ccmm_checksum_algorithms.yaml
+
+descriptiontypes:
+  pid-type: dty
+  data-file: ccmm_description_types.yaml

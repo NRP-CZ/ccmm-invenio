@@ -39,6 +39,9 @@ import logging
 from typing import TYPE_CHECKING, Any
 
 import langdetect
+import pycountry
+from invenio_access.permissions import system_identity
+from invenio_vocabularies.proxies import current_service as vocabulary_service
 
 from .nma_1_1_0 import CCMMXMLNMAParser
 
@@ -53,6 +56,16 @@ log = logging.getLogger(__name__)
 
 class CCMMXMLProductionParser(CCMMXMLNMAParser):
     """Parser for CCMM XML version 1.1.0 for production repository."""
+
+    def lang2_to_lang3(self, lang_obj: dict) -> dict:
+        """Convert lang2 code to lang3."""
+        lang2 = lang_obj.get("id", "").lower()
+        lang = pycountry.languages.get(alpha_2=lang2)
+
+        if lang is None or not hasattr(lang, "alpha_3"):
+            return {}
+
+        return {"id": lang.alpha_3.upper()}
 
     def parse(self, xml_root: Element) -> dict[str, Any]:
         """Parse the root element of the CCMM XML record.
@@ -244,8 +257,36 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
     def convert_terms_of_use(self, metadata: dict[str, Any]) -> None:
         """Convert terms_of_use to RDM dates."""
         terms_of_use = metadata.pop("terms_of_use", None)
+
         if terms_of_use is not None:
-            metadata["rights"] = [{"id": terms_of_use["license"]["iri"]}]
+            hits = None
+            # TODO: add IRIs to the licenses vocabularies
+            try:
+                hits = vocabulary_service.search(
+                    identity=system_identity,
+                    type="licenses",
+                    params={"q": f'props.iri:"{terms_of_use["license"]["iri"]}"'},
+                )
+            except Exception as e:  # noqa: BLE001
+                log.debug(
+                    "License vocabulary lookup failed for iri=%s: %s",
+                    terms_of_use.get("license", {}).get("iri"),
+                    e,
+                )
+            if hits and hits.total is not None and hits.total > 0:
+                voc = next(hits.hits)
+                _id = voc["id"]
+
+                metadata["rights"] = [{"id": _id}]
+            else:
+                # TODO: now this will always ended up here
+                link = terms_of_use["license"]["iri"]
+                labels = terms_of_use["license"]["label"]
+                title = {}
+                for label in labels:
+                    title[label["lang"]["id"]] = label["value"]
+
+                metadata["rights"] = [{"link": link, "title": title}]
 
     def convert_additional_titles(self, metadata: dict[str, Any]) -> None:
         """Convert additional titles from NMA format to production format."""
@@ -263,7 +304,7 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
                 converted_title = {
                     "title": title_with_lang.get("value"),
                     "type": title.get("alternate_title_type"),
-                    "lang": title_with_lang.get("lang"),
+                    "lang": self.lang2_to_lang3(title_with_lang.get("lang")),
                 }
                 converted_additional_titles.append(converted_title)
 
@@ -293,7 +334,7 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
                 converted_desc = {
                     "description": desc_with_lang.get("value"),
                     "type": desc.get("description_type"),
-                    "lang": desc_with_lang.get("lang"),
+                    "lang": self.lang2_to_lang3(desc_with_lang.get("lang")),
                 }
                 converted_additional_descriptions.append(converted_desc)
 

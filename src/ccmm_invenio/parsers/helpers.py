@@ -43,4 +43,4 @@ def find_and_parse_array(parent: Element, tag: str, parse_func: Any, path: list[
         result = parse_func(child, [*path, tag])
         parent.remove(child)
         results.append(result)
-    return results if results else None
+    return results or None
