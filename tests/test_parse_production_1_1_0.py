@@ -91,7 +91,7 @@ def test_parse_production_1_1_0(clean_strings):
                     {
                         "title": "Air quality measurements in Central Bohemian Region in 2024.",
                         "type": {"id": "translatedTitle"},
-                        "lang": {"id": "en"},
+                        "lang": {"id": "ENG"},
                     }
                 ],
                 "additional_descriptions": [
@@ -99,7 +99,7 @@ def test_parse_production_1_1_0(clean_strings):
                         "description": "Tato datová sada obsahuje měření kvality "
                         "ovzduší ve středních Čechách v roce 2024.",
                         "type": {"id": "abstract"},
-                        "lang": {"id": "cs"},
+                        "lang": {"id": "CES"},
                     }
                 ],
                 "identifiers": [{"identifier": "10.5281/zenodo.17594128", "scheme": "doi"}],
@@ -201,7 +201,12 @@ def test_parse_production_1_1_0(clean_strings):
                     {"date": "2025-04-27", "type": {"id": "Created"}},
                     {"date": "2024-01-01", "type": {"id": "Collected"}},
                 ],
-                "rights": [{"id": "https://creativecommons.org/licenses/by/4.0/"}],
+                "rights": [
+                    {
+                        "link": "https://creativecommons.org/licenses/by/4.0/",
+                        "title": {"en": "Attribution 4.0 International"},
+                    }
+                ],
             }
         }
     )

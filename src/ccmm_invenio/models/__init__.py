@@ -12,11 +12,16 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, override
 
+from flask_resources.deserializers import DeserializerMixin
+from invenio_access.permissions import system_identity
 from invenio_i18n import lazy_gettext as _
+from invenio_vocabularies.proxies import current_service as vocabulary_service
+from lxml.etree import fromstring
 from oarepo_model import from_yaml
 from oarepo_model.api import FunctionalPreset
 from oarepo_model.customizations import (
     AddMetadataExport,
+    AddMetadataImport,
     Customization,
     SetIndexNestedFieldsLimit,
     SetIndexTotalFieldsLimit,
@@ -25,6 +30,8 @@ from oarepo_model.model import InvenioModel
 from oarepo_model.presets import Preset
 from oarepo_rdm.model.presets import rdm_minimal_preset
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
+
+from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
 
 from ..serializers import (
     CCMMNMADataCiteJSONSerializer_1_1_0,
@@ -108,6 +115,57 @@ class CCMMProductionCustomizationPreset(Preset):
         )
 
 
+class CCMMProductionDeserializer(DeserializerMixin):
+    """CCMM Invenio metadata deserializer."""
+
+    def deserialize(self, data: Any) -> Any:
+        """Deserialize data."""
+        root_el = fromstring(data)
+        parser = CCMMXMLProductionParser(vocabulary_loader=invenio_vocabulary_loader)
+
+        return parser.parse(root_el)
+
+
+def invenio_vocabulary_loader(vocabulary_type: str, iri: str) -> str:
+    """Load vocabulary from IRI."""
+    if vocabulary_type == "resourcerelationtypes":
+        vocabulary_type = "relationtypes"
+
+    # TODO: add mediatypes to IRI
+    if vocabulary_type == "mediatypes":
+        return iri
+    if vocabulary_type == "fileformats":
+        vocabulary_type = "filetypes"
+
+    hits = vocabulary_service.search(identity=system_identity, type=vocabulary_type, params={"q": f'props.iri:"{iri}"'})
+    if hits.total == 0:
+        raise KeyError(f"iri {iri} not found for {vocabulary_type}")
+
+    voc = next(hits.hits)
+    return str(voc["id"])
+
+
+class CCMMImportPreset(Preset):
+    """Preset for CCMM imports."""
+
+    @override
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Apply the preset."""
+        yield AddMetadataImport(
+            code="ccmm-xml",
+            name=_("CCMM import"),
+            mimetype="application/vnd.ccmm+xml",
+            description=_("CCMM XML export."),
+            deserializer=CCMMProductionDeserializer(),
+            oai_name=("https://schema.ccmm.cz/research-data/1.1", "dataset"),
+        )
+
+
 class CCMMNMACustomizationPreset(Preset):
     """Preset for CCMM production metadata customizations."""
 
@@ -169,6 +227,7 @@ ccmm_nma_preset_1_1_0 = [
 ccmm_production_preset_1_1_0 = [
     *rdm_minimal_preset,
     CCMMProductionPreset,
+    CCMMImportPreset,
     CCMMIndexSettingsPreset,
     CCMMProductionCustomizationPreset,
 ]
