@@ -1,6 +1,6 @@
 #
 # This file is a "production" version of the CCMM schema. It takes types from CCMM
-# wherever it makes sense from the invenio point of view. 
+# wherever it makes sense from the invenio point of view.
 # In many places, RDM fields are used instead so that we do not have to reimplement
 # the whole validation/ui logic.
 #
@@ -11,7 +11,6 @@
 CCMMInvenioRelatedResource:
   type: object
   properties:
-
     publication_date:
       type: RDMPublicationDate
       label:
@@ -20,6 +19,7 @@ CCMMInvenioRelatedResource:
 
     title:
       type: RDMTitle
+      required: true
       label:
         en: Title
         cs: Název
@@ -47,7 +47,6 @@ CCMMInvenioRelatedResource:
       label:
         en: Additional descriptions
         cs: Další popisy záznamu
-
 
     identifiers:
       label:
@@ -150,11 +149,12 @@ CCMMDataset:
   type: object
   properties:
     # iri:
-    # IRI is not used inside schema as it is 
+    # IRI is not used inside schema as it is
 
     # we use RDM publication date as it is, publication_year is derived from it
     publication_date:
       type: RDMPublicationDate
+      required: true
       label:
         en: Publication date
         cs: Datum publikace
@@ -255,6 +255,7 @@ CCMMDataset:
     # qualified_relations:
     # in Invenio, we have Creators and Contributors, not qualified relations
     creators:
+      required: true
       label:
         en: Creators
         cs: Autoři
@@ -337,6 +338,7 @@ CCMMDataset:
     # taken from RDM
     resource_type:
       type: RDMResourceType
+      required: true
       label:
         en: Resource type
         cs: Typ záznamu

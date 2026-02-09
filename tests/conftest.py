@@ -14,6 +14,8 @@ from typing import Any
 
 import pytest
 from flask_principal import Identity, Need, UserNeed
+from invenio_access.permissions import system_identity
+from invenio_vocabularies.proxies import current_service as current_vocabularies_service
 from oarepo_runtime.services.records.mapping import update_all_records_mappings
 
 from tests.model import nma_dataset, production_dataset  # noqa: F401
@@ -112,3 +114,23 @@ def clean_strings():
         return s
 
     return _clean_strings
+
+
+@pytest.fixture
+def vocab_fixtures():
+    """Contributor role fixture."""
+    current_vocabularies_service.create_type(system_identity, "resourcetypes", "rsrct")
+
+    current_vocabularies_service.create(
+        system_identity,
+        {
+            "type": "resourcetypes",
+            "id": "dataset",
+            "title": {
+                "en": "Dataset",
+                "cs": "Dataset",
+            },
+        },
+    )
+
+    current_vocabularies_service.indexer.refresh()
