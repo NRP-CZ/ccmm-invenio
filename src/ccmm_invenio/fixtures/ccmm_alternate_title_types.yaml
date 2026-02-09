@@ -1,9 +1,11 @@
 - description:
-    cs: Alternativní název datasetu - může se jednat o uvedení nebo naopak rozepsání
+    cs:
+      Alternativní název datasetu - může se jednat o uvedení nebo naopak rozepsání
       zkratky, přepisem číslených hodnot atd.
-    en: Alternative dataset title - could be abbreviations, transcribing numerical
+    en:
+      Alternative dataset title - could be abbreviations, transcribing numerical
       values, etc.
-  id: AlternativeTitle
+  id: alternative-title
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
     iri: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/AlternativeTitle
@@ -13,7 +15,7 @@
 - description:
     cs: Podnázev, který doplňuje název datasetu.
     en: Subtitle that complements the dataset title.
-  id: Subtitle
+  id: subtitle
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
     iri: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/Subtitle
@@ -23,7 +25,7 @@
 - description:
     cs: Překlad názvu datasetu.
     en: Translation of the dataset title.
-  id: TranslatedTitle
+  id: translated-title
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
     iri: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle
@@ -33,7 +35,7 @@
 - description:
     cs: Jiný název, než je překlad, podnázev a alternativní název.
     en: Other title than the subtitle, transated title or alternative title.
-  id: Other
+  id: other
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
     iri: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/Other
