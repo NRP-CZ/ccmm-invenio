@@ -7,6 +7,7 @@
   title:
     cs: design
     en: design
+  icon: file alternate
 - description:
     en: A device, tool or apparatus used to obtain, measure and/or analyze data. Source
       https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#instrument
@@ -16,6 +17,7 @@
   title:
     cs: research instrument
     en: research instrument
+  icon: file alternate
 - description:
     en: 'Data that are used as primary sources to support technical or scientific
       enquiry, research, scholarship, or artistic activity, and that are used as evidence
@@ -27,6 +29,7 @@
   title:
     cs: research data
     en: research data
+  icon: file alternate
 - description:
     en: 'A work of visual arts and performing arts, including musical works; dramatic
       works; pantomimes and choreographic works; motion picture and other audiovisual
@@ -38,6 +41,7 @@
   title:
     cs: artistic work
     en: artistic work
+  icon: file alternate
 - description:
     en: All types of schemes for organizing information and promoting knowledge management.
       Knowledge organization systems include classification schemes that organize
@@ -53,6 +57,7 @@
   title:
     cs: knowledge organization system
     en: knowledge organization system
+  icon: file alternate
 - description:
     en: 'A sign used to distinguish the goods or services of one undertaking from
       those
@@ -69,6 +74,7 @@
   title:
     cs: trademark
     en: trademark
+  icon: file alternate
 - description:
     en: An aggregation of resources, which may encompass collections of one resourceType
       as well as those of mixed types. A collection is described as a group; its parts
@@ -79,6 +85,7 @@
   title:
     cs: collection
     en: collection
+  icon: file alternate
 - description:
     en: 'Physical samples include biological specimens, rock or mineral specimens,
       soil or sediment cores, plants and seeds, water quality samples, archaeological
@@ -93,6 +100,7 @@
   title:
     cs: physical sample
     en: physical sample
+  icon: file alternate
 - description:
     en: 'Any material representing the whole or part of the earth or any celestial
       body at any scale. Cartographic materials include two- and three-dimensional
@@ -105,6 +113,7 @@
   title:
     cs: kartografický dokument
     en: cartographic material
+  icon: file alternate
 - description:
     en: A patent or patent application.
   id: c_15cd
@@ -115,6 +124,10 @@
   title:
     cs: patent
     en: patent
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: A resource type that is not included in existing terms. [COAR definition]
   id: c_1843
@@ -129,6 +142,10 @@
   title:
     cs: ostatní
     en: other
+  icon: calendar alternate outline
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A resource primarily intended to be heard. Examples include a music playback
       file format, an audio compact disc, and recorded speech or sounds. [Source:
@@ -141,6 +158,10 @@
   title:
     cs: zvuk
     en: sound
+  icon: volume up
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A resource consisting primarily of words for reading. Examples include books,
       letters, dissertations, poems, newspapers, articles, archives of mailing lists.
@@ -161,6 +182,10 @@
   title:
     cs: text
     en: text
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A report to a funding agency is a document written by beneficiaries of project
       grants. The reporting documents can be e.g. periodic reports about progress
@@ -173,6 +198,7 @@
   title:
     cs: zpráva pro poskytovatele podpory
     en: report to funding agency
+  icon: file alternate
 - description:
     en: 'Other types of report may include Business Plans Technical Specifications,
       data management plans, recommendation reports, white papers, annual reports,
@@ -186,6 +212,7 @@
   title:
     cs: jiná zpráva
     en: other type of report
+  icon: file alternate
 - description:
     en: An internal report is a record of findings collected for internal use. It
       is not designed to be made public and may include confidential or proprietary
@@ -196,6 +223,7 @@
   title:
     cs: interní zpráva
     en: internal report
+  icon: file alternate
 - description:
     en: 'A periodical is a serial publication with its own distinctive title, characterized
       by a variety of contents and contributors, and issued at regular intervals.
@@ -206,6 +234,7 @@
   title:
     cs: periodikum
     en: periodical
+  icon: file alternate
 - description:
     en: A discussion between a reporter, host, panel, or audience and a newsmaker,
       author, or celebrity, recorded (edited or unedited) in print, on film or video,
@@ -216,6 +245,7 @@
   title:
     cs: interview
     en: interview
+  icon: file alternate
 - description:
     en: 'A recorded sequence of connected steps, which may be automated, specifying
       a reliably repeatable sequence of operations to be undertaken when conducting
@@ -230,6 +260,10 @@
   title:
     cs: pracovní postup
     en: workflow
+  icon: code fork
+  tags:
+  - depositable
+  - linkable
 - description:
     en: A contribution to a journal denotes a work published in a journal. If applicable
       sub-terms should be chosen.
@@ -239,6 +273,7 @@
   title:
     cs: příspěvek v časopisu
     en: contribution to journal
+  icon: file alternate
 - description:
     en: 'A computer program in source code (text) or compiled form. [Source: http://purl.org/dc/dcmitype/Software]'
   id: c_5ce6
@@ -252,6 +287,10 @@
   title:
     cs: software
     en: software
+  icon: chart bar outline
+  tags:
+  - depositable
+  - linkable
 - description:
     en: part of a report
   id: c_ba1f
@@ -260,6 +299,7 @@
   title:
     cs: report part
     en: report part
+  icon: file alternate
 - description:
     en: 'A visual representation other than text, including all types of moving image
       and still image. [Source: Adapted from  http://purl.org/dc/dcmitype/Image]'
@@ -271,6 +311,10 @@
   title:
     cs: obraz
     en: image
+  icon: chart bar outline
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A collection of related facts and data encoded in a defined structure. [Source:
       Adapted from http://purl.org/spar/fabio/Dataset]'
@@ -283,6 +327,10 @@
   title:
     cs: datová sada
     en: dataset
+  icon: table
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A digital resource that can be reused to enhance teaching and learning.
 
@@ -294,6 +342,7 @@
   title:
     cs: learning object
     en: learning object
+  icon: file alternate
 - description:
     en: 'A resource requiring interaction from the user to be understood, executed,
       or experienced. Examples include forms on Web pages, applets, multimedia learning
@@ -306,6 +355,7 @@
   title:
     cs: interaktivní zdroj
     en: interactive resource
+  icon: file alternate
 - description:
     en: A set of judicial proceedings that record, physically or digitally, and in
       an orderly fashion, the development of a process or procedural actions so that
@@ -321,6 +371,7 @@
   title:
     cs: court documents
     en: court documents
+  icon: file alternate
 - description:
     en: 'Geospatial data are any type of data with spatial coordinates that allow
       them to be mapped to the Earth''s surface. They can represent physical objects,
@@ -346,6 +397,7 @@
   title:
     cs: geospatial data
     en: geospatial data
+  icon: file alternate
 - description:
     en: 'Data resulting from the experimental research method involving the manipulation
       of some or all of the independent variables included in the hypotheses. [Source:
@@ -358,6 +410,7 @@
   title:
     cs: experimental data
     en: experimental data
+  icon: file alternate
 - description:
     en: 'A written record of words spoken in court proceedings or in a speech, interview,
       broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]'
@@ -369,6 +422,7 @@
   title:
     cs: transcription
     en: transcription
+  icon: file alternate
 - description:
     en: 'A special form of patent right granted by a state or jurisdiction to an inventor
       or the inventor’s assignee for a fixed period of time. The terms and conditions
@@ -384,6 +438,7 @@
   title:
     cs: utility model
     en: utility model
+  icon: file alternate
 - description:
     en: 'Genomic data refers to the genome and DNA data of an organism. They are used
       in bioinformatics for collecting, storing and processing the genomes of living
@@ -399,6 +454,7 @@
   title:
     cs: genomic data
     en: genomic data
+  icon: file alternate
 - description:
     en: 'Statistics that relate to broad classes, groups, or categories. The data
       are averaged, totaled, or otherwise derived from individual-level data, and
@@ -415,6 +471,7 @@
   title:
     cs: aggregated data
     en: aggregated data
+  icon: file alternate
 - description:
     en: 'Qualitative data (textual, video, audio or still-image) originally produced
       for other purposes into quantitative data (expressed in unit-by-variable matrices)
@@ -429,6 +486,7 @@
   title:
     cs: encoded data
     en: encoded data
+  icon: file alternate
 - description:
     en: "Layout-design (topography) means the three-dimensional disposition, however\
       \ expressed, of \nthe elements of an integrated circuit (at least one of which\
@@ -443,6 +501,7 @@
   title:
     cs: layout design
     en: layout design
+  icon: file alternate
 - description:
     en: 'A patent granted to any person who has invented any new and non-obvious ornamental
       design for an article of manufacture. The design patent protects only the appearance
@@ -456,6 +515,7 @@
   title:
     cs: design patent
     en: design patent
+  icon: file alternate
 - description:
     en: 'Data registered by mechanical or electronic means, in a form that allows
       the information to be retrieved and/or reproduced. For example, images or sounds
@@ -468,6 +528,7 @@
   title:
     cs: recorded data
     en: recorded data
+  icon: file alternate
 - description:
     en: 'Data resulting from assessing specific properties (or characteristics) of
       beings, things, phenomena, (and/ or processes) by applying pre-established standards
@@ -480,6 +541,7 @@
   title:
     cs: measurement and test data
     en: measurement and test data
+  icon: file alternate
 - description:
     en: 'Data resulting from observational research, which involves collecting observations
       as they occur (for example, observing behaviors, events, development of condition
@@ -493,6 +555,7 @@
   title:
     cs: observational data
     en: observational data
+  icon: file alternate
 - description:
     en: 'Data collected or assembled from multiple, often heterogeneous sources that
       have one or more reference points in common, and at least one of the sources
@@ -511,6 +574,7 @@
   title:
     cs: compiled data
     en: compiled data
+  icon: file alternate
 - description:
     en: 'Plant variety protection, also called a "plant breeder''s right" (PBR), is
       a form of intellectual property right granted to the breeder of a new plant
@@ -527,6 +591,7 @@
   title:
     cs: plant variety protection
     en: plant variety protection
+  icon: file alternate
 - description:
     en: 'A laboratory notebook (colloq. lab notebook or lab book) is a primary record
       of research. Researchers use a lab notebook to document their hypotheses, experiments
@@ -541,6 +606,7 @@
   title:
     cs: laboratory notebook
     en: laboratory notebook
+  icon: file alternate
 - description:
     en: 'Industrial designs are applied to a wide variety of industrial products and
       handicrafts. They refer to the ornamental or aesthetic aspects of a useful article,including
@@ -554,6 +620,7 @@
   title:
     cs: industrial design
     en: industrial design
+  icon: file alternate
 - description:
     en: 'In order to obtain a patent, a software invention must not fall under other
       non-patentable subject matter (for example, abstract ideas or mathematical theories)
@@ -568,6 +635,7 @@
   title:
     cs: software patent
     en: software patent
+  icon: file alternate
 - description:
     en: 'Data resulting from a survey, which is defined as an investigation about
       the characteristics of a given population by means of collecting data from a
@@ -583,6 +651,7 @@
   title:
     cs: survey data
     en: survey data
+  icon: file alternate
 - description:
     en: 'Source code is any collection of code, with or without comments, written
       using a human-readable programming language, usually as plain text. [Source:
@@ -595,6 +664,7 @@
   title:
     cs: source code
     en: source code
+  icon: file alternate
 - description:
     en: A resource type that is not included in existing terms under the top concept
       "Text". [COAR definition]
@@ -606,6 +676,7 @@
   title:
     cs: other periodical
     en: other periodical
+  icon: file alternate
 - description:
     en: 'A patent application filed through the WIPO-administered Patent Cooperation
       Treaty (PCT), also known as an international application. [Source: Adapted from
@@ -618,6 +689,7 @@
   title:
     cs: PCT application
     en: PCT application
+  icon: file alternate
 - description:
     en: 'Data resulting from modeling or imitative representation of real-world processes,
       events, or systems, often using computer programs. For example, a program modeling
@@ -632,6 +704,7 @@
   title:
     cs: simulation data
     en: simulation data
+  icon: file alternate
 - description:
     en: 'A collection of historical records and primary source documents. Documents
       may be tangible or digital. Adapted from “archive (groupings)” in Getty AAT:
@@ -644,6 +717,7 @@
   title:
     cs: archival collection
     en: archival collection
+  icon: file alternate
 - description:
     en: 'A patent granted to anyone who has invented or discovered and asexually reproduced
       any distinct and new variety of plant, including cultivated sports, mutants,
@@ -657,6 +731,7 @@
   title:
     cs: plant patent
     en: plant patent
+  icon: file alternate
 - description:
     en: 'A manuscript is a work of any kind (text, inscription, music score, map,
       etc.) written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]'
@@ -668,6 +743,7 @@
   title:
     cs: manuscript
     en: manuscript
+  icon: file alternate
 - description:
     en: 'A journal is a serial publication devoted to disseminating original research
       and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]'
@@ -681,6 +757,10 @@
   title:
     cs: odborné periodikum
     en: journal
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A brief description of important new research, also known as “communication”.
       [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]'
@@ -692,6 +772,7 @@
   title:
     cs: dopis
     en: letter
+  icon: file alternate
 - description:
     en: 'An annotation in the sense of a legal note is a legally explanatory comment
       on a decision handed down by a court or arbitral tribunal. [Source: DRIVER info:eu-repo
@@ -707,6 +788,10 @@
   title:
     cs: právní komentář rozsudku nebo rozhodnutí
     en: annotation
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'Defined as a representation normally to scale and on a flat medium, of a
       selection of material or abstract features on, or in relation to, the surface
@@ -719,6 +804,7 @@
   title:
     cs: mapa
     en: map
+  icon: file alternate
 - description:
     en: 'Musical composition can refer to an original piece of music, the structure
       of a musical piece, or the process of creating a new piece of music. [Source:
@@ -731,6 +817,7 @@
   title:
     cs: hudební skladba
     en: musical composition
+  icon: file alternate
 - description:
     en: 'Symbols used to write music, as in a music score, and to express mathematical
       concepts.
@@ -744,6 +831,7 @@
   title:
     cs: hudební zápis
     en: musical notation
+  icon: file alternate
 - description:
     en: 'A popular interest periodical usually containing articles on a variety of
       topics, written by various authors in a nonscholarly style or a trade publication,
@@ -760,6 +848,10 @@
   title:
     cs: magazine
     en: magazine
+  icon: chart bar outline
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A non-serial publication that is complete in one volume or a designated finite
       number of volumes. [Source: Adapted from http://purl.org/eprint/type/Book]'
@@ -773,6 +865,10 @@
   title:
     cs: kniha
     en: book
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A non-peer reviewed periodical, usually published daily or weekly, consisting
       primarily of editorials and news items concerning current or recent events and
@@ -785,6 +881,7 @@
   title:
     cs: newspaper
     en: newspaper
+  icon: file alternate
 - description:
     en: 'A defined chapter or section of a book, usually with a separate title or
       number. [Source: http://purl.org/spar/fabio/BookChapter]'
@@ -798,6 +895,10 @@
   title:
     cs: část knihy
     en: book part
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A book authored by a student containing a formal presentations of research
       outputs submitted for examination in completion of a course of study at an institution
@@ -815,6 +916,10 @@
   title:
     cs: kvalifikační práce
     en: thesis
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A letter addressed to the editor and comments on or discussed an item previously
       published by that periodical, or of interest to its readership. [Source: Adapted
@@ -827,6 +932,7 @@
   title:
     cs: dopis redakci
     en: letter to the editor
+  icon: file alternate
 - description:
     en: 'An article, typically the realization of a research paper reporting original
       research findings, published in a journal issue. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646]'
@@ -840,6 +946,10 @@
   title:
     cs: článek v odborném časopisu
     en: journal article
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A piece of writing or other item of content published on a blog. [Source:
       https://www.lexico.com/definition/blog_post]'
@@ -851,6 +961,7 @@
   title:
     cs: blog post
     en: blog post
+  icon: file alternate
 - description:
     en: 'Technical documentation refers to any type of documentation that describes
       handling, functionality and architecture of a technical product or a product
@@ -865,6 +976,10 @@
   title:
     cs: technická dokumentace
     en: technical documentation
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A thesis reporting a research project undertaken as part of an undergraduate
       course of education leading to a bachelor''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2181]'
@@ -878,6 +993,10 @@
   title:
     cs: bakalářská práce
     en: bachelor thesis
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: A formal correction to an error introduced by the author into a previously
       published document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)
@@ -889,6 +1008,7 @@
   title:
     cs: corrigendum
     en: corrigendum
+  icon: file alternate
 - description:
     en: 'A collection of related web pages containing text, images, videos and/or
       other digital assets that are addressed relative to a common Uniform Resource
@@ -904,6 +1024,7 @@
   title:
     cs: webové sídlo
     en: website
+  icon: file alternate
 - description:
     en: 'A software paper should include the rationale for the development of the
       tool and details of the code used for its construction. [Source: Adapted from
@@ -917,6 +1038,7 @@
   title:
     cs: software paper
     en: software paper
+  icon: file alternate
 - description:
     en: 'A working or discussion paper circulated publicly or among a group of peers.
       Certain disciplines, for example economics, issue working papers in series.
@@ -931,6 +1053,10 @@
   title:
     cs: pracovní dokument
     en: working paper
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A preprint is a scientific manuscript without peer-review and has not yet
       been accepted by a journal, typicaly submitted to a public server/ repository
@@ -945,6 +1071,10 @@
   title:
     cs: preprint
     en: preprint
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'Transcription of an oral presentation/talk intended to present information
       or teach people about a particular subject, for example by a university or college
@@ -960,6 +1090,10 @@
   title:
     cs: přednáška
     en: lecture
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A list of the books and articles that have been used by someone when writing
       a particular book or article [Source: https://dictionary.cambridge.org/dictionary/english/bibliography]'
@@ -972,6 +1106,7 @@
   title:
     cs: bibliografie
     en: bibliography
+  icon: file alternate
 - description:
     en: 'A moving display, either generated dynamically by a computer program or formed
       from a series of pre-recorded still images imparting an impression of motion
@@ -984,6 +1119,7 @@
   title:
     cs: pohyblivý obraz
     en: moving image
+  icon: file alternate
 - description:
     en: 'A report is a separately published record of research findings, research
       still in progress, policy developments and events, or other technical findings,
@@ -1005,6 +1141,10 @@
   title:
     cs: zpráva
     en: report
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: Work consisting of a news item appearing in a general-interest newspaper or
       other general news periodical, containing information of current and timely
@@ -1018,6 +1158,7 @@
   title:
     cs: newspaper article
     en: newspaper article
+  icon: file alternate
 - description:
     en: 'A formal statement describing how research data will be managed and documented
       throughout a research project and the terms regarding the subsequent deposit
@@ -1031,6 +1172,7 @@
   title:
     cs: data management plan
     en: data management plan
+  icon: file alternate
 - description:
     en: 'A brief essay expressing the opinion or position of the chief editor(s) of
       a (academic) journal with respect to a current political, social, cultural,
@@ -1044,6 +1186,7 @@
   title:
     cs: úvodník
     en: editorial
+  icon: file alternate
 - description:
     en: 'A research proposal is a document proposing a research project, generally
       in the sciences or academia, and generally constitutes a request for sponsorship
@@ -1058,6 +1201,10 @@
   title:
     cs: návrh výzkumného projektu
     en: research proposal
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A thesis reporting a research project undertaken as part of a graduate course
       of education leading to a master''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4057]'
@@ -1071,6 +1218,10 @@
   title:
     cs: diplomová práce
     en: master thesis
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: A data paper is a scholarly publication describing a particular dataset or
       group of dataset, published in the form of a peer-reviewed article in a scholarly
@@ -1085,6 +1236,7 @@
   title:
     cs: článek o datové sadě
     en: data paper
+  icon: file alternate
 - description:
     en: All kind of digital resources contributed to a conference, like conference
       presentation (slides), conference report, conference lecture, abstracts, demonstrations.
@@ -1100,6 +1252,10 @@
   title:
     cs: conference output
     en: conference output
+  icon: group
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'Software that is used to generate, process or analyse results that you intend
       to appear in a publication (either in a journal, conference paper, monograph,
@@ -1114,6 +1270,7 @@
   title:
     cs: research software
     en: research software
+  icon: file alternate
 - description:
     en: 'Data resulting from a research study in which one or more human subjects
       are prospectively assigned to one or more interventions (which may include placebo
@@ -1127,6 +1284,7 @@
   title:
     cs: clinical trial data
     en: clinical trial data
+  icon: file alternate
 - description:
     en: 'A thesis reporting the research undertaken during a period of graduate study
       leading to a doctoral degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3051]'
@@ -1138,6 +1296,7 @@
   title:
     cs: disertační práce
     en: doctoral thesis
+  icon: file alternate
 - description:
     en: 'A review article is a secondary source, that is, it is written about other
       articles, and does not report original research of its own. [Source: Adapted
@@ -1150,6 +1309,7 @@
   title:
     cs: přehledový článek
     en: review article
+  icon: file alternate
 - description:
     en: 'A recorded static visual representation. This class of image includes diagrams,
       drawings, graphs, graphic designs, plans, photographs and prints. [Source: Adapted
@@ -1166,6 +1326,10 @@
   title:
     cs: nepohyblivý obraz
     en: still image
+  icon: chart bar outline
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A review of others'' published work. [Source: Adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e5273]'
   hierarchy:
@@ -1179,6 +1343,10 @@
   title:
     cs: recenze
     en: review
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'Conference proceedings is the official record of a conference meeting. It
       is a collection of documents which corresponds to the presentations given at
@@ -1194,6 +1362,10 @@
   title:
     cs: sborník konference
     en: conference proceedings
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: An Item appearing in a magazine (a general interest or specific focus periodical).
       This item is often shorter in length, is submitted by in-house and external
@@ -1207,6 +1379,7 @@
   title:
     cs: magazine article
     en: magazine article
+  icon: file alternate
 - description:
     en: 'A commentary is a more in-depth analysis written to draw attention to a work
       already published. Commentaries are somewhat like “reviews” in that the author
@@ -1220,6 +1393,7 @@
   title:
     cs: commentary
     en: commentary
+  icon: file alternate
 - description:
     en: In the context of systematic reviews and meta-analyses, a protocol is a document
       that presents an explicit plan for a systematic review. The protocol details
@@ -1233,6 +1407,7 @@
   title:
     cs: knowledge synthesis protocol
     en: knowledge synthesis protocol
+  icon: file alternate
 - description:
     en: 'An evaluation of scientific, academic, or professional work by others working
       in the same field. [Source: Adopted from https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf]'
@@ -1244,6 +1419,7 @@
   title:
     cs: peer review
     en: peer review
+  icon: file alternate
 - description:
     en: 'A set of slides containing text, tables or figures, designed to communicate
       ideas or research results, for projection and viewing by an audience at a conference,
@@ -1257,6 +1433,7 @@
   title:
     cs: conference presentation
     en: conference presentation
+  icon: file alternate
 - description:
     en: 'The protocol is a detailed plan of the research study including a project
       summary, project description covering the rationale, objectives, methodology,
@@ -1270,6 +1447,7 @@
   title:
     cs: research protocol
     en: research protocol
+  icon: file alternate
 - description:
     en: Media that makes use of images (usually "moving"), with or without sound,
       over a period of playback time. [Source :https://support.contributors.jstor.org/hc/en-us/articles/11971132444439-JSTOR-Content-and-Resource-Types]
@@ -1284,6 +1462,10 @@
   title:
     cs: video
     en: video
+  icon: film
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A policy report presents what is known about a particular issue or problem.
       It assembles facts and evidence to help readers understand complex issues and
@@ -1297,6 +1479,7 @@
   title:
     cs: zpráva k politice nebo strategii
     en: policy report
+  icon: file alternate
 - description:
     en: 'A display poster, typically containing text with illustrative figures and/or
       tables, usually reporting research results or proposing hypotheses, submitted
@@ -1311,6 +1494,7 @@
   title:
     cs: konferenční poster nezahrnutý ve sborníku
     en: conference poster not in proceedings
+  icon: file alternate
 - description:
     en: 'A paper, typically the realization of a research paper reporting original
       research findings. Use this label when the paper is not published in a proceeding.
@@ -1323,6 +1507,7 @@
   title:
     cs: konferenční příspěvek nezahrnutý ve sborníku
     en: conference paper not in proceedings
+  icon: file alternate
 - description:
     en: 'A document that describes the process, progress, or results of technical
       or scientific research or the state of a technical or scientific research problem.
@@ -1338,6 +1523,10 @@
   title:
     cs: technická zpráva
     en: technical report
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A document containing a project report, intended to be delivered to a customer
       or funding agency describing the results achieved within a specific project.
@@ -1352,6 +1541,10 @@
   title:
     cs: výstup projektu
     en: project deliverable
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'It is publication that reports on the findings of a research project or alternatively
       scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]'
@@ -1363,6 +1556,7 @@
   title:
     cs: výzkumná zpráva
     en: research report
+  icon: file alternate
 - description:
     en: 'A formal note distributed internally to one or more persons in a company,
       agency, organization, or institution, with a header indicating the date it was
@@ -1378,6 +1572,7 @@
   title:
     cs: memorandum
     en: memorandum
+  icon: file alternate
 - description:
     en: A research article is a primary source, that is, it reports the methods and
       results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)
@@ -1389,6 +1584,7 @@
   title:
     cs: původní článek
     en: research article
+  icon: file alternate
 - description:
     en: 'A paper, published within a conference proceeding, typically the realization
       of a research paper reporting original research findings. [Source: Adapted from
@@ -1403,6 +1599,10 @@
   title:
     cs: příspěvek na konferenci
     en: conference paper
+  icon: file alternate
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A display poster, published within a conference proceeding, typically containing
       text with illustrative figures and/or tables, usually reporting research results
@@ -1418,6 +1618,10 @@
   title:
     cs: poster na konferenci
     en: conference poster
+  icon: columns
+  tags:
+  - depositable
+  - linkable
 - description:
     en: 'A work that reports on the results of a research study to evaluate interventions
       or exposures on biomedical or health-related outcomes. The two main types of
@@ -1433,6 +1637,7 @@
   title:
     cs: clinical study
     en: clinical study
+  icon: file alternate
 - description:
     en: 'A written review and critical analysis of the content, scope and quality
       of a book or other monographic work. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300]'
@@ -1444,3 +1649,4 @@
   title:
     cs: recenze knihy
     en: book review
+  icon: file alternate
