@@ -1,7 +1,10 @@
+# TODO: propagate to NTK vocabulary server
 - id: CC
   title:
     cs: Licence Creative Commons
     en: License Creative Commons
+  tags:
+    - all
 - description:
     cs: Toto je starší verze licencí (1.0). Pokud licencujete své vlastní dílo, které
       ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou
@@ -17,6 +20,8 @@
   title:
     cs: verze 1.0 Obecná licence
     en: version 1.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora. V češtině: Uveďte autora; v angličtině
@@ -33,6 +38,8 @@
   title:
     cs: Creative Commons Uveďte původ 1.0 Obecná licence
     en: Creative Commons Attribution 1.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozšiřovat odvozená díla pouze za podmínek identické či
       slučitelné licence, je nutné uvést autora. V češtině: Uveďte autora-Zachovejte
@@ -51,6 +58,8 @@
   title:
     cs: Creative Commons Uveďte původ-Zachovejte licenci 1.0 Obecná licence
     en: Creative Commons Attribution-ShareAlike 1.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora a pouze pro nevýdělečné účely. V
@@ -68,6 +77,8 @@
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně 1.0 Obecná licence
     en: Creative Commons Attribution-NonCommercial 1.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo (případně
       z něj odvozená díla) pouze pro nevýdělečné účely a pouze za podmínek identické
@@ -89,6 +100,8 @@
     cs: Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci
       1.0 Obecná licence
     en: Creative Commons Attribution-NonCommercial-ShareAlike 1.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo
       v původní podobě, nikoli díla z něj odvozená, je nutné uvést autora. V češtině:
@@ -106,6 +119,8 @@
   title:
     cs: Creative Commons Uveďte původ-Nezpracovávejte 1.0 Obecná licence
     en: Creative Commons Attribution-NoDerivs 1.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo
       v původní podobě, nikoli díla z něj odvozená, pouze pro nevýdělečné účely, je
@@ -124,6 +139,8 @@
     cs: Creative Commons Uveďte původ-Nezpracovávejte-Neužívejte komerčně 1.0 Obecná
       licence
     en: Creative Commons Attribution-NoDerivs-NonCommercial 1.0 Generic License
+  tags:
+    - all
 - description:
     cs: Toto je starší verze licencí 2.0. Pokud licencujete své vlastní dílo, které
       ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou
@@ -139,6 +156,8 @@
   title:
     cs: verze 2.0 Obecná licence
     en: version 2.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora. V češtině: Uveďte autora; v angličtině
@@ -155,6 +174,8 @@
   title:
     cs: Creative Commons Uveďte původ 2.0 Obecná licence
     en: Creative Commons Attribution 2.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozšiřovat odvozená díla pouze za podmínek identické či
       slučitelné licence, je nutné uvést autora. V češtině: Uveďte autora-Zachovejte
@@ -173,6 +194,8 @@
   title:
     cs: Creative Commons Uveďte původ-Zachovejte licenci 2.0 Obecná licence
     en: Creative Commons Attribution-ShareAlike 2.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora a pouze pro nevýdělečné účely. V
@@ -190,6 +213,8 @@
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně 2.0 Obecná licence
     en: Creative Commons Attribution-NonCommercial 2.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo (případně
       z něj odvozená díla) pouze pro nevýdělečné účely a pouze za podmínek identické
@@ -211,6 +236,8 @@
     cs: Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci
       2.0 Obecná licence
     en: Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo
       v původní podobě, nikoli díla z něj odvozená, je nutné uvést autora. V češtině:
@@ -228,6 +255,8 @@
   title:
     cs: Creative Commons Uveďte původ-Nezpracovávejte 2.0 Obecná licence
     en: Creative Commons Attribution-NoDerivs 2.0 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo
       v původní podobě, nikoli díla z něj odvozená, pouze pro nevýdělečné účely, je
@@ -246,6 +275,8 @@
     cs: Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 2.0 Obecná
       licence
     en: Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License
+  tags:
+    - all
 - description:
     cs: Toto je starší verze licencí 2.5. Pokud licencujete své vlastní dílo, které
       ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou
@@ -261,6 +292,8 @@
   title:
     cs: verze 2.5 Obecná licence
     en: version 2.5 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora. V češtině: Uveďte autora; v angličtině
@@ -277,6 +310,8 @@
   title:
     cs: Creative Commons Uveďte původ 2.5 Obecná licence
     en: Creative Commons Attribution 2.5 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozšiřovat odvozená díla pouze za podmínek identické či
       slučitelné licence, je nutné uvést autora. V češtině: Uveďte autora-Zachovejte
@@ -295,6 +330,8 @@
   title:
     cs: Creative Commons Uveďte původ-Zachovejte licenci 2.5 Obecná licence
     en: Creative Commons Attribution-ShareAlike 2.5 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora a pouze pro nevýdělečné účely. V
@@ -312,6 +349,8 @@
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně 2.5 Obecná licence
     en: Creative Commons Attribution-NonCommercial 2.5 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo (případně
       z něj odvozená díla) pouze pro nevýdělečné účely a pouze za podmínek identické
@@ -333,6 +372,8 @@
     cs: Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci
       2.5 Obecná licence
     en: Creative Commons Attribution-NonCommercial-ShareAlike 2.5 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo
       v původní podobě, nikoli díla z něj odvozená, je nutné uvést autora. V češtině:
@@ -350,6 +391,8 @@
   title:
     cs: Creative Commons Uveďte původ-Nezpracovávejte 2.5 Obecná licence
     en: Creative Commons Attribution-NoDerivs 2.5 Generic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo
       v původní podobě, nikoli díla z něj odvozená, pouze pro nevýdělečné účely, je
@@ -368,6 +411,8 @@
     cs: Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 2.5 Obecná
       licence
     en: Creative Commons Attribution-NonCommercial-NoDerivs 2.5 Generic License
+  tags:
+    - all
 - description:
     cs: Toto je starší verze licencí 3.0, která byla adaptována pro český právní řád.
       Pokud licencujete své vlastní dílo, které ještě nebylo pod žádnou licencí zveřejněno,
@@ -383,6 +428,8 @@
   title:
     cs: verze 3.0 Česko
     en: version 3.0 Czech Republic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora. V češtině: Uveďte autora; v angličtině:
@@ -399,6 +446,8 @@
   title:
     cs: Creative Commons Uveďte autora 3.0 Česko
     en: Creative Commons Attribution 3.0 Czech Republic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozšiřovat odvozená díla pouze za podmínek identické či
       slučitelné licence, je nutné uvést autora. V češtině: Uveďte autora-Zachovejte
@@ -417,6 +466,8 @@
   title:
     cs: Creative Commons Uveďte autora-Zachovejte licenci 3.0 Česko
     en: Creative Commons Attribution-ShareAlike 3.0 Czech Republic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora a pouze pro nevýdělečné účely. V
@@ -434,6 +485,8 @@
   title:
     cs: Creative Commons Uveďte autora-Neužívejte komerčně 3.0 Česko
     en: Creative Commons Attribution-NonCommercial 3.0 Czech Republic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo (případně
       z něj odvozená díla) pouze pro nevýdělečné účely a pouze za podmínek identické
@@ -455,6 +508,8 @@
     cs: Creative Commons Uveďte autora-Neužívejte komerčně-Zachovejte licenci 3.0
       Česko
     en: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Czech Republic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo
       v původní podobě, nikoli díla z něj odvozená, je nutné uvést autora. V češtině:
@@ -472,6 +527,8 @@
   title:
     cs: Creative Commons Uveďte autora-Nezasahujte do díla 3.0 Česko
     en: Creative Commons Attribution-NoDerivs 3.0 Czech Republic License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo
       v původní podobě, nikoli díla z něj odvozená, pouze pro nevýdělečné účely, je
@@ -490,6 +547,8 @@
     cs: Creative Commons Uveďte autora-Neužívejte komerčně-Nezasahujte do díla 3.0
       Česko
     en: Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Czech Republic License
+  tags:
+    - all
 - description:
     cs: Aktuální verze 4.0 existuje pouze jako mezinárodní, nebyla nutná adaptace
       do národních právních řádů.
@@ -503,6 +562,8 @@
   title:
     cs: verze 4.0 mezinárodní licence
     en: version 4.0 International License
+  tags:
+    - all
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora. V češtině: Uveďte původ (v češtině
@@ -518,7 +579,8 @@
   props:
     acronym: 4-BY
   tags:
-  - featured
+    - all
+    - recommended
   title:
     cs: Creative Commons Uveďte původ 4.0 Mezinárodní licence
     en: Creative Commons Attribution 4.0 International License
@@ -539,7 +601,8 @@
   props:
     acronym: 4-BY-SA
   tags:
-  - featured
+    - all
+    - recommended
   title:
     cs: Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní licence
     en: Creative Commons Attribution-ShareAlike 4.0 International License
@@ -559,7 +622,8 @@
   props:
     acronym: 4-BY-NC
   tags:
-  - featured
+    - all
+    - recommended
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní licence
     en: Creative Commons Attribution-NonCommercial 4.0 International License
@@ -582,7 +646,8 @@
   props:
     acronym: 4-BY-NC-SA
   tags:
-  - featured
+    - all
+    - recommended
   title:
     cs: Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci
       4.0 Mezinárodní licence
@@ -602,7 +667,8 @@
   props:
     acronym: 4-BY-ND
   tags:
-  - featured
+    - all
+    - recommended
   title:
     cs: Creative Commons Uveďte původ-Nezpracovávejte 4.0 Mezinárodní licence
     en: Creative Commons Attribution-NoDerivs 4.0 International License
@@ -622,7 +688,8 @@
   props:
     acronym: 4-BY-NC-ND
   tags:
-  - featured
+    - all
+    - recommended
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 4.0 Mezinárodní
       licence
