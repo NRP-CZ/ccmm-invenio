@@ -257,6 +257,12 @@ class SPARQLReader(VocabularyReader):
             for prop in list(term["props"]):
                 self.array_resolution(prop, term["props"])
 
+        # Remove empty description, the suggester tries to resolve something if description exist in the item
+        # and then it crashes if there is nothing in the object, so we need to remove the empty description
+        for term in converted.values():
+            if not term["description"]:
+                del term["description"]
+
         to_sort = [dict(term) for term in converted.values()]
 
         ret_ids: set[str] = set()
