@@ -118,7 +118,7 @@ def clean_strings():
 
 @pytest.fixture
 def vocab_fixtures():
-    """Contributor role fixture."""
+    """Create resourcetypes vocabulary type and a 'dataset' resource type entry."""
     current_vocabularies_service.create_type(system_identity, "resourcetypes", "rsrct")
 
     current_vocabularies_service.create(
