@@ -22,8 +22,10 @@ CCMMInvenioRelatedResource:
       label:
         en: Publication date
         cs: Datum publikace
+        required: true
 
     title:
+      required: true
       type: RDMTitle
       required: true
       label:
@@ -82,6 +84,7 @@ CCMMInvenioRelatedResource:
       label:
         en: Creators
         cs: Autoři
+      required: true
       type: RDMCreators
 
     contributors:
@@ -133,6 +136,7 @@ CCMMInvenioRelatedResource:
         cs: Uveďte právní podmínky upravující přístup a opětovné použití. Zahrňte licenční dokumenty a případná omezení.
 
     resource_type:
+      required: true
       type: RDMResourceType
       label:
         en: Resource type
@@ -145,6 +149,7 @@ CCMMInvenioRelatedResource:
         cs: Jazyky
 
     relation_type:
+      required: true
       type: vocabulary
       vocabulary-type: relationtypes
       label:
