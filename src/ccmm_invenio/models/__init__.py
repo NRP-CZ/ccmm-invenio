@@ -116,14 +116,19 @@ class CCMMProductionCustomizationPreset(Preset):
 
 
 class CCMMProductionDeserializer(DeserializerMixin):
+
+
     """CCMM Invenio metadata deserializer."""
+    def __init__(self, parser:type[CCMMXMLProductionParser], vocabulary_loader ):
+        self.parser = parser
+        self.vocabulary_loader = vocabulary_loader
+        super().__init__()
 
-    def deserialize(self, data: Any) -> Any:
-        """Deserialize data."""
+    def deserialize(self, data):
         root_el = fromstring(data)
-        parser = CCMMXMLProductionParser(vocabulary_loader=invenio_vocabulary_loader)
+        return self.parser(vocabulary_loader=self.vocabulary_loader).parse(root_el)
 
-        return parser.parse(root_el)
+
 
 
 def invenio_vocabulary_loader(vocabulary_type: str, iri: str) -> str:
@@ -144,6 +149,22 @@ def invenio_vocabulary_loader(vocabulary_type: str, iri: str) -> str:
     voc = next(hits.hits)
     return str(voc["id"])
 
+class SetCCMMImport(Customization):
+
+    def __init__(self, parser:type[CCMMXMLProductionParser], vocabulary_loader: Any ):
+        self.parser = parser
+        self.vocabulary_loader = vocabulary_loader
+        super().__init__(name="SetCCMMImport")
+
+    def apply(self, builder: InvenioModelBuilder, model: InvenioModel) -> None:
+        AddMetadataImport(
+            code="ccmm-xml",
+            name=_("CCMM import"),
+            mimetype="application/vnd.ccmm+xml",
+            description=_("CCMM XML export."),
+            deserializer=CCMMProductionDeserializer(parser=self.parser, vocabulary_loader=self.vocabulary_loader),
+            oai_name=("https://schema.ccmm.cz/research-data/1.1", "dataset"),
+        ).apply(builder, model)
 
 class CCMMImportPreset(Preset):
     """Preset for CCMM imports."""
@@ -156,14 +177,8 @@ class CCMMImportPreset(Preset):
         dependencies: dict[str, Any],
     ) -> Generator[Customization]:
         """Apply the preset."""
-        yield AddMetadataImport(
-            code="ccmm-xml",
-            name=_("CCMM import"),
-            mimetype="application/vnd.ccmm+xml",
-            description=_("CCMM XML export."),
-            deserializer=CCMMProductionDeserializer(),
-            oai_name=("https://schema.ccmm.cz/research-data/1.1", "dataset"),
-        )
+
+        yield SetCCMMImport(parser=CCMMXMLProductionParser, vocabulary_loader=invenio_vocabulary_loader)
 
 
 class CCMMNMACustomizationPreset(Preset):
