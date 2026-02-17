@@ -8,6 +8,12 @@
 # Because we can not know what they mean, they are not shown on the UI detail page
 # nor they are editable in the UI forms
 #
+CCMMRootRecord:
+  type: object
+  properties:
+    ccmm_xml:
+      type: keyword
+      index: false
 CCMMInvenioRelatedResource:
   type: object
   properties:

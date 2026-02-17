@@ -15,6 +15,7 @@ from typing import TYPE_CHECKING, Any, override
 from flask_resources.deserializers import DeserializerMixin
 from invenio_access.permissions import system_identity
 from invenio_i18n import lazy_gettext as _
+from invenio_records_resources.services.records.components import ServiceComponent
 from invenio_vocabularies.proxies import current_service as vocabulary_service
 from lxml.etree import fromstring
 from oarepo_model import from_yaml
@@ -22,6 +23,7 @@ from oarepo_model.api import FunctionalPreset
 from oarepo_model.customizations import (
     AddMetadataExport,
     AddMetadataImport,
+    AddToList,
     Customization,
     SetIndexNestedFieldsLimit,
     SetIndexTotalFieldsLimit,
@@ -41,8 +43,9 @@ from ..serializers import (
 if TYPE_CHECKING:
     from collections.abc import Generator
 
+    from flask_principal import Identity
+    from invenio_records.api import Record
     from oarepo_model.builder import InvenioModelBuilder
-    from oarepo_model.customizations import Customization
     from oarepo_model.model import InvenioModel
 
 
@@ -116,19 +119,18 @@ class CCMMProductionCustomizationPreset(Preset):
 
 
 class CCMMProductionDeserializer(DeserializerMixin):
-
-
     """CCMM Invenio metadata deserializer."""
-    def __init__(self, parser:type[CCMMXMLProductionParser], vocabulary_loader ):
+
+    def __init__(self, parser: type[CCMMXMLProductionParser], vocabulary_loader: Any):
+        """Construct."""
         self.parser = parser
         self.vocabulary_loader = vocabulary_loader
         super().__init__()
 
-    def deserialize(self, data):
+    def deserialize(self, data: bytes) -> dict:
+        """Deserialize data."""
         root_el = fromstring(data)
         return self.parser(vocabulary_loader=self.vocabulary_loader).parse(root_el)
-
-
 
 
 def invenio_vocabulary_loader(vocabulary_type: str, iri: str) -> str:
@@ -149,14 +151,18 @@ def invenio_vocabulary_loader(vocabulary_type: str, iri: str) -> str:
     voc = next(hits.hits)
     return str(voc["id"])
 
-class SetCCMMImport(Customization):
 
-    def __init__(self, parser:type[CCMMXMLProductionParser], vocabulary_loader: Any ):
+class SetCCMMImport(Customization):
+    """Set importer."""
+
+    def __init__(self, parser: type[CCMMXMLProductionParser], vocabulary_loader: Any):
+        """Construct importer with optional custom parser."""
         self.parser = parser
         self.vocabulary_loader = vocabulary_loader
         super().__init__(name="SetCCMMImport")
 
     def apply(self, builder: InvenioModelBuilder, model: InvenioModel) -> None:
+        """Apply importer with optional custom parser."""
         AddMetadataImport(
             code="ccmm-xml",
             name=_("CCMM import"),
@@ -165,6 +171,7 @@ class SetCCMMImport(Customization):
             deserializer=CCMMProductionDeserializer(parser=self.parser, vocabulary_loader=self.vocabulary_loader),
             oai_name=("https://schema.ccmm.cz/research-data/1.1", "dataset"),
         ).apply(builder, model)
+
 
 class CCMMImportPreset(Preset):
     """Preset for CCMM imports."""
@@ -177,7 +184,6 @@ class CCMMImportPreset(Preset):
         dependencies: dict[str, Any],
     ) -> Generator[Customization]:
         """Apply the preset."""
-
         yield SetCCMMImport(parser=CCMMXMLProductionParser, vocabulary_loader=invenio_vocabulary_loader)
 
 
@@ -202,6 +208,37 @@ class CCMMNMACustomizationPreset(Preset):
         )
 
 
+class CCMMRootRecordComponentPreset(Preset):
+    """Preset for CCMM root record components."""
+
+    modifies = ("record_service_components",)
+
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Yield component."""
+        _, _, _ = builder, model, dependencies
+
+        class RootRecordComponent(ServiceComponent):
+            def create(
+                self,
+                identity: Identity,
+                data: dict | None = None,
+                record: Record | None = None,
+                errors: list | None = None,
+                **kwargs: Any,
+            ) -> None:
+                """Inject parsed metadata to the record."""
+                _, _, _ = identity, errors, kwargs
+                if data is not None and record is not None:
+                    record["ccmm_xml"] = data.get("ccmm_xml", None)
+
+        yield AddToList("record_service_components", RootRecordComponent)
+
+
 class CCMMProductionPreset(CCMMBaseMetadataPreset):
     """Preset for CCMM production metadata."""
 
@@ -214,6 +251,16 @@ class CCMMNMAPreset(CCMMBaseMetadataPreset):
 
     types = ccmm_1_1_0()
     metadata_type = "CCMMDataSet"
+
+
+class RootRecordFieldPreset(FunctionalPreset):
+    """Record type functional preset."""
+
+    @override
+    def before_invenio_model(self, params: dict[str, Any]) -> None:
+        """Perform extra action before the Invenio model is created."""
+        if "record_type" not in params or params["record_type"] is None:
+            params["record_type"] = "CCMMRootRecord"
 
 
 class CCMMIndexSettingsPreset(Preset):
@@ -237,6 +284,8 @@ ccmm_nma_preset_1_1_0 = [
     CCMMNMAPreset,
     CCMMIndexSettingsPreset,
     CCMMNMACustomizationPreset,
+    RootRecordFieldPreset,
+    CCMMRootRecordComponentPreset,
 ]
 
 ccmm_production_preset_1_1_0 = [
@@ -245,4 +294,6 @@ ccmm_production_preset_1_1_0 = [
     CCMMImportPreset,
     CCMMIndexSettingsPreset,
     CCMMProductionCustomizationPreset,
+    RootRecordFieldPreset,
+    CCMMRootRecordComponentPreset,
 ]
