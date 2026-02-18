@@ -234,7 +234,7 @@ class CCMMRootRecordComponentPreset(Preset):
                 """Inject parsed metadata to the record."""
                 _, _, _ = identity, errors, kwargs
                 if data is not None and record is not None:
-                    record["ccmm_xml"] = data.get("ccmm_xml", None)
+                    record["ccmm_xml"] = data.get("ccmm_xml", "")
 
         yield AddToList("record_service_components", RootRecordComponent)
 
@@ -284,8 +284,6 @@ ccmm_nma_preset_1_1_0 = [
     CCMMNMAPreset,
     CCMMIndexSettingsPreset,
     CCMMNMACustomizationPreset,
-    RootRecordFieldPreset,
-    CCMMRootRecordComponentPreset,
 ]
 
 ccmm_production_preset_1_1_0 = [
