@@ -42,13 +42,17 @@ import langdetect
 import pycountry
 from invenio_access.permissions import system_identity
 from invenio_vocabularies.proxies import current_service as vocabulary_service
+from lxml import etree  # pyright: ignore[reportAttributeAccessIssue]
 
 from .nma_1_1_0 import CCMMXMLNMAParser
 
 if TYPE_CHECKING:
     from collections.abc import Callable
 
+if TYPE_CHECKING:
     from lxml.etree import _Element as Element
+else:
+    Element = Any
 
 
 log = logging.getLogger(__name__)
@@ -72,6 +76,11 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
 
         The convert methods used below transform the metadata dictionary in-place.
         """
+        xml_string = etree.tostring(
+            xml_root,
+            encoding="unicode",
+        )
+
         # at first, use the NMA parser to convert xml to json
         record: dict[str, Any] = super().parse(xml_root)  # type: ignore[misc]
         metadata = record["metadata"]
@@ -139,6 +148,7 @@ class CCMMXMLProductionParser(CCMMXMLNMAParser):
         # iri not supported
         metadata.pop("iri", None)
 
+        record["ccmm_xml"] = xml_string
         return record
 
     from typing import Any
