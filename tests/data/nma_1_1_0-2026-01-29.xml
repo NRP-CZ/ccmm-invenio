@@ -372,7 +372,10 @@
             <iri>http://purl.org/coar/resource_type/8KJG-QS0Y</iri>
             <label xml:lang="en">research instrument</label>
         </resource_type>
-        <!-- has no representative in given codelist -->
+        <resource_relation_type>
+            <iri>https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy</iri>
+            <label xml:lang="en">is referenced by</label>
+        </resource_relation_type>
     </related_resource>
     <!-- dataset -->
     <related_resource>
@@ -395,7 +398,10 @@
         <title>Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích
             stanicích</title>
         <resource_url>https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7</resource_url>
-        <!-- coar does not contain resourc etype metadata -->
+        <resource_type>
+            <iri>https://vocabularies.coar-repositories.org/resource_types/c_ddb1/</iri>
+            <label xml:lang="en">dataset</label>
+        </resource_type>
         <resource_relation_type>
             <iri>https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata</iri>
             <label xml:lang="cs">má metadata</label>

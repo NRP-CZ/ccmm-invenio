@@ -22,12 +22,10 @@ CCMMInvenioRelatedResource:
       label:
         en: Publication date
         cs: Datum publikace
-      required: true
 
     title:
       required: true
       type: RDMTitle
-      required: true
       label:
         en: Title
         cs: Název
@@ -84,7 +82,6 @@ CCMMInvenioRelatedResource:
       label:
         en: Creators
         cs: Autoři
-      required: true
       type: RDMCreators
 
     contributors:
