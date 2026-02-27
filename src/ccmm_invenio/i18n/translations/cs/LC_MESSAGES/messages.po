@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:115
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:205
+msgid "Datacite export"
+msgstr "Export do Datacite"
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:168
+msgid "CCMM import"
+msgstr "Import CCMM"
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:170
+msgid "CCMM XML export."
+msgstr "Export CCMM XML."
+
+msgid "Community"
+msgstr "Komunita"
+
+msgid "Visibility"
+msgstr "Viditelnost"
+
+msgid "Files upload"
+msgstr "Nahrání souborů"
+
+msgid "Basic information"
+msgstr "Základní informace"
+
+msgid "Creators and Contributors"
+msgstr "Autoři a přispěvatelé"
+
+msgid "Recommended information"
+msgstr "Doporučené informace"
+
+msgid "Identifiers"
+msgstr "Identifikátory"
+
+msgid "Alternate identifiers"
+msgstr "Alternativní identifikátory"
+
+msgid "Related resources"
+msgstr "Související zdroje"
+
+msgid "Add related resource"
+msgstr "Přidat související zdroj"
+
+msgid "Edit related resource"
+msgstr "Upravit související zdroj"
+
+msgid "Untitled resource"
+msgstr "Zdroj bez názvu"
+
+msgid "Edit"
+msgstr "Upravit"
+
+msgid "Remove"
+msgstr "Odstranit"
+
+msgid "Relation type is required"
+msgstr "Typ relace je povinný"
+
+msgid "Title is required"
+msgstr "Název je povinný"
+
+msgid "Resource type is required"
+msgstr "Typ zdroje je povinný"
+
+msgid "Save and add another"
+msgstr "Uložit a přidat další"
+
+msgid "Added"
+msgstr "Přidáno"
+
+msgid "Relation type"
+msgstr "Typ relace"
+
+msgid "Select relation type..."
+msgstr "Vyberte typ relace..."
+
+msgid "Additional details"
+msgstr "Další podrobnosti"
+
+msgid "Dates and Subjects"
+msgstr "Data a předměty"
+
+msgid "Funding and Rights"
+msgstr "Financování a práva"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Save"
+msgstr "Uložit"
