@@ -175,6 +175,7 @@ CCMMDataset:
     # taken from RDM
     title:
       type: RDMTitle
+      required: true
       label:
         en: Title
         cs: Název
