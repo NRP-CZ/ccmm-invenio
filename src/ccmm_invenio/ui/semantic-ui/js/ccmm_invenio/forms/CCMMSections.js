@@ -19,8 +19,9 @@ import {
   DatesField,
   CommunityHeader,
   AccessRightField,
-  DescriptionsField,
 } from "@js/invenio_rdm_records";
+import { AdditionalDescriptionsField } from "@js/invenio_rdm_records/src/deposit/fields/DescriptionsField/components";
+
 import { RelatedResourceField } from "./RelatedResourceField";
 
 export const CCMMSections = [
@@ -104,7 +105,7 @@ export const CCMMSections = [
             required
           />
           <EDTFSingleDatePicker fieldPath="metadata.publication_date" />
-          <DescriptionsField
+          <AdditionalDescriptionsField
             recordUI={_get(record, "ui", null)}
             options={vocabularies?.descriptions}
             optimized
