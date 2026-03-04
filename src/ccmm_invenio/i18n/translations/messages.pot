@@ -1,0 +1,109 @@
+# Translations template for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-02-27 12:42+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:115
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:205
+msgid "Datacite export"
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:168
+msgid "CCMM import"
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:170
+msgid "CCMM XML export."
+msgstr ""
+
+msgid "Community"
+msgstr ""
+
+msgid "Visibility"
+msgstr ""
+
+msgid "Files upload"
+msgstr ""
+
+msgid "Basic information"
+msgstr ""
+
+msgid "Creators and Contributors"
+msgstr ""
+
+msgid "Recommended information"
+msgstr ""
+
+msgid "Identifiers"
+msgstr ""
+
+msgid "Alternate identifiers"
+msgstr ""
+
+msgid "Related resources"
+msgstr ""
+
+msgid "Add related resource"
+msgstr ""
+
+msgid "Edit related resource"
+msgstr ""
+
+msgid "Untitled resource"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Relation type is required"
+msgstr ""
+
+msgid "Title is required"
+msgstr ""
+
+msgid "Resource type is required"
+msgstr ""
+
+msgid "Save and add another"
+msgstr ""
+
+msgid "Added"
+msgstr ""
+
+msgid "Relation type"
+msgstr ""
+
+msgid "Select relation type..."
+msgstr ""
+
+msgid "Additional details"
+msgstr ""
+
+msgid "Dates and Subjects"
+msgstr ""
+
+msgid "Funding and Rights"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Save"
+msgstr ""

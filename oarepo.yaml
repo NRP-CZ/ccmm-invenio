@@ -1,0 +1,10 @@
+i18n:
+  babel_output_translations: src/ccmm_invenio/i18n/translations
+  babel_source_paths:
+    - src/ccmm_invenio
+  i18next_output_translations: src/ccmm_invenio/i18n/semantic-ui/translations/ccmm_invenio
+  i18next_source_paths:
+    - src/ccmm_invenio/ui
+  languages:
+    - cs
+    - en

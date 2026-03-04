@@ -39,8 +39,17 @@ tests = [
 [project.entry-points."invenio_rdm_records.fixtures"]
 ccmm_invenio = "ccmm_invenio.fixtures"
 
+[project.entry-points."invenio_assets.webpack"]
+ccmm_invenio_ui = "ccmm_invenio.ui.webpack:theme"
+ccmm_invenio_i18n = "ccmm_invenio.i18n.webpack:theme"
+
+[project.entry-points."invenio_i18n.translations"]
+ccmm_invenio_messages = "ccmm_invenio.i18n"
+
 [tool.hatch.version]
 path = "src/ccmm_invenio/__init__.py"
 
 [tool.hatch.build.targets.sdist]
-packages = ["src/ccmm_invenio"]
+include = [
+    "/src/ccmm_invenio",
+]
