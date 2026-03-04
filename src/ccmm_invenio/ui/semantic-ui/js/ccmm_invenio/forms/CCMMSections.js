@@ -24,222 +24,265 @@ import { AdditionalDescriptionsField } from "@js/invenio_rdm_records/src/deposit
 
 import { RelatedResourceField } from "./RelatedResourceField";
 
-export const CCMMSections = [
-  {
-    key: "community",
-    label: i18next.t("Community"),
-    render: ({ initialRecord, formConfig }) => {
-      const { hide_community_selection: hideCommunitySelection } =
-        formConfig.config;
-      return (
-        !hideCommunitySelection && (
-          <CommunityHeader
-            imagePlaceholderLink="/static/images/square-placeholder.png"
-            record={initialRecord}
-          />
-        )
-      );
+const createSection =
+  (overridesFn) => (key, label, includesPaths, renderFn) => ({
+    key,
+    label,
+    includesPaths,
+    render: (renderProps) => {
+      const overrides = overridesFn?.(renderProps)?.[key] || {};
+      return renderFn({ ...renderProps, overrides });
     },
-    includesPaths: ["parent.communities"],
-  },
-  {
-    key: "visibility",
-    label: i18next.t("Visibility"),
-    render: ({ record, formConfig }) => {
-      const {
-        permissions,
-        allowRecordRestriction,
-        recordRestrictionGracePeriod,
-      } = formConfig.config;
-      return (
-        <AccessRightField
-          label={i18next.t("Visibility")}
-          record={record}
-          labelIcon="shield"
-          fieldPath="access"
-          showMetadataAccess={permissions?.can_manage_record_access}
-          recordRestrictionGracePeriod={recordRestrictionGracePeriod}
-          allowRecordRestriction={allowRecordRestriction}
-          id="visibility-section"
-        />
-      );
-    },
-    includesPaths: ["access"],
-  },
-  {
-    key: "files",
-    label: i18next.t("Files upload"),
-    render: ({ record, formConfig }) => {
-      const { filesLocked } = formConfig.config;
-      return (
-        <UppyUploader
-          isDraftRecord={!record.is_published}
-          config={formConfig}
-          quota={formConfig.quota}
-          decimalSizeDisplay={formConfig.decimal_size_display}
-          allowEmptyFiles={formConfig.allow_empty_files}
-          fileUploadConcurrency={formConfig.file_upload_concurrency}
-          showMetadataOnlyToggle={false}
-          filesLocked={filesLocked}
-        />
-      );
-    },
-    includesPaths: ["files.enabled"],
-  },
-  {
-    key: "basic-information",
-    label: i18next.t("Basic information"),
-    render: ({ record, formConfig }) => {
-      const { vocabularies } = formConfig.config;
-      return (
-        <>
-          <TitlesField
-            options={vocabularies?.titles}
-            fieldPath="metadata.title"
-            recordUI={record.ui}
-            required
+  });
+
+export const createCCMMSections = (overridesFn) => {
+  const section = createSection(overridesFn);
+
+  return [
+    section("community", i18next.t("Community"), ["parent.communities"],
+      ({ initialRecord, formConfig, overrides }) => {
+        const { hide_community_selection: hideCommunitySelection } =
+          formConfig.config;
+        return (
+          !hideCommunitySelection && (
+            <CommunityHeader
+              imagePlaceholderLink="/static/images/square-placeholder.png"
+              record={initialRecord}
+              {...overrides.CommunityHeader}
+            />
+          )
+        );
+      }
+    ),
+
+    section("visibility", i18next.t("Visibility"), ["access"],
+      ({ record, formConfig, overrides }) => {
+        const {
+          permissions,
+          allowRecordRestriction,
+          recordRestrictionGracePeriod,
+        } = formConfig.config;
+        return (
+          <AccessRightField
+            label={i18next.t("Visibility")}
+            record={record}
+            labelIcon="shield"
+            fieldPath="access"
+            showMetadataAccess={permissions?.can_manage_record_access}
+            recordRestrictionGracePeriod={recordRestrictionGracePeriod}
+            allowRecordRestriction={allowRecordRestriction}
+            id="visibility-section"
+            {...overrides.AccessRightField}
           />
-          <ResourceTypeField
-            options={vocabularies?.resource_type}
-            fieldPath="metadata.resource_type"
-            required
+        );
+      }
+    ),
+
+    section("files", i18next.t("Files upload"), ["files.enabled"],
+      ({ record, formConfig, overrides }) => {
+        const { filesLocked } = formConfig.config;
+        return (
+          <UppyUploader
+            isDraftRecord={!record.is_published}
+            config={formConfig}
+            quota={formConfig.quota}
+            decimalSizeDisplay={formConfig.decimal_size_display}
+            allowEmptyFiles={formConfig.allow_empty_files}
+            fileUploadConcurrency={formConfig.file_upload_concurrency}
+            showMetadataOnlyToggle={false}
+            filesLocked={filesLocked}
+            {...overrides.UppyUploader}
           />
-          <EDTFSingleDatePicker fieldPath="metadata.publication_date" />
-          <AdditionalDescriptionsField
-            recordUI={_get(record, "ui", null)}
-            options={vocabularies?.descriptions}
-            optimized
-            fieldPath="metadata.additional_descriptions"
-            values={record}
-          />
-          <LanguagesField
-            fieldPath="metadata.languages"
-            initialOptions={_get(record, "ui.languages", []).filter(
-              (lang) => lang !== null,
-            )}
-            serializeSuggestions={(suggestions) =>
-              suggestions.map((item) => ({
-                text: item.title_l10n,
-                value: item.id,
-                key: item.id,
-              }))
-            }
-          />
-          <PublisherField fieldPath="metadata.publisher" />
-          <LicenseField
-            fieldPath="metadata.rights"
-            searchConfig={{
-              searchApi: {
-                axios: {
-                  headers: {
-                    Accept: "application/vnd.inveniordm.v1+json",
+        );
+      }
+    ),
+
+    section(
+      "basic-information",
+      i18next.t("Basic information"),
+      [
+        "metadata.title",
+        "metadata.resource_type",
+        "metadata.publication_date",
+        "metadata.additional_descriptions",
+        "metadata.languages",
+        "metadata.publisher",
+        "metadata.rights",
+      ],
+      ({ record, formConfig, overrides }) => {
+        const { vocabularies } = formConfig.config;
+        return (
+          <>
+            <TitlesField
+              options={vocabularies?.titles || []}
+              fieldPath="metadata.title"
+              recordUI={record.ui}
+              required
+              {...overrides.TitlesField}
+            />
+            <ResourceTypeField
+              options={vocabularies?.resource_type || []}
+              fieldPath="metadata.resource_type"
+              required
+              {...overrides.ResourceTypeField}
+            />
+            <EDTFSingleDatePicker
+              fieldPath="metadata.publication_date"
+              {...overrides.EDTFSingleDatePicker}
+            />
+            <AdditionalDescriptionsField
+              recordUI={_get(record, "ui", null)}
+              options={vocabularies?.descriptions || []}
+              optimized
+              fieldPath="metadata.additional_descriptions"
+              values={record}
+              {...overrides.AdditionalDescriptionsField}
+            />
+            <LanguagesField
+              fieldPath="metadata.languages"
+              initialOptions={_get(record, "ui.languages", []).filter(
+                (lang) => lang !== null
+              )}
+              serializeSuggestions={(suggestions) =>
+                suggestions.map((item) => ({
+                  text: item.title_l10n,
+                  value: item.id,
+                  key: item.id,
+                }))
+              }
+              {...overrides.LanguagesField}
+            />
+            <PublisherField
+              fieldPath="metadata.publisher"
+              {...overrides.PublisherField}
+            />
+            <LicenseField
+              fieldPath="metadata.rights"
+              searchConfig={{
+                searchApi: {
+                  axios: {
+                    headers: {
+                      Accept: "application/vnd.inveniordm.v1+json",
+                    },
+                    url: "/api/vocabularies/licenses",
+                    withCredentials: false,
                   },
-                  url: "/api/vocabularies/licenses",
-                  withCredentials: false,
                 },
-              },
-              initialQueryState: {
-                filters: [["tags", "recommended"]],
-                sortBy: "bestmatch",
-                sortOrder: "asc",
-                layout: "list",
-                page: 1,
-                size: 12,
-              },
-            }}
-            serializeLicenses={(result) => ({
-              title: result.title_l10n,
-              description: result.description_l10n,
-              id: result.id,
-              link: result.props.url,
-            })}
-          />
-        </>
-      );
-    },
-    includesPaths: [
-      "metadata.title",
-      "metadata.resource_type",
-      "metadata.publication_date",
-      "metadata.additional_descriptions",
-      "metadata.languages",
-      "metadata.publisher",
-      "metadata.rights",
-    ],
-  },
-  {
-    key: "creators-contributors",
-    label: i18next.t("Creators and Contributors"),
-    render: () => (
-      <>
-        <CreatibutorsField
-          fieldPath="metadata.creators"
-          schema="creators"
-          autocompleteNames="search"
-        />
-        <CreatibutorsField
-          fieldPath="metadata.contributors"
-          schema="contributors"
-          autocompleteNames="search"
-          showRoleField
-        />
-      </>
+                initialQueryState: {
+                  filters: [["tags", "recommended"]],
+                  sortBy: "bestmatch",
+                  sortOrder: "asc",
+                  layout: "list",
+                  page: 1,
+                  size: 12,
+                },
+              }}
+              serializeLicenses={(result) => ({
+                title: result.title_l10n,
+                description: result.description_l10n,
+                id: result.id,
+                link: result.props.url,
+              })}
+              {...overrides.LicenseField}
+            />
+          </>
+        );
+      }
     ),
-    includesPaths: ["metadata.creators", "metadata.contributors"],
-  },
-  {
-    key: "recommended-information",
-    label: i18next.t("Recommended information"),
-    render: ({ record, formConfig }) => {
-      const { vocabularies } = formConfig.config;
-      return (
+
+    section(
+      "creators-contributors",
+      i18next.t("Creators and Contributors"),
+      ["metadata.creators", "metadata.contributors"],
+      ({ overrides }) => (
         <>
-          <VersionField fieldPath="metadata.version" />
-          <SubjectsField
-            fieldPath="metadata.subjects"
-            initialOptions={_get(record, "ui.subjects", null)}
-            limitToOptions={vocabularies?.subjects?.limit_to}
-            searchOnFocus
+          <CreatibutorsField
+            fieldPath="metadata.creators"
+            schema="creators"
+            autocompleteNames="search"
+            {...overrides.CreatorsField}
           />
-          <DatesField
-            fieldPath="metadata.dates"
-            options={vocabularies?.dates}
-            showEmptyValue
+          <CreatibutorsField
+            fieldPath="metadata.contributors"
+            schema="contributors"
+            autocompleteNames="search"
+            showRoleField
+            {...overrides.ContributorsField}
           />
         </>
-      );
-    },
-    includesPaths: ["metadata.version", "metadata.subjects", "metadata.dates"],
-  },
-  {
-    key: "identifiers",
-    label: i18next.t("Identifiers"),
-    render: ({ formConfig }) => {
-      const { vocabularies } = formConfig.config;
-      return (
-        <>
-          <IdentifiersField
-            fieldPath="metadata.identifiers"
-            label={i18next.t("Alternate identifiers")}
-            labelIcon="barcode"
-            schemeOptions={vocabularies?.identifiers?.scheme}
-            showEmptyValue
-          />
-          <FundingField fieldPath="metadata.funding" />
-        </>
-      );
-    },
-    includesPaths: ["metadata.identifiers", "metadata.funding"],
-  },
-  {
-    key: "related-resources",
-    label: i18next.t("Related resources"),
-    render: ({ record }) => (
-      <RelatedResourceField
-        fieldPath="metadata.related_resources"
-        relatedResourceUI={record.ui?.related_resources}
-      />
+      )
     ),
-    includesPaths: ["metadata.related_resources"],
-  },
-];
+
+    section(
+      "recommended-information",
+      i18next.t("Recommended information"),
+      ["metadata.version", "metadata.subjects", "metadata.dates"],
+      ({ record, formConfig, overrides }) => {
+        const { vocabularies } = formConfig.config;
+        return (
+          <>
+            <VersionField
+              fieldPath="metadata.version"
+              {...overrides.VersionField}
+            />
+            <SubjectsField
+              fieldPath="metadata.subjects"
+              initialOptions={_get(record, "ui.subjects", []).filter(
+                (subject) => subject !== null
+              )}
+              limitToOptions={vocabularies?.subjects?.limit_to || []}
+              searchOnFocus
+              {...overrides.SubjectsField}
+            />
+            <DatesField
+              fieldPath="metadata.dates"
+              options={vocabularies?.dates || []}
+              showEmptyValue
+              {...overrides.DatesField}
+            />
+          </>
+        );
+      }
+    ),
+
+    section(
+      "identifiers",
+      i18next.t("Identifiers"),
+      ["metadata.identifiers", "metadata.funding"],
+      ({ formConfig, overrides }) => {
+        const { vocabularies } = formConfig.config;
+        return (
+          <>
+            <IdentifiersField
+              fieldPath="metadata.identifiers"
+              label={i18next.t("Alternate identifiers")}
+              labelIcon="barcode"
+              schemeOptions={vocabularies?.identifiers?.scheme || []}
+              showEmptyValue
+              {...overrides.IdentifiersField}
+            />
+            <FundingField
+              fieldPath="metadata.funding"
+              {...overrides.FundingField}
+            />
+          </>
+        );
+      }
+    ),
+
+    section(
+      "related-resources",
+      i18next.t("Related resources"),
+      ["metadata.related_resources"],
+      ({ record, overrides }) => (
+        <RelatedResourceField
+          fieldPath="metadata.related_resources"
+          relatedResourceUI={record.ui?.related_resources}
+          {...overrides.RelatedResourceField}
+        />
+      )
+    ),
+  ];
+};
+
+export const CCMMSections = createCCMMSections();
