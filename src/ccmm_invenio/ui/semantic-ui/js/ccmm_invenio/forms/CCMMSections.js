@@ -198,7 +198,7 @@ export const CCMMSections = [
           <SubjectsField
             fieldPath="metadata.subjects"
             initialOptions={_get(record, "ui.subjects", null)}
-            limitToOptions={vocabularies.subjects.limit_to}
+            limitToOptions={vocabularies?.subjects?.limit_to}
             searchOnFocus
           />
           <DatesField
