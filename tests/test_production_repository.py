@@ -42,59 +42,59 @@ def test_exporter(app, db, identity_simple, search_clear, location, vocab_fixtur
     serialized_record = serializer.serialize_object(example_data)
 
     expected_xml = """<?xml version='1.0' encoding='utf-8'?>
-    <ccmm:dataset xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1">
-      <ccmm:title>Kvalita ovzduší ve středních čechách 2024</ccmm:title>
-      <ccmm:qualified_relation>
-        <ccmm:relation>
-          <ccmm:person>
-            <ccmm:name>Novák, Jan</ccmm:name>
-            <ccmm:given_name>Jan</ccmm:given_name>
-            <ccmm:family_name>Novák</ccmm:family_name>
-            <ccmm:affiliation>
-              <ccmm:organization>
-                <ccmm:name>Univerzita Karlova</ccmm:name>
-              </ccmm:organization>
-            </ccmm:affiliation>
-          </ccmm:person>
-        </ccmm:relation>
-        <ccmm:role>
-          <ccmm:iri>Other</ccmm:iri>
-        </ccmm:role>
-      </ccmm:qualified_relation>
-      <ccmm:publication_year>2025</ccmm:publication_year>
-      <ccmm:primary_language>
-        <ccmm:iri>https://id.loc.gov/vocabulary/iso639-2/cze</ccmm:iri>
-        <ccmm:label xml:lang="cs">čeština</ccmm:label>
-        <ccmm:label xml:lang="en">Czech</ccmm:label>
-      </ccmm:primary_language>
-      <ccmm:other_language>
-        <ccmm:iri>https://id.loc.gov/vocabulary/iso639-2/eng</ccmm:iri>
-        <ccmm:label xml:lang="cs">angličtina</ccmm:label>
-        <ccmm:label xml:lang="en">English</ccmm:label>
-      </ccmm:other_language>
-      <ccmm:time_reference>
-        <ccmm:temporal_representation>
-          <ccmm:time_instant>
-            <ccmm:date>2025-04-27</ccmm:date>
-          </ccmm:time_instant>
-        </ccmm:temporal_representation>
-        <ccmm:date_type>
-          <ccmm:iri>Collected</ccmm:iri>
-        </ccmm:date_type>
-        <ccmm:date_information xml:lang="en">Date collected</ccmm:date_information>
-      </ccmm:time_reference>
-      <ccmm:time_reference>
-        <ccmm:temporal_representation>
-          <ccmm:time_instant>
-            <ccmm:date>2024-01-01</ccmm:date>
-          </ccmm:time_instant>
-        </ccmm:temporal_representation>
-        <ccmm:date_type>
-          <ccmm:iri>Collected</ccmm:iri>
-        </ccmm:date_type>
-        <ccmm:date_information xml:lang="en">Collection period</ccmm:date_information>
-      </ccmm:time_reference>
-    </ccmm:dataset>
+<dataset xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1">
+  <title>Kvalita ovzduší ve středních čechách 2024</title>
+  <qualified_relation>
+    <relation>
+      <person>
+        <name>Novák, Jan</name>
+        <given_name>Jan</given_name>
+        <family_name>Novák</family_name>
+        <affiliation>
+          <organization>
+            <name>Univerzita Karlova</name>
+          </organization>
+        </affiliation>
+      </person>
+    </relation>
+    <role>
+      <iri>Other</iri>
+    </role>
+  </qualified_relation>
+  <publication_year>2025</publication_year>
+  <primary_language>
+    <iri>https://id.loc.gov/vocabulary/iso639-2/cze</iri>
+    <label xml:lang="cs">čeština</label>
+    <label xml:lang="en">Czech</label>
+  </primary_language>
+  <other_language>
+    <iri>https://id.loc.gov/vocabulary/iso639-2/eng</iri>
+    <label xml:lang="cs">angličtina</label>
+    <label xml:lang="en">English</label>
+  </other_language>
+  <time_reference>
+    <temporal_representation>
+      <time_instant>
+        <date>2025-04-27</date>
+      </time_instant>
+    </temporal_representation>
+    <date_type>
+      <iri>Collected</iri>
+    </date_type>
+    <date_information xml:lang="en">Date collected</date_information>
+  </time_reference>
+  <time_reference>
+    <temporal_representation>
+      <time_instant>
+        <date>2024-01-01</date>
+      </time_instant>
+    </temporal_representation>
+    <date_type>
+      <iri>Collected</iri>
+    </date_type>
+    <date_information xml:lang="en">Collection period</date_information>
+  </time_reference>
+</dataset>
     """
 
     assert canonicalize(serialized_record) == canonicalize(expected_xml)

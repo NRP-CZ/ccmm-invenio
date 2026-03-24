@@ -56,38 +56,38 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
 
     def build_xml(self, data: dict) -> etree._Element:
         """Build CCMM XML tree from serialized data."""
-        root = etree.Element(f"{{{CCMM_NS}}}dataset", nsmap=NSMAP)
+        root = etree.Element("dataset", nsmap=NSMAP)
 
         # title
         title = data.get("title")
         if title:
-            title_el = etree.SubElement(root, f"{{{CCMM_NS}}}title")
+            title_el = etree.SubElement(root, "title")
             title_el.text = title
 
         # creators
         for creator in data.get("creators", []):
-            qr_el = etree.SubElement(root, f"{{{CCMM_NS}}}qualified_relation")
+            qr_el = etree.SubElement(root, "qualified_relation")
 
-            relation_el = etree.SubElement(qr_el, f"{{{CCMM_NS}}}relation")
+            relation_el = etree.SubElement(qr_el, "relation")
 
             creator_type = creator.get("type")
             if creator_type == "organizational":
-                agent_el = etree.SubElement(relation_el, f"{{{CCMM_NS}}}organization")
+                agent_el = etree.SubElement(relation_el, "organization")
                 self._append_organization(agent_el, creator)
             else:
-                agent_el = etree.SubElement(relation_el, f"{{{CCMM_NS}}}person")
+                agent_el = etree.SubElement(relation_el, "person")
                 self._append_person(agent_el, creator)
 
-            role_el = etree.SubElement(qr_el, f"{{{CCMM_NS}}}role")
+            role_el = etree.SubElement(qr_el, "role")
             role_id = creator.get("role_id")
             if role_id:
-                iri_el = etree.SubElement(role_el, f"{{{CCMM_NS}}}iri")
+                iri_el = etree.SubElement(role_el, "iri")
                 iri_el.text = role_id
 
         # publication_year
         publication_year = data.get("publication_year")
         if publication_year:
-            pub_el = etree.SubElement(root, f"{{{CCMM_NS}}}publication_year")
+            pub_el = etree.SubElement(root, "publication_year")
             pub_el.text = publication_year
 
         # languages
@@ -100,7 +100,7 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
 
         # dates
         for date_obj in data.get("dates", []):
-            time_ref_el = etree.SubElement(root, f"{{{CCMM_NS}}}time_reference")
+            time_ref_el = etree.SubElement(root, "time_reference")
             self._append_time_reference(time_ref_el, date_obj)
 
         return root
@@ -109,43 +109,43 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
         """Append person element with names and affiliations."""
         name = creator.get("name")
         if name:
-            name_el = etree.SubElement(parent, f"{{{CCMM_NS}}}name")
+            name_el = etree.SubElement(parent, "name")
             name_el.text = name
 
         given_name = creator.get("given_name")
         if given_name:
-            gn_el = etree.SubElement(parent, f"{{{CCMM_NS}}}given_name")
+            gn_el = etree.SubElement(parent, "given_name")
             gn_el.text = given_name
 
         family_name = creator.get("family_name")
         if family_name:
-            fn_el = etree.SubElement(parent, f"{{{CCMM_NS}}}family_name")
+            fn_el = etree.SubElement(parent, "family_name")
             fn_el.text = family_name
 
         for aff_name in creator.get("affiliations", []):
-            aff_el = etree.SubElement(parent, f"{{{CCMM_NS}}}affiliation")
-            org_el = etree.SubElement(aff_el, f"{{{CCMM_NS}}}organization")
-            org_name_el = etree.SubElement(org_el, f"{{{CCMM_NS}}}name")
+            aff_el = etree.SubElement(parent, "affiliation")
+            org_el = etree.SubElement(aff_el, "organization")
+            org_name_el = etree.SubElement(org_el, "name")
             org_name_el.text = aff_name
 
     def _append_organization(self, parent: etree._Element, creator: dict) -> None:
         """Append organization element with name."""
         name = creator.get("name")
         if name:
-            name_el = etree.SubElement(parent, f"{{{CCMM_NS}}}name")
+            name_el = etree.SubElement(parent, "name")
             name_el.text = name
 
     def _build_language_element(self, element_name: str, language: dict) -> etree._Element:
         """Build language element with IRI and labels."""
-        lang_el = etree.Element(f"{{{CCMM_NS}}}{element_name}")
+        lang_el = etree.Element(f"{element_name}")
 
         iri = language.get("iri")
         if iri:
-            iri_el = etree.SubElement(lang_el, f"{{{CCMM_NS}}}iri")
+            iri_el = etree.SubElement(lang_el, "iri")
             iri_el.text = iri
 
         for label in language.get("labels", []):
-            label_el = etree.SubElement(lang_el, f"{{{CCMM_NS}}}label")
+            label_el = etree.SubElement(lang_el, "label")
             label_el.text = label["value"]
             label_el.set(f"{{{XML_NS}}}lang", label["lang"])
 
@@ -153,29 +153,29 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
 
     def _append_time_reference(self, parent: etree._Element, date_obj: dict) -> None:
         """Append time reference element with date and metadata."""
-        temporal_representation_el = etree.SubElement(parent, f"{{{CCMM_NS}}}temporal_representation")
+        temporal_representation_el = etree.SubElement(parent, "temporal_representation")
 
         date_value = date_obj.get("date")
         if date_value:
             if self._looks_like_year(date_value):
-                time_instant_el = etree.SubElement(temporal_representation_el, f"{{{CCMM_NS}}}time_instant")
+                time_instant_el = etree.SubElement(temporal_representation_el, "time_instant")
                 year_as_date = f"{date_value}-01-01"
-                date_el = etree.SubElement(time_instant_el, f"{{{CCMM_NS}}}date")
+                date_el = etree.SubElement(time_instant_el, "date")
                 date_el.text = year_as_date
             else:
-                time_instant_el = etree.SubElement(temporal_representation_el, f"{{{CCMM_NS}}}time_instant")
-                date_el = etree.SubElement(time_instant_el, f"{{{CCMM_NS}}}date")
+                time_instant_el = etree.SubElement(temporal_representation_el, "time_instant")
+                date_el = etree.SubElement(time_instant_el, "date")
                 date_el.text = date_value
 
-        date_type_el = etree.SubElement(parent, f"{{{CCMM_NS}}}date_type")
+        date_type_el = etree.SubElement(parent, "date_type")
         type_iri = date_obj.get("type_id")
         if type_iri:
-            iri_el = etree.SubElement(date_type_el, f"{{{CCMM_NS}}}iri")
+            iri_el = etree.SubElement(date_type_el, "iri")
             iri_el.text = type_iri
 
         date_information = date_obj.get("description")
         if date_information:
-            info_el = etree.SubElement(parent, f"{{{CCMM_NS}}}date_information")
+            info_el = etree.SubElement(parent, "date_information")
             info_el.text = date_information
             info_el.set(f"{{{XML_NS}}}lang", "en")
 
