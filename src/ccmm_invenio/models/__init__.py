@@ -120,7 +120,10 @@ class CCMMProductionCustomizationPreset(Preset):
 
 
 class SetCCMMExport(Customization):
+    """Preset for CCMM export."""
+
     def apply(self, builder: InvenioModelBuilder, model: InvenioModel) -> None:
+        """Set CCMM metadata exporter."""
         AddMetadataExport(
             code="ccmm-xml",
             name=_("CCMM XML Export"),
