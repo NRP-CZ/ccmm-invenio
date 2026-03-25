@@ -66,6 +66,23 @@ def test_exporter(app, db, identity_simple, search_clear, location, vocab_fixtur
       <iri>Other</iri>
     </role>
   </qualified_relation>
+  <qualified_relation>
+    <relation>
+      <person>
+        <name>Nielsen, Lars Holm</name>
+        <given_name>Lars Holm</given_name>
+        <family_name>Nielsen</family_name>
+        <affiliation>
+          <organization>
+            <name>custom</name>
+          </organization>
+        </affiliation>
+      </person>
+    </relation>
+    <role>
+      <iri>other</iri>
+    </role>
+  </qualified_relation>
   <publication_year>2025</publication_year>
   <primary_language>
     <iri>http://publications.europa.eu/resource/authority/language/CES</iri>

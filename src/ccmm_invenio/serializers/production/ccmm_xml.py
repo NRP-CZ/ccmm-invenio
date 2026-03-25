@@ -72,26 +72,11 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
             title_el.text = title
 
         # creators
-        for creator in data.get("creators", []):
-            qr_el = etree.SubElement(root, "qualified_relation")
+        self._append_agents(root, data.get("creators", []))
 
-            relation_el = etree.SubElement(qr_el, "relation")
+        # contributors (nově přidané)
+        self._append_agents(root, data.get("contributors", []))
 
-            creator_type = creator.get("type")
-            if creator_type == "organizational":
-                agent_el = etree.SubElement(relation_el, "organization")
-                self._append_organization(agent_el, creator)
-            else:
-                agent_el = etree.SubElement(relation_el, "person")
-                self._append_person(agent_el, creator)
-
-            role_el = etree.SubElement(qr_el, "role")
-            role_id = creator.get("role_id")
-            if role_id:
-                iri_el = etree.SubElement(role_el, "iri")
-                iri_el.text = role_id
-
-        # publication_year
         publication_year = data.get("publication_year")
         if publication_year:
             pub_el = etree.SubElement(root, "publication_year")
@@ -111,6 +96,26 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
             self._append_time_reference(time_ref_el, date_obj)
 
         return root
+
+    def _append_agents(self, root: etree._Element, agents: list[dict]) -> None:
+        """Append creators or contributors into XML (shared structure)."""
+        for agent in agents:
+            qr_el = etree.SubElement(root, "qualified_relation")
+            relation_el = etree.SubElement(qr_el, "relation")
+
+            agent_type = agent.get("type")
+            if agent_type == "organizational":
+                agent_el = etree.SubElement(relation_el, "organization")
+                self._append_organization(agent_el, agent)
+            else:
+                agent_el = etree.SubElement(relation_el, "person")
+                self._append_person(agent_el, agent)
+
+            role_el = etree.SubElement(qr_el, "role")
+            role_id = agent.get("role_id")
+            if role_id:
+                iri_el = etree.SubElement(role_el, "iri")
+                iri_el.text = role_id
 
     def _append_person(self, parent: etree._Element, creator: dict) -> None:
         """Append person element with names and affiliations."""
@@ -185,6 +190,7 @@ class CCMMXMLSchema(BaseSerializerSchema):
     primary_language = fields.Method("get_primary_language")
     other_languages = fields.Method("get_other_languages")
     dates = fields.Method("get_dates")
+    contributors = fields.Method("get_contributors")
 
     def get_title(self, obj: dict) -> str:
         """Extract title from record metadata."""
@@ -195,10 +201,14 @@ class CCMMXMLSchema(BaseSerializerSchema):
         """Extract creators list from record metadata."""
         metadata = obj.get("metadata", {})
         creators = metadata.get("creators", [])
+        return self.process_creatibutors(creators)
+
+    def process_creatibutors(self, creatibutors: list) -> list:
+        """Process creators and contributors list."""
         result = []
 
-        for creator in creators:
-            person_or_org = creator.get("person_or_org", {})
+        for creatibutor in creatibutors:
+            person_or_org = creatibutor.get("person_or_org", {})
             if not person_or_org.get("name"):
                 continue
 
@@ -208,12 +218,18 @@ class CCMMXMLSchema(BaseSerializerSchema):
                     "type": person_or_org.get("type"),
                     "given_name": person_or_org.get("given_name"),  # if no given name etc., it will be handled later
                     "family_name": person_or_org.get("family_name"),
-                    "role_id": creator.get("role", {}).get("id"),
-                    "affiliations": [aff.get("name") for aff in creator.get("affiliations", []) if aff.get("name")],
+                    "role_id": creatibutor.get("role", {}).get("id"),
+                    "affiliations": [aff.get("name") for aff in creatibutor.get("affiliations", []) if aff.get("name")],
                 }
             )
 
         return result
+
+    def get_contributors(self, obj: dict) -> list:
+        """Extract contributors list from record metadata."""
+        metadata = obj.get("metadata", {})
+        contributors = metadata.get("contributors", [])
+        return self.process_creatibutors(contributors)
 
     def get_publication_year(self, obj: dict) -> str | None:
         """Extract publication year from publication date."""
