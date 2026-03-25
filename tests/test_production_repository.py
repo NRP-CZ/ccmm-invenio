@@ -112,6 +112,14 @@ def test_exporter(app, db, identity_simple, search_clear, location, vocab_fixtur
     </date_type>
     <date_information xml:lang="en">Collection period</date_information>
   </time_reference>
+  <identifier>
+    <iri>https://doi.org/10.45321/as36sl</iri>
+    <value>10.45321/as36sl</value>
+    <scheme>
+      <iri>https://doi.org/</iri>
+      <label xml:lang="en">DataCite DOI</label>
+    </scheme>
+  </identifier>
 </dataset>
     """
 

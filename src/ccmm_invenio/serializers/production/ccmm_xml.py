@@ -10,8 +10,10 @@
 
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any
 
+import yaml
 from flask_resources import BaseListSchema, MarshmallowSerializer
 from flask_resources.serializers import BaseSerializerSchema, SimpleSerializer
 from lxml import etree  # pyright: ignore[reportAttributeAccessIssue]
@@ -65,6 +67,7 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
         """Build CCMM XML tree from serialized data."""
         root = etree.Element("dataset", nsmap=NSMAP)
         root.set(f"{{{XSI_NS}}}schemaLocation", SCHEMA_LOCATION)
+
         # title
         title = data.get("title")
         if title:
@@ -74,9 +77,10 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
         # creators
         self._append_agents(root, data.get("creators", []))
 
-        # contributors (nově přidané)
+        # contributors
         self._append_agents(root, data.get("contributors", []))
 
+        # publication year
         publication_year = data.get("publication_year")
         if publication_year:
             pub_el = etree.SubElement(root, "publication_year")
@@ -95,7 +99,55 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
             time_ref_el = etree.SubElement(root, "time_reference")  # TODO: intervals
             self._append_time_reference(time_ref_el, date_obj)
 
+        # identifiers
+        self._append_identifiers(root, data.get("identifiers", []))
+
         return root
+
+    def _get_identifier_scheme_iri(self, scheme_id: str) -> str:
+        """Map identifier scheme id to its IRI."""
+        scheme = IDENTIFIER_SCHEMES.get(str(scheme_id), {})
+        return str(scheme.get("iri") or scheme_id)
+
+    def _get_identifier_scheme_label(self, scheme_id: str) -> str | None:
+        """Map identifier scheme id to its label."""
+        scheme = IDENTIFIER_SCHEMES.get(str(scheme_id), {})
+        label = scheme.get("label")
+        if label:
+            return str(label)
+        return None
+
+    def _append_identifiers(self, parent: etree._Element, identifiers: list[dict[str, Any]]) -> None:
+        """Append identifiers."""
+        for identifier in identifiers:
+            value = identifier.get("identifier")
+            scheme_id = identifier.get("scheme")
+            if not value or not scheme_id:
+                continue
+
+            identifier_el = etree.SubElement(parent, "identifier")
+
+            identifier_iri = identifier.get("iri")
+            if not identifier_iri:
+                scheme_iri = self._get_identifier_scheme_iri(scheme_id)
+                if scheme_iri and scheme_iri != "urn:iri":
+                    identifier_iri = f"{scheme_iri}{value}"
+            if identifier_iri:
+                iri_el = etree.SubElement(identifier_el, "iri")
+                iri_el.text = str(identifier_iri)
+
+            value_el = etree.SubElement(identifier_el, "value")
+            value_el.text = str(value)
+
+            scheme_el = etree.SubElement(identifier_el, "scheme")
+            scheme_iri_el = etree.SubElement(scheme_el, "iri")
+            scheme_iri_el.text = self._get_identifier_scheme_iri(scheme_id)
+
+            scheme_label = self._get_identifier_scheme_label(scheme_id)
+            if scheme_label:
+                label_el = etree.SubElement(scheme_el, "label")
+                label_el.text = scheme_label
+                label_el.set(f"{{{XML_NS}}}lang", "en")
 
     def _append_agents(self, root: etree._Element, agents: list[dict]) -> None:
         """Append creators or contributors into XML (shared structure)."""
@@ -181,6 +233,31 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
             info_el.set(f"{{{XML_NS}}}lang", "en")
 
 
+def _load_identifier_schemes() -> dict[str, dict[str, str]]:
+    """Load identifier schemes from fixtures."""
+    fixtures_path = Path(__file__).resolve().parents[2] / "fixtures" / "ccmm_identifier_schemes.yaml"
+    try:
+        with fixtures_path.open(encoding="utf-8") as f:
+            records = yaml.safe_load(f) or []
+    except (OSError, yaml.YAMLError):
+        return {}
+
+    schemes: dict[str, dict[str, str]] = {}
+    for record in records:
+        scheme_id = record.get("id")
+        if not scheme_id:
+            continue
+        schemes[str(scheme_id)] = {
+            "iri": str(record.get("props", {}).get("iri", "")),
+            "label": str(record.get("title", {}).get("en", "") or record.get("title", {}).get("cs", "")),
+        }
+
+    return schemes
+
+
+IDENTIFIER_SCHEMES = _load_identifier_schemes()
+
+
 class CCMMXMLSchema(BaseSerializerSchema):
     """Schema for extracting CCMM XML-relevant data from record."""
 
@@ -191,6 +268,13 @@ class CCMMXMLSchema(BaseSerializerSchema):
     other_languages = fields.Method("get_other_languages")
     dates = fields.Method("get_dates")
     contributors = fields.Method("get_contributors")
+    identifiers = fields.Method("get_identifiers")
+
+    def get_identifiers(self, obj: dict) -> list:
+        """Extract dataset identifiers."""
+        metadata = obj.get("metadata", {})
+        identifiers = metadata.get("identifiers", [])
+        return self.process_identifiers(identifiers)
 
     def get_title(self, obj: dict) -> str:
         """Extract title from record metadata."""
@@ -220,6 +304,28 @@ class CCMMXMLSchema(BaseSerializerSchema):
                     "family_name": person_or_org.get("family_name"),
                     "role_id": creatibutor.get("role", {}).get("id"),
                     "affiliations": [aff.get("name") for aff in creatibutor.get("affiliations", []) if aff.get("name")],
+                }
+            )
+
+        return result
+
+    def process_identifiers(self, identifiers: list[dict[str, Any]] | None) -> list[dict[str, Any]]:
+        """Process dataset identifiers."""
+        if not identifiers:
+            return []
+
+        result = []
+        for ident in identifiers:
+            identifier = ident.get("identifier")
+            scheme = ident.get("scheme")
+            if not identifier or not scheme:
+                continue
+            result.append(
+                {
+                    "identifier": identifier,
+                    "scheme": scheme,
+                    "iri": ident.get("iri"),
+                    "authorized": ident.get("authorized"),
                 }
             )
 
