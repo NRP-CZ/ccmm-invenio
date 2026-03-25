@@ -82,7 +82,7 @@ def test_exporter(app, db, identity_simple, search_clear, location, vocab_fixtur
   <time_reference>
     <temporal_representation>
       <time_instant>
-        <date>2024-01-01</date>
+        <date>2024</date>
       </time_instant>
     </temporal_representation>
     <date_type>

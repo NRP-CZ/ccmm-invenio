@@ -102,7 +102,7 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
 
         # dates
         for date_obj in data.get("dates", []):
-            time_ref_el = etree.SubElement(root, "time_reference")
+            time_ref_el = etree.SubElement(root, "time_reference")  # TODO: intervals
             self._append_time_reference(time_ref_el, date_obj)
 
         return root
@@ -154,15 +154,9 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
 
         date_value = date_obj.get("date")
         if date_value:
-            if self._looks_like_year(date_value):
-                time_instant_el = etree.SubElement(temporal_representation_el, "time_instant")
-                year_as_date = f"{date_value}-01-01"
-                date_el = etree.SubElement(time_instant_el, "date")
-                date_el.text = year_as_date
-            else:
-                time_instant_el = etree.SubElement(temporal_representation_el, "time_instant")
-                date_el = etree.SubElement(time_instant_el, "date")
-                date_el.text = date_value
+            time_instant_el = etree.SubElement(temporal_representation_el, "time_instant")
+            date_el = etree.SubElement(time_instant_el, "date")
+            date_el.text = date_value
 
         date_type_el = etree.SubElement(parent, "date_type")
         type_iri = date_obj.get("type_id")
@@ -175,10 +169,6 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
             info_el = etree.SubElement(parent, "date_information")
             info_el.text = date_information
             info_el.set(f"{{{XML_NS}}}lang", "en")
-
-    def _looks_like_year(self, value: str) -> bool:
-        """Return True if value looks like YYYY."""
-        return len(value) == YEAR_LENGTH and value.isdigit()
 
 
 class CCMMXMLSchema(BaseSerializerSchema):
