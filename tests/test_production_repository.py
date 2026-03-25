@@ -63,14 +63,10 @@ def test_exporter(app, db, identity_simple, search_clear, location, vocab_fixtur
   </qualified_relation>
   <publication_year>2025</publication_year>
   <primary_language>
-    <iri>https://id.loc.gov/vocabulary/iso639-2/cze</iri>
-    <label xml:lang="cs">čeština</label>
-    <label xml:lang="en">Czech</label>
+    <iri>http://publications.europa.eu/resource/authority/language/CES</iri>
   </primary_language>
   <other_language>
-    <iri>https://id.loc.gov/vocabulary/iso639-2/eng</iri>
-    <label xml:lang="cs">angličtina</label>
-    <label xml:lang="en">English</label>
+    <iri>http://publications.europa.eu/resource/authority/language/ENG</iri>
   </other_language>
   <time_reference>
     <temporal_representation>

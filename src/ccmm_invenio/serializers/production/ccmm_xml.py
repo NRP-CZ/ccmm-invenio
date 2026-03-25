@@ -27,6 +27,8 @@ NSMAP = {
     "xml": XML_NS,
 }
 
+LANGUAGE_IRI = "http://publications.europa.eu/resource/authority/language/"
+
 
 class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
     """Serializer CCMM XML."""
@@ -135,19 +137,14 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
             name_el = etree.SubElement(parent, "name")
             name_el.text = name
 
-    def _build_language_element(self, element_name: str, language: dict) -> etree._Element:
+    def _build_language_element(self, element_name: str, language: str) -> etree._Element:
         """Build language element with IRI and labels."""
         lang_el = etree.Element(f"{element_name}")
 
-        iri = language.get("iri")
+        iri = language
         if iri:
             iri_el = etree.SubElement(lang_el, "iri")
             iri_el.text = iri
-
-        for label in language.get("labels", []):
-            label_el = etree.SubElement(lang_el, "label")
-            label_el.text = label["value"]
-            label_el.set(f"{{{XML_NS}}}lang", label["lang"])
 
         return lang_el
 
@@ -184,24 +181,6 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
         return len(value) == YEAR_LENGTH and value.isdigit()
 
 
-LANGUAGE_VOCABULARY = {
-    "CES": {
-        "iri": "https://id.loc.gov/vocabulary/iso639-2/cze",
-        "labels": [
-            {"lang": "cs", "value": "čeština"},
-            {"lang": "en", "value": "Czech"},
-        ],
-    },
-    "ENG": {
-        "iri": "https://id.loc.gov/vocabulary/iso639-2/eng",
-        "labels": [
-            {"lang": "cs", "value": "angličtina"},
-            {"lang": "en", "value": "English"},
-        ],
-    },
-}
-
-
 class CCMMXMLSchema(BaseSerializerSchema):
     """Schema for extracting CCMM XML-relevant data from record."""
 
@@ -232,7 +211,7 @@ class CCMMXMLSchema(BaseSerializerSchema):
                 {
                     "name": person_or_org.get("name"),
                     "type": person_or_org.get("type"),
-                    "given_name": person_or_org.get("given_name"),
+                    "given_name": person_or_org.get("given_name"),  # if no given name etc., it will be handled later
                     "family_name": person_or_org.get("family_name"),
                     "role_id": creator.get("role", {}).get("id"),
                     "affiliations": [aff.get("name") for aff in creator.get("affiliations", []) if aff.get("name")],
@@ -256,11 +235,11 @@ class CCMMXMLSchema(BaseSerializerSchema):
         if not languages:
             return None
 
-        lang_id = languages[0].get("id")
+        lang_id = languages[0].get("id")  # TODO: primary language == first language?
         if not lang_id:
             return None
 
-        return self._map_language(lang_id)  # TODO: how to handle vocabularies?
+        return self._get_language_iri(lang_id)
 
     def get_other_languages(self, obj: dict) -> list:
         """Extract and map additional languages from metadata."""
@@ -272,7 +251,7 @@ class CCMMXMLSchema(BaseSerializerSchema):
             lang_id = lang.get("id")
             if not lang_id:
                 continue
-            result.append(self._map_language(lang_id))
+            result.append(self._get_language_iri(lang_id))
 
         return result
 
@@ -297,14 +276,6 @@ class CCMMXMLSchema(BaseSerializerSchema):
 
         return result
 
-    def _map_language(self, lang_id: str) -> dict:  # TODO: handle this differently?
-        """Map language ID to vocabulary entry or fallback."""
-        return LANGUAGE_VOCABULARY.get(
-            lang_id,
-            {
-                "iri": lang_id,
-                "labels": [
-                    {"lang": "en", "value": lang_id},
-                ],
-            },
-        )
+    def _get_language_iri(self, lang_id: str) -> str:
+        """Map language ID to iri entry."""
+        return str(LANGUAGE_IRI + lang_id)
