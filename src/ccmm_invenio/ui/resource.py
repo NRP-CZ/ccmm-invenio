@@ -6,14 +6,12 @@
 # ccmm-invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 #
-"""CCMM UI module."""
+"""Resource class for CCMM record UI resources."""
 
 from __future__ import annotations
 
-from ccmm_invenio.ui.config import CCMMRecordsUIResourceConfig
-from ccmm_invenio.ui.resource import CCMMRecordsUIResource
+from oarepo_rdm.ui.resource import RDMRecordsUIResource
 
-__all__ = (
-    "CCMMRecordsUIResource",
-    "CCMMRecordsUIResourceConfig",
-)
+
+class CCMMRecordsUIResource(RDMRecordsUIResource):
+    """Base resource for CCMM UI resources."""
