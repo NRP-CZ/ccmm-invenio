@@ -42,7 +42,12 @@ def test_exporter(app, db, identity_simple, search_clear, location, vocab_fixtur
     serialized_record = serializer.serialize_object(example_data)
 
     expected_xml = """<?xml version='1.0' encoding='utf-8'?>
-<dataset xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1">
+<dataset
+    xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://model.ccmm.cz/research-data/dataset/schema.xsd"
+>
   <title>Kvalita ovzduší ve středních čechách 2024</title>
   <qualified_relation>
     <relation>

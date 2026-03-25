@@ -21,10 +21,15 @@ YEAR_LENGTH = 4
 
 CCMM_NS = "https://schema.ccmm.cz/research-data/1.1"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
+XSI_NS = "http://www.w3.org/2001/XMLSchema-instance"
+GML_NS = "http://www.opengis.net/gml/3.2"
+SCHEMA_LOCATION = "https://schema.ccmm.cz/research-data/1.1 https://model.ccmm.cz/research-data/dataset/schema.xsd"
 
 NSMAP = {
     "ccmm": CCMM_NS,
     "xml": XML_NS,
+    "gml": GML_NS,
+    "xsi": XSI_NS,
 }
 
 LANGUAGE_IRI = "http://publications.europa.eu/resource/authority/language/"
@@ -59,7 +64,7 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
     def build_xml(self, data: dict) -> etree._Element:
         """Build CCMM XML tree from serialized data."""
         root = etree.Element("dataset", nsmap=NSMAP)
-
+        root.set(f"{{{XSI_NS}}}schemaLocation", SCHEMA_LOCATION)
         # title
         title = data.get("title")
         if title:
