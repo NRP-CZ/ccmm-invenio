@@ -10,4 +10,9 @@
 
 from __future__ import annotations
 
-__version__ = "1.1.0a13"
+from importlib.metadata import PackageNotFoundError, version
+
+try:
+    __version__ = version("ccmm-invenio")
+except PackageNotFoundError:
+    __version__ = "0.0.0dev0+unknown"
