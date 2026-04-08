@@ -83,130 +83,143 @@ def test_parse_production_1_1_0(clean_strings):
 
     cleaned_expected_metadata = clean_strings(
         {
-            "title": "Kvalita ovzduší ve středních čechách 2024",
-            "version": "1.0.23",
-            "publication_date": "2025-04-27",
-            "additional_titles": [
-                {
-                    "title": "Air quality measurements in Central Bohemian Region in 2024.",
-                    "type": {"id": "translatedTitle"},
-                    "lang": {"id": "ENG"},
-                }
-            ],
-            "additional_descriptions": [
-                {
-                    "description": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v roce 2024.",
-                    "type": {"id": "abstract"},
-                    "lang": {"id": "CES"},
-                }
-            ],
-            "identifiers": [{"identifier": "10.5281/zenodo.17594128", "scheme": "doi"}],
-            "creators": [
-                {
-                    "role": {"id": "Creator"},
-                    "person_or_org": {
-                        "name": "Šimek, Miroslav",
-                        "type": "personal",
-                        "given_name": "Miroslav",
-                        "family_name": "Šimek",
-                        "identifiers": [{"identifier": "0000-0003-0852-6632", "scheme": "orcid"}],
-                    },
-                    "affiliations": [{"name": "Univerzita Karlova"}],
-                }
-            ],
-            "subjects": [
-                {"id": "Frascati:10511", "subject": "Environmentální vědy"},
-                {"subject": "kvalita ovzduší"},
-                {"id": "INSPIRE:EF", "subject": "Environmental monitoring facilities"},
-            ],
-            "funding": [
-                {
-                    "funder": {"name": "Grantová agentura České republiky"},
-                    "award": {
-                        "title": {"en": "Program for air pollution research"},
-                        "number": "https://doi.org/award-identifier",
-                    },
-                }
-            ],
-            "related_resources": [
-                {
-                    "title": "Směrnice Evropského parlamentu a Rady 2008/50/ES ze dne 21. května 2008 o "
-                    "kvalitě vnějšího ovzduší a čistším ovzduší pro Evropu",
-                    "identifiers": [
-                        {"identifier": "http://data.europa.eu/eli/dir/2008/50/oj"},
-                        {
-                            "identifier": 'https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050"%26"qid=1754039487879'
-                        },
-                    ],
-                    "relation_type": {"id": "IsReferencedBy"},
-                    "resource_type": {"id": "Software"},
-                },
-                {
-                    "title": "ENVI LVS1 Sampler pro odběr prašného aerosolu",
-                    "identifiers": [
-                        {
-                            "identifier": "https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu"
-                        }
-                    ],
-                    "resource_type": {"id": "PhysicalObject"},
-                },
-                {
-                    "title": "Kvalita ovzduší – aktuální hodinové údaje",  # noqa: RUF001
-                    "identifiers": [
-                        {"identifier": "https://opendata.chmi.cz/air_quality/now/data/"},
-                        {"identifier": "https://opendata.chmi.cz/air_quality/"},
-                    ],
-                    "relation_type": {"id": "IsDerivedFrom"},
-                    "resource_type": {"id": "ObservationData"},
-                },
-                {
-                    "title": "Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích stanicích",  # noqa: RUF001
-                    "identifiers": [
-                        {
-                            "identifier": "https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7"
-                        }
-                    ],
-                    "relation_type": {"id": "HasMetadata"},
-                },
-            ],
-            "resource_type": {"id": "Dataset"},
-            "languages": [{"id": "CES"}, {"id": "ENG"}],
-            "locations": {
-                "features": [
+            "metadata": {
+                "title": "Kvalita ovzduší ve středních čechách 2024",
+                "version": "1.0.23",
+                "publication_date": "2025-04-27",
+                "additional_titles": [
                     {
-                        "place": "Středočeský kraj",
-                        "identifiers": [{"scheme": "iri", "identifier": "https://vdp.cuzk.gov.cz/vdp/ruian/vusc/27"}],
-                        "geometry": {
-                            "type": "Polygon",
-                            "coordinates": [
-                                [
-                                    [13.394972457505816, 49.50127042751268],
-                                    [15.585575400519133, 49.50127042751268],
-                                    [15.585575400519133, 50.61421606255462],
-                                    [13.394972457505816, 50.61421606255462],
-                                    [13.394972457505816, 49.50127042751268],
-                                ]
-                            ],
-                        },
-                        "description": "Collected",
+                        "title": "Air quality measurements in Central Bohemian Region in 2024.",
+                        "type": {"id": "translatedTitle"},
+                        "lang": {"id": "ENG"},
                     }
-                ]
-            },
-            "dates": [
-                {"date": "2025-04-27", "type": {"id": "Created"}},
-                {"date": "2024-01-01", "type": {"id": "Collected"}},
-            ],
-            "rights": [
-                {
-                    "link": "https://creativecommons.org/licenses/by/4.0/",
-                    "title": {"en": "Attribution 4.0 International"},
-                }
-            ],
+                ],
+                "additional_descriptions": [
+                    {
+                        "description": "Tato datová sada obsahuje měření kvality "
+                        "ovzduší ve středních Čechách v roce 2024.",
+                        "type": {"id": "abstract"},
+                        "lang": {"id": "CES"},
+                    }
+                ],
+                "identifiers": [{"identifier": "10.5281/zenodo.17594128", "scheme": "doi"}],
+                "creators": [
+                    {
+                        "role": {"id": "Creator"},
+                        "person_or_org": {
+                            "name": "Šimek, Miroslav",
+                            "type": "personal",
+                            "given_name": "Miroslav",
+                            "family_name": "Šimek",
+                            "identifiers": [{"identifier": "0000-0003-0852-6632", "scheme": "orcid"}],
+                        },
+                        "affiliations": [{"name": "Univerzita Karlova"}],
+                    }
+                ],
+                "subjects": [
+                    {"id": "Frascati:10511", "subject": "Environmentální vědy"},
+                    {"subject": "kvalita ovzduší"},
+                    {
+                        "id": "INSPIRE:EF",
+                        "subject": "Environmental monitoring facilities",
+                    },
+                ],
+                "funding": [
+                    {
+                        "funder": {"name": "Grantová agentura České republiky"},
+                        "award": {
+                            "title": {"en": "Program for air pollution research"},
+                            "number": "https://doi.org/award-identifier",
+                        },
+                    }
+                ],
+                "related_resources": [
+                    {
+                        "title": "Směrnice Evropského parlamentu a Rady 2008/50/ES ze dne 21. května 2008 o "
+                        "kvalitě vnějšího ovzduší a čistším ovzduší pro Evropu",
+                        "identifiers": [
+                            {"identifier": "http://data.europa.eu/eli/dir/2008/50/oj"},
+                            {
+                                "identifier": 'https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050"%26"qid=1754039487879'
+                            },
+                        ],
+                        "relation_type": {"id": "IsReferencedBy"},
+                        "resource_type": {"id": "Software"},
+                    },
+                    {
+                        "title": "ENVI LVS1 Sampler pro odběr prašného aerosolu",
+                        "identifiers": [
+                            {
+                                "identifier": "https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu"
+                            }
+                        ],
+                        "relation_type": {"id": "IsReferencedBy"},
+                        "resource_type": {"id": "PhysicalObject"},
+                    },
+                    {
+                        "title": "Kvalita ovzduší – aktuální hodinové údaje",  # noqa: RUF001
+                        "identifiers": [
+                            {"identifier": "https://opendata.chmi.cz/air_quality/now/data/"},
+                            {"identifier": "https://opendata.chmi.cz/air_quality/"},
+                        ],
+                        "relation_type": {"id": "IsDerivedFrom"},
+                        "resource_type": {"id": "ObservationData"},
+                    },
+                    {
+                        "title": "Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) "  # noqa: RUF001
+                        "na měřicích stanicích",
+                        "identifiers": [
+                            {
+                                "identifier": "https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7"
+                            }
+                        ],
+                        "relation_type": {"id": "HasMetadata"},
+                        "resource_type": {"id": "Dataset"},
+                    },
+                ],
+                "resource_type": {"id": "Dataset"},
+                "languages": [{"id": "CES"}, {"id": "ENG"}],
+                "locations": {
+                    "features": [
+                        {
+                            "place": "Středočeský kraj",
+                            "identifiers": [
+                                {
+                                    "scheme": "iri",
+                                    "identifier": "https://vdp.cuzk.gov.cz/vdp/ruian/vusc/27",
+                                }
+                            ],
+                            "geometry": {
+                                "type": "Polygon",
+                                "coordinates": [
+                                    [
+                                        [13.394972457505816, 49.50127042751268],
+                                        [15.585575400519133, 49.50127042751268],
+                                        [15.585575400519133, 50.61421606255462],
+                                        [13.394972457505816, 50.61421606255462],
+                                        [13.394972457505816, 49.50127042751268],
+                                    ]
+                                ],
+                            },
+                            "description": "Collected",
+                        }
+                    ]
+                },
+                "dates": [
+                    {"date": "2025-04-27", "type": {"id": "Created"}},
+                    {"date": "2024-01-01", "type": {"id": "Collected"}},
+                ],
+                "rights": [
+                    {
+                        "link": "https://creativecommons.org/licenses/by/4.0/",
+                        "title": {"en": "Attribution 4.0 International"},
+                    }
+                ],
+            }
         }
     )
 
-    assert cleaned_record["metadata"] == cleaned_expected_metadata
-
+    assert cleaned_record["metadata"] == cleaned_expected_metadata["metadata"]
     assert "ccmm_xml" in cleaned_record
     assert isinstance(cleaned_record["ccmm_xml"], str)
     assert cleaned_record["ccmm_xml"].lstrip().startswith("<?xml") or cleaned_record["ccmm_xml"].lstrip().startswith(

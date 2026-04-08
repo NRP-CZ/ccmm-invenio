@@ -449,6 +449,7 @@ def test_parse_nma_1_1_0(clean_strings):
                         "vnějšího ovzduší a čistším ovzduší pro Evropu",
                     },
                     {
+                        "resource_relation_type": {"id": "IsReferencedBy"},
                         "resource_type": {"id": "PhysicalObject"},
                         "resource_url": "https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu",
                         "title": "ENVI LVS1 Sampler pro odběr prašného aerosolu",
@@ -463,6 +464,7 @@ def test_parse_nma_1_1_0(clean_strings):
                     {
                         "iri": "https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7",
                         "resource_relation_type": {"id": "HasMetadata"},
+                        "resource_type": {"id": "Dataset"},
                         "resource_url": "https://data.gov.cz/zdroj/datov%C3%A9-sady/00020699/c724d055011d82189bbfc3766ffd1eb7",
                         "title": "Metadata datoivé sady INSPIRE – Kvalita ovzduší – přehledy (data) na měřicích\n"  # noqa: RUF001
                         "            stanicích",
