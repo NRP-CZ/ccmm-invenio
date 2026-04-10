@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-02-27 12:42+0100\n"
+"POT-Creation-Date: 2026-04-10 08:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,28 +30,28 @@ msgstr ""
 msgid "CCMM XML export."
 msgstr ""
 
-msgid "Community"
+msgid "Alternative identifiers"
+msgstr ""
+
+msgid "Alternate identifiers"
+msgstr ""
+
+msgid "Community and Access"
 msgstr ""
 
 msgid "Visibility"
 msgstr ""
 
-msgid "Files upload"
+msgid "Upload files"
 msgstr ""
 
-msgid "Basic information"
+msgid "Funding"
 msgstr ""
 
-msgid "Creators and Contributors"
+msgid "General information"
 msgstr ""
 
-msgid "Recommended information"
-msgstr ""
-
-msgid "Identifiers"
-msgstr ""
-
-msgid "Alternate identifiers"
+msgid "Related works"
 msgstr ""
 
 msgid "Related resources"
@@ -87,6 +87,9 @@ msgstr ""
 msgid "Added"
 msgstr ""
 
+msgid "Basic information"
+msgstr ""
+
 msgid "Relation type"
 msgstr ""
 
@@ -94,6 +97,12 @@ msgid "Select relation type..."
 msgstr ""
 
 msgid "Additional details"
+msgstr ""
+
+msgid "Identifiers"
+msgstr ""
+
+msgid "Creators and Contributors"
 msgstr ""
 
 msgid "Dates and Subjects"
