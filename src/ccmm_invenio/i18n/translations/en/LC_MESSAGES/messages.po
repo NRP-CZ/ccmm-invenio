@@ -92,3 +92,21 @@ msgstr ""
 
 msgid "Save"
 msgstr ""
+
+msgid "Alternative identifiers"
+msgstr ""
+
+msgid "Community and Access"
+msgstr ""
+
+msgid "Upload files"
+msgstr ""
+
+msgid "Funding"
+msgstr ""
+
+msgid "General information"
+msgstr ""
+
+msgid "Related works"
+msgstr ""

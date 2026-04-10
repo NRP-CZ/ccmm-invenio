@@ -92,3 +92,21 @@ msgstr "Zrušit"
 
 msgid "Save"
 msgstr "Uložit"
+
+msgid "Alternative identifiers"
+msgstr "Alternativní identifikátory"
+
+msgid "Community and Access"
+msgstr "Komunita a přístup"
+
+msgid "Upload files"
+msgstr "Nahrání souborů"
+
+msgid "Funding"
+msgstr "Financování"
+
+msgid "General information"
+msgstr "Obecné informace"
+
+msgid "Related works"
+msgstr "Související zdroje"

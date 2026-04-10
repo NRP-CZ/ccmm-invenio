@@ -18,7 +18,7 @@ export const CCMMAlternativeIdentifiers = {
       >
         <IdentifiersField
           fieldPath="metadata.identifiers"
-          label={i18next.t("Alternate identifiers")}
+          label={i18next.t("Alternative identifiers")}
           labelIcon="barcode"
           schemeOptions={vocabularies?.identifiers?.scheme}
           showEmptyValue
