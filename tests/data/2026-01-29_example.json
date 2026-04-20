@@ -51,7 +51,31 @@
           {
             "name": "Univerzita Karlova"
           }
-        ]
+        ],
+        "identifiers": [
+            {
+              "scheme": "orcid",
+              "identifier": "0000-0001-8135-3489"
+            }
+          ]
+      }
+    ],
+    "contributors": [
+      {
+        "person_or_org": {
+          "name": "Nielsen, Lars Holm",
+          "type": "personal",
+          "given_name": "Lars Holm",
+          "family_name": "Nielsen",
+          "identifiers": [
+            {
+              "scheme": "orcid",
+              "identifier": "0000-0001-8135-3489"
+            }
+          ]
+        },
+        "role": { "id": "other" },
+        "affiliations": [{ "id": "cern" }, { "name": "custom" }]
       }
     ],
     "subjects": [

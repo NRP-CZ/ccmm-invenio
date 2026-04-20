@@ -34,6 +34,7 @@ from oarepo_rdm.model.presets import rdm_minimal_preset
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
 
 from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
+from ccmm_invenio.serializers.production.ccmm_xml import CCMMProductionXMLSerializer_1_1_0
 
 from ..serializers import (
     CCMMNMADataCiteJSONSerializer_1_1_0,
@@ -116,6 +117,37 @@ class CCMMProductionCustomizationPreset(Preset):
             mimetype="application/vnd.datacite.datacite+json",
             serializer=CCMMProductionDataCiteJSONSerializer_1_1_0(),
         )
+
+
+class SetCCMMExport(Customization):
+    """Preset for CCMM export."""
+
+    def apply(self, builder: InvenioModelBuilder, model: InvenioModel) -> None:
+        """Set CCMM metadata exporter."""
+        AddMetadataExport(
+            code="ccmm-xml",
+            name=_("CCMM XML Export"),
+            mimetype="application/vnd.ccmm+xml",
+            description=_("CCMM XML export."),
+            serializer=CCMMProductionXMLSerializer_1_1_0(),
+            display=True,
+        ).apply(builder, model)
+
+
+class CCMMExportPreset(Preset):
+    """Preset for CCMM imports."""
+
+    modifies = ("exports",)
+
+    @override
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Apply the preset."""
+        yield SetCCMMExport("CCMM XML export")
 
 
 class CCMMProductionDeserializer(DeserializerMixin):
@@ -290,6 +322,7 @@ ccmm_production_preset_1_1_0 = [
     *rdm_minimal_preset,
     CCMMProductionPreset,
     CCMMImportPreset,
+    CCMMExportPreset,
     CCMMIndexSettingsPreset,
     CCMMProductionCustomizationPreset,
     RootRecordFieldPreset,

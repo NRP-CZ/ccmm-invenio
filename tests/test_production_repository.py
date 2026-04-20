@@ -8,7 +8,122 @@
 #
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
+from lxml import etree
+
+from ccmm_invenio.serializers.production.ccmm_xml import CCMMProductionXMLSerializer_1_1_0
 from tests.model import production_dataset
+
+
+def canonicalize(xml_string):
+    parser = etree.XMLParser(remove_blank_text=True)
+    root = etree.fromstring(xml_string.encode(), parser)
+    return etree.tostring(root, method="c14n")
+
+
+def test_exporter(app, db, identity_simple, search_clear, location, vocab_fixtures):
+    exports = production_dataset.exports
+    ccmm_xml_in_exports = False
+    for ex in exports:
+        if ex.name == "CCMM XML Export":
+            ccmm_xml_in_exports = True
+
+    assert ccmm_xml_in_exports
+
+    serializer = CCMMProductionXMLSerializer_1_1_0()
+
+    file_path = Path(__file__).parent / "data" / "2026-01-29_example.json"
+
+    with file_path.open("r", encoding="utf-8") as f:
+        example_data = json.load(f)
+
+    serialized_record = serializer.serialize_object(example_data)
+
+    expected_xml = """<?xml version='1.0' encoding='utf-8'?>
+<dataset
+    xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://schema.ccmm.cz/research-data/1.1 https://model.ccmm.cz/research-data/dataset/schema.xsd"
+>
+  <title>Kvalita ovzduší ve středních čechách 2024</title>
+  <qualified_relation>
+    <relation>
+      <person>
+        <name>Novák, Jan</name>
+        <given_name>Jan</given_name>
+        <family_name>Novák</family_name>
+        <affiliation>
+          <organization>
+            <name>Univerzita Karlova</name>
+          </organization>
+        </affiliation>
+      </person>
+    </relation>
+    <role>
+      <iri>Other</iri>
+    </role>
+  </qualified_relation>
+  <qualified_relation>
+    <relation>
+      <person>
+        <name>Nielsen, Lars Holm</name>
+        <given_name>Lars Holm</given_name>
+        <family_name>Nielsen</family_name>
+        <affiliation>
+          <organization>
+            <name>custom</name>
+          </organization>
+        </affiliation>
+      </person>
+    </relation>
+    <role>
+      <iri>other</iri>
+    </role>
+  </qualified_relation>
+  <publication_year>2025</publication_year>
+  <primary_language>
+    <iri>http://publications.europa.eu/resource/authority/language/CES</iri>
+  </primary_language>
+  <other_language>
+    <iri>http://publications.europa.eu/resource/authority/language/ENG</iri>
+  </other_language>
+  <time_reference>
+    <temporal_representation>
+      <time_instant>
+        <date>2025-04-27</date>
+      </time_instant>
+    </temporal_representation>
+    <date_type>
+      <iri>Collected</iri>
+    </date_type>
+    <date_information xml:lang="en">Date collected</date_information>
+  </time_reference>
+  <time_reference>
+    <temporal_representation>
+      <time_instant>
+        <date>2024</date>
+      </time_instant>
+    </temporal_representation>
+    <date_type>
+      <iri>Collected</iri>
+    </date_type>
+    <date_information xml:lang="en">Collection period</date_information>
+  </time_reference>
+  <identifier>
+    <iri>https://doi.org/10.45321/as36sl</iri>
+    <value>10.45321/as36sl</value>
+    <scheme>
+      <iri>https://doi.org/</iri>
+      <label xml:lang="en">DataCite DOI</label>
+    </scheme>
+  </identifier>
+</dataset>
+    """
+
+    assert canonicalize(serialized_record) == canonicalize(expected_xml)
 
 
 def test_create(app, db, identity_simple, search_clear, location, vocab_fixtures):
