@@ -3,6 +3,7 @@ import { buildUID } from "react-searchkit";
 import Overridable from "react-overridable";
 import { i18next } from "@translations/ccmm_invenio";
 import { UppyUploader } from "@js/invenio_rdm_records";
+import { computeFilesSectionFilled } from "@js/oarepo_ui/forms";
 
 export const CCMMFiles = {
   key: "files",
@@ -26,5 +27,6 @@ export const CCMMFiles = {
       </Overridable>
     );
   },
+  sectionFilled: computeFilesSectionFilled,
   includesPaths: ["files.enabled"],
 };
