@@ -7,3 +7,11 @@ access:c_14cb skos:prefLabel "pouze metadata"@cs .
 access:c_16ec skos:prefLabel "omezený přístup"@cs .
 access:c_abf2 skos:prefLabel "otevřený přístup"@cs .
 access:c_f1cf skos:prefLabel "odložené zpřístupnění"@cs .
+
+
+# openaire mappings
+@prefix props: <http://vocabs.ccmm.cz/props/> .
+access:c_f1cf props:openaire "info:eu-repo/semantics/embargoedAccess" .
+access:c_abf2 props:openaire "info:eu-repo/semantics/openAccess" .
+access:c_16ec props:openaire "info:eu-repo/semantics/restrictedAccess" .
+access:c_14cb props:openaire "info:eu-repo/semantics/openAccess" .
