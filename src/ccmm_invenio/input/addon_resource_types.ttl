@@ -67,3 +67,116 @@ coar_rt:c_ddb1 props:lindat "Spreadsheet" .     # dataset
 coar_rt:c_ecc8 props:lindat "OBRAZ" .           # still image
 coar_rt:c_86bc props:lindat "bibliography" .    # bibliography
 coar_rt:c_e059 props:lindat "onlineCourse" .    # learning object
+
+
+# openaire mappings
+coar_rt:542X-3S04 props:openaire "design" .
+coar_rt:8KJG-QS0Y props:openaire "research instrument" .
+coar_rt:EHVM-H119 props:openaire "research data" .
+coar_rt:F8RT-TJK0 props:openaire "artistic work" .
+coar_rt:GSZA-Y7V7 props:openaire "knowledge organization system" .
+coar_rt:H6QP-SC1X props:openaire "trademark" .
+coar_rt:RMP5-3GQ6 props:openaire "collection" .
+coar_rt:S7R1-K5P0 props:openaire "physical sample" .
+coar_rt:c_12cc props:openaire "cartographic material" .
+coar_rt:c_15cd props:openaire "patent" .
+coar_rt:c_1843 props:openaire "other" .
+coar_rt:c_18cc props:openaire "sound" .
+coar_rt:c_18cf props:openaire "text" .
+coar_rt:c_18hj props:openaire "report to funding agency" .
+coar_rt:c_18wq props:openaire "other type of report" .
+coar_rt:c_18ww props:openaire "internal report" .
+coar_rt:c_2659 props:openaire "periodical" .
+coar_rt:c_26e4 props:openaire "interview" .
+coar_rt:c_393c props:openaire "workflow" .
+coar_rt:c_3e5a props:openaire "contribution to journal" .
+coar_rt:c_5ce6 props:openaire "software" .
+coar_rt:c_ba1f props:openaire "report part" .
+coar_rt:c_c513 props:openaire "image" .
+coar_rt:c_ddb1 props:openaire "dataset" .
+coar_rt:c_e059 props:openaire "learning object" .
+coar_rt:c_e9a0 props:openaire "interactive resource" .
+coar_rt:1YTN-RJZE props:openaire "court documents" .
+coar_rt:2H0M-X761 props:openaire "geospatial data" .
+coar_rt:63NG-B465 props:openaire "experimental data" .
+coar_rt:6NC7-GK9S props:openaire "transcription" .
+coar_rt:9DKX-KSAF props:openaire "utility model" .
+coar_rt:A8F1-NPV9 props:openaire "genomic data" .
+coar_rt:ACF7-8YT9 props:openaire "aggregated data" .
+coar_rt:AM6W-6QAW props:openaire "encoded data" .
+coar_rt:BW7T-YM2G props:openaire "layout design" .
+coar_rt:C53B-JCY5 props:openaire "design patent" .
+coar_rt:CQMR-7K63 props:openaire "recorded data" .
+coar_rt:DD58-GFSX props:openaire "measurement and test data" .
+coar_rt:FF4C-28RK props:openaire "observational data" .
+coar_rt:FXF3-D3G7 props:openaire "compiled data" .
+coar_rt:GPQ7-G5VE props:openaire "plant variety protection" .
+coar_rt:H41Y-FW7B props:openaire "laboratory notebook" .
+coar_rt:JBNF-DYAD props:openaire "industrial design" .
+coar_rt:MW8G-3CR8 props:openaire "software patent" .
+coar_rt:NHD0-W6SY props:openaire "survey data" .
+coar_rt:QH80-2R4E props:openaire "source code" .
+coar_rt:QX5C-AR31 props:openaire "other periodical" .
+coar_rt:SB3Y-W4EH props:openaire "PCT application" .
+coar_rt:W2XT-7017 props:openaire "simulation data" .
+coar_rt:YC9F-HGCF props:openaire "archival collection" .
+coar_rt:Z907-YMBB props:openaire "plant patent" .
+coar_rt:c_0040 props:openaire "manuscript" .
+coar_rt:c_0640 props:openaire "journal" .
+coar_rt:c_0857 props:openaire "letter" .
+coar_rt:c_1162 props:openaire "annotation" .
+coar_rt:c_12cd props:openaire "map" .
+coar_rt:c_18cd props:openaire "musical composition" .
+coar_rt:c_18cw props:openaire "musical notation" .
+coar_rt:c_2cd9 props:openaire "magazine" .
+coar_rt:c_2f33 props:openaire "book" .
+coar_rt:c_2fe3 props:openaire "newspaper" .
+coar_rt:c_3248 props:openaire "book part" .
+coar_rt:c_46ec props:openaire "thesis" .
+coar_rt:c_545b props:openaire "letter to the editor" .
+coar_rt:c_6501 props:openaire "journal article" .
+coar_rt:c_6947 props:openaire "blog post" .
+coar_rt:c_71bd props:openaire "technical documentation" .
+coar_rt:c_7a1f props:openaire "bachelor thesis" .
+coar_rt:c_7acd props:openaire "corrigendum" .
+coar_rt:c_7ad9 props:openaire "website" .
+coar_rt:c_7bab props:openaire "software paper" .
+coar_rt:c_8042 props:openaire "working paper" .
+coar_rt:c_816b props:openaire "preprint" .
+coar_rt:c_8544 props:openaire "lecture" .
+coar_rt:c_86bc props:openaire "bibliography" .
+coar_rt:c_8a7e props:openaire "moving image" .
+coar_rt:c_93fc props:openaire "report" .
+coar_rt:c_998f props:openaire "newspaper article" .
+coar_rt:c_ab20 props:openaire "data management plan" .
+coar_rt:c_b239 props:openaire "editorial" .
+coar_rt:c_baaf props:openaire "research proposal" .
+coar_rt:c_bdcc props:openaire "master thesis" .
+coar_rt:c_beb9 props:openaire "data paper" .
+coar_rt:c_c94f props:openaire "conference output" .
+coar_rt:c_c950 props:openaire "research software" .
+coar_rt:c_cb28 props:openaire "clinical trial data" .
+coar_rt:c_db06 props:openaire "doctoral thesis" .
+coar_rt:c_dcae04bc props:openaire "review article" .
+coar_rt:c_ecc8 props:openaire "still image" .
+coar_rt:c_efa0 props:openaire "review" .
+coar_rt:c_f744 props:openaire "conference proceedings" .
+coar_rt:43KC-T6DC props:openaire "magazine article" .
+coar_rt:D97F-VB57 props:openaire "commentary" .
+coar_rt:DX5J-TA9R props:openaire "knowledge synthesis protocol" .
+coar_rt:H9BQ-739P props:openaire "peer review" .
+coar_rt:R60J-J5BD props:openaire "conference presentation" .
+coar_rt:YZ1N-ZFT9 props:openaire "research protocol" .
+coar_rt:c_12ce props:openaire "video" .
+coar_rt:c_186u props:openaire "policy report" .
+coar_rt:c_18co props:openaire "conference poster not in proceedings" .
+coar_rt:c_18cp props:openaire "conference paper not in proceedings" .
+coar_rt:c_18gh props:openaire "technical report" .
+coar_rt:c_18op props:openaire "project deliverable" .
+coar_rt:c_18ws props:openaire "research report" .
+coar_rt:c_18wz props:openaire "memorandum" .
+coar_rt:c_2df8fbb1 props:openaire "research article" .
+coar_rt:c_5794 props:openaire "conference paper" .
+coar_rt:c_6670 props:openaire "conference poster" .
+coar_rt:c_7877 props:openaire "clinical study" .
+coar_rt:c_ba08 props:openaire "book review" .

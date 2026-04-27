@@ -2,6 +2,7 @@
   props:
     datacite: Abstract
     iri: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract
+    openaire: Abstract
   title:
     en: Abstract
     sv: Abstract
@@ -12,6 +13,7 @@
   props:
     datacite: Methods
     iri: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods
+    openaire: Methods
   title:
     en: Methods
     sv: Metoder
@@ -22,6 +24,7 @@
   props:
     datacite: SeriesInformation
     iri: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/SeriesInformation
+    openaire: SeriesInformation
   title:
     en: Series information
     sv: Information om serien
@@ -32,6 +35,7 @@
   props:
     datacite: TableOfContents
     iri: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TableOfContents
+    openaire: TableOfContents
   title:
     en: Table of contents
     sv: Innehållsförteckning
@@ -42,6 +46,7 @@
   props:
     datacite: TechnicalInfo
     iri: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo
+    openaire: Other
   title:
     en: Technical info
     sv: Teknisk information
@@ -52,6 +57,7 @@
   props:
     datacite: Other
     iri: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Other
+    openaire: Other
   title:
     en: Other
     sv: Övrig

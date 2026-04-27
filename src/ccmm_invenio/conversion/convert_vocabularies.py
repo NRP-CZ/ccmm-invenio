@@ -43,13 +43,18 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
     converters: list[tuple[VocabularyReader, Path]] = [
         (
             # TODO: the CSV does not include dataCiteCode, we needd to add it there !!!
-            CSVReader("Agent Role", root_dir / "input/CCMM_slovniky(AgentRole).csv"),
+            CSVReader(
+                "Agent Role",
+                root_dir / "input/CCMM_slovniky(AgentRole).csv",
+                extra=[root_dir / "input/addon_agent_roles.csv"],
+            ),
             root_dir / "fixtures/ccmm_agent_roles.yaml",
         ),
         (
             CSVReader(
                 "Alternate Title",
                 root_dir / "input/CCMM_slovniky(AlternateTitle).csv",
+                extra=[root_dir / "input/addon_alternate_title_types.csv"],
             ),
             root_dir / "fixtures/ccmm_alternate_title_types.yaml",
         ),
@@ -64,7 +69,10 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
             CSVReader(
                 "Relation Type",
                 root_dir / "input/CCMM_slovniky(RelationType).csv",
-                extra=[root_dir / "input/addon_relation_types.csv"],
+                extra=[
+                    root_dir / "input/addon_relation_types.csv",
+                    root_dir / "input/addon_relation_types_openaire.csv",
+                ],
             ),
             root_dir / "fixtures/ccmm_relation_types.yaml",
         ),
@@ -79,6 +87,7 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
             CSVReader(
                 "Time Reference",
                 root_dir / "input/CCMM_slovniky(TimeReference).csv",
+                extra=[root_dir / "input/addon_time_reference_types.csv"],
             ),
             root_dir / "fixtures/ccmm_time_reference_types.yaml",
         ),
@@ -118,6 +127,14 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
                 format="turtle",
                 load_subgraphs=False,
                 extra=root_dir / "input/addon_access_rights.ttl",
+                extra_props={
+                    "openaire": """
+                        ?concept props:openaire ?openaire
+                    """,
+                },
+                prefixes={
+                    "props": "http://vocabs.ccmm.cz/props/",
+                },
             ),
             root_dir / "fixtures/ccmm_access_rights.yaml",
         ),
@@ -135,6 +152,9 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
                     """,
                     "lindat": """
                         ?concept props:lindat ?lindat
+                    """,
+                    "openaire": """
+                        ?concept props:openaire ?openaire
                     """,
                 },
                 prefixes={
