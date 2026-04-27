@@ -15,6 +15,10 @@ from typing import TYPE_CHECKING, Any, override
 from flask_resources.deserializers import DeserializerMixin
 from invenio_access.permissions import system_identity
 from invenio_i18n import lazy_gettext as _
+from invenio_rdm_records.resources.config import csl_url_args_retriever
+from invenio_rdm_records.resources.serializers import (
+    StringCitationSerializer,  # type: ignore[reportAttributeAccessIssue]
+)
 from invenio_records_resources.services.records.components import ServiceComponent
 from invenio_vocabularies.proxies import current_service as vocabulary_service
 from lxml.etree import fromstring
@@ -115,6 +119,12 @@ class CCMMProductionCustomizationPreset(Preset):
             name=_("Datacite export"),
             mimetype="application/vnd.datacite.datacite+json",
             serializer=CCMMProductionDataCiteJSONSerializer_1_1_0(),
+        )
+        yield AddMetadataExport(
+            code="citation",
+            name=_("Citation"),
+            mimetype="text/x-bibliography",
+            serializer=StringCitationSerializer(url_args_retriever=csl_url_args_retriever),
         )
 
 
