@@ -3,7 +3,7 @@ import { buildUID } from "react-searchkit";
 import Overridable from "react-overridable";
 import { i18next } from "@translations/ccmm_invenio";
 import { CommunityHeader, AccessRightField } from "@js/invenio_rdm_records";
-import { computeSectionFilled, isFilled } from "@js/oarepo_ui/forms";
+import { computeSectionCompletion, isFilled } from "@js/oarepo_ui/forms";
 import _get from "lodash/get";
 
 export const CCMMCommunityAndAccess = {
@@ -50,11 +50,18 @@ export const CCMMCommunityAndAccess = {
       </>
     );
   },
-  sectionFilled: ({ formikValues, reduxState, includesPaths }) => {
-    const formikFilled = computeSectionFilled({ formikValues, reduxState, includesPaths });
+  sectionCompletion: ({ formikValues, reduxState, includesPaths }) => {
+    const formikCompletion = computeSectionCompletion({
+      formikValues,
+      reduxState,
+      includesPaths,
+    });
     const community = _get(reduxState, "deposit.editorState.selectedCommunity");
-    const communityFilled = isFilled(community) ? 1 : 0;
-    return (formikFilled * includesPaths.length + communityFilled) / (includesPaths.length + 1);
+    const communityCompletion = isFilled(community) ? 1 : 0;
+    return (
+      (formikCompletion * includesPaths.length + communityCompletion) /
+      (includesPaths.length + 1)
+    );
   },
   includesPaths: ["access"],
 };
