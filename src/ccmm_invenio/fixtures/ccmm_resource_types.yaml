@@ -4,6 +4,7 @@
   id: 542X-3S04
   props:
     iri: http://purl.org/coar/resource_type/542X-3S04
+    datacite: Other
   title:
     cs: design
     en: design
@@ -14,6 +15,7 @@
   id: 8KJG-QS0Y
   props:
     iri: http://purl.org/coar/resource_type/8KJG-QS0Y
+    datacite: Instrument
   title:
     cs: research instrument
     en: research instrument
@@ -26,6 +28,7 @@
   id: EHVM-H119
   props:
     iri: http://purl.org/coar/resource_type/EHVM-H119
+    datacite: Dataset
   title:
     cs: research data
     en: research data
@@ -38,6 +41,7 @@
   id: F8RT-TJK0
   props:
     iri: http://purl.org/coar/resource_type/F8RT-TJK0
+    datacite: Other
   title:
     cs: artistic work
     en: artistic work
@@ -53,6 +57,7 @@
   id: GSZA-Y7V7
   props:
     iri: http://purl.org/coar/resource_type/GSZA-Y7V7
+    datacite: Text
     lindat: lexicalConceptualResource
   title:
     cs: knowledge organization system
@@ -71,6 +76,7 @@
   id: H6QP-SC1X
   props:
     iri: http://purl.org/coar/resource_type/H6QP-SC1X
+    datacite: Other
   title:
     cs: trademark
     en: trademark
@@ -82,6 +88,8 @@
   id: RMP5-3GQ6
   props:
     iri: http://purl.org/coar/resource_type/RMP5-3GQ6
+    datacite: Collection
+    openaire: Collection
   title:
     cs: collection
     en: collection
@@ -97,6 +105,7 @@
   id: S7R1-K5P0
   props:
     iri: http://purl.org/coar/resource_type/S7R1-K5P0
+    datacite: PhysicalObject
   title:
     cs: physical sample
     en: physical sample
@@ -110,6 +119,7 @@
   id: c_12cc
   props:
     iri: http://purl.org/coar/resource_type/c_12cc
+    datacite: Image
   title:
     cs: kartografický dokument
     en: cartographic material
@@ -119,6 +129,7 @@
   id: c_15cd
   props:
     iri: http://purl.org/coar/resource_type/c_15cd
+    datacite: Other
     zenodo: publication-patent
     zenodo-publication-patent: 'true'
   title:
@@ -133,6 +144,8 @@
   id: c_1843
   props:
     iri: http://purl.org/coar/resource_type/c_1843
+    datacite: Other
+    openaire: Other
     zenodo: event, model, other, physicalobject, publication-other
     zenodo-event: 'true'
     zenodo-model: 'true'
@@ -153,6 +166,8 @@
   id: c_18cc
   props:
     iri: http://purl.org/coar/resource_type/c_18cc
+    datacite: Sound
+    openaire: Sound
     zenodo: audio
     zenodo-audio: 'true'
   title:
@@ -170,6 +185,8 @@
   id: c_18cf
   props:
     iri: http://purl.org/coar/resource_type/c_18cf
+    datacite: Text
+    openaire: Text
     lindat: corpus, languageDescription
     zenodo: publication, publication-annotationcollection, publication-datapaper,
       publication-milestone, publication-standard, publication-taxonomictreatment
@@ -195,6 +212,7 @@
   id: c_18hj
   props:
     iri: http://purl.org/coar/resource_type/c_18hj
+    datacite: Report
   title:
     cs: zpráva pro poskytovatele podpory
     en: report to funding agency
@@ -209,6 +227,7 @@
   id: c_18wq
   props:
     iri: http://purl.org/coar/resource_type/c_18wq
+    datacite: Report
   title:
     cs: jiná zpráva
     en: other type of report
@@ -220,6 +239,7 @@
   id: c_18ww
   props:
     iri: http://purl.org/coar/resource_type/c_18ww
+    datacite: Report
   title:
     cs: interní zpráva
     en: internal report
@@ -231,6 +251,7 @@
   id: c_2659
   props:
     iri: http://purl.org/coar/resource_type/c_2659
+    datacite: Journal
   title:
     cs: periodikum
     en: periodical
@@ -242,6 +263,7 @@
   id: c_26e4
   props:
     iri: http://purl.org/coar/resource_type/c_26e4
+    datacite: Text
   title:
     cs: interview
     en: interview
@@ -255,6 +277,8 @@
   id: c_393c
   props:
     iri: http://purl.org/coar/resource_type/c_393c
+    datacite: Workflow
+    openaire: Workflow
     zenodo: workflow
     zenodo-workflow: 'true'
   title:
@@ -270,6 +294,7 @@
   id: c_3e5a
   props:
     iri: http://purl.org/coar/resource_type/c_3e5a
+    datacite: JournalArticle
   title:
     cs: příspěvek v časopisu
     en: contribution to journal
@@ -279,6 +304,8 @@
   id: c_5ce6
   props:
     iri: http://purl.org/coar/resource_type/c_5ce6
+    datacite: Software
+    openaire: Software
     lindat: toolService
     zenodo: image-diagram, software, software-computationalnotebook
     zenodo-image-diagram: 'true'
@@ -296,6 +323,7 @@
   id: c_ba1f
   props:
     iri: http://purl.org/coar/resource_type/c_ba1f
+    datacite: Report
   title:
     cs: report part
     en: report part
@@ -306,6 +334,8 @@
   id: c_c513
   props:
     iri: http://purl.org/coar/resource_type/c_c513
+    datacite: Image
+    openaire: Image
     zenodo: image
     zenodo-image: 'true'
   title:
@@ -321,6 +351,8 @@
   id: c_ddb1
   props:
     iri: http://purl.org/coar/resource_type/c_ddb1
+    datacite: Dataset
+    openaire: Dataset
     lindat: Spreadsheet
     zenodo: dataset
     zenodo-dataset: 'true'
@@ -338,6 +370,7 @@
   id: c_e059
   props:
     iri: http://purl.org/coar/resource_type/c_e059
+    datacite: InteractiveResource
     lindat: onlineCourse
   title:
     cs: learning object
@@ -352,6 +385,8 @@
   id: c_e9a0
   props:
     iri: http://purl.org/coar/resource_type/c_e9a0
+    datacite: InteractiveResource
+    openaire: InteractiveResource
   title:
     cs: interaktivní zdroj
     en: interactive resource
@@ -368,6 +403,7 @@
   id: 1YTN-RJZE
   props:
     iri: http://purl.org/coar/resource_type/1YTN-RJZE
+    datacite: Text
   title:
     cs: court documents
     en: court documents
@@ -394,6 +430,7 @@
   id: 2H0M-X761
   props:
     iri: http://purl.org/coar/resource_type/2H0M-X761
+    datacite: Dataset
   title:
     cs: geospatial data
     en: geospatial data
@@ -407,6 +444,7 @@
   id: 63NG-B465
   props:
     iri: http://purl.org/coar/resource_type/63NG-B465
+    datacite: Dataset
   title:
     cs: experimental data
     en: experimental data
@@ -419,6 +457,7 @@
   id: 6NC7-GK9S
   props:
     iri: http://purl.org/coar/resource_type/6NC7-GK9S
+    datacite: Text
   title:
     cs: transcription
     en: transcription
@@ -435,6 +474,7 @@
   id: 9DKX-KSAF
   props:
     iri: http://purl.org/coar/resource_type/9DKX-KSAF
+    datacite: Other
   title:
     cs: utility model
     en: utility model
@@ -451,6 +491,7 @@
   id: A8F1-NPV9
   props:
     iri: http://purl.org/coar/resource_type/A8F1-NPV9
+    datacite: Dataset
   title:
     cs: genomic data
     en: genomic data
@@ -468,6 +509,7 @@
   id: ACF7-8YT9
   props:
     iri: http://purl.org/coar/resource_type/ACF7-8YT9
+    datacite: Dataset
   title:
     cs: aggregated data
     en: aggregated data
@@ -483,6 +525,7 @@
   id: AM6W-6QAW
   props:
     iri: http://purl.org/coar/resource_type/AM6W-6QAW
+    datacite: Dataset
   title:
     cs: encoded data
     en: encoded data
@@ -498,6 +541,7 @@
   id: BW7T-YM2G
   props:
     iri: http://purl.org/coar/resource_type/BW7T-YM2G
+    datacite: Other
   title:
     cs: layout design
     en: layout design
@@ -512,6 +556,7 @@
   id: C53B-JCY5
   props:
     iri: http://purl.org/coar/resource_type/C53B-JCY5
+    datacite: Other
   title:
     cs: design patent
     en: design patent
@@ -525,6 +570,7 @@
   id: CQMR-7K63
   props:
     iri: http://purl.org/coar/resource_type/CQMR-7K63
+    datacite: Dataset
   title:
     cs: recorded data
     en: recorded data
@@ -538,6 +584,7 @@
   id: DD58-GFSX
   props:
     iri: http://purl.org/coar/resource_type/DD58-GFSX
+    datacite: Dataset
   title:
     cs: measurement and test data
     en: measurement and test data
@@ -552,6 +599,7 @@
   id: FF4C-28RK
   props:
     iri: http://purl.org/coar/resource_type/FF4C-28RK
+    datacite: Dataset
   title:
     cs: observational data
     en: observational data
@@ -571,6 +619,7 @@
   id: FXF3-D3G7
   props:
     iri: http://purl.org/coar/resource_type/FXF3-D3G7
+    datacite: Dataset
   title:
     cs: compiled data
     en: compiled data
@@ -588,6 +637,7 @@
   id: GPQ7-G5VE
   props:
     iri: http://purl.org/coar/resource_type/GPQ7-G5VE
+    datacite: Other
   title:
     cs: plant variety protection
     en: plant variety protection
@@ -603,6 +653,7 @@
   id: H41Y-FW7B
   props:
     iri: http://purl.org/coar/resource_type/H41Y-FW7B
+    datacite: ComputationalNotebook
   title:
     cs: laboratory notebook
     en: laboratory notebook
@@ -617,6 +668,7 @@
   id: JBNF-DYAD
   props:
     iri: http://purl.org/coar/resource_type/JBNF-DYAD
+    datacite: Other
   title:
     cs: industrial design
     en: industrial design
@@ -632,6 +684,7 @@
   id: MW8G-3CR8
   props:
     iri: http://purl.org/coar/resource_type/MW8G-3CR8
+    datacite: Other
   title:
     cs: software patent
     en: software patent
@@ -648,6 +701,7 @@
   id: NHD0-W6SY
   props:
     iri: http://purl.org/coar/resource_type/NHD0-W6SY
+    datacite: Dataset
   title:
     cs: survey data
     en: survey data
@@ -661,6 +715,7 @@
   id: QH80-2R4E
   props:
     iri: http://purl.org/coar/resource_type/QH80-2R4E
+    datacite: Software
   title:
     cs: source code
     en: source code
@@ -673,6 +728,7 @@
   id: QX5C-AR31
   props:
     iri: http://purl.org/coar/resource_type/QX5C-AR31
+    datacite: Journal
   title:
     cs: other periodical
     en: other periodical
@@ -686,6 +742,7 @@
   id: SB3Y-W4EH
   props:
     iri: http://purl.org/coar/resource_type/SB3Y-W4EH
+    datacite: Other
   title:
     cs: PCT application
     en: PCT application
@@ -701,6 +758,7 @@
   id: W2XT-7017
   props:
     iri: http://purl.org/coar/resource_type/W2XT-7017
+    datacite: Dataset
   title:
     cs: simulation data
     en: simulation data
@@ -714,6 +772,7 @@
   id: YC9F-HGCF
   props:
     iri: http://purl.org/coar/resource_type/YC9F-HGCF
+    datacite: Collection
   title:
     cs: archival collection
     en: archival collection
@@ -728,6 +787,7 @@
   id: Z907-YMBB
   props:
     iri: http://purl.org/coar/resource_type/Z907-YMBB
+    datacite: Other
   title:
     cs: plant patent
     en: plant patent
@@ -740,6 +800,7 @@
   id: c_0040
   props:
     iri: http://purl.org/coar/resource_type/c_0040
+    datacite: Text
   title:
     cs: manuscript
     en: manuscript
@@ -752,6 +813,7 @@
   id: c_0640
   props:
     iri: http://purl.org/coar/resource_type/c_0640
+    datacite: Journal
     zenodo: publication-journal
     zenodo-publication-journal: 'true'
   title:
@@ -769,6 +831,7 @@
   id: c_0857
   props:
     iri: http://purl.org/coar/resource_type/c_0857
+    datacite: Text
   title:
     cs: dopis
     en: letter
@@ -782,6 +845,7 @@
   id: c_1162
   props:
     iri: http://purl.org/coar/resource_type/c_1162
+    datacite: Text
     zenodo: annotationcollection, publication-annotation
     zenodo-annotationcollection: 'true'
     zenodo-publication-annotation: 'true'
@@ -801,6 +865,7 @@
   id: c_12cd
   props:
     iri: http://purl.org/coar/resource_type/c_12cd
+    datacite: Image
   title:
     cs: mapa
     en: map
@@ -814,6 +879,7 @@
   id: c_18cd
   props:
     iri: http://purl.org/coar/resource_type/c_18cd
+    datacite: Sound
   title:
     cs: hudební skladba
     en: musical composition
@@ -828,6 +894,7 @@
   id: c_18cw
   props:
     iri: http://purl.org/coar/resource_type/c_18cw
+    datacite: Text
   title:
     cs: hudební zápis
     en: musical notation
@@ -843,6 +910,7 @@
   id: c_2cd9
   props:
     iri: http://purl.org/coar/resource_type/c_2cd9
+    datacite: Journal
     zenodo: image-drawing
     zenodo-image-drawing: 'true'
   title:
@@ -860,6 +928,7 @@
   id: c_2f33
   props:
     iri: http://purl.org/coar/resource_type/c_2f33
+    datacite: Book
     zenodo: publication-book
     zenodo-publication-book: 'true'
   title:
@@ -878,6 +947,7 @@
   id: c_2fe3
   props:
     iri: http://purl.org/coar/resource_type/c_2fe3
+    datacite: Journal
   title:
     cs: newspaper
     en: newspaper
@@ -890,6 +960,7 @@
   id: c_3248
   props:
     iri: http://purl.org/coar/resource_type/c_3248
+    datacite: BookChapter
     zenodo: publication-section
     zenodo-publication-section: 'true'
   title:
@@ -909,6 +980,7 @@
   id: c_46ec
   props:
     iri: http://purl.org/coar/resource_type/c_46ec
+    datacite: Dissertation
     zenodo: publication-dissertation, publication-doctorthesis, publication-thesis
     zenodo-publication-dissertation: 'true'
     zenodo-publication-doctorthesis: 'true'
@@ -929,6 +1001,7 @@
   id: c_545b
   props:
     iri: http://purl.org/coar/resource_type/c_545b
+    datacite: JournalArticle
   title:
     cs: dopis redakci
     en: letter to the editor
@@ -941,6 +1014,7 @@
   id: c_6501
   props:
     iri: http://purl.org/coar/resource_type/c_6501
+    datacite: JournalArticle
     zenodo: publication-article
     zenodo-publication-article: 'true'
   title:
@@ -958,6 +1032,7 @@
   id: c_6947
   props:
     iri: http://purl.org/coar/resource_type/c_6947
+    datacite: Text
   title:
     cs: blog post
     en: blog post
@@ -971,6 +1046,7 @@
   id: c_71bd
   props:
     iri: http://purl.org/coar/resource_type/c_71bd
+    datacite: Text
     zenodo: publication-softwaredocumentation
     zenodo-publication-softwaredocumentation: 'true'
   title:
@@ -988,6 +1064,7 @@
   id: c_7a1f
   props:
     iri: http://purl.org/coar/resource_type/c_7a1f
+    datacite: Dissertation
     zenodo: publication-bachelorthesis
     zenodo-publication-bachelorthesis: 'true'
   title:
@@ -1005,6 +1082,7 @@
   id: c_7acd
   props:
     iri: http://purl.org/coar/resource_type/c_7acd
+    datacite: JournalArticle
   title:
     cs: corrigendum
     en: corrigendum
@@ -1021,6 +1099,7 @@
   id: c_7ad9
   props:
     iri: http://purl.org/coar/resource_type/c_7ad9
+    datacite: InteractiveResource
   title:
     cs: webové sídlo
     en: website
@@ -1035,6 +1114,7 @@
   id: c_7bab
   props:
     iri: http://purl.org/coar/resource_type/c_7bab
+    datacite: JournalArticle
   title:
     cs: software paper
     en: software paper
@@ -1048,6 +1128,7 @@
   id: c_8042
   props:
     iri: http://purl.org/coar/resource_type/c_8042
+    datacite: Preprint
     zenodo: publication-workingpaper
     zenodo-publication-workingpaper: 'true'
   title:
@@ -1066,6 +1147,7 @@
   id: c_816b
   props:
     iri: http://purl.org/coar/resource_type/c_816b
+    datacite: Preprint
     zenodo: publication-preprint
     zenodo-publication-preprint: 'true'
   title:
@@ -1084,6 +1166,7 @@
   id: c_8544
   props:
     iri: http://purl.org/coar/resource_type/c_8544
+    datacite: Presentation
     zenodo: publication-abstract, publication-lecture
     zenodo-publication-abstract: 'true'
     zenodo-publication-lecture: 'true'
@@ -1102,6 +1185,7 @@
   id: c_86bc
   props:
     iri: http://purl.org/coar/resource_type/c_86bc
+    datacite: Text
     lindat: bibliography
   title:
     cs: bibliografie
@@ -1116,6 +1200,7 @@
   id: c_8a7e
   props:
     iri: http://purl.org/coar/resource_type/c_8a7e
+    datacite: Audiovisual
   title:
     cs: pohyblivý obraz
     en: moving image
@@ -1136,6 +1221,7 @@
   id: c_93fc
   props:
     iri: http://purl.org/coar/resource_type/c_93fc
+    datacite: Report
     zenodo: publication-report
     zenodo-publication-report: 'true'
   title:
@@ -1155,6 +1241,7 @@
   id: c_998f
   props:
     iri: http://purl.org/coar/resource_type/c_998f
+    datacite: JournalArticle
   title:
     cs: newspaper article
     en: newspaper article
@@ -1169,6 +1256,7 @@
   id: c_ab20
   props:
     iri: http://purl.org/coar/resource_type/c_ab20
+    datacite: OutputManagementPlan
   title:
     cs: data management plan
     en: data management plan
@@ -1183,6 +1271,7 @@
   id: c_b239
   props:
     iri: http://purl.org/coar/resource_type/c_b239
+    datacite: JournalArticle
   title:
     cs: úvodník
     en: editorial
@@ -1196,6 +1285,7 @@
   id: c_baaf
   props:
     iri: http://purl.org/coar/resource_type/c_baaf
+    datacite: Project
     zenodo: publication-proposal
     zenodo-publication-proposal: 'true'
   title:
@@ -1213,6 +1303,7 @@
   id: c_bdcc
   props:
     iri: http://purl.org/coar/resource_type/c_bdcc
+    datacite: Dissertation
     zenodo: publication-mastersthesis
     zenodo-publication-mastersthesis: 'true'
   title:
@@ -1233,6 +1324,7 @@
   id: c_beb9
   props:
     iri: http://purl.org/coar/resource_type/c_beb9
+    datacite: DataPaper
   title:
     cs: článek o datové sadě
     en: data paper
@@ -1247,6 +1339,7 @@
   id: c_c94f
   props:
     iri: http://purl.org/coar/resource_type/c_c94f
+    datacite: ConferenceProceeding
     zenodo: presentation
     zenodo-presentation: 'true'
   title:
@@ -1267,6 +1360,7 @@
   id: c_c950
   props:
     iri: http://purl.org/coar/resource_type/c_c950
+    datacite: Software
   title:
     cs: research software
     en: research software
@@ -1281,6 +1375,7 @@
   id: c_cb28
   props:
     iri: http://purl.org/coar/resource_type/c_cb28
+    datacite: Dataset
   title:
     cs: clinical trial data
     en: clinical trial data
@@ -1293,6 +1388,7 @@
   id: c_db06
   props:
     iri: http://purl.org/coar/resource_type/c_db06
+    datacite: Dissertation
   title:
     cs: disertační práce
     en: doctoral thesis
@@ -1306,6 +1402,7 @@
   id: c_dcae04bc
   props:
     iri: http://purl.org/coar/resource_type/c_dcae04bc
+    datacite: JournalArticle
   title:
     cs: přehledový článek
     en: review article
@@ -1319,6 +1416,7 @@
   id: c_ecc8
   props:
     iri: http://purl.org/coar/resource_type/c_ecc8
+    datacite: Image
     lindat: OBRAZ
     zenodo: image-figure, image-plot
     zenodo-image-figure: 'true'
@@ -1337,6 +1435,7 @@
   id: c_efa0
   props:
     iri: http://purl.org/coar/resource_type/c_efa0
+    datacite: PeerReview
     zenodo: peerreview, publication-peerreview
     zenodo-peerreview: 'true'
     zenodo-publication-peerreview: 'true'
@@ -1357,6 +1456,7 @@
   id: c_f744
   props:
     iri: http://purl.org/coar/resource_type/c_f744
+    datacite: ConferenceProceeding
     zenodo: publication-conferenceproceeding
     zenodo-publication-conferenceproceeding: 'true'
   title:
@@ -1376,6 +1476,7 @@
   id: 43KC-T6DC
   props:
     iri: http://purl.org/coar/resource_type/43KC-T6DC
+    datacite: JournalArticle
   title:
     cs: magazine article
     en: magazine article
@@ -1390,6 +1491,7 @@
   id: D97F-VB57
   props:
     iri: http://purl.org/coar/resource_type/D97F-VB57
+    datacite: JournalArticle
   title:
     cs: commentary
     en: commentary
@@ -1404,6 +1506,7 @@
   id: DX5J-TA9R
   props:
     iri: http://purl.org/coar/resource_type/DX5J-TA9R
+    datacite: StudyRegistration
   title:
     cs: knowledge synthesis protocol
     en: knowledge synthesis protocol
@@ -1416,6 +1519,7 @@
   id: H9BQ-739P
   props:
     iri: http://purl.org/coar/resource_type/H9BQ-739P
+    datacite: PeerReview
   title:
     cs: peer review
     en: peer review
@@ -1430,6 +1534,7 @@
   id: R60J-J5BD
   props:
     iri: http://purl.org/coar/resource_type/R60J-J5BD
+    datacite: Presentation
   title:
     cs: conference presentation
     en: conference presentation
@@ -1444,6 +1549,7 @@
   id: YZ1N-ZFT9
   props:
     iri: http://purl.org/coar/resource_type/YZ1N-ZFT9
+    datacite: StudyRegistration
   title:
     cs: research protocol
     en: research protocol
@@ -1456,6 +1562,7 @@
   id: c_12ce
   props:
     iri: http://purl.org/coar/resource_type/c_12ce
+    datacite: Audiovisual
     lindat: clip
     zenodo: video
     zenodo-video: 'true'
@@ -1476,6 +1583,7 @@
   id: c_186u
   props:
     iri: http://purl.org/coar/resource_type/c_186u
+    datacite: Report
   title:
     cs: zpráva k politice nebo strategii
     en: policy report
@@ -1491,6 +1599,7 @@
   id: c_18co
   props:
     iri: http://purl.org/coar/resource_type/c_18co
+    datacite: Poster
   title:
     cs: konferenční poster nezahrnutý ve sborníku
     en: conference poster not in proceedings
@@ -1504,6 +1613,7 @@
   id: c_18cp
   props:
     iri: http://purl.org/coar/resource_type/c_18cp
+    datacite: ConferencePaper
   title:
     cs: konferenční příspěvek nezahrnutý ve sborníku
     en: conference paper not in proceedings
@@ -1518,6 +1628,7 @@
   id: c_18gh
   props:
     iri: http://purl.org/coar/resource_type/c_18gh
+    datacite: Report
     zenodo: publication-technicalnote
     zenodo-publication-technicalnote: 'true'
   title:
@@ -1536,6 +1647,7 @@
   id: c_18op
   props:
     iri: http://purl.org/coar/resource_type/c_18op
+    datacite: Report
     zenodo: publication-deliverable
     zenodo-publication-deliverable: 'true'
   title:
@@ -1553,6 +1665,7 @@
   id: c_18ws
   props:
     iri: http://purl.org/coar/resource_type/c_18ws
+    datacite: Report
   title:
     cs: výzkumná zpráva
     en: research report
@@ -1569,6 +1682,7 @@
   id: c_18wz
   props:
     iri: http://purl.org/coar/resource_type/c_18wz
+    datacite: Report
   title:
     cs: memorandum
     en: memorandum
@@ -1581,6 +1695,7 @@
   id: c_2df8fbb1
   props:
     iri: http://purl.org/coar/resource_type/c_2df8fbb1
+    datacite: JournalArticle
   title:
     cs: původní článek
     en: research article
@@ -1594,6 +1709,7 @@
   id: c_5794
   props:
     iri: http://purl.org/coar/resource_type/c_5794
+    datacite: ConferencePaper
     zenodo: publication-conferencepaper
     zenodo-publication-conferencepaper: 'true'
   title:
@@ -1613,6 +1729,7 @@
   id: c_6670
   props:
     iri: http://purl.org/coar/resource_type/c_6670
+    datacite: Poster
     zenodo: poster
     zenodo-poster: 'true'
   title:
@@ -1634,6 +1751,7 @@
   id: c_7877
   props:
     iri: http://purl.org/coar/resource_type/c_7877
+    datacite: StudyRegistration
   title:
     cs: clinical study
     en: clinical study
@@ -1646,6 +1764,7 @@
   id: c_ba08
   props:
     iri: http://purl.org/coar/resource_type/c_ba08
+    datacite: JournalArticle
   title:
     cs: recenze knihy
     en: book review

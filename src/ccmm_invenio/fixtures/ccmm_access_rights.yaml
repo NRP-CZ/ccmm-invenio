@@ -6,6 +6,7 @@
   id: c_14cb
   props:
     iri: http://purl.org/coar/access_right/c_14cb
+    openaire: info:eu-repo/semantics/openAccess
   title:
     cs: pouze metadata
     en: metadata only access
@@ -24,6 +25,7 @@
   id: c_16ec
   props:
     iri: http://purl.org/coar/access_right/c_16ec
+    openaire: info:eu-repo/semantics/restrictedAccess
   title:
     cs: omezený přístup
     en: restricted access
@@ -35,6 +37,7 @@
   id: c_abf2
   props:
     iri: http://purl.org/coar/access_right/c_abf2
+    openaire: info:eu-repo/semantics/openAccess
   title:
     cs: otevřený přístup
     en: open access
@@ -46,6 +49,7 @@
   id: c_f1cf
   props:
     iri: http://purl.org/coar/access_right/c_f1cf
+    openaire: info:eu-repo/semantics/embargoedAccess
   title:
     cs: odložené zpřístupnění
     en: embargoed access

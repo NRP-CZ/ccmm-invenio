@@ -71,6 +71,7 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
                 root_dir / "input/CCMM_slovniky(RelationType).csv",
                 extra=[
                     root_dir / "input/addon_relation_types.csv",
+                    root_dir / "input/addon_relation_types_datacite.csv",
                     root_dir / "input/addon_relation_types_openaire.csv",
                 ],
             ),
