@@ -46,7 +46,6 @@
   props:
     datacite: TechnicalInfo
     iri: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo
-    openaire: Other
   title:
     en: Technical info
     sv: Teknisk information
