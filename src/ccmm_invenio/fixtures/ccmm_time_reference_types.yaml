@@ -7,6 +7,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Accepted
+    datacite: Accepted
+    openaire: Accepted
   title:
     cs: Datum přijetí datasetu
     en: Date Accepted
@@ -19,6 +21,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available
+    datacite: Available
+    openaire: Available
   title:
     cs: Datum zveřejnění datasetu
     en: Date Available
@@ -30,6 +34,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Copyrighted
+    datacite: Copyrighted
+    openaire: Copyrighted
   title:
     cs: Datum udělení copyrightu
     en: Date Copyrighted
@@ -42,6 +48,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected
+    datacite: Collected
+    openaire: Collected
   title:
     cs: Datum sběru dat
     en: Date Collected
@@ -78,6 +86,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Coverage
+    datacite: Coverage
   title:
     cs: Časové pokrytí datasetu
     en: Date Coverage
@@ -116,6 +125,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created
+    datacite: Created
+    openaire: Created
   title:
     cs: Datum vytvoření datasetu
     en: Date Created
@@ -154,6 +165,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued
+    datacite: Issued
+    openaire: Issued
   title:
     cs: Datum vydání datasetu
     en: Date Issued
@@ -167,6 +180,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Submitted
+    datacite: Submitted
+    openaire: Submitted
   title:
     cs: Datum podání datasetu
     en: Date Submitted
@@ -178,6 +193,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Updated
+    datacite: Updated
+    openaire: Updated
   title:
     cs: Datum aktualizace datasetu
     en: Date Updated
@@ -210,6 +227,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Valid
+    datacite: Valid
+    openaire: Valid
   title:
     cs: Datum platnosti datasetu
     en: Date Valid
@@ -241,6 +260,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Withdrawn
+    datacite: Withdrawn
   title:
     cs: Datum odstranění datasetu
     en: Date Withdrawn
@@ -251,6 +271,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
     iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Other
+    datacite: Other
   title:
     cs: Jiné datum
     en: Other date

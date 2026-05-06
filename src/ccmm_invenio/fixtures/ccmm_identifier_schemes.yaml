@@ -15,6 +15,7 @@
     cs: DataCite DOI
     en: DataCite DOI
   props:
+    datacite: DOI
     iri: https://doi.org/
     openaire: DOI
 - id: ares
@@ -49,6 +50,7 @@
     cs: arXiv
     en: arXiv
   props:
+    datacite: arXiv
     iri: https://arxiv.org/
     openaire: arXiv
 - id: isni
@@ -62,6 +64,7 @@
     cs: ISBN
     en: ISBN
   props:
+    datacite: ISBN
     iri: https://www.isbn-international.org/
     openaire: ISBN
 - id: issn
@@ -69,6 +72,7 @@
     cs: ISSN
     en: ISSN
   props:
+    datacite: ISSN
     iri: https://www.issn.org/
     openaire: ISSN
 - id: handle
@@ -76,5 +80,6 @@
     cs: Handle
     en: Handle
   props:
+    datacite: Handle
     iri: https://handle.net/
     openaire: Handle

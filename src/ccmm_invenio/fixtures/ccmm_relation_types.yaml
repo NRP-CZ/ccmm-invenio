@@ -5,6 +5,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVersionOf
+    datacite: IsVersionOf
     zenodo: isversionof
   title:
     cs: je verzí
@@ -16,6 +17,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasVersion
+    datacite: HasVersion
     zenodo: hasversion
   title:
     cs: má verzi
@@ -27,6 +29,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPartOf
+    datacite: IsPartOf
+    openaire: IsPartOf
     zenodo: ispartof
   title:
     cs: je součástí
@@ -38,6 +42,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasPart
+    datacite: HasPart
+    openaire: HasPart
     zenodo: haspart
   title:
     cs: má část/i
@@ -49,6 +55,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReviewedBy
+    datacite: IsReviewedBy
+    openaire: IsReviewedBy
     zenodo: isreviewedby
   title:
     cs: je recenzován (čím)
@@ -60,6 +68,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Reviews
+    datacite: Reviews
+    openaire: Reviews
     zenodo: reviews
   title:
     cs: recenzuje (co)
@@ -71,6 +81,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCompiledBy
+    datacite: IsCompiledBy
+    openaire: isCompiledBy
     zenodo: iscompiledby
   title:
     cs: kompilován (čím)
@@ -82,6 +94,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Compiles
+    datacite: Compiles
+    openaire: Compiles
     zenodo: compiles
   title:
     cs: kompiluje (co)
@@ -93,6 +107,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy
+    datacite: IsReferencedBy
+    openaire: IsReferencedBy
     zenodo: isreferencedby
   title:
     cs: je na něj odkazováno z (čeho)
@@ -104,6 +120,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/References
+    datacite: References
+    openaire: References
     zenodo: references
   title:
     cs: odkazuje (na co)
@@ -115,6 +133,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCitedBy
+    datacite: IsCitedBy
+    openaire: IsCitedBy
     zenodo: iscitedby
   title:
     cs: je citován (čím)
@@ -126,6 +146,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Cites
+    datacite: Cites
+    openaire: Cites
     zenodo: cites
   title:
     cs: cituje (co)
@@ -137,6 +159,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementTo
+    datacite: IsSupplementTo
+    openaire: IsSupplementTo
     zenodo: issupplementto
   title:
     cs: je doplňkem k (čemu)
@@ -148,6 +172,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementedBy
+    datacite: IsSupplementedBy
+    openaire: IsSupplementedBy
     zenodo: issupplementedby
   title:
     cs: má doplněk
@@ -159,6 +185,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Describes
+    datacite: Describes
     zenodo: describes
   title:
     cs: popisuje (co)
@@ -170,6 +197,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDescribedBy
+    datacite: IsDescribedBy
     zenodo: isdescribedby
   title:
     cs: je popsán (čím)
@@ -181,6 +209,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPublishedIn
+    datacite: IsPublishedIn
     zenodo: ispublishedin
   title:
     cs: je publikován v
@@ -192,6 +221,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsRequiredBy
+    datacite: IsRequiredBy
     zenodo: isrequiredby
   title:
     cs: je požadován (čím)
@@ -203,6 +233,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Requires
+    datacite: Requires
     zenodo: requires
   title:
     cs: požaduje (co)
@@ -214,6 +245,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsContinuedBy
+    datacite: IsContinuedBy
+    openaire: IsContinuedBy
     zenodo: iscontinuedby
   title:
     cs: je pokračováním (čeho)
@@ -225,6 +258,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Continues
+    datacite: Continues
+    openaire: Continues
     zenodo: continues
   title:
     cs: pokračuje (čím)
@@ -236,6 +271,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata
+    datacite: HasMetadata
+    openaire: HasMetadata
     zenodo: hasmetadata
   title:
     cs: má metadata
@@ -247,6 +284,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsMetadataFor
+    datacite: IsMetadataFor
+    openaire: IsMetadataFor
     zenodo: ismetadatafor
   title:
     cs: je metadaty pro
@@ -258,6 +297,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsNewVersionOf
+    datacite: IsNewVersionOf
+    openaire: IsNewVersionOf
     zenodo: isnewversionof
   title:
     cs: je novou verzí (čeho)
@@ -269,6 +310,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPreviousVersionOf
+    datacite: IsPreviousVersionOf
+    openaire: IsPreviousVersionOf
     zenodo: ispreviousversionof
   title:
     cs: je předchozí verzí (čeho)
@@ -280,6 +323,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDocumentedBy
+    datacite: IsDocumentedBy
+    openaire: IsDocumentedBy
     zenodo: isdocumentedby
   title:
     cs: je zdokumentován (čím)
@@ -291,6 +336,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Documents
+    datacite: Documents
+    openaire: Documents
     zenodo: documents
   title:
     cs: dokumentuje (co)
@@ -302,6 +349,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVariantFormOf
+    datacite: IsVariantFormOf
+    openaire: IsVariantFormOf
     zenodo: isvariantformof
   title:
     cs: je variantou (čeho)
@@ -313,6 +362,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsOriginalFormOf
+    datacite: IsOriginalFormOf
+    openaire: IsOriginalFormOf
     zenodo: isoriginalformof
   title:
     cs: je původní variantou (čeho)
@@ -324,6 +375,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsIdenticalTo
+    datacite: IsIdenticalTo
+    openaire: IsIdenticalTo
     zenodo: isidenticalto
   title:
     cs: je identický s
@@ -335,6 +388,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom
+    datacite: IsDerivedFrom
+    openaire: IsDerivedFrom
     zenodo: isderivedfrom
   title:
     cs: je odvozen od (čeho)
@@ -346,6 +401,8 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSourceOf
+    datacite: IsSourceOf
+    openaire: IsSourceOf
     zenodo: issourceof
   title:
     cs: je zdrojem odvozené verze
@@ -357,6 +414,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Obsoletes
+    datacite: Obsoletes
     zenodo: obsoletes
   title:
     cs: nahrazuje (co)
@@ -368,6 +426,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsObsoletedBy
+    datacite: IsObsoletedBy
     zenodo: isobsoletedby
   title:
     cs: je nahrazen (čím)
@@ -379,6 +438,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsTranslationOf
+    datacite: IsTranslationOf
   title:
     cs: je překladem (čeho)
     en: is translation of
@@ -389,6 +449,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasTranslation
+    datacite: HasTranslation
   title:
     cs: má překlad
     en: has translation
@@ -399,6 +460,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy
+    datacite: IsCollectedBy
   title:
     cs: je sbírán (čím)
     en: is collected by
@@ -409,6 +471,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
     iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Collects
+    datacite: Collects
   title:
     cs: sbírá
     en: collects

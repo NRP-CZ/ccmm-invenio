@@ -49,6 +49,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ContactPerson
     openaire: ContactPerson
+    datacite: ContactPerson
   title:
     cs: Kontaktní osoba
     en: Contact Person
@@ -66,6 +67,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCollector
     openaire: DataCollector
+    datacite: DataCollector
   title:
     cs: Sběratel dat
     en: Data Collector
@@ -93,6 +95,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCurator
     openaire: DataCurator
+    datacite: DataCurator
   title:
     cs: Kurátor dat
     en: Data Curator
@@ -113,6 +116,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager
     openaire: DataManager
+    datacite: DataManager
   title:
     cs: Manažer dat
     en: Data Manager
@@ -129,6 +133,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Distributor
     openaire: Distributor
+    datacite: Distributor
   title:
     cs: Distributor
     en: Distributor
@@ -146,6 +151,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Editor
     openaire: Editor
+    datacite: Editor
   title:
     cs: Editor
     en: Editor
@@ -163,6 +169,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/HostingInstitution
     openaire: HostingInstitution
+    datacite: HostingInstitution
   title:
     cs: Hostující instituce
     en: Hosting Institution
@@ -180,6 +187,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Producer
     openaire: Producer
+    datacite: Producer
   title:
     cs: Producent
     en: Producer
@@ -198,6 +206,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectLeader
     openaire: ProjectLeader
+    datacite: ProjectLeader
   title:
     cs: Vedoucí projektu
     en: Project Leader
@@ -215,6 +224,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectManager
     openaire: ProjectManager
+    datacite: ProjectManager
   title:
     cs: Projektový manažer
     en: Project Manager
@@ -231,6 +241,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectMember
     openaire: ProjectMember
+    datacite: ProjectMember
   title:
     cs: Člen projektového týmu
     en: Project Member
@@ -250,6 +261,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAgency
     openaire: RegistrationAgency
+    datacite: RegistrationAgency
   title:
     cs: Registrační agentura
     en: Registration Agency
@@ -267,6 +279,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAuthority
     openaire: RegistrationAuthority
+    datacite: RegistrationAuthority
   title:
     cs: Registrační autorita
     en: Registration Authority
@@ -284,6 +297,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RelatedPerson
     openaire: RelatedPerson
+    datacite: RelatedPerson
   title:
     cs: Související osoba
     en: Related Person
@@ -304,6 +318,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Researcher
     openaire: Researcher
+    datacite: Researcher
   title:
     cs: Výzkumník
     en: Researcher
@@ -321,6 +336,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ResearchGroup
     openaire: ResearchGroup
+    datacite: ResearchGroup
   title:
     cs: Výzkumná skupina
     en: Research Group
@@ -335,6 +351,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RightsHolder
     openaire: RightsHolder
+    datacite: RightsHolder
   title:
     cs: Majitel práv
     en: Rights Holder
@@ -353,6 +370,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Sponsor
     openaire: Sponsor
+    datacite: Sponsor
   title:
     cs: Sponzor
     en: Sponsor
@@ -367,6 +385,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Supervisor
     openaire: Supervisor
+    datacite: Supervisor
   title:
     cs: Supervizor
     en: Supervisor
@@ -384,6 +403,7 @@
   props:
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Translator
+    datacite: Translator
   title:
     cs: Překladatel
     en: Translator
@@ -401,6 +421,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/WorkPackageLeader
     openaire: WorkPackageLeader
+    datacite: WorkPackageLeader
   title:
     cs: Vedoucí pracovního balíku
     en: Work Package Leader
@@ -421,6 +442,7 @@
     base_iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
     iri: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Other
     openaire: Other
+    datacite: Other
   title:
     cs: Jiná role
     en: Other
