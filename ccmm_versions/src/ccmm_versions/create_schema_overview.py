@@ -2,12 +2,16 @@
 
 import dataclasses
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import click
 from lxml import etree
 from lxml.etree import _Element as Element
 
 from ccmm_versions.identify_anonymous_types import is_multilingual
+
+if TYPE_CHECKING:
+    from lxml.etree import _Element as Element
 
 
 @dataclasses.dataclass
