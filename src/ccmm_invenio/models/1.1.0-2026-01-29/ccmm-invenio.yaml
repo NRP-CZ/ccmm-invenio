@@ -164,6 +164,20 @@ CCMMDataset:
       label:
         en: Publication date
         cs: Datum publikace
+      facet-def:
+        facet: "invenio_records_resources.services.records.facets.DateFacet"
+        field: "metadata.publication_date_range"
+        label:
+          en: "Publication date"
+          cs: "Datum publikace"
+        interval: "year"
+        separator: ".."
+        ui:
+          type: "date"
+          separator: ".."
+
+    publication_date_range:
+      type: edtf-interval
 
     # we use RDM version
     version:
