@@ -736,3 +736,12 @@ title:
     Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 4.0 Mezinárodní
     licence
   en: Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License
+---
+id: CC0-1.0
+hierarchy:
+  parent: CC
+props:
+  acronym: CC0-1.0
+title:
+  cs: Creative Commons Univerzální
+  en: Creative Commons Universal
