@@ -1,4 +1,6 @@
 - id: CC
+  tags:
+  - all
   title:
     cs: Licence Creative Commons
     en: License Creative Commons
@@ -14,6 +16,8 @@
   id: CC-1.0
   props:
     acronym: CC-1.0
+  tags:
+  - all
   title:
     cs: verze 1.0 Obecná licence
     en: version 1.0 Generic License
@@ -30,6 +34,8 @@
   id: 1-BY
   props:
     acronym: 1-BY
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ 1.0 Obecná licence
     en: Creative Commons Attribution 1.0 Generic License
@@ -48,6 +54,8 @@
   id: 1-BY-SA
   props:
     acronym: 1-BY-SA
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Zachovejte licenci 1.0 Obecná licence
     en: Creative Commons Attribution-ShareAlike 1.0 Generic License
@@ -65,6 +73,8 @@
   id: 1-BY-NC
   props:
     acronym: 1-BY-NC
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně 1.0 Obecná licence
     en: Creative Commons Attribution-NonCommercial 1.0 Generic License
@@ -85,6 +95,8 @@
   id: 1-BY-NC-SA
   props:
     acronym: 1-BY-NC-SA
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci
       1.0 Obecná licence
@@ -103,6 +115,8 @@
   id: 1-BY-ND
   props:
     acronym: 1-BY-ND
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Nezpracovávejte 1.0 Obecná licence
     en: Creative Commons Attribution-NoDerivs 1.0 Generic License
@@ -120,6 +134,8 @@
   id: 1-BY-ND-NC
   props:
     acronym: 1-BY-ND-NC
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Nezpracovávejte-Neužívejte komerčně 1.0 Obecná
       licence
@@ -136,6 +152,8 @@
   id: CC-2.0
   props:
     acronym: CC-2.0
+  tags:
+  - all
   title:
     cs: verze 2.0 Obecná licence
     en: version 2.0 Generic License
@@ -152,6 +170,8 @@
   id: 2-BY
   props:
     acronym: 2-BY
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ 2.0 Obecná licence
     en: Creative Commons Attribution 2.0 Generic License
@@ -170,6 +190,8 @@
   id: 2-BY-SA
   props:
     acronym: 2-BY-SA
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Zachovejte licenci 2.0 Obecná licence
     en: Creative Commons Attribution-ShareAlike 2.0 Generic License
@@ -187,6 +209,8 @@
   id: 2-BY-NC
   props:
     acronym: 2-BY-NC
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně 2.0 Obecná licence
     en: Creative Commons Attribution-NonCommercial 2.0 Generic License
@@ -207,6 +231,8 @@
   id: 2-BY-NC-SA
   props:
     acronym: 2-BY-NC-SA
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci
       2.0 Obecná licence
@@ -225,6 +251,8 @@
   id: 2-BY-ND
   props:
     acronym: 2-BY-ND
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Nezpracovávejte 2.0 Obecná licence
     en: Creative Commons Attribution-NoDerivs 2.0 Generic License
@@ -242,6 +270,8 @@
   id: 2-BY-NC-ND
   props:
     acronym: 2-BY-NC-ND
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 2.0 Obecná
       licence
@@ -258,6 +288,8 @@
   id: CC-2.5
   props:
     acronym: CC-2.5
+  tags:
+  - all
   title:
     cs: verze 2.5 Obecná licence
     en: version 2.5 Generic License
@@ -274,6 +306,8 @@
   id: 2-5-BY
   props:
     acronym: 2-5-BY
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ 2.5 Obecná licence
     en: Creative Commons Attribution 2.5 Generic License
@@ -292,6 +326,8 @@
   id: 2-5-BY-SA
   props:
     acronym: 2-5-BY-SA
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Zachovejte licenci 2.5 Obecná licence
     en: Creative Commons Attribution-ShareAlike 2.5 Generic License
@@ -309,6 +345,8 @@
   id: 2-5-BY-NC
   props:
     acronym: 2-5-BY-NC
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně 2.5 Obecná licence
     en: Creative Commons Attribution-NonCommercial 2.5 Generic License
@@ -329,6 +367,8 @@
   id: 2-5-BY-NC-SA
   props:
     acronym: 2-5-BY-NC-SA
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci
       2.5 Obecná licence
@@ -347,6 +387,8 @@
   id: 2-5-BY-ND
   props:
     acronym: 2-5-BY-ND
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Nezpracovávejte 2.5 Obecná licence
     en: Creative Commons Attribution-NoDerivs 2.5 Generic License
@@ -364,6 +406,8 @@
   id: 2-5-BY-NC-ND
   props:
     acronym: 2-5-BY-NC-ND
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 2.5 Obecná
       licence
@@ -380,6 +424,8 @@
   id: CC-3.0
   props:
     acronym: CC-3.0
+  tags:
+  - all
   title:
     cs: verze 3.0 Česko
     en: version 3.0 Czech Republic License
@@ -396,6 +442,8 @@
   id: 3-BY-CZ
   props:
     acronym: 3-BY-CZ
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte autora 3.0 Česko
     en: Creative Commons Attribution 3.0 Czech Republic License
@@ -414,6 +462,8 @@
   id: 3-BY-SA-CZ
   props:
     acronym: 3-BY-SA-CZ
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte autora-Zachovejte licenci 3.0 Česko
     en: Creative Commons Attribution-ShareAlike 3.0 Czech Republic License
@@ -431,6 +481,8 @@
   id: 3-BY-NC-CZ
   props:
     acronym: 3-BY-NC-CZ
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte autora-Neužívejte komerčně 3.0 Česko
     en: Creative Commons Attribution-NonCommercial 3.0 Czech Republic License
@@ -451,6 +503,8 @@
   id: 3-BY-NC-SA-CZ
   props:
     acronym: 3-BY-NC-SA-CZ
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte autora-Neužívejte komerčně-Zachovejte licenci 3.0
       Česko
@@ -469,6 +523,8 @@
   id: 3-BY-ND-CZ
   props:
     acronym: 3-BY-ND-CZ
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte autora-Nezasahujte do díla 3.0 Česko
     en: Creative Commons Attribution-NoDerivs 3.0 Czech Republic License
@@ -486,6 +542,8 @@
   id: 3-BY-NC-ND-CZ
   props:
     acronym: 3-BY-NC-ND-CZ
+  tags:
+  - all
   title:
     cs: Creative Commons Uveďte autora-Neužívejte komerčně-Nezasahujte do díla 3.0
       Česko
@@ -500,6 +558,8 @@
   id: CC-4.0
   props:
     acronym: CC-4.0
+  tags:
+  - all
   title:
     cs: verze 4.0 mezinárodní licence
     en: version 4.0 International License
@@ -519,6 +579,7 @@
     acronym: 4-BY
   tags:
   - featured
+  - all
   title:
     cs: Creative Commons Uveďte původ 4.0 Mezinárodní licence
     en: Creative Commons Attribution 4.0 International License
@@ -540,6 +601,7 @@
     acronym: 4-BY-SA
   tags:
   - featured
+  - all
   title:
     cs: Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní licence
     en: Creative Commons Attribution-ShareAlike 4.0 International License
@@ -560,6 +622,7 @@
     acronym: 4-BY-NC
   tags:
   - featured
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní licence
     en: Creative Commons Attribution-NonCommercial 4.0 International License
@@ -583,6 +646,7 @@
     acronym: 4-BY-NC-SA
   tags:
   - featured
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci
       4.0 Mezinárodní licence
@@ -603,6 +667,7 @@
     acronym: 4-BY-ND
   tags:
   - featured
+  - all
   title:
     cs: Creative Commons Uveďte původ-Nezpracovávejte 4.0 Mezinárodní licence
     en: Creative Commons Attribution-NoDerivs 4.0 International License
@@ -623,6 +688,7 @@
     acronym: 4-BY-NC-ND
   tags:
   - featured
+  - all
   title:
     cs: Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 4.0 Mezinárodní
       licence
@@ -632,6 +698,8 @@
   id: CC0-1.0
   props:
     acronym: CC0-1.0
+  tags:
+  - all
   title:
     cs: Creative Commons Univerzální
     en: Creative Commons Universal
