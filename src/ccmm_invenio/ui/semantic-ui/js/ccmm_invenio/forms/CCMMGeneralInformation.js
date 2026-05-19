@@ -1,3 +1,12 @@
+// This file is part of InvenioRDM
+// Copyright (C) 2020-2025 CERN.
+// Copyright (C) 2020-2022 Northwestern University.
+// Copyright (C) 2021-2022 Graz University of Technology.
+// Copyright (C) 2022-2024 KTH Royal Institute of Technology.
+//
+// Invenio App RDM is free software; you can redistribute it and/or modify it
+// under the terms of the MIT License; see LICENSE file for more details.
+
 import React from "react";
 import { buildUID } from "react-searchkit";
 import Overridable from "react-overridable";
@@ -15,20 +24,28 @@ import {
   DatesField,
 } from "@js/invenio_rdm_records";
 import { AdditionalDescriptionsField } from "@js/invenio_rdm_records/src/deposit/fields/DescriptionsField/components";
+import { PIDFieldList } from "@js/oarepo_rdm/form/components";
 
 export const CCMMGeneralInformation = {
   key: "general-information",
   label: i18next.t("General information"),
   component: (tabConfig) => {
     const { record, formConfig } = tabConfig;
-    const { vocabularies } = formConfig.config;
+    const { vocabularies, pids, is_doi_required } = formConfig.config;
     const { overridableIdPrefix } = formConfig;
     return (
       <>
         <Overridable
-          id={buildUID(overridableIdPrefix, "Title")}
+          id={buildUID(overridableIdPrefix, "PIDField")}
           {...tabConfig}
         >
+          <PIDFieldList
+            pids={pids}
+            record={record}
+            isDoiRequired={is_doi_required}
+          />
+        </Overridable>
+        <Overridable id={buildUID(overridableIdPrefix, "Title")} {...tabConfig}>
           <TitlesField
             options={vocabularies?.titles}
             fieldPath="metadata.title"
@@ -147,10 +164,7 @@ export const CCMMGeneralInformation = {
             })}
           />
         </Overridable>
-        <Overridable
-          id={buildUID(overridableIdPrefix, "Dates")}
-          {...tabConfig}
-        >
+        <Overridable id={buildUID(overridableIdPrefix, "Dates")} {...tabConfig}>
           <DatesField
             fieldPath="metadata.dates"
             options={vocabularies?.dates}
@@ -173,6 +187,7 @@ export const CCMMGeneralInformation = {
     );
   },
   includesPaths: [
+    "pids",
     "metadata.title",
     "metadata.creators",
     "metadata.contributors",
