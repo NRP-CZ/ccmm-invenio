@@ -75,7 +75,10 @@ export const CCMMGeneralInformation = {
           id={buildUID(overridableIdPrefix, "Publisher")}
           {...tabConfig}
         >
-          <PublisherField fieldPath="metadata.publisher" />
+          <PublisherField
+            fieldPath="metadata.publisher"
+            required={is_doi_required}
+          />
         </Overridable>
         <Overridable
           id={buildUID(overridableIdPrefix, "Version")}
