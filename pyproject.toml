@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "ccmm-invenio"
-version = "1.1.7"
+version = "1.1.8"
 description = "CCMM (Czech Core Metadata Model) components for NRP Invenio"
 readme = "README.md"
 license = "MIT"
