@@ -152,6 +152,15 @@ CCMMInvenioRelatedResource:
         en: Relation type
         cs: Typ vztahu
 
+    imported:
+      type: keyword
+      label:
+        en: Imported from
+        cs: Importováno z
+      hint:
+        en: Source identifier URL this related resource was imported from (e.g. DOI URL). Empty for manual entries.
+        cs: URL identifikátoru zdroje, ze kterého byl tento související zdroj importován (např. DOI URL). Prázdné pro ručně zadané záznamy.
+
 CCMMDataset:
   type: object
   properties:
