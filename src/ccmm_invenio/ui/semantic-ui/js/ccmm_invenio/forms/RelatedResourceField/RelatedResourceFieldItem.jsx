@@ -1,8 +1,9 @@
 import { i18next } from "@translations/ccmm_invenio";
 import React from "react";
 import { useDrag, useDrop } from "react-dnd";
-import { Button, Label, List, Ref } from "semantic-ui-react";
+import { Button, List, Ref } from "semantic-ui-react";
 import { RelatedResourceModal } from "./RelatedResourceModal";
+import { RelatedResourceCitation } from "./RelatedResourceCitation";
 import PropTypes from "prop-types";
 import { NestedErrors } from "@js/oarepo_ui/forms";
 
@@ -15,7 +16,6 @@ export const RelatedResourceFieldItem = ({
   addLabel,
   editLabel,
   initialResource,
-  displayName,
   vocabularies,
   handleSave,
   relatedResourceUI,
@@ -60,6 +60,8 @@ export const RelatedResourceFieldItem = ({
     initialResource?.relation_type,
   );
 
+  const isImported = Boolean(initialResource?.imported);
+
   drop(dropRef);
   return (
     <Ref innerRef={dropRef} key={compKey}>
@@ -70,25 +72,27 @@ export const RelatedResourceFieldItem = ({
           }
         >
           <List.Content floated="right">
-            <RelatedResourceModal
-              handleSave={handleSave}
-              compKey={compKey}
-              index={index}
-              relatedResourceUI={relatedResourceUI}
-              addLabel={addLabel}
-              editLabel={editLabel}
-              onResourceChange={(selectedResource) => {
-                replaceResource(index, selectedResource);
-              }}
-              initialResource={initialResource}
-              vocabularies={vocabularies}
-              action="edit"
-              trigger={
-                <Button size="mini" primary type="button">
-                  {i18next.t("Edit")}
-                </Button>
-              }
-            />
+            {!isImported && (
+              <RelatedResourceModal
+                handleSave={handleSave}
+                compKey={compKey}
+                index={index}
+                relatedResourceUI={relatedResourceUI}
+                addLabel={addLabel}
+                editLabel={editLabel}
+                onResourceChange={(selectedResource) => {
+                  replaceResource(index, selectedResource);
+                }}
+                initialResource={initialResource}
+                vocabularies={vocabularies}
+                action="edit"
+                trigger={
+                  <Button size="mini" primary type="button">
+                    {i18next.t("Edit")}
+                  </Button>
+                }
+              />
+            )}
             <Button
               size="mini"
               type="button"
@@ -104,12 +108,10 @@ export const RelatedResourceFieldItem = ({
             <List.Content>
               <List.Description>
                 <span className="related-resource">
-                  <span>{displayName}</span>
-                  {relationTypeLabel && (
-                    <Label size="tiny" className="ml-5">
-                      {relationTypeLabel}
-                    </Label>
-                  )}
+                  <RelatedResourceCitation
+                    resource={initialResource}
+                    relationTypeLabel={relationTypeLabel}
+                  />
                 </span>
               </List.Description>
             </List.Content>
@@ -130,7 +132,6 @@ RelatedResourceFieldItem.propTypes = {
   initialResource: PropTypes.object.isRequired,
   addLabel: PropTypes.node,
   editLabel: PropTypes.node,
-  displayName: PropTypes.string,
   vocabularies: PropTypes.object,
   handleSave: PropTypes.func.isRequired,
   relatedResourceUI: PropTypes.object,

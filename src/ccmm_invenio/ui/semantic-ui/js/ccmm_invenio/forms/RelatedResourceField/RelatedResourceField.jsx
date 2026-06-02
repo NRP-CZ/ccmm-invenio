@@ -7,6 +7,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { DndProvider } from "react-dnd";
 import { RelatedResourceModal } from "./RelatedResourceModal";
 import { RelatedResourceFieldItem } from "./RelatedResourceFieldItem";
+import { LoadFromDoiModal } from "./LoadFromDoiModal";
 import { i18next } from "@translations/ccmm_invenio";
 import { useFormConfig } from "@js/oarepo_ui/forms";
 import { save } from "@js/invenio_rdm_records/src/deposit/state/actions/deposit";
@@ -17,6 +18,11 @@ class RelatedResourceFieldForm extends Component {
   handleOnResourceChange = (selectedResource) => {
     const { push: formikArrayPush } = this.props;
     formikArrayPush(selectedResource);
+  };
+
+  handleImportedResources = (resources) => {
+    const { push: formikArrayPush } = this.props;
+    resources.forEach((resource) => formikArrayPush(resource));
   };
 
   render() {
@@ -51,14 +57,16 @@ class RelatedResourceFieldForm extends Component {
       <DndProvider backend={HTML5Backend}>
         <Form.Field
           required={required}
-          className={resourcesError ? "error" : ""}
+          className={
+            resourcesError
+              ? "related-resource-field error"
+              : "related-resource-field"
+          }
         >
           <FieldLabel htmlFor={fieldPath} label={label} icon={icon} />
           <List>
             {resourcesList.map((value, index) => {
               const key = `${fieldPath}.${index}`;
-              const displayName =
-                value?.title || i18next.t("Untitled resource");
 
               return (
                 <RelatedResourceFieldItem
@@ -66,7 +74,6 @@ class RelatedResourceFieldForm extends Component {
                   relatedResourceUI={relatedResourceUI}
                   handleSave={handleSave}
                   {...{
-                    displayName,
                     index,
                     compKey: key,
                     initialResource: value,
@@ -91,13 +98,28 @@ class RelatedResourceFieldForm extends Component {
             relatedResourceUI={relatedResourceUI}
             trigger={
               <Form.Button
-                className="array-field-add-button inline-block"
+                className="array-field-add-button inline-block rel-mr-1"
                 type="button"
                 icon
                 labelPosition="left"
               >
                 <Icon name="add" />
                 {i18next.t("Add related resource")}
+              </Form.Button>
+            }
+          />
+          <LoadFromDoiModal
+            onResourcesImport={this.handleImportedResources}
+            existingResources={resourcesList}
+            trigger={
+              <Form.Button
+                className="array-field-add-button inline-block"
+                type="button"
+                icon
+                labelPosition="left"
+              >
+                <Icon name="download" />
+                {i18next.t("Load from DOI")}
               </Form.Button>
             }
           />
