@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { useMutation } from "@tanstack/react-query";
 import {
@@ -25,9 +25,16 @@ const safeDecodeURI = (s) => {
   }
 };
 
+// Force a newline before any inline `http(s)://` so concatenated URLs
+// (e.g. "https://doi.org/X/Yhttps://doi.org/A/B") don't get greedy-matched
+// as one giant DOI by the suffix character class.
+const splitConcatenatedUrls = (s) =>
+  s.replace(/(\S)(https?:\/\/)/gi, "$1\n$2");
+
 const extractDois = (raw) => {
   if (!raw) return [];
-  const matches = [...safeDecodeURI(raw).matchAll(DOI_RE)].map((m) => m[1]);
+  const prepared = splitConcatenatedUrls(safeDecodeURI(raw));
+  const matches = [...prepared.matchAll(DOI_RE)].map((m) => m[1]);
   const seen = new Set();
   const unique = [];
   for (const m of matches) {
@@ -39,10 +46,12 @@ const extractDois = (raw) => {
   return unique.map((doi) => `https://doi.org/${doi}`);
 };
 
-const importOne = async (identifier) => {
-  const { data } = await httpApplicationJson.post("/api/related-records", {
-    identifier,
-  });
+const importOne = async (identifier, signal) => {
+  const { data } = await httpApplicationJson.post(
+    "/api/related-records",
+    { identifier },
+    { signal },
+  );
   return data;
 };
 
@@ -71,6 +80,9 @@ export const LoadFromDoiModal = ({
   const [input, setInput] = useState("");
   const [results, setResults] = useState([]);
   const [lastDroppedCount, setLastDroppedCount] = useState(0);
+  // Tracks the current in-flight AbortController so the modal can cancel it
+  // on close (Close button, X icon, or Esc — all funnel through closeModal).
+  const abortRef = useRef(null);
 
   const existingDoiSet = useMemo(
     () => collectExistingDois(existingResources),
@@ -78,8 +90,10 @@ export const LoadFromDoiModal = ({
   );
 
   const mutation = useMutation({
-    mutationFn: async (identifiers) => {
-      const settled = await Promise.allSettled(identifiers.map(importOne));
+    mutationFn: async ({ identifiers, signal }) => {
+      const settled = await Promise.allSettled(
+        identifiers.map((id) => importOne(id, signal)),
+      );
       return settled.map((res, idx) => ({
         identifier: identifiers[idx],
         ...(res.status === "fulfilled"
@@ -99,6 +113,10 @@ export const LoadFromDoiModal = ({
   };
 
   const closeModal = () => {
+    // Cancel any in-flight imports — covers Close button, X icon, and Esc
+    // (all hit Modal's onClose which calls this).
+    abortRef.current?.abort();
+    abortRef.current = null;
     setOpen(false);
     setInput("");
     setResults([]);
@@ -131,16 +149,22 @@ export const LoadFromDoiModal = ({
 
   const handleLoad = () => {
     if (newDois.length === 0) return;
-    mutation.mutate(newDois, {
-      onSuccess: (outcomes) => {
-        pushImported(outcomes);
-        setResults(outcomes);
-        const remaining = outcomes
-          .filter((o) => !o.ok)
-          .map((o) => o.identifier);
-        setInput(remaining.join("\n"));
+    const controller = new AbortController();
+    abortRef.current = controller;
+    mutation.mutate(
+      { identifiers: newDois, signal: controller.signal },
+      {
+        onSuccess: (outcomes) => {
+          if (controller.signal.aborted) return;
+          pushImported(outcomes);
+          setResults(outcomes);
+          const remaining = outcomes
+            .filter((o) => !o.ok)
+            .map((o) => o.identifier);
+          setInput(remaining.join("\n"));
+        },
       },
-    });
+    );
   };
 
   const failedIdentifiers = results
@@ -149,15 +173,23 @@ export const LoadFromDoiModal = ({
 
   const handleRetry = () => {
     if (failedIdentifiers.length === 0) return;
-    mutation.mutate(failedIdentifiers, {
-      onSuccess: (outcomes) => {
-        pushImported(outcomes);
-        // Merge: replace retried entries in-place, keep others (e.g. already-successful) untouched.
-        const retried = new Map(outcomes.map((o) => [o.identifier, o]));
-        setResults((prev) => prev.map((r) => retried.get(r.identifier) || r));
-        // Intentionally do NOT touch `input` — user may have typed more DOIs to load.
+    const controller = new AbortController();
+    abortRef.current = controller;
+    mutation.mutate(
+      { identifiers: failedIdentifiers, signal: controller.signal },
+      {
+        onSuccess: (outcomes) => {
+          if (controller.signal.aborted) return;
+          pushImported(outcomes);
+          // Merge: replace retried entries in-place, keep others (e.g. already-successful) untouched.
+          const retried = new Map(outcomes.map((o) => [o.identifier, o]));
+          setResults((prev) =>
+            prev.map((r) => retried.get(r.identifier) || r),
+          );
+          // Intentionally do NOT touch `input` — user may have typed more DOIs to load.
+        },
       },
-    });
+    );
   };
 
   const errorMessage = (err) => {
