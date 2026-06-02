@@ -110,3 +110,75 @@ msgstr "Obecné informace"
 
 msgid "Related works"
 msgstr "Související zdroje"
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:125
+msgid "Citation"
+msgstr "Citace"
+
+msgid ""
+"This identifier could not be resolved. Check that the DOI is correct and "
+"registered."
+msgstr ""
+"Tento identifikátor nelze rozpoznat. Zkontrolujte, zda je DOI správné a "
+"zaregistrované."
+
+msgid "Unknown error"
+msgstr "Neznámá chyba"
+
+msgid "Load resources from DOI"
+msgstr "Načíst zdroje z DOI"
+
+msgid ""
+"Paste one or more DOI URLs (separated by commas, spaces, or new lines). Up "
+"to {{max}} DOIs per request — submit additional batches for more."
+msgstr ""
+"Vložte jedno nebo více DOI URL (oddělených čárkami, mezerami nebo novými "
+"řádky). Maximálně {{max}} DOI na požadavek — pro další odešlete novou dávku."
+
+msgid ""
+"Only the first {{max}} DOIs were kept; {{dropped}} additional DOI(s) were "
+"discarded. Submit this batch, then paste the rest."
+msgstr ""
+"Zachováno bylo pouze prvních {{max}} DOI; {{dropped}} dalších DOI bylo "
+"vyřazeno. Odešlete tuto dávku a poté vložte zbytek."
+
+msgid "Already tied to the record (will be skipped on Load):"
+msgstr "Již přidruženo k záznamu (při načtení bude přeskočeno):"
+
+msgid "Imported {{success}} of {{total}}"
+msgstr "Importováno {{success}} z {{total}}"
+
+msgid "Imported with {{count}} warning(s) — review the entry."
+msgid_plural "Imported with {{count}} warning(s) — review the entry."
+msgstr[0] "Importováno s {{count}} upozorněním — zkontrolujte záznam."
+msgstr[1] "Importováno s {{count}} upozorněními — zkontrolujte záznam."
+
+msgid "Close"
+msgstr "Zavřít"
+
+msgid "Retry failed ({{count}})"
+msgid_plural "Retry failed ({{count}})"
+msgstr[0] "Opakovat neúspěšné ({{count}})"
+msgstr[1] "Opakovat neúspěšné ({{count}})"
+
+msgid "Load"
+msgstr "Načíst"
+
+msgid "and"
+msgstr "a"
+
+msgid "online"
+msgstr "online"
+
+msgid "Available at"
+msgstr "Dostupné z"
+
+msgid "Load from DOI"
+msgstr "Načíst z DOI"
+
+msgid ""
+"Add record's related resources. You can fill them manually or load them via "
+"DOI. Note that if you load them via DOI, they cannot be edited."
+msgstr ""
+"Přidejte související zdroje záznamu. Můžete je vyplnit ručně nebo načíst "
+"pomocí DOI. Upozorňujeme, že načtené pomocí DOI nelze upravovat."
