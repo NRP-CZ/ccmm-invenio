@@ -41,19 +41,6 @@ const extractYear = (date) => {
   return match ? match[1] : "";
 };
 
-const formatLongDate = (date) => {
-  if (!date) return "";
-  const str = String(date);
-  if (!/^\d{4}-\d{2}-\d{2}/.test(str)) return "";
-  const d = new Date(`${str.slice(0, 10)}T00:00:00`);
-  if (Number.isNaN(d.getTime())) return "";
-  return d.toLocaleDateString(i18next.language || "en", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-};
-
 
 export const RelatedResourceCitation = ({ resource, relationTypeLabel }) => {
   if (!resource) return null;
@@ -61,7 +48,6 @@ export const RelatedResourceCitation = ({ resource, relationTypeLabel }) => {
   const creators = formatCreators(resource.creators);
   const year = extractYear(resource.publication_date);
   const title = resource.title || i18next.t("Untitled resource");
-  const longDate = formatLongDate(resource.publication_date);
   const publisher = resource.publisher;
   const sourceUrl = resource.imported;
   const isOnline = Boolean(sourceUrl);
@@ -75,7 +61,6 @@ export const RelatedResourceCitation = ({ resource, relationTypeLabel }) => {
         {title}
         {isOnline && ` [${i18next.t("online")}]`}.
       </span>
-      {longDate && longDate !== year && <span> {longDate}.</span>}
       {publisher && <span> {publisher}.</span>}
       {sourceUrl && (
         <span>
