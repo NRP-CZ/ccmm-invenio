@@ -28,22 +28,13 @@ const safeDecodeURI = (s) => {
 // Force a newline before any inline `http(s)://` so concatenated URLs
 // (e.g. "https://doi.org/X/Yhttps://doi.org/A/B") don't get greedy-matched
 // as one giant DOI by the suffix character class.
-const splitConcatenatedUrls = (s) =>
-  s.replace(/(\S)(https?:\/\/)/gi, "$1\n$2");
+const splitConcatenatedUrls = (s) => s.replace(/(\S)(https?:\/\/)/gi, "$1\n$2");
 
 const extractDois = (raw) => {
   if (!raw) return [];
   const prepared = splitConcatenatedUrls(safeDecodeURI(raw));
   const matches = [...prepared.matchAll(DOI_RE)].map((m) => m[1]);
-  const seen = new Set();
-  const unique = [];
-  for (const m of matches) {
-    if (!seen.has(m)) {
-      seen.add(m);
-      unique.push(m);
-    }
-  }
-  return unique.map((doi) => `https://doi.org/${doi}`);
+  return [...new Set(matches)].map((doi) => `https://doi.org/${doi}`);
 };
 
 const importOne = async (identifier, signal) => {
@@ -135,7 +126,10 @@ export const LoadFromDoiModal = ({
     const pasted = e.clipboardData?.getData("text");
     if (!pasted) return;
     e.preventDefault();
-    setInput((prev) => normalizeAndCap(`${prev}\n${pasted}`));
+    const el = e.currentTarget;
+    const before = el.value.slice(0, el.selectionStart);
+    const after = el.value.slice(el.selectionEnd);
+    setInput(normalizeAndCap(`${before}\n${pasted}\n${after}`));
   };
 
   const handleBlur = () => {
@@ -183,9 +177,7 @@ export const LoadFromDoiModal = ({
           pushImported(outcomes);
           // Merge: replace retried entries in-place, keep others (e.g. already-successful) untouched.
           const retried = new Map(outcomes.map((o) => [o.identifier, o]));
-          setResults((prev) =>
-            prev.map((r) => retried.get(r.identifier) || r),
-          );
+          setResults((prev) => prev.map((r) => retried.get(r.identifier) || r));
           // Intentionally do NOT touch `input` — user may have typed more DOIs to load.
         },
       },
@@ -226,7 +218,7 @@ export const LoadFromDoiModal = ({
       <Modal.Content scrolling>
         <Form>
           <Form.Field>
-            <label htmlFor="load-from-doi-input">
+            <label htmlFor={TEXTAREA_ID}>
               {i18next.t(
                 "Paste one or more DOI URLs (separated by commas, spaces, or new lines). Up to {{max}} DOIs per request — submit additional batches for more.",
                 { max: MAX_DOIS_PER_BATCH },
@@ -293,20 +285,20 @@ export const LoadFromDoiModal = ({
                   />
                   <List.Content>
                     <List.Header>{r.identifier}</List.Header>
-                    {r.ok
-                      ? r.data?.import_errors?.length > 0 && (
-                          <List.Description>
-                            {i18next.t(
-                              "Imported with {{count}} warning(s) — review the entry.",
-                              { count: r.data.import_errors.length },
-                            )}
-                          </List.Description>
-                        )
-                      : (
+                    {r.ok ? (
+                      r.data?.import_errors?.length > 0 && (
                         <List.Description>
-                          {errorMessage(r.error)}
+                          {i18next.t(
+                            "Imported with {{count}} warning(s) — review the entry.",
+                            { count: r.data.import_errors.length },
+                          )}
                         </List.Description>
-                      )}
+                      )
+                    ) : (
+                      <List.Description>
+                        {errorMessage(r.error)}
+                      </List.Description>
+                    )}
                   </List.Content>
                 </List.Item>
               ))}

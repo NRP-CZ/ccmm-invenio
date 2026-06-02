@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-04-10 08:52+0200\n"
+"POT-Creation-Date: 2026-06-02 15:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:115
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:205
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:119
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:215
 msgid "Datacite export"
 msgstr ""
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:168
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:125
+msgid "Citation"
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:178
 msgid "CCMM import"
 msgstr ""
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:170
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:180
 msgid "CCMM XML export."
 msgstr ""
 
 msgid "Alternative identifiers"
-msgstr ""
-
-msgid "Alternate identifiers"
 msgstr ""
 
 msgid "Community and Access"
@@ -54,6 +55,61 @@ msgstr ""
 msgid "Related works"
 msgstr ""
 
+msgid ""
+"This identifier could not be resolved. Check that the DOI is correct and "
+"registered."
+msgstr ""
+
+msgid "Unknown error"
+msgstr ""
+
+msgid "Load resources from DOI"
+msgstr ""
+
+msgid ""
+"Paste one or more DOI URLs (separated by commas, spaces, or new lines). Up "
+"to {{max}} DOIs per request — submit additional batches for more."
+msgstr ""
+
+msgid ""
+"Only the first {{max}} DOIs were kept; {{dropped}} additional DOI(s) were "
+"discarded. Submit this batch, then paste the rest."
+msgstr ""
+
+msgid "Already tied to the record (will be skipped on Load):"
+msgstr ""
+
+msgid "Imported {{success}} of {{total}}"
+msgstr ""
+
+msgid "Imported with {{count}} warning(s) — review the entry."
+msgid_plural "Imported with {{count}} warning(s) — review the entry."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Retry failed ({{count}})"
+msgid_plural "Retry failed ({{count}})"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Load"
+msgstr ""
+
+msgid "and"
+msgstr ""
+
+msgid "Untitled resource"
+msgstr ""
+
+msgid "online"
+msgstr ""
+
+msgid "Available at"
+msgstr ""
+
 msgid "Related resources"
 msgstr ""
 
@@ -63,7 +119,12 @@ msgstr ""
 msgid "Edit related resource"
 msgstr ""
 
-msgid "Untitled resource"
+msgid ""
+"Add record's related resources. You can fill them manually or load them via "
+"DOI. Note that if you load them via DOI, they cannot be edited."
+msgstr ""
+
+msgid "Load from DOI"
 msgstr ""
 
 msgid "Edit"
