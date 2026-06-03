@@ -21,8 +21,8 @@ import {
   LicenseField,
   SubjectsField,
   DatesField,
-  DescriptionsField,
 } from "@js/invenio_rdm_records";
+import { AdditionalDescriptionsField } from "@js/invenio_rdm_records/src/deposit/fields/DescriptionsField/components";
 import { AccordionField } from "react-invenio-forms";
 
 const ModalActions = {
@@ -68,13 +68,13 @@ const fromFormValues = (values) => {
 
 const RelatedResourceValidationSchema = Yup.object().shape({
   metadata: Yup.object().shape({
-    relation_type: Yup.string().required(
-      i18next.t("Relation type is required"),
-    ),
+    relation_type: Yup.string()
+      .nullable()
+      .required(i18next.t("Relation type is required")),
     title: Yup.string().required(i18next.t("Title is required")),
-    resource_type: Yup.string().required(
-      i18next.t("Resource type is required"),
-    ),
+    resource_type: Yup.string()
+      .nullable()
+      .required(i18next.t("Resource type is required")),
   }),
 });
 
@@ -193,6 +193,8 @@ export class RelatedResourceModal extends Component {
                       "metadata.title",
                       "metadata.resource_type",
                       "metadata.publication_date",
+                      "metadata.additional_descriptions",
+                      "metadata.languages",
                     ]}
                     active
                     label={i18next.t("Basic information")}
@@ -218,27 +220,19 @@ export class RelatedResourceModal extends Component {
                     />
                     <EDTFSingleDatePicker fieldPath="metadata.publication_date" />
                     <PublisherField fieldPath="metadata.publisher" />
-                  </AccordionField>
-
-                  <AccordionField
-                    includesPaths={[
-                      "metadata.additional_descriptions",
-                      "metadata.languages",
-                    ]}
-                    label={i18next.t("Additional details")}
-                  >
-                    <DescriptionsField
+                    <AdditionalDescriptionsField
                       recordUI={relatedResourceUI?.[index]}
                       options={vocabularies?.descriptions}
                       optimized
                       fieldPath="metadata.additional_descriptions"
+                      values={values}
                     />
                     <LanguagesField
                       fieldPath="metadata.languages"
                       initialOptions={_get(
                         relatedResourceUI?.[index],
                         "languages",
-                        [],
+                        []
                       ).filter((lang) => lang !== null)}
                       serializeSuggestions={(suggestions) =>
                         suggestions.map((item) => ({
@@ -358,7 +352,7 @@ export class RelatedResourceModal extends Component {
                         },
                         () => {
                           handleSubmit();
-                        },
+                        }
                       );
                     }}
                     primary
@@ -373,7 +367,7 @@ export class RelatedResourceModal extends Component {
                       {
                         action: "saveAndClose",
                       },
-                      () => handleSubmit(),
+                      () => handleSubmit()
                     );
                   }}
                   primary

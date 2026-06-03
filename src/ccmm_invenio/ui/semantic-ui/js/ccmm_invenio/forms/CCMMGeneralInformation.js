@@ -22,7 +22,11 @@ export const CCMMGeneralInformation = {
   label: i18next.t("General information"),
   component: (tabConfig) => {
     const { record, formConfig } = tabConfig;
-    const { vocabularies, pids, is_doi_required } = formConfig.config;
+    const {
+      vocabularies,
+      pids,
+      is_doi_required: isDoiRequired,
+    } = formConfig.config;
     const { overridableIdPrefix } = formConfig;
     return (
       <>
@@ -33,7 +37,7 @@ export const CCMMGeneralInformation = {
           <PIDFieldList
             pids={pids}
             record={record}
-            isDoiRequired={is_doi_required}
+            isDoiRequired={isDoiRequired}
           />
         </Overridable>
         <Overridable id={buildUID(overridableIdPrefix, "Title")} {...tabConfig}>
@@ -103,7 +107,7 @@ export const CCMMGeneralInformation = {
           <LanguagesField
             fieldPath="metadata.languages"
             initialOptions={_get(record, "ui.languages", []).filter(
-              (lang) => lang !== null,
+              (lang) => lang !== null
             )}
             serializeSuggestions={(suggestions) =>
               suggestions.map((item) => ({

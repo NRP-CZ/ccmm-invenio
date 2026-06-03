@@ -18,7 +18,9 @@ theme = WebpackThemeBundle(
     default="semantic-ui",
     themes={
         "semantic-ui": {
-            "entry": {},
+            # TODO: Hacky way for JS tests to work. Our logic in runner looks only at entry points and here
+            # we just have an alias. Should be fixed upstream
+            "entry": {"ccmm_invenio": "./js/ccmm_invenio/index.js"},
             "dependencies": {},
             "devDependencies": {},
             "aliases": {"@js/ccmm_invenio": "./js/ccmm_invenio"},

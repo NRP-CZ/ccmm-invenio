@@ -21,6 +21,7 @@ export const RelatedResourceFieldItem = ({
   relatedResourceUI,
 }) => {
   const dropRef = React.useRef(null);
+  // eslint-disable-next-line no-unused-vars
   const [_, drag, preview] = useDrag({
     item: { index, type: "relatedResource" },
   });
@@ -51,13 +52,13 @@ export const RelatedResourceFieldItem = ({
     if (!relationType) return "";
     const relationOptions = vocabularies?.identifiers?.relations || [];
     const found = relationOptions.find(
-      (opt) => opt.value === relationType.id || opt.value === relationType,
+      (opt) => opt.value === relationType.id || opt.value === relationType
     );
     return found?.text || relationType.id || relationType;
   };
 
   const relationTypeLabel = getRelationTypeLabel(
-    initialResource?.relation_type,
+    initialResource?.relation_type
   );
 
   const isImported = Boolean(initialResource?.imported);
@@ -68,7 +69,9 @@ export const RelatedResourceFieldItem = ({
       <React.Fragment>
         <List.Item
           className={
-            hidden ? "deposit-drag-listitem hidden" : "deposit-drag-listitem"
+            hidden
+              ? "deposit-drag-listitem hidden rel-mt-1"
+              : "deposit-drag-listitem rel-mt-1"
           }
         >
           <List.Content floated="right">
