@@ -1,46 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { i18next } from "@translations/ccmm_invenio";
+import { extractYear, formatCreators } from "./utils";
 
-const MAX_CREATORS = 5;
-
-const formatCreator = (creator) => {
-  const p = creator?.person_or_org;
-  if (!p) return null;
-  if (p.family_name) {
-    const family = p.family_name.toUpperCase();
-    const given = p.given_name?.trim();
-    return given ? `${family}, ${given[0].toUpperCase()}.` : family;
+// Return `raw` only when it parses as a real URL and uses http(s); otherwise
+// "". Blocks javascript:, data:, file:, etc. — browsers will still execute
+// `javascript:` in href even though React escapes attribute values.
+const safeHref = (raw) => {
+  if (!raw) return "";
+  try {
+    const u = new URL(raw);
+    return u.protocol === "https:" || u.protocol === "http:" ? u.href : "";
+  } catch {
+    return "";
   }
-  if (p.name) return p.name.toUpperCase();
-  return null;
 };
-
-const formatCreators = (creators) => {
-  if (!creators?.length) return "";
-  const formatted = creators
-    .slice(0, MAX_CREATORS)
-    .map(formatCreator)
-    .filter(Boolean);
-  if (formatted.length === 0) return "";
-  let joined;
-  if (formatted.length === 1) {
-    joined = formatted[0];
-  } else {
-    const head = formatted.slice(0, -1).join(", ");
-    const tail = formatted[formatted.length - 1];
-    joined = `${head} ${i18next.t("and")} ${tail}`;
-  }
-  if (creators.length > MAX_CREATORS) joined += " et al.";
-  return joined;
-};
-
-const extractYear = (date) => {
-  if (!date) return "";
-  const match = String(date).match(/^(\d{4})/);
-  return match ? match[1] : "";
-};
-
 
 export const RelatedResourceCitation = ({ resource, relationTypeLabel }) => {
   if (!resource) return null;
@@ -50,6 +24,7 @@ export const RelatedResourceCitation = ({ resource, relationTypeLabel }) => {
   const title = resource.title || i18next.t("Untitled resource");
   const publisher = resource.publisher;
   const sourceUrl = resource.imported;
+  const sourceHref = safeHref(sourceUrl);
   const isOnline = Boolean(sourceUrl);
 
   const head = [creators, year].filter(Boolean).join(", ");
@@ -66,20 +41,22 @@ export const RelatedResourceCitation = ({ resource, relationTypeLabel }) => {
         <span>
           {" "}
           {i18next.t("Available at")}:{" "}
-          <a
-            href={sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {sourceUrl}
-          </a>
+          {sourceHref ? (
+            <a
+              href={sourceHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {sourceUrl}
+            </a>
+          ) : (
+            <span>{sourceUrl}</span>
+          )}
           .
         </span>
       )}
-      {relationTypeLabel && (
-        <span> [{relationTypeLabel.toLowerCase()}]</span>
-      )}
+      {relationTypeLabel && <span> [{relationTypeLabel}]</span>}
     </span>
   );
 };

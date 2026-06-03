@@ -10,10 +10,7 @@ export const CCMMFunding = {
   component: (tabConfig) => {
     const { overridableIdPrefix } = tabConfig.formConfig;
     return (
-      <Overridable
-        id={buildUID(overridableIdPrefix, "Funding")}
-        {...tabConfig}
-      >
+      <Overridable id={buildUID(overridableIdPrefix, "Funding")} {...tabConfig}>
         <FundingField fieldPath="metadata.funding" />
       </Overridable>
     );

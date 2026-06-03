@@ -12,54 +12,17 @@ import {
 } from "semantic-ui-react";
 import { httpApplicationJson } from "@js/oarepo_ui";
 import { i18next } from "@translations/ccmm_invenio";
+import { MAX_DOIS_PER_BATCH, collectExistingDois, extractDois } from "./utils";
 
-const DOI_RE = /\b(10\.\d{4,9}\/[^\s,;"'<>]+)\b/gi;
 const TEXTAREA_ID = "load-from-doi-input";
-const MAX_DOIS_PER_BATCH = 20;
-
-const safeDecodeURI = (s) => {
-  try {
-    return decodeURIComponent(s);
-  } catch {
-    return s;
-  }
-};
-
-// Force a newline before any inline `http(s)://` so concatenated URLs
-// (e.g. "https://doi.org/X/Yhttps://doi.org/A/B") don't get greedy-matched
-// as one giant DOI by the suffix character class.
-const splitConcatenatedUrls = (s) => s.replace(/(\S)(https?:\/\/)/gi, "$1\n$2");
-
-const extractDois = (raw) => {
-  if (!raw) return [];
-  const prepared = splitConcatenatedUrls(safeDecodeURI(raw));
-  const matches = [...prepared.matchAll(DOI_RE)].map((m) => m[1]);
-  return [...new Set(matches)].map((doi) => `https://doi.org/${doi}`);
-};
 
 const importOne = async (identifier, signal) => {
   const { data } = await httpApplicationJson.post(
     "/api/related-records",
     { identifier },
-    { signal },
+    { signal }
   );
   return data;
-};
-
-const collectExistingDois = (existingResources) => {
-  const set = new Set();
-  for (const resource of existingResources || []) {
-    if (resource?.imported) set.add(resource.imported);
-    for (const id of resource?.identifiers || []) {
-      if (id?.scheme === "doi" && id?.identifier) {
-        const url = /^https?:\/\//i.test(id.identifier)
-          ? id.identifier
-          : `https://doi.org/${id.identifier}`;
-        set.add(url);
-      }
-    }
-  }
-  return set;
 };
 
 export const LoadFromDoiModal = ({
@@ -77,13 +40,13 @@ export const LoadFromDoiModal = ({
 
   const existingDoiSet = useMemo(
     () => collectExistingDois(existingResources),
-    [existingResources],
+    [existingResources]
   );
 
   const mutation = useMutation({
     mutationFn: async ({ identifiers, signal }) => {
       const settled = await Promise.allSettled(
-        identifiers.map((id) => importOne(id, signal)),
+        identifiers.map((id) => importOne(id, signal))
       );
       return settled.map((res, idx) => ({
         identifier: identifiers[idx],
@@ -157,7 +120,7 @@ export const LoadFromDoiModal = ({
             .map((o) => o.identifier);
           setInput(remaining.join("\n"));
         },
-      },
+      }
     );
   };
 
@@ -180,7 +143,7 @@ export const LoadFromDoiModal = ({
           setResults((prev) => prev.map((r) => retried.get(r.identifier) || r));
           // Intentionally do NOT touch `input` — user may have typed more DOIs to load.
         },
-      },
+      }
     );
   };
 
@@ -188,7 +151,7 @@ export const LoadFromDoiModal = ({
     const status = err?.response?.status;
     if (status === 404) {
       return i18next.t(
-        "This identifier could not be resolved. Check that the DOI is correct and registered.",
+        "This identifier could not be resolved. Check that the DOI is correct and registered."
       );
     }
     const description = err?.response?.data?.message;
@@ -221,7 +184,7 @@ export const LoadFromDoiModal = ({
             <label htmlFor={TEXTAREA_ID}>
               {i18next.t(
                 "Paste one or more DOI URLs (separated by commas, spaces, or new lines). Up to {{max}} DOIs per request — submit additional batches for more.",
-                { max: MAX_DOIS_PER_BATCH },
+                { max: MAX_DOIS_PER_BATCH }
               )}
             </label>
             <TextArea
@@ -243,7 +206,7 @@ export const LoadFromDoiModal = ({
               >
                 {i18next.t(
                   "Only the first {{max}} DOIs were kept; {{dropped}} additional DOI(s) were discarded. Submit this batch, then paste the rest.",
-                  { max: MAX_DOIS_PER_BATCH, dropped: lastDroppedCount },
+                  { max: MAX_DOIS_PER_BATCH, dropped: lastDroppedCount }
                 )}
               </Message>
             )}
@@ -251,7 +214,7 @@ export const LoadFromDoiModal = ({
               <Message negative size="tiny" data-testid="duplicate-doi-warning">
                 <Message.Header>
                   {i18next.t(
-                    "Already tied to the record (will be skipped on Load):",
+                    "Already tied to the record (will be skipped on Load):"
                   )}
                 </Message.Header>
                 <List bulleted>
@@ -290,7 +253,7 @@ export const LoadFromDoiModal = ({
                         <List.Description>
                           {i18next.t(
                             "Imported with {{count}} warning(s) — review the entry.",
-                            { count: r.data.import_errors.length },
+                            { count: r.data.import_errors.length }
                           )}
                         </List.Description>
                       )
