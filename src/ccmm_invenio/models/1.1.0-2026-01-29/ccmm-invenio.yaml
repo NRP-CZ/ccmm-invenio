@@ -16,6 +16,7 @@ CCMMRootRecord:
       index: false
 CCMMInvenioRelatedResource:
   type: object
+  ui_marshmallow_schema_class: ccmm_invenio.serializers.ui.CCMMRelatedResourceUISchema
   properties:
     publication_date:
       type: RDMPublicationDate
