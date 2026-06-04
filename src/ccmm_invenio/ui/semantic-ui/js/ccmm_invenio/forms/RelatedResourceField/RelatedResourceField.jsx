@@ -93,6 +93,22 @@ class RelatedResourceFieldForm extends Component {
               );
             })}
           </List>
+          <LoadFromDoiModal
+            onResourcesImport={this.handleImportedResources}
+            existingResources={resourcesList}
+            handleSave={handleSave}
+            trigger={
+              <Form.Button
+                className="array-field-add-button inline-block rel-mr-1"
+                type="button"
+                icon
+                labelPosition="left"
+              >
+                <Icon name="download" />
+                {i18next.t("Load from DOI")}
+              </Form.Button>
+            }
+          />
           <RelatedResourceModal
             onResourceChange={this.handleOnResourceChange}
             handleSave={handleSave}
@@ -103,28 +119,13 @@ class RelatedResourceFieldForm extends Component {
             relatedResourceUI={relatedResourceUI}
             trigger={
               <Form.Button
-                className="array-field-add-button inline-block rel-mr-1"
-                type="button"
-                icon
-                labelPosition="left"
-              >
-                <Icon name="add" />
-                {i18next.t("Add related resource")}
-              </Form.Button>
-            }
-          />
-          <LoadFromDoiModal
-            onResourcesImport={this.handleImportedResources}
-            existingResources={resourcesList}
-            trigger={
-              <Form.Button
                 className="array-field-add-button inline-block"
                 type="button"
                 icon
                 labelPosition="left"
               >
-                <Icon name="download" />
-                {i18next.t("Load from DOI")}
+                <Icon name="add" />
+                {i18next.t("Add manually")}
               </Form.Button>
             }
           />

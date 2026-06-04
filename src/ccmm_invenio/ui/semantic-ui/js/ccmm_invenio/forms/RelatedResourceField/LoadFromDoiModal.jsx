@@ -11,8 +11,20 @@ import {
   TextArea,
 } from "semantic-ui-react";
 import { httpApplicationJson } from "@js/oarepo_ui";
+import { SchemaField } from "@js/invenio_rdm_records/src/deposit/serializers";
 import { i18next } from "@translations/ccmm_invenio";
 import { MAX_DOIS_PER_BATCH, collectExistingDois, extractDois } from "./utils";
+import { RelatedResourceSchema } from "./RelatedResourceSchema";
+
+// Run the same per-field deserializer the top-level form uses, so imported
+// items match the shape Formik already holds for manually-added ones
+// (vocab refs flattened to string ids). Otherwise the partial-validation
+// merge in Invenio's save flow re-clobbers the deserialized response with
+// Formik's un-flattened shape, and the edit dropdown crashes.
+const importedItemDeserializer = new SchemaField({
+  fieldpath: "metadata.related_resources",
+  schema: RelatedResourceSchema,
+});
 
 const TEXTAREA_ID = "load-from-doi-input";
 
@@ -29,6 +41,7 @@ export const LoadFromDoiModal = ({
   trigger,
   onResourcesImport,
   existingResources,
+  handleSave,
 }) => {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
@@ -58,17 +71,22 @@ export const LoadFromDoiModal = ({
   });
 
   const pushImported = (outcomes) => {
-    const imported = outcomes
+    const items = outcomes
       .filter((o) => o.ok)
       .map((o) => ({ ...o.data.metadata, imported: o.identifier }));
-    if (imported.length > 0) {
-      onResourcesImport(imported);
-    }
+    if (items.length === 0) return;
+    const wrapped = { metadata: { related_resources: items } };
+    const imported =
+      importedItemDeserializer.deserialize(wrapped).metadata.related_resources;
+    onResourcesImport(imported);
   };
 
   const closeModal = () => {
     // Cancel any in-flight imports — covers Close button, X icon, and Esc
     // (all hit Modal's onClose which calls this).
+    // Snapshot before reset: only auto-save when the close happens cleanly
+    // (nothing pending) and at least one DOI was imported this session.
+    const shouldSave = !mutation.isPending && results.some((r) => r.ok);
     abortRef.current?.abort();
     abortRef.current = null;
     setOpen(false);
@@ -76,6 +94,7 @@ export const LoadFromDoiModal = ({
     setResults([]);
     setLastDroppedCount(0);
     mutation.reset();
+    if (shouldSave) handleSave();
   };
 
   const normalizeAndCap = (raw) => {
@@ -138,9 +157,10 @@ export const LoadFromDoiModal = ({
         onSuccess: (outcomes) => {
           if (controller.signal.aborted) return;
           pushImported(outcomes);
-          // Merge: replace retried entries in-place, keep others (e.g. already-successful) untouched.
-          const retried = new Map(outcomes.map((o) => [o.identifier, o]));
-          setResults((prev) => prev.map((r) => retried.get(r.identifier) || r));
+          // Replace the list with just the retried items — previously-succeeded
+          // entries stay imported via pushImported but drop out of the view so
+          // the user sees feedback for the action they just took.
+          setResults(outcomes);
           // Intentionally do NOT touch `input` — user may have typed more DOIs to load.
         },
       }
@@ -302,7 +322,7 @@ export const LoadFromDoiModal = ({
           disabled={mutation.isPending || newDois.length === 0}
         >
           <Icon name="download" />
-          {i18next.t("Load")}
+          {i18next.t("Add to record")}
         </Button>
       </Modal.Actions>
     </Modal>
@@ -313,4 +333,5 @@ LoadFromDoiModal.propTypes = {
   trigger: PropTypes.node.isRequired,
   onResourcesImport: PropTypes.func.isRequired,
   existingResources: PropTypes.array,
+  handleSave: PropTypes.func.isRequired,
 };
