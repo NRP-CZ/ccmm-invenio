@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-06-02 15:50+0200\n"
+"POT-Creation-Date: 2026-06-04 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,10 +95,7 @@ msgid_plural "Retry failed ({{count}})"
 msgstr[0] ""
 msgstr[1] ""
 
-msgid "Load"
-msgstr ""
-
-msgid "and"
+msgid "Add to record"
 msgstr ""
 
 msgid "Untitled resource"
@@ -125,6 +122,9 @@ msgid ""
 msgstr ""
 
 msgid "Load from DOI"
+msgstr ""
+
+msgid "Add manually"
 msgstr ""
 
 msgid "Edit"
@@ -157,9 +157,6 @@ msgstr ""
 msgid "Select relation type..."
 msgstr ""
 
-msgid "Additional details"
-msgstr ""
-
 msgid "Identifiers"
 msgstr ""
 
@@ -176,4 +173,7 @@ msgid "Cancel"
 msgstr ""
 
 msgid "Save"
+msgstr ""
+
+msgid "and"
 msgstr ""

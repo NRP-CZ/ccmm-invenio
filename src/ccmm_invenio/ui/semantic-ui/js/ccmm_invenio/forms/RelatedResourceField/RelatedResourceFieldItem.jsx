@@ -61,8 +61,6 @@ export const RelatedResourceFieldItem = ({
     initialResource?.relation_type
   );
 
-  const isImported = Boolean(initialResource?.imported);
-
   drop(dropRef);
   return (
     <Ref innerRef={dropRef} key={compKey}>
@@ -75,27 +73,25 @@ export const RelatedResourceFieldItem = ({
           }
         >
           <List.Content floated="right">
-            {!isImported && (
-              <RelatedResourceModal
-                handleSave={handleSave}
-                compKey={compKey}
-                index={index}
-                relatedResourceUI={relatedResourceUI}
-                addLabel={addLabel}
-                editLabel={editLabel}
-                onResourceChange={(selectedResource) => {
-                  replaceResource(index, selectedResource);
-                }}
-                initialResource={initialResource}
-                vocabularies={vocabularies}
-                action="edit"
-                trigger={
-                  <Button size="mini" primary type="button">
-                    {i18next.t("Edit")}
-                  </Button>
-                }
-              />
-            )}
+            <RelatedResourceModal
+              handleSave={handleSave}
+              compKey={compKey}
+              index={index}
+              relatedResourceUI={relatedResourceUI}
+              addLabel={addLabel}
+              editLabel={editLabel}
+              onResourceChange={(selectedResource) => {
+                replaceResource(index, selectedResource);
+              }}
+              initialResource={initialResource}
+              vocabularies={vocabularies}
+              action="edit"
+              trigger={
+                <Button size="mini" primary type="button">
+                  {i18next.t("Edit")}
+                </Button>
+              }
+            />
             <Button
               size="mini"
               type="button"

@@ -174,3 +174,9 @@ msgid ""
 "Add record's related resources. You can fill them manually or load them via "
 "DOI. Note that if you load them via DOI, they cannot be edited."
 msgstr ""
+
+msgid "Add to record"
+msgstr ""
+
+msgid "Add manually"
+msgstr ""
