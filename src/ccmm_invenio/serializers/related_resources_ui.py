@@ -24,9 +24,11 @@ from invenio_rdm_records.resources.serializers.ui.schema import (
 from invenio_rdm_records.resources.serializers.ui.schema import (
     make_affiliation_index as rdm_make_affiliation_index,
 )
+from invenio_rdm_records.services.schemas.metadata import record_identifiers_schemes
 from invenio_vocabularies.resources import VocabularyL10Schema
 from marshmallow import Schema, fields
 from marshmallow_utils.fields import FormatEDTF
+from marshmallow_utils.schemas import IdentifierSchema as RDMIdentifierSchema
 
 
 def make_related_affiliation_index(attr: str, obj: dict, *args: Any) -> Any:
@@ -34,11 +36,12 @@ def make_related_affiliation_index(attr: str, obj: dict, *args: Any) -> Any:
     return rdm_make_affiliation_index(attr, {"metadata": obj}, *args)
 
 
-class IdentifierSchema(Schema):
+class IdentifierSchema(RDMIdentifierSchema):
     """UI schema for related resource identifiers."""
 
-    identifier = fields.String()
-    scheme = fields.String()
+    def __init__(self, **kwargs: Any) -> None:
+        """Initialize the schema with RDM record identifier schemes."""
+        super().__init__(allowed_schemes=record_identifiers_schemes, **kwargs)
 
 
 class CCMMRelatedResourceUISchema(Schema):
