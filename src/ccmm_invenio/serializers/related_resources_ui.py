@@ -24,7 +24,9 @@ from invenio_rdm_records.resources.serializers.ui.schema import (
 from invenio_rdm_records.resources.serializers.ui.schema import (
     make_affiliation_index as rdm_make_affiliation_index,
 )
-from invenio_rdm_records.services.schemas.metadata import record_related_identifiers_schemes
+from invenio_rdm_records.services.schemas.metadata import (
+    record_related_identifiers_schemes,  # type: ignore[attr-defined]
+)
 from invenio_vocabularies.resources import VocabularyL10Schema
 from marshmallow import Schema, fields
 from marshmallow_utils.fields import FormatEDTF
