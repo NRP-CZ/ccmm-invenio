@@ -163,10 +163,10 @@ describe("collectExistingDois", () => {
     expect(collectExistingDois([])).toEqual(new Set());
   });
 
-  it("collects the `imported` URL from each resource", () => {
+  it("collects the `imported_from` URL from each resource", () => {
     const resources = [
-      { imported: "https://doi.org/10.1111/a" },
-      { imported: "https://doi.org/10.2222/b" },
+      { imported_from: "https://doi.org/10.1111/a" },
+      { imported_from: "https://doi.org/10.2222/b" },
     ];
     expect([...collectExistingDois(resources)]).toEqual([
       "https://doi.org/10.1111/a",
@@ -212,10 +212,10 @@ describe("collectExistingDois", () => {
     ]);
   });
 
-  it("collects from both `imported` and `identifiers` and deduplicates", () => {
+  it("collects from both `imported_from` and `identifiers` and deduplicates", () => {
     const resources = [
       {
-        imported: "https://doi.org/10.1111/a",
+        imported_from: "https://doi.org/10.1111/a",
         identifiers: [{ scheme: "doi", identifier: "10.1111/a" }],
       },
     ];
@@ -224,7 +224,7 @@ describe("collectExistingDois", () => {
     ]);
   });
 
-  it("skips resources without `imported` and without DOI identifiers", () => {
+  it("skips resources without `imported_from` and without DOI identifiers", () => {
     const resources = [
       { title: "Manual entry, no DOI" },
       { identifiers: [] },
@@ -235,13 +235,13 @@ describe("collectExistingDois", () => {
 
   it("deduplicates the same DOI stored under http://, https://, and dx.doi.org variants", () => {
     const resources = [
-      { imported: "http://doi.org/10.1234/abcd" },
+      { imported_from: "http://doi.org/10.1234/abcd" },
       {
         identifiers: [
           { scheme: "doi", identifier: "https://dx.doi.org/10.1234/abcd" },
         ],
       },
-      { imported: "https://doi.org/10.1234/abcd" },
+      { imported_from: "https://doi.org/10.1234/abcd" },
     ];
     expect([...collectExistingDois(resources)]).toEqual([
       "https://doi.org/10.1234/abcd",
@@ -250,7 +250,7 @@ describe("collectExistingDois", () => {
 
   it("lowercases collected DOIs so case-only variants match extractDois output", () => {
     const resources = [
-      { imported: "https://doi.org/10.1234/AbC" },
+      { imported_from: "https://doi.org/10.1234/AbC" },
       { identifiers: [{ scheme: "doi", identifier: "10.5678/DeF" }] },
     ];
     expect([...collectExistingDois(resources)]).toEqual([

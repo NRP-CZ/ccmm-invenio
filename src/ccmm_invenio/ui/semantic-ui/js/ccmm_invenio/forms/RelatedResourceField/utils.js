@@ -78,8 +78,8 @@ export const extractDois = (raw) => {
  * Build a `Set` of canonical DOI URLs already represented on the record.
  *
  * Two sources are merged:
- *   1. Each related-resource's `imported` field (set when the item came in
- *      via the Load-from-DOI modal).
+ *   1. Each related-resource's `imported_from` field (set when the item came
+ *      in via the Load-from-DOI modal).
  *   2. Each item's `identifiers[]` array entries whose `scheme === "doi"`.
  *      Bare-form identifiers are normalized to the `https://doi.org/...` URL.
  *
@@ -95,8 +95,8 @@ export const collectExistingDois = (existingResources) => {
     // Route both sources through extractDois so dedup is canonical regardless
     // of how the existing data was stored (bare DOI, http vs https,
     // doi.org vs dx.doi.org, mixed case, etc.).
-    if (resource?.imported) {
-      for (const url of extractDois(resource.imported)) {
+    if (resource?.imported_from) {
+      for (const url of extractDois(resource.imported_from)) {
         set.add(url);
       }
     }

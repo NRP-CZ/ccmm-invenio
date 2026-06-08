@@ -163,7 +163,7 @@ export const RelatedResourceSchema = {
     serializedDefault: [],
     localeFields: ["title", "description"],
   }),
-  imported: new Field({
-    fieldpath: "imported",
+  imported_from: new Field({
+    fieldpath: "imported_from",
   }),
 };

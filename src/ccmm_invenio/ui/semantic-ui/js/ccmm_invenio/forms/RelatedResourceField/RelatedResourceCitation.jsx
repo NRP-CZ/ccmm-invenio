@@ -23,7 +23,7 @@ export const RelatedResourceCitation = ({ resource, relationTypeLabel }) => {
   const year = extractYear(resource.publication_date);
   const title = resource.title || i18next.t("Untitled resource");
   const publisher = resource.publisher;
-  const sourceUrl = resource.imported;
+  const sourceUrl = resource.imported_from;
   const sourceHref = safeHref(sourceUrl);
   const isOnline = Boolean(sourceUrl);
 

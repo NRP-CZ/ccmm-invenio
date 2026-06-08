@@ -49,6 +49,16 @@ export const CCMMGeneralInformation = {
           />
         </Overridable>
         <Overridable
+          id={buildUID(overridableIdPrefix, "ResourceType")}
+          {...tabConfig}
+        >
+          <ResourceTypeField
+            options={vocabularies?.resource_type}
+            fieldPath="metadata.resource_type"
+            required
+          />
+        </Overridable>
+        <Overridable
           id={buildUID(overridableIdPrefix, "Creators")}
           {...tabConfig}
         >
@@ -86,16 +96,6 @@ export const CCMMGeneralInformation = {
           {...tabConfig}
         >
           <VersionField fieldPath="metadata.version" />
-        </Overridable>
-        <Overridable
-          id={buildUID(overridableIdPrefix, "ResourceType")}
-          {...tabConfig}
-        >
-          <ResourceTypeField
-            options={vocabularies?.resource_type}
-            fieldPath="metadata.resource_type"
-            required
-          />
         </Overridable>
         <Overridable
           id={buildUID(overridableIdPrefix, "Languages")}
@@ -184,12 +184,12 @@ export const CCMMGeneralInformation = {
   includesPaths: [
     "pids",
     "metadata.title",
+    "metadata.resource_type",
     "metadata.creators",
     "metadata.contributors",
     "metadata.publication_date",
     "metadata.publisher",
     "metadata.version",
-    "metadata.resource_type",
     "metadata.languages",
     "metadata.subjects",
     "metadata.rights",

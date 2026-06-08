@@ -152,7 +152,7 @@ CCMMInvenioRelatedResource:
         en: Relation type
         cs: Typ vztahu
 
-    imported:
+    imported_from:
       type: keyword
       label:
         en: Imported from
