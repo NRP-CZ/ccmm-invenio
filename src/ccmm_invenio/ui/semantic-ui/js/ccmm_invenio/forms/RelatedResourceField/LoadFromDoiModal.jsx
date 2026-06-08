@@ -73,7 +73,7 @@ export const LoadFromDoiModal = ({
   const pushImported = (outcomes) => {
     const items = outcomes
       .filter((o) => o.ok)
-      .map((o) => ({ ...o.data.metadata, imported: o.identifier }));
+      .map((o) => ({ ...o.data.metadata, imported_from: o.identifier }));
     if (items.length === 0) return;
     const wrapped = { metadata: { related_resources: items } };
     const imported =
@@ -85,8 +85,8 @@ export const LoadFromDoiModal = ({
     // Cancel any in-flight imports — covers Close button, X icon, and Esc
     // (all hit Modal's onClose which calls this).
     // Snapshot before reset: only auto-save when the close happens cleanly
-    // (nothing pending) and at least one DOI was imported this session.
-    const shouldSave = !mutation.isPending && results.some((r) => r.ok);
+    // (nothing pending) and the user has at least submitted a Load this session.
+    // const shouldSave = !mutation.isPending && results.length > 0;
     abortRef.current?.abort();
     abortRef.current = null;
     setOpen(false);
@@ -94,7 +94,9 @@ export const LoadFromDoiModal = ({
     setResults([]);
     setLastDroppedCount(0);
     mutation.reset();
-    if (shouldSave) handleSave();
+    // It seems that save is not necessary now that we have proper UI serialization
+    // of related_resources, but leaving this here for now, in case some bug of this type occurs.
+    // if (shouldSave) handleSave();
   };
 
   const normalizeAndCap = (raw) => {
@@ -138,30 +140,6 @@ export const LoadFromDoiModal = ({
             .filter((o) => !o.ok)
             .map((o) => o.identifier);
           setInput(remaining.join("\n"));
-        },
-      }
-    );
-  };
-
-  const failedIdentifiers = results
-    .filter((r) => !r.ok)
-    .map((r) => r.identifier);
-
-  const handleRetry = () => {
-    if (failedIdentifiers.length === 0) return;
-    const controller = new AbortController();
-    abortRef.current = controller;
-    mutation.mutate(
-      { identifiers: failedIdentifiers, signal: controller.signal },
-      {
-        onSuccess: (outcomes) => {
-          if (controller.signal.aborted) return;
-          pushImported(outcomes);
-          // Replace the list with just the retried items — previously-succeeded
-          // entries stay imported via pushImported but drop out of the view so
-          // the user sees feedback for the action they just took.
-          setResults(outcomes);
-          // Intentionally do NOT touch `input` — user may have typed more DOIs to load.
         },
       }
     );
@@ -297,21 +275,6 @@ export const LoadFromDoiModal = ({
           content={i18next.t("Close")}
           floated="left"
         />
-        {failedIdentifiers.length > 0 && (
-          <Button
-            name="retry"
-            onClick={handleRetry}
-            icon
-            labelPosition="left"
-            loading={mutation.isPending}
-            disabled={mutation.isPending}
-          >
-            <Icon name="redo" />
-            {i18next.t("Retry failed ({{count}})", {
-              count: failedIdentifiers.length,
-            })}
-          </Button>
-        )}
         <Button
           name="load"
           onClick={handleLoad}
