@@ -66,7 +66,7 @@ class RelatedResourceFieldForm extends Component {
           <FieldLabel htmlFor={fieldPath} label={label} icon={icon} />
           <label className="helptext">
             {i18next.t(
-              "Add record's related resources. You can fill them manually or load them via DOI. Note that if you load them via DOI, they cannot be edited."
+              "Add record's related resources. You can fill them manually or load them via DOI."
             )}
           </label>
           <List>
@@ -96,6 +96,7 @@ class RelatedResourceFieldForm extends Component {
           <LoadFromDoiModal
             onResourcesImport={this.handleImportedResources}
             existingResources={resourcesList}
+            vocabularies={vocabularies}
             handleSave={handleSave}
             trigger={
               <Form.Button

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-06-04 13:27+0200\n"
+"POT-Creation-Date: 2026-06-09 14:46+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,20 @@ msgstr ""
 msgid "Unknown error"
 msgstr ""
 
-msgid "Load resources from DOI"
+msgid "Import from DOI"
+msgstr ""
+
+msgid "Relation type"
+msgstr ""
+
+msgid "Select relation type..."
+msgstr ""
+
+msgid ""
+"This relation type will be applied to every resource loaded in this batch. "
+"It describes how each loaded record relates to the record you are creating. "
+"You can modify relation types of individual related resources later by "
+"clicking the Edit button next to each related resource."
 msgstr ""
 
 msgid ""
@@ -82,18 +95,21 @@ msgstr ""
 msgid "Imported {{success}} of {{total}}"
 msgstr ""
 
-msgid "Imported with {{count}} warning(s) — review the entry."
-msgid_plural "Imported with {{count}} warning(s) — review the entry."
+msgid "{{count}} field(s) need attention."
+msgid_plural "{{count}} field(s) need attention."
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "Imported with {{count}} warning(s)."
+msgid_plural "Imported with {{count}} warning(s)."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Use the Edit button on the entry in the list to fix it manually."
+msgstr ""
 
 msgid "Close"
 msgstr ""
-
-msgid "Retry failed ({{count}})"
-msgid_plural "Retry failed ({{count}})"
-msgstr[0] ""
-msgstr[1] ""
 
 msgid "Add to record"
 msgstr ""
@@ -118,7 +134,7 @@ msgstr ""
 
 msgid ""
 "Add record's related resources. You can fill them manually or load them via "
-"DOI. Note that if you load them via DOI, they cannot be edited."
+"DOI."
 msgstr ""
 
 msgid "Load from DOI"
@@ -149,12 +165,6 @@ msgid "Added"
 msgstr ""
 
 msgid "Basic information"
-msgstr ""
-
-msgid "Relation type"
-msgstr ""
-
-msgid "Select relation type..."
 msgstr ""
 
 msgid "Identifiers"

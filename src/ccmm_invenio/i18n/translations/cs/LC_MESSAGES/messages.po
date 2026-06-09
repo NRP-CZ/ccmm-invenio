@@ -15,14 +15,8 @@ msgstr "Import CCMM"
 msgid "CCMM XML export."
 msgstr "Export CCMM XML."
 
-msgid "Community"
-msgstr "Komunita"
-
 msgid "Visibility"
 msgstr "Viditelnost"
-
-msgid "Files upload"
-msgstr "Nahrání souborů"
 
 msgid "Basic information"
 msgstr "Základní informace"
@@ -30,14 +24,8 @@ msgstr "Základní informace"
 msgid "Creators and Contributors"
 msgstr "Autoři a přispěvatelé"
 
-msgid "Recommended information"
-msgstr "Doporučené informace"
-
 msgid "Identifiers"
 msgstr "Identifikátory"
-
-msgid "Alternate identifiers"
-msgstr "Alternativní identifikátory"
 
 msgid "Related resources"
 msgstr "Související zdroje"
@@ -77,9 +65,6 @@ msgstr "Typ relace"
 
 msgid "Select relation type..."
 msgstr "Vyberte typ relace..."
-
-msgid "Additional details"
-msgstr "Další podrobnosti"
 
 msgid "Dates and Subjects"
 msgstr "Data a předměty"
@@ -125,9 +110,6 @@ msgstr ""
 msgid "Unknown error"
 msgstr "Neznámá chyba"
 
-msgid "Load resources from DOI"
-msgstr "Načíst zdroje z DOI"
-
 msgid ""
 "Paste one or more DOI URLs (separated by commas, spaces, or new lines). Up "
 "to {{max}} DOIs per request — submit additional batches for more."
@@ -148,21 +130,8 @@ msgstr "Již přidruženo k záznamu (při načtení bude přeskočeno):"
 msgid "Imported {{success}} of {{total}}"
 msgstr "Importováno {{success}} z {{total}}"
 
-msgid "Imported with {{count}} warning(s) — review the entry."
-msgid_plural "Imported with {{count}} warning(s) — review the entry."
-msgstr[0] "Importováno s {{count}} upozorněním — zkontrolujte záznam."
-msgstr[1] "Importováno s {{count}} upozorněními — zkontrolujte záznam."
-
 msgid "Close"
 msgstr "Zavřít"
-
-msgid "Retry failed ({{count}})"
-msgid_plural "Retry failed ({{count}})"
-msgstr[0] "Opakovat neúspěšné ({{count}})"
-msgstr[1] "Opakovat neúspěšné ({{count}})"
-
-msgid "Load"
-msgstr "Načíst"
 
 msgid "and"
 msgstr "a"
@@ -176,15 +145,42 @@ msgstr "Dostupné z"
 msgid "Load from DOI"
 msgstr "Načíst z DOI"
 
-msgid ""
-"Add record's related resources. You can fill them manually or load them via "
-"DOI. Note that if you load them via DOI, they cannot be edited."
-msgstr ""
-"Přidejte související zdroje záznamu. Můžete je vyplnit ručně nebo načíst "
-"pomocí DOI. Upozorňujeme, že načtené pomocí DOI nelze upravovat."
-
 msgid "Add to record"
 msgstr "Přidat k záznamu"
 
 msgid "Add manually"
 msgstr "Přidat ručně"
+
+msgid "Import from DOI"
+msgstr "Načíst z DOI"
+
+msgid ""
+"This relation type will be applied to every resource loaded in this batch. "
+"It describes how each loaded record relates to the record you are creating. "
+"You can modify relation types of individual related resources later by "
+"clicking the Edit button next to each related resource."
+msgstr ""
+"Tento typ vztahu bude použit u každého zdroje načteného v této iterace. "
+"Popisuje, jak každý načtený záznam souvisí se záznamem, který vytváříte. "
+"Typy vztahů jednotlivých souvisejících zdrojů můžete později upravit "
+"kliknutím na tlačítko Upravit u každého souvisejícího zdroje."
+
+msgid "{{count}} field(s) need attention."
+msgid_plural "{{count}} field(s) need attention."
+msgstr[0] "{{count}} pole vyžaduje pozornost."
+msgstr[1] "{{count}} polí vyžaduje pozornost."
+
+msgid "Imported with {{count}} warning(s)."
+msgid_plural "Imported with {{count}} warning(s)."
+msgstr[0] "Importováno s {{count}} upozorněním."
+msgstr[1] "Importováno s {{count}} upozorněními."
+
+msgid "Use the Edit button on the entry in the list to fix it manually."
+msgstr "Pro ruční opravu klikněte na tlačítko Upravit u záznamu v seznamu."
+
+msgid ""
+"Add record's related resources. You can fill them manually or load them via "
+"DOI."
+msgstr ""
+"Přidejte související zdroje záznamu. Můžete je vyplnit ručně nebo načíst "
+"pomocí DOI."

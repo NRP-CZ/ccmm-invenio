@@ -16,14 +16,25 @@ const safeHref = (raw) => {
   }
 };
 
-export const RelatedResourceCitation = ({ resource, relationTypeLabel }) => {
+// TODO: replace with a proper scheme-aware identifier→URL resolver
+// (handle, arxiv, isbn, …) instead of this DOI-only special case.
+const doiSourceUrl = (identifiers) => {
+  const doi = (identifiers || []).find((i) => i?.scheme === "doi");
+  if (!doi?.identifier) return null;
+  return /^https?:\/\//i.test(doi.identifier)
+    ? doi.identifier
+    : `https://doi.org/${doi.identifier}`;
+};
+
+export const RelatedResourceCitation = ({ resource }) => {
   if (!resource) return null;
 
   const creators = formatCreators(resource.creators);
   const year = extractYear(resource.publication_date);
   const title = resource.title || i18next.t("Untitled resource");
   const publisher = resource.publisher;
-  const sourceUrl = resource.imported_from;
+  const sourceUrl =
+    resource.imported_from || doiSourceUrl(resource.identifiers);
   const sourceHref = safeHref(sourceUrl);
   const isOnline = Boolean(sourceUrl);
 
@@ -56,12 +67,10 @@ export const RelatedResourceCitation = ({ resource, relationTypeLabel }) => {
           .
         </span>
       )}
-      {relationTypeLabel && <span> [{relationTypeLabel}]</span>}
     </span>
   );
 };
 
 RelatedResourceCitation.propTypes = {
   resource: PropTypes.object.isRequired,
-  relationTypeLabel: PropTypes.string,
 };

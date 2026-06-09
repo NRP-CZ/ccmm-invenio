@@ -15,13 +15,7 @@ msgstr ""
 msgid "CCMM XML export."
 msgstr ""
 
-msgid "Community"
-msgstr ""
-
 msgid "Visibility"
-msgstr ""
-
-msgid "Files upload"
 msgstr ""
 
 msgid "Basic information"
@@ -30,13 +24,7 @@ msgstr ""
 msgid "Creators and Contributors"
 msgstr ""
 
-msgid "Recommended information"
-msgstr ""
-
 msgid "Identifiers"
-msgstr ""
-
-msgid "Alternate identifiers"
 msgstr ""
 
 msgid "Related resources"
@@ -76,9 +64,6 @@ msgid "Relation type"
 msgstr ""
 
 msgid "Select relation type..."
-msgstr ""
-
-msgid "Additional details"
 msgstr ""
 
 msgid "Dates and Subjects"
@@ -123,9 +108,6 @@ msgstr ""
 msgid "Unknown error"
 msgstr ""
 
-msgid "Load resources from DOI"
-msgstr ""
-
 msgid ""
 "Paste one or more DOI URLs (separated by commas, spaces, or new lines). Up "
 "to {{max}} DOIs per request — submit additional batches for more."
@@ -142,20 +124,7 @@ msgstr ""
 msgid "Imported {{success}} of {{total}}"
 msgstr ""
 
-msgid "Imported with {{count}} warning(s) — review the entry."
-msgid_plural "Imported with {{count}} warning(s) — review the entry."
-msgstr[0] ""
-msgstr[1] ""
-
 msgid "Close"
-msgstr ""
-
-msgid "Retry failed ({{count}})"
-msgid_plural "Retry failed ({{count}})"
-msgstr[0] ""
-msgstr[1] ""
-
-msgid "Load"
 msgstr ""
 
 msgid "and"
@@ -170,13 +139,36 @@ msgstr ""
 msgid "Load from DOI"
 msgstr ""
 
-msgid ""
-"Add record's related resources. You can fill them manually or load them via "
-"DOI. Note that if you load them via DOI, they cannot be edited."
-msgstr ""
-
 msgid "Add to record"
 msgstr ""
 
 msgid "Add manually"
+msgstr ""
+
+msgid "Import from DOI"
+msgstr ""
+
+msgid ""
+"This relation type will be applied to every resource loaded in this batch. "
+"It describes how each loaded record relates to the record you are creating. "
+"You can modify relation types of individual related resources later by "
+"clicking the Edit button next to each related resource."
+msgstr ""
+
+msgid "{{count}} field(s) need attention."
+msgid_plural "{{count}} field(s) need attention."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Imported with {{count}} warning(s)."
+msgid_plural "Imported with {{count}} warning(s)."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Use the Edit button on the entry in the list to fix it manually."
+msgstr ""
+
+msgid ""
+"Add record's related resources. You can fill them manually or load them via "
+"DOI."
 msgstr ""

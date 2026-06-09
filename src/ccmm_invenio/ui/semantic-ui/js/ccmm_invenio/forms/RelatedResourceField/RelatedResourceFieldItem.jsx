@@ -1,7 +1,7 @@
 import { i18next } from "@translations/ccmm_invenio";
 import React from "react";
 import { useDrag, useDrop } from "react-dnd";
-import { Button, List, Ref } from "semantic-ui-react";
+import { Button, Label, List, Ref } from "semantic-ui-react";
 import { RelatedResourceModal } from "./RelatedResourceModal";
 import { RelatedResourceCitation } from "./RelatedResourceCitation";
 import PropTypes from "prop-types";
@@ -107,10 +107,12 @@ export const RelatedResourceFieldItem = ({
             <List.Content>
               <List.Description>
                 <span className="related-resource">
-                  <RelatedResourceCitation
-                    resource={initialResource}
-                    relationTypeLabel={relationTypeLabel}
-                  />
+                  <RelatedResourceCitation resource={initialResource} />
+                  {relationTypeLabel && (
+                    <Label size="tiny" horizontal className="ml-5">
+                      {relationTypeLabel}
+                    </Label>
+                  )}
                 </span>
               </List.Description>
             </List.Content>
