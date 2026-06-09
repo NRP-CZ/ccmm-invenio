@@ -41,10 +41,12 @@ export const LoadFromDoiModal = ({
   trigger,
   onResourcesImport,
   existingResources,
+  vocabularies,
   handleSave,
 }) => {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
+  const [relationType, setRelationType] = useState(null);
   const [results, setResults] = useState([]);
   const [lastDroppedCount, setLastDroppedCount] = useState(0);
   // Tracks the current in-flight AbortController so the modal can cancel it
@@ -54,6 +56,16 @@ export const LoadFromDoiModal = ({
   const existingDoiSet = useMemo(
     () => collectExistingDois(existingResources),
     [existingResources]
+  );
+
+  const relationTypeOptions = useMemo(
+    () =>
+      (vocabularies?.related_identifiers?.relations || []).map((item) => ({
+        text: item.text || item.title_l10n || item.id,
+        value: item.value || item.id,
+        key: item.value || item.id,
+      })),
+    [vocabularies]
   );
 
   const mutation = useMutation({
@@ -73,7 +85,11 @@ export const LoadFromDoiModal = ({
   const pushImported = (outcomes) => {
     const items = outcomes
       .filter((o) => o.ok)
-      .map((o) => ({ ...o.data.metadata, imported_from: o.identifier }));
+      .map((o) => ({
+        ...o.data.metadata,
+        relation_type: relationType,
+        imported_from: o.identifier,
+      }));
     if (items.length === 0) return;
     const wrapped = { metadata: { related_resources: items } };
     const imported =
@@ -91,6 +107,7 @@ export const LoadFromDoiModal = ({
     abortRef.current = null;
     setOpen(false);
     setInput("");
+    setRelationType(null);
     setResults([]);
     setLastDroppedCount(0);
     mutation.reset();
@@ -174,10 +191,27 @@ export const LoadFromDoiModal = ({
       size="small"
     >
       <Modal.Header as="h2" className="pt-10 pb-10">
-        {i18next.t("Load resources from DOI")}
+        {i18next.t("Import from DOI")}
       </Modal.Header>
       <Modal.Content scrolling>
         <Form>
+          <Form.Field required>
+            <label>{i18next.t("Relation type")}</label>
+            <Form.Dropdown
+              selection
+              clearable
+              options={relationTypeOptions}
+              value={relationType}
+              placeholder={i18next.t("Select relation type...")}
+              onChange={(_, { value }) => setRelationType(value || null)}
+              disabled={mutation.isPending}
+            />
+            <label className="helptext">
+              {i18next.t(
+                "This relation type will be applied to every resource loaded in this batch. It describes how each loaded record relates to the record you are creating. You can modify relation types of individual related resources later by clicking the Edit button next to each related resource."
+              )}
+            </label>
+          </Form.Field>
           <Form.Field>
             <label htmlFor={TEXTAREA_ID}>
               {i18next.t(
@@ -247,14 +281,29 @@ export const LoadFromDoiModal = ({
                   <List.Content>
                     <List.Header>{r.identifier}</List.Header>
                     {r.ok ? (
-                      r.data?.import_errors?.length > 0 && (
-                        <List.Description>
-                          {i18next.t(
-                            "Imported with {{count}} warning(s) — review the entry.",
-                            { count: r.data.import_errors.length }
-                          )}
-                        </List.Description>
-                      )
+                      (() => {
+                        const importCount = r.data?.import_errors?.length || 0;
+                        const validationCount =
+                          r.data?.validation_errors?.length || 0;
+                        if (importCount === 0 && validationCount === 0)
+                          return null;
+                        return (
+                          <List.Description>
+                            {validationCount > 0 &&
+                              i18next.t("{{count}} field(s) need attention.", {
+                                count: validationCount,
+                              })}
+                            {validationCount > 0 && importCount > 0 && " "}
+                            {importCount > 0 &&
+                              i18next.t("Imported with {{count}} warning(s).", {
+                                count: importCount,
+                              })}{" "}
+                            {i18next.t(
+                              "Use the Edit button on the entry in the list to fix it manually."
+                            )}
+                          </List.Description>
+                        );
+                      })()
                     ) : (
                       <List.Description>
                         {errorMessage(r.error)}
@@ -282,7 +331,7 @@ export const LoadFromDoiModal = ({
           icon
           labelPosition="left"
           loading={mutation.isPending}
-          disabled={mutation.isPending || newDois.length === 0}
+          disabled={mutation.isPending || newDois.length === 0 || !relationType}
         >
           <Icon name="download" />
           {i18next.t("Add to record")}
@@ -296,5 +345,6 @@ LoadFromDoiModal.propTypes = {
   trigger: PropTypes.node.isRequired,
   onResourcesImport: PropTypes.func.isRequired,
   existingResources: PropTypes.array,
+  vocabularies: PropTypes.object,
   handleSave: PropTypes.func.isRequired,
 };
