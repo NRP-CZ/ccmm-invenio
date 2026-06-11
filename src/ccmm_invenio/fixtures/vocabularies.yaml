@@ -38,6 +38,14 @@ resourcetypes:
   pid-type: v-res
   data-file: ccmm_resource_types.yaml
 
+subjects:
+  pid-type: sub
+  schemes:
+  - id: frascati
+    name: Frascati
+    uri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    data-file: ccmm_rdm_subjects.yaml
+
 subjectcategories:  # TODO: is this used? Whould not it be better to have Subject vocabulary?
   pid-type: v-suc
   data-file: ccmm_subject_categories.yaml

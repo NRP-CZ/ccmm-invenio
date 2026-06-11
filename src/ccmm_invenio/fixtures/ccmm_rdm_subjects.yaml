@@ -1,0 +1,2348 @@
+- id: '10000'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000
+  scheme: frascati
+  subject: Natural sciences
+  title:
+    cs: Přírodní vědy
+    en: Natural sciences
+- id: '10100'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100
+  scheme: frascati
+  subject: Mathematics
+  title:
+    cs: Matematika
+    en: Mathematics
+- id: '10101'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10101
+  scheme: frascati
+  subject: Pure mathematics
+  title:
+    cs: Čistá matematika
+    en: Pure mathematics
+- id: '10102'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10102
+  scheme: frascati
+  subject: Applied mathematics
+  title:
+    cs: Aplikovaná matematika
+    en: Applied mathematics
+- id: '10103'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10103
+  scheme: frascati
+  subject: Statistics and probability
+  title:
+    cs: Pravděpodobnost a statistika
+    en: Statistics and probability
+- id: '10200'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200
+  scheme: frascati
+  subject: Computer and information sciences
+  title:
+    cs: Počítačové vědy a informační věda
+    en: Computer and information sciences
+- id: '10201'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200/10201
+  scheme: frascati
+  subject: Computer sciences, information science, bioinformathics
+  title:
+    cs: Počítačové vědy, informační věda, bioinformatika
+    en: Computer sciences, information science, bioinformathics
+- id: '10300'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300
+  scheme: frascati
+  subject: Physical sciences
+  title:
+    cs: Fyzikální vědy
+    en: Physical sciences
+- id: '10301'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10301
+  scheme: frascati
+  subject: Atomic, molecular and chemical physics (physics of atoms and molecules
+    including collision, interaction with radiation, magnetic resonances, Mössbauer
+    effect)
+  title:
+    cs: Atomová fyzika, molekulární a chemická fyzika (fyzika atomů a molekul včetně
+      srážek, interakcí s radiací, magnetická rezonance, Mössbauerův jev)
+    en: Atomic, molecular and chemical physics (physics of atoms and molecules including
+      collision, interaction with radiation, magnetic resonances, Mössbauer effect)
+- id: '10302'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10302
+  scheme: frascati
+  subject: Condensed matter physics (including formerly solid state physics, supercond.)
+  title:
+    cs: Fyzika kondenzovaných látek (zahrnuje fyziku pevných látek, supravodivost)
+    en: Condensed matter physics (including formerly solid state physics, supercond.)
+- id: '10303'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10303
+  scheme: frascati
+  subject: Particles and field physics
+  title:
+    cs: Fyzika částic
+    en: Particles and field physics
+- id: '10304'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10304
+  scheme: frascati
+  subject: Nuclear physics
+  title:
+    cs: Atomová fyzika
+    en: Nuclear physics
+- id: '10305'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10305
+  scheme: frascati
+  subject: Fluids and plasma physics (including surface physics)
+  title:
+    cs: Fyzika kapalin a plazmatu (zahrnuje fyziku povrchů)
+    en: Fluids and plasma physics (including surface physics)
+- id: '10306'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10306
+  scheme: frascati
+  subject: Optics (including laser optics and quantum optics)
+  title:
+    cs: Optika (zahrnuje laserovou optiku, kvantovou optiku)
+    en: Optics (including laser optics and quantum optics)
+- id: '10307'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10307
+  scheme: frascati
+  subject: Acoustics
+  title:
+    cs: Akustika
+    en: Acoustics
+- id: '10308'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10308
+  scheme: frascati
+  subject: Astronomy (including astrophysics, space science)
+  title:
+    cs: Astronomie (zahrnuje astrofyziku, vědu o vesmíru)
+    en: Astronomy (including astrophysics, space science)
+- id: '10400'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400
+  scheme: frascati
+  subject: Chemical sciences
+  title:
+    cs: Chemické vědy
+    en: Chemical sciences
+- id: '10401'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10401
+  scheme: frascati
+  subject: Organic chemistry
+  title:
+    cs: Organická chemie
+    en: Organic chemistry
+- id: '10402'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10402
+  scheme: frascati
+  subject: Inorganic and nuclear chemistry
+  title:
+    cs: Anorganická a jaderná chemie
+    en: Inorganic and nuclear chemistry
+- id: '10403'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10403
+  scheme: frascati
+  subject: Physical chemistry
+  title:
+    cs: Fyzikální chemie
+    en: Physical chemistry
+- id: '10404'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10404
+  scheme: frascati
+  subject: Polymer science
+  title:
+    cs: Chemie polymerů
+    en: Polymer science
+- id: '10405'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10405
+  scheme: frascati
+  subject: Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)
+  title:
+    cs: Elektrochemie (zahrnuje suché články, baterie, palivové články, korozní kovy,
+      elektrolýzu)
+    en: Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)
+- id: '10406'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10406
+  scheme: frascati
+  subject: Analytical chemistry
+  title:
+    cs: Analytická chemie
+    en: Analytical chemistry
+- id: '10500'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500
+  scheme: frascati
+  subject: Earth and related environmental sciences
+  title:
+    cs: Vědy o Zemi a související environmentální vědy
+    en: Earth and related environmental sciences
+- id: '10501'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10501
+  scheme: frascati
+  subject: Hydrology
+  title:
+    cs: Hydrologie
+    en: Hydrology
+- id: '10502'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10502
+  scheme: frascati
+  subject: Oceanography
+  title:
+    cs: Oceánografie
+    en: Oceanography
+- id: '10503'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10503
+  scheme: frascati
+  subject: Water resources
+  title:
+    cs: Vodní zdroje
+    en: Water resources
+- id: '10504'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10504
+  scheme: frascati
+  subject: Mineralogy
+  title:
+    cs: Mineralogie
+    en: Mineralogy
+- id: '10505'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10505
+  scheme: frascati
+  subject: Geology
+  title:
+    cs: Geologie
+    en: Geology
+- id: '10506'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10506
+  scheme: frascati
+  subject: Paleontology
+  title:
+    cs: Paleontologie
+    en: Paleontology
+- id: '10507'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10507
+  scheme: frascati
+  subject: Volcanology
+  title:
+    cs: Vulkanologie
+    en: Volcanology
+- id: '10508'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10508
+  scheme: frascati
+  subject: Physical geography
+  title:
+    cs: Fyzická geografie
+    en: Physical geography
+- id: '10509'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509
+  scheme: frascati
+  subject: Meteorology and atmospheric sciences
+  title:
+    cs: Meteorologie, vědy o atmosféře
+    en: Meteorology and atmospheric sciences
+- id: '10510'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10510
+  scheme: frascati
+  subject: Climatic research
+  title:
+    cs: Výzkum klimatu
+    en: Climatic research
+- id: '10511'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10511
+  scheme: frascati
+  subject: Environmental sciences
+  title:
+    cs: Environmentální vědy
+    en: Environmental sciences
+- id: '10600'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600
+  scheme: frascati
+  subject: Biological sciences
+  title:
+    cs: Biologie
+    en: Biological sciences
+- id: '10601'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10601
+  scheme: frascati
+  subject: Cell biology
+  title:
+    cs: Buněčná biologie
+    en: Cell biology
+- id: '10602'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10602
+  scheme: frascati
+  subject: Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm),
+    evolutionary biology
+  title:
+    cs: Biologie (teoretická, matematická, termální, kryobiologie, biologický rytmus),
+      evoluční biologie
+    en: Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm),
+      evolutionary biology
+- id: '10603'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10603
+  scheme: frascati
+  subject: Genetics and heredity
+  title:
+    cs: Genetika a dědičnost
+    en: Genetics and heredity
+- id: '10604'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10604
+  scheme: frascati
+  subject: Reproductive biology
+  title:
+    cs: Reprodukční biologie
+    en: Reproductive biology
+- id: '10605'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10605
+  scheme: frascati
+  subject: Developmental biology
+  title:
+    cs: Vývojová biologie
+    en: Developmental biology
+- id: '10606'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10606
+  scheme: frascati
+  subject: Microbiology
+  title:
+    cs: Mikrobiologie
+    en: Microbiology
+- id: '10607'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10607
+  scheme: frascati
+  subject: Virology
+  title:
+    cs: Virologie
+    en: Virology
+- id: '10608'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10608
+  scheme: frascati
+  subject: Biochemistry and molecular biology
+  title:
+    cs: Biochemie a molekulární biologie
+    en: Biochemistry and molecular biology
+- id: '10609'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10609
+  scheme: frascati
+  subject: Biochemical research methods
+  title:
+    cs: Biochemické výzkumné metody
+    en: Biochemical research methods
+- id: '10610'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10610
+  scheme: frascati
+  subject: Biophysics
+  title:
+    cs: Biofyzika
+    en: Biophysics
+- id: '10611'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10611
+  scheme: frascati
+  subject: Plant sciences, botany
+  title:
+    cs: Botanika
+    en: Plant sciences, botany
+- id: '10612'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10612
+  scheme: frascati
+  subject: Mycology
+  title:
+    cs: Mykologie
+    en: Mycology
+- id: '10613'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10613
+  scheme: frascati
+  subject: Zoology
+  title:
+    cs: Zoologie
+    en: Zoology
+- id: '10614'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10614
+  scheme: frascati
+  subject: Behavioral sciences biology
+  title:
+    cs: Behaviorální biologie
+    en: Behavioral sciences biology
+- id: '10615'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10615
+  scheme: frascati
+  subject: Ornithology
+  title:
+    cs: Ornitologie
+    en: Ornithology
+- id: '10616'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10616
+  scheme: frascati
+  subject: Entomology
+  title:
+    cs: Entomologie
+    en: Entomology
+- id: '10617'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10617
+  scheme: frascati
+  subject: Marine biology, freshwater biology, limnology
+  title:
+    cs: Mořská biologie, sladkovodní biologie, limnologie
+    en: Marine biology, freshwater biology, limnology
+- id: '10618'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10618
+  scheme: frascati
+  subject: Ecology
+  title:
+    cs: Ekologie
+    en: Ecology
+- id: '10619'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10619
+  scheme: frascati
+  subject: Biodiversity conservation
+  title:
+    cs: Ochrana biodiverzity
+    en: Biodiversity conservation
+- id: '10620'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10620
+  scheme: frascati
+  subject: Other biological topics
+  title:
+    cs: Ostatní biologické vědy
+    en: Other biological topics
+- id: '10700'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10700
+  scheme: frascati
+  subject: Other natural sciences
+  title:
+    cs: Ostatní přírodní vědy
+    en: Other natural sciences
+- id: '20000'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000
+  scheme: frascati
+  subject: Engineering and technology
+  title:
+    cs: Technické vědy, inženýrství
+    en: Engineering and technology
+- id: '20100'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100
+  scheme: frascati
+  subject: Civil engineering
+  title:
+    cs: Stavební inženýrství
+    en: Civil engineering
+- id: '20101'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20101
+  scheme: frascati
+  subject: Civil engineering
+  title:
+    cs: Stavební inženýrství
+    en: Civil engineering
+- id: '20102'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20102
+  scheme: frascati
+  subject: Construction engineering, municipal and structural engineering
+  title:
+    cs: Konstrukční inženýrství, výstavba měst
+    en: Construction engineering, municipal and structural engineering
+- id: '20103'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20103
+  scheme: frascati
+  subject: Architecture engineering
+  title:
+    cs: Architektura
+    en: Architecture engineering
+- id: '20104'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20104
+  scheme: frascati
+  subject: Transport engineering
+  title:
+    cs: Dopravní inženýrství
+    en: Transport engineering
+- id: '20200'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200
+  scheme: frascati
+  subject: Electrical engineering, electronic engineering, information engineering
+  title:
+    cs: Elektrotechnika, elektronika
+    en: Electrical engineering, electronic engineering, information engineering
+- id: '20201'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20201
+  scheme: frascati
+  subject: Electrical and electronic engineering
+  title:
+    cs: Elektrotechnika, elektronika
+    en: Electrical and electronic engineering
+- id: '20202'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20202
+  scheme: frascati
+  subject: Communication engineering and systems
+  title:
+    cs: Sdělovací technika a systémy
+    en: Communication engineering and systems
+- id: '20203'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20203
+  scheme: frascati
+  subject: Telecommunications
+  title:
+    cs: Telekomunikace
+    en: Telecommunications
+- id: '20204'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20204
+  scheme: frascati
+  subject: Robotics and automatic control
+  title:
+    cs: Robotika a automatické řízení
+    en: Robotics and automatic control
+- id: '20205'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20205
+  scheme: frascati
+  subject: Automation and control systems
+  title:
+    cs: Automatizace a kontrola systémů
+    en: Automation and control systems
+- id: '20206'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20206
+  scheme: frascati
+  subject: Computer hardware and architecture
+  title:
+    cs: Počítačový hardware a architektura
+    en: Computer hardware and architecture
+- id: '20300'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300
+  scheme: frascati
+  subject: Mechanical engineering
+  title:
+    cs: Strojní inženýrství
+    en: Mechanical engineering
+- id: '20301'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20301
+  scheme: frascati
+  subject: Mechanical engineering
+  title:
+    cs: Strojní inženýrství
+    en: Mechanical engineering
+- id: '20302'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20302
+  scheme: frascati
+  subject: Applied mechanics
+  title:
+    cs: Aplikovaná mechanika
+    en: Applied mechanics
+- id: '20303'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20303
+  scheme: frascati
+  subject: Thermodynamics
+  title:
+    cs: Termodynamika
+    en: Thermodynamics
+- id: '20304'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20304
+  scheme: frascati
+  subject: Aerospace engineering
+  title:
+    cs: Letecké inženýrství
+    en: Aerospace engineering
+- id: '20305'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20305
+  scheme: frascati
+  subject: Nuclear related engineering
+  title:
+    cs: Jaderné inženýrství
+    en: Nuclear related engineering
+- id: '20306'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20306
+  scheme: frascati
+  subject: Audio engineering, reliability analysis
+  title:
+    cs: Audio inženýrství, analýzy spolehlivosti
+    en: Audio engineering, reliability analysis
+- id: '20400'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400
+  scheme: frascati
+  subject: Chemical engineering
+  title:
+    cs: Chemické inženýrství
+    en: Chemical engineering
+- id: '20401'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20401
+  scheme: frascati
+  subject: Chemical engineering (plants, products)
+  title:
+    cs: Chemické inženýrství (rostliny, výrobky)
+    en: Chemical engineering (plants, products)
+- id: '20402'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20402
+  scheme: frascati
+  subject: Chemical process engineering
+  title:
+    cs: Chemické procesní inženýrství
+    en: Chemical process engineering
+- id: '20500'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500
+  scheme: frascati
+  subject: Materials engineering
+  title:
+    cs: Materiálové inženýrství
+    en: Materials engineering
+- id: '20501'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20501
+  scheme: frascati
+  subject: Materials engineering
+  title:
+    cs: Materiálové inženýrství
+    en: Materials engineering
+- id: '20502'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20502
+  scheme: frascati
+  subject: Paper and wood
+  title:
+    cs: Papír a dřevo
+    en: Paper and wood
+- id: '20503'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20503
+  scheme: frascati
+  subject: Textiles (including synthetic dyes, colours, fibres)
+  title:
+    cs: Textilie (zahrnuje umělá barviva, barvy, vlákna)
+    en: Textiles (including synthetic dyes, colours, fibres)
+- id: '20504'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20504
+  scheme: frascati
+  subject: Ceramics
+  title:
+    cs: Keramika
+    en: Ceramics
+- id: '20505'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20505
+  scheme: frascati
+  subject: Composites (including laminates, reinforced plastics, cermets, combined
+    natural and synthetic fibre fabrics; filled composites)
+  title:
+    cs: Kompozity (zahrnuje lamináty, vyztužené plasty, cermety, kombinovaná přírodní
+      a umělá vlákna a tkaniny, plněné kompozity)
+    en: Composites (including laminates, reinforced plastics, cermets, combined natural
+      and synthetic fibre fabrics; filled composites)
+- id: '20506'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20506
+  scheme: frascati
+  subject: Coating and films
+  title:
+    cs: Nátěry a fólie
+    en: Coating and films
+- id: '20600'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600
+  scheme: frascati
+  subject: Medical engineering
+  title:
+    cs: Lékařské inženýrství
+    en: Medical engineering
+- id: '20601'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20601
+  scheme: frascati
+  subject: Medical engineering
+  title:
+    cs: Lékařské inženýrství
+    en: Medical engineering
+- id: '20602'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20602
+  scheme: frascati
+  subject: Medical laboratory technology (including laboratory samples analysis, diagnostic
+    technologies)
+  title:
+    cs: Lékařské laboratorní technologie (laboratorní analýzy vzorků, diagnostické
+      technologie)
+    en: Medical laboratory technology (including laboratory samples analysis, diagnostic
+      technologies)
+- id: '20700'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700
+  scheme: frascati
+  subject: Environmental engineering
+  title:
+    cs: Environmentální inženýrství
+    en: Environmental engineering
+- id: '20701'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20701
+  scheme: frascati
+  subject: Environmental and geological engineering, geotechnics
+  title:
+    cs: Environmentální a geologické inženýrství, geotechnika
+    en: Environmental and geological engineering, geotechnics
+- id: '20702'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20702
+  scheme: frascati
+  subject: Petroleum engineering (fuel, oils)
+  title:
+    cs: Ropné inženýrství (paliva, oleje)
+    en: Petroleum engineering (fuel, oils)
+- id: '20703'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20703
+  scheme: frascati
+  subject: Mining and mineral processing
+  title:
+    cs: Těžba a zpracování minerálů
+    en: Mining and mineral processing
+- id: '20704'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20704
+  scheme: frascati
+  subject: Energy and fuels
+  title:
+    cs: Energie a paliva
+    en: Energy and fuels
+- id: '20705'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20705
+  scheme: frascati
+  subject: Remote sensing
+  title:
+    cs: Dálkový průzkum Země
+    en: Remote sensing
+- id: '20706'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20706
+  scheme: frascati
+  subject: Marine engineering, sea vessels
+  title:
+    cs: Námořní inženýrství, mořská plavidla
+    en: Marine engineering, sea vessels
+- id: '20707'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20707
+  scheme: frascati
+  subject: Ocean engineering
+  title:
+    cs: Oceánské inženýrství
+    en: Ocean engineering
+- id: '20800'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800
+  scheme: frascati
+  subject: Environmental biotechnology
+  title:
+    cs: Environmentální biotechnologie
+    en: Environmental biotechnology
+- id: '20801'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20801
+  scheme: frascati
+  subject: Environmental biotechnology
+  title:
+    cs: Environmentální biotechnologie
+    en: Environmental biotechnology
+- id: '20802'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20802
+  scheme: frascati
+  subject: Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices)
+    in environmental management
+  title:
+    cs: Bioléčba, diagnostické biotechnologie (zlomky DNA a biosenzory) v environmentálním
+      managementu
+    en: Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices)
+      in environmental management
+- id: '20803'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20803
+  scheme: frascati
+  subject: Environmental biotechnology related ethics
+  title:
+    cs: Environmentální biotechnologie související s etikou
+    en: Environmental biotechnology related ethics
+- id: '20900'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900
+  scheme: frascati
+  subject: Industrial biotechnology
+  title:
+    cs: Průmyslové biotechnologie
+    en: Industrial biotechnology
+- id: '20901'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20901
+  scheme: frascati
+  subject: Industrial biotechnology
+  title:
+    cs: Průmyslové biotechnologie
+    en: Industrial biotechnology
+- id: '20902'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20902
+  scheme: frascati
+  subject: Bioprocessing technologies (industrial processes relying on biological
+    agents to drive the process) biocatalysis, fermentation
+  title:
+    cs: Technologie biovýroby (průmyslové procesy spoléhající se na biologické činitele
+      k řízení procesů), biokatalyzátory, fermentace
+    en: Bioprocessing technologies (industrial processes relying on biological agents
+      to drive the process) biocatalysis, fermentation
+- id: '20903'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20903
+  scheme: frascati
+  subject: Bioproducts (products that are manufactured using biological material as
+    feedstock) biomaterials, bioplastics, biofuels, bioderived bulk and fine chemicals,
+    bio-derived novel materials
+  title:
+    cs: Biovýrobky (výrobky, které jsou vyráběny s použitím biologických materiálů
+      jako výchozích produktů), biomateriály, bioplasty, biopaliva, bioodvozené celkové
+      a čisté chemikálie, bioodvozené nové materiály
+    en: Bioproducts (products that are manufactured using biological material as feedstock)
+      biomaterials, bioplastics, biofuels, bioderived bulk and fine chemicals, bio-derived
+      novel materials
+- id: '21000'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000
+  scheme: frascati
+  subject: Nano-technology
+  title:
+    cs: Nanotechnologie
+    en: Nano-technology
+- id: '21001'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21001
+  scheme: frascati
+  subject: Nano-materials (production and properties)
+  title:
+    cs: Nanomateriály (výroba a vlastnosti)
+    en: Nano-materials (production and properties)
+- id: '21002'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21002
+  scheme: frascati
+  subject: Nano-processes (applications on nano-scale)
+  title:
+    cs: Nanoprocesy (aplikace v nanoměřítku)
+    en: Nano-processes (applications on nano-scale)
+- id: '21100'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100
+  scheme: frascati
+  subject: Other engineering and technologies
+  title:
+    cs: Ostatní inženýrství a technologie
+    en: Other engineering and technologies
+- id: '21101'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100/21101
+  scheme: frascati
+  subject: Food and beverages
+  title:
+    cs: Výrobky potravinářského průmyslu a nápoje
+    en: Food and beverages
+- id: '30000'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000
+  scheme: frascati
+  subject: Medical and health sciences
+  title:
+    cs: Lékařské vědy
+    en: Medical and health sciences
+- id: '30100'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100
+  scheme: frascati
+  subject: Basic medicine
+  title:
+    cs: Základní medicína
+    en: Basic medicine
+- id: '30101'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30101
+  scheme: frascati
+  subject: Human genetics
+  title:
+    cs: Genetika člověka
+    en: Human genetics
+- id: '30102'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30102
+  scheme: frascati
+  subject: Immunology
+  title:
+    cs: Imunologie
+    en: Immunology
+- id: '30103'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30103
+  scheme: frascati
+  subject: Neurosciences (including psychophysiology)
+  title:
+    cs: Neurovědy (zahrnuje psychofyziologii)
+    en: Neurosciences (including psychophysiology)
+- id: '30104'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30104
+  scheme: frascati
+  subject: Pharmacology and pharmacy
+  title:
+    cs: Farmakologie a farmacie
+    en: Pharmacology and pharmacy
+- id: '30105'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30105
+  scheme: frascati
+  subject: Physiology (including cytology)
+  title:
+    cs: Fyziologie (zahrnující cytologii)
+    en: Physiology (including cytology)
+- id: '30106'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30106
+  scheme: frascati
+  subject: Anatomy and morphology
+  title:
+    cs: Anatomie a morfologie
+    en: Anatomy and morphology
+- id: '30107'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30107
+  scheme: frascati
+  subject: Medicinal chemistry
+  title:
+    cs: Lékařská chemie
+    en: Medicinal chemistry
+- id: '30108'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30108
+  scheme: frascati
+  subject: Toxicology
+  title:
+    cs: Toxikologie
+    en: Toxicology
+- id: '30109'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30109
+  scheme: frascati
+  subject: Pathology
+  title:
+    cs: Patologie
+    en: Pathology
+- id: '30200'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200
+  scheme: frascati
+  subject: Clinical medicine
+  title:
+    cs: Klinická medicína
+    en: Clinical medicine
+- id: '30201'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30201
+  scheme: frascati
+  subject: Cardiac and cardiovascular systems
+  title:
+    cs: Srdeční a kardiovaskulární systémy
+    en: Cardiac and cardiovascular systems
+- id: '30202'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30202
+  scheme: frascati
+  subject: Endocrinology and metabolism (including diabetes, hormones)
+  title:
+    cs: Endokrinologie a metabolismus (zahrnuje cukrovku, hormony)
+    en: Endocrinology and metabolism (including diabetes, hormones)
+- id: '30203'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30203
+  scheme: frascati
+  subject: Respiratory systems
+  title:
+    cs: Dýchací ústrojí
+    en: Respiratory systems
+- id: '30204'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30204
+  scheme: frascati
+  subject: Oncology
+  title:
+    cs: Onkologie
+    en: Oncology
+- id: '30205'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30205
+  scheme: frascati
+  subject: Hematology
+  title:
+    cs: Hematologie
+    en: Hematology
+- id: '30206'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30206
+  scheme: frascati
+  subject: Otorhinolaryngology
+  title:
+    cs: Otorinolaryngologie
+    en: Otorhinolaryngology
+- id: '30207'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30207
+  scheme: frascati
+  subject: Ophthalmology
+  title:
+    cs: Oftalmologie
+    en: Ophthalmology
+- id: '30208'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30208
+  scheme: frascati
+  subject: Dentistry, oral surgery and medicine
+  title:
+    cs: Stomatologie, ústní chirurgie a lékařství
+    en: Dentistry, oral surgery and medicine
+- id: '30209'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30209
+  scheme: frascati
+  subject: Paediatrics
+  title:
+    cs: Pediatrie
+    en: Paediatrics
+- id: '30210'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30210
+  scheme: frascati
+  subject: Clinical neurology
+  title:
+    cs: Klinická neurologie
+    en: Clinical neurology
+- id: '30211'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30211
+  scheme: frascati
+  subject: Orthopaedics
+  title:
+    cs: Ortopedie
+    en: Orthopaedics
+- id: '30212'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30212
+  scheme: frascati
+  subject: Surgery
+  title:
+    cs: Chirurgie
+    en: Surgery
+- id: '30213'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30213
+  scheme: frascati
+  subject: Transplantation
+  title:
+    cs: Transplantace
+    en: Transplantation
+- id: '30214'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30214
+  scheme: frascati
+  subject: Obstetrics and gynaecology
+  title:
+    cs: Porodnictví a gynekologie
+    en: Obstetrics and gynaecology
+- id: '30215'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30215
+  scheme: frascati
+  subject: Psychiatry
+  title:
+    cs: Psychiatrie
+    en: Psychiatry
+- id: '30216'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30216
+  scheme: frascati
+  subject: Dermatology and venereal diseases
+  title:
+    cs: Dermatologie a pohlavní nemoci
+    en: Dermatology and venereal diseases
+- id: '30217'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30217
+  scheme: frascati
+  subject: Urology and nephrology
+  title:
+    cs: Urologie a nefrologie
+    en: Urology and nephrology
+- id: '30218'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30218
+  scheme: frascati
+  subject: General and internal medicine
+  title:
+    cs: Všeobecné a vnitřní lékařství
+    en: General and internal medicine
+- id: '30219'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30219
+  scheme: frascati
+  subject: Gastroenterology and hepatology
+  title:
+    cs: Gastroenterologie a hepatologie
+    en: Gastroenterology and hepatology
+- id: '30220'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30220
+  scheme: frascati
+  subject: Andrology
+  title:
+    cs: Andrologie
+    en: Andrology
+- id: '30221'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30221
+  scheme: frascati
+  subject: Critical care medicine and emergency medicine
+  title:
+    cs: Urgentní medicína a pohotovostní medicína
+    en: Critical care medicine and emergency medicine
+- id: '30223'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30223
+  scheme: frascati
+  subject: Anaesthesiology
+  title:
+    cs: Anesteziologie
+    en: Anaesthesiology
+- id: '30224'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30224
+  scheme: frascati
+  subject: Radiology, nuclear medicine and medical imaging
+  title:
+    cs: Radiologie, nukleární medicína a lékařské zobrazování
+    en: Radiology, nuclear medicine and medical imaging
+- id: '30225'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30225
+  scheme: frascati
+  subject: Allergy
+  title:
+    cs: Alergologie
+    en: Allergy
+- id: '30226'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30226
+  scheme: frascati
+  subject: Rheumatology
+  title:
+    cs: Revmatologie
+    en: Rheumatology
+- id: '30227'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30227
+  scheme: frascati
+  subject: Geriatrics and gerontology
+  title:
+    cs: Geriatrie a gerontologie
+    en: Geriatrics and gerontology
+- id: '30229'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30229
+  scheme: frascati
+  subject: Integrative and complementary medicine (alternative practice systems)
+  title:
+    cs: Celostní a alternativní medicína (alternativní praktické systémy)
+    en: Integrative and complementary medicine (alternative practice systems)
+- id: '30230'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30230
+  scheme: frascati
+  subject: Other clinical medicine subjects
+  title:
+    cs: Ostatní klinická lékařská témata
+    en: Other clinical medicine subjects
+- id: '30300'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300
+  scheme: frascati
+  subject: Health sciences
+  title:
+    cs: Zdravotní vědy
+    en: Health sciences
+- id: '30301'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30301
+  scheme: frascati
+  subject: Social biomedical sciences (includes family planning, sexual health, psycho-oncology,
+    political and social effects of biomedical research)
+  title:
+    cs: Sociální biolékařské vědy (plánované rodičovství, sexuální zdraví, psychoonkologie,
+      politické a sociální jevy biolékařského výzkumu)
+    en: Social biomedical sciences (includes family planning, sexual health, psycho-oncology,
+      political and social effects of biomedical research)
+- id: '30302'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30302
+  scheme: frascati
+  subject: Epidemiology
+  title:
+    cs: Epidemiologie
+    en: Epidemiology
+- id: '30303'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30303
+  scheme: frascati
+  subject: Infectious diseases
+  title:
+    cs: Infekční onemocnění
+    en: Infectious diseases
+- id: '30304'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304
+  scheme: frascati
+  subject: Public and environmental health
+  title:
+    cs: Veřejné a environmentální zdraví
+    en: Public and environmental health
+- id: '30305'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30305
+  scheme: frascati
+  subject: Occupational health
+  title:
+    cs: Ochrana zdraví při práci
+    en: Occupational health
+- id: '30306'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30306
+  scheme: frascati
+  subject: Sport and fitness sciences
+  title:
+    cs: Sport a fitness
+    en: Sport and fitness sciences
+- id: '30307'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30307
+  scheme: frascati
+  subject: Nursing
+  title:
+    cs: Ošetřovatelství
+    en: Nursing
+- id: '30308'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30308
+  scheme: frascati
+  subject: Nutrition, dietetics
+  title:
+    cs: Výživa, nauka o dietě
+    en: Nutrition, dietetics
+- id: '30309'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30309
+  scheme: frascati
+  subject: Tropical medicine
+  title:
+    cs: Tropické lékařství
+    en: Tropical medicine
+- id: '30310'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30310
+  scheme: frascati
+  subject: Parasitology
+  title:
+    cs: Parazitologie
+    en: Parasitology
+- id: '30311'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30311
+  scheme: frascati
+  subject: Medical ethics
+  title:
+    cs: Lékařská etika
+    en: Medical ethics
+- id: '30312'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30312
+  scheme: frascati
+  subject: Substance abuse
+  title:
+    cs: Zneužívání návykových látek
+    en: Substance abuse
+- id: '30400'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400
+  scheme: frascati
+  subject: Medical biotechnology
+  title:
+    cs: Lékařské biotechnologie
+    en: Medical biotechnology
+- id: '30401'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30401
+  scheme: frascati
+  subject: Health-related biotechnology
+  title:
+    cs: Biotechnologie související se zdravím
+    en: Health-related biotechnology
+- id: '30402'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30402
+  scheme: frascati
+  subject: Technologies involving the manipulation of cells, tissues, organs or the
+    whole organism (assisted reproduction)
+  title:
+    cs: Technologie zahrnující manipulace s buňkami, tkáněmi, orgány nebo celými organismy
+      (asistovaná reprodukce)
+    en: Technologies involving the manipulation of cells, tissues, organs or the whole
+      organism (assisted reproduction)
+- id: '30403'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30403
+  scheme: frascati
+  subject: Technologies involving identifying the functioning of DNA, proteins and
+    enzymes and how they influence the onset of disease and maintenance of well-being
+    (gene-based diagnostics and therapeutic interventions - pharmacogenomics, gene-based
+    therapeutics)
+  title:
+    cs: Technologie zahrnující identifikace činností DNA, proteinů a enzymů a jejich
+      vlivy na nápor nemocí a zachování pocitů zdraví (genová diagnostika a terapeutické
+      zákroky, farmakogenomika, genová terapeutika)
+    en: Technologies involving identifying the functioning of DNA, proteins and enzymes
+      and how they influence the onset of disease and maintenance of well-being (gene-based
+      diagnostics and therapeutic interventions - pharmacogenomics, gene-based therapeutics)
+- id: '30404'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30404
+  scheme: frascati
+  subject: Biomaterials (as related to medical implants, devices, sensors)
+  title:
+    cs: Biomateriály (související s lékařskými implantáty, přístroji, senzory)
+    en: Biomaterials (as related to medical implants, devices, sensors)
+- id: '30405'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30405
+  scheme: frascati
+  subject: Medical biotechnology related ethics
+  title:
+    cs: Lékařské biotechnologie související s etikou
+    en: Medical biotechnology related ethics
+- id: '30500'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500
+  scheme: frascati
+  subject: Other medical sciences
+  title:
+    cs: Ostatní lékařské vědy
+    en: Other medical sciences
+- id: '30501'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30501
+  scheme: frascati
+  subject: Forensic science
+  title:
+    cs: Soudní lékařství
+    en: Forensic science
+- id: '30502'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30502
+  scheme: frascati
+  subject: Other medical science
+  title:
+    cs: Ostatní lékařské vědy
+    en: Other medical science
+- id: '40000'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000
+  scheme: frascati
+  subject: Agricultural and veterinary sciences
+  title:
+    cs: Zemědělské a veterinární vědy
+    en: Agricultural and veterinary sciences
+- id: '40100'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100
+  scheme: frascati
+  subject: Agriculture, forestry and fisheries
+  title:
+    cs: Zemědělství, lesnictví, rybářství
+    en: Agriculture, forestry and fisheries
+- id: '40101'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40101
+  scheme: frascati
+  subject: Agriculture
+  title:
+    cs: Zemědělství
+    en: Agriculture
+- id: '40102'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40102
+  scheme: frascati
+  subject: Forestry
+  title:
+    cs: Lesnictví
+    en: Forestry
+- id: '40103'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40103
+  scheme: frascati
+  subject: Fishery
+  title:
+    cs: Rybářství
+    en: Fishery
+- id: '40104'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40104
+  scheme: frascati
+  subject: Soil science
+  title:
+    cs: Půdoznalství
+    en: Soil science
+- id: '40105'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40105
+  scheme: frascati
+  subject: Horticulture, viticulture
+  title:
+    cs: Zahradnictví, vinařství
+    en: Horticulture, viticulture
+- id: '40106'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40106
+  scheme: frascati
+  subject: Agronomy, plant breeding and plant protection
+  title:
+    cs: Agronomie, šlechtění a ochrana rostlin
+    en: Agronomy, plant breeding and plant protection
+- id: '40200'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200
+  scheme: frascati
+  subject: Animal and dairy science
+  title:
+    cs: Vědy o zvířatech a mléce
+    en: Animal and dairy science
+- id: '40201'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40201
+  scheme: frascati
+  subject: Animal and dairy science
+  title:
+    cs: Vědy o zvířatech a mléce
+    en: Animal and dairy science
+- id: '40202'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40202
+  scheme: frascati
+  subject: Pets
+  title:
+    cs: Domácí zvířata
+    en: Pets
+- id: '40203'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40203
+  scheme: frascati
+  subject: Husbandry
+  title:
+    cs: Chovatelství
+    en: Husbandry
+- id: '40300'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300
+  scheme: frascati
+  subject: Veterinary science
+  title:
+    cs: Veterinární věda
+    en: Veterinary science
+- id: '40301'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300/40301
+  scheme: frascati
+  subject: Veterinary science
+  title:
+    cs: Veterinární věda
+    en: Veterinary science
+- id: '40400'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400
+  scheme: frascati
+  subject: Agricultural biotechnology
+  title:
+    cs: Zemědělské biotechnologie
+    en: Agricultural biotechnology
+- id: '40401'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40401
+  scheme: frascati
+  subject: Agricultural biotechnology and food biotechnology
+  title:
+    cs: Zemědělské biotechnologie a biotechnologie potravin
+    en: Agricultural biotechnology and food biotechnology
+- id: '40402'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40402
+  scheme: frascati
+  subject: GM technology (crops and livestock), livestock cloning, marker assisted
+    selection, diagnostics (DNA chips and biosensing devices for the early/accurate
+    detection of diseases) biomass feedstock production technologies, biopharming
+  title:
+    cs: Technologie genetických modifikací (plodiny a dobytek), klonování dobytka,
+      ukazatele selekce, diagnostika (zlomky DNA a biosenzory pro brzkou/přesnou detekci
+      nemocí), technologie zpracování biomasy, biohospodářství
+    en: GM technology (crops and livestock), livestock cloning, marker assisted selection,
+      diagnostics (DNA chips and biosensing devices for the early/accurate detection
+      of diseases) biomass feedstock production technologies, biopharming
+- id: '40403'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40403
+  scheme: frascati
+  subject: Agricultural biotechnology related ethics
+  title:
+    cs: Zemědělské biotechnologie související s etikou
+    en: Agricultural biotechnology related ethics
+- id: '40500'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40500
+  scheme: frascati
+  subject: Other agricultural sciences
+  title:
+    cs: Ostatní zemědělské vědy
+    en: Other agricultural sciences
+- id: '50000'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000
+  scheme: frascati
+  subject: Social sciences
+  title:
+    cs: Společenské vědy
+    en: Social sciences
+- id: '50100'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100
+  scheme: frascati
+  subject: Psychology and cognitive sciences
+  title:
+    cs: Psychologie a kognitivní věda
+    en: Psychology and cognitive sciences
+- id: '50101'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50101
+  scheme: frascati
+  subject: Psychology (including human - machine relations)
+  title:
+    cs: Psychologie (zahrnuje vztahy mezi člověkem a strojem)
+    en: Psychology (including human - machine relations)
+- id: '50102'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50102
+  scheme: frascati
+  subject: Psychology, special (including therapy for learning, speech, hearing, visual
+    and other physical and mental disabilities)
+  title:
+    cs: Speciální psychologie (zahrnuje terapii pro učení, řeč, poslech, zrakové a
+      jiné fyzické a mentální handicapy)
+    en: Psychology, special (including therapy for learning, speech, hearing, visual
+      and other physical and mental disabilities)
+- id: '50103'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50103
+  scheme: frascati
+  subject: Cognitive sciences
+  title:
+    cs: Kognitivní vědy
+    en: Cognitive sciences
+- id: '50200'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200
+  scheme: frascati
+  subject: Economics and business
+  title:
+    cs: Ekonomie a podnikání
+    en: Economics and business
+- id: '50201'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50201
+  scheme: frascati
+  subject: Economic theory
+  title:
+    cs: Ekonomická teorice
+    en: Economic theory
+- id: '50202'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50202
+  scheme: frascati
+  subject: Applied economics, econometrics
+  title:
+    cs: Aplikovaná ekonomie, ekonometrie
+    en: Applied economics, econometrics
+- id: '50203'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50203
+  scheme: frascati
+  subject: Industrial relations
+  title:
+    cs: Pracovní vztahy
+    en: Industrial relations
+- id: '50204'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50204
+  scheme: frascati
+  subject: Business and management
+  title:
+    cs: Podnikání a management
+    en: Business and management
+- id: '50205'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50205
+  scheme: frascati
+  subject: Accounting
+  title:
+    cs: Účetnictví
+    en: Accounting
+- id: '50206'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50206
+  scheme: frascati
+  subject: Finance
+  title:
+    cs: Finance
+    en: Finance
+- id: '50300'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300
+  scheme: frascati
+  subject: Education
+  title:
+    cs: Vzdělávání
+    en: Education
+- id: '50301'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50301
+  scheme: frascati
+  subject: Education, general (including training, pedagogy, didactics and education
+    systems)
+  title:
+    cs: Všeobecné vzdělávání (zahrnuje výcvik, pedagogiku, didaktiku, vzdělávací systémy)
+    en: Education, general (including training, pedagogy, didactics and education
+      systems)
+- id: '50302'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50302
+  scheme: frascati
+  subject: Education, special (to gifted persons, those with learning disabilities)
+  title:
+    cs: Speciální vzdělávání (pro nadané osoby, pro osoby s poruchami učení)
+    en: Education, special (to gifted persons, those with learning disabilities)
+- id: '50400'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400
+  scheme: frascati
+  subject: Sociology
+  title:
+    cs: Sociologie
+    en: Sociology
+- id: '50401'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50401
+  scheme: frascati
+  subject: Sociology
+  title:
+    cs: Sociologie
+    en: Sociology
+- id: '50402'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50402
+  scheme: frascati
+  subject: Demography
+  title:
+    cs: Demografie
+    en: Demography
+- id: '50403'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50403
+  scheme: frascati
+  subject: Social topics (women´s and gender studies, social issues, family studies
+    social work)
+  title:
+    cs: Sociální témata (studie žen a pohlaví, sociální problémy, studie rodin, sociální
+      práce)
+    en: Social topics (women´s and gender studies, social issues, family studies social
+      work)
+- id: '50404'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50404
+  scheme: frascati
+  subject: Anthropology, ethnology
+  title:
+    cs: Antropologie, etnologie
+    en: Anthropology, ethnology
+- id: '50500'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500
+  scheme: frascati
+  subject: Law
+  title:
+    cs: Právo
+    en: Law
+- id: '50501'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50501
+  scheme: frascati
+  subject: Law
+  title:
+    cs: Právo
+    en: Law
+- id: '50502'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50502
+  scheme: frascati
+  subject: Criminology, penology
+  title:
+    cs: Kriminologie, penologie
+    en: Criminology, penology
+- id: '50600'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600
+  scheme: frascati
+  subject: Political science
+  title:
+    cs: Politologie
+    en: Political science
+- id: '50601'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50601
+  scheme: frascati
+  subject: Political science
+  title:
+    cs: Politologie
+    en: Political science
+- id: '50602'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50602
+  scheme: frascati
+  subject: Public administration
+  title:
+    cs: Veřejná správa
+    en: Public administration
+- id: '50603'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50603
+  scheme: frascati
+  subject: Organisation theory
+  title:
+    cs: Teorie organizace
+    en: Organisation theory
+- id: '50700'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700
+  scheme: frascati
+  subject: Social and economic geography
+  title:
+    cs: Sociální a ekonomická geografie
+    en: Social and economic geography
+- id: '50701'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50701
+  scheme: frascati
+  subject: Cultural and economic geography
+  title:
+    cs: Kulturní a ekonomická geografie
+    en: Cultural and economic geography
+- id: '50702'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50702
+  scheme: frascati
+  subject: Urban studies (planning and development)
+  title:
+    cs: Urbanismus (plánování a rozvoj)
+    en: Urban studies (planning and development)
+- id: '50703'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50703
+  scheme: frascati
+  subject: Transport planning and social aspects of transport
+  title:
+    cs: Plánování dopravy a sociální hlediska dopravy
+    en: Transport planning and social aspects of transport
+- id: '50704'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50704
+  scheme: frascati
+  subject: Environmental sciences (social aspects)
+  title:
+    cs: Environmentální vědy (sociální hlediska)
+    en: Environmental sciences (social aspects)
+- id: '50800'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800
+  scheme: frascati
+  subject: Media and communications
+  title:
+    cs: Média a komunikace
+    en: Media and communications
+- id: '50801'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50801
+  scheme: frascati
+  subject: Journalism
+  title:
+    cs: Žurnalistika
+    en: Journalism
+- id: '50802'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50802
+  scheme: frascati
+  subject: Media and socio-cultural communication
+  title:
+    cs: Mediální a sociokulturní komunikace
+    en: Media and socio-cultural communication
+- id: '50803'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50803
+  scheme: frascati
+  subject: Information science (social aspects)
+  title:
+    cs: Informační věda (sociální aspekty)
+    en: Information science (social aspects)
+- id: '50804'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50804
+  scheme: frascati
+  subject: Library science
+  title:
+    cs: Knihovnictví
+    en: Library science
+- id: '50900'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900
+  scheme: frascati
+  subject: Other social sciences
+  title:
+    cs: Ostatní společenské vědy
+    en: Other social sciences
+- id: '50901'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50901
+  scheme: frascati
+  subject: Other social sciences
+  title:
+    cs: Ostatní společenské vědy
+    en: Other social sciences
+- id: '50902'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50902
+  scheme: frascati
+  subject: Social sciences, interdisciplinary
+  title:
+    cs: Společenské vědy interdisciplinární
+    en: Social sciences, interdisciplinary
+- id: '60000'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000
+  scheme: frascati
+  subject: Humanities and the arts
+  title:
+    cs: Humanitní vědy a umění
+    en: Humanities and the arts
+- id: '60100'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100
+  scheme: frascati
+  subject: History and archaeology
+  title:
+    cs: Historie a archeologie
+    en: History and archaeology
+- id: '60101'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60101
+  scheme: frascati
+  subject: History
+  title:
+    cs: Historie
+    en: History
+- id: '60102'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60102
+  scheme: frascati
+  subject: Archaeology
+  title:
+    cs: Archeologie
+    en: Archaeology
+- id: '60200'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200
+  scheme: frascati
+  subject: Languages and literature
+  title:
+    cs: Jazyky a literatura
+    en: Languages and literature
+- id: '60201'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60201
+  scheme: frascati
+  subject: General language studies
+  title:
+    cs: Všeobecné jazykové studie
+    en: General language studies
+- id: '60202'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60202
+  scheme: frascati
+  subject: Specific languages
+  title:
+    cs: Specifické jazyky
+    en: Specific languages
+- id: '60203'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60203
+  scheme: frascati
+  subject: Linguistics
+  title:
+    cs: Lingvistika
+    en: Linguistics
+- id: '60204'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60204
+  scheme: frascati
+  subject: General literature studies
+  title:
+    cs: Všeobecné studie literatury
+    en: General literature studies
+- id: '60205'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60205
+  scheme: frascati
+  subject: Literary theory
+  title:
+    cs: Teorie literatury
+    en: Literary theory
+- id: '60206'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60206
+  scheme: frascati
+  subject: Specific literatures
+  title:
+    cs: Specifická literatura
+    en: Specific literatures
+- id: '60300'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300
+  scheme: frascati
+  subject: Philosophy, ethics and religion
+  title:
+    cs: Filozofie, etika a náboženství
+    en: Philosophy, ethics and religion
+- id: '60301'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60301
+  scheme: frascati
+  subject: Philosophy, history and philosophy of science and technology
+  title:
+    cs: Filozofie, dějiny a filozofie vědy a techniky
+    en: Philosophy, history and philosophy of science and technology
+- id: '60302'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60302
+  scheme: frascati
+  subject: Ethics (except ethics related to specific subfields)
+  title:
+    cs: Etika (vyjma etiky související s příslušnými kategoriemi)
+    en: Ethics (except ethics related to specific subfields)
+- id: '60303'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60303
+  scheme: frascati
+  subject: Theology
+  title:
+    cs: Teologie
+    en: Theology
+- id: '60304'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60304
+  scheme: frascati
+  subject: Religious studies
+  title:
+    cs: Religionistika
+    en: Religious studies
+- id: '60400'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400
+  scheme: frascati
+  subject: Arts (arts, history of arts, performing arts, music)
+  title:
+    cs: Umění (umění, dějiny umění, múzická umění, hudba)
+    en: Arts (arts, history of arts, performing arts, music)
+- id: '60401'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60401
+  scheme: frascati
+  subject: Arts, art history
+  title:
+    cs: Umění, dějiny umění
+    en: Arts, art history
+- id: '60402'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60402
+  scheme: frascati
+  subject: Architectural design
+  title:
+    cs: Architektonický design
+    en: Architectural design
+- id: '60403'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60403
+  scheme: frascati
+  subject: Performing arts studies (musicology, theater science, dramaturgy)
+  title:
+    cs: Múzická umění (muzikologie, divadelní věda, dramaturgie)
+    en: Performing arts studies (musicology, theater science, dramaturgy)
+- id: '60404'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60404
+  scheme: frascati
+  subject: Folklore studies
+  title:
+    cs: Folkloristika
+    en: Folklore studies
+- id: '60405'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60405
+  scheme: frascati
+  subject: Studies on film, radio and television
+  title:
+    cs: Film, rádio a televize
+    en: Studies on film, radio and television
+- id: '60500'
+  props:
+    base_iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60500
+  scheme: frascati
+  subject: Other humanities and the arts
+  title:
+    cs: Ostatní humanitní vědy a obory umění
+    en: Other humanities and the arts

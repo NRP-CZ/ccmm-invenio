@@ -26,6 +26,7 @@ from ccmm_invenio.conversion.ccmm_filtered import (
     DescendantsOfFilter,
     FilteredReader,
 )
+from ccmm_invenio.conversion.ccmm_rdm_subjects import RDMSubjectsCSVReader
 from ccmm_invenio.conversion.ccmm_sparql import SPARQLReader
 
 if TYPE_CHECKING:
@@ -83,6 +84,13 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
                 root_dir / "input/CCMM_slovniky(SubjectCategory).csv",
             ),
             root_dir / "fixtures/ccmm_subject_categories.yaml",
+        ),
+        (
+            RDMSubjectsCSVReader(
+                "Frascati Subjects",
+                root_dir / "input/CCMM_slovniky(SubjectCategory).csv",
+            ),
+            root_dir / "fixtures/ccmm_rdm_subjects.yaml",
         ),
         (
             CSVReader(
