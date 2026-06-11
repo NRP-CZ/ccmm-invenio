@@ -91,7 +91,7 @@ export const CCMMGeneralInformation = {
         >
           <PublisherField
             fieldPath="metadata.publisher"
-            required={is_doi_required}
+            required={isDoiRequired}
           />
         </Overridable>
         <Overridable
