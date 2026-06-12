@@ -20,7 +20,7 @@ filetypes:
 
 languages:
   pid-type: v-lan
-  data-file: ccmm_languages.yaml
+  data-file: ccmm_languages_primary.yaml
 
 licenses:
   pid-type: v-lic
