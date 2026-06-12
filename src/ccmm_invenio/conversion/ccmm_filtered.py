@@ -67,6 +67,14 @@ class FilteredReader(VocabularyReader):
         return data
 
 
+class ISO6391LanguageFilter(FilterCls):
+    """Filter class to keep only languages that have an ISO 639-1 code."""
+
+    def filter(self, items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        """Filter items to include only languages that have an ISO 639-1 code."""
+        return [item for item in items if item.get("props", {}).get("ISO_639_1")]
+
+
 class DescendantsOfFilter(FilterCls):
     """Filter class to filter items based on descendants."""
 

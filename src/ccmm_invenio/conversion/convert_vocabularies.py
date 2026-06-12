@@ -25,6 +25,7 @@ from ccmm_invenio.conversion.ccmm_csv import CSVReader
 from ccmm_invenio.conversion.ccmm_filtered import (
     DescendantsOfFilter,
     FilteredReader,
+    ISO6391LanguageFilter,
 )
 from ccmm_invenio.conversion.ccmm_rdm_subjects import RDMSubjectsCSVReader
 from ccmm_invenio.conversion.ccmm_sparql import SPARQLReader
@@ -102,7 +103,7 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
         ),
         (
             SPARQLReader(
-                "Languages",
+                "Languages (raw)",
                 "http://publications.europa.eu/resource/authority/language",
                 "http://publications.europa.eu/resource/authority/language",
                 extra_props={
@@ -126,7 +127,15 @@ def convert_vocabularies(vocabulary_names: list[str]) -> None:
                     "euvoc": "http://publications.europa.eu/ontology/euvoc#",
                 },
             ),
-            root_dir / "fixtures/ccmm_languages.yaml",
+            root_dir / "fixtures/ccmm_languages_all.yaml",
+        ),
+        (
+            FilteredReader(
+                "Languages",
+                root_dir / "fixtures/ccmm_languages_all.yaml",
+                filter_cls=ISO6391LanguageFilter,
+            ),
+            root_dir / "fixtures/ccmm_languages_primary.yaml",
         ),
         (
             SPARQLReader(
