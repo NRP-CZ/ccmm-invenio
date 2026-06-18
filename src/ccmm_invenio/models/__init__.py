@@ -17,6 +17,7 @@ from invenio_access.permissions import system_identity
 from invenio_i18n import lazy_gettext as _
 from invenio_rdm_records.resources.config import csl_url_args_retriever
 from invenio_rdm_records.resources.serializers import (
+    CSLJSONSerializer,
     StringCitationSerializer,  # type: ignore[reportAttributeAccessIssue]
 )
 from invenio_records_resources.services.records.components import ServiceComponent
@@ -32,7 +33,6 @@ from oarepo_model.customizations import (
     SetIndexNestedFieldsLimit,
     SetIndexTotalFieldsLimit,
 )
-from oarepo_model.model import InvenioModel
 from oarepo_model.presets import Preset
 from oarepo_rdm.model.presets import rdm_minimal_preset
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
@@ -125,6 +125,13 @@ class CCMMProductionCustomizationPreset(Preset):
             name=_("Citation"),
             mimetype="text/x-bibliography",
             serializer=StringCitationSerializer(url_args_retriever=csl_url_args_retriever),
+            display=False,
+        )
+        yield AddMetadataExport(
+            code="citation-json",
+            name=_("Citation"),
+            mimetype="application/json",
+            serializer=CSLJSONSerializer(),
         )
 
 
