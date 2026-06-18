@@ -2709,29 +2709,6 @@
     cs: zulština
     en: Zulu
 - description:
-    en: Bambara, also known as Bamana, is a lingua franca and national language of
-      Mali spoken natively by 4.2 million Bambara people and about 10 million second-language
-      users. Bambara is a variety of a group of closely related languages called Manding,
-      whose native speakers trace their cultural history to the medieval Mali Empire.
-      It has a subject–object–verb clause structure and two lexical tones. Manding
-      languages are a sub-branch of Mande languages that are part of the hypothetical
-      Niger-Congo language family. However, as the Mande languages lack the noun-class
-      morphology, linguists increasingly treat Mande and Atlantic–Congo as independent
-      language families and reject the Niger-Congo hypothesis.
-  hierarchy:
-    parent: MAN
-  id: BAM
-  props:
-    ISO_639_1: bm
-    ISO_639_2B: bam
-    ISO_639_2T: bam
-    ISO_639_3: bam
-    XML_LNG: bm
-    iri: http://publications.europa.eu/resource/authority/language/BAM
-  title:
-    cs: bambarština
-    en: Bambara
-- description:
     en: Tajik is a variety of modern Persian spoken in Central Asia. Most speakers
       of Tajik live in Tajikistan (where it is the official language) and Uzbekistan.
       In Afghanistan the dialect is less influenced by Turkic languages and is called
