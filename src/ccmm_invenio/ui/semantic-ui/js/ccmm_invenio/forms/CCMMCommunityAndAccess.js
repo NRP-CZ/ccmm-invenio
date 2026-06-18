@@ -4,6 +4,10 @@ import Overridable from "react-overridable";
 import { i18next } from "@translations/ccmm_invenio";
 import { CommunityHeader, AccessRightField } from "@js/invenio_rdm_records";
 import { computeSectionCompletion, isFilled } from "@js/oarepo_ui/forms";
+import {
+  swappedApiConfigs,
+  communitySelectionOverrides,
+} from "./CCMMCommunityAndAccessHelpers";
 import _get from "lodash/get";
 
 export const CCMMCommunityAndAccess = {
@@ -29,6 +33,8 @@ export const CCMMCommunityAndAccess = {
             <CommunityHeader
               imagePlaceholderLink="/static/images/square-placeholder.png"
               record={initialRecord}
+              apiConfigs={swappedApiConfigs}
+              overriddenComponents={communitySelectionOverrides}
             />
           </Overridable>
         )}

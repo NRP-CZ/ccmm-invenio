@@ -172,3 +172,15 @@ msgid ""
 "Add record's related resources. You can fill them manually or load them via "
 "DOI."
 msgstr ""
+
+msgid "Search in my communities"
+msgstr ""
+
+msgid "Search in all communities"
+msgstr ""
+
+msgid "My communities"
+msgstr ""
+
+msgid "All"
+msgstr ""
