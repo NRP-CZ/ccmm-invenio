@@ -17,7 +17,7 @@ from invenio_access.permissions import system_identity
 from invenio_i18n import lazy_gettext as _
 from invenio_rdm_records.resources.config import csl_url_args_retriever
 from invenio_rdm_records.resources.serializers import (
-    CSLJSONSerializer,
+    CSLJSONSerializer,  # type: ignore[reportAttributeAccessIssue]
     StringCitationSerializer,  # type: ignore[reportAttributeAccessIssue]
 )
 from invenio_records_resources.services.records.components import ServiceComponent
