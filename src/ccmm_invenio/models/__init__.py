@@ -130,7 +130,7 @@ class CCMMProductionCustomizationPreset(Preset):
         yield AddMetadataExport(
             code="citation-json",
             name=_("Citation"),
-            mimetype="application/json",
+            mimetype="application/vnd.citationstyles.csl+json",
             serializer=CSLJSONSerializer(),
         )
 
