@@ -29,8 +29,8 @@ from invenio_rdm_records.services.schemas.metadata import (
 )
 from invenio_vocabularies.resources import VocabularyL10Schema
 from marshmallow import Schema, fields
-from marshmallow_utils.fields import FormatEDTF
 from marshmallow_utils.schemas import IdentifierSchema as RDMIdentifierSchema
+from oarepo_runtime.services.schema.ui import LocalizedEDTF
 
 
 def make_related_affiliation_index(attr: str, obj: dict, *args: Any) -> Any:
@@ -53,10 +53,10 @@ class CCMMRelatedResourceUISchema(Schema):
     publisher = fields.String()
     publication_date = fields.String()
 
-    publication_date_l10n_short = FormatEDTF(attribute="publication_date", format="short")
-    publication_date_l10n_medium = FormatEDTF(attribute="publication_date", format="medium")
-    publication_date_l10n_long = FormatEDTF(attribute="publication_date", format="long")
-    publication_date_l10n_full = FormatEDTF(attribute="publication_date", format="full")
+    publication_date_l10n_short = LocalizedEDTF(attribute="publication_date", format="short")
+    publication_date_l10n_medium = LocalizedEDTF(attribute="publication_date", format="medium")
+    publication_date_l10n_long = LocalizedEDTF(attribute="publication_date", format="long")
+    publication_date_l10n_full = LocalizedEDTF(attribute="publication_date", format="full")
 
     identifiers = fields.List(fields.Nested(IdentifierSchema))
 
