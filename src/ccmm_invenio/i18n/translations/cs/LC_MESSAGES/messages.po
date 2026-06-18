@@ -184,3 +184,15 @@ msgid ""
 msgstr ""
 "Přidejte související zdroje záznamu. Můžete je vyplnit ručně nebo načíst "
 "pomocí DOI."
+
+msgid "Search in my communities"
+msgstr "Hledat v mých komunitách"
+
+msgid "Search in all communities"
+msgstr "Hledat ve všech komunitách"
+
+msgid "My communities"
+msgstr "Moje komunity"
+
+msgid "All"
+msgstr "Vše"

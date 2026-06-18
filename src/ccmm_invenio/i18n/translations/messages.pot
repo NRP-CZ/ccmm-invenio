@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-06-09 14:46+0200\n"
+"POT-Creation-Date: 2026-06-18 14:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,18 @@ msgid "Community and Access"
 msgstr ""
 
 msgid "Visibility"
+msgstr ""
+
+msgid "Search in my communities"
+msgstr ""
+
+msgid "Search in all communities"
+msgstr ""
+
+msgid "My communities"
+msgstr ""
+
+msgid "All"
 msgstr ""
 
 msgid "Upload files"
