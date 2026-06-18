@@ -5,11 +5,13 @@ and cleans namespaces.
 """
 
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 import click
 from lxml import etree
-from lxml.etree import _Element as Element
+
+if TYPE_CHECKING:
+    from lxml.etree import _Element as Element
 
 
 @click.command()
