@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { i18next } from "@translations/ccmm_invenio";
+import { useSanitizeInput } from "@js/oarepo_ui/forms";
 import { extractYear, formatCreators } from "./utils";
 
 // Return `raw` only when it parses as a real URL and uses http(s); otherwise
@@ -27,6 +28,8 @@ const doiSourceUrl = (identifiers) => {
 };
 
 export const RelatedResourceCitation = ({ resource }) => {
+  const { sanitizeInput } = useSanitizeInput();
+
   if (!resource) return null;
 
   const creators = formatCreators(resource.creators);
@@ -44,7 +47,7 @@ export const RelatedResourceCitation = ({ resource }) => {
     <span className="related-resource-citation">
       {head && <span>{head}. </span>}
       <span className="related-resource-citation__title">
-        {title}
+        <span dangerouslySetInnerHTML={{ __html: sanitizeInput(title) }} />
         {isOnline && ` [${i18next.t("online")}]`}.
       </span>
       {publisher && <span> {publisher}.</span>}
