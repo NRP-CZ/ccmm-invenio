@@ -25,8 +25,8 @@ CCMMInvenioRelatedResource:
         cs: Datum publikace
 
     title:
-      type: RDMTitle
       required: true
+      type: RDMTitle
       label:
         en: Title
         cs: Název
@@ -134,6 +134,7 @@ CCMMInvenioRelatedResource:
         cs: Uveďte právní podmínky upravující přístup a opětovné použití. Zahrňte licenční dokumenty a případná omezení.
 
     resource_type:
+      required: true
       type: RDMResourceType
       label:
         en: Resource type
@@ -146,6 +147,7 @@ CCMMInvenioRelatedResource:
         cs: Jazyky
 
     relation_type:
+      required: true
       type: vocabulary
       vocabulary-type: relationtypes
       label:
