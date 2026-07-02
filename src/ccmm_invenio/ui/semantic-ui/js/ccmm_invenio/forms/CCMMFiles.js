@@ -8,6 +8,10 @@ import { computeFilesSectionCompletion } from "@js/oarepo_ui/forms";
 export const CCMMFiles = {
   key: "files",
   label: i18next.t("Upload files"),
+  lockTabChange: (formik, reduxState) => {
+    const entries = Object.values(reduxState?.files?.entries ?? {});
+    return entries.some((file) => file.status === "uploading");
+  },
   component: (tabConfig) => {
     const { record, formConfig } = tabConfig;
     const { filesLocked, permissions } = formConfig.config;
