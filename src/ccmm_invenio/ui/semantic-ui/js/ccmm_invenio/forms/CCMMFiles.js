@@ -21,7 +21,7 @@ export const CCMMFiles = {
         <UppyUploader
           isDraftRecord={!record.is_published}
           config={formConfig}
-          quota={formConfig.quota}
+          quota={formConfig?.config?.quota}
           decimalSizeDisplay={formConfig.decimal_size_display}
           allowEmptyFiles={formConfig.allow_empty_files}
           fileUploadConcurrency={formConfig.file_upload_concurrency}
