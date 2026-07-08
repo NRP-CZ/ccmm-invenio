@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-06-18 14:09+0200\n"
+"POT-Creation-Date: 2026-07-08 15:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,20 @@ msgstr ""
 "Generated-By: Babel 2.18.0\n"
 
 #: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:119
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:215
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:222
 msgid "Datacite export"
 msgstr ""
 
 #: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:125
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:132
 msgid "Citation"
 msgstr ""
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:178
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:185
 msgid "CCMM import"
 msgstr ""
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:180
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:187
 msgid "CCMM XML export."
 msgstr ""
 
@@ -62,6 +63,11 @@ msgid "Funding"
 msgstr ""
 
 msgid "General information"
+msgstr ""
+
+msgid ""
+"General description of the record. Use Add description below to add methods,"
+" technical details, or other specialized content as separate sections."
 msgstr ""
 
 msgid "Related works"

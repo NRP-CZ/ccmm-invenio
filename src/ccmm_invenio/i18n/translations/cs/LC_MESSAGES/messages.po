@@ -196,3 +196,10 @@ msgstr "Moje komunity"
 
 msgid "All"
 msgstr "Vše"
+
+msgid ""
+"General description of the record. Use Add description below to add methods,"
+" technical details, or other specialized content as separate sections."
+msgstr ""
+"Obecný popis záznamu. Metody, technické podrobnosti nebo jiný specializovaný"
+" obsah přidejte jako samostatné části pomocí tlačítka Přidat popis níže."
