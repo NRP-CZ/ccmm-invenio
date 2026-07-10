@@ -190,6 +190,12 @@ CCMMDataset:
         en: Title
         cs: Název
 
+    description:
+      type: RDMDescription
+      label:
+        en: Description
+        cs: Popis
+
     publisher:
       type: RDMPublisher
       label:

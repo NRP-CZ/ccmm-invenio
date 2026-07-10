@@ -184,3 +184,8 @@ msgstr ""
 
 msgid "All"
 msgstr ""
+
+msgid ""
+"General description of the record. Use Add description below to add methods,"
+" technical details, or other specialized content as separate sections."
+msgstr ""

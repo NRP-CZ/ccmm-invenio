@@ -13,8 +13,8 @@ import {
   LicenseField,
   SubjectsField,
   DatesField,
+  DescriptionsField,
 } from "@js/invenio_rdm_records";
-import { AdditionalDescriptionsField } from "@js/invenio_rdm_records/src/deposit/fields/DescriptionsField/components";
 import { PIDFieldList } from "@js/oarepo_rdm/form/components";
 
 export const CCMMGeneralInformation = {
@@ -46,6 +46,19 @@ export const CCMMGeneralInformation = {
             fieldPath="metadata.title"
             recordUI={record.ui}
             required
+          />
+        </Overridable>
+        <Overridable
+          id={buildUID(overridableIdPrefix, "Descriptions")}
+          {...tabConfig}
+        >
+          <DescriptionsField
+            fieldPath="metadata.description"
+            options={vocabularies?.descriptions}
+            recordUI={_get(record, "ui", null)}
+            helpText={i18next.t(
+              "General description of the record. Use Add description below to add methods, technical details, or other specialized content as separate sections."
+            )}
           />
         </Overridable>
         <Overridable
@@ -169,24 +182,14 @@ export const CCMMGeneralInformation = {
             showEmptyValue
           />
         </Overridable>
-        <Overridable
-          id={buildUID(overridableIdPrefix, "AdditionalDescriptions")}
-          {...tabConfig}
-        >
-          <AdditionalDescriptionsField
-            recordUI={_get(record, "ui", null)}
-            options={vocabularies?.descriptions}
-            optimized
-            fieldPath="metadata.additional_descriptions"
-            values={record}
-          />
-        </Overridable>
       </>
     );
   },
   includesPaths: [
     "pids",
     "metadata.title",
+    "metadata.description",
+    "metadata.additional_descriptions",
     "metadata.resource_type",
     "metadata.creators",
     "metadata.contributors",
@@ -197,6 +200,5 @@ export const CCMMGeneralInformation = {
     "metadata.subjects",
     "metadata.rights",
     "metadata.dates",
-    "metadata.additional_descriptions",
   ],
 };
