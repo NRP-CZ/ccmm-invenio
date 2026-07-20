@@ -9,8 +9,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/accepted
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Accepted
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: accepted
-    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: accepted
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Accepted
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: Accepted
 - id: available
   title:
     cs: Datum zveřejnění datasetu
@@ -22,8 +22,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/available
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Available
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: available
-    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: available
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Available
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: Available
 - id: copyrighted
   title:
     cs: Datum udělení copyrightu
@@ -34,8 +34,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/copyrighted
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Copyrighted
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: copyrighted
-    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: copyrighted
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Copyrighted
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: Copyrighted
 - id: collected
   title:
     cs: Datum sběru dat
@@ -47,30 +47,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/collected
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Collected
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: collected
-    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: collected
-- id: collectedstart
-  title:
-    cs: Datum sběru dat (do)
-    en: Date Collected Start
-  description:
-    en: 'The date range (start date) in which the resource content was collected.
-
-      To indicate precise or particular timeframes in which research was conducted.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/collectedstart
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CollectedStart
-- id: collectedend
-  title:
-    cs: Datum sběru dat (od)
-    en: Date Collected End
-  description:
-    en: 'The date range (end date) in which the resource content was collected.
-
-      To indicate precise or particular timeframes in which research was conducted.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/collectedend
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CollectedEnd
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Collected
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: Collected
 - id: coverage
   title:
     cs: Časové pokrytí datasetu
@@ -82,29 +60,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/coverage
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Coverage
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: coverage
-- id: coveragestart
-  title:
-    cs: Časové pokrytí datasetu (od)
-    en: Date Coverage Start
-  description:
-    en: "The date range (start date) that the resource content applies to, describes,\
-      \ or covers.\n To indicate the temporal coverage of the resource, use Coverage.\
-      \ This may be different from Collected."
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/coveragestart
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CoverageStart
-- id: coverageend
-  title:
-    cs: Časové pokrytí datasetu (do)
-    en: Date Coverage End
-  description:
-    en: "The date range (end date) that the resource content applies to, describes,\
-      \ or covers.\n To indicate the temporal coverage of the resource, use Coverage.\
-      \ This may be different from Collected."
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/coverageend
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CoverageEnd
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Coverage
 - id: created
   title:
     cs: Datum vytvoření datasetu
@@ -118,34 +74,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/created
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Created
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: created
-    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: created
-- id: createdstart
-  title:
-    cs: Datum vytvoření datasetu (od)
-    en: Date Created Start
-  description:
-    en: 'The date the resource itself was put together; this could refer to a timeframe
-      in ancient history, the start date (of the range) for a final component, e.g.,
-      the finalised file with all the data.
-
-      Recommended for discovery.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/createdstart
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CreatedStart
-- id: createdend
-  title:
-    cs: Datum vytvoření datasetu (do)
-    en: Date Created End
-  description:
-    en: 'The date the resource itself was put together; this could refer to a timeframe
-      in ancient history, the end date (of the range) for a final component, e.g.,
-      the finalised file with all the data.
-
-      Recommended for discovery.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/createdend
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CreatedEnd
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Created
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: Created
 - id: issued
   title:
     cs: Datum vydání datasetu
@@ -155,8 +85,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/issued
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Issued
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: issued
-    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: issued
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Issued
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: Issued
 - id: submitted
   title:
     cs: Datum podání datasetu
@@ -169,8 +99,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/submitted
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Submitted
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: submitted
-    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: submitted
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Submitted
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: Submitted
 - id: updated
   title:
     cs: Datum aktualizace datasetu
@@ -181,28 +111,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/updated
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Updated
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: updated
-    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: updated
-- id: updatedstart
-  title:
-    cs: Datum aktualizace datasetu (od)
-    en: Date Updated Start
-  description:
-    en: The date range (start date) of the last update to the resource, when the resource
-      is being added to.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/updatedstart
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: UpdatedStart
-- id: updatedend
-  title:
-    cs: Datum aktualizace datasetu (do)
-    en: Date Updated End
-  description:
-    en: The date range (end date) of the last update to the resource, when the resource
-      is being added to.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/updatedend
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: UpdatedEnd
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Updated
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: Updated
 - id: valid
   title:
     cs: Datum platnosti datasetu
@@ -212,26 +122,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/valid
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Valid
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: valid
-    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: valid
-- id: validstart
-  title:
-    cs: Datum platnosti datasetu (od)
-    en: Date Valid Start
-  description:
-    en: The date range (start date) during which the dataset or resource is accurate.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/validstart
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: ValidStart
-- id: validend
-  title:
-    cs: Datum platnosti datasetu (do)
-    en: Date Valid End
-  description:
-    en: The date range (end date) during which the dataset or resource is accurate.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/datetypes/validend
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: ValidEnd
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Valid
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: Valid
 - id: withdrawn
   title:
     cs: Datum odstranění datasetu
@@ -242,7 +134,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/withdrawn
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Withdrawn
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: withdrawn
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Withdrawn
 - id: other
   title:
     cs: Jiné datum
@@ -252,4 +144,4 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/other
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Other
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: other
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: Other

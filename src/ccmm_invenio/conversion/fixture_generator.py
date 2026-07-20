@@ -12,13 +12,14 @@ from __future__ import annotations
 
 import logging
 from collections import defaultdict
-from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
+    from pathlib import Path
+
     from collections.abc import Callable
 
-    from .rdf_store import RDFStore
+    from .rdf_store import RDFTripleStore
 
 from rdflib import DC, SKOS, Namespace, URIRef
 
@@ -35,7 +36,7 @@ CCMM_PROPS = Namespace("http://vocabs.ccmm.cz/props/")
 class FixtureGenerator:
     """Generate Invenio fixtures from RDF triplestore."""
 
-    def __init__(self, store: RDFStore) -> None:
+    def __init__(self, store: RDFTripleStore) -> None:
         """Initialize the fixture generator."""
         self.store = store
         self.graph = store.graph
@@ -141,6 +142,18 @@ class FixtureGenerator:
                 "filetypes",
             ),
             ("ccmm_contributor_types.yaml", self._generate_contributor_types, None, None),
+            (
+                "ccmm_licenses.yaml",
+                self._generate_ccmm_vocabulary_with_sorting,
+                "https://nma.eosc.cz/vocabularies/licenses",
+                "licenses",
+            ),
+            (
+                "ccmm_subject_schemes.yaml",
+                self._generate_ccmm_vocabulary_with_sorting,
+                "https://nma.eosc.cz/vocabularies/subjectschemes",
+                "subjectschemes",
+            ),
         ]
 
         for filename, generator_func, arg, vocab_type in generators:
@@ -170,9 +183,6 @@ class FixtureGenerator:
             except Exception:
                 log.exception("Failed to generate %s", filename)
                 results[filename] = 0
-
-        # Copy licenses and subject schemes
-        self._copy_input_files(output_dir, results)
 
         return results
 
@@ -220,8 +230,21 @@ class FixtureGenerator:
             if not labels["en"] and not labels["cs"]:
                 continue
 
-            iri = str(concept_uri)
+            concept_str = str(concept_uri)
             term_id = self._extract_id_from_uri(concept_uri)
+            
+            # Create NMA IRI
+            new_iri = f"https://nma.eosc.cz/vocabularies/subjects/{term_id}"
+            
+            # Extract old namespace and ID path for exactMatch
+            old_namespace = self._get_namespace_uri(concept_str)
+            props: dict[str, Any] = {"iri": new_iri}
+            
+            if old_namespace:
+                old_id_path = concept_str[len(old_namespace):].rstrip("/")
+                if old_id_path:
+                    prop_key = f"skos:exactMatch:{old_namespace.rstrip('/')}"
+                    props[prop_key] = old_id_path
 
             term: dict[str, Any] = {
                 "id": term_id,
@@ -231,7 +254,7 @@ class FixtureGenerator:
                     "cs": labels["cs"] or labels["en"],
                     "en": labels["en"] or labels["cs"],
                 },
-                "props": {"iri": iri},
+                "props": props,
             }
 
             result.append(term)
@@ -353,8 +376,9 @@ class FixtureGenerator:
                 # Use namespace URI + id pattern instead of explicit system names
                 namespace_uri = self._get_namespace_uri(source_uri)
                 if namespace_uri and predicate_short:
-                    concept_id = self._extract_id_from_uri(URIRef(source_uri))
-                    mappings[concept_str][(predicate_short, namespace_uri)].add(concept_id)
+                    # Extract the full ID path (everything after the namespace)
+                    id_path = source_uri[len(namespace_uri):].rstrip("/")
+                    mappings[concept_str][(predicate_short, namespace_uri)].add(id_path)
 
             # Query for mappings where concept is the source
             # This is for external concepts that map TO COAR/CCMM
@@ -376,8 +400,9 @@ class FixtureGenerator:
                 # Use namespace URI + id pattern instead of explicit system names
                 namespace_uri = self._get_namespace_uri(target_uri)
                 if namespace_uri and predicate_short:
-                    concept_id = self._extract_id_from_uri(URIRef(target_uri))
-                    mappings[concept_str][(predicate_short, namespace_uri)].add(concept_id)
+                    # Extract the full ID path (everything after the namespace)
+                    id_path = target_uri[len(namespace_uri):].rstrip("/")
+                    mappings[concept_str][(predicate_short, namespace_uri)].add(id_path)
 
         return mappings
 
@@ -409,11 +434,29 @@ class FixtureGenerator:
           https://schema.datacite.org/meta/kernel-4/creator
         returns:
           https://schema.datacite.org/meta/kernel-4/
+
+        For hierarchical vocabularies like SubjectCategory, extracts the base namespace:
+          https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10103
+        returns:
+          https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
         """
         # Remove trailing slash if present for consistent processing
         uri = uri.rstrip("/")
 
-        # Find the last slash and include it to get the namespace
+        # Special handling for known hierarchical vocabularies
+        # These use numeric hierarchical paths after the base codelist name
+        hierarchical_bases = [
+            "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory",
+            "https://vocabs.ccmm.cz/registry/codelist/ResourceType",
+            "https://vocabs.ccmm.cz/registry/codelist/ResourceAgentRoleType",
+        ]
+
+        for base in hierarchical_bases:
+            if uri.startswith(base):
+                # Return the base with trailing slash
+                return base + "/"
+
+        # For non-hierarchical URIs, find the last slash and include it to get the namespace
         last_slash_idx = uri.rfind("/")
         if last_slash_idx > 0:
             # Return namespace with trailing slash
@@ -479,10 +522,14 @@ class FixtureGenerator:
         # Build props
         props: dict[str, Any] = {"iri": new_iri}
 
-        # Add old IRI namespace as skos:exactMatch if we created a new IRI
+        # Add old IRI namespace as skos:exactMatch if we created a new IRI from an external source
+        # Don't add exactMatch if the old namespace is already NMA (YAML-sourced vocabularies)
+        nma_namespace = f"https://nma.eosc.cz/vocabularies/{vocabulary_type}/" if vocabulary_type else None
         if old_namespace and old_id_path and new_iri != concept_str:
-            prop_key = f"skos:exactMatch:{old_namespace.rstrip('/')}"
-            props[prop_key] = old_id_path
+            # Only add if old namespace is not the NMA namespace
+            if old_namespace != nma_namespace:
+                prop_key = f"skos:exactMatch:{old_namespace.rstrip('/')}"
+                props[prop_key] = old_id_path
 
         # Add SSSOM mappings using predicate:namespaceURI format
         if concept_str in sssom_mappings:
@@ -493,9 +540,24 @@ class FixtureGenerator:
                     # Join multiple IDs with comma
                     props[prop_key] = ", ".join(sorted(ids))
 
-        # Add all CCMM_PROPS properties dynamically
+        # Add all CCMM_PROPS properties dynamically (except externalIri which is handled below)
         ccmm_props = self._get_ccmm_props(concept_uri)
         props.update(ccmm_props)
+
+        # Handle external IRI (from YAML vocabularies) and convert to exactMatch
+        # Query for externalIri separately since it's filtered out by _get_ccmm_props
+        for obj in self.graph.objects(concept_uri, CCMM_PROPS.externalIri):
+            external_iri = str(obj)
+            # Extract namespace from external IRI
+            namespace_uri = self._get_namespace_uri(external_iri)
+            if namespace_uri:
+                # Get the ID path (everything after namespace)
+                id_path = external_iri[len(namespace_uri):].rstrip("/")
+                if id_path:  # Only add if there's an ID
+                    prop_key = f"skos:exactMatch:{namespace_uri.rstrip('/')}"
+                    props[prop_key] = id_path
+                # If no ID (URL ends with just namespace), don't add exactMatch
+                # as it doesn't make sense without an identifier
 
         # Add extra properties (for backward compatibility)
         if extra_props:
@@ -508,6 +570,20 @@ class FixtureGenerator:
         if broader:
             parent_id = self._extract_id_from_uri(broader)
             term["hierarchy"] = {"parent": parent_id}
+
+        # Add icon if present in props
+        if "icon" in props:
+            term["icon"] = props.pop("icon")
+
+        # Add tags if present in props (as a list)
+        tags = []
+        for pred, obj in self.graph.predicate_objects(concept_uri):
+            if str(pred) == f"{CCMM_PROPS}tag":
+                tags.append(str(obj))
+        if tags:
+            term["tags"] = tags
+            # Remove individual tag props
+            props.pop("tag", None)
 
         return term
 
@@ -563,10 +639,14 @@ class FixtureGenerator:
         return None
 
     def _extract_id_from_uri(self, uri: URIRef) -> str:
-        """Extract ID from URI (always lowercase)."""
+        """Extract ID from URI (always lowercase).
+        
+        For concepts with dc:identifier, uses it but lowercases the result.
+        For other concepts, extracts from URI and lowercases it.
+        """
         uri_str = str(uri)
 
-        # Try dc:identifier first
+        # Try dc:identifier first (but always lowercase for consistency)
         for obj in self.graph.objects(uri, DC.identifier):
             return str(obj).lower()
 
@@ -627,7 +707,8 @@ class FixtureGenerator:
                 # Extract the property name (everything after the namespace)
                 prop_name = pred_str[len(ccmm_props_prefix):]
                 # Skip baseIri as it's redundant with the concept URI
-                if prop_name != "baseIri":
+                # Also skip externalIri as it's handled separately in _build_term
+                if prop_name not in ("baseIri", "externalIri"):
                     props[prop_name] = str(obj)
 
         return props
@@ -705,56 +786,3 @@ class FixtureGenerator:
                     del item["hierarchy"]
 
         return result
-
-    def _copy_input_files(self, output_dir: Path, results: dict[str, int]) -> None:
-        """Copy input files that don't need transformation."""
-        import shutil
-
-        import yaml
-
-        input_dir = Path(__file__).parent.parent / "input"
-
-        # Process and copy licenses with added IRIs
-        licenses_input = input_dir / "licenses.yaml"
-        licenses_output = output_dir / "ccmm_licenses.yaml"
-        if licenses_input.exists():
-            with licenses_input.open(encoding="utf-8") as f:
-                licenses_data = list(yaml.safe_load_all(f))
-
-            # Add IRI to each license
-            for license_item in licenses_data:
-                if "id" in license_item:
-                    license_id = license_item["id"]
-                    # Create standardized IRI
-                    iri = f"https://nma.eosc.cz/vocabularies/licenses/{license_id}"
-
-                    # Add or update props
-                    if "props" not in license_item:
-                        license_item["props"] = {}
-                    license_item["props"]["iri"] = iri
-
-            # Write updated licenses
-            with licenses_output.open("w", encoding="utf-8") as f:
-                yaml.safe_dump_all(
-                    licenses_data,
-                    f,
-                    allow_unicode=True,
-                    default_flow_style=False,
-                    sort_keys=False,
-                )
-            results["ccmm_licenses.yaml"] = len(licenses_data)
-        else:
-            log.warning("Input file not found: %s", licenses_input)
-            results["ccmm_licenses.yaml"] = 0
-
-        # Copy subject schemes
-        schemes_input = input_dir / "subject_schemes.yaml"
-        schemes_output = output_dir / "ccmm_subject_schemes.yaml"
-        if schemes_input.exists():
-            shutil.copy2(schemes_input, schemes_output)
-            with schemes_input.open(encoding="utf-8") as f:
-                data = list(yaml.safe_load_all(f))
-                results["ccmm_subject_schemes.yaml"] = len(data)
-        else:
-            log.warning("Input file not found: %s", schemes_input)
-            results["ccmm_subject_schemes.yaml"] = 0

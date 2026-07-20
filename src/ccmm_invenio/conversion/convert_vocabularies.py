@@ -30,6 +30,7 @@ from ccmm_invenio.conversion.rdf_store import RDFTripleStore
 from ccmm_invenio.conversion.sparql_loader import SPARQLLoader
 from ccmm_invenio.conversion.sssom_loader import SSSOMLoader
 from ccmm_invenio.conversion.utils import print_concept_schemes, print_statistics
+from ccmm_invenio.conversion.yaml_loader import YAMLToRDFLoader
 
 log = logging.getLogger(__name__)
 
@@ -56,11 +57,18 @@ log = logging.getLogger(__name__)
     default="INFO",
     help="Set the logging level",
 )
+@click.option(
+    "--no-cache",
+    is_flag=True,
+    default=False,
+    help="Disable caching of downloaded RDF data",
+)
 def convert_vocabularies(
     input_dir: Path | None,
     sssom_dir: Path | None,
     output_dir: Path | None,
     log_level: str,
+    no_cache: bool,
 ) -> None:
     """Convert vocabularies from various sources to YAML fixtures.
 
@@ -83,10 +91,13 @@ def convert_vocabularies(
     sssom_dir = sssom_dir or root_dir / "input" / "sssom"
     output_dir = output_dir or root_dir / "fixtures"
 
+    use_cache = not no_cache
+
     log.info("Starting vocabulary conversion")
     log.info("Input directory: %s", input_dir)
     log.info("SSSOM directory: %s", sssom_dir)
     log.info("Output directory: %s", output_dir)
+    log.info("Cache enabled: %s", use_cache)
 
     # Step 1: Initialize a RDF triplestore
     log.info("Step 1: Initializing RDF triplestore")
@@ -111,7 +122,7 @@ def convert_vocabularies(
 
     # Step 3: Load data from SPARQL endpoints
     log.info("Step 3: Loading vocabulary data from SPARQL/RDF sources")
-    sparql_loader = SPARQLLoader(store)
+    sparql_loader = SPARQLLoader(store, use_cache=use_cache)
 
     # Define SPARQL/RDF sources
     sparql_results = {}
@@ -214,6 +225,55 @@ def convert_vocabularies(
 
     total_sparql_triples = sum(sparql_results.values())
     log.info("Total triples loaded from SPARQL sources: %d", total_sparql_triples)
+    log.info("Triplestore now contains %d triples", store.size())
+
+    # Step 3.5: Load YAML vocabulary files (e.g., licenses)
+    log.info("Step 3.5: Loading YAML vocabulary files")
+    yaml_loader = YAMLToRDFLoader(store)
+    yaml_results = {}
+
+    # Load licenses
+    licenses_file = input_dir / "licenses.yaml"
+    if licenses_file.exists():
+        try:
+            log.info("Loading licenses from %s...", licenses_file)
+            count = yaml_loader.load_yaml_file(
+                licenses_file,
+                concept_scheme="https://nma.eosc.cz/vocabularies/licenses",
+                vocabulary_type="licenses",
+            )
+            yaml_results["Licenses"] = count
+        except Exception:
+            log.exception("Failed to load licenses")
+            yaml_results["Licenses"] = 0
+    else:
+        log.warning("Licenses file not found: %s", licenses_file)
+        yaml_results["Licenses"] = 0
+
+    # Load subject schemes
+    subject_schemes_file = input_dir / "subject_schemes.yaml"
+    if subject_schemes_file.exists():
+        try:
+            log.info("Loading subject schemes from %s...", subject_schemes_file)
+            count = yaml_loader.load_yaml_file(
+                subject_schemes_file,
+                concept_scheme="https://nma.eosc.cz/vocabularies/subjectschemes",
+                vocabulary_type="subjectschemes",
+            )
+            yaml_results["Subject Schemes"] = count
+        except Exception:
+            log.exception("Failed to load subject schemes")
+            yaml_results["Subject Schemes"] = 0
+    else:
+        log.warning("Subject schemes file not found: %s", subject_schemes_file)
+        yaml_results["Subject Schemes"] = 0
+
+    log.info("YAML loading results:")
+    for source_name, count in yaml_results.items():
+        log.info("  - %s: %d concepts", source_name, count)
+
+    total_yaml_concepts = sum(yaml_results.values())
+    log.info("Total concepts loaded from YAML files: %d", total_yaml_concepts)
     log.info("Triplestore now contains %d triples", store.size())
 
     # Step 4: Load SSSOM mapping files

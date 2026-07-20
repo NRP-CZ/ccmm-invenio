@@ -14,7 +14,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_f1cf
     skos:exactMatch:http://purl.org/coar/access_right: c_f1cf
-    skos:exactMatch:info:eu-repo/semantics: embargoedaccess
+    skos:exactMatch:info:eu-repo/semantics: embargoedAccess
 - id: c_abf2
   title:
     cs: otevřený přístup
@@ -31,7 +31,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_abf2
     skos:exactMatch:http://purl.org/coar/access_right: c_abf2
-    skos:exactMatch:info:eu-repo/semantics: openaccess
+    skos:exactMatch:info:eu-repo/semantics: openAccess
 - id: c_14cb
   title:
     cs: pouze metadata
@@ -48,7 +48,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_14cb
     skos:exactMatch:http://purl.org/coar/access_right: c_14cb
-    skos:exactMatch:info:eu-repo/semantics: openaccess
+    skos:exactMatch:info:eu-repo/semantics: openAccess
 - id: c_16ec
   title:
     cs: omezený přístup
@@ -81,4 +81,4 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_16ec
     skos:exactMatch:http://purl.org/coar/access_right: c_16ec
-    skos:exactMatch:info:eu-repo/semantics: restrictedaccess
+    skos:exactMatch:info:eu-repo/semantics: restrictedAccess

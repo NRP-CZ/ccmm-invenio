@@ -5,7 +5,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isversionof
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsVersionOf
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isversionof
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsVersionOf
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isversionof
 - id: hasversion
   title:
@@ -14,7 +14,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/hasversion
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasVersion
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: hasversion
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: HasVersion
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: hasversion
 - id: ispartof
   title:
@@ -23,8 +23,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ispartof
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsPartOf
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: ispartof
-    skos:exactMatch:info:eu-repo/semantics: ispartof
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsPartOf
+    skos:exactMatch:info:eu-repo/semantics: IsPartOf
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: ispartof
 - id: haspart
   title:
@@ -33,8 +33,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/haspart
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasPart
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: haspart
-    skos:exactMatch:info:eu-repo/semantics: haspart
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: HasPart
+    skos:exactMatch:info:eu-repo/semantics: HasPart
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: haspart
 - id: isreviewedby
   title:
@@ -43,8 +43,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isreviewedby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsReviewedBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isreviewedby
-    skos:exactMatch:info:eu-repo/semantics: isreviewedby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsReviewedBy
+    skos:exactMatch:info:eu-repo/semantics: IsReviewedBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isreviewedby
 - id: reviews
   title:
@@ -53,8 +53,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/reviews
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Reviews
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: reviews
-    skos:exactMatch:info:eu-repo/semantics: reviews
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: Reviews
+    skos:exactMatch:info:eu-repo/semantics: Reviews
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: reviews
 - id: iscompiledby
   title:
@@ -63,8 +63,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscompiledby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsCompiledBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: iscompiledby
-    skos:exactMatch:info:eu-repo/semantics: iscompiledby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsCompiledBy
+    skos:exactMatch:info:eu-repo/semantics: isCompiledBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: iscompiledby
 - id: compiles
   title:
@@ -73,8 +73,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/compiles
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Compiles
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: compiles
-    skos:exactMatch:info:eu-repo/semantics: compiles
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: Compiles
+    skos:exactMatch:info:eu-repo/semantics: Compiles
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: compiles
 - id: isreferencedby
   title:
@@ -83,8 +83,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isreferencedby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsReferencedBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isreferencedby
-    skos:exactMatch:info:eu-repo/semantics: isreferencedby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsReferencedBy
+    skos:exactMatch:info:eu-repo/semantics: IsReferencedBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isreferencedby
 - id: references
   title:
@@ -93,8 +93,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/references
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: References
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: references
-    skos:exactMatch:info:eu-repo/semantics: references
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: References
+    skos:exactMatch:info:eu-repo/semantics: References
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: references
 - id: iscitedby
   title:
@@ -103,8 +103,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscitedby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsCitedBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: iscitedby
-    skos:exactMatch:info:eu-repo/semantics: iscitedby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsCitedBy
+    skos:exactMatch:info:eu-repo/semantics: IsCitedBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: iscitedby
 - id: cites
   title:
@@ -113,8 +113,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/cites
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Cites
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: cites
-    skos:exactMatch:info:eu-repo/semantics: cites
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: Cites
+    skos:exactMatch:info:eu-repo/semantics: Cites
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: cites
 - id: issupplementto
   title:
@@ -123,8 +123,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/issupplementto
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsSupplementTo
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: issupplementto
-    skos:exactMatch:info:eu-repo/semantics: issupplementto
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsSupplementTo
+    skos:exactMatch:info:eu-repo/semantics: IsSupplementTo
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: issupplementto
 - id: issupplementedby
   title:
@@ -133,8 +133,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/issupplementedby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsSupplementedBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: issupplementedby
-    skos:exactMatch:info:eu-repo/semantics: issupplementedby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsSupplementedBy
+    skos:exactMatch:info:eu-repo/semantics: IsSupplementedBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: issupplementedby
 - id: describes
   title:
@@ -143,7 +143,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/describes
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Describes
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: describes
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: Describes
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: describes
 - id: isdescribedby
   title:
@@ -152,7 +152,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isdescribedby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsDescribedBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isdescribedby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsDescribedBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isdescribedby
 - id: ispublishedin
   title:
@@ -161,7 +161,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ispublishedin
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsPublishedIn
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: ispublishedin
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsPublishedIn
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: ispublishedin
 - id: isrequiredby
   title:
@@ -170,7 +170,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isrequiredby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsRequiredBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isrequiredby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsRequiredBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isrequiredby
 - id: requires
   title:
@@ -179,7 +179,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/requires
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Requires
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: requires
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: Requires
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: requires
 - id: iscontinuedby
   title:
@@ -188,8 +188,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscontinuedby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsContinuedBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: iscontinuedby
-    skos:exactMatch:info:eu-repo/semantics: iscontinuedby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsContinuedBy
+    skos:exactMatch:info:eu-repo/semantics: IsContinuedBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: iscontinuedby
 - id: continues
   title:
@@ -198,8 +198,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/continues
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Continues
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: continues
-    skos:exactMatch:info:eu-repo/semantics: continues
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: Continues
+    skos:exactMatch:info:eu-repo/semantics: Continues
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: continues
 - id: hasmetadata
   title:
@@ -208,8 +208,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/hasmetadata
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasMetadata
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: hasmetadata
-    skos:exactMatch:info:eu-repo/semantics: hasmetadata
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: HasMetadata
+    skos:exactMatch:info:eu-repo/semantics: HasMetadata
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: hasmetadata
 - id: ismetadatafor
   title:
@@ -218,8 +218,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ismetadatafor
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsMetadataFor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: ismetadatafor
-    skos:exactMatch:info:eu-repo/semantics: ismetadatafor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsMetadataFor
+    skos:exactMatch:info:eu-repo/semantics: IsMetadataFor
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: ismetadatafor
 - id: isnewversionof
   title:
@@ -228,8 +228,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isnewversionof
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsNewVersionOf
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isnewversionof
-    skos:exactMatch:info:eu-repo/semantics: isnewversionof
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsNewVersionOf
+    skos:exactMatch:info:eu-repo/semantics: IsNewVersionOf
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isnewversionof
 - id: ispreviousversionof
   title:
@@ -238,8 +238,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ispreviousversionof
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsPreviousVersionOf
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: ispreviousversionof
-    skos:exactMatch:info:eu-repo/semantics: ispreviousversionof
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsPreviousVersionOf
+    skos:exactMatch:info:eu-repo/semantics: IsPreviousVersionOf
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: ispreviousversionof
 - id: isdocumentedby
   title:
@@ -248,8 +248,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isdocumentedby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsDocumentedBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isdocumentedby
-    skos:exactMatch:info:eu-repo/semantics: isdocumentedby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsDocumentedBy
+    skos:exactMatch:info:eu-repo/semantics: IsDocumentedBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isdocumentedby
 - id: documents
   title:
@@ -258,8 +258,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/documents
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Documents
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: documents
-    skos:exactMatch:info:eu-repo/semantics: documents
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: Documents
+    skos:exactMatch:info:eu-repo/semantics: Documents
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: documents
 - id: isvariantformof
   title:
@@ -268,8 +268,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isvariantformof
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsVariantFormOf
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isvariantformof
-    skos:exactMatch:info:eu-repo/semantics: isvariantformof
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsVariantFormOf
+    skos:exactMatch:info:eu-repo/semantics: IsVariantFormOf
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isvariantformof
 - id: isoriginalformof
   title:
@@ -278,8 +278,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isoriginalformof
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsOriginalFormOf
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isoriginalformof
-    skos:exactMatch:info:eu-repo/semantics: isoriginalformof
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsOriginalFormOf
+    skos:exactMatch:info:eu-repo/semantics: IsOriginalFormOf
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isoriginalformof
 - id: isidenticalto
   title:
@@ -288,8 +288,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isidenticalto
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsIdenticalTo
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isidenticalto
-    skos:exactMatch:info:eu-repo/semantics: isidenticalto
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsIdenticalTo
+    skos:exactMatch:info:eu-repo/semantics: IsIdenticalTo
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isidenticalto
 - id: isderivedfrom
   title:
@@ -298,8 +298,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isderivedfrom
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsDerivedFrom
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isderivedfrom
-    skos:exactMatch:info:eu-repo/semantics: isderivedfrom
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsDerivedFrom
+    skos:exactMatch:info:eu-repo/semantics: IsDerivedFrom
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isderivedfrom
 - id: issourceof
   title:
@@ -308,8 +308,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/issourceof
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsSourceOf
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: issourceof
-    skos:exactMatch:info:eu-repo/semantics: issourceof
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsSourceOf
+    skos:exactMatch:info:eu-repo/semantics: IsSourceOf
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: issourceof
 - id: obsoletes
   title:
@@ -318,7 +318,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/obsoletes
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Obsoletes
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: obsoletes
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: Obsoletes
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: obsoletes
 - id: isobsoletedby
   title:
@@ -327,7 +327,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isobsoletedby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsObsoletedBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isobsoletedby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsObsoletedBy
     skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isobsoletedby
 - id: istranslationof
   title:
@@ -336,7 +336,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/istranslationof
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsTranslationOf
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: istranslationof
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsTranslationOf
 - id: hastranslation
   title:
     cs: má překlad
@@ -344,7 +344,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/hastranslation
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasTranslation
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: hastranslation
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: HasTranslation
 - id: iscollectedby
   title:
     cs: je sbírán (čím)
@@ -352,7 +352,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscollectedby
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsCollectedBy
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: iscollectedby
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: IsCollectedBy
 - id: collects
   title:
     cs: sbírá
@@ -360,4 +360,4 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/collects
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Collects
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: collects
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: Collects

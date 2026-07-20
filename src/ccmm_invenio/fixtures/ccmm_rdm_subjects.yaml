@@ -5,7 +5,8 @@
     cs: Přírodní vědy
     en: Natural sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000
+    iri: https://nma.eosc.cz/vocabularies/subjects/10000
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: '10000'
 - id: '10100'
   scheme: frascati
   subject: Mathematics
@@ -13,7 +14,8 @@
     cs: Matematika
     en: Mathematics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100
+    iri: https://nma.eosc.cz/vocabularies/subjects/10100
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10100
 - id: '10101'
   scheme: frascati
   subject: Pure mathematics
@@ -21,7 +23,8 @@
     cs: Čistá matematika
     en: Pure mathematics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10101
+    iri: https://nma.eosc.cz/vocabularies/subjects/10101
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10100/10101
 - id: '10102'
   scheme: frascati
   subject: Applied mathematics
@@ -29,7 +32,8 @@
     cs: Aplikovaná matematika
     en: Applied mathematics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10102
+    iri: https://nma.eosc.cz/vocabularies/subjects/10102
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10100/10102
 - id: '10103'
   scheme: frascati
   subject: Statistics and probability
@@ -37,7 +41,8 @@
     cs: Pravděpodobnost a statistika
     en: Statistics and probability
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10103
+    iri: https://nma.eosc.cz/vocabularies/subjects/10103
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10100/10103
 - id: '10200'
   scheme: frascati
   subject: Computer and information sciences
@@ -45,7 +50,8 @@
     cs: Počítačové vědy a informační věda
     en: Computer and information sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200
+    iri: https://nma.eosc.cz/vocabularies/subjects/10200
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10200
 - id: '10201'
   scheme: frascati
   subject: Computer sciences, information science, bioinformathics
@@ -53,7 +59,8 @@
     cs: Počítačové vědy, informační věda, bioinformatika
     en: Computer sciences, information science, bioinformathics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200/10201
+    iri: https://nma.eosc.cz/vocabularies/subjects/10201
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10200/10201
 - id: '10300'
   scheme: frascati
   subject: Physical sciences
@@ -61,7 +68,8 @@
     cs: Fyzikální vědy
     en: Physical sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300
+    iri: https://nma.eosc.cz/vocabularies/subjects/10300
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300
 - id: '10301'
   scheme: frascati
   subject: Atomic, molecular and chemical physics (physics of atoms and molecules
@@ -73,7 +81,8 @@
     en: Atomic, molecular and chemical physics (physics of atoms and molecules including
       collision, interaction with radiation, magnetic resonances, Mössbauer effect)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10301
+    iri: https://nma.eosc.cz/vocabularies/subjects/10301
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10301
 - id: '10302'
   scheme: frascati
   subject: Condensed matter physics (including formerly solid state physics, supercond.)
@@ -81,7 +90,8 @@
     cs: Fyzika kondenzovaných látek (zahrnuje fyziku pevných látek, supravodivost)
     en: Condensed matter physics (including formerly solid state physics, supercond.)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10302
+    iri: https://nma.eosc.cz/vocabularies/subjects/10302
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10302
 - id: '10303'
   scheme: frascati
   subject: Particles and field physics
@@ -89,7 +99,8 @@
     cs: Fyzika částic
     en: Particles and field physics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10303
+    iri: https://nma.eosc.cz/vocabularies/subjects/10303
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10303
 - id: '10304'
   scheme: frascati
   subject: Nuclear physics
@@ -97,7 +108,8 @@
     cs: Atomová fyzika
     en: Nuclear physics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10304
+    iri: https://nma.eosc.cz/vocabularies/subjects/10304
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10304
 - id: '10305'
   scheme: frascati
   subject: Fluids and plasma physics (including surface physics)
@@ -105,7 +117,8 @@
     cs: Fyzika kapalin a plazmatu (zahrnuje fyziku povrchů)
     en: Fluids and plasma physics (including surface physics)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10305
+    iri: https://nma.eosc.cz/vocabularies/subjects/10305
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10305
 - id: '10306'
   scheme: frascati
   subject: Optics (including laser optics and quantum optics)
@@ -113,7 +126,8 @@
     cs: Optika (zahrnuje laserovou optiku, kvantovou optiku)
     en: Optics (including laser optics and quantum optics)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10306
+    iri: https://nma.eosc.cz/vocabularies/subjects/10306
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10306
 - id: '10307'
   scheme: frascati
   subject: Acoustics
@@ -121,7 +135,8 @@
     cs: Akustika
     en: Acoustics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10307
+    iri: https://nma.eosc.cz/vocabularies/subjects/10307
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10307
 - id: '10308'
   scheme: frascati
   subject: Astronomy (including astrophysics, space science)
@@ -129,7 +144,8 @@
     cs: Astronomie (zahrnuje astrofyziku, vědu o vesmíru)
     en: Astronomy (including astrophysics, space science)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10308
+    iri: https://nma.eosc.cz/vocabularies/subjects/10308
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10308
 - id: '10400'
   scheme: frascati
   subject: Chemical sciences
@@ -137,7 +153,8 @@
     cs: Chemické vědy
     en: Chemical sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400
+    iri: https://nma.eosc.cz/vocabularies/subjects/10400
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400
 - id: '10401'
   scheme: frascati
   subject: Organic chemistry
@@ -145,7 +162,8 @@
     cs: Organická chemie
     en: Organic chemistry
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10401
+    iri: https://nma.eosc.cz/vocabularies/subjects/10401
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10401
 - id: '10402'
   scheme: frascati
   subject: Inorganic and nuclear chemistry
@@ -153,7 +171,8 @@
     cs: Anorganická a jaderná chemie
     en: Inorganic and nuclear chemistry
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10402
+    iri: https://nma.eosc.cz/vocabularies/subjects/10402
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10402
 - id: '10403'
   scheme: frascati
   subject: Physical chemistry
@@ -161,7 +180,8 @@
     cs: Fyzikální chemie
     en: Physical chemistry
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10403
+    iri: https://nma.eosc.cz/vocabularies/subjects/10403
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10403
 - id: '10404'
   scheme: frascati
   subject: Polymer science
@@ -169,7 +189,8 @@
     cs: Chemie polymerů
     en: Polymer science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10404
+    iri: https://nma.eosc.cz/vocabularies/subjects/10404
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10404
 - id: '10405'
   scheme: frascati
   subject: Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)
@@ -178,7 +199,8 @@
       elektrolýzu)
     en: Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10405
+    iri: https://nma.eosc.cz/vocabularies/subjects/10405
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10405
 - id: '10406'
   scheme: frascati
   subject: Analytical chemistry
@@ -186,7 +208,8 @@
     cs: Analytická chemie
     en: Analytical chemistry
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10406
+    iri: https://nma.eosc.cz/vocabularies/subjects/10406
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10406
 - id: '10500'
   scheme: frascati
   subject: Earth and related environmental sciences
@@ -194,7 +217,8 @@
     cs: Vědy o Zemi a související environmentální vědy
     en: Earth and related environmental sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500
+    iri: https://nma.eosc.cz/vocabularies/subjects/10500
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500
 - id: '10501'
   scheme: frascati
   subject: Hydrology
@@ -202,7 +226,8 @@
     cs: Hydrologie
     en: Hydrology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10501
+    iri: https://nma.eosc.cz/vocabularies/subjects/10501
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10501
 - id: '10502'
   scheme: frascati
   subject: Oceanography
@@ -210,7 +235,8 @@
     cs: Oceánografie
     en: Oceanography
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10502
+    iri: https://nma.eosc.cz/vocabularies/subjects/10502
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10502
 - id: '10503'
   scheme: frascati
   subject: Water resources
@@ -218,7 +244,8 @@
     cs: Vodní zdroje
     en: Water resources
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10503
+    iri: https://nma.eosc.cz/vocabularies/subjects/10503
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10503
 - id: '10504'
   scheme: frascati
   subject: Mineralogy
@@ -226,7 +253,8 @@
     cs: Mineralogie
     en: Mineralogy
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10504
+    iri: https://nma.eosc.cz/vocabularies/subjects/10504
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10504
 - id: '10505'
   scheme: frascati
   subject: Geology
@@ -234,7 +262,8 @@
     cs: Geologie
     en: Geology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10505
+    iri: https://nma.eosc.cz/vocabularies/subjects/10505
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10505
 - id: '10506'
   scheme: frascati
   subject: Paleontology
@@ -242,7 +271,8 @@
     cs: Paleontologie
     en: Paleontology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10506
+    iri: https://nma.eosc.cz/vocabularies/subjects/10506
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10506
 - id: '10507'
   scheme: frascati
   subject: Volcanology
@@ -250,7 +280,8 @@
     cs: Vulkanologie
     en: Volcanology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10507
+    iri: https://nma.eosc.cz/vocabularies/subjects/10507
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10507
 - id: '10508'
   scheme: frascati
   subject: Physical geography
@@ -258,7 +289,8 @@
     cs: Fyzická geografie
     en: Physical geography
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10508
+    iri: https://nma.eosc.cz/vocabularies/subjects/10508
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10508
 - id: '10509'
   scheme: frascati
   subject: Meteorology and atmospheric sciences
@@ -266,7 +298,8 @@
     cs: Meteorologie, vědy o atmosféře
     en: Meteorology and atmospheric sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509
+    iri: https://nma.eosc.cz/vocabularies/subjects/10509
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10509
 - id: '10510'
   scheme: frascati
   subject: Climatic research
@@ -274,7 +307,8 @@
     cs: Výzkum klimatu
     en: Climatic research
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10510
+    iri: https://nma.eosc.cz/vocabularies/subjects/10510
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10510
 - id: '10511'
   scheme: frascati
   subject: Environmental sciences
@@ -282,7 +316,8 @@
     cs: Environmentální vědy
     en: Environmental sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10511
+    iri: https://nma.eosc.cz/vocabularies/subjects/10511
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10511
 - id: '10600'
   scheme: frascati
   subject: Biological sciences
@@ -290,7 +325,8 @@
     cs: Biologie
     en: Biological sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600
+    iri: https://nma.eosc.cz/vocabularies/subjects/10600
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600
 - id: '10601'
   scheme: frascati
   subject: Cell biology
@@ -298,7 +334,8 @@
     cs: Buněčná biologie
     en: Cell biology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10601
+    iri: https://nma.eosc.cz/vocabularies/subjects/10601
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10601
 - id: '10602'
   scheme: frascati
   subject: Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm),
@@ -309,7 +346,8 @@
     en: Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm),
       evolutionary biology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10602
+    iri: https://nma.eosc.cz/vocabularies/subjects/10602
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10602
 - id: '10603'
   scheme: frascati
   subject: Genetics and heredity
@@ -317,7 +355,8 @@
     cs: Genetika a dědičnost
     en: Genetics and heredity
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10603
+    iri: https://nma.eosc.cz/vocabularies/subjects/10603
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10603
 - id: '10604'
   scheme: frascati
   subject: Reproductive biology
@@ -325,7 +364,8 @@
     cs: Reprodukční biologie
     en: Reproductive biology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10604
+    iri: https://nma.eosc.cz/vocabularies/subjects/10604
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10604
 - id: '10605'
   scheme: frascati
   subject: Developmental biology
@@ -333,7 +373,8 @@
     cs: Vývojová biologie
     en: Developmental biology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10605
+    iri: https://nma.eosc.cz/vocabularies/subjects/10605
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10605
 - id: '10606'
   scheme: frascati
   subject: Microbiology
@@ -341,7 +382,8 @@
     cs: Mikrobiologie
     en: Microbiology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10606
+    iri: https://nma.eosc.cz/vocabularies/subjects/10606
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10606
 - id: '10607'
   scheme: frascati
   subject: Virology
@@ -349,7 +391,8 @@
     cs: Virologie
     en: Virology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10607
+    iri: https://nma.eosc.cz/vocabularies/subjects/10607
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10607
 - id: '10608'
   scheme: frascati
   subject: Biochemistry and molecular biology
@@ -357,7 +400,8 @@
     cs: Biochemie a molekulární biologie
     en: Biochemistry and molecular biology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10608
+    iri: https://nma.eosc.cz/vocabularies/subjects/10608
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10608
 - id: '10609'
   scheme: frascati
   subject: Biochemical research methods
@@ -365,7 +409,8 @@
     cs: Biochemické výzkumné metody
     en: Biochemical research methods
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10609
+    iri: https://nma.eosc.cz/vocabularies/subjects/10609
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10609
 - id: '10610'
   scheme: frascati
   subject: Biophysics
@@ -373,7 +418,8 @@
     cs: Biofyzika
     en: Biophysics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10610
+    iri: https://nma.eosc.cz/vocabularies/subjects/10610
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10610
 - id: '10611'
   scheme: frascati
   subject: Plant sciences, botany
@@ -381,7 +427,8 @@
     cs: Botanika
     en: Plant sciences, botany
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10611
+    iri: https://nma.eosc.cz/vocabularies/subjects/10611
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10611
 - id: '10612'
   scheme: frascati
   subject: Mycology
@@ -389,7 +436,8 @@
     cs: Mykologie
     en: Mycology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10612
+    iri: https://nma.eosc.cz/vocabularies/subjects/10612
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10612
 - id: '10613'
   scheme: frascati
   subject: Zoology
@@ -397,7 +445,8 @@
     cs: Zoologie
     en: Zoology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10613
+    iri: https://nma.eosc.cz/vocabularies/subjects/10613
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10613
 - id: '10614'
   scheme: frascati
   subject: Behavioral sciences biology
@@ -405,7 +454,8 @@
     cs: Behaviorální biologie
     en: Behavioral sciences biology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10614
+    iri: https://nma.eosc.cz/vocabularies/subjects/10614
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10614
 - id: '10615'
   scheme: frascati
   subject: Ornithology
@@ -413,7 +463,8 @@
     cs: Ornitologie
     en: Ornithology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10615
+    iri: https://nma.eosc.cz/vocabularies/subjects/10615
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10615
 - id: '10616'
   scheme: frascati
   subject: Entomology
@@ -421,7 +472,8 @@
     cs: Entomologie
     en: Entomology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10616
+    iri: https://nma.eosc.cz/vocabularies/subjects/10616
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10616
 - id: '10617'
   scheme: frascati
   subject: Marine biology, freshwater biology, limnology
@@ -429,7 +481,8 @@
     cs: Mořská biologie, sladkovodní biologie, limnologie
     en: Marine biology, freshwater biology, limnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10617
+    iri: https://nma.eosc.cz/vocabularies/subjects/10617
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10617
 - id: '10618'
   scheme: frascati
   subject: Ecology
@@ -437,7 +490,8 @@
     cs: Ekologie
     en: Ecology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10618
+    iri: https://nma.eosc.cz/vocabularies/subjects/10618
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10618
 - id: '10619'
   scheme: frascati
   subject: Biodiversity conservation
@@ -445,7 +499,8 @@
     cs: Ochrana biodiverzity
     en: Biodiversity conservation
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10619
+    iri: https://nma.eosc.cz/vocabularies/subjects/10619
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10619
 - id: '10620'
   scheme: frascati
   subject: Other biological topics
@@ -453,7 +508,8 @@
     cs: Ostatní biologické vědy
     en: Other biological topics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10620
+    iri: https://nma.eosc.cz/vocabularies/subjects/10620
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10620
 - id: '10700'
   scheme: frascati
   subject: Other natural sciences
@@ -461,7 +517,8 @@
     cs: Ostatní přírodní vědy
     en: Other natural sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10700
+    iri: https://nma.eosc.cz/vocabularies/subjects/10700
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10700
 - id: '20000'
   scheme: frascati
   subject: Engineering and technology
@@ -469,7 +526,8 @@
     cs: Technické vědy, inženýrství
     en: Engineering and technology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000
+    iri: https://nma.eosc.cz/vocabularies/subjects/20000
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: '20000'
 - id: '20100'
   scheme: frascati
   subject: Civil engineering
@@ -477,7 +535,8 @@
     cs: Stavební inženýrství
     en: Civil engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100
+    iri: https://nma.eosc.cz/vocabularies/subjects/20100
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20100
 - id: '20101'
   scheme: frascati
   subject: Civil engineering
@@ -485,7 +544,8 @@
     cs: Stavební inženýrství
     en: Civil engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20101
+    iri: https://nma.eosc.cz/vocabularies/subjects/20101
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20100/20101
 - id: '20102'
   scheme: frascati
   subject: Construction engineering, municipal and structural engineering
@@ -493,7 +553,8 @@
     cs: Konstrukční inženýrství, výstavba měst
     en: Construction engineering, municipal and structural engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20102
+    iri: https://nma.eosc.cz/vocabularies/subjects/20102
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20100/20102
 - id: '20103'
   scheme: frascati
   subject: Architecture engineering
@@ -501,7 +562,8 @@
     cs: Architektura
     en: Architecture engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20103
+    iri: https://nma.eosc.cz/vocabularies/subjects/20103
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20100/20103
 - id: '20104'
   scheme: frascati
   subject: Transport engineering
@@ -509,7 +571,8 @@
     cs: Dopravní inženýrství
     en: Transport engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20104
+    iri: https://nma.eosc.cz/vocabularies/subjects/20104
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20100/20104
 - id: '20200'
   scheme: frascati
   subject: Electrical engineering, electronic engineering, information engineering
@@ -517,7 +580,8 @@
     cs: Elektrotechnika, elektronika
     en: Electrical engineering, electronic engineering, information engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200
+    iri: https://nma.eosc.cz/vocabularies/subjects/20200
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200
 - id: '20201'
   scheme: frascati
   subject: Electrical and electronic engineering
@@ -525,7 +589,8 @@
     cs: Elektrotechnika, elektronika
     en: Electrical and electronic engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20201
+    iri: https://nma.eosc.cz/vocabularies/subjects/20201
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20201
 - id: '20202'
   scheme: frascati
   subject: Communication engineering and systems
@@ -533,7 +598,8 @@
     cs: Sdělovací technika a systémy
     en: Communication engineering and systems
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20202
+    iri: https://nma.eosc.cz/vocabularies/subjects/20202
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20202
 - id: '20203'
   scheme: frascati
   subject: Telecommunications
@@ -541,7 +607,8 @@
     cs: Telekomunikace
     en: Telecommunications
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20203
+    iri: https://nma.eosc.cz/vocabularies/subjects/20203
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20203
 - id: '20204'
   scheme: frascati
   subject: Robotics and automatic control
@@ -549,7 +616,8 @@
     cs: Robotika a automatické řízení
     en: Robotics and automatic control
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20204
+    iri: https://nma.eosc.cz/vocabularies/subjects/20204
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20204
 - id: '20205'
   scheme: frascati
   subject: Automation and control systems
@@ -557,7 +625,8 @@
     cs: Automatizace a kontrola systémů
     en: Automation and control systems
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20205
+    iri: https://nma.eosc.cz/vocabularies/subjects/20205
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20205
 - id: '20206'
   scheme: frascati
   subject: Computer hardware and architecture
@@ -565,7 +634,8 @@
     cs: Počítačový hardware a architektura
     en: Computer hardware and architecture
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20206
+    iri: https://nma.eosc.cz/vocabularies/subjects/20206
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20206
 - id: '20300'
   scheme: frascati
   subject: Mechanical engineering
@@ -573,7 +643,8 @@
     cs: Strojní inženýrství
     en: Mechanical engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300
+    iri: https://nma.eosc.cz/vocabularies/subjects/20300
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300
 - id: '20301'
   scheme: frascati
   subject: Mechanical engineering
@@ -581,7 +652,8 @@
     cs: Strojní inženýrství
     en: Mechanical engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20301
+    iri: https://nma.eosc.cz/vocabularies/subjects/20301
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20301
 - id: '20302'
   scheme: frascati
   subject: Applied mechanics
@@ -589,7 +661,8 @@
     cs: Aplikovaná mechanika
     en: Applied mechanics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20302
+    iri: https://nma.eosc.cz/vocabularies/subjects/20302
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20302
 - id: '20303'
   scheme: frascati
   subject: Thermodynamics
@@ -597,7 +670,8 @@
     cs: Termodynamika
     en: Thermodynamics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20303
+    iri: https://nma.eosc.cz/vocabularies/subjects/20303
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20303
 - id: '20304'
   scheme: frascati
   subject: Aerospace engineering
@@ -605,7 +679,8 @@
     cs: Letecké inženýrství
     en: Aerospace engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20304
+    iri: https://nma.eosc.cz/vocabularies/subjects/20304
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20304
 - id: '20305'
   scheme: frascati
   subject: Nuclear related engineering
@@ -613,7 +688,8 @@
     cs: Jaderné inženýrství
     en: Nuclear related engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20305
+    iri: https://nma.eosc.cz/vocabularies/subjects/20305
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20305
 - id: '20306'
   scheme: frascati
   subject: Audio engineering, reliability analysis
@@ -621,7 +697,8 @@
     cs: Audio inženýrství, analýzy spolehlivosti
     en: Audio engineering, reliability analysis
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20306
+    iri: https://nma.eosc.cz/vocabularies/subjects/20306
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20306
 - id: '20400'
   scheme: frascati
   subject: Chemical engineering
@@ -629,7 +706,8 @@
     cs: Chemické inženýrství
     en: Chemical engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400
+    iri: https://nma.eosc.cz/vocabularies/subjects/20400
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20400
 - id: '20401'
   scheme: frascati
   subject: Chemical engineering (plants, products)
@@ -637,7 +715,8 @@
     cs: Chemické inženýrství (rostliny, výrobky)
     en: Chemical engineering (plants, products)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20401
+    iri: https://nma.eosc.cz/vocabularies/subjects/20401
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20400/20401
 - id: '20402'
   scheme: frascati
   subject: Chemical process engineering
@@ -645,7 +724,8 @@
     cs: Chemické procesní inženýrství
     en: Chemical process engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20402
+    iri: https://nma.eosc.cz/vocabularies/subjects/20402
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20400/20402
 - id: '20500'
   scheme: frascati
   subject: Materials engineering
@@ -653,7 +733,8 @@
     cs: Materiálové inženýrství
     en: Materials engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500
+    iri: https://nma.eosc.cz/vocabularies/subjects/20500
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500
 - id: '20501'
   scheme: frascati
   subject: Materials engineering
@@ -661,7 +742,8 @@
     cs: Materiálové inženýrství
     en: Materials engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20501
+    iri: https://nma.eosc.cz/vocabularies/subjects/20501
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20501
 - id: '20502'
   scheme: frascati
   subject: Paper and wood
@@ -669,7 +751,8 @@
     cs: Papír a dřevo
     en: Paper and wood
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20502
+    iri: https://nma.eosc.cz/vocabularies/subjects/20502
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20502
 - id: '20503'
   scheme: frascati
   subject: Textiles (including synthetic dyes, colours, fibres)
@@ -677,7 +760,8 @@
     cs: Textilie (zahrnuje umělá barviva, barvy, vlákna)
     en: Textiles (including synthetic dyes, colours, fibres)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20503
+    iri: https://nma.eosc.cz/vocabularies/subjects/20503
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20503
 - id: '20504'
   scheme: frascati
   subject: Ceramics
@@ -685,7 +769,8 @@
     cs: Keramika
     en: Ceramics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20504
+    iri: https://nma.eosc.cz/vocabularies/subjects/20504
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20504
 - id: '20505'
   scheme: frascati
   subject: Composites (including laminates, reinforced plastics, cermets, combined
@@ -696,7 +781,8 @@
     en: Composites (including laminates, reinforced plastics, cermets, combined natural
       and synthetic fibre fabrics; filled composites)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20505
+    iri: https://nma.eosc.cz/vocabularies/subjects/20505
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20505
 - id: '20506'
   scheme: frascati
   subject: Coating and films
@@ -704,7 +790,8 @@
     cs: Nátěry a fólie
     en: Coating and films
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20506
+    iri: https://nma.eosc.cz/vocabularies/subjects/20506
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20506
 - id: '20600'
   scheme: frascati
   subject: Medical engineering
@@ -712,7 +799,8 @@
     cs: Lékařské inženýrství
     en: Medical engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600
+    iri: https://nma.eosc.cz/vocabularies/subjects/20600
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20600
 - id: '20601'
   scheme: frascati
   subject: Medical engineering
@@ -720,7 +808,8 @@
     cs: Lékařské inženýrství
     en: Medical engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20601
+    iri: https://nma.eosc.cz/vocabularies/subjects/20601
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20600/20601
 - id: '20602'
   scheme: frascati
   subject: Medical laboratory technology (including laboratory samples analysis, diagnostic
@@ -731,7 +820,8 @@
     en: Medical laboratory technology (including laboratory samples analysis, diagnostic
       technologies)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20602
+    iri: https://nma.eosc.cz/vocabularies/subjects/20602
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20600/20602
 - id: '20700'
   scheme: frascati
   subject: Environmental engineering
@@ -739,7 +829,8 @@
     cs: Environmentální inženýrství
     en: Environmental engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700
+    iri: https://nma.eosc.cz/vocabularies/subjects/20700
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700
 - id: '20701'
   scheme: frascati
   subject: Environmental and geological engineering, geotechnics
@@ -747,7 +838,8 @@
     cs: Environmentální a geologické inženýrství, geotechnika
     en: Environmental and geological engineering, geotechnics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20701
+    iri: https://nma.eosc.cz/vocabularies/subjects/20701
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20701
 - id: '20702'
   scheme: frascati
   subject: Petroleum engineering (fuel, oils)
@@ -755,7 +847,8 @@
     cs: Ropné inženýrství (paliva, oleje)
     en: Petroleum engineering (fuel, oils)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20702
+    iri: https://nma.eosc.cz/vocabularies/subjects/20702
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20702
 - id: '20703'
   scheme: frascati
   subject: Mining and mineral processing
@@ -763,7 +856,8 @@
     cs: Těžba a zpracování minerálů
     en: Mining and mineral processing
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20703
+    iri: https://nma.eosc.cz/vocabularies/subjects/20703
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20703
 - id: '20704'
   scheme: frascati
   subject: Energy and fuels
@@ -771,7 +865,8 @@
     cs: Energie a paliva
     en: Energy and fuels
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20704
+    iri: https://nma.eosc.cz/vocabularies/subjects/20704
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20704
 - id: '20705'
   scheme: frascati
   subject: Remote sensing
@@ -779,7 +874,8 @@
     cs: Dálkový průzkum Země
     en: Remote sensing
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20705
+    iri: https://nma.eosc.cz/vocabularies/subjects/20705
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20705
 - id: '20706'
   scheme: frascati
   subject: Marine engineering, sea vessels
@@ -787,7 +883,8 @@
     cs: Námořní inženýrství, mořská plavidla
     en: Marine engineering, sea vessels
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20706
+    iri: https://nma.eosc.cz/vocabularies/subjects/20706
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20706
 - id: '20707'
   scheme: frascati
   subject: Ocean engineering
@@ -795,7 +892,8 @@
     cs: Oceánské inženýrství
     en: Ocean engineering
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20707
+    iri: https://nma.eosc.cz/vocabularies/subjects/20707
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20707
 - id: '20800'
   scheme: frascati
   subject: Environmental biotechnology
@@ -803,7 +901,8 @@
     cs: Environmentální biotechnologie
     en: Environmental biotechnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800
+    iri: https://nma.eosc.cz/vocabularies/subjects/20800
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20800
 - id: '20801'
   scheme: frascati
   subject: Environmental biotechnology
@@ -811,7 +910,8 @@
     cs: Environmentální biotechnologie
     en: Environmental biotechnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20801
+    iri: https://nma.eosc.cz/vocabularies/subjects/20801
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20800/20801
 - id: '20802'
   scheme: frascati
   subject: Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices)
@@ -822,7 +922,8 @@
     en: Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices)
       in environmental management
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20802
+    iri: https://nma.eosc.cz/vocabularies/subjects/20802
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20800/20802
 - id: '20803'
   scheme: frascati
   subject: Environmental biotechnology related ethics
@@ -830,7 +931,8 @@
     cs: Environmentální biotechnologie související s etikou
     en: Environmental biotechnology related ethics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20803
+    iri: https://nma.eosc.cz/vocabularies/subjects/20803
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20800/20803
 - id: '20900'
   scheme: frascati
   subject: Industrial biotechnology
@@ -838,7 +940,8 @@
     cs: Průmyslové biotechnologie
     en: Industrial biotechnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900
+    iri: https://nma.eosc.cz/vocabularies/subjects/20900
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20900
 - id: '20901'
   scheme: frascati
   subject: Industrial biotechnology
@@ -846,7 +949,8 @@
     cs: Průmyslové biotechnologie
     en: Industrial biotechnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20901
+    iri: https://nma.eosc.cz/vocabularies/subjects/20901
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20900/20901
 - id: '20902'
   scheme: frascati
   subject: Bioprocessing technologies (industrial processes relying on biological
@@ -857,7 +961,8 @@
     en: Bioprocessing technologies (industrial processes relying on biological agents
       to drive the process) biocatalysis, fermentation
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20902
+    iri: https://nma.eosc.cz/vocabularies/subjects/20902
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20900/20902
 - id: '20903'
   scheme: frascati
   subject: Bioproducts (products that are manufactured using biological material as
@@ -871,7 +976,8 @@
       biomaterials, bioplastics, biofuels, bioderived bulk and fine chemicals, bio-derived
       novel materials
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20903
+    iri: https://nma.eosc.cz/vocabularies/subjects/20903
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20900/20903
 - id: '21000'
   scheme: frascati
   subject: Nano-technology
@@ -879,7 +985,8 @@
     cs: Nanotechnologie
     en: Nano-technology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000
+    iri: https://nma.eosc.cz/vocabularies/subjects/21000
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/21000
 - id: '21001'
   scheme: frascati
   subject: Nano-materials (production and properties)
@@ -887,7 +994,8 @@
     cs: Nanomateriály (výroba a vlastnosti)
     en: Nano-materials (production and properties)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21001
+    iri: https://nma.eosc.cz/vocabularies/subjects/21001
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/21000/21001
 - id: '21002'
   scheme: frascati
   subject: Nano-processes (applications on nano-scale)
@@ -895,7 +1003,8 @@
     cs: Nanoprocesy (aplikace v nanoměřítku)
     en: Nano-processes (applications on nano-scale)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21002
+    iri: https://nma.eosc.cz/vocabularies/subjects/21002
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/21000/21002
 - id: '21100'
   scheme: frascati
   subject: Other engineering and technologies
@@ -903,7 +1012,8 @@
     cs: Ostatní inženýrství a technologie
     en: Other engineering and technologies
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100
+    iri: https://nma.eosc.cz/vocabularies/subjects/21100
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/21100
 - id: '21101'
   scheme: frascati
   subject: Food and beverages
@@ -911,7 +1021,8 @@
     cs: Výrobky potravinářského průmyslu a nápoje
     en: Food and beverages
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100/21101
+    iri: https://nma.eosc.cz/vocabularies/subjects/21101
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/21100/21101
 - id: '30000'
   scheme: frascati
   subject: Medical and health sciences
@@ -919,7 +1030,8 @@
     cs: Lékařské vědy
     en: Medical and health sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000
+    iri: https://nma.eosc.cz/vocabularies/subjects/30000
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: '30000'
 - id: '30100'
   scheme: frascati
   subject: Basic medicine
@@ -927,7 +1039,8 @@
     cs: Základní medicína
     en: Basic medicine
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100
+    iri: https://nma.eosc.cz/vocabularies/subjects/30100
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100
 - id: '30101'
   scheme: frascati
   subject: Human genetics
@@ -935,7 +1048,8 @@
     cs: Genetika člověka
     en: Human genetics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30101
+    iri: https://nma.eosc.cz/vocabularies/subjects/30101
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30101
 - id: '30102'
   scheme: frascati
   subject: Immunology
@@ -943,7 +1057,8 @@
     cs: Imunologie
     en: Immunology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30102
+    iri: https://nma.eosc.cz/vocabularies/subjects/30102
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30102
 - id: '30103'
   scheme: frascati
   subject: Neurosciences (including psychophysiology)
@@ -951,7 +1066,8 @@
     cs: Neurovědy (zahrnuje psychofyziologii)
     en: Neurosciences (including psychophysiology)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30103
+    iri: https://nma.eosc.cz/vocabularies/subjects/30103
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30103
 - id: '30104'
   scheme: frascati
   subject: Pharmacology and pharmacy
@@ -959,7 +1075,8 @@
     cs: Farmakologie a farmacie
     en: Pharmacology and pharmacy
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30104
+    iri: https://nma.eosc.cz/vocabularies/subjects/30104
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30104
 - id: '30105'
   scheme: frascati
   subject: Physiology (including cytology)
@@ -967,7 +1084,8 @@
     cs: Fyziologie (zahrnující cytologii)
     en: Physiology (including cytology)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30105
+    iri: https://nma.eosc.cz/vocabularies/subjects/30105
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30105
 - id: '30106'
   scheme: frascati
   subject: Anatomy and morphology
@@ -975,7 +1093,8 @@
     cs: Anatomie a morfologie
     en: Anatomy and morphology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30106
+    iri: https://nma.eosc.cz/vocabularies/subjects/30106
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30106
 - id: '30107'
   scheme: frascati
   subject: Medicinal chemistry
@@ -983,7 +1102,8 @@
     cs: Lékařská chemie
     en: Medicinal chemistry
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30107
+    iri: https://nma.eosc.cz/vocabularies/subjects/30107
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30107
 - id: '30108'
   scheme: frascati
   subject: Toxicology
@@ -991,7 +1111,8 @@
     cs: Toxikologie
     en: Toxicology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30108
+    iri: https://nma.eosc.cz/vocabularies/subjects/30108
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30108
 - id: '30109'
   scheme: frascati
   subject: Pathology
@@ -999,7 +1120,8 @@
     cs: Patologie
     en: Pathology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30109
+    iri: https://nma.eosc.cz/vocabularies/subjects/30109
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30109
 - id: '30200'
   scheme: frascati
   subject: Clinical medicine
@@ -1007,7 +1129,8 @@
     cs: Klinická medicína
     en: Clinical medicine
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200
+    iri: https://nma.eosc.cz/vocabularies/subjects/30200
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200
 - id: '30201'
   scheme: frascati
   subject: Cardiac and cardiovascular systems
@@ -1015,7 +1138,8 @@
     cs: Srdeční a kardiovaskulární systémy
     en: Cardiac and cardiovascular systems
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30201
+    iri: https://nma.eosc.cz/vocabularies/subjects/30201
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30201
 - id: '30202'
   scheme: frascati
   subject: Endocrinology and metabolism (including diabetes, hormones)
@@ -1023,7 +1147,8 @@
     cs: Endokrinologie a metabolismus (zahrnuje cukrovku, hormony)
     en: Endocrinology and metabolism (including diabetes, hormones)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30202
+    iri: https://nma.eosc.cz/vocabularies/subjects/30202
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30202
 - id: '30203'
   scheme: frascati
   subject: Respiratory systems
@@ -1031,7 +1156,8 @@
     cs: Dýchací ústrojí
     en: Respiratory systems
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30203
+    iri: https://nma.eosc.cz/vocabularies/subjects/30203
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30203
 - id: '30204'
   scheme: frascati
   subject: Oncology
@@ -1039,7 +1165,8 @@
     cs: Onkologie
     en: Oncology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30204
+    iri: https://nma.eosc.cz/vocabularies/subjects/30204
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30204
 - id: '30205'
   scheme: frascati
   subject: Hematology
@@ -1047,7 +1174,8 @@
     cs: Hematologie
     en: Hematology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30205
+    iri: https://nma.eosc.cz/vocabularies/subjects/30205
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30205
 - id: '30206'
   scheme: frascati
   subject: Otorhinolaryngology
@@ -1055,7 +1183,8 @@
     cs: Otorinolaryngologie
     en: Otorhinolaryngology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30206
+    iri: https://nma.eosc.cz/vocabularies/subjects/30206
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30206
 - id: '30207'
   scheme: frascati
   subject: Ophthalmology
@@ -1063,7 +1192,8 @@
     cs: Oftalmologie
     en: Ophthalmology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30207
+    iri: https://nma.eosc.cz/vocabularies/subjects/30207
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30207
 - id: '30208'
   scheme: frascati
   subject: Dentistry, oral surgery and medicine
@@ -1071,7 +1201,8 @@
     cs: Stomatologie, ústní chirurgie a lékařství
     en: Dentistry, oral surgery and medicine
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30208
+    iri: https://nma.eosc.cz/vocabularies/subjects/30208
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30208
 - id: '30209'
   scheme: frascati
   subject: Paediatrics
@@ -1079,7 +1210,8 @@
     cs: Pediatrie
     en: Paediatrics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30209
+    iri: https://nma.eosc.cz/vocabularies/subjects/30209
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30209
 - id: '30210'
   scheme: frascati
   subject: Clinical neurology
@@ -1087,7 +1219,8 @@
     cs: Klinická neurologie
     en: Clinical neurology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30210
+    iri: https://nma.eosc.cz/vocabularies/subjects/30210
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30210
 - id: '30211'
   scheme: frascati
   subject: Orthopaedics
@@ -1095,7 +1228,8 @@
     cs: Ortopedie
     en: Orthopaedics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30211
+    iri: https://nma.eosc.cz/vocabularies/subjects/30211
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30211
 - id: '30212'
   scheme: frascati
   subject: Surgery
@@ -1103,7 +1237,8 @@
     cs: Chirurgie
     en: Surgery
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30212
+    iri: https://nma.eosc.cz/vocabularies/subjects/30212
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30212
 - id: '30213'
   scheme: frascati
   subject: Transplantation
@@ -1111,7 +1246,8 @@
     cs: Transplantace
     en: Transplantation
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30213
+    iri: https://nma.eosc.cz/vocabularies/subjects/30213
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30213
 - id: '30214'
   scheme: frascati
   subject: Obstetrics and gynaecology
@@ -1119,7 +1255,8 @@
     cs: Porodnictví a gynekologie
     en: Obstetrics and gynaecology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30214
+    iri: https://nma.eosc.cz/vocabularies/subjects/30214
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30214
 - id: '30215'
   scheme: frascati
   subject: Psychiatry
@@ -1127,7 +1264,8 @@
     cs: Psychiatrie
     en: Psychiatry
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30215
+    iri: https://nma.eosc.cz/vocabularies/subjects/30215
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30215
 - id: '30216'
   scheme: frascati
   subject: Dermatology and venereal diseases
@@ -1135,7 +1273,8 @@
     cs: Dermatologie a pohlavní nemoci
     en: Dermatology and venereal diseases
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30216
+    iri: https://nma.eosc.cz/vocabularies/subjects/30216
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30216
 - id: '30217'
   scheme: frascati
   subject: Urology and nephrology
@@ -1143,7 +1282,8 @@
     cs: Urologie a nefrologie
     en: Urology and nephrology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30217
+    iri: https://nma.eosc.cz/vocabularies/subjects/30217
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30217
 - id: '30218'
   scheme: frascati
   subject: General and internal medicine
@@ -1151,7 +1291,8 @@
     cs: Všeobecné a vnitřní lékařství
     en: General and internal medicine
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30218
+    iri: https://nma.eosc.cz/vocabularies/subjects/30218
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30218
 - id: '30219'
   scheme: frascati
   subject: Gastroenterology and hepatology
@@ -1159,7 +1300,8 @@
     cs: Gastroenterologie a hepatologie
     en: Gastroenterology and hepatology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30219
+    iri: https://nma.eosc.cz/vocabularies/subjects/30219
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30219
 - id: '30220'
   scheme: frascati
   subject: Andrology
@@ -1167,7 +1309,8 @@
     cs: Andrologie
     en: Andrology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30220
+    iri: https://nma.eosc.cz/vocabularies/subjects/30220
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30220
 - id: '30221'
   scheme: frascati
   subject: Critical care medicine and emergency medicine
@@ -1175,7 +1318,8 @@
     cs: Urgentní medicína a pohotovostní medicína
     en: Critical care medicine and emergency medicine
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30221
+    iri: https://nma.eosc.cz/vocabularies/subjects/30221
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30221
 - id: '30223'
   scheme: frascati
   subject: Anaesthesiology
@@ -1183,7 +1327,8 @@
     cs: Anesteziologie
     en: Anaesthesiology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30223
+    iri: https://nma.eosc.cz/vocabularies/subjects/30223
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30223
 - id: '30224'
   scheme: frascati
   subject: Radiology, nuclear medicine and medical imaging
@@ -1191,7 +1336,8 @@
     cs: Radiologie, nukleární medicína a lékařské zobrazování
     en: Radiology, nuclear medicine and medical imaging
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30224
+    iri: https://nma.eosc.cz/vocabularies/subjects/30224
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30224
 - id: '30225'
   scheme: frascati
   subject: Allergy
@@ -1199,7 +1345,8 @@
     cs: Alergologie
     en: Allergy
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30225
+    iri: https://nma.eosc.cz/vocabularies/subjects/30225
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30225
 - id: '30226'
   scheme: frascati
   subject: Rheumatology
@@ -1207,7 +1354,8 @@
     cs: Revmatologie
     en: Rheumatology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30226
+    iri: https://nma.eosc.cz/vocabularies/subjects/30226
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30226
 - id: '30227'
   scheme: frascati
   subject: Geriatrics and gerontology
@@ -1215,7 +1363,8 @@
     cs: Geriatrie a gerontologie
     en: Geriatrics and gerontology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30227
+    iri: https://nma.eosc.cz/vocabularies/subjects/30227
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30227
 - id: '30229'
   scheme: frascati
   subject: Integrative and complementary medicine (alternative practice systems)
@@ -1223,7 +1372,8 @@
     cs: Celostní a alternativní medicína (alternativní praktické systémy)
     en: Integrative and complementary medicine (alternative practice systems)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30229
+    iri: https://nma.eosc.cz/vocabularies/subjects/30229
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30229
 - id: '30230'
   scheme: frascati
   subject: Other clinical medicine subjects
@@ -1231,7 +1381,8 @@
     cs: Ostatní klinická lékařská témata
     en: Other clinical medicine subjects
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30230
+    iri: https://nma.eosc.cz/vocabularies/subjects/30230
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30230
 - id: '30300'
   scheme: frascati
   subject: Health sciences
@@ -1239,7 +1390,8 @@
     cs: Zdravotní vědy
     en: Health sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300
+    iri: https://nma.eosc.cz/vocabularies/subjects/30300
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300
 - id: '30301'
   scheme: frascati
   subject: Social biomedical sciences (includes family planning, sexual health, psycho-oncology,
@@ -1250,7 +1402,8 @@
     en: Social biomedical sciences (includes family planning, sexual health, psycho-oncology,
       political and social effects of biomedical research)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30301
+    iri: https://nma.eosc.cz/vocabularies/subjects/30301
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30301
 - id: '30302'
   scheme: frascati
   subject: Epidemiology
@@ -1258,7 +1411,8 @@
     cs: Epidemiologie
     en: Epidemiology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30302
+    iri: https://nma.eosc.cz/vocabularies/subjects/30302
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30302
 - id: '30303'
   scheme: frascati
   subject: Infectious diseases
@@ -1266,7 +1420,8 @@
     cs: Infekční onemocnění
     en: Infectious diseases
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30303
+    iri: https://nma.eosc.cz/vocabularies/subjects/30303
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30303
 - id: '30304'
   scheme: frascati
   subject: Public and environmental health
@@ -1274,7 +1429,8 @@
     cs: Veřejné a environmentální zdraví
     en: Public and environmental health
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304
+    iri: https://nma.eosc.cz/vocabularies/subjects/30304
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30304
 - id: '30305'
   scheme: frascati
   subject: Occupational health
@@ -1282,7 +1438,8 @@
     cs: Ochrana zdraví při práci
     en: Occupational health
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30305
+    iri: https://nma.eosc.cz/vocabularies/subjects/30305
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30305
 - id: '30306'
   scheme: frascati
   subject: Sport and fitness sciences
@@ -1290,7 +1447,8 @@
     cs: Sport a fitness
     en: Sport and fitness sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30306
+    iri: https://nma.eosc.cz/vocabularies/subjects/30306
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30306
 - id: '30307'
   scheme: frascati
   subject: Nursing
@@ -1298,7 +1456,8 @@
     cs: Ošetřovatelství
     en: Nursing
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30307
+    iri: https://nma.eosc.cz/vocabularies/subjects/30307
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30307
 - id: '30308'
   scheme: frascati
   subject: Nutrition, dietetics
@@ -1306,7 +1465,8 @@
     cs: Výživa, nauka o dietě
     en: Nutrition, dietetics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30308
+    iri: https://nma.eosc.cz/vocabularies/subjects/30308
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30308
 - id: '30309'
   scheme: frascati
   subject: Tropical medicine
@@ -1314,7 +1474,8 @@
     cs: Tropické lékařství
     en: Tropical medicine
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30309
+    iri: https://nma.eosc.cz/vocabularies/subjects/30309
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30309
 - id: '30310'
   scheme: frascati
   subject: Parasitology
@@ -1322,7 +1483,8 @@
     cs: Parazitologie
     en: Parasitology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30310
+    iri: https://nma.eosc.cz/vocabularies/subjects/30310
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30310
 - id: '30311'
   scheme: frascati
   subject: Medical ethics
@@ -1330,7 +1492,8 @@
     cs: Lékařská etika
     en: Medical ethics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30311
+    iri: https://nma.eosc.cz/vocabularies/subjects/30311
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30311
 - id: '30312'
   scheme: frascati
   subject: Substance abuse
@@ -1338,7 +1501,8 @@
     cs: Zneužívání návykových látek
     en: Substance abuse
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30312
+    iri: https://nma.eosc.cz/vocabularies/subjects/30312
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30312
 - id: '30400'
   scheme: frascati
   subject: Medical biotechnology
@@ -1346,7 +1510,8 @@
     cs: Lékařské biotechnologie
     en: Medical biotechnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400
+    iri: https://nma.eosc.cz/vocabularies/subjects/30400
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400
 - id: '30401'
   scheme: frascati
   subject: Health-related biotechnology
@@ -1354,7 +1519,8 @@
     cs: Biotechnologie související se zdravím
     en: Health-related biotechnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30401
+    iri: https://nma.eosc.cz/vocabularies/subjects/30401
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30401
 - id: '30402'
   scheme: frascati
   subject: Technologies involving the manipulation of cells, tissues, organs or the
@@ -1365,7 +1531,8 @@
     en: Technologies involving the manipulation of cells, tissues, organs or the whole
       organism (assisted reproduction)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30402
+    iri: https://nma.eosc.cz/vocabularies/subjects/30402
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30402
 - id: '30403'
   scheme: frascati
   subject: Technologies involving identifying the functioning of DNA, proteins and
@@ -1380,7 +1547,8 @@
       and how they influence the onset of disease and maintenance of well-being (gene-based
       diagnostics and therapeutic interventions - pharmacogenomics, gene-based therapeutics)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30403
+    iri: https://nma.eosc.cz/vocabularies/subjects/30403
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30403
 - id: '30404'
   scheme: frascati
   subject: Biomaterials (as related to medical implants, devices, sensors)
@@ -1388,7 +1556,8 @@
     cs: Biomateriály (související s lékařskými implantáty, přístroji, senzory)
     en: Biomaterials (as related to medical implants, devices, sensors)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30404
+    iri: https://nma.eosc.cz/vocabularies/subjects/30404
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30404
 - id: '30405'
   scheme: frascati
   subject: Medical biotechnology related ethics
@@ -1396,7 +1565,8 @@
     cs: Lékařské biotechnologie související s etikou
     en: Medical biotechnology related ethics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30405
+    iri: https://nma.eosc.cz/vocabularies/subjects/30405
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30405
 - id: '30500'
   scheme: frascati
   subject: Other medical sciences
@@ -1404,7 +1574,8 @@
     cs: Ostatní lékařské vědy
     en: Other medical sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500
+    iri: https://nma.eosc.cz/vocabularies/subjects/30500
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30500
 - id: '30501'
   scheme: frascati
   subject: Forensic science
@@ -1412,7 +1583,8 @@
     cs: Soudní lékařství
     en: Forensic science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30501
+    iri: https://nma.eosc.cz/vocabularies/subjects/30501
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30500/30501
 - id: '30502'
   scheme: frascati
   subject: Other medical science
@@ -1420,7 +1592,8 @@
     cs: Ostatní lékařské vědy
     en: Other medical science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30502
+    iri: https://nma.eosc.cz/vocabularies/subjects/30502
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30500/30502
 - id: '40000'
   scheme: frascati
   subject: Agricultural and veterinary sciences
@@ -1428,7 +1601,8 @@
     cs: Zemědělské a veterinární vědy
     en: Agricultural and veterinary sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000
+    iri: https://nma.eosc.cz/vocabularies/subjects/40000
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: '40000'
 - id: '40100'
   scheme: frascati
   subject: Agriculture, forestry and fisheries
@@ -1436,7 +1610,8 @@
     cs: Zemědělství, lesnictví, rybářství
     en: Agriculture, forestry and fisheries
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100
+    iri: https://nma.eosc.cz/vocabularies/subjects/40100
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100
 - id: '40101'
   scheme: frascati
   subject: Agriculture
@@ -1444,7 +1619,8 @@
     cs: Zemědělství
     en: Agriculture
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40101
+    iri: https://nma.eosc.cz/vocabularies/subjects/40101
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40101
 - id: '40102'
   scheme: frascati
   subject: Forestry
@@ -1452,7 +1628,8 @@
     cs: Lesnictví
     en: Forestry
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40102
+    iri: https://nma.eosc.cz/vocabularies/subjects/40102
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40102
 - id: '40103'
   scheme: frascati
   subject: Fishery
@@ -1460,7 +1637,8 @@
     cs: Rybářství
     en: Fishery
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40103
+    iri: https://nma.eosc.cz/vocabularies/subjects/40103
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40103
 - id: '40104'
   scheme: frascati
   subject: Soil science
@@ -1468,7 +1646,8 @@
     cs: Půdoznalství
     en: Soil science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40104
+    iri: https://nma.eosc.cz/vocabularies/subjects/40104
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40104
 - id: '40105'
   scheme: frascati
   subject: Horticulture, viticulture
@@ -1476,7 +1655,8 @@
     cs: Zahradnictví, vinařství
     en: Horticulture, viticulture
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40105
+    iri: https://nma.eosc.cz/vocabularies/subjects/40105
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40105
 - id: '40106'
   scheme: frascati
   subject: Agronomy, plant breeding and plant protection
@@ -1484,7 +1664,8 @@
     cs: Agronomie, šlechtění a ochrana rostlin
     en: Agronomy, plant breeding and plant protection
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40106
+    iri: https://nma.eosc.cz/vocabularies/subjects/40106
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40106
 - id: '40200'
   scheme: frascati
   subject: Animal and dairy science
@@ -1492,7 +1673,8 @@
     cs: Vědy o zvířatech a mléce
     en: Animal and dairy science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200
+    iri: https://nma.eosc.cz/vocabularies/subjects/40200
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40200
 - id: '40201'
   scheme: frascati
   subject: Animal and dairy science
@@ -1500,7 +1682,8 @@
     cs: Vědy o zvířatech a mléce
     en: Animal and dairy science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40201
+    iri: https://nma.eosc.cz/vocabularies/subjects/40201
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40200/40201
 - id: '40202'
   scheme: frascati
   subject: Pets
@@ -1508,7 +1691,8 @@
     cs: Domácí zvířata
     en: Pets
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40202
+    iri: https://nma.eosc.cz/vocabularies/subjects/40202
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40200/40202
 - id: '40203'
   scheme: frascati
   subject: Husbandry
@@ -1516,7 +1700,8 @@
     cs: Chovatelství
     en: Husbandry
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40203
+    iri: https://nma.eosc.cz/vocabularies/subjects/40203
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40200/40203
 - id: '40300'
   scheme: frascati
   subject: Veterinary science
@@ -1524,7 +1709,8 @@
     cs: Veterinární věda
     en: Veterinary science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300
+    iri: https://nma.eosc.cz/vocabularies/subjects/40300
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40300
 - id: '40301'
   scheme: frascati
   subject: Veterinary science
@@ -1532,7 +1718,8 @@
     cs: Veterinární věda
     en: Veterinary science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300/40301
+    iri: https://nma.eosc.cz/vocabularies/subjects/40301
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40300/40301
 - id: '40400'
   scheme: frascati
   subject: Agricultural biotechnology
@@ -1540,7 +1727,8 @@
     cs: Zemědělské biotechnologie
     en: Agricultural biotechnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400
+    iri: https://nma.eosc.cz/vocabularies/subjects/40400
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40400
 - id: '40401'
   scheme: frascati
   subject: Agricultural biotechnology and food biotechnology
@@ -1548,7 +1736,8 @@
     cs: Zemědělské biotechnologie a biotechnologie potravin
     en: Agricultural biotechnology and food biotechnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40401
+    iri: https://nma.eosc.cz/vocabularies/subjects/40401
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40400/40401
 - id: '40402'
   scheme: frascati
   subject: GM technology (crops and livestock), livestock cloning, marker assisted
@@ -1562,7 +1751,8 @@
       diagnostics (DNA chips and biosensing devices for the early/accurate detection
       of diseases) biomass feedstock production technologies, biopharming
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40402
+    iri: https://nma.eosc.cz/vocabularies/subjects/40402
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40400/40402
 - id: '40403'
   scheme: frascati
   subject: Agricultural biotechnology related ethics
@@ -1570,7 +1760,8 @@
     cs: Zemědělské biotechnologie související s etikou
     en: Agricultural biotechnology related ethics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40403
+    iri: https://nma.eosc.cz/vocabularies/subjects/40403
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40400/40403
 - id: '40500'
   scheme: frascati
   subject: Other agricultural sciences
@@ -1578,7 +1769,8 @@
     cs: Ostatní zemědělské vědy
     en: Other agricultural sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40500
+    iri: https://nma.eosc.cz/vocabularies/subjects/40500
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40500
 - id: '50000'
   scheme: frascati
   subject: Social sciences
@@ -1586,7 +1778,8 @@
     cs: Společenské vědy
     en: Social sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000
+    iri: https://nma.eosc.cz/vocabularies/subjects/50000
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: '50000'
 - id: '50100'
   scheme: frascati
   subject: Psychology and cognitive sciences
@@ -1594,7 +1787,8 @@
     cs: Psychologie a kognitivní věda
     en: Psychology and cognitive sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100
+    iri: https://nma.eosc.cz/vocabularies/subjects/50100
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50100
 - id: '50101'
   scheme: frascati
   subject: Psychology (including human - machine relations)
@@ -1602,7 +1796,8 @@
     cs: Psychologie (zahrnuje vztahy mezi člověkem a strojem)
     en: Psychology (including human - machine relations)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50101
+    iri: https://nma.eosc.cz/vocabularies/subjects/50101
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50100/50101
 - id: '50102'
   scheme: frascati
   subject: Psychology, special (including therapy for learning, speech, hearing, visual
@@ -1613,7 +1808,8 @@
     en: Psychology, special (including therapy for learning, speech, hearing, visual
       and other physical and mental disabilities)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50102
+    iri: https://nma.eosc.cz/vocabularies/subjects/50102
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50100/50102
 - id: '50103'
   scheme: frascati
   subject: Cognitive sciences
@@ -1621,7 +1817,8 @@
     cs: Kognitivní vědy
     en: Cognitive sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50103
+    iri: https://nma.eosc.cz/vocabularies/subjects/50103
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50100/50103
 - id: '50200'
   scheme: frascati
   subject: Economics and business
@@ -1629,7 +1826,8 @@
     cs: Ekonomie a podnikání
     en: Economics and business
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200
+    iri: https://nma.eosc.cz/vocabularies/subjects/50200
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200
 - id: '50201'
   scheme: frascati
   subject: Economic theory
@@ -1637,7 +1835,8 @@
     cs: Ekonomická teorice
     en: Economic theory
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50201
+    iri: https://nma.eosc.cz/vocabularies/subjects/50201
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50201
 - id: '50202'
   scheme: frascati
   subject: Applied economics, econometrics
@@ -1645,7 +1844,8 @@
     cs: Aplikovaná ekonomie, ekonometrie
     en: Applied economics, econometrics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50202
+    iri: https://nma.eosc.cz/vocabularies/subjects/50202
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50202
 - id: '50203'
   scheme: frascati
   subject: Industrial relations
@@ -1653,7 +1853,8 @@
     cs: Pracovní vztahy
     en: Industrial relations
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50203
+    iri: https://nma.eosc.cz/vocabularies/subjects/50203
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50203
 - id: '50204'
   scheme: frascati
   subject: Business and management
@@ -1661,7 +1862,8 @@
     cs: Podnikání a management
     en: Business and management
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50204
+    iri: https://nma.eosc.cz/vocabularies/subjects/50204
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50204
 - id: '50205'
   scheme: frascati
   subject: Accounting
@@ -1669,7 +1871,8 @@
     cs: Účetnictví
     en: Accounting
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50205
+    iri: https://nma.eosc.cz/vocabularies/subjects/50205
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50205
 - id: '50206'
   scheme: frascati
   subject: Finance
@@ -1677,7 +1880,8 @@
     cs: Finance
     en: Finance
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50206
+    iri: https://nma.eosc.cz/vocabularies/subjects/50206
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50206
 - id: '50300'
   scheme: frascati
   subject: Education
@@ -1685,7 +1889,8 @@
     cs: Vzdělávání
     en: Education
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300
+    iri: https://nma.eosc.cz/vocabularies/subjects/50300
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50300
 - id: '50301'
   scheme: frascati
   subject: Education, general (including training, pedagogy, didactics and education
@@ -1695,7 +1900,8 @@
     en: Education, general (including training, pedagogy, didactics and education
       systems)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50301
+    iri: https://nma.eosc.cz/vocabularies/subjects/50301
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50300/50301
 - id: '50302'
   scheme: frascati
   subject: Education, special (to gifted persons, those with learning disabilities)
@@ -1703,7 +1909,8 @@
     cs: Speciální vzdělávání (pro nadané osoby, pro osoby s poruchami učení)
     en: Education, special (to gifted persons, those with learning disabilities)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50302
+    iri: https://nma.eosc.cz/vocabularies/subjects/50302
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50300/50302
 - id: '50400'
   scheme: frascati
   subject: Sociology
@@ -1711,7 +1918,8 @@
     cs: Sociologie
     en: Sociology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400
+    iri: https://nma.eosc.cz/vocabularies/subjects/50400
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50400
 - id: '50401'
   scheme: frascati
   subject: Sociology
@@ -1719,7 +1927,8 @@
     cs: Sociologie
     en: Sociology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50401
+    iri: https://nma.eosc.cz/vocabularies/subjects/50401
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50400/50401
 - id: '50402'
   scheme: frascati
   subject: Demography
@@ -1727,7 +1936,8 @@
     cs: Demografie
     en: Demography
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50402
+    iri: https://nma.eosc.cz/vocabularies/subjects/50402
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50400/50402
 - id: '50403'
   scheme: frascati
   subject: Social topics (women´s and gender studies, social issues, family studies
@@ -1738,7 +1948,8 @@
     en: Social topics (women´s and gender studies, social issues, family studies social
       work)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50403
+    iri: https://nma.eosc.cz/vocabularies/subjects/50403
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50400/50403
 - id: '50404'
   scheme: frascati
   subject: Anthropology, ethnology
@@ -1746,7 +1957,8 @@
     cs: Antropologie, etnologie
     en: Anthropology, ethnology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50404
+    iri: https://nma.eosc.cz/vocabularies/subjects/50404
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50400/50404
 - id: '50500'
   scheme: frascati
   subject: Law
@@ -1754,7 +1966,8 @@
     cs: Právo
     en: Law
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500
+    iri: https://nma.eosc.cz/vocabularies/subjects/50500
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50500
 - id: '50501'
   scheme: frascati
   subject: Law
@@ -1762,7 +1975,8 @@
     cs: Právo
     en: Law
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50501
+    iri: https://nma.eosc.cz/vocabularies/subjects/50501
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50500/50501
 - id: '50502'
   scheme: frascati
   subject: Criminology, penology
@@ -1770,7 +1984,8 @@
     cs: Kriminologie, penologie
     en: Criminology, penology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50502
+    iri: https://nma.eosc.cz/vocabularies/subjects/50502
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50500/50502
 - id: '50600'
   scheme: frascati
   subject: Political science
@@ -1778,7 +1993,8 @@
     cs: Politologie
     en: Political science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600
+    iri: https://nma.eosc.cz/vocabularies/subjects/50600
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50600
 - id: '50601'
   scheme: frascati
   subject: Political science
@@ -1786,7 +2002,8 @@
     cs: Politologie
     en: Political science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50601
+    iri: https://nma.eosc.cz/vocabularies/subjects/50601
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50600/50601
 - id: '50602'
   scheme: frascati
   subject: Public administration
@@ -1794,7 +2011,8 @@
     cs: Veřejná správa
     en: Public administration
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50602
+    iri: https://nma.eosc.cz/vocabularies/subjects/50602
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50600/50602
 - id: '50603'
   scheme: frascati
   subject: Organisation theory
@@ -1802,7 +2020,8 @@
     cs: Teorie organizace
     en: Organisation theory
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50603
+    iri: https://nma.eosc.cz/vocabularies/subjects/50603
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50600/50603
 - id: '50700'
   scheme: frascati
   subject: Social and economic geography
@@ -1810,7 +2029,8 @@
     cs: Sociální a ekonomická geografie
     en: Social and economic geography
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700
+    iri: https://nma.eosc.cz/vocabularies/subjects/50700
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50700
 - id: '50701'
   scheme: frascati
   subject: Cultural and economic geography
@@ -1818,7 +2038,8 @@
     cs: Kulturní a ekonomická geografie
     en: Cultural and economic geography
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50701
+    iri: https://nma.eosc.cz/vocabularies/subjects/50701
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50700/50701
 - id: '50702'
   scheme: frascati
   subject: Urban studies (planning and development)
@@ -1826,7 +2047,8 @@
     cs: Urbanismus (plánování a rozvoj)
     en: Urban studies (planning and development)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50702
+    iri: https://nma.eosc.cz/vocabularies/subjects/50702
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50700/50702
 - id: '50703'
   scheme: frascati
   subject: Transport planning and social aspects of transport
@@ -1834,7 +2056,8 @@
     cs: Plánování dopravy a sociální hlediska dopravy
     en: Transport planning and social aspects of transport
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50703
+    iri: https://nma.eosc.cz/vocabularies/subjects/50703
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50700/50703
 - id: '50704'
   scheme: frascati
   subject: Environmental sciences (social aspects)
@@ -1842,7 +2065,8 @@
     cs: Environmentální vědy (sociální hlediska)
     en: Environmental sciences (social aspects)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50704
+    iri: https://nma.eosc.cz/vocabularies/subjects/50704
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50700/50704
 - id: '50800'
   scheme: frascati
   subject: Media and communications
@@ -1850,7 +2074,8 @@
     cs: Média a komunikace
     en: Media and communications
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800
+    iri: https://nma.eosc.cz/vocabularies/subjects/50800
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50800
 - id: '50801'
   scheme: frascati
   subject: Journalism
@@ -1858,7 +2083,8 @@
     cs: Žurnalistika
     en: Journalism
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50801
+    iri: https://nma.eosc.cz/vocabularies/subjects/50801
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50800/50801
 - id: '50802'
   scheme: frascati
   subject: Media and socio-cultural communication
@@ -1866,7 +2092,8 @@
     cs: Mediální a sociokulturní komunikace
     en: Media and socio-cultural communication
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50802
+    iri: https://nma.eosc.cz/vocabularies/subjects/50802
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50800/50802
 - id: '50803'
   scheme: frascati
   subject: Information science (social aspects)
@@ -1874,7 +2101,8 @@
     cs: Informační věda (sociální aspekty)
     en: Information science (social aspects)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50803
+    iri: https://nma.eosc.cz/vocabularies/subjects/50803
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50800/50803
 - id: '50804'
   scheme: frascati
   subject: Library science
@@ -1882,7 +2110,8 @@
     cs: Knihovnictví
     en: Library science
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50804
+    iri: https://nma.eosc.cz/vocabularies/subjects/50804
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50800/50804
 - id: '50900'
   scheme: frascati
   subject: Other social sciences
@@ -1890,7 +2119,8 @@
     cs: Ostatní společenské vědy
     en: Other social sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900
+    iri: https://nma.eosc.cz/vocabularies/subjects/50900
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50900
 - id: '50901'
   scheme: frascati
   subject: Other social sciences
@@ -1898,7 +2128,8 @@
     cs: Ostatní společenské vědy
     en: Other social sciences
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50901
+    iri: https://nma.eosc.cz/vocabularies/subjects/50901
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50900/50901
 - id: '50902'
   scheme: frascati
   subject: Social sciences, interdisciplinary
@@ -1906,7 +2137,8 @@
     cs: Společenské vědy interdisciplinární
     en: Social sciences, interdisciplinary
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50902
+    iri: https://nma.eosc.cz/vocabularies/subjects/50902
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50900/50902
 - id: '60000'
   scheme: frascati
   subject: Humanities and the arts
@@ -1914,7 +2146,8 @@
     cs: Humanitní vědy a umění
     en: Humanities and the arts
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000
+    iri: https://nma.eosc.cz/vocabularies/subjects/60000
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: '60000'
 - id: '60100'
   scheme: frascati
   subject: History and archaeology
@@ -1922,7 +2155,8 @@
     cs: Historie a archeologie
     en: History and archaeology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100
+    iri: https://nma.eosc.cz/vocabularies/subjects/60100
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60100
 - id: '60101'
   scheme: frascati
   subject: History
@@ -1930,7 +2164,8 @@
     cs: Historie
     en: History
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60101
+    iri: https://nma.eosc.cz/vocabularies/subjects/60101
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60100/60101
 - id: '60102'
   scheme: frascati
   subject: Archaeology
@@ -1938,7 +2173,8 @@
     cs: Archeologie
     en: Archaeology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60102
+    iri: https://nma.eosc.cz/vocabularies/subjects/60102
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60100/60102
 - id: '60200'
   scheme: frascati
   subject: Languages and literature
@@ -1946,7 +2182,8 @@
     cs: Jazyky a literatura
     en: Languages and literature
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200
+    iri: https://nma.eosc.cz/vocabularies/subjects/60200
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200
 - id: '60201'
   scheme: frascati
   subject: General language studies
@@ -1954,7 +2191,8 @@
     cs: Všeobecné jazykové studie
     en: General language studies
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60201
+    iri: https://nma.eosc.cz/vocabularies/subjects/60201
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60201
 - id: '60202'
   scheme: frascati
   subject: Specific languages
@@ -1962,7 +2200,8 @@
     cs: Specifické jazyky
     en: Specific languages
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60202
+    iri: https://nma.eosc.cz/vocabularies/subjects/60202
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60202
 - id: '60203'
   scheme: frascati
   subject: Linguistics
@@ -1970,7 +2209,8 @@
     cs: Lingvistika
     en: Linguistics
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60203
+    iri: https://nma.eosc.cz/vocabularies/subjects/60203
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60203
 - id: '60204'
   scheme: frascati
   subject: General literature studies
@@ -1978,7 +2218,8 @@
     cs: Všeobecné studie literatury
     en: General literature studies
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60204
+    iri: https://nma.eosc.cz/vocabularies/subjects/60204
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60204
 - id: '60205'
   scheme: frascati
   subject: Literary theory
@@ -1986,7 +2227,8 @@
     cs: Teorie literatury
     en: Literary theory
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60205
+    iri: https://nma.eosc.cz/vocabularies/subjects/60205
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60205
 - id: '60206'
   scheme: frascati
   subject: Specific literatures
@@ -1994,7 +2236,8 @@
     cs: Specifická literatura
     en: Specific literatures
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60206
+    iri: https://nma.eosc.cz/vocabularies/subjects/60206
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60206
 - id: '60300'
   scheme: frascati
   subject: Philosophy, ethics and religion
@@ -2002,7 +2245,8 @@
     cs: Filozofie, etika a náboženství
     en: Philosophy, ethics and religion
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300
+    iri: https://nma.eosc.cz/vocabularies/subjects/60300
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60300
 - id: '60301'
   scheme: frascati
   subject: Philosophy, history and philosophy of science and technology
@@ -2010,7 +2254,8 @@
     cs: Filozofie, dějiny a filozofie vědy a techniky
     en: Philosophy, history and philosophy of science and technology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60301
+    iri: https://nma.eosc.cz/vocabularies/subjects/60301
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60300/60301
 - id: '60302'
   scheme: frascati
   subject: Ethics (except ethics related to specific subfields)
@@ -2018,7 +2263,8 @@
     cs: Etika (vyjma etiky související s příslušnými kategoriemi)
     en: Ethics (except ethics related to specific subfields)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60302
+    iri: https://nma.eosc.cz/vocabularies/subjects/60302
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60300/60302
 - id: '60303'
   scheme: frascati
   subject: Theology
@@ -2026,7 +2272,8 @@
     cs: Teologie
     en: Theology
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60303
+    iri: https://nma.eosc.cz/vocabularies/subjects/60303
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60300/60303
 - id: '60304'
   scheme: frascati
   subject: Religious studies
@@ -2034,7 +2281,8 @@
     cs: Religionistika
     en: Religious studies
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60304
+    iri: https://nma.eosc.cz/vocabularies/subjects/60304
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60300/60304
 - id: '60400'
   scheme: frascati
   subject: Arts (arts, history of arts, performing arts, music)
@@ -2042,7 +2290,8 @@
     cs: Umění (umění, dějiny umění, múzická umění, hudba)
     en: Arts (arts, history of arts, performing arts, music)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400
+    iri: https://nma.eosc.cz/vocabularies/subjects/60400
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400
 - id: '60401'
   scheme: frascati
   subject: Arts, art history
@@ -2050,7 +2299,8 @@
     cs: Umění, dějiny umění
     en: Arts, art history
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60401
+    iri: https://nma.eosc.cz/vocabularies/subjects/60401
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60401
 - id: '60402'
   scheme: frascati
   subject: Architectural design
@@ -2058,7 +2308,8 @@
     cs: Architektonický design
     en: Architectural design
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60402
+    iri: https://nma.eosc.cz/vocabularies/subjects/60402
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60402
 - id: '60403'
   scheme: frascati
   subject: Performing arts studies (musicology, theater science, dramaturgy)
@@ -2066,7 +2317,8 @@
     cs: Múzická umění (muzikologie, divadelní věda, dramaturgie)
     en: Performing arts studies (musicology, theater science, dramaturgy)
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60403
+    iri: https://nma.eosc.cz/vocabularies/subjects/60403
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60403
 - id: '60404'
   scheme: frascati
   subject: Folklore studies
@@ -2074,7 +2326,8 @@
     cs: Folkloristika
     en: Folklore studies
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60404
+    iri: https://nma.eosc.cz/vocabularies/subjects/60404
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60404
 - id: '60405'
   scheme: frascati
   subject: Studies on film, radio and television
@@ -2082,7 +2335,8 @@
     cs: Film, rádio a televize
     en: Studies on film, radio and television
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60405
+    iri: https://nma.eosc.cz/vocabularies/subjects/60405
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60405
 - id: '60500'
   scheme: frascati
   subject: Other humanities and the arts
@@ -2090,4 +2344,5 @@
     cs: Ostatní humanitní vědy a obory umění
     en: Other humanities and the arts
   props:
-    iri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60500
+    iri: https://nma.eosc.cz/vocabularies/subjects/60500
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60500

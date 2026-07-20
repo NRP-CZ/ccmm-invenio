@@ -9,9 +9,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/afr
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: AFR
     ISO_639_2T: afr
+    XML_LNG: af
     ISO_639_3: afr
     ISO_639_2B: afr
-    XML_LNG: af
     ISO_639_1: af
 - id: aka
   title:
@@ -29,10 +29,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/aka
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: AKA
     ISO_639_2B: aka
-    XML_LNG: ak
     ISO_639_1: ak
-    ISO_639_3: aka
+    XML_LNG: ak
     ISO_639_2T: aka
+    ISO_639_3: aka
 - id: amh
   title:
     cs: amharština
@@ -45,8 +45,8 @@
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: AMH
     XML_LNG: am
     ISO_639_2B: amh
-    ISO_639_3: amh
     ISO_639_1: am
+    ISO_639_3: amh
     ISO_639_2T: amh
 - id: ara
   title:
@@ -65,10 +65,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ara
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ARA
-    XML_LNG: ar
-    ISO_639_2T: ara
     ISO_639_1: ar
     ISO_639_2B: ara
+    XML_LNG: ar
+    ISO_639_2T: ara
     ISO_639_3: ara
 - id: aym
   title:
@@ -80,11 +80,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/aym
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: AYM
+    ISO_639_2B: aym
+    ISO_639_2T: aym
     ISO_639_3: aym
     ISO_639_1: ay
-    ISO_639_2B: aym
     XML_LNG: ay
-    ISO_639_2T: aym
 - id: aze
   title:
     cs: ázerbájdžánština
@@ -98,11 +98,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/aze
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: AZE
+    XML_LNG: az
     ISO_639_3: aze
     ISO_639_1: az
-    ISO_639_2B: aze
     ISO_639_2T: aze
-    XML_LNG: az
+    ISO_639_2B: aze
 - id: bam
   title:
     cs: bambarština
@@ -120,11 +120,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/bam
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BAM
+    ISO_639_3: bam
     ISO_639_2T: bam
-    XML_LNG: bm
     ISO_639_2B: bam
     ISO_639_1: bm
-    ISO_639_3: bam
+    XML_LNG: bm
 - id: bel
   title:
     cs: běloruština
@@ -158,10 +158,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ben
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BEN
-    XML_LNG: bn
-    ISO_639_2T: ben
-    ISO_639_2B: ben
     ISO_639_1: bn
+    ISO_639_2T: ben
+    XML_LNG: bn
+    ISO_639_2B: ben
     ISO_639_3: ben
 - id: bis
   title:
@@ -173,11 +173,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/bis
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BIS
-    XML_LNG: bi
-    ISO_639_1: bi
     ISO_639_3: bis
     ISO_639_2B: bis
+    ISO_639_1: bi
     ISO_639_2T: bis
+    XML_LNG: bi
 - id: bod
   title:
     cs: tibetština
@@ -195,11 +195,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/bod
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BOD
-    ISO_639_2B: tib
+    ISO_639_3: bod
     ISO_639_1: bo
+    ISO_639_2B: tib
     ISO_639_2T: bod
     XML_LNG: bo
-    ISO_639_3: bod
 - id: bos
   title:
     cs: bosenština
@@ -211,11 +211,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/bos
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BOS
+    XML_LNG: bs
+    ISO_639_1: bs
+    ISO_639_3: bos
     ISO_639_2T: bos
     ISO_639_2B: bos
-    ISO_639_1: bs
-    XML_LNG: bs
-    ISO_639_3: bos
 - id: bre
   title:
     cs: bretonština
@@ -228,10 +228,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/bre
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BRE
-    XML_LNG: br
-    ISO_639_3: bre
-    ISO_639_2B: bre
     ISO_639_1: br
+    XML_LNG: br
+    ISO_639_2B: bre
+    ISO_639_3: bre
     ISO_639_2T: bre
 - id: bul
   title:
@@ -245,11 +245,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/bul
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BUL
-    ISO_639_2T: bul
-    ISO_639_3: bul
-    ISO_639_1: bg
-    ISO_639_2B: bul
     XML_LNG: bg
+    ISO_639_2B: bul
+    ISO_639_2T: bul
+    ISO_639_1: bg
+    ISO_639_3: bul
 - id: cat
   title:
     cs: katalánština
@@ -264,9 +264,9 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/cat
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: CAT
-    ISO_639_2B: cat
     ISO_639_2T: cat
     ISO_639_3: cat
+    ISO_639_2B: cat
     ISO_639_1: ca
     XML_LNG: ca
 - id: ces
@@ -280,11 +280,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ces
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: CES
-    ISO_639_2T: ces
-    XML_LNG: cs
     ISO_639_1: cs
-    ISO_639_3: ces
     ISO_639_2B: cze
+    ISO_639_3: ces
+    XML_LNG: cs
+    ISO_639_2T: ces
 - id: cha
   title:
     cs: čamorština
@@ -295,11 +295,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/cha
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: CHA
-    ISO_639_3: cha
-    XML_LNG: ch
+    ISO_639_1: ch
     ISO_639_2T: cha
     ISO_639_2B: cha
-    ISO_639_1: ch
+    XML_LNG: ch
+    ISO_639_3: cha
 - id: cor
   title:
     cs: kornština
@@ -312,10 +312,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/cor
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: COR
-    XML_LNG: kw
-    ISO_639_3: cor
-    ISO_639_1: kw
     ISO_639_2B: cor
+    ISO_639_1: kw
+    ISO_639_3: cor
+    XML_LNG: kw
     ISO_639_2T: cor
 - id: cos
   title:
@@ -330,10 +330,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/cos
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: COS
     XML_LNG: co
-    ISO_639_1: co
-    ISO_639_3: cos
     ISO_639_2B: cos
+    ISO_639_1: co
     ISO_639_2T: cos
+    ISO_639_3: cos
 - id: cre
   title:
     cs: kríjština
@@ -348,11 +348,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/cre
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: CRE
+    XML_LNG: cr
+    ISO_639_2T: cre
     ISO_639_1: cr
     ISO_639_2B: cre
-    ISO_639_2T: cre
     ISO_639_3: cre
-    XML_LNG: cr
 - id: cym
   title:
     cs: velština
@@ -365,11 +365,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/cym
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: CYM
-    XML_LNG: cy
     ISO_639_1: cy
-    ISO_639_3: cym
-    ISO_639_2T: cym
     ISO_639_2B: wel
+    ISO_639_2T: cym
+    XML_LNG: cy
+    ISO_639_3: cym
 - id: dan
   title:
     cs: dánština
@@ -382,11 +382,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/dan
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: DAN
-    ISO_639_1: da
+    XML_LNG: da
+    ISO_639_2T: dan
     ISO_639_3: dan
     ISO_639_2B: dan
-    ISO_639_2T: dan
-    XML_LNG: da
+    ISO_639_1: da
 - id: deu
   title:
     cs: němčina
@@ -399,11 +399,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/deu
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: DEU
-    XML_LNG: de
-    ISO_639_1: de
-    ISO_639_2B: ger
-    ISO_639_2T: deu
     ISO_639_3: deu
+    XML_LNG: de
+    ISO_639_2B: ger
+    ISO_639_1: de
+    ISO_639_2T: deu
 - id: div
   title:
     cs: divehi
@@ -418,11 +418,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/div
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: DIV
-    ISO_639_2B: div
-    XML_LNG: dv
-    ISO_639_3: div
     ISO_639_1: dv
+    XML_LNG: dv
+    ISO_639_2B: div
     ISO_639_2T: div
+    ISO_639_3: div
 - id: dzo
   title:
     cs: dzongkä
@@ -432,10 +432,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/dzo
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: DZO
+    ISO_639_3: dzo
+    ISO_639_1: dz
     XML_LNG: dz
     ISO_639_2T: dzo
-    ISO_639_1: dz
-    ISO_639_3: dzo
     ISO_639_2B: dzo
 - id: ell
   title:
@@ -452,10 +452,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/ell
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ELL
     XML_LNG: el
-    ISO_639_2B: gre
     ISO_639_2T: ell
-    ISO_639_1: el
     ISO_639_3: ell
+    ISO_639_1: el
+    ISO_639_2B: gre
 - id: eng
   title:
     cs: angličtina
@@ -470,9 +470,9 @@
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ENG
     XML_LNG: en
     ISO_639_3: eng
-    ISO_639_2T: eng
     ISO_639_2B: eng
     ISO_639_1: en
+    ISO_639_2T: eng
 - id: epo
   title:
     cs: esperanto
@@ -486,11 +486,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/epo
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: EPO
-    ISO_639_3: epo
+    ISO_639_2B: epo
     ISO_639_1: eo
+    ISO_639_3: epo
     XML_LNG: eo
     ISO_639_2T: epo
-    ISO_639_2B: epo
 - id: est
   title:
     cs: estonština
@@ -503,11 +503,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/est
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: EST
+    ISO_639_2B: est
+    ISO_639_1: et
+    XML_LNG: et
     ISO_639_3: est
     ISO_639_2T: est
-    ISO_639_1: et
-    ISO_639_2B: est
-    XML_LNG: et
 - id: eus
   title:
     cs: baskičtina
@@ -521,11 +521,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/eus
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: EUS
-    XML_LNG: eu
     ISO_639_1: eu
     ISO_639_3: eus
     ISO_639_2T: eus
     ISO_639_2B: baq
+    XML_LNG: eu
 - id: ewe
   title:
     cs: eweština
@@ -536,11 +536,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ewe
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: EWE
+    XML_LNG: ee
     ISO_639_1: ee
-    ISO_639_2T: ewe
     ISO_639_3: ewe
     ISO_639_2B: ewe
-    XML_LNG: ee
+    ISO_639_2T: ewe
 - id: fao
   title:
     cs: faerština
@@ -551,11 +551,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/fao
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: FAO
-    ISO_639_2B: fao
-    ISO_639_2T: fao
-    ISO_639_3: fao
-    ISO_639_1: fo
     XML_LNG: fo
+    ISO_639_2T: fao
+    ISO_639_1: fo
+    ISO_639_3: fao
+    ISO_639_2B: fao
 - id: fas
   title:
     cs: perština
@@ -574,11 +574,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/fas
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: FAS
-    XML_LNG: fa
-    ISO_639_2T: fas
-    ISO_639_2B: per
     ISO_639_1: fa
+    ISO_639_2T: fas
     ISO_639_3: fas
+    ISO_639_2B: per
+    XML_LNG: fa
 - id: fij
   title:
     cs: fidžijština
@@ -589,11 +589,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/fij
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: FIJ
-    XML_LNG: fj
-    ISO_639_3: fij
-    ISO_639_2B: fij
     ISO_639_2T: fij
     ISO_639_1: fj
+    ISO_639_2B: fij
+    XML_LNG: fj
+    ISO_639_3: fij
 - id: fin
   title:
     cs: finština
@@ -606,11 +606,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/fin
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: FIN
+    ISO_639_2T: fin
     ISO_639_3: fin
-    ISO_639_2B: fin
     ISO_639_1: fi
     XML_LNG: fi
-    ISO_639_2T: fin
+    ISO_639_2B: fin
 - id: fra
   title:
     cs: francouzština
@@ -623,11 +623,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/fra
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: FRA
-    XML_LNG: fr
+    ISO_639_2T: fra
     ISO_639_3: fra
     ISO_639_1: fr
+    XML_LNG: fr
     ISO_639_2B: fre
-    ISO_639_2T: fra
 - id: fry
   title:
     cs: fríština
@@ -640,10 +640,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/fry
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: FRY
-    ISO_639_3: fry
     XML_LNG: fy
     ISO_639_2T: fry
     ISO_639_1: fy
+    ISO_639_3: fry
     ISO_639_2B: fry
 - id: ful
   title:
@@ -659,11 +659,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ful
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: FUL
-    XML_LNG: ff
     ISO_639_1: ff
-    ISO_639_3: ful
     ISO_639_2B: ful
+    ISO_639_3: ful
     ISO_639_2T: ful
+    XML_LNG: ff
 - id: gla
   title:
     cs: skotská gaelština
@@ -676,11 +676,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/gla
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: GLA
-    XML_LNG: gd
-    ISO_639_2B: gla
-    ISO_639_2T: gla
     ISO_639_3: gla
+    ISO_639_2T: gla
+    ISO_639_2B: gla
     ISO_639_1: gd
+    XML_LNG: gd
 - id: gle
   title:
     cs: irština
@@ -695,11 +695,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/gle
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: GLE
-    ISO_639_2B: gle
     ISO_639_1: ga
     XML_LNG: ga
-    ISO_639_2T: gle
     ISO_639_3: gle
+    ISO_639_2T: gle
+    ISO_639_2B: gle
 - id: glg
   title:
     cs: galicijština
@@ -711,11 +711,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/glg
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: GLG
-    ISO_639_1: gl
     XML_LNG: gl
-    ISO_639_2B: glg
-    ISO_639_2T: glg
     ISO_639_3: glg
+    ISO_639_1: gl
+    ISO_639_2T: glg
+    ISO_639_2B: glg
 - id: glv
   title:
     cs: manština
@@ -726,10 +726,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/glv
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: GLV
-    ISO_639_3: glv
-    ISO_639_2T: glv
     ISO_639_2B: glv
+    ISO_639_3: glv
     ISO_639_1: gv
+    ISO_639_2T: glv
     XML_LNG: gv
 - id: grn
   title:
@@ -741,11 +741,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/grn
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: GRN
-    ISO_639_2B: grn
     ISO_639_1: gn
+    ISO_639_2B: grn
+    XML_LNG: gn
     ISO_639_2T: grn
     ISO_639_3: grn
-    XML_LNG: gn
 - id: hat
   title:
     cs: haitská kreolská francouzština
@@ -756,10 +756,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/hat
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HAT
-    ISO_639_2B: hat
-    ISO_639_2T: hat
-    XML_LNG: ht
     ISO_639_1: ht
+    ISO_639_2B: hat
+    XML_LNG: ht
+    ISO_639_2T: hat
     ISO_639_3: hat
 - id: hau
   title:
@@ -775,11 +775,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/hau
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HAU
-    ISO_639_3: hau
+    ISO_639_2B: hau
     XML_LNG: ha
+    ISO_639_3: hau
     ISO_639_1: ha
     ISO_639_2T: hau
-    ISO_639_2B: hau
 - id: hbs
   title:
     cs: srbochorvatština
@@ -811,11 +811,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/heb
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HEB
-    ISO_639_2T: heb
     XML_LNG: he
-    ISO_639_3: heb
-    ISO_639_1: he
     ISO_639_2B: heb
+    ISO_639_2T: heb
+    ISO_639_1: he
+    ISO_639_3: heb
 - id: hin
   title:
     cs: hindština
@@ -830,11 +830,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/hin
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HIN
-    ISO_639_2B: hin
-    XML_LNG: hi
     ISO_639_2T: hin
+    XML_LNG: hi
     ISO_639_3: hin
     ISO_639_1: hi
+    ISO_639_2B: hin
 - id: hmo
   title:
     cs: hiri motu
@@ -847,8 +847,8 @@
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HMO
     ISO_639_2T: hmo
     ISO_639_3: hmo
-    ISO_639_2B: hmo
     XML_LNG: ho
+    ISO_639_2B: hmo
     ISO_639_1: ho
 - id: hrv
   title:
@@ -862,11 +862,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/hrv
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HRV
-    ISO_639_2B: hrv
-    ISO_639_2T: hrv
-    ISO_639_3: hrv
     ISO_639_1: hr
     XML_LNG: hr
+    ISO_639_3: hrv
+    ISO_639_2B: hrv
+    ISO_639_2T: hrv
 - id: hun
   title:
     cs: maďarština
@@ -879,10 +879,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/hun
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HUN
-    ISO_639_2B: hun
-    XML_LNG: hu
-    ISO_639_1: hu
     ISO_639_2T: hun
+    XML_LNG: hu
+    ISO_639_2B: hun
+    ISO_639_1: hu
     ISO_639_3: hun
 - id: hye
   title:
@@ -898,9 +898,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/hye
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HYE
     ISO_639_2T: hye
-    ISO_639_2B: arm
-    XML_LNG: hy
     ISO_639_3: hye
+    XML_LNG: hy
+    ISO_639_2B: arm
     ISO_639_1: hy
 - id: ibo
   title:
@@ -913,11 +913,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ibo
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: IBO
+    ISO_639_1: ig
+    ISO_639_2T: ibo
     ISO_639_2B: ibo
     XML_LNG: ig
     ISO_639_3: ibo
-    ISO_639_2T: ibo
-    ISO_639_1: ig
 - id: ina
   title:
     cs: interlingua
@@ -936,11 +936,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ina
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: INA
-    ISO_639_2T: ina
-    ISO_639_1: ia
-    ISO_639_3: ina
     ISO_639_2B: ina
+    ISO_639_1: ia
+    ISO_639_2T: ina
     XML_LNG: ia
+    ISO_639_3: ina
 - id: ind
   title:
     cs: indonéština
@@ -955,11 +955,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ind
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: IND
-    ISO_639_1: id
     ISO_639_3: ind
-    ISO_639_2T: ind
     XML_LNG: id
     ISO_639_2B: ind
+    ISO_639_2T: ind
+    ISO_639_1: id
 - id: isl
   title:
     cs: islandština
@@ -975,9 +975,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/isl
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ISL
     XML_LNG: is
+    ISO_639_2B: ice
     ISO_639_1: is
     ISO_639_3: isl
-    ISO_639_2B: ice
     ISO_639_2T: isl
 - id: ita
   title:
@@ -992,10 +992,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ita
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ITA
-    ISO_639_3: ita
-    ISO_639_2T: ita
     ISO_639_1: it
+    ISO_639_3: ita
     XML_LNG: it
+    ISO_639_2T: ita
     ISO_639_2B: ita
 - id: jpn
   title:
@@ -1014,11 +1014,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/jpn
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: JPN
-    ISO_639_1: ja
-    ISO_639_2T: jpn
-    ISO_639_3: jpn
-    ISO_639_2B: jpn
     XML_LNG: ja
+    ISO_639_2B: jpn
+    ISO_639_3: jpn
+    ISO_639_2T: jpn
+    ISO_639_1: ja
 - id: kal
   title:
     cs: Kalaallisut
@@ -1037,11 +1037,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/kal
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KAL
-    ISO_639_2T: kal
-    ISO_639_1: kl
-    ISO_639_2B: kal
     ISO_639_3: kal
+    ISO_639_2B: kal
+    ISO_639_2T: kal
     XML_LNG: kl
+    ISO_639_1: kl
 - id: kat
   title:
     cs: gruzínština
@@ -1054,11 +1054,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/kat
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KAT
-    ISO_639_2T: kat
+    XML_LNG: ka
     ISO_639_2B: geo
+    ISO_639_2T: kat
     ISO_639_1: ka
     ISO_639_3: kat
-    XML_LNG: ka
 - id: kaz
   title:
     cs: kazaština
@@ -1073,9 +1073,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/kaz
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KAZ
     ISO_639_2B: kaz
-    ISO_639_1: kk
     ISO_639_3: kaz
     ISO_639_2T: kaz
+    ISO_639_1: kk
     XML_LNG: kk
 - id: khm
   title:
@@ -1090,10 +1090,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/khm
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KHM
     ISO_639_3: khm
-    ISO_639_2B: khm
-    XML_LNG: km
     ISO_639_2T: khm
+    ISO_639_2B: khm
     ISO_639_1: km
+    XML_LNG: km
 - id: kin
   title:
     cs: rwandština
@@ -1103,11 +1103,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/kin
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KIN
-    ISO_639_2T: kin
+    ISO_639_2B: kin
+    XML_LNG: rw
     ISO_639_1: rw
     ISO_639_3: kin
-    XML_LNG: rw
-    ISO_639_2B: kin
+    ISO_639_2T: kin
 - id: kir
   title:
     cs: kyrgyzština
@@ -1124,11 +1124,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/kir
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KIR
-    ISO_639_3: kir
-    ISO_639_2T: kir
     ISO_639_1: ky
+    ISO_639_3: kir
     XML_LNG: ky
     ISO_639_2B: kir
+    ISO_639_2T: kir
 - id: kon
   title:
     cs: kikongo
@@ -1138,11 +1138,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/kon
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KON
-    ISO_639_3: kon
     ISO_639_1: kg
-    ISO_639_2T: kon
+    ISO_639_3: kon
     ISO_639_2B: kon
     XML_LNG: kg
+    ISO_639_2T: kon
 - id: kor
   title:
     cs: korejština
@@ -1158,9 +1158,9 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/kor
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KOR
-    ISO_639_1: ko
-    ISO_639_2T: kor
     ISO_639_3: kor
+    ISO_639_2T: kor
+    ISO_639_1: ko
     XML_LNG: ko
     ISO_639_2B: kor
 - id: kur
@@ -1177,11 +1177,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/kur
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KUR
-    ISO_639_3: kur
-    ISO_639_1: ku
     ISO_639_2B: kur
+    ISO_639_3: kur
     ISO_639_2T: kur
     XML_LNG: ku
+    ISO_639_1: ku
 - id: lao
   title:
     cs: laoština
@@ -1196,10 +1196,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/lao
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: LAO
     ISO_639_2B: lao
-    ISO_639_2T: lao
-    XML_LNG: lo
     ISO_639_3: lao
     ISO_639_1: lo
+    ISO_639_2T: lao
+    XML_LNG: lo
 - id: lat
   title:
     cs: latina
@@ -1215,11 +1215,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/lat
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: LAT
+    ISO_639_2B: lat
     ISO_639_3: lat
     ISO_639_1: la
-    ISO_639_2T: lat
     XML_LNG: la
-    ISO_639_2B: lat
+    ISO_639_2T: lat
 - id: lav
   title:
     cs: lotyština
@@ -1231,11 +1231,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/lav
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: LAV
-    ISO_639_3: lav
     XML_LNG: lv
+    ISO_639_3: lav
+    ISO_639_2T: lav
     ISO_639_2B: lav
     ISO_639_1: lv
-    ISO_639_2T: lav
 - id: lin
   title:
     cs: lingalština
@@ -1246,10 +1246,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/lin
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: LIN
     ISO_639_3: lin
-    XML_LNG: ln
-    ISO_639_2T: lin
-    ISO_639_2B: lin
     ISO_639_1: ln
+    XML_LNG: ln
+    ISO_639_2B: lin
+    ISO_639_2T: lin
 - id: lit
   title:
     cs: litevština
@@ -1278,10 +1278,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ltz
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: LTZ
-    ISO_639_3: ltz
-    ISO_639_2T: ltz
     ISO_639_2B: ltz
+    ISO_639_2T: ltz
     XML_LNG: lb
+    ISO_639_3: ltz
     ISO_639_1: lb
 - id: mah
   title:
@@ -1293,11 +1293,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/mah
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MAH
-    XML_LNG: mh
-    ISO_639_2T: mah
+    ISO_639_3: mah
     ISO_639_2B: mah
     ISO_639_1: mh
-    ISO_639_3: mah
+    ISO_639_2T: mah
+    XML_LNG: mh
 - id: mkd
   title:
     cs: makedonština
@@ -1308,11 +1308,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/mkd
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MKD
-    ISO_639_1: mk
-    ISO_639_3: mkd
-    XML_LNG: mk
     ISO_639_2B: mac
     ISO_639_2T: mkd
+    ISO_639_3: mkd
+    ISO_639_1: mk
+    XML_LNG: mk
 - id: mlg
   title:
     cs: malgaština
@@ -1328,8 +1328,8 @@
     iri: https://nma.eosc.cz/vocabularies/languages/mlg
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MLG
     ISO_639_1: mg
-    ISO_639_2T: mlg
     XML_LNG: mg
+    ISO_639_2T: mlg
     ISO_639_2B: mlg
     ISO_639_3: mlg
 - id: mlt
@@ -1344,10 +1344,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/mlt
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MLT
-    ISO_639_3: mlt
-    ISO_639_2T: mlt
     XML_LNG: mt
     ISO_639_1: mt
+    ISO_639_2T: mlt
+    ISO_639_3: mlt
     ISO_639_2B: mlt
 - id: mol
   title:
@@ -1366,11 +1366,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/mol
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MOL
-    ISO_639_2T: mol
     ISO_639_2B: mol
-    XML_LNG: mo
-    ISO_639_3: mol
     ISO_639_1: mo
+    ISO_639_3: mol
+    XML_LNG: mo
+    ISO_639_2T: mol
 - id: mon
   title:
     cs: mongolština
@@ -1383,11 +1383,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/mon
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MON
-    ISO_639_3: mon
     XML_LNG: mn
+    ISO_639_3: mon
     ISO_639_2B: mon
-    ISO_639_2T: mon
     ISO_639_1: mn
+    ISO_639_2T: mon
 - id: mri
   title:
     cs: maorština
@@ -1423,11 +1423,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/msa
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MSA
-    ISO_639_3: msa
-    ISO_639_2B: may
     ISO_639_1: ms
+    ISO_639_3: msa
     ISO_639_2T: msa
     XML_LNG: ms
+    ISO_639_2B: may
 - id: mya
   title:
     cs: barmština
@@ -1439,9 +1439,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/mya
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MYA
     ISO_639_3: mya
+    ISO_639_1: my
     ISO_639_2B: bur
     XML_LNG: my
-    ISO_639_1: my
     ISO_639_2T: mya
 - id: nau
   title:
@@ -1453,11 +1453,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/nau
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NAU
-    ISO_639_2B: nau
-    XML_LNG: na
-    ISO_639_3: nau
-    ISO_639_1: na
     ISO_639_2T: nau
+    ISO_639_1: na
+    XML_LNG: na
+    ISO_639_2B: nau
+    ISO_639_3: nau
 - id: nbl
   title:
     cs: jižní ndebelština
@@ -1468,11 +1468,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/nbl
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NBL
-    ISO_639_1: nr
+    ISO_639_3: nbl
     ISO_639_2T: nbl
     ISO_639_2B: nbl
-    ISO_639_3: nbl
     XML_LNG: nr
+    ISO_639_1: nr
 - id: nde
   title:
     cs: severní ndebelština
@@ -1488,10 +1488,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/nde
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NDE
     XML_LNG: nd
-    ISO_639_2T: nde
-    ISO_639_2B: nde
     ISO_639_3: nde
+    ISO_639_2B: nde
     ISO_639_1: nd
+    ISO_639_2T: nde
 - id: nep
   title:
     cs: nepálština
@@ -1506,11 +1506,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/nep
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NEP
+    ISO_639_2B: nep
     XML_LNG: ne
     ISO_639_1: ne
-    ISO_639_2B: nep
-    ISO_639_3: nep
     ISO_639_2T: nep
+    ISO_639_3: nep
 - id: nld
   title:
     cs: nizozemština
@@ -1523,11 +1523,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/nld
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NLD
-    ISO_639_2B: dut
     ISO_639_2T: nld
-    ISO_639_3: nld
-    ISO_639_1: nl
     XML_LNG: nl
+    ISO_639_2B: dut
+    ISO_639_1: nl
+    ISO_639_3: nld
 - id: nno
   title:
     cs: norština (nynorsk)
@@ -1543,8 +1543,8 @@
     iri: https://nma.eosc.cz/vocabularies/languages/nno
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NNO
     ISO_639_1: nn
-    ISO_639_2T: nno
     XML_LNG: nn
+    ISO_639_2T: nno
     ISO_639_2B: nno
     ISO_639_3: nno
 - id: nob
@@ -1560,11 +1560,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/nob
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NOB
-    ISO_639_3: nob
-    ISO_639_2B: nob
     XML_LNG: nb
-    ISO_639_1: nb
     ISO_639_2T: nob
+    ISO_639_2B: nob
+    ISO_639_1: nb
+    ISO_639_3: nob
 - id: nor
   title:
     cs: norština
@@ -1580,11 +1580,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/nor
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NOR
-    ISO_639_2T: nor
-    ISO_639_1: 'no'
     XML_LNG: 'no'
-    ISO_639_3: nor
+    ISO_639_1: 'no'
+    ISO_639_2T: nor
     ISO_639_2B: nor
+    ISO_639_3: nor
 - id: nya
   title:
     cs: čičevština
@@ -1604,11 +1604,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/nya
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NYA
-    ISO_639_2B: nya
-    ISO_639_2T: nya
     XML_LNG: ny
-    ISO_639_3: nya
+    ISO_639_2T: nya
     ISO_639_1: ny
+    ISO_639_2B: nya
+    ISO_639_3: nya
 - id: oci
   title:
     cs: okcitánština
@@ -1622,10 +1622,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/oci
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: OCI
-    XML_LNG: oc
     ISO_639_2B: oci
-    ISO_639_1: oc
     ISO_639_2T: oci
+    ISO_639_1: oc
+    XML_LNG: oc
     ISO_639_3: oci
 - id: oss
   title:
@@ -1642,10 +1642,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/oss
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: OSS
-    ISO_639_1: os
     XML_LNG: os
-    ISO_639_2T: oss
     ISO_639_3: oss
+    ISO_639_2T: oss
+    ISO_639_1: os
     ISO_639_2B: oss
 - id: pan
   title:
@@ -1659,10 +1659,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/pan
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: PAN
     ISO_639_2B: pan
-    ISO_639_3: pan
     XML_LNG: pa
-    ISO_639_2T: pan
+    ISO_639_3: pan
     ISO_639_1: pa
+    ISO_639_2T: pan
 - id: pol
   title:
     cs: polština
@@ -1674,11 +1674,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/pol
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: POL
+    ISO_639_2T: pol
     ISO_639_2B: pol
     XML_LNG: pl
-    ISO_639_2T: pol
-    ISO_639_1: pl
     ISO_639_3: pol
+    ISO_639_1: pl
 - id: por
   title:
     cs: portugalština
@@ -1692,10 +1692,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/por
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: POR
     ISO_639_3: por
-    ISO_639_1: pt
     XML_LNG: pt
-    ISO_639_2B: por
+    ISO_639_1: pt
     ISO_639_2T: por
+    ISO_639_2B: por
 - id: pus
   title:
     cs: paštština
@@ -1710,10 +1710,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/pus
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: PUS
     XML_LNG: ps
-    ISO_639_3: pus
     ISO_639_2T: pus
-    ISO_639_1: ps
     ISO_639_2B: pus
+    ISO_639_1: ps
+    ISO_639_3: pus
 - id: que
   title:
     cs: kečuánština
@@ -1724,11 +1724,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/que
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: QUE
-    ISO_639_2B: que
-    ISO_639_3: que
-    ISO_639_2T: que
-    ISO_639_1: qu
     XML_LNG: qu
+    ISO_639_2T: que
+    ISO_639_2B: que
+    ISO_639_1: qu
+    ISO_639_3: que
 - id: roh
   title:
     cs: románština
@@ -1743,8 +1743,8 @@
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ROH
     ISO_639_3: roh
     XML_LNG: rm
-    ISO_639_1: rm
     ISO_639_2B: roh
+    ISO_639_1: rm
     ISO_639_2T: roh
 - id: ron
   title:
@@ -1757,11 +1757,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ron
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: RON
-    ISO_639_1: ro
     ISO_639_3: ron
+    ISO_639_1: ro
+    XML_LNG: ro
     ISO_639_2B: rum
     ISO_639_2T: ron
-    XML_LNG: ro
 - id: run
   title:
     cs: rundština
@@ -1772,9 +1772,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/run
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: RUN
     ISO_639_2T: run
-    ISO_639_1: rn
-    ISO_639_3: run
     ISO_639_2B: run
+    ISO_639_3: run
+    ISO_639_1: rn
     XML_LNG: rn
 - id: rus
   title:
@@ -1790,9 +1790,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/rus
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: RUS
     ISO_639_2T: rus
+    ISO_639_2B: rus
     ISO_639_1: ru
     ISO_639_3: rus
-    ISO_639_2B: rus
     XML_LNG: ru
 - id: sag
   title:
@@ -1804,11 +1804,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/sag
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SAG
-    ISO_639_2B: sag
-    ISO_639_2T: sag
-    ISO_639_3: sag
-    XML_LNG: sg
     ISO_639_1: sg
+    ISO_639_2B: sag
+    ISO_639_3: sag
+    ISO_639_2T: sag
+    XML_LNG: sg
 - id: san
   title:
     cs: sanskrt
@@ -1827,11 +1827,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/san
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SAN
+    ISO_639_3: san
+    ISO_639_2B: san
+    XML_LNG: sa
     ISO_639_2T: san
     ISO_639_1: sa
-    XML_LNG: sa
-    ISO_639_2B: san
-    ISO_639_3: san
 - id: sin
   title:
     cs: sinhálština
@@ -1846,10 +1846,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/sin
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SIN
     ISO_639_2T: sin
-    ISO_639_3: sin
+    ISO_639_1: si
     XML_LNG: si
     ISO_639_2B: sin
-    ISO_639_1: si
+    ISO_639_3: sin
 - id: slk
   title:
     cs: slovenština
@@ -1861,11 +1861,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/slk
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SLK
-    XML_LNG: sk
-    ISO_639_2B: slo
-    ISO_639_2T: slk
-    ISO_639_1: sk
     ISO_639_3: slk
+    ISO_639_1: sk
+    ISO_639_2T: slk
+    ISO_639_2B: slo
+    XML_LNG: sk
 - id: slv
   title:
     cs: slovinština
@@ -1878,11 +1878,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/slv
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SLV
-    ISO_639_3: slv
-    ISO_639_2T: slv
-    ISO_639_2B: slv
     ISO_639_1: sl
+    ISO_639_2B: slv
+    ISO_639_2T: slv
     XML_LNG: sl
+    ISO_639_3: slv
 - id: sme
   title:
     cs: severosámština
@@ -1897,11 +1897,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/sme
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SME
-    ISO_639_2B: sme
     ISO_639_1: se
-    ISO_639_3: sme
-    ISO_639_2T: sme
     XML_LNG: se
+    ISO_639_2T: sme
+    ISO_639_2B: sme
+    ISO_639_3: sme
 - id: smo
   title:
     cs: samojština
@@ -1912,11 +1912,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/smo
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SMO
-    XML_LNG: sm
-    ISO_639_2B: smo
     ISO_639_3: smo
-    ISO_639_2T: smo
     ISO_639_1: sm
+    ISO_639_2T: smo
+    ISO_639_2B: smo
+    XML_LNG: sm
 - id: sna
   title:
     cs: šonština
@@ -1933,9 +1933,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/sna
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SNA
     ISO_639_2T: sna
+    ISO_639_1: sn
     ISO_639_3: sna
     ISO_639_2B: sna
-    ISO_639_1: sn
     XML_LNG: sn
 - id: som
   title:
@@ -1953,9 +1953,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/som
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SOM
     ISO_639_1: so
+    XML_LNG: so
     ISO_639_2T: som
     ISO_639_2B: som
-    XML_LNG: so
     ISO_639_3: som
 - id: sot
   title:
@@ -1967,9 +1967,9 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/sot
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SOT
-    XML_LNG: st
     ISO_639_3: sot
     ISO_639_2B: sot
+    XML_LNG: st
     ISO_639_1: st
     ISO_639_2T: sot
 - id: spa
@@ -1984,11 +1984,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/spa
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SPA
-    ISO_639_2T: spa
-    ISO_639_2B: spa
-    XML_LNG: es
     ISO_639_1: es
     ISO_639_3: spa
+    ISO_639_2T: spa
+    XML_LNG: es
+    ISO_639_2B: spa
 - id: sqi
   title:
     cs: albánština
@@ -2002,10 +2002,10 @@
     iri: https://nma.eosc.cz/vocabularies/languages/sqi
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SQI
     ISO_639_2B: alb
-    ISO_639_3: sqi
     ISO_639_1: sq
     ISO_639_2T: sqi
     XML_LNG: sq
+    ISO_639_3: sqi
 - id: srp
   title:
     cs: srbština
@@ -2018,11 +2018,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/srp
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SRP
-    ISO_639_2T: srp
-    ISO_639_1: sr
-    ISO_639_3: srp
-    XML_LNG: sr
     ISO_639_2B: srp
+    ISO_639_3: srp
+    ISO_639_1: sr
+    ISO_639_2T: srp
+    XML_LNG: sr
 - id: ssw
   title:
     cs: svazijština
@@ -2032,11 +2032,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ssw
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SSW
-    ISO_639_2B: ssw
-    XML_LNG: ss
-    ISO_639_3: ssw
     ISO_639_2T: ssw
     ISO_639_1: ss
+    XML_LNG: ss
+    ISO_639_2B: ssw
+    ISO_639_3: ssw
 - id: swa
   title:
     cs: svahilština
@@ -2050,10 +2050,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/swa
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SWA
-    ISO_639_1: sw
+    ISO_639_2T: swa
     ISO_639_3: swa
     XML_LNG: sw
-    ISO_639_2T: swa
+    ISO_639_1: sw
     ISO_639_2B: swa
 - id: swe
   title:
@@ -2066,10 +2066,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/swe
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SWE
-    ISO_639_2B: swe
     ISO_639_1: sv
-    ISO_639_3: swe
     ISO_639_2T: swe
+    ISO_639_3: swe
+    ISO_639_2B: swe
     XML_LNG: sv
 - id: tam
   title:
@@ -2087,9 +2087,9 @@
     iri: https://nma.eosc.cz/vocabularies/languages/tam
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: TAM
     ISO_639_3: tam
-    ISO_639_2B: tam
-    XML_LNG: ta
     ISO_639_1: ta
+    XML_LNG: ta
+    ISO_639_2B: tam
     ISO_639_2T: tam
 - id: tgk
   title:
@@ -2110,11 +2110,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/tgk
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: TGK
-    ISO_639_2B: tgk
+    ISO_639_3: tgk
+    XML_LNG: tg
     ISO_639_1: tg
     ISO_639_2T: tgk
-    XML_LNG: tg
-    ISO_639_3: tgk
+    ISO_639_2B: tgk
 - id: tha
   title:
     cs: thajština
@@ -2128,11 +2128,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/tha
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: THA
+    ISO_639_2T: tha
+    ISO_639_3: tha
     ISO_639_2B: tha
     XML_LNG: th
-    ISO_639_3: tha
     ISO_639_1: th
-    ISO_639_2T: tha
 - id: tir
   title:
     cs: tigriňa
@@ -2147,10 +2147,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/tir
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: TIR
-    ISO_639_3: tir
+    ISO_639_1: ti
     XML_LNG: ti
     ISO_639_2T: tir
-    ISO_639_1: ti
+    ISO_639_3: tir
     ISO_639_2B: tir
 - id: ton
   title:
@@ -2163,8 +2163,8 @@
     iri: https://nma.eosc.cz/vocabularies/languages/ton
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: TON
     XML_LNG: to
-    ISO_639_1: to
     ISO_639_3: ton
+    ISO_639_1: to
     ISO_639_2T: ton
     ISO_639_2B: ton
 - id: tsn
@@ -2176,11 +2176,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/tsn
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: TSN
-    ISO_639_2T: tsn
-    XML_LNG: tn
     ISO_639_2B: tsn
     ISO_639_3: tsn
     ISO_639_1: tn
+    ISO_639_2T: tsn
+    XML_LNG: tn
 - id: tso
   title:
     cs: tsongština
@@ -2190,11 +2190,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/tso
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: TSO
-    ISO_639_1: ts
     XML_LNG: ts
     ISO_639_2T: tso
     ISO_639_2B: tso
     ISO_639_3: tso
+    ISO_639_1: ts
 - id: tuk
   title:
     cs: turkmenština
@@ -2209,11 +2209,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/tuk
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: TUK
-    ISO_639_1: tk
     ISO_639_2B: tuk
     ISO_639_2T: tuk
-    XML_LNG: tk
+    ISO_639_1: tk
     ISO_639_3: tuk
+    XML_LNG: tk
 - id: tur
   title:
     cs: turečtina
@@ -2225,11 +2225,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/tur
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: TUR
-    ISO_639_1: tr
-    ISO_639_2T: tur
-    XML_LNG: tr
     ISO_639_2B: tur
     ISO_639_3: tur
+    ISO_639_2T: tur
+    XML_LNG: tr
+    ISO_639_1: tr
 - id: ukr
   title:
     cs: ukrajinština
@@ -2241,10 +2241,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ukr
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: UKR
+    ISO_639_1: uk
     ISO_639_2T: ukr
     XML_LNG: uk
     ISO_639_3: ukr
-    ISO_639_1: uk
     ISO_639_2B: ukr
 - id: urd
   title:
@@ -2258,11 +2258,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/urd
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: URD
-    ISO_639_2T: urd
-    ISO_639_3: urd
-    ISO_639_2B: urd
     XML_LNG: ur
+    ISO_639_3: urd
+    ISO_639_2T: urd
     ISO_639_1: ur
+    ISO_639_2B: urd
 - id: uzb
   title:
     cs: uzbečtina
@@ -2275,11 +2275,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/uzb
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: UZB
+    ISO_639_2T: uzb
     XML_LNG: uz
     ISO_639_3: uzb
-    ISO_639_1: uz
-    ISO_639_2T: uzb
     ISO_639_2B: uzb
+    ISO_639_1: uz
 - id: ven
   title:
     cs: vendština
@@ -2289,11 +2289,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/ven
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: VEN
-    ISO_639_1: ve
-    XML_LNG: ve
     ISO_639_2B: ven
-    ISO_639_2T: ven
     ISO_639_3: ven
+    ISO_639_2T: ven
+    XML_LNG: ve
+    ISO_639_1: ve
 - id: vie
   title:
     cs: vietnamština
@@ -2306,11 +2306,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/vie
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: VIE
-    ISO_639_1: vi
     ISO_639_2B: vie
-    ISO_639_3: vie
     XML_LNG: vi
     ISO_639_2T: vie
+    ISO_639_1: vi
+    ISO_639_3: vie
 - id: wln
   title:
     cs: valonština
@@ -2323,11 +2323,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/wln
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: WLN
-    XML_LNG: wa
+    ISO_639_2T: wln
     ISO_639_1: wa
     ISO_639_2B: wln
-    ISO_639_2T: wln
     ISO_639_3: wln
+    XML_LNG: wa
 - id: wol
   title:
     cs: wolofština
@@ -2339,11 +2339,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/wol
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: WOL
-    ISO_639_2T: wol
-    XML_LNG: wo
-    ISO_639_3: wol
     ISO_639_1: wo
+    XML_LNG: wo
     ISO_639_2B: wol
+    ISO_639_2T: wol
+    ISO_639_3: wol
 - id: xho
   title:
     cs: xhoština
@@ -2353,11 +2353,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/xho
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: XHO
-    ISO_639_3: xho
-    XML_LNG: xh
     ISO_639_2T: xho
-    ISO_639_2B: xho
+    ISO_639_3: xho
     ISO_639_1: xh
+    ISO_639_2B: xho
+    XML_LNG: xh
 - id: yid
   title:
     cs: jidiš
@@ -2370,10 +2370,10 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/yid
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: YID
-    ISO_639_2B: yid
+    XML_LNG: yi
     ISO_639_3: yid
     ISO_639_1: yi
-    XML_LNG: yi
+    ISO_639_2B: yid
     ISO_639_2T: yid
 - id: yor
   title:
@@ -2389,11 +2389,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/yor
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: YOR
-    ISO_639_3: yor
     XML_LNG: yo
-    ISO_639_1: yo
     ISO_639_2B: yor
     ISO_639_2T: yor
+    ISO_639_3: yor
+    ISO_639_1: yo
 - id: zha
   title:
     cs: Zhuang
@@ -2401,11 +2401,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/zha
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ZHA
-    ISO_639_2B: zha
-    ISO_639_3: zha
-    ISO_639_1: za
-    ISO_639_2T: zha
     XML_LNG: za
+    ISO_639_1: za
+    ISO_639_3: zha
+    ISO_639_2B: zha
+    ISO_639_2T: zha
 - id: zho
   title:
     cs: čínština
@@ -2422,11 +2422,11 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/zho
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ZHO
-    ISO_639_3: zho
-    ISO_639_2T: zho
-    ISO_639_1: zh
     XML_LNG: zh
     ISO_639_2B: chi
+    ISO_639_3: zho
+    ISO_639_1: zh
+    ISO_639_2T: zho
 - id: zul
   title:
     cs: zulština
@@ -2440,8 +2440,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/languages/zul
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ZUL
-    ISO_639_2B: zul
     ISO_639_1: zu
-    XML_LNG: zu
     ISO_639_2T: zul
     ISO_639_3: zul
+    XML_LNG: zu
+    ISO_639_2B: zul

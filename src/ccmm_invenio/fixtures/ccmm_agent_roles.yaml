@@ -45,8 +45,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/contactperson
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ContactPerson
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: contactperson
-    skos:exactMatch:info:eu-repo/semantics: contactperson
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ContactPerson
+    skos:exactMatch:info:eu-repo/semantics: ContactPerson
   hierarchy:
     parent: contributor
 - id: datacollector
@@ -62,8 +62,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/datacollector
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCollector
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: datacollector
-    skos:exactMatch:info:eu-repo/semantics: datacollector
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataCollector
+    skos:exactMatch:info:eu-repo/semantics: DataCollector
   hierarchy:
     parent: contributor
 - id: datacurator
@@ -89,8 +89,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/datacurator
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCurator
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: datacurator
-    skos:exactMatch:info:eu-repo/semantics: datacurator
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataCurator
+    skos:exactMatch:info:eu-repo/semantics: DataCurator
   hierarchy:
     parent: contributor
 - id: datamanager
@@ -109,8 +109,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/datamanager
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataManager
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: datamanager
-    skos:exactMatch:info:eu-repo/semantics: datamanager
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataManager
+    skos:exactMatch:info:eu-repo/semantics: DataManager
   hierarchy:
     parent: contributor
 - id: distributor
@@ -125,8 +125,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/distributor
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Distributor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: distributor
-    skos:exactMatch:info:eu-repo/semantics: distributor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Distributor
+    skos:exactMatch:info:eu-repo/semantics: Distributor
   hierarchy:
     parent: contributor
 - id: editor
@@ -142,8 +142,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/editor
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Editor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: editor
-    skos:exactMatch:info:eu-repo/semantics: editor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Editor
+    skos:exactMatch:info:eu-repo/semantics: Editor
   hierarchy:
     parent: contributor
 - id: hostinginstitution
@@ -159,8 +159,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/hostinginstitution
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: HostingInstitution
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: hostinginstitution
-    skos:exactMatch:info:eu-repo/semantics: hostinginstitution
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: HostingInstitution
+    skos:exactMatch:info:eu-repo/semantics: HostingInstitution
   hierarchy:
     parent: contributor
 - id: producer
@@ -176,8 +176,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/producer
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Producer
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: producer
-    skos:exactMatch:info:eu-repo/semantics: producer
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Producer
+    skos:exactMatch:info:eu-repo/semantics: Producer
   hierarchy:
     parent: contributor
 - id: projectleader
@@ -194,8 +194,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/projectleader
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectLeader
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: projectleader
-    skos:exactMatch:info:eu-repo/semantics: projectleader
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectLeader
+    skos:exactMatch:info:eu-repo/semantics: ProjectLeader
   hierarchy:
     parent: contributor
 - id: projectmanager
@@ -211,8 +211,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/projectmanager
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectManager
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: projectmanager
-    skos:exactMatch:info:eu-repo/semantics: projectmanager
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectManager
+    skos:exactMatch:info:eu-repo/semantics: ProjectManager
   hierarchy:
     parent: contributor
 - id: projectmember
@@ -227,8 +227,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/projectmember
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectMember
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: projectmember
-    skos:exactMatch:info:eu-repo/semantics: projectmember
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectMember
+    skos:exactMatch:info:eu-repo/semantics: ProjectMember
   hierarchy:
     parent: contributor
 - id: registrationagency
@@ -246,8 +246,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/registrationagency
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAgency
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: registrationagency
-    skos:exactMatch:info:eu-repo/semantics: registrationagency
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAgency
+    skos:exactMatch:info:eu-repo/semantics: RegistrationAgency
   hierarchy:
     parent: contributor
 - id: registrationauthority
@@ -263,8 +263,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/registrationauthority
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAuthority
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: registrationauthority
-    skos:exactMatch:info:eu-repo/semantics: registrationauthority
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAuthority
+    skos:exactMatch:info:eu-repo/semantics: RegistrationAuthority
   hierarchy:
     parent: contributor
 - id: relatedperson
@@ -280,8 +280,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/relatedperson
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RelatedPerson
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: relatedperson
-    skos:exactMatch:info:eu-repo/semantics: relatedperson
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RelatedPerson
+    skos:exactMatch:info:eu-repo/semantics: RelatedPerson
   hierarchy:
     parent: contributor
 - id: researcher
@@ -300,8 +300,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/researcher
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Researcher
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: researcher
-    skos:exactMatch:info:eu-repo/semantics: researcher
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Researcher
+    skos:exactMatch:info:eu-repo/semantics: Researcher
   hierarchy:
     parent: contributor
 - id: researchgroup
@@ -317,8 +317,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/researchgroup
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ResearchGroup
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: researchgroup
-    skos:exactMatch:info:eu-repo/semantics: researchgroup
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ResearchGroup
+    skos:exactMatch:info:eu-repo/semantics: ResearchGroup
   hierarchy:
     parent: contributor
 - id: rightsholder
@@ -331,8 +331,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/rightsholder
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RightsHolder
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: rightsholder
-    skos:exactMatch:info:eu-repo/semantics: rightsholder
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RightsHolder
+    skos:exactMatch:info:eu-repo/semantics: RightsHolder
   hierarchy:
     parent: contributor
 - id: sponsor
@@ -349,8 +349,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/sponsor
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Sponsor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: sponsor
-    skos:exactMatch:info:eu-repo/semantics: sponsor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Sponsor
+    skos:exactMatch:info:eu-repo/semantics: Sponsor
   hierarchy:
     parent: contributor
 - id: supervisor
@@ -363,8 +363,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/supervisor
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Supervisor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: supervisor
-    skos:exactMatch:info:eu-repo/semantics: supervisor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Supervisor
+    skos:exactMatch:info:eu-repo/semantics: Supervisor
   hierarchy:
     parent: contributor
 - id: translator
@@ -381,7 +381,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/translator
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Translator
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: translator
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Translator
   hierarchy:
     parent: contributor
 - id: workpackageleader
@@ -397,8 +397,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/workpackageleader
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: WorkPackageLeader
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: workpackageleader
-    skos:exactMatch:info:eu-repo/semantics: workpackageleader
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: WorkPackageLeader
+    skos:exactMatch:info:eu-repo/semantics: WorkPackageLeader
   hierarchy:
     parent: contributor
 - id: other
@@ -417,7 +417,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourceagentroletypes/other
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Other
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: other
-    skos:exactMatch:info:eu-repo/semantics: other
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Other
+    skos:exactMatch:info:eu-repo/semantics: Other
   hierarchy:
     parent: contributor

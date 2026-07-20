@@ -48,6 +48,9 @@ nosetests.xml
 coverage.xml
 *,cover
 
+# SPARQL loader cache
+.cache/
+
 # Translations
 *.mo
 

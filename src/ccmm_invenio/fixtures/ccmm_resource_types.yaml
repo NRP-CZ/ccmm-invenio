@@ -1,3 +1,18 @@
+- id: c_e9a0
+  title:
+    cs: interaktivní zdroj
+    en: interactive resource
+  description:
+    en: 'A resource requiring interaction from the user to be understood, executed,
+      or experienced. Examples include forms on Web pages, applets, multimedia learning
+      objects, chat services, or virtual reality environments.
+
+      Source: http://purl.org/dc/dcmitype/InteractiveResource'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_e9a0
+    skos:exactMatch:http://purl.org/coar/resource_type: c_e9a0
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: InteractiveResource
+    skos:exactMatch:info:eu-repo/semantics: InteractiveResource
 - id: c_18wq
   title:
     cs: jiná zpráva
@@ -12,38 +27,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18wq
     skos:exactMatch:http://purl.org/coar/resource_type: c_18wq
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-- id: c_c513
-  title:
-    cs: obraz
-    en: image
-  description:
-    en: 'A visual representation other than text, including all types of moving image
-      and still image. [Source: Adapted from  http://purl.org/dc/dcmitype/Image]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_c513
-    skos:exactMatch:http://purl.org/coar/resource_type: c_c513
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: image
-    skos:exactMatch:info:eu-repo/semantics: image
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: image
-  hierarchy:
-    parent: mediaobject
-- id: c_393c
-  title:
-    cs: pracovní postup
-    en: workflow
-  description:
-    en: 'A recorded sequence of connected steps, which may be automated, specifying
-      a reliably repeatable sequence of operations to be undertaken when conducting
-      a particular job, for example an in silico investigation that extracts and processes
-      information from a number of bioinformatics databases. [Source: Adapted from
-      https://sparontologies.github.io/fabio/current/fabio.html#d4e6123]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_393c
-    skos:exactMatch:http://purl.org/coar/resource_type: c_393c
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: workflow
-    skos:exactMatch:info:eu-repo/semantics: workflow
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: workflow
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
 - id: c_18cf
   title:
     cs: text
@@ -56,23 +40,161 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cf
     skos:exactMatch:http://purl.org/coar/resource_type: c_18cf
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
     skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: corpus,
-      languagedescription
-    skos:exactMatch:info:eu-repo/semantics: text
+      languageDescription
+    skos:exactMatch:info:eu-repo/semantics: Text
     skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication, publication-annotationcollection,
       publication-datapaper, publication-milestone, publication-standard, publication-taxonomictreatment
-- id: c_6947
+- id: c_18ww
   title:
-    cs: blog post
-    en: blog post
+    cs: interní zpráva
+    en: internal report
   description:
-    en: 'A piece of writing or other item of content published on a blog. [Source:
-      https://www.lexico.com/definition/blog_post]'
+    en: An internal report is a record of findings collected for internal use. It
+      is not designed to be made public and may include confidential or proprietary
+      information.
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_6947
-    skos:exactMatch:http://purl.org/coar/resource_type: c_6947
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18ww
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18ww
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
+- id: c_7ad9
+  title:
+    cs: webové sídlo
+    en: website
+  description:
+    en: 'A collection of related web pages containing text, images, videos and/or
+      other digital assets that are addressed relative to a common Uniform Resource
+      Locator (URL). A web site is hosted on at least one web server, accessible via
+      a network such as the Internet or a private local area network.
+
+      [Source: http://purl.org/spar/fabio/WebSite]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_7ad9
+    skos:exactMatch:http://purl.org/coar/resource_type: c_7ad9
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: InteractiveResource
+  hierarchy:
+    parent: c_e9a0
+- id: c_e059
+  title:
+    cs: learning object
+    en: learning object
+  description:
+    en: 'A digital resource that can be reused to enhance teaching and learning.
+
+      Source https://icas-ca.org/archive/projects/coerc/oer-glossary/'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_e059
+    skos:exactMatch:http://purl.org/coar/resource_type: c_e059
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: InteractiveResource
+    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: onlineCourse
+  hierarchy:
+    parent: interactiveresource
+- id: f8rt-tjk0
+  title:
+    cs: artistic work
+    en: artistic work
+  description:
+    en: 'A work of visual arts and performing arts, including musical works; dramatic
+      works; pantomimes and choreographic works; motion picture and other audiovisual
+      works; pictorial, graphic, sculptural and architectural works. Adapted from
+      Law Insider: https://www.lawinsider.com/dictionary/artistic-works'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/f8rt-tjk0
+    skos:exactMatch:http://purl.org/coar/resource_type: F8RT-TJK0
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+  hierarchy:
+    parent: creativework
+- id: c_0857
+  title:
+    cs: dopis
+    en: letter
+  description:
+    en: 'A brief description of important new research, also known as “communication”.
+      [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_0857
+    skos:exactMatch:http://purl.org/coar/resource_type: c_0857
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
+  hierarchy:
+    parent: c_18cf
+- id: c_86bc
+  title:
+    cs: bibliografie
+    en: bibliography
+  description:
+    en: 'A list of the books and articles that have been used by someone when writing
+      a particular book or article [Source: https://dictionary.cambridge.org/dictionary/english/bibliography]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_86bc
+    skos:exactMatch:http://purl.org/coar/resource_type: c_86bc
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
+    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: bibliography
+  hierarchy:
+    parent: c_18cf
+- id: c_c513
+  title:
+    cs: obraz
+    en: image
+  description:
+    en: 'A visual representation other than text, including all types of moving image
+      and still image. [Source: Adapted from  http://purl.org/dc/dcmitype/Image]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_c513
+    skos:exactMatch:http://purl.org/coar/resource_type: c_c513
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Image
+    skos:exactMatch:info:eu-repo/semantics: Image
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: image
+  hierarchy:
+    parent: mediaobject
+- id: c_0040
+  title:
+    cs: manuscript
+    en: manuscript
+  description:
+    en: 'A manuscript is a work of any kind (text, inscription, music score, map,
+      etc.) written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_0040
+    skos:exactMatch:http://purl.org/coar/resource_type: c_0040
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
+  hierarchy:
+    parent: c_18cf
+- id: c_93fc
+  title:
+    cs: zpráva
+    en: report
+  description:
+    en: 'A report is a separately published record of research findings, research
+      still in progress, policy developments and events, or other technical findings,
+      usually bearing a report number and sometimes a grant number assigned by the
+      funding agency. Also, an official record of the activities of a committee or
+      corporate entity, the proceedings of a government body, or an investigation
+      by an agency, whether published or private, usually archived or submitted to
+      a higher authority, voluntarily or under mandate. In a more general sense, any
+      formal account of facts or information related to a specific event or phenomenon,
+      sometimes given at regular intervals. [Source: http://lu.com/odlis/odlis_R.cfm#report
+      ]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_93fc
+    skos:exactMatch:http://purl.org/coar/resource_type: c_93fc
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-report
+  hierarchy:
+    parent: c_18cf
+- id: c_8042
+  title:
+    cs: pracovní dokument
+    en: working paper
+  description:
+    en: 'A working or discussion paper circulated publicly or among a group of peers.
+      Certain disciplines, for example economics, issue working papers in series.
+      [Source: http://www.ukoln.ac.uk/repositories/digirep/index/Eprints_Type_Vocabulary_Encoding_Scheme#:~:text=http%3A//purl.org/eprint/type/WorkingPaper]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_8042
+    skos:exactMatch:http://purl.org/coar/resource_type: c_8042
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Preprint
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-workingpaper
   hierarchy:
     parent: c_18cf
 - id: h6qp-sc1x
@@ -92,157 +214,22 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/h6qp-sc1x
     skos:exactMatch:http://purl.org/coar/resource_type: H6QP-SC1X
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-- id: f8rt-tjk0
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+- id: dx5j-ta9r
   title:
-    cs: artistic work
-    en: artistic work
+    cs: knowledge synthesis protocol
+    en: knowledge synthesis protocol
   description:
-    en: 'A work of visual arts and performing arts, including musical works; dramatic
-      works; pantomimes and choreographic works; motion picture and other audiovisual
-      works; pictorial, graphic, sculptural and architectural works. Adapted from
-      Law Insider: https://www.lawinsider.com/dictionary/artistic-works'
+    en: In the context of systematic reviews and meta-analyses, a protocol is a document
+      that presents an explicit plan for a systematic review. The protocol details
+      the rationale and a priori methodological and analytical approach of the review.
+      https://www.bmj.com/content/349/bmj.g7647
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/f8rt-tjk0
-    skos:exactMatch:http://purl.org/coar/resource_type: F8RT-TJK0
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/dx5j-ta9r
+    skos:exactMatch:http://purl.org/coar/resource_type: DX5J-TA9R
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: StudyRegistration
   hierarchy:
-    parent: creativework
-- id: c_5ce6
-  title:
-    cs: software
-    en: software
-  description:
-    en: 'A computer program in source code (text) or compiled form. [Source: http://purl.org/dc/dcmitype/Software]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_5ce6
-    skos:exactMatch:http://purl.org/coar/resource_type: c_5ce6
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: software
-    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: toolservice
-    skos:exactMatch:info:eu-repo/semantics: software
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: image-diagram,
-      software, software-computationalnotebook
-  hierarchy:
-    parent: software
-- id: c_18cc
-  title:
-    cs: zvuk
-    en: sound
-  description:
-    en: 'A resource primarily intended to be heard. Examples include a music playback
-      file format, an audio compact disc, and recorded speech or sounds. [Source:
-      http://dublincore.org/documents/dcmi-terms/#dcmitype-Sound]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cc
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18cc
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: sound
-    skos:exactMatch:info:eu-repo/semantics: sound
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: audio
-  hierarchy:
-    parent: mediaobject
-- id: c_18cd
-  title:
-    cs: hudební skladba
-    en: musical composition
-  description:
-    en: 'Musical composition can refer to an original piece of music, the structure
-      of a musical piece, or the process of creating a new piece of music. [Source:
-      https://en.wikipedia.org/wiki/Musical_composition ]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cd
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18cd
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: sound
-  hierarchy:
-    parent: c_18cc
-- id: c_e9a0
-  title:
-    cs: interaktivní zdroj
-    en: interactive resource
-  description:
-    en: 'A resource requiring interaction from the user to be understood, executed,
-      or experienced. Examples include forms on Web pages, applets, multimedia learning
-      objects, chat services, or virtual reality environments.
-
-      Source: http://purl.org/dc/dcmitype/InteractiveResource'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_e9a0
-    skos:exactMatch:http://purl.org/coar/resource_type: c_e9a0
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: interactiveresource
-    skos:exactMatch:info:eu-repo/semantics: interactiveresource
-- id: c_2cd9
-  title:
-    cs: magazine
-    en: magazine
-  description:
-    en: 'A popular interest periodical usually containing articles on a variety of
-      topics, written by various authors in a nonscholarly style or a trade publication,
-      unlike a consumer publication, covers a specific topic for people who work in
-      that particular field or industry. [Source: Adapted from https://www.thebalance.com/what-is-a-trade-publication-exactly-2316039
-      and http://www.abc-clio.com/ODLIS/odlis_m.aspx]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2cd9
-    skos:exactMatch:http://purl.org/coar/resource_type: c_2cd9
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journal
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: image-drawing
-  hierarchy:
-    parent: c_18cf
-- id: c_ecc8
-  title:
-    cs: nepohyblivý obraz
-    en: still image
-  description:
-    en: 'A recorded static visual representation. This class of image includes diagrams,
-      drawings, graphs, graphic designs, plans, photographs and prints. [Source: Adapted
-      from  http://purl.org/spar/fabio/StillImage]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ecc8
-    skos:exactMatch:http://purl.org/coar/resource_type: c_ecc8
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: image
-    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: obraz
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: image-figure, image-plot
-  hierarchy:
-    parent: c_c513
-- id: c_3e5a
-  title:
-    cs: příspěvek v časopisu
-    en: contribution to journal
-  description:
-    en: A contribution to a journal denotes a work published in a journal. If applicable
-      sub-terms should be chosen.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_3e5a
-    skos:exactMatch:http://purl.org/coar/resource_type: c_3e5a
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
-- id: c_c950
-  title:
-    cs: research software
-    en: research software
-  description:
-    en: 'Software that is used to generate, process or analyse results that you intend
-      to appear in a publication (either in a journal, conference paper, monograph,
-      book or thesis). Research software can be anything from a few lines of code
-      written by yourself, to a professionally developed software package. [Source:
-      https://datashare.ed.ac.uk/handle/10283/785]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_c950
-    skos:exactMatch:http://purl.org/coar/resource_type: c_c950
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: software
-  hierarchy:
-    parent: c_5ce6
-- id: c_2f33
-  title:
-    cs: kniha
-    en: book
-  description:
-    en: 'A non-serial publication that is complete in one volume or a designated finite
-      number of volumes. [Source: Adapted from http://purl.org/eprint/type/Book]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2f33
-    skos:exactMatch:http://purl.org/coar/resource_type: c_2f33
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: book
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-book
-  hierarchy:
-    parent: c_18cf
+    parent: c_93fc
 - id: c_18cw
   title:
     cs: hudební zápis
@@ -255,24 +242,282 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cw
     skos:exactMatch:http://purl.org/coar/resource_type: c_18cw
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
   hierarchy:
     parent: c_18cf
-- id: 43kc-t6dc
+- id: c_0640
   title:
-    cs: magazine article
-    en: magazine article
+    cs: odborné periodikum
+    en: journal
   description:
-    en: An Item appearing in a magazine (a general interest or specific focus periodical).
-      This item is often shorter in length, is submitted by in-house and external
-      authors. Adapted from MAGAZINE Definition & Meaning - Black's Law Dictionary
-      (thelawdictionary.org)
+    en: 'A journal is a serial publication devoted to disseminating original research
+      and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]'
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/43kc-t6dc
-    skos:exactMatch:http://purl.org/coar/resource_type: 43KC-T6DC
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_0640
+    skos:exactMatch:http://purl.org/coar/resource_type: c_0640
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Journal
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-journal
   hierarchy:
-    parent: c_2cd9
+    parent: c_18cf
+- id: c_816b
+  title:
+    cs: preprint
+    en: preprint
+  description:
+    en: 'A preprint is a scientific manuscript without peer-review and has not yet
+      been accepted by a journal, typicaly submitted to a public server/ repository
+      by the author. [Source: Adapted from https://asapbio.org/preprint-info/preprint-faq#qaef-637]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_816b
+    skos:exactMatch:http://purl.org/coar/resource_type: c_816b
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Preprint
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-preprint
+  hierarchy:
+    parent: c_18cf
+- id: c_6947
+  title:
+    cs: blog post
+    en: blog post
+  description:
+    en: 'A piece of writing or other item of content published on a blog. [Source:
+      https://www.lexico.com/definition/blog_post]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_6947
+    skos:exactMatch:http://purl.org/coar/resource_type: c_6947
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
+  hierarchy:
+    parent: c_18cf
+- id: c_ba1f
+  title:
+    cs: report part
+    en: report part
+  description:
+    en: part of a report
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ba1f
+    skos:exactMatch:http://purl.org/coar/resource_type: c_ba1f
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
+  hierarchy:
+    parent: 1.3#report
+- id: 6nc7-gk9s
+  title:
+    cs: transcription
+    en: transcription
+  description:
+    en: 'A written record of words spoken in court proceedings or in a speech, interview,
+      broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/6nc7-gk9s
+    skos:exactMatch:http://purl.org/coar/resource_type: 6NC7-GK9S
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
+  hierarchy:
+    parent: c_18cf
+- id: c_26e4
+  title:
+    cs: interview
+    en: interview
+  description:
+    en: A discussion between a reporter, host, panel, or audience and a newsmaker,
+      author, or celebrity, recorded (edited or unedited) in print, on film or video,
+      as transcript or as a sound recording. (Adapted from ODLIS)
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_26e4
+    skos:exactMatch:http://purl.org/coar/resource_type: c_26e4
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
+- id: c_15cd
+  title:
+    cs: patent
+    en: patent
+  description:
+    en: 'A set of exclusive rights granted by law to applicants for inventions that
+      are
+
+      new, non-obvious and commercially applicable. A patent is valid for a limited
+
+      period (generally 20 years), during which time patent holders can commercially
+
+      exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_15cd
+    skos:exactMatch:http://purl.org/coar/resource_type: c_15cd
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-patent
+  hierarchy:
+    parent: text
+- id: c_18op
+  title:
+    cs: výstup projektu
+    en: project deliverable
+  description:
+    en: 'A document containing a project report, intended to be delivered to a customer
+      or funding agency describing the results achieved within a specific project.
+      [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e5183]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18op
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18op
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-deliverable
+  hierarchy:
+    parent: c_93fc
+- id: c_2fe3
+  title:
+    cs: newspaper
+    en: newspaper
+  description:
+    en: 'A non-peer reviewed periodical, usually published daily or weekly, consisting
+      primarily of editorials and news items concerning current or recent events and
+      matters of public interest. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4291]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2fe3
+    skos:exactMatch:http://purl.org/coar/resource_type: c_2fe3
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Journal
+  hierarchy:
+    parent: c_18cf
+- id: c_393c
+  title:
+    cs: pracovní postup
+    en: workflow
+  description:
+    en: 'A recorded sequence of connected steps, which may be automated, specifying
+      a reliably repeatable sequence of operations to be undertaken when conducting
+      a particular job, for example an in silico investigation that extracts and processes
+      information from a number of bioinformatics databases. [Source: Adapted from
+      https://sparontologies.github.io/fabio/current/fabio.html#d4e6123]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_393c
+    skos:exactMatch:http://purl.org/coar/resource_type: c_393c
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Workflow
+    skos:exactMatch:info:eu-repo/semantics: Workflow
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: workflow
+- id: c_2659
+  title:
+    cs: periodikum
+    en: periodical
+  description:
+    en: 'A periodical is a serial publication with its own distinctive title, characterized
+      by a variety of contents and contributors, and issued at regular intervals.
+      (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2659
+    skos:exactMatch:http://purl.org/coar/resource_type: c_2659
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Journal
+  hierarchy:
+    parent: text
+- id: z907-ymbb
+  title:
+    cs: plant patent
+    en: plant patent
+  description:
+    en: 'A patent granted to anyone who has invented or discovered and asexually reproduced
+      any distinct and new variety of plant, including cultivated sports, mutants,
+      hybrids, and newly found seedlings, other than a tuber-propagated plant or a
+      plant found in an uncultivated state. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/general-information-about-35-usc-161#heading-1]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/z907-ymbb
+    skos:exactMatch:http://purl.org/coar/resource_type: Z907-YMBB
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+  hierarchy:
+    parent: c_15cd
+- id: c_1162
+  title:
+    cs: právní komentář rozsudku nebo rozhodnutí
+    en: annotation
+  description:
+    en: 'An annotation in the sense of a legal note is a legally explanatory comment
+      on a decision handed down by a court or arbitral tribunal. [Source: DRIVER info:eu-repo
+      definition]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_1162
+    skos:exactMatch:http://purl.org/coar/resource_type: c_1162
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: annotationcollection,
+      publication-annotation
+  hierarchy:
+    parent: c_18cf
+- id: 8kjg-qs0y
+  title:
+    cs: research instrument
+    en: research instrument
+  description:
+    en: A device, tool or apparatus used to obtain, measure and/or analyze data. Source
+      https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#instrument
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/8kjg-qs0y
+    skos:exactMatch:http://purl.org/coar/resource_type: 8KJG-QS0Y
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Instrument
+- id: c_8544
+  title:
+    cs: přednáška
+    en: lecture
+  description:
+    en: 'Transcription of an oral presentation/talk intended to present information
+      or teach people about a particular subject, for example by a university or college
+      teacher. [Source: Adopted from https://en.wikipedia.org/wiki/Lecture]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_8544
+    skos:exactMatch:http://purl.org/coar/resource_type: c_8544
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Presentation
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-abstract,
+      publication-lecture
+  hierarchy:
+    parent: c_18cf
+- id: c_71bd
+  title:
+    cs: technická dokumentace
+    en: technical documentation
+  description:
+    en: 'Technical documentation refers to any type of documentation that describes
+      handling, functionality and architecture of a technical product or a product
+      under development or use. [Source: https://en.wikipedia.org/wiki/Technical_documentation]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_71bd
+    skos:exactMatch:http://purl.org/coar/resource_type: c_71bd
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-softwaredocumentation
+  hierarchy:
+    parent: c_18cf
+- id: 542x-3s04
+  title:
+    cs: design
+    en: design
+  description:
+    en: 'Plans, drawing or set of drawings showing how something e.g. building, product
+      is to be made and how it will work and look. [Source: Adapted from https://dictionary.cambridge.org/dictionary/english/design]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/542x-3s04
+    skos:exactMatch:http://purl.org/coar/resource_type: 542X-3S04
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+- id: c_ddb1
+  title:
+    cs: datová sada
+    en: dataset
+  description:
+    en: 'A collection of related facts and data encoded in a defined structure. [Source:
+      Adapted from http://purl.org/spar/fabio/Dataset]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1
+    skos:exactMatch:http://purl.org/coar/resource_type: c_ddb1
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: Spreadsheet
+    skos:exactMatch:info:eu-repo/semantics: Dataset
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: dataset
+- id: 9dkx-ksaf
+  title:
+    cs: utility model
+    en: utility model
+  description:
+    en: 'A special form of patent right granted by a state or jurisdiction to an inventor
+      or the inventor’s assignee for a fixed period of time. The terms and conditions
+      for granting a utility model are slightly different from those for normal patents
+      (including a shorter term of protection and less stringent patentability requirements).
+      The term can also describe what are known in certain countries as “petty patents,”
+      “short-term patents” or “innovation patents.” [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/9dkx-ksaf
+    skos:exactMatch:http://purl.org/coar/resource_type: 9DKX-KSAF
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+  hierarchy:
+    parent: c_15cd
 - id: rmp5-3gq6
   title:
     cs: collection
@@ -284,69 +529,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/rmp5-3gq6
     skos:exactMatch:http://purl.org/coar/resource_type: RMP5-3GQ6
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: collection
-    skos:exactMatch:info:eu-repo/semantics: collection
-- id: 8kjg-qs0y
-  title:
-    cs: research instrument
-    en: research instrument
-  description:
-    en: A device, tool or apparatus used to obtain, measure and/or analyze data. Source
-      https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#instrument
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/8kjg-qs0y
-    skos:exactMatch:http://purl.org/coar/resource_type: 8KJG-QS0Y
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: instrument
-- id: c_93fc
-  title:
-    cs: zpráva
-    en: report
-  description:
-    en: 'A report is a separately published record of research findings, research
-      still in progress, policy developments and events, or other technical findings,
-      usually bearing a report number and sometimes a grant number assigned by the
-      funding agency. Also, an official record of the activities of a committee or
-      corporate entity, the proceedings of a government body, or an investigation
-      by an agency, whether published or private, usually archived or submitted to
-      a higher authority, voluntarily or under mandate. In a more general sense, any
-      formal account of facts or information related to a specific event or phenomenon,
-      sometimes given at regular intervals. [Source: http://lu.com/odlis/odlis_R.cfm#report
-      ]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_93fc
-    skos:exactMatch:http://purl.org/coar/resource_type: c_93fc
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-report
-  hierarchy:
-    parent: c_18cf
-- id: c_ab20
-  title:
-    cs: data management plan
-    en: data management plan
-  description:
-    en: 'A formal statement describing how research data will be managed and documented
-      throughout a research project and the terms regarding the subsequent deposit
-      of the data with a data repository for long-term management and preservation.
-      [Source: https://casrai.org/rdm-glossary]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ab20
-    skos:exactMatch:http://purl.org/coar/resource_type: c_ab20
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: outputmanagementplan
-  hierarchy:
-    parent: c_93fc
-- id: c_efa0
-  title:
-    cs: recenze
-    en: review
-  description:
-    en: 'A review of others'' published work. [Source: Adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e5273]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_efa0
-    skos:exactMatch:http://purl.org/coar/resource_type: c_efa0
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: peerreview
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: peerreview, publication-peerreview
-  hierarchy:
-    parent: c_18cf
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Collection
+    skos:exactMatch:info:eu-repo/semantics: Collection
 - id: 1ytn-rjze
   title:
     cs: court documents
@@ -361,40 +545,9 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/1ytn-rjze
     skos:exactMatch:http://purl.org/coar/resource_type: 1YTN-RJZE
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
   hierarchy:
     parent: rmp5-3gq6
-- id: c_1162
-  title:
-    cs: právní komentář rozsudku nebo rozhodnutí
-    en: annotation
-  description:
-    en: 'An annotation in the sense of a legal note is a legally explanatory comment
-      on a decision handed down by a court or arbitral tribunal. [Source: DRIVER info:eu-repo
-      definition]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_1162
-    skos:exactMatch:http://purl.org/coar/resource_type: c_1162
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: annotationcollection,
-      publication-annotation
-  hierarchy:
-    parent: c_18cf
-- id: c_816b
-  title:
-    cs: preprint
-    en: preprint
-  description:
-    en: 'A preprint is a scientific manuscript without peer-review and has not yet
-      been accepted by a journal, typicaly submitted to a public server/ repository
-      by the author. [Source: Adapted from https://asapbio.org/preprint-info/preprint-faq#qaef-637]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_816b
-    skos:exactMatch:http://purl.org/coar/resource_type: c_816b
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: preprint
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-preprint
-  hierarchy:
-    parent: c_18cf
 - id: c_7877
   title:
     cs: clinical study
@@ -409,41 +562,239 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_7877
     skos:exactMatch:http://purl.org/coar/resource_type: c_7877
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: studyregistration
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: StudyRegistration
   hierarchy:
     parent: c_93fc
-- id: s7r1-k5p0
+- id: c_5ce6
   title:
-    cs: physical sample
-    en: physical sample
+    cs: software
+    en: software
   description:
-    en: 'Physical samples include biological specimens, rock or mineral specimens,
-      soil or sediment cores, plants and seeds, water quality samples, archaeological
-      artefacts, or DNA and human tissue samples. Samples may be used in analyses
-      and can be destroyed in this process, whereas specimens are preserved curated
-      objects that can be continuously studied.
-
-      Source: 23 Things Physical Samples https://eprints.gla.ac.uk/309016/1/309016.pdf'
+    en: 'A computer program in source code (text) or compiled form. [Source: http://purl.org/dc/dcmitype/Software]'
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/s7r1-k5p0
-    skos:exactMatch:http://purl.org/coar/resource_type: S7R1-K5P0
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: physicalobject
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_5ce6
+    skos:exactMatch:http://purl.org/coar/resource_type: c_5ce6
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Software
+    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: toolService
+    skos:exactMatch:info:eu-repo/semantics: Software
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: image-diagram,
+      software, software-computationalnotebook
   hierarchy:
-    parent: physicalobject
-- id: c_ddb1
+    parent: software
+- id: a8f1-npv9
   title:
-    cs: datová sada
-    en: dataset
+    cs: genomic data
+    en: genomic data
   description:
-    en: 'A collection of related facts and data encoded in a defined structure. [Source:
-      Adapted from http://purl.org/spar/fabio/Dataset]'
+    en: 'Genomic data refers to the genome and DNA data of an organism. They are used
+      in bioinformatics for collecting, storing and processing the genomes of living
+      things. Genomic data is a more extensive term than sequencing data. However
+      genomic data mostly come from sequencing techniques. It may include non-sequencing
+      data such as data from microarrays, data from real-time PCR panels and data
+      from pharmacogenomics studies. [Source: Adapted from https://www.techopedia.com/definition/31247/genomic-data]'
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1
-    skos:exactMatch:http://purl.org/coar/resource_type: c_ddb1
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
-    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: spreadsheet
-    skos:exactMatch:info:eu-repo/semantics: dataset
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: dataset
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/a8f1-npv9
+    skos:exactMatch:http://purl.org/coar/resource_type: A8F1-NPV9
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+  hierarchy:
+    parent: c_ddb1
+- id: gsza-y7v7
+  title:
+    cs: knowledge organization system
+    en: knowledge organization system
+  description:
+    en: All types of schemes for organizing information and promoting knowledge management.
+      Knowledge organization systems include classification schemes that organize
+      materials at a general level (such as books on a shelf), subject headings that
+      provide more detailed access, and authority files that control variant versions
+      of key information (such as geographic names and personal names). They also
+      include less-traditional schemes, such as semantic artifacts, semantic networks
+      and ontologies. https://www.clir.org/pubs/reports/pub91/1knowledge/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/gsza-y7v7
+    skos:exactMatch:http://purl.org/coar/resource_type: GSZA-Y7V7
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Text
+    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: lexicalConceptualResource
+- id: c_46ec
+  title:
+    cs: kvalifikační práce
+    en: thesis
+  description:
+    en: 'A book authored by a student containing a formal presentations of research
+      outputs submitted for examination in completion of a course of study at an institution
+      of higher education, to fulfil the requirements for an academic degree. Also
+      known as a dissertation. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e5748]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_46ec
+    skos:exactMatch:http://purl.org/coar/resource_type: c_46ec
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dissertation
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-dissertation,
+      publication-doctorthesis, publication-thesis
+  hierarchy:
+    parent: c_18cf
+- id: acf7-8yt9
+  title:
+    cs: aggregated data
+    en: aggregated data
+  description:
+    en: 'Statistics that relate to broad classes, groups, or categories. The data
+      are averaged, totaled, or otherwise derived from individual-level data, and
+      it is no longer possible to distinguish the characteristics of individuals within
+      those classes, groups, or categories. For example, the number and age group
+      of the unemployed in specific geographic regions, or national level statistics
+      on the occurrence of specific offences, originally derived from the statistics
+      of individual police districts. [Source: https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/acf7-8yt9
+    skos:exactMatch:http://purl.org/coar/resource_type: ACF7-8YT9
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+  hierarchy:
+    parent: c_ddb1
+- id: c_2cd9
+  title:
+    cs: magazine
+    en: magazine
+  description:
+    en: 'A popular interest periodical usually containing articles on a variety of
+      topics, written by various authors in a nonscholarly style or a trade publication,
+      unlike a consumer publication, covers a specific topic for people who work in
+      that particular field or industry. [Source: Adapted from https://www.thebalance.com/what-is-a-trade-publication-exactly-2316039
+      and http://www.abc-clio.com/ODLIS/odlis_m.aspx]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2cd9
+    skos:exactMatch:http://purl.org/coar/resource_type: c_2cd9
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Journal
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: image-drawing
+  hierarchy:
+    parent: c_18cf
+- id: c_18gh
+  title:
+    cs: technická zpráva
+    en: technical report
+  description:
+    en: 'A document that describes the process, progress, or results of technical
+      or scientific research or the state of a technical or scientific research problem.
+      It might also include recommendations and conclusions of the research. [Source:
+      http://guides.library.cornell.edu/ecommons/types]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18gh
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18gh
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-technicalnote
+  hierarchy:
+    parent: c_93fc
+- id: c_12cc
+  title:
+    cs: kartografický dokument
+    en: cartographic material
+  description:
+    en: 'Any material representing the whole or part of the earth or any celestial
+      body at any scale. Cartographic materials include two- and three-dimensional
+      maps and plans (including maps of imaginary places); aeronautical, navigational,
+      and celestial charts; atlases; globes; block diagrams; sections; aerial photographs
+      with a cartographic purpose; bird''s-eye views (map views), etc. [Source: http://www.loc.gov/marc/cfmap.html]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_12cc
+    skos:exactMatch:http://purl.org/coar/resource_type: c_12cc
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Image
+  hierarchy:
+    parent: map
+- id: c_18ws
+  title:
+    cs: výzkumná zpráva
+    en: research report
+  description:
+    en: 'It is publication that reports on the findings of a research project or alternatively
+      scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18ws
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18ws
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
+  hierarchy:
+    parent: c_93fc
+- id: c_1843
+  title:
+    cs: ostatní
+    en: other
+  description:
+    en: A resource type that is not included in existing terms. [COAR definition]
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_1843
+    skos:exactMatch:http://purl.org/coar/resource_type: c_1843
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+    skos:exactMatch:info:eu-repo/semantics: Other
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: event, model, other,
+      physicalobject, publication-other
+- id: c_18hj
+  title:
+    cs: zpráva pro poskytovatele podpory
+    en: report to funding agency
+  description:
+    en: 'A report to a funding agency is a document written by beneficiaries of project
+      grants. The reporting documents can be e.g. periodic reports about progress
+      of scientific and technical work and final report. For deliverables use ‘Project
+      deliverable’. [Source: http://ec.europa.eu/research/participants/fp7documents/funding-guide/6_projects/reports/reports_en.htm
+      ]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18hj
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18hj
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
+- id: c_bdcc
+  title:
+    cs: diplomová práce
+    en: master thesis
+  description:
+    en: 'A thesis reporting a research project undertaken as part of a graduate course
+      of education leading to a master''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4057]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_bdcc
+    skos:exactMatch:http://purl.org/coar/resource_type: c_bdcc
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dissertation
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-mastersthesis
+  hierarchy:
+    parent: c_46ec
+- id: c_3e5a
+  title:
+    cs: příspěvek v časopisu
+    en: contribution to journal
+  description:
+    en: A contribution to a journal denotes a work published in a journal. If applicable
+      sub-terms should be chosen.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_3e5a
+    skos:exactMatch:http://purl.org/coar/resource_type: c_3e5a
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
+- id: c_ab20
+  title:
+    cs: data management plan
+    en: data management plan
+  description:
+    en: 'A formal statement describing how research data will be managed and documented
+      throughout a research project and the terms regarding the subsequent deposit
+      of the data with a data repository for long-term management and preservation.
+      [Source: https://casrai.org/rdm-glossary]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ab20
+    skos:exactMatch:http://purl.org/coar/resource_type: c_ab20
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: OutputManagementPlan
+  hierarchy:
+    parent: c_93fc
+- id: mw8g-3cr8
+  title:
+    cs: software patent
+    en: software patent
+  description:
+    en: 'In order to obtain a patent, a software invention must not fall under other
+      non-patentable subject matter (for example, abstract ideas or mathematical theories)
+      and has to fulfill the other substantive patentability criteria (for example,
+      novelty, inventive step [non-obviousness] and industrial applicability [usefulness]).
+      [Source: https://www.wipo.int/patents/en/faq_patents.html]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/mw8g-3cr8
+    skos:exactMatch:http://purl.org/coar/resource_type: MW8G-3CR8
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+  hierarchy:
+    parent: c_15cd
 - id: fxf3-d3g7
   title:
     cs: compiled data
@@ -461,928 +812,40 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/fxf3-d3g7
     skos:exactMatch:http://purl.org/coar/resource_type: FXF3-D3G7
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
   hierarchy:
     parent: c_ddb1
-- id: c_baaf
+- id: c_18cc
   title:
-    cs: návrh výzkumného projektu
-    en: research proposal
+    cs: zvuk
+    en: sound
   description:
-    en: 'A research proposal is a document proposing a research project, generally
-      in the sciences or academia, and generally constitutes a request for sponsorship
-      of that research. [Source: https://en.wikipedia.org/wiki/Research_proposal]'
+    en: 'A resource primarily intended to be heard. Examples include a music playback
+      file format, an audio compact disc, and recorded speech or sounds. [Source:
+      http://dublincore.org/documents/dcmi-terms/#dcmitype-Sound]'
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_baaf
-    skos:exactMatch:http://purl.org/coar/resource_type: c_baaf
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: project
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-proposal
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cc
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18cc
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Sound
+    skos:exactMatch:info:eu-repo/semantics: Sound
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: audio
   hierarchy:
-    parent: c_18cf
-- id: c_8a7e
+    parent: mediaobject
+- id: 43kc-t6dc
   title:
-    cs: pohyblivý obraz
-    en: moving image
+    cs: magazine article
+    en: magazine article
   description:
-    en: 'A moving display, either generated dynamically by a computer program or formed
-      from a series of pre-recorded still images imparting an impression of motion
-      when shown in succession. [Source: http://purl.org/spar/fabio/MovingImage]'
+    en: An Item appearing in a magazine (a general interest or specific focus periodical).
+      This item is often shorter in length, is submitted by in-house and external
+      authors. Adapted from MAGAZINE Definition & Meaning - Black's Law Dictionary
+      (thelawdictionary.org)
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_8a7e
-    skos:exactMatch:http://purl.org/coar/resource_type: c_8a7e
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: audiovisual
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/43kc-t6dc
+    skos:exactMatch:http://purl.org/coar/resource_type: 43KC-T6DC
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
   hierarchy:
-    parent: c_c513
-- id: c_7ad9
-  title:
-    cs: webové sídlo
-    en: website
-  description:
-    en: 'A collection of related web pages containing text, images, videos and/or
-      other digital assets that are addressed relative to a common Uniform Resource
-      Locator (URL). A web site is hosted on at least one web server, accessible via
-      a network such as the Internet or a private local area network.
-
-      [Source: http://purl.org/spar/fabio/WebSite]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_7ad9
-    skos:exactMatch:http://purl.org/coar/resource_type: c_7ad9
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: interactiveresource
-  hierarchy:
-    parent: c_e9a0
-- id: yc9f-hgcf
-  title:
-    cs: archival collection
-    en: archival collection
-  description:
-    en: 'A collection of historical records and primary source documents. Documents
-      may be tangible or digital. Adapted from “archive (groupings)” in Getty AAT:
-      https://www.getty.edu/vow/AATFullDisplay?find=maiolica&logic=AND&note=&subjectid=300375748'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/yc9f-hgcf
-    skos:exactMatch:http://purl.org/coar/resource_type: YC9F-HGCF
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: collection
-  hierarchy:
-    parent: rmp5-3gq6
-- id: c_18op
-  title:
-    cs: výstup projektu
-    en: project deliverable
-  description:
-    en: 'A document containing a project report, intended to be delivered to a customer
-      or funding agency describing the results achieved within a specific project.
-      [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e5183]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18op
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18op
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-deliverable
-  hierarchy:
-    parent: c_93fc
-- id: c_8042
-  title:
-    cs: pracovní dokument
-    en: working paper
-  description:
-    en: 'A working or discussion paper circulated publicly or among a group of peers.
-      Certain disciplines, for example economics, issue working papers in series.
-      [Source: http://www.ukoln.ac.uk/repositories/digirep/index/Eprints_Type_Vocabulary_Encoding_Scheme#:~:text=http%3A//purl.org/eprint/type/WorkingPaper]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_8042
-    skos:exactMatch:http://purl.org/coar/resource_type: c_8042
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: preprint
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-workingpaper
-  hierarchy:
-    parent: c_18cf
-- id: w2xt-7017
-  title:
-    cs: simulation data
-    en: simulation data
-  description:
-    en: 'Data resulting from modeling or imitative representation of real-world processes,
-      events, or systems, often using computer programs. For example, a program modeling
-      household consumption responses to indirect tax changes; or a dataset on hypothetical
-      patients and their drug exposure, background conditions, and known adverse events.
-      [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/w2xt-7017
-    skos:exactMatch:http://purl.org/coar/resource_type: W2XT-7017
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
-  hierarchy:
-    parent: c_ddb1
-- id: c_8544
-  title:
-    cs: přednáška
-    en: lecture
-  description:
-    en: 'Transcription of an oral presentation/talk intended to present information
-      or teach people about a particular subject, for example by a university or college
-      teacher. [Source: Adopted from https://en.wikipedia.org/wiki/Lecture]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_8544
-    skos:exactMatch:http://purl.org/coar/resource_type: c_8544
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: presentation
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-abstract,
-      publication-lecture
-  hierarchy:
-    parent: c_18cf
-- id: c_ba1f
-  title:
-    cs: report part
-    en: report part
-  description:
-    en: part of a report
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ba1f
-    skos:exactMatch:http://purl.org/coar/resource_type: c_ba1f
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-  hierarchy:
-    parent: report
-- id: c_12cc
-  title:
-    cs: kartografický dokument
-    en: cartographic material
-  description:
-    en: 'Any material representing the whole or part of the earth or any celestial
-      body at any scale. Cartographic materials include two- and three-dimensional
-      maps and plans (including maps of imaginary places); aeronautical, navigational,
-      and celestial charts; atlases; globes; block diagrams; sections; aerial photographs
-      with a cartographic purpose; bird''s-eye views (map views), etc. [Source: http://www.loc.gov/marc/cfmap.html]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_12cc
-    skos:exactMatch:http://purl.org/coar/resource_type: c_12cc
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: image
-  hierarchy:
-    parent: map
-- id: am6w-6qaw
-  title:
-    cs: encoded data
-    en: encoded data
-  description:
-    en: 'Qualitative data (textual, video, audio or still-image) originally produced
-      for other purposes into quantitative data (expressed in unit-by-variable matrices)
-      by using coding techniques in accordance with pre-defined categorization schemes.
-      For example, coded party manifesto data like the "European Parliament Election
-      Study 2009, Manifesto Study" (doi:10.4232/1.10204)". [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/am6w-6qaw
-    skos:exactMatch:http://purl.org/coar/resource_type: AM6W-6QAW
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
-  hierarchy:
-    parent: c_ddb1
-- id: cqmr-7k63
-  title:
-    cs: recorded data
-    en: recorded data
-  description:
-    en: 'Data registered by mechanical or electronic means, in a form that allows
-      the information to be retrieved and/or reproduced. For example, images or sounds
-      on disc or magnetic tape. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/cqmr-7k63
-    skos:exactMatch:http://purl.org/coar/resource_type: CQMR-7K63
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
-  hierarchy:
-    parent: c_ddb1
-- id: 542x-3s04
-  title:
-    cs: design
-    en: design
-  description:
-    en: 'Plans, drawing or set of drawings showing how something e.g. building, product
-      is to be made and how it will work and look. [Source: Adapted from https://dictionary.cambridge.org/dictionary/english/design]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/542x-3s04
-    skos:exactMatch:http://purl.org/coar/resource_type: 542X-3S04
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-- id: ehvm-h119
-  title:
-    cs: research data
-    en: research data
-  description:
-    en: 'Data that are used as primary sources to support technical or scientific
-      enquiry, research, scholarship, or artistic activity, and that are used as evidence
-      in the research process and/or are commonly accepted in the research community
-      as necessary to validate research findings and results. [Source: https://casrai.org/term/research-data]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/ehvm-h119
-    skos:exactMatch:http://purl.org/coar/resource_type: EHVM-H119
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
-- id: qx5c-ar31
-  title:
-    cs: other periodical
-    en: other periodical
-  description:
-    en: A resource type that is not included in existing terms under the top concept
-      "Text". [COAR definition]
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/qx5c-ar31
-    skos:exactMatch:http://purl.org/coar/resource_type: QX5C-AR31
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journal
-  hierarchy:
-    parent: c_18cf
-- id: c_18hj
-  title:
-    cs: zpráva pro poskytovatele podpory
-    en: report to funding agency
-  description:
-    en: 'A report to a funding agency is a document written by beneficiaries of project
-      grants. The reporting documents can be e.g. periodic reports about progress
-      of scientific and technical work and final report. For deliverables use ‘Project
-      deliverable’. [Source: http://ec.europa.eu/research/participants/fp7documents/funding-guide/6_projects/reports/reports_en.htm
-      ]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18hj
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18hj
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-- id: jbnf-dyad
-  title:
-    cs: industrial design
-    en: industrial design
-  description:
-    en: 'Industrial designs are applied to a wide variety of industrial products and
-      handicrafts. They refer to the ornamental or aesthetic aspects of a useful article,including
-      compositions of lines or colors or any three-dimensional forms that give a special
-      appearance to a product or handicraft. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/jbnf-dyad
-    skos:exactMatch:http://purl.org/coar/resource_type: JBNF-DYAD
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-  hierarchy:
-    parent: 542x-3s04
-- id: 63ng-b465
-  title:
-    cs: experimental data
-    en: experimental data
-  description:
-    en: 'Data resulting from the experimental research method involving the manipulation
-      of some or all of the independent variables included in the hypotheses. [Source:
-      Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/63ng-b465
-    skos:exactMatch:http://purl.org/coar/resource_type: 63NG-B465
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
-  hierarchy:
-    parent: c_ddb1
-- id: c_86bc
-  title:
-    cs: bibliografie
-    en: bibliography
-  description:
-    en: 'A list of the books and articles that have been used by someone when writing
-      a particular book or article [Source: https://dictionary.cambridge.org/dictionary/english/bibliography]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_86bc
-    skos:exactMatch:http://purl.org/coar/resource_type: c_86bc
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
-    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: bibliography
-  hierarchy:
-    parent: c_18cf
-- id: c_18gh
-  title:
-    cs: technická zpráva
-    en: technical report
-  description:
-    en: 'A document that describes the process, progress, or results of technical
-      or scientific research or the state of a technical or scientific research problem.
-      It might also include recommendations and conclusions of the research. [Source:
-      http://guides.library.cornell.edu/ecommons/types]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18gh
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18gh
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-technicalnote
-  hierarchy:
-    parent: c_93fc
-- id: c_71bd
-  title:
-    cs: technická dokumentace
-    en: technical documentation
-  description:
-    en: 'Technical documentation refers to any type of documentation that describes
-      handling, functionality and architecture of a technical product or a product
-      under development or use. [Source: https://en.wikipedia.org/wiki/Technical_documentation]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_71bd
-    skos:exactMatch:http://purl.org/coar/resource_type: c_71bd
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-softwaredocumentation
-  hierarchy:
-    parent: c_18cf
-- id: 6nc7-gk9s
-  title:
-    cs: transcription
-    en: transcription
-  description:
-    en: 'A written record of words spoken in court proceedings or in a speech, interview,
-      broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/6nc7-gk9s
-    skos:exactMatch:http://purl.org/coar/resource_type: 6NC7-GK9S
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
-  hierarchy:
-    parent: c_18cf
-- id: bw7t-ym2g
-  title:
-    cs: layout design
-    en: layout design
-  description:
-    en: "Layout-design (topography) means the three-dimensional disposition, however\
-      \ expressed, of \nthe elements of an integrated circuit (at least one of which\
-      \ is an active element) and of some or all of the interconnections of an integrated\
-      \ circuit, or such a three-dimensional disposition prepared for \nan integrated\
-      \ circuit intended for manufacture [Source: https://www.wipo.int/edocs/lexdocs/laws/en/hk/hk028en.pdf]"
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/bw7t-ym2g
-    skos:exactMatch:http://purl.org/coar/resource_type: BW7T-YM2G
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-  hierarchy:
-    parent: 542x-3s04
-- id: c_0040
-  title:
-    cs: manuscript
-    en: manuscript
-  description:
-    en: 'A manuscript is a work of any kind (text, inscription, music score, map,
-      etc.) written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_0040
-    skos:exactMatch:http://purl.org/coar/resource_type: c_0040
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
-  hierarchy:
-    parent: c_18cf
-- id: c_1843
-  title:
-    cs: ostatní
-    en: other
-  description:
-    en: A resource type that is not included in existing terms. [COAR definition]
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_1843
-    skos:exactMatch:http://purl.org/coar/resource_type: c_1843
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-    skos:exactMatch:info:eu-repo/semantics: other
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: event, model, other,
-      physicalobject, publication-other
-- id: c_c94f
-  title:
-    cs: conference output
-    en: conference output
-  description:
-    en: All kind of digital resources contributed to a conference, like conference
-      presentation (slides), conference report, conference lecture, abstracts, demonstrations.
-      For conference papers, posters or proceedings the specific sub-concepts should
-      be used. [COAR definition]
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_c94f
-    skos:exactMatch:http://purl.org/coar/resource_type: c_c94f
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: conferenceproceeding
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: presentation
-  hierarchy:
-    parent: c_18cf
-- id: gsza-y7v7
-  title:
-    cs: knowledge organization system
-    en: knowledge organization system
-  description:
-    en: All types of schemes for organizing information and promoting knowledge management.
-      Knowledge organization systems include classification schemes that organize
-      materials at a general level (such as books on a shelf), subject headings that
-      provide more detailed access, and authority files that control variant versions
-      of key information (such as geographic names and personal names). They also
-      include less-traditional schemes, such as semantic artifacts, semantic networks
-      and ontologies. https://www.clir.org/pubs/reports/pub91/1knowledge/
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/gsza-y7v7
-    skos:exactMatch:http://purl.org/coar/resource_type: GSZA-Y7V7
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
-    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: lexicalconceptualresource
-- id: c_15cd
-  title:
-    cs: patent
-    en: patent
-  description:
-    en: A patent or patent application.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_15cd
-    skos:exactMatch:http://purl.org/coar/resource_type: c_15cd
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-patent
-  hierarchy:
-    parent: text
-- id: c_18cp
-  title:
-    cs: konferenční příspěvek nezahrnutý ve sborníku
-    en: conference paper not in proceedings
-  description:
-    en: 'A paper, typically the realization of a research paper reporting original
-      research findings. Use this label when the paper is not published in a proceeding.
-      [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cp
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18cp
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: conferencepaper
-  hierarchy:
-    parent: c_c94f
-- id: c_46ec
-  title:
-    cs: kvalifikační práce
-    en: thesis
-  description:
-    en: 'A book authored by a student containing a formal presentations of research
-      outputs submitted for examination in completion of a course of study at an institution
-      of higher education, to fulfil the requirements for an academic degree. Also
-      known as a dissertation. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e5748]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_46ec
-    skos:exactMatch:http://purl.org/coar/resource_type: c_46ec
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dissertation
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-dissertation,
-      publication-doctorthesis, publication-thesis
-  hierarchy:
-    parent: c_18cf
-- id: c_0857
-  title:
-    cs: dopis
-    en: letter
-  description:
-    en: 'A brief description of important new research, also known as “communication”.
-      [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_0857
-    skos:exactMatch:http://purl.org/coar/resource_type: c_0857
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
-  hierarchy:
-    parent: c_18cf
-- id: c_18ww
-  title:
-    cs: interní zpráva
-    en: internal report
-  description:
-    en: An internal report is a record of findings collected for internal use. It
-      is not designed to be made public and may include confidential or proprietary
-      information.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18ww
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18ww
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-- id: c_2659
-  title:
-    cs: periodikum
-    en: periodical
-  description:
-    en: 'A periodical is a serial publication with its own distinctive title, characterized
-      by a variety of contents and contributors, and issued at regular intervals.
-      (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2659
-    skos:exactMatch:http://purl.org/coar/resource_type: c_2659
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journal
-  hierarchy:
-    parent: text
-- id: c_18wz
-  title:
-    cs: memorandum
-    en: memorandum
-  description:
-    en: 'A formal note distributed internally to one or more persons in a company,
-      agency, organization, or institution, with a header indicating the date it was
-      sent and stating to whom it is addressed (To:), from whom it is sent (From:),
-      and the subject of the text (Re:). Unlike a letter, a memo does not require
-      a full salutation or signature at the end of the text--the sender may simply
-      initial his or her name in the header. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx#memorandum]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18wz
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18wz
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-  hierarchy:
-    parent: c_93fc
-- id: qh80-2r4e
-  title:
-    cs: source code
-    en: source code
-  description:
-    en: 'Source code is any collection of code, with or without comments, written
-      using a human-readable programming language, usually as plain text. [Source:
-      https://en.wikipedia.org/wiki/Source_code]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/qh80-2r4e
-    skos:exactMatch:http://purl.org/coar/resource_type: QH80-2R4E
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: software
-  hierarchy:
-    parent: c_5ce6
-- id: c_e059
-  title:
-    cs: learning object
-    en: learning object
-  description:
-    en: 'A digital resource that can be reused to enhance teaching and learning.
-
-      Source https://icas-ca.org/archive/projects/coerc/oer-glossary/'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_e059
-    skos:exactMatch:http://purl.org/coar/resource_type: c_e059
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: interactiveresource
-    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: onlinecourse
-  hierarchy:
-    parent: interactiveresource
-- id: c_26e4
-  title:
-    cs: interview
-    en: interview
-  description:
-    en: A discussion between a reporter, host, panel, or audience and a newsmaker,
-      author, or celebrity, recorded (edited or unedited) in print, on film or video,
-      as transcript or as a sound recording. (Adapted from ODLIS)
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_26e4
-    skos:exactMatch:http://purl.org/coar/resource_type: c_26e4
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: text
-- id: c53b-jcy5
-  title:
-    cs: design patent
-    en: design patent
-  description:
-    en: 'A patent granted to any person who has invented any new and non-obvious ornamental
-      design for an article of manufacture. The design patent protects only the appearance
-      of an article, but not its structural or functional features. [Source: Adapted
-      from https://www.uspto.gov/patents/basics/types-patent-applications/design-patent-application-guide#def]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c53b-jcy5
-    skos:exactMatch:http://purl.org/coar/resource_type: C53B-JCY5
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-  hierarchy:
-    parent: c_15cd
-- id: c_0640
-  title:
-    cs: odborné periodikum
-    en: journal
-  description:
-    en: 'A journal is a serial publication devoted to disseminating original research
-      and current developments on a subject. (Adapted from ODLIS) [Source: http://dspacecris.eurocris.org/cris/classcerif/classcerif00422]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_0640
-    skos:exactMatch:http://purl.org/coar/resource_type: c_0640
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journal
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-journal
-  hierarchy:
-    parent: c_18cf
-- id: c_2fe3
-  title:
-    cs: newspaper
-    en: newspaper
-  description:
-    en: 'A non-peer reviewed periodical, usually published daily or weekly, consisting
-      primarily of editorials and news items concerning current or recent events and
-      matters of public interest. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4291]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2fe3
-    skos:exactMatch:http://purl.org/coar/resource_type: c_2fe3
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journal
-  hierarchy:
-    parent: c_18cf
-- id: c_18co
-  title:
-    cs: konferenční poster nezahrnutý ve sborníku
-    en: conference poster not in proceedings
-  description:
-    en: 'A display poster, typically containing text with illustrative figures and/or
-      tables, usually reporting research results or proposing hypotheses, submitted
-      for acceptance to and/or presented at a conference, seminar, symposium, workshop
-      or similar event. Use this label when the poster is not published in a proceeding.
-      [Source: http://purl.org/spar/fabio/ConferencePoster]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18co
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18co
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: poster
-  hierarchy:
-    parent: c_c94f
-- id: c_3248
-  title:
-    cs: část knihy
-    en: book part
-  description:
-    en: 'A defined chapter or section of a book, usually with a separate title or
-      number. [Source: http://purl.org/spar/fabio/BookChapter]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_3248
-    skos:exactMatch:http://purl.org/coar/resource_type: c_3248
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: bookchapter
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-section
-  hierarchy:
-    parent: c_2f33
-- id: yz1n-zft9
-  title:
-    cs: research protocol
-    en: research protocol
-  description:
-    en: 'The protocol is a detailed plan of the research study including a project
-      summary, project description covering the rationale, objectives, methodology,
-      data management and analysis, ethical considerations, gender issues and references.
-      [Source: Adapted from https://www.who.int/publications/i/item/a-practical-guide-for-health-researchers]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/yz1n-zft9
-    skos:exactMatch:http://purl.org/coar/resource_type: YZ1N-ZFT9
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: studyregistration
-  hierarchy:
-    parent: c_93fc
-- id: c_b239
-  title:
-    cs: úvodník
-    en: editorial
-  description:
-    en: 'A brief essay expressing the opinion or position of the chief editor(s) of
-      a (academic) journal with respect to a current political, social, cultural,
-      or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx
-      ]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_b239
-    skos:exactMatch:http://purl.org/coar/resource_type: c_b239
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
-  hierarchy:
-    parent: c_0640
-- id: dx5j-ta9r
-  title:
-    cs: knowledge synthesis protocol
-    en: knowledge synthesis protocol
-  description:
-    en: In the context of systematic reviews and meta-analyses, a protocol is a document
-      that presents an explicit plan for a systematic review. The protocol details
-      the rationale and a priori methodological and analytical approach of the review.
-      https://www.bmj.com/content/349/bmj.g7647
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/dx5j-ta9r
-    skos:exactMatch:http://purl.org/coar/resource_type: DX5J-TA9R
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: studyregistration
-  hierarchy:
-    parent: c_93fc
-- id: d97f-vb57
-  title:
-    cs: commentary
-    en: commentary
-  description:
-    en: 'A commentary is a more in-depth analysis written to draw attention to a work
-      already published. Commentaries are somewhat like “reviews” in that the author
-      presents his or her analysis of a work and why it  would be of interest to a
-      specific audience. [Source: https://www.enago.com/academy/perspective-opinion-and-commentary-pieces]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/d97f-vb57
-    skos:exactMatch:http://purl.org/coar/resource_type: D97F-VB57
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
-  hierarchy:
-    parent: c_efa0
-- id: h41y-fw7b
-  title:
-    cs: laboratory notebook
-    en: laboratory notebook
-  description:
-    en: 'A laboratory notebook (colloq. lab notebook or lab book) is a primary record
-      of research. Researchers use a lab notebook to document their hypotheses, experiments
-      and initial analysis or interpretation of these experiments. This label is used
-      both for traditional and electronic laboratory notebook. [Source: Adapted from
-      https://en.wikipedia.org/wiki/Lab_notebook]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/h41y-fw7b
-    skos:exactMatch:http://purl.org/coar/resource_type: H41Y-FW7B
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: computationalnotebook
-  hierarchy:
-    parent: c_ddb1
-- id: h9bq-739p
-  title:
-    cs: peer review
-    en: peer review
-  description:
-    en: 'An evaluation of scientific, academic, or professional work by others working
-      in the same field. [Source: Adopted from https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/h9bq-739p
-    skos:exactMatch:http://purl.org/coar/resource_type: H9BQ-739P
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: peerreview
-  hierarchy:
-    parent: c_efa0
-- id: sb3y-w4eh
-  title:
-    cs: PCT application
-    en: PCT application
-  description:
-    en: 'A patent application filed through the WIPO-administered Patent Cooperation
-      Treaty (PCT), also known as an international application. [Source: Adapted from
-      https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/sb3y-w4eh
-    skos:exactMatch:http://purl.org/coar/resource_type: SB3Y-W4EH
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-  hierarchy:
-    parent: c_15cd
-- id: c_12ce
-  title:
-    cs: video
-    en: video
-  description:
-    en: Media that makes use of images (usually "moving"), with or without sound,
-      over a period of playback time. [Source :https://support.contributors.jstor.org/hc/en-us/articles/11971132444439-JSTOR-Content-and-Resource-Types]
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_12ce
-    skos:exactMatch:http://purl.org/coar/resource_type: c_12ce
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: audiovisual
-    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: clip
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: video
-  hierarchy:
-    parent: c_8a7e
-- id: c_6501
-  title:
-    cs: článek v odborném časopisu
-    en: journal article
-  description:
-    en: 'An article, typically the realization of a research paper reporting original
-      research findings, published in a journal issue. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_6501
-    skos:exactMatch:http://purl.org/coar/resource_type: c_6501
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-article
-  hierarchy:
-    parent: c_0640
-- id: c_dcae04bc
-  title:
-    cs: přehledový článek
-    en: review article
-  description:
-    en: 'A review article is a secondary source, that is, it is written about other
-      articles, and does not report original research of its own. [Source: Adapted
-      from http://apus.libanswers.com/faq/2324]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_dcae04bc
-    skos:exactMatch:http://purl.org/coar/resource_type: c_dcae04bc
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
-  hierarchy:
-    parent: c_6501
-- id: c_12cd
-  title:
-    cs: mapa
-    en: map
-  description:
-    en: 'Defined as a representation normally to scale and on a flat medium, of a
-      selection of material or abstract features on, or in relation to, the surface
-      of the earth or of another celestial body. [Source: https://www.loc.gov/marc/bibliographic/bd007a.html]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_12cd
-    skos:exactMatch:http://purl.org/coar/resource_type: c_12cd
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: image
-  hierarchy:
-    parent: c_12cc
-- id: r60j-j5bd
-  title:
-    cs: conference presentation
-    en: conference presentation
-  description:
-    en: 'A set of slides containing text, tables or figures, designed to communicate
-      ideas or research results, for projection and viewing by an audience at a conference,
-      symposium, seminar, lecture, workshop or other gatherings. [Source: Adapted
-      from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e4880]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/r60j-j5bd
-    skos:exactMatch:http://purl.org/coar/resource_type: R60J-J5BD
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: presentation
-  hierarchy:
-    parent: c_c94f
-- id: nhd0-w6sy
-  title:
-    cs: survey data
-    en: survey data
-  description:
-    en: 'Data resulting from a survey, which is defined as an investigation about
-      the characteristics of a given population by means of collecting data from a
-      sample of that population and estimating their characteristics through the systematic
-      use of statistical methodology. Included are censuses, sample surveys, the collection
-      of data from administrative records and derived statistical activities as well
-      as questionnaires. [Source: Adapted from https://stats.oecd.org/glossary/detail.asp?ID=2620]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/nhd0-w6sy
-    skos:exactMatch:http://purl.org/coar/resource_type: NHD0-W6SY
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
-  hierarchy:
-    parent: c_ddb1
-- id: c_545b
-  title:
-    cs: dopis redakci
-    en: letter to the editor
-  description:
-    en: 'A letter addressed to the editor and comments on or discussed an item previously
-      published by that periodical, or of interest to its readership. [Source: Adapted
-      from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e3803]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_545b
-    skos:exactMatch:http://purl.org/coar/resource_type: c_545b
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
-  hierarchy:
-    parent: c_0640
-- id: c_f744
-  title:
-    cs: sborník konference
-    en: conference proceedings
-  description:
-    en: 'Conference proceedings is the official record of a conference meeting. It
-      is a collection of documents which corresponds to the presentations given at
-      the conference. It may include additional content. [Source: http://www.ieee.org/documents/confprocdefined.pdf
-      ]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_f744
-    skos:exactMatch:http://purl.org/coar/resource_type: c_f744
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: conferenceproceeding
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-conferenceproceeding
-  hierarchy:
-    parent: c_c94f
-- id: c_18ws
-  title:
-    cs: výzkumná zpráva
-    en: research report
-  description:
-    en: 'It is publication that reports on the findings of a research project or alternatively
-      scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18ws
-    skos:exactMatch:http://purl.org/coar/resource_type: c_18ws
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-  hierarchy:
-    parent: c_93fc
-- id: c_998f
-  title:
-    cs: newspaper article
-    en: newspaper article
-  description:
-    en: Work consisting of a news item appearing in a general-interest newspaper or
-      other general news periodical, containing information of current and timely
-      interest in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html
-      )
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_998f
-    skos:exactMatch:http://purl.org/coar/resource_type: c_998f
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
-  hierarchy:
-    parent: c_2fe3
-- id: c_186u
-  title:
-    cs: zpráva k politice nebo strategii
-    en: policy report
-  description:
-    en: 'A policy report presents what is known about a particular issue or problem.
-      It assembles facts and evidence to help readers understand complex issues and
-      form a response. It might aim to be neutral, or it might aim to persuade readers
-      in a particular direction. [Source: https://www.uow.edu.au/student/learning-co-op/assessments/policy-report/#]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_186u
-    skos:exactMatch:http://purl.org/coar/resource_type: c_186u
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: report
-  hierarchy:
-    parent: c_93fc
-- id: a8f1-npv9
-  title:
-    cs: genomic data
-    en: genomic data
-  description:
-    en: 'Genomic data refers to the genome and DNA data of an organism. They are used
-      in bioinformatics for collecting, storing and processing the genomes of living
-      things. Genomic data is a more extensive term than sequencing data. However
-      genomic data mostly come from sequencing techniques. It may include non-sequencing
-      data such as data from microarrays, data from real-time PCR panels and data
-      from pharmacogenomics studies. [Source: Adapted from https://www.techopedia.com/definition/31247/genomic-data]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/a8f1-npv9
-    skos:exactMatch:http://purl.org/coar/resource_type: A8F1-NPV9
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
-  hierarchy:
-    parent: c_ddb1
-- id: dd58-gfsx
-  title:
-    cs: measurement and test data
-    en: measurement and test data
-  description:
-    en: 'Data resulting from assessing specific properties (or characteristics) of
-      beings, things, phenomena, (and/ or processes) by applying pre-established standards
-      and/or specialized instruments or techniques. [Source: Adapted from  https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/dd58-gfsx
-    skos:exactMatch:http://purl.org/coar/resource_type: DD58-GFSX
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
-  hierarchy:
-    parent: c_ddb1
-- id: mw8g-3cr8
-  title:
-    cs: software patent
-    en: software patent
-  description:
-    en: 'In order to obtain a patent, a software invention must not fall under other
-      non-patentable subject matter (for example, abstract ideas or mathematical theories)
-      and has to fulfill the other substantive patentability criteria (for example,
-      novelty, inventive step [non-obviousness] and industrial applicability [usefulness]).
-      [Source: https://www.wipo.int/patents/en/faq_patents.html]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/mw8g-3cr8
-    skos:exactMatch:http://purl.org/coar/resource_type: MW8G-3CR8
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-  hierarchy:
-    parent: c_15cd
+    parent: c_2cd9
 - id: gpq7-g5ve
   title:
     cs: plant variety protection
@@ -1398,55 +861,158 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/gpq7-g5ve
     skos:exactMatch:http://purl.org/coar/resource_type: GPQ7-G5VE
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
   hierarchy:
     parent: c_15cd
-- id: c_ba08
+- id: ehvm-h119
   title:
-    cs: recenze knihy
-    en: book review
+    cs: research data
+    en: research data
   description:
-    en: 'A written review and critical analysis of the content, scope and quality
-      of a book or other monographic work. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300]'
+    en: 'Data that are used as primary sources to support technical or scientific
+      enquiry, research, scholarship, or artistic activity, and that are used as evidence
+      in the research process and/or are commonly accepted in the research community
+      as necessary to validate research findings and results. [Source: https://casrai.org/term/research-data]'
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ba08
-    skos:exactMatch:http://purl.org/coar/resource_type: c_ba08
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/ehvm-h119
+    skos:exactMatch:http://purl.org/coar/resource_type: EHVM-H119
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+- id: c_545b
+  title:
+    cs: dopis redakci
+    en: letter to the editor
+  description:
+    en: 'A letter addressed to the editor and comments on or discussed an item previously
+      published by that periodical, or of interest to its readership. [Source: Adapted
+      from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e3803]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_545b
+    skos:exactMatch:http://purl.org/coar/resource_type: c_545b
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
   hierarchy:
-    parent: c_efa0
-- id: acf7-8yt9
+    parent: c_0640
+- id: c_c94f
   title:
-    cs: aggregated data
-    en: aggregated data
+    cs: conference output
+    en: conference output
   description:
-    en: 'Statistics that relate to broad classes, groups, or categories. The data
-      are averaged, totaled, or otherwise derived from individual-level data, and
-      it is no longer possible to distinguish the characteristics of individuals within
-      those classes, groups, or categories. For example, the number and age group
-      of the unemployed in specific geographic regions, or national level statistics
-      on the occurrence of specific offences, originally derived from the statistics
-      of individual police districts. [Source: https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+    en: All kind of digital resources contributed to a conference, like conference
+      presentation (slides), conference report, conference lecture, abstracts, demonstrations.
+      For conference papers, posters or proceedings the specific sub-concepts should
+      be used. [COAR definition]
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/acf7-8yt9
-    skos:exactMatch:http://purl.org/coar/resource_type: ACF7-8YT9
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_c94f
+    skos:exactMatch:http://purl.org/coar/resource_type: c_c94f
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: ConferenceProceeding
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: presentation
+  hierarchy:
+    parent: c_18cf
+- id: s7r1-k5p0
+  title:
+    cs: physical sample
+    en: physical sample
+  description:
+    en: 'Physical samples include biological specimens, rock or mineral specimens,
+      soil or sediment cores, plants and seeds, water quality samples, archaeological
+      artefacts, or DNA and human tissue samples. Samples may be used in analyses
+      and can be destroyed in this process, whereas specimens are preserved curated
+      objects that can be continuously studied.
+
+      Source: 23 Things Physical Samples https://eprints.gla.ac.uk/309016/1/309016.pdf'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/s7r1-k5p0
+    skos:exactMatch:http://purl.org/coar/resource_type: S7R1-K5P0
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: PhysicalObject
+  hierarchy:
+    parent: physicalobject
+- id: qx5c-ar31
+  title:
+    cs: other periodical
+    en: other periodical
+  description:
+    en: A resource type that is not included in existing terms under the top concept
+      "Text". [COAR definition]
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/qx5c-ar31
+    skos:exactMatch:http://purl.org/coar/resource_type: QX5C-AR31
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Journal
+  hierarchy:
+    parent: c_18cf
+- id: c_efa0
+  title:
+    cs: recenze
+    en: review
+  description:
+    en: 'A review of others'' published work. [Source: Adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e5273]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_efa0
+    skos:exactMatch:http://purl.org/coar/resource_type: c_efa0
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: PeerReview
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: peerreview, publication-peerreview
+  hierarchy:
+    parent: c_18cf
+- id: c_ecc8
+  title:
+    cs: nepohyblivý obraz
+    en: still image
+  description:
+    en: 'A recorded static visual representation. This class of image includes diagrams,
+      drawings, graphs, graphic designs, plans, photographs and prints. [Source: Adapted
+      from  http://purl.org/spar/fabio/StillImage]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ecc8
+    skos:exactMatch:http://purl.org/coar/resource_type: c_ecc8
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Image
+    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: OBRAZ
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: image-figure, image-plot
+  hierarchy:
+    parent: c_c513
+- id: am6w-6qaw
+  title:
+    cs: encoded data
+    en: encoded data
+  description:
+    en: 'Qualitative data (textual, video, audio or still-image) originally produced
+      for other purposes into quantitative data (expressed in unit-by-variable matrices)
+      by using coding techniques in accordance with pre-defined categorization schemes.
+      For example, coded party manifesto data like the "European Parliament Election
+      Study 2009, Manifesto Study" (doi:10.4232/1.10204)". [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/am6w-6qaw
+    skos:exactMatch:http://purl.org/coar/resource_type: AM6W-6QAW
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
   hierarchy:
     parent: c_ddb1
-- id: c_cb28
+- id: c_baaf
   title:
-    cs: clinical trial data
-    en: clinical trial data
+    cs: návrh výzkumného projektu
+    en: research proposal
   description:
-    en: 'Data resulting from a research study in which one or more human subjects
-      are prospectively assigned to one or more interventions (which may include placebo
-      or other control) to evaluate the effects of those interventions on health-related
-      biomedical or behavioral outcomes. [Source: Adapted from https://grants.nih.gov/policy/clinical-trials/definition.htm]'
+    en: 'A research proposal is a document proposing a research project, generally
+      in the sciences or academia, and generally constitutes a request for sponsorship
+      of that research. [Source: https://en.wikipedia.org/wiki/Research_proposal]'
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_cb28
-    skos:exactMatch:http://purl.org/coar/resource_type: c_cb28
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_baaf
+    skos:exactMatch:http://purl.org/coar/resource_type: c_baaf
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Project
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-proposal
   hierarchy:
-    parent: c_ddb1
+    parent: c_18cf
+- id: c_b239
+  title:
+    cs: úvodník
+    en: editorial
+  description:
+    en: 'A brief essay expressing the opinion or position of the chief editor(s) of
+      a (academic) journal with respect to a current political, social, cultural,
+      or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx
+      ]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_b239
+    skos:exactMatch:http://purl.org/coar/resource_type: c_b239
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
+  hierarchy:
+    parent: c_0640
 - id: ff4c-28rk
   title:
     cs: observational data
@@ -1459,7 +1025,334 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/ff4c-28rk
     skos:exactMatch:http://purl.org/coar/resource_type: FF4C-28RK
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+  hierarchy:
+    parent: c_ddb1
+- id: h41y-fw7b
+  title:
+    cs: laboratory notebook
+    en: laboratory notebook
+  description:
+    en: 'A laboratory notebook (colloq. lab notebook or lab book) is a primary record
+      of research. Researchers use a lab notebook to document their hypotheses, experiments
+      and initial analysis or interpretation of these experiments. This label is used
+      both for traditional and electronic laboratory notebook. [Source: Adapted from
+      https://en.wikipedia.org/wiki/Lab_notebook]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/h41y-fw7b
+    skos:exactMatch:http://purl.org/coar/resource_type: H41Y-FW7B
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: ComputationalNotebook
+  hierarchy:
+    parent: c_ddb1
+- id: yz1n-zft9
+  title:
+    cs: research protocol
+    en: research protocol
+  description:
+    en: 'The protocol is a detailed plan of the research study including a project
+      summary, project description covering the rationale, objectives, methodology,
+      data management and analysis, ethical considerations, gender issues and references.
+      [Source: Adapted from https://www.who.int/publications/i/item/a-practical-guide-for-health-researchers]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/yz1n-zft9
+    skos:exactMatch:http://purl.org/coar/resource_type: YZ1N-ZFT9
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: StudyRegistration
+  hierarchy:
+    parent: c_93fc
+- id: c_8a7e
+  title:
+    cs: pohyblivý obraz
+    en: moving image
+  description:
+    en: 'A moving display, either generated dynamically by a computer program or formed
+      from a series of pre-recorded still images imparting an impression of motion
+      when shown in succession. [Source: http://purl.org/spar/fabio/MovingImage]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_8a7e
+    skos:exactMatch:http://purl.org/coar/resource_type: c_8a7e
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Audiovisual
+  hierarchy:
+    parent: c_c513
+- id: c_2f33
+  title:
+    cs: kniha
+    en: book
+  description:
+    en: 'A non-serial publication that is complete in one volume or a designated finite
+      number of volumes. [Source: Adapted from http://purl.org/eprint/type/Book]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2f33
+    skos:exactMatch:http://purl.org/coar/resource_type: c_2f33
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Book
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-book
+  hierarchy:
+    parent: c_18cf
+- id: c_12ce
+  title:
+    cs: video
+    en: video
+  description:
+    en: Media that makes use of images (usually "moving"), with or without sound,
+      over a period of playback time. [Source :https://support.contributors.jstor.org/hc/en-us/articles/11971132444439-JSTOR-Content-and-Resource-Types]
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_12ce
+    skos:exactMatch:http://purl.org/coar/resource_type: c_12ce
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Audiovisual
+    skos:exactMatch:https://lindat.mff.cuni.cz/vocabularies/resource_type: clip
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: video
+  hierarchy:
+    parent: c_8a7e
+- id: 63ng-b465
+  title:
+    cs: experimental data
+    en: experimental data
+  description:
+    en: 'Data resulting from the experimental research method involving the manipulation
+      of some or all of the independent variables included in the hypotheses. [Source:
+      Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/63ng-b465
+    skos:exactMatch:http://purl.org/coar/resource_type: 63NG-B465
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+  hierarchy:
+    parent: c_ddb1
+- id: c_18wz
+  title:
+    cs: memorandum
+    en: memorandum
+  description:
+    en: 'A formal note distributed internally to one or more persons in a company,
+      agency, organization, or institution, with a header indicating the date it was
+      sent and stating to whom it is addressed (To:), from whom it is sent (From:),
+      and the subject of the text (Re:). Unlike a letter, a memo does not require
+      a full salutation or signature at the end of the text--the sender may simply
+      initial his or her name in the header. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx#memorandum]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18wz
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18wz
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
+  hierarchy:
+    parent: c_93fc
+- id: sb3y-w4eh
+  title:
+    cs: PCT application
+    en: PCT application
+  description:
+    en: 'A patent application filed through the WIPO-administered Patent Cooperation
+      Treaty (PCT), also known as an international application. [Source: Adapted from
+      https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/sb3y-w4eh
+    skos:exactMatch:http://purl.org/coar/resource_type: SB3Y-W4EH
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+  hierarchy:
+    parent: c_15cd
+- id: c53b-jcy5
+  title:
+    cs: design patent
+    en: design patent
+  description:
+    en: 'A patent granted to any person who has invented any new and non-obvious ornamental
+      design for an article of manufacture. The design patent protects only the appearance
+      of an article, but not its structural or functional features. [Source: Adapted
+      from https://www.uspto.gov/patents/basics/types-patent-applications/design-patent-application-guide#def]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c53b-jcy5
+    skos:exactMatch:http://purl.org/coar/resource_type: C53B-JCY5
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+  hierarchy:
+    parent: c_15cd
+- id: c_998f
+  title:
+    cs: newspaper article
+    en: newspaper article
+  description:
+    en: Work consisting of a news item appearing in a general-interest newspaper or
+      other general news periodical, containing information of current and timely
+      interest in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html
+      )
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_998f
+    skos:exactMatch:http://purl.org/coar/resource_type: c_998f
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
+  hierarchy:
+    parent: c_2fe3
+- id: yc9f-hgcf
+  title:
+    cs: archival collection
+    en: archival collection
+  description:
+    en: 'A collection of historical records and primary source documents. Documents
+      may be tangible or digital. Adapted from “archive (groupings)” in Getty AAT:
+      https://www.getty.edu/vow/AATFullDisplay?find=maiolica&logic=AND&note=&subjectid=300375748'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/yc9f-hgcf
+    skos:exactMatch:http://purl.org/coar/resource_type: YC9F-HGCF
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Collection
+  hierarchy:
+    parent: rmp5-3gq6
+- id: c_c950
+  title:
+    cs: research software
+    en: research software
+  description:
+    en: 'Software that is used to generate, process or analyse results that you intend
+      to appear in a publication (either in a journal, conference paper, monograph,
+      book or thesis). Research software can be anything from a few lines of code
+      written by yourself, to a professionally developed software package. [Source:
+      https://datashare.ed.ac.uk/handle/10283/785]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_c950
+    skos:exactMatch:http://purl.org/coar/resource_type: c_c950
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Software
+  hierarchy:
+    parent: c_5ce6
+- id: c_186u
+  title:
+    cs: zpráva k politice nebo strategii
+    en: policy report
+  description:
+    en: 'A policy report presents what is known about a particular issue or problem.
+      It assembles facts and evidence to help readers understand complex issues and
+      form a response. It might aim to be neutral, or it might aim to persuade readers
+      in a particular direction. [Source: https://www.uow.edu.au/student/learning-co-op/assessments/policy-report/#]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_186u
+    skos:exactMatch:http://purl.org/coar/resource_type: c_186u
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Report
+  hierarchy:
+    parent: c_93fc
+- id: c_f744
+  title:
+    cs: sborník konference
+    en: conference proceedings
+  description:
+    en: 'Conference proceedings is the official record of a conference meeting. It
+      is a collection of documents which corresponds to the presentations given at
+      the conference. It may include additional content. [Source: http://www.ieee.org/documents/confprocdefined.pdf
+      ]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_f744
+    skos:exactMatch:http://purl.org/coar/resource_type: c_f744
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: ConferenceProceeding
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-conferenceproceeding
+  hierarchy:
+    parent: c_c94f
+- id: qh80-2r4e
+  title:
+    cs: source code
+    en: source code
+  description:
+    en: 'Source code is any collection of code, with or without comments, written
+      using a human-readable programming language, usually as plain text. [Source:
+      https://en.wikipedia.org/wiki/Source_code]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/qh80-2r4e
+    skos:exactMatch:http://purl.org/coar/resource_type: QH80-2R4E
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Software
+  hierarchy:
+    parent: c_5ce6
+- id: c_cb28
+  title:
+    cs: clinical trial data
+    en: clinical trial data
+  description:
+    en: 'Data resulting from a research study in which one or more human subjects
+      are prospectively assigned to one or more interventions (which may include placebo
+      or other control) to evaluate the effects of those interventions on health-related
+      biomedical or behavioral outcomes. [Source: Adapted from https://grants.nih.gov/policy/clinical-trials/definition.htm]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_cb28
+    skos:exactMatch:http://purl.org/coar/resource_type: c_cb28
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+  hierarchy:
+    parent: c_ddb1
+- id: c_7a1f
+  title:
+    cs: bakalářská práce
+    en: bachelor thesis
+  description:
+    en: 'A thesis reporting a research project undertaken as part of an undergraduate
+      course of education leading to a bachelor''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2181]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_7a1f
+    skos:exactMatch:http://purl.org/coar/resource_type: c_7a1f
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dissertation
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-bachelorthesis
+  hierarchy:
+    parent: c_46ec
+- id: c_6501
+  title:
+    cs: článek v odborném časopisu
+    en: journal article
+  description:
+    en: 'An article, typically the realization of a research paper reporting original
+      research findings, published in a journal issue. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_6501
+    skos:exactMatch:http://purl.org/coar/resource_type: c_6501
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-article
+  hierarchy:
+    parent: c_0640
+- id: r60j-j5bd
+  title:
+    cs: conference presentation
+    en: conference presentation
+  description:
+    en: 'A set of slides containing text, tables or figures, designed to communicate
+      ideas or research results, for projection and viewing by an audience at a conference,
+      symposium, seminar, lecture, workshop or other gatherings. [Source: Adapted
+      from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e4880]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/r60j-j5bd
+    skos:exactMatch:http://purl.org/coar/resource_type: R60J-J5BD
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Presentation
+  hierarchy:
+    parent: c_c94f
+- id: bw7t-ym2g
+  title:
+    cs: layout design
+    en: layout design
+  description:
+    en: "Layout-design (topography) means the three-dimensional disposition, however\
+      \ expressed, of \nthe elements of an integrated circuit (at least one of which\
+      \ is an active element) and of some or all of the interconnections of an integrated\
+      \ circuit, or such a three-dimensional disposition prepared for \nan integrated\
+      \ circuit intended for manufacture [Source: https://www.wipo.int/edocs/lexdocs/laws/en/hk/hk028en.pdf]"
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/bw7t-ym2g
+    skos:exactMatch:http://purl.org/coar/resource_type: BW7T-YM2G
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+  hierarchy:
+    parent: 542x-3s04
+- id: c_db06
+  title:
+    cs: disertační práce
+    en: doctoral thesis
+  description:
+    en: 'A thesis reporting the research undertaken during a period of graduate study
+      leading to a doctoral degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3051]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_db06
+    skos:exactMatch:http://purl.org/coar/resource_type: c_db06
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dissertation
+  hierarchy:
+    parent: c_46ec
+- id: w2xt-7017
+  title:
+    cs: simulation data
+    en: simulation data
+  description:
+    en: 'Data resulting from modeling or imitative representation of real-world processes,
+      events, or systems, often using computer programs. For example, a program modeling
+      household consumption responses to indirect tax changes; or a dataset on hypothetical
+      patients and their drug exposure, background conditions, and known adverse events.
+      [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/w2xt-7017
+    skos:exactMatch:http://purl.org/coar/resource_type: W2XT-7017
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
   hierarchy:
     parent: c_ddb1
 - id: 2h0m-x761
@@ -1486,23 +1379,268 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/2h0m-x761
     skos:exactMatch:http://purl.org/coar/resource_type: 2H0M-X761
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dataset
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
   hierarchy:
     parent: c_ddb1
-- id: c_bdcc
+- id: c_7bab
   title:
-    cs: diplomová práce
-    en: master thesis
+    cs: software paper
+    en: software paper
   description:
-    en: 'A thesis reporting a research project undertaken as part of a graduate course
-      of education leading to a master''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4057]'
+    en: 'A software paper should include the rationale for the development of the
+      tool and details of the code used for its construction. [Source: Adapted from
+      https://f1000research.com/for-authors/article-guidelines/software-tool-articles
+      ]'
   props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_bdcc
-    skos:exactMatch:http://purl.org/coar/resource_type: c_bdcc
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dissertation
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-mastersthesis
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_7bab
+    skos:exactMatch:http://purl.org/coar/resource_type: c_7bab
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
   hierarchy:
-    parent: c_46ec
+    parent: c_6501
+- id: nhd0-w6sy
+  title:
+    cs: survey data
+    en: survey data
+  description:
+    en: 'Data resulting from a survey, which is defined as an investigation about
+      the characteristics of a given population by means of collecting data from a
+      sample of that population and estimating their characteristics through the systematic
+      use of statistical methodology. Included are censuses, sample surveys, the collection
+      of data from administrative records and derived statistical activities as well
+      as questionnaires. [Source: Adapted from https://stats.oecd.org/glossary/detail.asp?ID=2620]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/nhd0-w6sy
+    skos:exactMatch:http://purl.org/coar/resource_type: NHD0-W6SY
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+  hierarchy:
+    parent: c_ddb1
+- id: c_2df8fbb1
+  title:
+    cs: původní článek
+    en: research article
+  description:
+    en: A research article is a primary source, that is, it reports the methods and
+      results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2df8fbb1
+    skos:exactMatch:http://purl.org/coar/resource_type: c_2df8fbb1
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
+  hierarchy:
+    parent: c_6501
+- id: dd58-gfsx
+  title:
+    cs: measurement and test data
+    en: measurement and test data
+  description:
+    en: 'Data resulting from assessing specific properties (or characteristics) of
+      beings, things, phenomena, (and/ or processes) by applying pre-established standards
+      and/or specialized instruments or techniques. [Source: Adapted from  https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/dd58-gfsx
+    skos:exactMatch:http://purl.org/coar/resource_type: DD58-GFSX
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+  hierarchy:
+    parent: c_ddb1
+- id: c_12cd
+  title:
+    cs: mapa
+    en: map
+  description:
+    en: 'Defined as a representation normally to scale and on a flat medium, of a
+      selection of material or abstract features on, or in relation to, the surface
+      of the earth or of another celestial body. [Source: https://www.loc.gov/marc/bibliographic/bd007a.html]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_12cd
+    skos:exactMatch:http://purl.org/coar/resource_type: c_12cd
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Image
+  hierarchy:
+    parent: c_12cc
+- id: jbnf-dyad
+  title:
+    cs: industrial design
+    en: industrial design
+  description:
+    en: 'Industrial designs are applied to a wide variety of industrial products and
+      handicrafts. They refer to the ornamental or aesthetic aspects of a useful article,including
+      compositions of lines or colors or any three-dimensional forms that give a special
+      appearance to a product or handicraft. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/jbnf-dyad
+    skos:exactMatch:http://purl.org/coar/resource_type: JBNF-DYAD
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Other
+  hierarchy:
+    parent: 542x-3s04
+- id: c_18cp
+  title:
+    cs: konferenční příspěvek nezahrnutý ve sborníku
+    en: conference paper not in proceedings
+  description:
+    en: 'A paper, typically the realization of a research paper reporting original
+      research findings. Use this label when the paper is not published in a proceeding.
+      [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cp
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18cp
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: ConferencePaper
+  hierarchy:
+    parent: c_c94f
+- id: d97f-vb57
+  title:
+    cs: commentary
+    en: commentary
+  description:
+    en: 'A commentary is a more in-depth analysis written to draw attention to a work
+      already published. Commentaries are somewhat like “reviews” in that the author
+      presents his or her analysis of a work and why it  would be of interest to a
+      specific audience. [Source: https://www.enago.com/academy/perspective-opinion-and-commentary-pieces]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/d97f-vb57
+    skos:exactMatch:http://purl.org/coar/resource_type: D97F-VB57
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
+  hierarchy:
+    parent: c_efa0
+- id: cqmr-7k63
+  title:
+    cs: recorded data
+    en: recorded data
+  description:
+    en: 'Data registered by mechanical or electronic means, in a form that allows
+      the information to be retrieved and/or reproduced. For example, images or sounds
+      on disc or magnetic tape. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/cqmr-7k63
+    skos:exactMatch:http://purl.org/coar/resource_type: CQMR-7K63
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Dataset
+  hierarchy:
+    parent: c_ddb1
+- id: c_3248
+  title:
+    cs: část knihy
+    en: book part
+  description:
+    en: 'A defined chapter or section of a book, usually with a separate title or
+      number. [Source: http://purl.org/spar/fabio/BookChapter]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_3248
+    skos:exactMatch:http://purl.org/coar/resource_type: c_3248
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: BookChapter
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-section
+  hierarchy:
+    parent: c_2f33
+- id: c_7acd
+  title:
+    cs: corrigendum
+    en: corrigendum
+  description:
+    en: A formal correction to an error introduced by the author into a previously
+      published document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_7acd
+    skos:exactMatch:http://purl.org/coar/resource_type: c_7acd
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
+  hierarchy:
+    parent: c_6501
+- id: c_5794
+  title:
+    cs: příspěvek na konferenci
+    en: conference paper
+  description:
+    en: 'A paper, published within a conference proceeding, typically the realization
+      of a research paper reporting original research findings. [Source: Adapted from
+      https://sparontologies.github.io/fabio/current/fabio.html#d4e2635]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_5794
+    skos:exactMatch:http://purl.org/coar/resource_type: c_5794
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: ConferencePaper
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-conferencepaper
+  hierarchy:
+    parent: c_f744
+- id: c_18co
+  title:
+    cs: konferenční poster nezahrnutý ve sborníku
+    en: conference poster not in proceedings
+  description:
+    en: 'A display poster, typically containing text with illustrative figures and/or
+      tables, usually reporting research results or proposing hypotheses, submitted
+      for acceptance to and/or presented at a conference, seminar, symposium, workshop
+      or similar event. Use this label when the poster is not published in a proceeding.
+      [Source: http://purl.org/spar/fabio/ConferencePoster]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18co
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18co
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Poster
+  hierarchy:
+    parent: c_c94f
+- id: h9bq-739p
+  title:
+    cs: peer review
+    en: peer review
+  description:
+    en: 'An evaluation of scientific, academic, or professional work by others working
+      in the same field. [Source: Adopted from https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/h9bq-739p
+    skos:exactMatch:http://purl.org/coar/resource_type: H9BQ-739P
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: PeerReview
+  hierarchy:
+    parent: c_efa0
+- id: c_18cd
+  title:
+    cs: hudební skladba
+    en: musical composition
+  description:
+    en: 'Musical composition can refer to an original piece of music, the structure
+      of a musical piece, or the process of creating a new piece of music. [Source:
+      https://en.wikipedia.org/wiki/Musical_composition ]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cd
+    skos:exactMatch:http://purl.org/coar/resource_type: c_18cd
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Sound
+  hierarchy:
+    parent: c_18cc
+- id: c_dcae04bc
+  title:
+    cs: přehledový článek
+    en: review article
+  description:
+    en: 'A review article is a secondary source, that is, it is written about other
+      articles, and does not report original research of its own. [Source: Adapted
+      from http://apus.libanswers.com/faq/2324]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_dcae04bc
+    skos:exactMatch:http://purl.org/coar/resource_type: c_dcae04bc
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
+  hierarchy:
+    parent: c_6501
+- id: c_ba08
+  title:
+    cs: recenze knihy
+    en: book review
+  description:
+    en: 'A written review and critical analysis of the content, scope and quality
+      of a book or other monographic work. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ba08
+    skos:exactMatch:http://purl.org/coar/resource_type: c_ba08
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: JournalArticle
+  hierarchy:
+    parent: c_efa0
+- id: c_6670
+  title:
+    cs: poster na konferenci
+    en: conference poster
+  description:
+    en: 'A display poster, published within a conference proceeding, typically containing
+      text with illustrative figures and/or tables, usually reporting research results
+      or proposing hypotheses, submitted for acceptance to and/or presented at a conference,
+      seminar, symposium, workshop or similar event. [Source: Adapted https://sparontologies.github.io/fabio/current/fabio.html#d4e2648]'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_6670
+    skos:exactMatch:http://purl.org/coar/resource_type: c_6670
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: Poster
+    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: poster
+  hierarchy:
+    parent: c_f744
 - id: c_beb9
   title:
     cs: článek o datové sadě
@@ -1516,137 +1654,6 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_beb9
     skos:exactMatch:http://purl.org/coar/resource_type: c_beb9
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: datapaper
-  hierarchy:
-    parent: c_6501
-- id: c_7a1f
-  title:
-    cs: bakalářská práce
-    en: bachelor thesis
-  description:
-    en: 'A thesis reporting a research project undertaken as part of an undergraduate
-      course of education leading to a bachelor''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2181]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_7a1f
-    skos:exactMatch:http://purl.org/coar/resource_type: c_7a1f
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dissertation
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-bachelorthesis
-  hierarchy:
-    parent: c_46ec
-- id: 9dkx-ksaf
-  title:
-    cs: utility model
-    en: utility model
-  description:
-    en: 'A special form of patent right granted by a state or jurisdiction to an inventor
-      or the inventor’s assignee for a fixed period of time. The terms and conditions
-      for granting a utility model are slightly different from those for normal patents
-      (including a shorter term of protection and less stringent patentability requirements).
-      The term can also describe what are known in certain countries as “petty patents,”
-      “short-term patents” or “innovation patents.” [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/9dkx-ksaf
-    skos:exactMatch:http://purl.org/coar/resource_type: 9DKX-KSAF
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-  hierarchy:
-    parent: c_15cd
-- id: z907-ymbb
-  title:
-    cs: plant patent
-    en: plant patent
-  description:
-    en: 'A patent granted to anyone who has invented or discovered and asexually reproduced
-      any distinct and new variety of plant, including cultivated sports, mutants,
-      hybrids, and newly found seedlings, other than a tuber-propagated plant or a
-      plant found in an uncultivated state. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/general-information-about-35-usc-161#heading-1]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/z907-ymbb
-    skos:exactMatch:http://purl.org/coar/resource_type: Z907-YMBB
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: other
-  hierarchy:
-    parent: c_15cd
-- id: c_5794
-  title:
-    cs: příspěvek na konferenci
-    en: conference paper
-  description:
-    en: 'A paper, published within a conference proceeding, typically the realization
-      of a research paper reporting original research findings. [Source: Adapted from
-      https://sparontologies.github.io/fabio/current/fabio.html#d4e2635]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_5794
-    skos:exactMatch:http://purl.org/coar/resource_type: c_5794
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: conferencepaper
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: publication-conferencepaper
-  hierarchy:
-    parent: c_f744
-- id: c_2df8fbb1
-  title:
-    cs: původní článek
-    en: research article
-  description:
-    en: A research article is a primary source, that is, it reports the methods and
-      results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2df8fbb1
-    skos:exactMatch:http://purl.org/coar/resource_type: c_2df8fbb1
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
-  hierarchy:
-    parent: c_6501
-- id: c_7acd
-  title:
-    cs: corrigendum
-    en: corrigendum
-  description:
-    en: A formal correction to an error introduced by the author into a previously
-      published document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_7acd
-    skos:exactMatch:http://purl.org/coar/resource_type: c_7acd
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
-  hierarchy:
-    parent: c_6501
-- id: c_6670
-  title:
-    cs: poster na konferenci
-    en: conference poster
-  description:
-    en: 'A display poster, published within a conference proceeding, typically containing
-      text with illustrative figures and/or tables, usually reporting research results
-      or proposing hypotheses, submitted for acceptance to and/or presented at a conference,
-      seminar, symposium, workshop or similar event. [Source: Adapted https://sparontologies.github.io/fabio/current/fabio.html#d4e2648]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_6670
-    skos:exactMatch:http://purl.org/coar/resource_type: c_6670
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: poster
-    skos:exactMatch:https://zenodo.org/vocabularies/resource_type: poster
-  hierarchy:
-    parent: c_f744
-- id: c_db06
-  title:
-    cs: disertační práce
-    en: doctoral thesis
-  description:
-    en: 'A thesis reporting the research undertaken during a period of graduate study
-      leading to a doctoral degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3051]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_db06
-    skos:exactMatch:http://purl.org/coar/resource_type: c_db06
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: dissertation
-  hierarchy:
-    parent: c_46ec
-- id: c_7bab
-  title:
-    cs: software paper
-    en: software paper
-  description:
-    en: 'A software paper should include the rationale for the development of the
-      tool and details of the code used for its construction. [Source: Adapted from
-      https://f1000research.com/for-authors/article-guidelines/software-tool-articles
-      ]'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_7bab
-    skos:exactMatch:http://purl.org/coar/resource_type: c_7bab
-    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: journalarticle
+    skos:exactMatch:https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral: DataPaper
   hierarchy:
     parent: c_6501

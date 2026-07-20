@@ -1,3 +1,76 @@
+- id: lzip
+  title:
+    cs: lzip
+    en: lzip
+  description:
+    en: Compressed file produced by lzip, free, command-line tool for the compression
+      of data that employs the Lempel-Ziv-Markov chain algorithm (LZMA).
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/lzip
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LZIP
+- id: schema_xml
+  title:
+    cs: XML schema
+    en: XML schema
+  description:
+    en: An XML schema is a description of a type of XML document, typically expressed
+      in terms of constraints on the structure and content of documents of that type,
+      above and beyond the basic syntactical constraints imposed by XML itself.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/schema_xml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SCHEMA_XML
+- id: sparqlq
+  title:
+    cs: SPARQL
+    en: SPARQL
+  description:
+    en: SPARQL – a recursive acronym for SPARQL Protocol and RDF Query Language –
+      is an RDF query language, that is, a semantic query language for databases,
+      able to retrieve and manipulate data stored in Resource Description Framework
+      (RDF) format. It is recognised as one of the key technologies of the semantic
+      web.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/sparqlq
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SPARQLQ
+- id: ipa
+  title:
+    cs: IPA
+    en: IPA
+  description:
+    en: An .ipa (iOS App Store Package) file is an application archive file used by
+      the iOS operating system.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ipa
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: IPA
+- id: laz
+  title:
+    cs: Compressed LAS file
+    en: Compressed LAS file
+  description:
+    en: LAZ is the media type which shall be used for compressed LAS files. This media
+      type is incomplete as it lacks a reference to the specification of the format.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/laz
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LAZ
+- id: pdfa3a
+  title:
+    cs: PDF/A-3a
+    en: PDF/A-3a
+  description:
+    en: PDF/A-3 subtype ensuring both accessibility and structure preservation, similar
+      to PDF/A-2a
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa3a
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA3A
+- id: bin
+  title:
+    cs: Binary Data
+    en: Binary Data
+  description:
+    en: A binary file is a computer file that is not a text file.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/bin
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BIN
 - id: msg_http
   title:
     cs: HTTP Message
@@ -10,39 +83,219 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/msg_http
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MSG_HTTP
-- id: mobi
+- id: akn4eu
   title:
-    cs: Mobipocket eBook
-    en: Mobipocket eBook
+    cs: AKN4EU file
+    en: AKN4EU file
   description:
-    en: Mobipocket eBook is a proprietary e-book file format of Mobipocket SA company
-      that can be used by mobile phones, personal digital assistants (PDA) and desktop
-      operating systems.
+    en: AKN4EU file is an Akoma Ntoso XML file conforming to the AKN4EU (Akoma Ntoso
+      for European Union) specifications. One or more AKN4EU files can be part of
+      an AKN4EU ZIP file. A special AKN4EU file called ‘main.xml’ is the entry point
+      of an AKN4EU ZIP file.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mobi
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MOBI
-- id: jpeg
+    iri: https://nma.eosc.cz/vocabularies/filetypes/akn4eu
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AKN4EU
+- id: legalhtml
   title:
-    cs: JPEG
-    en: JPEG
+    cs: LegalHTML
+    en: LegalHTML
   description:
-    en: JPEG – Joint Photographic Experts Group – is a commonly used method of lossy
-      compression for digital images, particularly for those images produced by digital
-      photography. The degree of compression can be adjusted, allowing a selectable
-      tradeoff between storage size and image quality.
+    en: extension of the HTML language designed for representing legal acts; it provides
+      an explicit domain language addressing all structural aspects of an act such
+      as articles, paragraphs, items and references; it also supports the description
+      of the editorial and jurisdictional history of an act and the semantic annotation
+      of domain entities; furthermore, LegalHTML addresses the consolidation of an
+      act and its subsequent modifications into a single document using a tree-like
+      representation of the original content and of its modified versions; finally,
+      a JavaScript API enhances the representation as an active document, enabling
+      the visualization of a consolidated act as it applies at different points in
+      time
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/jpeg
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JPEG
-- id: arc_gz
+    iri: https://nma.eosc.cz/vocabularies/filetypes/legalhtml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LEGALHTML
+- id: wfs_srvc
   title:
-    cs: ARC GZ
-    en: ARC GZ
+    cs: WFS
+    en: WFS
+  description:
+    en: The Open Geospatial Consortium Web Feature Service (WFS) Interface Standard
+      provides an interface allowing requests for geospatial features across the web
+      using platform-independent mechanisms and is independent of the underlying data
+      store.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/wfs_srvc
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WFS_SRVC
+- id: mathml
+  title:
+    cs: MathML
+    en: MathML
+  description:
+    en: mathematical markup language, an application of XML for describing mathematical
+      notations and capturing both its structure and content
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mathml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MATHML
+- id: docx
+  title:
+    cs: Word DOCX
+    en: Word DOCX
+  description:
+    en: DOCX is an Office Open XML international standard for Office documents. It
+      is used by Microsoft Word and by a growing number of applications from other
+      vendors in word processing programs.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/docx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DOCX
+- id: xslfo
+  title:
+    cs: XSL-FO
+    en: XSL-FO
+  description:
+    en: XSL-FO – XSL Formatting Objects – is a markup language for XML document formatting
+      that is most often used to generate PDF files. XSL-FO is part of XSL (Extensible
+      Stylesheet Language), a set of W3C technologies designed for the transformation
+      and formatting of XML data.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xslfo
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XSLFO
+- id: dxf
+  title:
+    cs: DXF
+    en: DXF
+  description:
+    en: A DXF file is a data file saved in a format developed by Autodesk and used
+      for CAD (computer-aided design) vector image files, such as AutoCAD documents.
+      DXF files are similar to .DWG files, but are more compatible with other programs
+      since they are ASCII (text) based.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dxf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DXF
+- id: netcdf
+  title:
+    cs: NetCDF
+    en: NetCDF
+  description:
+    en: NetCDF is a set of software libraries and self-describing, machine-independent
+      data formats that support the creation, access and sharing of array-oriented
+      scientific data.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/netcdf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: NETCDF
+- id: rtf
+  title:
+    cs: RTF
+    en: RTF
+  description:
+    en: RTF – Rich Text Format – is a proprietary document file format developed for
+      cross-platform document interchange with Microsoft products.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rtf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RTF
+- id: arc
+  title:
+    cs: ARC
+    en: ARC
   description:
     en: ARC is the archive file format of Internet Archive. ARC files are large aggregate
-      files. ARC GZ is ARC compressed by GZIP.
+      files.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/arc_gz
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARC_GZ
+    iri: https://nma.eosc.cz/vocabularies/filetypes/arc
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARC
+- id: world
+  title:
+    cs: World file
+    en: World file
+  description:
+    en: A world file is a plain text computer data file used by geographic information
+      systems (GIS) to georeference raster map images. The file extension usually
+      depends on the format of the associated image, e.g. .jgw for JPEG (2000) or
+      .tfw for TIFF.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/world
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WORLD
+- id: lpk
+  title:
+    cs: Layer package
+    en: Layer package
+  description:
+    en: A layer package packages one or more layers and all referenced data sources
+      to create a single compressed .lpk file.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/lpk
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LPK
+- id: arff
+  title:
+    cs: ARFF
+    en: ARFF
+  description:
+    en: ASCII text file that describes a list of instances sharing a set of attributes
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/arff
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARFF
+- id: xlsx
+  title:
+    cs: Excel XLSX
+    en: Excel XLSX
+  description:
+    en: XLSX is the default file format for Excel 2007 and later workbook used for
+      Microsoft Excel spreadsheet which features calculation, graphing tools, pivot
+      tables and a macro programming language. XLSX is in reality a ZIP compressed
+      archive with a directory structure of XML text documents.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xlsx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XLSX
+- id: apk
+  title:
+    cs: APK
+    en: APK
+  description:
+    en: Android Package (APK) is the package file format used by the Android operating
+      system for distribution and installation of mobile apps, mobile games and middleware.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/apk
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: APK
+- id: aac
+  title:
+    cs: AAC
+    en: AAC
+  description:
+    en: Advanced Audio Coding (AAC) is an audio coding standard for lossy digital
+      audio compression. Designed to be the successor of the MP3 format, AAC generally
+      achieves higher sound quality than MP3 at the same bit rate.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/aac
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AAC
+- id: rdf_trig
+  title:
+    cs: RDF TriG
+    en: RDF TriG
+  description:
+    en: TriG allows an RDF dataset to be completely written in a compact and natural
+      text form, with abbreviations for common usage patterns and datatypes. TriG
+      is an extension of the Turtle format.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_trig
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_TRIG
+- id: odp
+  title:
+    cs: ODP
+    en: ODP
+  description:
+    en: ODP is an OpenDocument file format for presentations. OpenDocument was developed
+      with the aim of providing an open, XML-based file format specification for office
+      applications.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/odp
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODP
+- id: pdfa3b
+  title:
+    cs: PDF/A-3b
+    en: PDF/A-3b
+  description:
+    en: PDF/A-3 subtype that guarantees visual fidelity without regard for structure
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa3b
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA3B
 - id: leg
   title:
     cs: LEG
@@ -67,86 +320,97 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/xliff
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XLIFF
-- id: png
+- id: tmx
   title:
-    cs: PNG
-    en: PNG
+    cs: TMX
+    en: TMX
   description:
-    en: PNG – Portable Network Graphics – is a raster graphics file format that supports
-      lossless data compression. PNG was created as an improved, non-patented replacement
-      for Graphics Interchange Format (GIF), and is the most widely used lossless
-      image compression format on the Internet.
+    en: TMX – Translation Memory eXchange – is an XML specification for the exchange
+      of translation memory data between computer-aided translation and localization
+      tools with little or no loss of critical data.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/png
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PNG
-- id: stl
+    iri: https://nma.eosc.cz/vocabularies/filetypes/tmx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TMX
+- id: ppsx
   title:
-    cs: StL
-    en: StL
+    cs: PowerPoint PPSX
+    en: PowerPoint PPSX
   description:
-    en: An StL (‘StereoLithography’) file is a triangular representation of a 3-dimensional
-      surface geometry. The surface is tessellated or broken down logically into a
-      series of small triangles (facets). Each facet is described by a perpendicular
-      direction and three points representing the vertices (corners) of the triangle.
-      These data are used by a slicing algorithm to determine the cross sections of
-      the 3-dimensional shape to be built by the fabber. The StL standard includes
-      two data formats, ASCII and binary.
+    en: PPSX – PowerPoint 2007 XML slide show – is an XML filename extension of Microsoft
+      PowerPoint presentation program. PowerPoint was originally designed to provide
+      visuals for group presentations within business organizations, but has come
+      to be very widely used in many other communication situations, both in business
+      and beyond.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/stl
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: STL
-- id: iso_zip
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ppsx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PPSX
+- id: svg
   title:
-    cs: Zipped ISO image
-    en: Zipped ISO image
+    cs: SVG
+    en: SVG
   description:
-    en: ZIP archive containing an ISO disc image file.
+    en: Open standard for two-dimensional vector graphics.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/iso_zip
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ISO_ZIP
-- id: gtfs
+    iri: https://nma.eosc.cz/vocabularies/filetypes/svg
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SVG
+- id: owl
   title:
-    cs: GTFS
-    en: GTFS
+    cs: OWL
+    en: OWL
   description:
-    en: The General Transit Feed Specification (GTFS) is a data specification that
-      allows public transit agencies to publish their transit data in a format that
-      can be consumed by a wide variety of software applications. GTFS is split into
-      a schedule component that contains schedule, fare, and geographic transit information
-      and a real-time component that contains arrival predictions, vehicle positions
-      and service advisories.
+    en: OWL – Web Ontology Language – is a family of knowledge representation languages
+      for authoring ontologies.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/gtfs
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GTFS
-- id: arj
+    iri: https://nma.eosc.cz/vocabularies/filetypes/owl
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OWL
+- id: markdown
   title:
-    cs: ARJ
-    en: ARJ
+    cs: Markdown
+    en: Markdown
   description:
-    en: Compressed archive file produced by ARJ software. ARJ (Archived by Robert
-      Jung) is a software tool designed by Robert K. Jung for creating high-efficiency
-      compressed file archives.
+    en: lightweight markup language for creating formatted text using a plain-text
+      editor
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/arj
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARJ
-- id: n3
+    iri: https://nma.eosc.cz/vocabularies/filetypes/markdown
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MARKDOWN
+- id: xslt
   title:
-    cs: N3
-    en: N3
+    cs: XSLT
+    en: XSLT
   description:
-    en: Non-XML serialization of Resource Description Framework models.
+    en: XSLT – Extensible Stylesheet Language Transformations – is a language for
+      transforming XML documents into other XML documents or other formats such as
+      HTML for web pages, plain text or XSL Formatting Objects, which may subsequently
+      be converted to other formats, such as PDF, PostScript and PNG.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/n3
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: N3
-- id: etsi_xml
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xslt
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XSLT
+- id: arcinfo_cov
   title:
-    cs: ETSI signature validation report
-    en: ETSI signature validation report
+    cs: ArcInfo coverage
+    en: ArcInfo coverage
   description:
-    en: ETSI signature validation report is a European Telecommunications Standards
-      Institute (ETSI) signature validation report XML file.
+    en: An ESRI ArcInfo coverage is a georelational data model that stores vector
+      data – it contains both the spatial (location) and attribute (descriptive) data
+      for geographic features. Coverages use a set of feature classes to represent
+      geographic features. Each feature class stores a set of points, lines (arcs),
+      polygons, or annotation (text). Coverages can have topology, which determines
+      the relationships between features. A coverage is stored as a directory within
+      which each feature class is stored as a set of files.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/etsi_xml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ETSI_XML
+    iri: https://nma.eosc.cz/vocabularies/filetypes/arcinfo_cov
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARCINFO_COV
+- id: parquet
+  title:
+    cs: Parquet
+    en: Parquet
+  description:
+    en: Apache columnar storage format available to any project in the Hadoop ecosystem,
+      regardless of the choice of data processing framework, data model or programming
+      language; explicitly designed to separate the metadata from the data
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/parquet
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PARQUET
 - id: rdf_trix
   title:
     cs: RDF TriX
@@ -159,266 +423,59 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_trix
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_TRIX
-- id: sch
+- id: jpeg2000
   title:
-    cs: Schematron
-    en: Schematron
+    cs: JPEG 2000
+    en: JPEG 2000
   description:
-    en: rule-based validation language for making assertions about the structure and
-      content of XML documents; it is expressed in XML using a small number of elements
-      and XPath; it has been standardised as part of ISO/IEC 19757
+    en: JPEG 2000 – Joint Photographic Experts Group 2000 – is an image coding system
+      that uses state-of-the-art compression techniques based on wavelet technology.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/sch
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SCH
-- id: pdfa1b
+    iri: https://nma.eosc.cz/vocabularies/filetypes/jpeg2000
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JPEG2000
+- id: html5
   title:
-    cs: PDF/A-1b
-    en: PDF/A-1b
+    cs: HTML5
+    en: HTML5
   description:
-    en: PDF/A-1 is the Part 1 of the PDF standard and specifies two levels of conformance
-      for PDF files. Level B (basic) conformance requires only that standards necessary
-      for the reliable reproduction of a document's visual appearance be followed.
+    en: HTML5 is a markup language used for structuring and presenting content on
+      the World Wide Web. It is the fifth and last major HTML version that is a World
+      Wide Web Consortium (W3C) recommendation. The current specification is known
+      as the HTML Living Standard. It is maintained by the Web Hypertext Application
+      Technology Working Group (WHATWG), a consortium of the major browser vendors
+      (Apple, Google, Mozilla, and Microsoft).
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa1b
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA1B
-- id: rdf_turtle
+    iri: https://nma.eosc.cz/vocabularies/filetypes/html5
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HTML5
+- id: matlab_mat
   title:
-    cs: RDF Turtle
-    en: RDF Turtle
+    cs: MATLAB MAT
+    en: MATLAB MAT
   description:
-    en: Turtle – Terse RDF Triple Language – is a format for expressing data in the
-      Resource Description Framework (RDF) data model with a syntax similar to SPARQL.
-      RDF, in turn, represents information using ‘triples’, each of which consists
-      of a subject, a predicate and an object. Each of those items is expressed as
-      a Web URI.
+    en: proprietary, binary data container format used by MATLAB software from MathWorks
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_turtle
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_TURTLE
-- id: zip
+    iri: https://nma.eosc.cz/vocabularies/filetypes/matlab_mat
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MATLAB_MAT
+- id: arc_gz
   title:
-    cs: ZIP
-    en: ZIP
+    cs: ARC GZ
+    en: ARC GZ
   description:
-    en: ZIP is an archive file format that supports lossless data compression. A ZIP
-      file may contain one or more files or directories that may have been compressed.
+    en: ARC is the archive file format of Internet Archive. ARC files are large aggregate
+      files. ARC GZ is ARC compressed by GZIP.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/zip
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ZIP
-- id: ogcfeat
+    iri: https://nma.eosc.cz/vocabularies/filetypes/arc_gz
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARC_GZ
+- id: geojson
   title:
-    cs: OGCFeat
-    en: OGCFeat
+    cs: GeoJSON
+    en: GeoJSON
   description:
-    en: multi-part standard that offers the capability to create, modify, and query
-      spatial data on the Web and specifies requirements and recommendations for APIs
-      that want to follow a standard way of sharing feature data
+    en: GeoJSON is an open standard format designed for representing simple geographical
+      features, along with their non-spatial attributes, based on JSON.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ogcfeat
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OGCFEAT
-- id: sb3
-  title:
-    cs: sb3
-    en: sb3
-  description:
-    en: Scratch 3.0 is a file format used to store exported Scratch 3.0 projects and
-      sprites. These are ZIP archives which contain information encoded in a text-based
-      JSON format and project media in separate files.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/sb3
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SB3
-- id: html_simpl
-  title:
-    cs: HTML simplified
-    en: HTML simplified
-  description:
-    en: HTML is a markup language for describing web documents. Its simplified version
-      is used for storage in the Publications Office.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/html_simpl
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HTML_SIMPL
-- id: mxd
-  title:
-    cs: MXD
-    en: MXD
-  description:
-    en: MXD – Map Exchange Document – is a file format in which the maps created from
-      ArcGIS software can be stored.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mxd
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MXD
-- id: dtd_xml
-  title:
-    cs: XML DTD
-    en: XML DTD
-  description:
-    en: XML – Extensible Markup Language – is a markup language that defines a set
-      of rules for encoding documents in a format that is both human-readable and
-      machine-readable. DTD – document type definition – is a set of markup declarations
-      that define a document type for an SGML-family markup language (SGML, XML, HTML).
-      It defines the legal building blocks of an XML document, the document structure
-      with a list of legal elements and attributes. XML uses a subset of SGML DTD.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dtd_xml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DTD_XML
-- id: markdown
-  title:
-    cs: Markdown
-    en: Markdown
-  description:
-    en: lightweight markup language for creating formatted text using a plain-text
-      editor
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/markdown
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MARKDOWN
-- id: gpx
-  title:
-    cs: GPX
-    en: GPX
-  description:
-    en: light-weight XML data format for the interchange of GPS data (waypoints, routes,
-      and tracks) between applications and web services
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/gpx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GPX
-- id: json_ld
-  title:
-    cs: JSON-LD
-    en: JSON-LD
-  description:
-    en: JSON-LD is a JSON-based format to serialize Linked Data. It is primarily intended
-      to be a way to use Linked Data in Web-based programming environments, to build
-      interoperable Web services, and to store Linked Data in JSON-based storage engines.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/json_ld
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JSON_LD
-- id: pdfx
-  title:
-    cs: PDF/X
-    en: PDF/X
-  description:
-    en: PDF/X is a subset of the PDF standard. The purpose of PDF/X is to facilitate
-      graphics exchange, and it therefore has a series of printing related requirements
-      which do not apply to standard PDF files.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFX
-- id: webp
-  title:
-    cs: WebP
-    en: WebP
-  description:
-    en: WebP is an image file format developed by Google intended as a replacement
-      for JPEG, PNG, and GIF file formats. It supports both lossy and lossless compression,
-      as well as animation and alpha transparency.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/webp
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WEBP
-- id: op_datpro
-  title:
-    cs: Předběžné údaje
-    en: Provisional data
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/op_datpro
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OP_DATPRO
-- id: gml
-  title:
-    cs: GML
-    en: GML
-  description:
-    en: GML – Geography Markup Language – is the XML grammar defined by the Open Geospatial
-      Consortium (OGC) to express geographical features. GML serves as a modeling
-      language for geographic systems as well as an open interchange format for geographic
-      transactions on the Internet.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/gml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GML
-- id: svg
-  title:
-    cs: SVG
-    en: SVG
-  description:
-    en: Open standard for two-dimensional vector graphics.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/svg
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SVG
-- id: wfs_srvc
-  title:
-    cs: WFS
-    en: WFS
-  description:
-    en: The Open Geospatial Consortium Web Feature Service (WFS) Interface Standard
-      provides an interface allowing requests for geospatial features across the web
-      using platform-independent mechanisms and is independent of the underlying data
-      store.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/wfs_srvc
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WFS_SRVC
-- id: tmx
-  title:
-    cs: TMX
-    en: TMX
-  description:
-    en: TMX – Translation Memory eXchange – is an XML specification for the exchange
-      of translation memory data between computer-aided translation and localization
-      tools with little or no loss of critical data.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/tmx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TMX
-- id: pdfa3a
-  title:
-    cs: PDF/A-3a
-    en: PDF/A-3a
-  description:
-    en: PDF/A-3 subtype ensuring both accessibility and structure preservation, similar
-      to PDF/A-2a
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa3a
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA3A
-- id: jar
-  title:
-    cs: JAR
-    en: JAR
-  description:
-    en: JAR (Java Archive) is an archive file that includes a Java-specific manifest
-      file. It is built on the ZIP format.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/jar
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JAR
-- id: dgn
-  title:
-    cs: DGN
-    en: DGN
-  description:
-    en: A DGN file is a 2D/3D drawing created by various construction CAD software,
-      such as MicroStation and Intergraph Interactive Graphics Design System. It may
-      be saved in one of two formats, either the Intergraph Standard File Format (ISFF)
-      or the newer V8 DGN standard. DGN files are typically used to save designs for
-      construction projects for highways, bridges, and buildings.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dgn
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DGN
-- id: e00
-  title:
-    cs: E00
-    en: E00
-  description:
-    en: E00 is an ArcInfo interchange file format. ArcInfo is a full-featured geographic
-      information system produced by Esri.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/e00
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: E00
-- id: mpeg4_avc
-  title:
-    cs: MPEG-4 AVC
-    en: MPEG-4 AVC
-  description:
-    en: MPEG-4 – Moving Picture Experts Group – Part 10, Advanced Video Coding is
-      a block-oriented motion-compensation-based video compression standard. It is
-      one of the most commonly used formats for the recording, compression and distribution
-      of video content.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mpeg4_avc
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MPEG4_AVC
+    iri: https://nma.eosc.cz/vocabularies/filetypes/geojson
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GEOJSON
 - id: mpeg4
   title:
     cs: MPEG-4
@@ -430,17 +487,19 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/mpeg4
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MPEG4
-- id: qgs
+- id: xyz
   title:
-    cs: QGS
-    en: QGS
+    cs: XYZ Chemical File
+    en: XYZ Chemical File
   description:
-    en: QGS file is a Quantum GIS project. Quantum GIS (QGIS) is a cross-platform
-      free and open source desktop geographic information systems (GIS) application
-      that provides data viewing, editing, and analysis capabilities.
+    en: The XYZ file format is a chemical file format. There is no formal standard
+      and several variations exist, but a typical XYZ format specifies the molecule
+      geometry by giving the number of atoms with Cartesian coordinates that will
+      be read on the first line, a comment on the second, and the lines of atomic
+      coordinates in the following lines.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/qgs
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: QGS
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xyz
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XYZ
 - id: dcr
   title:
     cs: DCR File
@@ -451,67 +510,16 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/dcr
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DCR
-- id: sgml
+- id: ear
   title:
-    cs: SGML
-    en: SGML
+    cs: EAR
+    en: EAR
   description:
-    en: 'SGML – Standard Generalized Markup Language – is a standard for defining
-      generalized markup languages for documents. Generalized markup is based on two
-      postulates: markup should be declarative and rigorous.'
+    en: EAR (Enterprise Application aRchive) is a file format used by Java EE for
+      packaging one or more modules into a single archive.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/sgml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SGML
-- id: spss_sav
-  title:
-    cs: SPSS SAV
-    en: SPSS SAV
-  description:
-    en: proprietary data format of the statistical software SPSS
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/spss_sav
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SPSS_SAV
-- id: bin
-  title:
-    cs: Binary Data
-    en: Binary Data
-  description:
-    en: A binary file is a computer file that is not a text file.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/bin
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BIN
-- id: geotiff
-  title:
-    cs: GeoTIFF
-    en: GeoTIFF
-  description:
-    en: GeoTIFF is a public domain metadata standard which allows georeferencing information
-      to be embedded within a TIFF file. The potential additional information includes
-      map projection, coordinate systems, ellipsoids, datums, and everything else
-      necessary to establish the exact spatial reference for the file.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/geotiff
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GEOTIFF
-- id: mop
-  title:
-    cs: MOP
-    en: MOP
-  description:
-    en: MOP is a chemical file format used by MOPAC. MOPAC is a popular computer program
-      used in computational chemistry. It is designed to implement semi-empirical
-      quantum chemistry algorithms.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mop
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MOP
-- id: wim
-  title:
-    cs: WIM
-    en: WIM
-  description:
-    en: The Windows Imaging Format (WIM) is a file-based disk image format.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/wim
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WIM
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ear
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EAR
 - id: xhtml5
   title:
     cs: XHTML5
@@ -528,386 +536,113 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/xhtml5
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XHTML5
-- id: mbox
+- id: war
   title:
-    cs: MBOX
-    en: MBOX
+    cs: WAR
+    en: WAR
   description:
-    en: MBOX is a generic term for a family of related file formats used for holding
-      collections of email messages. All messages in an mbox mailbox are concatenated
-      and stored as plain text in a single file.
+    en: A WAR file is used to distribute a collection of JAR-files, JavaServer Pages,
+      Java Servlets, Java classes, XML files, tag libraries, static web pages and
+      other resources that together constitute a web application.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mbox
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MBOX
-- id: fmx4_zip
+    iri: https://nma.eosc.cz/vocabularies/filetypes/war
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WAR
+- id: mp3
   title:
-    cs: FMX4 ZIP
-    en: FMX4 ZIP
+    cs: MP3
+    en: MP3
   description:
-    en: FMX4 ZIP is a ZIP archive containing files that all belong to a Formex 4 instance.
+    en: An MP3 is a format for digital audio. It uses the lossy compression to reduce
+      the data without losing audio quality.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/fmx4_zip
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: FMX4_ZIP
-- id: odp
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mp3
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MP3
+- id: bits
   title:
-    cs: ODP
-    en: ODP
+    cs: BITS XML
+    en: BITS XML
   description:
-    en: ODP is an OpenDocument file format for presentations. OpenDocument was developed
-      with the aim of providing an open, XML-based file format specification for office
-      applications.
+    en: BITS – Book Interchange Tag Suite – is the ‘book version’ of Journal Article
+      Tag Suite (JATS); an XML format used to describe books published online. BITS
+      provides a common XML format in which publishers and archivists can describe
+      textual and graphical content elements. In order to facilitate the reusability,
+      BITS makes a tag set adequate for supporting interchange, archiving, format-conversion
+      and publishing.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/odp
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODP
-- id: warc
+    iri: https://nma.eosc.cz/vocabularies/filetypes/bits
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BITS
+- id: mpeg2
   title:
-    cs: WARC
-    en: WARC
+    cs: MPEG-2
+    en: MPEG-2
   description:
-    en: WARC is a web archive format which specifies a method for combining multiple
-      digital resources into an aggregate archive file together with related information.
+    en: MPEG-2 – Moving Picture Experts Group – is a standard for the generic coding
+      of moving pictures and associated audio information. It describes a combination
+      of lossy video compression and lossy audio data compression methods, which permit
+      storage and transmission of movies using currently available storage media and
+      transmission bandwidth.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/warc
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WARC
-- id: oapk
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mpeg2
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MPEG2
+- id: pdfa3
   title:
-    cs: OAPK
-    en: OAPK
+    cs: PDF/A-3
+    en: PDF/A-3
   description:
-    en: An Android Package (APK) with special features used by the Android operating
-      system for the distribution and installation of Oculus mobile apps.
+    en: ISO-standardised version of the Portable Document Format specialized for use
+      in the archiving and long-term preservation of electronic documents; PDF/A-3
+      is the Part 3 of the standard which differs from PDF/A-2 in only one regard
+      – it allows embedding of arbitrary file formats (such as XML, CSV, CAD, word-processing
+      documents, spreadsheet documents and others) into PDF/A conforming documents
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/oapk
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OAPK
-- id: gif
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa3
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA3
+- id: gtfs
   title:
-    cs: GIF
-    en: GIF
+    cs: GTFS
+    en: GTFS
   description:
-    en: GIF – Graphics Interchange Format – is a bitmap image format that was developed
-      by a team at the bulletin board service (BBS) provider CompuServe.
+    en: The General Transit Feed Specification (GTFS) is a data specification that
+      allows public transit agencies to publish their transit data in a format that
+      can be consumed by a wide variety of software applications. GTFS is split into
+      a schedule component that contains schedule, fare, and geographic transit information
+      and a real-time component that contains arrival predictions, vehicle positions
+      and service advisories.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/gif
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GIF
-- id: gzip
+    iri: https://nma.eosc.cz/vocabularies/filetypes/gtfs
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GTFS
+- id: dtd_sgml
   title:
-    cs: GNU zip
-    en: GNU zip
+    cs: SGML DTD
+    en: SGML DTD
   description:
-    en: GZIP – GNU zip – is a file format and a software application used for file
-      compression and decompression.
+    en: SGML – Standard Generalized Markup Language – is a standard for defining generalized
+      markup languages for documents. DTD – document type definition – is a set of
+      markup declarations that define a document type for an SGML-family markup language
+      (SGML, XML, HTML). It defines the legal building blocks of an XML document,
+      the document structure with a list of legal elements and attributes.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/gzip
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GZIP
-- id: msi
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dtd_sgml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DTD_SGML
+- id: sas
   title:
-    cs: MSI
-    en: MSI
+    cs: SAS
+    en: SAS
   description:
-    en: Archive file for Windows Installer containing the installation information
-      and an optional .cab file payload.
+    en: proprietary data format of the statistical analysis software SAS
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/msi
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MSI
-- id: octet
+    iri: https://nma.eosc.cz/vocabularies/filetypes/sas
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SAS
+- id: pdfa3u
   title:
-    cs: Octet Stream
-    en: Octet Stream
+    cs: PDF/A-3u
+    en: PDF/A-3u
   description:
-    en: Octet is the Internet media type for an arbitrary byte stream. A byte streamor
-      octet stream is a series of bytes.
+    en: PDF/A-3 subtype that supports Unicode, ensuring that non-Latin text is correctly
+      represented
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/octet
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OCTET
-- id: akn4eu
-  title:
-    cs: AKN4EU file
-    en: AKN4EU file
-  description:
-    en: AKN4EU file is an Akoma Ntoso XML file conforming to the AKN4EU (Akoma Ntoso
-      for European Union) specifications. One or more AKN4EU files can be part of
-      an AKN4EU ZIP file. A special AKN4EU file called ‘main.xml’ is the entry point
-      of an AKN4EU ZIP file.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/akn4eu
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AKN4EU
-- id: tsv
-  title:
-    cs: TSV
-    en: TSV
-  description:
-    en: TSV – tab-separated values – files are a simple text format for storing data
-      in a tabular structure, e.g. database table or spreadsheet data, and a way of
-      exchanging information between databases. Each record in the table is one line
-      of the text file. Each field value of a record is separated from the next by
-      a tab character.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/tsv
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TSV
-- id: rdf_trig
-  title:
-    cs: RDF TriG
-    en: RDF TriG
-  description:
-    en: TriG allows an RDF dataset to be completely written in a compact and natural
-      text form, with abbreviations for common usage patterns and datatypes. TriG
-      is an extension of the Turtle format.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_trig
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_TRIG
-- id: gpkg
-  title:
-    cs: GeoPackage
-    en: GeoPackage
-  description:
-    en: An OGC GeoPackage is an open, standards-based, platform-independent, portable,
-      self-describing, compact format for transferring geospatial information. It
-      is implemented as a SQLite database container.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/gpkg
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GPKG
-- id: thrift_binary
-  title:
-    cs: Thrift binary
-    en: Thrift binary
-  description:
-    en: interface definition language and binary communication protocol used for defining
-      and creating services for programming languages; binary format
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/thrift_binary
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: THRIFT_BINARY
-- id: csv
-  title:
-    cs: CSV
-    en: CSV
-  description:
-    en: CSV – comma-separated values – files store tabular data (numbers and text)
-      in plain text. Each line of the file is a data record. Each record consists
-      of one or more fields, separated by commas.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/csv
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: CSV
-- id: xml
-  title:
-    cs: XML
-    en: XML
-  description:
-    en: XML – Extensible Markup Language – is a markup language that defines a set
-      of rules for encoding documents in a format that is both human-readable and
-      machine-readable. The design goals of XML emphasize simplicity, generality and
-      usability across the Internet.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XML
-- id: arc
-  title:
-    cs: ARC
-    en: ARC
-  description:
-    en: ARC is the archive file format of Internet Archive. ARC files are large aggregate
-      files.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/arc
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARC
-- id: jpeg2000
-  title:
-    cs: JPEG 2000
-    en: JPEG 2000
-  description:
-    en: JPEG 2000 – Joint Photographic Experts Group 2000 – is an image coding system
-      that uses state-of-the-art compression techniques based on wavelet technology.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/jpeg2000
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JPEG2000
-- id: fmx3
-  title:
-    cs: Formex 3
-    en: Formex 3
-  description:
-    en: Formex describes the format for the exchange of data between the Publication
-      Office and its contractors. In particular, it defines the logical markup for
-      documents which are published in the different series of the Offical Journal
-      of the European Union. Formex 3 was a previous version of Formex actually used.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/fmx3
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: FMX3
-- id: bwf
-  title:
-    cs: BWF
-    en: BWF
-  description:
-    en: BWF – Broadcast Wave Format – is an extension of the Microsoft WAV audio format
-      and is the recording format of most file-based non-linear digital recorders
-      used for motion picture, radio and television production. The purpose of this
-      file format is the addition of metadata to facilitate the seamless exchange
-      of sound data between different computer platforms and applications.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/bwf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BWF
-- id: rdf
-  title:
-    cs: RDF
-    en: RDF
-  description:
-    en: RDF – Resource Description Framework – is a standard model for data interchange
-      on the Web. RDF has features that facilitate data merging. RDF extends the linking
-      structure of the Web to use URIs to name the relationship between things as
-      well as the two ends of the link (this is usually referred to as a ‘triple’).
-      Using this simple model, it allows structured and semi-structured data to be
-      mixed, exposed and shared across different applications. This linking structure
-      forms a directed, labeled graph, where the edges represent the named link between
-      two resources, represented by the graph nodes.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF
-- id: mathml
-  title:
-    cs: MathML
-    en: MathML
-  description:
-    en: mathematical markup language, an application of XML for describing mathematical
-      notations and capturing both its structure and content
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mathml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MATHML
-- id: pdfa1a
-  title:
-    cs: PDF/A-1a
-    en: PDF/A-1a
-  description:
-    en: PDF/A-1 is the Part 1 of the PDF standard and specifies two levels of conformance
-      for PDF files. PDF/A-1a – Level A (accessible) conformance was intended to increase
-      the accessibility of conforming files for physically impaired users by allowing
-      assistive software, such as screen readers, to more precisely extract and interpret
-      a file's contents.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa1a
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA1A
-- id: rss
-  title:
-    cs: RSS feed
-    en: RSS feed
-  description:
-    en: RSS – Rich Site Summary; originally RDF Site Summary; often called Really
-      Simple Syndication – is a type of web feed which allows users to access updates
-      to online content in a standardized, computer-readable format. These feeds can,
-      for example, allow a user to keep track of many different websites in a single
-      news aggregator. Websites usually use RSS feeds to publish frequently updated
-      information, such as blog entries, news headlines, audio, video. An RSS document
-      (called ‘feed’, ‘web feed’ or ‘channel’) includes full or summarized text and
-      metadata.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rss
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RSS
-- id: hdf
-  title:
-    cs: HDF
-    en: HDF
-  description:
-    en: HDF is a set of file formats (HDF4, HDF5) designed to store and organize large
-      amounts of numerical data.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/hdf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HDF
-- id: mrsid
-  title:
-    cs: MrSID
-    en: MrSID
-  description:
-    en: Multiresolution seamless image database (MrSID) is a file format developed
-      and patented by LizardTech for encoding of georeferenced raster graphics, such
-      as orthophotos. With this format, large raster image files such as aerial photographs
-      or satellite imagery are compressed and can be quickly viewed without having
-      to decompress the entire file.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mrsid
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MRSID
-- id: pdfx4
-  title:
-    cs: PDF/X-4
-    en: PDF/X-4
-  description:
-    en: PDF/X-4 is a PDF specification in which colour-managed, CMYK, gray, RGB or
-      spot colour data are supported, as are PDF transparency and optional content.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfx4
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFX4
-- id: xhtml
-  title:
-    cs: XHTML
-    en: XHTML
-  description:
-    en: XHTML is a family of current and future document types and modules that reproduce,
-      subset and extend HTML 4. XHTML family document types are XML based.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xhtml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XHTML
-- id: dwca
-  title:
-    cs: DwC-A
-    en: DwC-A
-  description:
-    en: biodiversity informatics data standard that makes use of the Darwin Core terms
-      to produce a single, self contained dataset for sharing species-level (taxonomic),
-      species-occurrence data, and sampling-event data; an archive is a set of text
-      files, in standard comma- or tab-delimited format, with a simple descriptor
-      file (called meta.xml) to inform others how the files are organized
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dwca
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DWCA
-- id: doc
-  title:
-    cs: Word DOC
-    en: Word DOC
-  description:
-    en: DOC is a proprietary binary Word document format used by Microsoft Word word
-      processor.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/doc
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DOC
-- id: azw
-  title:
-    cs: Amazon Kindle eBook
-    en: Amazon Kindle eBook
-  description:
-    en: AZW Kindle File Format is a proprietary e-book file format created by Amazon.com
-      that can be downloaded and read on devices like smartphones, tablets, computers
-      or e-readers that have Amazon's Kindle application.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/azw
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AZW
-- id: atom
-  title:
-    cs: Atom Feed
-    en: Atom Feed
-  description:
-    en: The Atom Feed or Atom Syndication Format is an XML language used for web feeds.
-      Web feeds allow software programs to check for updates published on a website.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/atom
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ATOM
-- id: gdb
-  title:
-    cs: Esri File Geodatabase
-    en: Esri File Geodatabase
-  description:
-    en: GDB is an Esri's file-based geodatabase format, stored as folders in a file
-      system. It shall be used for Esri file geodatabases. The file is a zip archive
-      that contains the gdb directory.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/gdb
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GDB
-- id: netcdf
-  title:
-    cs: NetCDF
-    en: NetCDF
-  description:
-    en: NetCDF is a set of software libraries and self-describing, machine-independent
-      data formats that support the creation, access and sharing of array-oriented
-      scientific data.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/netcdf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: NETCDF
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa3u
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA3U
 - id: gmz
   title:
     cs: Zipped GML
@@ -918,190 +653,156 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/gmz
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GMZ
-- id: hdt
+- id: yaml
   title:
-    cs: HDT
-    en: HDT
+    cs: YAML
+    en: YAML
   description:
-    en: HDT (Header, Dictionary, Triples) is a compact data structure and binary serialization
-      format for Resource Description Framework (RDF) that keeps big datasets compressed
-      to save space while maintaining search and browse operations without prior decompression.
+    en: YAML is a human-friendly, cross language, Unicode based data serialization
+      language designed around the common native data types of dynamic programming
+      languages. It is broadly useful for programming needs ranging from configuration
+      files to internet messaging to object persistence to data auditing and visualization.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/hdt
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HDT
-- id: eps
+    iri: https://nma.eosc.cz/vocabularies/filetypes/yaml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: YAML
+- id: e00
   title:
-    cs: Encapsulated Postscript
-    en: Encapsulated Postscript
+    cs: E00
+    en: E00
   description:
-    en: EPS – Encapsulated PostScript – files are more-or-less self-contained, reasonably
-      predictable PostScript documents that describe an image or drawing and can be
-      placed within another PostScript document.
+    en: E00 is an ArcInfo interchange file format. ArcInfo is a full-featured geographic
+      information system produced by Esri.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/eps
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EPS
-- id: pdfa2a
+    iri: https://nma.eosc.cz/vocabularies/filetypes/e00
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: E00
+- id: json_ld
   title:
-    cs: PDF/A-2a
-    en: PDF/A-2a
+    cs: JSON-LD
+    en: JSON-LD
   description:
-    en: PDF/A-2 is the Part 2 of the PDF standard and specifies three levels of conformance
-      for PDF files. PDF/A-2a corresponds to conformance level a in PDF/A-1 (accessible).
+    en: JSON-LD is a JSON-based format to serialize Linked Data. It is primarily intended
+      to be a way to use Linked Data in Web-based programming environments, to build
+      interoperable Web services, and to store Linked Data in JSON-based storage engines.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa2a
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA2A
-- id: vcf
+    iri: https://nma.eosc.cz/vocabularies/filetypes/json_ld
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JSON_LD
+- id: n3
   title:
-    cs: VCF
-    en: VCF
+    cs: N3
+    en: N3
   description:
-    en: standard text file format used in bioinformatics for storing gene sequence
-      or DNA sequence variations
+    en: Non-XML serialization of Resource Description Framework models.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/vcf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: VCF
-- id: ppsx
+    iri: https://nma.eosc.cz/vocabularies/filetypes/n3
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: N3
+- id: pptx
   title:
-    cs: PowerPoint PPSX
-    en: PowerPoint PPSX
+    cs: PowerPoint PPTX
+    en: PowerPoint PPTX
   description:
-    en: PPSX – PowerPoint 2007 XML slide show – is an XML filename extension of Microsoft
-      PowerPoint presentation program. PowerPoint was originally designed to provide
-      visuals for group presentations within business organizations, but has come
-      to be very widely used in many other communication situations, both in business
-      and beyond.
+    en: PPTX – PowerPoint 2007 XML presentation – is an XML filename extension of
+      Office Open XML version of Microsoft PowerPoint presentation program. PowerPoint
+      was originally designed to provide visuals for group presentations within business
+      organizations, but has come to be very widely used in many other communication
+      situations, both in business and beyond.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ppsx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PPSX
-- id: skos_xml
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pptx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PPTX
+- id: geotiff
   title:
-    cs: SKOS
-    en: SKOS
+    cs: GeoTIFF
+    en: GeoTIFF
   description:
-    en: SKOS – Simple Knowledge Organization System – is a W3C recommendation designed
-      for representation of thesauri, classification schemes, taxonomies, subject-heading
-      systems or any other type of structured controlled vocabulary. XML – Extensible
-      Markup Language – is a markup language that defines a set of rules for encoding
-      documents in a format that is both human-readable and machine-readable.
+    en: GeoTIFF is a public domain metadata standard which allows georeferencing information
+      to be embedded within a TIFF file. The potential additional information includes
+      map projection, coordinate systems, ellipsoids, datums, and everything else
+      necessary to establish the exact spatial reference for the file.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/skos_xml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SKOS_XML
-- id: dxf
+    iri: https://nma.eosc.cz/vocabularies/filetypes/geotiff
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GEOTIFF
+- id: mets
   title:
-    cs: DXF
-    en: DXF
+    cs: METS XML
+    en: METS XML
   description:
-    en: A DXF file is a data file saved in a format developed by Autodesk and used
-      for CAD (computer-aided design) vector image files, such as AutoCAD documents.
-      DXF files are similar to .DWG files, but are more compatible with other programs
-      since they are ASCII (text) based.
+    en: METS – Metadata Encoding and Transmission Standard – is a metadata standard
+      for encoding descriptive, administrative and structural metadata regarding objects
+      within a digital library, expressed using the XML schema language.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dxf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DXF
-- id: wav
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mets
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: METS
+- id: jpeg
   title:
-    cs: WAV
-    en: WAV
+    cs: JPEG
+    en: JPEG
   description:
-    en: Waveform Audio File (WAV) is a format is used for storing uncompressed digital
-      audio files. It is the default audio format for Windows but it is supported
-      by most operating systems.
+    en: JPEG – Joint Photographic Experts Group – is a commonly used method of lossy
+      compression for digital images, particularly for those images produced by digital
+      photography. The degree of compression can be adjusted, allowing a selectable
+      tradeoff between storage size and image quality.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/wav
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WAV
-- id: aab
+    iri: https://nma.eosc.cz/vocabularies/filetypes/jpeg
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JPEG
+- id: thrift_compact
   title:
-    cs: AAB
-    en: AAB
+    cs: Thrift compact
+    en: Thrift compact
   description:
-    en: An Android App Bundle (AAB) is a package file format used by the Android operating
-      system. It includes an app’s compiled code and resources, and defers APK generation
-      and signing to Google Play.
+    en: interface definition language and binary communication protocol used for defining
+      and creating services for programming languages; more compact binary format
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/aab
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AAB
-- id: dwg
+    iri: https://nma.eosc.cz/vocabularies/filetypes/thrift_compact
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: THRIFT_COMPACT
+- id: rdf_n_triples
   title:
-    cs: DWG
-    en: DWG
+    cs: RDF N-Triples
+    en: RDF N-Triples
   description:
-    en: A DWG file is a 2D or 3D drawing created with Autodesk AutoCAD, a professional
-      CAD program. It contains vector image data and metadata that AutoCAD and other
-      CAD applications use to load a drawing. DWG files are related to .DXF files,
-      which are ASCII versions of DWG files.
+    en: RDF N-Triples is a line-based, plain text format for encoding an RDF graph;
+      a concrete syntax for RDF, an easy to parse line-based subset of Turtle.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dwg
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DWG
-- id: pps
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_n_triples
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_N_TRIPLES
+- id: wim
   title:
-    cs: PowerPoint Slide Show
-    en: PowerPoint Slide Show
+    cs: WIM
+    en: WIM
   description:
-    en: PPS – PowerPoint 97–2003 binary slide show – is a binary filaname extension
-      of Microsoft PowerPoint presentation program. PowerPoint was originally designed
-      to provide visuals for group presentations within business organizations, but
-      has come to be very widely used in many other communication situations, both
-      in business and beyond.
+    en: The Windows Imaging Format (WIM) is a file-based disk image format.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pps
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PPS
-- id: sparqlq
+    iri: https://nma.eosc.cz/vocabularies/filetypes/wim
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WIM
+- id: mdb
   title:
-    cs: SPARQL
-    en: SPARQL
+    cs: MDB
+    en: MDB
   description:
-    en: SPARQL – a recursive acronym for SPARQL Protocol and RDF Query Language –
-      is an RDF query language, that is, a semantic query language for databases,
-      able to retrieve and manipulate data stored in Resource Description Framework
-      (RDF) format. It is recognised as one of the key technologies of the semantic
-      web.
+    en: MDB – Microsoft Database – is a proprietary file format used by 2003 and earlier
+      versions of Microsoft Access. Microsoft Access is a database management system.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/sparqlq
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SPARQLQ
-- id: html5
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mdb
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MDB
+- id: rest
   title:
-    cs: HTML5
-    en: HTML5
+    cs: Esri REST
+    en: Esri REST
   description:
-    en: HTML5 is a markup language used for structuring and presenting content on
-      the World Wide Web. It is the fifth and last major HTML version that is a World
-      Wide Web Consortium (W3C) recommendation. The current specification is known
-      as the HTML Living Standard. It is maintained by the Web Hypertext Application
-      Technology Working Group (WHATWG), a consortium of the major browser vendors
-      (Apple, Google, Mozilla, and Microsoft).
+    en: Esri REST is a standard way for web clients to communicate with geographic
+      information system (GIS) servers through Representational State Transfer (REST)
+      technology.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/html5
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HTML5
-- id: laz
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rest
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: REST
+- id: octet
   title:
-    cs: Compressed LAS file
-    en: Compressed LAS file
+    cs: Octet Stream
+    en: Octet Stream
   description:
-    en: LAZ is the media type which shall be used for compressed LAS files. This media
-      type is incomplete as it lacks a reference to the specification of the format.
+    en: Octet is the Internet media type for an arbitrary byte stream. A byte streamor
+      octet stream is a series of bytes.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/laz
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LAZ
-- id: dmg
-  title:
-    cs: DMG
-    en: DMG
-  description:
-    en: Apple Disk Image is a disk image format commonly used by the macOS operating
-      system.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dmg
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DMG
-- id: xhtml_simpl
-  title:
-    cs: XHTML simplified
-    en: XHTML simplified
-  description:
-    en: XHTML is HTML written as XML. Its simplified version is used for storage in
-      the Publications Office.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xhtml_simpl
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XHTML_SIMPL
+    iri: https://nma.eosc.cz/vocabularies/filetypes/octet
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OCTET
 - id: pwp
   title:
     cs: PWP
@@ -1117,50 +818,67 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/pwp
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PWP
-- id: kml
+- id: map_prvw
   title:
-    cs: KML
-    en: KML
+    cs: ArcGIS Map Preview
+    en: ArcGIS Map Preview
   description:
-    en: KML – Keyhole Markup Language – is an XML notation for expressing geographic
-      annotation and visualization within Internet-based, two-dimensional maps and
-      three-dimensional Earth browsers. KML was developed for use with Google Earth
-      and became an international standard.
+    en: Esri's ArcGIS is a geographic information system (GIS) for working with maps
+      and geographic information. Map previews are normal raster background maps.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/kml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: KML
-- id: sql
+    iri: https://nma.eosc.cz/vocabularies/filetypes/map_prvw
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MAP_PRVW
+- id: mpeg4_avc
   title:
-    cs: SQL
-    en: SQL
+    cs: MPEG-4 AVC
+    en: MPEG-4 AVC
   description:
-    en: SQL – Structured Query Language – is a domain-specific language used in programming
-      and designed for managing data held in a relational database management system
-      (RDBMS) or for stream processing in a relational data stream management system
-      (RDSMS).
+    en: MPEG-4 – Moving Picture Experts Group – Part 10, Advanced Video Coding is
+      a block-oriented motion-compensation-based video compression standard. It is
+      one of the most commonly used formats for the recording, compression and distribution
+      of video content.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/sql
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SQL
-- id: odb
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mpeg4_avc
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MPEG4_AVC
+- id: thrift_binary
   title:
-    cs: OpenDocument Database
-    en: OpenDocument Database
+    cs: Thrift binary
+    en: Thrift binary
   description:
-    en: OpenDocument is a standardized Open Document Format for Office Applications.
-      Databases are organized collections of data.
+    en: interface definition language and binary communication protocol used for defining
+      and creating services for programming languages; binary format
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/odb
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODB
-- id: rpm
+    iri: https://nma.eosc.cz/vocabularies/filetypes/thrift_binary
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: THRIFT_BINARY
+- id: rar
   title:
-    cs: RPM
-    en: RPM
+    cs: RAR
+    en: RAR
   description:
-    en: File format for RPM Package Manager (originally Red Hat Package Manager),
-      free and open-source package management system.
+    en: RAR is a proprietary archive file format that supports data compression, error
+      recovery and file spanning.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rpm
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RPM
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rar
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RAR
+- id: akn4eu_zip
+  title:
+    cs: AKN4EU ZIP
+    en: AKN4EU ZIP
+  description:
+    en: retired concept; replaced by AKN4EU_LEG
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/akn4eu_zip
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AKN4EU_ZIP
+- id: vcf
+  title:
+    cs: VCF
+    en: VCF
+  description:
+    en: standard text file format used in bioinformatics for storing gene sequence
+      or DNA sequence variations
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/vcf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: VCF
 - id: css
   title:
     cs: CSS
@@ -1171,129 +889,51 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/css
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: CSS
-- id: matlab_mat
+- id: tar_xz
   title:
-    cs: MATLAB MAT
-    en: MATLAB MAT
-  description:
-    en: proprietary, binary data container format used by MATLAB software from MathWorks
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/matlab_mat
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MATLAB_MAT
-- id: pdfa3u
-  title:
-    cs: PDF/A-3u
-    en: PDF/A-3u
-  description:
-    en: PDF/A-3 subtype that supports Unicode, ensuring that non-Latin text is correctly
-      represented
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa3u
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA3U
-- id: ipa
-  title:
-    cs: IPA
-    en: IPA
-  description:
-    en: An .ipa (iOS App Store Package) file is an application archive file used by
-      the iOS operating system.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ipa
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: IPA
-- id: tar
-  title:
-    cs: TAR
-    en: TAR
+    cs: TAR XZ
+    en: TAR XZ
   description:
     en: TAR – tape archive – is a computer software utility for collecting many files
-      into one archive file for distribution or backup purposes.
+      into one archive file, often referred to as a tarball, for distribution or backup
+      purposes. XZ is a lossless compression program and file format.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/tar
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAR
-- id: war
+    iri: https://nma.eosc.cz/vocabularies/filetypes/tar_xz
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAR_XZ
+- id: gif
   title:
-    cs: WAR
-    en: WAR
+    cs: GIF
+    en: GIF
   description:
-    en: A WAR file is used to distribute a collection of JAR-files, JavaServer Pages,
-      Java Servlets, Java classes, XML files, tag libraries, static web pages and
-      other resources that together constitute a web application.
+    en: GIF – Graphics Interchange Format – is a bitmap image format that was developed
+      by a team at the bulletin board service (BBS) provider CompuServe.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/war
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WAR
-- id: appx
+    iri: https://nma.eosc.cz/vocabularies/filetypes/gif
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GIF
+- id: fmx3
   title:
-    cs: AppX
-    en: AppX
+    cs: Formex 3
+    en: Formex 3
   description:
-    en: AppX is a file format used to distribute and install apps on Windows 8.x and
-      10, Windows Phone 8.1, Windows 10 Mobile, Xbox One, Hololens and Windows 10
-      IoT Core.
+    en: Formex describes the format for the exchange of data between the Publication
+      Office and its contractors. In particular, it defines the logical markup for
+      documents which are published in the different series of the Offical Journal
+      of the European Union. Formex 3 was a previous version of Formex actually used.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/appx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: APPX
-- id: legalhtml
+    iri: https://nma.eosc.cz/vocabularies/filetypes/fmx3
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: FMX3
+- id: gml
   title:
-    cs: LegalHTML
-    en: LegalHTML
+    cs: GML
+    en: GML
   description:
-    en: extension of the HTML language designed for representing legal acts; it provides
-      an explicit domain language addressing all structural aspects of an act such
-      as articles, paragraphs, items and references; it also supports the description
-      of the editorial and jurisdictional history of an act and the semantic annotation
-      of domain entities; furthermore, LegalHTML addresses the consolidation of an
-      act and its subsequent modifications into a single document using a tree-like
-      representation of the original content and of its modified versions; finally,
-      a JavaScript API enhances the representation as an active document, enabling
-      the visualization of a consolidated act as it applies at different points in
-      time
+    en: GML – Geography Markup Language – is the XML grammar defined by the Open Geospatial
+      Consortium (OGC) to express geographical features. GML serves as a modeling
+      language for geographic systems as well as an open interchange format for geographic
+      transactions on the Internet.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/legalhtml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LEGALHTML
-- id: warc_gz
-  title:
-    cs: WARC GZ
-    en: WARC GZ
-  description:
-    en: WARC is a web archive format which specifies a method for combining multiple
-      digital resources into an aggregate archive file together with related information.
-      WARC GZ is WARC compressed by GZIP.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/warc_gz
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WARC_GZ
-- id: aac
-  title:
-    cs: AAC
-    en: AAC
-  description:
-    en: Advanced Audio Coding (AAC) is an audio coding standard for lossy digital
-      audio compression. Designed to be the successor of the MP3 format, AAC generally
-      achieves higher sound quality than MP3 at the same bit rate.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/aac
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AAC
-- id: geojson
-  title:
-    cs: GeoJSON
-    en: GeoJSON
-  description:
-    en: GeoJSON is an open standard format designed for representing simple geographical
-      features, along with their non-spatial attributes, based on JSON.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/geojson
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GEOJSON
-- id: arrow_stream
-  title:
-    cs: Arrow stream
-    en: Arrow stream
-  description:
-    en: Apache columnar format that includes a language-agnostic in-memory data structure
-      specification, metadata serialisation, and a protocol for serialisation and
-      generic data transport; streaming format is used for sending an arbitrary length
-      sequence of record batches
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/arrow_stream
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARROW_STREAM
+    iri: https://nma.eosc.cz/vocabularies/filetypes/gml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GML
 - id: arrow_file
   title:
     cs: Arrow file
@@ -1306,243 +946,83 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/arrow_file
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARROW_FILE
-- id: odt
+- id: shp
   title:
-    cs: ODT
-    en: ODT
+    cs: Esri Shape
+    en: Esri Shape
   description:
-    en: ODT is the word processing file format of OpenDocument, an open standard for
-      electronic documents.
+    en: SHP – shapefile format – is a popular geospatial vector data format for geographic
+      information system (GIS) software. Esri shapefile is a zip archive that contains
+      at least the shp, shx and dbf files.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/odt
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODT
-- id: dbf
+    iri: https://nma.eosc.cz/vocabularies/filetypes/shp
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SHP
+- id: kml
   title:
-    cs: DBF
-    en: DBF
+    cs: KML
+    en: KML
   description:
-    en: DBF – dBase database file – is supported by a number of database products.
-      dBase was one of the first database management systems for microcomputers.
+    en: KML – Keyhole Markup Language – is an XML notation for expressing geographic
+      annotation and visualization within Internet-based, two-dimensional maps and
+      three-dimensional Earth browsers. KML was developed for use with Google Earth
+      and became an international standard.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dbf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DBF
-- id: html
+    iri: https://nma.eosc.cz/vocabularies/filetypes/kml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: KML
+- id: rdata
   title:
-    cs: HTML
-    en: HTML
+    cs: RData
+    en: RData
   description:
-    en: HTML is the standard markup language used to create web pages and its elements
-      form the building blocks of all websites.
+    en: open source data format of the statistical computing and graphic software
+      R
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/html
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HTML
-- id: arff
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rdata
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDATA
+- id: bzip2
   title:
-    cs: ARFF
-    en: ARFF
+    cs: bzip2
+    en: bzip2
   description:
-    en: ASCII text file that describes a list of instances sharing a set of attributes
+    en: An open source, patent- and royalty-free compression format. The compression
+      algorithm is a Burrows-Wheeler transform followed by a move-to-front transform
+      and finally Huffman coding.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/arff
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARFF
-- id: xlsx
+    iri: https://nma.eosc.cz/vocabularies/filetypes/bzip2
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BZIP2
+- id: indd
   title:
-    cs: Excel XLSX
-    en: Excel XLSX
+    cs: INDD
+    en: INDD
   description:
-    en: XLSX is the default file format for Excel 2007 and later workbook used for
-      Microsoft Excel spreadsheet which features calculation, graphing tools, pivot
-      tables and a macro programming language. XLSX is in reality a ZIP compressed
-      archive with a directory structure of XML text documents.
+    en: INDD is a file format for a page layout file used by Adobe InDesign. InDesign
+      is a desktop publishing software application.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xlsx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XLSX
-- id: lha
+    iri: https://nma.eosc.cz/vocabularies/filetypes/indd
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: INDD
+- id: ppt
   title:
-    cs: LHA
-    en: LHA
+    cs: PowerPoint PPT
+    en: PowerPoint PPT
   description:
-    en: Compressed file produced by LHA, a freeware compression utility.
+    en: PPT is a binary media type of Microsoft PowerPoint presentation program. PowerPoint
+      was originally designed to provide visuals for group presentations within business
+      organizations, but has come to be very widely used in many other communication
+      situations, both in business and beyond.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/lha
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LHA
-- id: tar_xz
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ppt
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PPT
+- id: sgml
   title:
-    cs: TAR XZ
-    en: TAR XZ
+    cs: SGML
+    en: SGML
   description:
-    en: TAR – tape archive – is a computer software utility for collecting many files
-      into one archive file, often referred to as a tarball, for distribution or backup
-      purposes. XZ is a lossless compression program and file format.
+    en: 'SGML – Standard Generalized Markup Language – is a standard for defining
+      generalized markup languages for documents. Generalized markup is based on two
+      postulates: markup should be declarative and rigorous.'
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/tar_xz
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAR_XZ
-- id: bits
-  title:
-    cs: BITS XML
-    en: BITS XML
-  description:
-    en: BITS – Book Interchange Tag Suite – is the ‘book version’ of Journal Article
-      Tag Suite (JATS); an XML format used to describe books published online. BITS
-      provides a common XML format in which publishers and archivists can describe
-      textual and graphical content elements. In order to facilitate the reusability,
-      BITS makes a tag set adequate for supporting interchange, archiving, format-conversion
-      and publishing.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/bits
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BITS
-- id: rdf_n_quads
-  title:
-    cs: RDF N-Quads
-    en: RDF N-Quads
-  description:
-    en: N-Quads is a line-based, plain text format for encoding an RDF dataset. N-quads
-      statements are a sequence of RDF terms representing the subject, predicate,
-      object and graph label of an RDF Triple and the graph it is part of in a dataset.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_n_quads
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_N_QUADS
-- id: iso
-  title:
-    cs: ISO image
-    en: ISO image
-  description:
-    en: Archive file containing the content from (or destined for) an optical disk.
-      Originally it was limited to data formatted to comply with the ISO 9660 standard
-      (1988), hence the format name and the iso file extension. The ISO Disk Image
-      File Format is typically used to package or bundle software, databases, authored
-      DVD video programs, and the like. ISO image files, unlike normal files, are
-      not opened but rather are mounted. ISO image files contain the data contents
-      of every written sector of an optical disc, including the optical disc file
-      system if one is present.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/iso
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ISO
-- id: world
-  title:
-    cs: World file
-    en: World file
-  description:
-    en: A world file is a plain text computer data file used by geographic information
-      systems (GIS) to georeference raster map images. The file extension usually
-      depends on the format of the associated image, e.g. .jgw for JPEG (2000) or
-      .tfw for TIFF.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/world
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WORLD
-- id: mp3
-  title:
-    cs: MP3
-    en: MP3
-  description:
-    en: An MP3 is a format for digital audio. It uses the lossy compression to reduce
-      the data without losing audio quality.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mp3
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MP3
-- id: tab_rstr
-  title:
-    cs: MapInfo TAB raster file
-    en: MapInfo TAB raster file
-  description:
-    en: MapInfo TAB raster file is the media type which shall be used for the MapInfo
-      Raster TAB format. This media type is incomplete as it lacks a reference to
-      the specification of the format.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/tab_rstr
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAB_RSTR
-- id: mpeg2
-  title:
-    cs: MPEG-2
-    en: MPEG-2
-  description:
-    en: MPEG-2 – Moving Picture Experts Group – is a standard for the generic coding
-      of moving pictures and associated audio information. It describes a combination
-      of lossy video compression and lossy audio data compression methods, which permit
-      storage and transmission of movies using currently available storage media and
-      transmission bandwidth.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mpeg2
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MPEG2
-- id: lzma
-  title:
-    cs: lzma
-    en: lzma
-  description:
-    en: Compressed file produced using LZMA (Lempel-Ziv-Markov) chain algorithm.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/lzma
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LZMA
-- id: epub
-  title:
-    cs: EPUB
-    en: EPUB
-  description:
-    en: EPUB – electronic publication – is an e-book file format that can be downloaded
-      and read on devices like smartphones, tablets, computers or e-readers. It is
-      a technical standard published by the International Digital Publishing Forum
-      (IDPF).
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/epub
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EPUB
-- id: xyz
-  title:
-    cs: XYZ Chemical File
-    en: XYZ Chemical File
-  description:
-    en: The XYZ file format is a chemical file format. There is no formal standard
-      and several variations exist, but a typical XYZ format specifies the molecule
-      geometry by giving the number of atoms with Cartesian coordinates that will
-      be read on the first line, a comment on the second, and the lines of atomic
-      coordinates in the following lines.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xyz
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XYZ
-- id: lzip
-  title:
-    cs: lzip
-    en: lzip
-  description:
-    en: Compressed file produced by lzip, free, command-line tool for the compression
-      of data that employs the Lempel-Ziv-Markov chain algorithm (LZMA).
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/lzip
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LZIP
-- id: pdf
-  title:
-    cs: PDF
-    en: PDF
-  description:
-    en: PDF – Portable Document Format – is a file format developed to present documents,
-      including text formatting and images, in a manner independent of application
-      software, hardware and operating systems. Based on the PostScript language,
-      each PDF file encapsulates a complete description of a fixed-layout flat document,
-      including the text, fonts, vector graphics, raster images and other information
-      needed to display it. PDF was standardized as an open format and does not require
-      any royalties for its implementation.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDF
-- id: map_prvw
-  title:
-    cs: ArcGIS Map Preview
-    en: ArcGIS Map Preview
-  description:
-    en: Esri's ArcGIS is a geographic information system (GIS) for working with maps
-      and geographic information. Map previews are normal raster background maps.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/map_prvw
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MAP_PRVW
-- id: lzo
-  title:
-    cs: lzo
-    en: lzo
-  description:
-    en: Compressed file produced using LZO (Lempel-Ziv-Oberhumer), a lossless data
-      compression algorithm that is focused on decompression speed.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/lzo
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LZO
+    iri: https://nma.eosc.cz/vocabularies/filetypes/sgml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SGML
 - id: ecw
   title:
     cs: ECW
@@ -1554,153 +1034,16 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/ecw
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ECW
-- id: mdb
+- id: html_simpl
   title:
-    cs: MDB
-    en: MDB
+    cs: HTML simplified
+    en: HTML simplified
   description:
-    en: MDB – Microsoft Database – is a proprietary file format used by 2003 and earlier
-      versions of Microsoft Access. Microsoft Access is a database management system.
+    en: HTML is a markup language for describing web documents. Its simplified version
+      is used for storage in the Publications Office.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mdb
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MDB
-- id: pdfa2b
-  title:
-    cs: PDF/A-2b
-    en: PDF/A-2b
-  description:
-    en: PDF/A-2 is the Part 2 of the PDF standard and specifies three levels of conformance
-      for PDF files. PDF/A-2b corresponds to conformance level a in PDF/A-2 (basic).
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa2b
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA2B
-- id: grid_ascii
-  title:
-    cs: Esri ASCII grid
-    en: Esri ASCII grid
-  description:
-    en: Esri ASCII grid is the media type which shall be used for ASCII GRID files.
-      ASCII GRID is one of the two formats of Esri grid, a raster GIS file format,
-      a non-proprietary ASCII format, also known as an ArcInfo ASCII GRID.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/grid_ascii
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GRID_ASCII
-- id: mets
-  title:
-    cs: METS XML
-    en: METS XML
-  description:
-    en: METS – Metadata Encoding and Transmission Standard – is a metadata standard
-      for encoding descriptive, administrative and structural metadata regarding objects
-      within a digital library, expressed using the XML schema language.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mets
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: METS
-- id: 7z
-  title:
-    cs: 7z
-    en: 7z
-  description:
-    en: 7z is a compressed archive file format that supports several different data
-      compression, encryption and pre-processing algorithms.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/7z
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: 7Z
-- id: odc
-  title:
-    cs: OpenDocument Chart
-    en: OpenDocument Chart
-  description:
-    en: OpenDocument is a standardized Open Document Format for Office Applications.
-      Charts define how to create graphical displays from numerical data.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/odc
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODC
-- id: dapk
-  title:
-    cs: DAPK
-    en: DAPK
-  description:
-    en: An Android Package (APK) with special features used by the Android operating
-      system for the distribution and installation of Daydream mobile apps.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dapk
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DAPK
-- id: xls
-  title:
-    cs: Excel XLS
-    en: Excel XLS
-  description:
-    en: XLS is a proprietary binary file format used for Microsoft Excel spreadsheet
-      which features calculation, graphing tools, pivot tables and a macro programming
-      language.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xls
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XLS
-- id: pl
-  title:
-    cs: Perl script
-    en: Perl script
-  description:
-    en: Source code written in the Perl programming language.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pl
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PL
-- id: dtd_sgml
-  title:
-    cs: SGML DTD
-    en: SGML DTD
-  description:
-    en: SGML – Standard Generalized Markup Language – is a standard for defining generalized
-      markup languages for documents. DTD – document type definition – is a set of
-      markup declarations that define a document type for an SGML-family markup language
-      (SGML, XML, HTML). It defines the legal building blocks of an XML document,
-      the document structure with a list of legal elements and attributes.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dtd_sgml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DTD_SGML
-- id: json
-  title:
-    cs: JSON
-    en: JSON
-  description:
-    en: JSON is an open-standard file format that uses human-readable text to transmit
-      data objects consisting of attribute–value pairs and array data types (or any
-      other serializable value). It is a very common data format used for asynchronous
-      browser/server communication.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/json
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JSON
-- id: js
-  title:
-    cs: JavaScript
-    en: JavaScript
-  description:
-    en: JavaScript is a high-level, interpreted programming language. It is a language
-      which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/js
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JS
-- id: mets_zip
-  title:
-    cs: METS package
-    en: METS package
-  description:
-    en: METS package is a zip file containing METS XML files.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mets_zip
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: METS_ZIP
-- id: schema_xml
-  title:
-    cs: XML schema
-    en: XML schema
-  description:
-    en: An XML schema is a description of a type of XML document, typically expressed
-      in terms of constraints on the structure and content of documents of that type,
-      above and beyond the basic syntactical constraints imposed by XML itself.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/schema_xml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SCHEMA_XML
+    iri: https://nma.eosc.cz/vocabularies/filetypes/html_simpl
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HTML_SIMPL
 - id: wcs_srvc
   title:
     cs: WCS
@@ -1712,192 +1055,29 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/wcs_srvc
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WCS_SRVC
-- id: thrift_compact
+- id: pdfa1a
   title:
-    cs: Thrift compact
-    en: Thrift compact
+    cs: PDF/A-1a
+    en: PDF/A-1a
   description:
-    en: interface definition language and binary communication protocol used for defining
-      and creating services for programming languages; more compact binary format
+    en: PDF/A-1 is the Part 1 of the PDF standard and specifies two levels of conformance
+      for PDF files. PDF/A-1a – Level A (accessible) conformance was intended to increase
+      the accessibility of conforming files for physically impaired users by allowing
+      assistive software, such as screen readers, to more precisely extract and interpret
+      a file's contents.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/thrift_compact
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: THRIFT_COMPACT
-- id: dmp
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa1a
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA1A
+- id: tab
   title:
-    cs: Oracle Dump
-    en: Oracle Dump
+    cs: MapInfo TAB file
+    en: MapInfo TAB file
   description:
-    en: DMP is the media type which shall be used for Oracle dumps. This media type
-      is incomplete as it lacks a reference to the specification of the format.
+    en: MapInfo TAB is the media type which shall be used for the MapInfo TAB format.
+      The file is a zip archive that contains at least the tab, dat, map and id files.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/dmp
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DMP
-- id: psd
-  title:
-    cs: PSD
-    en: PSD
-  description:
-    en: PSD – Photoshop Document – stores an image with support for most imaging options
-      available in Adobe Photoshop. Photoshop is a raster graphics editor.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/psd
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PSD
-- id: swm
-  title:
-    cs: SWM
-    en: SWM
-  description:
-    en: Split WIM file is a Windows Imaging Format file that has been split into multiple
-      parts.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/swm
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SWM
-- id: rar
-  title:
-    cs: RAR
-    en: RAR
-  description:
-    en: RAR is a proprietary archive file format that supports data compression, error
-      recovery and file spanning.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rar
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RAR
-- id: map_srvc
-  title:
-    cs: ArcGIS Map Service
-    en: ArcGIS Map Service
-  description:
-    en: Esri's ArcGIS is a geographic information system (GIS) for working with maps
-      and geographic information. Map services offer access to map and layer content.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/map_srvc
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MAP_SRVC
-- id: xslt
-  title:
-    cs: XSLT
-    en: XSLT
-  description:
-    en: XSLT – Extensible Stylesheet Language Transformations – is a language for
-      transforming XML documents into other XML documents or other formats such as
-      HTML for web pages, plain text or XSL Formatting Objects, which may subsequently
-      be converted to other formats, such as PDF, PostScript and PNG.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xslt
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XSLT
-- id: ungen
-  title:
-    cs: Ungen
-    en: Ungen
-  description:
-    en: ArcGIS ungenerate creates a text file of x,y coordinates from the input coverage.
-      It provides a useful mechanism to create simple coordinate files from coverages.
-      This allows you to easily transfer coverages to other mapping systems or view
-      and update individual coordinates using your computer’s text editor.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ungen
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: UNGEN
-- id: wmts_srvc
-  title:
-    cs: WMTS
-    en: WMTS
-  description:
-    en: Open Geospatial Consortium’s standard for serving digital maps using predefined
-      image tiles
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/wmts_srvc
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WMTS_SRVC
-- id: ps
-  title:
-    cs: PS
-    en: PS
-  description:
-    en: PS – PostScript – is a page description language in the electronic publishing
-      and desktop publishing business. It is a dynamically typed, concatenative programming
-      language.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ps
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PS
-- id: exe
-  title:
-    cs: EXE
-    en: EXE
-  description:
-    en: An executable file (the main execution point of a computer program) for DOS,
-      OpenVMS, Microsoft Windows, Symbian or OS/2. Besides the executable program,
-      many .exe files contain other components called resources, such as bitmap graphics
-      and icons which the executable program may use for its graphical user interface.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/exe
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EXE
-- id: rdf_thrift
-  title:
-    cs: RDF Thrift
-    en: RDF Thrift
-  description:
-    en: RDF Binary using Apache Thrift (‘RDF Thrift’) is a binary format for RDF and
-      RDF-related data. Binary formats are faster to process – they do not incur the
-      parsing costs of text-base formats. RDF Thrift defines basic encoding for RDF
-      terms, then builds data formats for RDF graphs, RDF datasets and for SPARQL
-      result sets. This gives a basis for high-performance linked data systems.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_thrift
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_THRIFT
-- id: ods
-  title:
-    cs: ODS
-    en: ODS
-  description:
-    en: ODS is an OpenDocument file format for spreadsheets. OpenDocument was developed
-      with the aim of providing an open, XML-based file format specification for office
-      applications.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ods
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODS
-- id: mhtml
-  title:
-    cs: MHTML
-    en: MHTML
-  description:
-    en: MHTML – MIME Encapsulation of Aggregate HTML Documents – is a web page archive
-      format used to combine in a single document the HTML code and its companion
-      resources that are otherwise represented by external links (such as images,
-      Flash animations, Java applets and audio files). The content of an MHTML file
-      is encoded as if it were an HTML e-mail message.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mhtml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MHTML
-- id: ear
-  title:
-    cs: EAR
-    en: EAR
-  description:
-    en: EAR (Enterprise Application aRchive) is a file format used by Java EE for
-      packaging one or more modules into a single archive.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ear
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EAR
-- id: lpk
-  title:
-    cs: Layer package
-    en: Layer package
-  description:
-    en: A layer package packages one or more layers and all referenced data sources
-      to create a single compressed .lpk file.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/lpk
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LPK
-- id: sparqlqres
-  title:
-    cs: SPARQL results
-    en: SPARQL results
-  description:
-    en: Results of a SPARQL query. SPARQL – SPARQL Protocol and RDF Query Language
-      – is an RDF query language, that is, a semantic query language for databases,
-      able to retrieve and manipulate data stored in Resource Description Framework
-      (RDF) format.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/sparqlqres
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SPARQLQRES
+    iri: https://nma.eosc.cz/vocabularies/filetypes/tab
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAB
 - id: mif_mid
   title:
     cs: MIF/MID
@@ -1910,168 +1090,71 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/mif_mid
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MIF_MID
-- id: bzip2
+- id: dmp
   title:
-    cs: bzip2
-    en: bzip2
+    cs: Oracle Dump
+    en: Oracle Dump
   description:
-    en: An open source, patent- and royalty-free compression format. The compression
-      algorithm is a Burrows-Wheeler transform followed by a move-to-front transform
-      and finally Huffman coding.
+    en: DMP is the media type which shall be used for Oracle dumps. This media type
+      is incomplete as it lacks a reference to the specification of the format.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/bzip2
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BZIP2
-- id: rest
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dmp
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DMP
+- id: gpx
   title:
-    cs: Esri REST
-    en: Esri REST
+    cs: GPX
+    en: GPX
   description:
-    en: Esri REST is a standard way for web clients to communicate with geographic
-      information system (GIS) servers through Representational State Transfer (REST)
-      technology.
+    en: light-weight XML data format for the interchange of GPS data (waypoints, routes,
+      and tracks) between applications and web services
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rest
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: REST
-- id: apk
+    iri: https://nma.eosc.cz/vocabularies/filetypes/gpx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GPX
+- id: iso_zip
   title:
-    cs: APK
-    en: APK
+    cs: Zipped ISO image
+    en: Zipped ISO image
   description:
-    en: Android Package (APK) is the package file format used by the Android operating
-      system for distribution and installation of mobile apps, mobile games and middleware.
+    en: ZIP archive containing an ISO disc image file.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/apk
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: APK
-- id: tab
+    iri: https://nma.eosc.cz/vocabularies/filetypes/iso_zip
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ISO_ZIP
+- id: dgn
   title:
-    cs: MapInfo TAB file
-    en: MapInfo TAB file
+    cs: DGN
+    en: DGN
   description:
-    en: MapInfo TAB is the media type which shall be used for the MapInfo TAB format.
-      The file is a zip archive that contains at least the tab, dat, map and id files.
+    en: A DGN file is a 2D/3D drawing created by various construction CAD software,
+      such as MicroStation and Intergraph Interactive Graphics Design System. It may
+      be saved in one of two formats, either the Intergraph Standard File Format (ISFF)
+      or the newer V8 DGN standard. DGN files are typically used to save designs for
+      construction projects for highways, bridges, and buildings.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/tab
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAB
-- id: parquet
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dgn
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DGN
+- id: gzip
   title:
-    cs: Parquet
-    en: Parquet
+    cs: GNU zip
+    en: GNU zip
   description:
-    en: Apache columnar storage format available to any project in the Hadoop ecosystem,
-      regardless of the choice of data processing framework, data model or programming
-      language; explicitly designed to separate the metadata from the data
+    en: GZIP – GNU zip – is a file format and a software application used for file
+      compression and decompression.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/parquet
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PARQUET
-- id: tiff
+    iri: https://nma.eosc.cz/vocabularies/filetypes/gzip
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GZIP
+- id: rdf_turtle
   title:
-    cs: TIFF
-    en: TIFF
+    cs: RDF Turtle
+    en: RDF Turtle
   description:
-    en: TIFF – Tagged Image File Format – is a computer file format for storing raster
-      graphics images, popular among graphic artists, the publishing industry and
-      photographers. TIFF is widely supported by scanning, faxing, word processing,
-      optical character recognition, image manipulation, desktop publishing and page-layout
-      applications. The format was created by Aldus Corporation for use in desktop
-      publishing.
+    en: Turtle – Terse RDF Triple Language – is a format for expressing data in the
+      Resource Description Framework (RDF) data model with a syntax similar to SPARQL.
+      RDF, in turn, represents information using ‘triples’, each of which consists
+      of a subject, a predicate and an object. Each of those items is expressed as
+      a Web URI.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/tiff
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TIFF
-- id: xslfo
-  title:
-    cs: XSL-FO
-    en: XSL-FO
-  description:
-    en: XSL-FO – XSL Formatting Objects – is a markup language for XML document formatting
-      that is most often used to generate PDF files. XSL-FO is part of XSL (Extensible
-      Stylesheet Language), a set of W3C technologies designed for the transformation
-      and formatting of XML data.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xslfo
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XSLFO
-- id: sdmx
-  title:
-    cs: SDMX
-    en: SDMX
-  description:
-    en: SDMX is an initiative to foster standards for the exchange of statistical
-      information. The SDMX message formats have two basic expressions, SDMX-ML (using
-      XML syntax) and SDMX-EDI (using EDIFACT syntax and based on the GESMES/TS statistical
-      message).
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/sdmx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SDMX
-- id: mov
-  title:
-    cs: MOV
-    en: MOV
-  description:
-    en: 'computer file format used natively by the QuickTime framework; the format
-      specifies a multimedia container file that contains one or more tracks, each
-      of which stores a particular type of data: audio, video, or text (e.g. for subtitles)'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/mov
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MOV
-- id: pdf1x
-  title:
-    cs: PDF1X
-    en: PDF1X
-  description:
-    en: PDF1X is a PDF specification used mainly for high quality color printing.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdf1x
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDF1X
-- id: xz
-  title:
-    cs: xz
-    en: xz
-  description:
-    en: Compressed file produced using XZ Utils (free software command-line lossless
-      data compressors, including LZMA and xz).
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xz
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XZ
-- id: xlsm
-  title:
-    cs: XLSM
-    en: XLSM
-  description:
-    en: An Excel Macro-enabled Workbook contains worksheets of cells arranged by rows
-      and columns as well as embedded macros programmed in the Visual Basic for Applications
-      (VBA) language. XLSM files are saved in the Open XML format introduced in Microsoft
-      Office 2007. XLSM files are XLSX files, but with macros enabled.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xlsm
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XLSM
-- id: eforms_xml
-  title:
-    cs: eForms XML
-    en: eForms XML
-  description:
-    en: EU legislative XML standard for procurement data used by public buyers to
-      publish notices on Tenders Electronic Daily (TED), the European public procurement
-      advertising website. The standard forms (eForms) have been established by the
-      Commission Implementing Regulation (EU) 2019/1780 of 23 September 2019, and
-      need to be implemented in national eProcurement systems by being tailored to
-      national needs.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/eforms_xml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EFORMS_XML
-- id: arcinfo_cov
-  title:
-    cs: ArcInfo coverage
-    en: ArcInfo coverage
-  description:
-    en: An ESRI ArcInfo coverage is a georelational data model that stores vector
-      data – it contains both the spatial (location) and attribute (descriptive) data
-      for geographic features. Coverages use a set of feature classes to represent
-      geographic features. Each feature class stores a set of points, lines (arcs),
-      polygons, or annotation (text). Coverages can have topology, which determines
-      the relationships between features. A coverage is stored as a directory within
-      which each feature class is stored as a set of files.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/arcinfo_cov
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARCINFO_COV
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_turtle
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_TURTLE
 - id: odg
   title:
     cs: OpenDocument Image
@@ -2094,6 +1177,135 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/deb
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DEB
+- id: odt
+  title:
+    cs: ODT
+    en: ODT
+  description:
+    en: ODT is the word processing file format of OpenDocument, an open standard for
+      electronic documents.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/odt
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODT
+- id: akn4eu_leg
+  title:
+    cs: AKN4EU LEG
+    en: AKN4EU LEG
+  description:
+    en: ZIP archive containing an AKN4EU manifestation of a document in one linguistic
+      variant issued in the legal decision-making process; it must contain at least
+      an AKN4EU file starting with the prefix ‘main-’, which constitutes the entry
+      point, and may contain other associated files and subfolders
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/akn4eu_leg
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AKN4EU_LEG
+- id: mrsid
+  title:
+    cs: MrSID
+    en: MrSID
+  description:
+    en: Multiresolution seamless image database (MrSID) is a file format developed
+      and patented by LizardTech for encoding of georeferenced raster graphics, such
+      as orthophotos. With this format, large raster image files such as aerial photographs
+      or satellite imagery are compressed and can be quickly viewed without having
+      to decompress the entire file.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mrsid
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MRSID
+- id: rdf_thrift
+  title:
+    cs: RDF Thrift
+    en: RDF Thrift
+  description:
+    en: RDF Binary using Apache Thrift (‘RDF Thrift’) is a binary format for RDF and
+      RDF-related data. Binary formats are faster to process – they do not incur the
+      parsing costs of text-base formats. RDF Thrift defines basic encoding for RDF
+      terms, then builds data formats for RDF graphs, RDF datasets and for SPARQL
+      result sets. This gives a basis for high-performance linked data systems.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_thrift
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_THRIFT
+- id: mobi
+  title:
+    cs: Mobipocket eBook
+    en: Mobipocket eBook
+  description:
+    en: Mobipocket eBook is a proprietary e-book file format of Mobipocket SA company
+      that can be used by mobile phones, personal digital assistants (PDA) and desktop
+      operating systems.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mobi
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MOBI
+- id: pdfa2b
+  title:
+    cs: PDF/A-2b
+    en: PDF/A-2b
+  description:
+    en: PDF/A-2 is the Part 2 of the PDF standard and specifies three levels of conformance
+      for PDF files. PDF/A-2b corresponds to conformance level a in PDF/A-2 (basic).
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa2b
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA2B
+- id: sb3
+  title:
+    cs: sb3
+    en: sb3
+  description:
+    en: Scratch 3.0 is a file format used to store exported Scratch 3.0 projects and
+      sprites. These are ZIP archives which contain information encoded in a text-based
+      JSON format and project media in separate files.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/sb3
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SB3
+- id: tiff
+  title:
+    cs: TIFF
+    en: TIFF
+  description:
+    en: TIFF – Tagged Image File Format – is a computer file format for storing raster
+      graphics images, popular among graphic artists, the publishing industry and
+      photographers. TIFF is widely supported by scanning, faxing, word processing,
+      optical character recognition, image manipulation, desktop publishing and page-layout
+      applications. The format was created by Aldus Corporation for use in desktop
+      publishing.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/tiff
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TIFF
+- id: ods
+  title:
+    cs: ODS
+    en: ODS
+  description:
+    en: ODS is an OpenDocument file format for spreadsheets. OpenDocument was developed
+      with the aim of providing an open, XML-based file format specification for office
+      applications.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ods
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODS
+- id: tar_gz
+  title:
+    cs: TAR GZ
+    en: TAR GZ
+  description:
+    en: TAR – tape archive – is a computer software utility for collecting many files
+      into one archive file, often referred to as a tarball, for distribution or backup
+      purposes. GZ – gzip – is a file format and a software application used for file
+      compression and decompression.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/tar_gz
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAR_GZ
+- id: exe
+  title:
+    cs: EXE
+    en: EXE
+  description:
+    en: An executable file (the main execution point of a computer program) for DOS,
+      OpenVMS, Microsoft Windows, Symbian or OS/2. Besides the executable program,
+      many .exe files contain other components called resources, such as bitmap graphics
+      and icons which the executable program may use for its graphical user interface.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/exe
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EXE
 - id: pdfua
   title:
     cs: PDF/UA
@@ -2110,268 +1322,81 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/pdfua
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFUA
-- id: ics
+- id: dapk
   title:
-    cs: ICalendar
-    en: ICalendar
+    cs: DAPK
+    en: DAPK
   description:
-    en: iCalendar is a computer file format which allows Internet users to send meeting
-      requests and tasks to other Internet users by sharing or sending files in this
-      format through various methods.
+    en: An Android Package (APK) with special features used by the Android operating
+      system for the distribution and installation of Daydream mobile apps.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ics
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ICS
-- id: sas
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dapk
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DAPK
+- id: wmts_srvc
   title:
-    cs: SAS
-    en: SAS
+    cs: WMTS
+    en: WMTS
   description:
-    en: proprietary data format of the statistical analysis software SAS
+    en: Open Geospatial Consortium’s standard for serving digital maps using predefined
+      image tiles
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/sas
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SAS
-- id: yaml
+    iri: https://nma.eosc.cz/vocabularies/filetypes/wmts_srvc
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WMTS_SRVC
+- id: grid
   title:
-    cs: YAML
-    en: YAML
+    cs: Esri binary grid
+    en: Esri binary grid
   description:
-    en: YAML is a human-friendly, cross language, Unicode based data serialization
-      language designed around the common native data types of dynamic programming
-      languages. It is broadly useful for programming needs ranging from configuration
-      files to internet messaging to object persistence to data auditing and visualization.
+    en: Esri binary grid is a proprietary binary variation of an Esri grid, a raster
+      GIS file format developed by Esri. It is also known as an ARC/INFO GRID or ARC
+      GRID. It differs from the other Esri grid variation, a non-proprietary ASCII
+      format.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/yaml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: YAML
-- id: stata_dta
+    iri: https://nma.eosc.cz/vocabularies/filetypes/grid
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GRID
+- id: tab_rstr
   title:
-    cs: Stata DTA
-    en: Stata DTA
+    cs: MapInfo TAB raster file
+    en: MapInfo TAB raster file
   description:
-    en: proprietary data format of the statistical software Stata
+    en: MapInfo TAB raster file is the media type which shall be used for the MapInfo
+      Raster TAB format. This media type is incomplete as it lacks a reference to
+      the specification of the format.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/stata_dta
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: STATA_DTA
-- id: bmp
+    iri: https://nma.eosc.cz/vocabularies/filetypes/tab_rstr
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAB_RSTR
+- id: html
   title:
-    cs: Bitmap Image File
-    en: Bitmap Image File
+    cs: HTML
+    en: HTML
   description:
-    en: The bitmap image (BMP) or device independent bitmap (DIB) is a raster graphics
-      image file format used to store bitmap digital images, independently of the
-      display device.
+    en: HTML is the standard markup language used to create web pages and its elements
+      form the building blocks of all websites.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/bmp
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BMP
-- id: jats
+    iri: https://nma.eosc.cz/vocabularies/filetypes/html
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HTML
+- id: gpkg
   title:
-    cs: JATS XML
-    en: JATS XML
+    cs: GeoPackage
+    en: GeoPackage
   description:
-    en: JATS – Journal Article Tag Suite – is an XML format used to describe scientific
-      literature published online. It is a technical standard developed by the National
-      Information Standards Organization (NISO).
+    en: An OGC GeoPackage is an open, standards-based, platform-independent, portable,
+      self-describing, compact format for transferring geospatial information. It
+      is implemented as a SQLite database container.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/jats
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JATS
-- id: rdata
+    iri: https://nma.eosc.cz/vocabularies/filetypes/gpkg
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GPKG
+- id: arj
   title:
-    cs: RData
-    en: RData
+    cs: ARJ
+    en: ARJ
   description:
-    en: open source data format of the statistical computing and graphic software
-      R
+    en: Compressed archive file produced by ARJ software. ARJ (Archived by Robert
+      Jung) is a software tool designed by Robert K. Jung for creating high-efficiency
+      compressed file archives.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rdata
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDATA
-- id: xlsb
-  title:
-    cs: XLSB
-    en: XLSB
-  description:
-    en: A file with the XLSB file extension is an Excel Binary Workbook file. They
-      store information in binary format instead of XML like with most other Excel
-      files (like XLSX). Since XLSB files are binary, they can be read from and written
-      to much faster, making them extremely useful for very large spreadsheets.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/xlsb
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XLSB
-- id: shp
-  title:
-    cs: Esri Shape
-    en: Esri Shape
-  description:
-    en: SHP – shapefile format – is a popular geospatial vector data format for geographic
-      information system (GIS) software. Esri shapefile is a zip archive that contains
-      at least the shp, shx and dbf files.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/shp
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SHP
-- id: tar_gz
-  title:
-    cs: TAR GZ
-    en: TAR GZ
-  description:
-    en: TAR – tape archive – is a computer software utility for collecting many files
-      into one archive file, often referred to as a tarball, for distribution or backup
-      purposes. GZ – gzip – is a file format and a software application used for file
-      compression and decompression.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/tar_gz
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAR_GZ
-- id: pdfa3b
-  title:
-    cs: PDF/A-3b
-    en: PDF/A-3b
-  description:
-    en: PDF/A-3 subtype that guarantees visual fidelity without regard for structure
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa3b
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA3B
-- id: rdfa
-  title:
-    cs: RDFa
-    en: RDFa
-  description:
-    en: RDFa is a technique that provides a set of markup attributes to augment the
-      visual information on the Web with machine-readable hints.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rdfa
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDFA
-- id: rdf_n_triples
-  title:
-    cs: RDF N-Triples
-    en: RDF N-Triples
-  description:
-    en: RDF N-Triples is a line-based, plain text format for encoding an RDF graph;
-      a concrete syntax for RDF, an easy to parse line-based subset of Turtle.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_n_triples
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_N_TRIPLES
-- id: thrift_json
-  title:
-    cs: Thrift JSON
-    en: Thrift JSON
-  description:
-    en: interface definition language and binary communication protocol used for defining
-      and creating services for programming languages; JSON format
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/thrift_json
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: THRIFT_JSON
-- id: immc_xml
-  title:
-    cs: IMMC XML message
-    en: IMMC XML message
-  description:
-    en: Files exchanged within the context of the Interinstitutional Metadata Maintenance
-      Committee (IMMC) communication protocol.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/immc_xml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: IMMC_XML
-- id: pdfx2a
-  title:
-    cs: PDF/X-2a
-    en: PDF/X-2a
-  description:
-    en: PDF/X-2a is a PDF specification in which colour-managed, CMYK and spot colour
-      data are supported in any combination.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfx2a
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFX2A
-- id: ovf
-  title:
-    cs: OVF
-    en: OVF
-  description:
-    en: OVF – Open Virtualization Format – is an open standard for packaging and distributing
-      virtual appliances or more generally software to be run in virtual machines.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ovf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OVF
-- id: tiff_fx
-  title:
-    cs: TIFF FX
-    en: TIFF FX
-  description:
-    en: TIFF-FX is a TIFF-based file format created for fax sendings over the Internet.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/tiff_fx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TIFF_FX
-- id: fmx2
-  title:
-    cs: Formex 2
-    en: Formex 2
-  description:
-    en: Formex describes the format for the exchange of data between the Publication
-      Office and its contractors. In particular, it defines the logical markup for
-      documents which are published in the different series of the Offical Journal
-      of the European Union. Formex 2 was a previous version of Formex actually used.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/fmx2
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: FMX2
-- id: rtf
-  title:
-    cs: RTF
-    en: RTF
-  description:
-    en: RTF – Rich Text Format – is a proprietary document file format developed for
-      cross-platform document interchange with Microsoft products.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rtf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RTF
-- id: akn4eu_zip
-  title:
-    cs: AKN4EU ZIP
-    en: AKN4EU ZIP
-  description:
-    en: retired concept; replaced by AKN4EU_LEG
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/akn4eu_zip
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AKN4EU_ZIP
-- id: ppt
-  title:
-    cs: PowerPoint PPT
-    en: PowerPoint PPT
-  description:
-    en: PPT is a binary media type of Microsoft PowerPoint presentation program. PowerPoint
-      was originally designed to provide visuals for group presentations within business
-      organizations, but has come to be very widely used in many other communication
-      situations, both in business and beyond.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/ppt
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PPT
-- id: owl
-  title:
-    cs: OWL
-    en: OWL
-  description:
-    en: OWL – Web Ontology Language – is a family of knowledge representation languages
-      for authoring ontologies.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/owl
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OWL
-- id: rdf_xml
-  title:
-    cs: RDF XML
-    en: RDF XML
-  description:
-    en: RDF XML is a syntax, defined by the W3C, to express (i.e. serialize) an RDF
-      graph as an XML document.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_xml
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_XML
-- id: pdfa3
-  title:
-    cs: PDF/A-3
-    en: PDF/A-3
-  description:
-    en: ISO-standardised version of the Portable Document Format specialized for use
-      in the archiving and long-term preservation of electronic documents; PDF/A-3
-      is the Part 3 of the standard which differs from PDF/A-2 in only one regard
-      – it allows embedding of arbitrary file formats (such as XML, CSV, CAD, word-processing
-      documents, spreadsheet documents and others) into PDF/A conforming documents
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa3
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA3
+    iri: https://nma.eosc.cz/vocabularies/filetypes/arj
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARJ
 - id: fmx4
   title:
     cs: Formex 4
@@ -2384,6 +1409,812 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/fmx4
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: FMX4
+- id: wms_srvc
+  title:
+    cs: WMS
+    en: WMS
+  description:
+    en: A Web Map Service (WMS) is a standard protocol developed by the Open Geospatial
+      Consortium (OGC) for serving georeferenced map images over the Internet. These
+      images are typically produced by a map server from data provided by a geographic
+      information system (GIS) database.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/wms_srvc
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WMS_SRVC
+- id: dmg
+  title:
+    cs: DMG
+    en: DMG
+  description:
+    en: Apple Disk Image is a disk image format commonly used by the macOS operating
+      system.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dmg
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DMG
+- id: oapk
+  title:
+    cs: OAPK
+    en: OAPK
+  description:
+    en: An Android Package (APK) with special features used by the Android operating
+      system for the distribution and installation of Oculus mobile apps.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/oapk
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OAPK
+- id: pdf
+  title:
+    cs: PDF
+    en: PDF
+  description:
+    en: PDF – Portable Document Format – is a file format developed to present documents,
+      including text formatting and images, in a manner independent of application
+      software, hardware and operating systems. Based on the PostScript language,
+      each PDF file encapsulates a complete description of a fixed-layout flat document,
+      including the text, fonts, vector graphics, raster images and other information
+      needed to display it. PDF was standardized as an open format and does not require
+      any royalties for its implementation.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDF
+- id: fmx2
+  title:
+    cs: Formex 2
+    en: Formex 2
+  description:
+    en: Formex describes the format for the exchange of data between the Publication
+      Office and its contractors. In particular, it defines the logical markup for
+      documents which are published in the different series of the Offical Journal
+      of the European Union. Formex 2 was a previous version of Formex actually used.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/fmx2
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: FMX2
+- id: dbf
+  title:
+    cs: DBF
+    en: DBF
+  description:
+    en: DBF – dBase database file – is supported by a number of database products.
+      dBase was one of the first database management systems for microcomputers.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dbf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DBF
+- id: mbox
+  title:
+    cs: MBOX
+    en: MBOX
+  description:
+    en: MBOX is a generic term for a family of related file formats used for holding
+      collections of email messages. All messages in an mbox mailbox are concatenated
+      and stored as plain text in a single file.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mbox
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MBOX
+- id: xml
+  title:
+    cs: XML
+    en: XML
+  description:
+    en: XML – Extensible Markup Language – is a markup language that defines a set
+      of rules for encoding documents in a format that is both human-readable and
+      machine-readable. The design goals of XML emphasize simplicity, generality and
+      usability across the Internet.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XML
+- id: rdf
+  title:
+    cs: RDF
+    en: RDF
+  description:
+    en: RDF – Resource Description Framework – is a standard model for data interchange
+      on the Web. RDF has features that facilitate data merging. RDF extends the linking
+      structure of the Web to use URIs to name the relationship between things as
+      well as the two ends of the link (this is usually referred to as a ‘triple’).
+      Using this simple model, it allows structured and semi-structured data to be
+      mixed, exposed and shared across different applications. This linking structure
+      forms a directed, labeled graph, where the edges represent the named link between
+      two resources, represented by the graph nodes.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF
+- id: eps
+  title:
+    cs: Encapsulated Postscript
+    en: Encapsulated Postscript
+  description:
+    en: EPS – Encapsulated PostScript – files are more-or-less self-contained, reasonably
+      predictable PostScript documents that describe an image or drawing and can be
+      placed within another PostScript document.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/eps
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EPS
+- id: png
+  title:
+    cs: PNG
+    en: PNG
+  description:
+    en: PNG – Portable Network Graphics – is a raster graphics file format that supports
+      lossless data compression. PNG was created as an improved, non-patented replacement
+      for Graphics Interchange Format (GIF), and is the most widely used lossless
+      image compression format on the Internet.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/png
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PNG
+- id: hdf
+  title:
+    cs: HDF
+    en: HDF
+  description:
+    en: HDF is a set of file formats (HDF4, HDF5) designed to store and organize large
+      amounts of numerical data.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/hdf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HDF
+- id: 7z
+  title:
+    cs: 7z
+    en: 7z
+  description:
+    en: 7z is a compressed archive file format that supports several different data
+      compression, encryption and pre-processing algorithms.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/7z
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: 7Z
+- id: ovf
+  title:
+    cs: OVF
+    en: OVF
+  description:
+    en: OVF – Open Virtualization Format – is an open standard for packaging and distributing
+      virtual appliances or more generally software to be run in virtual machines.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ovf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OVF
+- id: webp
+  title:
+    cs: WebP
+    en: WebP
+  description:
+    en: WebP is an image file format developed by Google intended as a replacement
+      for JPEG, PNG, and GIF file formats. It supports both lossy and lossless compression,
+      as well as animation and alpha transparency.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/webp
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WEBP
+- id: ics
+  title:
+    cs: ICalendar
+    en: ICalendar
+  description:
+    en: iCalendar is a computer file format which allows Internet users to send meeting
+      requests and tasks to other Internet users by sharing or sending files in this
+      format through various methods.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ics
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ICS
+- id: stl
+  title:
+    cs: StL
+    en: StL
+  description:
+    en: An StL (‘StereoLithography’) file is a triangular representation of a 3-dimensional
+      surface geometry. The surface is tessellated or broken down logically into a
+      series of small triangles (facets). Each facet is described by a perpendicular
+      direction and three points representing the vertices (corners) of the triangle.
+      These data are used by a slicing algorithm to determine the cross sections of
+      the 3-dimensional shape to be built by the fabber. The StL standard includes
+      two data formats, ASCII and binary.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/stl
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: STL
+- id: pdfx2a
+  title:
+    cs: PDF/X-2a
+    en: PDF/X-2a
+  description:
+    en: PDF/X-2a is a PDF specification in which colour-managed, CMYK and spot colour
+      data are supported in any combination.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfx2a
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFX2A
+- id: odf
+  title:
+    cs: ODF
+    en: ODF
+  description:
+    en: ODF – Open Document Format for Office Applications, also known as OpenDocument
+      – is an XML-based file format for spreadsheets, charts, presentations and word
+      processing documents. It was developed with the aim of providing an open, XML-based
+      file format specification for office applications.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/odf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODF
+- id: sparqlqres
+  title:
+    cs: SPARQL results
+    en: SPARQL results
+  description:
+    en: Results of a SPARQL query. SPARQL – SPARQL Protocol and RDF Query Language
+      – is an RDF query language, that is, a semantic query language for databases,
+      able to retrieve and manipulate data stored in Resource Description Framework
+      (RDF) format.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/sparqlqres
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SPARQLQRES
+- id: xls
+  title:
+    cs: Excel XLS
+    en: Excel XLS
+  description:
+    en: XLS is a proprietary binary file format used for Microsoft Excel spreadsheet
+      which features calculation, graphing tools, pivot tables and a macro programming
+      language.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xls
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XLS
+- id: tiff_fx
+  title:
+    cs: TIFF FX
+    en: TIFF FX
+  description:
+    en: TIFF-FX is a TIFF-based file format created for fax sendings over the Internet.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/tiff_fx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TIFF_FX
+- id: pl
+  title:
+    cs: Perl script
+    en: Perl script
+  description:
+    en: Source code written in the Perl programming language.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pl
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PL
+- id: odc
+  title:
+    cs: OpenDocument Chart
+    en: OpenDocument Chart
+  description:
+    en: OpenDocument is a standardized Open Document Format for Office Applications.
+      Charts define how to create graphical displays from numerical data.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/odc
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODC
+- id: xhtml_simpl
+  title:
+    cs: XHTML simplified
+    en: XHTML simplified
+  description:
+    en: XHTML is HTML written as XML. Its simplified version is used for storage in
+      the Publications Office.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xhtml_simpl
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XHTML_SIMPL
+- id: pdfx
+  title:
+    cs: PDF/X
+    en: PDF/X
+  description:
+    en: PDF/X is a subset of the PDF standard. The purpose of PDF/X is to facilitate
+      graphics exchange, and it therefore has a series of printing related requirements
+      which do not apply to standard PDF files.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFX
+- id: tsv
+  title:
+    cs: TSV
+    en: TSV
+  description:
+    en: TSV – tab-separated values – files are a simple text format for storing data
+      in a tabular structure, e.g. database table or spreadsheet data, and a way of
+      exchanging information between databases. Each record in the table is one line
+      of the text file. Each field value of a record is separated from the next by
+      a tab character.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/tsv
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TSV
+- id: ungen
+  title:
+    cs: Ungen
+    en: Ungen
+  description:
+    en: ArcGIS ungenerate creates a text file of x,y coordinates from the input coverage.
+      It provides a useful mechanism to create simple coordinate files from coverages.
+      This allows you to easily transfer coverages to other mapping systems or view
+      and update individual coordinates using your computer’s text editor.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ungen
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: UNGEN
+- id: mov
+  title:
+    cs: MOV
+    en: MOV
+  description:
+    en: 'computer file format used natively by the QuickTime framework; the format
+      specifies a multimedia container file that contains one or more tracks, each
+      of which stores a particular type of data: audio, video, or text (e.g. for subtitles)'
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mov
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MOV
+- id: lha
+  title:
+    cs: LHA
+    en: LHA
+  description:
+    en: Compressed file produced by LHA, a freeware compression utility.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/lha
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LHA
+- id: ogcfeat
+  title:
+    cs: OGCFeat
+    en: OGCFeat
+  description:
+    en: multi-part standard that offers the capability to create, modify, and query
+      spatial data on the Web and specifies requirements and recommendations for APIs
+      that want to follow a standard way of sharing feature data
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ogcfeat
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OGCFEAT
+- id: xhtml
+  title:
+    cs: XHTML
+    en: XHTML
+  description:
+    en: XHTML is a family of current and future document types and modules that reproduce,
+      subset and extend HTML 4. XHTML family document types are XML based.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xhtml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XHTML
+- id: psd
+  title:
+    cs: PSD
+    en: PSD
+  description:
+    en: PSD – Photoshop Document – stores an image with support for most imaging options
+      available in Adobe Photoshop. Photoshop is a raster graphics editor.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/psd
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PSD
+- id: bwf
+  title:
+    cs: BWF
+    en: BWF
+  description:
+    en: BWF – Broadcast Wave Format – is an extension of the Microsoft WAV audio format
+      and is the recording format of most file-based non-linear digital recorders
+      used for motion picture, radio and television production. The purpose of this
+      file format is the addition of metadata to facilitate the seamless exchange
+      of sound data between different computer platforms and applications.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/bwf
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BWF
+- id: rdfa
+  title:
+    cs: RDFa
+    en: RDFa
+  description:
+    en: RDFa is a technique that provides a set of markup attributes to augment the
+      visual information on the Web with machine-readable hints.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rdfa
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDFA
+- id: grid_ascii
+  title:
+    cs: Esri ASCII grid
+    en: Esri ASCII grid
+  description:
+    en: Esri ASCII grid is the media type which shall be used for ASCII GRID files.
+      ASCII GRID is one of the two formats of Esri grid, a raster GIS file format,
+      a non-proprietary ASCII format, also known as an ArcInfo ASCII GRID.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/grid_ascii
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GRID_ASCII
+- id: pdfx1a
+  title:
+    cs: PDF/X-1a
+    en: PDF/X-1a
+  description:
+    en: PDF/X-1a is a PDF specification which completes exchange using CMYK data and
+      spots colour printing data.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfx1a
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFX1A
+- id: dwg
+  title:
+    cs: DWG
+    en: DWG
+  description:
+    en: A DWG file is a 2D or 3D drawing created with Autodesk AutoCAD, a professional
+      CAD program. It contains vector image data and metadata that AutoCAD and other
+      CAD applications use to load a drawing. DWG files are related to .DXF files,
+      which are ASCII versions of DWG files.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dwg
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DWG
+- id: dwca
+  title:
+    cs: DwC-A
+    en: DwC-A
+  description:
+    en: biodiversity informatics data standard that makes use of the Darwin Core terms
+      to produce a single, self contained dataset for sharing species-level (taxonomic),
+      species-occurrence data, and sampling-event data; an archive is a set of text
+      files, in standard comma- or tab-delimited format, with a simple descriptor
+      file (called meta.xml) to inform others how the files are organized
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dwca
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DWCA
+- id: jats
+  title:
+    cs: JATS XML
+    en: JATS XML
+  description:
+    en: JATS – Journal Article Tag Suite – is an XML format used to describe scientific
+      literature published online. It is a technical standard developed by the National
+      Information Standards Organization (NISO).
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/jats
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JATS
+- id: pdf1x
+  title:
+    cs: PDF1X
+    en: PDF1X
+  description:
+    en: PDF1X is a PDF specification used mainly for high quality color printing.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdf1x
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDF1X
+- id: js
+  title:
+    cs: JavaScript
+    en: JavaScript
+  description:
+    en: JavaScript is a high-level, interpreted programming language. It is a language
+      which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/js
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JS
+- id: odb
+  title:
+    cs: OpenDocument Database
+    en: OpenDocument Database
+  description:
+    en: OpenDocument is a standardized Open Document Format for Office Applications.
+      Databases are organized collections of data.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/odb
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODB
+- id: immc_xml
+  title:
+    cs: IMMC XML message
+    en: IMMC XML message
+  description:
+    en: Files exchanged within the context of the Interinstitutional Metadata Maintenance
+      Committee (IMMC) communication protocol.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/immc_xml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: IMMC_XML
+- id: iso
+  title:
+    cs: ISO image
+    en: ISO image
+  description:
+    en: Archive file containing the content from (or destined for) an optical disk.
+      Originally it was limited to data formatted to comply with the ISO 9660 standard
+      (1988), hence the format name and the iso file extension. The ISO Disk Image
+      File Format is typically used to package or bundle software, databases, authored
+      DVD video programs, and the like. ISO image files, unlike normal files, are
+      not opened but rather are mounted. ISO image files contain the data contents
+      of every written sector of an optical disc, including the optical disc file
+      system if one is present.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/iso
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ISO
+- id: warc
+  title:
+    cs: WARC
+    en: WARC
+  description:
+    en: WARC is a web archive format which specifies a method for combining multiple
+      digital resources into an aggregate archive file together with related information.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/warc
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WARC
+- id: stata_dta
+  title:
+    cs: Stata DTA
+    en: Stata DTA
+  description:
+    en: proprietary data format of the statistical software Stata
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/stata_dta
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: STATA_DTA
+- id: pdfa1b
+  title:
+    cs: PDF/A-1b
+    en: PDF/A-1b
+  description:
+    en: PDF/A-1 is the Part 1 of the PDF standard and specifies two levels of conformance
+      for PDF files. Level B (basic) conformance requires only that standards necessary
+      for the reliable reproduction of a document's visual appearance be followed.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa1b
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA1B
+- id: tar
+  title:
+    cs: TAR
+    en: TAR
+  description:
+    en: TAR – tape archive – is a computer software utility for collecting many files
+      into one archive file for distribution or backup purposes.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/tar
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TAR
+- id: xz
+  title:
+    cs: xz
+    en: xz
+  description:
+    en: Compressed file produced using XZ Utils (free software command-line lossless
+      data compressors, including LZMA and xz).
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xz
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XZ
+- id: qgs
+  title:
+    cs: QGS
+    en: QGS
+  description:
+    en: QGS file is a Quantum GIS project. Quantum GIS (QGIS) is a cross-platform
+      free and open source desktop geographic information systems (GIS) application
+      that provides data viewing, editing, and analysis capabilities.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/qgs
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: QGS
+- id: rdf_xml
+  title:
+    cs: RDF XML
+    en: RDF XML
+  description:
+    en: RDF XML is a syntax, defined by the W3C, to express (i.e. serialize) an RDF
+      graph as an XML document.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_xml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_XML
+- id: bmp
+  title:
+    cs: Bitmap Image File
+    en: Bitmap Image File
+  description:
+    en: The bitmap image (BMP) or device independent bitmap (DIB) is a raster graphics
+      image file format used to store bitmap digital images, independently of the
+      display device.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/bmp
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: BMP
+- id: jar
+  title:
+    cs: JAR
+    en: JAR
+  description:
+    en: JAR (Java Archive) is an archive file that includes a Java-specific manifest
+      file. It is built on the ZIP format.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/jar
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JAR
+- id: sch
+  title:
+    cs: Schematron
+    en: Schematron
+  description:
+    en: rule-based validation language for making assertions about the structure and
+      content of XML documents; it is expressed in XML using a small number of elements
+      and XPath; it has been standardised as part of ISO/IEC 19757
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/sch
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SCH
+- id: mop
+  title:
+    cs: MOP
+    en: MOP
+  description:
+    en: MOP is a chemical file format used by MOPAC. MOPAC is a popular computer program
+      used in computational chemistry. It is designed to implement semi-empirical
+      quantum chemistry algorithms.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mop
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MOP
+- id: skos_xml
+  title:
+    cs: SKOS
+    en: SKOS
+  description:
+    en: SKOS – Simple Knowledge Organization System – is a W3C recommendation designed
+      for representation of thesauri, classification schemes, taxonomies, subject-heading
+      systems or any other type of structured controlled vocabulary. XML – Extensible
+      Markup Language – is a markup language that defines a set of rules for encoding
+      documents in a format that is both human-readable and machine-readable.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/skos_xml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SKOS_XML
+- id: gdb
+  title:
+    cs: Esri File Geodatabase
+    en: Esri File Geodatabase
+  description:
+    en: GDB is an Esri's file-based geodatabase format, stored as folders in a file
+      system. It shall be used for Esri file geodatabases. The file is a zip archive
+      that contains the gdb directory.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/gdb
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GDB
+- id: map_srvc
+  title:
+    cs: ArcGIS Map Service
+    en: ArcGIS Map Service
+  description:
+    en: Esri's ArcGIS is a geographic information system (GIS) for working with maps
+      and geographic information. Map services offer access to map and layer content.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/map_srvc
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MAP_SRVC
+- id: fmx4_zip
+  title:
+    cs: FMX4 ZIP
+    en: FMX4 ZIP
+  description:
+    en: FMX4 ZIP is a ZIP archive containing files that all belong to a Formex 4 instance.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/fmx4_zip
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: FMX4_ZIP
+- id: spss_sav
+  title:
+    cs: SPSS SAV
+    en: SPSS SAV
+  description:
+    en: proprietary data format of the statistical software SPSS
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/spss_sav
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SPSS_SAV
+- id: pdfx4
+  title:
+    cs: PDF/X-4
+    en: PDF/X-4
+  description:
+    en: PDF/X-4 is a PDF specification in which colour-managed, CMYK, gray, RGB or
+      spot colour data are supported, as are PDF transparency and optional content.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfx4
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFX4
+- id: etsi_xml
+  title:
+    cs: ETSI signature validation report
+    en: ETSI signature validation report
+  description:
+    en: ETSI signature validation report is a European Telecommunications Standards
+      Institute (ETSI) signature validation report XML file.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/etsi_xml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ETSI_XML
+- id: atom
+  title:
+    cs: Atom Feed
+    en: Atom Feed
+  description:
+    en: The Atom Feed or Atom Syndication Format is an XML language used for web feeds.
+      Web feeds allow software programs to check for updates published on a website.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/atom
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ATOM
+- id: sdmx
+  title:
+    cs: SDMX
+    en: SDMX
+  description:
+    en: SDMX is an initiative to foster standards for the exchange of statistical
+      information. The SDMX message formats have two basic expressions, SDMX-ML (using
+      XML syntax) and SDMX-EDI (using EDIFACT syntax and based on the GESMES/TS statistical
+      message).
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/sdmx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SDMX
+- id: pdfa2a
+  title:
+    cs: PDF/A-2a
+    en: PDF/A-2a
+  description:
+    en: PDF/A-2 is the Part 2 of the PDF standard and specifies three levels of conformance
+      for PDF files. PDF/A-2a corresponds to conformance level a in PDF/A-1 (accessible).
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfa2a
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFA2A
+- id: hdt
+  title:
+    cs: HDT
+    en: HDT
+  description:
+    en: HDT (Header, Dictionary, Triples) is a compact data structure and binary serialization
+      format for Resource Description Framework (RDF) that keeps big datasets compressed
+      to save space while maintaining search and browse operations without prior decompression.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/hdt
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: HDT
+- id: warc_gz
+  title:
+    cs: WARC GZ
+    en: WARC GZ
+  description:
+    en: WARC is a web archive format which specifies a method for combining multiple
+      digital resources into an aggregate archive file together with related information.
+      WARC GZ is WARC compressed by GZIP.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/warc_gz
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WARC_GZ
+- id: mxd
+  title:
+    cs: MXD
+    en: MXD
+  description:
+    en: MXD – Map Exchange Document – is a file format in which the maps created from
+      ArcGIS software can be stored.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mxd
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MXD
+- id: rpm
+  title:
+    cs: RPM
+    en: RPM
+  description:
+    en: File format for RPM Package Manager (originally Red Hat Package Manager),
+      free and open-source package management system.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rpm
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RPM
+- id: sql
+  title:
+    cs: SQL
+    en: SQL
+  description:
+    en: SQL – Structured Query Language – is a domain-specific language used in programming
+      and designed for managing data held in a relational database management system
+      (RDBMS) or for stream processing in a relational data stream management system
+      (RDSMS).
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/sql
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SQL
+- id: ps
+  title:
+    cs: PS
+    en: PS
+  description:
+    en: PS – PostScript – is a page description language in the electronic publishing
+      and desktop publishing business. It is a dynamically typed, concatenative programming
+      language.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/ps
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PS
+- id: thrift_json
+  title:
+    cs: Thrift JSON
+    en: Thrift JSON
+  description:
+    en: interface definition language and binary communication protocol used for defining
+      and creating services for programming languages; JSON format
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/thrift_json
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: THRIFT_JSON
+- id: etsi_tsl
+  title:
+    cs: ETSI TSL
+    en: ETSI TSL
+  description:
+    en: file containing information related to the qualified trust service providers
+      and the qualified trust services provided by them
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/etsi_tsl
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ETSI_TSL
 - id: z
   title:
     cs: Z
@@ -2394,6 +2225,186 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/z
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: Z
+- id: appx
+  title:
+    cs: AppX
+    en: AppX
+  description:
+    en: AppX is a file format used to distribute and install apps on Windows 8.x and
+      10, Windows Phone 8.1, Windows 10 Mobile, Xbox One, Hololens and Windows 10
+      IoT Core.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/appx
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: APPX
+- id: dtd_xml
+  title:
+    cs: XML DTD
+    en: XML DTD
+  description:
+    en: XML – Extensible Markup Language – is a markup language that defines a set
+      of rules for encoding documents in a format that is both human-readable and
+      machine-readable. DTD – document type definition – is a set of markup declarations
+      that define a document type for an SGML-family markup language (SGML, XML, HTML).
+      It defines the legal building blocks of an XML document, the document structure
+      with a list of legal elements and attributes. XML uses a subset of SGML DTD.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/dtd_xml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DTD_XML
+- id: op_datpro
+  title:
+    cs: Předběžné údaje
+    en: Provisional data
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/op_datpro
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: OP_DATPRO
+- id: epub
+  title:
+    cs: EPUB
+    en: EPUB
+  description:
+    en: EPUB – electronic publication – is an e-book file format that can be downloaded
+      and read on devices like smartphones, tablets, computers or e-readers. It is
+      a technical standard published by the International Digital Publishing Forum
+      (IDPF).
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/epub
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EPUB
+- id: eforms_xml
+  title:
+    cs: eForms XML
+    en: eForms XML
+  description:
+    en: EU legislative XML standard for procurement data used by public buyers to
+      publish notices on Tenders Electronic Daily (TED), the European public procurement
+      advertising website. The standard forms (eForms) have been established by the
+      Commission Implementing Regulation (EU) 2019/1780 of 23 September 2019, and
+      need to be implemented in national eProcurement systems by being tailored to
+      national needs.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/eforms_xml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: EFORMS_XML
+- id: csv
+  title:
+    cs: CSV
+    en: CSV
+  description:
+    en: CSV – comma-separated values – files store tabular data (numbers and text)
+      in plain text. Each line of the file is a data record. Each record consists
+      of one or more fields, separated by commas.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/csv
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: CSV
+- id: zip
+  title:
+    cs: ZIP
+    en: ZIP
+  description:
+    en: ZIP is an archive file format that supports lossless data compression. A ZIP
+      file may contain one or more files or directories that may have been compressed.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/zip
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ZIP
+- id: lzma
+  title:
+    cs: lzma
+    en: lzma
+  description:
+    en: Compressed file produced using LZMA (Lempel-Ziv-Markov) chain algorithm.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/lzma
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LZMA
+- id: json
+  title:
+    cs: JSON
+    en: JSON
+  description:
+    en: JSON is an open-standard file format that uses human-readable text to transmit
+      data objects consisting of attribute–value pairs and array data types (or any
+      other serializable value). It is a very common data format used for asynchronous
+      browser/server communication.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/json
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: JSON
+- id: aab
+  title:
+    cs: AAB
+    en: AAB
+  description:
+    en: An Android App Bundle (AAB) is a package file format used by the Android operating
+      system. It includes an app’s compiled code and resources, and defers APK generation
+      and signing to Google Play.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/aab
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AAB
+- id: mets_zip
+  title:
+    cs: METS package
+    en: METS package
+  description:
+    en: METS package is a zip file containing METS XML files.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mets_zip
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: METS_ZIP
+- id: doc
+  title:
+    cs: Word DOC
+    en: Word DOC
+  description:
+    en: DOC is a proprietary binary Word document format used by Microsoft Word word
+      processor.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/doc
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DOC
+- id: rss
+  title:
+    cs: RSS feed
+    en: RSS feed
+  description:
+    en: RSS – Rich Site Summary; originally RDF Site Summary; often called Really
+      Simple Syndication – is a type of web feed which allows users to access updates
+      to online content in a standardized, computer-readable format. These feeds can,
+      for example, allow a user to keep track of many different websites in a single
+      news aggregator. Websites usually use RSS feeds to publish frequently updated
+      information, such as blog entries, news headlines, audio, video. An RSS document
+      (called ‘feed’, ‘web feed’ or ‘channel’) includes full or summarized text and
+      metadata.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rss
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RSS
+- id: xlsb
+  title:
+    cs: XLSB
+    en: XLSB
+  description:
+    en: A file with the XLSB file extension is an Excel Binary Workbook file. They
+      store information in binary format instead of XML like with most other Excel
+      files (like XLSX). Since XLSB files are binary, they can be read from and written
+      to much faster, making them extremely useful for very large spreadsheets.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xlsb
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XLSB
+- id: xlsm
+  title:
+    cs: XLSM
+    en: XLSM
+  description:
+    en: An Excel Macro-enabled Workbook contains worksheets of cells arranged by rows
+      and columns as well as embedded macros programmed in the Visual Basic for Applications
+      (VBA) language. XLSM files are saved in the Open XML format introduced in Microsoft
+      Office 2007. XLSM files are XLSX files, but with macros enabled.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/xlsm
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: XLSM
+- id: swm
+  title:
+    cs: SWM
+    en: SWM
+  description:
+    en: Split WIM file is a Windows Imaging Format file that has been split into multiple
+      parts.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/swm
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: SWM
 - id: kmz
   title:
     cs: KMZ
@@ -2412,6 +2423,30 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/kmz
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: KMZ
+- id: azw
+  title:
+    cs: Amazon Kindle eBook
+    en: Amazon Kindle eBook
+  description:
+    en: AZW Kindle File Format is a proprietary e-book file format created by Amazon.com
+      that can be downloaded and read on devices like smartphones, tablets, computers
+      or e-readers that have Amazon's Kindle application.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/azw
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AZW
+- id: mhtml
+  title:
+    cs: MHTML
+    en: MHTML
+  description:
+    en: MHTML – MIME Encapsulation of Aggregate HTML Documents – is a web page archive
+      format used to combine in a single document the HTML code and its companion
+      resources that are otherwise represented by external links (such as images,
+      Flash animations, Java applets and audio files). The content of an MHTML file
+      is encoded as if it were an HTML e-mail message.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/filetypes/mhtml
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MHTML
 - id: txt
   title:
     cs: Plain text
@@ -2427,74 +2462,50 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/txt
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: TXT
-- id: etsi_tsl
+- id: rdf_n_quads
   title:
-    cs: ETSI TSL
-    en: ETSI TSL
+    cs: RDF N-Quads
+    en: RDF N-Quads
   description:
-    en: file containing information related to the qualified trust service providers
-      and the qualified trust services provided by them
+    en: N-Quads is a line-based, plain text format for encoding an RDF dataset. N-quads
+      statements are a sequence of RDF terms representing the subject, predicate,
+      object and graph label of an RDF Triple and the graph it is part of in a dataset.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/etsi_tsl
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ETSI_TSL
-- id: wms_srvc
+    iri: https://nma.eosc.cz/vocabularies/filetypes/rdf_n_quads
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: RDF_N_QUADS
+- id: pps
   title:
-    cs: WMS
-    en: WMS
+    cs: PowerPoint Slide Show
+    en: PowerPoint Slide Show
   description:
-    en: A Web Map Service (WMS) is a standard protocol developed by the Open Geospatial
-      Consortium (OGC) for serving georeferenced map images over the Internet. These
-      images are typically produced by a map server from data provided by a geographic
-      information system (GIS) database.
+    en: PPS – PowerPoint 97–2003 binary slide show – is a binary filaname extension
+      of Microsoft PowerPoint presentation program. PowerPoint was originally designed
+      to provide visuals for group presentations within business organizations, but
+      has come to be very widely used in many other communication situations, both
+      in business and beyond.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/wms_srvc
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WMS_SRVC
-- id: docx
+    iri: https://nma.eosc.cz/vocabularies/filetypes/pps
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PPS
+- id: lzo
   title:
-    cs: Word DOCX
-    en: Word DOCX
+    cs: lzo
+    en: lzo
   description:
-    en: DOCX is an Office Open XML international standard for Office documents. It
-      is used by Microsoft Word and by a growing number of applications from other
-      vendors in word processing programs.
+    en: Compressed file produced using LZO (Lempel-Ziv-Oberhumer), a lossless data
+      compression algorithm that is focused on decompression speed.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/docx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: DOCX
-- id: indd
+    iri: https://nma.eosc.cz/vocabularies/filetypes/lzo
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LZO
+- id: msi
   title:
-    cs: INDD
-    en: INDD
+    cs: MSI
+    en: MSI
   description:
-    en: INDD is a file format for a page layout file used by Adobe InDesign. InDesign
-      is a desktop publishing software application.
+    en: Archive file for Windows Installer containing the installation information
+      and an optional .cab file payload.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/indd
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: INDD
-- id: odf
-  title:
-    cs: ODF
-    en: ODF
-  description:
-    en: ODF – Open Document Format for Office Applications, also known as OpenDocument
-      – is an XML-based file format for spreadsheets, charts, presentations and word
-      processing documents. It was developed with the aim of providing an open, XML-based
-      file format specification for office applications.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/odf
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ODF
-- id: pptx
-  title:
-    cs: PowerPoint PPTX
-    en: PowerPoint PPTX
-  description:
-    en: PPTX – PowerPoint 2007 XML presentation – is an XML filename extension of
-      Office Open XML version of Microsoft PowerPoint presentation program. PowerPoint
-      was originally designed to provide visuals for group presentations within business
-      organizations, but has come to be very widely used in many other communication
-      situations, both in business and beyond.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pptx
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PPTX
+    iri: https://nma.eosc.cz/vocabularies/filetypes/msi
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: MSI
 - id: las
   title:
     cs: LASer file
@@ -2506,37 +2517,26 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/las
     skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: LAS
-- id: grid
+- id: wav
   title:
-    cs: Esri binary grid
-    en: Esri binary grid
+    cs: WAV
+    en: WAV
   description:
-    en: Esri binary grid is a proprietary binary variation of an Esri grid, a raster
-      GIS file format developed by Esri. It is also known as an ARC/INFO GRID or ARC
-      GRID. It differs from the other Esri grid variation, a non-proprietary ASCII
-      format.
+    en: Waveform Audio File (WAV) is a format is used for storing uncompressed digital
+      audio files. It is the default audio format for Windows but it is supported
+      by most operating systems.
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/grid
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: GRID
-- id: akn4eu_leg
+    iri: https://nma.eosc.cz/vocabularies/filetypes/wav
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: WAV
+- id: arrow_stream
   title:
-    cs: AKN4EU LEG
-    en: AKN4EU LEG
+    cs: Arrow stream
+    en: Arrow stream
   description:
-    en: ZIP archive containing an AKN4EU manifestation of a document in one linguistic
-      variant issued in the legal decision-making process; it must contain at least
-      an AKN4EU file starting with the prefix ‘main-’, which constitutes the entry
-      point, and may contain other associated files and subfolders
+    en: Apache columnar format that includes a language-agnostic in-memory data structure
+      specification, metadata serialisation, and a protocol for serialisation and
+      generic data transport; streaming format is used for sending an arbitrary length
+      sequence of record batches
   props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/akn4eu_leg
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: AKN4EU_LEG
-- id: pdfx1a
-  title:
-    cs: PDF/X-1a
-    en: PDF/X-1a
-  description:
-    en: PDF/X-1a is a PDF specification which completes exchange using CMYK data and
-      spots colour printing data.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/filetypes/pdfx1a
-    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: PDFX1A
+    iri: https://nma.eosc.cz/vocabularies/filetypes/arrow_stream
+    skos:exactMatch:http://publications.europa.eu/resource/authority/file-type: ARROW_STREAM

@@ -12,8 +12,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/contactperson
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ContactPerson
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: contactperson
-    skos:exactMatch:info:eu-repo/semantics: contactperson
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ContactPerson
+    skos:exactMatch:info:eu-repo/semantics: ContactPerson
 - id: datacollector
   title:
     cs: Sběratel dat
@@ -27,8 +27,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/datacollector
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCollector
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: datacollector
-    skos:exactMatch:info:eu-repo/semantics: datacollector
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataCollector
+    skos:exactMatch:info:eu-repo/semantics: DataCollector
 - id: datacurator
   title:
     cs: Kurátor dat
@@ -52,8 +52,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/datacurator
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCurator
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: datacurator
-    skos:exactMatch:info:eu-repo/semantics: datacurator
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataCurator
+    skos:exactMatch:info:eu-repo/semantics: DataCurator
 - id: datamanager
   title:
     cs: Manažer dat
@@ -70,8 +70,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/datamanager
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataManager
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: datamanager
-    skos:exactMatch:info:eu-repo/semantics: datamanager
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataManager
+    skos:exactMatch:info:eu-repo/semantics: DataManager
 - id: distributor
   title:
     cs: Distributor
@@ -84,8 +84,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/distributor
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Distributor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: distributor
-    skos:exactMatch:info:eu-repo/semantics: distributor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Distributor
+    skos:exactMatch:info:eu-repo/semantics: Distributor
 - id: editor
   title:
     cs: Editor
@@ -99,8 +99,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/editor
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Editor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: editor
-    skos:exactMatch:info:eu-repo/semantics: editor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Editor
+    skos:exactMatch:info:eu-repo/semantics: Editor
 - id: hostinginstitution
   title:
     cs: Hostující instituce
@@ -114,8 +114,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/hostinginstitution
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: HostingInstitution
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: hostinginstitution
-    skos:exactMatch:info:eu-repo/semantics: hostinginstitution
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: HostingInstitution
+    skos:exactMatch:info:eu-repo/semantics: HostingInstitution
 - id: producer
   title:
     cs: Producent
@@ -129,8 +129,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/producer
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Producer
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: producer
-    skos:exactMatch:info:eu-repo/semantics: producer
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Producer
+    skos:exactMatch:info:eu-repo/semantics: Producer
 - id: projectleader
   title:
     cs: Vedoucí projektu
@@ -145,8 +145,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectleader
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectLeader
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: projectleader
-    skos:exactMatch:info:eu-repo/semantics: projectleader
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectLeader
+    skos:exactMatch:info:eu-repo/semantics: ProjectLeader
 - id: projectmanager
   title:
     cs: Projektový manažer
@@ -160,8 +160,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectmanager
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectManager
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: projectmanager
-    skos:exactMatch:info:eu-repo/semantics: projectmanager
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectManager
+    skos:exactMatch:info:eu-repo/semantics: ProjectManager
 - id: projectmember
   title:
     cs: Člen projektového týmu
@@ -174,8 +174,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectmember
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectMember
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: projectmember
-    skos:exactMatch:info:eu-repo/semantics: projectmember
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectMember
+    skos:exactMatch:info:eu-repo/semantics: ProjectMember
 - id: registrationagency
   title:
     cs: Registrační agentura
@@ -191,8 +191,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/registrationagency
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAgency
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: registrationagency
-    skos:exactMatch:info:eu-repo/semantics: registrationagency
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAgency
+    skos:exactMatch:info:eu-repo/semantics: RegistrationAgency
 - id: registrationauthority
   title:
     cs: Registrační autorita
@@ -206,8 +206,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/registrationauthority
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAuthority
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: registrationauthority
-    skos:exactMatch:info:eu-repo/semantics: registrationauthority
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAuthority
+    skos:exactMatch:info:eu-repo/semantics: RegistrationAuthority
 - id: relatedperson
   title:
     cs: Související osoba
@@ -221,8 +221,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/relatedperson
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RelatedPerson
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: relatedperson
-    skos:exactMatch:info:eu-repo/semantics: relatedperson
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RelatedPerson
+    skos:exactMatch:info:eu-repo/semantics: RelatedPerson
 - id: researcher
   title:
     cs: Výzkumník
@@ -239,8 +239,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/researcher
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Researcher
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: researcher
-    skos:exactMatch:info:eu-repo/semantics: researcher
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Researcher
+    skos:exactMatch:info:eu-repo/semantics: Researcher
 - id: researchgroup
   title:
     cs: Výzkumná skupina
@@ -254,8 +254,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/researchgroup
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ResearchGroup
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: researchgroup
-    skos:exactMatch:info:eu-repo/semantics: researchgroup
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ResearchGroup
+    skos:exactMatch:info:eu-repo/semantics: ResearchGroup
 - id: rightsholder
   title:
     cs: Majitel práv
@@ -266,8 +266,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/rightsholder
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RightsHolder
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: rightsholder
-    skos:exactMatch:info:eu-repo/semantics: rightsholder
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RightsHolder
+    skos:exactMatch:info:eu-repo/semantics: RightsHolder
 - id: sponsor
   title:
     cs: Sponzor
@@ -282,8 +282,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/sponsor
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Sponsor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: sponsor
-    skos:exactMatch:info:eu-repo/semantics: sponsor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Sponsor
+    skos:exactMatch:info:eu-repo/semantics: Sponsor
 - id: supervisor
   title:
     cs: Supervizor
@@ -294,8 +294,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/supervisor
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Supervisor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: supervisor
-    skos:exactMatch:info:eu-repo/semantics: supervisor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Supervisor
+    skos:exactMatch:info:eu-repo/semantics: Supervisor
 - id: translator
   title:
     cs: Překladatel
@@ -310,7 +310,7 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/translator
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Translator
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: translator
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Translator
 - id: workpackageleader
   title:
     cs: Vedoucí pracovního balíku
@@ -324,8 +324,8 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/workpackageleader
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: WorkPackageLeader
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: workpackageleader
-    skos:exactMatch:info:eu-repo/semantics: workpackageleader
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: WorkPackageLeader
+    skos:exactMatch:info:eu-repo/semantics: WorkPackageLeader
 - id: other
   title:
     cs: Jiná role
@@ -342,5 +342,5 @@
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/other
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Other
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: other
-    skos:exactMatch:info:eu-repo/semantics: other
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Other
+    skos:exactMatch:info:eu-repo/semantics: Other
