@@ -17,7 +17,8 @@ Every test that produces one or more ``lxml`` elements:
 1. builds them from a small, valid, hand-written JSON fragment (matching ``schema.json``),
 2. asserts the *whole* canonicalized (C14N 2.0) XML matches a literal expected string --
    see ``c14n`` -- rather than picking the result apart with several ``find``/``get``
-   calls, and
+   calls; the expected string is written as readable, indented, pretty-printed XML and
+   flattened back to one line with ``join_xml``, and
 3. validates the element against the real CCMM XSD (see ``as_global_element`` and
    ``tests/data/xsd/README.md`` for how a fragment -- as opposed to a whole document --
    gets validated in isolation).
@@ -29,8 +30,14 @@ exercise the real ``CCMMSerializer`` directly rather than a fake: the placeholde
 gives deterministic, checkable output.
 """
 
-# ruff: noqa: SLF001 -- this file deliberately tests private helpers too (per its brief:
-# "meticulously add tests for each of the created methods, starting with the leaf ones").
+# ruff: noqa: SLF001, RUF001, E501 -- SLF001: this file deliberately tests private helpers
+# too (per its brief: "meticulously add tests for each of the created methods, starting
+# with the leaf ones"). RUF001/E501: the big pretty-printed XML fixture in
+# test_serialize_full_dataset_from_real_example contains real record content (en dashes,
+# long running text/coordinate lists) that `join_xml` reassembles by stripping each
+# line -- reflowing or "fixing" characters inside it would corrupt the fixture, and a
+# per-line suppression comment on an inner line of a triple-quoted string would become
+# part of the string itself.
 
 from __future__ import annotations
 
@@ -72,6 +79,18 @@ def c14n(element: etree._Element) -> str:
     return etree.tostring(element, method="c14n2", strip_text=True).decode()
 
 
+def join_xml(xml: str) -> str:
+    """Join an indented, triple-quoted, multi-line XML literal back into one line.
+
+    Lets expected-XML literals in this file be written as readable, pretty-printed
+    XML (one element per line, indented by nesting depth) while still comparing
+    against ``c14n()``'s single-line output: splits on newlines and strips each line
+    (leading/trailing whitespace only -- no text content in these fixtures spans a
+    line break).
+    """
+    return "".join(line.strip() for line in xml.splitlines())
+
+
 def as_global_element(element: etree._Element, global_name: str) -> etree._Element:
     """Return a copy of `element` renamed to the CCMM-namespaced global element `global_name`.
 
@@ -110,8 +129,12 @@ def assert_valid_apart_from(schema: etree.XMLSchema, element: etree._Element, *k
 def test_append_text_appends_when_value_present(serializer: CCMMSerializer) -> None:
     parent = etree.Element("root")
     serializer._append_text(parent, serializer.ns.title, "hello")
-    assert (
-        c14n(parent) == '<root><ns0:title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">hello</ns0:title></root>'
+    assert c14n(parent) == join_xml(
+        """
+        <root>
+          <ns0:title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">hello</ns0:title>
+        </root>
+        """
     )
 
 
@@ -125,16 +148,24 @@ def test_append_text_does_nothing_for_falsy_value(serializer: CCMMSerializer, va
 def test_append_i18n_text_sets_xml_lang(serializer: CCMMSerializer) -> None:
     parent = etree.Element("root")
     serializer._append_i18n_text(parent, serializer.ns.title, "cs", "Ahoj")
-    assert c14n(parent) == (
-        '<root><ns0:title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1" xml:lang="cs">Ahoj</ns0:title></root>'
+    assert c14n(parent) == join_xml(
+        """
+        <root>
+          <ns0:title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1" xml:lang="cs">Ahoj</ns0:title>
+        </root>
+        """
     )
 
 
 def test_append_i18n_text_defaults_missing_lang_to_und(serializer: CCMMSerializer) -> None:
     parent = etree.Element("root")
     serializer._append_i18n_text(parent, serializer.ns.title, None, "Ahoj")
-    assert c14n(parent) == (
-        '<root><ns0:title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1" xml:lang="und">Ahoj</ns0:title></root>'
+    assert c14n(parent) == join_xml(
+        """
+        <root>
+          <ns0:title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1" xml:lang="und">Ahoj</ns0:title>
+        </root>
+        """
     )
 
 
@@ -203,11 +234,15 @@ def test_xml_lang_from_ccmm_lang_returns_unk_for_falsy_or_unrecognized(
 def test_serialize_identifier_valid(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     entry = {"identifier": "10.1234/abc", "scheme": "doi"}
     el = serializer.serialize_identifier(entry)
-    assert c14n(el) == (
-        '<ns0:identifier xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:value>10.1234/abc</ns0:value>"
-        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri></ns0:scheme>"
-        "</ns0:identifier>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:identifier xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:value>10.1234/abc</ns0:value>
+          <ns0:scheme>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri>
+          </ns0:scheme>
+        </ns0:identifier>
+        """
     )
     schema.assertValid(el)
 
@@ -251,14 +286,16 @@ def test_serialize_alternate_title_valid(serializer: CCMMSerializer, schema: etr
         ],
     }
     el = serializer.serialize_alternate_title(group)
-    assert c14n(el) == (
-        '<ns0:alternate_title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        '<ns0:title xml:lang="en">Air quality in 2024</ns0:title>'
-        '<ns0:title xml:lang="cs">Kvalita ovzduší 2024</ns0:title>'
-        "<ns0:alternate_title_type>"
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</ns0:iri>"
-        "</ns0:alternate_title_type>"
-        "</ns0:alternate_title>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:alternate_title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:title xml:lang="en">Air quality in 2024</ns0:title>
+          <ns0:title xml:lang="cs">Kvalita ovzduší 2024</ns0:title>
+          <ns0:alternate_title_type>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</ns0:iri>
+          </ns0:alternate_title_type>
+        </ns0:alternate_title>
+        """
     )
     schema.assertValid(el)
 
@@ -271,13 +308,15 @@ def test_serialize_alternate_title_valid(serializer: CCMMSerializer, schema: etr
 def test_serialize_description_valid(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     group = {"type": {"id": "abstract"}, "items": [{"lang": "CES", "value": "Popis datové sady."}]}
     el = serializer.serialize_description(group)
-    assert c14n(el) == (
-        '<ns0:description xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        '<ns0:description_text xml:lang="CES">Popis datové sady.</ns0:description_text>'
-        "<ns0:description_type>"
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/descriptiontypes/abstract</ns0:iri>"
-        "</ns0:description_type>"
-        "</ns0:description>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:description xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:description_text xml:lang="CES">Popis datové sady.</ns0:description_text>
+          <ns0:description_type>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/descriptiontypes/abstract</ns0:iri>
+          </ns0:description_type>
+        </ns0:description>
+        """
     )
     schema.assertValid(el)
 
@@ -307,14 +346,18 @@ def test_serialize_descriptions_empty(serializer: CCMMSerializer) -> None:
 def test_serialize_organization_valid(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     organization = {"name": "Univerzita Karlova", "identifiers": [{"identifier": "12345", "scheme": "ror"}]}
     el = serializer.serialize_organization(organization)
-    assert c14n(el) == (
-        '<ns0:organization xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:identifier>"
-        "<ns0:value>12345</ns0:value>"
-        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/ror</ns0:iri></ns0:scheme>"
-        "</ns0:identifier>"
-        "<ns0:name>Univerzita Karlova</ns0:name>"
-        "</ns0:organization>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:organization xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:identifier>
+            <ns0:value>12345</ns0:value>
+            <ns0:scheme>
+              <ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/ror</ns0:iri>
+            </ns0:scheme>
+          </ns0:identifier>
+          <ns0:name>Univerzita Karlova</ns0:name>
+        </ns0:organization>
+        """
     )
     schema.assertValid(el)
 
@@ -327,17 +370,23 @@ def test_serialize_person_valid(serializer: CCMMSerializer, schema: etree.XMLSch
         "identifiers": [{"identifier": "0000-0003-0852-6632", "scheme": "orcid"}],
     }
     el = serializer.serialize_person(person, affiliations=[{"name": "Univerzita Karlova"}])
-    assert c14n(el) == (
-        '<ns0:person xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:identifier>"
-        "<ns0:value>0000-0003-0852-6632</ns0:value>"
-        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/orcid</ns0:iri></ns0:scheme>"
-        "</ns0:identifier>"
-        "<ns0:name>Novák, Jan</ns0:name>"
-        "<ns0:given_name>Jan</ns0:given_name>"
-        "<ns0:family_name>Novák</ns0:family_name>"
-        "<ns0:affiliation><ns0:name>Univerzita Karlova</ns0:name></ns0:affiliation>"
-        "</ns0:person>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:person xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:identifier>
+            <ns0:value>0000-0003-0852-6632</ns0:value>
+            <ns0:scheme>
+              <ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/orcid</ns0:iri>
+            </ns0:scheme>
+          </ns0:identifier>
+          <ns0:name>Novák, Jan</ns0:name>
+          <ns0:given_name>Jan</ns0:given_name>
+          <ns0:family_name>Novák</ns0:family_name>
+          <ns0:affiliation>
+            <ns0:name>Univerzita Karlova</ns0:name>
+          </ns0:affiliation>
+        </ns0:person>
+        """
     )
     schema.assertValid(el)
 
@@ -345,14 +394,16 @@ def test_serialize_person_valid(serializer: CCMMSerializer, schema: etree.XMLSch
 def test_serialize_person_splits_multi_word_given_and_family_names(serializer: CCMMSerializer) -> None:
     person = {"name": "x", "given_name": "Jan Maria", "family_name": "Novák Svoboda"}
     el = serializer.serialize_person(person)
-    assert c14n(el) == (
-        '<ns0:person xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:name>x</ns0:name>"
-        "<ns0:given_name>Jan</ns0:given_name>"
-        "<ns0:given_name>Maria</ns0:given_name>"
-        "<ns0:family_name>Novák</ns0:family_name>"
-        "<ns0:family_name>Svoboda</ns0:family_name>"
-        "</ns0:person>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:person xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:name>x</ns0:name>
+          <ns0:given_name>Jan</ns0:given_name>
+          <ns0:given_name>Maria</ns0:given_name>
+          <ns0:family_name>Novák</ns0:family_name>
+          <ns0:family_name>Svoboda</ns0:family_name>
+        </ns0:person>
+        """
     )
 
 
@@ -362,16 +413,24 @@ def test_serialize_resource_to_agent_relationship_person(serializer: CCMMSeriali
         "affiliations": [{"name": "Univerzita Karlova"}],
     }
     el = serializer.serialize_resource_to_agent_relationship(entry, {"id": "Creator"})
-    assert c14n(el) == (
-        '<ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:relation><ns0:person>"
-        "<ns0:name>Novák, Jan</ns0:name>"
-        "<ns0:given_name>Jan</ns0:given_name>"
-        "<ns0:family_name>Novák</ns0:family_name>"
-        "<ns0:affiliation><ns0:name>Univerzita Karlova</ns0:name></ns0:affiliation>"
-        "</ns0:person></ns0:relation>"
-        "<ns0:role><ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</ns0:iri></ns0:role>"
-        "</ns0:qualified_relation>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:relation>
+            <ns0:person>
+              <ns0:name>Novák, Jan</ns0:name>
+              <ns0:given_name>Jan</ns0:given_name>
+              <ns0:family_name>Novák</ns0:family_name>
+              <ns0:affiliation>
+                <ns0:name>Univerzita Karlova</ns0:name>
+              </ns0:affiliation>
+            </ns0:person>
+          </ns0:relation>
+          <ns0:role>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</ns0:iri>
+          </ns0:role>
+        </ns0:qualified_relation>
+        """
     )
     schema.assertValid(as_global_element(el, "resource_to_agent_relationship"))
 
@@ -386,15 +445,19 @@ def test_serialize_resource_to_agent_relationship_organization_drops_affiliation
     }
     el = serializer.serialize_resource_to_agent_relationship(entry, {"id": "DataCollector"})
     # `Should be dropped` (the affiliation) is absent -- confirmed by the exact match below.
-    assert c14n(el) == (
-        '<ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:relation><ns0:organization>"
-        "<ns0:name>Czech Hydrometeorological Institute</ns0:name>"
-        "</ns0:organization></ns0:relation>"
-        "<ns0:role>"
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/DataCollector</ns0:iri>"
-        "</ns0:role>"
-        "</ns0:qualified_relation>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:relation>
+            <ns0:organization>
+              <ns0:name>Czech Hydrometeorological Institute</ns0:name>
+            </ns0:organization>
+          </ns0:relation>
+          <ns0:role>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/DataCollector</ns0:iri>
+          </ns0:role>
+        </ns0:qualified_relation>
+        """
     )
     schema.assertValid(as_global_element(el, "resource_to_agent_relationship"))
 
@@ -412,21 +475,35 @@ def test_serialize_qualified_relations_creators_then_contributors(
         ],
     }
     relations = serializer.serialize_qualified_relations(container)
+    # defaulted role for the creator, since no explicit "role" was given for it above.
     assert [c14n(relation) for relation in relations] == [
-        (
-            '<ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-            "<ns0:relation><ns0:person><ns0:name>Creator One</ns0:name></ns0:person></ns0:relation>"
-            # defaulted role, since no explicit "role" was given for this creator above
-            "<ns0:role><ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</ns0:iri></ns0:role>"
-            "</ns0:qualified_relation>"
+        join_xml(
+            """
+            <ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+              <ns0:relation>
+                <ns0:person>
+                  <ns0:name>Creator One</ns0:name>
+                </ns0:person>
+              </ns0:relation>
+              <ns0:role>
+                <ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</ns0:iri>
+              </ns0:role>
+            </ns0:qualified_relation>
+            """
         ),
-        (
-            '<ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-            "<ns0:relation><ns0:person><ns0:name>Contributor One</ns0:name></ns0:person></ns0:relation>"
-            "<ns0:role>"
-            "<ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/DataCollector</ns0:iri>"
-            "</ns0:role>"
-            "</ns0:qualified_relation>"
+        join_xml(
+            """
+            <ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+              <ns0:relation>
+                <ns0:person>
+                  <ns0:name>Contributor One</ns0:name>
+                </ns0:person>
+              </ns0:relation>
+              <ns0:role>
+                <ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/DataCollector</ns0:iri>
+              </ns0:role>
+            </ns0:qualified_relation>
+            """
         ),
     ]
     for relation in relations:
@@ -455,13 +532,20 @@ def test_extract_publication_year(
 def test_serialize_time_reference_from_date_valid(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     entry = {"date": "2025-04-27", "type": {"id": "Collected"}, "description": "Date collected"}
     el = serializer.serialize_time_reference_from_date(entry)
-    assert c14n(el) == (
-        '<ns0:time_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:temporal_representation><ns0:time_instant><ns0:date>2025-04-27</ns0:date></ns0:time_instant>"
-        "</ns0:temporal_representation>"
-        "<ns0:date_type><ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</ns0:iri></ns0:date_type>"
-        '<ns0:date_information xml:lang="und">Date collected</ns0:date_information>'
-        "</ns0:time_reference>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:time_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:temporal_representation>
+            <ns0:time_instant>
+              <ns0:date>2025-04-27</ns0:date>
+            </ns0:time_instant>
+          </ns0:temporal_representation>
+          <ns0:date_type>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</ns0:iri>
+          </ns0:date_type>
+          <ns0:date_information xml:lang="und">Date collected</ns0:date_information>
+        </ns0:time_reference>
+        """
     )
     schema.assertValid(el)
 
@@ -486,19 +570,33 @@ def test_serialize_time_references_synthesizes_created_from_publication_date(
     }
     refs = serializer.serialize_time_references(metadata)
     assert [c14n(ref) for ref in refs] == [
-        (
-            '<ns0:time_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-            "<ns0:temporal_representation><ns0:time_instant><ns0:date>2025-04-27</ns0:date></ns0:time_instant>"
-            "</ns0:temporal_representation>"
-            "<ns0:date_type><ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</ns0:iri></ns0:date_type>"
-            "</ns0:time_reference>"
+        join_xml(
+            """
+            <ns0:time_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+              <ns0:temporal_representation>
+                <ns0:time_instant>
+                  <ns0:date>2025-04-27</ns0:date>
+                </ns0:time_instant>
+              </ns0:temporal_representation>
+              <ns0:date_type>
+                <ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</ns0:iri>
+              </ns0:date_type>
+            </ns0:time_reference>
+            """
         ),
-        (
-            '<ns0:time_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-            "<ns0:temporal_representation><ns0:time_instant><ns0:date>2025-05-01</ns0:date></ns0:time_instant>"
-            "</ns0:temporal_representation>"
-            "<ns0:date_type><ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Created</ns0:iri></ns0:date_type>"
-            "</ns0:time_reference>"
+        join_xml(
+            """
+            <ns0:time_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+              <ns0:temporal_representation>
+                <ns0:time_instant>
+                  <ns0:date>2025-05-01</ns0:date>
+                </ns0:time_instant>
+              </ns0:temporal_representation>
+              <ns0:date_type>
+                <ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Created</ns0:iri>
+              </ns0:date_type>
+            </ns0:time_reference>
+            """
         ),
     ]
 
@@ -536,11 +634,15 @@ def test_serialize_terms_of_use_with_resolved_license(serializer: CCMMSerializer
     metadata = {"rights": [{"id": "cc-by-4.0", "description": {"en": "A description."}}]}
     el = serializer.serialize_terms_of_use(metadata)
     assert el is not None
-    assert c14n(el) == (
-        '<ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:license><ns0:iri>https://nma.eosc.cz/vocabularies/licenses/cc-by-4.0</ns0:iri></ns0:license>"
-        '<ns0:description xml:lang="en">A description.</ns0:description>'
-        "</ns0:terms_of_use>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:license>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/licenses/cc-by-4.0</ns0:iri>
+          </ns0:license>
+          <ns0:description xml:lang="en">A description.</ns0:description>
+        </ns0:terms_of_use>
+        """
     )
     # `access_rights` is required by the XSD but has no source field in schema.json --
     # see ccmm_export_plan.md and the docstring of `serialize_terms_of_use`.
@@ -551,13 +653,15 @@ def test_serialize_terms_of_use_with_raw_license(serializer: CCMMSerializer, sch
     metadata = {"rights": [{"link": "https://creativecommons.org/licenses/by/4.0/", "title": {"en": "CC BY 4.0"}}]}
     el = serializer.serialize_terms_of_use(metadata)
     assert el is not None
-    assert c14n(el) == (
-        '<ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:license>"
-        "<ns0:iri>https://creativecommons.org/licenses/by/4.0/</ns0:iri>"
-        '<ns0:label xml:lang="en">CC BY 4.0</ns0:label>'
-        "</ns0:license>"
-        "</ns0:terms_of_use>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:license>
+            <ns0:iri>https://creativecommons.org/licenses/by/4.0/</ns0:iri>
+            <ns0:label xml:lang="en">CC BY 4.0</ns0:label>
+          </ns0:license>
+        </ns0:terms_of_use>
+        """
     )
     # `access_rights` is required by the XSD but has no source field in schema.json --
     # see ccmm_export_plan.md and the docstring of `serialize_terms_of_use`.
@@ -569,10 +673,14 @@ def test_serialize_terms_of_use_uses_only_the_first_right(serializer: CCMMSerial
     el = serializer.serialize_terms_of_use(metadata)
     assert el is not None
     # "second" is entirely absent -- confirmed by the exact match below.
-    assert c14n(el) == (
-        '<ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:license><ns0:iri>https://nma.eosc.cz/vocabularies/licenses/first</ns0:iri></ns0:license>"
-        "</ns0:terms_of_use>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:license>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/licenses/first</ns0:iri>
+          </ns0:license>
+        </ns0:terms_of_use>
+        """
     )
 
 
@@ -582,11 +690,17 @@ def test_serialize_terms_of_use_with_access_rights(serializer: CCMMSerializer, s
     metadata = {"rights": [{"id": "cc-by-4.0"}]}
     el = serializer.serialize_terms_of_use(metadata, access_rights={"id": "c_abf2"})
     assert el is not None
-    assert c14n(el) == (
-        '<ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:access_rights><ns0:iri>https://nma.eosc.cz/vocabularies/accessrights/c_abf2</ns0:iri></ns0:access_rights>"
-        "<ns0:license><ns0:iri>https://nma.eosc.cz/vocabularies/licenses/cc-by-4.0</ns0:iri></ns0:license>"
-        "</ns0:terms_of_use>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:access_rights>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/accessrights/c_abf2</ns0:iri>
+          </ns0:access_rights>
+          <ns0:license>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/licenses/cc-by-4.0</ns0:iri>
+          </ns0:license>
+        </ns0:terms_of_use>
+        """
     )
     schema.assertValid(el)
 
@@ -594,12 +708,14 @@ def test_serialize_terms_of_use_with_access_rights(serializer: CCMMSerializer, s
 def test_serialize_license_document_from_raw_right(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     right = {"link": "https://example.org/license", "title": {"en": "Example License", "cs": "Ukázková licence"}}
     el = serializer.serialize_license_document(right)
-    assert c14n(el) == (
-        '<ns0:license xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:iri>https://example.org/license</ns0:iri>"
-        '<ns0:label xml:lang="en">Example License</ns0:label>'
-        '<ns0:label xml:lang="cs">Ukázková licence</ns0:label>'
-        "</ns0:license>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:license xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:iri>https://example.org/license</ns0:iri>
+          <ns0:label xml:lang="en">Example License</ns0:label>
+          <ns0:label xml:lang="cs">Ukázková licence</ns0:label>
+        </ns0:license>
+        """
     )
     schema.assertValid(as_global_element(el, "license_document"))
 
@@ -632,14 +748,16 @@ def test_group_subjects_empty(serializer: CCMMSerializer) -> None:
 def test_serialize_subject_splits_id_into_scheme_and_code(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     group = {"id": "Frascati:105", "items": [{"lang": None, "value": "Environmental sciences"}]}
     el = serializer.serialize_subject(group)
-    assert c14n(el) == (
-        '<ns0:subject xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        '<ns0:title xml:lang="und">Environmental sciences</ns0:title>'
-        "<ns0:classification_code>105</ns0:classification_code>"
-        "<ns0:subject_scheme>"
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/subjectschemes/Frascati</ns0:iri>"
-        "</ns0:subject_scheme>"
-        "</ns0:subject>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:subject xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:title xml:lang="und">Environmental sciences</ns0:title>
+          <ns0:classification_code>105</ns0:classification_code>
+          <ns0:subject_scheme>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/subjectschemes/Frascati</ns0:iri>
+          </ns0:subject_scheme>
+        </ns0:subject>
+        """
     )
     schema.assertValid(el)
 
@@ -649,10 +767,12 @@ def test_serialize_subject_without_id_omits_scheme_and_code(
 ) -> None:
     group = {"id": None, "items": [{"lang": None, "value": "kvalita ovzduší"}]}
     el = serializer.serialize_subject(group)
-    assert c14n(el) == (
-        '<ns0:subject xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        '<ns0:title xml:lang="und">kvalita ovzduší</ns0:title>'
-        "</ns0:subject>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:subject xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:title xml:lang="und">kvalita ovzduší</ns0:title>
+        </ns0:subject>
+        """
     )
     schema.assertValid(el)
 
@@ -684,10 +804,12 @@ def test_geojson_to_wkt_missing_coordinates_returns_none(serializer: CCMMSeriali
 
 def test_serialize_geometry_point(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     el = serializer.serialize_geometry({"type": "Point", "coordinates": [1.5, 2.5]})
-    assert c14n(el) == (
-        '<ns0:geometry xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:wkt>POINT (1.5 2.5)</ns0:wkt>"
-        "</ns0:geometry>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:geometry xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:wkt>POINT (1.5 2.5)</ns0:wkt>
+        </ns0:geometry>
+        """
     )
     schema.assertValid(el)
 
@@ -696,10 +818,12 @@ def test_serialize_related_object_from_identifier_iri_scheme(
     serializer: CCMMSerializer, schema: etree.XMLSchema
 ) -> None:
     el = serializer.serialize_related_object_from_identifier({"scheme": "iri", "identifier": "https://example.org/x"})
-    assert c14n(el) == (
-        '<ns0:related_object xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:iri>https://example.org/x</ns0:iri>"
-        "</ns0:related_object>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:related_object xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:iri>https://example.org/x</ns0:iri>
+        </ns0:related_object>
+        """
     )
     schema.assertValid(as_global_element(el, "related_resource"))
 
@@ -708,13 +832,17 @@ def test_serialize_related_object_from_identifier_other_scheme_falls_back_to_ide
     serializer: CCMMSerializer, schema: etree.XMLSchema
 ) -> None:
     el = serializer.serialize_related_object_from_identifier({"scheme": "doi", "identifier": "10.1234/x"})
-    assert c14n(el) == (
-        '<ns0:related_object xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:identifier>"
-        "<ns0:value>10.1234/x</ns0:value>"
-        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri></ns0:scheme>"
-        "</ns0:identifier>"
-        "</ns0:related_object>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:related_object xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:identifier>
+            <ns0:value>10.1234/x</ns0:value>
+            <ns0:scheme>
+              <ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri>
+            </ns0:scheme>
+          </ns0:identifier>
+        </ns0:related_object>
+        """
     )
     schema.assertValid(as_global_element(el, "related_resource"))
 
@@ -727,15 +855,21 @@ def test_serialize_location_valid(serializer: CCMMSerializer, schema: etree.XMLS
         "description": "BoundingBox",
     }
     el = serializer.serialize_location(feature)
-    assert c14n(el) == (
-        '<ns0:location xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:name>Středočeský kraj</ns0:name>"
-        "<ns0:geometry><ns0:wkt>POINT (14.0 50.0)</ns0:wkt></ns0:geometry>"
-        "<ns0:related_object><ns0:iri>https://example.org/place</ns0:iri></ns0:related_object>"
-        "<ns0:relation_type>"
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/locationrelationtypes/BoundingBox</ns0:iri>"
-        "</ns0:relation_type>"
-        "</ns0:location>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:location xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:name>Středočeský kraj</ns0:name>
+          <ns0:geometry>
+            <ns0:wkt>POINT (14.0 50.0)</ns0:wkt>
+          </ns0:geometry>
+          <ns0:related_object>
+            <ns0:iri>https://example.org/place</ns0:iri>
+          </ns0:related_object>
+          <ns0:relation_type>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/locationrelationtypes/BoundingBox</ns0:iri>
+          </ns0:relation_type>
+        </ns0:location>
+        """
     )
     schema.assertValid(el)
 
@@ -772,13 +906,23 @@ def test_serialize_funding_reference_valid(serializer: CCMMSerializer, schema: e
     el = serializer.serialize_funding_reference(group)
     # `funder` (type `ccmm:agent`, a choice) wraps `organization`/`person`, the same way
     # `resource_to_agent_relationship/relation` does.
-    assert c14n(el) == (
-        '<ns0:funding_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:local_identifier>AWARD-1</ns0:local_identifier>"
-        "<ns0:award_title>Program for air pollution research</ns0:award_title>"
-        "<ns0:funder><ns0:organization><ns0:name>Funder A</ns0:name></ns0:organization></ns0:funder>"
-        "<ns0:funder><ns0:organization><ns0:name>Funder B</ns0:name></ns0:organization></ns0:funder>"
-        "</ns0:funding_reference>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:funding_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:local_identifier>AWARD-1</ns0:local_identifier>
+          <ns0:award_title>Program for air pollution research</ns0:award_title>
+          <ns0:funder>
+            <ns0:organization>
+              <ns0:name>Funder A</ns0:name>
+            </ns0:organization>
+          </ns0:funder>
+          <ns0:funder>
+            <ns0:organization>
+              <ns0:name>Funder B</ns0:name>
+            </ns0:organization>
+          </ns0:funder>
+        </ns0:funding_reference>
+        """
     )
     schema.assertValid(el)
 
@@ -813,33 +957,50 @@ def test_serialize_related_resource_valid(serializer: CCMMSerializer, schema: et
     }
     el = serializer.serialize_related_resource(entry)
     # "Should be dropped" (publisher/subjects) is entirely absent -- confirmed by the exact match below.
-    assert c14n(el) == (
-        '<ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:identifier>"
-        "<ns0:value>10.1234/related</ns0:value>"
-        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri></ns0:scheme>"
-        "</ns0:identifier>"
-        "<ns0:title>Related dataset</ns0:title>"
-        "<ns0:alternate_title>"
-        '<ns0:title xml:lang="cs">Související datová sada</ns0:title>'
-        "<ns0:alternate_title_type>"
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</ns0:iri>"
-        "</ns0:alternate_title_type>"
-        "</ns0:alternate_title>"
-        "<ns0:qualified_relation>"
-        "<ns0:relation><ns0:person><ns0:name>Creator</ns0:name></ns0:person></ns0:relation>"
-        "<ns0:role><ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</ns0:iri></ns0:role>"
-        "</ns0:qualified_relation>"
-        "<ns0:time_reference>"
-        "<ns0:temporal_representation><ns0:time_instant><ns0:date>2024-01-01</ns0:date></ns0:time_instant>"
-        "</ns0:temporal_representation>"
-        "<ns0:date_type><ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Issued</ns0:iri></ns0:date_type>"
-        "</ns0:time_reference>"
-        "<ns0:resource_type><ns0:iri>https://nma.eosc.cz/vocabularies/resourcetypes/dataset</ns0:iri></ns0:resource_type>"
-        "<ns0:resource_relation_type>"
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsReferencedBy</ns0:iri>"
-        "</ns0:resource_relation_type>"
-        "</ns0:related_resource>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:identifier>
+            <ns0:value>10.1234/related</ns0:value>
+            <ns0:scheme>
+              <ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri>
+            </ns0:scheme>
+          </ns0:identifier>
+          <ns0:title>Related dataset</ns0:title>
+          <ns0:alternate_title>
+            <ns0:title xml:lang="cs">Související datová sada</ns0:title>
+            <ns0:alternate_title_type>
+              <ns0:iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</ns0:iri>
+            </ns0:alternate_title_type>
+          </ns0:alternate_title>
+          <ns0:qualified_relation>
+            <ns0:relation>
+              <ns0:person>
+                <ns0:name>Creator</ns0:name>
+              </ns0:person>
+            </ns0:relation>
+            <ns0:role>
+              <ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</ns0:iri>
+            </ns0:role>
+          </ns0:qualified_relation>
+          <ns0:time_reference>
+            <ns0:temporal_representation>
+              <ns0:time_instant>
+                <ns0:date>2024-01-01</ns0:date>
+              </ns0:time_instant>
+            </ns0:temporal_representation>
+            <ns0:date_type>
+              <ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Issued</ns0:iri>
+            </ns0:date_type>
+          </ns0:time_reference>
+          <ns0:resource_type>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/resourcetypes/dataset</ns0:iri>
+          </ns0:resource_type>
+          <ns0:resource_relation_type>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsReferencedBy</ns0:iri>
+          </ns0:resource_relation_type>
+        </ns0:related_resource>
+        """
     )
     schema.assertValid(el)
 
@@ -853,17 +1014,23 @@ def test_serialize_related_resource_from_identifier_valid(serializer: CCMMSerial
     }
     el = serializer.serialize_related_resource_from_identifier(entry)
     # No `title` -- confirmed by the exact match below.
-    assert c14n(el) == (
-        '<ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:identifier>"
-        "<ns0:value>https://example.org/x</ns0:value>"
-        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</ns0:iri></ns0:scheme>"
-        "</ns0:identifier>"
-        "<ns0:resource_type><ns0:iri>https://nma.eosc.cz/vocabularies/resourcetypes/dataset</ns0:iri></ns0:resource_type>"
-        "<ns0:resource_relation_type>"
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/References</ns0:iri>"
-        "</ns0:resource_relation_type>"
-        "</ns0:related_resource>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:identifier>
+            <ns0:value>https://example.org/x</ns0:value>
+            <ns0:scheme>
+              <ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</ns0:iri>
+            </ns0:scheme>
+          </ns0:identifier>
+          <ns0:resource_type>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/resourcetypes/dataset</ns0:iri>
+          </ns0:resource_type>
+          <ns0:resource_relation_type>
+            <ns0:iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/References</ns0:iri>
+          </ns0:resource_relation_type>
+        </ns0:related_resource>
+        """
     )
     schema.assertValid(el)
 
@@ -875,11 +1042,21 @@ def test_serialize_related_resources_combines_both_sources_in_order(serializer: 
     }
     resources = serializer.serialize_related_resources(metadata)
     assert [c14n(resource) for resource in resources] == [
-        '<ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1"><ns0:title>A</ns0:title></ns0:related_resource>',
-        (
-            '<ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-            "<ns0:identifier><ns0:value>https://example.org/b</ns0:value></ns0:identifier>"
-            "</ns0:related_resource>"
+        join_xml(
+            """
+            <ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+              <ns0:title>A</ns0:title>
+            </ns0:related_resource>
+            """
+        ),
+        join_xml(
+            """
+            <ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+              <ns0:identifier>
+                <ns0:value>https://example.org/b</ns0:value>
+              </ns0:identifier>
+            </ns0:related_resource>
+            """
         ),
     ]
 
@@ -906,10 +1083,12 @@ def test_serialize_vocabulary_normalizes_bare_string_id(serializer: CCMMSerializ
     parent = etree.Element("root")
     el = serializer.serialize_vocabulary(parent, serializer.ns.scheme, "identifierschemes", "doi")
     assert el is not None
-    assert c14n(el) == (
-        '<ns0:scheme xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri>"
-        "</ns0:scheme>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:scheme xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri>
+        </ns0:scheme>
+        """
     )
     schema.assertValid(as_global_element(el, "identifier_scheme"))
 
@@ -918,10 +1097,12 @@ def test_serialize_vocabulary_builds_iri_element(serializer: CCMMSerializer, sch
     parent = etree.Element("root")
     el = serializer.serialize_vocabulary(parent, serializer.ns.resource_type, "resourcetypes", {"id": "dataset"})
     assert el is not None
-    assert c14n(el) == (
-        '<ns0:resource_type xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
-        "<ns0:iri>https://nma.eosc.cz/vocabularies/resourcetypes/dataset</ns0:iri>"
-        "</ns0:resource_type>"
+    assert c14n(el) == join_xml(
+        """
+        <ns0:resource_type xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">
+          <ns0:iri>https://nma.eosc.cz/vocabularies/resourcetypes/dataset</ns0:iri>
+        </ns0:resource_type>
+        """
     )
     schema.assertValid(el)
 
@@ -1085,104 +1266,233 @@ def test_serialize_full_dataset_from_real_example(serializer: CCMMSerializer, sc
     assert record.access.status.value == "metadata-only"
 
     dataset_el = serializer.serialize(record)
-    assert c14n(dataset_el) == (
-        '<dataset xmlns="https://schema.ccmm.cz/research-data/1.1">'
-        "<identifier><value>10.45321/as36sl</value>"
-        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</iri></scheme></identifier>"
-        "<version>1.0.23</version>"
-        "<title>Kvalita ovzduší ve středních čechách 2024</title>"
-        '<alternate_title><title xml:lang="en">Air quality measurements in Central Bohemian Region in 2024.'
-        "</title><alternate_title_type>"
-        "<iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</iri></alternate_title_type>"
-        "</alternate_title>"
-        "<qualified_relation><relation><person><name>Novák, Jan</name><given_name>Jan</given_name>"
-        "<family_name>Novák</family_name>"
-        "<affiliation><name>Univerzita Karlova</name></affiliation></person></relation>"
-        "<role><iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Other</iri></role>"
-        "</qualified_relation>"
-        "<publication_year>2025</publication_year>"
-        "<time_reference><temporal_representation><time_instant><date>2025-04-27</date></time_instant>"
-        "</temporal_representation>"
-        "<date_type><iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</iri></date_type>"
-        '<date_information xml:lang="und">Date collected</date_information></time_reference>'
-        "<time_reference><temporal_representation><time_instant><date>2024</date></time_instant>"
-        "</temporal_representation>"
-        "<date_type><iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</iri></date_type>"
-        '<date_information xml:lang="und">Collection period</date_information></time_reference>'
-        "<time_reference><temporal_representation><time_instant><date>2025</date></time_instant>"
-        "</temporal_representation>"
-        "<date_type><iri>https://nma.eosc.cz/vocabularies/datetypes/Created</iri></date_type></time_reference>"
-        "<resource_type><iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1</iri></resource_type>"
-        "<primary_language><iri>https://nma.eosc.cz/vocabularies/languages/CES</iri></primary_language>"
-        "<other_language><iri>https://nma.eosc.cz/vocabularies/languages/ENG</iri></other_language>"
-        "<terms_of_use><access_rights>"
-        "<iri>https://nma.eosc.cz/vocabularies/accessrights/c_14cb</iri></access_rights>"
-        "<license><iri>https://customlicense.org/licenses/by/4.0/</iri>"
-        '<label xml:lang="en">A custom license</label></license>'
-        '<description xml:lang="en">A description.</description></terms_of_use>'
-        '<subject><title xml:lang="und">Meteorologie, vědy o atmosféře</title></subject>'
-        '<subject><title xml:lang="und">kvalita ovzduší</title></subject>'
-        '<subject><title xml:lang="und">Environmental monitoring facilities</title></subject>'
-        '<description><description_text xml:lang="cs">Tato datová sada obsahuje měření kvality ovzduší '
-        "ve středních Čechách v roce 2024.</description_text><description_type>"
-        "<iri>https://nma.eosc.cz/vocabularies/descriptiontypes/abstract</iri></description_type></description>"
-        "<location><name>Středočeský kraj</name><geometry><wkt>"
-        "POLYGON ((13.394972 49.50127, 15.585575 49.50127, 15.585575 50.614216, 13.394972 50.614216, "
-        "13.394972 49.50127))</wkt></geometry></location>"
-        "<funding_reference><local_identifier>https://doi.org/award-identifier</local_identifier>"
-        "<award_title>Program for air pollution research</award_title>"
-        "<funder><organization><name>Grantová agentura České republiky</name></organization></funder>"
-        "</funding_reference>"
-        "<related_resource><identifier><value>10.56789/ias.pm25.2025.001</value>"
-        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</iri></scheme></identifier>"
-        "<title>Long-term trends of PM2.5 concentrations in the Central Bohemian Region (2010–2024)</title>"  # noqa: RUF001
-        '<alternate_title><title xml:lang="cs">Dlouhodobé trendy koncentrací PM2.5 ve Středočeském kraji '
-        "(2010–2024)</title><alternate_title_type>"  # noqa: RUF001
-        "<iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</iri></alternate_title_type>"
-        "</alternate_title>"
-        "<qualified_relation><relation><person><name>Svobodová, Petra</name><given_name>Petra</given_name>"
-        "<family_name>Svobodová</family_name>"
-        "<affiliation><name>Institute of Atmospheric Studies, Prague</name></affiliation></person></relation>"
-        "<role><iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</iri></role>"
-        "</qualified_relation>"
-        "<qualified_relation><relation><person><name>Müller, Thomas</name><given_name>Thomas</given_name>"
-        "<family_name>Müller</family_name>"
-        "<affiliation><name>Charles University</name></affiliation></person></relation>"
-        "<role><iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</iri></role>"
-        "</qualified_relation>"
-        "<qualified_relation><relation><organization><name>Czech Hydrometeorological Institute</name>"
-        "</organization></relation>"
-        "<role><iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/DataCollector</iri></role>"
-        "</qualified_relation>"
-        "<resource_type><iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_2df8fbb1</iri></resource_type>"
-        "<resource_relation_type>"
-        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsReferencedBy</iri>"
-        "</resource_relation_type></related_resource>"
-        "<related_resource><identifier><value>http://data.europa.eu/eli/dir/2008/50/oj</value>"
-        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri></scheme></identifier>"
-        "<resource_type><iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_18cf</iri></resource_type>"
-        "<resource_relation_type>"
-        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsReferencedBy</iri>"
-        "</resource_relation_type></related_resource>"
-        "<related_resource><identifier>"
-        "<value>https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu</value>"
-        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri></scheme></identifier>"
-        "<resource_relation_type>"
-        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/References</iri>"
-        "</resource_relation_type></related_resource>"
-        "<related_resource><identifier><value>https://opendata.chmi.cz/air_quality/now/data/</value>"
-        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri></scheme></identifier>"
-        "<resource_type><iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1</iri></resource_type>"
-        "<resource_relation_type>"
-        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsDerivedFrom</iri>"
-        "</resource_relation_type></related_resource>"
-        "<related_resource><identifier>"
-        "<value>https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7</value>"
-        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri></scheme></identifier>"
-        "<resource_relation_type>"
-        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/HasMetadata</iri>"
-        "</resource_relation_type></related_resource>"
-        "</dataset>"
+    assert c14n(dataset_el) == join_xml(
+        """
+        <dataset xmlns="https://schema.ccmm.cz/research-data/1.1">
+          <identifier>
+            <value>10.45321/as36sl</value>
+            <scheme>
+              <iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</iri>
+            </scheme>
+          </identifier>
+          <version>1.0.23</version>
+          <title>Kvalita ovzduší ve středních čechách 2024</title>
+          <alternate_title>
+            <title xml:lang="en">Air quality measurements in Central Bohemian Region in 2024.</title>
+            <alternate_title_type>
+              <iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</iri>
+            </alternate_title_type>
+          </alternate_title>
+          <qualified_relation>
+            <relation>
+              <person>
+                <name>Novák, Jan</name>
+                <given_name>Jan</given_name>
+                <family_name>Novák</family_name>
+                <affiliation>
+                  <name>Univerzita Karlova</name>
+                </affiliation>
+              </person>
+            </relation>
+            <role>
+              <iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Other</iri>
+            </role>
+          </qualified_relation>
+          <publication_year>2025</publication_year>
+          <time_reference>
+            <temporal_representation>
+              <time_instant>
+                <date>2025-04-27</date>
+              </time_instant>
+            </temporal_representation>
+            <date_type>
+              <iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</iri>
+            </date_type>
+            <date_information xml:lang="und">Date collected</date_information>
+          </time_reference>
+          <time_reference>
+            <temporal_representation>
+              <time_instant>
+                <date>2024</date>
+              </time_instant>
+            </temporal_representation>
+            <date_type>
+              <iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</iri>
+            </date_type>
+            <date_information xml:lang="und">Collection period</date_information>
+          </time_reference>
+          <time_reference>
+            <temporal_representation>
+              <time_instant>
+                <date>2025</date>
+              </time_instant>
+            </temporal_representation>
+            <date_type>
+              <iri>https://nma.eosc.cz/vocabularies/datetypes/Created</iri>
+            </date_type>
+          </time_reference>
+          <resource_type>
+            <iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1</iri>
+          </resource_type>
+          <primary_language>
+            <iri>https://nma.eosc.cz/vocabularies/languages/CES</iri>
+          </primary_language>
+          <other_language>
+            <iri>https://nma.eosc.cz/vocabularies/languages/ENG</iri>
+          </other_language>
+          <terms_of_use>
+            <access_rights>
+              <iri>https://nma.eosc.cz/vocabularies/accessrights/c_14cb</iri>
+            </access_rights>
+            <license>
+              <iri>https://customlicense.org/licenses/by/4.0/</iri>
+              <label xml:lang="en">A custom license</label>
+            </license>
+            <description xml:lang="en">A description.</description>
+          </terms_of_use>
+          <subject>
+            <title xml:lang="und">Meteorologie, vědy o atmosféře</title>
+          </subject>
+          <subject>
+            <title xml:lang="und">kvalita ovzduší</title>
+          </subject>
+          <subject>
+            <title xml:lang="und">Environmental monitoring facilities</title>
+          </subject>
+          <description>
+            <description_text xml:lang="cs">Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v roce 2024.</description_text>
+            <description_type>
+              <iri>https://nma.eosc.cz/vocabularies/descriptiontypes/abstract</iri>
+            </description_type>
+          </description>
+          <location>
+            <name>Středočeský kraj</name>
+            <geometry>
+              <wkt>POLYGON ((13.394972 49.50127, 15.585575 49.50127, 15.585575 50.614216, 13.394972 50.614216, 13.394972 49.50127))</wkt>
+            </geometry>
+          </location>
+          <funding_reference>
+            <local_identifier>https://doi.org/award-identifier</local_identifier>
+            <award_title>Program for air pollution research</award_title>
+            <funder>
+              <organization>
+                <name>Grantová agentura České republiky</name>
+              </organization>
+            </funder>
+          </funding_reference>
+          <related_resource>
+            <identifier>
+              <value>10.56789/ias.pm25.2025.001</value>
+              <scheme>
+                <iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</iri>
+              </scheme>
+            </identifier>
+            <title>Long-term trends of PM2.5 concentrations in the Central Bohemian Region (2010–2024)</title>
+            <alternate_title>
+              <title xml:lang="cs">Dlouhodobé trendy koncentrací PM2.5 ve Středočeském kraji (2010–2024)</title>
+              <alternate_title_type>
+                <iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</iri>
+              </alternate_title_type>
+            </alternate_title>
+            <qualified_relation>
+              <relation>
+                <person>
+                  <name>Svobodová, Petra</name>
+                  <given_name>Petra</given_name>
+                  <family_name>Svobodová</family_name>
+                  <affiliation>
+                    <name>Institute of Atmospheric Studies, Prague</name>
+                  </affiliation>
+                </person>
+              </relation>
+              <role>
+                <iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</iri>
+              </role>
+            </qualified_relation>
+            <qualified_relation>
+              <relation>
+                <person>
+                  <name>Müller, Thomas</name>
+                  <given_name>Thomas</given_name>
+                  <family_name>Müller</family_name>
+                  <affiliation>
+                    <name>Charles University</name>
+                  </affiliation>
+                </person>
+              </relation>
+              <role>
+                <iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</iri>
+              </role>
+            </qualified_relation>
+            <qualified_relation>
+              <relation>
+                <organization>
+                  <name>Czech Hydrometeorological Institute</name>
+                </organization>
+              </relation>
+              <role>
+                <iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/DataCollector</iri>
+              </role>
+            </qualified_relation>
+            <resource_type>
+              <iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_2df8fbb1</iri>
+            </resource_type>
+            <resource_relation_type>
+              <iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsReferencedBy</iri>
+            </resource_relation_type>
+          </related_resource>
+          <related_resource>
+            <identifier>
+              <value>http://data.europa.eu/eli/dir/2008/50/oj</value>
+              <scheme>
+                <iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri>
+              </scheme>
+            </identifier>
+            <resource_type>
+              <iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_18cf</iri>
+            </resource_type>
+            <resource_relation_type>
+              <iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsReferencedBy</iri>
+            </resource_relation_type>
+          </related_resource>
+          <related_resource>
+            <identifier>
+              <value>https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu</value>
+              <scheme>
+                <iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri>
+              </scheme>
+            </identifier>
+            <resource_relation_type>
+              <iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/References</iri>
+            </resource_relation_type>
+          </related_resource>
+          <related_resource>
+            <identifier>
+              <value>https://opendata.chmi.cz/air_quality/now/data/</value>
+              <scheme>
+                <iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri>
+              </scheme>
+            </identifier>
+            <resource_type>
+              <iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1</iri>
+            </resource_type>
+            <resource_relation_type>
+              <iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsDerivedFrom</iri>
+            </resource_relation_type>
+          </related_resource>
+          <related_resource>
+            <identifier>
+              <value>https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7</value>
+              <scheme>
+                <iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri>
+              </scheme>
+            </identifier>
+            <resource_relation_type>
+              <iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/HasMetadata</iri>
+            </resource_relation_type>
+          </related_resource>
+        </dataset>
+        """
     )
 
     bare_year_date_gap = "is not a valid value of the atomic type 'xs:date'"
