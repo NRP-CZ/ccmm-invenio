@@ -39,6 +39,7 @@ from copy import deepcopy
 from pathlib import Path
 
 import pytest
+from invenio_rdm_records.records.api import RDMRecord
 from lxml import etree
 
 from ccmm_invenio.serializers.production.ccmm import CCMMSerializer
@@ -971,11 +972,10 @@ def test_serialize_dataset_content_appends_children_in_xsd_order(serializer: CCM
     ]
 
 
-def test_serialize_accepts_either_full_record_or_bare_metadata(serializer: CCMMSerializer) -> None:
+def test_serialize_takes_metadata_from_the_full_record(serializer: CCMMSerializer) -> None:
     metadata = {"title": "T"}
-    from_bare_metadata = serializer.serialize(metadata)
-    from_full_record = serializer.serialize({"id": "abc123", "metadata": metadata})
-    assert c14n(from_bare_metadata) == c14n(from_full_record)
+    record = RDMRecord({"id": "abc123", "metadata": metadata})
+    assert c14n(serializer.serialize(record)) == c14n(serializer.serialize_dataset(metadata))
 
 
 def _minimal_metadata_identification(serializer: CCMMSerializer) -> etree._Element:
@@ -1017,7 +1017,7 @@ def test_serialize_full_dataset_from_real_example(serializer: CCMMSerializer, sc
       ``relation_type`` -- see its docstring.
     """
     with (DATA_DIR / "2026-01-29_example.json").open(encoding="utf-8") as f:
-        record = json.load(f)
+        record = RDMRecord(json.load(f))
 
     dataset_el = serializer.serialize(record)
     assert dataset_el.tag == str(serializer.ns.dataset)

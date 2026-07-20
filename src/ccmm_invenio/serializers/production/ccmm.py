@@ -43,6 +43,7 @@ from lxml import etree  # pyright: ignore[reportAttributeAccessIssue]
 from ccmm_invenio.parsers.base import QualifiedTag, XMLNamespace
 
 if TYPE_CHECKING:
+    from invenio_rdm_records.records.api import RDMRecord
     from lxml.etree import _Element as Element
 else:
     Element = Any
@@ -61,16 +62,15 @@ class CCMMSerializer:
     # Public API
     #
 
-    def serialize(self, json: dict[str, Any]) -> Element:
-        """Serialize a production record into a CCMM ``<dataset>`` element.
+    def serialize(self, record: RDMRecord) -> Element:
+        """Serialize a full production record (an ``RDMRecord``) into a CCMM ``<dataset>`` element.
 
-        Accepts either the full record dict (``{"metadata": {...}, ...}``, as stored by
-        Invenio) or the ``metadata`` dict itself (the shape documented under
-        ``properties.metadata`` in ``schema.json``, i.e. the same shape
+        `record` is the full record dict as stored by Invenio (``{"metadata": {...},
+        ...}``); its ``metadata`` sub-dict follows the shape documented under
+        ``properties.metadata`` in ``schema.json`` (the same shape
         ``CCMMXMLProductionParser.parse()`` returns as ``record["metadata"]``).
         """
-        metadata = json.get("metadata", json)
-        return self.serialize_dataset(metadata)
+        return self.serialize_dataset(record["metadata"])
 
     def serialize_dataset(self, metadata: dict[str, Any]) -> Element:
         """Serialize `metadata` into a ``<dataset>`` element, in the XSD's child order.
