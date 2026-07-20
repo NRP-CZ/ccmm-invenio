@@ -1,0 +1,49 @@
+# curie_map:
+#   ccmm_rt: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+#   datacite_rt: https://schema.datacite.org/meta/kernel-4/relationType/
+#   orcid: https://orcid.org/
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+# license: https://creativecommons.org/licenses/by/4.0/
+# mapping_set_description: Mappings between datacite relation types and CCMM relation
+#   types
+# mapping_set_id: http://vocabs.ccmm.cz/mappings/relation_types_datacite
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
+datacite_rt:IsVersionOf	Is Version Of	skos:exactMatch	ccmm_rt:IsVersionOf	is version of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:HasVersion	Has Version	skos:exactMatch	ccmm_rt:HasVersion	has version	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsPartOf	Is Part Of	skos:exactMatch	ccmm_rt:IsPartOf	is part of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:HasPart	Has Part	skos:exactMatch	ccmm_rt:HasPart	has part	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsReviewedBy	Is Reviewed By	skos:exactMatch	ccmm_rt:IsReviewedBy	is reviewed by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:Reviews	Reviews	skos:exactMatch	ccmm_rt:Reviews	reviews	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsCompiledBy	Is Compiled By	skos:exactMatch	ccmm_rt:IsCompiledBy	is compiled by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:Compiles	Compiles	skos:exactMatch	ccmm_rt:Compiles	compiles	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsReferencedBy	Is Referenced By	skos:exactMatch	ccmm_rt:IsReferencedBy	is referenced by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:References	References	skos:exactMatch	ccmm_rt:References	references	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsCitedBy	Is Cited By	skos:exactMatch	ccmm_rt:IsCitedBy	is cited by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:Cites	Cites	skos:exactMatch	ccmm_rt:Cites	cites	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsSupplementTo	Is Supplement To	skos:exactMatch	ccmm_rt:IsSupplementTo	is supplement to	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsSupplementedBy	Is Supplemented By	skos:exactMatch	ccmm_rt:IsSupplementedBy	is supplemented by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:Describes	Describes	skos:exactMatch	ccmm_rt:Describes	describes	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsDescribedBy	Is Described By	skos:exactMatch	ccmm_rt:IsDescribedBy	is described by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsPublishedIn	Is Published In	skos:exactMatch	ccmm_rt:IsPublishedIn	is published in	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsRequiredBy	Is Required By	skos:exactMatch	ccmm_rt:IsRequiredBy	is required by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:Requires	Requires	skos:exactMatch	ccmm_rt:Requires	requires	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsContinuedBy	Is Continued By	skos:exactMatch	ccmm_rt:IsContinuedBy	is continued by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:Continues	Continues	skos:exactMatch	ccmm_rt:Continues	continues	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:HasMetadata	Has Metadata	skos:exactMatch	ccmm_rt:HasMetadata	has metadata	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsMetadataFor	Is Metadata For	skos:exactMatch	ccmm_rt:IsMetadataFor	is metadata for	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsNewVersionOf	Is New Version Of	skos:exactMatch	ccmm_rt:IsNewVersionOf	is new version of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsPreviousVersionOf	Is Previous Version Of	skos:exactMatch	ccmm_rt:IsPreviousVersionOf	is previous version of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsDocumentedBy	Is Documented By	skos:exactMatch	ccmm_rt:IsDocumentedBy	is documented by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:Documents	Documents	skos:exactMatch	ccmm_rt:Documents	documents	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsVariantFormOf	Is Variant Form Of	skos:exactMatch	ccmm_rt:IsVariantFormOf	is variant form of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsOriginalFormOf	Is Original Form Of	skos:exactMatch	ccmm_rt:IsOriginalFormOf	is original form of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsIdenticalTo	Is Identical To	skos:exactMatch	ccmm_rt:IsIdenticalTo	is identical to	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsDerivedFrom	Is Derived From	skos:exactMatch	ccmm_rt:IsDerivedFrom	is derived from	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsSourceOf	Is Source Of	skos:exactMatch	ccmm_rt:IsSourceOf	is source of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:Obsoletes	Obsoletes	skos:exactMatch	ccmm_rt:Obsoletes	obsoletes	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsObsoletedBy	Is Obsoleted By	skos:exactMatch	ccmm_rt:IsObsoletedBy	is obsoleted by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsTranslationOf	Is Translation Of	skos:exactMatch	ccmm_rt:IsTranslationOf	is translation of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:HasTranslation	Has Translation	skos:exactMatch	ccmm_rt:HasTranslation	has translation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:IsCollectedBy	Is Collected By	skos:exactMatch	ccmm_rt:IsCollectedBy	is collected by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_rt:Collects	Collects	skos:exactMatch	ccmm_rt:Collects	collects	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0

@@ -1,0 +1,20 @@
+# curie_map:
+#   coar_rt: http://purl.org/coar/resource_type/
+#   openaire_rt: info:eu-repo/semantics/
+#   orcid: https://orcid.org/
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+# license: https://creativecommons.org/licenses/by/4.0/
+# mapping_set_description: Mappings between openaire resource types and CCMM/COAR resource
+#   types
+# mapping_set_id: http://vocabs.ccmm.cz/mappings/resource_types_openaire
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
+openaire_rt:Collection	Collection	skos:exactMatch	coar_rt:RMP5-3GQ6	collection	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+openaire_rt:Dataset	Dataset	skos:exactMatch	coar_rt:c_ddb1	dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+openaire_rt:Image	Image	skos:exactMatch	coar_rt:c_c513	image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+openaire_rt:InteractiveResource	Interactive Resource	skos:exactMatch	coar_rt:c_e9a0	interactive resource	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+openaire_rt:Other	Other	skos:exactMatch	coar_rt:c_1843	other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+openaire_rt:Software	Software	skos:exactMatch	coar_rt:c_5ce6	software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+openaire_rt:Sound	Sound	skos:exactMatch	coar_rt:c_18cc	sound	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+openaire_rt:Text	Text	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+openaire_rt:Workflow	Workflow	skos:exactMatch	coar_rt:c_393c	workflow	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0

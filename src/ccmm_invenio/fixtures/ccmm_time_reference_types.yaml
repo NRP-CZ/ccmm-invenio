@@ -1,277 +1,255 @@
-- description:
-    
-    en: 'The date that the publisher accepted the resource into their system.
-
-      To indicate the start of an embargo period, use Accepted or Submitted, as appropriate.'
-  id: Accepted
-  props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Accepted
-    datacite: Accepted
-    openaire: Accepted
+- id: accepted
   title:
     cs: Datum přijetí datasetu
     en: Date Accepted
-- description:
-    
-    en: 'The date the resource is made publicly available. May be a range.
+  description:
+    en: 'The date that the publisher accepted the resource into their system.
 
-      To indicate the end of an embargo period, use Available.'
-  id: Available
+      To indicate the start of an embargo period, use Accepted or Submitted, as appropriate.'
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available
-    datacite: Available
-    openaire: Available
+    iri: https://nma.eosc.cz/vocabularies/datetypes/accepted
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Accepted
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: accepted
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: accepted
+- id: available
   title:
     cs: Datum zveřejnění datasetu
     en: Date Available
-- description:
-    
-    en: The specific, documented date at which the resource receives a copyrighted
-      status, if applicable.
-  id: Copyrighted
+  description:
+    en: 'The date the resource is made publicly available. May be a range.
+
+      To indicate the end of an embargo period, use Available.'
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Copyrighted
-    datacite: Copyrighted
-    openaire: Copyrighted
+    iri: https://nma.eosc.cz/vocabularies/datetypes/available
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Available
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: available
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: available
+- id: copyrighted
   title:
     cs: Datum udělení copyrightu
     en: Date Copyrighted
-- description:
-    
-    en: 'The date in which the resource content was collected.
-
-      To indicate precise or particular timeframes in which research was conducted.'
-  id: Collected
+  description:
+    en: The specific, documented date at which the resource receives a copyrighted
+      status, if applicable.
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected
-    datacite: Collected
-    openaire: Collected
+    iri: https://nma.eosc.cz/vocabularies/datetypes/copyrighted
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Copyrighted
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: copyrighted
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: copyrighted
+- id: collected
   title:
     cs: Datum sběru dat
     en: Date Collected
-- description:
-    
-    en: 'The date range (start date) in which the resource content was collected.
+  description:
+    en: 'The date in which the resource content was collected.
 
       To indicate precise or particular timeframes in which research was conducted.'
-  id: CollectedStart
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/CollectedStart
+    iri: https://nma.eosc.cz/vocabularies/datetypes/collected
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Collected
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: collected
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: collected
+- id: collectedstart
   title:
     cs: Datum sběru dat (do)
     en: Date Collected Start
-- description:
-    
-    en: 'The date range (end date) in which the resource content was collected.
+  description:
+    en: 'The date range (start date) in which the resource content was collected.
 
       To indicate precise or particular timeframes in which research was conducted.'
-  id: CollectedEnd
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/CollectedEnd
+    iri: https://nma.eosc.cz/vocabularies/datetypes/collectedstart
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CollectedStart
+- id: collectedend
   title:
     cs: Datum sběru dat (od)
     en: Date Collected End
-- description:
-    
-    en: "The date that the resource content applies to, describes, or covers.\n To\
-      \ indicate the temporal coverage of the resource, use Coverage. This may be\
-      \ different from Collected."
-  id: Coverage
+  description:
+    en: 'The date range (end date) in which the resource content was collected.
+
+      To indicate precise or particular timeframes in which research was conducted.'
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Coverage
-    datacite: Coverage
+    iri: https://nma.eosc.cz/vocabularies/datetypes/collectedend
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CollectedEnd
+- id: coverage
   title:
     cs: Časové pokrytí datasetu
     en: Date Coverage
-- description:
-    
-    en: "The date range (start date) that the resource content applies to, describes,\
-      \ or covers.\n To indicate the temporal coverage of the resource, use Coverage.\
-      \ This may be different from Collected."
-  id: CoverageStart
+  description:
+    en: "The date that the resource content applies to, describes, or covers.\n To\
+      \ indicate the temporal coverage of the resource, use Coverage. This may be\
+      \ different from Collected."
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/CoverageStart
+    iri: https://nma.eosc.cz/vocabularies/datetypes/coverage
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Coverage
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: coverage
+- id: coveragestart
   title:
     cs: Časové pokrytí datasetu (od)
     en: Date Coverage Start
-- description:
-    
-    en: "The date range (end date) that the resource content applies to, describes,\
+  description:
+    en: "The date range (start date) that the resource content applies to, describes,\
       \ or covers.\n To indicate the temporal coverage of the resource, use Coverage.\
       \ This may be different from Collected."
-  id: CoverageEnd
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/CoverageEnd
+    iri: https://nma.eosc.cz/vocabularies/datetypes/coveragestart
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CoverageStart
+- id: coverageend
   title:
     cs: Časové pokrytí datasetu (do)
     en: Date Coverage End
-- description:
-    
+  description:
+    en: "The date range (end date) that the resource content applies to, describes,\
+      \ or covers.\n To indicate the temporal coverage of the resource, use Coverage.\
+      \ This may be different from Collected."
+  props:
+    iri: https://nma.eosc.cz/vocabularies/datetypes/coverageend
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CoverageEnd
+- id: created
+  title:
+    cs: Datum vytvoření datasetu
+    en: Date Created
+  description:
     en: 'The date the resource itself was put together; this could refer to a timeframe
       in ancient history, a single date for a final component, e.g., the finalised
       file with all the data.
 
       Recommended for discovery.'
-  id: Created
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created
-    datacite: Created
-    openaire: Created
+    iri: https://nma.eosc.cz/vocabularies/datetypes/created
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Created
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: created
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: created
+- id: createdstart
   title:
-    cs: Datum vytvoření datasetu
-    en: Date Created
-- description:
-    
+    cs: Datum vytvoření datasetu (od)
+    en: Date Created Start
+  description:
     en: 'The date the resource itself was put together; this could refer to a timeframe
       in ancient history, the start date (of the range) for a final component, e.g.,
       the finalised file with all the data.
 
       Recommended for discovery.'
-  id: CreatedStart
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/CreatedStart
+    iri: https://nma.eosc.cz/vocabularies/datetypes/createdstart
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CreatedStart
+- id: createdend
   title:
-    cs: Datum vytvoření datasetu (od)
-    en: Date Created Start
-- description:
-    
+    cs: Datum vytvoření datasetu (do)
+    en: Date Created End
+  description:
     en: 'The date the resource itself was put together; this could refer to a timeframe
       in ancient history, the end date (of the range) for a final component, e.g.,
       the finalised file with all the data.
 
       Recommended for discovery.'
-  id: CreatedEnd
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/CreatedEnd
-  title:
-    cs: Datum vytvoření datasetu (do)
-    en: Date Created End
-- description:
-    
-    en: The date that the resource is published or distributed, e.g., to a data centre.
-  id: Issued
-  props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued
-    datacite: Issued
-    openaire: Issued
+    iri: https://nma.eosc.cz/vocabularies/datetypes/createdend
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: CreatedEnd
+- id: issued
   title:
     cs: Datum vydání datasetu
     en: Date Issued
-- description:
-    
+  description:
+    en: The date that the resource is published or distributed, e.g., to a data centre.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/datetypes/issued
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Issued
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: issued
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: issued
+- id: submitted
+  title:
+    cs: Datum podání datasetu
+    en: Date Submitted
+  description:
     en: 'The date the creator submits the resource to the publisher. This could be
       different from Accepted if the publisher then applies a selection process.
 
       Recommended for discovery.'
-  id: Submitted
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Submitted
-    datacite: Submitted
-    openaire: Submitted
-  title:
-    cs: Datum podání datasetu
-    en: Date Submitted
-- description:
-    
-    en: The date of the last update to the resource, when the resource is being added
-      to.
-  id: Updated
-  props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Updated
-    datacite: Updated
-    openaire: Updated
+    iri: https://nma.eosc.cz/vocabularies/datetypes/submitted
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Submitted
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: submitted
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: submitted
+- id: updated
   title:
     cs: Datum aktualizace datasetu
     en: Date Updated
-- description:
-    
-    en: The date range (start date) of the last update to the resource, when the resource
-      is being added to.
-  id: UpdatedStart
+  description:
+    en: The date of the last update to the resource, when the resource is being added
+      to.
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/UpdatedStart
+    iri: https://nma.eosc.cz/vocabularies/datetypes/updated
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Updated
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: updated
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: updated
+- id: updatedstart
   title:
     cs: Datum aktualizace datasetu (od)
     en: Date Updated Start
-- description:
-    
-    en: The date range (end date) of the last update to the resource, when the resource
+  description:
+    en: The date range (start date) of the last update to the resource, when the resource
       is being added to.
-  id: UpdatedEnd
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/UpdatedEnd
+    iri: https://nma.eosc.cz/vocabularies/datetypes/updatedstart
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: UpdatedStart
+- id: updatedend
   title:
     cs: Datum aktualizace datasetu (do)
     en: Date Updated End
-- description:
-    
-    en: The date during which the dataset or resource is accurate.
-  id: Valid
+  description:
+    en: The date range (end date) of the last update to the resource, when the resource
+      is being added to.
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Valid
-    datacite: Valid
-    openaire: Valid
+    iri: https://nma.eosc.cz/vocabularies/datetypes/updatedend
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: UpdatedEnd
+- id: valid
   title:
     cs: Datum platnosti datasetu
     en: Date Valid
-- description:
-    
-    en: The date range (start date) during which the dataset or resource is accurate.
-  id: ValidStart
+  description:
+    en: The date during which the dataset or resource is accurate.
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/ValidStart
+    iri: https://nma.eosc.cz/vocabularies/datetypes/valid
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Valid
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: valid
+    skos:exactMatch:http://purl.org/datacite/v4.4/dateType: valid
+- id: validstart
   title:
     cs: Datum platnosti datasetu (od)
     en: Date Valid Start
-- description:
-    
-    en: The date range (end date) during which the dataset or resource is accurate.
-  id: ValidEnd
+  description:
+    en: The date range (start date) during which the dataset or resource is accurate.
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/ValidEnd
+    iri: https://nma.eosc.cz/vocabularies/datetypes/validstart
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: ValidStart
+- id: validend
   title:
     cs: Datum platnosti datasetu (do)
     en: Date Valid End
-- description:
-    
-    en: "The date the resource is removed.\n It is good practice to include a description\
-      \ that indicates the reason for the retraction or withdrawal."
-  id: Withdrawn
+  description:
+    en: The date range (end date) during which the dataset or resource is accurate.
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Withdrawn
-    datacite: Withdrawn
+    iri: https://nma.eosc.cz/vocabularies/datetypes/validend
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: ValidEnd
+- id: withdrawn
   title:
     cs: Datum odstranění datasetu
     en: Date Withdrawn
-- description:
-    
-    en: Other date that does not fit into an existing category.
-  id: Other
+  description:
+    en: "The date the resource is removed.\n It is good practice to include a description\
+      \ that indicates the reason for the retraction or withdrawal."
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
-    iri: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Other
-    datacite: Other
+    iri: https://nma.eosc.cz/vocabularies/datetypes/withdrawn
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Withdrawn
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: withdrawn
+- id: other
   title:
     cs: Jiné datum
     en: Other date
+  description:
+    en: Other date that does not fit into an existing category.
+  props:
+    iri: https://nma.eosc.cz/vocabularies/datetypes/other
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Other
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/dateType: other

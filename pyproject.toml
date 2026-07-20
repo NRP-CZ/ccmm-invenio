@@ -19,6 +19,9 @@ dependencies = [
 
     # invenio dependencies
     "invenio-rdm-records>=32.0.1,<33.0.0",
+
+    # vocab dependencies
+    "sssom>=0.4.21,<1.0.0"
 ]
 
 [project.urls]

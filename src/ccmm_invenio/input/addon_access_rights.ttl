@@ -3,15 +3,24 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix access: <http://purl.org/coar/access_right/> .
 
-access:c_14cb skos:prefLabel "pouze metadata"@cs .
-access:c_16ec skos:prefLabel "omezený přístup"@cs .
-access:c_abf2 skos:prefLabel "otevřený přístup"@cs .
-access:c_f1cf skos:prefLabel "odložené zpřístupnění"@cs .
+access:c_14cb
+    skos:prefLabel "pouze metadata"@cs ;
+    skos:definition "Přístup pouze k metadatům označuje zdroj, u něhož je přístup omezen pouze na metadata. Samotný zdroj je popsán metadaty, není však přímo dostupný prostřednictvím systému nebo platformy ani na něj nelze odkazovat prostřednictvím otevřeně přístupné kopie v externím časopise nebo důvěryhodném archivu."@cs .
 
+access:c_16ec
+    skos:prefLabel "omezený přístup"@cs ;
+    skos:definition """Omezený přístup označuje zdroj, který je v systému dostupný, avšak s určitým omezením bránícím plnému otevřenému přístupu. Tento typ přístupu může nastat v řadě různých situací. Několik příkladů je uvedeno níže:
 
-# openaire mappings
-@prefix props: <http://vocabs.ccmm.cz/props/> .
-access:c_f1cf props:openaire "info:eu-repo/semantics/embargoedAccess" .
-access:c_abf2 props:openaire "info:eu-repo/semantics/openAccess" .
-access:c_16ec props:openaire "info:eu-repo/semantics/restrictedAccess" .
-access:c_14cb props:openaire "info:eu-repo/semantics/openAccess" .
+Uživatel se musí pro přístup ke zdroji přihlásit do systému
+
+Uživatel musí pro přístup ke zdroji zaslat e-mail autorovi nebo správci systému
+
+Přístup ke zdroji je omezen na konkrétní komunitu (např. pouze na univerzitní komunitu)"""@cs .
+
+access:c_abf2
+    skos:prefLabel "otevřený přístup"@cs ;
+    skos:definition "Otevřený přístup označuje zdroj, který je okamžitě a trvale dostupný online a volně přístupný všem na webu, bez finančních a technických překážek. Zdroj je buď uložen v repozitáři, nebo je na něj odkazováno v externím časopise či důvěryhodném archivu."@cs .
+
+access:c_f1cf
+    skos:prefLabel "odložené zpřístupnění"@cs ;
+    skos:definition "Odložené zpřístupnění označuje zdroj, který je do určitého data dostupný pouze v režimu přístupu k metadatům a teprve poté je uvolněn do otevřeného přístupu. Embargo může být vyžadováno politikami vydavatelů a poskytovatelů financování nebo stanoveno autorem (např. v případě závěrečných prací a disertací)."@cs .

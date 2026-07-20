@@ -1,477 +1,363 @@
-- description:
-    
-    en: ''
-  id: IsVersionOf
-  props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVersionOf
-    datacite: IsVersionOf
-    zenodo: isversionof
+- id: isversionof
   title:
     cs: je verzí
     en: is version of
-- description:
-    
-    en: ''
-  id: HasVersion
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasVersion
-    datacite: HasVersion
-    zenodo: hasversion
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isversionof
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsVersionOf
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isversionof
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isversionof
+- id: hasversion
   title:
     cs: má verzi
     en: has version
-- description:
-    
-    en: ''
-  id: IsPartOf
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPartOf
-    datacite: IsPartOf
-    openaire: IsPartOf
-    zenodo: ispartof
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/hasversion
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasVersion
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: hasversion
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: hasversion
+- id: ispartof
   title:
     cs: je součástí
     en: is part of
-- description:
-    
-    en: ''
-  id: HasPart
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasPart
-    datacite: HasPart
-    openaire: HasPart
-    zenodo: haspart
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/ispartof
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsPartOf
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: ispartof
+    skos:exactMatch:info:eu-repo/semantics: ispartof
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: ispartof
+- id: haspart
   title:
     cs: má část/i
     en: has part
-- description:
-    
-    en: ''
-  id: IsReviewedBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReviewedBy
-    datacite: IsReviewedBy
-    openaire: IsReviewedBy
-    zenodo: isreviewedby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/haspart
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasPart
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: haspart
+    skos:exactMatch:info:eu-repo/semantics: haspart
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: haspart
+- id: isreviewedby
   title:
     cs: je recenzován (čím)
     en: is reviewed by
-- description:
-    
-    en: ''
-  id: Reviews
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Reviews
-    datacite: Reviews
-    openaire: Reviews
-    zenodo: reviews
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isreviewedby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsReviewedBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isreviewedby
+    skos:exactMatch:info:eu-repo/semantics: isreviewedby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isreviewedby
+- id: reviews
   title:
     cs: recenzuje (co)
     en: reviews
-- description:
-    
-    en: ''
-  id: IsCompiledBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCompiledBy
-    datacite: IsCompiledBy
-    openaire: isCompiledBy
-    zenodo: iscompiledby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/reviews
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Reviews
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: reviews
+    skos:exactMatch:info:eu-repo/semantics: reviews
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: reviews
+- id: iscompiledby
   title:
     cs: kompilován (čím)
     en: is compiled by
-- description:
-    
-    en: ''
-  id: Compiles
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Compiles
-    datacite: Compiles
-    openaire: Compiles
-    zenodo: compiles
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/iscompiledby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsCompiledBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: iscompiledby
+    skos:exactMatch:info:eu-repo/semantics: iscompiledby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: iscompiledby
+- id: compiles
   title:
     cs: kompiluje (co)
     en: compiles
-- description:
-    
-    en: ''
-  id: IsReferencedBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy
-    datacite: IsReferencedBy
-    openaire: IsReferencedBy
-    zenodo: isreferencedby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/compiles
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Compiles
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: compiles
+    skos:exactMatch:info:eu-repo/semantics: compiles
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: compiles
+- id: isreferencedby
   title:
     cs: je na něj odkazováno z (čeho)
     en: is referenced by
-- description:
-    
-    en: ''
-  id: References
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/References
-    datacite: References
-    openaire: References
-    zenodo: references
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isreferencedby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsReferencedBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isreferencedby
+    skos:exactMatch:info:eu-repo/semantics: isreferencedby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isreferencedby
+- id: references
   title:
     cs: odkazuje (na co)
     en: references
-- description:
-    
-    en: ''
-  id: IsCitedBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCitedBy
-    datacite: IsCitedBy
-    openaire: IsCitedBy
-    zenodo: iscitedby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/references
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: References
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: references
+    skos:exactMatch:info:eu-repo/semantics: references
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: references
+- id: iscitedby
   title:
     cs: je citován (čím)
     en: is cited by
-- description:
-    
-    en: ''
-  id: Cites
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Cites
-    datacite: Cites
-    openaire: Cites
-    zenodo: cites
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/iscitedby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsCitedBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: iscitedby
+    skos:exactMatch:info:eu-repo/semantics: iscitedby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: iscitedby
+- id: cites
   title:
     cs: cituje (co)
     en: cites
-- description:
-    
-    en: ''
-  id: IsSupplementTo
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementTo
-    datacite: IsSupplementTo
-    openaire: IsSupplementTo
-    zenodo: issupplementto
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/cites
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Cites
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: cites
+    skos:exactMatch:info:eu-repo/semantics: cites
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: cites
+- id: issupplementto
   title:
     cs: je doplňkem k (čemu)
     en: is supplement to
-- description:
-    
-    en: ''
-  id: IsSupplementedBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementedBy
-    datacite: IsSupplementedBy
-    openaire: IsSupplementedBy
-    zenodo: issupplementedby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/issupplementto
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsSupplementTo
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: issupplementto
+    skos:exactMatch:info:eu-repo/semantics: issupplementto
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: issupplementto
+- id: issupplementedby
   title:
     cs: má doplněk
     en: is supplemented by
-- description:
-    
-    en: ''
-  id: Describes
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Describes
-    datacite: Describes
-    zenodo: describes
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/issupplementedby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsSupplementedBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: issupplementedby
+    skos:exactMatch:info:eu-repo/semantics: issupplementedby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: issupplementedby
+- id: describes
   title:
     cs: popisuje (co)
     en: describes
-- description:
-    
-    en: ''
-  id: IsDescribedBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDescribedBy
-    datacite: IsDescribedBy
-    zenodo: isdescribedby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/describes
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Describes
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: describes
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: describes
+- id: isdescribedby
   title:
     cs: je popsán (čím)
     en: is described by
-- description:
-    
-    en: ''
-  id: IsPublishedIn
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPublishedIn
-    datacite: IsPublishedIn
-    zenodo: ispublishedin
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isdescribedby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsDescribedBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isdescribedby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isdescribedby
+- id: ispublishedin
   title:
     cs: je publikován v
     en: is published in
-- description:
-    
-    en: ''
-  id: IsRequiredBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsRequiredBy
-    datacite: IsRequiredBy
-    zenodo: isrequiredby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/ispublishedin
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsPublishedIn
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: ispublishedin
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: ispublishedin
+- id: isrequiredby
   title:
     cs: je požadován (čím)
     en: is required by
-- description:
-    
-    en: ''
-  id: Requires
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Requires
-    datacite: Requires
-    zenodo: requires
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isrequiredby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsRequiredBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isrequiredby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isrequiredby
+- id: requires
   title:
     cs: požaduje (co)
     en: requires
-- description:
-    
-    en: ''
-  id: IsContinuedBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsContinuedBy
-    datacite: IsContinuedBy
-    openaire: IsContinuedBy
-    zenodo: iscontinuedby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/requires
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Requires
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: requires
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: requires
+- id: iscontinuedby
   title:
     cs: je pokračováním (čeho)
     en: is continued by
-- description:
-    
-    en: ''
-  id: Continues
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Continues
-    datacite: Continues
-    openaire: Continues
-    zenodo: continues
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/iscontinuedby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsContinuedBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: iscontinuedby
+    skos:exactMatch:info:eu-repo/semantics: iscontinuedby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: iscontinuedby
+- id: continues
   title:
     cs: pokračuje (čím)
     en: continues
-- description:
-    
-    en: ''
-  id: HasMetadata
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata
-    datacite: HasMetadata
-    openaire: HasMetadata
-    zenodo: hasmetadata
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/continues
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Continues
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: continues
+    skos:exactMatch:info:eu-repo/semantics: continues
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: continues
+- id: hasmetadata
   title:
     cs: má metadata
     en: has metadata
-- description:
-    
-    en: ''
-  id: IsMetadataFor
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsMetadataFor
-    datacite: IsMetadataFor
-    openaire: IsMetadataFor
-    zenodo: ismetadatafor
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/hasmetadata
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasMetadata
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: hasmetadata
+    skos:exactMatch:info:eu-repo/semantics: hasmetadata
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: hasmetadata
+- id: ismetadatafor
   title:
     cs: je metadaty pro
     en: is metadata for
-- description:
-    
-    en: ''
-  id: IsNewVersionOf
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsNewVersionOf
-    datacite: IsNewVersionOf
-    openaire: IsNewVersionOf
-    zenodo: isnewversionof
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/ismetadatafor
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsMetadataFor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: ismetadatafor
+    skos:exactMatch:info:eu-repo/semantics: ismetadatafor
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: ismetadatafor
+- id: isnewversionof
   title:
     cs: je novou verzí (čeho)
     en: is new version of
-- description:
-    
-    en: ''
-  id: IsPreviousVersionOf
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPreviousVersionOf
-    datacite: IsPreviousVersionOf
-    openaire: IsPreviousVersionOf
-    zenodo: ispreviousversionof
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isnewversionof
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsNewVersionOf
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isnewversionof
+    skos:exactMatch:info:eu-repo/semantics: isnewversionof
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isnewversionof
+- id: ispreviousversionof
   title:
     cs: je předchozí verzí (čeho)
     en: is previous version of
-- description:
-    
-    en: ''
-  id: IsDocumentedBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDocumentedBy
-    datacite: IsDocumentedBy
-    openaire: IsDocumentedBy
-    zenodo: isdocumentedby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/ispreviousversionof
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsPreviousVersionOf
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: ispreviousversionof
+    skos:exactMatch:info:eu-repo/semantics: ispreviousversionof
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: ispreviousversionof
+- id: isdocumentedby
   title:
     cs: je zdokumentován (čím)
     en: is documented by
-- description:
-    
-    en: ''
-  id: Documents
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Documents
-    datacite: Documents
-    openaire: Documents
-    zenodo: documents
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isdocumentedby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsDocumentedBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isdocumentedby
+    skos:exactMatch:info:eu-repo/semantics: isdocumentedby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isdocumentedby
+- id: documents
   title:
     cs: dokumentuje (co)
     en: documents
-- description:
-    
-    en: ''
-  id: IsVariantFormOf
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVariantFormOf
-    datacite: IsVariantFormOf
-    openaire: IsVariantFormOf
-    zenodo: isvariantformof
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/documents
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Documents
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: documents
+    skos:exactMatch:info:eu-repo/semantics: documents
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: documents
+- id: isvariantformof
   title:
     cs: je variantou (čeho)
     en: is variant form of
-- description:
-    
-    en: ''
-  id: IsOriginalFormOf
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsOriginalFormOf
-    datacite: IsOriginalFormOf
-    openaire: IsOriginalFormOf
-    zenodo: isoriginalformof
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isvariantformof
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsVariantFormOf
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isvariantformof
+    skos:exactMatch:info:eu-repo/semantics: isvariantformof
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isvariantformof
+- id: isoriginalformof
   title:
     cs: je původní variantou (čeho)
     en: is original form of
-- description:
-    
-    en: ''
-  id: IsIdenticalTo
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsIdenticalTo
-    datacite: IsIdenticalTo
-    openaire: IsIdenticalTo
-    zenodo: isidenticalto
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isoriginalformof
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsOriginalFormOf
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isoriginalformof
+    skos:exactMatch:info:eu-repo/semantics: isoriginalformof
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isoriginalformof
+- id: isidenticalto
   title:
     cs: je identický s
     en: is identical to
-- description:
-    
-    en: ''
-  id: IsDerivedFrom
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom
-    datacite: IsDerivedFrom
-    openaire: IsDerivedFrom
-    zenodo: isderivedfrom
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isidenticalto
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsIdenticalTo
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isidenticalto
+    skos:exactMatch:info:eu-repo/semantics: isidenticalto
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isidenticalto
+- id: isderivedfrom
   title:
     cs: je odvozen od (čeho)
     en: is derived from
-- description:
-    
-    en: ''
-  id: IsSourceOf
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSourceOf
-    datacite: IsSourceOf
-    openaire: IsSourceOf
-    zenodo: issourceof
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isderivedfrom
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsDerivedFrom
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isderivedfrom
+    skos:exactMatch:info:eu-repo/semantics: isderivedfrom
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isderivedfrom
+- id: issourceof
   title:
     cs: je zdrojem odvozené verze
     en: is source of
-- description:
-    
-    en: ''
-  id: Obsoletes
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Obsoletes
-    datacite: Obsoletes
-    zenodo: obsoletes
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/issourceof
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsSourceOf
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: issourceof
+    skos:exactMatch:info:eu-repo/semantics: issourceof
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: issourceof
+- id: obsoletes
   title:
     cs: nahrazuje (co)
     en: obsoletes
-- description:
-    
-    en: ''
-  id: IsObsoletedBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsObsoletedBy
-    datacite: IsObsoletedBy
-    zenodo: isobsoletedby
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/obsoletes
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Obsoletes
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: obsoletes
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: obsoletes
+- id: isobsoletedby
   title:
     cs: je nahrazen (čím)
     en: is obsoleted by
-- description:
-    
-    en: ''
-  id: IsTranslationOf
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsTranslationOf
-    datacite: IsTranslationOf
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/isobsoletedby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsObsoletedBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: isobsoletedby
+    skos:exactMatch:https://zenodo.org/vocabularies/relation_type: isobsoletedby
+- id: istranslationof
   title:
     cs: je překladem (čeho)
     en: is translation of
-- description:
-    
-    en: ''
-  id: HasTranslation
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasTranslation
-    datacite: HasTranslation
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/istranslationof
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsTranslationOf
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: istranslationof
+- id: hastranslation
   title:
     cs: má překlad
     en: has translation
-- description:
-    
-    en: ''
-  id: IsCollectedBy
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy
-    datacite: IsCollectedBy
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/hastranslation
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasTranslation
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: hastranslation
+- id: iscollectedby
   title:
     cs: je sbírán (čím)
     en: is collected by
-- description:
-    
-    en: ''
-  id: Collects
   props:
-    base_iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/
-    iri: https://vocabs.ccmm.cz/registry/codelist/RelationType/Collects
-    datacite: Collects
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/iscollectedby
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsCollectedBy
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: iscollectedby
+- id: collects
   title:
     cs: sbírá
     en: collects
+  props:
+    iri: https://nma.eosc.cz/vocabularies/relationtypes/collects
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Collects
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/relationType: collects

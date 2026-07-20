@@ -1,0 +1,64 @@
+# curie_map:
+#   coar_rt: http://purl.org/coar/resource_type/
+#   orcid: https://orcid.org/
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   zenodo_rt: https://zenodo.org/vocabularies/resource_type/
+# license: https://creativecommons.org/licenses/by/4.0/
+# mapping_set_description: Mappings between zenodo resource types and CCMM/COAR resource
+#   types
+# mapping_set_id: http://vocabs.ccmm.cz/mappings/resource_types_zenodo
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
+zenodo_rt:annotationcollection	Annotation Collection	skos:exactMatch	coar_rt:c_1162	annotation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:audio	Audio	skos:exactMatch	coar_rt:c_18cc	sound	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:dataset	Dataset	skos:exactMatch	coar_rt:c_ddb1	dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:event	Event	skos:exactMatch	coar_rt:c_1843	other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:image	Image	skos:exactMatch	coar_rt:c_c513	image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:image-diagram	Image / Diagram	skos:exactMatch	coar_rt:c_5ce6	software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:image-drawing	Image / Drawing	skos:exactMatch	coar_rt:c_2cd9	magazine	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:image-figure	Image / Figure	skos:exactMatch	coar_rt:c_ecc8	still image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:image-other	Image / Other	skos:exactMatch	coar_rt:c_c51a	image - other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:image-photo	Image / Photo	skos:exactMatch	coar_rt:c_e73b	photograph	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:image-plot	Image / Plot	skos:exactMatch	coar_rt:c_ecc8	still image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:lesson	Lesson	skos:exactMatch	coar_rt:c_9a1e	lesson	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:model	Model	skos:exactMatch	coar_rt:c_1843	other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:other	Other	skos:exactMatch	coar_rt:c_1843	other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:peerreview	Peer Review	skos:exactMatch	coar_rt:c_efa0	review	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:physicalobject	Physical Object	skos:exactMatch	coar_rt:c_1843	other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:poster	Poster	skos:exactMatch	coar_rt:c_6670	conference poster	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:presentation	Presentation	skos:exactMatch	coar_rt:c_c94f	conference output	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication	Publication	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-abstract	Publication / Abstract	skos:exactMatch	coar_rt:c_8544	lecture	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-annotation	Publication / Annotation	skos:exactMatch	coar_rt:c_1162	annotation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-annotationcollection	Publication / Annotation Collection	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-article	Publication / Article	skos:exactMatch	coar_rt:c_6501	journal article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-bachelorthesis	Publication / Bachelor Thesis	skos:exactMatch	coar_rt:c_7a1f	bachelor thesis	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-book	Publication / Book	skos:exactMatch	coar_rt:c_2f33	book	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-conferencepaper	Publication / Conference Paper	skos:exactMatch	coar_rt:c_5794	conference paper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-conferenceproceeding	Publication / Conference Proceeding	skos:exactMatch	coar_rt:c_f744	conference proceedings	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-datamanagementplan	Publication / Data Management Plan	skos:exactMatch	coar_rt:c_ab79	data management plan	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-datapaper	Publication / Data Paper	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-deliverable	Publication / Deliverable	skos:exactMatch	coar_rt:c_18op	project deliverable	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-dissertation	Publication / Dissertation	skos:exactMatch	coar_rt:c_46ec	thesis	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-doctorthesis	Publication / Doctor Thesis	skos:exactMatch	coar_rt:c_46ec	thesis	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-journal	Publication / Journal	skos:exactMatch	coar_rt:c_0640	journal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-lecture	Publication / Lecture	skos:exactMatch	coar_rt:c_8544	lecture	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-mastersthesis	Publication / Masters Thesis	skos:exactMatch	coar_rt:c_bdcc	master thesis	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-milestone	Publication / Milestone	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-other	Publication / Other	skos:exactMatch	coar_rt:c_1843	other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-patent	Publication / Patent	skos:exactMatch	coar_rt:c_15cd	patent	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-peerreview	Publication / Peer Review	skos:exactMatch	coar_rt:c_efa0	review	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-preprint	Publication / Preprint	skos:exactMatch	coar_rt:c_816b	preprint	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-proposal	Publication / Proposal	skos:exactMatch	coar_rt:c_baaf	research proposal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-report	Publication / Report	skos:exactMatch	coar_rt:c_93fc	report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-section	Publication / Section	skos:exactMatch	coar_rt:c_3248	book part	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-softwaredocumentation	Publication / Software Documentation	skos:exactMatch	coar_rt:c_71bd	technical documentation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-standard	Publication / Standard	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-taxonomictreatment	Publication / Taxonomic Treatment	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-technicalnote	Publication / Technical Note	skos:exactMatch	coar_rt:c_18gh	technical report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-thesis	Publication / Thesis	skos:exactMatch	coar_rt:c_46ec	thesis	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:publication-workingpaper	Publication / Working Paper	skos:exactMatch	coar_rt:c_8042	working paper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:software	Software	skos:exactMatch	coar_rt:c_5ce6	software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:software-computationalnotebook	Software / Computational Notebook	skos:exactMatch	coar_rt:c_5ce6	software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:video	Video	skos:exactMatch	coar_rt:c_12ce	video	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:workflow	Workflow	skos:exactMatch	coar_rt:c_393c	workflow	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0

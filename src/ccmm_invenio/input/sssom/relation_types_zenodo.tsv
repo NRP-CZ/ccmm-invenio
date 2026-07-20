@@ -1,0 +1,45 @@
+# curie_map:
+#   ccmm_rt: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+#   orcid: https://orcid.org/
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   zenodo_rt: https://zenodo.org/vocabularies/relation_type/
+# license: https://creativecommons.org/licenses/by/4.0/
+# mapping_set_description: Mappings between zenodo relation types and CCMM relation
+#   types
+# mapping_set_id: http://vocabs.ccmm.cz/mappings/relation_types_zenodo
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
+zenodo_rt:iscitedby	iscitedby	skos:exactMatch	ccmm_rt:IsCitedBy	is cited by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:cites	cites	skos:exactMatch	ccmm_rt:Cites	cites	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:issupplementto	issupplementto	skos:exactMatch	ccmm_rt:IsSupplementTo	is supplement to	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:issupplementedby	issupplementedby	skos:exactMatch	ccmm_rt:IsSupplementedBy	is supplemented by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:iscontinuedby	iscontinuedby	skos:exactMatch	ccmm_rt:IsContinuedBy	is continued by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:continues	continues	skos:exactMatch	ccmm_rt:Continues	continues	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isdescribedby	isdescribedby	skos:exactMatch	ccmm_rt:IsDescribedBy	is described by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:describes	describes	skos:exactMatch	ccmm_rt:Describes	describes	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:hasmetadata	hasmetadata	skos:exactMatch	ccmm_rt:HasMetadata	has metadata	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:ismetadatafor	ismetadatafor	skos:exactMatch	ccmm_rt:IsMetadataFor	is metadata for	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:hasversion	hasversion	skos:exactMatch	ccmm_rt:HasVersion	has version	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isversionof	isversionof	skos:exactMatch	ccmm_rt:IsVersionOf	is version of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isnewversionof	isnewversionof	skos:exactMatch	ccmm_rt:IsNewVersionOf	is new version of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:ispreviousversionof	ispreviousversionof	skos:exactMatch	ccmm_rt:IsPreviousVersionOf	is previous version of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:ispartof	ispartof	skos:exactMatch	ccmm_rt:IsPartOf	is part of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:haspart	haspart	skos:exactMatch	ccmm_rt:HasPart	has part	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:ispublishedin	ispublishedin	skos:exactMatch	ccmm_rt:IsPublishedIn	is published in	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isreferencedby	isreferencedby	skos:exactMatch	ccmm_rt:IsReferencedBy	is referenced by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:references	references	skos:exactMatch	ccmm_rt:References	references	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isdocumentedby	isdocumentedby	skos:exactMatch	ccmm_rt:IsDocumentedBy	is documented by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:documents	documents	skos:exactMatch	ccmm_rt:Documents	documents	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:iscompiledby	iscompiledby	skos:exactMatch	ccmm_rt:IsCompiledBy	is compiled by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:compiles	compiles	skos:exactMatch	ccmm_rt:Compiles	compiles	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isvariantformof	isvariantformof	skos:exactMatch	ccmm_rt:IsVariantFormOf	is variant form of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isoriginalformof	isoriginalformof	skos:exactMatch	ccmm_rt:IsOriginalFormOf	is original form of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isidenticalto	isidenticalto	skos:exactMatch	ccmm_rt:IsIdenticalTo	is identical to	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isreviewedby	isreviewedby	skos:exactMatch	ccmm_rt:IsReviewedBy	is reviewed by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:reviews	reviews	skos:exactMatch	ccmm_rt:Reviews	reviews	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isderivedfrom	isderivedfrom	skos:exactMatch	ccmm_rt:IsDerivedFrom	is derived from	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:issourceof	issourceof	skos:exactMatch	ccmm_rt:IsSourceOf	is source of	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isrequiredby	isrequiredby	skos:exactMatch	ccmm_rt:IsRequiredBy	is required by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:requires	requires	skos:exactMatch	ccmm_rt:Requires	requires	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:isobsoletedby	isobsoletedby	skos:exactMatch	ccmm_rt:IsObsoletedBy	is obsoleted by	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+zenodo_rt:obsoletes	obsoletes	skos:exactMatch	ccmm_rt:Obsoletes	obsoletes	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0

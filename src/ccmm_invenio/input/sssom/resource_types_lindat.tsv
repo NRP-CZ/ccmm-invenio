@@ -1,0 +1,20 @@
+# curie_map:
+#   coar_rt: http://purl.org/coar/resource_type/
+#   lindat_rt: https://lindat.mff.cuni.cz/vocabularies/resource_type/
+#   orcid: https://orcid.org/
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+# license: https://creativecommons.org/licenses/by/4.0/
+# mapping_set_description: Mappings between lindat resource types and CCMM/COAR resource
+#   types
+# mapping_set_id: http://vocabs.ccmm.cz/mappings/resource_types_lindat
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
+lindat_rt:OBRAZ	OBRAZ	skos:exactMatch	coar_rt:c_ecc8	still image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+lindat_rt:Spreadsheet	Spreadsheet	skos:exactMatch	coar_rt:c_ddb1	dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+lindat_rt:bibliography	Bibliography	skos:exactMatch	coar_rt:c_86bc	bibliography	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+lindat_rt:clip	Clip	skos:exactMatch	coar_rt:c_12ce	video	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+lindat_rt:corpus	Corpus	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+lindat_rt:languageDescription	Language Description	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+lindat_rt:lexicalConceptualResource	Lexical Conceptual Resource	skos:exactMatch	coar_rt:GSZA-Y7V7	knowledge organization system	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+lindat_rt:onlineCourse	Online Course	skos:exactMatch	coar_rt:c_e059	learning object	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+lindat_rt:toolService	Tool Service	skos:exactMatch	coar_rt:c_5ce6	software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0

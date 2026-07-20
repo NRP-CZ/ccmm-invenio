@@ -1,0 +1,32 @@
+# curie_map:
+#   ccmm_ar: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+#   datacite_ar: https://schema.datacite.org/meta/kernel-4/contributorType/
+#   orcid: https://orcid.org/
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+# license: https://creativecommons.org/licenses/by/4.0/
+# mapping_set_description: Mappings between datacite agent roles and CCMM agent roles
+# mapping_set_id: http://vocabs.ccmm.cz/mappings/agent_roles_datacite
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
+datacite_ar:ContactPerson	Contact Person	skos:exactMatch	ccmm_ar:ContactPerson	Contact Person	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:DataCollector	Data Collector	skos:exactMatch	ccmm_ar:DataCollector	Data Collector	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:DataCurator	Data Curator	skos:exactMatch	ccmm_ar:DataCurator	Data Curator	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:DataManager	Data Manager	skos:exactMatch	ccmm_ar:DataManager	Data Manager	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:Distributor	Distributor	skos:exactMatch	ccmm_ar:Distributor	Distributor	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:Editor	Editor	skos:exactMatch	ccmm_ar:Editor	Editor	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:HostingInstitution	Hosting Institution	skos:exactMatch	ccmm_ar:HostingInstitution	Hosting Institution	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:Producer	Producer	skos:exactMatch	ccmm_ar:Producer	Producer	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:ProjectLeader	Project Leader	skos:exactMatch	ccmm_ar:ProjectLeader	Project Leader	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:ProjectManager	Project Manager	skos:exactMatch	ccmm_ar:ProjectManager	Project Manager	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:ProjectMember	Project Member	skos:exactMatch	ccmm_ar:ProjectMember	Project Member	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:RegistrationAgency	Registration Agency	skos:exactMatch	ccmm_ar:RegistrationAgency	Registration Agency	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:RegistrationAuthority	Registration Authority	skos:exactMatch	ccmm_ar:RegistrationAuthority	Registration Authority	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:RelatedPerson	Related Person	skos:exactMatch	ccmm_ar:RelatedPerson	Related Person	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:Researcher	Researcher	skos:exactMatch	ccmm_ar:Researcher	Researcher	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:ResearchGroup	Research Group	skos:exactMatch	ccmm_ar:ResearchGroup	Research Group	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:RightsHolder	Rights Holder	skos:exactMatch	ccmm_ar:RightsHolder	Rights Holder	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:Sponsor	Sponsor	skos:exactMatch	ccmm_ar:Sponsor	Sponsor	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:Supervisor	Supervisor	skos:exactMatch	ccmm_ar:Supervisor	Supervisor	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:Translator	Translator	skos:exactMatch	ccmm_ar:Translator	Translator	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:WorkPackageLeader	Work Package Leader	skos:exactMatch	ccmm_ar:WorkPackageLeader	Work Package Leader	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+datacite_ar:Other	Other	skos:exactMatch	ccmm_ar:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0

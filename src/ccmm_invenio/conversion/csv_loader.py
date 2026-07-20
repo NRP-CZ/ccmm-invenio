@@ -1,0 +1,182 @@
+#
+# Copyright (c) 2025 CESNET z.s.p.o.
+#
+# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
+#
+# ccmm-invenio is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
+"""Load CSV vocabulary data into RDF triplestore."""
+
+from __future__ import annotations
+
+import csv
+import logging
+from typing import TYPE_CHECKING
+
+from rdflib import Literal, Namespace, URIRef
+from rdflib.namespace import DC, RDF, SKOS
+
+if TYPE_CHECKING:
+    from pathlib import Path
+
+    from ccmm_invenio.conversion.rdf_store import RDFTripleStore
+
+log = logging.getLogger(__name__)
+
+# CCMM namespace
+CCMM = Namespace("https://vocabs.ccmm.cz/registry/codelist/")
+CCMM_PROPS = Namespace("http://vocabs.ccmm.cz/props/")
+
+
+class CSVToRDFLoader:
+    """Load CSV vocabulary files into RDF triplestore."""
+
+    def __init__(self, store: RDFTripleStore) -> None:
+        """Initialize the CSV loader.
+
+        Args:
+            store: The RDF triplestore to load data into
+
+        """
+        self.store = store
+
+    def load_csv_file(
+        self,
+        csv_path: Path,
+        concept_scheme: str | None = None,
+    ) -> int:
+        """Load a single CSV file into the triplestore.
+
+        The CSV file should have the following columns:
+        - IRI: The concept IRI
+        - base IRI: The base IRI for the concept scheme
+        - parentId: The parent concept ID (for hierarchical vocabularies)
+        - id: The concept identifier
+        - title_cs: Czech title
+        - title_en: English title
+        - definition_cs: Czech definition
+        - definition_en: English definition
+
+        Args:
+            csv_path: Path to the CSV file
+            concept_scheme: Optional concept scheme URI (defaults to base IRI from CSV)
+
+        Returns:
+            Number of concepts loaded
+
+        """
+        log.info("Loading CSV file: %s", csv_path)
+
+        if not csv_path.exists():
+            log.error("CSV file not found: %s", csv_path)
+            return 0
+
+        concepts_loaded = 0
+
+        with csv_path.open(encoding="utf-8-sig") as csv_file:
+            reader = csv.DictReader(csv_file, delimiter=";", quotechar='"')
+
+            for csv_row in reader:
+                # Clean up whitespace
+                row = {key.strip(): value.strip() for key, value in csv_row.items() if key}
+
+                # Extract fields
+                iri = row.get("IRI", "").strip()
+                base_iri = row.get("base IRI", "").strip()
+                parent_id = row.get("parentId", "").strip()
+                term_id = row.get("id", "").strip()
+                title_cs = row.get("title_cs", "").strip()
+                title_en = row.get("title_en", "").strip()
+                definition_cs = row.get("definition_cs", "").strip()
+                definition_en = row.get("definition_en", "").strip()
+
+                # Skip empty rows
+                if not term_id or (not title_cs and not title_en):
+                    continue
+
+                # Create concept URI
+                concept_uri = URIRef(iri) if iri else URIRef(f"{base_iri}{term_id}")
+
+                # Add concept type
+                self.store.graph.add((concept_uri, RDF.type, SKOS.Concept))
+
+                # Add concept scheme
+                if concept_scheme:
+                    scheme_uri = URIRef(concept_scheme)
+                elif base_iri:
+                    scheme_uri = URIRef(base_iri)
+                else:
+                    log.warning("No concept scheme found for %s", term_id)
+                    continue
+
+                self.store.graph.add((concept_uri, SKOS.inScheme, scheme_uri))
+
+                # Add identifier
+                self.store.graph.add((concept_uri, DC.identifier, Literal(term_id)))
+
+                # Add labels
+                if title_cs:
+                    self.store.graph.add((concept_uri, SKOS.prefLabel, Literal(title_cs, lang="cs")))
+                if title_en:
+                    self.store.graph.add((concept_uri, SKOS.prefLabel, Literal(title_en, lang="en")))
+
+                # Add definitions
+                if definition_cs:
+                    self.store.graph.add((concept_uri, SKOS.definition, Literal(definition_cs, lang="cs")))
+                if definition_en:
+                    self.store.graph.add((concept_uri, SKOS.definition, Literal(definition_en, lang="en")))
+
+                # Add hierarchy relationship
+                # When a concept has a parentId, it means this concept is narrower than the parent.
+                # Use skos:broader for hierarchical relationships within the same concept scheme.
+                # (skos:broader states "the object is broader than the subject")
+                if parent_id:
+                    parent_uri = URIRef(f"{base_iri}{parent_id}")
+                    self.store.graph.add((concept_uri, SKOS.broader, parent_uri))
+
+                concepts_loaded += 1
+
+        log.info("Loaded %d concepts from %s", concepts_loaded, csv_path.name)
+        return concepts_loaded
+
+    def load_directory(
+        self,
+        directory: Path,
+        pattern: str = "*.csv",
+    ) -> dict[str, int]:
+        """Load all CSV files matching a pattern from a directory.
+
+        Args:
+            directory: Directory containing CSV files
+            pattern: Glob pattern for CSV files (default: "*.csv")
+
+        Returns:
+            Dictionary mapping file names to number of concepts loaded
+
+        """
+        log.info("Loading CSV files from directory: %s (pattern: %s)", directory, pattern)
+
+        if not directory.exists() or not directory.is_dir():
+            log.error("Directory not found or not a directory: %s", directory)
+            return {}
+
+        results = {}
+        csv_files = sorted(directory.glob(pattern))
+
+        if not csv_files:
+            log.warning("No CSV files found in %s matching pattern %s", directory, pattern)
+            return results
+
+        for csv_file in csv_files:
+            try:
+                count = self.load_csv_file(csv_file)
+                results[csv_file.name] = count
+            except Exception:
+                log.exception("Error loading CSV file: %s", csv_file)
+                results[csv_file.name] = 0
+
+        total = sum(results.values())
+        log.info("Loaded total of %d concepts from %d CSV files", total, len(results))
+
+        return results
