@@ -61,11 +61,6 @@ def schema() -> etree.XMLSchema:
     return etree.XMLSchema(etree.parse(str(DATA_DIR / "xsd" / "ccmm-1.1.0-test.xsd")))
 
 
-def xml(element: etree._Element) -> str:
-    """Serialize `element` to a string, for substring ("contains the input data") assertions."""
-    return etree.tostring(element, encoding="unicode")
-
-
 def c14n(element: etree._Element) -> str:
     """Canonicalize `element` (C14N 2.0) into a deterministic string for exact-match assertions.
 
@@ -581,6 +576,21 @@ def test_serialize_terms_of_use_uses_only_the_first_right(serializer: CCMMSerial
     )
 
 
+def test_serialize_terms_of_use_with_access_rights(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
+    # Unlike the tests above, an explicit `access_rights` (as `serialize()` passes down
+    # from `access_rights_from_record`, see below) resolves `terms_of_use/access_rights`.
+    metadata = {"rights": [{"id": "cc-by-4.0"}]}
+    el = serializer.serialize_terms_of_use(metadata, access_rights={"id": "c_abf2"})
+    assert el is not None
+    assert c14n(el) == (
+        '<ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:access_rights><ns0:iri>https://nma.eosc.cz/vocabularies/accessrights/c_abf2</ns0:iri></ns0:access_rights>"
+        "<ns0:license><ns0:iri>https://nma.eosc.cz/vocabularies/licenses/cc-by-4.0</ns0:iri></ns0:license>"
+        "</ns0:terms_of_use>"
+    )
+    schema.assertValid(el)
+
+
 def test_serialize_license_document_from_raw_right(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     right = {"link": "https://example.org/license", "title": {"en": "Example License", "cs": "Ukázková licence"}}
     el = serializer.serialize_license_document(right)
@@ -917,6 +927,56 @@ def test_serialize_vocabulary_builds_iri_element(serializer: CCMMSerializer, sch
 
 
 # ---------------------------------------------------------------------------
+# access_rights_from_record (from record.access.status, which lives outside metadata)
+# ---------------------------------------------------------------------------
+
+
+def test_access_status_to_access_rights_mapping_covers_every_access_status(serializer: CCMMSerializer) -> None:
+    from invenio_rdm_records.records.systemfields.access.field.record import AccessStatusEnum
+
+    assert {status.value for status in AccessStatusEnum} == set(serializer.ACCESS_STATUS_TO_ACCESS_RIGHTS)
+
+
+def test_access_rights_from_record_reads_the_records_computed_access_status(
+    app,
+    db,
+    identity_simple,
+    search_clear,
+    location,
+    vocab_fixtures,
+    serializer: CCMMSerializer,
+) -> None:
+    """Check that `access_rights_from_record` reads a real record's computed access status.
+
+    `record.access.status` needs a *real* record: it depends on the record's ``files``
+    system field too (see ``RecordAccess.status``), which a record built by hand (e.g.
+    plain ``RDMRecord({...})``) does not reliably have wired up. Going through the
+    actual service, the same way ``tests/test_production_repository.py`` does, is the
+    only way to get a genuinely representative record for this.
+    """
+    from oarepo_runtime.typing import record_from_result
+
+    from tests.model import production_dataset
+
+    service = production_dataset.proxies.current_service
+    result = service.create(
+        identity_simple,
+        data={
+            "access": {"record": "restricted", "files": "restricted"},
+            "metadata": {
+                "title": "test",
+                "publication_date": "2022-01-01",
+                "resource_type": {"id": "dataset"},
+                "creators": [{"person_or_org": {"type": "personal", "given_name": "John", "family_name": "Doe"}}],
+            },
+        },
+    )
+    record = record_from_result(result)
+    assert record.access.status.value == "restricted"
+    assert serializer.access_rights_from_record(record) == {"id": "c_16ec"}
+
+
+# ---------------------------------------------------------------------------
 # Section: the dataset root element and the top-level serialize() entrypoint
 # ---------------------------------------------------------------------------
 
@@ -1007,39 +1067,129 @@ def test_serialize_full_dataset_from_real_example(serializer: CCMMSerializer, sc
     Three, already-documented gaps are expected here (everything else
     ``CCMMSerializer`` produces from this record must be schema-valid):
 
-    - ``access_rights`` (required by ``terms_of_use``) and ``metadata_identification``
-      (required by ``dataset``) have no source field in schema.json at all -- see
-      ccmm_export_plan.md.
+    - ``metadata_identification`` (required by ``dataset``) has no source field in
+      schema.json at all -- see ccmm_export_plan.md.
     - this record's ``dates[]`` includes a bare-year value (``"2024"``), which is not a
       valid ``xs:date`` -- see the docstring of ``serialize_time_reference_from_date``.
     - this record's one location has no ``description``, the only (already-documented,
       best-effort) source ``serialize_location`` has for the otherwise-required
       ``relation_type`` -- see its docstring.
+
+    ``terms_of_use/access_rights`` is *not* a gap here: this fixture record has no
+    ``access``/``files`` data of its own, so ``record.access.status`` falls back to
+    Invenio's own default (``metadata-only``), which ``serialize()`` still resolves via
+    ``access_rights_from_record`` -- see the assertion below.
     """
     with (DATA_DIR / "2026-01-29_example.json").open(encoding="utf-8") as f:
         record = RDMRecord(json.load(f))
+    assert record.access.status.value == "metadata-only"
 
     dataset_el = serializer.serialize(record)
-    assert dataset_el.tag == str(serializer.ns.dataset)
-
-    text = xml(dataset_el)
-    assert "Kvalita ovzduší ve středních čechách 2024" in text
-    assert "10.45321/as36sl" in text
-    assert "Novák, Jan" in text
-    assert "Univerzita Karlova" in text
-    assert "Grantová agentura České republiky" in text
-    assert "Long-term trends of PM2.5" in text
+    assert c14n(dataset_el) == (
+        '<dataset xmlns="https://schema.ccmm.cz/research-data/1.1">'
+        "<identifier><value>10.45321/as36sl</value>"
+        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</iri></scheme></identifier>"
+        "<version>1.0.23</version>"
+        "<title>Kvalita ovzduší ve středních čechách 2024</title>"
+        '<alternate_title><title xml:lang="en">Air quality measurements in Central Bohemian Region in 2024.'
+        "</title><alternate_title_type>"
+        "<iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</iri></alternate_title_type>"
+        "</alternate_title>"
+        "<qualified_relation><relation><person><name>Novák, Jan</name><given_name>Jan</given_name>"
+        "<family_name>Novák</family_name>"
+        "<affiliation><name>Univerzita Karlova</name></affiliation></person></relation>"
+        "<role><iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Other</iri></role>"
+        "</qualified_relation>"
+        "<publication_year>2025</publication_year>"
+        "<time_reference><temporal_representation><time_instant><date>2025-04-27</date></time_instant>"
+        "</temporal_representation>"
+        "<date_type><iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</iri></date_type>"
+        '<date_information xml:lang="und">Date collected</date_information></time_reference>'
+        "<time_reference><temporal_representation><time_instant><date>2024</date></time_instant>"
+        "</temporal_representation>"
+        "<date_type><iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</iri></date_type>"
+        '<date_information xml:lang="und">Collection period</date_information></time_reference>'
+        "<time_reference><temporal_representation><time_instant><date>2025</date></time_instant>"
+        "</temporal_representation>"
+        "<date_type><iri>https://nma.eosc.cz/vocabularies/datetypes/Created</iri></date_type></time_reference>"
+        "<resource_type><iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1</iri></resource_type>"
+        "<primary_language><iri>https://nma.eosc.cz/vocabularies/languages/CES</iri></primary_language>"
+        "<other_language><iri>https://nma.eosc.cz/vocabularies/languages/ENG</iri></other_language>"
+        "<terms_of_use><access_rights>"
+        "<iri>https://nma.eosc.cz/vocabularies/accessrights/c_14cb</iri></access_rights>"
+        "<license><iri>https://customlicense.org/licenses/by/4.0/</iri>"
+        '<label xml:lang="en">A custom license</label></license>'
+        '<description xml:lang="en">A description.</description></terms_of_use>'
+        '<subject><title xml:lang="und">Meteorologie, vědy o atmosféře</title></subject>'
+        '<subject><title xml:lang="und">kvalita ovzduší</title></subject>'
+        '<subject><title xml:lang="und">Environmental monitoring facilities</title></subject>'
+        '<description><description_text xml:lang="cs">Tato datová sada obsahuje měření kvality ovzduší '
+        "ve středních Čechách v roce 2024.</description_text><description_type>"
+        "<iri>https://nma.eosc.cz/vocabularies/descriptiontypes/abstract</iri></description_type></description>"
+        "<location><name>Středočeský kraj</name><geometry><wkt>"
+        "POLYGON ((13.394972 49.50127, 15.585575 49.50127, 15.585575 50.614216, 13.394972 50.614216, "
+        "13.394972 49.50127))</wkt></geometry></location>"
+        "<funding_reference><local_identifier>https://doi.org/award-identifier</local_identifier>"
+        "<award_title>Program for air pollution research</award_title>"
+        "<funder><organization><name>Grantová agentura České republiky</name></organization></funder>"
+        "</funding_reference>"
+        "<related_resource><identifier><value>10.56789/ias.pm25.2025.001</value>"
+        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</iri></scheme></identifier>"
+        "<title>Long-term trends of PM2.5 concentrations in the Central Bohemian Region (2010–2024)</title>"  # noqa: RUF001
+        '<alternate_title><title xml:lang="cs">Dlouhodobé trendy koncentrací PM2.5 ve Středočeském kraji '
+        "(2010–2024)</title><alternate_title_type>"  # noqa: RUF001
+        "<iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</iri></alternate_title_type>"
+        "</alternate_title>"
+        "<qualified_relation><relation><person><name>Svobodová, Petra</name><given_name>Petra</given_name>"
+        "<family_name>Svobodová</family_name>"
+        "<affiliation><name>Institute of Atmospheric Studies, Prague</name></affiliation></person></relation>"
+        "<role><iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</iri></role>"
+        "</qualified_relation>"
+        "<qualified_relation><relation><person><name>Müller, Thomas</name><given_name>Thomas</given_name>"
+        "<family_name>Müller</family_name>"
+        "<affiliation><name>Charles University</name></affiliation></person></relation>"
+        "<role><iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</iri></role>"
+        "</qualified_relation>"
+        "<qualified_relation><relation><organization><name>Czech Hydrometeorological Institute</name>"
+        "</organization></relation>"
+        "<role><iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/DataCollector</iri></role>"
+        "</qualified_relation>"
+        "<resource_type><iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_2df8fbb1</iri></resource_type>"
+        "<resource_relation_type>"
+        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsReferencedBy</iri>"
+        "</resource_relation_type></related_resource>"
+        "<related_resource><identifier><value>http://data.europa.eu/eli/dir/2008/50/oj</value>"
+        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri></scheme></identifier>"
+        "<resource_type><iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_18cf</iri></resource_type>"
+        "<resource_relation_type>"
+        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsReferencedBy</iri>"
+        "</resource_relation_type></related_resource>"
+        "<related_resource><identifier>"
+        "<value>https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu</value>"
+        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri></scheme></identifier>"
+        "<resource_relation_type>"
+        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/References</iri>"
+        "</resource_relation_type></related_resource>"
+        "<related_resource><identifier><value>https://opendata.chmi.cz/air_quality/now/data/</value>"
+        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri></scheme></identifier>"
+        "<resource_type><iri>https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1</iri></resource_type>"
+        "<resource_relation_type>"
+        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsDerivedFrom</iri>"
+        "</resource_relation_type></related_resource>"
+        "<related_resource><identifier>"
+        "<value>https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7</value>"
+        "<scheme><iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</iri></scheme></identifier>"
+        "<resource_relation_type>"
+        "<iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/HasMetadata</iri>"
+        "</resource_relation_type></related_resource>"
+        "</dataset>"
+    )
 
     bare_year_date_gap = "is not a valid value of the atomic type 'xs:date'"
     missing_location_relation_type_gap = f"{{{CCMM_NS}}}location': Missing"
-    known_gaps = (
-        "metadata_identification",
-        "access_rights",
-        bare_year_date_gap,
-        missing_location_relation_type_gap,
-    )
+    known_gaps = ("metadata_identification", bare_year_date_gap, missing_location_relation_type_gap)
     assert_valid_apart_from(schema, dataset_el, *known_gaps)
 
     # With a stand-in for the one always-missing required field, the rest must validate.
     dataset_el.insert(0, _minimal_metadata_identification(serializer))
-    assert_valid_apart_from(schema, dataset_el, "access_rights", bare_year_date_gap, missing_location_relation_type_gap)
+    assert_valid_apart_from(schema, dataset_el, bare_year_date_gap, missing_location_relation_type_gap)

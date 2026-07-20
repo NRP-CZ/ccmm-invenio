@@ -58,6 +58,18 @@ class CCMMSerializer:
     #: namespace of the CCMM XSD this serializer targets (see module docstring)
     ns = XMLNamespace("https://schema.ccmm.cz/research-data/1.1")
 
+    #: maps `RDMRecord.access.status` (``AccessStatusEnum.value``) to the CCMM
+    #: ``accessrights`` vocabulary id -- the COAR access-right codes used by
+    #: ``fixtures/ccmm_access_rights.yaml`` (and matching the ``info:eu-repo/semantics/*``
+    #: mapping Invenio's own DataCite serializer uses for the same status, see
+    #: ``invenio_rdm_records.resources.serializers.datacite.schema``).
+    ACCESS_STATUS_TO_ACCESS_RIGHTS: dict[str, str] = {  # noqa: RUF012
+        "open": "c_abf2",
+        "embargoed": "c_f1cf",
+        "restricted": "c_16ec",
+        "metadata-only": "c_14cb",
+    }
+
     #
     # Public API
     #
@@ -65,14 +77,25 @@ class CCMMSerializer:
     def serialize(self, record: RDMRecord) -> Element:
         """Serialize a full production record (an ``RDMRecord``) into a CCMM ``<dataset>`` element.
 
-        `record` is the full record dict as stored by Invenio (``{"metadata": {...},
-        ...}``); its ``metadata`` sub-dict follows the shape documented under
+        `record`'s ``metadata`` sub-dict follows the shape documented under
         ``properties.metadata`` in ``schema.json`` (the same shape
         ``CCMMXMLProductionParser.parse()`` returns as ``record["metadata"]``).
+        ``terms_of_use/access_rights`` is derived from `record.access.status`, which
+        lives outside ``metadata`` on a real RDM record (see ``access_rights_from_record``).
         """
-        return self.serialize_dataset(record["metadata"])
+        return self.serialize_dataset(record["metadata"], access_rights=self.access_rights_from_record(record))
 
-    def serialize_dataset(self, metadata: dict[str, Any]) -> Element:
+    def access_rights_from_record(self, record: RDMRecord) -> dict[str, str]:
+        """Derive the CCMM ``accessrights`` vocabulary reference from `record.access.status`.
+
+        `record.access` is Invenio's own computed access system field (open/embargoed/
+        restricted/metadata-only, accounting for the record's/files' protection and any
+        active embargo) -- there is no need (and no reliable way) to re-derive it from
+        raw ``access`` dict fields ourselves.
+        """
+        return {"id": self.ACCESS_STATUS_TO_ACCESS_RIGHTS[record.access.status.value]}
+
+    def serialize_dataset(self, metadata: dict[str, Any], access_rights: dict[str, str] | None = None) -> Element:
         """Serialize `metadata` into a ``<dataset>`` element, in the XSD's child order.
 
         ``metadata_identification``, ``distribution``, ``validation_result`` and
@@ -81,10 +104,14 @@ class CCMMSerializer:
         (see its handling of ``metadata_identifications``/``distributions``, and
         ``convert_provenances``/``convert_validation_results``), so there is no source
         data for them here either.
+
+        `access_rights` (see ``access_rights_from_record``) is ``None`` when called
+        without a full record (e.g. directly, in tests) -- ``terms_of_use/access_rights``
+        is then left unresolved, same as any other vocabulary field with no input value.
         """
         root = etree.Element(str(self.ns.dataset), nsmap={None: self.ns.uri})
         self._serialize_dataset_identification(root, metadata)
-        self._serialize_dataset_content(root, metadata)
+        self._serialize_dataset_content(root, metadata, access_rights)
         return root
 
     def _serialize_dataset_identification(self, root: Element, metadata: dict[str, Any]) -> None:
@@ -106,7 +133,12 @@ class CCMMSerializer:
         for time_reference in self.serialize_time_references(metadata):
             root.append(time_reference)
 
-    def _serialize_dataset_content(self, root: Element, metadata: dict[str, Any]) -> None:
+    def _serialize_dataset_content(
+        self,
+        root: Element,
+        metadata: dict[str, Any],
+        access_rights: dict[str, str] | None = None,
+    ) -> None:
         """Append the ``resource_type``..``related_resource`` part of `dataset`'s child sequence to `root`."""
         self.serialize_vocabulary(root, self.ns.resource_type, "resourcetypes", metadata.get("resource_type"))
 
@@ -115,7 +147,7 @@ class CCMMSerializer:
         for other_language in other_languages:
             self.serialize_vocabulary(root, self.ns.other_language, "languages", other_language)
 
-        terms_of_use = self.serialize_terms_of_use(metadata)
+        terms_of_use = self.serialize_terms_of_use(metadata, access_rights)
         if terms_of_use is not None:
             root.append(terms_of_use)
 
@@ -420,7 +452,11 @@ class CCMMSerializer:
     # terms_of_use / license (from rights[])
     #
 
-    def serialize_terms_of_use(self, metadata: dict[str, Any]) -> Element | None:
+    def serialize_terms_of_use(
+        self,
+        metadata: dict[str, Any],
+        access_rights: dict[str, str] | None = None,
+    ) -> Element | None:
         """Serialize ``rights[]`` into a ``terms_of_use`` element, or ``None`` if `rights` is empty.
 
         ``terms_of_use.license`` is singular in CCMM; only ``rights[0]`` is used
@@ -429,15 +465,16 @@ class CCMMSerializer:
         CCMM slot for more than one license per dataset. ``rights[0].description`` maps
         onto ``terms_of_use``'s own (license-independent) ``description[]``.
 
-        ``terms_of_use.access_rights`` is *required* by the XSD but has no source field
-        in schema.json (access rights live outside ``metadata`` on real RDM records,
-        under ``record.access``). # TODO: check the implementation.
+        ``terms_of_use.access_rights`` is *required* by the XSD but lives outside
+        ``metadata`` on a real RDM record (under ``record.access``, see
+        ``access_rights_from_record``) -- `access_rights` is ``None`` (left unresolved)
+        when this is called without a full record, e.g. directly, in tests.
         """
         rights = metadata.get("rights") or []
         if not rights:
             return None
         el = etree.Element(str(self.ns.terms_of_use))
-        self.serialize_vocabulary(el, self.ns.access_rights, "accessrights", None)
+        self.serialize_vocabulary(el, self.ns.access_rights, "accessrights", access_rights)
         right = rights[0]
         if right.get("id"):
             self.serialize_vocabulary(el, self.ns.license, "licenses", right)
