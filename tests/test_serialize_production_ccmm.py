@@ -12,11 +12,13 @@ Organized bottom-up, mirroring the section order of ``ccmm.py`` itself: plain da
 helpers first, then one-element leaf serializers, then the composite methods that
 assemble them, finishing with the top-level ``serialize()``/``serialize_dataset()``.
 
-Every test that produces an ``lxml`` element:
+Every test that produces one or more ``lxml`` elements:
 
-1. builds it from a small, valid, hand-written JSON fragment (matching ``schema.json``),
-2. asserts the serialized XML contains that input data, and
-3. validates the element against the real CCMM XSD (see ``assert_schema_valid`` and
+1. builds them from a small, valid, hand-written JSON fragment (matching ``schema.json``),
+2. asserts the *whole* canonicalized (C14N 2.0) XML matches a literal expected string --
+   see ``c14n`` -- rather than picking the result apart with several ``find``/``get``
+   calls, and
+3. validates the element against the real CCMM XSD (see ``as_global_element`` and
    ``tests/data/xsd/README.md`` for how a fragment -- as opposed to a whole document --
    gets validated in isolation).
 
@@ -39,7 +41,7 @@ from pathlib import Path
 import pytest
 from lxml import etree
 
-from ccmm_invenio.serializers.production.ccmm import XML_LANG, CCMMSerializer
+from ccmm_invenio.serializers.production.ccmm import CCMMSerializer
 
 CCMM_NS = "https://schema.ccmm.cz/research-data/1.1"
 
@@ -61,6 +63,17 @@ def schema() -> etree.XMLSchema:
 def xml(element: etree._Element) -> str:
     """Serialize `element` to a string, for substring ("contains the input data") assertions."""
     return etree.tostring(element, encoding="unicode")
+
+
+def c14n(element: etree._Element) -> str:
+    """Canonicalize `element` (C14N 2.0) into a deterministic string for exact-match assertions.
+
+    Canonicalization assigns namespace prefixes deterministically (``ns0``, ``ns1``, ...)
+    regardless of how the tree was built and drops insignificant whitespace, so the result
+    is stable to compare literally against a hand-written expected string -- a single
+    assertion against the whole element instead of several separate ``find``/``get`` checks.
+    """
+    return etree.tostring(element, method="c14n2", strip_text=True).decode()
 
 
 def as_global_element(element: etree._Element, global_name: str) -> etree._Element:
@@ -100,11 +113,10 @@ def assert_valid_apart_from(schema: etree.XMLSchema, element: etree._Element, *k
 
 def test_append_text_appends_when_value_present(serializer: CCMMSerializer) -> None:
     parent = etree.Element("root")
-    el = serializer._append_text(parent, serializer.ns.title, "hello")
-    assert el is not None
-    assert el.tag == str(serializer.ns.title)
-    assert el.text == "hello"
-    assert "hello" in xml(parent)
+    serializer._append_text(parent, serializer.ns.title, "hello")
+    assert (
+        c14n(parent) == '<root><ns0:title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">hello</ns0:title></root>'
+    )
 
 
 @pytest.mark.parametrize("value", [None, ""])
@@ -116,18 +128,18 @@ def test_append_text_does_nothing_for_falsy_value(serializer: CCMMSerializer, va
 
 def test_append_i18n_text_sets_xml_lang(serializer: CCMMSerializer) -> None:
     parent = etree.Element("root")
-    el = serializer._append_i18n_text(parent, serializer.ns.title, "cs", "Ahoj")
-    assert el is not None
-    assert el.text == "Ahoj"
-    assert el.get(XML_LANG) == "cs"
-    assert "Ahoj" in xml(parent)
+    serializer._append_i18n_text(parent, serializer.ns.title, "cs", "Ahoj")
+    assert c14n(parent) == (
+        '<root><ns0:title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1" xml:lang="cs">Ahoj</ns0:title></root>'
+    )
 
 
 def test_append_i18n_text_defaults_missing_lang_to_und(serializer: CCMMSerializer) -> None:
     parent = etree.Element("root")
-    el = serializer._append_i18n_text(parent, serializer.ns.title, None, "Ahoj")
-    assert el is not None
-    assert el.get(XML_LANG) == "und"
+    serializer._append_i18n_text(parent, serializer.ns.title, None, "Ahoj")
+    assert c14n(parent) == (
+        '<root><ns0:title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1" xml:lang="und">Ahoj</ns0:title></root>'
+    )
 
 
 def test_append_i18n_text_does_nothing_for_falsy_value(serializer: CCMMSerializer) -> None:
@@ -195,11 +207,12 @@ def test_xml_lang_from_ccmm_lang_returns_unk_for_falsy_or_unrecognized(
 def test_serialize_identifier_valid(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     entry = {"identifier": "10.1234/abc", "scheme": "doi"}
     el = serializer.serialize_identifier(entry)
-    assert el.tag == str(serializer.ns.identifier)
-    assert el.findtext(str(serializer.ns.value)) == "10.1234/abc"
-    text = xml(el)
-    assert "10.1234/abc" in text
-    assert "doi" in text  # via the placeholder vocabulary IRI, see serialize_vocabulary
+    assert c14n(el) == (
+        '<ns0:identifier xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:value>10.1234/abc</ns0:value>"
+        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri></ns0:scheme>"
+        "</ns0:identifier>"
+    )
     schema.assertValid(el)
 
 
@@ -242,11 +255,15 @@ def test_serialize_alternate_title_valid(serializer: CCMMSerializer, schema: etr
         ],
     }
     el = serializer.serialize_alternate_title(group)
-    assert el.tag == str(serializer.ns.alternate_title)
-    titles = el.findall(str(serializer.ns.title))
-    assert [t.text for t in titles] == ["Air quality in 2024", "Kvalita ovzduší 2024"]
-    assert [t.get(XML_LANG) for t in titles] == ["en", "cs"]
-    assert "TranslatedTitle" in xml(el)
+    assert c14n(el) == (
+        '<ns0:alternate_title xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        '<ns0:title xml:lang="en">Air quality in 2024</ns0:title>'
+        '<ns0:title xml:lang="cs">Kvalita ovzduší 2024</ns0:title>'
+        "<ns0:alternate_title_type>"
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</ns0:iri>"
+        "</ns0:alternate_title_type>"
+        "</ns0:alternate_title>"
+    )
     schema.assertValid(el)
 
 
@@ -258,9 +275,14 @@ def test_serialize_alternate_title_valid(serializer: CCMMSerializer, schema: etr
 def test_serialize_description_valid(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     group = {"type": {"id": "abstract"}, "items": [{"lang": "CES", "value": "Popis datové sady."}]}
     el = serializer.serialize_description(group)
-    assert el.tag == str(serializer.ns.description)
-    assert el.findtext(str(serializer.ns.description_text)) == "Popis datové sady."
-    assert "abstract" in xml(el)
+    assert c14n(el) == (
+        '<ns0:description xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        '<ns0:description_text xml:lang="CES">Popis datové sady.</ns0:description_text>'
+        "<ns0:description_type>"
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/descriptiontypes/abstract</ns0:iri>"
+        "</ns0:description_type>"
+        "</ns0:description>"
+    )
     schema.assertValid(el)
 
 
@@ -289,11 +311,15 @@ def test_serialize_descriptions_empty(serializer: CCMMSerializer) -> None:
 def test_serialize_organization_valid(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     organization = {"name": "Univerzita Karlova", "identifiers": [{"identifier": "12345", "scheme": "ror"}]}
     el = serializer.serialize_organization(organization)
-    assert el.tag == str(serializer.ns.organization)
-    assert el.findtext(str(serializer.ns.name)) == "Univerzita Karlova"
-    text = xml(el)
-    assert "Univerzita Karlova" in text
-    assert "12345" in text
+    assert c14n(el) == (
+        '<ns0:organization xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:identifier>"
+        "<ns0:value>12345</ns0:value>"
+        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/ror</ns0:iri></ns0:scheme>"
+        "</ns0:identifier>"
+        "<ns0:name>Univerzita Karlova</ns0:name>"
+        "</ns0:organization>"
+    )
     schema.assertValid(el)
 
 
@@ -305,21 +331,33 @@ def test_serialize_person_valid(serializer: CCMMSerializer, schema: etree.XMLSch
         "identifiers": [{"identifier": "0000-0003-0852-6632", "scheme": "orcid"}],
     }
     el = serializer.serialize_person(person, affiliations=[{"name": "Univerzita Karlova"}])
-    assert el.tag == str(serializer.ns.person)
-    assert el.findtext(str(serializer.ns.name)) == "Novák, Jan"
-    assert [e.text for e in el.findall(str(serializer.ns.given_name))] == ["Jan"]
-    assert [e.text for e in el.findall(str(serializer.ns.family_name))] == ["Novák"]
-    text = xml(el)
-    assert "0000-0003-0852-6632" in text
-    assert "Univerzita Karlova" in text
+    assert c14n(el) == (
+        '<ns0:person xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:identifier>"
+        "<ns0:value>0000-0003-0852-6632</ns0:value>"
+        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/orcid</ns0:iri></ns0:scheme>"
+        "</ns0:identifier>"
+        "<ns0:name>Novák, Jan</ns0:name>"
+        "<ns0:given_name>Jan</ns0:given_name>"
+        "<ns0:family_name>Novák</ns0:family_name>"
+        "<ns0:affiliation><ns0:name>Univerzita Karlova</ns0:name></ns0:affiliation>"
+        "</ns0:person>"
+    )
     schema.assertValid(el)
 
 
 def test_serialize_person_splits_multi_word_given_and_family_names(serializer: CCMMSerializer) -> None:
     person = {"name": "x", "given_name": "Jan Maria", "family_name": "Novák Svoboda"}
     el = serializer.serialize_person(person)
-    assert [e.text for e in el.findall(str(serializer.ns.given_name))] == ["Jan", "Maria"]
-    assert [e.text for e in el.findall(str(serializer.ns.family_name))] == ["Novák", "Svoboda"]
+    assert c14n(el) == (
+        '<ns0:person xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:name>x</ns0:name>"
+        "<ns0:given_name>Jan</ns0:given_name>"
+        "<ns0:given_name>Maria</ns0:given_name>"
+        "<ns0:family_name>Novák</ns0:family_name>"
+        "<ns0:family_name>Svoboda</ns0:family_name>"
+        "</ns0:person>"
+    )
 
 
 def test_serialize_resource_to_agent_relationship_person(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
@@ -328,13 +366,17 @@ def test_serialize_resource_to_agent_relationship_person(serializer: CCMMSeriali
         "affiliations": [{"name": "Univerzita Karlova"}],
     }
     el = serializer.serialize_resource_to_agent_relationship(entry, {"id": "Creator"})
-    assert el.tag == str(serializer.ns.qualified_relation)
-    relation = el.find(str(serializer.ns.relation))
-    assert relation is not None
-    assert relation.find(str(serializer.ns.person)) is not None
-    text = xml(el)
-    assert "Novák, Jan" in text
-    assert "Creator" in text
+    assert c14n(el) == (
+        '<ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:relation><ns0:person>"
+        "<ns0:name>Novák, Jan</ns0:name>"
+        "<ns0:given_name>Jan</ns0:given_name>"
+        "<ns0:family_name>Novák</ns0:family_name>"
+        "<ns0:affiliation><ns0:name>Univerzita Karlova</ns0:name></ns0:affiliation>"
+        "</ns0:person></ns0:relation>"
+        "<ns0:role><ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</ns0:iri></ns0:role>"
+        "</ns0:qualified_relation>"
+    )
     schema.assertValid(as_global_element(el, "resource_to_agent_relationship"))
 
 
@@ -347,11 +389,17 @@ def test_serialize_resource_to_agent_relationship_organization_drops_affiliation
         "affiliations": [{"name": "Should be dropped"}],
     }
     el = serializer.serialize_resource_to_agent_relationship(entry, {"id": "DataCollector"})
-    relation = el.find(str(serializer.ns.relation))
-    assert relation is not None
-    assert relation.find(str(serializer.ns.organization)) is not None
-    assert "Czech Hydrometeorological Institute" in xml(el)
-    assert "Should be dropped" not in xml(el)
+    # `Should be dropped` (the affiliation) is absent -- confirmed by the exact match below.
+    assert c14n(el) == (
+        '<ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:relation><ns0:organization>"
+        "<ns0:name>Czech Hydrometeorological Institute</ns0:name>"
+        "</ns0:organization></ns0:relation>"
+        "<ns0:role>"
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/DataCollector</ns0:iri>"
+        "</ns0:role>"
+        "</ns0:qualified_relation>"
+    )
     schema.assertValid(as_global_element(el, "resource_to_agent_relationship"))
 
 
@@ -368,11 +416,23 @@ def test_serialize_qualified_relations_creators_then_contributors(
         ],
     }
     relations = serializer.serialize_qualified_relations(container)
-    assert len(relations) == 2
-    assert "Creator One" in xml(relations[0])
-    assert "Creator" in xml(relations[0])  # defaulted role, no explicit "role" given above
-    assert "Contributor One" in xml(relations[1])
-    assert "DataCollector" in xml(relations[1])
+    assert [c14n(relation) for relation in relations] == [
+        (
+            '<ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+            "<ns0:relation><ns0:person><ns0:name>Creator One</ns0:name></ns0:person></ns0:relation>"
+            # defaulted role, since no explicit "role" was given for this creator above
+            "<ns0:role><ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</ns0:iri></ns0:role>"
+            "</ns0:qualified_relation>"
+        ),
+        (
+            '<ns0:qualified_relation xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+            "<ns0:relation><ns0:person><ns0:name>Contributor One</ns0:name></ns0:person></ns0:relation>"
+            "<ns0:role>"
+            "<ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/DataCollector</ns0:iri>"
+            "</ns0:role>"
+            "</ns0:qualified_relation>"
+        ),
+    ]
     for relation in relations:
         schema.assertValid(as_global_element(relation, "resource_to_agent_relationship"))
 
@@ -399,12 +459,14 @@ def test_extract_publication_year(
 def test_serialize_time_reference_from_date_valid(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     entry = {"date": "2025-04-27", "type": {"id": "Collected"}, "description": "Date collected"}
     el = serializer.serialize_time_reference_from_date(entry)
-    assert el.tag == str(serializer.ns.time_reference)
-    date_path = f"{serializer.ns.temporal_representation}/{serializer.ns.time_instant}/{serializer.ns.date}"
-    assert el.find(date_path).text == "2025-04-27"
-    text = xml(el)
-    assert "Collected" in text
-    assert "Date collected" in text
+    assert c14n(el) == (
+        '<ns0:time_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:temporal_representation><ns0:time_instant><ns0:date>2025-04-27</ns0:date></ns0:time_instant>"
+        "</ns0:temporal_representation>"
+        "<ns0:date_type><ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</ns0:iri></ns0:date_type>"
+        '<ns0:date_information xml:lang="und">Date collected</ns0:date_information>'
+        "</ns0:time_reference>"
+    )
     schema.assertValid(el)
 
 
@@ -427,9 +489,22 @@ def test_serialize_time_references_synthesizes_created_from_publication_date(
         "publication_date": "2025-05-01",
     }
     refs = serializer.serialize_time_references(metadata)
-    assert len(refs) == 2
-    assert "2025-05-01" in xml(refs[1])
-    assert "Created" in xml(refs[1])
+    assert [c14n(ref) for ref in refs] == [
+        (
+            '<ns0:time_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+            "<ns0:temporal_representation><ns0:time_instant><ns0:date>2025-04-27</ns0:date></ns0:time_instant>"
+            "</ns0:temporal_representation>"
+            "<ns0:date_type><ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Collected</ns0:iri></ns0:date_type>"
+            "</ns0:time_reference>"
+        ),
+        (
+            '<ns0:time_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+            "<ns0:temporal_representation><ns0:time_instant><ns0:date>2025-05-01</ns0:date></ns0:time_instant>"
+            "</ns0:temporal_representation>"
+            "<ns0:date_type><ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Created</ns0:iri></ns0:date_type>"
+            "</ns0:time_reference>"
+        ),
+    ]
 
 
 def test_serialize_time_references_empty(serializer: CCMMSerializer) -> None:
@@ -465,11 +540,12 @@ def test_serialize_terms_of_use_with_resolved_license(serializer: CCMMSerializer
     metadata = {"rights": [{"id": "cc-by-4.0", "description": {"en": "A description."}}]}
     el = serializer.serialize_terms_of_use(metadata)
     assert el is not None
-    assert el.tag == str(serializer.ns.terms_of_use)
-    assert el.find(str(serializer.ns.license)) is not None
-    text = xml(el)
-    assert "cc-by-4.0" in text
-    assert "A description." in text
+    assert c14n(el) == (
+        '<ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:license><ns0:iri>https://nma.eosc.cz/vocabularies/licenses/cc-by-4.0</ns0:iri></ns0:license>"
+        '<ns0:description xml:lang="en">A description.</ns0:description>'
+        "</ns0:terms_of_use>"
+    )
     # `access_rights` is required by the XSD but has no source field in schema.json --
     # see ccmm_export_plan.md and the docstring of `serialize_terms_of_use`.
     assert_valid_apart_from(schema, el, "access_rights")
@@ -479,9 +555,14 @@ def test_serialize_terms_of_use_with_raw_license(serializer: CCMMSerializer, sch
     metadata = {"rights": [{"link": "https://creativecommons.org/licenses/by/4.0/", "title": {"en": "CC BY 4.0"}}]}
     el = serializer.serialize_terms_of_use(metadata)
     assert el is not None
-    text = xml(el)
-    assert "https://creativecommons.org/licenses/by/4.0/" in text
-    assert "CC BY 4.0" in text
+    assert c14n(el) == (
+        '<ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:license>"
+        "<ns0:iri>https://creativecommons.org/licenses/by/4.0/</ns0:iri>"
+        '<ns0:label xml:lang="en">CC BY 4.0</ns0:label>'
+        "</ns0:license>"
+        "</ns0:terms_of_use>"
+    )
     # `access_rights` is required by the XSD but has no source field in schema.json --
     # see ccmm_export_plan.md and the docstring of `serialize_terms_of_use`.
     assert_valid_apart_from(schema, el, "access_rights")
@@ -491,18 +572,24 @@ def test_serialize_terms_of_use_uses_only_the_first_right(serializer: CCMMSerial
     metadata = {"rights": [{"id": "first"}, {"id": "second"}]}
     el = serializer.serialize_terms_of_use(metadata)
     assert el is not None
-    text = xml(el)
-    assert "first" in text
-    assert "second" not in text
+    # "second" is entirely absent -- confirmed by the exact match below.
+    assert c14n(el) == (
+        '<ns0:terms_of_use xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:license><ns0:iri>https://nma.eosc.cz/vocabularies/licenses/first</ns0:iri></ns0:license>"
+        "</ns0:terms_of_use>"
+    )
 
 
 def test_serialize_license_document_from_raw_right(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     right = {"link": "https://example.org/license", "title": {"en": "Example License", "cs": "Ukázková licence"}}
     el = serializer.serialize_license_document(right)
-    assert el.tag == str(serializer.ns.license)
-    assert el.findtext(str(serializer.ns.iri)) == "https://example.org/license"
-    labels = {(label.get(XML_LANG), label.text) for label in el.findall(str(serializer.ns.label))}
-    assert labels == {("en", "Example License"), ("cs", "Ukázková licence")}
+    assert c14n(el) == (
+        '<ns0:license xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:iri>https://example.org/license</ns0:iri>"
+        '<ns0:label xml:lang="en">Example License</ns0:label>'
+        '<ns0:label xml:lang="cs">Ukázková licence</ns0:label>'
+        "</ns0:license>"
+    )
     schema.assertValid(as_global_element(el, "license_document"))
 
 
@@ -534,11 +621,15 @@ def test_group_subjects_empty(serializer: CCMMSerializer) -> None:
 def test_serialize_subject_splits_id_into_scheme_and_code(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     group = {"id": "Frascati:105", "items": [{"lang": None, "value": "Environmental sciences"}]}
     el = serializer.serialize_subject(group)
-    assert el.tag == str(serializer.ns.subject)
-    assert el.findtext(str(serializer.ns.classification_code)) == "105"
-    text = xml(el)
-    assert "Frascati" in text
-    assert "Environmental sciences" in text
+    assert c14n(el) == (
+        '<ns0:subject xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        '<ns0:title xml:lang="und">Environmental sciences</ns0:title>'
+        "<ns0:classification_code>105</ns0:classification_code>"
+        "<ns0:subject_scheme>"
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/subjectschemes/Frascati</ns0:iri>"
+        "</ns0:subject_scheme>"
+        "</ns0:subject>"
+    )
     schema.assertValid(el)
 
 
@@ -547,9 +638,11 @@ def test_serialize_subject_without_id_omits_scheme_and_code(
 ) -> None:
     group = {"id": None, "items": [{"lang": None, "value": "kvalita ovzduší"}]}
     el = serializer.serialize_subject(group)
-    assert el.find(str(serializer.ns.classification_code)) is None
-    assert el.find(str(serializer.ns.subject_scheme)) is None
-    assert "kvalita ovzduší" in xml(el)
+    assert c14n(el) == (
+        '<ns0:subject xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        '<ns0:title xml:lang="und">kvalita ovzduší</ns0:title>'
+        "</ns0:subject>"
+    )
     schema.assertValid(el)
 
 
@@ -580,8 +673,11 @@ def test_geojson_to_wkt_missing_coordinates_returns_none(serializer: CCMMSeriali
 
 def test_serialize_geometry_point(serializer: CCMMSerializer, schema: etree.XMLSchema) -> None:
     el = serializer.serialize_geometry({"type": "Point", "coordinates": [1.5, 2.5]})
-    assert el.tag == str(serializer.ns.geometry)
-    assert el.findtext(str(serializer.ns.wkt)) == "POINT (1.5 2.5)"
+    assert c14n(el) == (
+        '<ns0:geometry xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:wkt>POINT (1.5 2.5)</ns0:wkt>"
+        "</ns0:geometry>"
+    )
     schema.assertValid(el)
 
 
@@ -589,8 +685,11 @@ def test_serialize_related_object_from_identifier_iri_scheme(
     serializer: CCMMSerializer, schema: etree.XMLSchema
 ) -> None:
     el = serializer.serialize_related_object_from_identifier({"scheme": "iri", "identifier": "https://example.org/x"})
-    assert el.tag == str(serializer.ns.related_object)
-    assert el.findtext(str(serializer.ns.iri)) == "https://example.org/x"
+    assert c14n(el) == (
+        '<ns0:related_object xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:iri>https://example.org/x</ns0:iri>"
+        "</ns0:related_object>"
+    )
     schema.assertValid(as_global_element(el, "related_resource"))
 
 
@@ -598,8 +697,14 @@ def test_serialize_related_object_from_identifier_other_scheme_falls_back_to_ide
     serializer: CCMMSerializer, schema: etree.XMLSchema
 ) -> None:
     el = serializer.serialize_related_object_from_identifier({"scheme": "doi", "identifier": "10.1234/x"})
-    assert el.find(str(serializer.ns.identifier)) is not None
-    assert "10.1234/x" in xml(el)
+    assert c14n(el) == (
+        '<ns0:related_object xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:identifier>"
+        "<ns0:value>10.1234/x</ns0:value>"
+        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri></ns0:scheme>"
+        "</ns0:identifier>"
+        "</ns0:related_object>"
+    )
     schema.assertValid(as_global_element(el, "related_resource"))
 
 
@@ -611,11 +716,16 @@ def test_serialize_location_valid(serializer: CCMMSerializer, schema: etree.XMLS
         "description": "BoundingBox",
     }
     el = serializer.serialize_location(feature)
-    assert el.tag == str(serializer.ns.location)
-    assert el.findtext(str(serializer.ns.name)) == "Středočeský kraj"
-    text = xml(el)
-    assert "https://example.org/place" in text
-    assert "BoundingBox" in text
+    assert c14n(el) == (
+        '<ns0:location xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:name>Středočeský kraj</ns0:name>"
+        "<ns0:geometry><ns0:wkt>POINT (14.0 50.0)</ns0:wkt></ns0:geometry>"
+        "<ns0:related_object><ns0:iri>https://example.org/place</ns0:iri></ns0:related_object>"
+        "<ns0:relation_type>"
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/locationrelationtypes/BoundingBox</ns0:iri>"
+        "</ns0:relation_type>"
+        "</ns0:location>"
+    )
     schema.assertValid(el)
 
 
@@ -649,13 +759,16 @@ def test_serialize_funding_reference_valid(serializer: CCMMSerializer, schema: e
         "funders": [{"name": "Funder A"}, {"name": "Funder B"}],
     }
     el = serializer.serialize_funding_reference(group)
-    assert el.tag == str(serializer.ns.funding_reference)
-    assert el.findtext(str(serializer.ns.local_identifier)) == "AWARD-1"
-    assert el.findtext(str(serializer.ns.award_title)) == "Program for air pollution research"
     # `funder` (type `ccmm:agent`, a choice) wraps `organization`/`person`, the same way
     # `resource_to_agent_relationship/relation` does.
-    name_path = f"{serializer.ns.funder}/{serializer.ns.organization}/{serializer.ns.name}"
-    assert [name_el.text for name_el in el.findall(name_path)] == ["Funder A", "Funder B"]
+    assert c14n(el) == (
+        '<ns0:funding_reference xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:local_identifier>AWARD-1</ns0:local_identifier>"
+        "<ns0:award_title>Program for air pollution research</ns0:award_title>"
+        "<ns0:funder><ns0:organization><ns0:name>Funder A</ns0:name></ns0:organization></ns0:funder>"
+        "<ns0:funder><ns0:organization><ns0:name>Funder B</ns0:name></ns0:organization></ns0:funder>"
+        "</ns0:funding_reference>"
+    )
     schema.assertValid(el)
 
 
@@ -663,7 +776,7 @@ def test_serialize_agent_as_organization_delegates_to_serialize_organization(
     serializer: CCMMSerializer,
 ) -> None:
     funder = {"name": "Funder A"}
-    assert xml(serializer.serialize_agent_as_organization(funder)) == xml(serializer.serialize_organization(funder))
+    assert c14n(serializer.serialize_agent_as_organization(funder)) == c14n(serializer.serialize_organization(funder))
 
 
 # ---------------------------------------------------------------------------
@@ -688,14 +801,35 @@ def test_serialize_related_resource_valid(serializer: CCMMSerializer, schema: et
         "subjects": [{"subject": "Should be dropped"}],
     }
     el = serializer.serialize_related_resource(entry)
-    assert el.tag == str(serializer.ns.related_resource)
-    assert el.findtext(str(serializer.ns.title)) == "Related dataset"
-    text = xml(el)
-    assert "10.1234/related" in text
-    assert "Související datová sada" in text
-    assert "Creator" in text
-    assert "2024-01-01" in text
-    assert "Should be dropped" not in text
+    # "Should be dropped" (publisher/subjects) is entirely absent -- confirmed by the exact match below.
+    assert c14n(el) == (
+        '<ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:identifier>"
+        "<ns0:value>10.1234/related</ns0:value>"
+        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri></ns0:scheme>"
+        "</ns0:identifier>"
+        "<ns0:title>Related dataset</ns0:title>"
+        "<ns0:alternate_title>"
+        '<ns0:title xml:lang="cs">Související datová sada</ns0:title>'
+        "<ns0:alternate_title_type>"
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/titletypes/TranslatedTitle</ns0:iri>"
+        "</ns0:alternate_title_type>"
+        "</ns0:alternate_title>"
+        "<ns0:qualified_relation>"
+        "<ns0:relation><ns0:person><ns0:name>Creator</ns0:name></ns0:person></ns0:relation>"
+        "<ns0:role><ns0:iri>https://nma.eosc.cz/vocabularies/resourceagentroletypes/Creator</ns0:iri></ns0:role>"
+        "</ns0:qualified_relation>"
+        "<ns0:time_reference>"
+        "<ns0:temporal_representation><ns0:time_instant><ns0:date>2024-01-01</ns0:date></ns0:time_instant>"
+        "</ns0:temporal_representation>"
+        "<ns0:date_type><ns0:iri>https://nma.eosc.cz/vocabularies/datetypes/Issued</ns0:iri></ns0:date_type>"
+        "</ns0:time_reference>"
+        "<ns0:resource_type><ns0:iri>https://nma.eosc.cz/vocabularies/resourcetypes/dataset</ns0:iri></ns0:resource_type>"
+        "<ns0:resource_relation_type>"
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/IsReferencedBy</ns0:iri>"
+        "</ns0:resource_relation_type>"
+        "</ns0:related_resource>"
+    )
     schema.assertValid(el)
 
 
@@ -707,9 +841,19 @@ def test_serialize_related_resource_from_identifier_valid(serializer: CCMMSerial
         "resource_type": {"id": "dataset"},
     }
     el = serializer.serialize_related_resource_from_identifier(entry)
-    assert el.tag == str(serializer.ns.related_resource)
-    assert "https://example.org/x" in xml(el)
-    assert el.find(str(serializer.ns.title)) is None
+    # No `title` -- confirmed by the exact match below.
+    assert c14n(el) == (
+        '<ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:identifier>"
+        "<ns0:value>https://example.org/x</ns0:value>"
+        "<ns0:scheme><ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/url</ns0:iri></ns0:scheme>"
+        "</ns0:identifier>"
+        "<ns0:resource_type><ns0:iri>https://nma.eosc.cz/vocabularies/resourcetypes/dataset</ns0:iri></ns0:resource_type>"
+        "<ns0:resource_relation_type>"
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/resourcerelationtypes/References</ns0:iri>"
+        "</ns0:resource_relation_type>"
+        "</ns0:related_resource>"
+    )
     schema.assertValid(el)
 
 
@@ -719,9 +863,14 @@ def test_serialize_related_resources_combines_both_sources_in_order(serializer: 
         "related_identifiers": [{"identifier": "https://example.org/b"}],
     }
     resources = serializer.serialize_related_resources(metadata)
-    assert len(resources) == 2
-    assert resources[0].findtext(str(serializer.ns.title)) == "A"
-    assert "https://example.org/b" in xml(resources[1])
+    assert [c14n(resource) for resource in resources] == [
+        '<ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1"><ns0:title>A</ns0:title></ns0:related_resource>',
+        (
+            '<ns0:related_resource xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+            "<ns0:identifier><ns0:value>https://example.org/b</ns0:value></ns0:identifier>"
+            "</ns0:related_resource>"
+        ),
+    ]
 
 
 def test_serialize_related_resources_empty(serializer: CCMMSerializer) -> None:
@@ -746,8 +895,11 @@ def test_serialize_vocabulary_normalizes_bare_string_id(serializer: CCMMSerializ
     parent = etree.Element("root")
     el = serializer.serialize_vocabulary(parent, serializer.ns.scheme, "identifierschemes", "doi")
     assert el is not None
-    assert el.tag == str(serializer.ns.scheme)
-    assert el.findtext(str(serializer.ns.iri)) == "https://nma.eosc.cz/vocabularies/identifierschemes/doi"
+    assert c14n(el) == (
+        '<ns0:scheme xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/identifierschemes/doi</ns0:iri>"
+        "</ns0:scheme>"
+    )
     schema.assertValid(as_global_element(el, "identifier_scheme"))
 
 
@@ -755,8 +907,11 @@ def test_serialize_vocabulary_builds_iri_element(serializer: CCMMSerializer, sch
     parent = etree.Element("root")
     el = serializer.serialize_vocabulary(parent, serializer.ns.resource_type, "resourcetypes", {"id": "dataset"})
     assert el is not None
-    assert el.tag == str(serializer.ns.resource_type)
-    assert el.findtext(str(serializer.ns.iri)) == "https://nma.eosc.cz/vocabularies/resourcetypes/dataset"
+    assert c14n(el) == (
+        '<ns0:resource_type xmlns:ns0="https://schema.ccmm.cz/research-data/1.1">'
+        "<ns0:iri>https://nma.eosc.cz/vocabularies/resourcetypes/dataset</ns0:iri>"
+        "</ns0:resource_type>"
+    )
     schema.assertValid(el)
 
 
@@ -820,7 +975,7 @@ def test_serialize_accepts_either_full_record_or_bare_metadata(serializer: CCMMS
     metadata = {"title": "T"}
     from_bare_metadata = serializer.serialize(metadata)
     from_full_record = serializer.serialize({"id": "abc123", "metadata": metadata})
-    assert xml(from_bare_metadata) == xml(from_full_record)
+    assert c14n(from_bare_metadata) == c14n(from_full_record)
 
 
 def _minimal_metadata_identification(serializer: CCMMSerializer) -> etree._Element:
