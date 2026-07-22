@@ -20,7 +20,7 @@ if TYPE_CHECKING:
 
     from .rdf_store import RDFTripleStore
 
-from rdflib import DC, SKOS, Namespace, URIRef
+from rdflib import DC, RDF, SKOS, Namespace, URIRef
 
 log = logging.getLogger(__name__)
 
@@ -638,11 +638,9 @@ class FixtureGenerator:
         """Get broader concept (parent)."""
         # First try skos:broader
         for obj in self.graph.objects(concept_uri, SKOS.broader):
-            return obj
-
-        # Then try skos:broadMatch
-        for obj in self.graph.objects(concept_uri, SKOS.broadMatch):
-            return obj
+            # Only return if the broader concept exists in our NMA scheme
+            if self.graph.value(obj, RDF.type) == SKOS.Concept:
+                return obj
 
         return None
 

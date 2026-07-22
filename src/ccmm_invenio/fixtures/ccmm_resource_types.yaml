@@ -258,8 +258,6 @@
       maps and plans (including maps of imaginary places); aeronautical, navigational,
       and celestial charts; atlases; globes; block diagrams; sections; aerial photographs
       with a cartographic purpose; bird''s-eye views (map views), etc. [Source: http://www.loc.gov/marc/cfmap.html]'
-  hierarchy:
-    parent: map
   id: c_12cc
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_12cc
@@ -303,8 +301,6 @@
       period (generally 20 years), during which time patent holders can commercially
 
       exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
-  hierarchy:
-    parent: text
   id: c_15cd
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_15cd
@@ -343,8 +339,6 @@
     en: 'A resource primarily intended to be heard. Examples include a music playback
       file format, an audio compact disc, and recorded speech or sounds. [Source:
       http://dublincore.org/documents/dcmi-terms/#dcmitype-Sound]'
-  hierarchy:
-    parent: mediaobject
   id: c_18cc
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cc
@@ -520,8 +514,6 @@
     en: 'A periodical is a serial publication with its own distinctive title, characterized
       by a variety of contents and contributors, and issued at regular intervals.
       (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]'
-  hierarchy:
-    parent: text
   id: c_2659
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_2659
@@ -686,8 +678,6 @@
     en: conference paper
 - description:
     en: 'A computer program in source code (text) or compiled form. [Source: http://purl.org/dc/dcmitype/Software]'
-  hierarchy:
-    parent: software
   id: c_5ce6
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_5ce6
@@ -978,8 +968,6 @@
     en: book review
 - description:
     en: part of a report
-  hierarchy:
-    parent: report
   id: c_ba1f
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ba1f
@@ -1033,8 +1021,6 @@
 - description:
     en: 'A visual representation other than text, including all types of moving image
       and still image. [Source: Adapted from  http://purl.org/dc/dcmitype/Image]'
-  hierarchy:
-    parent: mediaobject
   id: c_c513
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_c513
@@ -1134,8 +1120,6 @@
     en: 'A digital resource that can be reused to enhance teaching and learning.
 
       Source https://icas-ca.org/archive/projects/coerc/oer-glossary/'
-  hierarchy:
-    parent: interactiveresource
   id: c_e059
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_e059
@@ -1272,8 +1256,6 @@
       works; pantomimes and choreographic works; motion picture and other audiovisual
       works; pictorial, graphic, sculptural and architectural works. Adapted from
       Law Insider: https://www.lawinsider.com/dictionary/artistic-works'
-  hierarchy:
-    parent: creativework
   id: f8rt-tjk0
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/f8rt-tjk0
@@ -1499,8 +1481,6 @@
       objects that can be continuously studied.
 
       Source: 23 Things Physical Samples https://eprints.gla.ac.uk/309016/1/309016.pdf'
-  hierarchy:
-    parent: physicalobject
   id: s7r1-k5p0
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/s7r1-k5p0

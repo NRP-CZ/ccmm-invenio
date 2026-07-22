@@ -102,6 +102,12 @@ def create_nma_vocabulary_terms(store: RDFTripleStore) -> None:
             "nma_scheme": "https://nma.eosc.cz/vocabularies/datetypes",
             "nma_base_uri": "https://nma.eosc.cz/vocabularies/datetypes/",
         },
+        # Special case: RDM subjects use a separate 'subjects' scheme for Invenio
+        {
+            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/subjects",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/subjects/",
+        },
     ]
 
     total_created = 0
@@ -178,6 +184,147 @@ def create_nma_vocabulary_terms(store: RDFTripleStore) -> None:
         total_created += len(concepts)
 
     log.info("Total NMA concepts created: %d", total_created)
+
+    # Special case: Create contributorsroles as a subset of AgentRole (descendants of Contributor)
+    # This creates separate NMA concepts under the 'contributorsroles' scheme
+    log.info("Creating contributorsroles concepts from AgentRole/Contributor descendants")
+    _create_contributors_roles(store)
+
+
+def _create_contributors_roles(store: RDFTripleStore) -> None:
+    """Create contributorsroles concepts from AgentRole/Contributor descendants.
+
+    This creates a separate set of NMA concepts under the 'contributorsroles' scheme
+    for all descendants of the Contributor concept in AgentRole.
+
+    Args:
+        store: The RDF triplestore
+
+    """
+    from rdflib import Graph
+
+    # Find the Contributor concept in the CCMM scheme
+    contributor_query = """
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        
+        SELECT ?contributor WHERE {
+            ?contributor skos:prefLabel "Contributor"@en ;
+                         skos:inScheme <https://vocabs.ccmm.cz/registry/codelist/AgentRole/> .
+        }
+    """
+    contributor_results = list(store.graph.query(contributor_query))
+    if not contributor_results:
+        log.warning("Contributor concept not found in AgentRole")
+        return
+
+    contributor_uri = contributor_results[0][0]
+    contributor_id = str(contributor_uri).rstrip("/").split("/")[-1].lower()
+
+    log.info("Found Contributor concept: %s", contributor_uri)
+
+    # Find all descendants of Contributor (broader chain leads back to Contributor)
+    descendants_query = """
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        
+        SELECT ?concept WHERE {
+            ?concept skos:inScheme <https://vocabs.ccmm.cz/registry/codelist/AgentRole/> .
+            {
+                ?concept skos:broader* <" + str(contributor_uri) + "> .
+            }
+            FILTER(?concept != <" + str(contributor_uri) + ">)
+        }
+    """
+    # Simpler approach: find concepts that have Contributor in their broader chain
+    all_agent_roles_query = """
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        
+        SELECT ?concept ?broader WHERE {
+            ?concept a skos:Concept ;
+                     skos:inScheme <https://vocabs.ccmm.cz/registry/codelist/AgentRole/> .
+            OPTIONAL { ?concept skos:broader ?broader }
+        }
+    """
+
+    # Get all agent roles and build broader chains
+    all_concepts = {}
+    broader_relations = {}
+
+    for row in store.graph.query(all_agent_roles_query):
+        concept_uri = row[0]
+        broader_uri = row[1] if row[1] else None
+        concept_str = str(concept_uri)
+        all_concepts[concept_str] = concept_uri
+        if broader_uri:
+            broader_relations[concept_str] = str(broader_uri)
+
+    # Find descendants of Contributor by traversing broader chains
+    def is_descendant_of(concept_str: str, target_str: str) -> bool:
+        """Check if concept is a descendant of target."""
+        current = broader_relations.get(concept_str)
+        while current:
+            if current == target_str:
+                return True
+            current = broader_relations.get(current)
+        return False
+
+    contributor_str = str(contributor_uri)
+    contributor_descendants = [
+        uri for concept_str, uri in all_concepts.items()
+        if is_descendant_of(concept_str, contributor_str)
+    ]
+
+    if not contributor_descendants:
+        log.warning("No descendants of Contributor found")
+        return
+
+    log.info("Found %d descendants of Contributor", len(contributor_descendants))
+
+    # Create NMA concepts for contributorsroles
+    nma_scheme_uri = "https://nma.eosc.cz/vocabularies/contributorsroles"
+    nma_base_uri = "https://nma.eosc.cz/vocabularies/contributorsroles/"
+    nma_graph = Graph()
+
+    # Add concept scheme
+    nma_graph.add((URIRef(nma_scheme_uri), RDF.type, SKOS.ConceptScheme))
+
+    for external_concept_uri in contributor_descendants:
+        external_concept_str = str(external_concept_uri)
+        concept_id = external_concept_str.rstrip("/").split("/")[-1].lower()
+
+        # Create NMA concept URI
+        nma_concept_uri = URIRef(f"{nma_base_uri}{concept_id}")
+
+        # Add concept type and scheme
+        nma_graph.add((nma_concept_uri, RDF.type, SKOS.Concept))
+        nma_graph.add((nma_concept_uri, SKOS.inScheme, URIRef(nma_scheme_uri)))
+
+        # Add exactMatch to original
+        nma_graph.add((nma_concept_uri, SKOS.exactMatch, external_concept_uri))
+
+        # Copy all other properties from the external concept
+        for pred, obj in store.graph.predicate_objects(external_concept_uri):
+            pred_str = str(pred)
+            # Skip properties we've already handled
+            if pred_str in [str(RDF.type), str(SKOS.inScheme), str(SKOS.broader)]:
+                continue
+            # Handle broader - map to NMA broader if it's also a contributor role
+            if pred_str == str(SKOS.broader):
+                obj_str = str(obj)
+                if is_descendant_of(obj_str, contributor_str):
+                    # Map to NMA broader URI
+                    obj_id = obj_str.rstrip("/").split("/")[-1].lower()
+                    nma_broader_uri = URIRef(f"{nma_base_uri}{obj_id}")
+                    nma_graph.add((nma_concept_uri, SKOS.broader, nma_broader_uri))
+            else:
+                nma_graph.add((nma_concept_uri, pred, obj))
+
+    # Merge into store
+    before_count = store.size()
+    store.merge(nma_graph)
+    after_count = store.size()
+    added = after_count - before_count
+
+    log.info("Created %d contributorsroles concepts with %d triples", len(contributor_descendants), added)
 
 
 @click.command()

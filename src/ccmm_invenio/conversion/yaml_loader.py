@@ -75,9 +75,11 @@ class YAMLToRDFLoader:
             if not isinstance(item, dict) or "id" not in item:
                 continue
 
-            term_id = item["id"]
+            # Use lowercase ID for consistency with fixture generator
+            term_id = item["id"].lower()
+            original_id = item["id"]  # Store original case for dc:identifier
 
-            # Create concept URI using NMA namespace
+            # Create concept URI using NMA namespace with lowercase ID
             concept_uri = URIRef(f"{NMA}{vocabulary_type}/{term_id}")
 
             # Add concept type
@@ -87,7 +89,7 @@ class YAMLToRDFLoader:
             # Store the original ID (preserve case) using dc:identifier
             from rdflib.namespace import DC
 
-            self.store.graph.add((concept_uri, DC.identifier, Literal(term_id)))
+            self.store.graph.add((concept_uri, DC.identifier, Literal(original_id)))
 
             # Add labels
             if "title" in item:
@@ -110,7 +112,8 @@ class YAMLToRDFLoader:
             # Add hierarchy (parent relationship)
             if "hierarchy" in item and "parent" in item["hierarchy"]:
                 parent_id = item["hierarchy"]["parent"]
-                parent_uri = URIRef(f"{NMA}{vocabulary_type}/{parent_id}")
+                # Use lowercase parent ID to match the child's ID convention
+                parent_uri = URIRef(f"{NMA}{vocabulary_type}/{parent_id.lower()}")
                 self.store.graph.add((concept_uri, SKOS.broader, parent_uri))
 
             # Add custom properties

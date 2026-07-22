@@ -14,27 +14,21 @@
   title:
     cs: Matematika
     en: Mathematics
-- hierarchy:
-    parent: '10100'
-  id: '10101'
+- id: '10101'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10101
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10100/10101
   title:
     cs: Čistá matematika
     en: Pure mathematics
-- hierarchy:
-    parent: '10100'
-  id: '10102'
+- id: '10102'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10102
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10100/10102
   title:
     cs: Aplikovaná matematika
     en: Applied mathematics
-- hierarchy:
-    parent: '10100'
-  id: '10103'
+- id: '10103'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10103
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10100/10103
@@ -50,9 +44,7 @@
   title:
     cs: Počítačové vědy a informační věda
     en: Computer and information sciences
-- hierarchy:
-    parent: '10200'
-  id: '10201'
+- id: '10201'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10201
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10200/10201
@@ -68,9 +60,7 @@
   title:
     cs: Fyzikální vědy
     en: Physical sciences
-- hierarchy:
-    parent: '10300'
-  id: '10301'
+- id: '10301'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10301
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10301
@@ -79,63 +69,49 @@
       srážek, interakcí s radiací, magnetická rezonance, Mössbauerův jev)
     en: Atomic, molecular and chemical physics (physics of atoms and molecules including
       collision, interaction with radiation, magnetic resonances, Mössbauer effect)
-- hierarchy:
-    parent: '10300'
-  id: '10302'
+- id: '10302'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10302
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10302
   title:
     cs: Fyzika kondenzovaných látek (zahrnuje fyziku pevných látek, supravodivost)
     en: Condensed matter physics (including formerly solid state physics, supercond.)
-- hierarchy:
-    parent: '10300'
-  id: '10303'
+- id: '10303'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10303
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10303
   title:
     cs: Fyzika částic
     en: Particles and field physics
-- hierarchy:
-    parent: '10300'
-  id: '10304'
+- id: '10304'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10304
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10304
   title:
     cs: Atomová fyzika
     en: Nuclear physics
-- hierarchy:
-    parent: '10300'
-  id: '10305'
+- id: '10305'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10305
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10305
   title:
     cs: Fyzika kapalin a plazmatu (zahrnuje fyziku povrchů)
     en: Fluids and plasma physics (including surface physics)
-- hierarchy:
-    parent: '10300'
-  id: '10306'
+- id: '10306'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10306
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10306
   title:
     cs: Optika (zahrnuje laserovou optiku, kvantovou optiku)
     en: Optics (including laser optics and quantum optics)
-- hierarchy:
-    parent: '10300'
-  id: '10307'
+- id: '10307'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10307
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10307
   title:
     cs: Akustika
     en: Acoustics
-- hierarchy:
-    parent: '10300'
-  id: '10308'
+- id: '10308'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10308
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10300/10308
@@ -151,45 +127,35 @@
   title:
     cs: Chemické vědy
     en: Chemical sciences
-- hierarchy:
-    parent: '10400'
-  id: '10401'
+- id: '10401'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10401
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10401
   title:
     cs: Organická chemie
     en: Organic chemistry
-- hierarchy:
-    parent: '10400'
-  id: '10402'
+- id: '10402'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10402
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10402
   title:
     cs: Anorganická a jaderná chemie
     en: Inorganic and nuclear chemistry
-- hierarchy:
-    parent: '10400'
-  id: '10403'
+- id: '10403'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10403
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10403
   title:
     cs: Fyzikální chemie
     en: Physical chemistry
-- hierarchy:
-    parent: '10400'
-  id: '10404'
+- id: '10404'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10404
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10404
   title:
     cs: Chemie polymerů
     en: Polymer science
-- hierarchy:
-    parent: '10400'
-  id: '10405'
+- id: '10405'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10405
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10405
@@ -197,9 +163,7 @@
     cs: Elektrochemie (zahrnuje suché články, baterie, palivové články, korozní kovy,
       elektrolýzu)
     en: Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)
-- hierarchy:
-    parent: '10400'
-  id: '10406'
+- id: '10406'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10406
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10400/10406
@@ -215,99 +179,77 @@
   title:
     cs: Vědy o Zemi a související environmentální vědy
     en: Earth and related environmental sciences
-- hierarchy:
-    parent: '10500'
-  id: '10501'
+- id: '10501'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10501
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10501
   title:
     cs: Hydrologie
     en: Hydrology
-- hierarchy:
-    parent: '10500'
-  id: '10502'
+- id: '10502'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10502
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10502
   title:
     cs: Oceánografie
     en: Oceanography
-- hierarchy:
-    parent: '10500'
-  id: '10503'
+- id: '10503'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10503
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10503
   title:
     cs: Vodní zdroje
     en: Water resources
-- hierarchy:
-    parent: '10500'
-  id: '10504'
+- id: '10504'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10504
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10504
   title:
     cs: Mineralogie
     en: Mineralogy
-- hierarchy:
-    parent: '10500'
-  id: '10505'
+- id: '10505'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10505
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10505
   title:
     cs: Geologie
     en: Geology
-- hierarchy:
-    parent: '10500'
-  id: '10506'
+- id: '10506'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10506
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10506
   title:
     cs: Paleontologie
     en: Paleontology
-- hierarchy:
-    parent: '10500'
-  id: '10507'
+- id: '10507'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10507
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10507
   title:
     cs: Vulkanologie
     en: Volcanology
-- hierarchy:
-    parent: '10500'
-  id: '10508'
+- id: '10508'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10508
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10508
   title:
     cs: Fyzická geografie
     en: Physical geography
-- hierarchy:
-    parent: '10500'
-  id: '10509'
+- id: '10509'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10509
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10509
   title:
     cs: Meteorologie, vědy o atmosféře
     en: Meteorology and atmospheric sciences
-- hierarchy:
-    parent: '10500'
-  id: '10510'
+- id: '10510'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10510
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10510
   title:
     cs: Výzkum klimatu
     en: Climatic research
-- hierarchy:
-    parent: '10500'
-  id: '10511'
+- id: '10511'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10511
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10500/10511
@@ -323,18 +265,14 @@
   title:
     cs: Biologie
     en: Biological sciences
-- hierarchy:
-    parent: '10600'
-  id: '10601'
+- id: '10601'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10601
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10601
   title:
     cs: Buněčná biologie
     en: Cell biology
-- hierarchy:
-    parent: '10600'
-  id: '10602'
+- id: '10602'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10602
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10602
@@ -343,162 +281,126 @@
       evoluční biologie
     en: Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm),
       evolutionary biology
-- hierarchy:
-    parent: '10600'
-  id: '10603'
+- id: '10603'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10603
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10603
   title:
     cs: Genetika a dědičnost
     en: Genetics and heredity
-- hierarchy:
-    parent: '10600'
-  id: '10604'
+- id: '10604'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10604
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10604
   title:
     cs: Reprodukční biologie
     en: Reproductive biology
-- hierarchy:
-    parent: '10600'
-  id: '10605'
+- id: '10605'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10605
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10605
   title:
     cs: Vývojová biologie
     en: Developmental biology
-- hierarchy:
-    parent: '10600'
-  id: '10606'
+- id: '10606'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10606
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10606
   title:
     cs: Mikrobiologie
     en: Microbiology
-- hierarchy:
-    parent: '10600'
-  id: '10607'
+- id: '10607'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10607
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10607
   title:
     cs: Virologie
     en: Virology
-- hierarchy:
-    parent: '10600'
-  id: '10608'
+- id: '10608'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10608
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10608
   title:
     cs: Biochemie a molekulární biologie
     en: Biochemistry and molecular biology
-- hierarchy:
-    parent: '10600'
-  id: '10609'
+- id: '10609'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10609
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10609
   title:
     cs: Biochemické výzkumné metody
     en: Biochemical research methods
-- hierarchy:
-    parent: '10600'
-  id: '10610'
+- id: '10610'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10610
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10610
   title:
     cs: Biofyzika
     en: Biophysics
-- hierarchy:
-    parent: '10600'
-  id: '10611'
+- id: '10611'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10611
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10611
   title:
     cs: Botanika
     en: Plant sciences, botany
-- hierarchy:
-    parent: '10600'
-  id: '10612'
+- id: '10612'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10612
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10612
   title:
     cs: Mykologie
     en: Mycology
-- hierarchy:
-    parent: '10600'
-  id: '10613'
+- id: '10613'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10613
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10613
   title:
     cs: Zoologie
     en: Zoology
-- hierarchy:
-    parent: '10600'
-  id: '10614'
+- id: '10614'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10614
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10614
   title:
     cs: Behaviorální biologie
     en: Behavioral sciences biology
-- hierarchy:
-    parent: '10600'
-  id: '10615'
+- id: '10615'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10615
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10615
   title:
     cs: Ornitologie
     en: Ornithology
-- hierarchy:
-    parent: '10600'
-  id: '10616'
+- id: '10616'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10616
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10616
   title:
     cs: Entomologie
     en: Entomology
-- hierarchy:
-    parent: '10600'
-  id: '10617'
+- id: '10617'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10617
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10617
   title:
     cs: Mořská biologie, sladkovodní biologie, limnologie
     en: Marine biology, freshwater biology, limnology
-- hierarchy:
-    parent: '10600'
-  id: '10618'
+- id: '10618'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10618
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10618
   title:
     cs: Ekologie
     en: Ecology
-- hierarchy:
-    parent: '10600'
-  id: '10619'
+- id: '10619'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10619
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10619
   title:
     cs: Ochrana biodiverzity
     en: Biodiversity conservation
-- hierarchy:
-    parent: '10600'
-  id: '10620'
+- id: '10620'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/10620
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 10000/10600/10620
@@ -530,36 +432,28 @@
   title:
     cs: Stavební inženýrství
     en: Civil engineering
-- hierarchy:
-    parent: '20100'
-  id: '20101'
+- id: '20101'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20101
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20100/20101
   title:
     cs: Stavební inženýrství
     en: Civil engineering
-- hierarchy:
-    parent: '20100'
-  id: '20102'
+- id: '20102'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20102
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20100/20102
   title:
     cs: Konstrukční inženýrství, výstavba měst
     en: Construction engineering, municipal and structural engineering
-- hierarchy:
-    parent: '20100'
-  id: '20103'
+- id: '20103'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20103
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20100/20103
   title:
     cs: Architektura
     en: Architecture engineering
-- hierarchy:
-    parent: '20100'
-  id: '20104'
+- id: '20104'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20104
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20100/20104
@@ -575,54 +469,42 @@
   title:
     cs: Elektrotechnika, elektronika
     en: Electrical engineering, electronic engineering, information engineering
-- hierarchy:
-    parent: '20200'
-  id: '20201'
+- id: '20201'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20201
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20201
   title:
     cs: Elektrotechnika, elektronika
     en: Electrical and electronic engineering
-- hierarchy:
-    parent: '20200'
-  id: '20202'
+- id: '20202'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20202
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20202
   title:
     cs: Sdělovací technika a systémy
     en: Communication engineering and systems
-- hierarchy:
-    parent: '20200'
-  id: '20203'
+- id: '20203'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20203
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20203
   title:
     cs: Telekomunikace
     en: Telecommunications
-- hierarchy:
-    parent: '20200'
-  id: '20204'
+- id: '20204'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20204
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20204
   title:
     cs: Robotika a automatické řízení
     en: Robotics and automatic control
-- hierarchy:
-    parent: '20200'
-  id: '20205'
+- id: '20205'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20205
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20205
   title:
     cs: Automatizace a kontrola systémů
     en: Automation and control systems
-- hierarchy:
-    parent: '20200'
-  id: '20206'
+- id: '20206'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20206
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20200/20206
@@ -638,54 +520,42 @@
   title:
     cs: Strojní inženýrství
     en: Mechanical engineering
-- hierarchy:
-    parent: '20300'
-  id: '20301'
+- id: '20301'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20301
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20301
   title:
     cs: Strojní inženýrství
     en: Mechanical engineering
-- hierarchy:
-    parent: '20300'
-  id: '20302'
+- id: '20302'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20302
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20302
   title:
     cs: Aplikovaná mechanika
     en: Applied mechanics
-- hierarchy:
-    parent: '20300'
-  id: '20303'
+- id: '20303'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20303
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20303
   title:
     cs: Termodynamika
     en: Thermodynamics
-- hierarchy:
-    parent: '20300'
-  id: '20304'
+- id: '20304'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20304
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20304
   title:
     cs: Letecké inženýrství
     en: Aerospace engineering
-- hierarchy:
-    parent: '20300'
-  id: '20305'
+- id: '20305'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20305
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20305
   title:
     cs: Jaderné inženýrství
     en: Nuclear related engineering
-- hierarchy:
-    parent: '20300'
-  id: '20306'
+- id: '20306'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20306
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20300/20306
@@ -701,18 +571,14 @@
   title:
     cs: Chemické inženýrství
     en: Chemical engineering
-- hierarchy:
-    parent: '20400'
-  id: '20401'
+- id: '20401'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20401
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20400/20401
   title:
     cs: Chemické inženýrství (rostliny, výrobky)
     en: Chemical engineering (plants, products)
-- hierarchy:
-    parent: '20400'
-  id: '20402'
+- id: '20402'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20402
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20400/20402
@@ -728,45 +594,35 @@
   title:
     cs: Materiálové inženýrství
     en: Materials engineering
-- hierarchy:
-    parent: '20500'
-  id: '20501'
+- id: '20501'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20501
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20501
   title:
     cs: Materiálové inženýrství
     en: Materials engineering
-- hierarchy:
-    parent: '20500'
-  id: '20502'
+- id: '20502'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20502
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20502
   title:
     cs: Papír a dřevo
     en: Paper and wood
-- hierarchy:
-    parent: '20500'
-  id: '20503'
+- id: '20503'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20503
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20503
   title:
     cs: Textilie (zahrnuje umělá barviva, barvy, vlákna)
     en: Textiles (including synthetic dyes, colours, fibres)
-- hierarchy:
-    parent: '20500'
-  id: '20504'
+- id: '20504'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20504
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20504
   title:
     cs: Keramika
     en: Ceramics
-- hierarchy:
-    parent: '20500'
-  id: '20505'
+- id: '20505'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20505
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20505
@@ -775,9 +631,7 @@
       a umělá vlákna a tkaniny, plněné kompozity)
     en: Composites (including laminates, reinforced plastics, cermets, combined natural
       and synthetic fibre fabrics; filled composites)
-- hierarchy:
-    parent: '20500'
-  id: '20506'
+- id: '20506'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20506
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20500/20506
@@ -793,18 +647,14 @@
   title:
     cs: Lékařské inženýrství
     en: Medical engineering
-- hierarchy:
-    parent: '20600'
-  id: '20601'
+- id: '20601'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20601
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20600/20601
   title:
     cs: Lékařské inženýrství
     en: Medical engineering
-- hierarchy:
-    parent: '20600'
-  id: '20602'
+- id: '20602'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20602
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20600/20602
@@ -822,63 +672,49 @@
   title:
     cs: Environmentální inženýrství
     en: Environmental engineering
-- hierarchy:
-    parent: '20700'
-  id: '20701'
+- id: '20701'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20701
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20701
   title:
     cs: Environmentální a geologické inženýrství, geotechnika
     en: Environmental and geological engineering, geotechnics
-- hierarchy:
-    parent: '20700'
-  id: '20702'
+- id: '20702'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20702
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20702
   title:
     cs: Ropné inženýrství (paliva, oleje)
     en: Petroleum engineering (fuel, oils)
-- hierarchy:
-    parent: '20700'
-  id: '20703'
+- id: '20703'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20703
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20703
   title:
     cs: Těžba a zpracování minerálů
     en: Mining and mineral processing
-- hierarchy:
-    parent: '20700'
-  id: '20704'
+- id: '20704'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20704
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20704
   title:
     cs: Energie a paliva
     en: Energy and fuels
-- hierarchy:
-    parent: '20700'
-  id: '20705'
+- id: '20705'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20705
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20705
   title:
     cs: Dálkový průzkum Země
     en: Remote sensing
-- hierarchy:
-    parent: '20700'
-  id: '20706'
+- id: '20706'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20706
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20706
   title:
     cs: Námořní inženýrství, mořská plavidla
     en: Marine engineering, sea vessels
-- hierarchy:
-    parent: '20700'
-  id: '20707'
+- id: '20707'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20707
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20700/20707
@@ -894,18 +730,14 @@
   title:
     cs: Environmentální biotechnologie
     en: Environmental biotechnology
-- hierarchy:
-    parent: '20800'
-  id: '20801'
+- id: '20801'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20801
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20800/20801
   title:
     cs: Environmentální biotechnologie
     en: Environmental biotechnology
-- hierarchy:
-    parent: '20800'
-  id: '20802'
+- id: '20802'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20802
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20800/20802
@@ -914,9 +746,7 @@
       managementu
     en: Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices)
       in environmental management
-- hierarchy:
-    parent: '20800'
-  id: '20803'
+- id: '20803'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20803
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20800/20803
@@ -932,18 +762,14 @@
   title:
     cs: Průmyslové biotechnologie
     en: Industrial biotechnology
-- hierarchy:
-    parent: '20900'
-  id: '20901'
+- id: '20901'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20901
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20900/20901
   title:
     cs: Průmyslové biotechnologie
     en: Industrial biotechnology
-- hierarchy:
-    parent: '20900'
-  id: '20902'
+- id: '20902'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20902
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20900/20902
@@ -952,9 +778,7 @@
       k řízení procesů), biokatalyzátory, fermentace
     en: Bioprocessing technologies (industrial processes relying on biological agents
       to drive the process) biocatalysis, fermentation
-- hierarchy:
-    parent: '20900'
-  id: '20903'
+- id: '20903'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/20903
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/20900/20903
@@ -974,18 +798,14 @@
   title:
     cs: Nanotechnologie
     en: Nano-technology
-- hierarchy:
-    parent: '21000'
-  id: '21001'
+- id: '21001'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/21001
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/21000/21001
   title:
     cs: Nanomateriály (výroba a vlastnosti)
     en: Nano-materials (production and properties)
-- hierarchy:
-    parent: '21000'
-  id: '21002'
+- id: '21002'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/21002
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/21000/21002
@@ -1001,9 +821,7 @@
   title:
     cs: Ostatní inženýrství a technologie
     en: Other engineering and technologies
-- hierarchy:
-    parent: '21100'
-  id: '21101'
+- id: '21101'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/21101
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 20000/21100/21101
@@ -1026,81 +844,63 @@
   title:
     cs: Základní medicína
     en: Basic medicine
-- hierarchy:
-    parent: '30100'
-  id: '30101'
+- id: '30101'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30101
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30101
   title:
     cs: Genetika člověka
     en: Human genetics
-- hierarchy:
-    parent: '30100'
-  id: '30102'
+- id: '30102'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30102
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30102
   title:
     cs: Imunologie
     en: Immunology
-- hierarchy:
-    parent: '30100'
-  id: '30103'
+- id: '30103'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30103
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30103
   title:
     cs: Neurovědy (zahrnuje psychofyziologii)
     en: Neurosciences (including psychophysiology)
-- hierarchy:
-    parent: '30100'
-  id: '30104'
+- id: '30104'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30104
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30104
   title:
     cs: Farmakologie a farmacie
     en: Pharmacology and pharmacy
-- hierarchy:
-    parent: '30100'
-  id: '30105'
+- id: '30105'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30105
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30105
   title:
     cs: Fyziologie (zahrnující cytologii)
     en: Physiology (including cytology)
-- hierarchy:
-    parent: '30100'
-  id: '30106'
+- id: '30106'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30106
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30106
   title:
     cs: Anatomie a morfologie
     en: Anatomy and morphology
-- hierarchy:
-    parent: '30100'
-  id: '30107'
+- id: '30107'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30107
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30107
   title:
     cs: Lékařská chemie
     en: Medicinal chemistry
-- hierarchy:
-    parent: '30100'
-  id: '30108'
+- id: '30108'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30108
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30108
   title:
     cs: Toxikologie
     en: Toxicology
-- hierarchy:
-    parent: '30100'
-  id: '30109'
+- id: '30109'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30109
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30100/30109
@@ -1116,252 +916,196 @@
   title:
     cs: Klinická medicína
     en: Clinical medicine
-- hierarchy:
-    parent: '30200'
-  id: '30201'
+- id: '30201'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30201
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30201
   title:
     cs: Srdeční a kardiovaskulární systémy
     en: Cardiac and cardiovascular systems
-- hierarchy:
-    parent: '30200'
-  id: '30202'
+- id: '30202'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30202
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30202
   title:
     cs: Endokrinologie a metabolismus (zahrnuje cukrovku, hormony)
     en: Endocrinology and metabolism (including diabetes, hormones)
-- hierarchy:
-    parent: '30200'
-  id: '30203'
+- id: '30203'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30203
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30203
   title:
     cs: Dýchací ústrojí
     en: Respiratory systems
-- hierarchy:
-    parent: '30200'
-  id: '30204'
+- id: '30204'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30204
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30204
   title:
     cs: Onkologie
     en: Oncology
-- hierarchy:
-    parent: '30200'
-  id: '30205'
+- id: '30205'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30205
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30205
   title:
     cs: Hematologie
     en: Hematology
-- hierarchy:
-    parent: '30200'
-  id: '30206'
+- id: '30206'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30206
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30206
   title:
     cs: Otorinolaryngologie
     en: Otorhinolaryngology
-- hierarchy:
-    parent: '30200'
-  id: '30207'
+- id: '30207'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30207
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30207
   title:
     cs: Oftalmologie
     en: Ophthalmology
-- hierarchy:
-    parent: '30200'
-  id: '30208'
+- id: '30208'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30208
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30208
   title:
     cs: Stomatologie, ústní chirurgie a lékařství
     en: Dentistry, oral surgery and medicine
-- hierarchy:
-    parent: '30200'
-  id: '30209'
+- id: '30209'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30209
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30209
   title:
     cs: Pediatrie
     en: Paediatrics
-- hierarchy:
-    parent: '30200'
-  id: '30210'
+- id: '30210'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30210
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30210
   title:
     cs: Klinická neurologie
     en: Clinical neurology
-- hierarchy:
-    parent: '30200'
-  id: '30211'
+- id: '30211'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30211
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30211
   title:
     cs: Ortopedie
     en: Orthopaedics
-- hierarchy:
-    parent: '30200'
-  id: '30212'
+- id: '30212'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30212
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30212
   title:
     cs: Chirurgie
     en: Surgery
-- hierarchy:
-    parent: '30200'
-  id: '30213'
+- id: '30213'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30213
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30213
   title:
     cs: Transplantace
     en: Transplantation
-- hierarchy:
-    parent: '30200'
-  id: '30214'
+- id: '30214'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30214
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30214
   title:
     cs: Porodnictví a gynekologie
     en: Obstetrics and gynaecology
-- hierarchy:
-    parent: '30200'
-  id: '30215'
+- id: '30215'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30215
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30215
   title:
     cs: Psychiatrie
     en: Psychiatry
-- hierarchy:
-    parent: '30200'
-  id: '30216'
+- id: '30216'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30216
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30216
   title:
     cs: Dermatologie a pohlavní nemoci
     en: Dermatology and venereal diseases
-- hierarchy:
-    parent: '30200'
-  id: '30217'
+- id: '30217'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30217
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30217
   title:
     cs: Urologie a nefrologie
     en: Urology and nephrology
-- hierarchy:
-    parent: '30200'
-  id: '30218'
+- id: '30218'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30218
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30218
   title:
     cs: Všeobecné a vnitřní lékařství
     en: General and internal medicine
-- hierarchy:
-    parent: '30200'
-  id: '30219'
+- id: '30219'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30219
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30219
   title:
     cs: Gastroenterologie a hepatologie
     en: Gastroenterology and hepatology
-- hierarchy:
-    parent: '30200'
-  id: '30220'
+- id: '30220'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30220
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30220
   title:
     cs: Andrologie
     en: Andrology
-- hierarchy:
-    parent: '30200'
-  id: '30221'
+- id: '30221'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30221
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30221
   title:
     cs: Urgentní medicína a pohotovostní medicína
     en: Critical care medicine and emergency medicine
-- hierarchy:
-    parent: '30200'
-  id: '30223'
+- id: '30223'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30223
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30223
   title:
     cs: Anesteziologie
     en: Anaesthesiology
-- hierarchy:
-    parent: '30200'
-  id: '30224'
+- id: '30224'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30224
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30224
   title:
     cs: Radiologie, nukleární medicína a lékařské zobrazování
     en: Radiology, nuclear medicine and medical imaging
-- hierarchy:
-    parent: '30200'
-  id: '30225'
+- id: '30225'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30225
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30225
   title:
     cs: Alergologie
     en: Allergy
-- hierarchy:
-    parent: '30200'
-  id: '30226'
+- id: '30226'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30226
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30226
   title:
     cs: Revmatologie
     en: Rheumatology
-- hierarchy:
-    parent: '30200'
-  id: '30227'
+- id: '30227'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30227
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30227
   title:
     cs: Geriatrie a gerontologie
     en: Geriatrics and gerontology
-- hierarchy:
-    parent: '30200'
-  id: '30229'
+- id: '30229'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30229
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30229
   title:
     cs: Celostní a alternativní medicína (alternativní praktické systémy)
     en: Integrative and complementary medicine (alternative practice systems)
-- hierarchy:
-    parent: '30200'
-  id: '30230'
+- id: '30230'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30230
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30200/30230
@@ -1377,9 +1121,7 @@
   title:
     cs: Zdravotní vědy
     en: Health sciences
-- hierarchy:
-    parent: '30300'
-  id: '30301'
+- id: '30301'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30301
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30301
@@ -1388,99 +1130,77 @@
       politické a sociální jevy biolékařského výzkumu)
     en: Social biomedical sciences (includes family planning, sexual health, psycho-oncology,
       political and social effects of biomedical research)
-- hierarchy:
-    parent: '30300'
-  id: '30302'
+- id: '30302'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30302
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30302
   title:
     cs: Epidemiologie
     en: Epidemiology
-- hierarchy:
-    parent: '30300'
-  id: '30303'
+- id: '30303'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30303
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30303
   title:
     cs: Infekční onemocnění
     en: Infectious diseases
-- hierarchy:
-    parent: '30300'
-  id: '30304'
+- id: '30304'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30304
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30304
   title:
     cs: Veřejné a environmentální zdraví
     en: Public and environmental health
-- hierarchy:
-    parent: '30300'
-  id: '30305'
+- id: '30305'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30305
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30305
   title:
     cs: Ochrana zdraví při práci
     en: Occupational health
-- hierarchy:
-    parent: '30300'
-  id: '30306'
+- id: '30306'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30306
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30306
   title:
     cs: Sport a fitness
     en: Sport and fitness sciences
-- hierarchy:
-    parent: '30300'
-  id: '30307'
+- id: '30307'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30307
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30307
   title:
     cs: Ošetřovatelství
     en: Nursing
-- hierarchy:
-    parent: '30300'
-  id: '30308'
+- id: '30308'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30308
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30308
   title:
     cs: Výživa, nauka o dietě
     en: Nutrition, dietetics
-- hierarchy:
-    parent: '30300'
-  id: '30309'
+- id: '30309'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30309
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30309
   title:
     cs: Tropické lékařství
     en: Tropical medicine
-- hierarchy:
-    parent: '30300'
-  id: '30310'
+- id: '30310'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30310
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30310
   title:
     cs: Parazitologie
     en: Parasitology
-- hierarchy:
-    parent: '30300'
-  id: '30311'
+- id: '30311'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30311
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30311
   title:
     cs: Lékařská etika
     en: Medical ethics
-- hierarchy:
-    parent: '30300'
-  id: '30312'
+- id: '30312'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30312
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30300/30312
@@ -1496,18 +1216,14 @@
   title:
     cs: Lékařské biotechnologie
     en: Medical biotechnology
-- hierarchy:
-    parent: '30400'
-  id: '30401'
+- id: '30401'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30401
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30401
   title:
     cs: Biotechnologie související se zdravím
     en: Health-related biotechnology
-- hierarchy:
-    parent: '30400'
-  id: '30402'
+- id: '30402'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30402
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30402
@@ -1516,9 +1232,7 @@
       (asistovaná reprodukce)
     en: Technologies involving the manipulation of cells, tissues, organs or the whole
       organism (assisted reproduction)
-- hierarchy:
-    parent: '30400'
-  id: '30403'
+- id: '30403'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30403
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30403
@@ -1529,18 +1243,14 @@
     en: Technologies involving identifying the functioning of DNA, proteins and enzymes
       and how they influence the onset of disease and maintenance of well-being (gene-based
       diagnostics and therapeutic interventions - pharmacogenomics, gene-based therapeutics)
-- hierarchy:
-    parent: '30400'
-  id: '30404'
+- id: '30404'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30404
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30404
   title:
     cs: Biomateriály (související s lékařskými implantáty, přístroji, senzory)
     en: Biomaterials (as related to medical implants, devices, sensors)
-- hierarchy:
-    parent: '30400'
-  id: '30405'
+- id: '30405'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30405
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30400/30405
@@ -1556,18 +1266,14 @@
   title:
     cs: Ostatní lékařské vědy
     en: Other medical sciences
-- hierarchy:
-    parent: '30500'
-  id: '30501'
+- id: '30501'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30501
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30500/30501
   title:
     cs: Soudní lékařství
     en: Forensic science
-- hierarchy:
-    parent: '30500'
-  id: '30502'
+- id: '30502'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/30502
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 30000/30500/30502
@@ -1590,54 +1296,42 @@
   title:
     cs: Zemědělství, lesnictví, rybářství
     en: Agriculture, forestry and fisheries
-- hierarchy:
-    parent: '40100'
-  id: '40101'
+- id: '40101'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40101
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40101
   title:
     cs: Zemědělství
     en: Agriculture
-- hierarchy:
-    parent: '40100'
-  id: '40102'
+- id: '40102'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40102
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40102
   title:
     cs: Lesnictví
     en: Forestry
-- hierarchy:
-    parent: '40100'
-  id: '40103'
+- id: '40103'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40103
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40103
   title:
     cs: Rybářství
     en: Fishery
-- hierarchy:
-    parent: '40100'
-  id: '40104'
+- id: '40104'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40104
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40104
   title:
     cs: Půdoznalství
     en: Soil science
-- hierarchy:
-    parent: '40100'
-  id: '40105'
+- id: '40105'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40105
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40105
   title:
     cs: Zahradnictví, vinařství
     en: Horticulture, viticulture
-- hierarchy:
-    parent: '40100'
-  id: '40106'
+- id: '40106'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40106
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40100/40106
@@ -1653,27 +1347,21 @@
   title:
     cs: Vědy o zvířatech a mléce
     en: Animal and dairy science
-- hierarchy:
-    parent: '40200'
-  id: '40201'
+- id: '40201'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40201
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40200/40201
   title:
     cs: Vědy o zvířatech a mléce
     en: Animal and dairy science
-- hierarchy:
-    parent: '40200'
-  id: '40202'
+- id: '40202'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40202
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40200/40202
   title:
     cs: Domácí zvířata
     en: Pets
-- hierarchy:
-    parent: '40200'
-  id: '40203'
+- id: '40203'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40203
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40200/40203
@@ -1689,9 +1377,7 @@
   title:
     cs: Veterinární věda
     en: Veterinary science
-- hierarchy:
-    parent: '40300'
-  id: '40301'
+- id: '40301'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40301
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40300/40301
@@ -1707,18 +1393,14 @@
   title:
     cs: Zemědělské biotechnologie
     en: Agricultural biotechnology
-- hierarchy:
-    parent: '40400'
-  id: '40401'
+- id: '40401'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40401
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40400/40401
   title:
     cs: Zemědělské biotechnologie a biotechnologie potravin
     en: Agricultural biotechnology and food biotechnology
-- hierarchy:
-    parent: '40400'
-  id: '40402'
+- id: '40402'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40402
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40400/40402
@@ -1729,9 +1411,7 @@
     en: GM technology (crops and livestock), livestock cloning, marker assisted selection,
       diagnostics (DNA chips and biosensing devices for the early/accurate detection
       of diseases) biomass feedstock production technologies, biopharming
-- hierarchy:
-    parent: '40400'
-  id: '40403'
+- id: '40403'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/40403
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 40000/40400/40403
@@ -1763,18 +1443,14 @@
   title:
     cs: Psychologie a kognitivní věda
     en: Psychology and cognitive sciences
-- hierarchy:
-    parent: '50100'
-  id: '50101'
+- id: '50101'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50101
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50100/50101
   title:
     cs: Psychologie (zahrnuje vztahy mezi člověkem a strojem)
     en: Psychology (including human - machine relations)
-- hierarchy:
-    parent: '50100'
-  id: '50102'
+- id: '50102'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50102
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50100/50102
@@ -1783,9 +1459,7 @@
       jiné fyzické a mentální handicapy)
     en: Psychology, special (including therapy for learning, speech, hearing, visual
       and other physical and mental disabilities)
-- hierarchy:
-    parent: '50100'
-  id: '50103'
+- id: '50103'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50103
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50100/50103
@@ -1801,54 +1475,42 @@
   title:
     cs: Ekonomie a podnikání
     en: Economics and business
-- hierarchy:
-    parent: '50200'
-  id: '50201'
+- id: '50201'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50201
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50201
   title:
     cs: Ekonomická teorice
     en: Economic theory
-- hierarchy:
-    parent: '50200'
-  id: '50202'
+- id: '50202'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50202
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50202
   title:
     cs: Aplikovaná ekonomie, ekonometrie
     en: Applied economics, econometrics
-- hierarchy:
-    parent: '50200'
-  id: '50203'
+- id: '50203'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50203
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50203
   title:
     cs: Pracovní vztahy
     en: Industrial relations
-- hierarchy:
-    parent: '50200'
-  id: '50204'
+- id: '50204'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50204
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50204
   title:
     cs: Podnikání a management
     en: Business and management
-- hierarchy:
-    parent: '50200'
-  id: '50205'
+- id: '50205'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50205
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50205
   title:
     cs: Účetnictví
     en: Accounting
-- hierarchy:
-    parent: '50200'
-  id: '50206'
+- id: '50206'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50206
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50200/50206
@@ -1864,9 +1526,7 @@
   title:
     cs: Vzdělávání
     en: Education
-- hierarchy:
-    parent: '50300'
-  id: '50301'
+- id: '50301'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50301
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50300/50301
@@ -1874,9 +1534,7 @@
     cs: Všeobecné vzdělávání (zahrnuje výcvik, pedagogiku, didaktiku, vzdělávací systémy)
     en: Education, general (including training, pedagogy, didactics and education
       systems)
-- hierarchy:
-    parent: '50300'
-  id: '50302'
+- id: '50302'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50302
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50300/50302
@@ -1892,27 +1550,21 @@
   title:
     cs: Sociologie
     en: Sociology
-- hierarchy:
-    parent: '50400'
-  id: '50401'
+- id: '50401'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50401
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50400/50401
   title:
     cs: Sociologie
     en: Sociology
-- hierarchy:
-    parent: '50400'
-  id: '50402'
+- id: '50402'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50402
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50400/50402
   title:
     cs: Demografie
     en: Demography
-- hierarchy:
-    parent: '50400'
-  id: '50403'
+- id: '50403'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50403
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50400/50403
@@ -1921,9 +1573,7 @@
       práce)
     en: Social topics (women´s and gender studies, social issues, family studies social
       work)
-- hierarchy:
-    parent: '50400'
-  id: '50404'
+- id: '50404'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50404
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50400/50404
@@ -1939,18 +1589,14 @@
   title:
     cs: Právo
     en: Law
-- hierarchy:
-    parent: '50500'
-  id: '50501'
+- id: '50501'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50501
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50500/50501
   title:
     cs: Právo
     en: Law
-- hierarchy:
-    parent: '50500'
-  id: '50502'
+- id: '50502'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50502
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50500/50502
@@ -1966,27 +1612,21 @@
   title:
     cs: Politologie
     en: Political science
-- hierarchy:
-    parent: '50600'
-  id: '50601'
+- id: '50601'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50601
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50600/50601
   title:
     cs: Politologie
     en: Political science
-- hierarchy:
-    parent: '50600'
-  id: '50602'
+- id: '50602'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50602
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50600/50602
   title:
     cs: Veřejná správa
     en: Public administration
-- hierarchy:
-    parent: '50600'
-  id: '50603'
+- id: '50603'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50603
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50600/50603
@@ -2002,36 +1642,28 @@
   title:
     cs: Sociální a ekonomická geografie
     en: Social and economic geography
-- hierarchy:
-    parent: '50700'
-  id: '50701'
+- id: '50701'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50701
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50700/50701
   title:
     cs: Kulturní a ekonomická geografie
     en: Cultural and economic geography
-- hierarchy:
-    parent: '50700'
-  id: '50702'
+- id: '50702'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50702
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50700/50702
   title:
     cs: Urbanismus (plánování a rozvoj)
     en: Urban studies (planning and development)
-- hierarchy:
-    parent: '50700'
-  id: '50703'
+- id: '50703'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50703
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50700/50703
   title:
     cs: Plánování dopravy a sociální hlediska dopravy
     en: Transport planning and social aspects of transport
-- hierarchy:
-    parent: '50700'
-  id: '50704'
+- id: '50704'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50704
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50700/50704
@@ -2047,36 +1679,28 @@
   title:
     cs: Média a komunikace
     en: Media and communications
-- hierarchy:
-    parent: '50800'
-  id: '50801'
+- id: '50801'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50801
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50800/50801
   title:
     cs: Žurnalistika
     en: Journalism
-- hierarchy:
-    parent: '50800'
-  id: '50802'
+- id: '50802'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50802
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50800/50802
   title:
     cs: Mediální a sociokulturní komunikace
     en: Media and socio-cultural communication
-- hierarchy:
-    parent: '50800'
-  id: '50803'
+- id: '50803'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50803
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50800/50803
   title:
     cs: Informační věda (sociální aspekty)
     en: Information science (social aspects)
-- hierarchy:
-    parent: '50800'
-  id: '50804'
+- id: '50804'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50804
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50800/50804
@@ -2092,18 +1716,14 @@
   title:
     cs: Ostatní společenské vědy
     en: Other social sciences
-- hierarchy:
-    parent: '50900'
-  id: '50901'
+- id: '50901'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50901
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50900/50901
   title:
     cs: Ostatní společenské vědy
     en: Other social sciences
-- hierarchy:
-    parent: '50900'
-  id: '50902'
+- id: '50902'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/50902
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 50000/50900/50902
@@ -2126,18 +1746,14 @@
   title:
     cs: Historie a archeologie
     en: History and archaeology
-- hierarchy:
-    parent: '60100'
-  id: '60101'
+- id: '60101'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60101
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60100/60101
   title:
     cs: Historie
     en: History
-- hierarchy:
-    parent: '60100'
-  id: '60102'
+- id: '60102'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60102
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60100/60102
@@ -2153,54 +1769,42 @@
   title:
     cs: Jazyky a literatura
     en: Languages and literature
-- hierarchy:
-    parent: '60200'
-  id: '60201'
+- id: '60201'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60201
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60201
   title:
     cs: Všeobecné jazykové studie
     en: General language studies
-- hierarchy:
-    parent: '60200'
-  id: '60202'
+- id: '60202'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60202
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60202
   title:
     cs: Specifické jazyky
     en: Specific languages
-- hierarchy:
-    parent: '60200'
-  id: '60203'
+- id: '60203'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60203
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60203
   title:
     cs: Lingvistika
     en: Linguistics
-- hierarchy:
-    parent: '60200'
-  id: '60204'
+- id: '60204'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60204
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60204
   title:
     cs: Všeobecné studie literatury
     en: General literature studies
-- hierarchy:
-    parent: '60200'
-  id: '60205'
+- id: '60205'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60205
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60205
   title:
     cs: Teorie literatury
     en: Literary theory
-- hierarchy:
-    parent: '60200'
-  id: '60206'
+- id: '60206'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60206
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60200/60206
@@ -2216,36 +1820,28 @@
   title:
     cs: Filozofie, etika a náboženství
     en: Philosophy, ethics and religion
-- hierarchy:
-    parent: '60300'
-  id: '60301'
+- id: '60301'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60301
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60300/60301
   title:
     cs: Filozofie, dějiny a filozofie vědy a techniky
     en: Philosophy, history and philosophy of science and technology
-- hierarchy:
-    parent: '60300'
-  id: '60302'
+- id: '60302'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60302
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60300/60302
   title:
     cs: Etika (vyjma etiky související s příslušnými kategoriemi)
     en: Ethics (except ethics related to specific subfields)
-- hierarchy:
-    parent: '60300'
-  id: '60303'
+- id: '60303'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60303
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60300/60303
   title:
     cs: Teologie
     en: Theology
-- hierarchy:
-    parent: '60300'
-  id: '60304'
+- id: '60304'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60304
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60300/60304
@@ -2261,45 +1857,35 @@
   title:
     cs: Umění (umění, dějiny umění, múzická umění, hudba)
     en: Arts (arts, history of arts, performing arts, music)
-- hierarchy:
-    parent: '60400'
-  id: '60401'
+- id: '60401'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60401
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60401
   title:
     cs: Umění, dějiny umění
     en: Arts, art history
-- hierarchy:
-    parent: '60400'
-  id: '60402'
+- id: '60402'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60402
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60402
   title:
     cs: Architektonický design
     en: Architectural design
-- hierarchy:
-    parent: '60400'
-  id: '60403'
+- id: '60403'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60403
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60403
   title:
     cs: Múzická umění (muzikologie, divadelní věda, dramaturgie)
     en: Performing arts studies (musicology, theater science, dramaturgy)
-- hierarchy:
-    parent: '60400'
-  id: '60404'
+- id: '60404'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60404
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60404
   title:
     cs: Folkloristika
     en: Folklore studies
-- hierarchy:
-    parent: '60400'
-  id: '60405'
+- id: '60405'
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectcategories/60405
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/SubjectCategory: 60000/60400/60405
