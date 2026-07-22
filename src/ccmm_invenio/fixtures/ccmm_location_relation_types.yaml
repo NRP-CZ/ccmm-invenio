@@ -1,46 +1,46 @@
-- id: refers
+- description:
+    cs: Jedná se o určení lokace, kde byla daná data zaznamenána (naměřena, sesbírána...).
+    en: This is the determination of the location where the data was collected (measured,
+      recorded, observed etc.).
+  id: collected
+  props:
+    iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/collected
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Collected
   title:
-    cs: Týká se lokace
-    en: Refers to the location
-  description:
+    cs: Získáno v lokaci
+    en: Collected in
+- description:
+    cs: Jedná se o určení lokace, kde byla daná data po sběru či naměření dále zpracována.
+    en: This is the determination of the location where the data was further processed
+      after collection or measurement.
+  id: processed
+  props:
+    iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/processed
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Processed
+  title:
+    cs: Zpracováno v lokaci
+    en: Processed at location
+- description:
     cs: Jedná se o vztah k lokaci, které se týkají obsahově daná data. Dataset obsahuje
       data o dané lokaci.
     en: This is a relationship to a location that relates to the content of the data.
       The dataset contains data about the given location.
+  id: refers
   props:
     iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/refers
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Refers
-- id: collected
   title:
-    cs: Získáno v lokaci
-    en: Collected in
-  description:
-    cs: Jedná se o určení lokace, kde byla daná data zaznamenána (naměřena, sesbírána...).
-    en: This is the determination of the location where the data was collected (measured,
-      recorded, observed etc.).
-  props:
-    iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/collected
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Collected
-- id: processed
-  title:
-    cs: Zpracováno v lokaci
-    en: Processed at location
-  description:
-    cs: Jedná se o určení lokace, kde byla daná data po sběru či naměření dále zpracována.
-    en: This is the determination of the location where the data was further processed
-      after collection or measurement.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/processed
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Processed
-- id: stored
-  title:
-    cs: Uchováno v lokaci
-    en: Stored at location
-  description:
+    cs: Týká se lokace
+    en: Refers to the location
+- description:
     cs: Jedná se o určení lokace, kde byla daná data po sběru, naměření či zpracování
       uložena a jsou trvale uchovávána.
     en: This is the determination of the location where the data is permanently stored
       after collection, measurement or processing.
+  id: stored
   props:
     iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/stored
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Stored
+  title:
+    cs: Uchováno v lokaci
+    en: Stored at location

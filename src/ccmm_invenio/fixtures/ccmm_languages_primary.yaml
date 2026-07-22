@@ -1,23 +1,19 @@
-- id: afr
+- description:
+    en: Afrikaans is a West Germanic language. It is one of the official languages
+      of South Africa.
+  id: afr
+  props:
+    ISO_639_1: af
+    ISO_639_2B: afr
+    ISO_639_2T: afr
+    ISO_639_3: afr
+    XML_LNG: af
+    iri: https://nma.eosc.cz/vocabularies/languages/afr
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: AFR
   title:
     cs: afrikánština
     en: Afrikaans
-  description:
-    en: Afrikaans is a West Germanic language. It is one of the official languages
-      of South Africa.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/afr
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: AFR
-    ISO_639_2T: afr
-    XML_LNG: af
-    ISO_639_3: afr
-    ISO_639_2B: afr
-    ISO_639_1: af
-- id: aka
-  title:
-    cs: akanština
-    en: Akan
-  description:
+- description:
     en: Akan is an Atlantic-Congo language that belongs to the Central Tano group
       of the Volta-Congo languages. It is the principal native language of the Akan
       people of Ghana, spoken over much of the southern half of Ghana. It is also
@@ -25,34 +21,34 @@
       was introduced to the Caribbean and South America, notably in Suriname and in
       Jamaica. The Akan language and its dialects use the Adinkra Nkyea writing system.
       It is part of the hypothetical Niger-Congo language family.
+  id: aka
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/aka
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: AKA
-    ISO_639_2B: aka
     ISO_639_1: ak
-    XML_LNG: ak
+    ISO_639_2B: aka
     ISO_639_2T: aka
     ISO_639_3: aka
-- id: amh
+    XML_LNG: ak
+    iri: https://nma.eosc.cz/vocabularies/languages/aka
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: AKA
+  title:
+    cs: akanština
+    en: Akan
+- description:
+    en: Amharic is a Semitic language spoken in Ethiopia. The Amharic script is an
+      abugida.
+  id: amh
+  props:
+    ISO_639_1: am
+    ISO_639_2B: amh
+    ISO_639_2T: amh
+    ISO_639_3: amh
+    XML_LNG: am
+    iri: https://nma.eosc.cz/vocabularies/languages/amh
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: AMH
   title:
     cs: amharština
     en: Amharic
-  description:
-    en: Amharic is a Semitic language spoken in Ethiopia. The Amharic script is an
-      abugida.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/amh
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: AMH
-    XML_LNG: am
-    ISO_639_2B: amh
-    ISO_639_1: am
-    ISO_639_3: amh
-    ISO_639_2T: amh
-- id: ara
-  title:
-    cs: arabština
-    en: Arabic
-  description:
+- description:
     en: Arabic is a name for what are traditionally considered the descendants of
       the Classical Arabic language of the 6th century. This includes both the literary
       language and varieties of Arabic spoken in a wide arc of territory, stretching
@@ -62,52 +58,52 @@
       language. It is currently the only official form of Arabic, used in most written
       documents as well as in formal spoken occasions, such as lectures and news broadcasts.Arabic
       is written using the Arabic script.
+  id: ara
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ara
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ARA
     ISO_639_1: ar
     ISO_639_2B: ara
-    XML_LNG: ar
     ISO_639_2T: ara
     ISO_639_3: ara
-- id: aym
+    XML_LNG: ar
+    iri: https://nma.eosc.cz/vocabularies/languages/ara
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ARA
   title:
-    cs: ajmarština
-    en: Aymara
-  description:
+    cs: arabština
+    en: Arabic
+- description:
     en: Aymara is an Aymaran indigenous language. It is one of the official languages
       of Bolivia.
+  id: aym
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/aym
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: AYM
+    ISO_639_1: ay
     ISO_639_2B: aym
     ISO_639_2T: aym
     ISO_639_3: aym
-    ISO_639_1: ay
     XML_LNG: ay
-- id: aze
+    iri: https://nma.eosc.cz/vocabularies/languages/aym
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: AYM
   title:
-    cs: ázerbájdžánština
-    en: Azerbaijani
-  description:
+    cs: ajmarština
+    en: Aymara
+- description:
     en: Azerbaijani or Azeri is a member of the Oghuz group of Turkic languages, spoken
       primarily in the Caucasus region. Azerbaijani and Turkish closely resemble each
       other.Azeri was written in the Arabic-Persian script, a modified Latin script
       and with a form of the Cyrillic alphabet. After the collapse of the Soviet Union
       the Latin writing was introduced.
+  id: aze
   props:
+    ISO_639_1: az
+    ISO_639_2B: aze
+    ISO_639_2T: aze
+    ISO_639_3: aze
+    XML_LNG: az
     iri: https://nma.eosc.cz/vocabularies/languages/aze
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: AZE
-    XML_LNG: az
-    ISO_639_3: aze
-    ISO_639_1: az
-    ISO_639_2T: aze
-    ISO_639_2B: aze
-- id: bam
   title:
-    cs: bambarština
-    en: Bambara
-  description:
+    cs: ázerbájdžánština
+    en: Azerbaijani
+- description:
     en: Bambara, also known as Bamana, is a lingua franca and national language of
       Mali spoken natively by 4.2 million Bambara people and about 10 million second-language
       users. Bambara is a variety of a group of closely related languages called Manding,
@@ -117,35 +113,35 @@
       Niger-Congo language family. However, as the Mande languages lack the noun-class
       morphology, linguists increasingly treat Mande and Atlantic–Congo as independent
       language families and reject the Niger-Congo hypothesis.
+  id: bam
   props:
+    ISO_639_1: bm
+    ISO_639_2B: bam
+    ISO_639_2T: bam
+    ISO_639_3: bam
+    XML_LNG: bm
     iri: https://nma.eosc.cz/vocabularies/languages/bam
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BAM
-    ISO_639_3: bam
-    ISO_639_2T: bam
-    ISO_639_2B: bam
-    ISO_639_1: bm
-    XML_LNG: bm
-- id: bel
   title:
-    cs: běloruština
-    en: Belarusian
-  description:
+    cs: bambarština
+    en: Bambara
+- description:
     en: Belarusian is one of the East Slavic languages and shares many grammatical
       and lexical features with other members of the branch, Russian and Ukrainian.
       It is spoken mainly in Belarus.Belorusian is written with the Cyrillic alphabet.
+  id: bel
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/bel
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: BEL
     ISO_639_1: be
     ISO_639_2B: bel
-    ISO_639_3: bel
     ISO_639_2T: bel
+    ISO_639_3: bel
     XML_LNG: be
-- id: ben
+    iri: https://nma.eosc.cz/vocabularies/languages/bel
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: BEL
   title:
-    cs: bengálština
-    en: Bengali
-  description:
+    cs: běloruština
+    en: Belarusian
+- description:
     en: Bengali is the language native to the region of Bengal, which comprises present-day
       Bangladesh and some east-north Indian states. It is written using the Bengali
       script. Bengali presents a strong case of diglossia, with the literary and standard
@@ -155,34 +151,34 @@
       the Bengali language the only language in the world to be also known for its
       language movements and people sacrificing their life for their mother language,
       Bengali.
+  id: ben
   props:
+    ISO_639_1: bn
+    ISO_639_2B: ben
+    ISO_639_2T: ben
+    ISO_639_3: ben
+    XML_LNG: bn
     iri: https://nma.eosc.cz/vocabularies/languages/ben
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BEN
-    ISO_639_1: bn
-    ISO_639_2T: ben
-    XML_LNG: bn
-    ISO_639_2B: ben
-    ISO_639_3: ben
-- id: bis
+  title:
+    cs: bengálština
+    en: Bengali
+- description:
+    en: Bislama is an English-based creole language. It is one of the official languages
+      of Vanuatu.
+  id: bis
+  props:
+    ISO_639_1: bi
+    ISO_639_2B: bis
+    ISO_639_2T: bis
+    ISO_639_3: bis
+    XML_LNG: bi
+    iri: https://nma.eosc.cz/vocabularies/languages/bis
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: BIS
   title:
     cs: bislamština
     en: Bislama
-  description:
-    en: Bislama is an English-based creole language. It is one of the official languages
-      of Vanuatu.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/bis
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: BIS
-    ISO_639_3: bis
-    ISO_639_2B: bis
-    ISO_639_1: bi
-    ISO_639_2T: bis
-    XML_LNG: bi
-- id: bod
-  title:
-    cs: tibetština
-    en: Tibetan
-  description:
+- description:
     en: The Tibetic or Tibetan languages (Bodish) are a cluster of mutually unintelligible
       Tibeto-Burman languages spoken primarily by Tibetan peoples who live across
       a wide area of eastern Central Asia bordering the Indian subcontinent, including
@@ -192,375 +188,375 @@
       are written in an Indic script, with a historically conservative orthography
       (see below) that helps unify the Tibetan-language area. However, some Ladakhi
       and Balti speakers write with the Urdu script.
+  id: bod
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/bod
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: BOD
-    ISO_639_3: bod
     ISO_639_1: bo
     ISO_639_2B: tib
     ISO_639_2T: bod
+    ISO_639_3: bod
     XML_LNG: bo
-- id: bos
+    iri: https://nma.eosc.cz/vocabularies/languages/bod
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: BOD
   title:
-    cs: bosenština
-    en: Bosnian
-  description:
+    cs: tibetština
+    en: Tibetan
+- description:
     en: Bosnian is a South Slavic language, the standardised variety of the ‘Serbo-Croatian’
       used by Bosniaks, based on the Shtokavian dialect.Bosnian is written in both
       the Latin and the Cyrillic alphabet.
+  id: bos
   props:
+    ISO_639_1: bs
+    ISO_639_2B: bos
+    ISO_639_2T: bos
+    ISO_639_3: bos
+    XML_LNG: bs
     iri: https://nma.eosc.cz/vocabularies/languages/bos
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BOS
-    XML_LNG: bs
-    ISO_639_1: bs
-    ISO_639_3: bos
-    ISO_639_2T: bos
-    ISO_639_2B: bos
-- id: bre
   title:
-    cs: bretonština
-    en: Breton
-  description:
+    cs: bosenština
+    en: Bosnian
+- description:
     en: Breton is a member of the Brittonic subgroup of the Celtic languages, spoken
       in Brittany, in western France. It is most closely related to Cornish.Breton
       is classified as ‘severely endangered’ by the Unesco Atlas of the World’s Languages
       in Danger.
+  id: bre
   props:
+    ISO_639_1: br
+    ISO_639_2B: bre
+    ISO_639_2T: bre
+    ISO_639_3: bre
+    XML_LNG: br
     iri: https://nma.eosc.cz/vocabularies/languages/bre
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: BRE
-    ISO_639_1: br
-    XML_LNG: br
-    ISO_639_2B: bre
-    ISO_639_3: bre
-    ISO_639_2T: bre
-- id: bul
   title:
-    cs: bulharština
-    en: Bulgarian
-  description:
+    cs: bretonština
+    en: Breton
+- description:
     en: Bulgarian is a member of the Southern subgroup of the Slavic languages, spoken
       mainly in Bulgaria.Modern Bulgarian has several striking differences from other
       Slavic languages. e.g. nouns are no longer declined; however, there is a definite
       article suffixed to the noun.Bulgarian is written with the Cyrillic alphabet.
+  id: bul
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/bul
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: BUL
-    XML_LNG: bg
+    ISO_639_1: bg
     ISO_639_2B: bul
     ISO_639_2T: bul
-    ISO_639_1: bg
     ISO_639_3: bul
-- id: cat
+    XML_LNG: bg
+    iri: https://nma.eosc.cz/vocabularies/languages/bul
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: BUL
   title:
-    cs: katalánština
-    en: Catalan
-  description:
+    cs: bulharština
+    en: Bulgarian
+- description:
     en: Catalan is a member of the Romance family of languages. It is spoken in Catalonia,
       north-eastern Spain and adjoining parts of France and it is the official language
       of Andorra. Catalan has a co-official status in the Spanish autonomous communities
       of Catalonia, the Balearic Islands, and the Valencian Community (where the language
       is known as Valencian). It is also the language of the city of Alghero on the
       Italian island Sardinia.
+  id: cat
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/cat
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CAT
+    ISO_639_1: ca
+    ISO_639_2B: cat
     ISO_639_2T: cat
     ISO_639_3: cat
-    ISO_639_2B: cat
-    ISO_639_1: ca
     XML_LNG: ca
-- id: ces
+    iri: https://nma.eosc.cz/vocabularies/languages/cat
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CAT
   title:
-    cs: čeština
-    en: Czech
-  description:
+    cs: katalánština
+    en: Catalan
+- description:
     en: Czech is a member of the Western subgroup of the Slavic languages, spoken
       mainly in the Czech Republic.Czech is a fusional language and one of the most
       highly inflected tongues in the world.
+  id: ces
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ces
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CES
     ISO_639_1: cs
     ISO_639_2B: cze
+    ISO_639_2T: ces
     ISO_639_3: ces
     XML_LNG: cs
-    ISO_639_2T: ces
-- id: cha
+    iri: https://nma.eosc.cz/vocabularies/languages/ces
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CES
+  title:
+    cs: čeština
+    en: Czech
+- description:
+    en: Chamorro is a Malayo-Polynesian language. It is one of the official languages
+      of Guam and the Northern Mariana Islands.
+  id: cha
+  props:
+    ISO_639_1: ch
+    ISO_639_2B: cha
+    ISO_639_2T: cha
+    ISO_639_3: cha
+    XML_LNG: ch
+    iri: https://nma.eosc.cz/vocabularies/languages/cha
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CHA
   title:
     cs: čamorština
     en: Chamorro
-  description:
-    en: Chamorro is a Malayo-Polynesian language. It is one of the official languages
-      of Guam and the Northern Mariana Islands.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/cha
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CHA
-    ISO_639_1: ch
-    ISO_639_2T: cha
-    ISO_639_2B: cha
-    XML_LNG: ch
-    ISO_639_3: cha
-- id: cor
-  title:
-    cs: kornština
-    en: Cornish
-  description:
+- description:
     en: Cornish is a south-western Brittonic Celtic language spoken in Cornwall.Since
       2000 the language has undergone a revival. It is a recognised regional language
       of the United Kingdom, protected under the European Charter for Regional or
       Minority Languages.
+  id: cor
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/cor
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: COR
-    ISO_639_2B: cor
     ISO_639_1: kw
+    ISO_639_2B: cor
+    ISO_639_2T: cor
     ISO_639_3: cor
     XML_LNG: kw
-    ISO_639_2T: cor
-- id: cos
+    iri: https://nma.eosc.cz/vocabularies/languages/cor
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: COR
   title:
-    cs: korsičtina
-    en: Corsican
-  description:
+    cs: kornština
+    en: Cornish
+- description:
     en: Corsican is an Italo-Dalmatian Romance language, a member of the South Central
       group of the dialects of Italy, spoken and written on the islands of Corsica
       (France) and northern Sardinia (Italy). Unesco classifies Corsican as a definitely
       endangered language.
+  id: cos
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/cos
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: COS
-    XML_LNG: co
-    ISO_639_2B: cos
     ISO_639_1: co
+    ISO_639_2B: cos
     ISO_639_2T: cos
     ISO_639_3: cos
-- id: cre
+    XML_LNG: co
+    iri: https://nma.eosc.cz/vocabularies/languages/cos
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: COS
   title:
-    cs: kríjština
-    en: Cree
-  description:
+    cs: korsičtina
+    en: Corsican
+- description:
     en: Cree macrolanguage, also known as Cree–Montagnais–Naskapi, is a dialect continuum
       of Algonquian languages spoken by approximately 86 475 people across Canada
       in 2021, from the Northwest Territories to Alberta to Labrador. If considered
       one language, it is the aboriginal language with the highest number of speakers
       in Canada. The only region where Cree has any official status is in the Northwest
       Territories, alongside eight other aboriginal languages.
+  id: cre
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/cre
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CRE
-    XML_LNG: cr
-    ISO_639_2T: cre
     ISO_639_1: cr
     ISO_639_2B: cre
+    ISO_639_2T: cre
     ISO_639_3: cre
-- id: cym
+    XML_LNG: cr
+    iri: https://nma.eosc.cz/vocabularies/languages/cre
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CRE
   title:
-    cs: velština
-    en: Welsh
-  description:
+    cs: kríjština
+    en: Cree
+- description:
     en: 'Welsh (Cymraeg) is a member of the Brittonic subgroup of the Celtic languages.
       It has the status of official language in Wales.Modern standard literary Welsh
       is a conservative form of the language: this makes it more difficult to learn
       but those who can read it can also read the early classics.'
+  id: cym
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/cym
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CYM
     ISO_639_1: cy
     ISO_639_2B: wel
     ISO_639_2T: cym
-    XML_LNG: cy
     ISO_639_3: cym
-- id: dan
+    XML_LNG: cy
+    iri: https://nma.eosc.cz/vocabularies/languages/cym
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: CYM
   title:
-    cs: dánština
-    en: Danish
-  description:
+    cs: velština
+    en: Welsh
+- description:
     en: Danish is a North Germanic language spoken principally in Denmark and as a
       second language in the Faroe Islands and Greenland. Danish is largely mutually
       intelligible with Norwegian and Swedish.Danish has a relatively large vowel
       inventory and is distinguished by the many pharyngealised sounds.
+  id: dan
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/dan
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: DAN
-    XML_LNG: da
+    ISO_639_1: da
+    ISO_639_2B: dan
     ISO_639_2T: dan
     ISO_639_3: dan
-    ISO_639_2B: dan
-    ISO_639_1: da
-- id: deu
+    XML_LNG: da
+    iri: https://nma.eosc.cz/vocabularies/languages/dan
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: DAN
   title:
-    cs: němčina
-    en: German
-  description:
+    cs: dánština
+    en: Danish
+- description:
     en: German is a West Germanic language, most closely related to Dutch and Yiddish.
       German is a pluricentric language, with multiple countries having their own
       standardised variants as well as many dialects. There is also one variant referred
       to as Standard German.
+  id: deu
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/deu
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: DEU
+    ISO_639_1: de
+    ISO_639_2B: ger
+    ISO_639_2T: deu
     ISO_639_3: deu
     XML_LNG: de
-    ISO_639_2B: ger
-    ISO_639_1: de
-    ISO_639_2T: deu
-- id: div
+    iri: https://nma.eosc.cz/vocabularies/languages/deu
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: DEU
   title:
-    cs: divehi
-    en: Dhivehi
-  description:
+    cs: němčina
+    en: German
+- description:
     en: Dhivehi or Maldivian is an Indo-Aryan language predominantly spoken in the
       Maldives, where it is the national language. Maldivian is a descendent of Maharashtri
       Prakrit and is closely related to Marathi, Konkani and Sinhalese languages,
       but not mutually intelligible with them. Maldivian is written in the Thaana
       script. Like other Indo-Iranian languages, Dhivehi belongs to the Indo-European
       languages, the world’s largest language family by number of native speakers.
+  id: div
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/div
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: DIV
     ISO_639_1: dv
-    XML_LNG: dv
     ISO_639_2B: div
     ISO_639_2T: div
     ISO_639_3: div
-- id: dzo
+    XML_LNG: dv
+    iri: https://nma.eosc.cz/vocabularies/languages/div
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: DIV
+  title:
+    cs: divehi
+    en: Dhivehi
+- description:
+    en: Dzongkha is a Sino-Tibetan language. It is the official language of Bhutan.
+  id: dzo
+  props:
+    ISO_639_1: dz
+    ISO_639_2B: dzo
+    ISO_639_2T: dzo
+    ISO_639_3: dzo
+    XML_LNG: dz
+    iri: https://nma.eosc.cz/vocabularies/languages/dzo
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: DZO
   title:
     cs: dzongkä
     en: Dzongkha
-  description:
-    en: Dzongkha is a Sino-Tibetan language. It is the official language of Bhutan.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/dzo
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: DZO
-    ISO_639_3: dzo
-    ISO_639_1: dz
-    XML_LNG: dz
-    ISO_639_2T: dzo
-    ISO_639_2B: dzo
-- id: ell
-  title:
-    cs: řečtina
-    en: Greek
-  description:
+- description:
     en: Greek is an independent branch of the Indo-European family of languages, native
       to the southern Balkans, the Aegean Islands, western Asia Minor and Cyprus.
       It has the longest continuous recorded history of any European language.Its
       writing system has been the Greek alphabet for the majority of its history.Greek
       roots are often used to coin new words for other languages; Greek and Latin
       are the predominant sources of international scientific vocabulary.
+  id: ell
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ell
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ELL
-    XML_LNG: el
-    ISO_639_2T: ell
-    ISO_639_3: ell
     ISO_639_1: el
     ISO_639_2B: gre
-- id: eng
+    ISO_639_2T: ell
+    ISO_639_3: ell
+    XML_LNG: el
+    iri: https://nma.eosc.cz/vocabularies/languages/ell
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ELL
   title:
-    cs: angličtina
-    en: English
-  description:
+    cs: řečtina
+    en: Greek
+- description:
     en: English is a member of the West Germanic group of the Germanic languages.
       It is an official language of almost 60 sovereign states and is now a global
       lingua franca.It is the third-most-common native language in the world and it
       is widely learned as a second language.
+  id: eng
   props:
+    ISO_639_1: en
+    ISO_639_2B: eng
+    ISO_639_2T: eng
+    ISO_639_3: eng
+    XML_LNG: en
     iri: https://nma.eosc.cz/vocabularies/languages/eng
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ENG
-    XML_LNG: en
-    ISO_639_3: eng
-    ISO_639_2B: eng
-    ISO_639_1: en
-    ISO_639_2T: eng
-- id: epo
   title:
-    cs: esperanto
-    en: Esperanto
-  description:
+    cs: angličtina
+    en: English
+- description:
     en: Esperanto is the most widely spoken constructed international auxiliary language.
       Its name derives from Doktoro Esperanto (‘Esperanto’ translates as ‘one who
       hopes’), the pseudonym under which Ludwig Zamenhof published the first book
       detailing Esperanto, in 1887.This artificial language is Indo-European based,
       both in its lexicon and in the grammatical categories with which it operates.
+  id: epo
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/epo
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: EPO
-    ISO_639_2B: epo
     ISO_639_1: eo
+    ISO_639_2B: epo
+    ISO_639_2T: epo
     ISO_639_3: epo
     XML_LNG: eo
-    ISO_639_2T: epo
-- id: est
+    iri: https://nma.eosc.cz/vocabularies/languages/epo
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: EPO
   title:
-    cs: estonština
-    en: Estonian
-  description:
+    cs: esperanto
+    en: Esperanto
+- description:
     en: Estonian belongs (with Finnish) to the Baltic-Finnic subgroup of the Finno-Ugrian
       languages from the Uralic family. It is the official language of Estonia.Estonian
       represents a transitional form from an agglutinating language to a fusional
       language.
+  id: est
   props:
+    ISO_639_1: et
+    ISO_639_2B: est
+    ISO_639_2T: est
+    ISO_639_3: est
+    XML_LNG: et
     iri: https://nma.eosc.cz/vocabularies/languages/est
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: EST
-    ISO_639_2B: est
-    ISO_639_1: et
-    XML_LNG: et
-    ISO_639_3: est
-    ISO_639_2T: est
-- id: eus
   title:
-    cs: baskičtina
-    en: Basque
-  description:
+    cs: estonština
+    en: Estonian
+- description:
     en: Basque (euskara) is a non Indo-European language of uncertain origin; the
       only living language of Europe that has no known linguistic relatives. It is
       spoken by the Basque people, indigenous to and mainly inhabiting the Basque
       Country, a region spanning an area in north-eastern Spain and south-western
       France.
+  id: eus
   props:
+    ISO_639_1: eu
+    ISO_639_2B: baq
+    ISO_639_2T: eus
+    ISO_639_3: eus
+    XML_LNG: eu
     iri: https://nma.eosc.cz/vocabularies/languages/eus
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: EUS
-    ISO_639_1: eu
-    ISO_639_3: eus
-    ISO_639_2T: eus
-    ISO_639_2B: baq
-    XML_LNG: eu
-- id: ewe
+  title:
+    cs: baskičtina
+    en: Basque
+- description:
+    en: Ewe belongs to the Gbe branch of the Niger–Congo language family. It is spoken
+      in southeastern Ghana.
+  id: ewe
+  props:
+    ISO_639_1: ee
+    ISO_639_2B: ewe
+    ISO_639_2T: ewe
+    ISO_639_3: ewe
+    XML_LNG: ee
+    iri: https://nma.eosc.cz/vocabularies/languages/ewe
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: EWE
   title:
     cs: eweština
     en: Ewe
-  description:
-    en: Ewe belongs to the Gbe branch of the Niger–Congo language family. It is spoken
-      in southeastern Ghana.
+- description:
+    en: Faroese is a North Germanic language spoken in the Faroe Islands.Faroese grammar
+      is related and very similar to that of modern Icelandic and Old Norse.
+  id: fao
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ewe
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: EWE
-    XML_LNG: ee
-    ISO_639_1: ee
-    ISO_639_3: ewe
-    ISO_639_2B: ewe
-    ISO_639_2T: ewe
-- id: fao
+    ISO_639_1: fo
+    ISO_639_2B: fao
+    ISO_639_2T: fao
+    ISO_639_3: fao
+    XML_LNG: fo
+    iri: https://nma.eosc.cz/vocabularies/languages/fao
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FAO
   title:
     cs: faerština
     en: Faroese
-  description:
-    en: Faroese is a North Germanic language spoken in the Faroe Islands.Faroese grammar
-      is related and very similar to that of modern Icelandic and Old Norse.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/fao
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FAO
-    XML_LNG: fo
-    ISO_639_2T: fao
-    ISO_639_1: fo
-    ISO_639_3: fao
-    ISO_639_2B: fao
-- id: fas
-  title:
-    cs: perština
-    en: Persian
-  description:
+- description:
     en: Persian is an Iranian language within the Indo-Iranian branch of the Indo-European
       languages and the only South-Western Iranian language. Apart from being the
       majority language and the national language in Iran (Persia), a different dialect
@@ -571,358 +567,358 @@
       Modern Iranian Persian and Afghan Persian are written using a modified variant
       of the Arabic alphabet. Tajik Persian is typically written in a modified version
       of the Cyrillic alphabet.
+  id: fas
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/fas
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FAS
     ISO_639_1: fa
+    ISO_639_2B: per
     ISO_639_2T: fas
     ISO_639_3: fas
-    ISO_639_2B: per
     XML_LNG: fa
-- id: fij
+    iri: https://nma.eosc.cz/vocabularies/languages/fas
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FAS
+  title:
+    cs: perština
+    en: Persian
+- description:
+    en: Fijian is a Malayo-Polynesian language. It is one of the official languages
+      of Fiji.
+  id: fij
+  props:
+    ISO_639_1: fj
+    ISO_639_2B: fij
+    ISO_639_2T: fij
+    ISO_639_3: fij
+    XML_LNG: fj
+    iri: https://nma.eosc.cz/vocabularies/languages/fij
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FIJ
   title:
     cs: fidžijština
     en: Fijian
-  description:
-    en: Fijian is a Malayo-Polynesian language. It is one of the official languages
-      of Fiji.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/fij
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FIJ
-    ISO_639_2T: fij
-    ISO_639_1: fj
-    ISO_639_2B: fij
-    XML_LNG: fj
-    ISO_639_3: fij
-- id: fin
-  title:
-    cs: finština
-    en: Finnish
-  description:
+- description:
     en: Finnish belongs (with Estonian) to the Baltic-Finnic subgroup of the Finno-Ugrian
       languages from the Uralic family. Finnish is one of two official languages of
       Finland (the other being Swedish).Finnish is typologically between fusional
       and agglutinative languages.
+  id: fin
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/fin
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FIN
+    ISO_639_1: fi
+    ISO_639_2B: fin
     ISO_639_2T: fin
     ISO_639_3: fin
-    ISO_639_1: fi
     XML_LNG: fi
-    ISO_639_2B: fin
-- id: fra
+    iri: https://nma.eosc.cz/vocabularies/languages/fin
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FIN
   title:
-    cs: francouzština
-    en: French
-  description:
+    cs: finština
+    en: Finnish
+- description:
     en: French is the most northerly of the Romance languages and is an official language
       in 29 countries. It is an official language of all United Nations agencies and
       of a large number of international organisations. Outside of France, the highest
       numbers of French speakers are found in Canada, Belgium, Switzerland and Luxembourg.
+  id: fra
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/fra
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FRA
+    ISO_639_1: fr
+    ISO_639_2B: fre
     ISO_639_2T: fra
     ISO_639_3: fra
-    ISO_639_1: fr
     XML_LNG: fr
-    ISO_639_2B: fre
-- id: fry
+    iri: https://nma.eosc.cz/vocabularies/languages/fra
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FRA
   title:
-    cs: fríština
-    en: Frisian
-  description:
+    cs: francouzština
+    en: French
+- description:
     en: 'Frisian belongs, together with English, to the North Sea subgroup of the
       West Germanic languages. It is spoken by Frisian ethnic groups, who live mainly
       in the northern part of the Netherlands.There are three varieties of Frisian:
       West Frisian, Saterland Frisian, and North Frisian.'
+  id: fry
   props:
+    ISO_639_1: fy
+    ISO_639_2B: fry
+    ISO_639_2T: fry
+    ISO_639_3: fry
+    XML_LNG: fy
     iri: https://nma.eosc.cz/vocabularies/languages/fry
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: FRY
-    XML_LNG: fy
-    ISO_639_2T: fry
-    ISO_639_1: fy
-    ISO_639_3: fry
-    ISO_639_2B: fry
-- id: ful
   title:
-    cs: fulbština
-    en: Fula
-  description:
+    cs: fríština
+    en: Frisian
+- description:
     en: Fula – also known as Fulah – is a Senegambian language spoken across some
       20 countries in West and Central Africa. Along with other related languages
       such as Serer and Wolof, it belongs to the Senegambian branch within the Niger–Congo
       family, which does not have tones. It is spoken as a first language by the Fula
       people. The language mainly uses a version of the Latin alphabet but Arabic
       script is also used and there was a plan to use a special Adlam script.
+  id: ful
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ful
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FUL
     ISO_639_1: ff
     ISO_639_2B: ful
-    ISO_639_3: ful
     ISO_639_2T: ful
+    ISO_639_3: ful
     XML_LNG: ff
-- id: gla
+    iri: https://nma.eosc.cz/vocabularies/languages/ful
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: FUL
   title:
-    cs: skotská gaelština
-    en: Scottish Gaelic
-  description:
+    cs: fulbština
+    en: Fula
+- description:
     en: Scottish Gaelic, sometimes also called Gaelic, is a Celtic language native
       to Scotland.Gaelic is an official language in Scotland and it is a recognised
       minority language of the United Kingdom, protected under the European Charter
       for Regional or Minority Languages.
+  id: gla
   props:
+    ISO_639_1: gd
+    ISO_639_2B: gla
+    ISO_639_2T: gla
+    ISO_639_3: gla
+    XML_LNG: gd
     iri: https://nma.eosc.cz/vocabularies/languages/gla
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: GLA
-    ISO_639_3: gla
-    ISO_639_2T: gla
-    ISO_639_2B: gla
-    ISO_639_1: gd
-    XML_LNG: gd
-- id: gle
   title:
-    cs: irština
-    en: Irish
-  description:
+    cs: skotská gaelština
+    en: Scottish Gaelic
+- description:
     en: Irish, Irish Gaelic, or Gaelic (Gaeilge) belongs to the Gaelic branch of the
       Celtic family of languages, originating in Ireland and historically spoken by
       the Irish people.Irish is spoken as a first language by a small minority of
       Irish people, and as a second language by a rather larger group. Irish enjoys
       constitutional status as the national and first official language of the Republic
       of Ireland, and is an officially recognised minority language in Northern Ireland.
+  id: gle
   props:
+    ISO_639_1: ga
+    ISO_639_2B: gle
+    ISO_639_2T: gle
+    ISO_639_3: gle
+    XML_LNG: ga
     iri: https://nma.eosc.cz/vocabularies/languages/gle
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: GLE
-    ISO_639_1: ga
-    XML_LNG: ga
-    ISO_639_3: gle
-    ISO_639_2T: gle
-    ISO_639_2B: gle
-- id: glg
   title:
-    cs: galicijština
-    en: Galician
-  description:
+    cs: irština
+    en: Irish
+- description:
     en: Galician (galego) is an Indo-European language of the Western Ibero-Romance
       branch, closely related to Portuguese. It is spoken mainly in the autonomous
       region of Galicia, located in north-western Spain.
+  id: glg
   props:
+    ISO_639_1: gl
+    ISO_639_2B: glg
+    ISO_639_2T: glg
+    ISO_639_3: glg
+    XML_LNG: gl
     iri: https://nma.eosc.cz/vocabularies/languages/glg
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: GLG
-    XML_LNG: gl
-    ISO_639_3: glg
-    ISO_639_1: gl
-    ISO_639_2T: glg
-    ISO_639_2B: glg
-- id: glv
+  title:
+    cs: galicijština
+    en: Galician
+- description:
+    en: Manx is a Celtic language. It is one of the official languages of the Isle
+      of Man.
+  id: glv
+  props:
+    ISO_639_1: gv
+    ISO_639_2B: glv
+    ISO_639_2T: glv
+    ISO_639_3: glv
+    XML_LNG: gv
+    iri: https://nma.eosc.cz/vocabularies/languages/glv
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: GLV
   title:
     cs: manština
     en: Manx
-  description:
-    en: Manx is a Celtic language. It is one of the official languages of the Isle
-      of Man.
+- description:
+    en: Guarani is a Tupian indigenous language. It is one of the official languages
+      of Bolivia and Paraguay.
+  id: grn
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/glv
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: GLV
-    ISO_639_2B: glv
-    ISO_639_3: glv
-    ISO_639_1: gv
-    ISO_639_2T: glv
-    XML_LNG: gv
-- id: grn
+    ISO_639_1: gn
+    ISO_639_2B: grn
+    ISO_639_2T: grn
+    ISO_639_3: grn
+    XML_LNG: gn
+    iri: https://nma.eosc.cz/vocabularies/languages/grn
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: GRN
   title:
     cs: guaraníjština
     en: Guarani
-  description:
-    en: Guarani is a Tupian indigenous language. It is one of the official languages
-      of Bolivia and Paraguay.
+- description:
+    en: Haitian is a French-based creole language. It is one of the official languages
+      of Haiti.
+  id: hat
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/grn
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: GRN
-    ISO_639_1: gn
-    ISO_639_2B: grn
-    XML_LNG: gn
-    ISO_639_2T: grn
-    ISO_639_3: grn
-- id: hat
+    ISO_639_1: ht
+    ISO_639_2B: hat
+    ISO_639_2T: hat
+    ISO_639_3: hat
+    XML_LNG: ht
+    iri: https://nma.eosc.cz/vocabularies/languages/hat
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HAT
   title:
     cs: haitská kreolská francouzština
     en: Haitian
-  description:
-    en: Haitian is a French-based creole language. It is one of the official languages
-      of Haiti.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/hat
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HAT
-    ISO_639_1: ht
-    ISO_639_2B: hat
-    XML_LNG: ht
-    ISO_639_2T: hat
-    ISO_639_3: hat
-- id: hau
-  title:
-    cs: hauština
-    en: Hausa
-  description:
+- description:
     en: Hausa is a Chadic language spoken by the Hausa people, mainly within the northern
       half of Nigeria and the southern half of Niger, and with significant minorities
       in Chad, Benin and Cameroon. Hausa is a member of the Afroasiatic language family
       and is the most widely spoken language within the Chadic branch of that family.
       Hausa’s modern official orthography is a Latin-based alphabet called boko. Hausa
       has also been written in Ajami, an Arabic alphabet.
+  id: hau
   props:
+    ISO_639_1: ha
+    ISO_639_2B: hau
+    ISO_639_2T: hau
+    ISO_639_3: hau
+    XML_LNG: ha
     iri: https://nma.eosc.cz/vocabularies/languages/hau
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HAU
-    ISO_639_2B: hau
-    XML_LNG: ha
-    ISO_639_3: hau
-    ISO_639_1: ha
-    ISO_639_2T: hau
-- id: hbs
   title:
-    cs: srbochorvatština
-    en: Serbo-Croatian
-  description:
+    cs: hauština
+    en: Hausa
+- description:
     en: Serbo-Croatian, also called Serbo-Croat, Serbo-Croat-Bosnian (SCB), or Bosnian-Croatian-Serbian
       (BCS), is a South Slavic language and the primary language of Serbia, Croatia,
       Bosnia and Herzegovina, and Montenegro. It is a pluricentric language with four
       mutually intelligible standard varieties. The term Serbo-Croatian was widely
       used in former Yougoslavia.To write Serbo-Croatian, Cyrillic and Latin scripts
       were equally used and easily interchangeable.
+  id: hbs
   props:
+    ISO_639_1: sh
+    ISO_639_3: hbs
+    XML_LNG: sh
     iri: https://nma.eosc.cz/vocabularies/languages/hbs
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HBS
-    XML_LNG: sh
-    ISO_639_3: hbs
-    ISO_639_1: sh
-- id: heb
   title:
-    cs: hebrejština
-    en: Hebrew
-  description:
+    cs: srbochorvatština
+    en: Serbo-Croatian
+- description:
     en: Hebrew is a North-Western Semitic language of the Afroasiatic language family,
       employed since biblical times by Jews. It was revived as a spoken and literary
       language in the 19th century. Modern Hebrew is one of the two official languages
       of Israel (the other being Arabic), while Classical Hebrew is used for prayer
       or study in Jewish communities around the world today.Hebrew has always employed
       a Hebrew script.
+  id: heb
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/heb
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HEB
-    XML_LNG: he
+    ISO_639_1: he
     ISO_639_2B: heb
     ISO_639_2T: heb
-    ISO_639_1: he
     ISO_639_3: heb
-- id: hin
+    XML_LNG: he
+    iri: https://nma.eosc.cz/vocabularies/languages/heb
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HEB
   title:
-    cs: hindština
-    en: Hindi
-  description:
+    cs: hebrejština
+    en: Hebrew
+- description:
     en: Hindi, or more precisely Modern Standard Hindi, is a standardised and Sanskritised
       register of the Hindustani language. Modern Standard Hindi is one of the official
       languages of India. Hindi is the fourth-most-widely spoken language in the world,
       but this includes not only Hindu speakers of Hindustani, but also people who
       identify as native speakers of related languages who consider their speech to
       be a dialect of Hindi, the Hindi belt.Hindi is written in Devanagari script.
+  id: hin
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/hin
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HIN
-    ISO_639_2T: hin
-    XML_LNG: hi
-    ISO_639_3: hin
     ISO_639_1: hi
     ISO_639_2B: hin
-- id: hmo
+    ISO_639_2T: hin
+    ISO_639_3: hin
+    XML_LNG: hi
+    iri: https://nma.eosc.cz/vocabularies/languages/hin
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HIN
   title:
-    cs: hiri motu
-    en: Hiri Motu
-  description:
+    cs: hindština
+    en: Hindi
+- description:
     en: Hiri Motu is a simplified version of the Austronesian language Motu. It is
       one of the official languages of Papua New Guinea.
+  id: hmo
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/hmo
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HMO
+    ISO_639_1: ho
+    ISO_639_2B: hmo
     ISO_639_2T: hmo
     ISO_639_3: hmo
     XML_LNG: ho
-    ISO_639_2B: hmo
-    ISO_639_1: ho
-- id: hrv
+    iri: https://nma.eosc.cz/vocabularies/languages/hmo
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HMO
   title:
-    cs: chorvatština
-    en: Croatian
-  description:
+    cs: hiri motu
+    en: Hiri Motu
+- description:
     en: Croatian is the standardised variety of the Serbo-Croatian language used by
       Croats, principally in Croatia and in Bosnia and Herzegovina. Standard Croatian
       is based on the Shtokavian dialect of Serbo-Croatian.Croatian uses exclusively
       the Latin alphabet.
+  id: hrv
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/hrv
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HRV
     ISO_639_1: hr
-    XML_LNG: hr
-    ISO_639_3: hrv
     ISO_639_2B: hrv
     ISO_639_2T: hrv
-- id: hun
+    ISO_639_3: hrv
+    XML_LNG: hr
+    iri: https://nma.eosc.cz/vocabularies/languages/hrv
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HRV
   title:
-    cs: maďarština
-    en: Hungarian
-  description:
+    cs: chorvatština
+    en: Croatian
+- description:
     en: Hungarian (Magyar), like Finnish and Estonian, belongs to the Finno-Ugric
       branch of the Uralic language family. It is the official language of Hungary
       and is also spoken by communities of Hungarian people in neighbouring countries.In
       Hungarian, surnames precede Christian names.
+  id: hun
   props:
+    ISO_639_1: hu
+    ISO_639_2B: hun
+    ISO_639_2T: hun
+    ISO_639_3: hun
+    XML_LNG: hu
     iri: https://nma.eosc.cz/vocabularies/languages/hun
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: HUN
-    ISO_639_2T: hun
-    XML_LNG: hu
-    ISO_639_2B: hun
-    ISO_639_1: hu
-    ISO_639_3: hun
-- id: hye
   title:
-    cs: arménština
-    en: Armenian
-  description:
+    cs: maďarština
+    en: Hungarian
+- description:
     en: The Armenian language (hayeren) forms an independent branch of the Indo-European
       family. It is spoken in the Republic of Armenia (where it is the official language),
       in Nagorno-Karabakh, in north-western Iran and in the Armenian diaspora.Armenian
       has its own unique script, the Armenian alphabet, invented by Mesrop Mashtots
       in the 5th century AD.
+  id: hye
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/hye
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HYE
+    ISO_639_1: hy
+    ISO_639_2B: arm
     ISO_639_2T: hye
     ISO_639_3: hye
     XML_LNG: hy
-    ISO_639_2B: arm
-    ISO_639_1: hy
-- id: ibo
+    iri: https://nma.eosc.cz/vocabularies/languages/hye
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: HYE
   title:
-    cs: igboština
-    en: Igbo
-  description:
+    cs: arménština
+    en: Armenian
+- description:
     en: Igbo belongs to the Igboid branch of the Niger–Congo language family. It is
       the principal native language of the Igbo people, an ethnic group of southeastern
       Nigeria.
+  id: ibo
   props:
+    ISO_639_1: ig
+    ISO_639_2B: ibo
+    ISO_639_2T: ibo
+    ISO_639_3: ibo
+    XML_LNG: ig
     iri: https://nma.eosc.cz/vocabularies/languages/ibo
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: IBO
-    ISO_639_1: ig
-    ISO_639_2T: ibo
-    ISO_639_2B: ibo
-    XML_LNG: ig
-    ISO_639_3: ibo
-- id: ina
   title:
-    cs: interlingua
-    en: Interlingua
-  description:
+    cs: igboština
+    en: Igbo
+- description:
     en: 'Interlingua is an international auxiliary language (IAL), a modern version
       of Latin, developed between 1937 and 1951 by the International Auxiliary Language
       Association. It ranks among the top three most widely used IALs (after Esperanto
@@ -933,75 +929,75 @@
       easy to learn. Conversely, it is used as a rapid introduction to many natural
       languages. Interlingua literature maintains that (written) Interlingua is comprehensible
       to the hundreds of millions of people who speak a Romance language.'
+  id: ina
   props:
+    ISO_639_1: ia
+    ISO_639_2B: ina
+    ISO_639_2T: ina
+    ISO_639_3: ina
+    XML_LNG: ia
     iri: https://nma.eosc.cz/vocabularies/languages/ina
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: INA
-    ISO_639_2B: ina
-    ISO_639_1: ia
-    ISO_639_2T: ina
-    XML_LNG: ia
-    ISO_639_3: ina
-- id: ind
   title:
-    cs: indonéština
-    en: Indonesian
-  description:
+    cs: interlingua
+    en: Interlingua
+- description:
     en: Indonesian is the official language of Indonesia. It is a standardised register
       of Malay, an Austronesian language which has been used as a lingua franca in
       the Indonesian archipelago for centuries. Most Indonesians also speak one of
       more than 700 indigenous languages. Most formal education, and nearly all national
       media and other forms of communication, are conducted in Indonesian. The Indonesian
       name for the language is Bahasa Indonesia (literally ‘the language of Indonesia’).
+  id: ind
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ind
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: IND
-    ISO_639_3: ind
-    XML_LNG: id
+    ISO_639_1: id
     ISO_639_2B: ind
     ISO_639_2T: ind
-    ISO_639_1: id
-- id: isl
+    ISO_639_3: ind
+    XML_LNG: id
+    iri: https://nma.eosc.cz/vocabularies/languages/ind
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: IND
   title:
-    cs: islandština
-    en: Icelandic
-  description:
+    cs: indonéština
+    en: Indonesian
+- description:
     en: Icelandic is an Indo-European language belonging to the North Germanic or
       Nordic branch of the Germanic languages. The vast majority of Icelandic speakers
       live in Iceland. Most Icelanders do not have surnames but patronymics. Forenames
       are followed by the genitive form of the father’s (or the mother’s) Christian
       name completed by son (son of …) or dóttir (daughter of …), e.g. Jónsson, Jónsdóttir
       if the name of the father is Jón.
+  id: isl
   props:
+    ISO_639_1: is
+    ISO_639_2B: ice
+    ISO_639_2T: isl
+    ISO_639_3: isl
+    XML_LNG: is
     iri: https://nma.eosc.cz/vocabularies/languages/isl
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ISL
-    XML_LNG: is
-    ISO_639_2B: ice
-    ISO_639_1: is
-    ISO_639_3: isl
-    ISO_639_2T: isl
-- id: ita
   title:
-    cs: italština
-    en: Italian
-  description:
+    cs: islandština
+    en: Icelandic
+- description:
     en: Italian is a member of the Romance language group, spoken mainly in south
       Europe. Among the Romance languages, Italian is the closest to Latin in terms
       of vocabulary. The Italian language adopted by the state after the unification
       of Italy is based on Tuscan.Many Italian speakers are native bilinguals of both
       standardised Italian and other regional variants.
+  id: ita
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ita
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ITA
     ISO_639_1: it
+    ISO_639_2B: ita
+    ISO_639_2T: ita
     ISO_639_3: ita
     XML_LNG: it
-    ISO_639_2T: ita
-    ISO_639_2B: ita
-- id: jpn
+    iri: https://nma.eosc.cz/vocabularies/languages/ita
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ITA
   title:
-    cs: japonština
-    en: Japanese
-  description:
+    cs: italština
+    en: Italian
+- description:
     en: Japanese is an East Asian language spoken primarily in Japan. It is a member
       of the Japonic (or Japanese-Ryukyuan) language family, whose relation to other
       language groups is debated. Japanese has no genetic relationship with Chinese,
@@ -1011,19 +1007,19 @@
       hiragana and katakana. Latin script is used in a limited way, such as for imported
       acronyms, and the numeral system uses mostly Arabic numerals, alongside traditional
       Chinese numerals.
+  id: jpn
   props:
+    ISO_639_1: ja
+    ISO_639_2B: jpn
+    ISO_639_2T: jpn
+    ISO_639_3: jpn
+    XML_LNG: ja
     iri: https://nma.eosc.cz/vocabularies/languages/jpn
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: JPN
-    XML_LNG: ja
-    ISO_639_2B: jpn
-    ISO_639_3: jpn
-    ISO_639_2T: jpn
-    ISO_639_1: ja
-- id: kal
   title:
-    cs: Kalaallisut
-    en: Kalaallisut
-  description:
+    cs: japonština
+    en: Japanese
+- description:
     en: Kalaallisut, also known as West Greenlandic, is the official language of Greenland.
       It is spoken by the majority of the inhabitants of Greenland, as well as by
       thousands of Greenlandic Inuit in Denmark. The standard form of Greenlandic
@@ -1034,85 +1030,85 @@
       Eskaleut languages are polysynthetic, allowing the creation of long words by
       stringing together roots and suffixes so that a whole sentence can be rendered
       as a single word.
+  id: kal
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/kal
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KAL
-    ISO_639_3: kal
+    ISO_639_1: kl
     ISO_639_2B: kal
     ISO_639_2T: kal
+    ISO_639_3: kal
     XML_LNG: kl
-    ISO_639_1: kl
-- id: kat
+    iri: https://nma.eosc.cz/vocabularies/languages/kal
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KAL
   title:
-    cs: gruzínština
-    en: Georgian
-  description:
+    cs: Kalaallisut
+    en: Kalaallisut
+- description:
     en: Georgian (Kartuli) is the most widely spoken of the Caucasian languages. It
       is the official language of Georgia.Georgian is written in its own unique writing
       system, the Georgian script.Georgian is the literary language for all regional
       subgroups of Georgians, including those who speak other Kartvelian languages.
+  id: kat
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/kat
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KAT
-    XML_LNG: ka
+    ISO_639_1: ka
     ISO_639_2B: geo
     ISO_639_2T: kat
-    ISO_639_1: ka
     ISO_639_3: kat
-- id: kaz
+    XML_LNG: ka
+    iri: https://nma.eosc.cz/vocabularies/languages/kat
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KAT
   title:
-    cs: kazaština
-    en: Kazakh
-  description:
+    cs: gruzínština
+    en: Georgian
+- description:
     en: Kazakh is a Turkic language belonging to the Kipchak (or North-Western Turkic)
       branch. Kazakh is primarily a Central Asian language and is spoken in Europe
       in the region between the lower Volga and the frontier of Kazakhstan.Today,
       Kazakh is written in Cyrillic in Kazakhstan and Mongolia, while the Kazakh-speakers
       in China use an Arabic-derived alphabet similar to that used to write Uyghur.
+  id: kaz
   props:
+    ISO_639_1: kk
+    ISO_639_2B: kaz
+    ISO_639_2T: kaz
+    ISO_639_3: kaz
+    XML_LNG: kk
     iri: https://nma.eosc.cz/vocabularies/languages/kaz
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KAZ
-    ISO_639_2B: kaz
-    ISO_639_3: kaz
-    ISO_639_2T: kaz
-    ISO_639_1: kk
-    XML_LNG: kk
-- id: khm
   title:
-    cs: khmerština
-    en: Khmer
-  description:
+    cs: kazaština
+    en: Kazakh
+- description:
     en: Khmer, or Cambodian, is the second most widely spoken Austroasiatic language
       (after Vietnamese). It is the language of the Khmer people and the official
       language of Cambodia.Khmer is primarily an analytic, isolating language which
       is not tonal.The Khmer language is written with an abugida ‘Khmer script’.
+  id: khm
   props:
+    ISO_639_1: km
+    ISO_639_2B: khm
+    ISO_639_2T: khm
+    ISO_639_3: khm
+    XML_LNG: km
     iri: https://nma.eosc.cz/vocabularies/languages/khm
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KHM
-    ISO_639_3: khm
-    ISO_639_2T: khm
-    ISO_639_2B: khm
-    ISO_639_1: km
-    XML_LNG: km
-- id: kin
+  title:
+    cs: khmerština
+    en: Khmer
+- description:
+    en: Kinyarwanda is a Bantu language. It is one of the official languages of Rwanda.
+  id: kin
+  props:
+    ISO_639_1: rw
+    ISO_639_2B: kin
+    ISO_639_2T: kin
+    ISO_639_3: kin
+    XML_LNG: rw
+    iri: https://nma.eosc.cz/vocabularies/languages/kin
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KIN
   title:
     cs: rwandština
     en: Kinyarwanda
-  description:
-    en: Kinyarwanda is a Bantu language. It is one of the official languages of Rwanda.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/kin
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KIN
-    ISO_639_2B: kin
-    XML_LNG: rw
-    ISO_639_1: rw
-    ISO_639_3: kin
-    ISO_639_2T: kin
-- id: kir
-  title:
-    cs: kyrgyzština
-    en: Kyrgyz
-  description:
+- description:
     en: Kyrgyz is a Turkic language spoken in Kyrgyzstan as well as China, Afghanistan,
       Kazakhstan, Tajikistan, Turkey, Uzbekistan, Pakistan and Russia. Kyrgyz is a
       member of the Kyrgyz–Kipchak subgroup of the Kypchak languages, and modern-day
@@ -1121,33 +1117,33 @@
       so to this day, though some Kyrgyz still use the Arabic alphabet. There was
       a popular idea among some Kyrgyz people to make a transition to the Latin alphabet,
       but the plan has not been implemented yet.
+  id: kir
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/kir
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KIR
     ISO_639_1: ky
-    ISO_639_3: kir
-    XML_LNG: ky
     ISO_639_2B: kir
     ISO_639_2T: kir
-- id: kon
+    ISO_639_3: kir
+    XML_LNG: ky
+    iri: https://nma.eosc.cz/vocabularies/languages/kir
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KIR
+  title:
+    cs: kyrgyzština
+    en: Kyrgyz
+- description:
+    en: Kikongo is a Bantu language.
+  id: kon
+  props:
+    ISO_639_1: kg
+    ISO_639_2B: kon
+    ISO_639_2T: kon
+    ISO_639_3: kon
+    XML_LNG: kg
+    iri: https://nma.eosc.cz/vocabularies/languages/kon
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KON
   title:
     cs: kikongo
     en: Kikongo
-  description:
-    en: Kikongo is a Bantu language.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/kon
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: KON
-    ISO_639_1: kg
-    ISO_639_3: kon
-    ISO_639_2B: kon
-    XML_LNG: kg
-    ISO_639_2T: kon
-- id: kor
-  title:
-    cs: korejština
-    en: Korean
-  description:
+- description:
     en: Korean is the official language of South Korea and North Korea. For over a
       millennium, Korean was written with adapted Chinese characters called hanja,
       complemented by phonetic systems like hyangchal, gugyeol, and idu. In the 15th
@@ -1155,56 +1151,56 @@
       the Great, but it only came into widespread use in the 20th century.Most historical
       linguists classify Korean as a isolate language with no known relationship to
       any other languages.
+  id: kor
   props:
+    ISO_639_1: ko
+    ISO_639_2B: kor
+    ISO_639_2T: kor
+    ISO_639_3: kor
+    XML_LNG: ko
     iri: https://nma.eosc.cz/vocabularies/languages/kor
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KOR
-    ISO_639_3: kor
-    ISO_639_2T: kor
-    ISO_639_1: ko
-    XML_LNG: ko
-    ISO_639_2B: kor
-- id: kur
   title:
-    cs: kurdština
-    en: Kurdish
-  description:
+    cs: korejština
+    en: Korean
+- description:
     en: Kurdish is a member of the Iranian subgroup of the Indo-European languages,
       spoken by the Kurdish people in Iran, Iraq, Turkey and Syria. The term ‘Kurdish
       languages’ is also used instead of ‘Kurdish language’ because the dialects are
       not mutually intelligible without acquired bilingualism and the languages spoken
       by Kurds do not form a linguistic group. The principal Northern dialect, Kurmanji
       is written in the Latin alphabet while others use the Arabic script.
+  id: kur
   props:
+    ISO_639_1: ku
+    ISO_639_2B: kur
+    ISO_639_2T: kur
+    ISO_639_3: kur
+    XML_LNG: ku
     iri: https://nma.eosc.cz/vocabularies/languages/kur
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: KUR
-    ISO_639_2B: kur
-    ISO_639_3: kur
-    ISO_639_2T: kur
-    XML_LNG: ku
-    ISO_639_1: ku
-- id: lao
   title:
-    cs: laoština
-    en: Lao
-  description:
+    cs: kurdština
+    en: Kurdish
+- description:
     en: Lao or Laotian is a tonal language of the Tai–Kadai language family. It is
       the official language of Laos, and also spoken in the north-east of Thailand.Lao,
       like many languages in Laos, is written in the Lao script, which is an abugida
       script.Although there is no official standard, the Vientiane dialect has become
       the de facto standard.
+  id: lao
   props:
+    ISO_639_1: lo
+    ISO_639_2B: lao
+    ISO_639_2T: lao
+    ISO_639_3: lao
+    XML_LNG: lo
     iri: https://nma.eosc.cz/vocabularies/languages/lao
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: LAO
-    ISO_639_2B: lao
-    ISO_639_3: lao
-    ISO_639_1: lo
-    ISO_639_2T: lao
-    XML_LNG: lo
-- id: lat
   title:
-    cs: latina
-    en: Latin
-  description:
+    cs: laoština
+    en: Lao
+- description:
     en: Latin is an extinct Indo-European language which was spoken in the ancient
       city of Rome and its empire. Modern Romance languages are continuations of dialectal
       forms (vulgar Latin) of the language.Additionally many students, scholars, and
@@ -1212,148 +1208,148 @@
       in some educational institutions around the world. Latin is still used in the
       creation of new words in modern languages of many different families, and largely
       in biological taxonomy.
+  id: lat
   props:
+    ISO_639_1: la
+    ISO_639_2B: lat
+    ISO_639_2T: lat
+    ISO_639_3: lat
+    XML_LNG: la
     iri: https://nma.eosc.cz/vocabularies/languages/lat
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: LAT
-    ISO_639_2B: lat
-    ISO_639_3: lat
-    ISO_639_1: la
-    XML_LNG: la
-    ISO_639_2T: lat
-- id: lav
   title:
-    cs: lotyština
-    en: Latvian
-  description:
+    cs: latina
+    en: Latin
+- description:
     en: Latvian is one of the two living members of the Baltic languages, the other
       being Lithuanian. It is the official language of Latvia.Latvian is more innovative,
       especially in morphology than Lithuanian.
+  id: lav
   props:
+    ISO_639_1: lv
+    ISO_639_2B: lav
+    ISO_639_2T: lav
+    ISO_639_3: lav
+    XML_LNG: lv
     iri: https://nma.eosc.cz/vocabularies/languages/lav
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: LAV
-    XML_LNG: lv
-    ISO_639_3: lav
-    ISO_639_2T: lav
-    ISO_639_2B: lav
-    ISO_639_1: lv
-- id: lin
+  title:
+    cs: lotyština
+    en: Latvian
+- description:
+    en: Lingala is a Bantu language.
+  id: lin
+  props:
+    ISO_639_1: ln
+    ISO_639_2B: lin
+    ISO_639_2T: lin
+    ISO_639_3: lin
+    XML_LNG: ln
+    iri: https://nma.eosc.cz/vocabularies/languages/lin
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: LIN
   title:
     cs: lingalština
     en: Lingala
-  description:
-    en: Lingala is a Bantu language.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/lin
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: LIN
-    ISO_639_3: lin
-    ISO_639_1: ln
-    XML_LNG: ln
-    ISO_639_2B: lin
-    ISO_639_2T: lin
-- id: lit
-  title:
-    cs: litevština
-    en: Lithuanian
-  description:
+- description:
     en: Lithuanian is one of the two living members of the Baltic languages, the other
       being Latvian. It is the official language of Lithuania.The Lithuanian language
       is often said to be the most conservative living Indo-European language, retaining
       many features of Proto-Indo-European now lost in other Indo-European languages.
+  id: lit
   props:
+    ISO_639_1: lt
+    ISO_639_2B: lit
+    ISO_639_2T: lit
+    ISO_639_3: lit
+    XML_LNG: lt
     iri: https://nma.eosc.cz/vocabularies/languages/lit
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: LIT
-    ISO_639_3: lit
-    ISO_639_2T: lit
-    ISO_639_2B: lit
-    XML_LNG: lt
-    ISO_639_1: lt
-- id: ltz
   title:
-    cs: lucemburština
-    en: Luxembourgish
-  description:
+    cs: litevština
+    en: Lithuanian
+- description:
     en: Luxembourgish is a Germanic language which belongs to the West Moselle Franconian
       subgroup of German dialects. Luxembourgish is spoken mainly in the Grand Duchy
       of Luxembourg.
+  id: ltz
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ltz
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: LTZ
+    ISO_639_1: lb
     ISO_639_2B: ltz
     ISO_639_2T: ltz
-    XML_LNG: lb
     ISO_639_3: ltz
-    ISO_639_1: lb
-- id: mah
+    XML_LNG: lb
+    iri: https://nma.eosc.cz/vocabularies/languages/ltz
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: LTZ
+  title:
+    cs: lucemburština
+    en: Luxembourgish
+- description:
+    en: Marshallese is a Malayo-Polynesian language. It is one of the official languages
+      of the Marshall Islands.
+  id: mah
+  props:
+    ISO_639_1: mh
+    ISO_639_2B: mah
+    ISO_639_2T: mah
+    ISO_639_3: mah
+    XML_LNG: mh
+    iri: https://nma.eosc.cz/vocabularies/languages/mah
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MAH
   title:
     cs: maršalština
     en: Marshallese
-  description:
-    en: Marshallese is a Malayo-Polynesian language. It is one of the official languages
-      of the Marshall Islands.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/mah
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MAH
-    ISO_639_3: mah
-    ISO_639_2B: mah
-    ISO_639_1: mh
-    ISO_639_2T: mah
-    XML_LNG: mh
-- id: mkd
-  title:
-    cs: makedonština
-    en: Macedonian
-  description:
+- description:
     en: Macedonian is a member of the southern subgroup of the Slavic languages, spoken
       principally in North Macedonia.
+  id: mkd
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/mkd
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MKD
+    ISO_639_1: mk
     ISO_639_2B: mac
     ISO_639_2T: mkd
     ISO_639_3: mkd
-    ISO_639_1: mk
     XML_LNG: mk
-- id: mlg
+    iri: https://nma.eosc.cz/vocabularies/languages/mkd
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MKD
   title:
-    cs: malgaština
-    en: Malagasy
-  description:
+    cs: makedonština
+    en: Macedonian
+- description:
     en: Malagasy is an Austronesian language and the national language of Madagascar.
       Most people in Madagascar speak it as a first language as do some people of
       Malagasy descent elsewhere. The Malagasy language is the westernmost member
       of the Malayo-Polynesian branch of the Austronesian language family. It is related
       to the Malayo-Polynesian languages of Indonesia, Malaysia, and the Philippines,
       and more closely to the East Barito languages spoken in Borneo.
+  id: mlg
   props:
+    ISO_639_1: mg
+    ISO_639_2B: mlg
+    ISO_639_2T: mlg
+    ISO_639_3: mlg
+    XML_LNG: mg
     iri: https://nma.eosc.cz/vocabularies/languages/mlg
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MLG
-    ISO_639_1: mg
-    XML_LNG: mg
-    ISO_639_2T: mlg
-    ISO_639_2B: mlg
-    ISO_639_3: mlg
-- id: mlt
   title:
-    cs: maltština
-    en: Maltese
-  description:
+    cs: malgaština
+    en: Malagasy
+- description:
     en: Maltese is a Semitic language, historically a dialect of Arabic, spoken in
       Malta. About half of the vocabulary is derived from standard Italian and Sicilian;
       English words also make up an important part of the Maltese vocabulary.It is
       the only Semitic language written in the Latin script in its standard form.
+  id: mlt
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/mlt
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MLT
-    XML_LNG: mt
     ISO_639_1: mt
+    ISO_639_2B: mlt
     ISO_639_2T: mlt
     ISO_639_3: mlt
-    ISO_639_2B: mlt
-- id: mol
+    XML_LNG: mt
+    iri: https://nma.eosc.cz/vocabularies/languages/mlt
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MLT
   title:
-    cs: moldavština
-    en: Moldavian
-  description:
+    cs: maltština
+    en: Maltese
+- description:
     en: Moldavian or Moldovan is a name of the Romanian language in the Republic of
       Moldova. The identity between the mother tongues of the Moldovans and Romanians
       has been officially acknowledged since the reintroduction of the Latin script
@@ -1363,51 +1359,51 @@
       of Moldova adopted a law defining ‘Moldovan’ and ‘Romanian’ as designations
       for the same language (glottonyms). The breakaway region of Transnistria continues
       to recognise ‘Moldovan’ as one of its official languages.
+  id: mol
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/mol
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MOL
-    ISO_639_2B: mol
     ISO_639_1: mo
+    ISO_639_2B: mol
+    ISO_639_2T: mol
     ISO_639_3: mol
     XML_LNG: mo
-    ISO_639_2T: mol
-- id: mon
+    iri: https://nma.eosc.cz/vocabularies/languages/mol
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MOL
   title:
-    cs: mongolština
-    en: Mongolian
-  description:
+    cs: moldavština
+    en: Moldavian
+- description:
     en: The Mongolian language is the best-known member of the Mongolic language family.In
       Mongolia, the Khalkha dialect, written in Cyrillic, is predominant, while in
       Inner Mongolia, the language is dialectally more diverse and is written in the
       traditional Mongolian script.
+  id: mon
   props:
+    ISO_639_1: mn
+    ISO_639_2B: mon
+    ISO_639_2T: mon
+    ISO_639_3: mon
+    XML_LNG: mn
     iri: https://nma.eosc.cz/vocabularies/languages/mon
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MON
-    XML_LNG: mn
-    ISO_639_3: mon
-    ISO_639_2B: mon
-    ISO_639_1: mn
-    ISO_639_2T: mon
-- id: mri
+  title:
+    cs: mongolština
+    en: Mongolian
+- description:
+    en: Māori is a Malayo-Polynesian language. It is one of the official languages
+      of New Zealand.
+  id: mri
+  props:
+    ISO_639_1: mi
+    ISO_639_2B: mao
+    ISO_639_2T: mri
+    ISO_639_3: mri
+    XML_LNG: mi
+    iri: https://nma.eosc.cz/vocabularies/languages/mri
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MRI
   title:
     cs: maorština
     en: Māori
-  description:
-    en: Māori is a Malayo-Polynesian language. It is one of the official languages
-      of New Zealand.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/mri
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MRI
-    ISO_639_2B: mao
-    ISO_639_1: mi
-    ISO_639_3: mri
-    ISO_639_2T: mri
-    XML_LNG: mi
-- id: msa
-  title:
-    cs: malajština
-    en: Malay
-  description:
+- description:
     en: Malay, endonym Bahasa Melayu, is an Austronesian macrolanguage within the
       Malayo-Polynesian branch spoken primarily on islands in maritime Southeast Asia
       and Malay Peninsula in mainland Asia. It is an official language of Brunei,
@@ -1420,156 +1416,156 @@
       Malacca and Johor Sultanates. Austronesian languages often possess phoneme inventories
       smaller than the world average. Two salient morphological characteristics are
       a system of affixation and reduplication to form new words.
+  id: msa
   props:
+    ISO_639_1: ms
+    ISO_639_2B: may
+    ISO_639_2T: msa
+    ISO_639_3: msa
+    XML_LNG: ms
     iri: https://nma.eosc.cz/vocabularies/languages/msa
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: MSA
-    ISO_639_1: ms
-    ISO_639_3: msa
-    ISO_639_2T: msa
-    XML_LNG: ms
-    ISO_639_2B: may
-- id: mya
+  title:
+    cs: malajština
+    en: Malay
+- description:
+    en: Burmese is a Sino-Tibetan language. It is the official language of Myanmar.
+      The Burmese alphabet is a Brahmic script, an abugida writing system.
+  id: mya
+  props:
+    ISO_639_1: my
+    ISO_639_2B: bur
+    ISO_639_2T: mya
+    ISO_639_3: mya
+    XML_LNG: my
+    iri: https://nma.eosc.cz/vocabularies/languages/mya
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MYA
   title:
     cs: barmština
     en: Burmese
-  description:
-    en: Burmese is a Sino-Tibetan language. It is the official language of Myanmar.
-      The Burmese alphabet is a Brahmic script, an abugida writing system.
+- description:
+    en: Nauruan is a Malayo-Polynesian language. It is one of the official languages
+      of Nauru.
+  id: nau
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/mya
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: MYA
-    ISO_639_3: mya
-    ISO_639_1: my
-    ISO_639_2B: bur
-    XML_LNG: my
-    ISO_639_2T: mya
-- id: nau
+    ISO_639_1: na
+    ISO_639_2B: nau
+    ISO_639_2T: nau
+    ISO_639_3: nau
+    XML_LNG: na
+    iri: https://nma.eosc.cz/vocabularies/languages/nau
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: NAU
   title:
     cs: naurština
     en: Nauruan
-  description:
-    en: Nauruan is a Malayo-Polynesian language. It is one of the official languages
-      of Nauru.
+- description:
+    en: Southern Ndebele is a Bantu language. It is one of the official languages
+      of South Africa.
+  id: nbl
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/nau
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: NAU
-    ISO_639_2T: nau
-    ISO_639_1: na
-    XML_LNG: na
-    ISO_639_2B: nau
-    ISO_639_3: nau
-- id: nbl
+    ISO_639_1: nr
+    ISO_639_2B: nbl
+    ISO_639_2T: nbl
+    ISO_639_3: nbl
+    XML_LNG: nr
+    iri: https://nma.eosc.cz/vocabularies/languages/nbl
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: NBL
   title:
     cs: jižní ndebelština
     en: Southern Ndebele
-  description:
-    en: Southern Ndebele is a Bantu language. It is one of the official languages
-      of South Africa.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/nbl
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: NBL
-    ISO_639_3: nbl
-    ISO_639_2T: nbl
-    ISO_639_2B: nbl
-    XML_LNG: nr
-    ISO_639_1: nr
-- id: nde
-  title:
-    cs: severní ndebelština
-    en: North Ndebele
-  description:
+- description:
     en: North Ndebele is the language spoken by the Zimbabwe Ndebele, also known as
       Matabele, in the Matabeleland region around the city of Bulawayo. It's a Bantu
       language of the Nguni group, closely related to Zulu. The Ndebele people of
       Zimbabwe are descendants of the followers of the Zulu military leader Mzilikazi,
       who left his home region in the early 19th century. North Ndebele is one of
       Zimbabwe‘s 16 official languages.
+  id: nde
   props:
+    ISO_639_1: nd
+    ISO_639_2B: nde
+    ISO_639_2T: nde
+    ISO_639_3: nde
+    XML_LNG: nd
     iri: https://nma.eosc.cz/vocabularies/languages/nde
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NDE
-    XML_LNG: nd
-    ISO_639_3: nde
-    ISO_639_2B: nde
-    ISO_639_1: nd
-    ISO_639_2T: nde
-- id: nep
   title:
-    cs: nepálština
-    en: Nepali
-  description:
+    cs: severní ndebelština
+    en: North Ndebele
+- description:
     en: Nepali or Nepalese is an Indo-Aryan language. It is the official language
       and de facto lingua franca of Nepal and is also spoken in India, Bhutan, Myanmar,
       Hong Kong and United Kingdom. Nepali developed in proximity to a number of Indo-Aryan
       languages, most notably Pahari and Magahi, and shows Sanskrit influences. Nepali
       language shares important lexical similarity with the Bengali language.The language
       is written by devanagari.
+  id: nep
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/nep
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: NEP
-    ISO_639_2B: nep
-    XML_LNG: ne
     ISO_639_1: ne
+    ISO_639_2B: nep
     ISO_639_2T: nep
     ISO_639_3: nep
-- id: nld
+    XML_LNG: ne
+    iri: https://nma.eosc.cz/vocabularies/languages/nep
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: NEP
   title:
-    cs: nizozemština
-    en: Dutch
-  description:
+    cs: nepálština
+    en: Nepali
+- description:
     en: Dutch is a West Germanic language whose closest relative is German. It is
       spoken in the Netherlands, by about 60% of the population of Belgium, in Suriname
       and in the Caribbean island nations of Aruba, Curaçao, and Sint Maarten. The
       version of Dutch spoken in Southern Africa has been standardised into Afrikaans.
+  id: nld
   props:
+    ISO_639_1: nl
+    ISO_639_2B: dut
+    ISO_639_2T: nld
+    ISO_639_3: nld
+    XML_LNG: nl
     iri: https://nma.eosc.cz/vocabularies/languages/nld
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NLD
-    ISO_639_2T: nld
-    XML_LNG: nl
-    ISO_639_2B: dut
-    ISO_639_1: nl
-    ISO_639_3: nld
-- id: nno
   title:
-    cs: norština (nynorsk)
-    en: Norwegian Nynorsk
-  description:
+    cs: nizozemština
+    en: Dutch
+- description:
     en: Nynorsk is one of the two official written standards of the Norwegian language,
       the other being Bokmål. The name Nynorsk was introduced in 1929. After a series
       of reforms, it is still the written standard closer to Landsmål, Ivar Aasen's
       standard Norwegian language, whereas Bokmål is closer to Riksmål and Danish.
       Between 10 and 15 percent of Norwegians (primarily in the west around the city
       of Bergen) have Nynorsk as their official language form.
+  id: nno
   props:
+    ISO_639_1: nn
+    ISO_639_2B: nno
+    ISO_639_2T: nno
+    ISO_639_3: nno
+    XML_LNG: nn
     iri: https://nma.eosc.cz/vocabularies/languages/nno
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NNO
-    ISO_639_1: nn
-    XML_LNG: nn
-    ISO_639_2T: nno
-    ISO_639_2B: nno
-    ISO_639_3: nno
-- id: nob
   title:
-    cs: norština (bokmål)
-    en: Norwegian Bokmål
-  description:
+    cs: norština (nynorsk)
+    en: Norwegian Nynorsk
+- description:
     en: Bokmål is one of the two official written standards of the Norwegian language,
       the other being nynorsk. Bokmål is by far the most used written form of Norwegian
       today, as it is adopted by around 90% of the population in Norway. There is
       no countrywide standard or agreement on the pronunciation of Bokmål and the
       spoken dialects vary greatly.
+  id: nob
   props:
+    ISO_639_1: nb
+    ISO_639_2B: nob
+    ISO_639_2T: nob
+    ISO_639_3: nob
+    XML_LNG: nb
     iri: https://nma.eosc.cz/vocabularies/languages/nob
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NOB
-    XML_LNG: nb
-    ISO_639_2T: nob
-    ISO_639_2B: nob
-    ISO_639_1: nb
-    ISO_639_3: nob
-- id: nor
   title:
-    cs: norština
-    en: Norwegian
-  description:
+    cs: norština (bokmål)
+    en: Norwegian Bokmål
+- description:
     en: 'Norwegian belongs to the Northern branch of Germanic languages. It is spoken
       primarily in Norway. Together with Swedish and Danish, Norwegian forms a continuum
       of more or less mutually intelligible local and regional variants. Germanic
@@ -1577,19 +1573,19 @@
       family in the world by number of native speakers. There are two official forms
       of written Norwegian: Bokmål (literally ‘book tongue’) and Nynorsk (literally
       ‘new Norwegian’).'
+  id: nor
   props:
+    ISO_639_1: 'no'
+    ISO_639_2B: nor
+    ISO_639_2T: nor
+    ISO_639_3: nor
+    XML_LNG: 'no'
     iri: https://nma.eosc.cz/vocabularies/languages/nor
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: NOR
-    XML_LNG: 'no'
-    ISO_639_1: 'no'
-    ISO_639_2T: nor
-    ISO_639_2B: nor
-    ISO_639_3: nor
-- id: nya
   title:
-    cs: čičevština
-    en: Chichewa
-  description:
+    cs: norština
+    en: Norwegian
+- description:
     en: Chichewa or Chewa or Chinyanja or Nyanja is a Bantu language spoken in Malawi
       and a recognised minority language in Eastern Zambia and Tete province of Mozambique.
       It is a minority language also in northeastern Zimbabwe. In Malawi, the name
@@ -1601,37 +1597,37 @@
       the Volta-Congo branch. Like other Bantu languages, Chichewa has a noun class
       system, a characteristic feature of languages belonging to the Atlantic–Congo
       lineage, the largest demonstrated language family in Africa.
+  id: nya
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/nya
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: NYA
-    XML_LNG: ny
-    ISO_639_2T: nya
     ISO_639_1: ny
     ISO_639_2B: nya
+    ISO_639_2T: nya
     ISO_639_3: nya
-- id: oci
+    XML_LNG: ny
+    iri: https://nma.eosc.cz/vocabularies/languages/nya
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: NYA
   title:
-    cs: okcitánština
-    en: Occitan
-  description:
+    cs: čičevština
+    en: Chichewa
+- description:
     en: Occitan is the generic name for Romance idioms which are native mainly to
       southern France. There are polemics about the unity of the language, as some
       think that Occitan is a macrolanguage. There is no single written standard language
       called ‘Occitan’, and Occitan has no official status in France, home to most
       of Occitania.
+  id: oci
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/oci
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: OCI
+    ISO_639_1: oc
     ISO_639_2B: oci
     ISO_639_2T: oci
-    ISO_639_1: oc
-    XML_LNG: oc
     ISO_639_3: oci
-- id: oss
+    XML_LNG: oc
+    iri: https://nma.eosc.cz/vocabularies/languages/oci
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: OCI
   title:
-    cs: ironská osetština
-    en: Iron Ossetic
-  description:
+    cs: okcitánština
+    en: Occitan
+- description:
     en: Iron Ossetic or Iron Ossetian or simply Iron, Ossetic or Ossetian, is a member
       of the Iranian subgroup of the Indo-European languages, the world’s largest
       language family by number of native speakers. Iron Ossetic is spoken in Ossetia,
@@ -1639,181 +1635,181 @@
       in the east, south and central parts of North Ossetia–Alania, while in the west
       the Digor dialect is more prevalent. The Iron dialect has been the basis of
       the Ossetian written language since the abolition of the Digor standard in 1939.
+  id: oss
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/oss
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: OSS
-    XML_LNG: os
-    ISO_639_3: oss
-    ISO_639_2T: oss
     ISO_639_1: os
     ISO_639_2B: oss
-- id: pan
+    ISO_639_2T: oss
+    ISO_639_3: oss
+    XML_LNG: os
+    iri: https://nma.eosc.cz/vocabularies/languages/oss
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: OSS
   title:
-    cs: paňdžábština
-    en: Punjabi
-  description:
+    cs: ironská osetština
+    en: Iron Ossetic
+- description:
     en: Punjabi is an Indo-Aryan language spoken by over 100 million native speakers
       worldwide. It is the native language of the Punjabi people in India and Pakistan.
       Punjabi is written in both the Shahmukhi and the Gurmukhi scripts.
+  id: pan
   props:
+    ISO_639_1: pa
+    ISO_639_2B: pan
+    ISO_639_2T: pan
+    ISO_639_3: pan
+    XML_LNG: pa
     iri: https://nma.eosc.cz/vocabularies/languages/pan
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: PAN
-    ISO_639_2B: pan
-    XML_LNG: pa
-    ISO_639_3: pan
-    ISO_639_1: pa
-    ISO_639_2T: pan
-- id: pol
   title:
-    cs: polština
-    en: Polish
-  description:
+    cs: paňdžábština
+    en: Punjabi
+- description:
     en: Polish is the eastern member of the Lechitic branch of the West Slavic languages.
       It is spoken primarily in Poland.Polish is the second most widely spoken Slavic
       language, after Russian.
+  id: pol
   props:
+    ISO_639_1: pl
+    ISO_639_2B: pol
+    ISO_639_2T: pol
+    ISO_639_3: pol
+    XML_LNG: pl
     iri: https://nma.eosc.cz/vocabularies/languages/pol
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: POL
-    ISO_639_2T: pol
-    ISO_639_2B: pol
-    XML_LNG: pl
-    ISO_639_3: pol
-    ISO_639_1: pl
-- id: por
   title:
-    cs: portugalština
-    en: Portuguese
-  description:
+    cs: polština
+    en: Polish
+- description:
     en: Portuguese is a member of the Ibero-Romance subgroup of the Romance languages.
       It is spoken in Portugal, Brazil, Mozambique, Angola, Cape Verde, Guinea-Bissau,
       São Tomé and Príncipe, Macau (China), Equatorial Guinea and East Timor.Portuguese
       is the major language of the southern hemisphere.
+  id: por
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/por
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: POR
+    ISO_639_1: pt
+    ISO_639_2B: por
+    ISO_639_2T: por
     ISO_639_3: por
     XML_LNG: pt
-    ISO_639_1: pt
-    ISO_639_2T: por
-    ISO_639_2B: por
-- id: pus
+    iri: https://nma.eosc.cz/vocabularies/languages/por
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: POR
   title:
-    cs: paštština
-    en: Pashto
-  description:
+    cs: portugalština
+    en: Portuguese
+- description:
     en: Pashto, also known historically as Afghani and Pathani, is the native language
       of the Pashtun people of south-central Asia. Pashto is a member of the Eastern
       Iranian languages group.Pashto employs the Pashto alphabet, a modified form
       of the Persian alphabet, which in part is derived from the Arabic alphabet.
       It has extra letters for Pashto-specific sounds.
+  id: pus
   props:
+    ISO_639_1: ps
+    ISO_639_2B: pus
+    ISO_639_2T: pus
+    ISO_639_3: pus
+    XML_LNG: ps
     iri: https://nma.eosc.cz/vocabularies/languages/pus
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: PUS
-    XML_LNG: ps
-    ISO_639_2T: pus
-    ISO_639_2B: pus
-    ISO_639_1: ps
-    ISO_639_3: pus
-- id: que
+  title:
+    cs: paštština
+    en: Pashto
+- description:
+    en: Quechua or Southern Quechua is a Quachuan indigenous language. It is one of
+      the official languages of Bolivia and Peru.
+  id: que
+  props:
+    ISO_639_1: qu
+    ISO_639_2B: que
+    ISO_639_2T: que
+    ISO_639_3: que
+    XML_LNG: qu
+    iri: https://nma.eosc.cz/vocabularies/languages/que
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: QUE
   title:
     cs: kečuánština
     en: Quechua
-  description:
-    en: Quechua or Southern Quechua is a Quachuan indigenous language. It is one of
-      the official languages of Bolivia and Peru.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/que
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: QUE
-    XML_LNG: qu
-    ISO_639_2T: que
-    ISO_639_2B: que
-    ISO_639_1: qu
-    ISO_639_3: que
-- id: roh
-  title:
-    cs: románština
-    en: Romansh
-  description:
+- description:
     en: Romansh is a group of Rhaeto-Romance dialects spoken predominantly in the
       south-eastern Swiss canton of Grisons.Romansh has a strong dialectal fragmentation.
       Almost every village has its own vernacular, and five different regional dialects
       own standardised written form.
+  id: roh
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/roh
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ROH
+    ISO_639_1: rm
+    ISO_639_2B: roh
+    ISO_639_2T: roh
     ISO_639_3: roh
     XML_LNG: rm
-    ISO_639_2B: roh
-    ISO_639_1: rm
-    ISO_639_2T: roh
-- id: ron
+    iri: https://nma.eosc.cz/vocabularies/languages/roh
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ROH
   title:
-    cs: rumunština
-    en: Romanian
-  description:
+    cs: románština
+    en: Romansh
+- description:
     en: 'Romanian is a Romance language spoken principally in Romania and Moldova.
       Much of the total Romanian vocabulary is derived from Latin.Romanian has four
       varieties: Daco-Romanian, Istro-Romanian, Aromanian and Megleno-Romanian.'
+  id: ron
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ron
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: RON
-    ISO_639_3: ron
     ISO_639_1: ro
-    XML_LNG: ro
     ISO_639_2B: rum
     ISO_639_2T: ron
-- id: run
+    ISO_639_3: ron
+    XML_LNG: ro
+    iri: https://nma.eosc.cz/vocabularies/languages/ron
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: RON
+  title:
+    cs: rumunština
+    en: Romanian
+- description:
+    en: Kirundi is a Bantu language. It is one of the official languages of Burundi.
+  id: run
+  props:
+    ISO_639_1: rn
+    ISO_639_2B: run
+    ISO_639_2T: run
+    ISO_639_3: run
+    XML_LNG: rn
+    iri: https://nma.eosc.cz/vocabularies/languages/run
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: RUN
   title:
     cs: rundština
     en: Kirundi
-  description:
-    en: Kirundi is a Bantu language. It is one of the official languages of Burundi.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/run
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: RUN
-    ISO_639_2T: run
-    ISO_639_2B: run
-    ISO_639_3: run
-    ISO_639_1: rn
-    XML_LNG: rn
-- id: rus
-  title:
-    cs: ruština
-    en: Russian
-  description:
+- description:
     en: Russian is an East Slavic language with a close relation to Ukrainian and
       Belarusian. It is an official or unofficial but widely spoken language in some
       countries that were once constituent republics of the Soviet Union.Russian is
       the most geographically widespread language of Eurasia and the most widely spoken
       of the Slavic languages.Russian is written by Cyrillic alphabet.
+  id: rus
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/rus
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: RUS
-    ISO_639_2T: rus
-    ISO_639_2B: rus
     ISO_639_1: ru
+    ISO_639_2B: rus
+    ISO_639_2T: rus
     ISO_639_3: rus
     XML_LNG: ru
-- id: sag
+    iri: https://nma.eosc.cz/vocabularies/languages/rus
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: RUS
+  title:
+    cs: ruština
+    en: Russian
+- description:
+    en: Sango is a Ngbandi-based creole language. It is one of the official languages
+      of the Central African Republic.
+  id: sag
+  props:
+    ISO_639_1: sg
+    ISO_639_2B: sag
+    ISO_639_2T: sag
+    ISO_639_3: sag
+    XML_LNG: sg
+    iri: https://nma.eosc.cz/vocabularies/languages/sag
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SAG
   title:
     cs: sangština
     en: Sango
-  description:
-    en: Sango is a Ngbandi-based creole language. It is one of the official languages
-      of the Central African Republic.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/sag
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SAG
-    ISO_639_1: sg
-    ISO_639_2B: sag
-    ISO_639_3: sag
-    ISO_639_2T: sag
-    XML_LNG: sg
-- id: san
-  title:
-    cs: sanskrt
-    en: Sanskrit
-  description:
+- description:
     en: Sanskrit is a classical language belonging to the Indo-Aryan branch of the
       Indo-European languages. It arose in northwest South Asia after its predecessor
       languages had diffused there from the northwest in the late Bronze Age. Sanskrit
@@ -1824,104 +1820,104 @@
       political elites in some of these regions. Sanskrit generally connotes several
       Old Indo-Aryan language varieties and continues to be widely used as a ceremonial
       and ritual language in Hindu and Buddhist hymns and chants.
+  id: san
   props:
+    ISO_639_1: sa
+    ISO_639_2B: san
+    ISO_639_2T: san
+    ISO_639_3: san
+    XML_LNG: sa
     iri: https://nma.eosc.cz/vocabularies/languages/san
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SAN
-    ISO_639_3: san
-    ISO_639_2B: san
-    XML_LNG: sa
-    ISO_639_2T: san
-    ISO_639_1: sa
-- id: sin
   title:
-    cs: sinhálština
-    en: Sinhala
-  description:
+    cs: sanskrt
+    en: Sanskrit
+- description:
     en: Sinhala is the native language of the Sinhalese people, who make up the largest
       ethnic group in Sri Lanka. It belongs to the Indo-Aryan branch of the Indo-European
       languages.Sinhala has its own writing system, the Sinhala alphabet, which is
       a member of the Brahmic family of scripts, and a descendant of the ancient Indian
       Brahmi script.
+  id: sin
   props:
+    ISO_639_1: si
+    ISO_639_2B: sin
+    ISO_639_2T: sin
+    ISO_639_3: sin
+    XML_LNG: si
     iri: https://nma.eosc.cz/vocabularies/languages/sin
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SIN
-    ISO_639_2T: sin
-    ISO_639_1: si
-    XML_LNG: si
-    ISO_639_2B: sin
-    ISO_639_3: sin
-- id: slk
   title:
-    cs: slovenština
-    en: Slovak
-  description:
+    cs: sinhálština
+    en: Sinhala
+- description:
     en: Slovak is a member of the western subgroup of Slavic languages, mainly spoken
       in Slovakia where it is protected by a language law.Slovak is very close to
       the Czech.
+  id: slk
   props:
+    ISO_639_1: sk
+    ISO_639_2B: slo
+    ISO_639_2T: slk
+    ISO_639_3: slk
+    XML_LNG: sk
     iri: https://nma.eosc.cz/vocabularies/languages/slk
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SLK
-    ISO_639_3: slk
-    ISO_639_1: sk
-    ISO_639_2T: slk
-    ISO_639_2B: slo
-    XML_LNG: sk
-- id: slv
   title:
-    cs: slovinština
-    en: Slovenian
-  description:
+    cs: slovenština
+    en: Slovak
+- description:
     en: Slovenian or Slovene is a member of the southern subgroup of the Slavic languages,
       spoken mainly in Slovenia.The distinctive characteristic of Slovene that it
       has preserved the use of dual grammatical number in addition to singular and
       plural.
+  id: slv
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/slv
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SLV
     ISO_639_1: sl
     ISO_639_2B: slv
     ISO_639_2T: slv
-    XML_LNG: sl
     ISO_639_3: slv
-- id: sme
+    XML_LNG: sl
+    iri: https://nma.eosc.cz/vocabularies/languages/slv
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SLV
   title:
-    cs: severosámština
-    en: Northern Sami
-  description:
+    cs: slovinština
+    en: Slovenian
+- description:
     en: Northern or North Sami (davvisámegiella) is the most widely spoken of all
       Sami languages. It is spoken in the northern parts of Norway, Sweden and Finland.
       In Norway, Northern Sami is currently an official language in several municipalities
       in Finnmark and Troms counties. In Sweden, it is an official language in 18
       counties. Like neighbouring Baltic-Finnic languages, Sami languages are a branch
       of the Uralic language family.
+  id: sme
   props:
+    ISO_639_1: se
+    ISO_639_2B: sme
+    ISO_639_2T: sme
+    ISO_639_3: sme
+    XML_LNG: se
     iri: https://nma.eosc.cz/vocabularies/languages/sme
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SME
-    ISO_639_1: se
-    XML_LNG: se
-    ISO_639_2T: sme
-    ISO_639_2B: sme
-    ISO_639_3: sme
-- id: smo
+  title:
+    cs: severosámština
+    en: Northern Sami
+- description:
+    en: Samoan is a Malayo-Polynesian language. It is one of the official languages
+      of Samoa and American Samoa.
+  id: smo
+  props:
+    ISO_639_1: sm
+    ISO_639_2B: smo
+    ISO_639_2T: smo
+    ISO_639_3: smo
+    XML_LNG: sm
+    iri: https://nma.eosc.cz/vocabularies/languages/smo
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SMO
   title:
     cs: samojština
     en: Samoan
-  description:
-    en: Samoan is a Malayo-Polynesian language. It is one of the official languages
-      of Samoa and American Samoa.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/smo
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SMO
-    ISO_639_3: smo
-    ISO_639_1: sm
-    ISO_639_2T: smo
-    ISO_639_2B: smo
-    XML_LNG: sm
-- id: sna
-  title:
-    cs: šonština
-    en: Shona
-  description:
+- description:
     en: Shona is a Bantu language of the Shona people of Zimbabwe. The term is variously
       used to collectively describe all the Central Shonic varieties (comprising Zezuru,
       Manyika, Korekore and Karanga) or specifically Standard Shona, a variety codified
@@ -1929,19 +1925,19 @@
       14 000 000 people. The larger group of historically related languages – called
       Shona or Shonic languages – also includes Ndau (Eastern Shona) spoken in Zimbabwe,
       Malawi and Mozambique, and Kalanga (Western Shona) spoken in Botswana and Zimbabwe.
+  id: sna
   props:
+    ISO_639_1: sn
+    ISO_639_2B: sna
+    ISO_639_2T: sna
+    ISO_639_3: sna
+    XML_LNG: sn
     iri: https://nma.eosc.cz/vocabularies/languages/sna
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SNA
-    ISO_639_2T: sna
-    ISO_639_1: sn
-    ISO_639_3: sna
-    ISO_639_2B: sna
-    XML_LNG: sn
-- id: som
   title:
-    cs: somálština
-    en: Somali
-  description:
+    cs: šonština
+    en: Shona
+- description:
     en: Somali belongs to the Cushitic branch of the Afro-Asiatic languages, one of
       the largest language families in the world after Indo-European, Sino-Tibetan
       and Atlantic-Congo. It is spoken as a mother tongue by ethnic Somalis in Somalia
@@ -1949,133 +1945,133 @@
       Djibouti, and is also a recognised minority language in Kenya. A number of writing
       systems have been used for transcribing the language. Of these, the Somali Latin
       alphabet, officially adopted in 1972, is the most widely used.
+  id: som
   props:
+    ISO_639_1: so
+    ISO_639_2B: som
+    ISO_639_2T: som
+    ISO_639_3: som
+    XML_LNG: so
     iri: https://nma.eosc.cz/vocabularies/languages/som
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SOM
-    ISO_639_1: so
-    XML_LNG: so
-    ISO_639_2T: som
-    ISO_639_2B: som
-    ISO_639_3: som
-- id: sot
+  title:
+    cs: somálština
+    en: Somali
+- description:
+    en: Southern Sotho is a Bantu language. It is one of the official languages of
+      South Africa.
+  id: sot
+  props:
+    ISO_639_1: st
+    ISO_639_2B: sot
+    ISO_639_2T: sot
+    ISO_639_3: sot
+    XML_LNG: st
+    iri: https://nma.eosc.cz/vocabularies/languages/sot
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SOT
   title:
     cs: jižní sotština
     en: Southern Sotho
-  description:
-    en: Southern Sotho is a Bantu language. It is one of the official languages of
-      South Africa.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/sot
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SOT
-    ISO_639_3: sot
-    ISO_639_2B: sot
-    XML_LNG: st
-    ISO_639_1: st
-    ISO_639_2T: sot
-- id: spa
-  title:
-    cs: španělština
-    en: Spanish
-  description:
+- description:
     en: Spanish is a member of the Romance language family. It is spoken in Spain
       and in the continents of North and South America.Spanish is second after Mandarin
       in terms of its number of native speakers worldwide. From the last decades of
       the 20th century, the study of Spanish as a foreign language has grown significantly.
+  id: spa
   props:
+    ISO_639_1: es
+    ISO_639_2B: spa
+    ISO_639_2T: spa
+    ISO_639_3: spa
+    XML_LNG: es
     iri: https://nma.eosc.cz/vocabularies/languages/spa
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SPA
-    ISO_639_1: es
-    ISO_639_3: spa
-    ISO_639_2T: spa
-    XML_LNG: es
-    ISO_639_2B: spa
-- id: sqi
   title:
-    cs: albánština
-    en: Albanian
-  description:
+    cs: španělština
+    en: Spanish
+- description:
     en: 'Albanian (shqip) forms a separate branch of the Indo-European family. It
       is the official language of Albania and also spoken in Kosovo, North Macedonia,
       Italy and Greece.Albanian is divided into two major dialects: Gheg (spoken in
       north) and Tosk (spoken in south).'
+  id: sqi
   props:
+    ISO_639_1: sq
+    ISO_639_2B: alb
+    ISO_639_2T: sqi
+    ISO_639_3: sqi
+    XML_LNG: sq
     iri: https://nma.eosc.cz/vocabularies/languages/sqi
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SQI
-    ISO_639_2B: alb
-    ISO_639_1: sq
-    ISO_639_2T: sqi
-    XML_LNG: sq
-    ISO_639_3: sqi
-- id: srp
   title:
-    cs: srbština
-    en: Serbian
-  description:
+    cs: albánština
+    en: Albanian
+- description:
     en: Serbian is the standardised variety of the Serbo-Croatian language, spoken
       mainly in Serbia, Montenegro, Bosnia and Herzegovina. Standard Serbian is based
       on the Shtokavian dialect of Serbo-Croatian.Serbian uses both Cyrillic and Latin
       alphabets.
+  id: srp
   props:
+    ISO_639_1: sr
+    ISO_639_2B: srp
+    ISO_639_2T: srp
+    ISO_639_3: srp
+    XML_LNG: sr
     iri: https://nma.eosc.cz/vocabularies/languages/srp
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: SRP
-    ISO_639_2B: srp
-    ISO_639_3: srp
-    ISO_639_1: sr
-    ISO_639_2T: srp
-    XML_LNG: sr
-- id: ssw
+  title:
+    cs: srbština
+    en: Serbian
+- description:
+    en: Swazi is a Bantu language. It is one of the official languages of South Africa.
+  id: ssw
+  props:
+    ISO_639_1: ss
+    ISO_639_2B: ssw
+    ISO_639_2T: ssw
+    ISO_639_3: ssw
+    XML_LNG: ss
+    iri: https://nma.eosc.cz/vocabularies/languages/ssw
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SSW
   title:
     cs: svazijština
     en: Swazi
-  description:
-    en: Swazi is a Bantu language. It is one of the official languages of South Africa.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ssw
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SSW
-    ISO_639_2T: ssw
-    ISO_639_1: ss
-    XML_LNG: ss
-    ISO_639_2B: ssw
-    ISO_639_3: ssw
-- id: swa
-  title:
-    cs: svahilština
-    en: Swahili
-  description:
+- description:
     en: The Swahili language is a Bantu language and the mother tongue of the Swahili
       people. It is spoken by various communities inhabiting the African Great Lakes
       region and other parts of south-east Africa, mainly as a lingua franca. The
       closely related Comorian language, spoken in the Comoros Islands, is sometimes
       considered a Swahili dialect.
+  id: swa
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/swa
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SWA
+    ISO_639_1: sw
+    ISO_639_2B: swa
     ISO_639_2T: swa
     ISO_639_3: swa
     XML_LNG: sw
-    ISO_639_1: sw
-    ISO_639_2B: swa
-- id: swe
+    iri: https://nma.eosc.cz/vocabularies/languages/swa
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SWA
   title:
-    cs: švédština
-    en: Swedish
-  description:
+    cs: svahilština
+    en: Swahili
+- description:
     en: 'Swedish is a North Germanic language, spoken mainly in Sweden and parts of
       Finland. It is largely mutually intelligible with Norwegian and Danish.Swedish
       uses two genders: neutrum and utrum which unifies the old masculin and femenin.'
+  id: swe
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/swe
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SWE
     ISO_639_1: sv
+    ISO_639_2B: swe
     ISO_639_2T: swe
     ISO_639_3: swe
-    ISO_639_2B: swe
     XML_LNG: sv
-- id: tam
+    iri: https://nma.eosc.cz/vocabularies/languages/swe
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: SWE
   title:
-    cs: tamilština
-    en: Tamil
-  description:
+    cs: švédština
+    en: Swedish
+- description:
     en: Tamil is a Dravidian language spoken in South-East Asia.Tamil is one of the
       longest surviving classical languages in the world; ‘the only language of contemporary
       India which is recognisably continuous with a classical past.’Tamil was written
@@ -2083,19 +2079,19 @@
       script. The current Tamil script consists of 12 vowels, 18 consonants and one
       special character, the āytam. The vowels and consonants combine to form 216
       compound characters, giving a total of 247 characters.
+  id: tam
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/tam
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TAM
-    ISO_639_3: tam
     ISO_639_1: ta
-    XML_LNG: ta
     ISO_639_2B: tam
     ISO_639_2T: tam
-- id: tgk
+    ISO_639_3: tam
+    XML_LNG: ta
+    iri: https://nma.eosc.cz/vocabularies/languages/tam
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TAM
   title:
-    cs: tádžičtina
-    en: Tajik
-  description:
+    cs: tamilština
+    en: Tamil
+- description:
     en: Tajik is a variety of modern Persian spoken in Central Asia. Most speakers
       of Tajik live in Tajikistan (where it is the official language) and Uzbekistan.
       In Afghanistan the dialect is less influenced by Turkic languages and is called
@@ -2107,310 +2103,310 @@
       in Cyrillic script while the Perso-Arabic script is used in Iran and Afghanistan.
       The language is part of the Persian group within the southwestern branch of
       the Indo-Iranian languages.
+  id: tgk
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/tgk
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TGK
+    ISO_639_1: tg
+    ISO_639_2B: tgk
+    ISO_639_2T: tgk
     ISO_639_3: tgk
     XML_LNG: tg
-    ISO_639_1: tg
-    ISO_639_2T: tgk
-    ISO_639_2B: tgk
-- id: tha
+    iri: https://nma.eosc.cz/vocabularies/languages/tgk
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TGK
   title:
-    cs: thajština
-    en: Thai
-  description:
+    cs: tádžičtina
+    en: Tajik
+- description:
     en: Thai, or more precisely Siamese or Central Thai, is a member of the Tai group
       of the Tai–Kadai language family. It is a tonal and analytic language. Thai
       also has a complex orthography and relational markers. Thai is mutually intelligible
       with Lao.The Thais adopted and modified the Khmer script to create their own
       writing system. It is an abugida script.
+  id: tha
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/tha
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: THA
+    ISO_639_1: th
+    ISO_639_2B: tha
     ISO_639_2T: tha
     ISO_639_3: tha
-    ISO_639_2B: tha
     XML_LNG: th
-    ISO_639_1: th
-- id: tir
+    iri: https://nma.eosc.cz/vocabularies/languages/tha
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: THA
   title:
-    cs: tigriňa
-    en: Tigrinya
-  description:
+    cs: thajština
+    en: Thai
+- description:
     en: 'Tigrinya is an Afro-Asiatic language, belonging to the family’s Semitic branch.
       It is spoken by ethnic Tigray-Tigrinya in the Horn of Africa.Tigrinya is written
       in the Ge’ez script, originally developed for Ge’ez, also called Ethiopic. The
       Ge’ez script is an abugida: each symbol represents a consonant + vowel syllable,
       and the symbols are organised in groups of similar symbols on the basis of both
       the consonant and the vowel.'
+  id: tir
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/tir
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TIR
     ISO_639_1: ti
-    XML_LNG: ti
+    ISO_639_2B: tir
     ISO_639_2T: tir
     ISO_639_3: tir
-    ISO_639_2B: tir
-- id: ton
+    XML_LNG: ti
+    iri: https://nma.eosc.cz/vocabularies/languages/tir
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TIR
+  title:
+    cs: tigriňa
+    en: Tigrinya
+- description:
+    en: Tongan is a Malayo-Polynesian language. It is one of the official languages
+      of Tonga.
+  id: ton
+  props:
+    ISO_639_1: to
+    ISO_639_2B: ton
+    ISO_639_2T: ton
+    ISO_639_3: ton
+    XML_LNG: to
+    iri: https://nma.eosc.cz/vocabularies/languages/ton
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TON
   title:
     cs: tonžština
     en: Tongan
-  description:
-    en: Tongan is a Malayo-Polynesian language. It is one of the official languages
-      of Tonga.
+- description:
+    en: Tswana is a Bantu language. It is one of the official languages of South Africa.
+  id: tsn
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ton
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TON
-    XML_LNG: to
-    ISO_639_3: ton
-    ISO_639_1: to
-    ISO_639_2T: ton
-    ISO_639_2B: ton
-- id: tsn
+    ISO_639_1: tn
+    ISO_639_2B: tsn
+    ISO_639_2T: tsn
+    ISO_639_3: tsn
+    XML_LNG: tn
+    iri: https://nma.eosc.cz/vocabularies/languages/tsn
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TSN
   title:
     cs: tswanština
     en: Tswana
-  description:
-    en: Tswana is a Bantu language. It is one of the official languages of South Africa.
+- description:
+    en: Tsonga is a Bantu language. It is one of the official languages of South Africa.
+  id: tso
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/tsn
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TSN
-    ISO_639_2B: tsn
-    ISO_639_3: tsn
-    ISO_639_1: tn
-    ISO_639_2T: tsn
-    XML_LNG: tn
-- id: tso
+    ISO_639_1: ts
+    ISO_639_2B: tso
+    ISO_639_2T: tso
+    ISO_639_3: tso
+    XML_LNG: ts
+    iri: https://nma.eosc.cz/vocabularies/languages/tso
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TSO
   title:
     cs: tsongština
     en: Tsonga
-  description:
-    en: Tsonga is a Bantu language. It is one of the official languages of South Africa.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/tso
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TSO
-    XML_LNG: ts
-    ISO_639_2T: tso
-    ISO_639_2B: tso
-    ISO_639_3: tso
-    ISO_639_1: ts
-- id: tuk
-  title:
-    cs: turkmenština
-    en: Turkmen
-  description:
+- description:
     en: Turkmen or Turkoman is spoken in Asia. Turkmen is a member of the East Oghuz
       branch of the Turkic family of languages; its closest relatives being Anatolian
       Turkish and Azerbaijani, with which it shares a relatively high degree of mutual
       intelligibility.Officially, Turkmen currently is rendered in the ‘Täze Elipbiý’,
       or ‘New Alphabet’, which is based on the Latin alphabet. However, the old ‘Soviet’
       Cyrillic alphabet is still in wide use.
+  id: tuk
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/tuk
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TUK
+    ISO_639_1: tk
     ISO_639_2B: tuk
     ISO_639_2T: tuk
-    ISO_639_1: tk
     ISO_639_3: tuk
     XML_LNG: tk
-- id: tur
+    iri: https://nma.eosc.cz/vocabularies/languages/tuk
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: TUK
   title:
-    cs: turečtina
-    en: Turkish
-  description:
+    cs: turkmenština
+    en: Turkmen
+- description:
     en: Turkish is the most widely spoken of the Turkic languages in south-eastern
       Europe and western Asia. It is closely related to Azeri and Turkmen.In 1928,
       as one of Atatürk’s Reforms, the Arabic script was replaced with a Latin alphabet.
+  id: tur
   props:
+    ISO_639_1: tr
+    ISO_639_2B: tur
+    ISO_639_2T: tur
+    ISO_639_3: tur
+    XML_LNG: tr
     iri: https://nma.eosc.cz/vocabularies/languages/tur
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: TUR
-    ISO_639_2B: tur
-    ISO_639_3: tur
-    ISO_639_2T: tur
-    XML_LNG: tr
-    ISO_639_1: tr
-- id: ukr
   title:
-    cs: ukrajinština
-    en: Ukrainian
-  description:
+    cs: turečtina
+    en: Turkish
+- description:
     en: Ukrainian is one of the East Slavic languages and shares many grammatical
       and lexical features with other members of the branch, Russian and Belorusian.
       It is spoken mainly in Ukraine.Ukrainian is written with the Cyrillic alphabet.
+  id: ukr
   props:
+    ISO_639_1: uk
+    ISO_639_2B: ukr
+    ISO_639_2T: ukr
+    ISO_639_3: ukr
+    XML_LNG: uk
     iri: https://nma.eosc.cz/vocabularies/languages/ukr
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: UKR
-    ISO_639_1: uk
-    ISO_639_2T: ukr
-    XML_LNG: uk
-    ISO_639_3: ukr
-    ISO_639_2B: ukr
-- id: urd
   title:
-    cs: urdština
-    en: Urdu
-  description:
+    cs: ukrajinština
+    en: Ukrainian
+- description:
     en: Urdu is a standardised register of the Hindustani language. Urdu is historically
       associated with the Muslims of the region of Hindustan.Urdu is written right-to-left
       in an extension of the Persian alphabet, which is itself an extension of the
       Arabic alphabet. Urdu is associated with the Nastaʿlīq style of Persian calligraphy.
+  id: urd
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/urd
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: URD
-    XML_LNG: ur
-    ISO_639_3: urd
-    ISO_639_2T: urd
     ISO_639_1: ur
     ISO_639_2B: urd
-- id: uzb
+    ISO_639_2T: urd
+    ISO_639_3: urd
+    XML_LNG: ur
+    iri: https://nma.eosc.cz/vocabularies/languages/urd
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: URD
   title:
-    cs: uzbečtina
-    en: Uzbek
-  description:
+    cs: urdština
+    en: Urdu
+- description:
     en: Uzbek is an Eastern Turkic language and is spoken by the Uzbeks in Uzbekistan
       and elsewhere in Central Asia.Until 1992, Uzbek continued to be written using
       a Cyrillic alphabet almost everywhere, but now in Uzbekistan the Latin script
       has been officially re-introduced, although the use of Cyrillic is still widespread.
+  id: uzb
   props:
+    ISO_639_1: uz
+    ISO_639_2B: uzb
+    ISO_639_2T: uzb
+    ISO_639_3: uzb
+    XML_LNG: uz
     iri: https://nma.eosc.cz/vocabularies/languages/uzb
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: UZB
-    ISO_639_2T: uzb
-    XML_LNG: uz
-    ISO_639_3: uzb
-    ISO_639_2B: uzb
-    ISO_639_1: uz
-- id: ven
+  title:
+    cs: uzbečtina
+    en: Uzbek
+- description:
+    en: Venda is a Bantu language. It is one of the official languages of South Africa.
+  id: ven
+  props:
+    ISO_639_1: ve
+    ISO_639_2B: ven
+    ISO_639_2T: ven
+    ISO_639_3: ven
+    XML_LNG: ve
+    iri: https://nma.eosc.cz/vocabularies/languages/ven
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: VEN
   title:
     cs: vendština
     en: Venda
-  description:
-    en: Venda is a Bantu language. It is one of the official languages of South Africa.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/ven
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: VEN
-    ISO_639_2B: ven
-    ISO_639_3: ven
-    ISO_639_2T: ven
-    XML_LNG: ve
-    ISO_639_1: ve
-- id: vie
-  title:
-    cs: vietnamština
-    en: Vietnamese
-  description:
+- description:
     en: Vietnamese is the native language of Vietnamese people. It is part of the
       Austroasiatic language family of which it has, by far, the most speakers.The
       Vietnamese alphabet (quốc ngữ) in use today is a Latin alphabet with additional
       diacritics for tones, and certain letters.
+  id: vie
   props:
+    ISO_639_1: vi
+    ISO_639_2B: vie
+    ISO_639_2T: vie
+    ISO_639_3: vie
+    XML_LNG: vi
     iri: https://nma.eosc.cz/vocabularies/languages/vie
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: VIE
-    ISO_639_2B: vie
-    XML_LNG: vi
-    ISO_639_2T: vie
-    ISO_639_1: vi
-    ISO_639_3: vie
-- id: wln
   title:
-    cs: valonština
-    en: Walloon
-  description:
+    cs: vietnamština
+    en: Vietnamese
+- description:
     en: Walloon is a Romance language, a langue d’oïl dialect indigenous to the greater
       part of Wallonia, the French-speaking south part of Belgium.Numerous associations
       are working to keep the language alive. On a government level, Walloon is officially
       recognised as a regional indigenous language.
+  id: wln
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/wln
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: WLN
-    ISO_639_2T: wln
     ISO_639_1: wa
     ISO_639_2B: wln
+    ISO_639_2T: wln
     ISO_639_3: wln
     XML_LNG: wa
-- id: wol
+    iri: https://nma.eosc.cz/vocabularies/languages/wln
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: WLN
   title:
-    cs: wolofština
-    en: Wolof
-  description:
+    cs: valonština
+    en: Walloon
+- description:
     en: Wolof belongs to the Senegambian branch of the Niger–Congo language family.
       It is the native language of the Wolof people and is spoken in Senegal, the
       Gambia and Mauritania.
+  id: wol
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/wol
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: WOL
     ISO_639_1: wo
-    XML_LNG: wo
     ISO_639_2B: wol
     ISO_639_2T: wol
     ISO_639_3: wol
-- id: xho
+    XML_LNG: wo
+    iri: https://nma.eosc.cz/vocabularies/languages/wol
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: WOL
+  title:
+    cs: wolofština
+    en: Wolof
+- description:
+    en: Xhosa is a Bantu language. It is one of the official languages of South Africa.
+  id: xho
+  props:
+    ISO_639_1: xh
+    ISO_639_2B: xho
+    ISO_639_2T: xho
+    ISO_639_3: xho
+    XML_LNG: xh
+    iri: https://nma.eosc.cz/vocabularies/languages/xho
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: XHO
   title:
     cs: xhoština
     en: Xhosa
-  description:
-    en: Xhosa is a Bantu language. It is one of the official languages of South Africa.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/xho
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: XHO
-    ISO_639_2T: xho
-    ISO_639_3: xho
-    ISO_639_1: xh
-    ISO_639_2B: xho
-    XML_LNG: xh
-- id: yid
-  title:
-    cs: jidiš
-    en: Yiddish
-  description:
+- description:
     en: Yiddish is a Germanic language, the historical language of the Ashkenazi Jews
       in central and east Europe.Yiddish is traditionally written in a fully vocalised
       variety of Hebrew script. A transliteration into the Latin alphabet is quite
       often used.
+  id: yid
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/yid
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: YID
-    XML_LNG: yi
-    ISO_639_3: yid
     ISO_639_1: yi
     ISO_639_2B: yid
     ISO_639_2T: yid
-- id: yor
+    ISO_639_3: yid
+    XML_LNG: yi
+    iri: https://nma.eosc.cz/vocabularies/languages/yid
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: YID
   title:
-    cs: jorubština
-    en: Yoruba
-  description:
+    cs: jidiš
+    en: Yiddish
+- description:
     en: Yoruba is an Atlantic-Congo language that belongs to the Volta Niger group
       spoken in West Africa, most prominently in Southwestern Nigeria. It is spoken
       by the ethnic Yoruba people. Yoruba was – and still partially is – written in
       the Ajami script, a form of Arabic script but the language is mainly written
       in two special versions of the Latin alphabet, the Nigerian and the Beninese
       forms. It is part of the hypothetical Niger-Congo language family.
+  id: yor
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/yor
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: YOR
-    XML_LNG: yo
+    ISO_639_1: yo
     ISO_639_2B: yor
     ISO_639_2T: yor
     ISO_639_3: yor
-    ISO_639_1: yo
+    XML_LNG: yo
+    iri: https://nma.eosc.cz/vocabularies/languages/yor
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: YOR
+  title:
+    cs: jorubština
+    en: Yoruba
 - id: zha
+  props:
+    ISO_639_1: za
+    ISO_639_2B: zha
+    ISO_639_2T: zha
+    ISO_639_3: zha
+    XML_LNG: za
+    iri: https://nma.eosc.cz/vocabularies/languages/zha
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ZHA
   title:
     cs: Zhuang
     en: Zhuang
-  props:
-    iri: https://nma.eosc.cz/vocabularies/languages/zha
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ZHA
-    XML_LNG: za
-    ISO_639_1: za
-    ISO_639_3: zha
-    ISO_639_2B: zha
-    ISO_639_2T: zha
-- id: zho
-  title:
-    cs: čínština
-    en: Chinese
-  description:
+- description:
     en: Chinese is a group of related but often mutually unintelligible language varieties,
       forming one of the two Sinitic branches within the Sino-Tibetan language family.
       It is often collectively referred to as zhōngwén, meaning the Chinese language
@@ -2419,29 +2415,33 @@
       written form of the standard language, wén, based on the logograms known as
       Chinese characters, is shared by literate speakers of otherwise unintelligible
       dialects.
+  id: zho
   props:
+    ISO_639_1: zh
+    ISO_639_2B: chi
+    ISO_639_2T: zho
+    ISO_639_3: zho
+    XML_LNG: zh
     iri: https://nma.eosc.cz/vocabularies/languages/zho
     skos:exactMatch:http://publications.europa.eu/resource/authority/language: ZHO
-    XML_LNG: zh
-    ISO_639_2B: chi
-    ISO_639_3: zho
-    ISO_639_1: zh
-    ISO_639_2T: zho
-- id: zul
   title:
-    cs: zulština
-    en: Zulu
-  description:
+    cs: čínština
+    en: Chinese
+- description:
     en: Zulu is the language of the Zulu people, the vast majority of whom live in
       South Africa. Zulu is the second most widely spoken Bantu language after Shona.Like
       many other Bantu languages, it is written using the Latin alphabet.Standard
       Zulu as it is taught in schools (deep Zulu), differs in various respects from
       the language spoken by people living in cities (urban Zulu).
+  id: zul
   props:
-    iri: https://nma.eosc.cz/vocabularies/languages/zul
-    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ZUL
     ISO_639_1: zu
+    ISO_639_2B: zul
     ISO_639_2T: zul
     ISO_639_3: zul
     XML_LNG: zu
-    ISO_639_2B: zul
+    iri: https://nma.eosc.cz/vocabularies/languages/zul
+    skos:exactMatch:http://publications.europa.eu/resource/authority/language: ZUL
+  title:
+    cs: zulština
+    en: Zulu

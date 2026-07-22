@@ -23,6 +23,8 @@ import logging
 from pathlib import Path
 
 import click
+from rdflib import Graph, URIRef
+from rdflib.namespace import RDF, SKOS
 
 from ccmm_invenio.conversion.csv_loader import CSVToRDFLoader
 from ccmm_invenio.conversion.fixture_generator import FixtureGenerator
@@ -33,6 +35,149 @@ from ccmm_invenio.conversion.utils import print_concept_schemes, print_statistic
 from ccmm_invenio.conversion.yaml_loader import YAMLToRDFLoader
 
 log = logging.getLogger(__name__)
+
+
+def create_nma_vocabulary_terms(store: RDFTripleStore) -> None:
+    """Create NMA vocabulary terms from external schemes.
+
+    For each concept in external schemes, create a corresponding concept
+    in our NMA scheme with all the same properties, plus skos:exactMatch
+    linking back to the original.
+
+    Args:
+        store: The RDF triplestore containing external concepts
+
+    """
+    log.info("Creating NMA vocabulary terms from external schemes")
+
+    # Define mappings from external schemes to NMA schemes
+    scheme_mappings = [
+        {
+            "external_scheme": "http://publications.europa.eu/resource/authority/language",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/languages",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/languages/",
+        },
+        {
+            "external_scheme": "http://publications.europa.eu/resource/authority/file-type",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/filetypes",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/filetypes/",
+        },
+        {
+            "external_scheme": "http://purl.org/coar/access_right/scheme",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/accessrights",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/accessrights/",
+        },
+        {
+            "external_scheme": "http://purl.org/coar/resource_type/scheme",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/resourcetypes",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/resourcetypes/",
+        },
+        {
+            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/resourceagentroletypes",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/resourceagentroletypes/",
+        },
+        {
+            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/titletypes",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/titletypes/",
+        },
+        {
+            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/locationrelationtypes",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/locationrelationtypes/",
+        },
+        {
+            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/RelationType/",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/relationtypes",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/relationtypes/",
+        },
+        {
+            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/subjectcategories",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/subjectcategories/",
+        },
+        {
+            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/",
+            "nma_scheme": "https://nma.eosc.cz/vocabularies/datetypes",
+            "nma_base_uri": "https://nma.eosc.cz/vocabularies/datetypes/",
+        },
+    ]
+
+    total_created = 0
+
+    for mapping in scheme_mappings:
+        external_scheme_uri = mapping["external_scheme"]
+        nma_scheme_uri = mapping["nma_scheme"]
+        nma_base_uri = mapping["nma_base_uri"]
+
+        log.info("Creating NMA concepts from %s to %s", external_scheme_uri, nma_scheme_uri)
+
+        # Query for all concepts in the external scheme
+        query = f"""
+            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            
+            SELECT ?concept
+            WHERE {{
+                ?concept a skos:Concept ;
+                         skos:inScheme <{external_scheme_uri}> .
+            }}
+        """
+
+        concepts = list(store.graph.query(query))
+
+        if not concepts:
+            log.info("No concepts found in %s, skipping", external_scheme_uri)
+            continue
+
+        log.info("Found %d concepts to transform", len(concepts))
+
+        nma_graph = Graph()
+
+        for row in concepts:
+            external_concept_uri = row[0]
+            external_concept_str = str(external_concept_uri)
+
+            # Extract the identifier from the external URI, lowercased to match
+            # the fixture generator's ID convention (e.g. .../language/CEN -> cen)
+            concept_id = external_concept_str.rstrip("/").split("/")[-1].lower()
+
+            # Create NMA concept URI
+            nma_concept_uri = URIRef(f"{nma_base_uri}{concept_id}")
+
+            # Add concept type and scheme
+            nma_graph.add((nma_concept_uri, RDF.type, SKOS.Concept))
+            nma_graph.add((nma_concept_uri, SKOS.inScheme, URIRef(nma_scheme_uri)))
+
+            # Add exactMatch to original concept
+            nma_graph.add((nma_concept_uri, SKOS.exactMatch, external_concept_uri))
+
+            # Copy all other properties from the external concept
+            # Get all predicates and objects for this concept
+            for pred, obj in store.graph.predicate_objects(external_concept_uri):
+                pred_str = str(pred)
+
+                # Skip properties we've already handled or don't want to copy
+                if pred_str in [
+                    str(RDF.type),
+                    str(SKOS.inScheme),
+                ]:
+                    continue
+
+                # Copy the property to the NMA concept
+                nma_graph.add((nma_concept_uri, pred, obj))
+
+        # Merge NMA concepts into store
+        before_count = store.size()
+        store.merge(nma_graph)
+        after_count = store.size()
+        added = after_count - before_count
+
+        log.info("Created %d NMA concepts with %d triples for %s", len(concepts), added, nma_scheme_uri)
+        total_created += len(concepts)
+
+    log.info("Total NMA concepts created: %d", total_created)
 
 
 @click.command()
@@ -296,8 +441,12 @@ def convert_vocabularies(
         log.warning("SSSOM directory not found: %s", sssom_dir)
         total_sssom_triples = 0
 
-    # Step 5: Create Invenio fixtures from the triplestore
-    log.info("Step 5: Generating Invenio fixtures")
+    # Step 5: Create nma vocabulary terms
+    log.info("Step 5: Creating NMA vocabulary terms")
+    create_nma_vocabulary_terms(store)
+
+    # Step 6: Create Invenio fixtures from the triplestore
+    log.info("Step 6: Generating Invenio fixtures")
     generator = FixtureGenerator(store)
     fixture_results = generator.generate_all(output_dir)
 
@@ -313,9 +462,9 @@ def convert_vocabularies(
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "vocabularies.ttl"
 
-    log.info("Writing triplestore to %s...", output_file)
+    log.info("Writing sorted triplestore to %s...", output_file)
     with output_file.open("w", encoding="utf-8") as f:
-        f.write(store.serialize(format="turtle"))
+        f.write(store.serialize_sorted(format="turtle"))
     log.info("Successfully wrote %d triples to %s", store.size(), output_file)
 
     # Print summary statistics

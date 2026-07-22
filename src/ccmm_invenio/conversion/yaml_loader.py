@@ -86,33 +86,26 @@ class YAMLToRDFLoader:
 
             # Store the original ID (preserve case) using dc:identifier
             from rdflib.namespace import DC
+
             self.store.graph.add((concept_uri, DC.identifier, Literal(term_id)))
 
             # Add labels
             if "title" in item:
                 titles = item["title"]
                 if isinstance(titles, dict):
-                    if "cs" in titles and titles["cs"]:
-                        self.store.graph.add(
-                            (concept_uri, SKOS.prefLabel, Literal(titles["cs"], lang="cs"))
-                        )
-                    if "en" in titles and titles["en"]:
-                        self.store.graph.add(
-                            (concept_uri, SKOS.prefLabel, Literal(titles["en"], lang="en"))
-                        )
+                    if titles.get("cs"):
+                        self.store.graph.add((concept_uri, SKOS.prefLabel, Literal(titles["cs"], lang="cs")))
+                    if titles.get("en"):
+                        self.store.graph.add((concept_uri, SKOS.prefLabel, Literal(titles["en"], lang="en")))
 
             # Add descriptions
             if "description" in item:
                 descriptions = item["description"]
                 if isinstance(descriptions, dict):
-                    if "cs" in descriptions and descriptions["cs"]:
-                        self.store.graph.add(
-                            (concept_uri, SKOS.definition, Literal(descriptions["cs"], lang="cs"))
-                        )
-                    if "en" in descriptions and descriptions["en"]:
-                        self.store.graph.add(
-                            (concept_uri, SKOS.definition, Literal(descriptions["en"], lang="en"))
-                        )
+                    if descriptions.get("cs"):
+                        self.store.graph.add((concept_uri, SKOS.definition, Literal(descriptions["cs"], lang="cs")))
+                    if descriptions.get("en"):
+                        self.store.graph.add((concept_uri, SKOS.definition, Literal(descriptions["en"], lang="en")))
 
             # Add hierarchy (parent relationship)
             if "hierarchy" in item and "parent" in item["hierarchy"]:
@@ -127,31 +120,23 @@ class YAMLToRDFLoader:
                     for key, value in props.items():
                         if key == "acronym":
                             # Store acronym as a custom property
-                            self.store.graph.add(
-                                (concept_uri, CCMM_PROPS.acronym, Literal(value))
-                            )
+                            self.store.graph.add((concept_uri, CCMM_PROPS.acronym, Literal(value)))
                         elif key == "iri":
                             # Store external IRI for later exactMatch creation
                             # Only if it's different from the NMA namespace
                             external_iri = str(value).rstrip("/")
                             # Store as a temporary property that will be converted to exactMatch
-                            self.store.graph.add(
-                                (concept_uri, CCMM_PROPS["externalIri"], Literal(external_iri))
-                            )
+                            self.store.graph.add((concept_uri, CCMM_PROPS["externalIri"], Literal(external_iri)))
                         # Other props can be added here as needed
 
             # Add icon if present
-            if "icon" in item and item["icon"]:
-                self.store.graph.add(
-                    (concept_uri, CCMM_PROPS.icon, Literal(item["icon"]))
-                )
+            if item.get("icon"):
+                self.store.graph.add((concept_uri, CCMM_PROPS.icon, Literal(item["icon"])))
 
             # Add tags if present
             if "tags" in item and isinstance(item["tags"], list):
                 for tag in item["tags"]:
-                    self.store.graph.add(
-                        (concept_uri, CCMM_PROPS.tag, Literal(tag))
-                    )
+                    self.store.graph.add((concept_uri, CCMM_PROPS.tag, Literal(tag)))
 
             concepts_loaded += 1
 

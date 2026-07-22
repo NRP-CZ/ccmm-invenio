@@ -15,9 +15,8 @@ from collections import defaultdict
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    from pathlib import Path
-
     from collections.abc import Callable
+    from pathlib import Path
 
     from .rdf_store import RDFTripleStore
 
@@ -50,9 +49,7 @@ class FixtureGenerator:
 
         # Generate CCMM vocabulary fixtures
         # Note: CCMM scheme URIs have trailing slashes to match CSV base IRIs
-        base_scheme = "https://vocabs.ccmm.cz/registry/codelist"
-        coar_scheme = "http://purl.org/coar"
-        eu_scheme = "http://publications.europa.eu/resource/authority"
+        nma_scheme = "https://nma.eosc.cz/vocabularies"
 
         # Helper function for primary language filter
         def _has_iso_639_1(term: dict[str, Any]) -> bool:
@@ -62,37 +59,37 @@ class FixtureGenerator:
             (
                 "ccmm_agent_roles.yaml",
                 self._generate_ccmm_vocabulary,
-                f"{base_scheme}/AgentRole/",
+                f"{nma_scheme}/resourceagentroletypes",
                 "resourceagentroletypes",
             ),
             (
                 "ccmm_alternate_title_types.yaml",
                 self._generate_ccmm_vocabulary,
-                f"{base_scheme}/AlternateTitle/",
+                f"{nma_scheme}/titletypes",
                 "titletypes",
             ),
             (
                 "ccmm_location_relation_types.yaml",
                 self._generate_ccmm_vocabulary,
-                f"{base_scheme}/LocationRelation/",
+                f"{nma_scheme}/locationrelationtypes",
                 "locationrelationtypes",
             ),
             (
                 "ccmm_relation_types.yaml",
                 self._generate_ccmm_vocabulary,
-                f"{base_scheme}/RelationType/",
+                f"{nma_scheme}/relationtypes",
                 "relationtypes",
             ),
             (
                 "ccmm_subject_categories.yaml",
                 self._generate_ccmm_vocabulary,
-                f"{base_scheme}/SubjectCategory/",
+                f"{nma_scheme}/subjectcategories",
                 "subjectcategories",
             ),
             (
                 "ccmm_time_reference_types.yaml",
                 self._generate_ccmm_vocabulary,
-                f"{base_scheme}/TimeReference/",
+                f"{nma_scheme}/datetypes",
                 "datetypes",
             ),
             ("ccmm_rdm_subjects.yaml", self._generate_rdm_subjects, None, None),
@@ -100,7 +97,7 @@ class FixtureGenerator:
                 "ccmm_languages_all.yaml",
                 lambda: sorted(
                     self._generate_ccmm_vocabulary(
-                        f"{eu_scheme}/language",
+                        f"{nma_scheme}/languages",
                         extra_props_func=self._get_iso_codes,
                         vocabulary_type="languages",
                     ),
@@ -113,7 +110,7 @@ class FixtureGenerator:
                 "ccmm_languages_primary.yaml",
                 lambda: sorted(
                     self._generate_ccmm_vocabulary(
-                        f"{eu_scheme}/language",
+                        f"{nma_scheme}/languages",
                         filter_func=_has_iso_639_1,
                         extra_props_func=self._get_iso_codes,
                         vocabulary_type="languages",
@@ -126,32 +123,32 @@ class FixtureGenerator:
             (
                 "ccmm_access_rights.yaml",
                 self._generate_ccmm_vocabulary_with_sorting,
-                f"{coar_scheme}/access_right/scheme",
+                f"{nma_scheme}/accessrights",
                 "accessrights",
             ),
             (
                 "ccmm_resource_types.yaml",
                 self._generate_ccmm_vocabulary_with_sorting,
-                f"{coar_scheme}/resource_type/scheme",
+                f"{nma_scheme}/resourcetypes",
                 "resourcetypes",
             ),
             (
                 "ccmm_file_types.yaml",
                 self._generate_ccmm_vocabulary_with_sorting,
-                f"{eu_scheme}/file-type",
+                f"{nma_scheme}/filetypes",
                 "filetypes",
             ),
             ("ccmm_contributor_types.yaml", self._generate_contributor_types, None, None),
             (
                 "ccmm_licenses.yaml",
                 self._generate_ccmm_vocabulary_with_sorting,
-                "https://nma.eosc.cz/vocabularies/licenses",
+                f"{nma_scheme}/licenses",
                 "licenses",
             ),
             (
                 "ccmm_subject_schemes.yaml",
                 self._generate_ccmm_vocabulary_with_sorting,
-                "https://nma.eosc.cz/vocabularies/subjectschemes",
+                f"{nma_scheme}/subjectschemes",
                 "subjectschemes",
             ),
         ]
@@ -169,14 +166,18 @@ class FixtureGenerator:
                 else:
                     data = generator_func()
 
-                # Write to file
+                # Sort data by ID for stable output
+                if isinstance(data, list):
+                    data = sorted(data, key=lambda x: str(x.get("id", "")))
+                
+                # Write to file with sorted keys for stable output
                 with output_path.open("w", encoding="utf-8") as f:
                     yaml.safe_dump(
                         data,
                         f,
                         allow_unicode=True,
                         default_flow_style=False,
-                        sort_keys=False,
+                        sort_keys=True,
                     )
 
                 results[filename] = len(data)
@@ -232,16 +233,16 @@ class FixtureGenerator:
 
             concept_str = str(concept_uri)
             term_id = self._extract_id_from_uri(concept_uri)
-            
+
             # Create NMA IRI
             new_iri = f"https://nma.eosc.cz/vocabularies/subjects/{term_id}"
-            
+
             # Extract old namespace and ID path for exactMatch
             old_namespace = self._get_namespace_uri(concept_str)
             props: dict[str, Any] = {"iri": new_iri}
-            
+
             if old_namespace:
-                old_id_path = concept_str[len(old_namespace):].rstrip("/")
+                old_id_path = concept_str[len(old_namespace) :].rstrip("/")
                 if old_id_path:
                     prop_key = f"skos:exactMatch:{old_namespace.rstrip('/')}"
                     props[prop_key] = old_id_path
@@ -290,6 +291,7 @@ class FixtureGenerator:
         Args:
             scheme_uri: The full URI of the concept scheme (e.g.,
                 "https://vocabs.ccmm.cz/registry/codelist/AgentRole")
+
         """
         return self._get_concepts_by_scheme(scheme_uri)
 
@@ -301,12 +303,10 @@ class FixtureGenerator:
 
         Returns:
             List of concept URIs belonging to the scheme.
+
         """
         query = (
-            "SELECT DISTINCT ?concept WHERE {"
-            "  ?concept a skos:Concept ;"
-            f"           skos:inScheme <{scheme_uri}> ."
-            "}"
+            f"SELECT DISTINCT ?concept WHERE {{  ?concept a skos:Concept ;           skos:inScheme <{scheme_uri}> .}}"
         )
         results = self.graph.query(query)
         return [row[0] for row in results]
@@ -324,6 +324,7 @@ class FixtureGenerator:
 
         Returns:
             List of term dictionaries sorted by hierarchy.
+
         """
         concepts = self._get_concepts_by_scheme(scheme_uri)
         sssom_mappings = self._get_sssom_mappings_for_concepts(concepts)
@@ -340,18 +341,14 @@ class FixtureGenerator:
 
         return result
 
-    def _get_sssom_mappings_for_concepts(
-        self, concepts: list
-    ) -> dict[str, dict[tuple[str, str], set[str]]]:
+    def _get_sssom_mappings_for_concepts(self, concepts: list) -> dict[str, dict[tuple[str, str], set[str]]]:
         """Get SSSOM mappings for a list of concepts.
 
         Returns mappings where keys are concept URIs and values are dicts mapping
         (predicate, namespace_uri) tuples to sets of IDs within those namespaces.
         The predicate is the short form like 'skos:exactMatch'.
         """
-        mappings: dict[str, dict[tuple[str, str], set[str]]] = defaultdict(
-            lambda: defaultdict(set)
-        )
+        mappings: dict[str, dict[tuple[str, str], set[str]]] = defaultdict(lambda: defaultdict(set))
 
         for concept in concepts:
             concept_str = str(concept)
@@ -377,7 +374,7 @@ class FixtureGenerator:
                 namespace_uri = self._get_namespace_uri(source_uri)
                 if namespace_uri and predicate_short:
                     # Extract the full ID path (everything after the namespace)
-                    id_path = source_uri[len(namespace_uri):].rstrip("/")
+                    id_path = source_uri[len(namespace_uri) :].rstrip("/")
                     mappings[concept_str][(predicate_short, namespace_uri)].add(id_path)
 
             # Query for mappings where concept is the source
@@ -401,7 +398,7 @@ class FixtureGenerator:
                 namespace_uri = self._get_namespace_uri(target_uri)
                 if namespace_uri and predicate_short:
                     # Extract the full ID path (everything after the namespace)
-                    id_path = target_uri[len(namespace_uri):].rstrip("/")
+                    id_path = target_uri[len(namespace_uri) :].rstrip("/")
                     mappings[concept_str][(predicate_short, namespace_uri)].add(id_path)
 
         return mappings
@@ -460,7 +457,7 @@ class FixtureGenerator:
         last_slash_idx = uri.rfind("/")
         if last_slash_idx > 0:
             # Return namespace with trailing slash
-            return uri[:last_slash_idx + 1]
+            return uri[: last_slash_idx + 1]
         return None
 
     def _build_term(
@@ -499,7 +496,7 @@ class FixtureGenerator:
             old_namespace = self._get_namespace_uri(concept_str)
             if old_namespace:
                 # Get the path after the namespace (for the exactMatch mapping)
-                old_id_path = concept_str[len(old_namespace):].rstrip("/")
+                old_id_path = concept_str[len(old_namespace) :].rstrip("/")
                 # Construct new standardized IRI using vocabulary type and term_id
                 new_iri = f"https://nma.eosc.cz/vocabularies/{vocabulary_type}/{term_id}"
 
@@ -552,12 +549,23 @@ class FixtureGenerator:
             namespace_uri = self._get_namespace_uri(external_iri)
             if namespace_uri:
                 # Get the ID path (everything after namespace)
-                id_path = external_iri[len(namespace_uri):].rstrip("/")
+                id_path = external_iri[len(namespace_uri) :].rstrip("/")
                 if id_path:  # Only add if there's an ID
                     prop_key = f"skos:exactMatch:{namespace_uri.rstrip('/')}"
                     props[prop_key] = id_path
                 # If no ID (URL ends with just namespace), don't add exactMatch
                 # as it doesn't make sense without an identifier
+
+        # Handle skos:exactMatch triples (added e.g. by create_nma_vocabulary_terms
+        # when a concept was created in an NMA scheme from an external source)
+        for obj in self.graph.objects(concept_uri, SKOS.exactMatch):
+            match_iri = str(obj)
+            namespace_uri = self._get_namespace_uri(match_iri)
+            if namespace_uri:
+                id_path = match_iri[len(namespace_uri) :].rstrip("/")
+                if id_path:
+                    prop_key = f"skos:exactMatch:{namespace_uri.rstrip('/')}"
+                    props[prop_key] = id_path
 
         # Add extra properties (for backward compatibility)
         if extra_props:
@@ -640,7 +648,7 @@ class FixtureGenerator:
 
     def _extract_id_from_uri(self, uri: URIRef) -> str:
         """Extract ID from URI (always lowercase).
-        
+
         For concepts with dc:identifier, uses it but lowercases the result.
         For other concepts, extracts from URI and lowercases it.
         """
@@ -705,7 +713,7 @@ class FixtureGenerator:
             # Check if the predicate is in the CCMM_PROPS namespace
             if pred_str.startswith(ccmm_props_prefix):
                 # Extract the property name (everything after the namespace)
-                prop_name = pred_str[len(ccmm_props_prefix):]
+                prop_name = pred_str[len(ccmm_props_prefix) :]
                 # Skip baseIri as it's redundant with the concept URI
                 # Also skip externalIri as it's handled separately in _build_term
                 if prop_name not in ("baseIri", "externalIri"):

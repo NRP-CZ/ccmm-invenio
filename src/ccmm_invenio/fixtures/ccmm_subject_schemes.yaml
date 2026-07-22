@@ -1,41 +1,41 @@
-- id: frascati
-  title:
-    cs: Frascati
-    en: Frascati
-  description:
-    cs: Frascati je mezinárodní klasifikace výzkumných a vývojových aktivit.
-    en: Frascati is an international classification of research and development activities.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/subjectschemes/frascati
-- id: euroscivoc
-  title:
-    cs: EuroVoc
-    en: EuroVoc
-  description:
+- description:
     cs: EuroVoc je vícejazyčná klasifikace pojmů, která pokrývá oblasti činnosti Evropské
       unie.
     en: EuroVoc is a multilingual thesaurus covering the activities of the European
       Union.
+  id: euroscivoc
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectschemes/euroscivoc
     skos:exactMatch:https://op.europa.eu/en/web/eu-vocabularies: euroscivoc
-- id: mesh
   title:
-    cs: MeSH
-    en: MeSH
-  description:
-    cs: MeSH je kontrolovaný slovník pro biomedicínské a zdravotnické informace.
-    en: MeSH is a controlled vocabulary for biomedical and health information.
+    cs: EuroVoc
+    en: EuroVoc
+- description:
+    cs: Frascati je mezinárodní klasifikace výzkumných a vývojových aktivit.
+    en: Frascati is an international classification of research and development activities.
+  id: frascati
   props:
-    iri: https://nma.eosc.cz/vocabularies/subjectschemes/mesh
-    skos:exactMatch:https://www.nlm.nih.gov/mesh: meshhome.html
-- id: gemet
+    iri: https://nma.eosc.cz/vocabularies/subjectschemes/frascati
   title:
-    cs: GEMET
-    en: GEMET
-  description:
+    cs: Frascati
+    en: Frascati
+- description:
     cs: GEMET je vícejazyčná klasifikace pojmů zaměřená na životní prostředí.
     en: GEMET is a multilingual thesaurus focused on the environment.
+  id: gemet
   props:
     iri: https://nma.eosc.cz/vocabularies/subjectschemes/gemet
     skos:exactMatch:https://www.eionet.europa.eu/gemet/en: about
+  title:
+    cs: GEMET
+    en: GEMET
+- description:
+    cs: MeSH je kontrolovaný slovník pro biomedicínské a zdravotnické informace.
+    en: MeSH is a controlled vocabulary for biomedical and health information.
+  id: mesh
+  props:
+    iri: https://nma.eosc.cz/vocabularies/subjectschemes/mesh
+    skos:exactMatch:https://www.nlm.nih.gov/mesh: meshhome.html
+  title:
+    cs: MeSH
+    en: MeSH

@@ -1,42 +1,42 @@
-- id: alternativetitle
-  title:
-    cs: Alternativní název
-    en: Alternative Title
-  description:
+- description:
     cs: Alternativní název datasetu - může se jednat o uvedení nebo naopak rozepsání
       zkratky, přepisem číslených hodnot atd.
     en: Alternative dataset title - could be abbreviations, transcribing numerical
       values, etc.
+  id: alternativetitle
   props:
     iri: https://nma.eosc.cz/vocabularies/titletypes/alternativetitle
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: AlternativeTitle
-- id: subtitle
   title:
-    cs: Podnázev
-    en: Subtitle
-  description:
-    cs: Podnázev, který doplňuje název datasetu.
-    en: Subtitle that complements the dataset title.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/titletypes/subtitle
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: Subtitle
-- id: translatedtitle
-  title:
-    cs: Přeložený název
-    en: Translated Title
-  description:
-    cs: Překlad názvu datasetu.
-    en: Translation of the dataset title.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/titletypes/translatedtitle
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: TranslatedTitle
-- id: other
-  title:
-    cs: Jiný
-    en: Other
-  description:
+    cs: Alternativní název
+    en: Alternative Title
+- description:
     cs: Jiný název, než je překlad, podnázev a alternativní název.
     en: Other title than the subtitle, transated title or alternative title.
+  id: other
   props:
     iri: https://nma.eosc.cz/vocabularies/titletypes/other
     skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: Other
+  title:
+    cs: Jiný
+    en: Other
+- description:
+    cs: Podnázev, který doplňuje název datasetu.
+    en: Subtitle that complements the dataset title.
+  id: subtitle
+  props:
+    iri: https://nma.eosc.cz/vocabularies/titletypes/subtitle
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: Subtitle
+  title:
+    cs: Podnázev
+    en: Subtitle
+- description:
+    cs: Překlad názvu datasetu.
+    en: Translation of the dataset title.
+  id: translatedtitle
+  props:
+    iri: https://nma.eosc.cz/vocabularies/titletypes/translatedtitle
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: TranslatedTitle
+  title:
+    cs: Přeložený název
+    en: Translated Title

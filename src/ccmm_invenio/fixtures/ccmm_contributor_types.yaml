@@ -1,39 +1,35 @@
-- id: contactperson
-  title:
-    cs: Kontaktní osoba
-    en: Contact Person
-  description:
+- description:
     en: 'Person with knowledge of how to access, troubleshoot, or otherwise field
       issues related to the resource.
 
       May also be the “Point of Contact” in an organisation that controls access to
       the resource, if that organisation is different from the Publisher, Distributor,
       and Data Manager.'
+  id: contactperson
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/contactperson
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ContactPerson
     skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ContactPerson
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ContactPerson
     skos:exactMatch:info:eu-repo/semantics: ContactPerson
-- id: datacollector
   title:
-    cs: Sběratel dat
-    en: Data Collector
-  description:
+    cs: Kontaktní osoba
+    en: Contact Person
+- description:
     en: 'Person/institution responsible for finding or gathering/collecting data under
       the guidelines of the author(s) or Principal Investigator (PI).
 
       May also be used when crediting survey conductors, interviewers, event or condition
       observers, or persons responsible for monitoring key instrument data.'
+  id: datacollector
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/datacollector
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCollector
     skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataCollector
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCollector
     skos:exactMatch:info:eu-repo/semantics: DataCollector
-- id: datacurator
   title:
-    cs: Kurátor dat
-    en: Data Curator
-  description:
+    cs: Sběratel dat
+    en: Data Collector
+- description:
     en: 'Person tasked with reviewing, enhancing, cleaning, or standardizing metadata
       and the associated data submitted for storage, use, and maintenance within a
       data centre or repository.
@@ -49,16 +45,16 @@
 
       Repository managers as well as data librarians working in the repository fall
       within this category.'
+  id: datacurator
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/datacurator
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCurator
     skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataCurator
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCurator
     skos:exactMatch:info:eu-repo/semantics: DataCurator
-- id: datamanager
   title:
-    cs: Manažer dat
-    en: Data Manager
-  description:
+    cs: Kurátor dat
+    en: Data Curator
+- description:
     en: 'Person (or organisation with a staff of data managers, such as a data centre)
       responsible for maintaining the finished resource.
 
@@ -67,270 +63,60 @@
       from unauthorized access, is stored in accordance with industry standards, and
       is handled in accordance with the records management requirements applicable
       to it.'
+  id: datamanager
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/datamanager
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataManager
     skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataManager
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataManager
     skos:exactMatch:info:eu-repo/semantics: DataManager
-- id: distributor
   title:
-    cs: Distributor
-    en: Distributor
-  description:
+    cs: Manažer dat
+    en: Data Manager
+- description:
     en: 'Institution tasked with responsibility to generate/disseminate copies of
       the resource in either electronic or print form.
 
       Works stored in more than one archive/repository may credit each as a distributor.'
+  id: distributor
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/distributor
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Distributor
     skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Distributor
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Distributor
     skos:exactMatch:info:eu-repo/semantics: Distributor
-- id: editor
   title:
-    cs: Editor
-    en: Editor
-  description:
+    cs: Distributor
+    en: Distributor
+- description:
     en: 'A person who oversees the details related to the publication format of the
       resource.
 
       Note: if the Editor is to be credited in place of multiple creators, the Editor’s
       name may be supplied as Creator, with “(Ed.)” appended to the name.'
+  id: editor
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/editor
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Editor
     skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Editor
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Editor
     skos:exactMatch:info:eu-repo/semantics: Editor
-- id: hostinginstitution
   title:
-    cs: Hostující instituce
-    en: Hosting Institution
-  description:
+    cs: Editor
+    en: Editor
+- description:
     en: 'Typically, the organisation allowing the resource to be available on the
       internet through the provision of its hardware/software/operating support.
 
       This role normally falls on the University, research center or organization
       where the data center/data repository belongs.'
+  id: hostinginstitution
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/hostinginstitution
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: HostingInstitution
     skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: HostingInstitution
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: HostingInstitution
     skos:exactMatch:info:eu-repo/semantics: HostingInstitution
-- id: producer
   title:
-    cs: Producent
-    en: Producer
-  description:
-    en: 'Typically, a person or organisation responsible for the artistry and form
-      of a media product.
-
-      In the data industry, this may be a company “producing” DVDs that package data
-      for future dissemination by a distributor.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/producer
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Producer
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Producer
-    skos:exactMatch:info:eu-repo/semantics: Producer
-- id: projectleader
-  title:
-    cs: Vedoucí projektu
-    en: Project Leader
-  description:
-    en: 'Person officially designated as head of project team or sub- project team
-      instrumental in the work necessary to development of the resource.
-
-      The Project Leader is not “removed” from the work that resulted in the resource;
-      he or she remains intimately involved throughout the life of the particular
-      project team.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectleader
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectLeader
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectLeader
-    skos:exactMatch:info:eu-repo/semantics: ProjectLeader
-- id: projectmanager
-  title:
-    cs: Projektový manažer
-    en: Project Manager
-  description:
-    en: 'Person officially designated as manager of a project. Project may consist
-      of one or many project teams and sub-teams.
-
-      The manager of a project normally has more administrative responsibility than
-      actual work involvement.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectmanager
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectManager
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectManager
-    skos:exactMatch:info:eu-repo/semantics: ProjectManager
-- id: projectmember
-  title:
-    cs: Člen projektového týmu
-    en: Project Member
-  description:
-    en: 'Person on the membership list of a designated project/project team.
-
-      This vocabulary may or may not indicate the quality, quantity, or substance
-      of the person’s involvement.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectmember
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectMember
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectMember
-    skos:exactMatch:info:eu-repo/semantics: ProjectMember
-- id: registrationagency
-  title:
-    cs: Registrační agentura
-    en: Registration Agency
-  description:
-    en: 'Institution/organisation officially appointed by a Registration Authority
-      to handle specific tasks within a defined area of responsibility.
-
-      DataCite is a Registration Agency for the International DOI Foundation (IDF).
-      One of DataCite’s tasks is to assign DOI prefixes to the allocating agents who
-      then assign the full, specific character string to data clients, provide metadata
-      back to the DataCite registry, etc.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/registrationagency
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAgency
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAgency
-    skos:exactMatch:info:eu-repo/semantics: RegistrationAgency
-- id: registrationauthority
-  title:
-    cs: Registrační autorita
-    en: Registration Authority
-  description:
-    en: 'A standards-setting body from which Registration Agencies obtain official
-      recognition and guidance.
-
-      The IDF serves as the Registration Authority for the International Standards
-      Organisation (ISO) in the area/domain of Digital Object Identifiers.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/registrationauthority
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAuthority
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAuthority
-    skos:exactMatch:info:eu-repo/semantics: RegistrationAuthority
-- id: relatedperson
-  title:
-    cs: Související osoba
-    en: Related Person
-  description:
-    en: 'A person without a specifically defined role in the development of the resource,
-      but who is someone the author wishes to recognize.
-
-      Usage Notes: This person could be an author’s intellectual mentor, a person
-      providing intellectual leadership in the discipline or subject domain, etc.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/relatedperson
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RelatedPerson
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RelatedPerson
-    skos:exactMatch:info:eu-repo/semantics: RelatedPerson
-- id: researcher
-  title:
-    cs: Výzkumník
-    en: Researcher
-  description:
-    en: 'A person involved in analysing data or the results of an experiment or formal
-      study. May indicate an intern or assistant to one of the authors who helped
-      with research but who was not so “key” as to be listed as an author.
-
-      Should be a person, not an institution. Note that a person involved in the gathering
-      of data would fall under the contributorType “DataCollector.” The researcher
-      may find additional data online and correlate it to the data collected for the
-      experiment or study, for example.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/researcher
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Researcher
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Researcher
-    skos:exactMatch:info:eu-repo/semantics: Researcher
-- id: researchgroup
-  title:
-    cs: Výzkumná skupina
-    en: Research Group
-  description:
-    en: 'Typically refers to a group of individuals with a lab, department, or division
-      that has a specifically defined focus of activity.
-
-      May operate at a narrower level of scope; may or may not hold less administrative
-      responsibility than a project team.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/researchgroup
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ResearchGroup
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ResearchGroup
-    skos:exactMatch:info:eu-repo/semantics: ResearchGroup
-- id: rightsholder
-  title:
-    cs: Majitel práv
-    en: Rights Holder
-  description:
-    en: Person or institution owning or managing property rights, including intellectual
-      property rights over the resource.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/rightsholder
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RightsHolder
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RightsHolder
-    skos:exactMatch:info:eu-repo/semantics: RightsHolder
-- id: sponsor
-  title:
-    cs: Sponzor
-    en: Sponsor
-  description:
-    en: 'Person or organisation that issued a contract or under the auspices of which
-      a work has been written, printed, published, developed, etc.
-
-      Includes organisations that provide in-kind support, through donation, provision
-      of people or a facility or instrumentation necessary for the development of
-      the resource, etc.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/sponsor
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Sponsor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Sponsor
-    skos:exactMatch:info:eu-repo/semantics: Sponsor
-- id: supervisor
-  title:
-    cs: Supervizor
-    en: Supervisor
-  description:
-    en: Designated administrator over one or more groups/teams working to produce
-      a resource, or over one or more steps of a development process.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/supervisor
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Supervisor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Supervisor
-    skos:exactMatch:info:eu-repo/semantics: Supervisor
-- id: translator
-  title:
-    cs: Překladatel
-    en: Translator
-  description:
-    en: 'A person, organization, or automated system responsible for converting the
-      content of a resource from one language into another, preserving its meaning
-      and intended message.
-
-      This contributor type should be applied to DOI metadata for a resource which
-      has been translated from another resource.'
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/translator
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Translator
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Translator
-- id: workpackageleader
-  title:
-    cs: Vedoucí pracovního balíku
-    en: Work Package Leader
-  description:
-    en: A Work Package is a recognized data product, not all of which is included
-      in publication. The package, instead, may include notes, discarded documents,
-      etc. The Work Package Leader is responsible for ensuring the comprehensive contents,
-      versioning, and availability of the Work Package during the development of the
-      resource.
-  props:
-    iri: https://nma.eosc.cz/vocabularies/contributorsroles/workpackageleader
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: WorkPackageLeader
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: WorkPackageLeader
-    skos:exactMatch:info:eu-repo/semantics: WorkPackageLeader
-- id: other
-  title:
-    cs: Jiná role
-    en: Other
-  description:
+    cs: Hostující instituce
+    en: Hosting Institution
+- description:
     en: 'Any person or institution making a significant contribution to the development
       and/or maintenance of the resource, but whose contribution is not adequately
       described by any of the other values for contributorType.
@@ -339,8 +125,222 @@
       the resource (as opposed to creating it), a reviewer of the resource, someone
       providing administrative services to the author (such as depositing updates
       into an online repository, analysing usage, etc.), or one of many other roles.'
+  id: other
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/other
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Other
     skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Other
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Other
     skos:exactMatch:info:eu-repo/semantics: Other
+  title:
+    cs: Jiná role
+    en: Other
+- description:
+    en: 'Typically, a person or organisation responsible for the artistry and form
+      of a media product.
+
+      In the data industry, this may be a company “producing” DVDs that package data
+      for future dissemination by a distributor.'
+  id: producer
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/producer
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Producer
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Producer
+    skos:exactMatch:info:eu-repo/semantics: Producer
+  title:
+    cs: Producent
+    en: Producer
+- description:
+    en: 'Person officially designated as head of project team or sub- project team
+      instrumental in the work necessary to development of the resource.
+
+      The Project Leader is not “removed” from the work that resulted in the resource;
+      he or she remains intimately involved throughout the life of the particular
+      project team.'
+  id: projectleader
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectleader
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectLeader
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectLeader
+    skos:exactMatch:info:eu-repo/semantics: ProjectLeader
+  title:
+    cs: Vedoucí projektu
+    en: Project Leader
+- description:
+    en: 'Person officially designated as manager of a project. Project may consist
+      of one or many project teams and sub-teams.
+
+      The manager of a project normally has more administrative responsibility than
+      actual work involvement.'
+  id: projectmanager
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectmanager
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectManager
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectManager
+    skos:exactMatch:info:eu-repo/semantics: ProjectManager
+  title:
+    cs: Projektový manažer
+    en: Project Manager
+- description:
+    en: 'Person on the membership list of a designated project/project team.
+
+      This vocabulary may or may not indicate the quality, quantity, or substance
+      of the person’s involvement.'
+  id: projectmember
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectmember
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectMember
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectMember
+    skos:exactMatch:info:eu-repo/semantics: ProjectMember
+  title:
+    cs: Člen projektového týmu
+    en: Project Member
+- description:
+    en: 'Institution/organisation officially appointed by a Registration Authority
+      to handle specific tasks within a defined area of responsibility.
+
+      DataCite is a Registration Agency for the International DOI Foundation (IDF).
+      One of DataCite’s tasks is to assign DOI prefixes to the allocating agents who
+      then assign the full, specific character string to data clients, provide metadata
+      back to the DataCite registry, etc.'
+  id: registrationagency
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/registrationagency
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAgency
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAgency
+    skos:exactMatch:info:eu-repo/semantics: RegistrationAgency
+  title:
+    cs: Registrační agentura
+    en: Registration Agency
+- description:
+    en: 'A standards-setting body from which Registration Agencies obtain official
+      recognition and guidance.
+
+      The IDF serves as the Registration Authority for the International Standards
+      Organisation (ISO) in the area/domain of Digital Object Identifiers.'
+  id: registrationauthority
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/registrationauthority
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAuthority
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAuthority
+    skos:exactMatch:info:eu-repo/semantics: RegistrationAuthority
+  title:
+    cs: Registrační autorita
+    en: Registration Authority
+- description:
+    en: 'A person without a specifically defined role in the development of the resource,
+      but who is someone the author wishes to recognize.
+
+      Usage Notes: This person could be an author’s intellectual mentor, a person
+      providing intellectual leadership in the discipline or subject domain, etc.'
+  id: relatedperson
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/relatedperson
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RelatedPerson
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RelatedPerson
+    skos:exactMatch:info:eu-repo/semantics: RelatedPerson
+  title:
+    cs: Související osoba
+    en: Related Person
+- description:
+    en: 'A person involved in analysing data or the results of an experiment or formal
+      study. May indicate an intern or assistant to one of the authors who helped
+      with research but who was not so “key” as to be listed as an author.
+
+      Should be a person, not an institution. Note that a person involved in the gathering
+      of data would fall under the contributorType “DataCollector.” The researcher
+      may find additional data online and correlate it to the data collected for the
+      experiment or study, for example.'
+  id: researcher
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/researcher
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Researcher
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Researcher
+    skos:exactMatch:info:eu-repo/semantics: Researcher
+  title:
+    cs: Výzkumník
+    en: Researcher
+- description:
+    en: 'Typically refers to a group of individuals with a lab, department, or division
+      that has a specifically defined focus of activity.
+
+      May operate at a narrower level of scope; may or may not hold less administrative
+      responsibility than a project team.'
+  id: researchgroup
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/researchgroup
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ResearchGroup
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ResearchGroup
+    skos:exactMatch:info:eu-repo/semantics: ResearchGroup
+  title:
+    cs: Výzkumná skupina
+    en: Research Group
+- description:
+    en: Person or institution owning or managing property rights, including intellectual
+      property rights over the resource.
+  id: rightsholder
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/rightsholder
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RightsHolder
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RightsHolder
+    skos:exactMatch:info:eu-repo/semantics: RightsHolder
+  title:
+    cs: Majitel práv
+    en: Rights Holder
+- description:
+    en: 'Person or organisation that issued a contract or under the auspices of which
+      a work has been written, printed, published, developed, etc.
+
+      Includes organisations that provide in-kind support, through donation, provision
+      of people or a facility or instrumentation necessary for the development of
+      the resource, etc.'
+  id: sponsor
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/sponsor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Sponsor
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Sponsor
+    skos:exactMatch:info:eu-repo/semantics: Sponsor
+  title:
+    cs: Sponzor
+    en: Sponsor
+- description:
+    en: Designated administrator over one or more groups/teams working to produce
+      a resource, or over one or more steps of a development process.
+  id: supervisor
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/supervisor
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Supervisor
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Supervisor
+    skos:exactMatch:info:eu-repo/semantics: Supervisor
+  title:
+    cs: Supervizor
+    en: Supervisor
+- description:
+    en: 'A person, organization, or automated system responsible for converting the
+      content of a resource from one language into another, preserving its meaning
+      and intended message.
+
+      This contributor type should be applied to DOI metadata for a resource which
+      has been translated from another resource.'
+  id: translator
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/translator
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Translator
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Translator
+  title:
+    cs: Překladatel
+    en: Translator
+- description:
+    en: A Work Package is a recognized data product, not all of which is included
+      in publication. The package, instead, may include notes, discarded documents,
+      etc. The Work Package Leader is responsible for ensuring the comprehensive contents,
+      versioning, and availability of the Work Package during the development of the
+      resource.
+  id: workpackageleader
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/workpackageleader
+    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: WorkPackageLeader
+    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: WorkPackageLeader
+    skos:exactMatch:info:eu-repo/semantics: WorkPackageLeader
+  title:
+    cs: Vedoucí pracovního balíku
+    en: Work Package Leader

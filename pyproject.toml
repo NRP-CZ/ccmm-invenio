@@ -32,6 +32,7 @@ compile-vocabularies = [
     "click",
     "pyyaml",
     "rdflib",
+    "ttlser",
     "tenacity",
     "tqdm",
 ]

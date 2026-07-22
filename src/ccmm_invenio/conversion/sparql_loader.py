@@ -51,13 +51,13 @@ RETRY_CONFIG = {
 
 def _get_cache_key(*args: str) -> str:
     """Generate a SHA256 cache key from the given arguments.
-    
+
     Args:
         *args: Variable arguments to hash (url, format, parameters, etc.)
-    
+
     Returns:
         SHA256 hex digest
-    
+
     """
     # Combine all arguments into a single string and hash it
     combined = "|".join(str(arg) for arg in args)
@@ -66,14 +66,14 @@ def _get_cache_key(*args: str) -> str:
 
 def _get_cache_path(cache_key: str, format: str = "xml") -> Path:  # noqa: A002
     """Get the cache file path for a given cache key.
-    
+
     Args:
         cache_key: The SHA256 cache key
         format: The RDF format (used for file extension)
-    
+
     Returns:
         Path to the cache file
-    
+
     """
     # Map common RDF formats to file extensions
     extension_map = {
@@ -89,18 +89,18 @@ def _get_cache_path(cache_key: str, format: str = "xml") -> Path:  # noqa: A002
 
 def _load_from_cache(cache_path: Path, format: str = "xml") -> Graph | None:  # noqa: A002
     """Load RDF graph from cache file if it exists.
-    
+
     Args:
         cache_path: Path to the cache file
         format: The RDF format
-    
+
     Returns:
         RDF Graph if cache exists and is valid, None otherwise
-    
+
     """
     if not cache_path.exists():
         return None
-    
+
     try:
         log.debug("Loading from cache: %s", cache_path)
         graph = Graph()
@@ -116,17 +116,17 @@ def _load_from_cache(cache_path: Path, format: str = "xml") -> Graph | None:  # 
 
 def _save_to_cache(graph: Graph, cache_path: Path, format: str = "xml") -> None:  # noqa: A002
     """Save RDF graph to cache file.
-    
+
     Args:
         graph: The RDF graph to cache
         cache_path: Path to save the cache file
         format: The RDF format
-    
+
     """
     try:
         # Ensure cache directory exists
         cache_path.parent.mkdir(parents=True, exist_ok=True)
-        
+
         log.debug("Saving to cache: %s", cache_path)
         graph.serialize(destination=str(cache_path), format=format)
         log.info("Saved %d triples to cache: %s", len(graph), cache_path.name)
@@ -157,13 +157,13 @@ def fetch_rdf_from_url(
     # Generate cache key from URL and format
     cache_key = _get_cache_key(url, format)
     cache_path = _get_cache_path(cache_key, format)
-    
+
     # Try to load from cache first
     if use_cache:
         cached_graph = _load_from_cache(cache_path, format)
         if cached_graph is not None:
             return cached_graph
-    
+
     # If not in cache, fetch from URL
     log.debug("Fetching RDF from %s (format: %s)", url, format)
     graph = Graph()
@@ -174,11 +174,11 @@ def fetch_rdf_from_url(
         raise
     else:
         log.info("Successfully fetched %d triples from %s", len(graph), url)
-        
+
         # Save to cache
         if use_cache:
             _save_to_cache(graph, cache_path, format)
-        
+
         return graph
 
 
@@ -421,7 +421,7 @@ class SPARQLLoader:
             unit="subgraph",
             desc="Loading subgraphs",
         ):
-            graph += cast(Graph, subject_graph)
+            graph += cast("Graph", subject_graph)
 
         log.info("Finished loading subgraphs, graph now has %d triples", len(graph))
 
@@ -457,7 +457,7 @@ class SPARQLLoader:
         optional_clauses = "\n".join(f"OPTIONAL {{ {query} }}" for query in extra_props.values())
 
         # Build variable list
-        var_list = " ".join(f"?{key}" for key in extra_props.keys())
+        var_list = " ".join(f"?{key}" for key in extra_props)
 
         # Construct the full query
         query = f"""
@@ -538,12 +538,12 @@ class SPARQLLoader:
             ]
             cache_key = _get_cache_key(*cache_params)
             cache_path = _get_cache_path(cache_key, format)
-            
+
             # Try to load from cache first
             graph = None
             if self.use_cache:
                 graph = _load_from_cache(cache_path, format)
-            
+
             if graph is None:
                 # Download the entire RDF graph locally
                 log.info("Downloading RDF graph from %s...", endpoint)
@@ -560,11 +560,9 @@ class SPARQLLoader:
 
                 # Extract extra properties if specified
                 if extra_props and prefixes:
-                    extra_graph = self._extract_extra_properties(
-                        graph, scheme_uri, extra_props, prefixes
-                    )
+                    extra_graph = self._extract_extra_properties(graph, scheme_uri, extra_props, prefixes)
                     graph += extra_graph
-                
+
                 # Save to cache
                 if self.use_cache:
                     _save_to_cache(graph, cache_path, format)
@@ -616,9 +614,7 @@ class SPARQLLoader:
             # Add extra properties to the enriched graph
             if extra_props and prefixes:
                 # Query for extra properties from the full graph
-                extra_query_graph = self._extract_extra_properties(
-                    graph, scheme_uri, extra_props, prefixes
-                )
+                extra_query_graph = self._extract_extra_properties(graph, scheme_uri, extra_props, prefixes)
                 enriched_graph += extra_query_graph
 
             # Merge into store

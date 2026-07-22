@@ -105,6 +105,32 @@ class RDFTripleStore:
         """
         return self.graph.serialize(format=format)
 
+    def serialize_sorted(self, format: str = "turtle") -> str:  # noqa: A002
+        """Serialize the graph to a sorted string for stable output.
+
+        This uses ttlser library to produce deterministic, Git-friendly Turtle output.
+
+        Args:
+            format: The serialization format (only 'turtle' supported)
+
+        Returns:
+            Sorted serialized graph as string
+
+        """
+        from io import BytesIO
+
+        if format != "turtle":
+            msg = f"Sorted serialization only supports turtle format, got: {format}"
+            raise ValueError(msg)
+
+        # Use ttlser for sorted Turtle output
+        from ttlser import DeterministicTurtleSerializer
+
+        serializer = DeterministicTurtleSerializer(self.graph)
+        stream = BytesIO()
+        serializer.serialize(stream)
+        return stream.getvalue().decode("utf-8")
+
     def __repr__(self) -> str:
         """Return string representation."""
         return f"RDFTripleStore(triples={len(self.graph)})"
