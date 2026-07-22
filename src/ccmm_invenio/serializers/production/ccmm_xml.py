@@ -102,6 +102,15 @@ class CCMMProductionXMLSerializer_1_1_0(MarshmallowSerializer):  # noqa: N801
         # identifiers
         self._append_identifiers(root, data.get("identifiers", []))
 
+        # version
+        version = data.get("version")
+        if version:
+            version_el = etree.SubElement(root, "version")
+            version_el.text = version
+
+
+        #todo: metadata_identification aka invenio pole such as created, updated etc
+        #todo: subject - problem: language required
         return root
 
     def _get_identifier_scheme_iri(self, scheme_id: str) -> str:
@@ -269,6 +278,7 @@ class CCMMXMLSchema(BaseSerializerSchema):
     dates = fields.Method("get_dates")
     contributors = fields.Method("get_contributors")
     identifiers = fields.Method("get_identifiers")
+    version = fields.Method("get_version")
 
     def get_identifiers(self, obj: dict) -> list:
         """Extract dataset identifiers."""
@@ -396,3 +406,14 @@ class CCMMXMLSchema(BaseSerializerSchema):
     def _get_language_iri(self, lang_id: str) -> str:
         """Map language ID to iri entry."""
         return str(LANGUAGE_IRI + lang_id)
+
+    def get_version(self, obj: dict) -> str | None:
+        """Extract dataset version from record metadata."""
+        metadata = obj.get("metadata", {})
+        version = metadata.get("version")
+
+        if not version:
+            return None
+
+        return str(version)
+

@@ -120,6 +120,7 @@ def test_exporter(app, db, identity_simple, search_clear, location, vocab_fixtur
       <label xml:lang="en">DataCite DOI</label>
     </scheme>
   </identifier>
+  <version>1.0.23</version>
 </dataset>
     """
 
