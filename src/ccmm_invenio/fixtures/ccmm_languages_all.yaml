@@ -22902,7 +22902,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: DA
-    FD_060: DA
+    FD_060: DK
     ISO_639_1: da
     ISO_639_2B: dan
     ISO_639_2T: dan
@@ -23763,13 +23763,13 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: DE
-    FD_060: DE
+    FD_060: D
     ISO_639_1: de
     ISO_639_2B: ger
     ISO_639_2T: deu
     ISO_639_3: deu
     PLANJO: DE
-    PUB_LANG: OS
+    PUB_LANG: DE
     PUB_LNGISO: DE
     TED: DE
     TED_SCHEMA: DE
@@ -27809,13 +27809,13 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: GR
-    FD_060: GR
+    FD_060: EL
     ISO_639_1: el
     ISO_639_2B: gre
     ISO_639_2T: ell
     ISO_639_3: ell
-    PUB_LANG: EL
-    PUB_LNGISO: GR
+    PUB_LANG: GR
+    PUB_LNGISO: EL
     TED: EL
     TED_SCHEMA: EL
     XML_LNG: el
@@ -30509,7 +30509,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: FR
-    FD_060: FR
+    FD_060: F
     ISO_639_1: fr
     ISO_639_2B: fre
     ISO_639_2T: fra
@@ -37063,8 +37063,8 @@
     ISO_639_2B: heb
     ISO_639_2T: heb
     ISO_639_3: heb
-    PUB_LANG: IW
-    PUB_LNGISO: HE
+    PUB_LANG: HE
+    PUB_LNGISO: IW
     TED: HE
     TED_SCHEMA: HE
     XML_LNG: he
@@ -42119,7 +42119,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: IT
-    FD_060: I
+    FD_060: IT
     ISO_639_1: it
     ISO_639_2B: ita
     ISO_639_2T: ita
@@ -82767,7 +82767,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: PT
-    FD_060: P
+    FD_060: PT
     ISO_639_1: pt
     ISO_639_2B: por
     ISO_639_2T: por
@@ -117126,12 +117126,12 @@
   - identifier: http://id.loc.gov/vocabulary/iso639-1/yi
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
-    EUDOR_LNG: YI
+    EUDOR_LNG: JI
     ISO_639_1: yi
     ISO_639_2B: yid
     ISO_639_2T: yid
     ISO_639_3: yid
-    PUB_LANG: JI
+    PUB_LANG: YI
     PUB_LNGISO: YI
     XML_LNG: yi
     iri: https://nma.eosc.cz/vocabularies/languages/yid

@@ -306,10 +306,10 @@ def convert_vocabularies(
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "vocabularies.ttl"
 
-    # log.info("Writing sorted triplestore to %s...", output_file)
-    # with output_file.open("w", encoding="utf-8") as f:
-    #     f.write(store.serialize_sorted(format="turtle"))
-    # log.info("Successfully wrote %d triples to %s", store.size(), output_file)
+    log.info("Writing sorted triplestore to %s...", output_file)
+    with output_file.open("w", encoding="utf-8") as f:
+        f.write(store.serialize_sorted(format="turtle"))
+    log.info("Successfully wrote %d triples to %s", store.size(), output_file)
 
     GenericVocabularyWriter(store).write(output_dir / "ccmm_access_rights.yaml", NMA.accessrights)
     GenericVocabularyWriter(store).write(output_dir / "ccmm_agent_roles.yaml", NMA.resourceagentroletypes)

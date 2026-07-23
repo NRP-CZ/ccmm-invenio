@@ -1,3 +1,145 @@
+- id: cc
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/licenses/CC
+    scheme: https://cesnet.cz/licenses/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/licenses/cc
+  tags:
+  - all
+  title:
+    cs: Licence Creative Commons
+    en: License Creative Commons
+- description:
+    cs: Toto je starší verze licencí (1.0). Pokud licencujete své vlastní dílo, které
+      ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou
+      z variant licence 4.0.
+    en: This is an older version of the license (1.0). If you are licensing your own
+      work that has not yet been published under any license, we recommend using one
+      of the 4.0 license variants instead.
+  hierarchy:
+    parent: cc
+  id: cc-1.0
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-1.0
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/licenses/CC-1.0
+    scheme: https://cesnet.cz/licenses/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/licenses/cc-1.0
+    key: CC-1.0
+  tags:
+  - all
+  title:
+    cs: verze 1.0 Obecná licence
+    en: version 1.0 Generic License
+- description:
+    cs: Toto je starší verze licencí 2.0. Pokud licencujete své vlastní dílo, které
+      ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou
+      z variant licence 4.0.
+    en: This is an older version of the license (2.0). If you are licensing your own
+      work that has not yet been published under any license, we recommend using one
+      of the 4.0 license variants instead.
+  hierarchy:
+    parent: cc
+  id: cc-2.0
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-2.0
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/licenses/CC-2.0
+    scheme: https://cesnet.cz/licenses/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/licenses/cc-2.0
+    key: CC-2.0
+  tags:
+  - all
+  title:
+    cs: verze 2.0 Obecná licence
+    en: version 2.0 Generic License
+- description:
+    cs: Toto je starší verze licencí 2.5. Pokud licencujete své vlastní dílo, které
+      ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou
+      z variant licence 4.0.
+    en: This is an older version of the license (2.5). If you are licensing your own
+      work that has not yet been published under any license, we recommend using one
+      of the 4.0 license variants instead.
+  hierarchy:
+    parent: cc
+  id: cc-2.5
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-2.5
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/licenses/CC-2.5
+    scheme: https://cesnet.cz/licenses/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/licenses/cc-2.5
+    key: CC-2.5
+  tags:
+  - all
+  title:
+    cs: verze 2.5 Obecná licence
+    en: version 2.5 Generic License
+- description:
+    cs: Toto je starší verze licencí 3.0, která byla adaptována pro český právní řád.
+      Pokud licencujete své vlastní dílo, které ještě nebylo pod žádnou licencí zveřejněno,
+      doporučujeme místo toho použít některou z variant licence 4.0.
+    en: This is an older version of the license (3.0). If you are licensing your own
+      work that has not yet been published under any license, we recommend using one
+      of the 4.0 license variants instead.
+  hierarchy:
+    parent: cc
+  id: cc-3.0
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-3.0
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/licenses/CC-3.0
+    scheme: https://cesnet.cz/licenses/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/licenses/cc-3.0
+    key: CC-3.0
+  tags:
+  - all
+  title:
+    cs: verze 3.0 Česko
+    en: version 3.0 Czech Republic License
+- description:
+    cs: Aktuální verze 4.0 existuje pouze jako mezinárodní, nebyla nutná adaptace
+      do národních právních řádů.
+    en: The current version 4.0 exists only as an international version, no adaptation
+      to national legal systems was necessary.
+  hierarchy:
+    parent: cc
+  id: cc-4.0
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-4.0
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/licenses/CC-4.0
+    scheme: https://cesnet.cz/licenses/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/licenses/cc-4.0
+    key: CC-4.0
+  tags:
+  - all
+  title:
+    cs: verze 4.0 mezinárodní licence
+    en: version 4.0 International License
+- hierarchy:
+    parent: cc
+  id: cc0-1.0
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc0-1.0
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/licenses/CC0-1.0
+    scheme: https://cesnet.cz/licenses/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/licenses/cc0-1.0
+    key: CC0-1.0
+  tags:
+  - all
+  title:
+    cs: Creative Commons Univerzální – Prohlášení o poskytnutí díla do veřejné domény
+    en: Creative Commons Universal Public Domain Dedication
 - description:
     cs: 'Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z
       něj odvozená díla pouze při uvedení autora. V češtině: Uveďte autora; v angličtině
@@ -5,6 +147,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format, so long as attribution is given to the creator.
       The license allows for commercial use. Abbreviation CC BY.
+  hierarchy:
+    parent: cc-1.0
   icon: https://licensebuttons.net/l/by/1.0/88x31.png
   id: 1-by
   identifiers:
@@ -28,6 +172,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format for noncommercial purposes only, and only so
       long as attribution is given to the creator. Abbreviation CC BY-NC.
+  hierarchy:
+    parent: cc-1.0
   icon: https://licensebuttons.net/l/by-nc/1.0/88x31.png
   id: 1-by-nc
   identifiers:
@@ -54,6 +200,8 @@
       long as attribution is given to the creator. If you remix, adapt, or build upon
       the material, you must license the modified material under identical terms.
       Abbreviation CC BY-NC-SA.
+  hierarchy:
+    parent: cc-1.0
   icon: https://licensebuttons.net/l/by-nc-sa/1.0/88x31.png
   id: 1-by-nc-sa
   identifiers:
@@ -78,6 +226,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, and only so long as attribution is given to
       the creator. The license allows for commercial use. Abbreviation CC BY-ND.
+  hierarchy:
+    parent: cc-1.0
   icon: https://licensebuttons.net/l/by-nd/1.0/88x31.png
   id: 1-by-nd
   identifiers:
@@ -101,6 +251,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, for noncommercial purposes only, and only
       so long as attribution is given to the creator. Abbreviation CC BY-NC-ND.
+  hierarchy:
+    parent: cc-1.0
   icon: https://licensebuttons.net/l/by-nd-nc/1.0/88x31.png
   id: 1-by-nd-nc
   identifiers:
@@ -126,6 +278,8 @@
       The license allows for commercial use. If you remix, adapt, or build upon the
       material, you must license the modified material under identical terms. Abbreviation
       CC BY-SA.
+  hierarchy:
+    parent: cc-1.0
   icon: https://licensebuttons.net/l/by-sa/1.0/88x31.png
   id: 1-by-sa
   identifiers:
@@ -148,6 +302,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format, so long as attribution is given to the creator.
       The license allows for commercial use. Abbreviation CC BY.
+  hierarchy:
+    parent: cc-2.5
   icon: https://licensebuttons.net/l/by/2.5/88x31.png
   id: 2-5-by
   identifiers:
@@ -171,6 +327,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format for noncommercial purposes only, and only so
       long as attribution is given to the creator. Abbreviation CC BY-NC.
+  hierarchy:
+    parent: cc-2.5
   icon: https://licensebuttons.net/l/by-nc/2.5/88x31.png
   id: 2-5-by-nc
   identifiers:
@@ -194,6 +352,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, for noncommercial purposes only, and only
       so long as attribution is given to the creator. Abbreviation CC BY-NC-ND.
+  hierarchy:
+    parent: cc-2.5
   icon: https://licensebuttons.net/l/by-nc-nd/2.5/88x31.png
   id: 2-5-by-nc-nd
   identifiers:
@@ -221,6 +381,8 @@
       long as attribution is given to the creator. If you remix, adapt, or build upon
       the material, you must license the modified material under identical terms.
       Abbreviation CC BY-NC-SA.
+  hierarchy:
+    parent: cc-2.5
   icon: https://licensebuttons.net/l/by-nc-sa/2.5/88x31.png
   id: 2-5-by-nc-sa
   identifiers:
@@ -245,6 +407,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, and only so long as attribution is given to
       the creator. The license allows for commercial use. Abbreviation CC BY-ND.
+  hierarchy:
+    parent: cc-2.5
   icon: https://licensebuttons.net/l/by-nd/2.5/88x31.png
   id: 2-5-by-nd
   identifiers:
@@ -269,6 +433,8 @@
       The license allows for commercial use. If you remix, adapt, or build upon the
       material, you must license the modified material under identical terms. Abbreviation
       CC BY-SA.
+  hierarchy:
+    parent: cc-2.5
   icon: https://licensebuttons.net/l/by-sa/2.5/88x31.png
   id: 2-5-by-sa
   identifiers:
@@ -291,6 +457,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format, so long as attribution is given to the creator.
       The license allows for commercial use. Abbreviation CC BY.
+  hierarchy:
+    parent: cc-2.0
   icon: https://licensebuttons.net/l/by/2.0/88x31.png
   id: 2-by
   identifiers:
@@ -314,6 +482,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format for noncommercial purposes only, and only so
       long as attribution is given to the creator. Abbreviation CC BY-NC.
+  hierarchy:
+    parent: cc-2.0
   icon: https://licensebuttons.net/l/by-nc/2.0/88x31.png
   id: 2-by-nc
   identifiers:
@@ -337,6 +507,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, for noncommercial purposes only, and only
       so long as attribution is given to the creator. Abbreviation CC BY-NC-ND.
+  hierarchy:
+    parent: cc-2.0
   icon: https://licensebuttons.net/l/by-nc-nd/2.0/88x31.png
   id: 2-by-nc-nd
   identifiers:
@@ -364,6 +536,8 @@
       long as attribution is given to the creator. If you remix, adapt, or build upon
       the material, you must license the modified material under identical terms.
       Abbreviation CC BY-NC-SA.
+  hierarchy:
+    parent: cc-2.0
   icon: https://licensebuttons.net/l/by-nc-sa/2.0/88x31.png
   id: 2-by-nc-sa
   identifiers:
@@ -388,6 +562,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, and only so long as attribution is given to
       the creator. The license allows for commercial use. Abbreviation CC BY-ND.
+  hierarchy:
+    parent: cc-2.0
   icon: https://licensebuttons.net/l/by-nd/2.0/88x31.png
   id: 2-by-nd
   identifiers:
@@ -412,6 +588,8 @@
       The license allows for commercial use. If you remix, adapt, or build upon the
       material, you must license the modified material under identical terms. Abbreviation
       CC BY-SA.
+  hierarchy:
+    parent: cc-2.0
   icon: https://licensebuttons.net/l/by-sa/2.0/88x31.png
   id: 2-by-sa
   identifiers:
@@ -434,6 +612,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format, so long as attribution is given to the creator.
       The license allows for commercial use. Abbreviation CC BY.
+  hierarchy:
+    parent: cc-3.0
   icon: https://licensebuttons.net/l/by/3.0/88x31.png
   id: 3-by-cz
   identifiers:
@@ -457,6 +637,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format for noncommercial purposes only, and only so
       long as attribution is given to the creator. Abbreviation CC BY-NC.
+  hierarchy:
+    parent: cc-3.0
   icon: https://licensebuttons.net/l/by-nc/3.0/88x31.png
   id: 3-by-nc-cz
   identifiers:
@@ -480,6 +662,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, for noncommercial purposes only, and only
       so long as attribution is given to the creator. Abbreviation CC BY-NC-ND.
+  hierarchy:
+    parent: cc-3.0
   icon: https://licensebuttons.net/l/by-nc-nd/3.0/88x31.png
   id: 3-by-nc-nd-cz
   identifiers:
@@ -507,6 +691,8 @@
       long as attribution is given to the creator. If you remix, adapt, or build upon
       the material, you must license the modified material under identical terms.
       Abbreviation CC BY-NC-SA.
+  hierarchy:
+    parent: cc-3.0
   icon: https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png
   id: 3-by-nc-sa-cz
   identifiers:
@@ -531,6 +717,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, and only so long as attribution is given to
       the creator. The license allows for commercial use. Abbreviation CC BY-ND.
+  hierarchy:
+    parent: cc-3.0
   icon: https://licensebuttons.net/l/by-nd/3.0/88x31.png
   id: 3-by-nd-cz
   identifiers:
@@ -555,6 +743,8 @@
       The license allows for commercial use. If you remix, adapt, or build upon the
       material, you must license the modified material under identical terms. Abbreviation
       CC BY-SA.
+  hierarchy:
+    parent: cc-3.0
   icon: https://licensebuttons.net/l/by-sa/3.0/88x31.png
   id: 3-by-sa-cz
   identifiers:
@@ -578,6 +768,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format, so long as attribution is given to the creator.
       The license allows for commercial use. Abbreviation CC BY
+  hierarchy:
+    parent: cc-4.0
   icon: https://licensebuttons.net/l/by/4.0/88x31.png
   id: 4-by
   identifiers:
@@ -603,6 +795,8 @@
     en: This license enables reusers to distribute, remix, adapt, and build upon the
       material in any medium or format for noncommercial purposes only, and only so
       long as attribution is given to the creator. Abbreviation CC BY-NC.
+  hierarchy:
+    parent: cc-4.0
   icon: https://licensebuttons.net/l/by-nc/4.0/88x31.png
   id: 4-by-nc
   identifiers:
@@ -628,6 +822,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, for noncommercial purposes only, and only
       so long as attribution is given to the creator. Abbreviation CC BY-NC-ND.
+  hierarchy:
+    parent: cc-4.0
   icon: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
   id: 4-by-nc-nd
   identifiers:
@@ -657,6 +853,8 @@
       long as attribution is given to the creator. If you remix, adapt, or build upon
       the material, you must license the modified material under identical terms.
       Abbreviation CC BY-NC-SA.
+  hierarchy:
+    parent: cc-4.0
   icon: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
   id: 4-by-nc-sa
   identifiers:
@@ -682,6 +880,8 @@
     en: This license enables reusers to copy and distribute the material in any medium
       or format in unadapted form only, and only so long as attribution is given to
       the creator. The license allows for commercial use. Abbreviation CC BY-ND.
+  hierarchy:
+    parent: cc-4.0
   icon: https://licensebuttons.net/l/by-nd/4.0/88x31.png
   id: 4-by-nd
   identifiers:
@@ -708,6 +908,8 @@
       The license allows for commercial use. If you remix, adapt, or build upon the
       material, you must license the modified material under identical terms. Abbreviation
       CC BY-SA.
+  hierarchy:
+    parent: cc-4.0
   icon: https://licensebuttons.net/l/by-sa/4.0/88x31.png
   id: 4-by-sa
   identifiers:
@@ -724,133 +926,3 @@
   title:
     cs: Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní licence
     en: Creative Commons Attribution-ShareAlike 4.0 International License
-- id: cc
-  identifiers:
-  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc
-    scheme: https://nma.eosc.cz/vocabularies/
-  - identifier: https://cesnet.cz/licenses/CC
-    scheme: https://cesnet.cz/licenses/
-  props:
-    iri: https://nma.eosc.cz/vocabularies/licenses/cc
-  tags:
-  - all
-  title:
-    cs: Licence Creative Commons
-    en: License Creative Commons
-- description:
-    cs: Toto je starší verze licencí (1.0). Pokud licencujete své vlastní dílo, které
-      ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou
-      z variant licence 4.0.
-    en: This is an older version of the license (1.0). If you are licensing your own
-      work that has not yet been published under any license, we recommend using one
-      of the 4.0 license variants instead.
-  id: cc-1.0
-  identifiers:
-  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-1.0
-    scheme: https://nma.eosc.cz/vocabularies/
-  - identifier: https://cesnet.cz/licenses/CC-1.0
-    scheme: https://cesnet.cz/licenses/
-  props:
-    iri: https://nma.eosc.cz/vocabularies/licenses/cc-1.0
-    key: CC-1.0
-  tags:
-  - all
-  title:
-    cs: verze 1.0 Obecná licence
-    en: version 1.0 Generic License
-- description:
-    cs: Toto je starší verze licencí 2.0. Pokud licencujete své vlastní dílo, které
-      ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou
-      z variant licence 4.0.
-    en: This is an older version of the license (2.0). If you are licensing your own
-      work that has not yet been published under any license, we recommend using one
-      of the 4.0 license variants instead.
-  id: cc-2.0
-  identifiers:
-  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-2.0
-    scheme: https://nma.eosc.cz/vocabularies/
-  - identifier: https://cesnet.cz/licenses/CC-2.0
-    scheme: https://cesnet.cz/licenses/
-  props:
-    iri: https://nma.eosc.cz/vocabularies/licenses/cc-2.0
-    key: CC-2.0
-  tags:
-  - all
-  title:
-    cs: verze 2.0 Obecná licence
-    en: version 2.0 Generic License
-- description:
-    cs: Toto je starší verze licencí 2.5. Pokud licencujete své vlastní dílo, které
-      ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou
-      z variant licence 4.0.
-    en: This is an older version of the license (2.5). If you are licensing your own
-      work that has not yet been published under any license, we recommend using one
-      of the 4.0 license variants instead.
-  id: cc-2.5
-  identifiers:
-  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-2.5
-    scheme: https://nma.eosc.cz/vocabularies/
-  - identifier: https://cesnet.cz/licenses/CC-2.5
-    scheme: https://cesnet.cz/licenses/
-  props:
-    iri: https://nma.eosc.cz/vocabularies/licenses/cc-2.5
-    key: CC-2.5
-  tags:
-  - all
-  title:
-    cs: verze 2.5 Obecná licence
-    en: version 2.5 Generic License
-- description:
-    cs: Toto je starší verze licencí 3.0, která byla adaptována pro český právní řád.
-      Pokud licencujete své vlastní dílo, které ještě nebylo pod žádnou licencí zveřejněno,
-      doporučujeme místo toho použít některou z variant licence 4.0.
-    en: This is an older version of the license (3.0). If you are licensing your own
-      work that has not yet been published under any license, we recommend using one
-      of the 4.0 license variants instead.
-  id: cc-3.0
-  identifiers:
-  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-3.0
-    scheme: https://nma.eosc.cz/vocabularies/
-  - identifier: https://cesnet.cz/licenses/CC-3.0
-    scheme: https://cesnet.cz/licenses/
-  props:
-    iri: https://nma.eosc.cz/vocabularies/licenses/cc-3.0
-    key: CC-3.0
-  tags:
-  - all
-  title:
-    cs: verze 3.0 Česko
-    en: version 3.0 Czech Republic License
-- description:
-    cs: Aktuální verze 4.0 existuje pouze jako mezinárodní, nebyla nutná adaptace
-      do národních právních řádů.
-    en: The current version 4.0 exists only as an international version, no adaptation
-      to national legal systems was necessary.
-  id: cc-4.0
-  identifiers:
-  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-4.0
-    scheme: https://nma.eosc.cz/vocabularies/
-  - identifier: https://cesnet.cz/licenses/CC-4.0
-    scheme: https://cesnet.cz/licenses/
-  props:
-    iri: https://nma.eosc.cz/vocabularies/licenses/cc-4.0
-    key: CC-4.0
-  tags:
-  - all
-  title:
-    cs: verze 4.0 mezinárodní licence
-    en: version 4.0 International License
-- id: cc0-1.0
-  identifiers:
-  - identifier: https://nma.eosc.cz/vocabularies/licenses/cc0-1.0
-    scheme: https://nma.eosc.cz/vocabularies/
-  - identifier: https://cesnet.cz/licenses/CC0-1.0
-    scheme: https://cesnet.cz/licenses/
-  props:
-    iri: https://nma.eosc.cz/vocabularies/licenses/cc0-1.0
-    key: CC0-1.0
-  tags:
-  - all
-  title:
-    cs: Creative Commons Univerzální – Prohlášení o poskytnutí díla do veřejné domény
-    en: Creative Commons Universal Public Domain Dedication
