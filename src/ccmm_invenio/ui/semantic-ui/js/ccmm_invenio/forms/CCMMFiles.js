@@ -14,7 +14,7 @@ export const CCMMFiles = {
   },
   component: (tabConfig) => {
     const { record, formConfig } = tabConfig;
-    const { filesLocked, permissions } = formConfig.config;
+    const { filesLocked, permissions } = formConfig;
     const { overridableIdPrefix } = formConfig;
     return (
       <Overridable id={buildUID(overridableIdPrefix, "Files")} {...tabConfig}>
@@ -23,7 +23,7 @@ export const CCMMFiles = {
           config={formConfig}
           quota={formConfig?.config?.quota}
           decimalSizeDisplay={formConfig.decimal_size_display}
-          allowEmptyFiles={formConfig.allow_empty_files}
+          allowEmptyFiles={formConfig.allowEmptyFiles}
           fileUploadConcurrency={formConfig.file_upload_concurrency}
           showMetadataOnlyToggle={permissions?.can_manage_files}
           filesLocked={filesLocked}
