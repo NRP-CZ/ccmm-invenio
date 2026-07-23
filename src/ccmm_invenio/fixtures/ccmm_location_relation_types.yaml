@@ -1,4 +1,5 @@
-- description:
+- crosswalks: []
+  description:
     cs: Jedná se o určení lokace, kde byla daná data zaznamenána (naměřena, sesbírána...).
     en: This is the determination of the location where the data was collected (measured,
       recorded, observed etc.).
@@ -13,7 +14,8 @@
   title:
     cs: Získáno v lokaci
     en: Collected in
-- description:
+- crosswalks: []
+  description:
     cs: Jedná se o určení lokace, kde byla daná data po sběru či naměření dále zpracována.
     en: This is the determination of the location where the data was further processed
       after collection or measurement.
@@ -28,7 +30,8 @@
   title:
     cs: Zpracováno v lokaci
     en: Processed at location
-- description:
+- crosswalks: []
+  description:
     cs: Jedná se o vztah k lokaci, které se týkají obsahově daná data. Dataset obsahuje
       data o dané lokaci.
     en: This is a relationship to a location that relates to the content of the data.
@@ -44,7 +47,8 @@
   title:
     cs: Týká se lokace
     en: Refers to the location
-- description:
+- crosswalks: []
+  description:
     cs: Jedná se o určení lokace, kde byla daná data po sběru, naměření či zpracování
       uložena a jsou trvale uchovávána.
     en: This is the determination of the location where the data is permanently stored

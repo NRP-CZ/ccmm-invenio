@@ -1,4 +1,5 @@
-- description:
+- crosswalks: []
+  description:
     cs: EuroVoc je vícejazyčná klasifikace pojmů, která pokrývá oblasti činnosti Evropské
       unie.
     en: EuroVoc is a multilingual thesaurus covering the activities of the European
@@ -16,7 +17,8 @@
   title:
     cs: EuroVoc
     en: EuroVoc
-- description:
+- crosswalks: []
+  description:
     cs: Frascati je mezinárodní klasifikace výzkumných a vývojových aktivit.
     en: Frascati is an international classification of research and development activities.
   id: frascati
@@ -32,7 +34,8 @@
   title:
     cs: Frascati
     en: Frascati
-- description:
+- crosswalks: []
+  description:
     cs: GEMET je vícejazyčná klasifikace pojmů zaměřená na životní prostředí.
     en: GEMET is a multilingual thesaurus focused on the environment.
   id: gemet
@@ -48,7 +51,8 @@
   title:
     cs: GEMET
     en: GEMET
-- description:
+- crosswalks: []
+  description:
     cs: MeSH je kontrolovaný slovník pro biomedicínské a zdravotnické informace.
     en: MeSH is a controlled vocabulary for biomedical and health information.
   id: mesh

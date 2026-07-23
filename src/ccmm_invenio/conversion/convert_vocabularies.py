@@ -166,6 +166,19 @@ class VocabularyConverter:
                         prop_name = str(datatype).rsplit("#", maxsplit=1)[-1].rsplit("/", maxsplit=1)[-1]
                         self.store.graph.add((nma_subject, CCMM_PROPS[prop_name], Literal(str(obj))))
 
+            # Copy inverse relationships: if something points TO the subject, make it point TO the NMA subject too
+            # This handles cases like: lindat_concept skos:exactMatch original_subject
+            # Which should become: lindat_concept skos:exactMatch nma_subject
+            for subj, predicate, _ in self.store.graph.triples((None, None, subject)):
+                # Skip if this would create a self-reference (subj == nma_subject)
+                if subj == nma_subject:
+                    continue
+                # Also skip if the predicate is nma_iri or original_iri to avoid duplicating internal mappings
+                if predicate in (NMA.nma_iri, NMA.original_iri):
+                    continue
+                # Add the same triple but with nma_subject as the object
+                self.store.graph.add((subj, predicate, nma_subject))
+
     def extract_contributors_roles(self) -> None:
         """Extract contributors roles from the triplestore and store them in the triplestore in a different scheme."""
         for subject in self.store.graph.subjects(SKOS.inScheme, NMA.resourceagentroletypes):

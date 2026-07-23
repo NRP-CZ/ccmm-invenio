@@ -1,4 +1,11 @@
-- id: cites
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/cites
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/Cites
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Cites
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: cites
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/cites
     scheme: https://nma.eosc.cz/vocabularies/
@@ -9,7 +16,10 @@
   title:
     cs: cituje (co)
     en: cites
-- id: collects
+- crosswalks:
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Collects
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: collects
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/collects
     scheme: https://nma.eosc.cz/vocabularies/
@@ -20,7 +30,14 @@
   title:
     cs: sbírá
     en: collects
-- id: compiles
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/compiles
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/Compiles
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Compiles
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: compiles
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/compiles
     scheme: https://nma.eosc.cz/vocabularies/
@@ -31,7 +48,14 @@
   title:
     cs: kompiluje (co)
     en: compiles
-- id: continues
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/continues
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/Continues
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Continues
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: continues
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/continues
     scheme: https://nma.eosc.cz/vocabularies/
@@ -42,7 +66,12 @@
   title:
     cs: pokračuje (čím)
     en: continues
-- id: describes
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/describes
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Describes
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: describes
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/describes
     scheme: https://nma.eosc.cz/vocabularies/
@@ -53,7 +82,14 @@
   title:
     cs: popisuje (co)
     en: describes
-- id: documents
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/documents
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/Documents
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Documents
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: documents
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/documents
     scheme: https://nma.eosc.cz/vocabularies/
@@ -64,7 +100,14 @@
   title:
     cs: dokumentuje (co)
     en: documents
-- id: hasmetadata
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/hasmetadata
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/HasMetadata
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasMetadata
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: hasmetadata
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hasmetadata
     scheme: https://nma.eosc.cz/vocabularies/
@@ -75,7 +118,14 @@
   title:
     cs: má metadata
     en: has metadata
-- id: haspart
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/haspart
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/HasPart
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasPart
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: haspart
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/haspart
     scheme: https://nma.eosc.cz/vocabularies/
@@ -86,7 +136,10 @@
   title:
     cs: má část/i
     en: has part
-- id: hastranslation
+- crosswalks:
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasTranslation
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: hastranslation
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hastranslation
     scheme: https://nma.eosc.cz/vocabularies/
@@ -97,7 +150,12 @@
   title:
     cs: má překlad
     en: has translation
-- id: hasversion
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/hasversion
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasVersion
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: hasversion
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hasversion
     scheme: https://nma.eosc.cz/vocabularies/
@@ -108,7 +166,14 @@
   title:
     cs: má verzi
     en: has version
-- id: iscitedby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/iscitedby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsCitedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsCitedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: iscitedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscitedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -119,7 +184,10 @@
   title:
     cs: je citován (čím)
     en: is cited by
-- id: iscollectedby
+- crosswalks:
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsCollectedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: iscollectedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscollectedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -130,7 +198,14 @@
   title:
     cs: je sbírán (čím)
     en: is collected by
-- id: iscompiledby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/iscompiledby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/isCompiledBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsCompiledBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: iscompiledby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscompiledby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -141,7 +216,14 @@
   title:
     cs: kompilován (čím)
     en: is compiled by
-- id: iscontinuedby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/iscontinuedby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsContinuedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsContinuedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: iscontinuedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscontinuedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -152,7 +234,14 @@
   title:
     cs: je pokračováním (čeho)
     en: is continued by
-- id: isderivedfrom
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isderivedfrom
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsDerivedFrom
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsDerivedFrom
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isderivedfrom
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isderivedfrom
     scheme: https://nma.eosc.cz/vocabularies/
@@ -163,7 +252,12 @@
   title:
     cs: je odvozen od (čeho)
     en: is derived from
-- id: isdescribedby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isdescribedby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsDescribedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isdescribedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isdescribedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -174,7 +268,14 @@
   title:
     cs: je popsán (čím)
     en: is described by
-- id: isdocumentedby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isdocumentedby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsDocumentedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsDocumentedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isdocumentedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isdocumentedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -185,7 +286,14 @@
   title:
     cs: je zdokumentován (čím)
     en: is documented by
-- id: isidenticalto
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isidenticalto
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsIdenticalTo
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsIdenticalTo
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isidenticalto
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isidenticalto
     scheme: https://nma.eosc.cz/vocabularies/
@@ -196,7 +304,14 @@
   title:
     cs: je identický s
     en: is identical to
-- id: ismetadatafor
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/ismetadatafor
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsMetadataFor
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsMetadataFor
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: ismetadatafor
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ismetadatafor
     scheme: https://nma.eosc.cz/vocabularies/
@@ -207,7 +322,14 @@
   title:
     cs: je metadaty pro
     en: is metadata for
-- id: isnewversionof
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isnewversionof
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsNewVersionOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsNewVersionOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isnewversionof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isnewversionof
     scheme: https://nma.eosc.cz/vocabularies/
@@ -218,7 +340,12 @@
   title:
     cs: je novou verzí (čeho)
     en: is new version of
-- id: isobsoletedby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isobsoletedby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsObsoletedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isobsoletedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isobsoletedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -229,7 +356,14 @@
   title:
     cs: je nahrazen (čím)
     en: is obsoleted by
-- id: isoriginalformof
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isoriginalformof
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsOriginalFormOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsOriginalFormOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isoriginalformof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isoriginalformof
     scheme: https://nma.eosc.cz/vocabularies/
@@ -240,7 +374,14 @@
   title:
     cs: je původní variantou (čeho)
     en: is original form of
-- id: ispartof
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/ispartof
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsPartOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsPartOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: ispartof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ispartof
     scheme: https://nma.eosc.cz/vocabularies/
@@ -251,7 +392,14 @@
   title:
     cs: je součástí
     en: is part of
-- id: ispreviousversionof
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/ispreviousversionof
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsPreviousVersionOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsPreviousVersionOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: ispreviousversionof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ispreviousversionof
     scheme: https://nma.eosc.cz/vocabularies/
@@ -262,7 +410,12 @@
   title:
     cs: je předchozí verzí (čeho)
     en: is previous version of
-- id: ispublishedin
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/ispublishedin
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsPublishedIn
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: ispublishedin
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ispublishedin
     scheme: https://nma.eosc.cz/vocabularies/
@@ -273,7 +426,14 @@
   title:
     cs: je publikován v
     en: is published in
-- id: isreferencedby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isreferencedby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsReferencedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsReferencedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isreferencedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isreferencedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -284,7 +444,12 @@
   title:
     cs: je na něj odkazováno z (čeho)
     en: is referenced by
-- id: isrequiredby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isrequiredby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsRequiredBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isrequiredby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isrequiredby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -295,7 +460,14 @@
   title:
     cs: je požadován (čím)
     en: is required by
-- id: isreviewedby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isreviewedby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsReviewedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsReviewedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isreviewedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isreviewedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -306,7 +478,14 @@
   title:
     cs: je recenzován (čím)
     en: is reviewed by
-- id: issourceof
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/issourceof
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsSourceOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsSourceOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: issourceof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/issourceof
     scheme: https://nma.eosc.cz/vocabularies/
@@ -317,7 +496,14 @@
   title:
     cs: je zdrojem odvozené verze
     en: is source of
-- id: issupplementedby
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/issupplementedby
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsSupplementedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsSupplementedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: issupplementedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/issupplementedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -328,7 +514,14 @@
   title:
     cs: má doplněk
     en: is supplemented by
-- id: issupplementto
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/issupplementto
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsSupplementTo
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsSupplementTo
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: issupplementto
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/issupplementto
     scheme: https://nma.eosc.cz/vocabularies/
@@ -339,7 +532,10 @@
   title:
     cs: je doplňkem k (čemu)
     en: is supplement to
-- id: istranslationof
+- crosswalks:
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsTranslationOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: istranslationof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/istranslationof
     scheme: https://nma.eosc.cz/vocabularies/
@@ -350,7 +546,14 @@
   title:
     cs: je překladem (čeho)
     en: is translation of
-- id: isvariantformof
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isvariantformof
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/IsVariantFormOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsVariantFormOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isvariantformof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isvariantformof
     scheme: https://nma.eosc.cz/vocabularies/
@@ -361,7 +564,12 @@
   title:
     cs: je variantou (čeho)
     en: is variant form of
-- id: isversionof
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/isversionof
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsVersionOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: isversionof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isversionof
     scheme: https://nma.eosc.cz/vocabularies/
@@ -372,7 +580,12 @@
   title:
     cs: je verzí
     en: is version of
-- id: obsoletes
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/obsoletes
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Obsoletes
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: obsoletes
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/obsoletes
     scheme: https://nma.eosc.cz/vocabularies/
@@ -383,7 +596,14 @@
   title:
     cs: nahrazuje (co)
     en: obsoletes
-- id: references
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/references
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/References
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/References
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: references
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/references
     scheme: https://nma.eosc.cz/vocabularies/
@@ -394,7 +614,12 @@
   title:
     cs: odkazuje (na co)
     en: references
-- id: requires
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/requires
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Requires
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: requires
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/requires
     scheme: https://nma.eosc.cz/vocabularies/
@@ -405,7 +630,14 @@
   title:
     cs: požaduje (co)
     en: requires
-- id: reviews
+- crosswalks:
+  - identifier: https://zenodo.org/vocabularies/relationtypes/reviews
+    scheme: https://zenodo.org/vocabularies/relationtypes/
+  - identifier: info:eu-repo/semantics/Reviews
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Reviews
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+  id: reviews
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/reviews
     scheme: https://nma.eosc.cz/vocabularies/

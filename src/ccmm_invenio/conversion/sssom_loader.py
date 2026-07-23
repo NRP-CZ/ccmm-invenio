@@ -11,10 +11,12 @@
 from __future__ import annotations
 
 import logging
+import tempfile
 from pathlib import Path
 from typing import TYPE_CHECKING, override
 
-from rdflib import Graph
+from rdflib import Graph, URIRef
+from rdflib.namespace import OWL, SKOS
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_rdf
 
@@ -52,7 +54,6 @@ class SSSOMLoader(VocabularyLoader):
         # Write to RDF using sssom's writer
         # The write_rdf function can write directly to a file or string
         # We'll use it to generate RDF and then parse it
-        import tempfile
 
         with tempfile.NamedTemporaryFile(mode="w", suffix=".ttl", delete=False) as tmp:
             tmp_path = Path(tmp.name)
@@ -71,6 +72,15 @@ class SSSOMLoader(VocabularyLoader):
 
         # Merge into main store
         before_count = store.size()
+
+        # Extract direct SKOS.exactMatch relationships from the axiom-wrapped format
+        # SSSOM creates owl:Axiom wrappers, but we want direct skos:exactMatch triples
+        for axiom in rdf_graph.subjects(OWL.annotatedProperty, SKOS.exactMatch):
+            source = rdf_graph.value(axiom, OWL.annotatedSource)
+            target = rdf_graph.value(axiom, OWL.annotatedTarget)
+            if source and target:
+                store.graph.add((URIRef(str(source)), SKOS.exactMatch, URIRef(str(target))))
+
         store.merge(rdf_graph)
         after_count = store.size()
         added = after_count - before_count

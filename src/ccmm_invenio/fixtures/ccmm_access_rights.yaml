@@ -1,4 +1,7 @@
-- description:
+- crosswalks:
+  - identifier: info:eu-repo/semantics/openAccess
+    scheme: info:eu-repo/semantics/
+  description:
     cs: Přístup pouze k metadatům označuje zdroj, u něhož je přístup omezen pouze
       na metadata. Samotný zdroj je popsán metadaty, není však přímo dostupný prostřednictvím
       systému nebo platformy ani na něj nelze odkazovat prostřednictvím otevřeně přístupné
@@ -33,7 +36,10 @@
     sr: pristup ograničen na metapodatke
     sr-cyrl: приступ ограничен на метаподатке
     tr: sadece üstveri erişimi
-- description:
+- crosswalks:
+  - identifier: info:eu-repo/semantics/restrictedAccess
+    scheme: info:eu-repo/semantics/
+  description:
     cs: 'Omezený přístup označuje zdroj, který je v systému dostupný, avšak s určitým
       omezením bránícím plnému otevřenému přístupu. Tento typ přístupu může nastat
       v řadě různých situací. Několik příkladů je uvedeno níže:
@@ -84,7 +90,10 @@
     sr: ograničeni pristup
     sr-cyrl: ограничени приступ
     tr: sınırlı erişim
-- description:
+- crosswalks:
+  - identifier: info:eu-repo/semantics/openAccess
+    scheme: info:eu-repo/semantics/
+  description:
     cs: Otevřený přístup označuje zdroj, který je okamžitě a trvale dostupný online
       a volně přístupný všem na webu, bez finančních a technických překážek. Zdroj
       je buď uložen v repozitáři, nebo je na něj odkazováno v externím časopise či
@@ -119,7 +128,10 @@
     sr: otvoreni pristup
     sr-cyrl: отворени приступ
     tr: açık erişim
-- description:
+- crosswalks:
+  - identifier: info:eu-repo/semantics/embargoedAccess
+    scheme: info:eu-repo/semantics/
+  description:
     cs: Odložené zpřístupnění označuje zdroj, který je do určitého data dostupný pouze
       v režimu přístupu k metadatům a teprve poté je uvolněn do otevřeného přístupu.
       Embargo může být vyžadováno politikami vydavatelů a poskytovatelů financování

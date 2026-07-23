@@ -85,16 +85,22 @@ class GenericVocabularyWriter(VocabularyWriter):
         for concept, properties in self.select_concepts(namespace):
             if filter_func and not filter_func(self.store, concept):
                 continue
-            converted_record: dict[str, Any] = {"props": {}, "identifiers": []}
+            converted_record: dict[str, Any] = {"props": {}, "identifiers": [], "crosswalks": []}
             converted_record["props"]["iri"] = str(concept)
             converted_record["identifiers"].append({"identifier": str(concept), "scheme": str(NMA)})
+
+            # Add identifiers from SKOS.exactMatch where concept is the subject
+            # (this concept IS equivalent to these other URIs)
             for prop, value in properties:
                 if prop == SKOS.prefLabel:
                     converted_record.setdefault("title", {})[value.language] = str(value)
                 elif prop == SKOS.definition:
                     converted_record.setdefault("description", {})[value.language] = str(value)
                 elif prop == SKOS.exactMatch:
-                    converted_record["identifiers"].append({"identifier": str(value), "scheme": split_uri(value)[0]})
+                    converted_record["identifiers"].append({
+                        "identifier": str(value),
+                        "scheme": split_uri(str(value))[0]
+                    })
                 elif prop == NMA.nma_identifier:
                     converted_record["id"] = str(value)
                 elif prop in CCMM_PROPS:
@@ -103,6 +109,17 @@ class GenericVocabularyWriter(VocabularyWriter):
                     converted_record["icon"] = str(value)
                 elif prop == CCMM_MISC.tag:
                     converted_record.setdefault("tags", []).append(str(value))
+
+            # Add mappings from SKOS.exactMatch where concept is the object
+            # (other vocabularies map their concepts TO this one)
+            for subj, _, _ in self.store.graph.triples((None, SKOS.exactMatch, concept)):
+                # Skip self-references (when the subject is the same as the current concept)
+                if subj == concept:
+                    continue
+                converted_record["crosswalks"].append({
+                    "identifier": str(subj),
+                    "scheme": split_uri(str(subj))[0]
+                })
             if "title" not in converted_record:
                 continue
 

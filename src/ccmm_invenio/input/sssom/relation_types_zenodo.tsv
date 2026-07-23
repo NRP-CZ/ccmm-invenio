@@ -3,7 +3,7 @@
 #   orcid: https://orcid.org/
 #   semapv: https://w3id.org/semapv/vocab/
 #   skos: http://www.w3.org/2004/02/skos/core#
-#   zenodo_rt: https://zenodo.org/vocabularies/relation_type/
+#   zenodo_rt: https://zenodo.org/vocabularies/relationtypes/
 # license: https://creativecommons.org/licenses/by/4.0/
 # mapping_set_description: Mappings between zenodo relation types and CCMM relation
 #   types

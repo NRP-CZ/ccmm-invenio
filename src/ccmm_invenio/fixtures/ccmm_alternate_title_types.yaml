@@ -1,4 +1,5 @@
-- description:
+- crosswalks: []
+  description:
     cs: Alternativní název datasetu - může se jednat o uvedení nebo naopak rozepsání
       zkratky, přepisem číslených hodnot atd.
     en: Alternative dataset title - could be abbreviations, transcribing numerical
@@ -14,7 +15,8 @@
   title:
     cs: Alternativní název
     en: Alternative Title
-- description:
+- crosswalks: []
+  description:
     cs: Jiný název, než je překlad, podnázev a alternativní název.
     en: Other title than the subtitle, transated title or alternative title.
   id: other
@@ -28,7 +30,8 @@
   title:
     cs: Jiný
     en: Other
-- description:
+- crosswalks: []
+  description:
     cs: Podnázev, který doplňuje název datasetu.
     en: Subtitle that complements the dataset title.
   id: subtitle
@@ -42,7 +45,8 @@
   title:
     cs: Podnázev
     en: Subtitle
-- description:
+- crosswalks: []
+  description:
     cs: Překlad názvu datasetu.
     en: Translation of the dataset title.
   id: translatedtitle
