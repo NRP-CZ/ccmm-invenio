@@ -1,266 +1,418 @@
 - id: cites
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/cites
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Cites
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/cites
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Cites
   title:
     cs: cituje (co)
     en: cites
 - id: collects
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/collects
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Collects
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/collects
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Collects
   title:
     cs: sbírá
     en: collects
 - id: compiles
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/compiles
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Compiles
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/compiles
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Compiles
   title:
     cs: kompiluje (co)
     en: compiles
 - id: continues
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/continues
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Continues
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/continues
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Continues
   title:
     cs: pokračuje (čím)
     en: continues
 - id: describes
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/describes
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Describes
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/describes
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Describes
   title:
     cs: popisuje (co)
     en: describes
 - id: documents
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/documents
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Documents
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/documents
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Documents
   title:
     cs: dokumentuje (co)
     en: documents
 - id: hasmetadata
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hasmetadata
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/hasmetadata
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasMetadata
   title:
     cs: má metadata
     en: has metadata
 - id: haspart
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/haspart
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasPart
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/haspart
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasPart
   title:
     cs: má část/i
     en: has part
 - id: hastranslation
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hastranslation
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasTranslation
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/hastranslation
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasTranslation
   title:
     cs: má překlad
     en: has translation
 - id: hasversion
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hasversion
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasVersion
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/hasversion
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: HasVersion
   title:
     cs: má verzi
     en: has version
 - id: iscitedby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscitedby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCitedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscitedby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsCitedBy
   title:
     cs: je citován (čím)
     en: is cited by
 - id: iscollectedby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscollectedby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscollectedby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsCollectedBy
   title:
     cs: je sbírán (čím)
     en: is collected by
 - id: iscompiledby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscompiledby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCompiledBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscompiledby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsCompiledBy
   title:
     cs: kompilován (čím)
     en: is compiled by
 - id: iscontinuedby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscontinuedby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsContinuedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscontinuedby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsContinuedBy
   title:
     cs: je pokračováním (čeho)
     en: is continued by
 - id: isderivedfrom
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isderivedfrom
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isderivedfrom
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsDerivedFrom
   title:
     cs: je odvozen od (čeho)
     en: is derived from
 - id: isdescribedby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isdescribedby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDescribedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isdescribedby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsDescribedBy
   title:
     cs: je popsán (čím)
     en: is described by
 - id: isdocumentedby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isdocumentedby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDocumentedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isdocumentedby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsDocumentedBy
   title:
     cs: je zdokumentován (čím)
     en: is documented by
 - id: isidenticalto
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isidenticalto
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsIdenticalTo
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isidenticalto
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsIdenticalTo
   title:
     cs: je identický s
     en: is identical to
 - id: ismetadatafor
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ismetadatafor
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsMetadataFor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ismetadatafor
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsMetadataFor
   title:
     cs: je metadaty pro
     en: is metadata for
 - id: isnewversionof
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isnewversionof
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsNewVersionOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isnewversionof
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsNewVersionOf
   title:
     cs: je novou verzí (čeho)
     en: is new version of
 - id: isobsoletedby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isobsoletedby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsObsoletedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isobsoletedby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsObsoletedBy
   title:
     cs: je nahrazen (čím)
     en: is obsoleted by
 - id: isoriginalformof
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isoriginalformof
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsOriginalFormOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isoriginalformof
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsOriginalFormOf
   title:
     cs: je původní variantou (čeho)
     en: is original form of
 - id: ispartof
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ispartof
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPartOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ispartof
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsPartOf
   title:
     cs: je součástí
     en: is part of
 - id: ispreviousversionof
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ispreviousversionof
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPreviousVersionOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ispreviousversionof
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsPreviousVersionOf
   title:
     cs: je předchozí verzí (čeho)
     en: is previous version of
 - id: ispublishedin
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ispublishedin
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPublishedIn
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ispublishedin
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsPublishedIn
   title:
     cs: je publikován v
     en: is published in
 - id: isreferencedby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isreferencedby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isreferencedby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsReferencedBy
   title:
     cs: je na něj odkazováno z (čeho)
     en: is referenced by
 - id: isrequiredby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isrequiredby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsRequiredBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isrequiredby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsRequiredBy
   title:
     cs: je požadován (čím)
     en: is required by
 - id: isreviewedby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isreviewedby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReviewedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isreviewedby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsReviewedBy
   title:
     cs: je recenzován (čím)
     en: is reviewed by
 - id: issourceof
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/issourceof
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSourceOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/issourceof
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsSourceOf
   title:
     cs: je zdrojem odvozené verze
     en: is source of
 - id: issupplementedby
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/issupplementedby
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/issupplementedby
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsSupplementedBy
   title:
     cs: má doplněk
     en: is supplemented by
 - id: issupplementto
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/issupplementto
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementTo
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/issupplementto
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsSupplementTo
   title:
     cs: je doplňkem k (čemu)
     en: is supplement to
 - id: istranslationof
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/istranslationof
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsTranslationOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/istranslationof
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsTranslationOf
   title:
     cs: je překladem (čeho)
     en: is translation of
 - id: isvariantformof
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isvariantformof
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVariantFormOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isvariantformof
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsVariantFormOf
   title:
     cs: je variantou (čeho)
     en: is variant form of
 - id: isversionof
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isversionof
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVersionOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isversionof
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: IsVersionOf
   title:
     cs: je verzí
     en: is version of
 - id: obsoletes
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/obsoletes
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Obsoletes
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/obsoletes
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Obsoletes
   title:
     cs: nahrazuje (co)
     en: obsoletes
 - id: references
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/references
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/References
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/references
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: References
   title:
     cs: odkazuje (na co)
     en: references
 - id: requires
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/requires
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Requires
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/requires
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Requires
   title:
     cs: požaduje (co)
     en: requires
 - id: reviews
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/relationtypes/reviews
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Reviews
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/reviews
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/RelationType: Reviews
   title:
     cs: recenzuje (co)
     en: reviews

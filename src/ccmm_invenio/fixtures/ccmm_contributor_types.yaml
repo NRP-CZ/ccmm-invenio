@@ -6,14 +6,30 @@
       the resource, if that organisation is different from the Publisher, Distributor,
       and Data Manager.'
   id: contactperson
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/contactperson
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ContactPerson
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/contactperson
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ContactPerson
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ContactPerson
-    skos:exactMatch:info:eu-repo/semantics: ContactPerson
   title:
     cs: Kontaktní osoba
     en: Contact Person
+- description:
+    en: The institution or person responsible for collecting, managing, distributing,
+      or otherwise contributing to the development of the resource. To supply multiple
+      contributors, repeat this property.
+  id: contributor
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/contributor
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/contributorsroles/contributor
+  title:
+    en: Contributor
 - description:
     en: 'Person/institution responsible for finding or gathering/collecting data under
       the guidelines of the author(s) or Principal Investigator (PI).
@@ -21,11 +37,13 @@
       May also be used when crediting survey conductors, interviewers, event or condition
       observers, or persons responsible for monitoring key instrument data.'
   id: datacollector
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/datacollector
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCollector
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/datacollector
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataCollector
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCollector
-    skos:exactMatch:info:eu-repo/semantics: DataCollector
   title:
     cs: Sběratel dat
     en: Data Collector
@@ -46,11 +64,13 @@
       Repository managers as well as data librarians working in the repository fall
       within this category.'
   id: datacurator
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/datacurator
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCurator
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/datacurator
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataCurator
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataCurator
-    skos:exactMatch:info:eu-repo/semantics: DataCurator
   title:
     cs: Kurátor dat
     en: Data Curator
@@ -64,11 +84,13 @@
       is handled in accordance with the records management requirements applicable
       to it.'
   id: datamanager
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/datamanager
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/datamanager
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: DataManager
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: DataManager
-    skos:exactMatch:info:eu-repo/semantics: DataManager
   title:
     cs: Manažer dat
     en: Data Manager
@@ -78,11 +100,13 @@
 
       Works stored in more than one archive/repository may credit each as a distributor.'
   id: distributor
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/distributor
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Distributor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/distributor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Distributor
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Distributor
-    skos:exactMatch:info:eu-repo/semantics: Distributor
   title:
     cs: Distributor
     en: Distributor
@@ -93,11 +117,13 @@
       Note: if the Editor is to be credited in place of multiple creators, the Editor’s
       name may be supplied as Creator, with “(Ed.)” appended to the name.'
   id: editor
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/editor
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Editor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/editor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Editor
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Editor
-    skos:exactMatch:info:eu-repo/semantics: Editor
   title:
     cs: Editor
     en: Editor
@@ -108,11 +134,13 @@
       This role normally falls on the University, research center or organization
       where the data center/data repository belongs.'
   id: hostinginstitution
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/hostinginstitution
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/HostingInstitution
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/hostinginstitution
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: HostingInstitution
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: HostingInstitution
-    skos:exactMatch:info:eu-repo/semantics: HostingInstitution
   title:
     cs: Hostující instituce
     en: Hosting Institution
@@ -126,11 +154,13 @@
       providing administrative services to the author (such as depositing updates
       into an online repository, analysing usage, etc.), or one of many other roles.'
   id: other
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/other
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/other
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Other
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Other
-    skos:exactMatch:info:eu-repo/semantics: Other
   title:
     cs: Jiná role
     en: Other
@@ -141,11 +171,13 @@
       In the data industry, this may be a company “producing” DVDs that package data
       for future dissemination by a distributor.'
   id: producer
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/producer
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Producer
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/producer
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Producer
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Producer
-    skos:exactMatch:info:eu-repo/semantics: Producer
   title:
     cs: Producent
     en: Producer
@@ -157,11 +189,13 @@
       he or she remains intimately involved throughout the life of the particular
       project team.'
   id: projectleader
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/projectleader
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectLeader
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectleader
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectLeader
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectLeader
-    skos:exactMatch:info:eu-repo/semantics: ProjectLeader
   title:
     cs: Vedoucí projektu
     en: Project Leader
@@ -172,11 +206,13 @@
       The manager of a project normally has more administrative responsibility than
       actual work involvement.'
   id: projectmanager
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/projectmanager
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectManager
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectmanager
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectManager
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectManager
-    skos:exactMatch:info:eu-repo/semantics: ProjectManager
   title:
     cs: Projektový manažer
     en: Project Manager
@@ -186,11 +222,13 @@
       This vocabulary may or may not indicate the quality, quantity, or substance
       of the person’s involvement.'
   id: projectmember
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/projectmember
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectMember
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/projectmember
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ProjectMember
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ProjectMember
-    skos:exactMatch:info:eu-repo/semantics: ProjectMember
   title:
     cs: Člen projektového týmu
     en: Project Member
@@ -203,11 +241,13 @@
       then assign the full, specific character string to data clients, provide metadata
       back to the DataCite registry, etc.'
   id: registrationagency
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/registrationagency
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAgency
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/registrationagency
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAgency
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAgency
-    skos:exactMatch:info:eu-repo/semantics: RegistrationAgency
   title:
     cs: Registrační agentura
     en: Registration Agency
@@ -218,11 +258,13 @@
       The IDF serves as the Registration Authority for the International Standards
       Organisation (ISO) in the area/domain of Digital Object Identifiers.'
   id: registrationauthority
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/registrationauthority
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAuthority
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/registrationauthority
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RegistrationAuthority
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RegistrationAuthority
-    skos:exactMatch:info:eu-repo/semantics: RegistrationAuthority
   title:
     cs: Registrační autorita
     en: Registration Authority
@@ -233,11 +275,13 @@
       Usage Notes: This person could be an author’s intellectual mentor, a person
       providing intellectual leadership in the discipline or subject domain, etc.'
   id: relatedperson
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/relatedperson
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RelatedPerson
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/relatedperson
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RelatedPerson
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RelatedPerson
-    skos:exactMatch:info:eu-repo/semantics: RelatedPerson
   title:
     cs: Související osoba
     en: Related Person
@@ -251,11 +295,13 @@
       may find additional data online and correlate it to the data collected for the
       experiment or study, for example.'
   id: researcher
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/researcher
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Researcher
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/researcher
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Researcher
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Researcher
-    skos:exactMatch:info:eu-repo/semantics: Researcher
   title:
     cs: Výzkumník
     en: Researcher
@@ -266,11 +312,13 @@
       May operate at a narrower level of scope; may or may not hold less administrative
       responsibility than a project team.'
   id: researchgroup
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/researchgroup
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ResearchGroup
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/researchgroup
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: ResearchGroup
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: ResearchGroup
-    skos:exactMatch:info:eu-repo/semantics: ResearchGroup
   title:
     cs: Výzkumná skupina
     en: Research Group
@@ -278,11 +326,13 @@
     en: Person or institution owning or managing property rights, including intellectual
       property rights over the resource.
   id: rightsholder
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/rightsholder
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RightsHolder
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/rightsholder
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: RightsHolder
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: RightsHolder
-    skos:exactMatch:info:eu-repo/semantics: RightsHolder
   title:
     cs: Majitel práv
     en: Rights Holder
@@ -294,11 +344,13 @@
       of people or a facility or instrumentation necessary for the development of
       the resource, etc.'
   id: sponsor
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/sponsor
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Sponsor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/sponsor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Sponsor
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Sponsor
-    skos:exactMatch:info:eu-repo/semantics: Sponsor
   title:
     cs: Sponzor
     en: Sponsor
@@ -306,11 +358,13 @@
     en: Designated administrator over one or more groups/teams working to produce
       a resource, or over one or more steps of a development process.
   id: supervisor
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/supervisor
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Supervisor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/supervisor
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Supervisor
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Supervisor
-    skos:exactMatch:info:eu-repo/semantics: Supervisor
   title:
     cs: Supervizor
     en: Supervisor
@@ -322,10 +376,13 @@
       This contributor type should be applied to DOI metadata for a resource which
       has been translated from another resource.'
   id: translator
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/translator
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Translator
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/translator
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: Translator
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: Translator
   title:
     cs: Překladatel
     en: Translator
@@ -336,11 +393,13 @@
       versioning, and availability of the Work Package during the development of the
       resource.
   id: workpackageleader
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/workpackageleader
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/WorkPackageLeader
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
   props:
     iri: https://nma.eosc.cz/vocabularies/contributorsroles/workpackageleader
-    skos:exactMatch:https://schema.datacite.org/meta/kernel-4/contributorType: WorkPackageLeader
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor: WorkPackageLeader
-    skos:exactMatch:info:eu-repo/semantics: WorkPackageLeader
   title:
     cs: Vedoucí pracovního balíku
     en: Work Package Leader

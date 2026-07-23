@@ -3,9 +3,13 @@
     en: This is the determination of the location where the data was collected (measured,
       recorded, observed etc.).
   id: collected
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/locationrelationtypes/collected
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected
+    scheme: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
   props:
     iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/collected
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Collected
   title:
     cs: Získáno v lokaci
     en: Collected in
@@ -14,9 +18,13 @@
     en: This is the determination of the location where the data was further processed
       after collection or measurement.
   id: processed
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/locationrelationtypes/processed
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Processed
+    scheme: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
   props:
     iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/processed
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Processed
   title:
     cs: Zpracováno v lokaci
     en: Processed at location
@@ -26,9 +34,13 @@
     en: This is a relationship to a location that relates to the content of the data.
       The dataset contains data about the given location.
   id: refers
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/locationrelationtypes/refers
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Refers
+    scheme: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
   props:
     iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/refers
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Refers
   title:
     cs: Týká se lokace
     en: Refers to the location
@@ -38,9 +50,13 @@
     en: This is the determination of the location where the data is permanently stored
       after collection, measurement or processing.
   id: stored
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/locationrelationtypes/stored
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Stored
+    scheme: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
   props:
     iri: https://nma.eosc.cz/vocabularies/locationrelationtypes/stored
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/LocationRelation: Stored
   title:
     cs: Uchováno v lokaci
     en: Stored at location

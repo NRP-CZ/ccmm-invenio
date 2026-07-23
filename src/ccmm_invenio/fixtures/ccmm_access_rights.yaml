@@ -8,12 +8,31 @@
       available through the system or platform nor can be referenced to an open access
       copy in an external journal or trustworthy archive.
   id: c_14cb
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/accessrights/c_14cb
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: http://purl.org/coar/access_right/c_14cb
+    scheme: http://purl.org/coar/access_right/
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_14cb
-    skos:exactMatch:http://purl.org/coar/access_right: c_14cb
   title:
+    ar: الوصول المحدود بالميتاداتا
+    ca: accés només a metadades
     cs: pouze metadata
+    de: nur Metadaten
     en: metadata only access
+    es: registro bibliográfico
+    fi: vain metadata saatavissa
+    fr: accès aux seules métadonnées
+    it: accesso limitato ai metadati
+    ja: メタデータのみ
+    nl: toegang beperkt tot metadata
+    pt: acesso a metadados
+    ru: доступ к метаданным
+    sl: samo metapodatki
+    sr: pristup ograničen na metapodatke
+    sr-cyrl: приступ ограничен на метаподатке
+    tr: sadece üstveri erişimi
 - description:
     cs: 'Omezený přístup označuje zdroj, který je v systému dostupný, avšak s určitým
       omezením bránícím plnému otevřenému přístupu. Tento typ přístupu může nastat
@@ -40,12 +59,31 @@
       Access to the resource is restricted to a specific community (e.g. limited to
       a university community)'
   id: c_16ec
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/accessrights/c_16ec
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: http://purl.org/coar/access_right/c_16ec
+    scheme: http://purl.org/coar/access_right/
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_16ec
-    skos:exactMatch:http://purl.org/coar/access_right: c_16ec
   title:
+    ar: الوصول المقيد
+    ca: accés restringit
     cs: omezený přístup
+    de: eingeschränkter Zugang
     en: restricted access
+    es: acceso restringido
+    fi: rajoitettu saatavuus
+    fr: accès réservé
+    it: accesso riservato
+    ja: アクセス制限有
+    nl: beperkt toegankelijk
+    pt: acesso restrito
+    ru: ограниченный доступ
+    sl: omejen dostop
+    sr: ograničeni pristup
+    sr-cyrl: ограничени приступ
+    tr: sınırlı erişim
 - description:
     cs: Otevřený přístup označuje zdroj, který je okamžitě a trvale dostupný online
       a volně přístupný všem na webu, bez finančních a technických překážek. Zdroj
@@ -56,12 +94,31 @@
       is either stored in the repository or referenced to an external journal or trustworthy
       archive.
   id: c_abf2
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/accessrights/c_abf2
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: http://purl.org/coar/access_right/c_abf2
+    scheme: http://purl.org/coar/access_right/
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_abf2
-    skos:exactMatch:http://purl.org/coar/access_right: c_abf2
   title:
+    ar: الوصول الحر
+    ca: accés obert
     cs: otevřený přístup
+    de: offener Zugang
     en: open access
+    es: acceso abierto
+    fi: avoin saatavuus
+    fr: libre accès
+    it: accesso aperto
+    ja: オープンアクセス
+    nl: vrij toegankelijk
+    pt: acesso aberto
+    ru: открытый доступ
+    sl: odprti dostop
+    sr: otvoreni pristup
+    sr-cyrl: отворени приступ
+    tr: açık erişim
 - description:
     cs: Odložené zpřístupnění označuje zdroj, který je do určitého data dostupný pouze
       v režimu přístupu k metadatům a teprve poté je uvolněn do otevřeného přístupu.
@@ -72,9 +129,28 @@
       funders policies, or set by the author (e.g such as in the case of theses and
       dissertations).
   id: c_f1cf
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/accessrights/c_f1cf
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: http://purl.org/coar/access_right/c_f1cf
+    scheme: http://purl.org/coar/access_right/
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_f1cf
-    skos:exactMatch:http://purl.org/coar/access_right: c_f1cf
   title:
+    ar: الوصول المحظور
+    ca: accés embargat
     cs: odložené zpřístupnění
+    de: Zugang unterliegt Embargo
     en: embargoed access
+    es: acceso embargado
+    fi: embargo
+    fr: sous embargo
+    it: accesso sottoposto a periodo di embargo
+    ja: エンバーゴ有
+    nl: onder embargo
+    pt: acesso embargado
+    ru: доступ с эмбарго
+    sl: odlog javne objave
+    sr: odloženi otvoreni pristup
+    sr-cyrl: одложени отворени приступ
+    tr: ambargolu erişim

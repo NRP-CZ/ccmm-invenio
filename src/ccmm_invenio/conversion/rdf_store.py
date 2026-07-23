@@ -11,7 +11,7 @@
 from __future__ import annotations
 
 import logging
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 from rdflib import Graph, Namespace
 
@@ -19,6 +19,12 @@ if TYPE_CHECKING:
     from rdflib.namespace import DefinedNamespace
 
 log = logging.getLogger(__name__)
+
+
+NMA = Namespace("https://nma.eosc.cz/vocabularies/")
+CCMM = Namespace("https://vocabs.ccmm.cz/registry/codelist/")
+CCMM_PROPS = Namespace("http://vocabs.ccmm.cz/props/")
+CCMM_MISC = Namespace("http://vocabs.ccmm.cz/misc/")
 
 
 class RDFTripleStore:
@@ -47,6 +53,19 @@ class RDFTripleStore:
         # SSSOM namespaces
         self.graph.bind("sssom", Namespace("https://w3id.org/sssom/"))
         self.graph.bind("semapv", Namespace("https://w3id.org/semapv/vocab/"))
+
+        # NMA namespaces
+        self.graph.bind("nma", Namespace("https://nma.eosc.cz/vocabularies/"))
+
+        # euvoc
+        self.graph.bind("euvoc", Namespace("http://publications.europa.eu/ontology/euvoc#"))
+
+        # misc namespaces
+        self.graph.bind("europa-ontology", Namespace("http://publications.europa.eu/ontology/authority/"))
+        self.graph.bind("europa-resource", Namespace("http://publications.europa.eu/resource/authority/"))
+        self.graph.bind("skos-xl", Namespace("http://www.w3.org/2008/05/skos-xl#"))
+        self.graph.bind("lemon", Namespace("http://lemon-model.net/lemon#"))
+        self.graph.bind("coar-resource-type", Namespace("http://purl.org/coar/resource_type/schema#"))
 
         log.debug("Bound default namespaces to graph")
 
@@ -80,7 +99,7 @@ class RDFTripleStore:
         """Return the number of triples in the store."""
         return len(self.graph)
 
-    def query(self, sparql_query: str, **kwargs: object) -> object:
+    def query(self, sparql_query: str, **kwargs: object) -> Any:
         """Execute a SPARQL query on the triplestore.
 
         Args:
@@ -128,7 +147,7 @@ class RDFTripleStore:
 
         serializer = DeterministicTurtleSerializer(self.graph)
         stream = BytesIO()
-        serializer.serialize(stream)
+        serializer.serialize(stream, spacious=True)
         return stream.getvalue().decode("utf-8")
 
     def __repr__(self) -> str:

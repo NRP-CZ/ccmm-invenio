@@ -21,310 +21,218 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
+from typing import TYPE_CHECKING, Any, cast
 
 import click
-from rdflib import Graph, URIRef
-from rdflib.namespace import RDF, SKOS
+from fsspec.caching import Generic
+from rdflib import Literal, URIRef
+from rdflib.namespace import SKOS, split_uri
 
-from ccmm_invenio.conversion.csv_loader import CSVToRDFLoader
-from ccmm_invenio.conversion.fixture_generator import FixtureGenerator
-from ccmm_invenio.conversion.rdf_store import RDFTripleStore
-from ccmm_invenio.conversion.sparql_loader import SPARQLLoader
+from ccmm_invenio.conversion.csv_loader import CSVLoader
+from ccmm_invenio.conversion.rdf_store import CCMM_PROPS, NMA, RDFTripleStore
+from ccmm_invenio.conversion.sparql_loader import NetworkCache, NetworkRDFLoader, TurtleLoader
 from ccmm_invenio.conversion.sssom_loader import SSSOMLoader
-from ccmm_invenio.conversion.utils import print_concept_schemes, print_statistics
-from ccmm_invenio.conversion.yaml_loader import YAMLToRDFLoader
+from ccmm_invenio.conversion.writer import GenericVocabularyWriter
+from ccmm_invenio.conversion.yaml_loader import YAMLLoader
+
+if TYPE_CHECKING:
+    from collections.abc import Callable
+
+    from ccmm_invenio.conversion.loader import VocabularyLoader
+
 
 log = logging.getLogger(__name__)
 
 
-def create_nma_vocabulary_terms(store: RDFTripleStore) -> None:
-    """Create NMA vocabulary terms from external schemes.
+class VocabularyConverter:
+    """A vocabulary converter that manages the triplestore and conversion steps."""
 
-    For each concept in external schemes, create a corresponding concept
-    in our NMA scheme with all the same properties, plus skos:exactMatch
-    linking back to the original.
+    def __init__(self):
+        """Initialize the VocabularyConverter with an empty triplestore."""
+        self.store = RDFTripleStore()
 
-    Args:
-        store: The RDF triplestore containing external concepts
+    def load_vocabulary_to_triple_store(self, uri: str, loader: VocabularyLoader) -> int:
+        """Load a vocabulary from the given URI using the specified loader and store it in the triplestore.
 
-    """
-    log.info("Creating NMA vocabulary terms from external schemes")
+        Args:
+            uri (str): The URI of the vocabulary to load.
+            loader (VocabularyLoader): The loader to use for loading the vocabulary.
 
-    # Define mappings from external schemes to NMA schemes
-    scheme_mappings = [
-        {
-            "external_scheme": "http://publications.europa.eu/resource/authority/language",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/languages",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/languages/",
-        },
-        {
-            "external_scheme": "http://publications.europa.eu/resource/authority/file-type",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/filetypes",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/filetypes/",
-        },
-        {
-            "external_scheme": "http://purl.org/coar/access_right/scheme",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/accessrights",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/accessrights/",
-        },
-        {
-            "external_scheme": "http://purl.org/coar/resource_type/scheme",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/resourcetypes",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/resourcetypes/",
-        },
-        {
-            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/AgentRole/",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/resourceagentroletypes",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/resourceagentroletypes/",
-        },
-        {
-            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/titletypes",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/titletypes/",
-        },
-        {
-            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/locationrelationtypes",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/locationrelationtypes/",
-        },
-        {
-            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/RelationType/",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/relationtypes",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/relationtypes/",
-        },
-        {
-            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/subjectcategories",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/subjectcategories/",
-        },
-        {
-            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/TimeReference/",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/datetypes",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/datetypes/",
-        },
-        # Special case: RDM subjects use a separate 'subjects' scheme for Invenio
-        {
-            "external_scheme": "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/",
-            "nma_scheme": "https://nma.eosc.cz/vocabularies/subjects",
-            "nma_base_uri": "https://nma.eosc.cz/vocabularies/subjects/",
-        },
-    ]
+        Returns the number of concepts loaded.
 
-    total_created = 0
-
-    for mapping in scheme_mappings:
-        external_scheme_uri = mapping["external_scheme"]
-        nma_scheme_uri = mapping["nma_scheme"]
-        nma_base_uri = mapping["nma_base_uri"]
-
-        log.info("Creating NMA concepts from %s to %s", external_scheme_uri, nma_scheme_uri)
-
-        # Query for all concepts in the external scheme
-        query = f"""
-            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-            
-            SELECT ?concept
-            WHERE {{
-                ?concept a skos:Concept ;
-                         skos:inScheme <{external_scheme_uri}> .
-            }}
         """
+        return loader.load(uri, self.store)
 
-        concepts = list(store.graph.query(query))
+    def add_identifiers(self) -> None:
+        """Add DC identifiers to the triplestore."""
+        log.info("Adding DC identifiers to the triplestore...")
+        for subject in self.store.graph.subjects(SKOS.inScheme):
+            self.store.graph.add((subject, NMA.original_iri, subject))
+            nma_iri = self._convert_iri_to_nma_iri(str(subject))
+            self.store.graph.add((subject, NMA.nma_iri, URIRef(nma_iri)))
+            self.store.graph.add((subject, NMA.nma_identifier, Literal(nma_iri.rsplit("/", maxsplit=1)[-1])))
 
-        if not concepts:
-            log.info("No concepts found in %s, skipping", external_scheme_uri)
-            continue
+    def _convert_iri_to_nma_iri(self, iri: str) -> str:
+        iri = iri.rstrip("/")
 
-        log.info("Found %d concepts to transform", len(concepts))
-
-        nma_graph = Graph()
-
-        for row in concepts:
-            external_concept_uri = row[0]
-            external_concept_str = str(external_concept_uri)
-
-            # Extract the identifier from the external URI, lowercased to match
-            # the fixture generator's ID convention (e.g. .../language/CEN -> cen)
-            concept_id = external_concept_str.rstrip("/").split("/")[-1].lower()
-
-            # Create NMA concept URI
-            nma_concept_uri = URIRef(f"{nma_base_uri}{concept_id}")
-
-            # Add concept type and scheme
-            nma_graph.add((nma_concept_uri, RDF.type, SKOS.Concept))
-            nma_graph.add((nma_concept_uri, SKOS.inScheme, URIRef(nma_scheme_uri)))
-
-            # Add exactMatch to original concept
-            nma_graph.add((nma_concept_uri, SKOS.exactMatch, external_concept_uri))
-
-            # Copy all other properties from the external concept
-            # Get all predicates and objects for this concept
-            for pred, obj in store.graph.predicate_objects(external_concept_uri):
-                pred_str = str(pred)
-
-                # Skip properties we've already handled or don't want to copy
-                if pred_str in [
-                    str(RDF.type),
-                    str(SKOS.inScheme),
-                ]:
-                    continue
-
-                # Copy the property to the NMA concept
-                nma_graph.add((nma_concept_uri, pred, obj))
-
-        # Merge NMA concepts into store
-        before_count = store.size()
-        store.merge(nma_graph)
-        after_count = store.size()
-        added = after_count - before_count
-
-        log.info("Created %d NMA concepts with %d triples for %s", len(concepts), added, nma_scheme_uri)
-        total_created += len(concepts)
-
-    log.info("Total NMA concepts created: %d", total_created)
-
-    # Special case: Create contributorsroles as a subset of AgentRole (descendants of Contributor)
-    # This creates separate NMA concepts under the 'contributorsroles' scheme
-    log.info("Creating contributorsroles concepts from AgentRole/Contributor descendants")
-    _create_contributors_roles(store)
-
-
-def _create_contributors_roles(store: RDFTripleStore) -> None:
-    """Create contributorsroles concepts from AgentRole/Contributor descendants.
-
-    This creates a separate set of NMA concepts under the 'contributorsroles' scheme
-    for all descendants of the Contributor concept in AgentRole.
-
-    Args:
-        store: The RDF triplestore
-
-    """
-    from rdflib import Graph
-
-    # Find the Contributor concept in the CCMM scheme
-    contributor_query = """
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        
-        SELECT ?contributor WHERE {
-            ?contributor skos:prefLabel "Contributor"@en ;
-                         skos:inScheme <https://vocabs.ccmm.cz/registry/codelist/AgentRole/> .
-        }
-    """
-    contributor_results = list(store.graph.query(contributor_query))
-    if not contributor_results:
-        log.warning("Contributor concept not found in AgentRole")
-        return
-
-    contributor_uri = contributor_results[0][0]
-    contributor_id = str(contributor_uri).rstrip("/").split("/")[-1].lower()
-
-    log.info("Found Contributor concept: %s", contributor_uri)
-
-    # Find all descendants of Contributor (broader chain leads back to Contributor)
-    descendants_query = """
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        
-        SELECT ?concept WHERE {
-            ?concept skos:inScheme <https://vocabs.ccmm.cz/registry/codelist/AgentRole/> .
-            {
-                ?concept skos:broader* <" + str(contributor_uri) + "> .
+        def _lookup_base(base: str) -> str | None:
+            """Look up the NMA base URI for a given CCMM base URI."""
+            known_bases = {
+                "http://publications.europa.eu/resource/authority/language": "https://nma.eosc.cz/vocabularies/languages",
+                "http://publications.europa.eu/resource/authority/file-type": "https://nma.eosc.cz/vocabularies/filetypes",
+                "http://purl.org/coar/access_right": "https://nma.eosc.cz/vocabularies/accessrights",
+                "http://purl.org/coar/resource_type": "https://nma.eosc.cz/vocabularies/resourcetypes",
+                "https://vocabs.ccmm.cz/registry/codelist/AgentRole": "https://nma.eosc.cz/vocabularies/resourceagentroletypes",
+                "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle": "https://nma.eosc.cz/vocabularies/titletypes",
+                "https://vocabs.ccmm.cz/registry/codelist/LocationRelation": "https://nma.eosc.cz/vocabularies/locationrelationtypes",
+                "https://vocabs.ccmm.cz/registry/codelist/RelationType": "https://nma.eosc.cz/vocabularies/relationtypes",
+                "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory": "https://nma.eosc.cz/vocabularies/subjects",
+                "https://vocabs.ccmm.cz/registry/codelist/TimeReference": "https://nma.eosc.cz/vocabularies/datetypes",
+                # "https://vocabs.ccmm.cz/registry/codelist/Subjects": "https://nma.eosc.cz/vocabularies/subjects",
+                "https://cesnet.cz/licenses": "https://nma.eosc.cz/vocabularies/licenses",
+                "https://cesnet.cz/subject-schemes": "https://nma.eosc.cz/vocabularies/subjectcategories",
             }
-            FILTER(?concept != <" + str(contributor_uri) + ">)
+            if base not in known_bases:
+                return None
+            return known_bases[base]
+
+        base, identifier = iri.rsplit("/", maxsplit=1)
+        identifier = identifier.lower()
+        while base:
+            nma_base = _lookup_base(base)
+            if nma_base:
+                return f"{nma_base}/{identifier}"
+            if "/" not in base:
+                break
+            base, rest = base.rsplit("/", maxsplit=1)
+            rest = rest.lower()
+            identifier = f"{rest}/{identifier}"
+        raise ValueError(f"Could not convert IRI {iri}")
+
+    def _convert_skos_scheme_to_nma_scheme(self, scheme: str) -> URIRef:
+        scheme_map = {
+            "https://cesnet.cz/licenses": NMA.licenses,
+            "https://cesnet.cz/subject-schemes": NMA.subjectcategories,
+            "https://vocabs.ccmm.cz/registry/codelist/AgentRole/": NMA.resourceagentroletypes,
+            "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/": NMA.titletypes,
+            "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/": NMA.locationrelationtypes,
+            "https://vocabs.ccmm.cz/registry/codelist/RelationType/": NMA.relationtypes,
+            "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/": NMA.subjects,
+            "https://vocabs.ccmm.cz/registry/codelist/TimeReference/": NMA.datetypes,
+            "http://purl.org/coar/access_right/scheme": NMA.accessrights,
+            "http://purl.org/coar/resource_type/scheme": NMA.resourcetypes,
+            "http://publications.europa.eu/resource/authority/language": NMA.languages,
+            "http://publications.europa.eu/resource/authority/language/0001": NMA.languages,
+            "http://publications.europa.eu/resource/authority/language/0002": NMA.languages,
+            "http://publications.europa.eu/resource/authority/language/0003": NMA.languages,
+            "http://publications.europa.eu/resource/authority/file-type": NMA.filetypes,
         }
-    """
-    # Simpler approach: find concepts that have Contributor in their broader chain
-    all_agent_roles_query = """
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        
-        SELECT ?concept ?broader WHERE {
-            ?concept a skos:Concept ;
-                     skos:inScheme <https://vocabs.ccmm.cz/registry/codelist/AgentRole/> .
-            OPTIONAL { ?concept skos:broader ?broader }
-        }
-    """
+        return scheme_map[str(scheme)]
 
-    # Get all agent roles and build broader chains
-    all_concepts = {}
-    broader_relations = {}
+    def add_nma_terms(self, predicate_map: dict[tuple[str | None, URIRef], URIRef | Callable]) -> str | None:
+        """Add NMA terms to the triplestore as exact matches."""
+        log.info("Adding NMA terms to the triplestore...")
 
-    for row in store.graph.query(all_agent_roles_query):
-        concept_uri = row[0]
-        broader_uri = row[1] if row[1] else None
-        concept_str = str(concept_uri)
-        all_concepts[concept_str] = concept_uri
-        if broader_uri:
-            broader_relations[concept_str] = str(broader_uri)
+        def lookup_predicate(subject: URIRef, predicate: URIRef, rdf_object: Any) -> tuple[None | URIRef, Any]:
+            subject_scheme = str(subject).rsplit("/", maxsplit=1)[0]
+            mapped_predicate = predicate_map.get((subject_scheme, predicate)) or predicate_map.get((None, predicate))
+            if mapped_predicate is not None:
+                if callable(mapped_predicate):
+                    return mapped_predicate(subject, predicate, rdf_object)
+                return mapped_predicate, rdf_object
+            return None, None
 
-    # Find descendants of Contributor by traversing broader chains
-    def is_descendant_of(concept_str: str, target_str: str) -> bool:
-        """Check if concept is a descendant of target."""
-        current = broader_relations.get(concept_str)
-        while current:
-            if current == target_str:
-                return True
-            current = broader_relations.get(current)
-        return False
+        for subject, nma_subject in self.store.graph.subject_objects(NMA.nma_iri):
+            self.store.graph.add((nma_subject, SKOS.exactMatch, subject))
 
-    contributor_str = str(contributor_uri)
-    contributor_descendants = [
-        uri for concept_str, uri in all_concepts.items()
-        if is_descendant_of(concept_str, contributor_str)
-    ]
+            # for subject, get SKOS.inScheme and add it to the NMA subject
+            for _, predicate, obj in self.store.graph.triples((subject, SKOS.inScheme, None)):
+                # we need to remap the scheme to nma scheme: _convert_iri_to_nma_iri(self, iri: str)
+                nma_scheme = self._convert_skos_scheme_to_nma_scheme(str(obj))
+                self.store.graph.add((nma_subject, predicate, URIRef(nma_scheme)))
 
-    if not contributor_descendants:
-        log.warning("No descendants of Contributor found")
-        return
+            # copy all triples from the original subject to the NMA subject
+            for _, predicate, obj in self.store.graph.triples((subject, None, None)):
+                self.store.graph.add((nma_subject, predicate, obj))
+                mapped_predicate, mapped_obj = lookup_predicate(cast("URIRef", subject), cast("URIRef", predicate), obj)
+                if mapped_predicate is not None:
+                    self.store.graph.add((nma_subject, mapped_predicate, mapped_obj))
 
-    log.info("Found %d descendants of Contributor", len(contributor_descendants))
+                if predicate == SKOS.notation:
+                    # convert notation like skos:notation "CS"^^euvoc:EUDOR_LNG, "CS"^^euvoc:FD_060, "cs"^^euvoc:ISO_639_1
+                    # to CCMM_PROPS.EUDOR_LNG -> "CS", CCMM_PROPS.FD_060 -> "CS", CCMM_PROPS.ISO_639_1 -> "cs"
+                    datatype = getattr(obj, "datatype", None)
+                    if datatype is not None:
+                        prop_name = str(datatype).rsplit("#", maxsplit=1)[-1].rsplit("/", maxsplit=1)[-1]
+                        self.store.graph.add((nma_subject, CCMM_PROPS[prop_name], Literal(str(obj))))
 
-    # Create NMA concepts for contributorsroles
-    nma_scheme_uri = "https://nma.eosc.cz/vocabularies/contributorsroles"
-    nma_base_uri = "https://nma.eosc.cz/vocabularies/contributorsroles/"
-    nma_graph = Graph()
-
-    # Add concept scheme
-    nma_graph.add((URIRef(nma_scheme_uri), RDF.type, SKOS.ConceptScheme))
-
-    for external_concept_uri in contributor_descendants:
-        external_concept_str = str(external_concept_uri)
-        concept_id = external_concept_str.rstrip("/").split("/")[-1].lower()
-
-        # Create NMA concept URI
-        nma_concept_uri = URIRef(f"{nma_base_uri}{concept_id}")
-
-        # Add concept type and scheme
-        nma_graph.add((nma_concept_uri, RDF.type, SKOS.Concept))
-        nma_graph.add((nma_concept_uri, SKOS.inScheme, URIRef(nma_scheme_uri)))
-
-        # Add exactMatch to original
-        nma_graph.add((nma_concept_uri, SKOS.exactMatch, external_concept_uri))
-
-        # Copy all other properties from the external concept
-        for pred, obj in store.graph.predicate_objects(external_concept_uri):
-            pred_str = str(pred)
-            # Skip properties we've already handled
-            if pred_str in [str(RDF.type), str(SKOS.inScheme), str(SKOS.broader)]:
+    def extract_contributors_roles(self) -> None:
+        """Extract contributors roles from the triplestore and store them in the triplestore in a different scheme."""
+        for subject in self.store.graph.subjects(SKOS.inScheme, NMA.resourceagentroletypes):
+            if not str(subject).startswith(f"{NMA.resourceagentroletypes}/contributor"):
                 continue
-            # Handle broader - map to NMA broader if it's also a contributor role
-            if pred_str == str(SKOS.broader):
-                obj_str = str(obj)
-                if is_descendant_of(obj_str, contributor_str):
-                    # Map to NMA broader URI
-                    obj_id = obj_str.rstrip("/").split("/")[-1].lower()
-                    nma_broader_uri = URIRef(f"{nma_base_uri}{obj_id}")
-                    nma_graph.add((nma_concept_uri, SKOS.broader, nma_broader_uri))
-            else:
-                nma_graph.add((nma_concept_uri, pred, obj))
+            subject_id = split_uri(str(subject))[-1]
+            nma_subject = URIRef(f"{NMA.contributorsroles}/{subject_id}")
+            # add inScheme
+            self.store.graph.add((nma_subject, SKOS.inScheme, NMA.contributorsroles))
+            # remove inScheme resourceagentroletypes
+            self.store.graph.remove((subject, SKOS.inScheme, NMA.resourceagentroletypes))
 
-    # Merge into store
-    before_count = store.size()
-    store.merge(nma_graph)
-    after_count = store.size()
-    added = after_count - before_count
+            for predicate, obj in self.store.graph.predicate_objects(subject):
+                self.store.graph.add((nma_subject, predicate, obj))
 
-    log.info("Created %d contributorsroles concepts with %d triples", len(contributor_descendants), added)
+
+def load_vocabularies(converter: VocabularyConverter, input_dir: Path) -> None:
+    """Load vocabularies from the input directory and store them in the triplestore."""
+    cache = NetworkCache(Path.cwd() / ".cache")
+
+    licenses_file = input_dir / "licenses.yaml"
+    log.info("Loading licenses from %s...", licenses_file)
+    converter.load_vocabulary_to_triple_store(
+        str(licenses_file), YAMLLoader(concept_scheme="https://cesnet.cz/licenses")
+    )
+
+    subject_schemes_file = input_dir / "subject_schemes.yaml"
+    log.info("Loading subject schemes from %s...", subject_schemes_file)
+    converter.load_vocabulary_to_triple_store(
+        str(subject_schemes_file), YAMLLoader(concept_scheme="https://cesnet.cz/subject-schemes")
+    )
+
+    for f in input_dir.rglob("*.csv"):
+        log.info("Loading %s...", f)
+        converter.load_vocabulary_to_triple_store(str(f), CSVLoader())
+
+    for f in input_dir.rglob("*.ttl"):
+        log.info("Loading %s...", f)
+        converter.load_vocabulary_to_triple_store(str(f), TurtleLoader())
+
+    for source_url in [
+        "https://vocabularies.coar-repositories.org/access_rights/access_rights.nt",
+        "https://vocabularies.coar-repositories.org/resource_types/resource_types.nt",
+    ]:
+        log.info("Loading %s...", source_url)
+        converter.load_vocabulary_to_triple_store(source_url, NetworkRDFLoader(cache))
+
+    converter.load_vocabulary_to_triple_store(
+        "http://publications.europa.eu/resource/authority/language",
+        NetworkRDFLoader(cache, serialization_format="xml", load_subgraphs=True),
+    )
+
+    converter.load_vocabulary_to_triple_store(
+        "http://publications.europa.eu/resource/authority/file-type",
+        NetworkRDFLoader(cache, serialization_format="xml", load_subgraphs=True),
+    )
+
+    for f in input_dir.rglob("*.tsv"):
+        log.info("Loading vocabulary mapping file %s...", f)
+        converter.load_vocabulary_to_triple_store(str(f), SSSOMLoader())
+
+    log.info("Loaded %d triples", converter.store.size())
+
+
+def is_primary_language(store: RDFTripleStore, subject: URIRef) -> bool:
+    """Check if the subject is a primary language (it has a two-letter ISO code) in the triplestore."""
+    return any(store.graph.triples((subject, CCMM_PROPS.ISO_639_1, None)))
 
 
 @click.command()
@@ -349,18 +257,11 @@ def _create_contributors_roles(store: RDFTripleStore) -> None:
     default="INFO",
     help="Set the logging level",
 )
-@click.option(
-    "--no-cache",
-    is_flag=True,
-    default=False,
-    help="Disable caching of downloaded RDF data",
-)
 def convert_vocabularies(
     input_dir: Path | None,
     sssom_dir: Path | None,
     output_dir: Path | None,
     log_level: str,
-    no_cache: bool,
 ) -> None:
     """Convert vocabularies from various sources to YAML fixtures.
 
@@ -383,249 +284,49 @@ def convert_vocabularies(
     sssom_dir = sssom_dir or root_dir / "input" / "sssom"
     output_dir = output_dir or root_dir / "fixtures"
 
-    use_cache = not no_cache
-
     log.info("Starting vocabulary conversion")
     log.info("Input directory: %s", input_dir)
     log.info("SSSOM directory: %s", sssom_dir)
     log.info("Output directory: %s", output_dir)
-    log.info("Cache enabled: %s", use_cache)
 
-    # Step 1: Initialize a RDF triplestore
-    log.info("Step 1: Initializing RDF triplestore")
-    store = RDFTripleStore()
-    log.info("Triplestore initialized with %d triples", store.size())
+    converter = VocabularyConverter()
+    load_vocabularies(converter, input_dir)
 
-    # Step 2: Load the input data from the `input` directory
-    log.info("Step 2: Loading CSV input data")
-    csv_loader = CSVToRDFLoader(store)
-
-    # Load CSV vocabulary files
-    csv_pattern = "CCMM_slovniky*.csv"
-    csv_results = csv_loader.load_directory(input_dir, pattern=csv_pattern)
-
-    log.info("CSV loading results:")
-    for filename, count in csv_results.items():
-        log.info("  - %s: %d concepts", filename, count)
-
-    total_csv_concepts = sum(csv_results.values())
-    log.info("Total concepts loaded from CSV: %d", total_csv_concepts)
-    log.info("Triplestore now contains %d triples", store.size())
-
-    # Step 3: Load data from SPARQL endpoints
-    log.info("Step 3: Loading vocabulary data from SPARQL/RDF sources")
-    sparql_loader = SPARQLLoader(store, use_cache=use_cache)
-
-    # Define SPARQL/RDF sources
-    sparql_results = {}
-
-    # Languages from EU Publications Office (download RDF and query locally)
-    try:
-        log.info("Loading Languages from EU Publications Office...")
-        count = sparql_loader.load_from_sparql_endpoint(
-            endpoint="http://publications.europa.eu/resource/authority/language",
-            scheme_uri="http://publications.europa.eu/resource/authority/language",
-            load_subgraphs=True,  # Load individual concept URIs for full label data
-            extra_props={
-                "ISO_639_2T": """
-                    ?concept skos:notation ?ISO_639_2T FILTER(datatype(?ISO_639_2T) = euvoc:ISO_639_2T)
-                """,
-                "ISO_639_1": """
-                    ?concept skos:notation ?ISO_639_1 FILTER(datatype(?ISO_639_1) = euvoc:ISO_639_1)
-                """,
-                "ISO_639_3": """
-                    ?concept skos:notation ?ISO_639_3 FILTER(datatype(?ISO_639_3) = euvoc:ISO_639_3)
-                """,
-                "XML_LNG": """
-                    ?concept skos:notation ?XML_LNG FILTER(datatype(?XML_LNG) = euvoc:XML_LNG)
-                """,
-                "ISO_639_2B": """
-                    ?concept skos:notation ?ISO_639_2B FILTER(datatype(?ISO_639_2B) = euvoc:ISO_639_2B)
-                """,
-            },
-            prefixes={
-                "euvoc": "http://publications.europa.eu/ontology/euvoc#",
-            },
-        )
-        sparql_results["Languages (EU Publications)"] = count
-    except Exception:
-        log.exception("Failed to load Languages")
-        sparql_results["Languages (EU Publications)"] = 0
-
-    # File Types from EU Publications Office (download RDF and query locally)
-    try:
-        log.info("Loading File Types from EU Publications Office...")
-        count = sparql_loader.load_from_sparql_endpoint(
-            endpoint="http://publications.europa.eu/resource/authority/file-type",
-            scheme_uri="http://publications.europa.eu/resource/authority/file-type",
-            load_subgraphs=True,  # Load individual concept URIs for full label data
-        )
-        sparql_results["File Types (EU Publications)"] = count
-    except Exception:
-        log.exception("Failed to load File Types")
-        sparql_results["File Types (EU Publications)"] = 0
-
-    # Other sources loaded from RDF files
-    rdf_sources = [
-        # Access Rights from COAR
+    converter.add_identifiers()
+    converter.add_nma_terms(
         {
-            "name": "Access Rights (COAR)",
-            "url": "https://vocabularies.coar-repositories.org/access_rights/access_rights.nt",
-            "format": "nt",
-            "extra_file": input_dir / "addon_access_rights.ttl",
-        },
-        # Resource Types from COAR
-        {
-            "name": "Resource Types (COAR)",
-            "url": "https://vocabularies.coar-repositories.org/resource_types/resource_types.nt",
-            "format": "nt",
-        },
-    ]
+            # convert original_iri to exactMatch
+            (None, NMA.original_iri): SKOS.exactMatch,
+        }
+    )
+    converter.extract_contributors_roles()
 
-    for source_config in rdf_sources:
-        source_name = source_config["name"]
-        try:
-            log.info("Loading %s...", source_name)
+    store = converter.store
 
-            # Load main vocabulary
-            count = sparql_loader.load_from_url(
-                source_config["url"],
-                format=source_config["format"],
-            )
-            sparql_results[source_name] = count
-
-            # Load extra file if specified
-            if "extra_file" in source_config:
-                extra_file = source_config["extra_file"]
-                if extra_file.exists():
-                    log.info("Loading extra data from %s...", extra_file.name)
-                    extra_count = sparql_loader.load_from_file(
-                        extra_file,
-                        format="turtle",
-                    )
-                    log.info("Loaded %d additional triples from %s", extra_count, extra_file.name)
-                else:
-                    log.warning("Extra file not found: %s", extra_file)
-
-        except Exception:
-            log.exception("Failed to load %s", source_name)
-            sparql_results[source_name] = 0
-
-    log.info("SPARQL loading results:")
-    for source_name, count in sparql_results.items():
-        log.info("  - %s: %d triples", source_name, count)
-
-    total_sparql_triples = sum(sparql_results.values())
-    log.info("Total triples loaded from SPARQL sources: %d", total_sparql_triples)
-    log.info("Triplestore now contains %d triples", store.size())
-
-    # Step 3.5: Load YAML vocabulary files (e.g., licenses)
-    log.info("Step 3.5: Loading YAML vocabulary files")
-    yaml_loader = YAMLToRDFLoader(store)
-    yaml_results = {}
-
-    # Load licenses
-    licenses_file = input_dir / "licenses.yaml"
-    if licenses_file.exists():
-        try:
-            log.info("Loading licenses from %s...", licenses_file)
-            count = yaml_loader.load_yaml_file(
-                licenses_file,
-                concept_scheme="https://nma.eosc.cz/vocabularies/licenses",
-                vocabulary_type="licenses",
-            )
-            yaml_results["Licenses"] = count
-        except Exception:
-            log.exception("Failed to load licenses")
-            yaml_results["Licenses"] = 0
-    else:
-        log.warning("Licenses file not found: %s", licenses_file)
-        yaml_results["Licenses"] = 0
-
-    # Load subject schemes
-    subject_schemes_file = input_dir / "subject_schemes.yaml"
-    if subject_schemes_file.exists():
-        try:
-            log.info("Loading subject schemes from %s...", subject_schemes_file)
-            count = yaml_loader.load_yaml_file(
-                subject_schemes_file,
-                concept_scheme="https://nma.eosc.cz/vocabularies/subjectschemes",
-                vocabulary_type="subjectschemes",
-            )
-            yaml_results["Subject Schemes"] = count
-        except Exception:
-            log.exception("Failed to load subject schemes")
-            yaml_results["Subject Schemes"] = 0
-    else:
-        log.warning("Subject schemes file not found: %s", subject_schemes_file)
-        yaml_results["Subject Schemes"] = 0
-
-    log.info("YAML loading results:")
-    for source_name, count in yaml_results.items():
-        log.info("  - %s: %d concepts", source_name, count)
-
-    total_yaml_concepts = sum(yaml_results.values())
-    log.info("Total concepts loaded from YAML files: %d", total_yaml_concepts)
-    log.info("Triplestore now contains %d triples", store.size())
-
-    # Step 4: Load SSSOM mapping files
-    log.info("Step 4: Loading SSSOM mapping files")
-    sssom_loader = SSSOMLoader(store)
-
-    # Load all SSSOM files from the sssom directory
-    if sssom_dir.exists():
-        log.info("Loading SSSOM files from %s...", sssom_dir)
-        sssom_results = sssom_loader.load_directory(sssom_dir, pattern="*.tsv")
-
-        log.info("SSSOM loading results:")
-        for filename, count in sorted(sssom_results.items()):
-            log.info("  - %s: %d triples", filename, count)
-
-        total_sssom_triples = sum(sssom_results.values())
-        log.info("Total triples loaded from SSSOM files: %d", total_sssom_triples)
-        log.info("Triplestore now contains %d triples", store.size())
-    else:
-        log.warning("SSSOM directory not found: %s", sssom_dir)
-        total_sssom_triples = 0
-
-    # Step 5: Create nma vocabulary terms
-    log.info("Step 5: Creating NMA vocabulary terms")
-    create_nma_vocabulary_terms(store)
-
-    # Step 6: Create Invenio fixtures from the triplestore
-    log.info("Step 6: Generating Invenio fixtures")
-    generator = FixtureGenerator(store)
-    fixture_results = generator.generate_all(output_dir)
-
-    log.info("Fixture generation results:")
-    for filename, count in sorted(fixture_results.items()):
-        log.info("  - %s: %d items", filename, count)
-
-    total_fixtures = sum(fixture_results.values())
-    log.info("Total items written across all fixtures: %d", total_fixtures)
-
-    # Step 6: Dump the triplestore to a Turtle file
-    log.info("Step 6: Dumping triplestore to Turtle file")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "vocabularies.ttl"
 
-    log.info("Writing sorted triplestore to %s...", output_file)
-    with output_file.open("w", encoding="utf-8") as f:
-        f.write(store.serialize_sorted(format="turtle"))
-    log.info("Successfully wrote %d triples to %s", store.size(), output_file)
+    # log.info("Writing sorted triplestore to %s...", output_file)
+    # with output_file.open("w", encoding="utf-8") as f:
+    #     f.write(store.serialize_sorted(format="turtle"))
+    # log.info("Successfully wrote %d triples to %s", store.size(), output_file)
 
-    # Print summary statistics
-    if log_level in ("INFO", "DEBUG"):
-        log.info("=" * 70)
-        log.info("FINAL TRIPLESTORE SUMMARY")
-        log.info("=" * 70)
-        print_statistics(store)
-        print_concept_schemes(store)
-        log.info("=" * 70)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_access_rights.yaml", NMA.accessrights)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_agent_roles.yaml", NMA.resourceagentroletypes)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_alternate_title_types.yaml", NMA.titletypes)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_contributor_types.yaml", NMA.contributorsroles)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_file_types.yaml", NMA.filetypes)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_languages_all.yaml", NMA.languages)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_languages_primary.yaml", NMA.languages, is_primary_language)
 
-    log.info("Vocabulary conversion completed")
-    log.info("Final triplestore size: %d triples", store.size())
-
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_licenses.yaml", NMA.licenses)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_location_relation_types.yaml", NMA.locationrelationtypes)
+    # GenericVocabularyWriter(store).write(output_dir / "ccmm_rdm_subjects.yaml", NMA.rdmsubjects)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_relation_types.yaml", NMA.relationtypes)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_resource_types.yaml", NMA.resourcetypes)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_subject_categories.yaml", NMA.subjectcategories)
+    # GenericVocabularyWriter(store).write(output_dir / "ccmm_subject_schemes.yaml", NMA.subjectschemes)
+    # GenericVocabularyWriter(store).write(output_dir / "ccmm_time_reference_types.yaml", NMA.timereferencetypes)
 
 if __name__ == "__main__":
     convert_vocabularies()

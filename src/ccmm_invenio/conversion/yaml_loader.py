@@ -11,53 +11,45 @@
 from __future__ import annotations
 
 import logging
-from typing import TYPE_CHECKING
+from pathlib import Path
+from typing import Any
 
-from rdflib import Literal, Namespace, URIRef
+import yaml
+from rdflib import Literal, URIRef
 from rdflib.namespace import RDF, SKOS
 
-if TYPE_CHECKING:
-    from pathlib import Path
+from ccmm_invenio.conversion.rdf_store import CCMM_MISC, CCMM_PROPS, RDFTripleStore
 
-    from ccmm_invenio.conversion.rdf_store import RDFTripleStore
+from .loader import VocabularyLoader
 
 log = logging.getLogger(__name__)
 
-# Namespaces
-NMA = Namespace("https://nma.eosc.cz/vocabularies/")
-CCMM_PROPS = Namespace("http://vocabs.ccmm.cz/props/")
 
-
-class YAMLToRDFLoader:
+class YAMLLoader(VocabularyLoader):
     """Load YAML vocabulary files into RDF triplestore."""
 
-    def __init__(self, store: RDFTripleStore) -> None:
+    def __init__(self, concept_scheme: str) -> None:
         """Initialize the YAML loader.
 
         Args:
-            store: The RDF triplestore to load data into
+            concept_scheme: URI of the concept scheme
+            vocabulary_type: Type of generic vocabulary in invenio
 
         """
-        self.store = store
+        self.concept_scheme = concept_scheme
 
-    def load_yaml_file(
-        self,
-        yaml_path: Path,
-        concept_scheme: str,
-        vocabulary_type: str,
-    ) -> int:
+    def load(self, uri: str, store: RDFTripleStore) -> int:
         """Load a YAML file into the triplestore.
 
         Args:
-            yaml_path: Path to the YAML file
-            concept_scheme: URI of the concept scheme
-            vocabulary_type: Vocabulary type (e.g., "licenses")
+            uri: Path to the YAML file (on the local filesystem)
+            store: RDFTripleStore to load into
 
         Returns:
             Number of concepts loaded
 
         """
-        import yaml
+        yaml_path = Path(uri)
 
         log.info("Loading YAML file: %s", yaml_path)
 
@@ -66,8 +58,8 @@ class YAMLToRDFLoader:
             data = list(yaml.safe_load_all(f))
 
         # Create concept scheme
-        scheme_uri = URIRef(concept_scheme)
-        self.store.graph.add((scheme_uri, RDF.type, SKOS.ConceptScheme))
+        scheme_uri = URIRef(self.concept_scheme)
+        store.graph.add((scheme_uri, RDF.type, SKOS.ConceptScheme))
 
         concepts_loaded = 0
 
@@ -75,73 +67,73 @@ class YAMLToRDFLoader:
             if not isinstance(item, dict) or "id" not in item:
                 continue
 
-            # Use lowercase ID for consistency with fixture generator
-            term_id = item["id"].lower()
-            original_id = item["id"]  # Store original case for dc:identifier
-
-            # Create concept URI using NMA namespace with lowercase ID
-            concept_uri = URIRef(f"{NMA}{vocabulary_type}/{term_id}")
-
-            # Add concept type
-            self.store.graph.add((concept_uri, RDF.type, SKOS.Concept))
-            self.store.graph.add((concept_uri, SKOS.inScheme, scheme_uri))
-
-            # Store the original ID (preserve case) using dc:identifier
-            from rdflib.namespace import DC
-
-            self.store.graph.add((concept_uri, DC.identifier, Literal(original_id)))
-
-            # Add labels
-            if "title" in item:
-                titles = item["title"]
-                if isinstance(titles, dict):
-                    if titles.get("cs"):
-                        self.store.graph.add((concept_uri, SKOS.prefLabel, Literal(titles["cs"], lang="cs")))
-                    if titles.get("en"):
-                        self.store.graph.add((concept_uri, SKOS.prefLabel, Literal(titles["en"], lang="en")))
-
-            # Add descriptions
-            if "description" in item:
-                descriptions = item["description"]
-                if isinstance(descriptions, dict):
-                    if descriptions.get("cs"):
-                        self.store.graph.add((concept_uri, SKOS.definition, Literal(descriptions["cs"], lang="cs")))
-                    if descriptions.get("en"):
-                        self.store.graph.add((concept_uri, SKOS.definition, Literal(descriptions["en"], lang="en")))
-
-            # Add hierarchy (parent relationship)
-            if "hierarchy" in item and "parent" in item["hierarchy"]:
-                parent_id = item["hierarchy"]["parent"]
-                # Use lowercase parent ID to match the child's ID convention
-                parent_uri = URIRef(f"{NMA}{vocabulary_type}/{parent_id.lower()}")
-                self.store.graph.add((concept_uri, SKOS.broader, parent_uri))
-
-            # Add custom properties
-            if "props" in item:
-                props = item["props"]
-                if isinstance(props, dict):
-                    for key, value in props.items():
-                        if key == "acronym":
-                            # Store acronym as a custom property
-                            self.store.graph.add((concept_uri, CCMM_PROPS.acronym, Literal(value)))
-                        elif key == "iri":
-                            # Store external IRI for later exactMatch creation
-                            # Only if it's different from the NMA namespace
-                            external_iri = str(value).rstrip("/")
-                            # Store as a temporary property that will be converted to exactMatch
-                            self.store.graph.add((concept_uri, CCMM_PROPS["externalIri"], Literal(external_iri)))
-                        # Other props can be added here as needed
-
-            # Add icon if present
-            if item.get("icon"):
-                self.store.graph.add((concept_uri, CCMM_PROPS.icon, Literal(item["icon"])))
-
-            # Add tags if present
-            if "tags" in item and isinstance(item["tags"], list):
-                for tag in item["tags"]:
-                    self.store.graph.add((concept_uri, CCMM_PROPS.tag, Literal(tag)))
-
+            self._load_single_item(item, scheme_uri, store)
             concepts_loaded += 1
 
         log.info("Loaded %d concepts from %s", concepts_loaded, yaml_path.name)
         return concepts_loaded
+
+    def _load_single_item(self, item: dict[str, Any], scheme_uri: URIRef, store: RDFTripleStore) -> None:
+        """Load a single item from the YAML data into the RDF store."""
+        original_id = item["id"]  # Store original case for dc:identifier
+
+        # Create concept URI of the loaded item
+        concept_uri = URIRef(f"{scheme_uri}/{original_id}")
+
+        # Add concept type
+        store.graph.add((concept_uri, RDF.type, SKOS.Concept))
+        store.graph.add((concept_uri, SKOS.inScheme, scheme_uri))
+
+        # Add labels
+        if "title" in item:
+            titles = item["title"]
+            if isinstance(titles, dict):
+                self._load_multilingual_string(store, titles, concept_uri, SKOS.prefLabel)
+
+        # Add descriptions
+        if "description" in item:
+            descriptions = item["description"]
+            if isinstance(descriptions, dict):
+                self._load_multilingual_string(store, descriptions, concept_uri, SKOS.definition)
+
+        # Add hierarchy (parent relationship)
+        if "hierarchy" in item and "parent" in item["hierarchy"]:
+            parent_id = item["hierarchy"]["parent"]
+            # Use lowercase parent ID to match the child's ID convention
+            parent_uri = URIRef(f"{scheme_uri}/{parent_id.lower()}")
+            store.graph.add((concept_uri, SKOS.broader, parent_uri))
+
+        # Add custom properties
+        if "props" in item:
+            props = item["props"]
+            if isinstance(props, dict):
+                for key, value in props.items():
+                    if key == "iri":
+                        # Store external IRI for later exactMatch creation
+                        # Only if it's different from the NMA namespace
+                        external_iri = str(value).rstrip("/")
+                        # Make it as an exactMatch to the external IRI
+                        store.graph.add((concept_uri, SKOS.exactMatch, Literal(external_iri)))
+                    else:
+                        # Store acronym as a custom property
+                        store.graph.add((concept_uri, CCMM_PROPS.key, Literal(value)))
+
+        # Add icon if present
+        if item.get("icon"):
+            store.graph.add((concept_uri, CCMM_MISC.icon, Literal(item["icon"])))
+
+        # Add tags if present
+        if "tags" in item and isinstance(item["tags"], list):
+            for tag in item["tags"]:
+                store.graph.add((concept_uri, CCMM_MISC.tag, Literal(tag)))
+
+    def _load_multilingual_string(
+        self,
+        store: RDFTripleStore,
+        multilingual_str: dict[str, Any],
+        concept_uri: URIRef,
+        predicate: URIRef,
+    ) -> None:
+        """Load a multilingual string into the RDF store."""
+        for lang, val in multilingual_str.items():
+            store.graph.add((concept_uri, predicate, Literal(val, lang=lang)))

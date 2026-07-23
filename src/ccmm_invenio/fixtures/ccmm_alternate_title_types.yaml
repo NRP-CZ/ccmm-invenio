@@ -4,9 +4,13 @@
     en: Alternative dataset title - could be abbreviations, transcribing numerical
       values, etc.
   id: alternativetitle
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/titletypes/alternativetitle
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/AlternativeTitle
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
   props:
     iri: https://nma.eosc.cz/vocabularies/titletypes/alternativetitle
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: AlternativeTitle
   title:
     cs: Alternativní název
     en: Alternative Title
@@ -14,9 +18,13 @@
     cs: Jiný název, než je překlad, podnázev a alternativní název.
     en: Other title than the subtitle, transated title or alternative title.
   id: other
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/titletypes/other
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
   props:
     iri: https://nma.eosc.cz/vocabularies/titletypes/other
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: Other
   title:
     cs: Jiný
     en: Other
@@ -24,9 +32,13 @@
     cs: Podnázev, který doplňuje název datasetu.
     en: Subtitle that complements the dataset title.
   id: subtitle
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/titletypes/subtitle
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/Subtitle
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
   props:
     iri: https://nma.eosc.cz/vocabularies/titletypes/subtitle
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: Subtitle
   title:
     cs: Podnázev
     en: Subtitle
@@ -34,9 +46,13 @@
     cs: Překlad názvu datasetu.
     en: Translation of the dataset title.
   id: translatedtitle
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/titletypes/translatedtitle
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
   props:
     iri: https://nma.eosc.cz/vocabularies/titletypes/translatedtitle
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/AlternateTitle: TranslatedTitle
   title:
     cs: Přeložený název
     en: Translated Title
