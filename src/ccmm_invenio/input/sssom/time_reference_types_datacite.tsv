@@ -9,15 +9,15 @@
 #   reference types
 # mapping_set_id: http://vocabs.ccmm.cz/mappings/time_reference_types_datacite
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
-datacite_trt:Accepted	Accepted	skos:exactMatch	ccmm_trt:Accepted	Date Accepted	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Available	Available	skos:exactMatch	ccmm_trt:Available	Date Available	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Copyrighted	Copyrighted	skos:exactMatch	ccmm_trt:Copyrighted	Date Copyrighted	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Collected	Collected	skos:exactMatch	ccmm_trt:Collected	Date Collected	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Coverage	Coverage	skos:exactMatch	ccmm_trt:Coverage	Date Coverage	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Created	Created	skos:exactMatch	ccmm_trt:Created	Date Created	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Issued	Issued	skos:exactMatch	ccmm_trt:Issued	Date Issued	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Submitted	Submitted	skos:exactMatch	ccmm_trt:Submitted	Date Submitted	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Updated	Updated	skos:exactMatch	ccmm_trt:Updated	Date Updated	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Valid	Valid	skos:exactMatch	ccmm_trt:Valid	Date Valid	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Withdrawn	Withdrawn	skos:exactMatch	ccmm_trt:Withdrawn	Date Withdrawn	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_trt:Other	Other	skos:exactMatch	ccmm_trt:Other	Other date	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Accepted	Date Accepted	skos:exactMatch	datacite_trt:Accepted	Accepted	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Available	Date Available	skos:exactMatch	datacite_trt:Available	Available	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Copyrighted	Date Copyrighted	skos:exactMatch	datacite_trt:Copyrighted	Copyrighted	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Collected	Date Collected	skos:exactMatch	datacite_trt:Collected	Collected	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Coverage	Date Coverage	skos:exactMatch	datacite_trt:Coverage	Coverage	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Created	Date Created	skos:exactMatch	datacite_trt:Created	Created	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Issued	Date Issued	skos:exactMatch	datacite_trt:Issued	Issued	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Submitted	Date Submitted	skos:exactMatch	datacite_trt:Submitted	Submitted	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Updated	Date Updated	skos:exactMatch	datacite_trt:Updated	Updated	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Valid	Date Valid	skos:exactMatch	datacite_trt:Valid	Valid	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Withdrawn	Date Withdrawn	skos:exactMatch	datacite_trt:Withdrawn	Withdrawn	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_trt:Other	Other date	skos:exactMatch	datacite_trt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0

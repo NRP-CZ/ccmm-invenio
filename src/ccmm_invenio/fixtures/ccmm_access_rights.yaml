@@ -1,6 +1,4 @@
-- crosswalks:
-  - identifier: info:eu-repo/semantics/openAccess
-    scheme: info:eu-repo/semantics/
+- crosswalks: []
   description:
     cs: Přístup pouze k metadatům označuje zdroj, u něhož je přístup omezen pouze
       na metadata. Samotný zdroj je popsán metadaty, není však přímo dostupný prostřednictvím
@@ -16,6 +14,8 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/access_right/c_14cb
     scheme: http://purl.org/coar/access_right/
+  - identifier: info:eu-repo/semantics/openAccess
+    scheme: info:eu-repo/semantics/
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_14cb
   title:
@@ -35,9 +35,7 @@
     sl: samo metapodatki
     sr: pristup ograničen na metapodatke
     tr: sadece üstveri erişimi
-- crosswalks:
-  - identifier: info:eu-repo/semantics/restrictedAccess
-    scheme: info:eu-repo/semantics/
+- crosswalks: []
   description:
     cs: 'Omezený přístup označuje zdroj, který je v systému dostupný, avšak s určitým
       omezením bránícím plnému otevřenému přístupu. Tento typ přístupu může nastat
@@ -69,6 +67,8 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/access_right/c_16ec
     scheme: http://purl.org/coar/access_right/
+  - identifier: info:eu-repo/semantics/restrictedAccess
+    scheme: info:eu-repo/semantics/
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_16ec
   title:
@@ -88,9 +88,7 @@
     sl: omejen dostop
     sr: ograničeni pristup
     tr: sınırlı erişim
-- crosswalks:
-  - identifier: info:eu-repo/semantics/openAccess
-    scheme: info:eu-repo/semantics/
+- crosswalks: []
   description:
     cs: Otevřený přístup označuje zdroj, který je okamžitě a trvale dostupný online
       a volně přístupný všem na webu, bez finančních a technických překážek. Zdroj
@@ -106,6 +104,8 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/access_right/c_abf2
     scheme: http://purl.org/coar/access_right/
+  - identifier: info:eu-repo/semantics/openAccess
+    scheme: info:eu-repo/semantics/
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_abf2
   title:
@@ -125,9 +125,7 @@
     sl: odprti dostop
     sr: otvoreni pristup
     tr: açık erişim
-- crosswalks:
-  - identifier: info:eu-repo/semantics/embargoedAccess
-    scheme: info:eu-repo/semantics/
+- crosswalks: []
   description:
     cs: Odložené zpřístupnění označuje zdroj, který je do určitého data dostupný pouze
       v režimu přístupu k metadatům a teprve poté je uvolněn do otevřeného přístupu.
@@ -143,6 +141,8 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/access_right/c_f1cf
     scheme: http://purl.org/coar/access_right/
+  - identifier: info:eu-repo/semantics/embargoedAccess
+    scheme: info:eu-repo/semantics/
   props:
     iri: https://nma.eosc.cz/vocabularies/accessrights/c_f1cf
   title:

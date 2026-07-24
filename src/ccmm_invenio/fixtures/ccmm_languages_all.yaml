@@ -5357,8 +5357,8 @@
     ISO_639_2T: deu
     ISO_639_3: deu
     PLANJO: DE
-    PUB_LANG: OS
-    PUB_LNGISO: DE
+    PUB_LANG: DE
+    PUB_LNGISO: OS
     TED: DE
     TED_SCHEMA: DE
     XML_LNG: de
@@ -6720,13 +6720,13 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: GR
-    FD_060: EL
+    FD_060: GR
     ISO_639_1: el
     ISO_639_2B: gre
     ISO_639_2T: ell
     ISO_639_3: ell
-    PUB_LANG: EL
-    PUB_LNGISO: EL
+    PUB_LANG: GR
+    PUB_LNGISO: GR
     TED: EL
     TED_SCHEMA: EL
     XML_LNG: el
@@ -7950,7 +7950,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: FR
-    FD_060: FR
+    FD_060: F
     ISO_639_1: fr
     ISO_639_2B: fre
     ISO_639_2T: fra
@@ -9998,7 +9998,7 @@
     ISO_639_2T: heb
     ISO_639_3: heb
     PUB_LANG: HE
-    PUB_LNGISO: IW
+    PUB_LNGISO: HE
     TED: HE
     TED_SCHEMA: HE
     XML_LNG: he
@@ -11844,7 +11844,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: IT
-    FD_060: I
+    FD_060: IT
     ISO_639_1: it
     ISO_639_2B: ita
     ISO_639_2T: ita
@@ -18724,7 +18724,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: 'NO'
-    FD_060: N
+    FD_060: 'NO'
     ISO_639_1: 'no'
     ISO_639_2B: nor
     ISO_639_2T: nor
@@ -24456,7 +24456,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: ES
-    FD_060: ES
+    FD_060: E
     ISO_639_1: es
     ISO_639_2B: spa
     ISO_639_2T: spa
@@ -31162,13 +31162,13 @@
   - identifier: http://id.loc.gov/vocabulary/iso639-1/yi
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
-    EUDOR_LNG: YI
+    EUDOR_LNG: JI
     ISO_639_1: yi
     ISO_639_2B: yid
     ISO_639_2T: yid
     ISO_639_3: yid
     PUB_LANG: YI
-    PUB_LNGISO: YI
+    PUB_LNGISO: JI
     XML_LNG: yi
     iri: https://nma.eosc.cz/vocabularies/languages/yid
   title:

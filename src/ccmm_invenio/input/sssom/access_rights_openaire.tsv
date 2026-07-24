@@ -9,7 +9,7 @@
 #   right concepts
 # mapping_set_id: http://vocabs.ccmm.cz/mappings/access_rights_openaire
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
-openaire_ar:embargoedAccess	Embargoed Access	skos:exactMatch	coar_ar:c_f1cf	embargoed access	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_ar:openAccess	Open Access	skos:exactMatch	coar_ar:c_abf2	open access	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_ar:openAccess	Open Access	skos:exactMatch	coar_ar:c_14cb	metadata only access	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_ar:restrictedAccess	Restricted Access	skos:exactMatch	coar_ar:c_16ec	restricted access	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_ar:c_f1cf	embargoed access	skos:exactMatch	openaire_ar:embargoedAccess	Embargoed Access	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_ar:c_abf2	open access	skos:exactMatch	openaire_ar:openAccess	Open Access	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_ar:c_14cb	metadata only access	skos:exactMatch	openaire_ar:openAccess	Open Access	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_ar:c_16ec	restricted access	skos:exactMatch	openaire_ar:restrictedAccess	Restricted Access	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0

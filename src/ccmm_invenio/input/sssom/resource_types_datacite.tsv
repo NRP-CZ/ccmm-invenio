@@ -9,113 +9,113 @@
 #   types
 # mapping_set_id: http://vocabs.ccmm.cz/mappings/resource_types_datacite
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
-datacite_rt:Audiovisual	Audiovisual	skos:exactMatch	coar_rt:c_12ce	video	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Audiovisual	Audiovisual	skos:exactMatch	coar_rt:c_8a7e	moving image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Book	Book	skos:exactMatch	coar_rt:c_2f33	book	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:BookChapter	Book Chapter	skos:exactMatch	coar_rt:c_3248	book part	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Collection	Collection	skos:exactMatch	coar_rt:RMP5-3GQ6	collection	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Collection	Collection	skos:exactMatch	coar_rt:YC9F-HGCF	archival collection	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:ComputationalNotebook	Computational Notebook	skos:exactMatch	coar_rt:H41Y-FW7B	laboratory notebook	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:ConferencePaper	Conference Paper	skos:exactMatch	coar_rt:c_18cp	conference paper not in proceedings	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:ConferencePaper	Conference Paper	skos:exactMatch	coar_rt:c_5794	conference paper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:ConferenceProceeding	Conference Proceeding	skos:exactMatch	coar_rt:c_c94f	conference output	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:ConferenceProceeding	Conference Proceeding	skos:exactMatch	coar_rt:c_f744	conference proceedings	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:DataPaper	Data Paper	skos:exactMatch	coar_rt:c_beb9	data paper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:2H0M-X761	geospatial data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:63NG-B465	experimental data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:A8F1-NPV9	genomic data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:ACF7-8YT9	aggregated data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:AM6W-6QAW	encoded data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:CQMR-7K63	recorded data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:DD58-GFSX	measurement and test data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:EHVM-H119	research data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:FF4C-28RK	observational data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:FXF3-D3G7	compiled data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:NHD0-W6SY	survey data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:W2XT-7017	simulation data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:c_cb28	clinical trial data	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dataset	Dataset	skos:exactMatch	coar_rt:c_ddb1	dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dissertation	Dissertation	skos:exactMatch	coar_rt:c_46ec	thesis	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dissertation	Dissertation	skos:exactMatch	coar_rt:c_7a1f	bachelor thesis	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dissertation	Dissertation	skos:exactMatch	coar_rt:c_bdcc	master thesis	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Dissertation	Dissertation	skos:exactMatch	coar_rt:c_db06	doctoral thesis	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Image	Image	skos:exactMatch	coar_rt:c_12cc	cartographic material	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Image	Image	skos:exactMatch	coar_rt:c_12cd	map	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Image	Image	skos:exactMatch	coar_rt:c_c513	image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Image	Image	skos:exactMatch	coar_rt:c_ecc8	still image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Instrument	Instrument	skos:exactMatch	coar_rt:8KJG-QS0Y	research instrument	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:InteractiveResource	Interactive Resource	skos:exactMatch	coar_rt:c_7ad9	website	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:InteractiveResource	Interactive Resource	skos:exactMatch	coar_rt:c_e059	learning object	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:InteractiveResource	Interactive Resource	skos:exactMatch	coar_rt:c_e9a0	interactive resource	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Journal	Journal	skos:exactMatch	coar_rt:QX5C-AR31	other periodical	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Journal	Journal	skos:exactMatch	coar_rt:c_0640	journal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Journal	Journal	skos:exactMatch	coar_rt:c_2659	periodical	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Journal	Journal	skos:exactMatch	coar_rt:c_2cd9	magazine	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Journal	Journal	skos:exactMatch	coar_rt:c_2fe3	newspaper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:43KC-T6DC	magazine article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:D97F-VB57	commentary	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_2df8fbb1	research article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_3e5a	contribution to journal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_545b	letter to the editor	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_6501	journal article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_7acd	corrigendum	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_7bab	software paper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_998f	newspaper article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_b239	editorial	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_ba08	book review	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:JournalArticle	Journal Article	skos:exactMatch	coar_rt:c_dcae04bc	review article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:542X-3S04	design	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:9DKX-KSAF	utility model	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:BW7T-YM2G	layout design	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:C53B-JCY5	design patent	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:F8RT-TJK0	artistic work	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:GPQ7-G5VE	plant variety protection	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:H6QP-SC1X	trademark	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:JBNF-DYAD	industrial design	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:MW8G-3CR8	software patent	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:SB3Y-W4EH	PCT application	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:Z907-YMBB	plant patent	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:c_15cd	patent	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Other	Other	skos:exactMatch	coar_rt:c_1843	other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:OutputManagementPlan	Output Management Plan	skos:exactMatch	coar_rt:c_ab20	data management plan	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:PeerReview	Peer Review	skos:exactMatch	coar_rt:H9BQ-739P	peer review	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:PeerReview	Peer Review	skos:exactMatch	coar_rt:c_efa0	review	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:PhysicalObject	Physical Object	skos:exactMatch	coar_rt:S7R1-K5P0	physical sample	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Poster	Poster	skos:exactMatch	coar_rt:c_18co	conference poster not in proceedings	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Poster	Poster	skos:exactMatch	coar_rt:c_6670	conference poster	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Preprint	Preprint	skos:exactMatch	coar_rt:c_8042	working paper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Preprint	Preprint	skos:exactMatch	coar_rt:c_816b	preprint	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Presentation	Presentation	skos:exactMatch	coar_rt:R60J-J5BD	conference presentation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Presentation	Presentation	skos:exactMatch	coar_rt:c_8544	lecture	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Project	Project	skos:exactMatch	coar_rt:c_baaf	research proposal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_186u	policy report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_18gh	technical report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_18hj	report to funding agency	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_18op	project deliverable	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_18wq	other type of report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_18ws	research report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_18ww	internal report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_18wz	memorandum	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_93fc	report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Report	Report	skos:exactMatch	coar_rt:c_ba1f	report part	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Software	Software	skos:exactMatch	coar_rt:QH80-2R4E	source code	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Software	Software	skos:exactMatch	coar_rt:c_5ce6	software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Software	Software	skos:exactMatch	coar_rt:c_c950	research software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Sound	Sound	skos:exactMatch	coar_rt:c_18cc	sound	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Sound	Sound	skos:exactMatch	coar_rt:c_18cd	musical composition	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:StudyRegistration	Study Registration	skos:exactMatch	coar_rt:DX5J-TA9R	knowledge synthesis protocol	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:StudyRegistration	Study Registration	skos:exactMatch	coar_rt:YZ1N-ZFT9	research protocol	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:StudyRegistration	Study Registration	skos:exactMatch	coar_rt:c_7877	clinical study	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:1YTN-RJZE	court documents	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:6NC7-GK9S	transcription	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:GSZA-Y7V7	knowledge organization system	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:c_0040	manuscript	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:c_0857	letter	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:c_1162	annotation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:c_18cw	musical notation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:c_26e4	interview	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:c_6947	blog post	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:c_71bd	technical documentation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Text	Text	skos:exactMatch	coar_rt:c_86bc	bibliography	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-datacite_rt:Workflow	Workflow	skos:exactMatch	coar_rt:c_393c	workflow	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_12ce	video	skos:exactMatch	datacite_rt:Audiovisual	Audiovisual	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_8a7e	moving image	skos:exactMatch	datacite_rt:Audiovisual	Audiovisual	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_2f33	book	skos:exactMatch	datacite_rt:Book	Book	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_3248	book part	skos:exactMatch	datacite_rt:BookChapter	Book Chapter	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:RMP5-3GQ6	collection	skos:exactMatch	datacite_rt:Collection	Collection	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:YC9F-HGCF	archival collection	skos:exactMatch	datacite_rt:Collection	Collection	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:H41Y-FW7B	laboratory notebook	skos:exactMatch	datacite_rt:ComputationalNotebook	Computational Notebook	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18cp	conference paper not in proceedings	skos:exactMatch	datacite_rt:ConferencePaper	Conference Paper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_5794	conference paper	skos:exactMatch	datacite_rt:ConferencePaper	Conference Paper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_c94f	conference output	skos:exactMatch	datacite_rt:ConferenceProceeding	Conference Proceeding	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_f744	conference proceedings	skos:exactMatch	datacite_rt:ConferenceProceeding	Conference Proceeding	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_beb9	data paper	skos:exactMatch	datacite_rt:DataPaper	Data Paper	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:2H0M-X761	geospatial data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:63NG-B465	experimental data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:A8F1-NPV9	genomic data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:ACF7-8YT9	aggregated data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:AM6W-6QAW	encoded data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:CQMR-7K63	recorded data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:DD58-GFSX	measurement and test data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:EHVM-H119	research data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:FF4C-28RK	observational data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:FXF3-D3G7	compiled data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:NHD0-W6SY	survey data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:W2XT-7017	simulation data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_cb28	clinical trial data	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_ddb1	dataset	skos:exactMatch	datacite_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_46ec	thesis	skos:exactMatch	datacite_rt:Dissertation	Dissertation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_7a1f	bachelor thesis	skos:exactMatch	datacite_rt:Dissertation	Dissertation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_bdcc	master thesis	skos:exactMatch	datacite_rt:Dissertation	Dissertation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_db06	doctoral thesis	skos:exactMatch	datacite_rt:Dissertation	Dissertation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_12cc	cartographic material	skos:exactMatch	datacite_rt:Image	Image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_12cd	map	skos:exactMatch	datacite_rt:Image	Image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_c513	image	skos:exactMatch	datacite_rt:Image	Image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_ecc8	still image	skos:exactMatch	datacite_rt:Image	Image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:8KJG-QS0Y	research instrument	skos:exactMatch	datacite_rt:Instrument	Instrument	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_7ad9	website	skos:exactMatch	datacite_rt:InteractiveResource	Interactive Resource	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_e059	learning object	skos:exactMatch	datacite_rt:InteractiveResource	Interactive Resource	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_e9a0	interactive resource	skos:exactMatch	datacite_rt:InteractiveResource	Interactive Resource	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:QX5C-AR31	other periodical	skos:exactMatch	datacite_rt:Journal	Journal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_0640	journal	skos:exactMatch	datacite_rt:Journal	Journal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_2659	periodical	skos:exactMatch	datacite_rt:Journal	Journal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_2cd9	magazine	skos:exactMatch	datacite_rt:Journal	Journal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_2fe3	newspaper	skos:exactMatch	datacite_rt:Journal	Journal	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:43KC-T6DC	magazine article	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:D97F-VB57	commentary	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_2df8fbb1	research article	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_3e5a	contribution to journal	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_545b	letter to the editor	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_6501	journal article	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_7acd	corrigendum	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_7bab	software paper	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_998f	newspaper article	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_b239	editorial	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_ba08	book review	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_dcae04bc	review article	skos:exactMatch	datacite_rt:JournalArticle	Journal Article	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:542X-3S04	design	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:9DKX-KSAF	utility model	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:BW7T-YM2G	layout design	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:C53B-JCY5	design patent	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:F8RT-TJK0	artistic work	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:GPQ7-G5VE	plant variety protection	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:H6QP-SC1X	trademark	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:JBNF-DYAD	industrial design	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:MW8G-3CR8	software patent	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:SB3Y-W4EH	PCT application	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:Z907-YMBB	plant patent	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_15cd	patent	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_1843	other	skos:exactMatch	datacite_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_ab20	data management plan	skos:exactMatch	datacite_rt:OutputManagementPlan	Output Management Plan	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:H9BQ-739P	peer review	skos:exactMatch	datacite_rt:PeerReview	Peer Review	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_efa0	review	skos:exactMatch	datacite_rt:PeerReview	Peer Review	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:S7R1-K5P0	physical sample	skos:exactMatch	datacite_rt:PhysicalObject	Physical Object	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18co	conference poster not in proceedings	skos:exactMatch	datacite_rt:Poster	Poster	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_6670	conference poster	skos:exactMatch	datacite_rt:Poster	Poster	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_8042	working paper	skos:exactMatch	datacite_rt:Preprint	Preprint	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_816b	preprint	skos:exactMatch	datacite_rt:Preprint	Preprint	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:R60J-J5BD	conference presentation	skos:exactMatch	datacite_rt:Presentation	Presentation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_8544	lecture	skos:exactMatch	datacite_rt:Presentation	Presentation	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_baaf	research proposal	skos:exactMatch	datacite_rt:Project	Project	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_186u	policy report	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18gh	technical report	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18hj	report to funding agency	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18op	project deliverable	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18wq	other type of report	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18ws	research report	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18ww	internal report	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18wz	memorandum	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_93fc	report	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_ba1f	report part	skos:exactMatch	datacite_rt:Report	Report	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:QH80-2R4E	source code	skos:exactMatch	datacite_rt:Software	Software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_5ce6	software	skos:exactMatch	datacite_rt:Software	Software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_c950	research software	skos:exactMatch	datacite_rt:Software	Software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18cc	sound	skos:exactMatch	datacite_rt:Sound	Sound	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18cd	musical composition	skos:exactMatch	datacite_rt:Sound	Sound	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:DX5J-TA9R	knowledge synthesis protocol	skos:exactMatch	datacite_rt:StudyRegistration	Study Registration	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:YZ1N-ZFT9	research protocol	skos:exactMatch	datacite_rt:StudyRegistration	Study Registration	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_7877	clinical study	skos:exactMatch	datacite_rt:StudyRegistration	Study Registration	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:1YTN-RJZE	court documents	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:6NC7-GK9S	transcription	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:GSZA-Y7V7	knowledge organization system	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_0040	manuscript	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_0857	letter	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_1162	annotation	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18cf	text	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18cw	musical notation	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_26e4	interview	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_6947	blog post	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_71bd	technical documentation	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_86bc	bibliography	skos:exactMatch	datacite_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_393c	workflow	skos:exactMatch	datacite_rt:Workflow	Workflow	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0

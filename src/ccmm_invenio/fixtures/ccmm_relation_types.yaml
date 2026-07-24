@@ -1,30 +1,30 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/cites
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/Cites
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Cites
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: cites
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/cites
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Cites
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/Cites
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Cites
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/cites
   title:
     cs: cituje (co)
     en: cites
-- crosswalks:
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Collects
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+- crosswalks: []
   id: collects
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/collects
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Collects
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Collects
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/collects
   title:
@@ -33,16 +33,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/compiles
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/Compiles
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Compiles
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: compiles
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/compiles
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Compiles
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/Compiles
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Compiles
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/compiles
   title:
@@ -51,16 +51,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/continues
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/Continues
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Continues
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: continues
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/continues
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Continues
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/Continues
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Continues
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/continues
   title:
@@ -69,14 +69,14 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/describes
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Describes
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: describes
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/describes
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Describes
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Describes
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/describes
   title:
@@ -85,16 +85,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/documents
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/Documents
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Documents
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: documents
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/documents
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Documents
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/Documents
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Documents
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/documents
   title:
@@ -103,16 +103,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/hasmetadata
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/HasMetadata
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasMetadata
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: hasmetadata
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hasmetadata
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/HasMetadata
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasMetadata
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/hasmetadata
   title:
@@ -121,30 +121,30 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/haspart
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/HasPart
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasPart
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: haspart
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/haspart
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasPart
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/HasPart
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasPart
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/haspart
   title:
     cs: má část/i
     en: has part
-- crosswalks:
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasTranslation
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+- crosswalks: []
   id: hastranslation
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hastranslation
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasTranslation
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasTranslation
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/hastranslation
   title:
@@ -153,14 +153,14 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/hasversion
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasVersion
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: hasversion
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hasversion
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasVersion
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/HasVersion
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/hasversion
   title:
@@ -169,30 +169,30 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/iscitedby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsCitedBy
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsCitedBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: iscitedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscitedby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCitedBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsCitedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsCitedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscitedby
   title:
     cs: je citován (čím)
     en: is cited by
-- crosswalks:
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsCollectedBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+- crosswalks: []
   id: iscollectedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscollectedby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsCollectedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscollectedby
   title:
@@ -201,16 +201,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/iscompiledby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/isCompiledBy
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsCompiledBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: iscompiledby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscompiledby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCompiledBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/isCompiledBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsCompiledBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscompiledby
   title:
@@ -219,16 +219,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/iscontinuedby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsContinuedBy
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsContinuedBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: iscontinuedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscontinuedby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsContinuedBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsContinuedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsContinuedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/iscontinuedby
   title:
@@ -237,16 +237,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isderivedfrom
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsDerivedFrom
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsDerivedFrom
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isderivedfrom
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isderivedfrom
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsDerivedFrom
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsDerivedFrom
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isderivedfrom
   title:
@@ -255,14 +255,14 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isdescribedby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsDescribedBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isdescribedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isdescribedby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDescribedBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsDescribedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isdescribedby
   title:
@@ -271,16 +271,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isdocumentedby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsDocumentedBy
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsDocumentedBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isdocumentedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isdocumentedby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDocumentedBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsDocumentedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsDocumentedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isdocumentedby
   title:
@@ -289,16 +289,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isidenticalto
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsIdenticalTo
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsIdenticalTo
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isidenticalto
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isidenticalto
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsIdenticalTo
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsIdenticalTo
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsIdenticalTo
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isidenticalto
   title:
@@ -307,16 +307,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/ismetadatafor
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsMetadataFor
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsMetadataFor
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: ismetadatafor
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ismetadatafor
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsMetadataFor
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsMetadataFor
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsMetadataFor
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ismetadatafor
   title:
@@ -325,16 +325,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isnewversionof
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsNewVersionOf
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsNewVersionOf
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isnewversionof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isnewversionof
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsNewVersionOf
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsNewVersionOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsNewVersionOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isnewversionof
   title:
@@ -343,14 +343,14 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isobsoletedby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsObsoletedBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isobsoletedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isobsoletedby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsObsoletedBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsObsoletedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isobsoletedby
   title:
@@ -359,16 +359,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isoriginalformof
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsOriginalFormOf
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsOriginalFormOf
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isoriginalformof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isoriginalformof
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsOriginalFormOf
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsOriginalFormOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsOriginalFormOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isoriginalformof
   title:
@@ -377,16 +377,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/ispartof
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsPartOf
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsPartOf
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: ispartof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ispartof
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPartOf
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsPartOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsPartOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ispartof
   title:
@@ -395,16 +395,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/ispreviousversionof
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsPreviousVersionOf
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsPreviousVersionOf
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: ispreviousversionof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ispreviousversionof
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPreviousVersionOf
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsPreviousVersionOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsPreviousVersionOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ispreviousversionof
   title:
@@ -413,14 +413,14 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/ispublishedin
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsPublishedIn
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: ispublishedin
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/ispublishedin
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPublishedIn
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsPublishedIn
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/ispublishedin
   title:
@@ -429,16 +429,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isreferencedby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsReferencedBy
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsReferencedBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isreferencedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isreferencedby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsReferencedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsReferencedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isreferencedby
   title:
@@ -447,14 +447,14 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isrequiredby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsRequiredBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isrequiredby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isrequiredby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsRequiredBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsRequiredBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isrequiredby
   title:
@@ -463,16 +463,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isreviewedby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsReviewedBy
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsReviewedBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isreviewedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isreviewedby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReviewedBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsReviewedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsReviewedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isreviewedby
   title:
@@ -481,16 +481,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/issourceof
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsSourceOf
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsSourceOf
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: issourceof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/issourceof
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSourceOf
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsSourceOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsSourceOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/issourceof
   title:
@@ -499,16 +499,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/issupplementedby
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsSupplementedBy
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsSupplementedBy
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: issupplementedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/issupplementedby
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementedBy
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsSupplementedBy
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsSupplementedBy
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/issupplementedby
   title:
@@ -517,30 +517,30 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/issupplementto
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsSupplementTo
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsSupplementTo
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: issupplementto
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/issupplementto
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementTo
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsSupplementTo
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsSupplementTo
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/issupplementto
   title:
     cs: je doplňkem k (čemu)
     en: is supplement to
-- crosswalks:
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsTranslationOf
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
+- crosswalks: []
   id: istranslationof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/istranslationof
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsTranslationOf
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsTranslationOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/istranslationof
   title:
@@ -549,16 +549,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isvariantformof
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/IsVariantFormOf
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsVariantFormOf
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isvariantformof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isvariantformof
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVariantFormOf
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/IsVariantFormOf
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsVariantFormOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isvariantformof
   title:
@@ -567,14 +567,14 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/isversionof
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsVersionOf
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: isversionof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/isversionof
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVersionOf
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/IsVersionOf
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/isversionof
   title:
@@ -583,14 +583,14 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/obsoletes
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Obsoletes
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: obsoletes
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/obsoletes
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Obsoletes
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Obsoletes
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/obsoletes
   title:
@@ -599,16 +599,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/references
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/References
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/References
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: references
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/references
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/References
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/References
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/References
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/references
   title:
@@ -617,14 +617,14 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/requires
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Requires
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: requires
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/requires
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Requires
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Requires
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/requires
   title:
@@ -633,16 +633,16 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/relationtypes/reviews
     scheme: https://zenodo.org/vocabularies/relationtypes/
-  - identifier: info:eu-repo/semantics/Reviews
-    scheme: info:eu-repo/semantics/
-  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Reviews
-    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   id: reviews
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/reviews
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Reviews
     scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+  - identifier: info:eu-repo/semantics/Reviews
+    scheme: info:eu-repo/semantics/
+  - identifier: https://schema.datacite.org/meta/kernel-4/relationType/Reviews
+    scheme: https://schema.datacite.org/meta/kernel-4/relationType/
   props:
     iri: https://nma.eosc.cz/vocabularies/relationtypes/reviews
   title:

@@ -9,12 +9,12 @@
 #   types
 # mapping_set_id: http://vocabs.ccmm.cz/mappings/resource_types_openaire
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
-openaire_rt:Collection	Collection	skos:exactMatch	coar_rt:RMP5-3GQ6	collection	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_rt:Dataset	Dataset	skos:exactMatch	coar_rt:c_ddb1	dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_rt:Image	Image	skos:exactMatch	coar_rt:c_c513	image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_rt:InteractiveResource	Interactive Resource	skos:exactMatch	coar_rt:c_e9a0	interactive resource	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_rt:Other	Other	skos:exactMatch	coar_rt:c_1843	other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_rt:Software	Software	skos:exactMatch	coar_rt:c_5ce6	software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_rt:Sound	Sound	skos:exactMatch	coar_rt:c_18cc	sound	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_rt:Text	Text	skos:exactMatch	coar_rt:c_18cf	text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
-openaire_rt:Workflow	Workflow	skos:exactMatch	coar_rt:c_393c	workflow	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:RMP5-3GQ6	collection	skos:exactMatch	openaire_rt:Collection	Collection	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_ddb1	dataset	skos:exactMatch	openaire_rt:Dataset	Dataset	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_c513	image	skos:exactMatch	openaire_rt:Image	Image	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_e9a0	interactive resource	skos:exactMatch	openaire_rt:InteractiveResource	Interactive Resource	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_1843	other	skos:exactMatch	openaire_rt:Other	Other	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_5ce6	software	skos:exactMatch	openaire_rt:Software	Software	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18cc	sound	skos:exactMatch	openaire_rt:Sound	Sound	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_18cf	text	skos:exactMatch	openaire_rt:Text	Text	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+coar_rt:c_393c	workflow	skos:exactMatch	openaire_rt:Workflow	Workflow	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
