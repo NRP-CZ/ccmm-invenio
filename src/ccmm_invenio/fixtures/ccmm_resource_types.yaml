@@ -36,7 +36,6 @@
     ru: дизайн
     sl: oblikovanje
     sr: dizajn
-    sr-cyrl: дизајн
     sv: design
     tr: tasarım
     uk: дизайн
@@ -79,7 +78,6 @@
     ru: инструмент исследования
     sl: raziskovalno orodje
     sr: istraživački instrument
-    sr-cyrl: истраживачки инструмент
     sv: forskningsinstrument
     tr: araştırma cihazı
     uk: інструмент дослідження
@@ -126,7 +124,6 @@
     ru: картографический материал
     sl: kartografsko gradivo
     sr: kartografska građa
-    sr-cyrl: картографска грађа
     sv: kartografiskt material
     tr: kartografik materyal
     uk: картографічний матеріал
@@ -137,7 +134,14 @@
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   description:
-    en: A patent or patent application.
+    en: 'A set of exclusive rights granted by law to applicants for inventions that
+      are
+
+      new, non-obvious and commercially applicable. A patent is valid for a limited
+
+      period (generally 20 years), during which time patent holders can commercially
+
+      exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
   id: c_15cd
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_15cd
@@ -172,21 +176,20 @@
     ro: brevet
     ru: патент
     sr: patent
-    sr-cyrl: патент
     sv: patent
     tr: patent
     uk: патент
     zh: 专利
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/other
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/physicalobject
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/event
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-other
     scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/other
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/model
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/event
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: info:eu-repo/semantics/Other
     scheme: info:eu-repo/semantics/
@@ -227,7 +230,6 @@
     ru: другое
     sl: ostalo
     sr: ostalo
-    sr-cyrl: остало
     sv: övrigt
     tr: diğer
     uk: інше
@@ -273,23 +275,22 @@
     ru: звук
     sl: zvočni zapis
     sr: zvučni zapis
-    sr-cyrl: звучни запис
     sv: ljud
     tr: ses
     uk: звук
     zh: 声音
 - crosswalks:
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-datapaper
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-standard
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-annotationcollection
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-milestone
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-taxonomictreatment
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-datapaper
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-annotationcollection
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-milestone
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: info:eu-repo/semantics/Text
     scheme: info:eu-repo/semantics/
@@ -310,10 +311,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18cf
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/dc/dcmitype/Text
-    scheme: http://purl.org/dc/dcmitype/
   - identifier: http://purl.org/datacite/v4.4/Text
     scheme: http://purl.org/datacite/v4.4/
+  - identifier: http://purl.org/dc/dcmitype/Text
+    scheme: http://purl.org/dc/dcmitype/
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cf
   title:
@@ -339,7 +340,6 @@
     ru: текст
     sl: besedilo
     sr: tekst
-    sr-cyrl: текст
     sv: text
     tr: metin
     uk: текст
@@ -407,7 +407,6 @@
     pt: outro relatório
     sl: ostale vrste poročil
     sr: druge vrste izveštaja
-    sr-cyrl: друге врсте извештаја
     tr: diğer rapor türü
     zh: 其他报告
 - crosswalks:
@@ -439,7 +438,6 @@
     pt: relatório interno
     sl: interno poročilo
     sr: interni izveštaj
-    sr-cyrl: интерни извештај
     tr: dahili rapor
     zh: 内部报告
 - crosswalks:
@@ -472,7 +470,6 @@
     pt: publicação periódica
     sl: serijska publikacija
     sr: periodična publikacija
-    sr-cyrl: периодична публикација
     tr: süreli yayın
     zh: 期刊
 - crosswalks:
@@ -547,7 +544,6 @@
     ru: рабочий процесс
     sl: delovni tok
     sr: radni proces
-    sr-cyrl: радни процес
     sv: arbetslöde
     tr: iş akışı
     uk: процес роботи
@@ -580,14 +576,13 @@
     pt: contributo em revista
     sl: prispevek v reviji
     sr: informativni prilog
-    sr-cyrl: информативни прилог
     zh: 期刊文献
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/resourcetypes/image-diagram
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/software
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/software-computationalnotebook
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/software
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: info:eu-repo/semantics/Software
     scheme: info:eu-repo/semantics/
@@ -632,7 +627,6 @@
     ru: программное обеспечение
     sl: programska oprema
     sr: računarski program
-    sr-cyrl: рачунарски програм
     sv: mjukvara
     tr: yazılım
     uk: програмне забезпечення
@@ -711,7 +705,6 @@
     ru: изображение
     sl: slika
     sr: slika
-    sr-cyrl: слика
     sv: bild
     tr: görsel
     uk: зображення
@@ -734,16 +727,16 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ddb1
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/datacite/v4.4/Dataset
-    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://schema.org/Dataset
     scheme: https://schema.org/
-  - identifier: http://purl.org/dc/dcmitype/Dataset
-    scheme: http://purl.org/dc/dcmitype/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2865
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: http://purl.bioontology.org/ontology/MESH/D064886
     scheme: http://purl.bioontology.org/ontology/MESH/
+  - identifier: http://purl.org/dc/dcmitype/Dataset
+    scheme: http://purl.org/dc/dcmitype/
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1
   title:
@@ -769,7 +762,6 @@
     ru: массив данных
     sl: podatkovni nabor
     sr: skup podataka
-    sr-cyrl: скуп података
     sv: dataset
     tr: veri seti
     uk: набір даних
@@ -813,7 +805,6 @@
     ru: объект обучения
     sl: učno gradivo
     sr: nastavni materijal
-    sr-cyrl: наставни материјал
     sv: lärobjekt
     tr: Öğrenim nesnesi
     uk: навчальний об'єкт
@@ -859,7 +850,6 @@
     ro: resursă interactivă
     ru: интерактивный ресурс
     sr: interaktivna građa
-    sr-cyrl: интерактивна грађа
     sv: interaktiv resurs
     tr: etkileşimli kaynak
     uk: інтерактивний ресурс
@@ -920,7 +910,6 @@
     ru: произведение искусства
     sl: umetniško delo
     sr: umetničko delo
-    sr-cyrl: уметничко дело
     sv: konstnärligt arbete
     tr: sanatsal çalışma
     uk: твір мистецтва
@@ -968,7 +957,6 @@
     ru: система организации знаний
     sl: sistem za organizacijo znanja
     sr: sistem organizacije znanja
-    sr-cyrl: систем организације знања
     sv: kunskapsorganisationssystem
     tr: bilgi organizasyon sistemi
     uk: система організації знання
@@ -1015,7 +1003,6 @@
     ru: торговая марка
     sl: blagovna znamka
     sr: zaštitni znak
-    sr-cyrl: заштитни знак
     sv: varumärke
     tr: ticari marka
     uk: торгова марка
@@ -1035,10 +1022,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/RMP5-3GQ6
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/ontology/bibo/Collection
-    scheme: http://purl.org/ontology/bibo/
   - identifier: http://www.w3.org/ns/prov#Collection
     scheme: http://www.w3.org/ns/prov#
+  - identifier: http://purl.org/ontology/bibo/Collection
+    scheme: http://purl.org/ontology/bibo/
   - identifier: http://purl.bioontology.org/ontology/MESH/D020471
     scheme: http://purl.bioontology.org/ontology/MESH/
   props:
@@ -1065,7 +1052,6 @@
     ru: коллекция
     sl: kolekcija
     sr: zbirka
-    sr-cyrl: збирка
     sv: samling
     tr: koleksiyon
     uk: колекція
@@ -1111,7 +1097,6 @@
     ru: физический образец
     sl: fizični vzorec
     sr: fizički uzorak
-    sr-cyrl: физички узорак
     sv: fysiskt prov
     tr: fiziksel numune
     uk: фізичний зразок
@@ -1212,7 +1197,6 @@
     ru: геопространственные данные
     sl: geoprostorski podatki
     sr: geoprostorni podaci
-    sr-cyrl: геопросторни подаци
     sv: geospatiala data
     tr: coğrafi uzamsal veri
     uk: геопросторові дані
@@ -1256,7 +1240,6 @@
     ru: экспериментальные данные
     sl: eksperimentalni podatki
     sr: eksperimentalni podaci
-    sr-cyrl: експериментални подаци
     sv: experimentella data
     tr: deneysel veri
     uk: експериментальні дані
@@ -1299,7 +1282,6 @@
     ru: транскрипция
     sl: transkripcija
     sr: transkript
-    sr-cyrl: транскрипт
     sv: transkription
     tr: transkripsiyon
     uk: траскрипт
@@ -1346,7 +1328,6 @@
     ru: полезная модель
     sl: patent s skrajšanim trajanjem
     sr: mali patent
-    sr-cyrl: мали патент
     sv: bruksmodell
     tr: faydalı model
     uk: корисна модель
@@ -1395,7 +1376,6 @@
     ru: геномные данные
     sl: genomski podatki
     sr: genomski podaci
-    sr-cyrl: геномски подаци
     sv: genomiska data
     tr: genomik veri
     uk: геномні дані
@@ -1443,7 +1423,6 @@
     ru: агрегированные данные
     sl: agregirani podatki
     sr: agregirani podaci
-    sr-cyrl: агрегирани подаци
     sv: aggregerade data
     tr: toplanmış veri
     uk: агреговані дані
@@ -1489,7 +1468,6 @@
     ru: кодированные данные
     sl: kodirani podatki
     sr: kodirani podaci
-    sr-cyrl: кодирани подаци
     sv: kodad data
     tr: kodlanmış veri
     uk: кодовані дані
@@ -1535,7 +1513,6 @@
     ru: компоновка
     sl: načrt postavitve
     sr: shema konfiguracije
-    sr-cyrl: схема конфигурације
     sv: layoutdesign
     tr: topoğrafya
     uk: дизайн макета
@@ -1579,7 +1556,6 @@
     ru: патент на образец
     sl: patent za oblikovanje
     sr: patent za dizajn
-    sr-cyrl: патент за дизајн
     sv: designskydd
     tr: tasarım patenti
     uk: патент на дизайн
@@ -1625,7 +1601,6 @@
     ro: manuscris
     ru: рукопись
     sr: rukopis
-    sr-cyrl: рукопис
     sv: manuskript
     tr: Yazma eser
     uk: рукопис
@@ -1648,10 +1623,10 @@
     scheme: http://purl.org/coar/resource_type/
   - identifier: http://purl.org/datacite/v4.4/Journal
     scheme: http://purl.org/datacite/v4.4/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3613
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/ontology/bibo/Journal
     scheme: http://purl.org/ontology/bibo/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3613
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_0640
   title:
@@ -1677,7 +1652,6 @@
     ru: журнал
     sl: znanstvena revija
     sr: časopis
-    sr-cyrl: часопис
     sv: tidskrift
     tr: dergi
     uk: науковий журнал
@@ -1696,10 +1670,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_0857
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/ontology/bibo/Letter
-    scheme: http://purl.org/ontology/bibo/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3803
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/ontology/bibo/Letter
+    scheme: http://purl.org/ontology/bibo/
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_0857
   title:
@@ -1725,15 +1699,14 @@
     ru: письмо
     sl: pismo
     sr: pismo
-    sr-cyrl: писмо
     sv: brev
     tr: mektup
     uk: лист
     zh: 信
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/annotationcollection
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-annotation
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/annotationcollection
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
@@ -1773,7 +1746,6 @@
     ru: аннотация
     sl: zaznamek
     sr: anotacija
-    sr-cyrl: анотација
     sv: annotering
     tr: açıklama
     uk: анотація
@@ -1818,7 +1790,6 @@
     ru: карта
     sl: zemljevid
     sr: mapa
-    sr-cyrl: мапа
     sv: karta
     tr: harita
     uk: мапа
@@ -1865,7 +1836,6 @@
     ru: музыкальное произведение
     sl: skladba
     sr: muzička kompozicija
-    sr-cyrl: музичка композиција
     sv: musikalisk komposition
     tr: müzikal kompozisyon
     uk: музичний твір
@@ -1910,7 +1880,6 @@
     ru: нотная запись
     sl: note
     sr: notni zapis
-    sr-cyrl: нотни запис
     sv: musiknotation
     tr: nota
     uk: ноти
@@ -1959,7 +1928,6 @@
     ru: периодическое печатное издание
     sl: informativna revija
     sr: informativna revija
-    sr-cyrl: информативна ревија
     sv: magasin
     tr: Magazin
     uk: журнал
@@ -1980,10 +1948,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_2f33
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/datacite/v4.4/Book
-    scheme: http://purl.org/datacite/v4.4/
   - identifier: http://purl.org/eprint/type/Book
     scheme: http://purl.org/eprint/type/
+  - identifier: http://purl.org/datacite/v4.4/Book
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2263
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   props:
@@ -2012,7 +1980,6 @@
     ru: книга
     sl: monografija
     sr: knjiga
-    sr-cyrl: књига
     sv: bok
     tr: kitap
     uk: книга
@@ -2057,17 +2024,16 @@
     ru: газета
     sl: časopis
     sr: novine
-    sr-cyrl: новине
     sv: tidning
     tr: gazete
     uk: газета
     zh: 报纸
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-thesis
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-doctorthesis
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-dissertation
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-doctorthesis
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-thesis
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dissertation
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
@@ -2113,7 +2079,6 @@
     ru: диссертация
     sl: zaključno delo študija
     sr: teza
-    sr-cyrl: теза
     sv: avhandling
     tr: tez
     uk: тези і дисертації
@@ -2158,7 +2123,6 @@
     ru: пост
     sl: prispevek na blogu
     sr: tekst na blogu
-    sr-cyrl: текст на блогу
     sv: blogginlägg
     tr: Blog yazısı
     uk: допис у блозі
@@ -2205,7 +2169,6 @@
     ru: техническая документация
     sl: tehnična dokumentacija
     sr: tehnička dokumentacija
-    sr-cyrl: техничка документација
     sv: teknisk dokumentation
     tr: teknik dokümantasyon
     uk: технічна документація
@@ -2255,7 +2218,6 @@
     ru: вебсайт
     sl: spletna stran
     sr: veb-sajt
-    sr-cyrl: веб-сајт
     sv: webbsida
     tr: web sitesi
     uk: вебсторінка
@@ -2277,10 +2239,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_8042
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e6136
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/WorkingPaper
     scheme: http://purl.org/eprint/type/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e6136
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_8042
   title:
@@ -2306,7 +2268,6 @@
     ru: рабочий документ
     sl: delovna verzija članka
     sr: radni dokument
-    sr-cyrl: радни документ
     sv: working paper
     tr: çalışma raporu
     uk: робочий документ
@@ -2328,10 +2289,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_816b
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4866
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/datacite/v4.4/Preprint
     scheme: http://purl.org/datacite/v4.4/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4866
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_816b
   title:
@@ -2354,15 +2315,14 @@
     ro: pre-tipărire
     ru: препринт
     sr: preprint
-    sr-cyrl: препринт
     sv: preprint
     tr: ön baskı
     uk: препринт
     zh: 预印本
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-abstract
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-lecture
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-abstract
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Presentation
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
@@ -2403,7 +2363,6 @@
     ru: лекция
     sl: predavanje
     sr: predavanje
-    sr-cyrl: предавање
     sv: föreläsning
     tr: ders
     uk: лекція
@@ -2448,7 +2407,6 @@
     ru: библиография
     sl: bibliografija
     sr: bibliografija
-    sr-cyrl: библиографија
     sv: bibliografi
     tr: kaynakça
     uk: бібліографія
@@ -2496,7 +2454,6 @@
     ru: движущееся изображение
     sl: gibljiva slika
     sr: pokretne slike
-    sr-cyrl: покретне слике
     sv: rörlig bild
     tr: hareketli görüntü
     uk: рухоме зображення
@@ -2555,7 +2512,6 @@
     ru: отчет
     sl: poročilo
     sr: izveštaj
-    sr-cyrl: извештај
     sv: rapport
     tr: rapor
     uk: звіт
@@ -2602,7 +2558,6 @@
     ru: исследовательское предложение
     sl: predlog raziskave
     sr: predlog istraživačkog projekta
-    sr-cyrl: предлог истраживачког пројекта
     sv: forskningsförslag
     tr: araştırma önerisi
     uk: дослідницька пропозиція
@@ -2647,7 +2602,6 @@
     ru: конференц-объект
     sl: rezultat na konferenci
     sr: konferencijski prilog
-    sr-cyrl: конференцијски прилог
     sv: konferensbidrag
     tr: konferans çıktısı
     uk: матеріал конференції
@@ -2692,7 +2646,6 @@
     ru: исследовательское программное обеспечение
     sl: raziskovalna programska oprema
     sr: softver za nauku
-    sr-cyrl: софтвер за науку
     sv: forskningsprogramvara
     tr: Araştırma yazılımı
     uk: дослідницьке програмне забезпечення
@@ -2737,14 +2690,13 @@
     ru: данные клинических испытаний
     sl: podatki kliničnih preskušanj
     sr: podaci iz kliničkih ispitivanja
-    sr-cyrl: подаци из клиничких испитивања
     tr: klinik deney verisi
     uk: дані клінічних досліджень
     zh: 临床试验数据
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/image-plot
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/image-figure
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/image-plot
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://lindat.mff.cuni.cz/vocabularies/resource_type/OBRAZ
     scheme: https://lindat.mff.cuni.cz/vocabularies/resource_type/
@@ -2762,12 +2714,12 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ecc8
     scheme: http://purl.org/coar/resource_type/
+  - identifier: http://purl.org/dc/dcmitype/StillImage
+    scheme: http://purl.org/dc/dcmitype/
   - identifier: http://id.loc.gov/vocabulary/contentTypes/sti
     scheme: http://id.loc.gov/vocabulary/contentTypes/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5482
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
-  - identifier: http://purl.org/dc/dcmitype/StillImage
-    scheme: http://purl.org/dc/dcmitype/
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ecc8
   title:
@@ -2793,7 +2745,6 @@
     ru: неподвижное изображение
     sl: statična vizualna predstavitev
     sr: statična slika
-    sr-cyrl: статична слика
     tr: hareketsiz görüntü
     uk: нерухоме зображення
     zh: 静态图像
@@ -2841,7 +2792,6 @@
     ru: рецензия
     sl: recenzija
     sr: prikaz
-    sr-cyrl: приказ
     sv: review
     tr: gözden geçirme
     uk: рецензія
@@ -2885,7 +2835,6 @@
     ru: записанные данные
     sl: posneti podatki
     sr: snimljeni podaci
-    sr-cyrl: снимљени подаци
     tr: kayıtlı veri
     uk: зафіксовані дані
     zh: 记录数据
@@ -2928,7 +2877,6 @@
     ru: данные измерений и испытаний
     sl: merilni in testni podatki
     sr: podaci merenja i ispitivanja
-    sr-cyrl: подаци мерења и испитивања
     tr: ölçüm ve test verisi
     uk: дані вимірювання і випробування
     zh: 测量与测试数据
@@ -2972,7 +2920,6 @@
     ru: данные наблюдений
     sl: opazovalni podatki
     sr: podaci prikupljeni posmatranjem
-    sr-cyrl: подаци прикупљени посматрањем
     sv: observationsdata
     tr: gözlemsel veri
     uk: дані спостереження
@@ -3021,7 +2968,6 @@
     ru: компилированные данные
     sl: sestavljeni podatki
     sr: kompilacija podataka
-    sr-cyrl: компилација података
     sv: sammanställd data
     tr: derlenmiş veri
     uk: компіляція даних
@@ -3069,7 +3015,6 @@
     ru: охрана новых сортов растений
     sl: žlahniteljska pravica
     sr: zaštićena biljna sorta
-    sr-cyrl: заштићена биљна сорта
     sv: växtförädlarrätt
     tr: bitki çeşitliliğini koruma
     uk: захист сортів рослин
@@ -3115,7 +3060,6 @@
     ru: лабораторный блокнот
     sl: laboratorijska beležka
     sr: laboratorijske beleške
-    sr-cyrl: лабораторијске белешке
     sv: laborationsjournal
     tr: laboratuvar notları
     uk: лабораторні нотатки
@@ -3160,7 +3104,6 @@
     ru: промышленный дизайн
     sl: industrijsko oblikovanje
     sr: industrijski dizajn
-    sr-cyrl: индустријски дизајн
     sv: industridesign
     tr: endüstriyel tasarım
     uk: промисловий дизайн
@@ -3206,7 +3149,6 @@
     ru: патент на программное обеспечение
     sl: patent za programsko opremo
     sr: patentirani softver
-    sr-cyrl: патентирани софтвер
     sv: mjukvarupatent
     tr: yazılım patenti
     uk: патент на програмне забезпечення
@@ -3253,7 +3195,6 @@
     ru: данные опроса
     sl: anketni podatki
     sr: anketni podaci
-    sr-cyrl: анкетни подаци
     sv: undersökningsdata
     tr: anket verisi
     uk: дані опитування
@@ -3299,7 +3240,6 @@
     ru: исходный код
     sl: izvorna koda
     sr: izvorni softverski kod
-    sr-cyrl: изворни софтверски код
     sv: källkod
     tr: kaynak kodu
     uk: вихідний код
@@ -3341,7 +3281,6 @@
     ru: другое периодическое издание
     sl: ostale serijske publikacije
     sr: ostale periodične publikacije
-    sr-cyrl: остале периодичне публикације
     sv: övrig periodisk publikation
     tr: diğer süreli yayınlar
     uk: інші періодичні матеріали
@@ -3385,7 +3324,6 @@
     ru: Заявка РСТ
     sl: patentna prijava
     sr: patentna prijava
-    sr-cyrl: патентна пријава
     sv: PCT-ansökan
     tr: PCT başvurusu
     uk: міжнародна заявка на винахід (РСТ)
@@ -3432,7 +3370,6 @@
     ru: данные моделирования
     sl: simulacijski podatki
     sr: simulacioni podaci
-    sr-cyrl: симулациони подаци
     tr: simülasyon verisi
     uk: дані симуляції
     zh: 模拟数据
@@ -3475,7 +3412,6 @@
     ru: архивная коллекция
     sl: arhivska zbirka
     sr: arhivska zbirka
-    sr-cyrl: архивска збирка
     sv: arkivsamling
     tr: arşiv koleksiyonu
     uk: архівна колекція
@@ -3522,7 +3458,6 @@
     ru: патент на растение
     sl: rastlinska sorta
     sr: patentirana sorta
-    sr-cyrl: патентирана биљна сорта
     sv: växtpatent
     tr: bitki patenti
     uk: патент на сорт рослин
@@ -3567,7 +3502,6 @@
     pt: artigo em revista
     sl: časopisni članek
     sr: članak u informativnoj reviji
-    sr-cyrl: чланак у информативној ревији
     sv: artikel i magasin
     tr: magazin makalesi
     uk: стаття у журналі
@@ -3616,7 +3550,6 @@
     ru: видео
     sl: video
     sr: video
-    sr-cyrl: видео
     sv: video
     tr: video
     uk: відео
@@ -3663,7 +3596,6 @@
     ru: отчет о политике
     sl: strateško poročilo
     sr: analiza politike
-    sr-cyrl: анализа политике
     sv: policyrapport
     tr: politika raporu
     uk: звіт з питань політики
@@ -3710,7 +3642,6 @@
     ru: стендовый доклад не включенный в материалы конференции
     sl: poster
     sr: neobjavljen poster sa konferencije
-    sr-cyrl: необјављен постер са конференције
     sv: konferensposter ej i proceeding
     tr: yayınlanmamış konferans posteri
     uk: стендова доповідь яка не увійшла до збірника
@@ -3755,7 +3686,6 @@
     ru: конференционный доклад не включенный в материалы конференции
     sl: neobjavljen članek na konferenci
     sr: neobjavljeno saopštenje sa konferencije
-    sr-cyrl: необјављено саопштење са конференције
     sv: paper ej i proceeding
     tr: yayınlanmamış konferans bildirisi
     uk: доповідь конференції яка не увійшла до збірника
@@ -3805,7 +3735,6 @@
     ru: технический отчет
     sl: tehnično poročilo
     sr: tehnički izveštaj
-    sr-cyrl: технички извештај
     sv: teknisk rapport
     tr: teknik rapor
     uk: технічний звіт
@@ -3849,7 +3778,6 @@
     ru: результат проекта
     sl: izdelek projekta
     sr: rezultat projekta
-    sr-cyrl: резултат пројекта
     sv: projektrapport
     tr: proje çıktısı
     uk: результат проекту
@@ -3893,7 +3821,6 @@
     ru: исследовательский отчет
     sl: poročilo o rezultatih raziskav
     sr: izveštaj o istraživanju
-    sr-cyrl: извештај о истраживању
     sv: forskningsrapport
     tr: araştırma raporu
     uk: звіт про дослідження
@@ -3940,7 +3867,6 @@
     ru: меморандум
     sl: memorandum
     sr: memorandum
-    sr-cyrl: меморандум
     sv: memorandum
     tr: bilgi notu
     uk: меморандум
@@ -3992,7 +3918,6 @@
     ru: часть книги
     sl: poglavje v knjigi
     sr: poglavlje u knjizi
-    sr-cyrl: поглавље у књизи
     sv: bokkapitel
     tr: kitap bölümü
     uk: розділ книги
@@ -4037,7 +3962,6 @@
     ru: письмо редактору
     sl: pismo uredniku
     sr: pismo uredniku
-    sr-cyrl: писмо уреднику
     sv: letter to the editor
     tr: editöre mektup
     uk: лист до редакції
@@ -4058,10 +3982,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_6501
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/JournalArticle
     scheme: http://purl.org/eprint/type/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_6501
   title:
@@ -4087,7 +4011,6 @@
     ru: журнальная статья
     sl: članek v reviji
     sr: članak u časopisu
-    sr-cyrl: чланак у часопису
     sv: tidskriftsartikel
     tr: dergi makalesi
     uk: стаття у науковому журналі
@@ -4134,7 +4057,6 @@
     ru: клиническое исследование
     sl: klinična študija
     sr: klinička studija
-    sr-cyrl: клиничка студија
     sv: klinisk studie
     tr: Klinik çalışması
     uk: клінічне дослідження
@@ -4178,7 +4100,6 @@
     ru: бакалаврская диссертация
     sl: diplomsko delo
     sr: diplomski rad
-    sr-cyrl: дипломски рад
     sv: kandidatuppsats
     tr: lisans tezi
     uk: бакалаврська робота
@@ -4222,7 +4143,6 @@
     ru: газетная статья
     sl: članek v časopisu
     sr: novinski članak
-    sr-cyrl: новински чланак
     sv: artikel i dags-/nyhetstidning
     tr: köşe yazısı
     uk: стаття в газеті
@@ -4269,7 +4189,6 @@
     ru: план управления данными
     sl: načrt ravnanja s podatki
     sr: plan upravljanja podacima
-    sr-cyrl: план управљања подацима
     sv: datahanteringsplan
     tr: veri yönetim planı
     uk: план управління даними
@@ -4317,7 +4236,6 @@
     ru: редакционная
     sl: uvodnik
     sr: uvodnik
-    sr-cyrl: уводник
     sv: editorial
     tr: Editoryal
     uk: редакційна стаття
@@ -4336,10 +4254,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ba08
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/BookReview
     scheme: http://purl.org/eprint/type/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_ba08
   title:
@@ -4365,7 +4283,6 @@
     ru: рецензия на книгу
     sl: recenzija knjige
     sr: prikaz knjige
-    sr-cyrl: приказ књиге
     sv: bokrecension
     tr: kitap eleştirisi
     uk: резензія на книгу
@@ -4413,7 +4330,6 @@
     ru: магистерская диссертация
     sl: magistrsko delo
     sr: master/magistarska teza
-    sr-cyrl: мастер/магистарска теза
     sv: masteruppsats
     tr: yüksek lisans tezi
     uk: магістерська робота
@@ -4459,7 +4375,6 @@
     ru: докторская диссертация
     sl: doktorska disertacija
     sr: doktorska disertacija
-    sr-cyrl: докторска дисертација
     sv: doktorsavhandling
     tr: doktora tezi
     uk: докторська дисертація
@@ -4482,10 +4397,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_f744
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/datacite/v4.4/ConferenceProceeding
-    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2662
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/datacite/v4.4/ConferenceProceeding
+    scheme: http://purl.org/datacite/v4.4/
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_f744
   title:
@@ -4511,7 +4426,6 @@
     ru: материалы конференций
     sl: zbornik prispevkov na konferenci
     sr: zbornik saopštenja sa konferencije
-    sr-cyrl: зборник саопштења са конференције
     sv: konferensproceeding
     tr: konferans bildirileri
     uk: матеріали конференції
@@ -4557,7 +4471,6 @@
     ru: комментарий
     sl: komentar
     sr: komentar
-    sr-cyrl: коментар
     sv: kommentar
     tr: yorum
     uk: коментар
@@ -4645,7 +4558,6 @@
     ru: экспертная оценка
     sl: strokovna ocena
     sr: recenzija
-    sr-cyrl: рецензија
     sv: refereegranskning
     tr: akran değerlendirmesi
     uk: рецензування
@@ -4692,7 +4604,6 @@
     ru: конференционная презентация
     sl: predstavitev na konferenci
     sr: prezentacija sa konferencije
-    sr-cyrl: презентација са конференције
     sv: konferenspresentation
     tr: konferans sunumu
     uk: презентація на конференції
@@ -4737,7 +4648,6 @@
     ru: протокол исследования
     sl: protokol raziskave
     sr: protokol istraživanja
-    sr-cyrl: протокол истраживања
     sv: forskningsprotokoll
     tr: araştırma protokolü
     uk: протокол дослідження
@@ -4782,7 +4692,6 @@
     ru: научная статья
     sl: znanstveni članek
     sr: naučni članak
-    sr-cyrl: научни чланак
     sv: forskningsartikel
     tr: araştırma makalesi
     uk: наукова стаття
@@ -4804,12 +4713,12 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_5794
     scheme: http://purl.org/coar/resource_type/
+  - identifier: http://purl.org/datacite/v4.4/ConferencePaper
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: http://purl.org/eprint/type/ConferencePaper
     scheme: http://purl.org/eprint/type/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2635
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
-  - identifier: http://purl.org/datacite/v4.4/ConferencePaper
-    scheme: http://purl.org/datacite/v4.4/
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_5794
   title:
@@ -4835,7 +4744,6 @@
     ru: конференционный доклад
     sl: članek na konfrenci
     sr: saopštenje sa konferencije
-    sr-cyrl: саопштење са конференције
     sv: paper i proceeding
     tr: konferans belgesi
     uk: доповідь на конференції
@@ -4858,10 +4766,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_6670
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2648
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/ConferencePoster
     scheme: http://purl.org/eprint/type/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2648
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   props:
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/c_6670
   title:
@@ -4887,7 +4795,6 @@
     ru: стендовый доклад
     sl: poster na konferenci
     sr: poster sa konferencije
-    sr-cyrl: постер са конференције
     sv: konferensposter
     tr: konferans posteri
     uk: стендова доповідь
@@ -4931,7 +4838,6 @@
     ru: правки
     sl: popravek članka
     sr: erratum
-    sr-cyrl: erratum
     sv: errata
     tr: düzeltme
     uk: виправлення
@@ -4975,7 +4881,6 @@
     ru: статья по программному обеспечению
     sl: članek o programski opremi
     sr: članak o računarskom programu
-    sr-cyrl: чланак о рачунарском програму
     tr: yazılım makalesi
     uk: стаття - програмне забезпечення
     zh: 软件论文
@@ -5023,7 +4928,6 @@
     ru: статья с цифровыми данными
     sl: članek o podatkovni zbirki
     sr: članak o skupu podataka
-    sr-cyrl: чланак о скупу података
     tr: veri makalesi
     uk: стаття у журналі даних
     zh: 数据文章
@@ -5067,7 +4971,6 @@
     ru: обзорная статья
     sl: pregledni znanstveni članek
     sr: pregledni članak
-    sr-cyrl: прегледни чланак
     sv: översiktsartikel
     tr: derleme makale
     uk: оглядова стаття

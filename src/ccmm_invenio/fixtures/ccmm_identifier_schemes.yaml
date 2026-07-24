@@ -1,0 +1,159 @@
+- crosswalks: []
+  description:
+    cs: Administrativní registr ekonomických subjektů
+    en: Administrative Register of Economic Subjects
+  id: ares
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/ares
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/ares
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/ares
+    key: https://ares.gov.cz/
+  title:
+    cs: ARES
+    en: ARES
+- crosswalks: []
+  id: arxiv
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/arxiv
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/arxiv
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/arxiv
+    key: https://arxiv.org/
+  title:
+    cs: arXiv
+    en: arXiv
+- crosswalks: []
+  id: doi
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/doi
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/doi
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/doi
+    key: https://doi.org/
+  title:
+    cs: DataCite DOI
+    en: DataCite DOI
+- crosswalks: []
+  id: handle
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/handle
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/handle
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/handle
+    key: https://handle.net/
+  title:
+    cs: Handle
+    en: Handle
+- crosswalks: []
+  id: iri
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/iri
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/iri
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/iri
+    key: urn:iri
+  title:
+    cs: IRI
+    en: IRI
+- crosswalks: []
+  id: isbn
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/isbn
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/isbn
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/isbn
+    key: https://www.isbn-international.org/
+  title:
+    cs: ISBN
+    en: ISBN
+- crosswalks: []
+  id: isni
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/isni
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/isni
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/isni
+    key: https://isni.org/
+  title:
+    cs: ISNI
+    en: ISNI
+- crosswalks: []
+  id: issn
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/issn
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/issn
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/issn
+    key: https://www.issn.org/
+  title:
+    cs: ISSN
+    en: ISSN
+- crosswalks: []
+  id: orcid
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/orcid
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/orcid
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/orcid
+    key: https://orcid.org/
+  title:
+    cs: ORCID
+    en: ORCID
+- crosswalks: []
+  id: researcherid
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/researcherid
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/researcherID
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/researcherid
+    key: https://www.webofscience.com/
+  title:
+    cs: Researcher ID
+    en: Researcher ID
+- crosswalks: []
+  id: ror
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/ror
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/ror
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/ror
+    key: https://ror.org/
+  title:
+    cs: ROR
+    en: ROR
+- crosswalks: []
+  id: scopusid
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/scopusid
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/identifier-schemes/scopusID
+    scheme: https://cesnet.cz/identifier-schemes/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/identifierschemes/scopusid
+    key: https://www.scopus.com/
+  title:
+    cs: Scopus ID
+    en: Scopus ID

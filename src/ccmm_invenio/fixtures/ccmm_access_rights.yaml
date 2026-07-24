@@ -34,7 +34,6 @@
     ru: доступ к метаданным
     sl: samo metapodatki
     sr: pristup ograničen na metapodatke
-    sr-cyrl: приступ ограничен на метаподатке
     tr: sadece üstveri erişimi
 - crosswalks:
   - identifier: info:eu-repo/semantics/restrictedAccess
@@ -88,7 +87,6 @@
     ru: ограниченный доступ
     sl: omejen dostop
     sr: ograničeni pristup
-    sr-cyrl: ограничени приступ
     tr: sınırlı erişim
 - crosswalks:
   - identifier: info:eu-repo/semantics/openAccess
@@ -126,7 +124,6 @@
     ru: открытый доступ
     sl: odprti dostop
     sr: otvoreni pristup
-    sr-cyrl: отворени приступ
     tr: açık erişim
 - crosswalks:
   - identifier: info:eu-repo/semantics/embargoedAccess
@@ -164,5 +161,4 @@
     ru: доступ с эмбарго
     sl: odlog javne objave
     sr: odloženi otvoreni pristup
-    sr-cyrl: одложени отворени приступ
     tr: ambargolu erişim

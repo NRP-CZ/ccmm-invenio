@@ -1,0 +1,96 @@
+id: ror
+title:
+  cs: ROR
+  en: ROR
+props:
+  uri_prefix: https://ror.org/
+---
+id: orcid
+title:
+  cs: ORCID
+  en: ORCID
+props:
+  uri_prefix: https://orcid.org/
+---
+id: doi
+title:
+  cs: DataCite DOI
+  en: DataCite DOI
+props:
+  datacite: DOI
+  uri_prefix: https://doi.org/
+  openaire: DOI
+---
+id: ares
+title:
+  cs: ARES
+  en: ARES
+description:
+  cs: Administrativní registr ekonomických subjektů
+  en: Administrative Register of Economic Subjects
+props:
+  uri_prefix: https://ares.gov.cz/
+---
+id: scopusID
+title:
+  cs: Scopus ID
+  en: Scopus ID
+props:
+  uri_prefix: https://www.scopus.com/
+---
+id: researcherID
+title:
+  cs: Researcher ID
+  en: Researcher ID
+props:
+  uri_prefix: https://www.webofscience.com/
+---
+id: iri
+title:
+  cs: IRI
+  en: IRI
+props:
+  uri_prefix: urn:iri
+---
+id: arxiv
+title:
+  cs: arXiv
+  en: arXiv
+props:
+  datacite: arXiv
+  uri_prefix: https://arxiv.org/
+  openaire: arXiv
+---
+id: isni
+title:
+  cs: ISNI
+  en: ISNI
+props:
+  uri_prefix: https://isni.org/
+---
+id: isbn
+title:
+  cs: ISBN
+  en: ISBN
+props:
+  datacite: ISBN
+  uri_prefix: https://www.isbn-international.org/
+  openaire: ISBN
+---
+id: issn
+title:
+  cs: ISSN
+  en: ISSN
+props:
+  datacite: ISSN
+  uri_prefix: https://www.issn.org/
+  openaire: ISSN
+---
+id: handle
+title:
+  cs: Handle
+  en: Handle
+props:
+  datacite: Handle
+  uri_prefix: https://handle.net/
+  openaire: Handle

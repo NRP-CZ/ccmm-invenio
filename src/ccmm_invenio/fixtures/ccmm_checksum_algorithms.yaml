@@ -1,0 +1,999 @@
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: '224'
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512/224
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha-512/224
+    scheme: https://cesnet.cz/checksum-algorithms/sha-512/
+  - identifier: http://www.wikidata.org/entity/Q110651434
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512/224
+  title:
+    en: SHA-512/224
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: '256'
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512/256
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha-512/256
+    scheme: https://cesnet.cz/checksum-algorithms/sha-512/
+  - identifier: http://www.wikidata.org/entity/Q110651437
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512/256
+  title:
+    en: SHA-512/256
+- crosswalks: []
+  description:
+    en: family of authenticated ciphers
+  id: ascon
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ascon
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/ascon
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q116757386
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ascon
+  title:
+    en: Ascon
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: blake
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/blake
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q108544539
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake
+  title:
+    en: BLAKE
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: blake2
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/blake2
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q81575703
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2
+  title:
+    en: BLAKE2
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: blake2b
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2b
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/blake2b
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q111508990
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2b
+  title:
+    en: BLAKE2b
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: blake2bp
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2bp
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/blake2bp
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q111509026
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2bp
+  title:
+    en: BLAKE2bp
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: blake2s
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2s
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/blake2s
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q111508995
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2s
+  title:
+    en: BLAKE2s
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: blake2sp
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2sp
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/blake2sp
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q111509027
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2sp
+  title:
+    en: BLAKE2sp
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: blake2x
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2x
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/blake2x
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q111509029
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2x
+  title:
+    en: BLAKE2x
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: blake3
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake3
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/blake3
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q81575705
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake3
+  title:
+    en: BLAKE3
+- crosswalks: []
+  description:
+    en: hash function
+  id: blue_midnight_wish
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blue_midnight_wish
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/blue_midnight_wish
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q16525572
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blue_midnight_wish
+  title:
+    en: Blue Midnight Wish
+- crosswalks: []
+  description:
+    en: cryptographic hash function that is designed to resist collision
+  id: collision_resistant_hash
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/collision_resistant_hash
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/collision_resistant_hash
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q85929139
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/collision_resistant_hash
+  title:
+    en: collision resistant hash
+- crosswalks: []
+  description:
+    en: functions both usable as cryptographic hash and stream cypher
+  id: cryptographic_hash_and_stream_cipher_function
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/cryptographic_hash_and_stream_cipher_function
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/cryptographic_hash_and_stream_cipher_function
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q19845304
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/cryptographic_hash_and_stream_cipher_function
+  title:
+    en: cryptographic hash and stream cipher function
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: cshake
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/cshake
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/cshake
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q131904294
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/cshake
+  title:
+    en: cSHAKE
+- crosswalks: []
+  description:
+    en: cryptographic hash function created by composing SHA-256 with itself
+  id: double_sha-256
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/double_sha-256
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/double_sha-256
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q124624061
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/double_sha-256
+  title:
+    en: double SHA-256
+- crosswalks: []
+  description:
+    en: obsolete cryptographic hash function
+  id: elliptic_curve_only_hash
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/elliptic_curve_only_hash
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/elliptic_curve_only_hash
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q5365792
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/elliptic_curve_only_hash
+  title:
+    en: Elliptic curve only hash
+- crosswalks: []
+  description:
+    en: family of cryptographic hash functions
+  id: fast_syndrome_based_hash
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/fast_syndrome_based_hash
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/fast_syndrome_based_hash
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q5436992
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/fast_syndrome_based_hash
+  title:
+    en: Fast Syndrome Based Hash
+- crosswalks: []
+  description:
+    en: Russian cryptographic hash function standard
+  id: gost_r_3411-94_and_gost_34311-95
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/gost_r_3411-94_and_gost_34311-95
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/gost_r_3411-94_and_gost_34311-95
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q3756229
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/gost_r_3411-94_and_gost_34311-95
+  title:
+    en: GOST R 34.11-94 and GOST 34.311-95
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: groestl
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/groestl
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/groestl
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1551743
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/groestl
+  title:
+    en: Grøstl
+- crosswalks: []
+  description:
+    en: design method for cryptographic hash functions
+  id: haifa_construction
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/haifa_construction
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/haifa_construction
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q15400317
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/haifa_construction
+  title:
+    en: HAIFA construction
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: has-160
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/has-160
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/has-160
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1051625
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/has-160
+  title:
+    en: HAS-160
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: haval
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/haval
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/haval
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q675690
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/haval
+  title:
+    en: HAVAL
+- crosswalks: []
+  description:
+    en: cryptographic hash function designed by Hongjun Wu
+  id: jh
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/jh
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/jh
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q4041729
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/jh
+  title:
+    en: JH
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: kmac
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/kmac
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/kmac
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q131904300
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/kmac
+  title:
+    en: KMAC
+- crosswalks: []
+  description:
+    en: Ukrainian cryptographic hash function standard
+  id: kupyna
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/kupyna
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/kupyna
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q21157922
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/kupyna
+  title:
+    en: Kupyna
+- crosswalks: []
+  description:
+    en: obsolete cryptographic hash function
+  id: md2
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/md2
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/md2
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q741247
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/md2
+  title:
+    en: MD2
+- crosswalks: []
+  description:
+    en: obsolete cryptographic hash function
+  id: md4
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/md4
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/md4
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1144542
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/md4
+  title:
+    en: MD4
+- crosswalks: []
+  description:
+    en: message-digest hashing algorithm
+  id: md5
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/md5
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/md5
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q185235
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/md5
+  title:
+    en: MD5
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: md6
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/md6
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/md6
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q2031069
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/md6
+  title:
+    en: MD6
+- crosswalks: []
+  description:
+    en: cryptographic hash function, based on an arbitrary block cipher
+  id: mdc-2
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/mdc-2
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/mdc-2
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q3841252
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/mdc-2
+  title:
+    en: MDC-2
+- crosswalks: []
+  description:
+    en: method of building collision-resistant cryptographic hash functions
+  id: merkle-damgard_construction
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/merkle-damgard_construction
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/merkle-damgard_construction
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1757463
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/merkle-damgard_construction
+  title:
+    en: Merkle–Damgård construction
+- crosswalks: []
+  description:
+    en: group of cryptographic protocols
+  id: message_digest
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/message_digest
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/message_digest
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1923906
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/message_digest
+  title:
+    en: Message Digest
+- crosswalks: []
+  description:
+    en: obsolete cryptographic hash function
+  id: n-hash
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/n-hash
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/n-hash
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q2354940
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/n-hash
+  title:
+    en: N-Hash
+- crosswalks: []
+  description:
+    en: classified U.S. cryptographic algorithms
+  id: nsa_suite_a_cryptography
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/nsa_suite_a_cryptography
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/nsa_suite_a_cryptography
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q16934823
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/nsa_suite_a_cryptography
+  title:
+    en: NSA Suite A Cryptography
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: parallelhash
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/parallelhash
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/parallelhash
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q131904308
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/parallelhash
+  title:
+    en: ParallelHash
+- crosswalks: []
+  description:
+    en: property of cryptographic hash functions
+  id: puzzle_friendliness
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/puzzle_friendliness
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/puzzle_friendliness
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q124518107
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/puzzle_friendliness
+  title:
+    en: Puzzle friendliness
+- crosswalks: []
+  id: q4040382
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/q4040382
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/q4040382
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q4040382
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/q4040382
+  title:
+    en: Q4040382
+- crosswalks: []
+  description:
+    en: family of lightweight cryptographic hash functions
+  id: quark
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/quark
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/quark
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q30678451
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/quark
+  title:
+    en: Quark
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: ripemd
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/ripemd
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q2124306
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd
+  title:
+    en: RIPEMD
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: ripemd-128
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-128
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/ripemd-128
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q3415207
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-128
+  title:
+    en: RIPEMD-128
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: ripemd-160
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-160
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/ripemd-160
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q20745583
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-160
+  title:
+    en: RIPEMD-160
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: ripemd-256
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-256
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/ripemd-256
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q7888922
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-256
+  title:
+    en: RIPEMD-256
+- crosswalks: []
+  id: ripemd-320
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-320
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/ripemd-320
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q4047856
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-320
+  title:
+    en: RIPEMD-320
+- crosswalks: []
+  description:
+    en: set of cryptographic hash functions designed by the NSA
+  id: sha-2
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-2
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha-2
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1968605
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-2
+  title:
+    en: SHA-2
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: sha-224
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-224
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha-224
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651417
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-224
+  title:
+    en: SHA-224
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: sha-256
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-256
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha-256
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651361
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-256
+  title:
+    en: SHA-256
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: sha-384
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-384
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha-384
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651380
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-384
+  title:
+    en: SHA-384
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: sha-512
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha-512
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651371
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512
+  title:
+    en: SHA-512
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: sha3-224
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-224
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha3-224
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651442
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-224
+  title:
+    en: SHA3-224
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: sha3-256
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-256
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha3-256
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651443
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-256
+  title:
+    en: SHA3-256
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: sha3-384
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-384
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha3-384
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651447
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-384
+  title:
+    en: SHA3-384
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: sha3-512
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-512
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha3-512
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651449
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-512
+  title:
+    en: SHA3-512
+- crosswalks: []
+  description:
+    en: family of cryptographic hash functions
+  id: sha_hash_functions
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha_hash_functions
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/sha_hash_functions
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q387688
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha_hash_functions
+  title:
+    en: SHA hash functions
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: shake128
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/shake128
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/shake128
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651451
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/shake128
+  title:
+    en: SHAKE128
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: shake256
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/shake256
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/shake256
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110651453
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/shake256
+  title:
+    en: SHAKE256
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: shangmi_3
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/shangmi_3
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/shangmi_3
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q28410000
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/shangmi_3
+  title:
+    en: ShangMi 3
+- crosswalks: []
+  id: shavite-3
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/shavite-3
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/shavite-3
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q16530359
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/shavite-3
+  title:
+    en: SHAvite-3
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: skein
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/skein
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/skein
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1142190
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/skein
+  title:
+    en: Skein
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: smash
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/smash
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/smash
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q7391081
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/smash
+  title:
+    en: SMASH
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: snefru
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/snefru
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/snefru
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1432392
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/snefru
+  title:
+    en: Snefru
+- crosswalks: []
+  description:
+    en: Russian cryptographic hash function standard
+  id: streebog
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/streebog
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/streebog
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q16635204
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/streebog
+  title:
+    en: Streebog
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: tiger
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/tiger
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/tiger
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1935697
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/tiger
+  title:
+    en: Tiger
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: tuplehash
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/tuplehash
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/tuplehash
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q131904302
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/tuplehash
+  title:
+    en: TupleHash
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: very_smooth_hash
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/very_smooth_hash
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/very_smooth_hash
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q3553011
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/very_smooth_hash
+  title:
+    en: Very smooth hash
+- crosswalks: []
+  description:
+    en: cryptographic hash function
+  id: whirlpool
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/whirlpool
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/whirlpool
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q1893324
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/whirlpool
+  title:
+    en: Whirlpool
+- crosswalks: []
+  description:
+    en: password-based key derivation function
+  id: yescrypt
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/yescrypt
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/checksum-algorithms/yescrypt
+    scheme: https://cesnet.cz/checksum-algorithms/
+  - identifier: http://www.wikidata.org/entity/Q110734564
+    scheme: http://www.wikidata.org/entity/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/yescrypt
+  title:
+    en: yescrypt

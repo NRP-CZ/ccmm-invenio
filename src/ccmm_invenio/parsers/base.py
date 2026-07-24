@@ -579,7 +579,7 @@ class CCMMXMLParser:
         path: list[QualifiedTag],
         cardinality: Literal["single", "optional", "array", "optional_array"] = "single",
         **kwargs: Any,
-    ) -> str | None | list[str]:
+    ) -> str | list[str] | None:
         """Parse a simple text element."""
         return cast(
             "str | None | list[str]",

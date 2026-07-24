@@ -24,7 +24,6 @@ from pathlib import Path
 from typing import TYPE_CHECKING, Any, cast
 
 import click
-from fsspec.caching import Generic
 from rdflib import Literal, URIRef
 from rdflib.namespace import SKOS, split_uri
 
@@ -91,6 +90,9 @@ class VocabularyConverter:
                 # "https://vocabs.ccmm.cz/registry/codelist/Subjects": "https://nma.eosc.cz/vocabularies/subjects",
                 "https://cesnet.cz/licenses": "https://nma.eosc.cz/vocabularies/licenses",
                 "https://cesnet.cz/subject-schemes": "https://nma.eosc.cz/vocabularies/subjectcategories",
+                "https://cesnet.cz/identifier-schemes": "https://nma.eosc.cz/vocabularies/identifierschemes",
+                "https://cesnet.cz/checksum-algorithms": "https://nma.eosc.cz/vocabularies/checksumalgorithms",
+                "https://cesnet.cz/description-types": "https://nma.eosc.cz/vocabularies/descriptiontypes",
             }
             if base not in known_bases:
                 return None
@@ -113,6 +115,9 @@ class VocabularyConverter:
         scheme_map = {
             "https://cesnet.cz/licenses": NMA.licenses,
             "https://cesnet.cz/subject-schemes": NMA.subjectcategories,
+            "https://cesnet.cz/identifier-schemes": NMA.identifierschemes,
+            "https://cesnet.cz/checksum-algorithms": NMA.checksumalgorithms,
+            "https://cesnet.cz/description-types": NMA.descriptiontypes,
             "https://vocabs.ccmm.cz/registry/codelist/AgentRole/": NMA.resourceagentroletypes,
             "https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/": NMA.titletypes,
             "https://vocabs.ccmm.cz/registry/codelist/LocationRelation/": NMA.locationrelationtypes,
@@ -133,7 +138,7 @@ class VocabularyConverter:
         """Add NMA terms to the triplestore as exact matches."""
         log.info("Adding NMA terms to the triplestore...")
 
-        def lookup_predicate(subject: URIRef, predicate: URIRef, rdf_object: Any) -> tuple[None | URIRef, Any]:
+        def lookup_predicate(subject: URIRef, predicate: URIRef, rdf_object: Any) -> tuple[URIRef | None, Any]:
             subject_scheme = str(subject).rsplit("/", maxsplit=1)[0]
             mapped_predicate = predicate_map.get((subject_scheme, predicate)) or predicate_map.get((None, predicate))
             if mapped_predicate is not None:
@@ -209,6 +214,24 @@ def load_vocabularies(converter: VocabularyConverter, input_dir: Path) -> None:
     log.info("Loading subject schemes from %s...", subject_schemes_file)
     converter.load_vocabulary_to_triple_store(
         str(subject_schemes_file), YAMLLoader(concept_scheme="https://cesnet.cz/subject-schemes")
+    )
+
+    identifier_schemes_file = input_dir / "identifier_schemes.yaml"
+    log.info("Loading subject schemes from %s...", identifier_schemes_file)
+    converter.load_vocabulary_to_triple_store(
+        str(identifier_schemes_file), YAMLLoader(concept_scheme="https://cesnet.cz/identifier-schemes")
+    )
+
+    checksum_algorithms_file = input_dir / "checksum_algorithms.yaml"
+    log.info("Loading checksum algorithms from %s...", checksum_algorithms_file)
+    converter.load_vocabulary_to_triple_store(
+        str(checksum_algorithms_file), YAMLLoader(concept_scheme="https://cesnet.cz/checksum-algorithms")
+    )
+
+    description_types_file = input_dir / "description_types.yaml"
+    log.info("Loading description types from %s...", description_types_file)
+    converter.load_vocabulary_to_triple_store(
+        str(description_types_file), YAMLLoader(concept_scheme="https://cesnet.cz/description-types")
     )
 
     for f in input_dir.rglob("*.csv"):
@@ -338,8 +361,12 @@ def convert_vocabularies(
     GenericVocabularyWriter(store).write(output_dir / "ccmm_relation_types.yaml", NMA.relationtypes)
     GenericVocabularyWriter(store).write(output_dir / "ccmm_resource_types.yaml", NMA.resourcetypes)
     GenericVocabularyWriter(store).write(output_dir / "ccmm_subject_categories.yaml", NMA.subjectcategories)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_identifier_schemes.yaml", NMA.identifierschemes)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_checksum_algorithms.yaml", NMA.checksumalgorithms)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_description_types.yaml", NMA.descriptiontypes)
     # GenericVocabularyWriter(store).write(output_dir / "ccmm_subject_schemes.yaml", NMA.subjectschemes)
     # GenericVocabularyWriter(store).write(output_dir / "ccmm_time_reference_types.yaml", NMA.timereferencetypes)
+
 
 if __name__ == "__main__":
     convert_vocabularies()

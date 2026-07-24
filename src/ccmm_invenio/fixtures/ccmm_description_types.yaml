@@ -1,0 +1,108 @@
+- crosswalks: []
+  id: abstract
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/abstract
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/description-types/abstract
+    scheme: https://cesnet.cz/description-types/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/descriptiontypes/abstract
+    key: Abstract
+  title:
+    cs: Abstrakt
+    de: Abstract
+    en: Abstract
+    es: Resumen
+    sv: Abstract
+- crosswalks: []
+  id: methods
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/methods
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/description-types/methods
+    scheme: https://cesnet.cz/description-types/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/descriptiontypes/methods
+    key: Methods
+  title:
+    cs: Metody
+    de: Methoden
+    en: Methods
+    es: Métodos
+    sv: Metoder
+- crosswalks: []
+  id: other
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/other
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/description-types/other
+    scheme: https://cesnet.cz/description-types/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/descriptiontypes/other
+    key: Other
+  title:
+    cs: Jiné
+    de: Sonstige
+    en: Other
+    es: Otro
+    sv: Övrig
+- crosswalks: []
+  id: series-information
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/series-information
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/description-types/series-information
+    scheme: https://cesnet.cz/description-types/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/SeriesInformation
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/descriptiontypes/series-information
+    key: SeriesInformation
+  title:
+    cs: Informace o sérii
+    de: Informationen zur Reihe
+    en: Series information
+    es: Información de la serie
+    sv: Information om serien
+- crosswalks: []
+  id: table-of-contents
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/table-of-contents
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/description-types/table-of-contents
+    scheme: https://cesnet.cz/description-types/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TableOfContents
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/descriptiontypes/table-of-contents
+    key: TableOfContents
+  title:
+    cs: Obsah
+    de: Inhaltsverzeichnis
+    en: Table of contents
+    es: Tabla de contenido
+    sv: Innehållsförteckning
+- crosswalks: []
+  id: technical-info
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/technical-info
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://cesnet.cz/description-types/technical-info
+    scheme: https://cesnet.cz/description-types/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+  props:
+    iri: https://nma.eosc.cz/vocabularies/descriptiontypes/technical-info
+    key: TechnicalInfo
+  title:
+    cs: Technické informace
+    de: Technische Informationen
+    en: Technical info
+    es: Información técnica
+    sv: Teknisk information

@@ -93,14 +93,25 @@ class GenericVocabularyWriter(VocabularyWriter):
             # (this concept IS equivalent to these other URIs)
             for prop, value in properties:
                 if prop == SKOS.prefLabel:
-                    converted_record.setdefault("title", {})[value.language] = str(value)
+                    if len(value.language) != 2:
+                        log.warning(
+                            "Language tag '%s' is not a two-character code, can not be used in invenio",
+                            value.language,
+                        )
+                    else:
+                        converted_record.setdefault("title", {})[value.language] = str(value)
                 elif prop == SKOS.definition:
-                    converted_record.setdefault("description", {})[value.language] = str(value)
+                    if len(value.language) != 2:
+                        log.warning(
+                            "Language tag '%s' is not a two-character code, can not be used in invenio",
+                            value.language,
+                        )
+                    else:
+                        converted_record.setdefault("description", {})[value.language] = str(value)
                 elif prop == SKOS.exactMatch:
-                    converted_record["identifiers"].append({
-                        "identifier": str(value),
-                        "scheme": split_uri(str(value))[0]
-                    })
+                    converted_record["identifiers"].append(
+                        {"identifier": str(value), "scheme": split_uri(str(value))[0]}
+                    )
                 elif prop == NMA.nma_identifier:
                     converted_record["id"] = str(value)
                 elif prop in CCMM_PROPS:
@@ -116,10 +127,7 @@ class GenericVocabularyWriter(VocabularyWriter):
                 # Skip self-references (when the subject is the same as the current concept)
                 if subj == concept:
                     continue
-                converted_record["crosswalks"].append({
-                    "identifier": str(subj),
-                    "scheme": split_uri(str(subj))[0]
-                })
+                converted_record["crosswalks"].append({"identifier": str(subj), "scheme": split_uri(str(subj))[0]})
             if "title" not in converted_record:
                 continue
 
