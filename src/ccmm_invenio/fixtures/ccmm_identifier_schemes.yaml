@@ -1,5 +1,4 @@
-- crosswalks: []
-  description:
+- description:
     cs: Administrativní registr ekonomických subjektů
     en: Administrative Register of Economic Subjects
   id: ares
@@ -14,8 +13,7 @@
   title:
     cs: ARES
     en: ARES
-- crosswalks: []
-  id: arxiv
+- id: arxiv
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/arxiv
     scheme: https://nma.eosc.cz/vocabularies/
@@ -27,8 +25,7 @@
   title:
     cs: arXiv
     en: arXiv
-- crosswalks: []
-  id: doi
+- id: doi
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/doi
     scheme: https://nma.eosc.cz/vocabularies/
@@ -40,8 +37,7 @@
   title:
     cs: DataCite DOI
     en: DataCite DOI
-- crosswalks: []
-  id: handle
+- id: handle
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/handle
     scheme: https://nma.eosc.cz/vocabularies/
@@ -53,8 +49,7 @@
   title:
     cs: Handle
     en: Handle
-- crosswalks: []
-  id: iri
+- id: iri
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/iri
     scheme: https://nma.eosc.cz/vocabularies/
@@ -66,8 +61,7 @@
   title:
     cs: IRI
     en: IRI
-- crosswalks: []
-  id: isbn
+- id: isbn
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/isbn
     scheme: https://nma.eosc.cz/vocabularies/
@@ -79,8 +73,7 @@
   title:
     cs: ISBN
     en: ISBN
-- crosswalks: []
-  id: isni
+- id: isni
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/isni
     scheme: https://nma.eosc.cz/vocabularies/
@@ -92,8 +85,7 @@
   title:
     cs: ISNI
     en: ISNI
-- crosswalks: []
-  id: issn
+- id: issn
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/issn
     scheme: https://nma.eosc.cz/vocabularies/
@@ -105,8 +97,7 @@
   title:
     cs: ISSN
     en: ISSN
-- crosswalks: []
-  id: orcid
+- id: orcid
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/orcid
     scheme: https://nma.eosc.cz/vocabularies/
@@ -118,8 +109,7 @@
   title:
     cs: ORCID
     en: ORCID
-- crosswalks: []
-  id: researcherid
+- id: researcherid
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/researcherid
     scheme: https://nma.eosc.cz/vocabularies/
@@ -131,8 +121,7 @@
   title:
     cs: Researcher ID
     en: Researcher ID
-- crosswalks: []
-  id: ror
+- id: ror
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/ror
     scheme: https://nma.eosc.cz/vocabularies/
@@ -144,8 +133,7 @@
   title:
     cs: ROR
     en: ROR
-- crosswalks: []
-  id: scopusid
+- id: scopusid
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/scopusid
     scheme: https://nma.eosc.cz/vocabularies/

@@ -16,8 +16,7 @@
   title:
     cs: cituje (co)
     en: cites
-- crosswalks: []
-  id: collects
+- id: collects
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/collects
     scheme: https://nma.eosc.cz/vocabularies/
@@ -136,8 +135,7 @@
   title:
     cs: má část/i
     en: has part
-- crosswalks: []
-  id: hastranslation
+- id: hastranslation
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/hastranslation
     scheme: https://nma.eosc.cz/vocabularies/
@@ -184,8 +182,7 @@
   title:
     cs: je citován (čím)
     en: is cited by
-- crosswalks: []
-  id: iscollectedby
+- id: iscollectedby
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/iscollectedby
     scheme: https://nma.eosc.cz/vocabularies/
@@ -532,8 +529,7 @@
   title:
     cs: je doplňkem k (čemu)
     en: is supplement to
-- crosswalks: []
-  id: istranslationof
+- id: istranslationof
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/relationtypes/istranslationof
     scheme: https://nma.eosc.cz/vocabularies/

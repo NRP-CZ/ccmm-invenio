@@ -28,7 +28,7 @@ from rdflib import Literal, URIRef
 from rdflib.namespace import SKOS, split_uri
 
 from ccmm_invenio.conversion.csv_loader import CSVLoader
-from ccmm_invenio.conversion.rdf_store import CCMM_PROPS, NMA, RDFTripleStore
+from ccmm_invenio.conversion.rdf_store import CCMM, CCMM_MISC, CCMM_PROPS, NMA, RDFTripleStore
 from ccmm_invenio.conversion.sparql_loader import NetworkCache, NetworkRDFLoader, TurtleLoader
 from ccmm_invenio.conversion.sssom_loader import SSSOMLoader
 from ccmm_invenio.conversion.writer import GenericVocabularyWriter
@@ -199,6 +199,23 @@ class VocabularyConverter:
             for predicate, obj in self.store.graph.predicate_objects(subject):
                 self.store.graph.add((nma_subject, predicate, obj))
 
+    def mark_subjects(self) -> None:
+        """Mark subjects vocabulary terms with frascati."""
+        for subject in self.store.graph.subjects(SKOS.inScheme, URIRef(f"{CCMM.SubjectCategory}/")):
+            self.store.graph.add((subject, CCMM_MISC.scheme, Literal("frascati")))
+
+            # get the prefLabel in english of the subject
+            pref_label = next(
+                (
+                    label
+                    for label in self.store.graph.objects(subject, SKOS.prefLabel)
+                    if label.language == "en"
+                ),
+                None,
+            )
+
+            if pref_label is not None:
+                self.store.graph.add((subject, CCMM_MISC.subject, pref_label))
 
 def load_vocabularies(converter: VocabularyConverter, input_dir: Path) -> None:
     """Load vocabularies from the input directory and store them in the triplestore."""
@@ -329,6 +346,7 @@ def convert_vocabularies(
     load_vocabularies(converter, input_dir)
 
     converter.add_identifiers()
+    converter.mark_subjects()
     converter.add_nma_terms(
         {
             # convert original_iri to exactMatch
@@ -357,7 +375,7 @@ def convert_vocabularies(
 
     GenericVocabularyWriter(store).write(output_dir / "ccmm_licenses.yaml", NMA.licenses)
     GenericVocabularyWriter(store).write(output_dir / "ccmm_location_relation_types.yaml", NMA.locationrelationtypes)
-    # GenericVocabularyWriter(store).write(output_dir / "ccmm_rdm_subjects.yaml", NMA.rdmsubjects)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_rdm_subjects.yaml", NMA.subjects, output_hierarchy=False)
     GenericVocabularyWriter(store).write(output_dir / "ccmm_relation_types.yaml", NMA.relationtypes)
     GenericVocabularyWriter(store).write(output_dir / "ccmm_resource_types.yaml", NMA.resourcetypes)
     GenericVocabularyWriter(store).write(output_dir / "ccmm_subject_categories.yaml", NMA.subjectcategories)
@@ -365,7 +383,7 @@ def convert_vocabularies(
     GenericVocabularyWriter(store).write(output_dir / "ccmm_checksum_algorithms.yaml", NMA.checksumalgorithms)
     GenericVocabularyWriter(store).write(output_dir / "ccmm_description_types.yaml", NMA.descriptiontypes)
     # GenericVocabularyWriter(store).write(output_dir / "ccmm_subject_schemes.yaml", NMA.subjectschemes)
-    # GenericVocabularyWriter(store).write(output_dir / "ccmm_time_reference_types.yaml", NMA.timereferencetypes)
+    GenericVocabularyWriter(store).write(output_dir / "ccmm_time_reference_types.yaml", NMA.datetypes)
 
 
 if __name__ == "__main__":

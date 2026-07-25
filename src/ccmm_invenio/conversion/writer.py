@@ -51,6 +51,7 @@ class GenericVocabularyWriter(VocabularyWriter):
         output_file: Path,
         namespace: URIRef,
         filter_func: Callable[[RDFTripleStore, URIRef], bool] | None = None,
+        output_hierarchy: bool = True,
     ) -> None:
         """Write the vocabulary data to the output file."""
         log.info("Writing namespace %s to %s", namespace, output_file)
@@ -120,6 +121,10 @@ class GenericVocabularyWriter(VocabularyWriter):
                     converted_record["icon"] = str(value)
                 elif prop == CCMM_MISC.tag:
                     converted_record.setdefault("tags", []).append(str(value))
+                elif prop == CCMM_MISC.scheme:
+                    converted_record["scheme"] = str(value)
+                elif prop == CCMM_MISC.subject:
+                    converted_record["subject"] = str(value)
 
             # Add mappings from SKOS.exactMatch where concept is the object
             # (other vocabularies map their concepts TO this one)
@@ -130,7 +135,10 @@ class GenericVocabularyWriter(VocabularyWriter):
                 converted_record["crosswalks"].append({"identifier": str(subj), "scheme": split_uri(str(subj))[0]})
             if "title" not in converted_record:
                 continue
-
+            if not converted_record["crosswalks"]:
+                del converted_record["crosswalks"]
+            if not converted_record["identifiers"]:
+                del converted_record["identifiers"]
             # we need an English fallback, so use the first available language if 'en' is not present
             # and pretend it is the English
             if "en" not in converted_record["title"]:
@@ -138,7 +146,7 @@ class GenericVocabularyWriter(VocabularyWriter):
 
             # Add hierarchy information if this concept has a parent AND the parent is in the output
             concept_id = str(concept).rsplit("/", maxsplit=1)[-1]
-            if concept_id in hierarchy_map:
+            if concept_id in hierarchy_map and output_hierarchy:
                 parent_id = hierarchy_map[concept_id]
                 if parent_id in output_ids:
                     converted_record["hierarchy"] = {"parent": parent_id}

@@ -1,5 +1,4 @@
-- crosswalks: []
-  description:
+- description:
     en: The main researchers involved in producing the data, or the authors of the
       publication, in priority order. For instruments this is the manufacturer or
       developer of the instrument. To supply multiple creators, repeat this property.
@@ -14,8 +13,7 @@
   title:
     cs: Autor
     en: Creator
-- crosswalks: []
-  description:
+- description:
     en: The name of the entity that holds, archives, publishes, prints, distributes,
       releases, issues, or produces the resource. This property will be used to formulate
       the citation, so consider the prominence of the role.

@@ -1,5 +1,4 @@
-- crosswalks: []
-  id: aar
+- id: aar
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/aar
     scheme: https://nma.eosc.cz/vocabularies/
@@ -17,8 +16,7 @@
   title:
     aa: afar
     en: afar
-- crosswalks: []
-  id: abk
+- id: abk
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/abk
     scheme: https://nma.eosc.cz/vocabularies/
@@ -36,8 +34,7 @@
   title:
     ab: abkhazian
     en: abkhazian
-- crosswalks: []
-  description:
+- description:
     en: Afrikaans is a West Germanic language. It is one of the official languages
       of South Africa.
   id: afr
@@ -81,8 +78,7 @@
     sl: afrikanščina
     sv: afrikaans
     uk: африкаанс
-- crosswalks: []
-  description:
+- description:
     en: Akan is an Atlantic-Congo language that belongs to the Central Tano group
       of the Volta-Congo languages. It is the principal native language of the Akan
       people of Ghana, spoken over much of the southern half of Ghana. It is also
@@ -133,8 +129,7 @@
     sl: akanščina
     sv: akan
     uk: аканська мова
-- crosswalks: []
-  description:
+- description:
     en: Amharic is a Semitic language spoken in Ethiopia. The Amharic script is an
       abugida.
   id: amh
@@ -180,8 +175,7 @@
     sl: amharščina
     sv: amhariska
     uk: амхарська мова
-- crosswalks: []
-  description:
+- description:
     en: Arabic is a name for what are traditionally considered the descendants of
       the Classical Arabic language of the 6th century. This includes both the literary
       language and varieties of Arabic spoken in a wide arc of territory, stretching
@@ -254,8 +248,7 @@
     sv: arabiska
     tr: arapça
     uk: арабська мова
-- crosswalks: []
-  id: arg
+- id: arg
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/arg
     scheme: https://nma.eosc.cz/vocabularies/
@@ -273,8 +266,7 @@
   title:
     an: aragonese
     en: aragonese
-- crosswalks: []
-  id: asm
+- id: asm
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/asm
     scheme: https://nma.eosc.cz/vocabularies/
@@ -292,8 +284,7 @@
   title:
     as: assamese
     en: assamese
-- crosswalks: []
-  id: ava
+- id: ava
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/ava
     scheme: https://nma.eosc.cz/vocabularies/
@@ -311,8 +302,7 @@
   title:
     av: avaric
     en: avaric
-- crosswalks: []
-  id: ave
+- id: ave
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/ave
     scheme: https://nma.eosc.cz/vocabularies/
@@ -330,8 +320,7 @@
   title:
     ae: avestan
     en: avestan
-- crosswalks: []
-  description:
+- description:
     en: Aymara is an Aymaran indigenous language. It is one of the official languages
       of Bolivia.
   id: aym
@@ -375,8 +364,7 @@
     sl: ajmarščina
     sv: aymara
     uk: аймара
-- crosswalks: []
-  description:
+- description:
     en: Azerbaijani or Azeri is a member of the Oghuz group of Turkic languages, spoken
       primarily in the Caucasus region. Azerbaijani and Turkish closely resemble each
       other.Azeri was written in the Arabic-Persian script, a modified Latin script
@@ -438,8 +426,7 @@
     sv: azerbajdzjanska
     tr: azerice
     uk: азербайджанська мова
-- crosswalks: []
-  id: bak
+- id: bak
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/bak
     scheme: https://nma.eosc.cz/vocabularies/
@@ -457,8 +444,7 @@
   title:
     ba: bashkir
     en: bashkir
-- crosswalks: []
-  description:
+- description:
     en: Bambara, also known as Bamana, is a lingua franca and national language of
       Mali spoken natively by 4.2 million Bambara people and about 10 million second-language
       users. Bambara is a variety of a group of closely related languages called Manding,
@@ -511,8 +497,7 @@
     sk: bambarčina
     sl: bambarščina
     sv: bambara
-- crosswalks: []
-  description:
+- description:
     en: Belarusian is one of the East Slavic languages and shares many grammatical
       and lexical features with other members of the branch, Russian and Ukrainian.
       It is spoken mainly in Belarus.Belorusian is written with the Cyrillic alphabet.
@@ -572,8 +557,7 @@
     sv: vitryska
     tr: beyaz Rusça
     uk: білоруська мова
-- crosswalks: []
-  description:
+- description:
     en: Bengali is the language native to the region of Bengal, which comprises present-day
       Bangladesh and some east-north Indian states. It is written using the Bengali
       script. Bengali presents a strong case of diglossia, with the literary and standard
@@ -642,8 +626,7 @@
     sv: bengali
     tr: bengali
     uk: бенгальська мова
-- crosswalks: []
-  description:
+- description:
     en: Bislama is an English-based creole language. It is one of the official languages
       of Vanuatu.
   id: bis
@@ -687,8 +670,7 @@
     sl: bislamščina
     sv: bislama
     uk: бісламська мова
-- crosswalks: []
-  description:
+- description:
     en: The Tibetic or Tibetan languages (Bodish) are a cluster of mutually unintelligible
       Tibeto-Burman languages spoken primarily by Tibetan peoples who live across
       a wide area of eastern Central Asia bordering the Indian subcontinent, including
@@ -757,8 +739,7 @@
     sv: tibetanska
     tr: tibetçe
     uk: тибетська мова
-- crosswalks: []
-  description:
+- description:
     en: Bosnian is a South Slavic language, the standardised variety of the ‘Serbo-Croatian’
       used by Bosniaks, based on the Shtokavian dialect.Bosnian is written in both
       the Latin and the Cyrillic alphabet.
@@ -818,8 +799,7 @@
     sv: bosniska
     tr: boşnakça
     uk: боснійська мова
-- crosswalks: []
-  description:
+- description:
     en: Breton is a member of the Brittonic subgroup of the Celtic languages, spoken
       in Brittany, in western France. It is most closely related to Cornish.Breton
       is classified as ‘severely endangered’ by the Unesco Atlas of the World’s Languages
@@ -882,8 +862,7 @@
     sv: bretonska
     tr: bretonca
     uk: бретонська мова
-- crosswalks: []
-  description:
+- description:
     en: Bulgarian is a member of the Southern subgroup of the Slavic languages, spoken
       mainly in Bulgaria.Modern Bulgarian has several striking differences from other
       Slavic languages. e.g. nouns are no longer declined; however, there is a definite
@@ -948,8 +927,7 @@
     sv: bulgariska
     tr: bulgarca
     uk: болгарська мова
-- crosswalks: []
-  description:
+- description:
     en: Catalan is a member of the Romance family of languages. It is spoken in Catalonia,
       north-eastern Spain and adjoining parts of France and it is the official language
       of Andorra. Catalan has a co-official status in the Spanish autonomous communities
@@ -1016,8 +994,7 @@
     sv: katalanska
     tr: katalanca
     uk: каталонська мова
-- crosswalks: []
-  description:
+- description:
     en: Czech is a member of the Western subgroup of the Slavic languages, spoken
       mainly in the Czech Republic.Czech is a fusional language and one of the most
       highly inflected tongues in the world.
@@ -1079,8 +1056,7 @@
     sv: tjeckiska
     tr: çekçe
     uk: чеська мова
-- crosswalks: []
-  description:
+- description:
     en: Chamorro is a Malayo-Polynesian language. It is one of the official languages
       of Guam and the Northern Mariana Islands.
   id: cha
@@ -1124,8 +1100,7 @@
     sl: čamorščina
     sv: chamorro
     uk: чаморро
-- crosswalks: []
-  id: che
+- id: che
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/che
     scheme: https://nma.eosc.cz/vocabularies/
@@ -1143,8 +1118,7 @@
   title:
     ce: chechen
     en: chechen
-- crosswalks: []
-  id: chu
+- id: chu
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/chu
     scheme: https://nma.eosc.cz/vocabularies/
@@ -1162,8 +1136,7 @@
   title:
     cu: church Slavic
     en: church Slavic
-- crosswalks: []
-  id: chv
+- id: chv
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/chv
     scheme: https://nma.eosc.cz/vocabularies/
@@ -1181,8 +1154,7 @@
   title:
     cv: chuvash
     en: chuvash
-- crosswalks: []
-  description:
+- description:
     en: Cornish is a south-western Brittonic Celtic language spoken in Cornwall.Since
       2000 the language has undergone a revival. It is a recognised regional language
       of the United Kingdom, protected under the European Charter for Regional or
@@ -1239,8 +1211,7 @@
     sv: korniska
     tr: kernevekçe
     uk: корнська мова
-- crosswalks: []
-  description:
+- description:
     en: Corsican is an Italo-Dalmatian Romance language, a member of the South Central
       group of the dialects of Italy, spoken and written on the islands of Corsica
       (France) and northern Sardinia (Italy). Unesco classifies Corsican as a definitely
@@ -1301,8 +1272,7 @@
     sv: korsiska
     tr: korsikaca
     uk: корсиканська мова
-- crosswalks: []
-  description:
+- description:
     en: Cree macrolanguage, also known as Cree–Montagnais–Naskapi, is a dialect continuum
       of Algonquian languages spoken by approximately 86 475 people across Canada
       in 2021, from the Northwest Territories to Alberta to Labrador. If considered
@@ -1349,8 +1319,7 @@
     sk: kríština
     sl: krijščina
     sv: cree
-- crosswalks: []
-  description:
+- description:
     en: 'Welsh (Cymraeg) is a member of the Brittonic subgroup of the Celtic languages.
       It has the status of official language in Wales.Modern standard literary Welsh
       is a conservative form of the language: this makes it more difficult to learn
@@ -1413,8 +1382,7 @@
     sv: kymriska
     tr: galler
     uk: валлійська мова
-- crosswalks: []
-  description:
+- description:
     en: Danish is a North Germanic language spoken principally in Denmark and as a
       second language in the Faroe Islands and Greenland. Danish is largely mutually
       intelligible with Norwegian and Swedish.Danish has a relatively large vowel
@@ -1434,7 +1402,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: DA
-    FD_060: DA
+    FD_060: DK
     ISO_639_1: da
     ISO_639_2B: dan
     ISO_639_2T: dan
@@ -1479,8 +1447,7 @@
     sv: danska
     tr: danca
     uk: данська мова
-- crosswalks: []
-  description:
+- description:
     en: German is a West Germanic language, most closely related to Dutch and Yiddish.
       German is a pluricentric language, with multiple countries having their own
       standardised variants as well as many dialects. There is also one variant referred
@@ -1499,14 +1466,14 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: DE
-    FD_060: D
+    FD_060: DE
     ISO_639_1: de
     ISO_639_2B: ger
     ISO_639_2T: deu
     ISO_639_3: deu
     PLANJO: DE
     PUB_LANG: DE
-    PUB_LNGISO: OS
+    PUB_LNGISO: DE
     TED: DE
     TED_SCHEMA: DE
     XML_LNG: de
@@ -1544,8 +1511,7 @@
     sv: tyska
     tr: almanca
     uk: німецька мова
-- crosswalks: []
-  description:
+- description:
     en: Dhivehi or Maldivian is an Indo-Aryan language predominantly spoken in the
       Maldives, where it is the national language. Maldivian is a descendent of Maharashtri
       Prakrit and is closely related to Marathi, Konkani and Sinhalese languages,
@@ -1610,8 +1576,7 @@
     sv: divehi
     tr: dhivehi
     uk: дівехі мова
-- crosswalks: []
-  description:
+- description:
     en: Dzongkha is a Sino-Tibetan language. It is the official language of Bhutan.
   id: dzo
   identifiers:
@@ -1654,8 +1619,7 @@
     sl: dzonka
     sv: dzongkha
     uk: дзонгха мова
-- crosswalks: []
-  description:
+- description:
     en: Greek is an independent branch of the Indo-European family of languages, native
       to the southern Balkans, the Aegean Islands, western Asia Minor and Cyprus.
       It has the longest continuous recorded history of any European language.Its
@@ -1685,7 +1649,7 @@
     ISO_639_2T: ell
     ISO_639_3: ell
     PUB_LANG: GR
-    PUB_LNGISO: GR
+    PUB_LNGISO: EL
     TED: EL
     TED_SCHEMA: EL
     XML_LNG: el
@@ -1723,8 +1687,7 @@
     sv: grekiska
     tr: yunanca
     uk: грецька мова
-- crosswalks: []
-  description:
+- description:
     en: English is a member of the West Germanic group of the Germanic languages.
       It is an official language of almost 60 sovereign states and is now a global
       lingua franca.It is the third-most-common native language in the world and it
@@ -1789,8 +1752,7 @@
     sv: engelska
     tr: ıngilizce
     uk: англійська мова
-- crosswalks: []
-  description:
+- description:
     en: Esperanto is the most widely spoken constructed international auxiliary language.
       Its name derives from Doktoro Esperanto (‘Esperanto’ translates as ‘one who
       hopes’), the pseudonym under which Ludwig Zamenhof published the first book
@@ -1853,8 +1815,7 @@
     sv: esperanto
     tr: esperanto
     uk: есперанто
-- crosswalks: []
-  description:
+- description:
     en: Estonian belongs (with Finnish) to the Baltic-Finnic subgroup of the Finno-Ugrian
       languages from the Uralic family. It is the official language of Estonia.Estonian
       represents a transitional form from an agglutinating language to a fusional
@@ -1917,8 +1878,7 @@
     sv: estniska
     tr: estonca
     uk: естонська мова
-- crosswalks: []
-  description:
+- description:
     en: Basque (euskara) is a non Indo-European language of uncertain origin; the
       only living language of Europe that has no known linguistic relatives. It is
       spoken by the Basque people, indigenous to and mainly inhabiting the Basque
@@ -1982,8 +1942,7 @@
     sv: baskiska
     tr: baskça
     uk: баскська мова
-- crosswalks: []
-  description:
+- description:
     en: Ewe belongs to the Gbe branch of the Niger–Congo language family. It is spoken
       in southeastern Ghana.
   id: ewe
@@ -2031,8 +1990,7 @@
     sl: jezik ewe
     sv: ewe
     uk: еве
-- crosswalks: []
-  description:
+- description:
     en: Faroese is a North Germanic language spoken in the Faroe Islands.Faroese grammar
       is related and very similar to that of modern Icelandic and Old Norse.
     fr: Le féroïen ou féringien est une langue germanique du Nord parlée dans les
@@ -2091,8 +2049,7 @@
     sv: färöiska
     tr: faroe
     uk: фарерська мова
-- crosswalks: []
-  description:
+- description:
     en: Persian is an Iranian language within the Indo-Iranian branch of the Indo-European
       languages and the only South-Western Iranian language. Apart from being the
       majority language and the national language in Iran (Persia), a different dialect
@@ -2165,8 +2122,7 @@
     sv: persiska
     tr: farsça
     uk: фарсі
-- crosswalks: []
-  description:
+- description:
     en: Fijian is a Malayo-Polynesian language. It is one of the official languages
       of Fiji.
   id: fij
@@ -2210,8 +2166,7 @@
     sl: fidžijščina
     sv: fiji
     uk: фіджі
-- crosswalks: []
-  description:
+- description:
     en: Finnish belongs (with Estonian) to the Baltic-Finnic subgroup of the Finno-Ugrian
       languages from the Uralic family. Finnish is one of two official languages of
       Finland (the other being Swedish).Finnish is typologically between fusional
@@ -2275,8 +2230,7 @@
     sv: finska
     tr: fince
     uk: фінська мова
-- crosswalks: []
-  description:
+- description:
     en: French is the most northerly of the Romance languages and is an official language
       in 29 countries. It is an official language of all United Nations agencies and
       of a large number of international organisations. Outside of France, the highest
@@ -2296,7 +2250,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: FR
-    FD_060: F
+    FD_060: FR
     ISO_639_1: fr
     ISO_639_2B: fre
     ISO_639_2T: fra
@@ -2341,8 +2295,7 @@
     sv: franska
     tr: fransızca
     uk: французька мова
-- crosswalks: []
-  description:
+- description:
     en: 'Frisian belongs, together with English, to the North Sea subgroup of the
       West Germanic languages. It is spoken by Frisian ethnic groups, who live mainly
       in the northern part of the Netherlands.There are three varieties of Frisian:
@@ -2402,8 +2355,7 @@
     sv: frisiska
     tr: frizce
     uk: фризька мова
-- crosswalks: []
-  description:
+- description:
     en: Fula – also known as Fulah – is a Senegambian language spoken across some
       20 countries in West and Central Africa. Along with other related languages
       such as Serer and Wolof, it belongs to the Senegambian branch within the Niger–Congo
@@ -2453,8 +2405,7 @@
     sl: fulščina
     sv: fula
     uk: фула
-- crosswalks: []
-  description:
+- description:
     en: Scottish Gaelic, sometimes also called Gaelic, is a Celtic language native
       to Scotland.Gaelic is an official language in Scotland and it is a recognised
       minority language of the United Kingdom, protected under the European Charter
@@ -2515,8 +2466,7 @@
     sv: skotsk gaeliska
     tr: ıskoçça
     uk: шотландська (гельська) мова
-- crosswalks: []
-  description:
+- description:
     en: Irish, Irish Gaelic, or Gaelic (Gaeilge) belongs to the Gaelic branch of the
       Celtic family of languages, originating in Ireland and historically spoken by
       the Irish people.Irish is spoken as a first language by a small minority of
@@ -2540,7 +2490,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: GA
-    FD_060: IRL
+    FD_060: GA
     ISO_639_1: ga
     ISO_639_2B: gle
     ISO_639_2T: gle
@@ -2585,8 +2535,7 @@
     sv: iriska
     tr: ırlandaca
     uk: ірландська мова
-- crosswalks: []
-  description:
+- description:
     en: Galician (galego) is an Indo-European language of the Western Ibero-Romance
       branch, closely related to Portuguese. It is spoken mainly in the autonomous
       region of Galicia, located in north-western Spain.
@@ -2645,8 +2594,7 @@
     sv: galiciska
     tr: galiçyaca
     uk: галісійська мова
-- crosswalks: []
-  description:
+- description:
     en: Manx is a Celtic language. It is one of the official languages of the Isle
       of Man.
   id: glv
@@ -2690,8 +2638,7 @@
     sl: manščina
     sv: manx
     uk: манська мова
-- crosswalks: []
-  description:
+- description:
     en: Guarani is a Tupian indigenous language. It is one of the official languages
       of Bolivia and Paraguay.
   id: grn
@@ -2735,8 +2682,7 @@
     sl: gvaranijščina
     sv: guaraní
     uk: гуарані
-- crosswalks: []
-  id: guj
+- id: guj
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/guj
     scheme: https://nma.eosc.cz/vocabularies/
@@ -2754,8 +2700,7 @@
   title:
     en: gujarati
     gu: gujarati
-- crosswalks: []
-  description:
+- description:
     en: Haitian is a French-based creole language. It is one of the official languages
       of Haiti.
   id: hat
@@ -2799,8 +2744,7 @@
     sl: haitijska kreolščina
     sv: haitiska
     uk: гаїтянська мова
-- crosswalks: []
-  description:
+- description:
     en: Hausa is a Chadic language spoken by the Hausa people, mainly within the northern
       half of Nigeria and the southern half of Niger, and with significant minorities
       in Chad, Benin and Cameroon. Hausa is a member of the Afroasiatic language family
@@ -2850,8 +2794,7 @@
     sl: havščina
     sv: hausa
     uk: хауза
-- crosswalks: []
-  description:
+- description:
     en: Serbo-Croatian, also called Serbo-Croat, Serbo-Croat-Bosnian (SCB), or Bosnian-Croatian-Serbian
       (BCS), is a South Slavic language and the primary language of Serbia, Croatia,
       Bosnia and Herzegovina, and Montenegro. It is a pluricentric language with four
@@ -2912,8 +2855,7 @@
     sv: serbokroatiska
     tr: sırp-Hırvatça
     uk: сербохорватська мова
-- crosswalks: []
-  description:
+- description:
     en: Hebrew is a North-Western Semitic language of the Afroasiatic language family,
       employed since biblical times by Jews. It was revived as a spoken and literary
       language in the 19th century. Modern Hebrew is one of the two official languages
@@ -2941,8 +2883,8 @@
     ISO_639_2B: heb
     ISO_639_2T: heb
     ISO_639_3: heb
-    PUB_LANG: HE
-    PUB_LNGISO: HE
+    PUB_LANG: IW
+    PUB_LNGISO: IW
     TED: HE
     TED_SCHEMA: HE
     XML_LNG: he
@@ -2980,8 +2922,7 @@
     sv: hebreiska
     tr: ıbranice
     uk: гебрейська мова
-- crosswalks: []
-  id: her
+- id: her
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/her
     scheme: https://nma.eosc.cz/vocabularies/
@@ -2999,8 +2940,7 @@
   title:
     en: herero
     hz: herero
-- crosswalks: []
-  description:
+- description:
     en: Hindi, or more precisely Modern Standard Hindi, is a standardised and Sanskritised
       register of the Hindustani language. Modern Standard Hindi is one of the official
       languages of India. Hindi is the fourth-most-widely spoken language in the world,
@@ -3067,8 +3007,7 @@
     sv: hindi
     tr: hintçe
     uk: хінді
-- crosswalks: []
-  description:
+- description:
     en: Hiri Motu is a simplified version of the Austronesian language Motu. It is
       one of the official languages of Papua New Guinea.
   id: hmo
@@ -3112,8 +3051,7 @@
     sl: hiri motu
     sv: hiri-motu
     uk: хірі моту
-- crosswalks: []
-  description:
+- description:
     en: Croatian is the standardised variety of the Serbo-Croatian language used by
       Croats, principally in Croatia and in Bosnia and Herzegovina. Standard Croatian
       is based on the Shtokavian dialect of Serbo-Croatian.Croatian uses exclusively
@@ -3176,8 +3114,7 @@
     sv: kroatiska
     tr: hırvatça
     uk: хорватська мова
-- crosswalks: []
-  description:
+- description:
     en: Hungarian (Magyar), like Finnish and Estonian, belongs to the Finno-Ugric
       branch of the Uralic language family. It is the official language of Hungary
       and is also spoken by communities of Hungarian people in neighbouring countries.In
@@ -3241,8 +3178,7 @@
     sv: ungerska
     tr: macarca
     uk: угорська мова
-- crosswalks: []
-  description:
+- description:
     en: The Armenian language (hayeren) forms an independent branch of the Indo-European
       family. It is spoken in the Republic of Armenia (where it is the official language),
       in Nagorno-Karabakh, in north-western Iran and in the Armenian diaspora.Armenian
@@ -3307,8 +3243,7 @@
     sv: armeniska
     tr: ermenice
     uk: вірменська мова
-- crosswalks: []
-  description:
+- description:
     en: Igbo belongs to the Igboid branch of the Niger–Congo language family. It is
       the principal native language of the Igbo people, an ethnic group of southeastern
       Nigeria.
@@ -3361,8 +3296,7 @@
     sl: igboščina
     sv: igbo
     uk: ігбо
-- crosswalks: []
-  id: ido
+- id: ido
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/ido
     scheme: https://nma.eosc.cz/vocabularies/
@@ -3380,8 +3314,7 @@
   title:
     en: ido
     io: ido
-- crosswalks: []
-  id: iii
+- id: iii
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/iii
     scheme: https://nma.eosc.cz/vocabularies/
@@ -3399,8 +3332,7 @@
   title:
     en: sichuan Yi
     ii: sichuan Yi
-- crosswalks: []
-  id: iku
+- id: iku
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/iku
     scheme: https://nma.eosc.cz/vocabularies/
@@ -3418,8 +3350,7 @@
   title:
     en: inuktitut
     iu: inuktitut
-- crosswalks: []
-  id: ile
+- id: ile
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/ile
     scheme: https://nma.eosc.cz/vocabularies/
@@ -3437,8 +3368,7 @@
   title:
     en: interlingue
     ie: interlingue
-- crosswalks: []
-  description:
+- description:
     en: 'Interlingua is an international auxiliary language (IAL), a modern version
       of Latin, developed between 1937 and 1951 by the International Auxiliary Language
       Association. It ranks among the top three most widely used IALs (after Esperanto
@@ -3505,8 +3435,7 @@
     sv: interlingua
     tr: interlingua
     uk: інтерлінгва
-- crosswalks: []
-  description:
+- description:
     en: Indonesian is the official language of Indonesia. It is a standardised register
       of Malay, an Austronesian language which has been used as a lingua franca in
       the Indonesian archipelago for centuries. Most Indonesians also speak one of
@@ -3570,8 +3499,7 @@
     sv: indonesiska
     tr: endonezce
     uk: індонезійська мова
-- crosswalks: []
-  id: ipk
+- id: ipk
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/ipk
     scheme: https://nma.eosc.cz/vocabularies/
@@ -3589,8 +3517,7 @@
   title:
     en: inupiaq
     ik: inupiaq
-- crosswalks: []
-  description:
+- description:
     en: Icelandic is an Indo-European language belonging to the North Germanic or
       Nordic branch of the Germanic languages. The vast majority of Icelandic speakers
       live in Iceland. Most Icelanders do not have surnames but patronymics. Forenames
@@ -3657,8 +3584,7 @@
     sv: isländska
     tr: ızlandaca
     uk: ісландська мова
-- crosswalks: []
-  description:
+- description:
     en: Italian is a member of the Romance language group, spoken mainly in south
       Europe. Among the Romance languages, Italian is the closest to Latin in terms
       of vocabulary. The Italian language adopted by the state after the unification
@@ -3725,8 +3651,7 @@
     sv: italienska
     tr: ıtalyanca
     uk: італійська мова
-- crosswalks: []
-  id: jav
+- id: jav
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/jav
     scheme: https://nma.eosc.cz/vocabularies/
@@ -3744,8 +3669,7 @@
   title:
     en: javanese
     jv: javanese
-- crosswalks: []
-  description:
+- description:
     en: Japanese is an East Asian language spoken primarily in Japan. It is a member
       of the Japonic (or Japanese-Ryukyuan) language family, whose relation to other
       language groups is debated. Japanese has no genetic relationship with Chinese,
@@ -3816,8 +3740,7 @@
     sv: japanska
     tr: japonca
     uk: японська мова
-- crosswalks: []
-  description:
+- description:
     en: Kalaallisut, also known as West Greenlandic, is the official language of Greenland.
       It is spoken by the majority of the inhabitants of Greenland, as well as by
       thousands of Greenlandic Inuit in Denmark. The standard form of Greenlandic
@@ -3891,8 +3814,7 @@
     sv: kalaallisut
     tr: kalaallisut
     uk: калааллісут
-- crosswalks: []
-  id: kan
+- id: kan
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/kan
     scheme: https://nma.eosc.cz/vocabularies/
@@ -3910,8 +3832,7 @@
   title:
     en: kannada
     kn: kannada
-- crosswalks: []
-  id: kas
+- id: kas
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/kas
     scheme: https://nma.eosc.cz/vocabularies/
@@ -3929,8 +3850,7 @@
   title:
     en: kashmiri
     ks: kashmiri
-- crosswalks: []
-  description:
+- description:
     en: Georgian (Kartuli) is the most widely spoken of the Caucasian languages. It
       is the official language of Georgia.Georgian is written in its own unique writing
       system, the Georgian script.Georgian is the literary language for all regional
@@ -3992,8 +3912,7 @@
     sv: georgiska
     tr: gürcüce
     uk: грузинська мова
-- crosswalks: []
-  id: kau
+- id: kau
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/kau
     scheme: https://nma.eosc.cz/vocabularies/
@@ -4011,8 +3930,7 @@
   title:
     en: kanuri
     kr: kanuri
-- crosswalks: []
-  description:
+- description:
     en: Kazakh is a Turkic language belonging to the Kipchak (or North-Western Turkic)
       branch. Kazakh is primarily a Central Asian language and is spoken in Europe
       in the region between the lower Volga and the frontier of Kazakhstan.Today,
@@ -4078,8 +3996,7 @@
     sv: kazakiska
     tr: kazakça
     uk: казахська мова
-- crosswalks: []
-  description:
+- description:
     en: Khmer, or Cambodian, is the second most widely spoken Austroasiatic language
       (after Vietnamese). It is the language of the Khmer people and the official
       language of Cambodia.Khmer is primarily an analytic, isolating language which
@@ -4141,8 +4058,7 @@
     sv: khmer
     tr: khmerce
     uk: кхмерська мова
-- crosswalks: []
-  id: kik
+- id: kik
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/kik
     scheme: https://nma.eosc.cz/vocabularies/
@@ -4160,8 +4076,7 @@
   title:
     en: kikuyu
     ki: kikuyu
-- crosswalks: []
-  description:
+- description:
     en: Kinyarwanda is a Bantu language. It is one of the official languages of Rwanda.
   id: kin
   identifiers:
@@ -4204,8 +4119,7 @@
     sl: ruandščina
     sv: rwanda
     uk: кіньяруанда
-- crosswalks: []
-  description:
+- description:
     en: Kyrgyz is a Turkic language spoken in Kyrgyzstan as well as China, Afghanistan,
       Kazakhstan, Tajikistan, Turkey, Uzbekistan, Pakistan and Russia. Kyrgyz is a
       member of the Kyrgyz–Kipchak subgroup of the Kypchak languages, and modern-day
@@ -4274,8 +4188,7 @@
     sv: kirgiziska
     tr: kırgızca
     uk: киргизька мова
-- crosswalks: []
-  id: kom
+- id: kom
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/kom
     scheme: https://nma.eosc.cz/vocabularies/
@@ -4293,8 +4206,7 @@
   title:
     en: komi
     kv: komi
-- crosswalks: []
-  description:
+- description:
     en: Kikongo is a Bantu language.
   id: kon
   identifiers:
@@ -4337,8 +4249,7 @@
     sl: kikongo
     sv: kikongo
     uk: кіконго
-- crosswalks: []
-  description:
+- description:
     en: Korean is the official language of South Korea and North Korea. For over a
       millennium, Korean was written with adapted Chinese characters called hanja,
       complemented by phonetic systems like hyangchal, gugyeol, and idu. In the 15th
@@ -4406,8 +4317,7 @@
     sv: koreanska
     tr: korece
     uk: корейська мова
-- crosswalks: []
-  id: kua
+- id: kua
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/kua
     scheme: https://nma.eosc.cz/vocabularies/
@@ -4425,8 +4335,7 @@
   title:
     en: kuanyama
     kj: kuanyama
-- crosswalks: []
-  description:
+- description:
     en: Kurdish is a member of the Iranian subgroup of the Indo-European languages,
       spoken by the Kurdish people in Iran, Iraq, Turkey and Syria. The term ‘Kurdish
       languages’ is also used instead of ‘Kurdish language’ because the dialects are
@@ -4492,8 +4401,7 @@
     sv: kurdiska
     tr: kürtçe
     uk: курдська мова
-- crosswalks: []
-  description:
+- description:
     en: Lao or Laotian is a tonal language of the Tai–Kadai language family. It is
       the official language of Laos, and also spoken in the north-east of Thailand.Lao,
       like many languages in Laos, is written in the Lao script, which is an abugida
@@ -4554,8 +4462,7 @@
     sv: lao
     tr: lao
     uk: лаоська мова
-- crosswalks: []
-  description:
+- description:
     en: Latin is an extinct Indo-European language which was spoken in the ancient
       city of Rome and its empire. Modern Romance languages are continuations of dialectal
       forms (vulgar Latin) of the language.Additionally many students, scholars, and
@@ -4622,8 +4529,7 @@
     sv: latin
     tr: latince
     uk: латинська мова
-- crosswalks: []
-  description:
+- description:
     en: Latvian is one of the two living members of the Baltic languages, the other
       being Lithuanian. It is the official language of Latvia.Latvian is more innovative,
       especially in morphology than Lithuanian.
@@ -4685,8 +4591,7 @@
     sv: lettiska
     tr: letonca
     uk: латиська мова
-- crosswalks: []
-  id: lim
+- id: lim
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/lim
     scheme: https://nma.eosc.cz/vocabularies/
@@ -4704,8 +4609,7 @@
   title:
     en: limburgan
     li: limburgan
-- crosswalks: []
-  description:
+- description:
     en: Lingala is a Bantu language.
   id: lin
   identifiers:
@@ -4750,8 +4654,7 @@
     sl: lingala
     sv: lingala
     uk: лінгала
-- crosswalks: []
-  description:
+- description:
     en: Lithuanian is one of the two living members of the Baltic languages, the other
       being Latvian. It is the official language of Lithuania.The Lithuanian language
       is often said to be the most conservative living Indo-European language, retaining
@@ -4816,8 +4719,7 @@
     sv: litauiska
     tr: litvanca
     uk: литовська мова
-- crosswalks: []
-  description:
+- description:
     en: Luxembourgish is a Germanic language which belongs to the West Moselle Franconian
       subgroup of German dialects. Luxembourgish is spoken mainly in the Grand Duchy
       of Luxembourg.
@@ -4839,7 +4741,7 @@
     ISO_639_2T: ltz
     ISO_639_3: ltz
     PUB_LANG: LB
-    PUB_LNGISO: LB
+    PUB_LNGISO: LX
     TED: LB
     TED_SCHEMA: LB
     XML_LNG: lb
@@ -4877,8 +4779,7 @@
     sv: luxemburgska
     tr: lüksemburgca
     uk: люксембурзька мова
-- crosswalks: []
-  id: lub
+- id: lub
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/lub
     scheme: https://nma.eosc.cz/vocabularies/
@@ -4896,8 +4797,7 @@
   title:
     en: luba-Katanga
     lu: luba-Katanga
-- crosswalks: []
-  id: lug
+- id: lug
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/lug
     scheme: https://nma.eosc.cz/vocabularies/
@@ -4915,8 +4815,7 @@
   title:
     en: ganda
     lg: ganda
-- crosswalks: []
-  description:
+- description:
     en: Marshallese is a Malayo-Polynesian language. It is one of the official languages
       of the Marshall Islands.
   id: mah
@@ -4960,8 +4859,7 @@
     sl: marshallovščina
     sv: marshallesiska
     uk: маршальська мова
-- crosswalks: []
-  id: mal
+- id: mal
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/mal
     scheme: https://nma.eosc.cz/vocabularies/
@@ -4979,8 +4877,7 @@
   title:
     en: malayalam
     ml: malayalam
-- crosswalks: []
-  id: mar
+- id: mar
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/mar
     scheme: https://nma.eosc.cz/vocabularies/
@@ -4998,8 +4895,7 @@
   title:
     en: marathi
     mr: marathi
-- crosswalks: []
-  description:
+- description:
     en: Macedonian is a member of the southern subgroup of the Slavic languages, spoken
       principally in North Macedonia.
     fr: Le macédonien est une langue appartenant au sous-groupe méridional des langues
@@ -5058,8 +4954,7 @@
     sv: makedonska
     tr: makedonca
     uk: македонська мова
-- crosswalks: []
-  description:
+- description:
     en: Malagasy is an Austronesian language and the national language of Madagascar.
       Most people in Madagascar speak it as a first language as do some people of
       Malagasy descent elsewhere. The Malagasy language is the westernmost member
@@ -5124,8 +5019,7 @@
     sv: malagassiska
     tr: malagasi
     uk: малагасійська мова
-- crosswalks: []
-  description:
+- description:
     en: Maltese is a Semitic language, historically a dialect of Arabic, spoken in
       Malta. About half of the vocabulary is derived from standard Italian and Sicilian;
       English words also make up an important part of the Maltese vocabulary.It is
@@ -5190,8 +5084,7 @@
     sv: maltesiska
     tr: maltaca
     uk: мальтійська мова
-- crosswalks: []
-  description:
+- description:
     en: Moldavian or Moldovan is a name of the Romanian language in the Republic of
       Moldova. The identity between the mother tongues of the Moldovans and Romanians
       has been officially acknowledged since the reintroduction of the Latin script
@@ -5263,8 +5156,7 @@
     sv: moldaviska
     tr: moldovca
     uk: молдавська мова
-- crosswalks: []
-  description:
+- description:
     en: The Mongolian language is the best-known member of the Mongolic language family.In
       Mongolia, the Khalkha dialect, written in Cyrillic, is predominant, while in
       Inner Mongolia, the language is dialectally more diverse and is written in the
@@ -5329,8 +5221,7 @@
     sv: mongoliska
     tr: moğolca
     uk: монгольська мова
-- crosswalks: []
-  description:
+- description:
     en: Māori is a Malayo-Polynesian language. It is one of the official languages
       of New Zealand.
   id: mri
@@ -5374,8 +5265,7 @@
     sl: maorščina
     sv: maori
     uk: маорі
-- crosswalks: []
-  description:
+- description:
     en: Malay, endonym Bahasa Melayu, is an Austronesian macrolanguage within the
       Malayo-Polynesian branch spoken primarily on islands in maritime Southeast Asia
       and Malay Peninsula in mainland Asia. It is an official language of Brunei,
@@ -5456,8 +5346,7 @@
     sv: malajiska
     tr: malayca
     uk: малайська мова
-- crosswalks: []
-  description:
+- description:
     en: Burmese is a Sino-Tibetan language. It is the official language of Myanmar.
       The Burmese alphabet is a Brahmic script, an abugida writing system.
   id: mya
@@ -5503,8 +5392,7 @@
     sl: burmanščina
     sv: burmesiska
     uk: бірманська мова
-- crosswalks: []
-  description:
+- description:
     en: Nauruan is a Malayo-Polynesian language. It is one of the official languages
       of Nauru.
   id: nau
@@ -5548,8 +5436,7 @@
     sl: naurujščina
     sv: nauruanska
     uk: науруанська мова
-- crosswalks: []
-  id: nav
+- id: nav
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/nav
     scheme: https://nma.eosc.cz/vocabularies/
@@ -5567,8 +5454,7 @@
   title:
     en: navajo
     nv: navajo
-- crosswalks: []
-  description:
+- description:
     en: Southern Ndebele is a Bantu language. It is one of the official languages
       of South Africa.
   id: nbl
@@ -5612,8 +5498,7 @@
     sl: južni ndebele
     sv: sydndebele
     uk: південна ндебеле
-- crosswalks: []
-  description:
+- description:
     en: North Ndebele is the language spoken by the Zimbabwe Ndebele, also known as
       Matabele, in the Matabeleland region around the city of Bulawayo. It's a Bantu
       language of the Nguni group, closely related to Zulu. The Ndebele people of
@@ -5660,8 +5545,7 @@
     sk: severná ndebelčina
     sl: severna ndebelščina
     sv: nordndebele
-- crosswalks: []
-  id: ndo
+- id: ndo
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/ndo
     scheme: https://nma.eosc.cz/vocabularies/
@@ -5679,8 +5563,7 @@
   title:
     en: ndonga
     ng: ndonga
-- crosswalks: []
-  description:
+- description:
     en: Nepali or Nepalese is an Indo-Aryan language. It is the official language
       and de facto lingua franca of Nepal and is also spoken in India, Bhutan, Myanmar,
       Hong Kong and United Kingdom. Nepali developed in proximity to a number of Indo-Aryan
@@ -5743,8 +5626,7 @@
     sv: nepali
     tr: nepali
     uk: непальська мова
-- crosswalks: []
-  description:
+- description:
     en: Dutch is a West Germanic language whose closest relative is German. It is
       spoken in the Netherlands, by about 60% of the population of Belgium, in Suriname
       and in the Caribbean island nations of Aruba, Curaçao, and Sint Maarten. The
@@ -5809,8 +5691,7 @@
     sv: nederländska
     tr: hollandaca
     uk: нідерландська мова
-- crosswalks: []
-  description:
+- description:
     en: Nynorsk is one of the two official written standards of the Norwegian language,
       the other being Bokmål. The name Nynorsk was introduced in 1929. After a series
       of reforms, it is still the written standard closer to Landsmål, Ivar Aasen's
@@ -5859,8 +5740,7 @@
     sl: novonorveščina
     sv: norska (nynorska)
     uk: норвезька нюнорська мова
-- crosswalks: []
-  description:
+- description:
     en: Bokmål is one of the two official written standards of the Norwegian language,
       the other being nynorsk. Bokmål is by far the most used written form of Norwegian
       today, as it is adopted by around 90% of the population in Norway. There is
@@ -5908,8 +5788,7 @@
     sl: knjižna norveščina
     sv: norska (bokmål)
     uk: букмол
-- crosswalks: []
-  description:
+- description:
     en: 'Norwegian belongs to the Northern branch of Germanic languages. It is spoken
       primarily in Norway. Together with Swedish and Danish, Norwegian forms a continuum
       of more or less mutually intelligible local and regional variants. Germanic
@@ -5935,7 +5814,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: 'NO'
-    FD_060: 'NO'
+    FD_060: N
     ISO_639_1: 'no'
     ISO_639_2B: nor
     ISO_639_2T: nor
@@ -5979,8 +5858,7 @@
     sv: norska
     tr: norveççe
     uk: норвезька мова
-- crosswalks: []
-  description:
+- description:
     en: Chichewa or Chewa or Chinyanja or Nyanja is a Bantu language spoken in Malawi
       and a recognised minority language in Eastern Zambia and Tete province of Mozambique.
       It is a minority language also in northeastern Zimbabwe. In Malawi, the name
@@ -6046,8 +5924,7 @@
     sl: njanščina
     sv: chichewa
     uk: чева
-- crosswalks: []
-  description:
+- description:
     en: Occitan is the generic name for Romance idioms which are native mainly to
       southern France. There are polemics about the unity of the language, as some
       think that Occitan is a macrolanguage. There is no single written standard language
@@ -6111,8 +5988,7 @@
     sv: occitanska
     tr: oksitanca
     uk: окситанська мова
-- crosswalks: []
-  id: oji
+- id: oji
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/oji
     scheme: https://nma.eosc.cz/vocabularies/
@@ -6130,8 +6006,7 @@
   title:
     en: ojibwa
     oj: ojibwa
-- crosswalks: []
-  id: ori
+- id: ori
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/ori
     scheme: https://nma.eosc.cz/vocabularies/
@@ -6149,8 +6024,7 @@
   title:
     en: oriya
     or: oriya
-- crosswalks: []
-  id: orm
+- id: orm
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/orm
     scheme: https://nma.eosc.cz/vocabularies/
@@ -6168,8 +6042,7 @@
   title:
     en: oromo
     om: oromo
-- crosswalks: []
-  description:
+- description:
     en: Iron Ossetic or Iron Ossetian or simply Iron, Ossetic or Ossetian, is a member
       of the Iranian subgroup of the Indo-European languages, the world’s largest
       language family by number of native speakers. Iron Ossetic is spoken in Ossetia,
@@ -6233,8 +6106,7 @@
     sv: ironossetiska
     tr: iron osetçesi
     uk: иронський
-- crosswalks: []
-  description:
+- description:
     en: Punjabi is an Indo-Aryan language spoken by over 100 million native speakers
       worldwide. It is the native language of the Punjabi people in India and Pakistan.
       Punjabi is written in both the Shahmukhi and the Gurmukhi scripts.
@@ -6290,8 +6162,7 @@
     sv: panjabi
     tr: pencapça
     uk: панджабі
-- crosswalks: []
-  id: pli
+- id: pli
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/pli
     scheme: https://nma.eosc.cz/vocabularies/
@@ -6309,8 +6180,7 @@
   title:
     en: pali
     pi: pali
-- crosswalks: []
-  description:
+- description:
     en: Polish is the eastern member of the Lechitic branch of the West Slavic languages.
       It is spoken primarily in Poland.Polish is the second most widely spoken Slavic
       language, after Russian.
@@ -6372,8 +6242,7 @@
     sv: polska
     tr: lehçe
     uk: польська мова
-- crosswalks: []
-  description:
+- description:
     en: Portuguese is a member of the Ibero-Romance subgroup of the Romance languages.
       It is spoken in Portugal, Brazil, Mozambique, Angola, Cape Verde, Guinea-Bissau,
       São Tomé and Príncipe, Macau (China), Equatorial Guinea and East Timor.Portuguese
@@ -6393,7 +6262,7 @@
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: PT
-    FD_060: P
+    FD_060: PT
     ISO_639_1: pt
     ISO_639_2B: por
     ISO_639_2T: por
@@ -6438,8 +6307,7 @@
     sv: portugisiska
     tr: portekizce
     uk: португальська мова
-- crosswalks: []
-  description:
+- description:
     en: Pashto, also known historically as Afghani and Pathani, is the native language
       of the Pashtun people of south-central Asia. Pashto is a member of the Eastern
       Iranian languages group.Pashto employs the Pashto alphabet, a modified form
@@ -6492,8 +6360,7 @@
     sl: paštunščina
     sv: pashto
     uk: пушту
-- crosswalks: []
-  description:
+- description:
     en: Quechua or Southern Quechua is a Quachuan indigenous language. It is one of
       the official languages of Bolivia and Peru.
   id: que
@@ -6537,8 +6404,7 @@
     sl: kečuanščina
     sv: quechua
     uk: кечуа
-- crosswalks: []
-  description:
+- description:
     en: Romansh is a group of Rhaeto-Romance dialects spoken predominantly in the
       south-eastern Swiss canton of Grisons.Romansh has a strong dialectal fragmentation.
       Almost every village has its own vernacular, and five different regional dialects
@@ -6599,8 +6465,7 @@
     sv: romanska
     tr: romanşça
     uk: ретороманська мова
-- crosswalks: []
-  description:
+- description:
     en: 'Romanian is a Romance language spoken principally in Romania and Moldova.
       Much of the total Romanian vocabulary is derived from Latin.Romanian has four
       varieties: Daco-Romanian, Istro-Romanian, Aromanian and Megleno-Romanian.'
@@ -6663,8 +6528,7 @@
     sv: rumänska
     tr: rumence
     uk: румунська мова
-- crosswalks: []
-  description:
+- description:
     en: Kirundi is a Bantu language. It is one of the official languages of Burundi.
   id: run
   identifiers:
@@ -6707,8 +6571,7 @@
     sl: rundščina
     sv: rundi
     uk: кірунді
-- crosswalks: []
-  description:
+- description:
     en: Russian is an East Slavic language with a close relation to Ukrainian and
       Belarusian. It is an official or unofficial but widely spoken language in some
       countries that were once constituent republics of the Soviet Union.Russian is
@@ -6771,8 +6634,7 @@
     sv: ryska
     tr: rusça
     uk: російська мова
-- crosswalks: []
-  description:
+- description:
     en: Sango is a Ngbandi-based creole language. It is one of the official languages
       of the Central African Republic.
   id: sag
@@ -6816,8 +6678,7 @@
     sl: sango
     sv: sango
     uk: санго
-- crosswalks: []
-  description:
+- description:
     en: Sanskrit is a classical language belonging to the Indo-Aryan branch of the
       Indo-European languages. It arose in northwest South Asia after its predecessor
       languages had diffused there from the northwest in the late Bronze Age. Sanskrit
@@ -6868,8 +6729,7 @@
     sk: sanskrit
     sl: sanskrt
     sv: sanskrit
-- crosswalks: []
-  description:
+- description:
     en: Sinhala is the native language of the Sinhalese people, who make up the largest
       ethnic group in Sri Lanka. It belongs to the Indo-Aryan branch of the Indo-European
       languages.Sinhala has its own writing system, the Sinhala alphabet, which is
@@ -6930,8 +6790,7 @@
     sv: singalesiska
     tr: singalaca
     uk: сингальська мова
-- crosswalks: []
-  description:
+- description:
     en: Slovak is a member of the western subgroup of Slavic languages, mainly spoken
       in Slovakia where it is protected by a language law.Slovak is very close to
       the Czech.
@@ -6993,8 +6852,7 @@
     sv: slovakiska
     tr: slovakça
     uk: словацька мова
-- crosswalks: []
-  description:
+- description:
     en: Slovenian or Slovene is a member of the southern subgroup of the Slavic languages,
       spoken mainly in Slovenia.The distinctive characteristic of Slovene that it
       has preserved the use of dual grammatical number in addition to singular and
@@ -7058,8 +6916,7 @@
     sv: slovenska
     tr: slovence
     uk: словенська мова
-- crosswalks: []
-  description:
+- description:
     en: Northern or North Sami (davvisámegiella) is the most widely spoken of all
       Sami languages. It is spoken in the northern parts of Norway, Sweden and Finland.
       In Norway, Northern Sami is currently an official language in several municipalities
@@ -7124,8 +6981,7 @@
     sv: nordsamiska
     tr: kuzeylapça
     uk: північносаамська мова
-- crosswalks: []
-  description:
+- description:
     en: Samoan is a Malayo-Polynesian language. It is one of the official languages
       of Samoa and American Samoa.
   id: smo
@@ -7169,8 +7025,7 @@
     sl: samoanščina
     sv: samoanska
     uk: самоанська мова
-- crosswalks: []
-  description:
+- description:
     en: Shona is a Bantu language of the Shona people of Zimbabwe. The term is variously
       used to collectively describe all the Central Shonic varieties (comprising Zezuru,
       Manyika, Korekore and Karanga) or specifically Standard Shona, a variety codified
@@ -7218,8 +7073,7 @@
     sk: šončina
     sl: šonščina
     sv: shona
-- crosswalks: []
-  id: snd
+- id: snd
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/snd
     scheme: https://nma.eosc.cz/vocabularies/
@@ -7237,8 +7091,7 @@
   title:
     en: sindhi
     sd: sindhi
-- crosswalks: []
-  description:
+- description:
     en: Somali belongs to the Cushitic branch of the Afro-Asiatic languages, one of
       the largest language families in the world after Indo-European, Sino-Tibetan
       and Atlantic-Congo. It is spoken as a mother tongue by ethnic Somalis in Somalia
@@ -7298,8 +7151,7 @@
     sl: somalijščina
     sv: somaliska
     uk: сомалійська мова
-- crosswalks: []
-  description:
+- description:
     en: Southern Sotho is a Bantu language. It is one of the official languages of
       South Africa.
   id: sot
@@ -7343,8 +7195,7 @@
     sl: južni sotho
     sv: sydsotho
     uk: південна сото
-- crosswalks: []
-  description:
+- description:
     en: Spanish is a member of the Romance language family. It is spoken in Spain
       and in the continents of North and South America.Spanish is second after Mandarin
       in terms of its number of native speakers worldwide. From the last decades of
@@ -7409,8 +7260,7 @@
     sv: spanska
     tr: ıspanyolca
     uk: іспанська мова
-- crosswalks: []
-  description:
+- description:
     en: 'Albanian (shqip) forms a separate branch of the Indo-European family. It
       is the official language of Albania and also spoken in Kosovo, North Macedonia,
       Italy and Greece.Albanian is divided into two major dialects: Gheg (spoken in
@@ -7475,8 +7325,7 @@
     sv: albanska
     tr: arnavutça
     uk: албанська мова
-- crosswalks: []
-  id: srd
+- id: srd
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/srd
     scheme: https://nma.eosc.cz/vocabularies/
@@ -7494,8 +7343,7 @@
   title:
     en: sardinian
     sc: sardinian
-- crosswalks: []
-  description:
+- description:
     en: Serbian is the standardised variety of the Serbo-Croatian language, spoken
       mainly in Serbia, Montenegro, Bosnia and Herzegovina. Standard Serbian is based
       on the Shtokavian dialect of Serbo-Croatian.Serbian uses both Cyrillic and Latin
@@ -7558,8 +7406,7 @@
     sv: serbiska
     tr: sırpça
     uk: сербська мова
-- crosswalks: []
-  description:
+- description:
     en: Swazi is a Bantu language. It is one of the official languages of South Africa.
   id: ssw
   identifiers:
@@ -7602,8 +7449,7 @@
     sl: svazijščina
     sv: swazi
     uk: свазі мова
-- crosswalks: []
-  id: sun
+- id: sun
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/sun
     scheme: https://nma.eosc.cz/vocabularies/
@@ -7621,8 +7467,7 @@
   title:
     en: sundanese
     su: sundanese
-- crosswalks: []
-  description:
+- description:
     en: The Swahili language is a Bantu language and the mother tongue of the Swahili
       people. It is spoken by various communities inhabiting the African Great Lakes
       region and other parts of south-east Africa, mainly as a lingua franca. The
@@ -7685,8 +7530,7 @@
     sv: swahili
     tr: swahili
     uk: свахілі мова
-- crosswalks: []
-  description:
+- description:
     en: 'Swedish is a North Germanic language, spoken mainly in Sweden and parts of
       Finland. It is largely mutually intelligible with Norwegian and Danish.Swedish
       uses two genders: neutrum and utrum which unifies the old masculin and femenin.'
@@ -7749,8 +7593,7 @@
     sv: svenska
     tr: ısveççe
     uk: шведська мова
-- crosswalks: []
-  id: tah
+- id: tah
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/tah
     scheme: https://nma.eosc.cz/vocabularies/
@@ -7768,8 +7611,7 @@
   title:
     en: tahitian
     ty: tahitian
-- crosswalks: []
-  description:
+- description:
     en: Tamil is a Dravidian language spoken in South-East Asia.Tamil is one of the
       longest surviving classical languages in the world; ‘the only language of contemporary
       India which is recognisably continuous with a classical past.’Tamil was written
@@ -7833,8 +7675,7 @@
     sv: tamil
     tr: tamilce
     uk: тамільська мова
-- crosswalks: []
-  id: tat
+- id: tat
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/tat
     scheme: https://nma.eosc.cz/vocabularies/
@@ -7852,8 +7693,7 @@
   title:
     en: tatar
     tt: tatar
-- crosswalks: []
-  id: tel
+- id: tel
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/tel
     scheme: https://nma.eosc.cz/vocabularies/
@@ -7871,8 +7711,7 @@
   title:
     en: telugu
     te: telugu
-- crosswalks: []
-  id: tgl
+- id: tgl
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/tgl
     scheme: https://nma.eosc.cz/vocabularies/
@@ -7890,8 +7729,7 @@
   title:
     en: tagalog
     tl: tagalog
-- crosswalks: []
-  description:
+- description:
     en: Thai, or more precisely Siamese or Central Thai, is a member of the Tai group
       of the Tai–Kadai language family. It is a tonal and analytic language. Thai
       also has a complex orthography and relational markers. Thai is mutually intelligible
@@ -7951,8 +7789,7 @@
     sv: thai
     tr: tayca
     uk: тайська мова
-- crosswalks: []
-  description:
+- description:
     en: 'Tigrinya is an Afro-Asiatic language, belonging to the family’s Semitic branch.
       It is spoken by ethnic Tigray-Tigrinya in the Horn of Africa.Tigrinya is written
       in the Ge’ez script, originally developed for Ge’ez, also called Ethiopic. The
@@ -8005,8 +7842,7 @@
     sl: tigrajščina
     sv: tigrinska
     uk: тигрінья мова
-- crosswalks: []
-  description:
+- description:
     en: Tongan is a Malayo-Polynesian language. It is one of the official languages
       of Tonga.
   id: ton
@@ -8050,8 +7886,7 @@
     sl: tongščina
     sv: tonga
     uk: тонганська мова
-- crosswalks: []
-  description:
+- description:
     en: Tswana is a Bantu language. It is one of the official languages of South Africa.
   id: tsn
   identifiers:
@@ -8094,8 +7929,7 @@
     sl: cvanščina
     sv: tswana
     uk: сетсвана
-- crosswalks: []
-  description:
+- description:
     en: Tsonga is a Bantu language. It is one of the official languages of South Africa.
   id: tso
   identifiers:
@@ -8138,8 +7972,7 @@
     sl: tsonga
     sv: tsonga
     uk: тсонга
-- crosswalks: []
-  description:
+- description:
     en: Turkmen or Turkoman is spoken in Asia. Turkmen is a member of the East Oghuz
       branch of the Turkic family of languages; its closest relatives being Anatolian
       Turkish and Azerbaijani, with which it shares a relatively high degree of mutual
@@ -8204,8 +8037,7 @@
     sv: turkmeniska
     tr: türkmence
     uk: туркменська мова
-- crosswalks: []
-  description:
+- description:
     en: Turkish is the most widely spoken of the Turkic languages in south-eastern
       Europe and western Asia. It is closely related to Azeri and Turkmen.In 1928,
       as one of Atatürk’s Reforms, the Arabic script was replaced with a Latin alphabet.
@@ -8266,8 +8098,7 @@
     sv: turkiska
     tr: türkçe
     uk: турецька мова
-- crosswalks: []
-  id: twi
+- id: twi
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/twi
     scheme: https://nma.eosc.cz/vocabularies/
@@ -8285,8 +8116,7 @@
   title:
     en: twi
     tw: twi
-- crosswalks: []
-  id: uig
+- id: uig
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/uig
     scheme: https://nma.eosc.cz/vocabularies/
@@ -8304,8 +8134,7 @@
   title:
     en: uighur
     ug: uighur
-- crosswalks: []
-  description:
+- description:
     en: Ukrainian is one of the East Slavic languages and shares many grammatical
       and lexical features with other members of the branch, Russian and Belorusian.
       It is spoken mainly in Ukraine.Ukrainian is written with the Cyrillic alphabet.
@@ -8365,8 +8194,7 @@
     sv: ukrainska
     tr: ukrayna
     uk: українська мова
-- crosswalks: []
-  description:
+- description:
     en: Urdu is a standardised register of the Hindustani language. Urdu is historically
       associated with the Muslims of the region of Hindustan.Urdu is written right-to-left
       in an extension of the Persian alphabet, which is itself an extension of the
@@ -8426,8 +8254,7 @@
     sv: urdu
     tr: urduca
     uk: урду
-- crosswalks: []
-  description:
+- description:
     en: Uzbek is an Eastern Turkic language and is spoken by the Uzbeks in Uzbekistan
       and elsewhere in Central Asia.Until 1992, Uzbek continued to be written using
       a Cyrillic alphabet almost everywhere, but now in Uzbekistan the Latin script
@@ -8490,8 +8317,7 @@
     sv: uzbekiska
     tr: özbekçe
     uk: узбецька мова
-- crosswalks: []
-  description:
+- description:
     en: Venda is a Bantu language. It is one of the official languages of South Africa.
   id: ven
   identifiers:
@@ -8534,8 +8360,7 @@
     sl: jezik venda
     sv: venda
     uk: вендійська мова
-- crosswalks: []
-  description:
+- description:
     en: Vietnamese is the native language of Vietnamese people. It is part of the
       Austroasiatic language family of which it has, by far, the most speakers.The
       Vietnamese alphabet (quốc ngữ) in use today is a Latin alphabet with additional
@@ -8596,8 +8421,7 @@
     sv: vietnamesiska
     tr: vietnamca
     uk: в'єтнамська мова
-- crosswalks: []
-  id: vol
+- id: vol
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/vol
     scheme: https://nma.eosc.cz/vocabularies/
@@ -8615,8 +8439,7 @@
   title:
     en: volapük
     vo: volapük
-- crosswalks: []
-  description:
+- description:
     en: Walloon is a Romance language, a langue d’oïl dialect indigenous to the greater
       part of Wallonia, the French-speaking south part of Belgium.Numerous associations
       are working to keep the language alive. On a government level, Walloon is officially
@@ -8674,8 +8497,7 @@
     sv: vallonska
     tr: valonca
     uk: валлонська мова
-- crosswalks: []
-  description:
+- description:
     en: Wolof belongs to the Senegambian branch of the Niger–Congo language family.
       It is the native language of the Wolof people and is spoken in Senegal, the
       Gambia and Mauritania.
@@ -8729,8 +8551,7 @@
     sv: wolof
     tr: wolof dili
     uk: волоф
-- crosswalks: []
-  description:
+- description:
     en: Xhosa is a Bantu language. It is one of the official languages of South Africa.
   id: xho
   identifiers:
@@ -8773,8 +8594,7 @@
     sl: koščina
     sv: xhosa
     uk: коса
-- crosswalks: []
-  description:
+- description:
     en: Yiddish is a Germanic language, the historical language of the Ashkenazi Jews
       in central and east Europe.Yiddish is traditionally written in a fully vocalised
       variety of Hebrew script. A transliteration into the Latin alphabet is quite
@@ -8797,7 +8617,7 @@
     ISO_639_2B: yid
     ISO_639_2T: yid
     ISO_639_3: yid
-    PUB_LANG: YI
+    PUB_LANG: JI
     PUB_LNGISO: JI
     XML_LNG: yi
     iri: https://nma.eosc.cz/vocabularies/languages/yid
@@ -8833,8 +8653,7 @@
     sv: jiddisch
     tr: yidiş
     uk: їдиш
-- crosswalks: []
-  description:
+- description:
     en: Yoruba is an Atlantic-Congo language that belongs to the Volta Niger group
       spoken in West Africa, most prominently in Southwestern Nigeria. It is spoken
       by the ethnic Yoruba people. Yoruba was – and still partially is – written in
@@ -8884,8 +8703,7 @@
     sl: joruba
     sv: yoruba
     uk: йоруба мова
-- crosswalks: []
-  id: zha
+- id: zha
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/languages/zha
     scheme: https://nma.eosc.cz/vocabularies/
@@ -8902,8 +8720,7 @@
     iri: https://nma.eosc.cz/vocabularies/languages/zha
   title:
     en: Zhuang
-- crosswalks: []
-  description:
+- description:
     en: Chinese is a group of related but often mutually unintelligible language varieties,
       forming one of the two Sinitic branches within the Sino-Tibetan language family.
       It is often collectively referred to as zhōngwén, meaning the Chinese language
@@ -8974,8 +8791,7 @@
     sv: kinesiska
     tr: çin
     uk: китайська мова
-- crosswalks: []
-  description:
+- description:
     en: Zulu is the language of the Zulu people, the vast majority of whom live in
       South Africa. Zulu is the second most widely spoken Bantu language after Shona.Like
       many other Bantu languages, it is written using the Latin alphabet.Standard
@@ -9036,8 +8852,7 @@
     sv: zulu
     tr: isiZulu
     uk: зулу
-- crosswalks: []
-  description:
+- description:
     en: Tajik is a variety of modern Persian spoken in Central Asia. Most speakers
       of Tajik live in Tajikistan (where it is the official language) and Uzbekistan.
       In Afghanistan the dialect is less influenced by Turkic languages and is called

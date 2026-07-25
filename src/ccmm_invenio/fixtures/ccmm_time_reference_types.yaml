@@ -3,9 +3,17 @@
 
       To indicate the start of an embargo period, use Accepted or Submitted, as appropriate.'
   id: accepted
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/accepted
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Accepted
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Accepted
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
+  - identifier: http://purl.org/datacite/v4.4/dateType/Accepted
+    scheme: http://purl.org/datacite/v4.4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/accepted
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Accepted
   title:
     cs: Datum přijetí datasetu
     en: Date Accepted
@@ -14,9 +22,17 @@
 
       To indicate the end of an embargo period, use Available.'
   id: available
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/available
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Available
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
+  - identifier: http://purl.org/datacite/v4.4/dateType/Available
+    scheme: http://purl.org/datacite/v4.4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/available
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Available
   title:
     cs: Datum zveřejnění datasetu
     en: Date Available
@@ -25,9 +41,17 @@
 
       To indicate precise or particular timeframes in which research was conducted.'
   id: collected
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/collected
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Collected
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
+  - identifier: http://purl.org/datacite/v4.4/dateType/Collected
+    scheme: http://purl.org/datacite/v4.4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/collected
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Collected
   title:
     cs: Datum sběru dat
     en: Date Collected
@@ -35,9 +59,17 @@
     en: The specific, documented date at which the resource receives a copyrighted
       status, if applicable.
   id: copyrighted
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/copyrighted
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Copyrighted
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Copyrighted
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
+  - identifier: http://purl.org/datacite/v4.4/dateType/Copyrighted
+    scheme: http://purl.org/datacite/v4.4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/copyrighted
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Copyrighted
   title:
     cs: Datum udělení copyrightu
     en: Date Copyrighted
@@ -46,9 +78,15 @@
       \ indicate the temporal coverage of the resource, use Coverage. This may be\
       \ different from Collected."
   id: coverage
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/coverage
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Coverage
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Coverage
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/coverage
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Coverage
   title:
     cs: Časové pokrytí datasetu
     en: Date Coverage
@@ -59,27 +97,49 @@
 
       Recommended for discovery.'
   id: created
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/created
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Created
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
+  - identifier: http://purl.org/datacite/v4.4/dateType/Created
+    scheme: http://purl.org/datacite/v4.4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/created
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Created
   title:
     cs: Datum vytvoření datasetu
     en: Date Created
 - description:
     en: The date that the resource is published or distributed, e.g., to a data centre.
   id: issued
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/issued
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Issued
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
+  - identifier: http://purl.org/datacite/v4.4/dateType/Issued
+    scheme: http://purl.org/datacite/v4.4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/issued
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Issued
   title:
     cs: Datum vydání datasetu
     en: Date Issued
 - description:
     en: Other date that does not fit into an existing category.
   id: other
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/other
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Other
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/other
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Other
   title:
     cs: Jiné datum
     en: Other date
@@ -89,9 +149,17 @@
 
       Recommended for discovery.'
   id: submitted
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/submitted
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Submitted
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Submitted
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
+  - identifier: http://purl.org/datacite/v4.4/dateType/Submitted
+    scheme: http://purl.org/datacite/v4.4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/submitted
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Submitted
   title:
     cs: Datum podání datasetu
     en: Date Submitted
@@ -99,18 +167,34 @@
     en: The date of the last update to the resource, when the resource is being added
       to.
   id: updated
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/updated
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Updated
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Updated
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
+  - identifier: http://purl.org/datacite/v4.4/dateType/Updated
+    scheme: http://purl.org/datacite/v4.4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/updated
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Updated
   title:
     cs: Datum aktualizace datasetu
     en: Date Updated
 - description:
     en: The date during which the dataset or resource is accurate.
   id: valid
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/valid
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Valid
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Valid
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
+  - identifier: http://purl.org/datacite/v4.4/dateType/Valid
+    scheme: http://purl.org/datacite/v4.4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/valid
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Valid
   title:
     cs: Datum platnosti datasetu
     en: Date Valid
@@ -118,9 +202,15 @@
     en: "The date the resource is removed.\n It is good practice to include a description\
       \ that indicates the reason for the retraction or withdrawal."
   id: withdrawn
+  identifiers:
+  - identifier: https://nma.eosc.cz/vocabularies/datetypes/withdrawn
+    scheme: https://nma.eosc.cz/vocabularies/
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Withdrawn
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+  - identifier: https://schema.datacite.org/meta/kernel-4/dateType/Withdrawn
+    scheme: https://schema.datacite.org/meta/kernel-4/dateType/
   props:
     iri: https://nma.eosc.cz/vocabularies/datetypes/withdrawn
-    skos:exactMatch:https://vocabs.ccmm.cz/registry/codelist/TimeReference: Withdrawn
   title:
     cs: Datum odstranění datasetu
     en: Date Withdrawn

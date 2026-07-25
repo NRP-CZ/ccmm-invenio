@@ -1,5 +1,4 @@
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: '224'
   identifiers:
@@ -13,8 +12,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512/224
   title:
     en: SHA-512/224
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: '256'
   identifiers:
@@ -28,8 +26,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512/256
   title:
     en: SHA-512/256
-- crosswalks: []
-  description:
+- description:
     en: family of authenticated ciphers
   id: ascon
   identifiers:
@@ -43,8 +40,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ascon
   title:
     en: Ascon
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: blake
   identifiers:
@@ -58,8 +54,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake
   title:
     en: BLAKE
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: blake2
   identifiers:
@@ -73,8 +68,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2
   title:
     en: BLAKE2
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: blake2b
   identifiers:
@@ -88,8 +82,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2b
   title:
     en: BLAKE2b
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: blake2bp
   identifiers:
@@ -103,8 +96,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2bp
   title:
     en: BLAKE2bp
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: blake2s
   identifiers:
@@ -118,8 +110,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2s
   title:
     en: BLAKE2s
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: blake2sp
   identifiers:
@@ -133,8 +124,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2sp
   title:
     en: BLAKE2sp
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: blake2x
   identifiers:
@@ -148,8 +138,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2x
   title:
     en: BLAKE2x
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: blake3
   identifiers:
@@ -163,8 +152,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake3
   title:
     en: BLAKE3
-- crosswalks: []
-  description:
+- description:
     en: hash function
   id: blue_midnight_wish
   identifiers:
@@ -178,8 +166,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/blue_midnight_wish
   title:
     en: Blue Midnight Wish
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function that is designed to resist collision
   id: collision_resistant_hash
   identifiers:
@@ -193,8 +180,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/collision_resistant_hash
   title:
     en: collision resistant hash
-- crosswalks: []
-  description:
+- description:
     en: functions both usable as cryptographic hash and stream cypher
   id: cryptographic_hash_and_stream_cipher_function
   identifiers:
@@ -208,8 +194,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/cryptographic_hash_and_stream_cipher_function
   title:
     en: cryptographic hash and stream cipher function
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: cshake
   identifiers:
@@ -223,8 +208,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/cshake
   title:
     en: cSHAKE
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function created by composing SHA-256 with itself
   id: double_sha-256
   identifiers:
@@ -238,8 +222,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/double_sha-256
   title:
     en: double SHA-256
-- crosswalks: []
-  description:
+- description:
     en: obsolete cryptographic hash function
   id: elliptic_curve_only_hash
   identifiers:
@@ -253,8 +236,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/elliptic_curve_only_hash
   title:
     en: Elliptic curve only hash
-- crosswalks: []
-  description:
+- description:
     en: family of cryptographic hash functions
   id: fast_syndrome_based_hash
   identifiers:
@@ -268,8 +250,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/fast_syndrome_based_hash
   title:
     en: Fast Syndrome Based Hash
-- crosswalks: []
-  description:
+- description:
     en: Russian cryptographic hash function standard
   id: gost_r_3411-94_and_gost_34311-95
   identifiers:
@@ -283,8 +264,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/gost_r_3411-94_and_gost_34311-95
   title:
     en: GOST R 34.11-94 and GOST 34.311-95
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: groestl
   identifiers:
@@ -298,8 +278,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/groestl
   title:
     en: Grøstl
-- crosswalks: []
-  description:
+- description:
     en: design method for cryptographic hash functions
   id: haifa_construction
   identifiers:
@@ -313,8 +292,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/haifa_construction
   title:
     en: HAIFA construction
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: has-160
   identifiers:
@@ -328,8 +306,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/has-160
   title:
     en: HAS-160
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: haval
   identifiers:
@@ -343,8 +320,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/haval
   title:
     en: HAVAL
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function designed by Hongjun Wu
   id: jh
   identifiers:
@@ -358,8 +334,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/jh
   title:
     en: JH
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: kmac
   identifiers:
@@ -373,8 +348,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/kmac
   title:
     en: KMAC
-- crosswalks: []
-  description:
+- description:
     en: Ukrainian cryptographic hash function standard
   id: kupyna
   identifiers:
@@ -388,8 +362,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/kupyna
   title:
     en: Kupyna
-- crosswalks: []
-  description:
+- description:
     en: obsolete cryptographic hash function
   id: md2
   identifiers:
@@ -403,8 +376,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/md2
   title:
     en: MD2
-- crosswalks: []
-  description:
+- description:
     en: obsolete cryptographic hash function
   id: md4
   identifiers:
@@ -418,8 +390,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/md4
   title:
     en: MD4
-- crosswalks: []
-  description:
+- description:
     en: message-digest hashing algorithm
   id: md5
   identifiers:
@@ -433,8 +404,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/md5
   title:
     en: MD5
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: md6
   identifiers:
@@ -448,8 +418,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/md6
   title:
     en: MD6
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function, based on an arbitrary block cipher
   id: mdc-2
   identifiers:
@@ -463,8 +432,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/mdc-2
   title:
     en: MDC-2
-- crosswalks: []
-  description:
+- description:
     en: method of building collision-resistant cryptographic hash functions
   id: merkle-damgard_construction
   identifiers:
@@ -478,8 +446,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/merkle-damgard_construction
   title:
     en: Merkle–Damgård construction
-- crosswalks: []
-  description:
+- description:
     en: group of cryptographic protocols
   id: message_digest
   identifiers:
@@ -493,8 +460,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/message_digest
   title:
     en: Message Digest
-- crosswalks: []
-  description:
+- description:
     en: obsolete cryptographic hash function
   id: n-hash
   identifiers:
@@ -508,8 +474,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/n-hash
   title:
     en: N-Hash
-- crosswalks: []
-  description:
+- description:
     en: classified U.S. cryptographic algorithms
   id: nsa_suite_a_cryptography
   identifiers:
@@ -523,8 +488,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/nsa_suite_a_cryptography
   title:
     en: NSA Suite A Cryptography
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: parallelhash
   identifiers:
@@ -538,8 +502,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/parallelhash
   title:
     en: ParallelHash
-- crosswalks: []
-  description:
+- description:
     en: property of cryptographic hash functions
   id: puzzle_friendliness
   identifiers:
@@ -553,8 +516,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/puzzle_friendliness
   title:
     en: Puzzle friendliness
-- crosswalks: []
-  id: q4040382
+- id: q4040382
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/q4040382
     scheme: https://nma.eosc.cz/vocabularies/
@@ -566,8 +528,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/q4040382
   title:
     en: Q4040382
-- crosswalks: []
-  description:
+- description:
     en: family of lightweight cryptographic hash functions
   id: quark
   identifiers:
@@ -581,8 +542,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/quark
   title:
     en: Quark
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: ripemd
   identifiers:
@@ -596,8 +556,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd
   title:
     en: RIPEMD
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: ripemd-128
   identifiers:
@@ -611,8 +570,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-128
   title:
     en: RIPEMD-128
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: ripemd-160
   identifiers:
@@ -626,8 +584,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-160
   title:
     en: RIPEMD-160
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: ripemd-256
   identifiers:
@@ -641,8 +598,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-256
   title:
     en: RIPEMD-256
-- crosswalks: []
-  id: ripemd-320
+- id: ripemd-320
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-320
     scheme: https://nma.eosc.cz/vocabularies/
@@ -654,8 +610,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-320
   title:
     en: RIPEMD-320
-- crosswalks: []
-  description:
+- description:
     en: set of cryptographic hash functions designed by the NSA
   id: sha-2
   identifiers:
@@ -669,8 +624,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-2
   title:
     en: SHA-2
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: sha-224
   identifiers:
@@ -684,8 +638,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-224
   title:
     en: SHA-224
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: sha-256
   identifiers:
@@ -699,8 +652,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-256
   title:
     en: SHA-256
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: sha-384
   identifiers:
@@ -714,8 +666,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-384
   title:
     en: SHA-384
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: sha-512
   identifiers:
@@ -729,8 +680,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512
   title:
     en: SHA-512
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: sha3-224
   identifiers:
@@ -744,8 +694,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-224
   title:
     en: SHA3-224
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: sha3-256
   identifiers:
@@ -759,8 +708,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-256
   title:
     en: SHA3-256
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: sha3-384
   identifiers:
@@ -774,8 +722,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-384
   title:
     en: SHA3-384
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: sha3-512
   identifiers:
@@ -789,8 +736,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-512
   title:
     en: SHA3-512
-- crosswalks: []
-  description:
+- description:
     en: family of cryptographic hash functions
   id: sha_hash_functions
   identifiers:
@@ -804,8 +750,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha_hash_functions
   title:
     en: SHA hash functions
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: shake128
   identifiers:
@@ -819,8 +764,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/shake128
   title:
     en: SHAKE128
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: shake256
   identifiers:
@@ -834,8 +778,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/shake256
   title:
     en: SHAKE256
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: shangmi_3
   identifiers:
@@ -849,8 +792,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/shangmi_3
   title:
     en: ShangMi 3
-- crosswalks: []
-  id: shavite-3
+- id: shavite-3
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/shavite-3
     scheme: https://nma.eosc.cz/vocabularies/
@@ -862,8 +804,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/shavite-3
   title:
     en: SHAvite-3
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: skein
   identifiers:
@@ -877,8 +818,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/skein
   title:
     en: Skein
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: smash
   identifiers:
@@ -892,8 +832,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/smash
   title:
     en: SMASH
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: snefru
   identifiers:
@@ -907,8 +846,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/snefru
   title:
     en: Snefru
-- crosswalks: []
-  description:
+- description:
     en: Russian cryptographic hash function standard
   id: streebog
   identifiers:
@@ -922,8 +860,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/streebog
   title:
     en: Streebog
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: tiger
   identifiers:
@@ -937,8 +874,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/tiger
   title:
     en: Tiger
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: tuplehash
   identifiers:
@@ -952,8 +888,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/tuplehash
   title:
     en: TupleHash
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: very_smooth_hash
   identifiers:
@@ -967,8 +902,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/very_smooth_hash
   title:
     en: Very smooth hash
-- crosswalks: []
-  description:
+- description:
     en: cryptographic hash function
   id: whirlpool
   identifiers:
@@ -982,8 +916,7 @@
     iri: https://nma.eosc.cz/vocabularies/checksumalgorithms/whirlpool
   title:
     en: Whirlpool
-- crosswalks: []
-  description:
+- description:
     en: password-based key derivation function
   id: yescrypt
   identifiers:

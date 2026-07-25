@@ -1,5 +1,4 @@
-- crosswalks: []
-  description:
+- description:
     en: 'Plans, drawing or set of drawings showing how something e.g. building, product
       is to be made and how it will work and look. [Source: Adapted from https://dictionary.cambridge.org/dictionary/english/design]'
   id: 542x-3s04
@@ -40,8 +39,7 @@
     tr: tasarım
     uk: дизайн
     zh: 设计
-- crosswalks: []
-  description:
+- description:
     en: A device, tool or apparatus used to obtain, measure and/or analyze data. Source
       https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#instrument
   id: 8kjg-qs0y
@@ -82,8 +80,7 @@
     tr: araştırma cihazı
     uk: інструмент дослідження
     zh: 研究工具
-- crosswalks: []
-  description:
+- description:
     en: 'Any material representing the whole or part of the earth or any celestial
       body at any scale. Cartographic materials include two- and three-dimensional
       maps and plans (including maps of imaginary places); aeronautical, navigational,
@@ -146,10 +143,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_15cd
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/eprint/type/Patent
-    scheme: http://purl.org/eprint/type/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4551
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/eprint/type/Patent
+    scheme: http://purl.org/eprint/type/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -181,15 +178,15 @@
     uk: патент
     zh: 专利
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-other
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/event
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/physicalobject
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-other
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/other
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/model
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/event
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/physicalobject
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   description:
     en: A resource type that is not included in existing terms. [COAR definition]
@@ -280,17 +277,17 @@
     uk: звук
     zh: 声音
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-datapaper
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-milestone
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-standard
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-annotationcollection
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-taxonomictreatment
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-annotationcollection
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-standard
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-milestone
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-datapaper
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://lindat.mff.cuni.cz/vocabularies/resource_type/languageDescription
     scheme: https://lindat.mff.cuni.cz/vocabularies/resource_type/
@@ -307,10 +304,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18cf
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/datacite/v4.4/Text
-    scheme: http://purl.org/datacite/v4.4/
   - identifier: http://purl.org/dc/dcmitype/Text
     scheme: http://purl.org/dc/dcmitype/
+  - identifier: http://purl.org/datacite/v4.4/Text
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: info:eu-repo/semantics/Text
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
@@ -344,8 +341,7 @@
     tr: metin
     uk: текст
     zh: 文本
-- crosswalks: []
-  description:
+- description:
     en: 'A report to a funding agency is a document written by beneficiaries of project
       grants. The reporting documents can be e.g. periodic reports about progress
       of scientific and technical work and final report. For deliverables use ‘Project
@@ -375,8 +371,7 @@
     sl: poročilo financerjem raziskave
     tr: fon sağlayıcıya rapor
     zh: 给资助机构的报告
-- crosswalks: []
-  description:
+- description:
     en: 'Other types of report may include Business Plans Technical Specifications,
       data management plans, recommendation reports, white papers, annual reports,
       auditor''s reports, workplace reports, census reports, trip reports, progress
@@ -409,8 +404,7 @@
     sr: druge vrste izveštaja
     tr: diğer rapor türü
     zh: 其他报告
-- crosswalks: []
-  description:
+- description:
     en: An internal report is a record of findings collected for internal use. It
       is not designed to be made public and may include confidential or proprietary
       information.
@@ -440,8 +434,7 @@
     sr: interni izveštaj
     tr: dahili rapor
     zh: 内部报告
-- crosswalks: []
-  description:
+- description:
     en: 'A periodical is a serial publication with its own distinctive title, characterized
       by a variety of contents and contributors, and issued at regular intervals.
       (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]'
@@ -472,8 +465,7 @@
     sr: periodična publikacija
     tr: süreli yayın
     zh: 期刊
-- crosswalks: []
-  description:
+- description:
     en: A discussion between a reporter, host, panel, or audience and a newsmaker,
       author, or celebrity, recorded (edited or unedited) in print, on film or video,
       as transcript or as a sound recording. (Adapted from ODLIS)
@@ -511,10 +503,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_393c
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/datacite/v4.4/Workflow
-    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e6123
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/datacite/v4.4/Workflow
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: info:eu-repo/semantics/Workflow
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Workflow
@@ -548,8 +540,7 @@
     tr: iş akışı
     uk: процес роботи
     zh: 工作流程
-- crosswalks: []
-  description:
+- description:
     en: A contribution to a journal denotes a work published in a journal. If applicable
       sub-terms should be chosen.
   id: c_3e5a
@@ -578,11 +569,11 @@
     sr: informativni prilog
     zh: 期刊文献
 - crosswalks:
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/image-diagram
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/software
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/software-computationalnotebook
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/image-diagram
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://lindat.mff.cuni.cz/vocabularies/resource_type/toolService
     scheme: https://lindat.mff.cuni.cz/vocabularies/resource_type/
@@ -631,8 +622,7 @@
     tr: yazılım
     uk: програмне забезпечення
     zh: 软件
-- crosswalks: []
-  description:
+- description:
     en: part of a report
   id: c_ba1f
   identifiers:
@@ -670,12 +660,12 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_c513
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/dc/dcmitype/Image
-    scheme: http://purl.org/dc/dcmitype/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3436
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/datacite/v4.4/Image
     scheme: http://purl.org/datacite/v4.4/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3436
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/dc/dcmitype/Image
+    scheme: http://purl.org/dc/dcmitype/
   - identifier: info:eu-repo/semantics/Image
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Image
@@ -723,16 +713,16 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ddb1
     scheme: http://purl.org/coar/resource_type/
+  - identifier: http://purl.org/dc/dcmitype/Dataset
+    scheme: http://purl.org/dc/dcmitype/
   - identifier: https://schema.org/Dataset
     scheme: https://schema.org/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2865
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
-  - identifier: http://purl.org/datacite/v4.4/Dataset
-    scheme: http://purl.org/datacite/v4.4/
-  - identifier: http://purl.org/dc/dcmitype/Dataset
-    scheme: http://purl.org/dc/dcmitype/
   - identifier: http://purl.bioontology.org/ontology/MESH/D064886
     scheme: http://purl.bioontology.org/ontology/MESH/
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: info:eu-repo/semantics/Dataset
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
@@ -808,8 +798,7 @@
     sv: lärobjekt
     tr: Öğrenim nesnesi
     uk: навчальний об'єкт
-- crosswalks: []
-  description:
+- description:
     en: 'A resource requiring interaction from the user to be understood, executed,
       or experienced. Examples include forms on Web pages, applets, multimedia learning
       objects, chat services, or virtual reality environments.
@@ -854,8 +843,7 @@
     tr: etkileşimli kaynak
     uk: інтерактивний ресурс
     zh: 互动资源
-- crosswalks: []
-  description:
+- description:
     en: 'Data that are used as primary sources to support technical or scientific
       enquiry, research, scholarship, or artistic activity, and that are used as evidence
       in the research process and/or are commonly accepted in the research community
@@ -872,8 +860,7 @@
     iri: https://nma.eosc.cz/vocabularies/resourcetypes/ehvm-h119
   title:
     en: research data
-- crosswalks: []
-  description:
+- description:
     en: 'A work of visual arts and performing arts, including musical works; dramatic
       works; pantomimes and choreographic works; motion picture and other audiovisual
       works; pictorial, graphic, sculptural and architectural works. Adapted from
@@ -960,8 +947,7 @@
     sv: kunskapsorganisationssystem
     tr: bilgi organizasyon sistemi
     uk: система організації знання
-- crosswalks: []
-  description:
+- description:
     en: 'A sign used to distinguish the goods or services of one undertaking from
       those
 
@@ -1007,8 +993,7 @@
     tr: ticari marka
     uk: торгова марка
     zh: 商标
-- crosswalks: []
-  description:
+- description:
     en: An aggregation of resources, which may encompass collections of one resourceType
       as well as those of mixed types. A collection is described as a group; its parts
       may also be separately described. https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#collection
@@ -1018,12 +1003,12 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/RMP5-3GQ6
     scheme: http://purl.org/coar/resource_type/
+  - identifier: http://www.w3.org/ns/prov#Collection
+    scheme: http://www.w3.org/ns/prov#
   - identifier: http://purl.bioontology.org/ontology/MESH/D020471
     scheme: http://purl.bioontology.org/ontology/MESH/
   - identifier: http://purl.org/ontology/bibo/Collection
     scheme: http://purl.org/ontology/bibo/
-  - identifier: http://www.w3.org/ns/prov#Collection
-    scheme: http://www.w3.org/ns/prov#
   - identifier: info:eu-repo/semantics/Collection
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Collection
@@ -1056,8 +1041,7 @@
     tr: koleksiyon
     uk: колекція
     zh: 收藏品
-- crosswalks: []
-  description:
+- description:
     en: 'Physical samples include biological specimens, rock or mineral specimens,
       soil or sediment cores, plants and seeds, water quality samples, archaeological
       artefacts, or DNA and human tissue samples. Samples may be used in analyses
@@ -1101,8 +1085,7 @@
     tr: fiziksel numune
     uk: фізичний зразок
     zh: 实物样本
-- crosswalks: []
-  description:
+- description:
     en: A set of judicial proceedings that record, physically or digitally, and in
       an orderly fashion, the development of a process or procedural actions so that
       they may be recorded and examined by the parties. This would include the set
@@ -1145,8 +1128,7 @@
     tr: adli belgeler
     uk: судові матеріали
     zh: 法庭文件
-- crosswalks: []
-  description:
+- description:
     en: 'Geospatial data are any type of data with spatial coordinates that allow
       them to be mapped to the Earth''s surface. They can represent physical objects,
       discrete areas or continuous surfaces. Discrete geospatial data are usually
@@ -1201,8 +1183,7 @@
     tr: coğrafi uzamsal veri
     uk: геопросторові дані
     zh: 地理空间数据
-- crosswalks: []
-  description:
+- description:
     en: 'Data resulting from the experimental research method involving the manipulation
       of some or all of the independent variables included in the hypotheses. [Source:
       Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
@@ -1244,8 +1225,7 @@
     tr: deneysel veri
     uk: експериментальні дані
     zh: 实验数据
-- crosswalks: []
-  description:
+- description:
     en: 'A written record of words spoken in court proceedings or in a speech, interview,
       broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]'
   hierarchy:
@@ -1286,8 +1266,7 @@
     tr: transkripsiyon
     uk: траскрипт
     zh: 转录资料
-- crosswalks: []
-  description:
+- description:
     en: 'A special form of patent right granted by a state or jurisdiction to an inventor
       or the inventor’s assignee for a fixed period of time. The terms and conditions
       for granting a utility model are slightly different from those for normal patents
@@ -1332,8 +1311,7 @@
     tr: faydalı model
     uk: корисна модель
     zh: 实用新型专利
-- crosswalks: []
-  description:
+- description:
     en: 'Genomic data refers to the genome and DNA data of an organism. They are used
       in bioinformatics for collecting, storing and processing the genomes of living
       things. Genomic data is a more extensive term than sequencing data. However
@@ -1380,8 +1358,7 @@
     tr: genomik veri
     uk: геномні дані
     zh: 基因组数据
-- crosswalks: []
-  description:
+- description:
     en: 'Statistics that relate to broad classes, groups, or categories. The data
       are averaged, totaled, or otherwise derived from individual-level data, and
       it is no longer possible to distinguish the characteristics of individuals within
@@ -1427,8 +1404,7 @@
     tr: toplanmış veri
     uk: агреговані дані
     zh: 聚合数据
-- crosswalks: []
-  description:
+- description:
     en: 'Qualitative data (textual, video, audio or still-image) originally produced
       for other purposes into quantitative data (expressed in unit-by-variable matrices)
       by using coding techniques in accordance with pre-defined categorization schemes.
@@ -1472,8 +1448,7 @@
     tr: kodlanmış veri
     uk: кодовані дані
     zh: 编码数据
-- crosswalks: []
-  description:
+- description:
     en: "Layout-design (topography) means the three-dimensional disposition, however\
       \ expressed, of \nthe elements of an integrated circuit (at least one of which\
       \ is an active element) and of some or all of the interconnections of an integrated\
@@ -1517,8 +1492,7 @@
     tr: topoğrafya
     uk: дизайн макета
     zh: 布图设计
-- crosswalks: []
-  description:
+- description:
     en: 'A patent granted to any person who has invented any new and non-obvious ornamental
       design for an article of manufacture. The design patent protects only the appearance
       of an article, but not its structural or functional features. [Source: Adapted
@@ -1560,8 +1534,7 @@
     tr: tasarım patenti
     uk: патент на дизайн
     zh: 设计专利
-- crosswalks: []
-  description:
+- description:
     en: 'A manuscript is a work of any kind (text, inscription, music score, map,
       etc.) written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]'
   hierarchy:
@@ -1572,10 +1545,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_0040
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4043
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.bioontology.org/ontology/MESH/D020486
     scheme: http://purl.bioontology.org/ontology/MESH/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4043
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1621,10 +1594,10 @@
     scheme: http://purl.org/coar/resource_type/
   - identifier: http://purl.org/datacite/v4.4/Journal
     scheme: http://purl.org/datacite/v4.4/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3613
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/ontology/bibo/Journal
     scheme: http://purl.org/ontology/bibo/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3613
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Journal
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1656,8 +1629,7 @@
     tr: dergi
     uk: науковий журнал
     zh: 学术期刊
-- crosswalks: []
-  description:
+- description:
     en: 'A brief description of important new research, also known as “communication”.
       [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]'
   hierarchy:
@@ -1668,10 +1640,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_0857
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3803
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/ontology/bibo/Letter
     scheme: http://purl.org/ontology/bibo/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3803
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1750,8 +1722,7 @@
     tr: açıklama
     uk: анотація
     zh: 标注
-- crosswalks: []
-  description:
+- description:
     en: 'Defined as a representation normally to scale and on a flat medium, of a
       selection of material or abstract features on, or in relation to, the surface
       of the earth or of another celestial body. [Source: https://www.loc.gov/marc/bibliographic/bd007a.html]'
@@ -1794,8 +1765,7 @@
     tr: harita
     uk: мапа
     zh: 地图
-- crosswalks: []
-  description:
+- description:
     en: 'Musical composition can refer to an original piece of music, the structure
       of a musical piece, or the process of creating a new piece of music. [Source:
       https://en.wikipedia.org/wiki/Musical_composition ]'
@@ -1840,8 +1810,7 @@
     tr: müzikal kompozisyon
     uk: музичний твір
     zh: 音乐
-- crosswalks: []
-  description:
+- description:
     en: 'Symbols used to write music, as in a music score, and to express mathematical
       concepts.
 
@@ -1946,12 +1915,12 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_2f33
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/datacite/v4.4/Book
-    scheme: http://purl.org/datacite/v4.4/
-  - identifier: http://purl.org/eprint/type/Book
-    scheme: http://purl.org/eprint/type/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2263
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/eprint/type/Book
+    scheme: http://purl.org/eprint/type/
+  - identifier: http://purl.org/datacite/v4.4/Book
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Book
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1984,8 +1953,7 @@
     tr: kitap
     uk: книга
     zh: 书
-- crosswalks: []
-  description:
+- description:
     en: 'A non-peer reviewed periodical, usually published daily or weekly, consisting
       primarily of editorials and news items concerning current or recent events and
       matters of public interest. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4291]'
@@ -2029,11 +1997,11 @@
     uk: газета
     zh: 报纸
 - crosswalks:
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-dissertation
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-doctorthesis
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-thesis
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-dissertation
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   description:
     en: 'A book authored by a student containing a formal presentations of research
@@ -2083,8 +2051,7 @@
     tr: tez
     uk: тези і дисертації
     zh: 学位论文
-- crosswalks: []
-  description:
+- description:
     en: 'A piece of writing or other item of content published on a blog. [Source:
       https://www.lexico.com/definition/blog_post]'
   hierarchy:
@@ -2173,8 +2140,7 @@
     tr: teknik dokümantasyon
     uk: технічна документація
     zh: 技术资料
-- crosswalks: []
-  description:
+- description:
     en: 'A collection of related web pages containing text, images, videos and/or
       other digital assets that are addressed relative to a common Uniform Resource
       Locator (URL). A web site is hosted on at least one web server, accessible via
@@ -2287,10 +2253,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_816b
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/datacite/v4.4/Preprint
-    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4866
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/datacite/v4.4/Preprint
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Preprint
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2411,8 +2377,7 @@
     tr: kaynakça
     uk: бібліографія
     zh: 文献目录
-- crosswalks: []
-  description:
+- description:
     en: 'A moving display, either generated dynamically by a computer program or formed
       from a series of pre-recorded still images imparting an impression of motion
       when shown in succession. [Source: http://purl.org/spar/fabio/MovingImage]'
@@ -2424,10 +2389,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_8a7e
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/dc/dcmitype/MovingImage
-    scheme: http://purl.org/dc/dcmitype/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4212
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/dc/dcmitype/MovingImage
+    scheme: http://purl.org/dc/dcmitype/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Audiovisual
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2480,10 +2445,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_93fc
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/datacite/v4.4/Report
-    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4866
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/datacite/v4.4/Report
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: http://purl.org/eprint/type/Report
     scheme: http://purl.org/eprint/type/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
@@ -2606,8 +2571,7 @@
     tr: konferans çıktısı
     uk: матеріал конференції
     zh: 会议对象
-- crosswalks: []
-  description:
+- description:
     en: 'Software that is used to generate, process or analyse results that you intend
       to appear in a publication (either in a journal, conference paper, monograph,
       book or thesis). Research software can be anything from a few lines of code
@@ -2650,8 +2614,7 @@
     tr: Araştırma yazılımı
     uk: дослідницьке програмне забезпечення
     zh: 研究软件
-- crosswalks: []
-  description:
+- description:
     en: 'Data resulting from a research study in which one or more human subjects
       are prospectively assigned to one or more interventions (which may include placebo
       or other control) to evaluate the effects of those interventions on health-related
@@ -2712,10 +2675,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ecc8
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/dc/dcmitype/StillImage
-    scheme: http://purl.org/dc/dcmitype/
   - identifier: http://id.loc.gov/vocabulary/contentTypes/sti
     scheme: http://id.loc.gov/vocabulary/contentTypes/
+  - identifier: http://purl.org/dc/dcmitype/StillImage
+    scheme: http://purl.org/dc/dcmitype/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5482
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Image
@@ -2796,8 +2759,7 @@
     tr: gözden geçirme
     uk: рецензія
     zh: 评论
-- crosswalks: []
-  description:
+- description:
     en: 'Data registered by mechanical or electronic means, in a form that allows
       the information to be retrieved and/or reproduced. For example, images or sounds
       on disc or magnetic tape. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
@@ -2838,8 +2800,7 @@
     tr: kayıtlı veri
     uk: зафіксовані дані
     zh: 记录数据
-- crosswalks: []
-  description:
+- description:
     en: 'Data resulting from assessing specific properties (or characteristics) of
       beings, things, phenomena, (and/ or processes) by applying pre-established standards
       and/or specialized instruments or techniques. [Source: Adapted from  https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
@@ -2880,8 +2841,7 @@
     tr: ölçüm ve test verisi
     uk: дані вимірювання і випробування
     zh: 测量与测试数据
-- crosswalks: []
-  description:
+- description:
     en: 'Data resulting from observational research, which involves collecting observations
       as they occur (for example, observing behaviors, events, development of condition
       or disease, etc.), without attempting to manipulate any of the independent variables.
@@ -2924,8 +2884,7 @@
     tr: gözlemsel veri
     uk: дані спостереження
     zh: 观测数据
-- crosswalks: []
-  description:
+- description:
     en: 'Data collected or assembled from multiple, often heterogeneous sources that
       have one or more reference points in common, and at least one of the sources
       was originally produced for other purposes. The data are incorporated in a new
@@ -2972,8 +2931,7 @@
     tr: derlenmiş veri
     uk: компіляція даних
     zh: 汇编数据
-- crosswalks: []
-  description:
+- description:
     en: 'Plant variety protection, also called a "plant breeder''s right" (PBR), is
       a form of intellectual property right granted to the breeder of a new plant
       variety . According to this right, certain acts concerning the exploitation
@@ -3019,8 +2977,7 @@
     tr: bitki çeşitliliğini koruma
     uk: захист сортів рослин
     zh: 植物新品种保护
-- crosswalks: []
-  description:
+- description:
     en: 'A laboratory notebook (colloq. lab notebook or lab book) is a primary record
       of research. Researchers use a lab notebook to document their hypotheses, experiments
       and initial analysis or interpretation of these experiments. This label is used
@@ -3064,8 +3021,7 @@
     tr: laboratuvar notları
     uk: лабораторні нотатки
     zh: 实验室记录本
-- crosswalks: []
-  description:
+- description:
     en: 'Industrial designs are applied to a wide variety of industrial products and
       handicrafts. They refer to the ornamental or aesthetic aspects of a useful article,including
       compositions of lines or colors or any three-dimensional forms that give a special
@@ -3108,8 +3064,7 @@
     tr: endüstriyel tasarım
     uk: промисловий дизайн
     zh: 工业图纸
-- crosswalks: []
-  description:
+- description:
     en: 'In order to obtain a patent, a software invention must not fall under other
       non-patentable subject matter (for example, abstract ideas or mathematical theories)
       and has to fulfill the other substantive patentability criteria (for example,
@@ -3153,8 +3108,7 @@
     tr: yazılım patenti
     uk: патент на програмне забезпечення
     zh: 软件著作权
-- crosswalks: []
-  description:
+- description:
     en: 'Data resulting from a survey, which is defined as an investigation about
       the characteristics of a given population by means of collecting data from a
       sample of that population and estimating their characteristics through the systematic
@@ -3199,8 +3153,7 @@
     tr: anket verisi
     uk: дані опитування
     zh: 调查数据
-- crosswalks: []
-  description:
+- description:
     en: 'Source code is any collection of code, with or without comments, written
       using a human-readable programming language, usually as plain text. [Source:
       https://en.wikipedia.org/wiki/Source_code]'
@@ -3244,8 +3197,7 @@
     tr: kaynak kodu
     uk: вихідний код
     zh: 源代码
-- crosswalks: []
-  description:
+- description:
     en: A resource type that is not included in existing terms under the top concept
       "Text". [COAR definition]
   hierarchy:
@@ -3285,8 +3237,7 @@
     tr: diğer süreli yayınlar
     uk: інші періодичні матеріали
     zh: 其他连续出版物
-- crosswalks: []
-  description:
+- description:
     en: 'A patent application filed through the WIPO-administered Patent Cooperation
       Treaty (PCT), also known as an international application. [Source: Adapted from
       https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
@@ -3328,8 +3279,7 @@
     tr: PCT başvurusu
     uk: міжнародна заявка на винахід (РСТ)
     zh: 国际专利合作条约PCT申请
-- crosswalks: []
-  description:
+- description:
     en: 'Data resulting from modeling or imitative representation of real-world processes,
       events, or systems, often using computer programs. For example, a program modeling
       household consumption responses to indirect tax changes; or a dataset on hypothetical
@@ -3373,8 +3323,7 @@
     tr: simülasyon verisi
     uk: дані симуляції
     zh: 模拟数据
-- crosswalks: []
-  description:
+- description:
     en: 'A collection of historical records and primary source documents. Documents
       may be tangible or digital. Adapted from “archive (groupings)” in Getty AAT:
       https://www.getty.edu/vow/AATFullDisplay?find=maiolica&logic=AND&note=&subjectid=300375748'
@@ -3416,8 +3365,7 @@
     tr: arşiv koleksiyonu
     uk: архівна колекція
     zh: 档案收藏
-- crosswalks: []
-  description:
+- description:
     en: 'A patent granted to anyone who has invented or discovered and asexually reproduced
       any distinct and new variety of plant, including cultivated sports, mutants,
       hybrids, and newly found seedlings, other than a tuber-propagated plant or a
@@ -3462,8 +3410,7 @@
     tr: bitki patenti
     uk: патент на сорт рослин
     zh: 品种专属权
-- crosswalks: []
-  description:
+- description:
     en: An Item appearing in a magazine (a general interest or specific focus periodical).
       This item is often shorter in length, is submitted by in-house and external
       authors. Adapted from MAGAZINE Definition & Meaning - Black's Law Dictionary
@@ -3554,8 +3501,7 @@
     tr: video
     uk: відео
     zh: 视频
-- crosswalks: []
-  description:
+- description:
     en: 'A policy report presents what is known about a particular issue or problem.
       It assembles facts and evidence to help readers understand complex issues and
       form a response. It might aim to be neutral, or it might aim to persuade readers
@@ -3600,8 +3546,7 @@
     tr: politika raporu
     uk: звіт з питань політики
     zh: 政策报告
-- crosswalks: []
-  description:
+- description:
     en: 'A display poster, typically containing text with illustrative figures and/or
       tables, usually reporting research results or proposing hypotheses, submitted
       for acceptance to and/or presented at a conference, seminar, symposium, workshop
@@ -3646,8 +3591,7 @@
     tr: yayınlanmamış konferans posteri
     uk: стендова доповідь яка не увійшла до збірника
     zh: 非会议集里的会议海报/会议板报
-- crosswalks: []
-  description:
+- description:
     en: 'A paper, typically the realization of a research paper reporting original
       research findings. Use this label when the paper is not published in a proceeding.
       [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]'
@@ -3782,8 +3726,7 @@
     tr: proje çıktısı
     uk: результат проекту
     zh: 项目可交付成果
-- crosswalks: []
-  description:
+- description:
     en: 'It is publication that reports on the findings of a research project or alternatively
       scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]'
   hierarchy:
@@ -3825,8 +3768,7 @@
     tr: araştırma raporu
     uk: звіт про дослідження
     zh: 研究报告
-- crosswalks: []
-  description:
+- description:
     en: 'A formal note distributed internally to one or more persons in a company,
       agency, organization, or institution, with a header indicating the date it was
       sent and stating to whom it is addressed (To:), from whom it is sent (From:),
@@ -3922,8 +3864,7 @@
     tr: kitap bölümü
     uk: розділ книги
     zh: 章节
-- crosswalks: []
-  description:
+- description:
     en: 'A letter addressed to the editor and comments on or discussed an item previously
       published by that periodical, or of interest to its readership. [Source: Adapted
       from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e3803]'
@@ -3980,10 +3921,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_6501
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/JournalArticle
     scheme: http://purl.org/eprint/type/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4015,8 +3956,7 @@
     tr: dergi makalesi
     uk: стаття у науковому журналі
     zh: 学术论文
-- crosswalks: []
-  description:
+- description:
     en: 'A work that reports on the results of a research study to evaluate interventions
       or exposures on biomedical or health-related outcomes. The two main types of
       clinical studies are interventional studies (clinical trials) and observational
@@ -4104,8 +4044,7 @@
     tr: lisans tezi
     uk: бакалаврська робота
     zh: 学士学位论文
-- crosswalks: []
-  description:
+- description:
     en: Work consisting of a news item appearing in a general-interest newspaper or
       other general news periodical, containing information of current and timely
       interest in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html
@@ -4147,8 +4086,7 @@
     tr: köşe yazısı
     uk: стаття в газеті
     zh: 报纸文章
-- crosswalks: []
-  description:
+- description:
     en: 'A formal statement describing how research data will be managed and documented
       throughout a research project and the terms regarding the subsequent deposit
       of the data with a data repository for long-term management and preservation.
@@ -4193,8 +4131,7 @@
     tr: veri yönetim planı
     uk: план управління даними
     zh: 数据管理计划
-- crosswalks: []
-  description:
+- description:
     en: 'A brief essay expressing the opinion or position of the chief editor(s) of
       a (academic) journal with respect to a current political, social, cultural,
       or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx
@@ -4240,8 +4177,7 @@
     tr: Editoryal
     uk: редакційна стаття
     zh: 社论
-- crosswalks: []
-  description:
+- description:
     en: 'A written review and critical analysis of the content, scope and quality
       of a book or other monographic work. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300]'
   hierarchy:
@@ -4252,10 +4188,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ba08
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/BookReview
     scheme: http://purl.org/eprint/type/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4334,8 +4270,7 @@
     tr: yüksek lisans tezi
     uk: магістерська робота
     zh: 硕士学位论文
-- crosswalks: []
-  description:
+- description:
     en: 'A thesis reporting the research undertaken during a period of graduate study
       leading to a doctoral degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3051]'
   hierarchy:
@@ -4395,10 +4330,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_f744
     scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/datacite/v4.4/ConferenceProceeding
-    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2662
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/datacite/v4.4/ConferenceProceeding
+    scheme: http://purl.org/datacite/v4.4/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/ConferenceProceeding
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4430,8 +4365,7 @@
     tr: konferans bildirileri
     uk: матеріали конференції
     zh: 会议论文集
-- crosswalks: []
-  description:
+- description:
     en: 'A commentary is a more in-depth analysis written to draw attention to a work
       already published. Commentaries are somewhat like “reviews” in that the author
       presents his or her analysis of a work and why it  would be of interest to a
@@ -4475,8 +4409,7 @@
     tr: yorum
     uk: коментар
     zh: 评注
-- crosswalks: []
-  description:
+- description:
     en: In the context of systematic reviews and meta-analyses, a protocol is a document
       that presents an explicit plan for a systematic review. The protocol details
       the rationale and a priori methodological and analytical approach of the review.
@@ -4518,8 +4451,7 @@
     tr: bilgi sentezi protokolü
     uk: протокол синтезу знань
     zh: 知识综合协议
-- crosswalks: []
-  description:
+- description:
     en: 'An evaluation of scientific, academic, or professional work by others working
       in the same field. [Source: Adopted from https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf]'
   hierarchy:
@@ -4562,8 +4494,7 @@
     tr: akran değerlendirmesi
     uk: рецензування
     zh: 同行评议
-- crosswalks: []
-  description:
+- description:
     en: 'A set of slides containing text, tables or figures, designed to communicate
       ideas or research results, for projection and viewing by an audience at a conference,
       symposium, seminar, lecture, workshop or other gatherings. [Source: Adapted
@@ -4608,8 +4539,7 @@
     tr: konferans sunumu
     uk: презентація на конференції
     zh: 会议演示报告
-- crosswalks: []
-  description:
+- description:
     en: 'The protocol is a detailed plan of the research study including a project
       summary, project description covering the rationale, objectives, methodology,
       data management and analysis, ethical considerations, gender issues and references.
@@ -4652,8 +4582,7 @@
     tr: araştırma protokolü
     uk: протокол дослідження
     zh: 研究方案
-- crosswalks: []
-  description:
+- description:
     en: A research article is a primary source, that is, it reports the methods and
       results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)
   hierarchy:
@@ -4711,10 +4640,10 @@
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_5794
     scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2635
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/datacite/v4.4/ConferencePaper
     scheme: http://purl.org/datacite/v4.4/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2635
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/ConferencePaper
     scheme: http://purl.org/eprint/type/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/ConferencePaper
@@ -4799,8 +4728,7 @@
     tr: konferans posteri
     uk: стендова доповідь
     zh: 会议集里的会议海报/会议板报
-- crosswalks: []
-  description:
+- description:
     en: A formal correction to an error introduced by the author into a previously
       published document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)
   hierarchy:
@@ -4842,8 +4770,7 @@
     tr: düzeltme
     uk: виправлення
     zh: 勘误表（指对出版物中错误的更正或修正表）
-- crosswalks: []
-  description:
+- description:
     en: 'A software paper should include the rationale for the development of the
       tool and details of the code used for its construction. [Source: Adapted from
       https://f1000research.com/for-authors/article-guidelines/software-tool-articles
@@ -4884,8 +4811,7 @@
     tr: yazılım makalesi
     uk: стаття - програмне забезпечення
     zh: 软件论文
-- crosswalks: []
-  description:
+- description:
     en: A data paper is a scholarly publication describing a particular dataset or
       group of dataset, published in the form of a peer-reviewed article in a scholarly
       journal. The main purpose of a data paper is to describe data, the circumstances
@@ -4931,8 +4857,7 @@
     tr: veri makalesi
     uk: стаття у журналі даних
     zh: 数据文章
-- crosswalks: []
-  description:
+- description:
     en: 'A review article is a secondary source, that is, it is written about other
       articles, and does not report original research of its own. [Source: Adapted
       from http://apus.libanswers.com/faq/2324]'

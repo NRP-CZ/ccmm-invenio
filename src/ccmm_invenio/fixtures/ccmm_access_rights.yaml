@@ -1,5 +1,4 @@
-- crosswalks: []
-  description:
+- description:
     cs: Přístup pouze k metadatům označuje zdroj, u něhož je přístup omezen pouze
       na metadata. Samotný zdroj je popsán metadaty, není však přímo dostupný prostřednictvím
       systému nebo platformy ani na něj nelze odkazovat prostřednictvím otevřeně přístupné
@@ -35,8 +34,7 @@
     sl: samo metapodatki
     sr: pristup ograničen na metapodatke
     tr: sadece üstveri erişimi
-- crosswalks: []
-  description:
+- description:
     cs: 'Omezený přístup označuje zdroj, který je v systému dostupný, avšak s určitým
       omezením bránícím plnému otevřenému přístupu. Tento typ přístupu může nastat
       v řadě různých situací. Několik příkladů je uvedeno níže:
@@ -88,8 +86,7 @@
     sl: omejen dostop
     sr: ograničeni pristup
     tr: sınırlı erişim
-- crosswalks: []
-  description:
+- description:
     cs: Otevřený přístup označuje zdroj, který je okamžitě a trvale dostupný online
       a volně přístupný všem na webu, bez finančních a technických překážek. Zdroj
       je buď uložen v repozitáři, nebo je na něj odkazováno v externím časopise či
@@ -125,8 +122,7 @@
     sl: odprti dostop
     sr: otvoreni pristup
     tr: açık erişim
-- crosswalks: []
-  description:
+- description:
     cs: Odložené zpřístupnění označuje zdroj, který je do určitého data dostupný pouze
       v režimu přístupu k metadatům a teprve poté je uvolněn do otevřeného přístupu.
       Embargo může být vyžadováno politikami vydavatelů a poskytovatelů financování

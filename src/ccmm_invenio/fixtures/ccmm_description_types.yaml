@@ -1,5 +1,4 @@
-- crosswalks: []
-  id: abstract
+- id: abstract
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/abstract
     scheme: https://nma.eosc.cz/vocabularies/
@@ -16,8 +15,7 @@
     en: Abstract
     es: Resumen
     sv: Abstract
-- crosswalks: []
-  id: methods
+- id: methods
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/methods
     scheme: https://nma.eosc.cz/vocabularies/
@@ -34,8 +32,7 @@
     en: Methods
     es: Métodos
     sv: Metoder
-- crosswalks: []
-  id: other
+- id: other
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/other
     scheme: https://nma.eosc.cz/vocabularies/
@@ -52,8 +49,7 @@
     en: Other
     es: Otro
     sv: Övrig
-- crosswalks: []
-  id: series-information
+- id: series-information
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/series-information
     scheme: https://nma.eosc.cz/vocabularies/
@@ -70,8 +66,7 @@
     en: Series information
     es: Información de la serie
     sv: Information om serien
-- crosswalks: []
-  id: table-of-contents
+- id: table-of-contents
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/table-of-contents
     scheme: https://nma.eosc.cz/vocabularies/
@@ -88,8 +83,7 @@
     en: Table of contents
     es: Tabla de contenido
     sv: Innehållsförteckning
-- crosswalks: []
-  id: technical-info
+- id: technical-info
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/technical-info
     scheme: https://nma.eosc.cz/vocabularies/
