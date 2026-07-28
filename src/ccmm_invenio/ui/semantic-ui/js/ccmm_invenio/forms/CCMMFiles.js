@@ -14,8 +14,8 @@ export const CCMMFiles = {
   },
   component: (tabConfig) => {
     const { record, formConfig } = tabConfig;
-    const { filesLocked, permissions } = formConfig;
-    const { overridableIdPrefix } = formConfig;
+    const { filesLocked, permissions, fileModification, overridableIdPrefix } =
+      formConfig;
     return (
       <Overridable id={buildUID(overridableIdPrefix, "Files")} {...tabConfig}>
         <UppyUploader
@@ -27,6 +27,7 @@ export const CCMMFiles = {
           fileUploadConcurrency={formConfig.file_upload_concurrency}
           showMetadataOnlyToggle={permissions?.can_manage_files}
           filesLocked={filesLocked}
+          fileModification={fileModification}
         />
       </Overridable>
     );
