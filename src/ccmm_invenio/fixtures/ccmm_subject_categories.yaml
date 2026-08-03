@@ -8,7 +8,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjectcategories/euroscivoc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/subject-schemes/EuroSciVoc
-    scheme: https://cesnet.cz/subject-schemes/
+    scheme: https://cesnet.cz/subject-schemes
   - identifier: https://op.europa.eu/en/web/eu-vocabularies/euroscivoc
     scheme: https://op.europa.eu/en/web/eu-vocabularies/
   props:
@@ -24,7 +24,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjectcategories/frascati
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/subject-schemes/frascati
-    scheme: https://cesnet.cz/subject-schemes/
+    scheme: https://cesnet.cz/subject-schemes
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory
     scheme: https://vocabs.ccmm.cz/registry/codelist/
   props:
@@ -40,7 +40,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjectcategories/gemet
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/subject-schemes/GEMET
-    scheme: https://cesnet.cz/subject-schemes/
+    scheme: https://cesnet.cz/subject-schemes
   - identifier: https://www.eionet.europa.eu/gemet/en/about
     scheme: https://www.eionet.europa.eu/gemet/en/
   props:
@@ -56,7 +56,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjectcategories/mesh
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/subject-schemes/MeSH
-    scheme: https://cesnet.cz/subject-schemes/
+    scheme: https://cesnet.cz/subject-schemes
   - identifier: https://www.nlm.nih.gov/mesh/meshhome.html
     scheme: https://www.nlm.nih.gov/mesh/
   props:

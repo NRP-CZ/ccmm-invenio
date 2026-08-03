@@ -26,7 +26,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/contactperson
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ContactPerson
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/ContactPerson
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/ContactPerson
@@ -49,7 +49,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/datacollector
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCollector
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/DataCollector
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/DataCollector
@@ -82,7 +82,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/datacurator
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCurator
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/DataCurator
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/DataCurator
@@ -108,7 +108,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/datamanager
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/DataManager
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/DataManager
@@ -130,7 +130,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/distributor
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Distributor
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/Distributor
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/Distributor
@@ -153,7 +153,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/editor
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Editor
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/Editor
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/Editor
@@ -176,7 +176,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/hostinginstitution
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/HostingInstitution
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/HostingInstitution
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/HostingInstitution
@@ -202,7 +202,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/other
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Other
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/Other
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/Other
@@ -225,7 +225,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/producer
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Producer
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/Producer
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/Producer
@@ -249,7 +249,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/projectleader
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectLeader
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/ProjectLeader
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/ProjectLeader
@@ -272,7 +272,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/projectmanager
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectManager
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/ProjectManager
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/ProjectManager
@@ -294,7 +294,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/projectmember
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectMember
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/ProjectMember
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/ProjectMember
@@ -319,7 +319,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/registrationagency
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAgency
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/RegistrationAgency
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/RegistrationAgency
@@ -342,7 +342,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/registrationauthority
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAuthority
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/RegistrationAuthority
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/RegistrationAuthority
@@ -365,7 +365,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/relatedperson
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RelatedPerson
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/RelatedPerson
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/RelatedPerson
@@ -391,7 +391,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/researcher
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Researcher
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/Researcher
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/Researcher
@@ -414,7 +414,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/researchgroup
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ResearchGroup
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/ResearchGroup
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/ResearchGroup
@@ -434,7 +434,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/rightsholder
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RightsHolder
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/RightsHolder
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/RightsHolder
@@ -458,7 +458,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/sponsor
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Sponsor
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/Sponsor
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/Sponsor
@@ -478,7 +478,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/supervisor
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Supervisor
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/Supervisor
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/Supervisor
@@ -502,7 +502,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/translator
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Translator
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/Translator
     scheme: https://schema.datacite.org/meta/kernel-4/contributorType/
   props:
@@ -523,7 +523,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/contributorsroles/workpackageleader
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/WorkPackageLeader
-    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
   - identifier: info:eu-repo/semantics/WorkPackageLeader
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/meta/kernel-4/contributorType/WorkPackageLeader

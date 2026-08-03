@@ -3,7 +3,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/cc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/CC
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/cc
   tags:
@@ -25,7 +25,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-1.0
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/CC-1.0
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/cc-1.0
     key: CC-1.0
@@ -48,7 +48,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-2.0
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/CC-2.0
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/cc-2.0
     key: CC-2.0
@@ -71,7 +71,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-2.5
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/CC-2.5
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/cc-2.5
     key: CC-2.5
@@ -94,7 +94,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-3.0
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/CC-3.0
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/cc-3.0
     key: CC-3.0
@@ -115,7 +115,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/cc-4.0
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/CC-4.0
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/cc-4.0
     key: CC-4.0
@@ -131,7 +131,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/cc0-1.0
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/CC0-1.0
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/cc0-1.0
     key: CC0-1.0
@@ -155,7 +155,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/1-by
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/1-BY
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/1-by
     key: 1-BY
@@ -180,7 +180,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/1-by-nc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/1-BY-NC
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/1-by-nc
     key: 1-BY-NC
@@ -208,7 +208,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/1-by-nc-sa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/1-BY-NC-SA
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/1-by-nc-sa
     key: 1-BY-NC-SA
@@ -234,7 +234,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/1-by-nd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/1-BY-ND
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/1-by-nd
     key: 1-BY-ND
@@ -259,7 +259,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/1-by-nd-nc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/1-BY-ND-NC
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/1-by-nd-nc
     key: 1-BY-ND-NC
@@ -286,7 +286,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/1-by-sa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/1-BY-SA
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/1-by-sa
     key: 1-BY-SA
@@ -310,7 +310,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-5-by
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-5-BY
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-5-by
     key: 2-5-BY
@@ -335,7 +335,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-5-by-nc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-5-BY-NC
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-5-by-nc
     key: 2-5-BY-NC
@@ -360,7 +360,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-5-by-nc-nd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-5-BY-NC-ND
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-5-by-nc-nd
     key: 2-5-BY-NC-ND
@@ -389,7 +389,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-5-by-nc-sa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-5-BY-NC-SA
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-5-by-nc-sa
     key: 2-5-BY-NC-SA
@@ -415,7 +415,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-5-by-nd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-5-BY-ND
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-5-by-nd
     key: 2-5-BY-ND
@@ -441,7 +441,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-5-by-sa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-5-BY-SA
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-5-by-sa
     key: 2-5-BY-SA
@@ -465,7 +465,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-by
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-BY
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-by
     key: 2-BY
@@ -490,7 +490,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-by-nc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-BY-NC
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-by-nc
     key: 2-BY-NC
@@ -515,7 +515,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-by-nc-nd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-BY-NC-ND
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-by-nc-nd
     key: 2-BY-NC-ND
@@ -544,7 +544,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-by-nc-sa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-BY-NC-SA
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-by-nc-sa
     key: 2-BY-NC-SA
@@ -570,7 +570,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-by-nd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-BY-ND
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-by-nd
     key: 2-BY-ND
@@ -596,7 +596,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/2-by-sa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/2-BY-SA
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/2-by-sa
     key: 2-BY-SA
@@ -620,7 +620,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/3-by-cz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/3-BY-CZ
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/3-by-cz
     key: 3-BY-CZ
@@ -645,7 +645,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/3-by-nc-cz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/3-BY-NC-CZ
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/3-by-nc-cz
     key: 3-BY-NC-CZ
@@ -670,7 +670,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/3-by-nc-nd-cz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/3-BY-NC-ND-CZ
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/3-by-nc-nd-cz
     key: 3-BY-NC-ND-CZ
@@ -699,7 +699,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/3-by-nc-sa-cz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/3-BY-NC-SA-CZ
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/3-by-nc-sa-cz
     key: 3-BY-NC-SA-CZ
@@ -725,7 +725,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/3-by-nd-cz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/3-BY-ND-CZ
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/3-by-nd-cz
     key: 3-BY-ND-CZ
@@ -751,7 +751,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/3-by-sa-cz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/3-BY-SA-CZ
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/3-by-sa-cz
     key: 3-BY-SA-CZ
@@ -776,7 +776,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/4-by
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/4-BY
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/4-by
     key: 4-BY
@@ -803,7 +803,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/4-by-nc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/4-BY-NC
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/4-by-nc
     key: 4-BY-NC
@@ -830,7 +830,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/4-by-nc-nd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/4-BY-NC-ND
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/4-by-nc-nd
     key: 4-BY-NC-ND
@@ -861,7 +861,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/4-by-nc-sa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/4-BY-NC-SA
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/4-by-nc-sa
     key: 4-BY-NC-SA
@@ -888,7 +888,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/4-by-nd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/4-BY-ND
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/4-by-nd
     key: 4-BY-ND
@@ -916,7 +916,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/licenses/4-by-sa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/licenses/4-BY-SA
-    scheme: https://cesnet.cz/licenses/
+    scheme: https://cesnet.cz/licenses
   props:
     iri: https://nma.eosc.cz/vocabularies/licenses/4-by-sa
     key: 4-BY-SA

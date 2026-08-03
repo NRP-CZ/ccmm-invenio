@@ -6,7 +6,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/ares
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/ares
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/ares
     key: https://ares.gov.cz/
@@ -18,7 +18,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/arxiv
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/arxiv
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/arxiv
     key: https://arxiv.org/
@@ -30,7 +30,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/doi
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/doi
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/doi
     key: https://doi.org/
@@ -42,7 +42,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/handle
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/handle
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/handle
     key: https://handle.net/
@@ -54,7 +54,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/iri
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/iri
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/iri
     key: urn:iri
@@ -66,7 +66,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/isbn
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/isbn
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/isbn
     key: https://www.isbn-international.org/
@@ -78,7 +78,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/isni
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/isni
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/isni
     key: https://isni.org/
@@ -90,7 +90,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/issn
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/issn
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/issn
     key: https://www.issn.org/
@@ -102,7 +102,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/orcid
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/orcid
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/orcid
     key: https://orcid.org/
@@ -114,7 +114,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/researcherid
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/researcherID
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/researcherid
     key: https://www.webofscience.com/
@@ -126,7 +126,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/ror
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/ror
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/ror
     key: https://ror.org/
@@ -138,7 +138,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/identifierschemes/scopusid
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/identifier-schemes/scopusID
-    scheme: https://cesnet.cz/identifier-schemes/
+    scheme: https://cesnet.cz/identifier-schemes
   props:
     iri: https://nma.eosc.cz/vocabularies/identifierschemes/scopusid
     key: https://www.scopus.com/

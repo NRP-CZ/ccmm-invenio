@@ -12,7 +12,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/accessrights/c_14cb
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/access_right/c_14cb
-    scheme: http://purl.org/coar/access_right/
+    scheme: http://purl.org/coar/access_right/scheme
   - identifier: info:eu-repo/semantics/openAccess
     scheme: info:eu-repo/semantics/
   props:
@@ -64,7 +64,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/accessrights/c_16ec
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/access_right/c_16ec
-    scheme: http://purl.org/coar/access_right/
+    scheme: http://purl.org/coar/access_right/scheme
   - identifier: info:eu-repo/semantics/restrictedAccess
     scheme: info:eu-repo/semantics/
   props:
@@ -100,7 +100,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/accessrights/c_abf2
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/access_right/c_abf2
-    scheme: http://purl.org/coar/access_right/
+    scheme: http://purl.org/coar/access_right/scheme
   - identifier: info:eu-repo/semantics/openAccess
     scheme: info:eu-repo/semantics/
   props:
@@ -136,7 +136,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/accessrights/c_f1cf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/access_right/c_f1cf
-    scheme: http://purl.org/coar/access_right/
+    scheme: http://purl.org/coar/access_right/scheme
   - identifier: info:eu-repo/semantics/embargoedAccess
     scheme: info:eu-repo/semantics/
   props:

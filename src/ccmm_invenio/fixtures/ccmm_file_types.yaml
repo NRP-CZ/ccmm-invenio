@@ -6,7 +6,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/7z
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/7Z
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .7z
     IANA_MT: application/x-7z-compressed
@@ -23,7 +23,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/aab
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/AAB
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .aab
     IANA_MT: application/x-authorware-bin
@@ -40,9 +40,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/aac
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/AAC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .adts
+    FILE_EXT: .ass
     IANA_MT: audio/aac
     iri: https://nma.eosc.cz/vocabularies/filetypes/aac
   title:
@@ -58,7 +58,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/akn4eu
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/AKN4EU
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: akn4eu
     CELLAR_MT: application/xml;type=akn4eu
@@ -78,7 +78,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/akn4eu_leg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/AKN4EU_LEG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: akn4eu
     CELLAR_MT: application/xml;type=akn4eu-main
@@ -95,7 +95,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/akn4eu_zip
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/AKN4EU_ZIP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: application/zip
     iri: https://nma.eosc.cz/vocabularies/filetypes/akn4eu_zip
@@ -110,7 +110,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/apk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/APK
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .xapk
     IANA_MT: application/vnd.android.package-archive
@@ -127,7 +127,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/appx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/APPX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .appxbundle
     IANA_MT: application/octet-stream
@@ -143,7 +143,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/arc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ARC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .arc
     IANA_MT: application/octet-stream
@@ -159,7 +159,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/arc_gz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ARC_GZ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .arc.gz
     IANA_MT: application/gzip
@@ -180,7 +180,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/arcinfo_cov
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ARCINFO_COV
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: multipart/mixed
     iri: https://nma.eosc.cz/vocabularies/filetypes/arcinfo_cov
@@ -194,7 +194,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/arff
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ARFF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .arff
     IANA_MT: text/plain
@@ -211,7 +211,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/arj
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ARJ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .arj
     IANA_MT: application/x-arj
@@ -229,7 +229,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/arrow_file
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ARROW_FILE
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .arrow
     IANA_MT: application/vnd.apache.arrow.file
@@ -247,7 +247,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/arrow_stream
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ARROW_STREAM
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .arrows
     IANA_MT: application/vnd.apache.arrow.stream
@@ -263,7 +263,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/atom
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ATOM
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .atom
     IANA_MT: application/atom+xml
@@ -280,7 +280,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/azw
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/AZW
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: amz
     CELLAR_MT: application/vnd.amazon.ebook
@@ -297,7 +297,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/bin
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/BIN
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/octet-stream
     FILE_EXT: .bin
@@ -318,7 +318,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/bits
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/BITS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .xml
     IANA_MT: application/xml
@@ -335,7 +335,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/bmp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/BMP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: image/bmp
     FILE_EXT: .bmp
@@ -355,9 +355,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/bwf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/BWF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .wav
+    FILE_EXT: .bwf
     IANA_MT: audio/vnd.wave
     iri: https://nma.eosc.cz/vocabularies/filetypes/bwf
   title:
@@ -372,7 +372,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/bzip2
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/BZIP2
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .bz2
     IANA_MT: application/x-bzip2
@@ -388,7 +388,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/css
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/CSS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: css
     CELLAR_MT: text/css
@@ -407,7 +407,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/csv
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/CSV
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: csv
     CELLAR_MT: text/csv
@@ -425,9 +425,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dapk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DAPK
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .xapk
+    FILE_EXT: .apk
     IANA_MT: application/vnd.android.package-archive
     iri: https://nma.eosc.cz/vocabularies/filetypes/dapk
   title:
@@ -441,7 +441,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dbf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DBF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .dbf
     IANA_MT: application/x-dbase
@@ -457,7 +457,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dcr
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DCR
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/x-director
     FILE_EXT: .dcr
@@ -475,7 +475,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/deb
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DEB
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .deb
     IANA_MT: application/vnd.debian.binary-package
@@ -494,7 +494,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dgn
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DGN
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .dgn
     IANA_MT: application/octet-stream
@@ -510,7 +510,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dmg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DMG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .dmg
     IANA_MT: application/x-apple-diskimage
@@ -526,7 +526,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dmp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DMP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .dmp
     IANA_MT: application/x-oracledump
@@ -542,7 +542,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/doc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DOC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: doc
     CELLAR_MT: application/msword
@@ -561,7 +561,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/docx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DOCX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: docx
     CELLAR_MT: application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml
@@ -582,7 +582,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dtd_sgml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DTD_SGML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/sgml-dtd
     FILE_EXT: .dtd
@@ -603,7 +603,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dtd_xml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DTD_XML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/xml-dtd
     FILE_EXT: .dtd
@@ -623,10 +623,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dwca
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DWCA
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .tar.gz
-    IANA_MT: application/gzip
+    FILE_EXT: .zip
+    IANA_MT: application/zip
     iri: https://nma.eosc.cz/vocabularies/filetypes/dwca
   title:
     en: DwC-A
@@ -641,7 +641,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dwg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DWG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .dwg
     IANA_MT: image/vnd.dwg
@@ -659,7 +659,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/dxf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/DXF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .dxf
     IANA_MT: image/vnd.dxf
@@ -675,7 +675,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/e00
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/E00
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .e00
     IANA_MT: application/x-e00
@@ -691,7 +691,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ear
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/EAR
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .ear
     IANA_MT: application/java-archive
@@ -708,7 +708,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ecw
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ECW
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .ecw
     IANA_MT: application/x-ecw
@@ -728,7 +728,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/eforms_xml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/EFORMS_XML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: eforms_xml
     CELLAR_MT: application/xml
@@ -747,7 +747,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/eps
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/EPS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/postscript
     FILE_EXT: .eps
@@ -766,7 +766,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/epub
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/EPUB
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: epub
     CELLAR_MT: application/epub+zip
@@ -784,9 +784,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/etsi_tsl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ETSI_TSL
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .xml
+    FILE_EXT: .xtsl
     IANA_MT: application/vnd.etsi.tsl+xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/etsi_tsl
   title:
@@ -800,7 +800,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/etsi_xml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ETSI_XML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: etsi_xml
     CELLAR_MT: application/xml;type=etsi
@@ -820,7 +820,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/exe
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/EXE
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .exe
     IANA_MT: application/octet-stream
@@ -838,10 +838,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/fmx2
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/FMX2
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: fmx2
-    CELLAR_MT: application/xml;type=fmx2
+    CELLAR_MT: text/sgml;type=fmx2
     FILE_EXT: .xml
     IANA_MT: text/sgml
     iri: https://nma.eosc.cz/vocabularies/filetypes/fmx2
@@ -858,7 +858,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/fmx3
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/FMX3
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: fmx3
     CELLAR_MT: application/xml;type=fmx3
@@ -878,7 +878,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/fmx4
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/FMX4
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: fmx4
     CELLAR_MT: application/xml;type=fmx4
@@ -895,7 +895,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/fmx4_zip
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/FMX4_ZIP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/zip;type=fmx4
     FILE_EXT: .zip
@@ -913,7 +913,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/gdb
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GDB
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .gdb
     IANA_MT: application/x-filegdb
@@ -929,11 +929,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/geojson
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GEOJSON
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: geojson
     CELLAR_MT: application/geo+json
-    FILE_EXT: .json
+    FILE_EXT: .geojson
     IANA_MT: application/geo+json
     iri: https://nma.eosc.cz/vocabularies/filetypes/geojson
   title:
@@ -949,7 +949,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/geotiff
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GEOTIFF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .tiff
     IANA_MT: image/tiff
@@ -965,7 +965,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/gif
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GIF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: gif
     CELLAR_MT: image/gif
@@ -985,7 +985,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/gml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .gml .xml
     IANA_MT: application/gml+xml
@@ -1001,7 +1001,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/gmz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GMZ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .gmz
     IANA_MT: application/x-gmz
@@ -1018,7 +1018,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/gpkg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GPKG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: gpkg
     CELLAR_MT: application/geopackage+sqlite3
@@ -1036,7 +1036,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/gpx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GPX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .gpx
     IANA_MT: application/octet-stream
@@ -1054,9 +1054,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/grid
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GRID
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    IANA_MT: application/x-esri-grid
+    IANA_MT: application/x-grid
     iri: https://nma.eosc.cz/vocabularies/filetypes/grid
   title:
     en: Esri binary grid
@@ -1070,7 +1070,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/grid_ascii
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GRID_ASCII
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .asc
     IANA_MT: application/x-ascii-grid
@@ -1090,7 +1090,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/gtfs
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GTFS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .zip
     IANA_MT: application/zip
@@ -1106,12 +1106,12 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/gzip
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/GZIP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: gzip
     CELLAR_MT: application/x-gzip
     FILE_EXT: .gz
-    IANA_MT: application/x-gzip
+    IANA_MT: application/gzip
     iri: https://nma.eosc.cz/vocabularies/filetypes/gzip
   title:
     en: GNU zip
@@ -1124,10 +1124,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/hdf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/HDF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/x-hdf
-    FILE_EXT: .h5
+    FILE_EXT: .hdf5
     IANA_MT: application/x-hdf
     iri: https://nma.eosc.cz/vocabularies/filetypes/hdf
   title:
@@ -1142,7 +1142,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/hdt
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/HDT
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .hdt
     IANA_MT: application/vnd.hdt
@@ -1158,11 +1158,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/html
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/HTML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: html
     CELLAR_MT: text/html
-    FILE_EXT: .htm
+    FILE_EXT: .html
     IANA_MT: text/html
     iri: https://nma.eosc.cz/vocabularies/filetypes/html
   title:
@@ -1180,11 +1180,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/html5
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/HTML5
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: html5
     CELLAR_MT: text/html;type=html5
-    FILE_EXT: .htm
+    FILE_EXT: .html
     IANA_MT: text/html
     iri: https://nma.eosc.cz/vocabularies/filetypes/html5
   title:
@@ -1198,7 +1198,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/html_simpl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/HTML_SIMPL
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: html_simplified
     CELLAR_MT: text/html;type=simplified
@@ -1217,9 +1217,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ics
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ICS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .ifb
+    FILE_EXT: .ical
     IANA_MT: text/calendar
     iri: https://nma.eosc.cz/vocabularies/filetypes/ics
   title:
@@ -1233,7 +1233,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/immc_xml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/IMMC_XML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: immc_xml
     CELLAR_MT: application/xml;type=immc
@@ -1251,7 +1251,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/indd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/INDD
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .indd
     IANA_MT: application/x-indesign
@@ -1267,7 +1267,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ipa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/IPA
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: ipa
     CELLAR_MT: application/zip;type=ipa
@@ -1291,7 +1291,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/iso
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ISO
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .iso
     IANA_MT: application/x-iso9660-image
@@ -1306,7 +1306,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/iso_zip
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ISO_ZIP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .zip
     IANA_MT: application/zip
@@ -1322,7 +1322,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/jar
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/JAR
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .jar
     IANA_MT: application/java-archive
@@ -1339,7 +1339,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/jats
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/JATS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .xml
     IANA_MT: application/xml
@@ -1357,11 +1357,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/jpeg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/JPEG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: jepg
     CELLAR_MT: image/jpeg
-    FILE_EXT: .jpeg
+    FILE_EXT: .jpg
     IANA_MT: image/jpeg
     iri: https://nma.eosc.cz/vocabularies/filetypes/jpeg
   title:
@@ -1375,7 +1375,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/jpeg2000
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/JPEG2000
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .jp2
     IANA_MT: image/jp2
@@ -1391,7 +1391,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/js
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/JS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: js
     CELLAR_MT: text/javascript
@@ -1411,7 +1411,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/json
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/JSON
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .json
     IANA_MT: application/json
@@ -1428,7 +1428,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/json_ld
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/JSON_LD
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .jsonld
     IANA_MT: application/ld+json
@@ -1446,7 +1446,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/kml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/KML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .kml
     IANA_MT: application/vnd.google-earth.kml+xml
@@ -1470,7 +1470,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/kmz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/KMZ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .kmz
     IANA_MT: application/vnd.google-earth.kmz
@@ -1487,7 +1487,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/las
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/LAS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .las
     IANA_MT: application/x-las
@@ -1503,7 +1503,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/laz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/LAZ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .laz
     IANA_MT: application/x-laz
@@ -1518,7 +1518,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/leg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/LEG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: application/zip
     iri: https://nma.eosc.cz/vocabularies/filetypes/leg
@@ -1541,7 +1541,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/legalhtml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/LEGALHTML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: xhtml5
     CELLAR_MT: application/xhtml+xml;type=xhtml5
@@ -1558,9 +1558,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/lha
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/LHA
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .lzh
+    FILE_EXT: .lha
     IANA_MT: application/x-lzh-compressed
     iri: https://nma.eosc.cz/vocabularies/filetypes/lha
   title:
@@ -1574,10 +1574,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/lpk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/LPK
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .lpk
-    IANA_MT: application/x-7z-compressed
+    IANA_MT: multipart/mixed
     iri: https://nma.eosc.cz/vocabularies/filetypes/lpk
   title:
     en: Layer package
@@ -1590,7 +1590,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/lzip
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/LZIP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .lz
     IANA_MT: application/x-lzip
@@ -1605,7 +1605,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/lzma
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/LZMA
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .lzma
     IANA_MT: application/x-lzma
@@ -1621,7 +1621,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/lzo
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/LZO
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .lzo
     IANA_MT: application/x-lzop
@@ -1637,7 +1637,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/map_prvw
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MAP_PRVW
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: arcgis_map_preview
     iri: https://nma.eosc.cz/vocabularies/filetypes/map_prvw
@@ -1652,7 +1652,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/map_srvc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MAP_SRVC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: arcgis_map_service
     iri: https://nma.eosc.cz/vocabularies/filetypes/map_srvc
@@ -1667,7 +1667,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/markdown
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MARKDOWN
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: markdown
     CELLAR_MT: text/markdown
@@ -1685,10 +1685,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mathml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MATHML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .mml
-    IANA_MT: application/mathml-presentation+xml
+    FILE_EXT: .mathml
+    IANA_MT: application/mathml-content+xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/mathml
   title:
     en: MathML
@@ -1700,7 +1700,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/matlab_mat
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MATLAB_MAT
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .mat
     IANA_MT: application/octet-stream
@@ -1717,7 +1717,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mbox
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MBOX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .mbox
     IANA_MT: application/mbox
@@ -1733,10 +1733,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mdb
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MDB
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .mdb
-    IANA_MT: application/x-msaccess
+    IANA_MT: application/vnd.ms-access
     iri: https://nma.eosc.cz/vocabularies/filetypes/mdb
   title:
     en: MDB
@@ -1750,7 +1750,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mets
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/METS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/xml;type=mets
     FILE_EXT: .xml
@@ -1766,7 +1766,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mets_zip
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/METS_ZIP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/zip;type=mets
     FILE_EXT: .zip
@@ -1786,9 +1786,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mhtml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MHTML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .mht
+    FILE_EXT: .mhtml
     IANA_MT: multipart/related
     iri: https://nma.eosc.cz/vocabularies/filetypes/mhtml
   title:
@@ -1804,9 +1804,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mif_mid
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MIF_MID
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .mid
+    FILE_EXT: .mif
     IANA_MT: text/plain
     iri: https://nma.eosc.cz/vocabularies/filetypes/mif_mid
   title:
@@ -1821,11 +1821,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mobi
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MOBI
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: mobi
     CELLAR_MT: application/x-mobipocket-ebook
-    FILE_EXT: .prc
+    FILE_EXT: .mobi
     IANA_MT: application/x-mobipocket-ebook
     iri: https://nma.eosc.cz/vocabularies/filetypes/mobi
   title:
@@ -1840,7 +1840,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mop
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MOP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .mop
     IANA_MT: chemical/x-mopac-input
@@ -1857,7 +1857,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mov
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MOV
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .mov
     IANA_MT: video/quicktime
@@ -1873,12 +1873,12 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mp3
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MP3
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: mp3
     CELLAR_MT: audio/mp3
     FILE_EXT: .mp3
-    IANA_MT: audio/mpa-robust
+    IANA_MT: audio/mpeg
     iri: https://nma.eosc.cz/vocabularies/filetypes/mp3
   title:
     en: MP3
@@ -1894,9 +1894,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mpeg2
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MPEG2
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: m2v
+    FILE_EXT: mp2
     IANA_MT: audio/mpeg
     iri: https://nma.eosc.cz/vocabularies/filetypes/mpeg2
   title:
@@ -1911,12 +1911,12 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mpeg4
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MPEG4
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: mp4
     CELLAR_MT: audio/mp4
     FILE_EXT: .mpeg
-    IANA_MT: video/mp4
+    IANA_MT: application/mp4
     iri: https://nma.eosc.cz/vocabularies/filetypes/mpeg4
   title:
     en: MPEG-4
@@ -1931,10 +1931,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mpeg4_avc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MPEG4_AVC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .mpeg
-    IANA_MT: application/mp4
+    FILE_EXT: mpg
+    IANA_MT: audio/mp4
     iri: https://nma.eosc.cz/vocabularies/filetypes/mpeg4_avc
   title:
     en: MPEG-4 AVC
@@ -1950,10 +1950,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mrsid
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MRSID
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .sid
-    IANA_MT: image/x-mrsid
+    IANA_MT: image/x-mrsid-image
     iri: https://nma.eosc.cz/vocabularies/filetypes/mrsid
   title:
     en: MrSID
@@ -1968,7 +1968,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/msg_http
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MSG_HTTP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: message/http
     iri: https://nma.eosc.cz/vocabularies/filetypes/msg_http
@@ -1983,7 +1983,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/msi
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MSI
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .msp
     IANA_MT: application/x-ole-storage
@@ -1999,7 +1999,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/mxd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/MXD
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .mxd
     IANA_MT: application/x-mxd
@@ -2014,7 +2014,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/n3
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/N3
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .n3
     IANA_MT: text/n3
@@ -2031,7 +2031,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/netcdf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/NETCDF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/x-netcdf
     FILE_EXT: .nc
@@ -2048,9 +2048,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/oapk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/OAPK
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .xapk
+    FILE_EXT: .apk
     IANA_MT: application/vnd.android.package-archive
     iri: https://nma.eosc.cz/vocabularies/filetypes/oapk
   title:
@@ -2064,7 +2064,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/octet
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/OCTET
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/octet-stream
     FILE_EXT: .zoo
@@ -2081,7 +2081,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/odb
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ODB
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .odb
     IANA_MT: application/vnd.oasis.opendocument.database
@@ -2097,7 +2097,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/odc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ODC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .odc
     IANA_MT: application/vnd.oasis.opendocument.chart
@@ -2115,7 +2115,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/odf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ODF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .odf
     IANA_MT: application/octet-stream
@@ -2132,7 +2132,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/odg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ODG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .odg
     IANA_MT: application/vnd.oasis.opendocument.graphics
@@ -2149,9 +2149,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/odp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ODP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .fodp
+    FILE_EXT: .odp
     IANA_MT: application/vnd.oasis.opendocument.presentation
     iri: https://nma.eosc.cz/vocabularies/filetypes/odp
   title:
@@ -2166,7 +2166,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ods
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ODS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .ods
     IANA_MT: application/vnd.oasis.opendocument.spreadsheet
@@ -2182,7 +2182,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/odt
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ODT
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/vnd.oasis.opendocument.text
     FILE_EXT: .odt
@@ -2200,7 +2200,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ogcfeat
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/OGCFEAT
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: application/geo+json
     iri: https://nma.eosc.cz/vocabularies/filetypes/ogcfeat
@@ -2212,7 +2212,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/op_datpro
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/OP_DATPRO
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     iri: https://nma.eosc.cz/vocabularies/filetypes/op_datpro
   title:
@@ -2248,7 +2248,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ovf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/OVF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .ovf
     IANA_MT: application/ovf
@@ -2264,7 +2264,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/owl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/OWL
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .owl
     IANA_MT: application/owl+xml
@@ -2281,7 +2281,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/parquet
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PARQUET
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .parquet
     IANA_MT: application/vnd.apache.parquet
@@ -2302,7 +2302,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdf
     CELLAR_MT: application/pdf;type=pdf1x
@@ -2319,7 +2319,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdf1x
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDF1X
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdf1x
     CELLAR_MT: application/pdf;type=pdf1x
@@ -2340,7 +2340,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfa1a
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFA1A
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfa1a
     CELLAR_MT: application/pdf;type=pdfa1a
@@ -2359,7 +2359,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfa1b
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFA1B
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfa1b
     CELLAR_MT: application/pdf;type=pdfa1b
@@ -2377,7 +2377,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfa2a
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFA2A
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfa2a
     CELLAR_MT: application/pdf;type=pdfa2a
@@ -2395,7 +2395,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfa2b
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFA2B
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfa2b
     CELLAR_MT: application/pdf;type=pdfa2b
@@ -2416,7 +2416,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfa3
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFA3
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfa3
     CELLAR_MT: application/pdf;type=pdfa3
@@ -2434,7 +2434,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfa3a
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFA3A
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .pdf
     IANA_MT: application/pdf
@@ -2449,7 +2449,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfa3b
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFA3B
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .pdf
     IANA_MT: application/pdf
@@ -2465,7 +2465,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfa3u
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFA3U
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .pdf
     IANA_MT: application/pdf
@@ -2487,7 +2487,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfua
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFUA
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfua
     CELLAR_MT: application/pdf;type=pdfua
@@ -2506,7 +2506,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfx
     CELLAR_MT: application/pdf;type=pdfx
@@ -2524,7 +2524,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfx1a
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFX1A
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfx1a
     CELLAR_MT: application/pdf;type=pdfx1a
@@ -2542,7 +2542,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfx2a
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFX2A
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfx2a
     CELLAR_MT: application/pdf;type=pdfx2a
@@ -2560,7 +2560,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pdfx4
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PDFX4
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pdfx4
     CELLAR_MT: application/pdf;type=pdfx4
@@ -2577,7 +2577,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PL
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .pod
     IANA_MT: text/x-perl
@@ -2595,7 +2595,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/png
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PNG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: png
     CELLAR_MT: image/png
@@ -2616,7 +2616,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pps
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PPS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/vnd.ms-powerpoint
     FILE_EXT: .pps
@@ -2636,7 +2636,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ppsx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PPSX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: ppsx
     CELLAR_MT: application/vnd.openxmlformats-officedocument.presentationml.slideshow
@@ -2656,7 +2656,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ppt
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PPT
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: ppt
     CELLAR_MT: application/vnd.ms-powerpoint
@@ -2677,7 +2677,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pptx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PPTX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: pptx
     CELLAR_MT: application/vnd.openxmlformats-officedocument.presentationml.presentation
@@ -2696,7 +2696,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ps
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .ps
     IANA_MT: application/postscript
@@ -2712,7 +2712,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/psd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PSD
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .psd
     IANA_MT: application/x-photoshop
@@ -2733,7 +2733,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/pwp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/PWP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: application/zip
     iri: https://nma.eosc.cz/vocabularies/filetypes/pwp
@@ -2749,7 +2749,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/qgs
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/QGS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .qgs
     IANA_MT: application/octet-stream
@@ -2765,9 +2765,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rar
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RAR
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .r00
+    FILE_EXT: .rar
     IANA_MT: application/vnd.rar
     iri: https://nma.eosc.cz/vocabularies/filetypes/rar
   title:
@@ -2781,7 +2781,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdata
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDATA
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .r
     IANA_MT: application/octet-stream
@@ -2803,7 +2803,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .rdf
     IANA_MT: application/rdf+xml
@@ -2820,7 +2820,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdf_n_quads
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDF_N_QUADS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .nq
     IANA_MT: application/n-quads
@@ -2836,7 +2836,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdf_n_triples
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDF_N_TRIPLES
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: rdf_n_triples
     CELLAR_MT: application/n-triples
@@ -2857,7 +2857,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdf_thrift
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDF_THRIFT
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .rt
     IANA_MT: application/rdf+thrift
@@ -2874,7 +2874,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdf_trig
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDF_TRIG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .trig
     IANA_MT: application/trig
@@ -2892,7 +2892,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdf_trix
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDF_TRIX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .trix
     IANA_MT: application/xml
@@ -2911,7 +2911,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdf_turtle
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: rdf_turtle
     CELLAR_MT: text/turtle
@@ -2929,7 +2929,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdf_xml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDF_XML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: rdf
     CELLAR_MT: application/rdf+xml
@@ -2947,7 +2947,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rdfa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RDFA
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .rdfa
     IANA_MT: application/rdfa
@@ -2964,7 +2964,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rest
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/REST
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: arcgis_rest
     iri: https://nma.eosc.cz/vocabularies/filetypes/rest
@@ -2979,7 +2979,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rpm
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RPM
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .rpm
     IANA_MT: application/x-rpm
@@ -3001,7 +3001,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rss
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RSS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .rss
     IANA_MT: application/rss+xml
@@ -3017,7 +3017,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/rtf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/RTF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: rtf
     CELLAR_MT: text/rtf
@@ -3034,9 +3034,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/sas
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SAS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .tpt
+    FILE_EXT: .7dat
     IANA_MT: application/octet-stream
     iri: https://nma.eosc.cz/vocabularies/filetypes/sas
   title:
@@ -3051,7 +3051,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/sb3
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SB3
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .sprite3
     IANA_MT: application/x-sb3
@@ -3068,7 +3068,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/sch
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SCH
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: sch
     CELLAR_MT: application/xml;type=schematron
@@ -3087,7 +3087,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/schema_xml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SCHEMA_XML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .xsd
     IANA_MT: application/xml
@@ -3105,10 +3105,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/sdmx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SDMX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .edi
-    IANA_MT: application/xml
+    IANA_MT: application/EDIFACT
     iri: https://nma.eosc.cz/vocabularies/filetypes/sdmx
   title:
     en: SDMX
@@ -3122,11 +3122,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/sgml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SGML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: sgml
     CELLAR_MT: text/sgml
-    FILE_EXT: .sgml
+    FILE_EXT: .sgm
     IANA_MT: text/sgml
     iri: https://nma.eosc.cz/vocabularies/filetypes/sgml
   title:
@@ -3141,7 +3141,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/shp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SHP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .shp
     IANA_MT: application/x-shapefile
@@ -3160,7 +3160,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/skos_xml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SKOS_XML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/rdf+xml;type=skos
     FILE_EXT: .rdf
@@ -3180,7 +3180,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/sparqlq
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SPARQLQ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: sparqlq
     CELLAR_MT: application/sparql-query
@@ -3200,7 +3200,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/sparqlqres
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SPARQLQRES
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: sparqlqr
     CELLAR_MT: application/sparql-results+xml
@@ -3217,7 +3217,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/spss_sav
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SPSS_SAV
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .sav
     IANA_MT: application/octet-stream
@@ -3234,7 +3234,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/sql
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SQL
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .sql
     IANA_MT: application/sql
@@ -3249,7 +3249,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/stata_dta
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/STATA_DTA
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .dta
     IANA_MT: application/octet-stream
@@ -3270,10 +3270,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/stl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/STL
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .stl
-    IANA_MT: model/x.stl-binary
+    IANA_MT: model/stl
     iri: https://nma.eosc.cz/vocabularies/filetypes/stl
   title:
     en: StL
@@ -3285,9 +3285,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/svg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SVG
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .svg
+    FILE_EXT: .svgz
     IANA_MT: image/svg+xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/svg
   title:
@@ -3301,7 +3301,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/swm
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/SWM
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .swm
     IANA_MT: application/x-ms-wim
@@ -3317,7 +3317,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/tab
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TAB
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .tab
     IANA_MT: application/x-tab
@@ -3334,7 +3334,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/tab_rstr
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TAB_RSTR
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .tab
     IANA_MT: application/x-tab-raster
@@ -3350,7 +3350,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/tar
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TAR
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/x-tar
     FILE_EXT: .tar
@@ -3369,7 +3369,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/tar_gz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TAR_GZ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .tar.gz
     IANA_MT: application/gzip
@@ -3386,7 +3386,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/tar_xz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TAR_XZ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .tar.xz
     IANA_MT: application/x-compressed
@@ -3402,7 +3402,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/thrift_binary
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/THRIFT_BINARY
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: application/vnd.apache.thrift.binary
     iri: https://nma.eosc.cz/vocabularies/filetypes/thrift_binary
@@ -3417,7 +3417,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/thrift_compact
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/THRIFT_COMPACT
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: application/vnd.apache.thrift.compact
     iri: https://nma.eosc.cz/vocabularies/filetypes/thrift_compact
@@ -3432,7 +3432,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/thrift_json
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/THRIFT_JSON
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: application/vnd.apache.thrift.json
     iri: https://nma.eosc.cz/vocabularies/filetypes/thrift_json
@@ -3451,11 +3451,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/tiff
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TIFF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: tiff
-    CELLAR_MT: image/tiff-fx
-    FILE_EXT: .tiff
+    CELLAR_MT: image/tiff
+    FILE_EXT: .tif
     IANA_MT: image/tiff
     iri: https://nma.eosc.cz/vocabularies/filetypes/tiff
   title:
@@ -3468,10 +3468,10 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/tiff_fx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TIFF_FX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: image/tiff-fx
-    FILE_EXT: .tif
+    FILE_EXT: .tiff
     IANA_MT: image/tiff-fx
     iri: https://nma.eosc.cz/vocabularies/filetypes/tiff_fx
   title:
@@ -3486,7 +3486,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/tmx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TMX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: application/xml
     FILE_EXT: .xml
@@ -3506,9 +3506,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/tsv
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TSV
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .tab
+    FILE_EXT: .tsv
     IANA_MT: text/tab-separated-values
     iri: https://nma.eosc.cz/vocabularies/filetypes/tsv
   title:
@@ -3527,7 +3527,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/txt
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/TXT
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: txt
     CELLAR_MT: text/plain
@@ -3547,7 +3547,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/ungen
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/UNGEN
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: text/plain
     iri: https://nma.eosc.cz/vocabularies/filetypes/ungen
@@ -3562,7 +3562,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/vcf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/VCF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .vcf
     IANA_MT: text/vnd.vcf
@@ -3579,7 +3579,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/war
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WAR
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .war
     IANA_MT: application/java+zip
@@ -3595,7 +3595,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/warc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WARC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: warc
     CELLAR_MT: application/warc
@@ -3614,7 +3614,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/warc_gz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WARC_GZ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .warc.gz
     IANA_MT: application/gzip
@@ -3631,7 +3631,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/wav
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WAV
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .wave
     IANA_MT: audio/wave
@@ -3648,7 +3648,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/wcs_srvc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WCS_SRVC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: text/xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/wcs_srvc
@@ -3664,7 +3664,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/webp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WEBP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .webp
     IANA_MT: image/webp
@@ -3682,9 +3682,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/wfs_srvc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WFS_SRVC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    IANA_MT: text/xml
+    IANA_MT: application/gml+xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/wfs_srvc
   title:
     en: WFS
@@ -3696,7 +3696,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/wim
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WIM
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .swm
     IANA_MT: application/x-ms-wim
@@ -3714,7 +3714,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/wms_srvc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WMS_SRVC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: text/xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/wms_srvc
@@ -3729,7 +3729,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/wmts_srvc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WMTS_SRVC
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     IANA_MT: application/gml+xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/wmts_srvc
@@ -3746,9 +3746,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/world
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/WORLD
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .jgw
+    FILE_EXT: .tfw
     IANA_MT: application/x-worldfile
     iri: https://nma.eosc.cz/vocabularies/filetypes/world
   title:
@@ -3762,11 +3762,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xhtml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XHTML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: xhtml
     CELLAR_MT: application/xhtml+xml
-    FILE_EXT: .htm
+    FILE_EXT: .xhtml
     IANA_MT: application/xhtml+xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/xhtml
   title:
@@ -3786,11 +3786,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xhtml5
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XHTML5
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: xhtml5
     CELLAR_MT: application/xhtml+xml;type=xhtml5
-    FILE_EXT: .html
+    FILE_EXT: .xhtml
     IANA_MT: application/xhtml+xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/xhtml5
   title:
@@ -3804,11 +3804,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xhtml_simpl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XHTML_SIMPL
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: xhtml_simplified
     CELLAR_MT: application/xhtml+xml;type=simplified
-    FILE_EXT: .xhtml
+    FILE_EXT: .xht
     IANA_MT: application/xhtml+xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/xhtml_simpl
   title:
@@ -3827,7 +3827,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xliff
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XLIFF
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .xlf
     IANA_MT: application/xliff+xml
@@ -3844,7 +3844,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xls
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XLS
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: xls
     CELLAR_MT: application/vnd.ms-excel
@@ -3864,7 +3864,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xlsb
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XLSB
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .xlsb
     IANA_MT: application/vnd.ms-excel.sheet.binary.macroEnabled.12
@@ -3882,7 +3882,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xlsm
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XLSM
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .xlsm
     IANA_MT: application/vnd.ms-excel.sheet.macroEnabled.12
@@ -3900,7 +3900,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xlsx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XLSX
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: xlsx
     CELLAR_MT: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
@@ -3920,7 +3920,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: xml
     CELLAR_MT: application/xml
@@ -3940,7 +3940,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xslfo
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XSLFO
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .fo
     IANA_MT: application/xml
@@ -3958,11 +3958,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xslt
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XSLT
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: xslt
     CELLAR_MT: application/xslt+xml
-    FILE_EXT: .xslt
+    FILE_EXT: .xsl
     IANA_MT: application/xslt+xml
     iri: https://nma.eosc.cz/vocabularies/filetypes/xslt
   title:
@@ -3979,7 +3979,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xyz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XYZ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MT: chemical/x-pdb
     FILE_EXT: .xyz
@@ -3996,7 +3996,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/xz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/XZ
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .xz
     IANA_MT: application/x-xz
@@ -4014,9 +4014,9 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/yaml
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/YAML
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
-    FILE_EXT: .yaml
+    FILE_EXT: .yml
     IANA_MT: application/yaml
     iri: https://nma.eosc.cz/vocabularies/filetypes/yaml
   title:
@@ -4030,7 +4030,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/z
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/Z
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     FILE_EXT: .Z
     IANA_MT: application/x-compress
@@ -4046,7 +4046,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/filetypes/zip
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/file-type/ZIP
-    scheme: http://publications.europa.eu/resource/authority/file-type/
+    scheme: http://publications.europa.eu/resource/authority/file-type
   props:
     CELLAR_MANIFT: zip
     CELLAR_MT: application/zip

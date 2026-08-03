@@ -23,6 +23,42 @@ class VocabularyWriter:
     def write(self, output_file: Path, namespace: URIRef) -> None:
         """Write the vocabulary data to the output file."""
 
+    def identifier_entry(self, value: URIRef) -> dict[str, str]:
+        """Build an {identifier, scheme} entry for the given identifier URI.
+
+        The scheme is resolved from the identifier's own skos:inScheme assertions
+        (falling back to splitting the URI itself when it has none). A URI can
+        belong to several concept schemes at once (e.g. a general authority table
+        and a specific versioned one); schemes that are themselves a more specific
+        variant of another candidate (i.e. start with it) are dropped, and among
+        what remains we pick the one the identifier's URI actually falls under.
+        """
+        candidates = list(self.store.graph.objects(value, SKOS.inScheme))
+        if not candidates:
+            return {"identifier": str(value), "scheme": split_uri(str(value))[0]}
+
+        candidates = [
+            candidate
+            for candidate in candidates
+            if not any(
+                candidate != other and str(candidate).startswith(str(other)) for other in candidates
+            )
+        ]
+
+        # a single candidate is authoritative regardless of whether it happens to be
+        # a URL-prefix of the identifier (skos:inScheme is not required to be one)
+        if len(candidates) == 1:
+            return {"identifier": str(value), "scheme": str(candidates[0])}
+
+        matching = [candidate for candidate in candidates if str(value).startswith(str(candidate))]
+        if len(matching) != 1:
+            msg = (
+                f"Could not unambiguously resolve a scheme for identifier {value} "
+                f"among candidates {candidates} (matching: {matching})"
+            )
+            raise ValueError(msg)
+        return {"identifier": str(value), "scheme": str(matching[0])}
+
     def select_concepts(self, namespace: URIRef) -> list[tuple[URIRef, list[tuple[URIRef, Any]]]]:
         """Select the concepts to write to the output file."""
         # select all concepts in the namespace that have a skos:inScheme property with the given namespace
@@ -110,9 +146,7 @@ class GenericVocabularyWriter(VocabularyWriter):
                     else:
                         converted_record.setdefault("description", {})[value.language] = str(value)
                 elif prop == SKOS.exactMatch:
-                    converted_record["identifiers"].append(
-                        {"identifier": str(value), "scheme": split_uri(str(value))[0]}
-                    )
+                    converted_record["identifiers"].append(self.identifier_entry(value))
                 elif prop == NMA.nma_identifier:
                     converted_record["id"] = str(value)
                 elif prop in CCMM_PROPS:
@@ -132,7 +166,7 @@ class GenericVocabularyWriter(VocabularyWriter):
                 # Skip self-references (when the subject is the same as the current concept)
                 if subj == concept:
                     continue
-                converted_record["crosswalks"].append({"identifier": str(subj), "scheme": split_uri(str(subj))[0]})
+                converted_record["crosswalks"].append(self.identifier_entry(subj))
             if "title" not in converted_record:
                 continue
             if not converted_record["crosswalks"]:

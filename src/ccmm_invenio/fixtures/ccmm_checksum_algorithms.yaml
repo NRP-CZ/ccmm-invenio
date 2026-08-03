@@ -5,7 +5,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512/224
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha-512/224
-    scheme: https://cesnet.cz/checksum-algorithms/sha-512/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651434
     scheme: http://www.wikidata.org/entity/
   props:
@@ -19,7 +19,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512/256
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha-512/256
-    scheme: https://cesnet.cz/checksum-algorithms/sha-512/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651437
     scheme: http://www.wikidata.org/entity/
   props:
@@ -33,7 +33,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ascon
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/ascon
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q116757386
     scheme: http://www.wikidata.org/entity/
   props:
@@ -47,7 +47,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/blake
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q108544539
     scheme: http://www.wikidata.org/entity/
   props:
@@ -61,7 +61,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/blake2
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q81575703
     scheme: http://www.wikidata.org/entity/
   props:
@@ -75,7 +75,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2b
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/blake2b
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q111508990
     scheme: http://www.wikidata.org/entity/
   props:
@@ -89,7 +89,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2bp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/blake2bp
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q111509026
     scheme: http://www.wikidata.org/entity/
   props:
@@ -103,7 +103,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2s
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/blake2s
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q111508995
     scheme: http://www.wikidata.org/entity/
   props:
@@ -117,7 +117,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2sp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/blake2sp
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q111509027
     scheme: http://www.wikidata.org/entity/
   props:
@@ -131,7 +131,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake2x
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/blake2x
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q111509029
     scheme: http://www.wikidata.org/entity/
   props:
@@ -145,7 +145,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blake3
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/blake3
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q81575705
     scheme: http://www.wikidata.org/entity/
   props:
@@ -159,7 +159,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/blue_midnight_wish
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/blue_midnight_wish
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q16525572
     scheme: http://www.wikidata.org/entity/
   props:
@@ -173,7 +173,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/collision_resistant_hash
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/collision_resistant_hash
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q85929139
     scheme: http://www.wikidata.org/entity/
   props:
@@ -187,7 +187,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/cryptographic_hash_and_stream_cipher_function
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/cryptographic_hash_and_stream_cipher_function
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q19845304
     scheme: http://www.wikidata.org/entity/
   props:
@@ -201,7 +201,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/cshake
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/cshake
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q131904294
     scheme: http://www.wikidata.org/entity/
   props:
@@ -215,7 +215,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/double_sha-256
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/double_sha-256
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q124624061
     scheme: http://www.wikidata.org/entity/
   props:
@@ -229,7 +229,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/elliptic_curve_only_hash
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/elliptic_curve_only_hash
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q5365792
     scheme: http://www.wikidata.org/entity/
   props:
@@ -243,7 +243,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/fast_syndrome_based_hash
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/fast_syndrome_based_hash
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q5436992
     scheme: http://www.wikidata.org/entity/
   props:
@@ -257,7 +257,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/gost_r_3411-94_and_gost_34311-95
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/gost_r_3411-94_and_gost_34311-95
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q3756229
     scheme: http://www.wikidata.org/entity/
   props:
@@ -271,7 +271,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/groestl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/groestl
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1551743
     scheme: http://www.wikidata.org/entity/
   props:
@@ -285,7 +285,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/haifa_construction
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/haifa_construction
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q15400317
     scheme: http://www.wikidata.org/entity/
   props:
@@ -299,7 +299,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/has-160
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/has-160
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1051625
     scheme: http://www.wikidata.org/entity/
   props:
@@ -313,7 +313,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/haval
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/haval
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q675690
     scheme: http://www.wikidata.org/entity/
   props:
@@ -327,7 +327,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/jh
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/jh
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q4041729
     scheme: http://www.wikidata.org/entity/
   props:
@@ -341,7 +341,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/kmac
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/kmac
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q131904300
     scheme: http://www.wikidata.org/entity/
   props:
@@ -355,7 +355,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/kupyna
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/kupyna
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q21157922
     scheme: http://www.wikidata.org/entity/
   props:
@@ -369,7 +369,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/md2
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/md2
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q741247
     scheme: http://www.wikidata.org/entity/
   props:
@@ -383,7 +383,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/md4
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/md4
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1144542
     scheme: http://www.wikidata.org/entity/
   props:
@@ -397,7 +397,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/md5
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/md5
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q185235
     scheme: http://www.wikidata.org/entity/
   props:
@@ -411,7 +411,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/md6
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/md6
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q2031069
     scheme: http://www.wikidata.org/entity/
   props:
@@ -425,7 +425,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/mdc-2
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/mdc-2
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q3841252
     scheme: http://www.wikidata.org/entity/
   props:
@@ -439,7 +439,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/merkle-damgard_construction
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/merkle-damgard_construction
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1757463
     scheme: http://www.wikidata.org/entity/
   props:
@@ -453,7 +453,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/message_digest
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/message_digest
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1923906
     scheme: http://www.wikidata.org/entity/
   props:
@@ -467,7 +467,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/n-hash
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/n-hash
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q2354940
     scheme: http://www.wikidata.org/entity/
   props:
@@ -481,7 +481,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/nsa_suite_a_cryptography
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/nsa_suite_a_cryptography
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q16934823
     scheme: http://www.wikidata.org/entity/
   props:
@@ -495,7 +495,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/parallelhash
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/parallelhash
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q131904308
     scheme: http://www.wikidata.org/entity/
   props:
@@ -509,7 +509,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/puzzle_friendliness
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/puzzle_friendliness
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q124518107
     scheme: http://www.wikidata.org/entity/
   props:
@@ -521,7 +521,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/q4040382
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/q4040382
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q4040382
     scheme: http://www.wikidata.org/entity/
   props:
@@ -535,7 +535,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/quark
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/quark
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q30678451
     scheme: http://www.wikidata.org/entity/
   props:
@@ -549,7 +549,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/ripemd
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q2124306
     scheme: http://www.wikidata.org/entity/
   props:
@@ -563,7 +563,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-128
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/ripemd-128
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q3415207
     scheme: http://www.wikidata.org/entity/
   props:
@@ -577,7 +577,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-160
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/ripemd-160
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q20745583
     scheme: http://www.wikidata.org/entity/
   props:
@@ -591,7 +591,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-256
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/ripemd-256
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q7888922
     scheme: http://www.wikidata.org/entity/
   props:
@@ -603,7 +603,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/ripemd-320
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/ripemd-320
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q4047856
     scheme: http://www.wikidata.org/entity/
   props:
@@ -617,7 +617,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-2
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha-2
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1968605
     scheme: http://www.wikidata.org/entity/
   props:
@@ -631,7 +631,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-224
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha-224
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651417
     scheme: http://www.wikidata.org/entity/
   props:
@@ -645,7 +645,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-256
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha-256
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651361
     scheme: http://www.wikidata.org/entity/
   props:
@@ -659,7 +659,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-384
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha-384
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651380
     scheme: http://www.wikidata.org/entity/
   props:
@@ -673,7 +673,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha-512
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha-512
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651371
     scheme: http://www.wikidata.org/entity/
   props:
@@ -687,7 +687,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-224
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha3-224
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651442
     scheme: http://www.wikidata.org/entity/
   props:
@@ -701,7 +701,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-256
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha3-256
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651443
     scheme: http://www.wikidata.org/entity/
   props:
@@ -715,7 +715,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-384
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha3-384
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651447
     scheme: http://www.wikidata.org/entity/
   props:
@@ -729,7 +729,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha3-512
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha3-512
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651449
     scheme: http://www.wikidata.org/entity/
   props:
@@ -743,7 +743,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/sha_hash_functions
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/sha_hash_functions
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q387688
     scheme: http://www.wikidata.org/entity/
   props:
@@ -757,7 +757,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/shake128
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/shake128
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651451
     scheme: http://www.wikidata.org/entity/
   props:
@@ -771,7 +771,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/shake256
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/shake256
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110651453
     scheme: http://www.wikidata.org/entity/
   props:
@@ -785,7 +785,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/shangmi_3
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/shangmi_3
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q28410000
     scheme: http://www.wikidata.org/entity/
   props:
@@ -797,7 +797,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/shavite-3
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/shavite-3
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q16530359
     scheme: http://www.wikidata.org/entity/
   props:
@@ -811,7 +811,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/skein
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/skein
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1142190
     scheme: http://www.wikidata.org/entity/
   props:
@@ -825,7 +825,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/smash
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/smash
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q7391081
     scheme: http://www.wikidata.org/entity/
   props:
@@ -839,7 +839,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/snefru
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/snefru
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1432392
     scheme: http://www.wikidata.org/entity/
   props:
@@ -853,7 +853,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/streebog
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/streebog
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q16635204
     scheme: http://www.wikidata.org/entity/
   props:
@@ -867,7 +867,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/tiger
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/tiger
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1935697
     scheme: http://www.wikidata.org/entity/
   props:
@@ -881,7 +881,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/tuplehash
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/tuplehash
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q131904302
     scheme: http://www.wikidata.org/entity/
   props:
@@ -895,7 +895,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/very_smooth_hash
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/very_smooth_hash
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q3553011
     scheme: http://www.wikidata.org/entity/
   props:
@@ -909,7 +909,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/whirlpool
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/whirlpool
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q1893324
     scheme: http://www.wikidata.org/entity/
   props:
@@ -923,7 +923,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/checksumalgorithms/yescrypt
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/checksum-algorithms/yescrypt
-    scheme: https://cesnet.cz/checksum-algorithms/
+    scheme: https://cesnet.cz/checksum-algorithms
   - identifier: http://www.wikidata.org/entity/Q110734564
     scheme: http://www.wikidata.org/entity/
   props:

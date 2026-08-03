@@ -3,7 +3,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/aar
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/AAR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/aa
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -21,7 +21,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/abk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ABK
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ab
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -42,7 +42,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/afr
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/AFR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/af
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -91,7 +91,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/aka
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/AKA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ak
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -137,7 +137,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/amh
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/AMH
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/am
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -199,7 +199,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ara
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ARA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ar
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -253,7 +253,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/arg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ARG
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/an
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -271,7 +271,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/asm
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ASM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/as
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -289,7 +289,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ava
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/AVA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/av
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -307,7 +307,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ave
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/AVE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ae
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -328,7 +328,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/aym
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/AYM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ay
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -380,7 +380,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/aze
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/AZE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/az
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -431,7 +431,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/bak
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/BAK
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ba
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -459,7 +459,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/bam
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/BAM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/bm
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -510,7 +510,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/bel
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/BEL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/be
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -580,7 +580,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ben
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/BEN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/bn
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -634,7 +634,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/bis
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/BIS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/bi
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -695,7 +695,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/bod
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/BOD
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/bo
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -752,7 +752,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/bos
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/BOS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/bs
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -814,7 +814,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/bre
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/BRE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/br
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -877,7 +877,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/bul
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/BUL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/bg
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -945,7 +945,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/cat
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/CAT
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ca
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1006,7 +1006,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ces
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/CES
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/cs
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1064,7 +1064,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/cha
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/CHA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ch
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1105,7 +1105,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/che
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/CHE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ce
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1123,7 +1123,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/chu
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/CHU
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/cu
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1141,7 +1141,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/chv
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/CHV
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/cv
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1168,7 +1168,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/cor
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/COR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/kw
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1225,7 +1225,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/cos
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/COS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/co
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1284,7 +1284,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/cre
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/CRE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/cr
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1334,7 +1334,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/cym
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/CYM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/cy
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1397,12 +1397,12 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/dan
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/DAN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/da
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: DA
-    FD_060: DK
+    FD_060: DA
     ISO_639_1: da
     ISO_639_2B: dan
     ISO_639_2T: dan
@@ -1461,7 +1461,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/deu
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/DEU
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/de
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1472,7 +1472,7 @@
     ISO_639_2T: deu
     ISO_639_3: deu
     PLANJO: DE
-    PUB_LANG: DE
+    PUB_LANG: OS
     PUB_LNGISO: DE
     TED: DE
     TED_SCHEMA: DE
@@ -1530,7 +1530,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/div
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/DIV
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/dv
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1583,7 +1583,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/dzo
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/DZO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/dz
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1638,7 +1638,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ell
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ELL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/el
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1648,8 +1648,8 @@
     ISO_639_2B: gre
     ISO_639_2T: ell
     ISO_639_3: ell
-    PUB_LANG: GR
-    PUB_LNGISO: EL
+    PUB_LANG: EL
+    PUB_LNGISO: GR
     TED: EL
     TED_SCHEMA: EL
     XML_LNG: el
@@ -1702,7 +1702,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/eng
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ENG
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/en
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1769,7 +1769,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/epo
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/EPO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/eo
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1828,7 +1828,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/est
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/EST
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/et
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1894,7 +1894,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/eus
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/EUS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/eu
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -1950,7 +1950,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ewe
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/EWE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ee
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2001,7 +2001,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/fao
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/FAO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/fo
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2076,7 +2076,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/fas
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/FAS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/fa
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2130,7 +2130,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/fij
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/FIJ
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/fj
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2180,7 +2180,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/fin
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/FIN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/fi
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2245,12 +2245,12 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/fra
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/FRA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/fr
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: FR
-    FD_060: FR
+    FD_060: F
     ISO_639_1: fr
     ISO_639_2B: fre
     ISO_639_2T: fra
@@ -2309,7 +2309,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/fry
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/FRY
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/fy
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2367,7 +2367,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ful
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/FUL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ff
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2418,7 +2418,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/gla
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/GLA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/gd
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2485,12 +2485,12 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/gle
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/GLE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ga
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: GA
-    FD_060: GA
+    FD_060: IRL
     ISO_639_1: ga
     ISO_639_2B: gle
     ISO_639_2T: gle
@@ -2547,7 +2547,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/glg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/GLG
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/gl
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2602,7 +2602,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/glv
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/GLV
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/gv
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2646,7 +2646,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/grn
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/GRN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/gn
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2687,7 +2687,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/guj
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/GUJ
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/gu
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2708,7 +2708,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/hat
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HAT
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ht
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2756,7 +2756,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/hau
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HAU
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ha
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2812,7 +2812,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/hbs
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HBS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sh
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2873,7 +2873,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/heb
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HEB
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/he
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2927,7 +2927,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/her
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HER
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/hz
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -2960,7 +2960,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/hin
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HIN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/hi
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3015,7 +3015,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/hmo
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HMO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ho
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3065,7 +3065,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/hrv
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HRV
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/hr
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3128,7 +3128,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/hun
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HUN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/hu
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3194,7 +3194,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/hye
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/HYE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/hy
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3252,7 +3252,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ibo
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/IBO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ig
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3301,7 +3301,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ido
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/IDO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/io
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3319,7 +3319,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/iii
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/III
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ii
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3337,7 +3337,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/iku
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/IKU
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/iu
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3355,7 +3355,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ile
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ILE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ie
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3393,7 +3393,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ina
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/INA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ia
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3453,7 +3453,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ind
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/IND
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/id
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3504,7 +3504,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ipk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/IPK
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ik
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3535,7 +3535,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/isl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ISL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/is
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3601,7 +3601,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ita
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ITA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/it
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3656,7 +3656,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/jav
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/JAV
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/jv
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3691,7 +3691,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/jpn
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/JPN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ja
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3767,7 +3767,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kal
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KAL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/kl
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3819,7 +3819,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kan
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KAN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/kn
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3837,7 +3837,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kas
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KAS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ks
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3865,7 +3865,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kat
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KAT
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ka
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3917,7 +3917,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kau
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KAU
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/kr
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -3949,7 +3949,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kaz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KAZ
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/kk
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4012,7 +4012,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/khm
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KHM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/km
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4063,7 +4063,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kik
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KIK
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ki
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4083,7 +4083,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kin
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KIN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/rw
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4141,7 +4141,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kir
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KIR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ky
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4193,7 +4193,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kom
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KOM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/kv
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4213,7 +4213,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kon
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KON
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/kg
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4268,7 +4268,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kor
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KOR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ko
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4322,7 +4322,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kua
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KUA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/kj
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4354,7 +4354,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/kur
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/KUR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ku
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4417,7 +4417,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/lao
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/LAO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/lo
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4483,7 +4483,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/lat
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/LAT
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/la
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4541,7 +4541,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/lav
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/LAV
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/lv
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4596,7 +4596,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/lim
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/LIM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/li
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4616,7 +4616,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/lin
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/LIN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ln
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4669,7 +4669,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/lit
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/LIT
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/lt
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4731,7 +4731,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ltz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/LTZ
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/lb
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4740,8 +4740,8 @@
     ISO_639_2B: ltz
     ISO_639_2T: ltz
     ISO_639_3: ltz
-    PUB_LANG: LB
-    PUB_LNGISO: LX
+    PUB_LANG: LX
+    PUB_LNGISO: LB
     TED: LB
     TED_SCHEMA: LB
     XML_LNG: lb
@@ -4784,7 +4784,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/lub
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/LUB
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/lu
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4802,7 +4802,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/lug
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/LUG
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/lg
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4823,7 +4823,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mah
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MAH
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/mh
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4864,7 +4864,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mal
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MAL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ml
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4882,7 +4882,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mar
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MAR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/mr
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4905,7 +4905,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mkd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MKD
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/mk
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -4973,7 +4973,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mlg
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MLG
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/mg
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5034,7 +5034,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mlt
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MLT
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/mt
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5109,7 +5109,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mol
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MOL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/mo
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5174,7 +5174,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mon
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MON
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/mn
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5229,7 +5229,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mri
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MRI
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/mi
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5298,7 +5298,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/msa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MSA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ms
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5354,7 +5354,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/mya
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/MYA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/my
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5400,7 +5400,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nau
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NAU
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/na
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5441,7 +5441,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nav
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NAV
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/nv
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5462,7 +5462,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nbl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NBL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/nr
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5510,7 +5510,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nde
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NDE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/nd
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5550,7 +5550,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ndo
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NDO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ng
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5580,7 +5580,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nep
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NEP
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ne
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5641,7 +5641,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nld
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NLD
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/nl
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5703,7 +5703,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nno
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NNO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/nn
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5751,7 +5751,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nob
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NOB
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/nb
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5809,12 +5809,12 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nor
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NOR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/no
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: 'NO'
-    FD_060: N
+    FD_060: 'NO'
     ISO_639_1: 'no'
     ISO_639_2B: nor
     ISO_639_2T: nor
@@ -5888,7 +5888,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/nya
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/NYA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ny
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5940,7 +5940,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/oci
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/OCI
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/oc
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -5993,7 +5993,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/oji
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/OJI
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/oj
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6011,7 +6011,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ori
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ORI
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/or
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6029,7 +6029,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/orm
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ORM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/om
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6063,7 +6063,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/oss
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/OSS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/os
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6115,7 +6115,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/pan
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/PAN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/pa
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6167,7 +6167,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/pli
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/PLI
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/pi
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6192,7 +6192,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/pol
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/POL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/pl
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6257,7 +6257,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/por
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/POR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/pt
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6322,7 +6322,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/pus
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/PUS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ps
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6368,7 +6368,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/que
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/QUE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/qu
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6418,7 +6418,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/roh
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ROH
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/rm
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6478,7 +6478,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ron
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/RON
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ro
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6535,7 +6535,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/run
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/RUN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/rn
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6587,7 +6587,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/rus
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/RUS
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ru
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6642,7 +6642,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/sag
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SAG
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sg
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6694,7 +6694,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/san
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SAN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sa
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6744,7 +6744,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/sin
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SIN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/si
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6802,7 +6802,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/slk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SLK
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sk
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6866,7 +6866,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/slv
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SLV
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sl
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6935,7 +6935,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/sme
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SME
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/se
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -6989,7 +6989,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/smo
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SMO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sm
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7038,7 +7038,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/sna
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SNA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sn
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7078,7 +7078,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/snd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SND
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sd
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7112,7 +7112,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/som
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SOM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/so
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7159,7 +7159,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/sot
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SOT
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/st
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7210,12 +7210,12 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/spa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SPA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/es
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
     EUDOR_LNG: ES
-    FD_060: E
+    FD_060: ES
     ISO_639_1: es
     ISO_639_2B: spa
     ISO_639_2T: spa
@@ -7276,7 +7276,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/sqi
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SQI
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sq
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7330,7 +7330,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/srd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SRD
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sc
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7357,7 +7357,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/srp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SRP
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sr
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7413,7 +7413,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ssw
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SSW
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ss
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7454,7 +7454,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/sun
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SUN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/su
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7484,7 +7484,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/swa
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SWA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sw
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7543,7 +7543,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/swe
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/SWE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/sv
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7598,7 +7598,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tah
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TAH
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ty
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7628,7 +7628,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tam
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TAM
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ta
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7680,7 +7680,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tat
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TAT
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/tt
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7698,7 +7698,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tel
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TEL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/te
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7716,7 +7716,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tgl
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TGL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/tl
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7744,7 +7744,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tha
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/THA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/th
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7804,7 +7804,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tir
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TIR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ti
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7850,7 +7850,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ton
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TON
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/to
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7893,7 +7893,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tsn
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TSN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/tn
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7936,7 +7936,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tso
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TSO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ts
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -7990,7 +7990,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tuk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TUK
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/tk
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8049,7 +8049,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tur
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TUR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/tr
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8103,7 +8103,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/twi
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TWI
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/tw
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8121,7 +8121,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/uig
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/UIG
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ug
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8147,7 +8147,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ukr
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/UKR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/uk
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8208,7 +8208,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/urd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/URD
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ur
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8270,7 +8270,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/uzb
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/UZB
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/uz
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8324,7 +8324,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/ven
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/VEN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/ve
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8375,7 +8375,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/vie
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/VIE
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/vi
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8426,7 +8426,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/vol
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/VOL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/vo
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8454,7 +8454,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/wln
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/WLN
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/wa
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8506,7 +8506,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/wol
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/WOL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/wo
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8558,7 +8558,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/xho
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/XHO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/xh
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8608,16 +8608,16 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/yid
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/YID
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/yi
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
-    EUDOR_LNG: JI
+    EUDOR_LNG: YI
     ISO_639_1: yi
     ISO_639_2B: yid
     ISO_639_2T: yid
     ISO_639_3: yid
-    PUB_LANG: JI
+    PUB_LANG: YI
     PUB_LNGISO: JI
     XML_LNG: yi
     iri: https://nma.eosc.cz/vocabularies/languages/yid
@@ -8665,7 +8665,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/yor
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/YOR
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/yo
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8708,7 +8708,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/zha
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ZHA
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/za
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8743,7 +8743,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/zho
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ZHO
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/zh
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8807,7 +8807,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/zul
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/ZUL
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/zu
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:
@@ -8880,7 +8880,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/languages/tgk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://publications.europa.eu/resource/authority/language/TGK
-    scheme: http://publications.europa.eu/resource/authority/language/
+    scheme: http://publications.europa.eu/resource/authority/language
   - identifier: http://id.loc.gov/vocabulary/iso639-1/tg
     scheme: http://id.loc.gov/vocabulary/iso639-1/
   props:

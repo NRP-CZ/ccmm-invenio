@@ -3,7 +3,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/abstract
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/description-types/abstract
-    scheme: https://cesnet.cz/description-types/
+    scheme: https://cesnet.cz/description-types
   - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract
     scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
   props:
@@ -20,7 +20,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/methods
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/description-types/methods
-    scheme: https://cesnet.cz/description-types/
+    scheme: https://cesnet.cz/description-types
   - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods
     scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
   props:
@@ -37,7 +37,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/other
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/description-types/other
-    scheme: https://cesnet.cz/description-types/
+    scheme: https://cesnet.cz/description-types
   - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Other
     scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
   props:
@@ -54,7 +54,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/series-information
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/description-types/series-information
-    scheme: https://cesnet.cz/description-types/
+    scheme: https://cesnet.cz/description-types
   - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/SeriesInformation
     scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
   props:
@@ -71,7 +71,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/table-of-contents
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/description-types/table-of-contents
-    scheme: https://cesnet.cz/description-types/
+    scheme: https://cesnet.cz/description-types
   - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TableOfContents
     scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
   props:
@@ -88,7 +88,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/descriptiontypes/technical-info
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://cesnet.cz/description-types/technical-info
-    scheme: https://cesnet.cz/description-types/
+    scheme: https://cesnet.cz/description-types
   - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo
     scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
   props:

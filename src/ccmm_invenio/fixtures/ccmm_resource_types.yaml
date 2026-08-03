@@ -6,7 +6,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/542x-3s04
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/542X-3S04
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://ncicb.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C1707689
     scheme: https://ncicb.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
@@ -47,7 +47,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/8kjg-qs0y
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/8KJG-QS0Y
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://w3id.org/skgo/modsci#ScientificInstrument
     scheme: https://w3id.org/skgo/modsci#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Instrument
@@ -91,7 +91,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_12cc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_12cc
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://id.loc.gov/vocabulary/resourceTypes/car.html
     scheme: https://id.loc.gov/vocabulary/resourceTypes/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Image
@@ -129,24 +129,17 @@
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-patent
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   description:
-    en: 'A set of exclusive rights granted by law to applicants for inventions that
-      are
-
-      new, non-obvious and commercially applicable. A patent is valid for a limited
-
-      period (generally 20 years), during which time patent holders can commercially
-
-      exploit their inventions on an exclusive basis. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+    en: A patent or patent application.
   id: c_15cd
   identifiers:
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_15cd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_15cd
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4551
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/eprint/type/Patent
     scheme: http://purl.org/eprint/type/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4551
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -178,9 +171,9 @@
     uk: патент
     zh: 专利
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/event
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-other
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/event
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/other
     scheme: https://zenodo.org/vocabularies/resourcetypes/
@@ -195,7 +188,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_1843
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_1843
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/datacite/v4.4/Other
     scheme: http://purl.org/datacite/v4.4/
   - identifier: info:eu-repo/semantics/Other
@@ -243,7 +236,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18cc
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: info:eu-repo/semantics/Sound
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Sound
@@ -277,21 +270,21 @@
     uk: звук
     zh: 声音
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-annotationcollection
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-taxonomictreatment
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-standard
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-milestone
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-milestone
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-standard
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-datapaper
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://lindat.mff.cuni.cz/vocabularies/resource_type/languageDescription
-    scheme: https://lindat.mff.cuni.cz/vocabularies/resource_type/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-taxonomictreatment
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-annotationcollection
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://lindat.mff.cuni.cz/vocabularies/resource_type/corpus
+    scheme: https://lindat.mff.cuni.cz/vocabularies/resource_type/
+  - identifier: https://lindat.mff.cuni.cz/vocabularies/resource_type/languageDescription
     scheme: https://lindat.mff.cuni.cz/vocabularies/resource_type/
   description:
     en: 'A resource consisting primarily of words for reading. Examples include books,
@@ -303,11 +296,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18cf
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/dc/dcmitype/Text
-    scheme: http://purl.org/dc/dcmitype/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/datacite/v4.4/Text
     scheme: http://purl.org/datacite/v4.4/
+  - identifier: http://purl.org/dc/dcmitype/Text
+    scheme: http://purl.org/dc/dcmitype/
   - identifier: info:eu-repo/semantics/Text
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
@@ -352,7 +345,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18hj
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18hj
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -383,7 +376,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18wq
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18wq
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -413,7 +406,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18ww
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18ww
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -443,7 +436,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_2659
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_2659
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/spar/fabio/Periodical
     scheme: http://purl.org/spar/fabio/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Journal
@@ -474,7 +467,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_26e4
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_26e4
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -502,11 +495,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_393c
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_393c
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e6123
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/datacite/v4.4/Workflow
     scheme: http://purl.org/datacite/v4.4/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e6123
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: info:eu-repo/semantics/Workflow
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Workflow
@@ -548,7 +541,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_3e5a
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_3e5a
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -569,11 +562,11 @@
     sr: informativni prilog
     zh: 期刊文献
 - crosswalks:
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/software-computationalnotebook
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/image-diagram
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/software
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/software-computationalnotebook
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://lindat.mff.cuni.cz/vocabularies/resource_type/toolService
     scheme: https://lindat.mff.cuni.cz/vocabularies/resource_type/
@@ -584,11 +577,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_5ce6
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_5ce6
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/dc/dcmitype/Software
-    scheme: http://purl.org/dc/dcmitype/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://id.loc.gov/vocabulary/contentTypes/cop
     scheme: http://id.loc.gov/vocabulary/contentTypes/
+  - identifier: http://purl.org/dc/dcmitype/Software
+    scheme: http://purl.org/dc/dcmitype/
   - identifier: info:eu-repo/semantics/Software
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Software
@@ -629,7 +622,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_ba1f
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ba1f
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/info:eu-repo/#semantics/reportPart
     scheme: http://purl.org/info:eu-repo/#semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
@@ -659,13 +652,13 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_c513
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_c513
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
+  - identifier: http://purl.org/dc/dcmitype/Image
+    scheme: http://purl.org/dc/dcmitype/
   - identifier: http://purl.org/datacite/v4.4/Image
     scheme: http://purl.org/datacite/v4.4/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3436
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
-  - identifier: http://purl.org/dc/dcmitype/Image
-    scheme: http://purl.org/dc/dcmitype/
   - identifier: info:eu-repo/semantics/Image
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Image
@@ -712,17 +705,17 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_ddb1
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ddb1
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/dc/dcmitype/Dataset
-    scheme: http://purl.org/dc/dcmitype/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.org/Dataset
     scheme: https://schema.org/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2865
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.bioontology.org/ontology/MESH/D064886
     scheme: http://purl.bioontology.org/ontology/MESH/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2865
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/datacite/v4.4/Dataset
     scheme: http://purl.org/datacite/v4.4/
+  - identifier: http://purl.org/dc/dcmitype/Dataset
+    scheme: http://purl.org/dc/dcmitype/
   - identifier: info:eu-repo/semantics/Dataset
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
@@ -768,7 +761,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_e059
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_e059
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/InteractiveResource
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -809,7 +802,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_e9a0
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_e9a0
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/datacite/v4.4/InteractiveResource
     scheme: http://purl.org/datacite/v4.4/
   - identifier: info:eu-repo/semantics/InteractiveResource
@@ -853,7 +846,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/ehvm-h119
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/EHVM-H119
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -870,7 +863,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/f8rt-tjk0
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/F8RT-TJK0
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -917,7 +910,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/gsza-y7v7
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/GSZA-Y7V7
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -962,7 +955,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/h6qp-sc1x
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/H6QP-SC1X
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1002,13 +995,13 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/rmp5-3gq6
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/RMP5-3GQ6
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: http://www.w3.org/ns/prov#Collection
-    scheme: http://www.w3.org/ns/prov#
-  - identifier: http://purl.bioontology.org/ontology/MESH/D020471
-    scheme: http://purl.bioontology.org/ontology/MESH/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/ontology/bibo/Collection
     scheme: http://purl.org/ontology/bibo/
+  - identifier: http://purl.bioontology.org/ontology/MESH/D020471
+    scheme: http://purl.bioontology.org/ontology/MESH/
+  - identifier: http://www.w3.org/ns/prov#Collection
+    scheme: http://www.w3.org/ns/prov#
   - identifier: info:eu-repo/semantics/Collection
     scheme: info:eu-repo/semantics/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Collection
@@ -1054,7 +1047,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/s7r1-k5p0
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/S7R1-K5P0
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/PhysicalObject
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1099,7 +1092,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/1ytn-rjze
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/1YTN-RJZE
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1152,7 +1145,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/2h0m-x761
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/2H0M-X761
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1194,7 +1187,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/63ng-b465
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/63NG-B465
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1235,7 +1228,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/6nc7-gk9s
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/6NC7-GK9S
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1280,7 +1273,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/9dkx-ksaf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/9DKX-KSAF
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1325,7 +1318,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/a8f1-npv9
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/A8F1-NPV9
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://www.ebi.ac.uk/efo/EFO_0004600
     scheme: http://www.ebi.ac.uk/efo/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
@@ -1373,7 +1366,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/acf7-8yt9
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/ACF7-8YT9
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1417,7 +1410,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/am6w-6qaw
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/AM6W-6QAW
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1461,7 +1454,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/bw7t-ym2g
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/BW7T-YM2G
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1504,7 +1497,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c53b-jcy5
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/C53B-JCY5
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1544,7 +1537,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_0040
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_0040
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.bioontology.org/ontology/MESH/D020486
     scheme: http://purl.bioontology.org/ontology/MESH/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4043
@@ -1591,13 +1584,13 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_0640
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_0640
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/datacite/v4.4/Journal
     scheme: http://purl.org/datacite/v4.4/
-  - identifier: http://purl.org/ontology/bibo/Journal
-    scheme: http://purl.org/ontology/bibo/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3613
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/ontology/bibo/Journal
+    scheme: http://purl.org/ontology/bibo/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Journal
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1639,11 +1632,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_0857
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_0857
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/ontology/bibo/Letter
-    scheme: http://purl.org/ontology/bibo/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3803
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/ontology/bibo/Letter
+    scheme: http://purl.org/ontology/bibo/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1676,9 +1669,9 @@
     uk: лист
     zh: 信
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-annotation
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/annotationcollection
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-annotation
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   description:
     en: 'An annotation in the sense of a legal note is a legally explanatory comment
@@ -1691,7 +1684,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_1162
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_1162
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1733,7 +1726,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_12cd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_12cd
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Image
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1776,7 +1769,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18cd
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.org/MusicComposition
     scheme: https://schema.org/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Sound
@@ -1822,7 +1815,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cw
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18cw
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -1869,7 +1862,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_2cd9
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_2cd9
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3843
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Journal
@@ -1914,7 +1907,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_2f33
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_2f33
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2263
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/Book
@@ -1964,7 +1957,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_2fe3
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_2fe3
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4291
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Journal
@@ -1999,9 +1992,9 @@
 - crosswalks:
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-dissertation
     scheme: https://zenodo.org/vocabularies/resourcetypes/
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-doctorthesis
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-thesis
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-doctorthesis
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   description:
     en: 'A book authored by a student containing a formal presentations of research
@@ -2015,7 +2008,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_46ec
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_46ec
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5748
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/Thesis
@@ -2061,7 +2054,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_6947
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_6947
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2248
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
@@ -2108,7 +2101,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_71bd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_71bd
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2154,7 +2147,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_7ad9
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_7ad9
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.org/WebSite
     scheme: https://schema.org/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/InteractiveResource
@@ -2202,7 +2195,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_8042
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_8042
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e6136
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/WorkingPaper
@@ -2252,7 +2245,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_816b
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_816b
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4866
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/datacite/v4.4/Preprint
@@ -2301,7 +2294,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_8544
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_8544
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Presentation
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2346,7 +2339,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_86bc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_86bc
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Text
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2388,11 +2381,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_8a7e
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_8a7e
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4212
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/dc/dcmitype/MovingImage
     scheme: http://purl.org/dc/dcmitype/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4212
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Audiovisual
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2444,13 +2437,13 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_93fc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_93fc
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4866
-    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
-  - identifier: http://purl.org/datacite/v4.4/Report
-    scheme: http://purl.org/datacite/v4.4/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/eprint/type/Report
     scheme: http://purl.org/eprint/type/
+  - identifier: http://purl.org/datacite/v4.4/Report
+    scheme: http://purl.org/datacite/v4.4/
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4866
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2495,7 +2488,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_baaf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_baaf
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Project
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2542,7 +2535,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_c94f
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_c94f
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/ConferenceProceeding
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2584,7 +2577,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_c950
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_c950
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Software
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2626,7 +2619,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_cb28
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_cb28
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2657,9 +2650,9 @@
     uk: дані клінічних досліджень
     zh: 临床试验数据
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/image-plot
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/image-figure
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/image-plot
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://lindat.mff.cuni.cz/vocabularies/resource_type/OBRAZ
     scheme: https://lindat.mff.cuni.cz/vocabularies/resource_type/
@@ -2674,13 +2667,13 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_ecc8
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ecc8
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: http://id.loc.gov/vocabulary/contentTypes/sti
-    scheme: http://id.loc.gov/vocabulary/contentTypes/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/dc/dcmitype/StillImage
     scheme: http://purl.org/dc/dcmitype/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5482
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://id.loc.gov/vocabulary/contentTypes/sti
+    scheme: http://id.loc.gov/vocabulary/contentTypes/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Image
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2712,9 +2705,9 @@
     uk: нерухоме зображення
     zh: 静态图像
 - crosswalks:
-  - identifier: https://zenodo.org/vocabularies/resourcetypes/peerreview
-    scheme: https://zenodo.org/vocabularies/resourcetypes/
   - identifier: https://zenodo.org/vocabularies/resourcetypes/publication-peerreview
+    scheme: https://zenodo.org/vocabularies/resourcetypes/
+  - identifier: https://zenodo.org/vocabularies/resourcetypes/peerreview
     scheme: https://zenodo.org/vocabularies/resourcetypes/
   description:
     en: 'A review of others'' published work. [Source: Adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e5273]'
@@ -2725,7 +2718,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_efa0
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_efa0
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5273
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/PeerReview
@@ -2770,7 +2763,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/cqmr-7k63
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/CQMR-7K63
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2811,7 +2804,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/dd58-gfsx
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/DD58-GFSX
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2853,7 +2846,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/ff4c-28rk
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/FF4C-28RK
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2901,7 +2894,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/fxf3-d3g7
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/FXF3-D3G7
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2946,7 +2939,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/gpq7-g5ve
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/GPQ7-G5VE
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -2990,7 +2983,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/h41y-fw7b
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/H41Y-FW7B
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/ComputationalNotebook
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3033,7 +3026,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/jbnf-dyad
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/JBNF-DYAD
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3077,7 +3070,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/mw8g-3cr8
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/MW8G-3CR8
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3122,7 +3115,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/nhd0-w6sy
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/NHD0-W6SY
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3164,7 +3157,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/qh80-2r4e
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/QH80-2R4E
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C47901
     scheme: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Software
@@ -3207,7 +3200,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/qx5c-ar31
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/QX5C-AR31
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Journal
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3248,7 +3241,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/sb3y-w4eh
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/SB3Y-W4EH
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3292,7 +3285,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/w2xt-7017
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/W2XT-7017
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://nmrML.org/nmrCV#NMR:1000221
     scheme: 'http://nmrML.org/nmrCV#NMR:'
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dataset
@@ -3334,7 +3327,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/yc9f-hgcf
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/YC9F-HGCF
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Collection
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3377,7 +3370,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/z907-ymbb
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/Z907-YMBB
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.jp/bio/4/id/200906022454899687
     scheme: http://purl.jp/bio/4/id/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Other
@@ -3422,7 +3415,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/43kc-t6dc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/43KC-T6DC
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3866
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
@@ -3467,7 +3460,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_12ce
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_12ce
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4212
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Audiovisual
@@ -3513,7 +3506,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_186u
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_186u
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4801
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
@@ -3559,7 +3552,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18co
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18co
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Poster
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3602,7 +3595,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18cp
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18cp
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/ConferencePaper
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3649,7 +3642,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18gh
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18gh
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5659
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
@@ -3697,7 +3690,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18op
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18op
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3736,7 +3729,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18ws
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18ws
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3782,7 +3775,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_18wz
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_18wz
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Report
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3826,7 +3819,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_3248
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_3248
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2277
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/eprint/type/BookItem
@@ -3875,7 +3868,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_545b
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_545b
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3920,11 +3913,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_6501
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_6501
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/eprint/type/JournalArticle
-    scheme: http://purl.org/eprint/type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/eprint/type/JournalArticle
+    scheme: http://purl.org/eprint/type/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -3970,7 +3963,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_7877
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_7877
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/StudyRegistration
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4014,7 +4007,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_7a1f
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_7a1f
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dissertation
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4056,7 +4049,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_998f
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_998f
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4098,7 +4091,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_ab20
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ab20
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2802
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/OutputManagementPlan
@@ -4143,7 +4136,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_b239
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_b239
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3091
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
@@ -4187,7 +4180,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_ba08
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_ba08
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/eprint/type/BookReview
     scheme: http://purl.org/eprint/type/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300
@@ -4236,7 +4229,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_bdcc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_bdcc
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4057
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dissertation
@@ -4280,7 +4273,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_db06
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_db06
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3051
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Dissertation
@@ -4329,7 +4322,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_f744
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_f744
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2662
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: http://purl.org/datacite/v4.4/ConferenceProceeding
@@ -4377,7 +4370,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/d97f-vb57
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/D97F-VB57
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4421,7 +4414,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/dx5j-ta9r
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/DX5J-TA9R
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/StudyRegistration
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4461,7 +4454,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/h9bq-739p
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/H9BQ-739P
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/datacite/v4.4/PeerReview
     scheme: http://purl.org/datacite/v4.4/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/PeerReview
@@ -4506,7 +4499,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/r60j-j5bd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/R60J-J5BD
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4880
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Presentation
@@ -4551,7 +4544,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/yz1n-zft9
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/YZ1N-ZFT9
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/StudyRegistration
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4592,7 +4585,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_2df8fbb1
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_2df8fbb1
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5233
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
@@ -4639,13 +4632,13 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_5794
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_5794
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
+  - identifier: http://purl.org/eprint/type/ConferencePaper
+    scheme: http://purl.org/eprint/type/
   - identifier: http://purl.org/datacite/v4.4/ConferencePaper
     scheme: http://purl.org/datacite/v4.4/
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2635
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
-  - identifier: http://purl.org/eprint/type/ConferencePaper
-    scheme: http://purl.org/eprint/type/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/ConferencePaper
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4692,11 +4685,11 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_6670
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_6670
-    scheme: http://purl.org/coar/resource_type/
-  - identifier: http://purl.org/eprint/type/ConferencePoster
-    scheme: http://purl.org/eprint/type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2648
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+  - identifier: http://purl.org/eprint/type/ConferencePoster
+    scheme: http://purl.org/eprint/type/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/Poster
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4738,7 +4731,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_7acd
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_7acd
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2712
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
@@ -4782,7 +4775,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_7bab
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_7bab
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle
     scheme: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/
   props:
@@ -4824,7 +4817,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_beb9
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_beb9
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: http://purl.org/datacite/v4.4/JournalArticle
     scheme: http://purl.org/datacite/v4.4/
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/DataPaper
@@ -4868,7 +4861,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/resourcetypes/c_dcae04bc
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: http://purl.org/coar/resource_type/c_dcae04bc
-    scheme: http://purl.org/coar/resource_type/
+    scheme: http://purl.org/coar/resource_type/scheme
   - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5287
     scheme: https://sparontologies.github.io/fabio/current/fabio.html#
   - identifier: https://schema.datacite.org/linked-data/vocab/resourceTypeGeneral/JournalArticle

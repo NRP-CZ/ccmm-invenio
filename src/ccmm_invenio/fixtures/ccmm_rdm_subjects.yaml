@@ -16,7 +16,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10100
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10100
   scheme: frascati
@@ -29,7 +29,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10100/10101
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10101
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10100/10101
   scheme: frascati
@@ -42,7 +42,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10100/10102
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10102
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10100/10102
   scheme: frascati
@@ -55,7 +55,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10100/10103
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10103
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10100/10103
   scheme: frascati
@@ -68,7 +68,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10200
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10200
   scheme: frascati
@@ -81,7 +81,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10200/10201
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200/10201
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10200/10201
   scheme: frascati
@@ -94,7 +94,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10300
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10300
   scheme: frascati
@@ -107,7 +107,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10301
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10301
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10301
   scheme: frascati
@@ -124,7 +124,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10302
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10302
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10302
   scheme: frascati
@@ -137,7 +137,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10303
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10303
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10303
   scheme: frascati
@@ -150,7 +150,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10304
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10304
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10304
   scheme: frascati
@@ -163,7 +163,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10305
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10305
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10305
   scheme: frascati
@@ -176,7 +176,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10306
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10306
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10306
   scheme: frascati
@@ -189,7 +189,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10307
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10307
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10307
   scheme: frascati
@@ -202,7 +202,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10308
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10308
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10300/10308
   scheme: frascati
@@ -215,7 +215,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10400
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10400
   scheme: frascati
@@ -228,7 +228,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10401
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10401
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10401
   scheme: frascati
@@ -241,7 +241,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10402
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10402
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10402
   scheme: frascati
@@ -254,7 +254,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10403
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10403
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10403
   scheme: frascati
@@ -267,7 +267,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10404
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10404
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10404
   scheme: frascati
@@ -280,7 +280,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10405
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10405
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10405
   scheme: frascati
@@ -294,7 +294,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10406
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10406
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10400/10406
   scheme: frascati
@@ -307,7 +307,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500
   scheme: frascati
@@ -320,7 +320,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10501
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10501
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10501
   scheme: frascati
@@ -333,7 +333,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10502
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10502
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10502
   scheme: frascati
@@ -346,7 +346,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10503
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10503
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10503
   scheme: frascati
@@ -359,7 +359,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10504
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10504
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10504
   scheme: frascati
@@ -372,7 +372,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10505
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10505
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10505
   scheme: frascati
@@ -385,7 +385,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10506
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10506
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10506
   scheme: frascati
@@ -398,7 +398,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10507
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10507
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10507
   scheme: frascati
@@ -411,7 +411,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10508
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10508
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10508
   scheme: frascati
@@ -424,7 +424,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10509
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10509
   scheme: frascati
@@ -437,7 +437,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10510
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10510
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10510
   scheme: frascati
@@ -450,7 +450,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10511
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10511
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10500/10511
   scheme: frascati
@@ -463,7 +463,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600
   scheme: frascati
@@ -476,7 +476,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10601
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10601
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10601
   scheme: frascati
@@ -489,7 +489,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10602
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10602
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10602
   scheme: frascati
@@ -505,7 +505,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10603
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10603
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10603
   scheme: frascati
@@ -518,7 +518,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10604
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10604
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10604
   scheme: frascati
@@ -531,7 +531,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10605
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10605
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10605
   scheme: frascati
@@ -544,7 +544,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10606
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10606
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10606
   scheme: frascati
@@ -557,7 +557,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10607
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10607
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10607
   scheme: frascati
@@ -570,7 +570,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10608
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10608
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10608
   scheme: frascati
@@ -583,7 +583,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10609
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10609
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10609
   scheme: frascati
@@ -596,7 +596,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10610
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10610
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10610
   scheme: frascati
@@ -609,7 +609,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10611
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10611
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10611
   scheme: frascati
@@ -622,7 +622,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10612
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10612
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10612
   scheme: frascati
@@ -635,7 +635,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10613
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10613
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10613
   scheme: frascati
@@ -648,7 +648,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10614
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10614
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10614
   scheme: frascati
@@ -661,7 +661,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10615
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10615
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10615
   scheme: frascati
@@ -674,7 +674,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10616
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10616
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10616
   scheme: frascati
@@ -687,7 +687,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10617
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10617
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10617
   scheme: frascati
@@ -700,7 +700,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10618
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10618
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10618
   scheme: frascati
@@ -713,7 +713,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10619
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10619
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10619
   scheme: frascati
@@ -726,7 +726,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10620
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10620
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10600/10620
   scheme: frascati
@@ -739,7 +739,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/10000/10700
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10700
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/10000/10700
   scheme: frascati
@@ -765,7 +765,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20100
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20100
   scheme: frascati
@@ -778,7 +778,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20100/20101
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20101
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20100/20101
   scheme: frascati
@@ -791,7 +791,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20100/20102
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20102
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20100/20102
   scheme: frascati
@@ -804,7 +804,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20100/20103
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20103
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20100/20103
   scheme: frascati
@@ -817,7 +817,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20100/20104
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20104
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20100/20104
   scheme: frascati
@@ -830,7 +830,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20200
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20200
   scheme: frascati
@@ -843,7 +843,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20201
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20201
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20201
   scheme: frascati
@@ -856,7 +856,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20202
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20202
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20202
   scheme: frascati
@@ -869,7 +869,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20203
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20203
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20203
   scheme: frascati
@@ -882,7 +882,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20204
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20204
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20204
   scheme: frascati
@@ -895,7 +895,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20205
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20205
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20205
   scheme: frascati
@@ -908,7 +908,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20206
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20206
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20200/20206
   scheme: frascati
@@ -921,7 +921,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20300
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20300
   scheme: frascati
@@ -934,7 +934,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20301
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20301
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20301
   scheme: frascati
@@ -947,7 +947,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20302
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20302
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20302
   scheme: frascati
@@ -960,7 +960,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20303
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20303
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20303
   scheme: frascati
@@ -973,7 +973,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20304
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20304
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20304
   scheme: frascati
@@ -986,7 +986,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20305
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20305
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20305
   scheme: frascati
@@ -999,7 +999,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20306
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20306
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20300/20306
   scheme: frascati
@@ -1012,7 +1012,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20400
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20400
   scheme: frascati
@@ -1025,7 +1025,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20400/20401
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20401
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20400/20401
   scheme: frascati
@@ -1038,7 +1038,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20400/20402
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20402
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20400/20402
   scheme: frascati
@@ -1051,7 +1051,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20500
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20500
   scheme: frascati
@@ -1064,7 +1064,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20501
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20501
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20501
   scheme: frascati
@@ -1077,7 +1077,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20502
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20502
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20502
   scheme: frascati
@@ -1090,7 +1090,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20503
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20503
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20503
   scheme: frascati
@@ -1103,7 +1103,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20504
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20504
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20504
   scheme: frascati
@@ -1116,7 +1116,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20505
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20505
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20505
   scheme: frascati
@@ -1132,7 +1132,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20506
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20506
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20500/20506
   scheme: frascati
@@ -1145,7 +1145,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20600
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20600
   scheme: frascati
@@ -1158,7 +1158,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20600/20601
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20601
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20600/20601
   scheme: frascati
@@ -1171,7 +1171,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20600/20602
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20602
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20600/20602
   scheme: frascati
@@ -1187,7 +1187,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20700
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20700
   scheme: frascati
@@ -1200,7 +1200,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20701
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20701
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20701
   scheme: frascati
@@ -1213,7 +1213,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20702
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20702
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20702
   scheme: frascati
@@ -1226,7 +1226,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20703
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20703
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20703
   scheme: frascati
@@ -1239,7 +1239,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20704
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20704
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20704
   scheme: frascati
@@ -1252,7 +1252,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20705
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20705
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20705
   scheme: frascati
@@ -1265,7 +1265,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20706
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20706
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20706
   scheme: frascati
@@ -1278,7 +1278,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20707
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20707
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20700/20707
   scheme: frascati
@@ -1291,7 +1291,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20800
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20800
   scheme: frascati
@@ -1304,7 +1304,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20800/20801
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20801
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20800/20801
   scheme: frascati
@@ -1317,7 +1317,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20800/20802
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20802
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20800/20802
   scheme: frascati
@@ -1333,7 +1333,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20800/20803
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20803
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20800/20803
   scheme: frascati
@@ -1346,7 +1346,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20900
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20900
   scheme: frascati
@@ -1359,7 +1359,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20900/20901
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20901
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20900/20901
   scheme: frascati
@@ -1372,7 +1372,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20900/20902
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20902
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20900/20902
   scheme: frascati
@@ -1388,7 +1388,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/20900/20903
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20903
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/20900/20903
   scheme: frascati
@@ -1407,7 +1407,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/21000
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/21000
   scheme: frascati
@@ -1420,7 +1420,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/21000/21001
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21001
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/21000/21001
   scheme: frascati
@@ -1433,7 +1433,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/21000/21002
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21002
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/21000/21002
   scheme: frascati
@@ -1446,7 +1446,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/21100
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/21100
   scheme: frascati
@@ -1459,7 +1459,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/20000/21100/21101
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100/21101
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/20000/21100/21101
   scheme: frascati
@@ -1485,7 +1485,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100
   scheme: frascati
@@ -1498,7 +1498,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30101
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30101
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30101
   scheme: frascati
@@ -1511,7 +1511,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30102
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30102
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30102
   scheme: frascati
@@ -1524,7 +1524,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30103
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30103
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30103
   scheme: frascati
@@ -1537,7 +1537,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30104
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30104
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30104
   scheme: frascati
@@ -1550,7 +1550,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30105
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30105
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30105
   scheme: frascati
@@ -1563,7 +1563,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30106
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30106
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30106
   scheme: frascati
@@ -1576,7 +1576,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30107
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30107
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30107
   scheme: frascati
@@ -1589,7 +1589,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30108
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30108
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30108
   scheme: frascati
@@ -1602,7 +1602,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30109
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30109
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30100/30109
   scheme: frascati
@@ -1615,7 +1615,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200
   scheme: frascati
@@ -1628,7 +1628,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30201
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30201
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30201
   scheme: frascati
@@ -1641,7 +1641,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30202
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30202
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30202
   scheme: frascati
@@ -1654,7 +1654,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30203
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30203
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30203
   scheme: frascati
@@ -1667,7 +1667,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30204
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30204
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30204
   scheme: frascati
@@ -1680,7 +1680,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30205
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30205
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30205
   scheme: frascati
@@ -1693,7 +1693,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30206
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30206
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30206
   scheme: frascati
@@ -1706,7 +1706,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30207
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30207
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30207
   scheme: frascati
@@ -1719,7 +1719,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30208
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30208
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30208
   scheme: frascati
@@ -1732,7 +1732,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30209
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30209
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30209
   scheme: frascati
@@ -1745,7 +1745,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30210
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30210
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30210
   scheme: frascati
@@ -1758,7 +1758,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30211
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30211
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30211
   scheme: frascati
@@ -1771,7 +1771,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30212
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30212
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30212
   scheme: frascati
@@ -1784,7 +1784,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30213
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30213
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30213
   scheme: frascati
@@ -1797,7 +1797,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30214
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30214
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30214
   scheme: frascati
@@ -1810,7 +1810,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30215
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30215
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30215
   scheme: frascati
@@ -1823,7 +1823,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30216
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30216
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30216
   scheme: frascati
@@ -1836,7 +1836,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30217
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30217
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30217
   scheme: frascati
@@ -1849,7 +1849,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30218
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30218
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30218
   scheme: frascati
@@ -1862,7 +1862,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30219
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30219
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30219
   scheme: frascati
@@ -1875,7 +1875,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30220
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30220
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30220
   scheme: frascati
@@ -1888,7 +1888,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30221
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30221
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30221
   scheme: frascati
@@ -1901,7 +1901,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30223
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30223
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30223
   scheme: frascati
@@ -1914,7 +1914,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30224
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30224
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30224
   scheme: frascati
@@ -1927,7 +1927,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30225
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30225
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30225
   scheme: frascati
@@ -1940,7 +1940,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30226
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30226
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30226
   scheme: frascati
@@ -1953,7 +1953,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30227
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30227
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30227
   scheme: frascati
@@ -1966,7 +1966,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30229
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30229
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30229
   scheme: frascati
@@ -1979,7 +1979,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30230
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30230
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30200/30230
   scheme: frascati
@@ -1992,7 +1992,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300
   scheme: frascati
@@ -2005,7 +2005,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30301
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30301
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30301
   scheme: frascati
@@ -2021,7 +2021,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30302
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30302
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30302
   scheme: frascati
@@ -2034,7 +2034,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30303
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30303
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30303
   scheme: frascati
@@ -2047,7 +2047,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30304
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30304
   scheme: frascati
@@ -2060,7 +2060,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30305
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30305
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30305
   scheme: frascati
@@ -2073,7 +2073,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30306
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30306
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30306
   scheme: frascati
@@ -2086,7 +2086,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30307
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30307
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30307
   scheme: frascati
@@ -2099,7 +2099,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30308
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30308
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30308
   scheme: frascati
@@ -2112,7 +2112,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30309
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30309
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30309
   scheme: frascati
@@ -2125,7 +2125,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30310
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30310
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30310
   scheme: frascati
@@ -2138,7 +2138,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30311
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30311
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30311
   scheme: frascati
@@ -2151,7 +2151,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30312
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30312
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30300/30312
   scheme: frascati
@@ -2164,7 +2164,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30400
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30400
   scheme: frascati
@@ -2177,7 +2177,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30401
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30401
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30401
   scheme: frascati
@@ -2190,7 +2190,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30402
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30402
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30402
   scheme: frascati
@@ -2206,7 +2206,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30403
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30403
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30403
   scheme: frascati
@@ -2226,7 +2226,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30404
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30404
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30404
   scheme: frascati
@@ -2239,7 +2239,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30405
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30405
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30400/30405
   scheme: frascati
@@ -2252,7 +2252,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30500
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30500
   scheme: frascati
@@ -2265,7 +2265,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30500/30501
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30501
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30500/30501
   scheme: frascati
@@ -2278,7 +2278,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/30000/30500/30502
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30502
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/30000/30500/30502
   scheme: frascati
@@ -2304,7 +2304,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40100
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40100
   scheme: frascati
@@ -2317,7 +2317,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40101
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40101
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40101
   scheme: frascati
@@ -2330,7 +2330,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40102
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40102
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40102
   scheme: frascati
@@ -2343,7 +2343,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40103
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40103
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40103
   scheme: frascati
@@ -2356,7 +2356,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40104
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40104
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40104
   scheme: frascati
@@ -2369,7 +2369,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40105
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40105
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40105
   scheme: frascati
@@ -2382,7 +2382,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40106
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40106
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40100/40106
   scheme: frascati
@@ -2395,7 +2395,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40200
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40200
   scheme: frascati
@@ -2408,7 +2408,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40200/40201
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40201
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40200/40201
   scheme: frascati
@@ -2421,7 +2421,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40200/40202
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40202
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40200/40202
   scheme: frascati
@@ -2434,7 +2434,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40200/40203
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40203
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40200/40203
   scheme: frascati
@@ -2447,7 +2447,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40300
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40300
   scheme: frascati
@@ -2460,7 +2460,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40300/40301
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300/40301
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40300/40301
   scheme: frascati
@@ -2473,7 +2473,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40400
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40400
   scheme: frascati
@@ -2486,7 +2486,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40400/40401
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40401
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40400/40401
   scheme: frascati
@@ -2499,7 +2499,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40400/40402
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40402
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40400/40402
   scheme: frascati
@@ -2518,7 +2518,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40400/40403
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40403
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40400/40403
   scheme: frascati
@@ -2531,7 +2531,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/40000/40500
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40500
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/40000/40500
   scheme: frascati
@@ -2557,7 +2557,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50100
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50100
   scheme: frascati
@@ -2570,7 +2570,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50100/50101
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50101
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50100/50101
   scheme: frascati
@@ -2583,7 +2583,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50100/50102
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50102
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50100/50102
   scheme: frascati
@@ -2599,7 +2599,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50100/50103
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50103
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50100/50103
   scheme: frascati
@@ -2612,7 +2612,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50200
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50200
   scheme: frascati
@@ -2625,7 +2625,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50201
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50201
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50201
   scheme: frascati
@@ -2638,7 +2638,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50202
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50202
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50202
   scheme: frascati
@@ -2651,7 +2651,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50203
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50203
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50203
   scheme: frascati
@@ -2664,7 +2664,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50204
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50204
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50204
   scheme: frascati
@@ -2677,7 +2677,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50205
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50205
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50205
   scheme: frascati
@@ -2690,7 +2690,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50206
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50206
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50200/50206
   scheme: frascati
@@ -2703,7 +2703,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50300
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50300
   scheme: frascati
@@ -2716,7 +2716,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50300/50301
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50301
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50300/50301
   scheme: frascati
@@ -2731,7 +2731,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50300/50302
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50302
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50300/50302
   scheme: frascati
@@ -2744,7 +2744,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50400
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50400
   scheme: frascati
@@ -2757,7 +2757,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50400/50401
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50401
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50400/50401
   scheme: frascati
@@ -2770,7 +2770,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50400/50402
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50402
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50400/50402
   scheme: frascati
@@ -2783,7 +2783,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50400/50403
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50403
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50400/50403
   scheme: frascati
@@ -2799,7 +2799,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50400/50404
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50404
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50400/50404
   scheme: frascati
@@ -2812,7 +2812,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50500
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50500
   scheme: frascati
@@ -2825,7 +2825,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50500/50501
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50501
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50500/50501
   scheme: frascati
@@ -2838,7 +2838,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50500/50502
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50502
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50500/50502
   scheme: frascati
@@ -2851,7 +2851,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50600
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50600
   scheme: frascati
@@ -2864,7 +2864,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50600/50601
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50601
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50600/50601
   scheme: frascati
@@ -2877,7 +2877,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50600/50602
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50602
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50600/50602
   scheme: frascati
@@ -2890,7 +2890,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50600/50603
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50603
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50600/50603
   scheme: frascati
@@ -2903,7 +2903,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50700
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50700
   scheme: frascati
@@ -2916,7 +2916,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50700/50701
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50701
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50700/50701
   scheme: frascati
@@ -2929,7 +2929,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50700/50702
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50702
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50700/50702
   scheme: frascati
@@ -2942,7 +2942,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50700/50703
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50703
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50700/50703
   scheme: frascati
@@ -2955,7 +2955,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50700/50704
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50704
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50700/50704
   scheme: frascati
@@ -2968,7 +2968,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50800
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50800
   scheme: frascati
@@ -2981,7 +2981,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50800/50801
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50801
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50800/50801
   scheme: frascati
@@ -2994,7 +2994,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50800/50802
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50802
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50800/50802
   scheme: frascati
@@ -3007,7 +3007,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50800/50803
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50803
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50800/50803
   scheme: frascati
@@ -3020,7 +3020,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50800/50804
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50804
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50800/50804
   scheme: frascati
@@ -3033,7 +3033,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50900
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50900
   scheme: frascati
@@ -3046,7 +3046,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50900/50901
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50901
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50900/50901
   scheme: frascati
@@ -3059,7 +3059,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/50000/50900/50902
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50902
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/50000/50900/50902
   scheme: frascati
@@ -3085,7 +3085,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60100
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60100
   scheme: frascati
@@ -3098,7 +3098,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60100/60101
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60101
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60100/60101
   scheme: frascati
@@ -3111,7 +3111,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60100/60102
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60102
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60100/60102
   scheme: frascati
@@ -3124,7 +3124,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60200
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60200
   scheme: frascati
@@ -3137,7 +3137,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60201
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60201
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60201
   scheme: frascati
@@ -3150,7 +3150,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60202
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60202
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60202
   scheme: frascati
@@ -3163,7 +3163,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60203
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60203
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60203
   scheme: frascati
@@ -3176,7 +3176,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60204
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60204
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60204
   scheme: frascati
@@ -3189,7 +3189,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60205
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60205
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60205
   scheme: frascati
@@ -3202,7 +3202,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60206
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60206
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60200/60206
   scheme: frascati
@@ -3215,7 +3215,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60300
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60300
   scheme: frascati
@@ -3228,7 +3228,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60300/60301
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60301
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60300/60301
   scheme: frascati
@@ -3241,7 +3241,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60300/60302
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60302
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60300/60302
   scheme: frascati
@@ -3254,7 +3254,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60300/60303
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60303
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60300/60303
   scheme: frascati
@@ -3267,7 +3267,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60300/60304
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60304
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60300/60304
   scheme: frascati
@@ -3280,7 +3280,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60400
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60400
   scheme: frascati
@@ -3293,7 +3293,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60401
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60401
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60401
   scheme: frascati
@@ -3306,7 +3306,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60402
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60402
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60402
   scheme: frascati
@@ -3319,7 +3319,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60403
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60403
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60403
   scheme: frascati
@@ -3332,7 +3332,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60404
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60404
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60404
   scheme: frascati
@@ -3345,7 +3345,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60405
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60405
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60400/60405
   scheme: frascati
@@ -3358,7 +3358,7 @@
   - identifier: https://nma.eosc.cz/vocabularies/subjects/60000/60500
     scheme: https://nma.eosc.cz/vocabularies/
   - identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60500
-    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/
+    scheme: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
   props:
     iri: https://nma.eosc.cz/vocabularies/subjects/60000/60500
   scheme: frascati

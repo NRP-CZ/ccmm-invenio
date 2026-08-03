@@ -1,0 +1,14 @@
+# curie_map:
+#   ccmm_att: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
+#   datacite_rt: https://schema.datacite.org/meta/kernel-4/titleType/
+#   orcid: https://orcid.org/
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+# license: https://creativecommons.org/licenses/by/4.0/
+# mapping_set_description: Mappings between datacite alternate title types and CCMM
+#   alternate title types
+# mapping_set_id: http://vocabs.ccmm.cz/mappings/alternate_title_types_datacite
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification	mapping_date	creator_id	confidence
+ccmm_att:alternative-title	Alternative Title	skos:exactMatch	datacite_rt:AlternativeTitle	Alternative Title	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_att:subtitle	Subtitle	skos:exactMatch	datacite_rt:Subtitle	Subtitle	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
+ccmm_att:translated-title	Translated Title	skos:exactMatch	datacite_rt:TranslatedTitle	Translated Title	semapv:ManualMappingCuration	2026-07-20	orcid:0000-0003-0852-6632	1.0
