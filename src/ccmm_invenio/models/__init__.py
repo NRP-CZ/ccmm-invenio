@@ -43,6 +43,7 @@ from ..serializers import (
     CCMMNMADataCiteJSONSerializer_1_1_0,
     CCMMProductionDataCiteJSONSerializer_1_1_0,
 )
+from ccmm_invenio.search.date_ranges import CCMMDateRangesDumperExt
 
 if TYPE_CHECKING:
     from collections.abc import Generator
@@ -73,7 +74,13 @@ def ccmm_production_1_1_0() -> dict[str, Any]:
         **from_yaml("1.1.0-2026-01-29/gml-1.1.0.yaml", __file__),
     }
 
+class CCMMDateRangesPreset(Preset):
+    modifies = ("record_dumper_extensions",)
 
+    @override
+    def apply(self, builder, model, dependencies):
+        _, _, _ = builder, model, dependencies
+        yield AddToList("record_dumper_extensions", CCMMDateRangesDumperExt())
 class CCMMBaseMetadataPreset(FunctionalPreset):
     """Preset for CCMM metadata."""
 
@@ -301,6 +308,7 @@ ccmm_nma_preset_1_1_0 = [
     CCMMNMAPreset,
     CCMMIndexSettingsPreset,
     CCMMNMACustomizationPreset,
+    CCMMDateRangesPreset
 ]
 
 ccmm_production_preset_1_1_0 = [
@@ -311,4 +319,5 @@ ccmm_production_preset_1_1_0 = [
     CCMMProductionCustomizationPreset,
     RootRecordFieldPreset,
     CCMMRootRecordComponentPreset,
+    CCMMDateRangesPreset
 ]
