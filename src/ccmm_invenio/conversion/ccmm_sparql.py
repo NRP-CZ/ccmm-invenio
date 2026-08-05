@@ -70,7 +70,7 @@ def join_with_commas(prop: str, parent: dict[str, Any]) -> None:
 class SPARQLReader(VocabularyReader):
     """Download rdf locally, enrich it and call sparql to convert the RDF to Invenio YAML format."""
 
-    def __init__(  # noqa: PLR0913
+    def __init__(  # noqa: PLR0913 PLR0917
         self,
         name: str,
         endpoint: str,

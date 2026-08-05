@@ -38,12 +38,12 @@ from oarepo_rdm.model.presets import rdm_minimal_preset
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
 
 from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
+from ccmm_invenio.search.date_ranges import CCMMDateRangesDumperExt
 
 from ..serializers import (
     CCMMNMADataCiteJSONSerializer_1_1_0,
     CCMMProductionDataCiteJSONSerializer_1_1_0,
 )
-from ccmm_invenio.search.date_ranges import CCMMDateRangesDumperExt
 
 if TYPE_CHECKING:
     from collections.abc import Generator
@@ -74,13 +74,24 @@ def ccmm_production_1_1_0() -> dict[str, Any]:
         **from_yaml("1.1.0-2026-01-29/gml-1.1.0.yaml", __file__),
     }
 
+
 class CCMMDateRangesPreset(Preset):
+    """Preset for CCMM date or interval dumper."""
+
     modifies = ("record_dumper_extensions",)
 
     @override
-    def apply(self, builder, model, dependencies):
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Apply the preset."""
         _, _, _ = builder, model, dependencies
         yield AddToList("record_dumper_extensions", CCMMDateRangesDumperExt())
+
+
 class CCMMBaseMetadataPreset(FunctionalPreset):
     """Preset for CCMM metadata."""
 
@@ -308,7 +319,7 @@ ccmm_nma_preset_1_1_0 = [
     CCMMNMAPreset,
     CCMMIndexSettingsPreset,
     CCMMNMACustomizationPreset,
-    CCMMDateRangesPreset
+    CCMMDateRangesPreset,
 ]
 
 ccmm_production_preset_1_1_0 = [
@@ -319,5 +330,5 @@ ccmm_production_preset_1_1_0 = [
     CCMMProductionCustomizationPreset,
     RootRecordFieldPreset,
     CCMMRootRecordComponentPreset,
-    CCMMDateRangesPreset
+    CCMMDateRangesPreset,
 ]

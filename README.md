@@ -32,7 +32,7 @@ production_dataset = model(
         {
             "Metadata": {
                 "properties": {
-                    # your extensions come here, ccmm_production_preset will add 
+                    # your extensions come here, ccmm_production_preset will add
                     # all ccmm fields automatically
                 },
             },
@@ -43,7 +43,7 @@ production_dataset = model(
 )
 
 # invenio.cfg
-production_dataset.register() 
+production_dataset.register()
 ```
 
 ## How to generate new NMA and Production CCMM model mappings
