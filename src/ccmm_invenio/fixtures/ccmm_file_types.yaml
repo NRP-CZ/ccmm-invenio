@@ -1244,8 +1244,7 @@
   title:
     cs: ODT
     en: ODT
-- description: {}
-  id: OP_DATPRO
+- id: OP_DATPRO
   props:
     iri: http://publications.europa.eu/resource/authority/file-type/OP_DATPRO
   title:
