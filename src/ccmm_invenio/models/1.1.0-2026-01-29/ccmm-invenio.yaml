@@ -14,6 +14,29 @@ CCMMRootRecord:
     ccmm_xml:
       type: keyword
       index: false
+CCMMDateInterval:
+  type: object
+  properties:
+    date:
+      type: edtf-date-or-interval
+      label:
+        en: Date
+        cs: Datum
+    type:
+      type: vocabulary
+      vocabulary-type: datetypes
+      label:
+        en: Date type
+        cs: Typ data
+    description:
+      type: i18n
+      label:
+        en: Description
+        cs: Popis
+CCMMDateIntervals:
+  type: array
+  items:
+    type: CCMMDateInterval
 CCMMInvenioRelatedResource:
   type: object
   ui_marshmallow_schema_class: ccmm_invenio.serializers.related_resources_ui.CCMMRelatedResourceUISchema
@@ -92,7 +115,7 @@ CCMMInvenioRelatedResource:
       type: RDMContributors
 
     dates:
-      type: RDMDates
+      type: CCMMDateIntervals
       label:
         en: Dates
         cs: Data
@@ -296,7 +319,7 @@ CCMMDataset:
       # We can not use RDM "dates" here as they are missing multilingual labels and
       # optionality in interval start/end
 
-      type: RDMDates
+      type: CCMMDateIntervals
       label:
         en: Dates
         cs: Data
