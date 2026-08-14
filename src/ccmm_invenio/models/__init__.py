@@ -35,6 +35,9 @@ from oarepo_model.customizations import (
 )
 from oarepo_model.presets import Preset
 from oarepo_rdm.model.presets import rdm_minimal_preset
+from oarepo_rdm.model.presets.rdm.services.records.rdm_record_ui_schema import (
+    RDMCompleteRecordUISchemaPreset,
+)
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
 
 from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
@@ -305,6 +308,7 @@ ccmm_nma_preset_1_1_0 = [
 
 ccmm_production_preset_1_1_0 = [
     *rdm_minimal_preset,
+    RDMCompleteRecordUISchemaPreset,
     CCMMProductionPreset,
     CCMMImportPreset,
     CCMMIndexSettingsPreset,
