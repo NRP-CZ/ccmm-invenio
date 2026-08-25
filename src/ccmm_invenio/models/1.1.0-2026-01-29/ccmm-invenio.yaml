@@ -19,11 +19,13 @@ CCMMDateInterval:
   properties:
     date:
       type: edtf-date-or-interval
+      required: true
       label:
         en: Date
         cs: Datum
     type:
       type: vocabulary
+      required: true
       vocabulary-type: datetypes
       label:
         en: Date type
