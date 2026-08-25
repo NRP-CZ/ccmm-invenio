@@ -10,6 +10,7 @@
 
 from __future__ import annotations
 
+import mimetypes
 from typing import TYPE_CHECKING, Any, override
 
 from flask_resources.deserializers import DeserializerMixin
@@ -20,6 +21,7 @@ from invenio_rdm_records.resources.serializers import (
     CSLJSONSerializer,  # type: ignore[reportAttributeAccessIssue]
     StringCitationSerializer,  # type: ignore[reportAttributeAccessIssue]
 )
+from invenio_rdm_records.resources.serializers.utils import convert_size
 from invenio_records_resources.services.records.components import ServiceComponent
 from invenio_vocabularies.proxies import current_service as vocabulary_service
 from lxml.etree import fromstring
@@ -35,9 +37,6 @@ from oarepo_model.customizations import (
 )
 from oarepo_model.presets import Preset
 from oarepo_rdm.model.presets import rdm_minimal_preset
-from oarepo_rdm.model.presets.rdm.services.records.rdm_record_ui_schema import (
-    RDMCompleteRecordUISchemaPreset,
-)
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
 
 from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
@@ -259,6 +258,155 @@ class CCMMRootRecordComponentPreset(Preset):
         yield AddToList("record_service_components", RootRecordComponent)
 
 
+class CCMMSizesAndFormatsFromFilesComponentPreset(Preset):
+    """Preset for auto-populating sizes and formats from uploaded files.
+
+    This component automatically populates the 'sizes' and 'formats' metadata fields
+    from the uploaded files' byte_size and mimetype.
+    """
+
+    modifies = ("record_service_components",)
+
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Yield component for auto-populating sizes and formats from files."""
+        _, _, _ = builder, model, dependencies
+
+        # Mapping of compression encodings to MIME types
+        # mimetypes.guess_type() returns (None, encoding) for compressed files
+        _ENCODING_TO_MIME = {
+            "gzip": "application/gzip",
+            "bzip2": "application/x-bzip2",
+            "xz": "application/x-xz",
+            "compress": "application/x-compress",
+            "br": "application/brotli",
+        }
+
+        def _get_mime_type(filename: str) -> str | None:
+            """Get MIME type for a filename using Python's mimetypes module.
+
+            Handles both regular files and compression formats (.gz, .bz2, .xz, etc.).
+            """
+            mime_type, encoding = mimetypes.guess_type(filename)
+            if mime_type:
+                return mime_type
+            if encoding:
+                return _ENCODING_TO_MIME.get(encoding)
+            return None
+
+        class SizesAndFormatsFromFilesComponent(ServiceComponent):
+            """Automatically populate sizes and formats from uploaded files."""
+
+            def create(self, identity: Identity, **kwargs: Any) -> None:
+                """Populate sizes and formats when creating a record."""
+                data = kwargs.get("data")
+                if data is not None:
+                    self._populate_metadata(data)
+
+            def update(self, identity: Identity, **kwargs: Any) -> None:
+                """Populate sizes and formats when updating a record."""
+                data = kwargs.get("data")
+                if data is not None:
+                    self._populate_metadata(data)
+
+            def publish(
+                self,
+                identity: Identity,
+                draft: Record | None = None,
+                record: Record | None = None,
+            ) -> None:
+                """Populate sizes and formats when publishing a draft.
+
+                This is called during draft publication when files should be fully attached.
+                We update the draft's metadata with file sizes and formats before publishing.
+                """
+                if draft is None:
+                    return
+                self._populate_from_draft(draft)
+
+            @staticmethod
+            def _populate_metadata(data: dict[str, Any]) -> None:
+                """Extract sizes and formats from file metadata.
+
+                Extracts file sizes and MIME types from uploaded files and populates
+                the metadata.sizes and metadata.formats fields.
+                """
+                metadata = data.get("metadata", {})
+                files_entries = None
+
+                if "files" in data and isinstance(data["files"], dict):
+                    files_entries = data["files"].get("entries", {})
+
+                if not files_entries:
+                    return
+
+                sizes = []
+                formats = set()
+
+                for file_info in files_entries.values():
+                    if not isinstance(file_info, dict):
+                        continue
+
+                    # Get byte size
+                    byte_size = file_info.get("size", 0)
+                    if byte_size > 0:
+                        sizes.append(convert_size(byte_size))
+
+                    # Get MIME type
+                    mime_type = file_info.get("mimetype") or file_info.get("media_type")
+                    if mime_type:
+                        formats.add(mime_type)
+
+                if sizes:
+                    metadata["sizes"] = sizes
+                if formats:
+                    metadata["formats"] = sorted(formats)
+
+                data["metadata"] = metadata
+
+            @staticmethod
+            def _populate_from_draft(draft: Record) -> None:
+                """Populate sizes and formats from draft's file objects.
+
+                Accesses the draft's files attribute which contains the actual
+                file metadata including size and mimetype.
+                """
+                if not hasattr(draft, "files") or not draft.files:
+                    return
+
+                files_manager = draft.files
+                metadata = draft.get("metadata", {}) or {}
+
+                sizes = []
+                formats = set()
+
+                for file_key, file_obj in files_manager.items():
+                    # Get byte size
+                    byte_size = file_obj.get("size", 0)
+                    if byte_size > 0:
+                        sizes.append(convert_size(byte_size))
+
+                    # Get MIME type
+                    mime_type = file_obj.get("mimetype") or file_obj.get("media_type")
+                    if not mime_type and file_key:
+                        mime_type = _get_mime_type(file_key)
+                    if mime_type:
+                        formats.add(mime_type)
+
+                if sizes:
+                    metadata["sizes"] = sizes
+                if formats:
+                    metadata["formats"] = sorted(formats)
+
+                draft["metadata"] = metadata
+
+        yield AddToList("record_service_components", SizesAndFormatsFromFilesComponent)
+
+
 class CCMMProductionPreset(CCMMBaseMetadataPreset):
     """Preset for CCMM production metadata."""
 
@@ -308,11 +456,11 @@ ccmm_nma_preset_1_1_0 = [
 
 ccmm_production_preset_1_1_0 = [
     *rdm_minimal_preset,
-    RDMCompleteRecordUISchemaPreset,
     CCMMProductionPreset,
     CCMMImportPreset,
     CCMMIndexSettingsPreset,
     CCMMProductionCustomizationPreset,
     RootRecordFieldPreset,
     CCMMRootRecordComponentPreset,
+    CCMMSizesAndFormatsFromFilesComponentPreset,
 ]
