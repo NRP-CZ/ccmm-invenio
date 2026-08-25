@@ -1,0 +1,191 @@
+#
+msgid ""
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:115
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:205
+msgid "Datacite export"
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:168
+msgid "CCMM import"
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:170
+msgid "CCMM XML export."
+msgstr ""
+
+msgid "Visibility"
+msgstr ""
+
+msgid "Basic information"
+msgstr ""
+
+msgid "Creators and Contributors"
+msgstr ""
+
+msgid "Identifiers"
+msgstr ""
+
+msgid "Related resources"
+msgstr ""
+
+msgid "Add related resource"
+msgstr ""
+
+msgid "Edit related resource"
+msgstr ""
+
+msgid "Untitled resource"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Relation type is required"
+msgstr ""
+
+msgid "Title is required"
+msgstr ""
+
+msgid "Resource type is required"
+msgstr ""
+
+msgid "Save and add another"
+msgstr ""
+
+msgid "Added"
+msgstr ""
+
+msgid "Relation type"
+msgstr ""
+
+msgid "Select relation type..."
+msgstr ""
+
+msgid "Dates and Subjects"
+msgstr ""
+
+msgid "Funding and Rights"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Alternative identifiers"
+msgstr ""
+
+msgid "Community and Access"
+msgstr ""
+
+msgid "Upload files"
+msgstr ""
+
+msgid "Funding"
+msgstr ""
+
+msgid "General information"
+msgstr ""
+
+msgid "Related works"
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:125
+msgid "Citation"
+msgstr ""
+
+msgid ""
+"This identifier could not be resolved. Check that the DOI is correct and "
+"registered."
+msgstr ""
+
+msgid "Unknown error"
+msgstr ""
+
+msgid ""
+"Paste one or more DOI URLs (separated by commas, spaces, or new lines). Up "
+"to {{max}} DOIs per request — submit additional batches for more."
+msgstr ""
+
+msgid ""
+"Only the first {{max}} DOIs were kept; {{dropped}} additional DOI(s) were "
+"discarded. Submit this batch, then paste the rest."
+msgstr ""
+
+msgid "Already tied to the record (will be skipped on Load):"
+msgstr ""
+
+msgid "Imported {{success}} of {{total}}"
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "and"
+msgstr ""
+
+msgid "online"
+msgstr ""
+
+msgid "Available at"
+msgstr ""
+
+msgid "Load from DOI"
+msgstr ""
+
+msgid "Add to record"
+msgstr ""
+
+msgid "Add manually"
+msgstr ""
+
+msgid "Import from DOI"
+msgstr ""
+
+msgid ""
+"This relation type will be applied to every resource loaded in this batch. "
+"It describes how each loaded record relates to the record you are creating. "
+"You can modify relation types of individual related resources later by "
+"clicking the Edit button next to each related resource."
+msgstr ""
+
+msgid "{{count}} field(s) need attention."
+msgid_plural "{{count}} field(s) need attention."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Imported with {{count}} warning(s)."
+msgid_plural "Imported with {{count}} warning(s)."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Use the Edit button on the entry in the list to fix it manually."
+msgstr ""
+
+msgid ""
+"Add record's related resources. You can fill them manually or load them via "
+"DOI."
+msgstr ""
+
+msgid "Search in my communities"
+msgstr ""
+
+msgid "Search in all communities"
+msgstr ""
+
+msgid "My communities"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid ""
+"General description of the record. Use Add description below to add methods,"
+" technical details, or other specialized content as separate sections."
+msgstr ""

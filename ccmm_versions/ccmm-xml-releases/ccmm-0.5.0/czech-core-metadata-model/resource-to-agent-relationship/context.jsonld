@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "role": {
+      "@id": "http://www.w3.org/ns/dcat#hadRole",
+      "@type": "@id"
+    },
+    "relation": {
+      "@id": "http://purl.org/dc/terms/relation",
+      "@context": "../agent/context.jsonld"
+    },
+    "Resource to agent relationship": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/ResourceToAgentRelationship",
+      "@context": {}
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/organization/schema.json",
+  "title": "Organization",
+  "description": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures. ",
+  "type": "object",
+  "required": [
+    "name"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "type": "array",
+      "allOf": [
+        {
+          "contains": {
+            "const": "Organization"
+          }
+        },
+        {
+          "contains": {
+            "const": "Agent"
+          }
+        }
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "name": {
+      "title": "Name",
+      "description": "Name of the agent.",
+      "type": "string"
+    },
+    "has_identifier": {
+      "title": "has identifier",
+      "description": "has identifier",
+      "type": "array",
+      "items": {
+        "$ref": "../identifier/schema.json"
+      }
+    },
+    "contact_point": {
+      "title": "contact point",
+      "description": "Relevant contact information for the catalogued resource. Use of vCard is recommended.",
+      "type": "array",
+      "items": {
+        "$ref": "../contact-details/schema.json"
+      }
+    },
+    "alternate_name": {
+      "title": "Alternate name",
+      "description": "To specify the organizational name associated with the object",
+      "type": "array",
+      "items": {
+        "title": "Text",
+        "type": "object",
+        "additionalProperties": {
+          "title": "Hodnota v jiném jazyce",
+          "type": "string"
+        },
+        "required": [
+
+        ],
+        "properties": {
+          "cs": {
+            "title": "Hodnota v českém jazyce",
+            "type": "string"
+          },
+          "en": {
+            "title": "Hodnota v anglickém jazyce",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

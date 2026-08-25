@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="distribution_data_service">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="access_service" type="data_service"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="conforms_to_specification" type="application_profile"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="description">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="documentation" type="documentation"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      <xs:element name="title" type="string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="distribution-data-service" type="distribution_data_service"/>
+</xs:schema>

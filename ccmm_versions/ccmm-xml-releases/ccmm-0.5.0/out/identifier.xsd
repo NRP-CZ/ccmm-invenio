@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="identifier">
+    <xs:sequence>
+      <xs:element name="in_scheme" type="identifier_scheme"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+      <xs:element name="value" type="string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="identifier" type="identifier"/>
+</xs:schema>

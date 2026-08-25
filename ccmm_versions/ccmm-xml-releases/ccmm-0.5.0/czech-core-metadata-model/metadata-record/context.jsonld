@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "date_updated": {
+      "@id": "http://purl.org/dc/terms/modified",
+      "@type": "xsd:date"
+    },
+    "date_created": {
+      "@id": "http://purl.org/dc/terms/created",
+      "@type": "xsd:date"
+    },
+    "original_repository": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/originalRepository",
+      "@container": "@set",
+      "@context": "../repository/context.jsonld"
+    },
+    "conforms_to_standard": {
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@container": "@set",
+      "@context": "../application-profile/context.jsonld"
+    },
+    "qualified_relation": {
+      "@id": "http://www.w3.org/ns/dcat#qualifiedRelation",
+      "@container": "@set",
+      "@context": "../resource-to-agent-relationship/context.jsonld"
+    },
+    "language": {
+      "@id": "http://purl.org/dc/terms/language",
+      "@container": "@set",
+      "@context": "../language-system/context.jsonld"
+    },
+    "Katalogizační záznam": {
+      "@id": "http://www.w3.org/ns/dcat#CatalogRecord",
+      "@context": {}
+    }
+  }
+}

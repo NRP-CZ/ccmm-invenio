@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/terms-of-use/schema.json",
+  "title": "Terms of use",
+  "description": "Terms of use defines overall conditions and rights regarding access and usage  of dataset. ",
+  "type": "object",
+  "required": [
+    "access_rights",
+    "license"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Terms of use"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Terms of use"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "description": {
+      "title": "Description",
+      "description": "Descriptive text on details of rights and licensing.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "access_rights": {
+      "$ref": "../access-rights/schema.json"
+    },
+    "has_contact": {
+      "title": "has contact",
+      "description": "Contact person for the further details about the terms of use.",
+      "type": "array",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "../agent/schema.json"
+          },
+          {
+            "$ref": "../agent/schema.json"
+          },
+          {
+            "$ref": "../agent/schema.json"
+          }
+        ]
+      }
+    },
+    "license": {
+      "$ref": "../license-document/schema.json"
+    }
+  }
+}

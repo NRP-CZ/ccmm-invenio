@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="agent">
+    <xs:choice>
+      <xs:element name="agent">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="iri" type="anyURI"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="organization">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="alternate_name">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="contact_point" type="contact_details"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="has_identifier" type="identifier"/>
+            <xs:element minOccurs="0" name="iri" type="anyURI"/>
+            <xs:element name="name" type="string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="person">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="contact_point" type="contact_details"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="family_name" type="string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="given_name" type="string"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="has_affiliation" type="organization"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="has_identifier" type="identifier"/>
+            <xs:element minOccurs="0" name="iri" type="anyURI"/>
+            <xs:element name="name" type="string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="agent" type="agent"/>
+</xs:schema>

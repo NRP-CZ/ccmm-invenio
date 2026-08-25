@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/location/schema.json",
+  "title": "Location",
+  "description": "Spatial region, named place or geometry representation of a place related to the dataset. ",
+  "type": "object",
+  "required": [
+    "location_relation_type"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "type": "array",
+      "allOf": [
+        {
+          "contains": {
+            "const": "GeoLocation"
+          }
+        },
+        {
+          "contains": {
+            "const": "Location"
+          }
+        }
+      ],
+      "items": {
+        "type": "string"
+      }
+    },
+    "bbox": {
+      "title": "Bbox",
+      "description": "Bounding box of the location geometry.",
+      "type": "array",
+      "items": {
+        "title": "http://www.w3.org/2000/01/rdf-schema#Literal",
+        "type": "string"
+      }
+    },
+    "location_name": {
+      "title": "Location name",
+      "description": "Name of the spatial location.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "location_relation_type": {
+      "$ref": "../location-relation-type/schema.json"
+    },
+    "geometry": {
+      "$ref": "../geometry/schema.json"
+    },
+    "related_object": {
+      "title": "has related object",
+      "type": "array",
+      "items": {
+        "$ref": "../resource/schema.json"
+      }
+    }
+  }
+}

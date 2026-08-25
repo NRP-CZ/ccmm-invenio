@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../identifier/schema.xsd"/>
+  <xs:include schemaLocation="../contact-details/schema.xsd"/>
+  <xs:include schemaLocation="../organization/schema.xsd"/>
+  <xs:complexType name="person" sawsdl:modelReference="http://www.w3.org/ns/prov#Person">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Person - Physical person. 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="identifier" type="ccmm:identifier" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has identifier - has identifier
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="name" type="xs:string" sawsdl:modelReference="http://xmlns.com/foaf/0.1/name">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            name - Name of the agent.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="given_name" type="xs:string" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#given-name">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            given name - The given name associated with the person.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="family_name" type="xs:string" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#family-name">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            family name - The family name associated with the person.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="contact_point" type="ccmm:contact_details" sawsdl:modelReference="http://www.w3.org/ns/dcat#contactPoint">
+        <xs:annotation>
+          <xs:documentation xml:lang="ar">
+            عنوان اتصال - تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard
+          </xs:documentation>
+          <xs:documentation xml:lang="cs">
+            má kontaktní bod - Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard.
+          </xs:documentation>
+          <xs:documentation xml:lang="da">
+            kontaktpunkt - Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales.
+          </xs:documentation>
+          <xs:documentation xml:lang="el">
+            σημείο επικοινωνίας - Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard.
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            has contact point - Relevant contact information for the catalogued resource. 
+          </xs:documentation>
+          <xs:documentation xml:lang="es">
+            Punto de contacto - Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard.
+          </xs:documentation>
+          <xs:documentation xml:lang="fr">
+            point de contact - Relie un jeu de données à une information de contact utile en utilisant VCard.
+          </xs:documentation>
+          <xs:documentation xml:lang="it">
+            punto di contatto - Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard.
+          </xs:documentation>
+          <xs:documentation xml:lang="ja">
+            窓口 - データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="affiliation" type="ccmm:organization" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#hasAffiliation">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has affiliation - Affiliation of the person to an organization.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="person" type="ccmm:person"/>
+</xs:schema>

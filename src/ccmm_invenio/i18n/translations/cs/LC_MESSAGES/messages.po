@@ -1,0 +1,205 @@
+#
+msgid ""
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:115
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:205
+msgid "Datacite export"
+msgstr "Export do Datacite"
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:168
+msgid "CCMM import"
+msgstr "Import CCMM"
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:170
+msgid "CCMM XML export."
+msgstr "Export CCMM XML."
+
+msgid "Visibility"
+msgstr "Viditelnost"
+
+msgid "Basic information"
+msgstr "Základní informace"
+
+msgid "Creators and Contributors"
+msgstr "Autoři a přispěvatelé"
+
+msgid "Identifiers"
+msgstr "Identifikátory"
+
+msgid "Related resources"
+msgstr "Související zdroje"
+
+msgid "Add related resource"
+msgstr "Přidat související zdroj"
+
+msgid "Edit related resource"
+msgstr "Upravit související zdroj"
+
+msgid "Untitled resource"
+msgstr "Zdroj bez názvu"
+
+msgid "Edit"
+msgstr "Upravit"
+
+msgid "Remove"
+msgstr "Odstranit"
+
+msgid "Relation type is required"
+msgstr "Typ relace je povinný"
+
+msgid "Title is required"
+msgstr "Název je povinný"
+
+msgid "Resource type is required"
+msgstr "Typ zdroje je povinný"
+
+msgid "Save and add another"
+msgstr "Uložit a přidat další"
+
+msgid "Added"
+msgstr "Přidáno"
+
+msgid "Relation type"
+msgstr "Typ relace"
+
+msgid "Select relation type..."
+msgstr "Vyberte typ relace..."
+
+msgid "Dates and Subjects"
+msgstr "Data a předměty"
+
+msgid "Funding and Rights"
+msgstr "Financování a práva"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid "Alternative identifiers"
+msgstr "Alternativní identifikátory"
+
+msgid "Community and Access"
+msgstr "Komunita a přístup"
+
+msgid "Upload files"
+msgstr "Nahrání souborů"
+
+msgid "Funding"
+msgstr "Financování"
+
+msgid "General information"
+msgstr "Obecné informace"
+
+msgid "Related works"
+msgstr "Související zdroje"
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:125
+msgid "Citation"
+msgstr "Citace"
+
+msgid ""
+"This identifier could not be resolved. Check that the DOI is correct and "
+"registered."
+msgstr ""
+"Tento identifikátor nelze rozpoznat. Zkontrolujte, zda je DOI správné a "
+"zaregistrované."
+
+msgid "Unknown error"
+msgstr "Neznámá chyba"
+
+msgid ""
+"Paste one or more DOI URLs (separated by commas, spaces, or new lines). Up "
+"to {{max}} DOIs per request — submit additional batches for more."
+msgstr ""
+"Vložte jedno nebo více DOI URL (oddělených čárkami, mezerami nebo novými "
+"řádky). Maximálně {{max}} DOI na požadavek — pro další odešlete novou dávku."
+
+msgid ""
+"Only the first {{max}} DOIs were kept; {{dropped}} additional DOI(s) were "
+"discarded. Submit this batch, then paste the rest."
+msgstr ""
+"Zachováno bylo pouze prvních {{max}} DOI; {{dropped}} dalších DOI bylo "
+"vyřazeno. Odešlete tuto dávku a poté vložte zbytek."
+
+msgid "Already tied to the record (will be skipped on Load):"
+msgstr "Již přidruženo k záznamu (při načtení bude přeskočeno):"
+
+msgid "Imported {{success}} of {{total}}"
+msgstr "Importováno {{success}} z {{total}}"
+
+msgid "Close"
+msgstr "Zavřít"
+
+msgid "and"
+msgstr "a"
+
+msgid "online"
+msgstr "online"
+
+msgid "Available at"
+msgstr "Dostupné z"
+
+msgid "Load from DOI"
+msgstr "Načíst z DOI"
+
+msgid "Add to record"
+msgstr "Přidat k záznamu"
+
+msgid "Add manually"
+msgstr "Přidat ručně"
+
+msgid "Import from DOI"
+msgstr "Načíst z DOI"
+
+msgid ""
+"This relation type will be applied to every resource loaded in this batch. "
+"It describes how each loaded record relates to the record you are creating. "
+"You can modify relation types of individual related resources later by "
+"clicking the Edit button next to each related resource."
+msgstr ""
+"Tento typ vztahu bude použit u každého zdroje načteného v této iterace. "
+"Popisuje, jak každý načtený záznam souvisí se záznamem, který vytváříte. "
+"Typy vztahů jednotlivých souvisejících zdrojů můžete později upravit "
+"kliknutím na tlačítko Upravit u každého souvisejícího zdroje."
+
+msgid "{{count}} field(s) need attention."
+msgid_plural "{{count}} field(s) need attention."
+msgstr[0] "{{count}} pole vyžaduje pozornost."
+msgstr[1] "{{count}} polí vyžaduje pozornost."
+
+msgid "Imported with {{count}} warning(s)."
+msgid_plural "Imported with {{count}} warning(s)."
+msgstr[0] "Importováno s {{count}} upozorněním."
+msgstr[1] "Importováno s {{count}} upozorněními."
+
+msgid "Use the Edit button on the entry in the list to fix it manually."
+msgstr "Pro ruční opravu klikněte na tlačítko Upravit u záznamu v seznamu."
+
+msgid ""
+"Add record's related resources. You can fill them manually or load them via "
+"DOI."
+msgstr ""
+"Přidejte související zdroje záznamu. Můžete je vyplnit ručně nebo načíst "
+"pomocí DOI."
+
+msgid "Search in my communities"
+msgstr "Hledat v mých komunitách"
+
+msgid "Search in all communities"
+msgstr "Hledat ve všech komunitách"
+
+msgid "My communities"
+msgstr "Moje komunity"
+
+msgid "All"
+msgstr "Vše"
+
+msgid ""
+"General description of the record. Use Add description below to add methods,"
+" technical details, or other specialized content as separate sections."
+msgstr ""
+"Obecný popis záznamu. Metody, technické podrobnosti nebo jiný specializovaný"
+" obsah přidejte jako samostatné části pomocí tlačítka Přidat popis níže."

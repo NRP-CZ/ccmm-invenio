@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/address/schema.json",
+  "title": "Address",
+  "description": "An \"address representation\" as conceptually defined by the INSPIRE Address Representation data type. The locn:addressId property may be used to link this locn:Address to other representations.",
+  "type": "object",
+  "required": [
+
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "iri"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "const": "Address"
+        },
+        {
+          "type": "array",
+          "contains": {
+            "const": "Address"
+          },
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "label": {
+      "title": "Label",
+      "description": "Address label",
+      "type": "array",
+      "items": {
+        "title": "Language tagged string",
+        "type": "object",
+        "required": [
+          "@value",
+          "@language"
+        ],
+        "properties": {
+          "@value": {
+            "title": "Text v daném jazyce",
+            "type": "string"
+          },
+          "@language": {
+            "title": "Jazyk textu",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "full_address": {
+      "title": "Full address",
+      "description": "The complete address written as a string, with or without formatting.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "po_box": {
+      "title": "PO box",
+      "description": "The Post Office Box number.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "thoroughfare": {
+      "title": "Thoroughfare",
+      "description": "An address component that represents the name of a passage or way through from one location to another. A thoroughfare is not necessarily a road, it might be a waterway or some other feature.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "locator_designator": {
+      "title": "Locator designator",
+      "description": "A number or a sequence of characters that uniquely identifies the locator within the relevant scope(s). The full identification of the locator could include one or more locator designators. ",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "locator_name": {
+      "title": "Locator name",
+      "description": "Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "address_area": {
+      "title": "Address area",
+      "description": "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "post_name": {
+      "title": "Post name",
+      "description": "The key postal division of the address, usually the city. (INSPIRE's definition is \"One or more names created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\").",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "administrative_unit_level_1": {
+      "title": "Administrative unit level 1",
+      "description": "The uppermost administrative unit for the address, almost always a country. The range is a literal, conceptually defined by the INSPIRE Geographical Name data type.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "administrative_unit_level_2": {
+      "title": "Administrative unit level 2",
+      "description": "The region of the address, usually a county, state or other such area that typically encompasses several localities. The range is a literal, conceptually defined by the INSPIRE Geographical Name data type.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    },
+    "post_code": {
+      "title": "Post code",
+      "description": "The post code (a.k.a postal code, zip code etc.). Post codes are common elements in many countries' postal address systems.",
+      "type": "array",
+      "items": {
+        "title": "String",
+        "type": "string"
+      }
+    }
+  }
+}

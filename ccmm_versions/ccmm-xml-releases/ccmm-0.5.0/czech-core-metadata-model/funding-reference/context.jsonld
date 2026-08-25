@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "@id",
+    "type": "@type",
+    "Funding reference": "FundingReference",
+    "funding_program": {
+      "@id": null,
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "award_title": {
+      "@id": "awardTitle",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "local_identifier": {
+      "@id": "awardNumber",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "funder": {
+      "@id": "hasFunderIdentifier",
+      "@container": "@set",
+      "@context": "../funder-identifier/context.jsonld"
+    }
+  }
+}

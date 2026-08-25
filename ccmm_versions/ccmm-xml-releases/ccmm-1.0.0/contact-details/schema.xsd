@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../address/schema.xsd"/>
+  <xs:complexType name="contact_details" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#ContactDetails">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Contact details - Details to contact the agent in a relationship to the resource.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="dataBox" type="xs:string" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#dataBox">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            Data box - Code of the data box.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="email" type="xs:string" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#email">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            Email - Email address.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="phone" type="xs:string" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#phone">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            Phone - Phone number
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="address" type="address" sawsdl:modelReference="http://www.w3.org/2006/vcard/ns#hasAddress">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has address - To specify the components of the delivery address for the object
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="contact_details" type="contact_details"/>
+</xs:schema>

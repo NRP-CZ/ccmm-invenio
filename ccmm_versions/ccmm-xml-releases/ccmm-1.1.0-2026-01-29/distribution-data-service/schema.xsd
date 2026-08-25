@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../data-service/schema.xsd"/>
+  <xs:include schemaLocation="../application-profile/schema.xsd"/>
+  <xs:include schemaLocation="../documentation/schema.xsd"/>
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+  <xs:complexType name="distribution_data_service" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#Distribution-DataService">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Distribution - data service - Physical embodiment of the dataset distribution as a particular data service. 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element name="title" type="xs:string" sawsdl:modelReference="http://purl.org/dc/terms/title">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            title - A name given to the distribution.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="access_service" type="ccmm:data_service" sawsdl:modelReference="http://www.w3.org/ns/dcat#accessService">
+        <xs:annotation>
+          <xs:documentation xml:lang="cs">
+            služba pro přístup k datům - Umístění či přístupový bod zpřístupňující distribuci datové sady.
+          </xs:documentation>
+          <xs:documentation xml:lang="da">
+            dataadgangstjeneste - Et websted eller endpoint der giver adgang til en repræsentation af datasættet.
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            has access service - A site or end-point that gives access to the distribution of the dataset.
+          </xs:documentation>
+          <xs:documentation xml:lang="es">
+            servicio de acceso de datos - Un sitio o end-point que da acceso a la distribución de un conjunto de datos.
+          </xs:documentation>
+          <xs:documentation xml:lang="it">
+            servizio di accesso ai dati - Un sito o end-point che dà accesso alla distribuzione del set di dati.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="conforms_to_specification" type="ccmm:application_profile" sawsdl:modelReference="http://purl.org/dc/terms/conformsTo">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            conforms to specification - An established standard to which the distribution conforms.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="documentation" type="ccmm:documentation" sawsdl:modelReference="http://xmlns.com/foaf/0.1/page">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            has documentation - A page or document about this Distribution.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="description" sawsdl:modelReference="http://purl.org/dc/terms/description">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            description - A free-text account of the Distribution.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##other" processContents="lax"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="distribution-data-service" type="ccmm:distribution_data_service"/>
+</xs:schema>

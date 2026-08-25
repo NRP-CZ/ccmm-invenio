@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://model.ccmm.cz/rd/time_reference/schema.json",
+  "anyOf": [
+    {
+      "title": "Time interval",
+      "description": "A temporal entity with an extent or duration",
+      "type": "object",
+      "required": [
+        "has_beginning",
+        "has_end",
+        "has_date_type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "iri"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "const": "Time interval"
+            },
+            {
+              "type": "array",
+              "contains": {
+                "const": "Time interval"
+              },
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "has_beginning": {
+          "title": "has beginning",
+          "description": "Beginning of a temporal interval.",
+          "type": "object",
+          "required": [
+            "date"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "iri"
+            },
+            "type": {
+              "oneOf": [
+                {
+                  "const": "Time instant"
+                },
+                {
+                  "type": "array",
+                  "contains": {
+                    "const": "Time instant"
+                  },
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "date": {
+              "title": "Date",
+              "description": "Position of an instant, expressed using xsd:date",
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "has_end": {
+          "title": "has end",
+          "description": "End of a temporal entity.",
+          "type": "object",
+          "required": [
+            "date"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "format": "iri"
+            },
+            "type": {
+              "oneOf": [
+                {
+                  "const": "Time instant"
+                },
+                {
+                  "type": "array",
+                  "contains": {
+                    "const": "Time instant"
+                  },
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            },
+            "date": {
+              "title": "Date",
+              "description": "Position of an instant, expressed using xsd:date",
+              "type": "string",
+              "format": "date"
+            }
+          }
+        },
+        "date_information": {
+          "title": "Date information",
+          "description": "Additional information to the date in text form.",
+          "type": "object",
+          "additionalProperties": {
+            "title": "Hodnota v jiném jazyce",
+            "type": "string"
+          },
+          "required": [
+
+          ],
+          "properties": {
+            "cs": {
+              "title": "Hodnota v českém jazyce",
+              "type": "string"
+            },
+            "en": {
+              "title": "Hodnota v anglickém jazyce",
+              "type": "string"
+            }
+          }
+        },
+        "has_date_type": {
+          "$ref": "../date-type/schema.json"
+        }
+      }
+    },
+    {
+      "title": "Time instant",
+      "description": "A temporal entity with zero extent or duration.",
+      "type": "object",
+      "required": [
+        "date",
+        "has_date_type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "format": "iri"
+        },
+        "type": {
+          "oneOf": [
+            {
+              "const": "Time instant"
+            },
+            {
+              "type": "array",
+              "contains": {
+                "const": "Time instant"
+              },
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
+        },
+        "date": {
+          "title": "Date",
+          "description": "Position of an instant, expressed using xsd:date",
+          "type": "string",
+          "format": "date"
+        },
+        "date_information": {
+          "title": "Date information",
+          "description": "Additional information to the date in text form.",
+          "type": "object",
+          "additionalProperties": {
+            "title": "Hodnota v jiném jazyce",
+            "type": "string"
+          },
+          "required": [
+
+          ],
+          "properties": {
+            "cs": {
+              "title": "Hodnota v českém jazyce",
+              "type": "string"
+            },
+            "en": {
+              "title": "Hodnota v anglickém jazyce",
+              "type": "string"
+            }
+          }
+        },
+        "has_date_type": {
+          "$ref": "../date-type/schema.json"
+        }
+      }
+    }
+  ]
+}

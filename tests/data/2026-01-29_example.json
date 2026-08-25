@@ -1,0 +1,278 @@
+{
+  "metadata": {
+    "title": "Kvalita ovzduší ve středních čechách 2024",
+    "version": "1.0.23",
+    "publication_date": "2025",
+    "resource_type": {
+      "id": "c_ddb1"
+    },
+    "languages": [
+      {
+        "id": "CES"
+      },
+      {
+        "id": "ENG"
+      }
+    ],
+    "additional_titles": [
+      {
+        "title": "Air quality measurements in Central Bohemian Region in 2024.",
+        "type": {
+          "id": "TranslatedTitle"
+        },
+        "lang": {
+          "id": "ENG"
+        }
+      }
+    ],
+    "additional_descriptions": [
+      {
+        "description": "Tato datová sada obsahuje měření kvality ovzduší ve středních Čechách v roce 2024.",
+        "type": {
+          "id": "abstract"
+        },
+        "lang": {
+          "id": "CES"
+        }
+      }
+    ],
+    "creators": [
+      {
+        "role": {
+          "id": "Other"
+        },
+        "person_or_org": {
+          "name": "Novák, Jan",
+          "type": "personal",
+          "given_name": "Jan",
+          "family_name": "Novák"
+        },
+        "affiliations": [
+          {
+            "name": "Univerzita Karlova"
+          }
+        ]
+      }
+    ],
+    "subjects": [
+      {
+        "subject": "Meteorologie, vědy o atmosféře"
+      },
+      {
+        "subject": "kvalita ovzduší"
+      },
+      {
+        "subject": "Environmental monitoring facilities"
+      }
+    ],
+    "identifiers": [
+      {
+        "identifier": "10.45321/as36sl",
+        "scheme": "doi"
+      }
+    ],
+    "dates": [
+      {
+        "date": "2025-04-27",
+        "type": {
+          "id": "Collected"
+        },
+        "description": "Date collected"
+      },
+      {
+        "date": "2024",
+        "type": {
+          "id": "Collected"
+        },
+        "description": "Collection period"
+      }
+    ],
+    "rights": [
+      {
+        "title": {
+          "en": "A custom license"
+        },
+        "description": {
+          "en": "A description."
+        },
+        "link": "https://customlicense.org/licenses/by/4.0/"
+      }
+    ],
+    "locations": {
+      "features": [
+        {
+          "place": "Středočeský kraj",
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  13.394972,
+                  49.501270
+                ],
+                [
+                  15.585575,
+                  49.501270
+                ],
+                [
+                  15.585575,
+                  50.614216
+                ],
+                [
+                  13.394972,
+                  50.614216
+                ],
+                [
+                  13.394972,
+                  49.501270
+                ]
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "related_identifiers": [
+      {
+        "identifier": "http://data.europa.eu/eli/dir/2008/50/oj",
+        "scheme": "url",
+        "relation_type": {
+          "id": "IsReferencedBy"
+        },
+        "resource_type": {
+          "id": "c_18cf"
+        }
+      },
+      {
+        "identifier": "https://www.envitech-bohemia.cz/p/264/envi-lvs1-sampler-pro-odber-prasneho-aerosolu",
+        "scheme": "url",
+        "relation_type": {
+          "id": "References"
+        }
+      },
+      {
+        "identifier": "https://opendata.chmi.cz/air_quality/now/data/",
+        "scheme": "url",
+        "relation_type": {
+          "id": "IsDerivedFrom"
+        },
+        "resource_type": {
+          "id": "c_ddb1"
+        }
+      },
+      {
+        "identifier": "https://data.gov.cz/zdroj/datové-sady/00020699/c724d055011d82189bbfc3766ffd1eb7",
+        "scheme": "url",
+        "relation_type": {
+          "id": "HasMetadata"
+        }
+      }
+    ],
+    "related_resources": [
+      {
+        "title": "Long-term trends of PM2.5 concentrations in the Central Bohemian Region (2010–2024)",
+        "publication_date": "2025-02-15",
+        "resource_type": {
+          "id": "c_2df8fbb1"
+        },
+        "publisher": "Institute of Atmospheric Studies, Prague",
+        "languages": [
+          {
+            "id": "ENG"
+          }
+        ],
+        "additional_titles": [
+          {
+            "title": "Dlouhodobé trendy koncentrací PM2.5 ve Středočeském kraji (2010–2024)",
+            "type": {
+              "id": "TranslatedTitle"
+            },
+            "lang": {
+              "id": "CES"
+            }
+          }
+        ],
+        "additional_descriptions": [
+          {
+            "description": "Peer-reviewed article analysing long-term PM2.5 trends based on ground monitoring stations and satellite-derived datasets.",
+            "type": {
+              "id": "abstract"
+            },
+            "lang": {
+              "id": "ENG"
+            }
+          }
+        ],
+        "creators": [
+          {
+            "person_or_org": {
+              "name": "Svobodová, Petra",
+              "type": "personal",
+              "given_name": "Petra",
+              "family_name": "Svobodová"
+            },
+            "affiliations": [
+              {
+                "name": "Institute of Atmospheric Studies, Prague"
+              }
+            ]
+          },
+          {
+            "person_or_org": {
+              "name": "Müller, Thomas",
+              "type": "personal",
+              "given_name": "Thomas",
+              "family_name": "Müller"
+            },
+            "affiliations": [
+              {
+                "name": "Charles University"
+              }
+            ]
+          }
+        ],
+        "contributors": [
+          {
+            "role": {
+              "id": "DataCollector"
+            },
+            "person_or_org": {
+              "name": "Czech Hydrometeorological Institute",
+              "type": "organizational"
+            }
+          }
+        ],
+        "identifiers": [
+          {
+            "identifier": "10.56789/ias.pm25.2025.001",
+            "scheme": "doi"
+          }
+        ],
+        "rights": [
+          {
+            "title": {
+              "en": "Creative Commons Attribution 4.0 International"
+            },
+            "link": "https://creativecommons.org/licenses/by/4.0/"
+          }
+        ],
+        "relation_type": {
+          "id": "IsReferencedBy"
+        }
+      }
+    ],
+    "funding": [
+      {
+        "funder": {
+          "name": "Grantová agentura České republiky"
+        },
+        "award": {
+          "title": {
+            "cs": "Program for air pollution research"
+          },
+          "number": "https://doi.org/award-identifier"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "@id",
+    "type": "@type",
+    "Datová sada": "http://www.w3.org/ns/dcat#Dataset",
+    "publication_year": {
+      "@id": "relatedItemPublicationYear",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "version": {
+      "@id": "http://www.w3.org/ns/dcat#version",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "description": {
+      "@id": "http://purl.org/dc/terms/description",
+      "@container": "@language"
+    },
+    "other_language": {
+      "@id": "language",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "primary_language": {
+      "@id": "language",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "resource_type": {
+      "@id": "resourceType",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title": {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "alternate_title": {
+      "@id": "hasAlternateTitle",
+      "@container": "@set",
+      "@context": "../alternate-title/context.jsonld"
+    },
+    "is_described_by": {
+      "@id": "isDescribedBy",
+      "@container": "@set",
+      "@context": "../metadata-record/context.jsonld"
+    },
+    "identifier": {
+      "@id": "hasIdentifier",
+      "@container": "@set",
+      "@context": "../identifier/context.jsonld"
+    },
+    "location": {
+      "@id": "http://purl.org/dc/terms/spatial",
+      "@container": "@set",
+      "@context": "../location/context.jsonld"
+    },
+    "provenance": {
+      "@id": "http://purl.org/dc/terms/provenance",
+      "@container": "@set",
+      "@context": "../provenance-statement/context.jsonld"
+    },
+    "qualified_relation": {
+      "@id": "qualifiedRelation",
+      "@container": "@set",
+      "@context": "../resource-to-agent-relationship/context.jsonld"
+    },
+    "time_reference": {
+      "@id": "hasTimeReference",
+      "@container": "@set",
+      "@context": "../time-reference/context.jsonld"
+    },
+    "subject": {
+      "@id": "hasSubject",
+      "@container": "@set",
+      "@context": "../subject/context.jsonld"
+    },
+    "validation_result": {
+      "@id": "hasValidationResult",
+      "@container": "@set",
+      "@context": "../validation-result/context.jsonld"
+    },
+    "distribution": {
+      "@id": "hasDistribution",
+      "@container": "@set",
+      "@context": "../distribution/context.jsonld"
+    },
+    "funding_reference": {
+      "@id": "hasFundingReference",
+      "@container": "@set",
+      "@context": "../funding-reference/context.jsonld"
+    },
+    "terms_of_use": {
+      "@id": "hasVersion",
+      "@container": "@set",
+      "@context": "../terms-of-use/context.jsonld"
+    },
+    "related_resource": {
+      "@id": "hasRelatedResource",
+      "@container": "@set",
+      "@context": "../resource/context.jsonld"
+    }
+  }
+}

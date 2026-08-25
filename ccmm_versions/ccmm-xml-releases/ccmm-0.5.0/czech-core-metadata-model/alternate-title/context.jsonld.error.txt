@@ -1,0 +1,10 @@
+e is null
+
+Cg/n<@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:28169
+Cg@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:28155
+generatePropertyContext@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:29691
+generateClassesContext@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:31924
+Dat/<@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:29417
+generateToObject@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:34365
+generateToStream@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:691:33748
+generateArtefact@http://localhost:3000/data-specification-editor/assets/index-CVN6l5N1.js:1539:60619

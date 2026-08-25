@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "funder_name": {
+      "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+      "@type": "xsd:string"
+    },
+    "identifier": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/hasIdentifier",
+      "@container": "@set",
+      "@context": "../identifier/context.jsonld"
+    },
+    "Funder identifier": {
+      "@id": "https://techlib.cz/vocabulary/datacite/FunderIdentifier",
+      "@context": {}
+    }
+  }
+}

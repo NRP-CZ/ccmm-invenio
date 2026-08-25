@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="time_interval">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="date_information">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="has_beginning" type="time_instant"/>
+      <xs:element name="has_date_type" type="date_type"/>
+      <xs:element name="has_end" type="time_instant"/>
+      <xs:element minOccurs="0" name="iri" type="anyURI"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="time_interval" type="time_interval"/>
+</xs:schema>

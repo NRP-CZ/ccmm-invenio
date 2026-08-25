@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:complexType name="time_reference" sawsdl:modelReference="https://techlib.cz/vocabulary/ccmm/TimeReference">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Time reference - A date on which something relative to the resource has happened.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" name="date_information" type="xs:string" sawsdl:modelReference="https://techlib.cz/vocabulary/datacite/dateInformation">
+        <xs:annotation>
+          <xs:documentation xml:lang="">
+            Date information
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            Date information - Additional information to the date in text form.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="date_type" type="xs:string" sawsdl:modelReference="https://techlib.cz/vocabulary/datacite/dateType">
+        <xs:annotation>
+          <xs:documentation xml:lang="">
+            Date type
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            Date type - Type of the date.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="date" type="xs:date" sawsdl:modelReference="https://techlib.cz/vocabulary/datacite/dateValue">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            Date - A point or period of time associated with an event in the lifecycle of the resource.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="time_reference" type="time_reference"/>
+</xs:schema>

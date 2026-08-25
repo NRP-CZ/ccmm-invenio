@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="distribution">
+    <xs:choice>
+      <xs:element name="distribution">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="iri" type="anyURI"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="distribution_-_data_service">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="access_service" type="data_service"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="description">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="documentation" type="documentation"/>
+            <xs:element minOccurs="0" name="iri" type="anyURI"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="specification" type="application_profile"/>
+            <xs:element name="title">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="distribution_-_downloadable_file">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" name="access_url" type="file"/>
+            <xs:element name="byte_size" type="integer"/>
+            <xs:element minOccurs="0" name="checksum" type="checksum"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="conforms_to_schema" type="application_profile"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="download_url" type="file"/>
+            <xs:element name="format" type="format"/>
+            <xs:element minOccurs="0" name="iri" type="anyURI"/>
+            <xs:element minOccurs="0" name="media_type" type="media_type"/>
+            <xs:element name="title">
+              <xs:complexType>
+                <xs:simpleContent>
+                  <xs:extension base="xs:string">
+                    <xs:attribute ref="xml:lang" use="required"/>
+                  </xs:extension>
+                </xs:simpleContent>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="distribution" type="distribution"/>
+</xs:schema>

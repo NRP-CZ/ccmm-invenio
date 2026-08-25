@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/XML/1998/namespace"/>
+  <xs:complexType name="address" sawsdl:modelReference="http://www.w3.org/ns/locn#Address">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Address - A spatial object that in a human-readable way identifies a fixed location. 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="label" sawsdl:modelReference="http://www.w3.org/2000/01/rdf-schema#label">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            label - Address label
+          </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute ref="xml:lang" use="required"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="full_address" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#fullAddress">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            full address - The complete address written as a string.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="po_box" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#poBox">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            post office box - A location designator for a postal delivery point at a post office, usually a number.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="thoroughfare" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#thoroughfare">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            thoroughfare - The name of a passage or way through from one location to another.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="locator_designator" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#locatorDesignator">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            locator designator - A number or sequence of characters that uniquely identifies the locator within the relevant scope.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="locator_name" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#locatorName">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            locator name - Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="address_area" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#addressArea">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            address area - The name of a geographic area that groups Addresses.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="post_name" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#postName">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            post name - A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points. 
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="administrative_unit_level_1" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#adminUnitL1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            administrative unit level 1 - The name of the uppermost level of the address, almost always a country.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="administrative_unit_level_2" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#adminUnitL2">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            administrative unit level 2 - The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="post_code" type="xs:string" sawsdl:modelReference="http://www.w3.org/ns/locn#postCode">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            post code - The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="address" type="address"/>
+</xs:schema>

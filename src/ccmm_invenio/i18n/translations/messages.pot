@@ -1,0 +1,207 @@
+# Translations template for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-07-08 15:01+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:119
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:222
+msgid "Datacite export"
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:125
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:132
+msgid "Citation"
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:185
+msgid "CCMM import"
+msgstr ""
+
+#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:187
+msgid "CCMM XML export."
+msgstr ""
+
+msgid "Alternative identifiers"
+msgstr ""
+
+msgid "Community and Access"
+msgstr ""
+
+msgid "Visibility"
+msgstr ""
+
+msgid "Search in my communities"
+msgstr ""
+
+msgid "Search in all communities"
+msgstr ""
+
+msgid "My communities"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Upload files"
+msgstr ""
+
+msgid "Funding"
+msgstr ""
+
+msgid "General information"
+msgstr ""
+
+msgid ""
+"General description of the record. Use Add description below to add methods,"
+" technical details, or other specialized content as separate sections."
+msgstr ""
+
+msgid "Related works"
+msgstr ""
+
+msgid ""
+"This identifier could not be resolved. Check that the DOI is correct and "
+"registered."
+msgstr ""
+
+msgid "Unknown error"
+msgstr ""
+
+msgid "Import from DOI"
+msgstr ""
+
+msgid "Relation type"
+msgstr ""
+
+msgid "Select relation type..."
+msgstr ""
+
+msgid ""
+"This relation type will be applied to every resource loaded in this batch. "
+"It describes how each loaded record relates to the record you are creating. "
+"You can modify relation types of individual related resources later by "
+"clicking the Edit button next to each related resource."
+msgstr ""
+
+msgid ""
+"Paste one or more DOI URLs (separated by commas, spaces, or new lines). Up "
+"to {{max}} DOIs per request — submit additional batches for more."
+msgstr ""
+
+msgid ""
+"Only the first {{max}} DOIs were kept; {{dropped}} additional DOI(s) were "
+"discarded. Submit this batch, then paste the rest."
+msgstr ""
+
+msgid "Already tied to the record (will be skipped on Load):"
+msgstr ""
+
+msgid "Imported {{success}} of {{total}}"
+msgstr ""
+
+msgid "{{count}} field(s) need attention."
+msgid_plural "{{count}} field(s) need attention."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Imported with {{count}} warning(s)."
+msgid_plural "Imported with {{count}} warning(s)."
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Use the Edit button on the entry in the list to fix it manually."
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Add to record"
+msgstr ""
+
+msgid "Untitled resource"
+msgstr ""
+
+msgid "online"
+msgstr ""
+
+msgid "Available at"
+msgstr ""
+
+msgid "Related resources"
+msgstr ""
+
+msgid "Add related resource"
+msgstr ""
+
+msgid "Edit related resource"
+msgstr ""
+
+msgid ""
+"Add record's related resources. You can fill them manually or load them via "
+"DOI."
+msgstr ""
+
+msgid "Load from DOI"
+msgstr ""
+
+msgid "Add manually"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Relation type is required"
+msgstr ""
+
+msgid "Title is required"
+msgstr ""
+
+msgid "Resource type is required"
+msgstr ""
+
+msgid "Save and add another"
+msgstr ""
+
+msgid "Added"
+msgstr ""
+
+msgid "Basic information"
+msgstr ""
+
+msgid "Identifiers"
+msgstr ""
+
+msgid "Creators and Contributors"
+msgstr ""
+
+msgid "Dates and Subjects"
+msgstr ""
+
+msgid "Funding and Rights"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "and"
+msgstr ""

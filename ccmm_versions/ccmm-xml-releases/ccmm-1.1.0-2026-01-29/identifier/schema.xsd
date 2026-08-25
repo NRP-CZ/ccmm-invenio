@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../identifier-scheme/schema.xsd"/>
+  <xs:complexType name="identifier" sawsdl:modelReference="http://www.w3.org/ns/adms#Identifier">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Identifier - Unique and resolvable identifier containing the notation and identifier scheme in the form of URI.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="iri" type="xs:anyURI"/>
+      <xs:element name="value" type="xs:string" sawsdl:modelReference="http://www.w3.org/2004/02/skos/core#notation">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            value - Value of the identifer within the given identifier scheme.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="scheme" type="ccmm:identifier_scheme" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#inScheme">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            in scheme - Relation between the identifier and scheme in which it is defined and unique.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element minOccurs="0" name="authorized" type="xs:boolean" sawsdl:modelReference="https://model.ccmm.cz/vocabulary/ccmm#authorized">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            authorized - Specifies whether the identifier is authorized by the subject it represents.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="identifier" type="ccmm:identifier"/>
+</xs:schema>

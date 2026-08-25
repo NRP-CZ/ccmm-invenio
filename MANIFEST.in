@@ -1,0 +1,12 @@
+include *.rst
+include *.md
+include *.txt
+include LICENSE
+recursive-include src/ccmm_invenio *.py
+recursive-include src/ccmm_invenio *.js
+recursive-include src/ccmm_invenio *.jsx
+recursive-include src/ccmm_invenio *.json
+recursive-include src/ccmm_invenio *.yaml
+recursive-include src/ccmm_invenio *.yml
+recursive-exclude tests *
+recursive-exclude src/ccmm_invenio *.DS_Store

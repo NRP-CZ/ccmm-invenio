@@ -1,0 +1,55 @@
+CCMMAccessRights:
+  type: vocabulary
+  vocabulary-type: accessrights # not in rdm
+CCMMAlternateTitleType:
+  type: vocabulary
+  vocabulary-type: titletypes # in RDM
+CCMMChecksumAlgorithm:
+  type: vocabulary
+  vocabulary-type: checksumalgorithms  # not in RDM
+CCMMDateType:
+  type: vocabulary
+  vocabulary-type: datetypes # in RDM
+CCMMDescriptionType:
+  type: vocabulary
+  vocabulary-type: descriptiontypes # in RDM
+CCMMFormat:
+  type: vocabulary
+  vocabulary-type: fileformats # not in RDM
+CCMMIdentifierScheme:
+  type: vocabulary
+  vocabulary-type: identifierschemes  # not in RDM
+CCMMLanguageSystem:
+  type: vocabulary
+  vocabulary-type: languages  # in CCMM language systems, renamed to be consistent with RDM
+CCMMLocationRelationType:
+  type: vocabulary
+  vocabulary-type: locationrelationtypes  # not in RDM
+CCMMRelationType:
+  type: vocabulary
+  vocabulary-type: relationtypes  # in RDM
+CCMMMediaType:
+  type: vocabulary
+  vocabulary-type: mediatypes # not in RDM
+CCMMResourceAgentRoleType:
+  type: vocabulary
+  vocabulary-type: resourceagentroletypes  # not in RDM, in RDM we have creatorsroles and contributorsroles
+CCMMResourceRelationType:
+  type: vocabulary
+  vocabulary-type: resourcerelationtypes  # not in RDM, in RDM this is under resourcetypes
+CCMMResourceType:
+  type: vocabulary
+  vocabulary-type: resourcetypes  # in RDM
+CCMMSubjectScheme:
+  type: vocabulary
+  vocabulary-type: subjectschemes # not in RDM, in RDM we have specialized Subject vocabulary
+# TODO: license for production repositories
+
+# Extra vocavbularies in RDM:
+#
+# Affiliation
+# Funder
+# Award
+# Subject
+# licenses
+# removalreasons

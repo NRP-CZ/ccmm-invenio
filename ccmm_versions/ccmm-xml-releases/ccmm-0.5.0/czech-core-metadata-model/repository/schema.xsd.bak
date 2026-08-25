@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1"
+  elementFormDefault="unqualified" xmlns:c="https://schemas.dataspecer.com/xsd/core/"
+  xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+  <xs:import namespace="https://schemas.dataspecer.com/xsd/core/"
+    schemaLocation="./2022-07.xsd"/>
+  <xs:include schemaLocation="../dataset/schema.xsd"/>
+  <xs:complexType name="repository" sawsdl:modelReference="http://www.w3.org/ns/dcat#Catalog">
+    <xs:annotation>
+      <xs:documentation xml:lang="ar">
+        فهرس قوائم البيانات - مجموعة من توصيفات قوائم البيانات
+      </xs:documentation>
+      <xs:documentation xml:lang="cs">
+        Katalog - Řízená kolekce metadat o datových sadách a datových službách
+      </xs:documentation>
+      <xs:documentation xml:lang="da">
+        Katalog - En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). 
+      </xs:documentation>
+      <xs:documentation xml:lang="el">
+        Κατάλογος - Μια επιμελημένη συλλογή μεταδεδομένων περί συνόλων δεδομένων
+      </xs:documentation>
+      <xs:documentation xml:lang="en">
+        Repository - A curated collection of metadata about resources.
+      </xs:documentation>
+      <xs:documentation xml:lang="es">
+        Catálogo - Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos).
+      </xs:documentation>
+      <xs:documentation xml:lang="fr">
+        Catalogue - Une collection élaborée de métadonnées sur les jeux de données
+      </xs:documentation>
+      <xs:documentation xml:lang="it">
+        Catalogo - Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati).
+      </xs:documentation>
+      <xs:documentation xml:lang="ja">
+        カタログ - データ・カタログは、データセットに関するキュレートされたメタデータの集合です。
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="c:iri"/>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="label" type="langString"
+        sawsdl:modelReference="http://www.w3.org/2000/01/rdf-schema#label">
+        <xs:annotation>
+          <xs:documentation xml:lang="">
+            Label
+          </xs:documentation>
+          <xs:documentation xml:lang="en">
+            Repository label
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="repository" type="repository"/>
+</xs:schema>

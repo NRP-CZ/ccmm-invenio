@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="unqualified" xmlns:c="https://schemas.dataspecer.com/xsd/core/" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../agent/schema.xsd"/>
+  <xs:import namespace="https://schemas.dataspecer.com/xsd/core/" schemaLocation="https://techlib.cz/specification/ccmm/person/2022-07.xsd"/>
+  <xs:complexType name="resource_to_agent_relationship" sawsdl:modelReference="http://www.w3.org/ns/dcat#Relationship">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+        Resource to Agent Relationship - An association class for attaching additional information to a relationship between Dataset and Agent.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" ref="c:iri"/>
+      <xs:element name="relation" type="agent" sawsdl:modelReference="http://purl.org/dc/terms/relation">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">
+            relation
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="resource_to_agent_relationship" type="resource_to_agent_relationship"/>
+</xs:schema>

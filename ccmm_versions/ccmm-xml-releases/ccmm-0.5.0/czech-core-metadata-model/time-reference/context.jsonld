@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "date_information": {
+      "@id": "https://techlib.cz/vocabulary/datacite/dateInformation",
+      "@type": "xsd:string"
+    },
+    "date_type": {
+      "@id": "https://techlib.cz/vocabulary/datacite/dateType",
+      "@type": "xsd:string"
+    },
+    "date": {
+      "@id": "https://techlib.cz/vocabulary/datacite/dateValue",
+      "@type": "xsd:date"
+    },
+    "Time reference": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/TimeReference",
+      "@context": {}
+    }
+  }
+}

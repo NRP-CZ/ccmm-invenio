@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "dataBox": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/dataBox",
+      "@type": "xsd:string"
+    },
+    "email": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/email",
+      "@type": "xsd:string"
+    },
+    "phone": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/phone",
+      "@type": "xsd:string"
+    },
+    "address": {
+      "@id": "http://www.w3.org/2006/vcard/ns#hasAddress",
+      "@container": "@set",
+      "@context": "../address/context.jsonld"
+    },
+    "Contact details": {
+      "@id": "https://techlib.cz/vocabulary/ccmm/ContactDetails",
+      "@context": {}
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" vc:minVersion="1.1" elementFormDefault="qualified" targetNamespace="https://schema.ccmm.cz/research-data/1.1" xmlns:ccmm="https://schema.ccmm.cz/research-data/1.1" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:sawsdl="http://www.w3.org/ns/sawsdl">
+  <xs:include schemaLocation="../distribution-data-service/schema.xsd"/>
+  <xs:include schemaLocation="../distribution-downloadable-file/schema.xsd"/>
+  <xs:complexType name="distribution">
+    <xs:choice>
+      <xs:element name="distribution_data_service" type="ccmm:distribution_data_service"/>
+      <xs:element name="distribution_downloadable_file" type="ccmm:distribution_downloadable_file"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:element name="distribution" type="ccmm:distribution"/>
+</xs:schema>
