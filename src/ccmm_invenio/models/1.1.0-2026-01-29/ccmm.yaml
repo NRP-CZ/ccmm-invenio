@@ -761,6 +761,36 @@ CCMMDataSet:
       help:
         en: Use semantic versioning or your repository’s version scheme to distinguish releases and updates.
         cs: Použijte sémantické verzování nebo schéma verzí vašeho repozitáře pro rozlišení vydání a aktualizací.
+    sizes:
+      # sawsdl:modelReference=http://www.w3.org/ns/dcat#byteSize
+      type: array
+      xml: size
+      items:
+        type: keyword
+      label:
+        en: Sizes
+        cs: Velikosti
+      hint:
+        en: File sizes in human-readable format (e.g., "2.5 MB", "150 KB").
+        cs: Velikosti souborů v lidsky čitelném formátu (např. "2.5 MB", "150 KB").
+      help:
+        en: Provide file sizes for datasets to help users understand storage requirements.
+        cs: Uveďte velikosti souborů datové sady, aby uživatelé mohli pochopit nároky na úložiště.
+    formats:
+      # sawsdl:modelReference=http://purl.org/dc/terms/format
+      type: array
+      xml: format
+      items:
+        type: keyword
+      label:
+        en: Formats
+        cs: Formáty
+      hint:
+        en: File formats (e.g., "text/csv", "application/pdf", "GeoJSON").
+        cs: Formáty souborů (např. "text/csv", "application/pdf", "GeoJSON").
+      help:
+        en: Specify the file formats used in the dataset for proper tool selection and interoperability.
+        cs: Uveďte formáty souborů použitých v datové sadě pro správnou volbu nástrojů a interoperabilitu.
 CCMMDescription:
   type: object
   xml: description
