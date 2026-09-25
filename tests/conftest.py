@@ -15,10 +15,11 @@ from typing import Any
 import pytest
 from flask_principal import Identity, Need, UserNeed
 from invenio_access.permissions import system_identity
+from invenio_rdm_records.config import RDM_RECORDS_LOCATION_SCHEMES
 from invenio_vocabularies.proxies import current_service as current_vocabularies_service
 from oarepo_runtime.services.records.mapping import update_all_records_mappings
 
-from tests.model import nma_dataset, production_dataset  # noqa: F401
+from tests.model import ccmm_dataset  # noqa: F401
 
 log = logging.getLogger("tests")
 
@@ -54,6 +55,13 @@ def app_config(
 
     app_config["RDM_PERSISTENT_IDENTIFIERS"] = {}
 
+    # accept also "url" location identifiers (e.g. the iri of a related object of a location)
+    # TODO: document this !
+    app_config["RDM_RECORDS_LOCATION_SCHEMES"] = {
+        **RDM_RECORDS_LOCATION_SCHEMES,
+        "url": {"label": "URL", "validator": RDM_RECORDS_LOCATION_SCHEMES["geonames"]["validator"]},
+    }
+
     app_config["RDM_OPTIONAL_DOI_VALIDATOR"] = lambda _draft, _previous_published, **_kwargs: True
 
     app_config["DATACITE_TEST_MODE"] = True
@@ -63,6 +71,14 @@ def app_config(
     app_config["IIIF_FORMATS"] = ["jpg", "png"]
     app_config["APP_RDM_RECORD_THUMBNAIL_SIZES"] = [500]
     app_config["RDM_ARCHIVE_DOWNLOAD_ENABLED"] = True
+
+    # a czech repository, as in production (rdm free-text rights accept only configured locales)
+    app_config["I18N_LANGUAGES"] = [("cs", "Czech")]
+
+    # oarepo vocabularies (mappings, skos search param), as in invenio.cfg of a repository
+    from oarepo_vocabularies.services.config import VocabulariesConfig
+
+    app_config["VOCABULARIES_SERVICE_CONFIG"] = VocabulariesConfig
 
     return app_config
 

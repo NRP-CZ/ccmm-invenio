@@ -8,11 +8,11 @@
 #
 from __future__ import annotations
 
-from tests.model import production_dataset
+from tests.model import ccmm_dataset
 
 
 def test_create(app, db, identity_simple, search_clear, location, vocab_fixtures):
-    service = production_dataset.proxies.current_service
+    service = ccmm_dataset.proxies.current_service
 
     rec = service.create(
         identity_simple,

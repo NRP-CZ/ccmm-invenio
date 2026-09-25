@@ -10,16 +10,16 @@ from __future__ import annotations
 
 from oarepo_model.api import model
 
-from ccmm_invenio.models import ccmm_nma_preset_1_1_0, ccmm_production_preset_1_1_0
+from ccmm_invenio.models import ccmm_preset_1_1_0
 
 #
-# ccmm production model to be used in repositories
+# the ccmm dataset model, as a repository defines it
 #
-production_dataset = model(
-    "production_dataset",
+ccmm_dataset = model(
+    "ccmm_dataset",
     version="1.1.0",
     presets=[
-        ccmm_production_preset_1_1_0,
+        ccmm_preset_1_1_0,
     ],
     configuration={},
     types=[
@@ -35,29 +35,4 @@ production_dataset = model(
     metadata_type="Metadata",
     customizations=[],
 )
-production_dataset.register()
-
-#
-# ccmm model for the national metadata directory/aggregator (NMA)
-#
-nma_dataset = model(
-    "nma",
-    version="1.1.0",
-    presets=[
-        ccmm_nma_preset_1_1_0,
-    ],
-    configuration={},
-    types=[
-        {
-            "Metadata": {
-                "properties": {
-                    "title": {"type": "fulltext+keyword"},
-                    "adescription": {"type": "keyword"},
-                },
-            },
-        }
-    ],
-    metadata_type="Metadata",
-    customizations=[],
-)
-nma_dataset.register()
+ccmm_dataset.register()
