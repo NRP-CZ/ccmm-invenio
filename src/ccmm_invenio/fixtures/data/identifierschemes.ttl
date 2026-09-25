@@ -1,0 +1,427 @@
+@prefix adsabs: <https://ui.adsabs.harvard.edu/#abs/> .
+@prefix ares: <https://ares.gov.cz/> .
+@prefix arxiv: <https://arxiv.org/abs/> .
+@prefix doi: <https://doi.org/> .
+@prefix europa-language: <http://publications.europa.eu/resource/authority/language/> .
+@prefix europa-ontology: <http://publications.europa.eu/ontology/> .
+@prefix europa-web: <https://op.europa.eu/en/web/> .
+@prefix gnd: <https://d-nb.info/gnd/> .
+@prefix hdl: <https://hdl.handle.net/> .
+@prefix nbn: <https://nbn-resolving.org/> .
+@prefix nma: <https://nma.eosc.cz/vocabularies/> .
+@prefix nma-identifierschemes: <https://nma.eosc.cz/vocabularies/identifierschemes/> .
+@prefix nma-vocabularies: <https://nma.eosc.cz/vocabularies/vocabularies/> .
+@prefix orcid: <https://orcid.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ror: <https://ror.org/> .
+@prefix scicrunch: <https://scicrunch.org/resolver/> .
+@prefix scopus: <https://www.scopus.com/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tags: <https://nma.eosc.cz/vocabularies/vocabularies/inveniotags> .
+@prefix webofscience: <https://www.webofscience.com/> .
+@prefix wikidata: <https://www.wikidata.org/entity/> .
+
+europa-ontology:euvoc a owl:Ontology ;
+    rdfs:label "EU Vocabularies ontology (euvoc)"@en ;
+    rdfs:comment "Ontology of the EU Publications Office; its terms are used as skos:notation datatypes to distinguish language code schemes (e.g. ISO_639_1, ISO_639_3, XML_LNG)."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+europa-language: a skos:ConceptScheme ;
+    rdfs:label "EU Publications Office language authority"@en ;
+    rdfs:comment "EU Publications Office language authority table; identifiers are ISO 639-3 codes."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+nma: a owl:Ontology ;
+    rdfs:label "NMA vocabularies"@en ;
+    rdfs:comment "Namespace of the NMA vocabularies; each sub-path is one vocabulary (e.g. languages)."@en .
+
+nma-vocabularies:invenioid a rdfs:Datatype ;
+    rdfs:label "NMA internal vocabulary id"@en ;
+    rdfs:comment "Marks skos:notation literals carrying the internal NMA vocabulary id, used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props: a owl:Ontology ;
+    rdfs:label "NMA vocabulary properties"@en ;
+    rdfs:comment "Namespace of internal vocabulary properties and datatypes used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props:alpha_2 a rdf:Property ;
+    rdfs:label "ISO 639-1 code"@en ;
+    rdfs:comment "Two-letter ISO 639-1 code of a language, when it has one."@en .
+
+props:csl a rdf:Property ;
+    rdfs:label "csl"@en ;
+    rdfs:comment "Citation Style Language (CSL) type of a resource type."@en .
+
+props:datacite a rdf:Property ;
+    rdfs:label "DataCite relationType name"@en ;
+    rdfs:comment "Name of the DataCite relationType (e.g. IsCitedBy) a relation type concept stands for."@en .
+
+props:datacite_general a rdf:Property ;
+    rdfs:label "datacite_general"@en ;
+    rdfs:comment "DataCite resourceTypeGeneral of a resource type."@en .
+
+props:datacite_type a rdf:Property ;
+    rdfs:label "datacite_type"@en ;
+    rdfs:comment "DataCite resource type name, when the general one is further specified."@en .
+
+props:eurepo a rdf:Property ;
+    rdfs:label "eurepo"@en ;
+    rdfs:comment "eu-repo semantics identifier of a resource type."@en .
+
+props:marc a rdf:Property ;
+    rdfs:label "MARC 21 relator code"@en ;
+    rdfs:comment "Three-letter MARC 21 relator code (e.g. prc) of a role concept."@en .
+
+props:marc21_subtype a rdf:Property ;
+    rdfs:label "marc21_subtype"@en ;
+    rdfs:comment "MARC 21 bibliographic level of a resource type."@en .
+
+props:marc21_type a rdf:Property ;
+    rdfs:label "marc21_type"@en ;
+    rdfs:comment "MARC 21 type of record of a resource type."@en .
+
+props:openaire_resourceType a rdf:Property ;
+    rdfs:label "openaire_resourceType"@en ;
+    rdfs:comment "OpenAIRE resource type code of a resource type."@en .
+
+props:openaire_type a rdf:Property ;
+    rdfs:label "openaire_type"@en ;
+    rdfs:comment "OpenAIRE type name of a resource type."@en .
+
+props:schema.org a rdf:Property ;
+    rdfs:label "schema.org"@en ;
+    rdfs:comment "schema.org type a resource type maps to."@en .
+
+props:subtype a rdf:Property ;
+    rdfs:label "subtype"@en ;
+    rdfs:comment "InvenioRDM resource subtype id; empty for top-level types."@en .
+
+props:type a rdf:Property ;
+    rdfs:label "type"@en ;
+    rdfs:comment "InvenioRDM resource type id a resource type belongs to."@en .
+
+props:xml_lang a rdf:Property ;
+    rdfs:label "xml:lang code"@en ;
+    rdfs:comment "Language tag suitable for an xml:lang attribute: the ISO 639-1 code when available, the ISO 639-3 code otherwise."@en .
+
+tags: a rdf:Property ;
+    rdfs:label "vocabulary tags"@en ;
+    rdfs:comment "Links a vocabulary concept to its tag values (e.g. the scope and type of a language); internal use."@en .
+
+nma-identifierschemes:ads a skos:Concept ;
+    skos:exactMatch adsabs: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "ads"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Bibcode"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "bibcode" ;
+    tags: "record" .
+
+nma-identifierschemes:ares a skos:Concept ;
+    skos:definition "Administrativní registr ekonomických subjektů"@cs,
+        "Administrative Register of Economic Subjects"@en ;
+    skos:exactMatch ares: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "ares"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ARES"@cs,
+        "ARES"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    tags: "person-organization" .
+
+nma-identifierschemes:ark a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "ark"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ARK"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "ARK" ;
+    tags: "record" .
+
+nma-identifierschemes:arxiv a skos:Concept ;
+    skos:exactMatch arxiv: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "arxiv"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "arXiv"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "arXiv" ;
+    tags: "record" .
+
+nma-identifierschemes:crossreffunderid a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "crossreffunderid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Crossref Funder ID"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "Crossref Funder ID" ;
+    tags: "record" .
+
+nma-identifierschemes:cstr a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "cstr"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "CSTR"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "CSTR" ;
+    tags: "record" .
+
+nma-identifierschemes:doi a skos:Concept ;
+    skos:exactMatch doi: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "doi"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "DOI"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "DOI" ;
+    tags: "record" .
+
+nma-identifierschemes:ean13 a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "ean13"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "EAN13"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "EAN13" ;
+    tags: "record" .
+
+nma-identifierschemes:eissn a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "eissn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "EISSN"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "EISSN" ;
+    tags: "record" .
+
+nma-identifierschemes:gnd a skos:Concept ;
+    skos:exactMatch gnd: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "gnd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "GND"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "GND" ;
+    tags: "person-organization" .
+
+nma-identifierschemes:grid a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "grid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "GRID"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "GRID" ;
+    tags: "record" .
+
+nma-identifierschemes:handle a skos:Concept ;
+    skos:exactMatch hdl: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "handle"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Handle"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "Handle" ;
+    tags: "record" .
+
+nma-identifierschemes:igsn a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "igsn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "IGSN"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "IGSN" ;
+    tags: "record" .
+
+nma-identifierschemes:iri a skos:Concept ;
+    skos:exactMatch <urn:iri> ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "iri"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "IRI"@cs,
+        "IRI"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    tags: "record" .
+
+nma-identifierschemes:isbn a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "isbn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ISBN"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "ISBN" ;
+    tags: "record" .
+
+nma-identifierschemes:isni a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "isni"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ISNI"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "ISNI" ;
+    tags: "person-organization",
+        "record" .
+
+nma-identifierschemes:issn a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "issn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ISSN"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "ISSN" ;
+    tags: "record" .
+
+nma-identifierschemes:istc a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "istc"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ISTC"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "ISTC" ;
+    tags: "record" .
+
+nma-identifierschemes:lissn a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "lissn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "LISSN"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "LISSN" ;
+    tags: "record" .
+
+nma-identifierschemes:lsid a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "lsid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "LSID"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "LSID" ;
+    tags: "record" .
+
+nma-identifierschemes:orcid a skos:Concept ;
+    skos:exactMatch orcid: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "orcid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ORCID"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "ORCID" ;
+    tags: "person-organization" .
+
+nma-identifierschemes:other a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "other"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Other"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "Other" ;
+    tags: "record" .
+
+nma-identifierschemes:pmid a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "pmid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "PMID"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "PMID" ;
+    tags: "record" .
+
+nma-identifierschemes:purl a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "purl"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "PURL"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "PURL" ;
+    tags: "record" .
+
+nma-identifierschemes:researcherid a skos:Concept ;
+    skos:exactMatch webofscience: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "researcherid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Researcher ID"@cs,
+        "Researcher ID"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    tags: "person-organization" .
+
+nma-identifierschemes:ror a skos:Concept ;
+    skos:exactMatch ror: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "ror"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ROR"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "ROR" ;
+    tags: "person-organization" .
+
+nma-identifierschemes:rrid a skos:Concept ;
+    skos:exactMatch scicrunch: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "rrid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "RRID"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "RRID" ;
+    tags: "record" .
+
+nma-identifierschemes:scopusid a skos:Concept ;
+    skos:exactMatch scopus: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "scopusid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Scopus ID"@cs,
+        "Scopus ID"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    tags: "person-organization" .
+
+nma-identifierschemes:upc a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "upc"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "UPC"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "UPC" ;
+    tags: "record" .
+
+nma-identifierschemes:url a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "url"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "URL"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "URL" ;
+    tags: "record" .
+
+nma-identifierschemes:urn a skos:Concept ;
+    skos:exactMatch nbn: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "urn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "URN"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "URN" ;
+    tags: "record" .
+
+nma-identifierschemes:w3id a skos:Concept ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "w3id"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "W3ID"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "w3id" ;
+    tags: "record" .
+
+nma-identifierschemes:wikidata a skos:Concept ;
+    skos:exactMatch wikidata: ;
+    skos:inScheme nma-identifierschemes: ;
+    skos:notation "wikidata"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Wikidata"@en ;
+    skos:topConceptOf nma-identifierschemes: ;
+    props:datacite "Other" ;
+    tags: "record" .
+
+nma-identifierschemes: skos:hasTopConcept nma-identifierschemes:ads,
+        nma-identifierschemes:ares,
+        nma-identifierschemes:ark,
+        nma-identifierschemes:arxiv,
+        nma-identifierschemes:crossreffunderid,
+        nma-identifierschemes:cstr,
+        nma-identifierschemes:doi,
+        nma-identifierschemes:ean13,
+        nma-identifierschemes:eissn,
+        nma-identifierschemes:gnd,
+        nma-identifierschemes:grid,
+        nma-identifierschemes:handle,
+        nma-identifierschemes:igsn,
+        nma-identifierschemes:iri,
+        nma-identifierschemes:isbn,
+        nma-identifierschemes:isni,
+        nma-identifierschemes:issn,
+        nma-identifierschemes:istc,
+        nma-identifierschemes:lissn,
+        nma-identifierschemes:lsid,
+        nma-identifierschemes:orcid,
+        nma-identifierschemes:other,
+        nma-identifierschemes:pmid,
+        nma-identifierschemes:purl,
+        nma-identifierschemes:researcherid,
+        nma-identifierschemes:ror,
+        nma-identifierschemes:rrid,
+        nma-identifierschemes:scopusid,
+        nma-identifierschemes:upc,
+        nma-identifierschemes:url,
+        nma-identifierschemes:urn,
+        nma-identifierschemes:w3id,
+        nma-identifierschemes:wikidata .
+

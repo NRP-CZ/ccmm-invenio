@@ -1,71 +1,63 @@
 accessrights:
   pid-type: v-ar
-  data-file: ccmm_access_rights.yaml
-
-resourceagentroletypes:
-  pid-type: v-agr
-  data-file: ccmm_agent_roles.yaml
-
-titletypes:
-  pid-type: v-tt
-  data-file: ccmm_alternate_title_types.yaml
-
-contributorsroles:
-  pid-type: v-ct
-  data-file: ccmm_contributor_types.yaml
-
-filetypes:
-  pid-type: v-ft
-  data-file: ccmm_file_types.yaml
-
-languages:
-  pid-type: v-lan
-  data-file: ccmm_languages_primary.yaml
-
-licenses:
-  pid-type: v-lic
-  data-file: ccmm_licenses.yaml
-
-locationrelationtypes:
-  pid-type: v-lr
-  data-file: ccmm_location_relation_types.yaml
-
-relationtypes:
-  pid-type: v-rel
-  data-file: ccmm_relation_types.yaml
-
-resourcetypes:
-  pid-type: v-res
-  data-file: ccmm_resource_types.yaml
-
-subjects:
-  pid-type: sub
-  schemes:
-  - id: frascati
-    name: Frascati
-    uri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
-    data-file: ccmm_rdm_subjects.yaml
-
-subjectcategories:  # TODO: is this used? Whould not it be better to have Subject vocabulary?
-  pid-type: v-suc
-  data-file: ccmm_subject_categories.yaml
-
-subjectschemes:
-  pid-type: v-sus
-  data-file: ccmm_subject_schemes.yaml
-
-datetypes:
-  pid-type: v-dt
-  data-file: ccmm_time_reference_types.yaml
-
-identifierschemes:
-  pid-type: v-ids
-  data-file: ccmm_identifier_schemes.yaml
-
+  data-file: data/accessrights.yaml
 checksumalgorithms:
-  pid-type: v-csa
-  data-file: ccmm_checksum_algorithms.yaml
-
+  pid-type: v-ca
+  data-file: data/checksumalgorithms.yaml
+contributorsroles:
+  pid-type: cor
+  data-file: data/resourceagentroletypes.yaml
+creatorsroles:
+  pid-type: crr
+  data-file: data/resourceagentroletypes.yaml
+datetypes:
+  pid-type: dat
+  data-file: data/datetypes.yaml
 descriptiontypes:
   pid-type: dty
-  data-file: ccmm_description_types.yaml
+  data-file: data/descriptiontypes.yaml
+fileformats:
+  pid-type: v-ft
+  data-file: data/fileformats.yaml
+identifierschemes:
+  pid-type: v-ids
+  data-file: data/identifierschemes.yaml
+languages:
+  pid-type: lng
+  data-file: data/languages_primary.yaml
+licenses:
+  pid-type: lic
+  data-file: data/licenses.yaml
+locationrelations:
+  pid-type: v-lr
+  data-file: data/locationrelations.yaml
+mediatypes:
+  pid-type: v-mt
+  data-file: data/mediatypes.yaml
+relationtypes:
+  pid-type: rlt
+  data-file: data/relationtypes.yaml
+removalreasons:
+  pid-type: rem
+  data-file: data/removalreasons.yaml
+resourceagentroletypes:
+  pid-type: v-agr
+  data-file: data/resourceagentroletypes.yaml
+resourcetypes:
+  pid-type: rsrct
+  data-file: data/resourcetypes.yaml
+subjects:
+  pid-type: sub
+  data-file: data/subjects.yaml
+  schemes:
+  - data-file: data/subjects.yaml
+    id: FORD
+    name: OECD FORD Subject Category (Frascati)
+    uri: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/
+  - data-file: data/subjects_inspire.yaml
+    id: INSPIRE
+    name: INSPIRE theme register
+    uri: http://inspire.ec.europa.eu/theme
+titletypes:
+  pid-type: ttyp
+  data-file: data/titletypes.yaml

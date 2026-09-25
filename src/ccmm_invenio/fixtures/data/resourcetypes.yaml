@@ -1,0 +1,2820 @@
+- id: 542x-3s04
+  title:
+    en: design
+  description:
+    en: 'Plans, drawing or set of drawings showing how something e.g. building, product
+      is to be made and how it will work and look. [Source: Adapted from https://dictionary.cambridge.org/dictionary/english/design]'
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/542X-3S04
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://ncicb.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C1707689
+    scheme: https://ncicb.nci.nih.gov/ncimbrowser/
+    relation: exactMatch
+- id: audio
+  title:
+    cs: Audio
+    en: Audio
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: document
+    datacite_general: Sound
+    eurepo: info:eu-repo/semantics/other
+    marc21_type: audio
+    openaire_resourceType: '0033'
+    openaire_type: dataset
+    schema.org: https://schema.org/MediaObject
+    type: audio
+    zenodo: audio
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18cd
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/MediaObject
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Sound
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: c_12cc
+  title:
+    cs: kartografický dokument
+    en: cartographic material
+  description:
+    en: 'Any material representing the whole or part of the earth or any celestial
+      body at any scale. Cartographic materials include two- and three-dimensional
+      maps and plans (including maps of imaginary places); aeronautical, navigational,
+      and celestial charts; atlases; globes; block diagrams; sections; aerial photographs
+      with a cartographic purpose; bird''s-eye views (map views), etc. [Source: http://www.loc.gov/marc/cfmap.html]'
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_12cc
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://id.loc.gov/vocabulary/resourceTypes/car.html
+    scheme: https://id.loc.gov/vocabulary/resourceTypes/
+    relation: exactMatch
+  - identifier: https://schema.org/Map
+    scheme: https://schema.org/
+    relation: broadMatch
+- id: c_18cc
+  title:
+    cs: zvuk
+    en: sound
+  description:
+    en: 'A resource primarily intended to be heard. Examples include a music playback
+      file format, an audio compact disc, and recorded speech or sounds. [Source:
+      http://dublincore.org/documents/dcmi-terms/#dcmitype-Sound]'
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18cc
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/MediaObject
+    scheme: https://schema.org/
+    relation: broadMatch
+- id: c_18cf
+  title:
+    cs: text
+    en: text
+  description:
+    en: 'A resource consisting primarily of words for reading. Examples include books,
+      letters, dissertations, poems, newspapers, articles, archives of mailing lists.
+      Note that facsimiles or images of texts are still of the genre Text. [Source:
+      http://purl.org/dc/dcmitype/Text]'
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18cf
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Text
+    scheme: http://purl.org/datacite/v4.4/
+    relation: exactMatch
+  - identifier: http://purl.org/dc/dcmitype/Text
+    scheme: http://purl.org/dc/dcmitype/
+    relation: exactMatch
+- id: c_e059
+  title:
+    en: learning object
+  description:
+    en: 'A digital resource that can be reused to enhance teaching and learning.
+
+      Source https://icas-ca.org/archive/projects/coerc/oer-glossary/'
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_e059
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/InteractiveResource
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: c_e9a0
+  title:
+    cs: interaktivní zdroj
+    en: interactive resource
+  description:
+    en: 'A resource requiring interaction from the user to be understood, executed,
+      or experienced. Examples include forms on Web pages, applets, multimedia learning
+      objects, chat services, or virtual reality environments.
+
+      Source: http://purl.org/dc/dcmitype/InteractiveResource'
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_e9a0
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/InteractiveResource
+    scheme: http://purl.org/datacite/v4.4/
+    relation: exactMatch
+- id: dataset
+  title:
+    cs: Datová sada
+    en: Dataset
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: dataset
+    datacite_general: Dataset
+    eurepo: info:eu-repo/semantics/other
+    lindat: Spreadsheet
+    marc21_type: dataset
+    openaire_resourceType: '0021'
+    openaire_type: dataset
+    schema.org: https://schema.org/Dataset
+    type: dataset
+    zenodo: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_ddb1
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/Dataset
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Dataset
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: event
+  title:
+    cs: Událost
+    en: Event
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: event
+    datacite_general: Event
+    eurepo: info:eu-repo/semantics/other
+    marc21_type: event
+    openaire_resourceType: '0023'
+    openaire_type: publication
+    schema.org: https://schema.org/Event
+    type: event
+    zenodo: event
+  mappings:
+  - identifier: https://schema.org/Event
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Event
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: f8rt-tjk0
+  title:
+    en: artistic work
+  description:
+    en: 'A work of visual arts and performing arts, including musical works; dramatic
+      works; pantomimes and choreographic works; motion picture and other audiovisual
+      works; pictorial, graphic, sculptural and architectural works. Adapted from
+      Law Insider: https://www.lawinsider.com/dictionary/artistic-works'
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/F8RT-TJK0
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+- id: gsza-y7v7
+  title:
+    en: knowledge organization system
+  description:
+    en: All types of schemes for organizing information and promoting knowledge management.
+      Knowledge organization systems include classification schemes that organize
+      materials at a general level (such as books on a shelf), subject headings that
+      provide more detailed access, and authority files that control variant versions
+      of key information (such as geographic names and personal names). They also
+      include less-traditional schemes, such as semantic artifacts, semantic networks
+      and ontologies. https://www.clir.org/pubs/reports/pub91/1knowledge/
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/GSZA-Y7V7
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://bioportal.bioontology.org/ontologies/MESH?p=classes&conceptid=D016437
+    scheme: https://bioportal.bioontology.org/ontologies/
+    relation: narrowMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5645
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: narrowMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5735
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: narrowMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5828
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: narrowMatch
+  - identifier: https://vocabs.acdh.oeaw.ac.at/archecategory/model/controlledVocabulary
+    scheme: https://vocabs.acdh.oeaw.ac.at/archecategory/model/
+    relation: narrowMatch
+- id: h6qp-sc1x
+  title:
+    en: trademark
+  description:
+    en: 'A sign used to distinguish the goods or services of one undertaking from
+      those
+
+      of others. A trademark may consist of words and combinations of words (for
+
+      instance, names or slogans), logos, figures and images, letters, numbers,
+
+      sounds, or, in rare instances, smells or moving images, or a combination thereof.
+      [Source: https://www.wipo.int/trademarks/en]'
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D010330
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: relatedMatch
+  - identifier: http://purl.org/coar/resource_type/H6QP-SC1X
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+- id: image
+  title:
+    cs: Obrázek
+    en: Image
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: figure
+    datacite_general: Image
+    eurepo: info:eu-repo/semantics/other
+    lindat: OBRAZ
+    marc21_type: image
+    openaire_resourceType: '0025'
+    openaire_type: dataset
+    schema.org: https://schema.org/ImageObject
+    type: image
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_c513
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ImageObject
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Image
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: instrument
+  title:
+    en: Instrument
+  tags:
+  - linkable
+  props:
+    datacite_general: Instrument
+    type: instrument
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/8KJG-QS0Y
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Instrument
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: lesson
+  title:
+    cs: Lekce
+    en: Lesson
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: speech
+    datacite_general: InteractiveResource
+    eurepo: info:eu-repo/semantics/lecture
+    lindat: onlineCourse
+    marc21_type: lesson
+    openaire_resourceType: '0010'
+    openaire_type: other
+    schema.org: https://schema.org/CreativeWork
+    type: lesson
+    zenodo: lesson
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_e059
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/InteractiveResource
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: model
+  title:
+    cs: Model
+    en: Model
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: figure
+    datacite_general: Model
+    eurepo: info:eu-repo/semantics/other
+    marc21_type: model
+    openaire_resourceType: '0027'
+    openaire_type: dataset
+    schema.org: https://schema.org/CreativeWork
+    type: model
+    zenodo: model
+  mappings:
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Model
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: other
+  title:
+    cs: Jiné
+    en: Other
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Other
+    eurepo: info:eu-repo/semantics/other
+    marc21_type: other
+    openaire_resourceType: '0020'
+    openaire_type: other
+    schema.org: https://schema.org/CreativeWork
+    type: other
+    zenodo: other
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_1843
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Other
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: physicalobject
+  title:
+    cs: Fyzický objekt
+    en: Physical object
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: graphic
+    datacite_general: PhysicalObject
+    eurepo: info:eu-repo/semantics/other
+    marc21_type: physicalobject
+    openaire_resourceType: '0010'
+    openaire_type: other
+    schema.org: https://schema.org/CreativeWork
+    type: physicalobject
+    zenodo: physicalobject
+  mappings:
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/PhysicalObject
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: poster
+  title:
+    cs: Poster
+    en: Poster
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: graphic
+    datacite_general: Poster
+    eurepo: info:eu-repo/semantics/conferencePoster
+    marc21_type: poster
+    openaire_resourceType: '0004'
+    openaire_type: publication
+    schema.org: https://schema.org/CreativeWork
+    type: poster
+    zenodo: poster
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_6670
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Poster
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: presentation
+  title:
+    cs: Prezentace
+    en: Presentation
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: speech
+    datacite_general: Presentation
+    eurepo: info:eu-repo/semantics/lecture
+    marc21_type: presentation
+    openaire_resourceType: '0004'
+    openaire_type: publication
+    schema.org: https://schema.org/PresentationDigitalDocument
+    type: presentation
+    zenodo: presentation, publication-abstract, publication-lecture
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_8544
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/PresentationDigitalDocument
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Presentation
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: project
+  title:
+    en: Project
+  tags:
+  - linkable
+  props:
+    datacite_general: Project
+    type: project
+  mappings:
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Project
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication
+  title:
+    cs: Publikace
+    en: Publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: report
+    datacite_general: Text
+    eurepo: info:eu-repo/semantics/other
+    lindat: corpus, languageDescription
+    marc21_type: publication
+    openaire_resourceType: '0017'
+    openaire_type: publication
+    schema.org: https://schema.org/CreativeWork
+    type: publication
+    zenodo: publication
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18cf
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: rmp5-3gq6
+  title:
+    en: collection
+  description:
+    en: An aggregation of resources, which may encompass collections of one resourceType
+      as well as those of mixed types. A collection is described as a group; its parts
+      may also be separately described. https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#collection
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D020471
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: exactMatch
+  - identifier: http://purl.org/coar/resource_type/RMP5-3GQ6
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/ontology/bibo/Collection
+    scheme: http://purl.org/ontology/bibo/
+    relation: exactMatch
+  - identifier: http://www.w3.org/ns/prov#Collection
+    scheme: http://www.w3.org/ns/prov#
+    relation: exactMatch
+- id: s7r1-k5p0
+  title:
+    en: physical sample
+  description:
+    en: 'Physical samples include biological specimens, rock or mineral specimens,
+      soil or sediment cores, plants and seeds, water quality samples, archaeological
+      artefacts, or DNA and human tissue samples. Samples may be used in analyses
+      and can be destroyed in this process, whereas specimens are preserved curated
+      objects that can be continuously studied.
+
+      Source: 23 Things Physical Samples https://eprints.gla.ac.uk/309016/1/309016.pdf'
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/S7R1-K5P0
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/PhysicalObject
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: software
+  title:
+    cs: Software
+    en: Software
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: software
+    datacite_general: Software
+    eurepo: info:eu-repo/semantics/other
+    lindat: toolService
+    marc21_type: software
+    openaire_resourceType: 0029
+    openaire_type: software
+    schema.org: https://schema.org/SoftwareSourceCode
+    type: software
+    zenodo: software
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_5ce6
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/SoftwareSourceCode
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Software
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: video
+  title:
+    cs: Video
+    en: Video
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: motion_picture
+    datacite_general: Audiovisual
+    eurepo: info:eu-repo/semantics/other
+    lindat: clip
+    marc21_type: video
+    openaire_resourceType: '0033'
+    openaire_type: dataset
+    schema.org: https://schema.org/MediaObject
+    type: video
+    zenodo: video
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_8a7e
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/MediaObject
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Audiovisual
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: workflow
+  title:
+    cs: Workflow
+    en: Workflow
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: software
+    datacite_general: Workflow
+    eurepo: info:eu-repo/semantics/other
+    marc21_type: workflow
+    openaire_resourceType: '0020'
+    openaire_type: other
+    schema.org: https://schema.org/CreativeWork
+    type: workflow
+    zenodo: workflow
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_393c
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Workflow
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: 1ytn-rjze
+  title:
+    en: court documents
+  description:
+    en: A set of judicial proceedings that record, physically or digitally, and in
+      an orderly fashion, the development of a process or procedural actions so that
+      they may be recorded and examined by the parties. This would include the set
+      of judicial proceedings and any item within that set as a physical or electronic
+      court document. Adapted from https://dpej.rae.es/lema/expediente-judicial with
+      input from https://www.supremecourt.gov/case_documents.aspx
+  hierarchy:
+    parent: rmp5-3gq6
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D016418
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: broadMatch
+  - identifier: http://purl.org/coar/resource_type/1YTN-RJZE
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3790
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: 2h0m-x761
+  title:
+    en: geospatial data
+  description:
+    en: 'Geospatial data are any type of data with spatial coordinates that allow
+      them to be mapped to the Earth''s surface. They can represent physical objects,
+      discrete areas or continuous surfaces. Discrete geospatial data are usually
+      represented using vector data consisting of points, lines and polygons, while
+      continuous geospatial data are usually represented by raster data, consisting
+      of a grid of cells that each has its own value. Any number of applications in
+      a wide range of areas produce geospatial data, such as GIS, Remote Sensing equipment,
+      GPS units, archaeological total stations, manual mapping and computer-aided
+      design (CAD), in a number of formats, including images, vector, text, and tabular
+      data. Vector-based geospatial data include tables listing archaeological sites
+      along with their coordinates, text-based files (e.g., XML) containing coordinates
+      and topology for historic road networks, voting figures for political parties
+      by administrative area. Raster-based geospatial data include satellite images,
+      aerial photographs, scanned maps, and digital maps of elevations, vegetation,
+      land-use, sea surface temperatures, air pollution, soil-types, etc. [Source:
+      https://ddialliance.org/Specification/DDI-CV/GeneralDataFormat_2.0.html]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D005842
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: relatedMatch
+  - identifier: http://purl.dataone.org/odo/SALMON_00000675
+    scheme: http://purl.dataone.org/odo/
+    relation: relatedMatch
+  - identifier: http://purl.org/coar/resource_type/2H0M-X761
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: 63ng-b465
+  title:
+    en: experimental data
+  description:
+    en: 'Data resulting from the experimental research method involving the manipulation
+      of some or all of the independent variables included in the hypotheses. [Source:
+      Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/63NG-B465
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: 6nc7-gk9s
+  title:
+    en: transcription
+  description:
+    en: 'A written record of words spoken in court proceedings or in a speech, interview,
+      broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/6NC7-GK9S
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Text
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: a8f1-npv9
+  title:
+    en: genomic data
+  description:
+    en: 'Genomic data refers to the genome and DNA data of an organism. They are used
+      in bioinformatics for collecting, storing and processing the genomes of living
+      things. Genomic data is a more extensive term than sequencing data. However
+      genomic data mostly come from sequencing techniques. It may include non-sequencing
+      data such as data from microarrays, data from real-time PCR panels and data
+      from pharmacogenomics studies. [Source: Adapted from https://www.techopedia.com/definition/31247/genomic-data]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/A8F1-NPV9
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+  - identifier: http://www.ebi.ac.uk/efo/EFO_0004600
+    scheme: http://www.ebi.ac.uk/efo/
+    relation: exactMatch
+- id: acf7-8yt9
+  title:
+    en: aggregated data
+  description:
+    en: 'Statistics that relate to broad classes, groups, or categories. The data
+      are averaged, totaled, or otherwise derived from individual-level data, and
+      it is no longer possible to distinguish the characteristics of individuals within
+      those classes, groups, or categories. For example, the number and age group
+      of the unemployed in specific geographic regions, or national level statistics
+      on the occurrence of specific offences, originally derived from the statistics
+      of individual police districts. [Source: https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/ACF7-8YT9
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+  - identifier: https://vocabs.lter-europe.net/elter_cl/en/page/10016
+    scheme: https://vocabs.lter-europe.net/elter_cl/en/page/
+    relation: broadMatch
+- id: am6w-6qaw
+  title:
+    en: encoded data
+  description:
+    en: 'Qualitative data (textual, video, audio or still-image) originally produced
+      for other purposes into quantitative data (expressed in unit-by-variable matrices)
+      by using coding techniques in accordance with pre-defined categorization schemes.
+      For example, coded party manifesto data like the "European Parliament Election
+      Study 2009, Manifesto Study" (doi:10.4232/1.10204)". [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/AM6W-6QAW
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: bw7t-ym2g
+  title:
+    en: layout design
+  description:
+    en: "Layout-design (topography) means the three-dimensional disposition, however\
+      \ expressed, of \nthe elements of an integrated circuit (at least one of which\
+      \ is an active element) and of some or all of the interconnections of an integrated\
+      \ circuit, or such a three-dimensional disposition prepared for \nan integrated\
+      \ circuit intended for manufacture [Source: https://www.wipo.int/edocs/lexdocs/laws/en/hk/hk028en.pdf]"
+  hierarchy:
+    parent: 542x-3s04
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/BW7T-YM2G
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://ncicb.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C1707689
+    scheme: https://ncicb.nci.nih.gov/ncimbrowser/
+    relation: broadMatch
+- id: c_0040
+  title:
+    en: manuscript
+  description:
+    en: 'A manuscript is a work of any kind (text, inscription, music score, map,
+      etc.) written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D020486
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: exactMatch
+  - identifier: http://purl.org/coar/resource_type/c_0040
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4043
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_0857
+  title:
+    cs: dopis
+    en: letter
+  description:
+    en: 'A brief description of important new research, also known as “communication”.
+      [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D019531
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: narrowMatch
+  - identifier: http://purl.org/coar/resource_type/c_0857
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/dc/dcmitype/Text
+    scheme: http://purl.org/dc/dcmitype/
+    relation: broadMatch
+  - identifier: http://purl.org/ontology/bibo/Letter
+    scheme: http://purl.org/ontology/bibo/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3803
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_1162
+  title:
+    cs: právní komentář rozsudku nebo rozhodnutí
+    en: annotation
+  description:
+    en: 'An annotation in the sense of a legal note is a legally explanatory comment
+      on a decision handed down by a court or arbitral tribunal. [Source: DRIVER info:eu-repo
+      definition]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_1162
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/dc/dcmitype/Text
+    scheme: http://purl.org/dc/dcmitype/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3790
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: relatedMatch
+- id: c_12cd
+  title:
+    cs: mapa
+    en: map
+  description:
+    en: 'Defined as a representation normally to scale and on a flat medium, of a
+      selection of material or abstract features on, or in relation to, the surface
+      of the earth or of another celestial body. [Source: https://www.loc.gov/marc/bibliographic/bd007a.html]'
+  hierarchy:
+    parent: c_12cc
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_12cd
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+- id: c_12ce
+  title:
+    cs: video
+    en: video
+  description:
+    en: Media that makes use of images (usually "moving"), with or without sound,
+      over a period of playback time. [Source :https://support.contributors.jstor.org/hc/en-us/articles/11971132444439-JSTOR-Content-and-Resource-Types]
+  hierarchy:
+    parent: video
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_12ce
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/dc/dcmitype/MovingImage
+    scheme: http://purl.org/dc/dcmitype/
+    relation: broadMatch
+  - identifier: https://schema.org/Movie
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4212
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_18cw
+  title:
+    cs: hudební zápis
+    en: musical notation
+  description:
+    en: 'Symbols used to write music, as in a music score, and to express mathematical
+      concepts.
+
+      [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_n.aspx]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18cw
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4227
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: c_2cd9
+  title:
+    en: magazine
+  description:
+    en: 'A popular interest periodical usually containing articles on a variety of
+      topics, written by various authors in a nonscholarly style or a trade publication,
+      unlike a consumer publication, covers a specific topic for people who work in
+      that particular field or industry. [Source: Adapted from https://www.thebalance.com/what-is-a-trade-publication-exactly-2316039
+      and http://www.abc-clio.com/ODLIS/odlis_m.aspx]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_2cd9
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3843
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_2fe3
+  title:
+    en: newspaper
+  description:
+    en: 'A non-peer reviewed periodical, usually published daily or weekly, consisting
+      primarily of editorials and news items concerning current or recent events and
+      matters of public interest. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4291]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_2fe3
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4291
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_6947
+  title:
+    en: blog post
+  description:
+    en: 'A piece of writing or other item of content published on a blog. [Source:
+      https://www.lexico.com/definition/blog_post]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D000069520
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: broadMatch
+  - identifier: http://purl.org/coar/resource_type/c_6947
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/spar/fabio/WebContent
+    scheme: http://purl.org/spar/fabio/
+    relation: broadMatch
+  - identifier: https://schema.org/Blog
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2248
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5915
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: c_7ad9
+  title:
+    cs: webové sídlo
+    en: website
+  description:
+    en: 'A collection of related web pages containing text, images, videos and/or
+      other digital assets that are addressed relative to a common Uniform Resource
+      Locator (URL). A web site is hosted on at least one web server, accessible via
+      a network such as the Internet or a private local area network.
+
+      [Source: http://purl.org/spar/fabio/WebSite]'
+  hierarchy:
+    parent: c_e9a0
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_7ad9
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/WebSite
+    scheme: https://schema.org/
+    relation: exactMatch
+- id: c_86bc
+  title:
+    cs: bibliografie
+    en: bibliography
+  description:
+    en: 'A list of the books and articles that have been used by someone when writing
+      a particular book or article [Source: https://dictionary.cambridge.org/dictionary/english/bibliography]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D016417
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: narrowMatch
+  - identifier: http://purl.org/coar/resource_type/c_86bc
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/dc/dcmitype/Text
+    scheme: http://purl.org/dc/dcmitype/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2195
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: relatedMatch
+- id: c_c94f
+  title:
+    en: conference output
+  description:
+    en: All kind of digital resources contributed to a conference, like conference
+      presentation (slides), conference report, conference lecture, abstracts, demonstrations.
+      For conference papers, posters or proceedings the specific sub-concepts should
+      be used. [COAR definition]
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_c94f
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/dc/dcmitype/Event
+    scheme: http://purl.org/dc/dcmitype/
+    relation: broadMatch
+- id: c_c950
+  title:
+    en: research software
+  description:
+    en: 'Software that is used to generate, process or analyse results that you intend
+      to appear in a publication (either in a journal, conference paper, monograph,
+      book or thesis). Research software can be anything from a few lines of code
+      written by yourself, to a professionally developed software package. [Source:
+      https://datashare.ed.ac.uk/handle/10283/785]'
+  hierarchy:
+    parent: software
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_c950
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Software
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: c_cb28
+  title:
+    en: clinical trial data
+  description:
+    en: 'Data resulting from a research study in which one or more human subjects
+      are prospectively assigned to one or more interventions (which may include placebo
+      or other control) to evaluate the effects of those interventions on health-related
+      biomedical or behavioral outcomes. [Source: Adapted from https://grants.nih.gov/policy/clinical-trials/definition.htm]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_cb28
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+  - identifier: https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#studyregistration
+    scheme: https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#
+    relation: broadMatch
+- id: c_ecc8
+  title:
+    cs: nepohyblivý obraz
+    en: still image
+  description:
+    en: 'A recorded static visual representation. This class of image includes diagrams,
+      drawings, graphs, graphic designs, plans, photographs and prints. [Source: Adapted
+      from  http://purl.org/spar/fabio/StillImage]'
+  hierarchy:
+    parent: image
+  mappings:
+  - identifier: http://id.loc.gov/vocabulary/contentTypes/sti
+    scheme: http://id.loc.gov/vocabulary/contentTypes/
+    relation: exactMatch
+  - identifier: http://purl.org/coar/resource_type/c_ecc8
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Image
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+  - identifier: http://purl.org/dc/dcmitype/Image
+    scheme: http://purl.org/dc/dcmitype/
+    relation: broadMatch
+  - identifier: http://purl.org/dc/dcmitype/StillImage
+    scheme: http://purl.org/dc/dcmitype/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5482
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_efa0
+  title:
+    cs: recenze
+    en: review
+  description:
+    en: 'A review of others'' published work. [Source: Adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e5273]'
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D016454
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: narrowMatch
+  - identifier: http://purl.org/coar/resource_type/c_efa0
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/PeerReview
+    scheme: http://purl.org/datacite/v4.4/
+    relation: narrowMatch
+  - identifier: http://purl.org/dc/dcmitype/Text
+    scheme: http://purl.org/dc/dcmitype/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5273
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: cqmr-7k63
+  title:
+    en: recorded data
+  description:
+    en: 'Data registered by mechanical or electronic means, in a form that allows
+      the information to be retrieved and/or reproduced. For example, images or sounds
+      on disc or magnetic tape. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/CQMR-7K63
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+  - identifier: http://vocabs.lter-europe.net/elter_cl/10021
+    scheme: http://vocabs.lter-europe.net/elter_cl/
+    relation: relatedMatch
+- id: dd58-gfsx
+  title:
+    en: measurement and test data
+  description:
+    en: 'Data resulting from assessing specific properties (or characteristics) of
+      beings, things, phenomena, (and/ or processes) by applying pre-established standards
+      and/or specialized instruments or techniques. [Source: Adapted from  https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/DD58-GFSX
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://vocabs.lter-europe.net/elter_cl/10017
+    scheme: http://vocabs.lter-europe.net/elter_cl/
+    relation: relatedMatch
+- id: ff4c-28rk
+  title:
+    en: observational data
+  description:
+    en: 'Data resulting from observational research, which involves collecting observations
+      as they occur (for example, observing behaviors, events, development of condition
+      or disease, etc.), without attempting to manipulate any of the independent variables.
+      [Source:  Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/FF4C-28RK
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://vocabs.lter-europe.net/elter_cl/10018
+    scheme: http://vocabs.lter-europe.net/elter_cl/
+    relation: narrowMatch
+- id: fxf3-d3g7
+  title:
+    en: compiled data
+  description:
+    en: 'Data collected or assembled from multiple, often heterogeneous sources that
+      have one or more reference points in common, and at least one of the sources
+      was originally produced for other purposes. The data are incorporated in a new
+      entity. For example, providing data on the number of universities in the last
+      150 years using a variety of available sources (e.g. finance documents, official
+      statistics, university registers), combining survey data with information about
+      geographical areas from official statistics (e.g. population density, doctors
+      per capita, etc.), or using RSS to collect blog posts or tweets, etc. [Source:
+      Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/FXF3-D3G7
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: h41y-fw7b
+  title:
+    en: laboratory notebook
+  description:
+    en: 'A laboratory notebook (colloq. lab notebook or lab book) is a primary record
+      of research. Researchers use a lab notebook to document their hypotheses, experiments
+      and initial analysis or interpretation of these experiments. This label is used
+      both for traditional and electronic laboratory notebook. [Source: Adapted from
+      https://en.wikipedia.org/wiki/Lab_notebook]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/H41Y-FW7B
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/ComputationalNotebook
+    scheme: http://purl.org/datacite/v4.4/
+    relation: narrowMatch
+- id: image-diagram
+  title:
+    cs: Diagram
+    en: Diagram
+  hierarchy:
+    parent: image
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: figure
+    datacite_general: Image
+    datacite_type: Diagram
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: diagram
+    marc21_type: image
+    openaire_resourceType: '0025'
+    openaire_type: dataset
+    schema.org: https://schema.org/ImageObject
+    subtype: image-diagram
+    type: image
+    zenodo: image-diagram
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_ecc8
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/ImageObject
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Image
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: image-drawing
+  title:
+    cs: Kresba
+    en: Drawing
+  hierarchy:
+    parent: image
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: graphic
+    datacite_general: Image
+    datacite_type: Drawing
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: drawing
+    marc21_type: image
+    openaire_resourceType: '0025'
+    openaire_type: dataset
+    schema.org: https://schema.org/ImageObject
+    subtype: image-drawing
+    type: image
+    zenodo: image-drawing
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_ecc8
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/ImageObject
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Image
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: image-figure
+  title:
+    cs: Schéma
+    en: Figure
+  hierarchy:
+    parent: image
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: figure
+    datacite_general: Image
+    datacite_type: Figure
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: figure
+    marc21_type: image
+    openaire_resourceType: '0025'
+    openaire_type: dataset
+    schema.org: https://schema.org/ImageObject
+    subtype: image-figure
+    type: image
+    zenodo: image-figure
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_ecc8
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/ImageObject
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Image
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: image-other
+  title:
+    cs: Jiné
+    en: Other
+  hierarchy:
+    parent: image
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: graphic
+    datacite_general: Image
+    datacite_type: Other
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: other
+    marc21_type: image
+    openaire_resourceType: '0025'
+    openaire_type: dataset
+    schema.org: https://schema.org/ImageObject
+    subtype: image-other
+    type: image
+    zenodo: image-other
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_ecc8
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/ImageObject
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Image
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: image-photo
+  title:
+    cs: Fotografie
+    en: Photo
+  hierarchy:
+    parent: image
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: graphic
+    datacite_general: Image
+    datacite_type: Photo
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: photo
+    marc21_type: image
+    openaire_resourceType: '0025'
+    openaire_type: dataset
+    schema.org: https://schema.org/Photograph
+    subtype: image-photo
+    type: image
+    zenodo: image-photo
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_ecc8
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/Photograph
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Image
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: image-plot
+  title:
+    cs: Graf
+    en: Plot
+  hierarchy:
+    parent: image
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: figure
+    datacite_general: Image
+    datacite_type: Plot
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: plot
+    marc21_type: image
+    openaire_resourceType: '0025'
+    openaire_type: dataset
+    schema.org: https://schema.org/ImageObject
+    subtype: image-plot
+    type: image
+    zenodo: image-plot
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_ecc8
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/ImageObject
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Image
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: jbnf-dyad
+  title:
+    en: industrial design
+  description:
+    en: 'Industrial designs are applied to a wide variety of industrial products and
+      handicrafts. They refer to the ornamental or aesthetic aspects of a useful article,including
+      compositions of lines or colors or any three-dimensional forms that give a special
+      appearance to a product or handicraft. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+  hierarchy:
+    parent: 542x-3s04
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/JBNF-DYAD
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://ncicb.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C1707689
+    scheme: https://ncicb.nci.nih.gov/ncimbrowser/
+    relation: broadMatch
+- id: nhd0-w6sy
+  title:
+    en: survey data
+  description:
+    en: 'Data resulting from a survey, which is defined as an investigation about
+      the characteristics of a given population by means of collecting data from a
+      sample of that population and estimating their characteristics through the systematic
+      use of statistical methodology. Included are censuses, sample surveys, the collection
+      of data from administrative records and derived statistical activities as well
+      as questionnaires. [Source: Adapted from https://stats.oecd.org/glossary/detail.asp?ID=2620]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/NHD0-W6SY
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: publication-annotationcollection
+  title:
+    cs: Kolekce anotací
+    en: Annotation collection
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: report
+    datacite_general: Collection
+    eurepo: info:eu-repo/semantics/technicalDocumentation
+    marc21_subtype: annotationcollection
+    marc21_type: publication
+    openaire_resourceType: 0009
+    openaire_type: publication
+    schema.org: https://schema.org/Collection
+    subtype: publication-annotationcollection
+    type: publication
+    zenodo: annotationcollection, publication-annotation
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_1162
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/Collection
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Collection
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-article
+  title:
+    cs: Článek v časopise
+    en: Journal article
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article-journal
+    datacite_general: JournalArticle
+    eurepo: info:eu-repo/semantics/article
+    marc21_subtype: article
+    marc21_type: publication
+    openaire_resourceType: '0001'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-article
+    type: publication
+    zenodo: publication-article
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_6501
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/JournalArticle
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-book
+  title:
+    cs: Kniha
+    en: Book
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: book
+    datacite_general: Book
+    eurepo: info:eu-repo/semantics/book
+    marc21_subtype: book
+    marc21_type: publication
+    openaire_resourceType: '0002'
+    openaire_type: publication
+    schema.org: https://schema.org/Book
+    subtype: publication-book
+    type: publication
+    zenodo: publication-book
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_2f33
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/Book
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Book
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-conferencepaper
+  title:
+    cs: Konferenční příspěvek
+    en: Conference paper
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: paper-conference
+    datacite_general: ConferencePaper
+    eurepo: info:eu-repo/semantics/conferencePaper
+    marc21_subtype: conferencepaper
+    marc21_type: publication
+    openaire_resourceType: '0004'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-conferencepaper
+    type: publication
+    zenodo: publication-conferencepaper
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_5794
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/ConferencePaper
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-conferenceproceeding
+  title:
+    cs: Sborník konference
+    en: Conference proceeding
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: paper-conference
+    datacite_general: ConferenceProceeding
+    eurepo: info:eu-repo/semantics/conferenceProceedings
+    marc21_subtype: conferenceproceeding
+    marc21_type: publication
+    openaire_resourceType: '0004'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-conferenceproceeding
+    type: publication
+    zenodo: publication-conferenceproceeding
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_f744
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/ConferenceProceeding
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-datamanagementplan
+  title:
+    cs: Plán správy dat
+    en: Output management plan
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: report
+    datacite_general: OutputManagementPlan
+    eurepo: info:eu-repo/semantics/technicalDocumentation
+    marc21_subtype: datamanagementplan
+    marc21_type: publication
+    openaire_resourceType: '0045'
+    openaire_type: publication
+    schema.org: https://schema.org/CreativeWork
+    subtype: publication-datamanagementplan
+    type: publication
+    zenodo: publication-datamanagementplan
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_ab20
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/OutputManagementPlan
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-datapaper
+  title:
+    cs: Datový článek
+    en: Data paper
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: DataPaper
+    eurepo: info:eu-repo/semantics/workingPaper
+    marc21_subtype: datapaper
+    marc21_type: publication
+    openaire_resourceType: '0031'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-datapaper
+    type: publication
+    zenodo: publication-datapaper
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_beb9
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/DataPaper
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-deliverable
+  title:
+    cs: Výstup projektu
+    en: Project deliverable
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: report
+    datacite_general: Text
+    datacite_type: Project deliverable
+    eurepo: info:eu-repo/semantics/report
+    marc21_subtype: deliverable
+    marc21_type: publication
+    openaire_resourceType: '0034'
+    openaire_type: publication
+    schema.org: https://schema.org/CreativeWork
+    subtype: publication-deliverable
+    type: publication
+    zenodo: publication-deliverable
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18op
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-dissertation
+  title:
+    cs: Závěrečná práce
+    en: Thesis
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Dissertation
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: dissertation
+    marc21_type: publication
+    openaire_resourceType: '0044'
+    openaire_type: publication
+    schema.org: https://schema.org/Thesis
+    subtype: publication-dissertation
+    type: publication
+    zenodo: publication-bachelorthesis, publication-dissertation, publication-doctorthesis,
+      publication-mastersthesis, publication-thesis
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_46ec
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/Thesis
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Dissertation
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-journal
+  title:
+    cs: Časopis
+    en: Journal
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: journal
+    datacite_general: Journal
+    eurepo: info:eu-repo/semantics/article
+    marc21_subtype: journal
+    marc21_type: publication
+    openaire_resourceType: '0043'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-journal
+    type: publication
+    zenodo: publication-journal
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_0640
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Journal
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-milestone
+  title:
+    cs: Mezník projektu
+    en: Project milestone
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: report
+    datacite_general: Text
+    datacite_type: Project milestone
+    eurepo: info:eu-repo/semantics/report
+    marc21_subtype: milestone
+    marc21_type: publication
+    openaire_resourceType: '0035'
+    openaire_type: publication
+    schema.org: https://schema.org/CreativeWork
+    subtype: publication-milestone
+    type: publication
+    zenodo: publication-milestone
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_93fc
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-other
+  title:
+    cs: Jiné
+    en: Other
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Text
+    datacite_type: Other
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: other
+    marc21_type: publication
+    openaire_resourceType: '0020'
+    openaire_type: publication
+    schema.org: https://schema.org/CreativeWork
+    subtype: publication-other
+    type: publication
+    zenodo: publication-other
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_1843
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-patent
+  title:
+    cs: Patent
+    en: Patent
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: patent
+    datacite_general: Text
+    datacite_type: Patent
+    eurepo: info:eu-repo/semantics/patent
+    marc21_subtype: patent
+    marc21_type: publication
+    openaire_resourceType: 0019
+    openaire_type: publication
+    schema.org: https://schema.org/CreativeWork
+    subtype: publication-patent
+    type: publication
+    zenodo: publication-patent
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_15cd
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-peerreview
+  title:
+    cs: Recenze
+    en: Peer review
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: PeerReview
+    eurepo: info:eu-repo/semantics/review
+    marc21_subtype: peerreview
+    marc21_type: publication
+    openaire_resourceType: '0015'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-peerreview
+    type: publication
+    zenodo: peerreview, publication-peerreview
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/H9BQ-739P
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/PeerReview
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-preprint
+  title:
+    cs: Preprint
+    en: Preprint
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Preprint
+    eurepo: info:eu-repo/semantics/preprint
+    marc21_subtype: preprint
+    marc21_type: publication
+    openaire_resourceType: '0016'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-preprint
+    type: publication
+    zenodo: publication-preprint
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_816b
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Preprint
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-proposal
+  title:
+    cs: Návrh
+    en: Proposal
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Text
+    datacite_type: Proposal
+    eurepo: info:eu-repo/semantics/researchProposal
+    marc21_subtype: proposal
+    marc21_type: publication
+    openaire_resourceType: '0036'
+    openaire_type: publication
+    schema.org: https://schema.org/CreativeWork
+    subtype: publication-proposal
+    type: publication
+    zenodo: publication-proposal
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_baaf
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-report
+  title:
+    cs: Zpráva
+    en: Report
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Report
+    eurepo: info:eu-repo/semantics/report
+    marc21_subtype: report
+    marc21_type: publication
+    openaire_resourceType: '0017'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-report
+    type: publication
+    zenodo: publication-report
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_93fc
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Report
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-section
+  title:
+    cs: Kapitola v knize
+    en: Book chapter
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: chapter
+    datacite_general: BookChapter
+    eurepo: info:eu-repo/semantics/bookPart
+    marc21_subtype: section
+    marc21_type: publication
+    openaire_resourceType: '0013'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-section
+    type: publication
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_3248
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/BookChapter
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-softwaredocumentation
+  title:
+    cs: Dokumentace softwaru
+    en: Software documentation
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Text
+    datacite_type: Software documentation
+    eurepo: info:eu-repo/semantics/technicalDocumentation
+    marc21_subtype: softwaredocumentation
+    marc21_type: publication
+    openaire_resourceType: 0009
+    openaire_type: publication
+    schema.org: https://schema.org/CreativeWork
+    subtype: publication-softwaredocumentation
+    type: publication
+    zenodo: publication-softwaredocumentation
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_71bd
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/CreativeWork
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-standard
+  title:
+    cs: Standard
+    en: Standard
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Standard
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: standard
+    marc21_type: publication
+    openaire_resourceType: 0038
+    openaire_type: publication
+    schema.org: https://schema.org/other
+    subtype: publication-standard
+    type: publication
+    zenodo: publication-standard
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18cf
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/other
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Standard
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-studyregistration
+  title:
+    en: Study Registration
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: StudyRegistration
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: studyregistration
+    marc21_type: publication
+    openaire_resourceType: 0038
+    openaire_type: publication
+    schema.org: https://schema.org/other
+    subtype: publication-studyregistration
+    type: publication
+  mappings:
+  - identifier: https://schema.org/other
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/StudyRegistration
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-taxonomictreatment
+  title:
+    cs: Taxonomické zpracování
+    en: Taxonomic treatment
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Text
+    datacite_type: Taxonomic treatment
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: taxonomictreatment
+    marc21_type: publication
+    openaire_resourceType: '0020'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-taxonomictreatment
+    type: publication
+    zenodo: publication-taxonomictreatment
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18cf
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-technicalnote
+  title:
+    cs: Technická poznámka
+    en: Technical note
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Text
+    datacite_type: Technical note
+    eurepo: info:eu-repo/semantics/technicalDocumentation
+    marc21_subtype: technicalnote
+    marc21_type: publication
+    openaire_resourceType: 0009
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-technicalnote
+    type: publication
+    zenodo: publication-technicalnote
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_93fc
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: publication-workingpaper
+  title:
+    cs: Pracovní dokument
+    en: Working paper
+  hierarchy:
+    parent: publication
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: article
+    datacite_general: Text
+    datacite_type: Working paper
+    eurepo: info:eu-repo/semantics/workingPaper
+    marc21_subtype: workingpaper
+    marc21_type: publication
+    openaire_resourceType: '0014'
+    openaire_type: publication
+    schema.org: https://schema.org/ScholarlyArticle
+    subtype: publication-workingpaper
+    type: publication
+    zenodo: publication-workingpaper
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_8042
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/ScholarlyArticle
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/Text
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: qh80-2r4e
+  title:
+    en: source code
+  description:
+    en: 'Source code is any collection of code, with or without comments, written
+      using a human-readable programming language, usually as plain text. [Source:
+      https://en.wikipedia.org/wiki/Source_code]'
+  hierarchy:
+    parent: software
+  mappings:
+  - identifier: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C47901
+    scheme: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
+    relation: exactMatch
+  - identifier: http://purl.org/coar/resource_type/QH80-2R4E
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+- id: qx5c-ar31
+  title:
+    en: other periodical
+  description:
+    en: A resource type that is not included in existing terms under the top concept
+      "Text". [COAR definition]
+  hierarchy:
+    parent: c_18cf
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/QX5C-AR31
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/coar/resource_type/c_18cf
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+- id: software-computationalnotebook
+  title:
+    cs: Výpočetní notebook
+    en: Computational notebook
+  hierarchy:
+    parent: software
+  tags:
+  - depositable
+  - linkable
+  props:
+    csl: software
+    datacite_general: ComputationalNotebook
+    eurepo: info:eu-repo/semantics/other
+    marc21_subtype: computationalnotebook
+    marc21_type: software
+    openaire_resourceType: '0040'
+    openaire_type: software
+    schema.org: https://schema.org/SoftwareSourceCode
+    subtype: software-computationalnotebook
+    type: software
+    zenodo: software-computationalnotebook
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_c950
+    scheme: http://purl.org/coar/resource_type/
+    relation: broadMatch
+  - identifier: https://schema.org/SoftwareSourceCode
+    scheme: https://schema.org/
+    relation: broadMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/ComputationalNotebook
+    scheme: https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/
+    relation: broadMatch
+- id: w2xt-7017
+  title:
+    en: simulation data
+  description:
+    en: 'Data resulting from modeling or imitative representation of real-world processes,
+      events, or systems, often using computer programs. For example, a program modeling
+      household consumption responses to indirect tax changes; or a dataset on hypothetical
+      patients and their drug exposure, background conditions, and known adverse events.
+      [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]'
+  hierarchy:
+    parent: dataset
+  mappings:
+  - identifier: http://nmrML.org/nmrCV#NMR:1000221
+    scheme: http://nmrML.org/nmrCV#
+    relation: exactMatch
+  - identifier: http://purl.org/coar/resource_type/W2XT-7017
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Dataset
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: yc9f-hgcf
+  title:
+    en: archival collection
+  description:
+    en: 'A collection of historical records and primary source documents. Documents
+      may be tangible or digital. Adapted from “archive (groupings)” in Getty AAT:
+      https://www.getty.edu/vow/AATFullDisplay?find=maiolica&logic=AND&note=&subjectid=300375748'
+  hierarchy:
+    parent: rmp5-3gq6
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/YC9F-HGCF
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Collection
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+  - identifier: http://purl.org/ontology/bibo/Collection
+    scheme: http://purl.org/ontology/bibo/
+    relation: broadMatch
+- id: 43kc-t6dc
+  title:
+    en: magazine article
+  description:
+    en: An Item appearing in a magazine (a general interest or specific focus periodical).
+      This item is often shorter in length, is submitted by in-house and external
+      authors. Adapted from MAGAZINE Definition & Meaning - Black's Law Dictionary
+      (thelawdictionary.org)
+  hierarchy:
+    parent: c_2cd9
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/43KC-T6DC
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3866
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: 9dkx-ksaf
+  title:
+    en: utility model
+  description:
+    en: 'A special form of patent right granted by a state or jurisdiction to an inventor
+      or the inventor’s assignee for a fixed period of time. The terms and conditions
+      for granting a utility model are slightly different from those for normal patents
+      (including a shorter term of protection and less stringent patentability requirements).
+      The term can also describe what are known in certain countries as “petty patents,”
+      “short-term patents” or “innovation patents.” [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+  hierarchy:
+    parent: publication-patent
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/9DKX-KSAF
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4175
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: c53b-jcy5
+  title:
+    en: design patent
+  description:
+    en: 'A patent granted to any person who has invented any new and non-obvious ornamental
+      design for an article of manufacture. The design patent protects only the appearance
+      of an article, but not its structural or functional features. [Source: Adapted
+      from https://www.uspto.gov/patents/basics/types-patent-applications/design-patent-application-guide#def]'
+  hierarchy:
+    parent: publication-patent
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/C53B-JCY5
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4551
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: c_186u
+  title:
+    cs: zpráva k politice nebo strategii
+    en: policy report
+  description:
+    en: 'A policy report presents what is known about a particular issue or problem.
+      It assembles facts and evidence to help readers understand complex issues and
+      form a response. It might aim to be neutral, or it might aim to persuade readers
+      in a particular direction. [Source: https://www.uow.edu.au/student/learning-co-op/assessments/policy-report/#]'
+  hierarchy:
+    parent: publication-report
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_186u
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Report
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4801
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_18co
+  title:
+    cs: konferenční poster nezahrnutý ve sborníku
+    en: conference poster not in proceedings
+  description:
+    en: 'A display poster, typically containing text with illustrative figures and/or
+      tables, usually reporting research results or proposing hypotheses, submitted
+      for acceptance to and/or presented at a conference, seminar, symposium, workshop
+      or similar event. Use this label when the poster is not published in a proceeding.
+      [Source: http://purl.org/spar/fabio/ConferencePoster]'
+  hierarchy:
+    parent: c_c94f
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18co
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/ConferenceProceeding
+    scheme: http://purl.org/datacite/v4.4/
+    relation: relatedMatch
+- id: c_18cp
+  title:
+    cs: konferenční příspěvek nezahrnutý ve sborníku
+    en: conference paper not in proceedings
+  description:
+    en: 'A paper, typically the realization of a research paper reporting original
+      research findings. Use this label when the paper is not published in a proceeding.
+      [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]'
+  hierarchy:
+    parent: c_c94f
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18cp
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+- id: c_18gh
+  title:
+    cs: technická zpráva
+    en: technical report
+  description:
+    en: 'A document that describes the process, progress, or results of technical
+      or scientific research or the state of a technical or scientific research problem.
+      It might also include recommendations and conclusions of the research. [Source:
+      http://guides.library.cornell.edu/ecommons/types]'
+  hierarchy:
+    parent: publication-report
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18gh
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5659
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_18ws
+  title:
+    cs: výzkumná zpráva
+    en: research report
+  description:
+    en: 'It is publication that reports on the findings of a research project or alternatively
+      scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]'
+  hierarchy:
+    parent: publication-report
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D058028
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: broadMatch
+  - identifier: http://purl.org/coar/resource_type/c_18ws
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Report
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5170
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: c_18wz
+  title:
+    cs: memorandum
+    en: memorandum
+  description:
+    en: 'A formal note distributed internally to one or more persons in a company,
+      agency, organization, or institution, with a header indicating the date it was
+      sent and stating to whom it is addressed (To:), from whom it is sent (From:),
+      and the subject of the text (Re:). Unlike a letter, a memo does not require
+      a full salutation or signature at the end of the text--the sender may simply
+      initial his or her name in the header. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx#memorandum]'
+  hierarchy:
+    parent: publication-report
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_18wz
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+- id: c_2df8fbb1
+  title:
+    cs: původní článek
+    en: research article
+  description:
+    en: A research article is a primary source, that is, it reports the methods and
+      results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)
+  hierarchy:
+    parent: publication-article
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_2df8fbb1
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/ontology/bibo/Article
+    scheme: http://purl.org/ontology/bibo/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5233
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_545b
+  title:
+    cs: dopis redakci
+    en: letter to the editor
+  description:
+    en: 'A letter addressed to the editor and comments on or discussed an item previously
+      published by that periodical, or of interest to its readership. [Source: Adapted
+      from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e3803]'
+  hierarchy:
+    parent: publication-journal
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_545b
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3803
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: c_7877
+  title:
+    en: clinical study
+  description:
+    en: 'A work that reports on the results of a research study to evaluate interventions
+      or exposures on biomedical or health-related outcomes. The two main types of
+      clinical studies are interventional studies (clinical trials) and observational
+      studies. While most clinical studies concern humans, this publication type may
+      be used for clinical veterinary articles meeting the requisites for humans.
+      [Source: https://www.ncbi.nlm.nih.gov/mesh/2009830]'
+  hierarchy:
+    parent: publication-report
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_7877
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#studyregistration
+    scheme: https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2502
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: relatedMatch
+- id: c_7a1f
+  title:
+    cs: bakalářská práce
+    en: bachelor thesis
+  description:
+    en: 'A thesis reporting a research project undertaken as part of an undergraduate
+      course of education leading to a bachelor''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2181]'
+  hierarchy:
+    parent: publication-dissertation
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_7a1f
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/eprint/type/Thesis
+    scheme: http://purl.org/eprint/type/
+    relation: broadMatch
+- id: c_7acd
+  title:
+    en: corrigendum
+  description:
+    en: A formal correction to an error introduced by the author into a previously
+      published document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)
+  hierarchy:
+    parent: publication-article
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_7acd
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2698
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2712
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3154
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: relatedMatch
+- id: c_7bab
+  title:
+    en: software paper
+  description:
+    en: 'A software paper should include the rationale for the development of the
+      tool and details of the code used for its construction. [Source: Adapted from
+      https://f1000research.com/for-authors/article-guidelines/software-tool-articles
+      ]'
+  hierarchy:
+    parent: publication-article
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_7bab
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/JournalArticle
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+- id: c_998f
+  title:
+    en: newspaper article
+  description:
+    en: Work consisting of a news item appearing in a general-interest newspaper or
+      other general news periodical, containing information of current and timely
+      interest in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html
+      )
+  hierarchy:
+    parent: c_2fe3
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_998f
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://schema.org/Article
+    scheme: https://schema.org/
+    relation: broadMatch
+- id: c_b239
+  title:
+    cs: úvodník
+    en: editorial
+  description:
+    en: 'A brief essay expressing the opinion or position of the chief editor(s) of
+      a (academic) journal with respect to a current political, social, cultural,
+      or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx
+      ]'
+  hierarchy:
+    parent: publication-journal
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D016420
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: relatedMatch
+  - identifier: http://purl.bioontology.org/ontology/MESH/D016421
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: narrowMatch
+  - identifier: http://purl.org/coar/resource_type/c_b239
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3091
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_ba08
+  title:
+    cs: recenze knihy
+    en: book review
+  description:
+    en: 'A written review and critical analysis of the content, scope and quality
+      of a book or other monographic work. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300]'
+  hierarchy:
+    parent: c_efa0
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_ba08
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/eprint/type/BookReview
+    scheme: http://purl.org/eprint/type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_bdcc
+  title:
+    cs: diplomová práce
+    en: master thesis
+  description:
+    en: 'A thesis reporting a research project undertaken as part of a graduate course
+      of education leading to a master''s degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4057]'
+  hierarchy:
+    parent: publication-dissertation
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_bdcc
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/eprint/type/Thesis
+    scheme: http://purl.org/eprint/type/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4057
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_db06
+  title:
+    cs: disertační práce
+    en: doctoral thesis
+  description:
+    en: 'A thesis reporting the research undertaken during a period of graduate study
+      leading to a doctoral degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3051]'
+  hierarchy:
+    parent: publication-dissertation
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/c_db06
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/eprint/type/Thesis
+    scheme: http://purl.org/eprint/type/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e3051
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: c_dcae04bc
+  title:
+    cs: přehledový článek
+    en: review article
+  description:
+    en: 'A review article is a secondary source, that is, it is written about other
+      articles, and does not report original research of its own. [Source: Adapted
+      from http://apus.libanswers.com/faq/2324]'
+  hierarchy:
+    parent: publication-article
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D016454
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: narrowMatch
+  - identifier: http://purl.org/coar/resource_type/c_dcae04bc
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/eprint/type/JournalArticle
+    scheme: http://purl.org/eprint/type/
+    relation: broadMatch
+  - identifier: http://purl.org/ontology/bibo/Article
+    scheme: http://purl.org/ontology/bibo/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5287
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5310
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: d97f-vb57
+  title:
+    en: commentary
+  description:
+    en: 'A commentary is a more in-depth analysis written to draw attention to a work
+      already published. Commentaries are somewhat like “reviews” in that the author
+      presents his or her analysis of a work and why it  would be of interest to a
+      specific audience. [Source: https://www.enago.com/academy/perspective-opinion-and-commentary-pieces]'
+  hierarchy:
+    parent: c_efa0
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/D97F-VB57
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e2568
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: dx5j-ta9r
+  title:
+    en: knowledge synthesis protocol
+  description:
+    en: In the context of systematic reviews and meta-analyses, a protocol is a document
+      that presents an explicit plan for a systematic review. The protocol details
+      the rationale and a priori methodological and analytical approach of the review.
+      https://www.bmj.com/content/349/bmj.g7647
+  hierarchy:
+    parent: publication-report
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/MESH/D000078182
+    scheme: http://purl.bioontology.org/ontology/MESH/
+    relation: broadMatch
+  - identifier: http://purl.org/coar/resource_type/DX5J-TA9R
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e5605
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: gpq7-g5ve
+  title:
+    en: plant variety protection
+  description:
+    en: 'Plant variety protection, also called a "plant breeder''s right" (PBR), is
+      a form of intellectual property right granted to the breeder of a new plant
+      variety . According to this right, certain acts concerning the exploitation
+      of the protected variety require the prior authorization of the breeder. Plant
+      variety protection is an independent sui generis form of protection, tailored
+      to protect new plant varieties and has certain features in common with other
+      intellectual property rights. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+  hierarchy:
+    parent: publication-patent
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/GPQ7-G5VE
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+- id: mw8g-3cr8
+  title:
+    en: software patent
+  description:
+    en: 'In order to obtain a patent, a software invention must not fall under other
+      non-patentable subject matter (for example, abstract ideas or mathematical theories)
+      and has to fulfill the other substantive patentability criteria (for example,
+      novelty, inventive step [non-obviousness] and industrial applicability [usefulness]).
+      [Source: https://www.wipo.int/patents/en/faq_patents.html]'
+  hierarchy:
+    parent: publication-patent
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/MW8G-3CR8
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: http://purl.org/datacite/v4.4/Software
+    scheme: http://purl.org/datacite/v4.4/
+    relation: broadMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4551
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch
+- id: r60j-j5bd
+  title:
+    en: conference presentation
+  description:
+    en: 'A set of slides containing text, tables or figures, designed to communicate
+      ideas or research results, for projection and viewing by an audience at a conference,
+      symposium, seminar, lecture, workshop or other gatherings. [Source: Adapted
+      from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e4880]'
+  hierarchy:
+    parent: c_c94f
+  mappings:
+  - identifier: http://purl.bioontology.org/ontology/SNOMEDCT/246105001
+    scheme: http://purl.bioontology.org/ontology/SNOMEDCT/
+    relation: broadMatch
+  - identifier: http://purl.org/coar/resource_type/R60J-J5BD
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4880
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: exactMatch
+- id: sb3y-w4eh
+  title:
+    en: PCT application
+  description:
+    en: 'A patent application filed through the WIPO-administered Patent Cooperation
+      Treaty (PCT), also known as an international application. [Source: Adapted from
+      https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]'
+  hierarchy:
+    parent: publication-patent
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/SB3Y-W4EH
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+- id: yz1n-zft9
+  title:
+    en: research protocol
+  description:
+    en: 'The protocol is a detailed plan of the research study including a project
+      summary, project description covering the rationale, objectives, methodology,
+      data management and analysis, ethical considerations, gender issues and references.
+      [Source: Adapted from https://www.who.int/publications/i/item/a-practical-guide-for-health-researchers]'
+  hierarchy:
+    parent: publication-report
+  mappings:
+  - identifier: http://purl.org/coar/resource_type/YZ1N-ZFT9
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#studyregistration
+    scheme: https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#
+    relation: broadMatch
+- id: z907-ymbb
+  title:
+    en: plant patent
+  description:
+    en: 'A patent granted to anyone who has invented or discovered and asexually reproduced
+      any distinct and new variety of plant, including cultivated sports, mutants,
+      hybrids, and newly found seedlings, other than a tuber-propagated plant or a
+      plant found in an uncultivated state. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/general-information-about-35-usc-161#heading-1]'
+  hierarchy:
+    parent: publication-patent
+  mappings:
+  - identifier: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C43358
+    scheme: http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#
+    relation: broadMatch
+  - identifier: http://purl.jp/bio/4/id/200906022454899687
+    scheme: http://purl.jp/bio/4/id/
+    relation: exactMatch
+  - identifier: http://purl.org/coar/resource_type/Z907-YMBB
+    scheme: http://purl.org/coar/resource_type/
+    relation: exactMatch
+  - identifier: https://sparontologies.github.io/fabio/current/fabio.html#d4e4551
+    scheme: https://sparontologies.github.io/fabio/current/fabio.html#
+    relation: broadMatch

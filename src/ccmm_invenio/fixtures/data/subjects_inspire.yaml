@@ -1,0 +1,374 @@
+- id: inspire:ac
+  scheme: INSPIRE
+  title:
+    cs: Stav ovzduší
+    en: Atmospheric conditions
+  subject: Atmospheric conditions
+  props:
+    classification_code: AC
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/ac
+- id: inspire:ad
+  scheme: INSPIRE
+  title:
+    cs: Adresy
+    en: Addresses
+  subject: Addresses
+  props:
+    classification_code: AD
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/ad
+- id: inspire:af
+  scheme: INSPIRE
+  title:
+    cs: Zemědělská a akvakulturní zařízení
+    en: Agricultural and aquaculture facilities
+  subject: Agricultural and aquaculture facilities
+  props:
+    classification_code: AF
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/af
+- id: inspire:am
+  scheme: INSPIRE
+  title:
+    cs: Správní oblasti/chráněná pásma/regulovaná území a jednotky podávající hlášení
+    en: Area management/restriction/regulation zones and reporting units
+  subject: Area management/restriction/regulation zones and reporting units
+  props:
+    classification_code: AM
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/am
+- id: inspire:au
+  scheme: INSPIRE
+  title:
+    cs: Správní jednotky
+    en: Administrative units
+  subject: Administrative units
+  props:
+    classification_code: AU
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/au
+- id: inspire:br
+  scheme: INSPIRE
+  title:
+    cs: Bioregiony
+    en: Bio-geographical regions
+  subject: Bio-geographical regions
+  props:
+    classification_code: BR
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/br
+- id: inspire:bu
+  scheme: INSPIRE
+  title:
+    cs: Budovy
+    en: Buildings
+  subject: Buildings
+  props:
+    classification_code: BU
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/bu
+- id: inspire:cp
+  scheme: INSPIRE
+  title:
+    cs: Katastrální parcely
+    en: Cadastral parcels
+  subject: Cadastral parcels
+  props:
+    classification_code: CP
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/cp
+- id: inspire:ef
+  scheme: INSPIRE
+  title:
+    cs: Zařízení pro sledování životního prostředí
+    en: Environmental monitoring facilities
+  subject: Environmental monitoring facilities
+  props:
+    classification_code: EF
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/ef
+- id: inspire:el
+  scheme: INSPIRE
+  title:
+    cs: Nadmořská výška
+    en: Elevation
+  subject: Elevation
+  props:
+    classification_code: EL
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/el
+- id: inspire:er
+  scheme: INSPIRE
+  title:
+    cs: Energetické zdroje
+    en: Energy resources
+  subject: Energy resources
+  props:
+    classification_code: ER
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/er
+- id: inspire:ge
+  scheme: INSPIRE
+  title:
+    cs: Geologie
+    en: Geology
+  subject: Geology
+  props:
+    classification_code: GE
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/ge
+- id: inspire:gg
+  scheme: INSPIRE
+  title:
+    cs: Zeměpisné soustavy souřadnicových sítí
+    en: Geographical grid systems
+  subject: Geographical grid systems
+  props:
+    classification_code: GG
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/gg
+- id: inspire:gn
+  scheme: INSPIRE
+  title:
+    cs: Zeměpisné názvy
+    en: Geographical names
+  subject: Geographical names
+  props:
+    classification_code: GN
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/gn
+- id: inspire:hb
+  scheme: INSPIRE
+  title:
+    cs: Stanoviště a biotopy
+    en: Habitats and biotopes
+  subject: Habitats and biotopes
+  props:
+    classification_code: HB
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/hb
+- id: inspire:hh
+  scheme: INSPIRE
+  title:
+    cs: Lidské zdraví a bezpečnost
+    en: Human health and safety
+  subject: Human health and safety
+  props:
+    classification_code: HH
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/hh
+- id: inspire:hy
+  scheme: INSPIRE
+  title:
+    cs: Vodopis
+    en: Hydrography
+  subject: Hydrography
+  props:
+    classification_code: HY
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/hy
+- id: inspire:lc
+  scheme: INSPIRE
+  title:
+    cs: Krajinný pokryv
+    en: Land cover
+  subject: Land cover
+  props:
+    classification_code: LC
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/lc
+- id: inspire:lu
+  scheme: INSPIRE
+  title:
+    cs: Využití území
+    en: Land use
+  subject: Land use
+  props:
+    classification_code: LU
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/lu
+- id: inspire:mf
+  scheme: INSPIRE
+  title:
+    cs: Zeměpisné meteorologické prvky
+    en: Meteorological geographical features
+  subject: Meteorological geographical features
+  props:
+    classification_code: MF
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/mf
+- id: inspire:mr
+  scheme: INSPIRE
+  title:
+    cs: Nerostné suroviny
+    en: Mineral resources
+  subject: Mineral resources
+  props:
+    classification_code: MR
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/mr
+- id: inspire:nz
+  scheme: INSPIRE
+  title:
+    cs: Oblasti ohrožené přírodními riziky
+    en: Natural risk zones
+  subject: Natural risk zones
+  props:
+    classification_code: NZ
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/nz
+- id: inspire:of
+  scheme: INSPIRE
+  title:
+    cs: Zeměpisné oceánografické prvky
+    en: Oceanographic geographical features
+  subject: Oceanographic geographical features
+  props:
+    classification_code: OF
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/of
+- id: inspire:oi
+  scheme: INSPIRE
+  title:
+    cs: Ortofotosnímky
+    en: Orthoimagery
+  subject: Orthoimagery
+  props:
+    classification_code: OI
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/oi
+- id: inspire:pd
+  scheme: INSPIRE
+  title:
+    cs: Rozložení obyvatelstva – demografie
+    en: Population distribution — demography
+  subject: Population distribution — demography
+  props:
+    classification_code: PD
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/pd
+- id: inspire:pf
+  scheme: INSPIRE
+  title:
+    cs: Výrobní a průmyslová zařízení
+    en: Production and industrial facilities
+  subject: Production and industrial facilities
+  props:
+    classification_code: PF
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/pf
+- id: inspire:ps
+  scheme: INSPIRE
+  title:
+    cs: Chráněná území
+    en: Protected sites
+  subject: Protected sites
+  props:
+    classification_code: PS
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/ps
+- id: inspire:rs
+  scheme: INSPIRE
+  title:
+    cs: Souřadnicové referenční systémy
+    en: Coordinate reference systems
+  subject: Coordinate reference systems
+  props:
+    classification_code: RS
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/rs
+- id: inspire:sd
+  scheme: INSPIRE
+  title:
+    cs: Rozložení druhů
+    en: Species distribution
+  subject: Species distribution
+  props:
+    classification_code: SD
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/sd
+- id: inspire:so
+  scheme: INSPIRE
+  title:
+    cs: Půda
+    en: Soil
+  subject: Soil
+  props:
+    classification_code: SO
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/so
+- id: inspire:sr
+  scheme: INSPIRE
+  title:
+    cs: Mořské oblasti
+    en: Sea regions
+  subject: Sea regions
+  props:
+    classification_code: SR
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/sr
+- id: inspire:su
+  scheme: INSPIRE
+  title:
+    cs: Statistické jednotky
+    en: Statistical units
+  subject: Statistical units
+  props:
+    classification_code: SU
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/su
+- id: inspire:tn
+  scheme: INSPIRE
+  title:
+    cs: Dopravní sítě
+    en: Transport networks
+  subject: Transport networks
+  props:
+    classification_code: TN
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/tn
+- id: inspire:us
+  scheme: INSPIRE
+  title:
+    cs: Veřejné služby a služby veřejné správy
+    en: Utility and governmental services
+  subject: Utility and governmental services
+  props:
+    classification_code: US
+  identifiers:
+  - scheme: url
+    identifier: http://inspire.ec.europa.eu/theme/us

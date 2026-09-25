@@ -1,0 +1,58 @@
+- id: copyright
+  title:
+    cs: Porušení autorských práv
+    en: Copyright infringement
+  tags:
+  - deletion-request
+- id: disputed-authorship
+  title:
+    cs: Sporné autorství
+    en: Disputed authorship
+- id: duplicate
+  title:
+    cs: Duplikát jiného záznamu
+    en: Duplicate of another record
+  tags:
+  - deletion-request
+- id: fraud
+  title:
+    cs: Podvod
+    en: Fraud
+- id: misconduct
+  title:
+    cs: Nedovolené jednání
+    en: Misconduct
+- id: out-of-scope
+  title:
+    cs: Obsah mimo rozsah určení repozitáře
+    en: Content out of scope for repository
+- id: personal-data
+  title:
+    cs: Problém s osobními údaji
+    en: Personal data issue
+  tags:
+  - deletion-request
+- id: replaced
+  title:
+    cs: Nahrazení záznamu
+    en: Substitution
+- id: retracted
+  title:
+    cs: Stáhnutí záznamu
+    en: Retraction/Withdrawal of a record
+  tags:
+  - deletion-request
+- id: spam
+  title:
+    cs: Spam
+    en: Spam
+- id: take-down-request
+  title:
+    cs: Žádost o stažení
+    en: Take-down request
+- id: test-record
+  title:
+    cs: Testovací nahrání záznamu
+    en: Test upload of a record
+  tags:
+  - deletion-request

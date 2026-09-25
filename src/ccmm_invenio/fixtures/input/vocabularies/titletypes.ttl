@@ -1,0 +1,16 @@
+# Interoperability props of the title types vocabulary: the openaire title
+# type of each title type, converted from the addon csv of the old pipeline
+# (src/ccmm_invenio/input/addon_alternate_title_types.csv). The subjects are
+# the NMA title type URIs; the main title type had no openaire counterpart
+# and carries none.
+#
+# The props are merged into the vocabulary graph by the converter, strictly:
+# a subject that is not a concept of the title types vocabulary fails the
+# conversion instead of being silently dropped.
+
+@prefix titletypes: <https://nma.eosc.cz/vocabularies/titletypes/> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+
+titletypes:alternative-title props:openaire "Alternative Title" .
+titletypes:subtitle         props:openaire "Subtitle" .
+titletypes:translated-title props:openaire "TranslatedTitle" .

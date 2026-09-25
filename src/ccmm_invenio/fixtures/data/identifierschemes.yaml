@@ -1,0 +1,287 @@
+- id: ads
+  title:
+    en: Bibcode
+  tags:
+  - record
+  props:
+    datacite: bibcode
+  mappings:
+  - identifier: https://ui.adsabs.harvard.edu/#abs/
+    scheme: https://ui.adsabs.harvard.edu/#abs/
+    relation: exactMatch
+- id: ares
+  title:
+    cs: ARES
+    en: ARES
+  description:
+    cs: Administrativní registr ekonomických subjektů
+    en: Administrative Register of Economic Subjects
+  tags:
+  - person-organization
+  mappings:
+  - identifier: https://ares.gov.cz/
+    scheme: https://ares.gov.cz/
+    relation: exactMatch
+- id: ark
+  title:
+    en: ARK
+  tags:
+  - record
+  props:
+    datacite: ARK
+- id: arxiv
+  title:
+    en: arXiv
+  tags:
+  - record
+  props:
+    datacite: arXiv
+  mappings:
+  - identifier: https://arxiv.org/abs/
+    scheme: https://arxiv.org/abs/
+    relation: exactMatch
+- id: crossreffunderid
+  title:
+    en: Crossref Funder ID
+  tags:
+  - record
+  props:
+    datacite: Crossref Funder ID
+- id: cstr
+  title:
+    en: CSTR
+  tags:
+  - record
+  props:
+    datacite: CSTR
+- id: doi
+  title:
+    en: DOI
+  tags:
+  - record
+  props:
+    datacite: DOI
+  mappings:
+  - identifier: https://doi.org/
+    scheme: https://doi.org/
+    relation: exactMatch
+- id: ean13
+  title:
+    en: EAN13
+  tags:
+  - record
+  props:
+    datacite: EAN13
+- id: eissn
+  title:
+    en: EISSN
+  tags:
+  - record
+  props:
+    datacite: EISSN
+- id: gnd
+  title:
+    en: GND
+  tags:
+  - person-organization
+  props:
+    datacite: GND
+  mappings:
+  - identifier: https://d-nb.info/gnd/
+    scheme: https://d-nb.info/gnd/
+    relation: exactMatch
+- id: grid
+  title:
+    en: GRID
+  tags:
+  - record
+  props:
+    datacite: GRID
+- id: handle
+  title:
+    en: Handle
+  tags:
+  - record
+  props:
+    datacite: Handle
+  mappings:
+  - identifier: https://hdl.handle.net/
+    scheme: https://hdl.handle.net/
+    relation: exactMatch
+- id: igsn
+  title:
+    en: IGSN
+  tags:
+  - record
+  props:
+    datacite: IGSN
+- id: iri
+  title:
+    cs: IRI
+    en: IRI
+  tags:
+  - record
+  mappings:
+  - identifier: urn:iri
+    scheme: ''
+    relation: exactMatch
+- id: isbn
+  title:
+    en: ISBN
+  tags:
+  - record
+  props:
+    datacite: ISBN
+- id: isni
+  title:
+    en: ISNI
+  tags:
+  - person-organization
+  - record
+  props:
+    datacite: ISNI
+- id: issn
+  title:
+    en: ISSN
+  tags:
+  - record
+  props:
+    datacite: ISSN
+- id: istc
+  title:
+    en: ISTC
+  tags:
+  - record
+  props:
+    datacite: ISTC
+- id: lissn
+  title:
+    en: LISSN
+  tags:
+  - record
+  props:
+    datacite: LISSN
+- id: lsid
+  title:
+    en: LSID
+  tags:
+  - record
+  props:
+    datacite: LSID
+- id: orcid
+  title:
+    en: ORCID
+  tags:
+  - person-organization
+  props:
+    datacite: ORCID
+  mappings:
+  - identifier: https://orcid.org/
+    scheme: https://orcid.org/
+    relation: exactMatch
+- id: other
+  title:
+    en: Other
+  tags:
+  - record
+  props:
+    datacite: Other
+- id: pmid
+  title:
+    en: PMID
+  tags:
+  - record
+  props:
+    datacite: PMID
+- id: purl
+  title:
+    en: PURL
+  tags:
+  - record
+  props:
+    datacite: PURL
+- id: researcherid
+  title:
+    cs: Researcher ID
+    en: Researcher ID
+  tags:
+  - person-organization
+  mappings:
+  - identifier: https://www.webofscience.com/
+    scheme: https://www.webofscience.com/
+    relation: exactMatch
+- id: ror
+  title:
+    en: ROR
+  tags:
+  - person-organization
+  props:
+    datacite: ROR
+  mappings:
+  - identifier: https://ror.org/
+    scheme: https://ror.org/
+    relation: exactMatch
+- id: rrid
+  title:
+    en: RRID
+  tags:
+  - record
+  props:
+    datacite: RRID
+  mappings:
+  - identifier: https://scicrunch.org/resolver/
+    scheme: https://scicrunch.org/resolver/
+    relation: exactMatch
+- id: scopusid
+  title:
+    cs: Scopus ID
+    en: Scopus ID
+  tags:
+  - person-organization
+  mappings:
+  - identifier: https://www.scopus.com/
+    scheme: https://www.scopus.com/
+    relation: exactMatch
+- id: upc
+  title:
+    en: UPC
+  tags:
+  - record
+  props:
+    datacite: UPC
+- id: url
+  title:
+    en: URL
+  tags:
+  - record
+  props:
+    datacite: URL
+- id: urn
+  title:
+    en: URN
+  tags:
+  - record
+  props:
+    datacite: URN
+  mappings:
+  - identifier: https://nbn-resolving.org/
+    scheme: https://nbn-resolving.org/
+    relation: exactMatch
+- id: w3id
+  title:
+    en: W3ID
+  tags:
+  - record
+  props:
+    datacite: w3id
+- id: wikidata
+  title:
+    en: Wikidata
+  tags:
+  - record
+  props:
+    datacite: Other
+  mappings:
+  - identifier: https://www.wikidata.org/entity/
+    scheme: https://www.wikidata.org/entity/
+    relation: exactMatch

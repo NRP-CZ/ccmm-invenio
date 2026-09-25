@@ -1,0 +1,3099 @@
+- id: aar
+  title:
+    cs: afarština
+    en: Afar
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: aa
+    ISO_639_3: aar
+    XML_LNG: aa
+    alpha_2: aa
+    xml_lang: aa
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/AAR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: abk
+  title:
+    cs: abchazajština
+    en: Abkhazian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ab
+    ISO_639_3: abk
+    XML_LNG: ab
+    alpha_2: ab
+    xml_lang: ab
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ABK
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: afr
+  title:
+    cs: afrikánština
+    en: Afrikaans
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: af
+    ISO_639_3: afr
+    XML_LNG: af
+    alpha_2: af
+    xml_lang: af
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/AFR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: aka
+  title:
+    cs: akanština
+    en: Akan
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: ak
+    ISO_639_3: aka
+    XML_LNG: ak
+    alpha_2: ak
+    xml_lang: ak
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/AKA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: amh
+  title:
+    cs: Amharština
+    en: Amharic
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: am
+    ISO_639_3: amh
+    XML_LNG: am
+    alpha_2: am
+    xml_lang: am
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/AMH
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ara
+  title:
+    cs: arabština
+    en: Arabic
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: ar
+    ISO_639_3: ara
+    XML_LNG: ar
+    alpha_2: ar
+    xml_lang: ar
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ARA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: arg
+  title:
+    cs: aragonská španělština
+    en: Aragonese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: an
+    ISO_639_3: arg
+    XML_LNG: an
+    alpha_2: an
+    xml_lang: an
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ARG
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: asm
+  title:
+    cs: ásámština
+    en: Assamese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: as
+    ISO_639_3: asm
+    XML_LNG: as
+    alpha_2: as
+    xml_lang: as
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ASM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ava
+  title:
+    cs: avarština
+    en: Avaric
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: av
+    ISO_639_3: ava
+    XML_LNG: av
+    alpha_2: av
+    xml_lang: av
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/AVA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ave
+  title:
+    cs: avestština
+    en: Avestan
+  tags:
+  - historical
+  - individual
+  props:
+    ISO_639_1: ae
+    ISO_639_3: ave
+    XML_LNG: ae
+    alpha_2: ae
+    xml_lang: ae
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/AVE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: aym
+  title:
+    cs: Aymárština
+    en: Aymara
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: ay
+    ISO_639_3: aym
+    XML_LNG: ay
+    alpha_2: ay
+    xml_lang: ay
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/AYM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: aze
+  title:
+    cs: azerbajdžánština
+    en: Azerbaijani
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: az
+    ISO_639_3: aze
+    XML_LNG: az
+    alpha_2: az
+    xml_lang: az
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/AZE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: bak
+  title:
+    cs: Baskirština
+    en: Bashkir
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ba
+    ISO_639_3: bak
+    XML_LNG: ba
+    alpha_2: ba
+    xml_lang: ba
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/BAK
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: bam
+  title:
+    cs: bambarština
+    en: Bambara
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: bm
+    ISO_639_3: bam
+    XML_LNG: bm
+    alpha_2: bm
+    xml_lang: bm
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/BAM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: bel
+  title:
+    cs: běloruština
+    en: Belarusian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: be
+    ISO_639_3: bel
+    XML_LNG: be
+    alpha_2: be
+    xml_lang: be
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/BEL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ben
+  title:
+    cs: bengálština
+    en: Bengali
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: bn
+    ISO_639_3: ben
+    XML_LNG: bn
+    alpha_2: bn
+    xml_lang: bn
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/BEN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: bis
+  title:
+    cs: Bislámština
+    en: Bislama
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: bi
+    ISO_639_3: bis
+    XML_LNG: bi
+    alpha_2: bi
+    xml_lang: bi
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/BIS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: bod
+  title:
+    cs: tibetština
+    en: Tibetan
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: bo
+    ISO_639_3: bod
+    XML_LNG: bo
+    alpha_2: bo
+    xml_lang: bo
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/BOD
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: bos
+  title:
+    cs: bosenština
+    en: Bosnian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: bs
+    ISO_639_3: bos
+    XML_LNG: bs
+    alpha_2: bs
+    xml_lang: bs
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/BOS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: bre
+  title:
+    cs: bretonština
+    en: Breton
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: br
+    ISO_639_3: bre
+    XML_LNG: br
+    alpha_2: br
+    xml_lang: br
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/BRE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: bul
+  title:
+    cs: bulharština
+    en: Bulgarian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: bg
+    ISO_639_3: bul
+    XML_LNG: bg
+    alpha_2: bg
+    xml_lang: bg
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/BUL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: cat
+  title:
+    cs: katalánština
+    en: Catalan
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ca
+    ISO_639_3: cat
+    XML_LNG: ca
+    alpha_2: ca
+    xml_lang: ca
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/CAT
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ces
+  title:
+    cs: čeština
+    en: Czech
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: cs
+    ISO_639_3: ces
+    XML_LNG: cs
+    alpha_2: cs
+    xml_lang: cs
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/CES
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: cha
+  title:
+    cs: čamoro
+    en: Chamorro
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ch
+    ISO_639_3: cha
+    XML_LNG: ch
+    alpha_2: ch
+    xml_lang: ch
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/CHA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: che
+  title:
+    cs: čečenština
+    en: Chechen
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ce
+    ISO_639_3: che
+    XML_LNG: ce
+    alpha_2: ce
+    xml_lang: ce
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/CHE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: chu
+  title:
+    en: Church Slavic
+  tags:
+  - historical
+  - individual
+  props:
+    ISO_639_1: cu
+    ISO_639_3: chu
+    XML_LNG: cu
+    alpha_2: cu
+    xml_lang: cu
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/CHU
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: chv
+  title:
+    cs: čuvaština
+    en: Chuvash
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: cv
+    ISO_639_3: chv
+    XML_LNG: cv
+    alpha_2: cv
+    xml_lang: cv
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/CHV
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: cor
+  title:
+    cs: kornština
+    en: Cornish
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: kw
+    ISO_639_3: cor
+    XML_LNG: kw
+    alpha_2: kw
+    xml_lang: kw
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/COR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: cos
+  title:
+    cs: korsičtina
+    en: Corsican
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: co
+    ISO_639_3: cos
+    XML_LNG: co
+    alpha_2: co
+    xml_lang: co
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/COS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: cre
+  title:
+    cs: krí
+    en: Cree
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: cr
+    ISO_639_3: cre
+    XML_LNG: cr
+    alpha_2: cr
+    xml_lang: cr
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/CRE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: cym
+  title:
+    cs: velština
+    en: Welsh
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: cy
+    ISO_639_3: cym
+    XML_LNG: cy
+    alpha_2: cy
+    xml_lang: cy
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/CYM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: dan
+  title:
+    cs: dánština
+    en: Danish
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: da
+    ISO_639_3: dan
+    XML_LNG: da
+    alpha_2: da
+    xml_lang: da
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/DAN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: deu
+  title:
+    cs: němčina
+    en: German
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: de
+    ISO_639_3: deu
+    XML_LNG: de
+    alpha_2: de
+    xml_lang: de
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/DEU
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: div
+  title:
+    en: Divehi
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: dv
+    ISO_639_3: div
+    XML_LNG: dv
+    alpha_2: dv
+    xml_lang: dv
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/DIV
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: dzo
+  title:
+    cs: Bhútánština
+    en: Dzongkha
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: dz
+    ISO_639_3: dzo
+    XML_LNG: dz
+    alpha_2: dz
+    xml_lang: dz
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/DZO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ell
+  title:
+    en: Modern Greek (1453-)
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: el
+    ISO_639_3: ell
+    XML_LNG: el
+    alpha_2: el
+    xml_lang: el
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ELL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: eng
+  title:
+    cs: angličtina
+    en: English
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: en
+    ISO_639_3: eng
+    XML_LNG: en
+    alpha_2: en
+    xml_lang: en
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ENG
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: epo
+  title:
+    cs: esperanto
+    en: Esperanto
+  tags:
+  - constructed
+  - individual
+  props:
+    ISO_639_1: eo
+    ISO_639_3: epo
+    XML_LNG: eo
+    alpha_2: eo
+    xml_lang: eo
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/EPO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: est
+  title:
+    cs: estonština
+    en: Estonian
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: et
+    ISO_639_3: est
+    XML_LNG: et
+    alpha_2: et
+    xml_lang: et
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/EST
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: eus
+  title:
+    cs: baskičtina
+    en: Basque
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: eu
+    ISO_639_3: eus
+    XML_LNG: eu
+    alpha_2: eu
+    xml_lang: eu
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/EUS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ewe
+  title:
+    cs: eweština
+    en: Ewe
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ee
+    ISO_639_3: ewe
+    XML_LNG: ee
+    alpha_2: ee
+    xml_lang: ee
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/EWE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: fao
+  title:
+    cs: faerština
+    en: Faroese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: fo
+    ISO_639_3: fao
+    XML_LNG: fo
+    alpha_2: fo
+    xml_lang: fo
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/FAO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: fas
+  title:
+    cs: perština
+    en: Persian
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: fa
+    ISO_639_3: fas
+    XML_LNG: fa
+    alpha_2: fa
+    xml_lang: fa
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/FAS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: fij
+  title:
+    cs: Fidži
+    en: Fijian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: fj
+    ISO_639_3: fij
+    XML_LNG: fj
+    alpha_2: fj
+    xml_lang: fj
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/FIJ
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: fin
+  title:
+    cs: finština
+    en: Finnish
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: fi
+    ISO_639_3: fin
+    XML_LNG: fi
+    alpha_2: fi
+    xml_lang: fi
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/FIN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: fra
+  title:
+    cs: francouzština
+    en: French
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: fr
+    ISO_639_3: fra
+    XML_LNG: fr
+    alpha_2: fr
+    xml_lang: fr
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/FRA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: fry
+  title:
+    en: Western Frisian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: fy
+    ISO_639_3: fry
+    XML_LNG: fy
+    alpha_2: fy
+    xml_lang: fy
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/FRY
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ful
+  title:
+    cs: fulahština
+    en: Fulah
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: ff
+    ISO_639_3: ful
+    XML_LNG: ff
+    alpha_2: ff
+    xml_lang: ff
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/FUL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: gla
+  title:
+    en: Scottish Gaelic
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: gd
+    ISO_639_3: gla
+    XML_LNG: gd
+    alpha_2: gd
+    xml_lang: gd
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/GLA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: gle
+  title:
+    cs: irština
+    en: Irish
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ga
+    ISO_639_3: gle
+    XML_LNG: ga
+    alpha_2: ga
+    xml_lang: ga
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/GLE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: glg
+  title:
+    en: Galician
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: gl
+    ISO_639_3: glg
+    XML_LNG: gl
+    alpha_2: gl
+    xml_lang: gl
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/GLG
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: glv
+  title:
+    cs: manština
+    en: Manx
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: gv
+    ISO_639_3: glv
+    XML_LNG: gv
+    alpha_2: gv
+    xml_lang: gv
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/GLV
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: grn
+  title:
+    cs: Guaranština
+    en: Guarani
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: gn
+    ISO_639_3: grn
+    XML_LNG: gn
+    alpha_2: gn
+    xml_lang: gn
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/GRN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: guj
+  title:
+    cs: Gujaratština
+    en: Gujarati
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: gu
+    ISO_639_3: guj
+    XML_LNG: gu
+    alpha_2: gu
+    xml_lang: gu
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/GUJ
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: hat
+  title:
+    en: Haitian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ht
+    ISO_639_3: hat
+    XML_LNG: ht
+    alpha_2: ht
+    xml_lang: ht
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HAT
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: hau
+  title:
+    en: Hausa
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ha
+    ISO_639_3: hau
+    XML_LNG: ha
+    alpha_2: ha
+    xml_lang: ha
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HAU
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: hbs
+  title:
+    en: Serbo-Croatian
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: sh
+    ISO_639_3: hbs
+    XML_LNG: sh
+    alpha_2: sh
+    xml_lang: sh
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HBS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: heb
+  title:
+    cs: hebrejština
+    en: Hebrew
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: he
+    ISO_639_3: heb
+    XML_LNG: he
+    alpha_2: he
+    xml_lang: he
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HEB
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: her
+  title:
+    cs: herero
+    en: Herero
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: hz
+    ISO_639_3: her
+    XML_LNG: hz
+    alpha_2: hz
+    xml_lang: hz
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HER
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: hin
+  title:
+    cs: hindština
+    en: Hindi
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: hi
+    ISO_639_3: hin
+    XML_LNG: hi
+    alpha_2: hi
+    xml_lang: hi
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HIN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: hmo
+  title:
+    cs: hiri motu
+    en: Hiri Motu
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ho
+    ISO_639_3: hmo
+    XML_LNG: ho
+    alpha_2: ho
+    xml_lang: ho
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HMO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: hrv
+  title:
+    cs: chorvatština
+    en: Croatian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: hr
+    ISO_639_3: hrv
+    XML_LNG: hr
+    alpha_2: hr
+    xml_lang: hr
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HRV
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: hun
+  title:
+    cs: maďarština
+    en: Hungarian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: hu
+    ISO_639_3: hun
+    XML_LNG: hu
+    alpha_2: hu
+    xml_lang: hu
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HUN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: hye
+  title:
+    cs: arménština
+    en: Armenian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: hy
+    ISO_639_3: hye
+    XML_LNG: hy
+    alpha_2: hy
+    xml_lang: hy
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/HYE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ibo
+  title:
+    cs: igbo
+    en: Igbo
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ig
+    ISO_639_3: ibo
+    XML_LNG: ig
+    alpha_2: ig
+    xml_lang: ig
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/IBO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ido
+  title:
+    cs: ido
+    en: Ido
+  tags:
+  - constructed
+  - individual
+  props:
+    ISO_639_1: io
+    ISO_639_3: ido
+    XML_LNG: io
+    alpha_2: io
+    xml_lang: io
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/IDO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: iii
+  title:
+    en: Sichuan Yi
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ii
+    ISO_639_3: iii
+    XML_LNG: ii
+    alpha_2: ii
+    xml_lang: ii
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/III
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: iku
+  title:
+    cs: Inuktitutština
+    en: Inuktitut
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: iu
+    ISO_639_3: iku
+    XML_LNG: iu
+    alpha_2: iu
+    xml_lang: iu
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/IKU
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ile
+  title:
+    en: Interlingue
+  tags:
+  - constructed
+  - individual
+  props:
+    ISO_639_1: ie
+    ISO_639_3: ile
+    XML_LNG: ie
+    alpha_2: ie
+    xml_lang: ie
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ILE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ina
+  title:
+    cs: Interlingua (Mezinárodní pomocná jazyková asociace)
+    en: Interlingua (International Auxiliary Language Association)
+  tags:
+  - constructed
+  - individual
+  props:
+    ISO_639_1: ia
+    ISO_639_3: ina
+    XML_LNG: ia
+    alpha_2: ia
+    xml_lang: ia
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/INA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ind
+  title:
+    cs: indonézština
+    en: Indonesian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: id
+    ISO_639_3: ind
+    XML_LNG: id
+    alpha_2: id
+    xml_lang: id
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/IND
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ipk
+  title:
+    cs: Inupiakština
+    en: Inupiaq
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: ik
+    ISO_639_3: ipk
+    XML_LNG: ik
+    alpha_2: ik
+    xml_lang: ik
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/IPK
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: isl
+  title:
+    cs: islandština
+    en: Icelandic
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: is
+    ISO_639_3: isl
+    XML_LNG: is
+    alpha_2: is
+    xml_lang: is
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ISL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ita
+  title:
+    cs: italština
+    en: Italian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: it
+    ISO_639_3: ita
+    XML_LNG: it
+    alpha_2: it
+    xml_lang: it
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ITA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: jav
+  title:
+    cs: jávština
+    en: Javanese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: jv
+    ISO_639_3: jav
+    XML_LNG: jv
+    alpha_2: jv
+    xml_lang: jv
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/JAV
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: jpn
+  title:
+    cs: japonština
+    en: Japanese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ja
+    ISO_639_3: jpn
+    XML_LNG: ja
+    alpha_2: ja
+    xml_lang: ja
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/JPN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kal
+  title:
+    en: Kalaallisut
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: kl
+    ISO_639_3: kal
+    XML_LNG: kl
+    alpha_2: kl
+    xml_lang: kl
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KAL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kan
+  title:
+    cs: Kannadština
+    en: Kannada
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: kn
+    ISO_639_3: kan
+    XML_LNG: kn
+    alpha_2: kn
+    xml_lang: kn
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KAN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kas
+  title:
+    cs: kašmírština
+    en: Kashmiri
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ks
+    ISO_639_3: kas
+    XML_LNG: ks
+    alpha_2: ks
+    xml_lang: ks
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KAS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kat
+  title:
+    cs: Gruzínština
+    en: Georgian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ka
+    ISO_639_3: kat
+    XML_LNG: ka
+    alpha_2: ka
+    xml_lang: ka
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KAT
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kau
+  title:
+    cs: kanuri
+    en: Kanuri
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: kr
+    ISO_639_3: kau
+    XML_LNG: kr
+    alpha_2: kr
+    xml_lang: kr
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KAU
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kaz
+  title:
+    cs: Kazachština
+    en: Kazakh
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: kk
+    ISO_639_3: kaz
+    XML_LNG: kk
+    alpha_2: kk
+    xml_lang: kk
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KAZ
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: khm
+  title:
+    en: Khmer
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: km
+    ISO_639_3: khm
+    XML_LNG: km
+    alpha_2: km
+    xml_lang: km
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KHM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kik
+  title:
+    en: Kikuyu
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ki
+    ISO_639_3: kik
+    XML_LNG: ki
+    alpha_2: ki
+    xml_lang: ki
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KIK
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kin
+  title:
+    cs: Kinyarwandština
+    en: Kinyarwanda
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: rw
+    ISO_639_3: kin
+    XML_LNG: rw
+    alpha_2: rw
+    xml_lang: rw
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KIN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kir
+  title:
+    cs: Kirgizština
+    en: Kirghiz
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ky
+    ISO_639_3: kir
+    XML_LNG: ky
+    alpha_2: ky
+    xml_lang: ky
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KIR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kom
+  title:
+    cs: komijština
+    en: Komi
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: kv
+    ISO_639_3: kom
+    XML_LNG: kv
+    alpha_2: kv
+    xml_lang: kv
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KOM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kon
+  title:
+    cs: konžština
+    en: Kongo
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: kg
+    ISO_639_3: kon
+    XML_LNG: kg
+    alpha_2: kg
+    xml_lang: kg
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KON
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kor
+  title:
+    cs: korejština
+    en: Korean
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ko
+    ISO_639_3: kor
+    XML_LNG: ko
+    alpha_2: ko
+    xml_lang: ko
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KOR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kua
+  title:
+    en: Kuanyama
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: kj
+    ISO_639_3: kua
+    XML_LNG: kj
+    alpha_2: kj
+    xml_lang: kj
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KUA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: kur
+  title:
+    cs: kurdština
+    en: Kurdish
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: ku
+    ISO_639_3: kur
+    XML_LNG: ku
+    alpha_2: ku
+    xml_lang: ku
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/KUR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: lao
+  title:
+    cs: Laoština
+    en: Lao
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: lo
+    ISO_639_3: lao
+    XML_LNG: lo
+    alpha_2: lo
+    xml_lang: lo
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/LAO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: lat
+  title:
+    cs: latina
+    en: Latin
+  tags:
+  - historical
+  - individual
+  props:
+    ISO_639_1: la
+    ISO_639_3: lat
+    XML_LNG: la
+    alpha_2: la
+    xml_lang: la
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/LAT
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: lav
+  title:
+    cs: litevština
+    en: Latvian
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: lv
+    ISO_639_3: lav
+    XML_LNG: lv
+    alpha_2: lv
+    xml_lang: lv
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/LAV
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: lim
+  title:
+    en: Limburgan
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: li
+    ISO_639_3: lim
+    XML_LNG: li
+    alpha_2: li
+    xml_lang: li
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/LIM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: lin
+  title:
+    cs: Lingalština
+    en: Lingala
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ln
+    ISO_639_3: lin
+    XML_LNG: ln
+    alpha_2: ln
+    xml_lang: ln
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/LIN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: lit
+  title:
+    cs: litevština
+    en: Lithuanian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: lt
+    ISO_639_3: lit
+    XML_LNG: lt
+    alpha_2: lt
+    xml_lang: lt
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/LIT
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ltz
+  title:
+    en: Luxembourgish
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: lb
+    ISO_639_3: ltz
+    XML_LNG: lb
+    alpha_2: lb
+    xml_lang: lb
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/LTZ
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: lub
+  title:
+    cs: lubu-katanžština
+    en: Luba-Katanga
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: lu
+    ISO_639_3: lub
+    XML_LNG: lu
+    alpha_2: lu
+    xml_lang: lu
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/LUB
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: lug
+  title:
+    cs: ganda
+    en: Ganda
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: lg
+    ISO_639_3: lug
+    XML_LNG: lg
+    alpha_2: lg
+    xml_lang: lg
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/LUG
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: mah
+  title:
+    en: Marshallese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: mh
+    ISO_639_3: mah
+    XML_LNG: mh
+    alpha_2: mh
+    xml_lang: mh
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MAH
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: mal
+  title:
+    cs: Malabarština
+    en: Malayalam
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ml
+    ISO_639_3: mal
+    XML_LNG: ml
+    alpha_2: ml
+    xml_lang: ml
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MAL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: mar
+  title:
+    cs: maráthština
+    en: Marathi
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: mr
+    ISO_639_3: mar
+    XML_LNG: mr
+    alpha_2: mr
+    xml_lang: mr
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MAR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: mkd
+  title:
+    cs: makedonština
+    en: Macedonian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: mk
+    ISO_639_3: mkd
+    XML_LNG: mk
+    alpha_2: mk
+    xml_lang: mk
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MKD
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: mlg
+  title:
+    cs: Malgaština
+    en: Malagasy
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: mg
+    ISO_639_3: mlg
+    XML_LNG: mg
+    alpha_2: mg
+    xml_lang: mg
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MLG
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: mlt
+  title:
+    cs: maltézština
+    en: Maltese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: mt
+    ISO_639_3: mlt
+    XML_LNG: mt
+    alpha_2: mt
+    xml_lang: mt
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MLT
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: mon
+  title:
+    cs: mongolština
+    en: Mongolian
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: mn
+    ISO_639_3: mon
+    XML_LNG: mn
+    alpha_2: mn
+    xml_lang: mn
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MON
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: mri
+  title:
+    cs: maorština
+    en: Maori
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: mi
+    ISO_639_3: mri
+    XML_LNG: mi
+    alpha_2: mi
+    xml_lang: mi
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MRI
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: msa
+  title:
+    en: Malay (macrolanguage)
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: ms
+    ISO_639_3: msa
+    XML_LNG: ms
+    alpha_2: ms
+    xml_lang: ms
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MSA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: mya
+  title:
+    cs: Barmština
+    en: Burmese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: my
+    ISO_639_3: mya
+    XML_LNG: my
+    alpha_2: my
+    xml_lang: my
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/MYA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nau
+  title:
+    cs: naurština
+    en: Nauru
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: na
+    ISO_639_3: nau
+    XML_LNG: na
+    alpha_2: na
+    xml_lang: na
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NAU
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nav
+  title:
+    en: Navajo
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: nv
+    ISO_639_3: nav
+    XML_LNG: nv
+    alpha_2: nv
+    xml_lang: nv
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NAV
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nbl
+  title:
+    en: South Ndebele
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: nr
+    ISO_639_3: nbl
+    XML_LNG: nr
+    alpha_2: nr
+    xml_lang: nr
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NBL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nde
+  title:
+    en: North Ndebele
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: nd
+    ISO_639_3: nde
+    XML_LNG: nd
+    alpha_2: nd
+    xml_lang: nd
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NDE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ndo
+  title:
+    cs: ndondština
+    en: Ndonga
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ng
+    ISO_639_3: ndo
+    XML_LNG: ng
+    alpha_2: ng
+    xml_lang: ng
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NDO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nep
+  title:
+    en: Nepali (macrolanguage)
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: ne
+    ISO_639_3: nep
+    XML_LNG: ne
+    alpha_2: ne
+    xml_lang: ne
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NEP
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nld
+  title:
+    cs: holandština
+    en: Dutch
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: nl
+    ISO_639_3: nld
+    XML_LNG: nl
+    alpha_2: nl
+    xml_lang: nl
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NLD
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nno
+  title:
+    en: Norwegian Nynorsk
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: nn
+    ISO_639_3: nno
+    XML_LNG: nn
+    alpha_2: nn
+    xml_lang: nn
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NNO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nob
+  title:
+    en: Norwegian Bokmål
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: nb
+    ISO_639_3: nob
+    XML_LNG: nb
+    alpha_2: nb
+    xml_lang: nb
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NOB
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nor
+  title:
+    cs: norština
+    en: Norwegian
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: 'no'
+    ISO_639_3: nor
+    XML_LNG: 'no'
+    alpha_2: 'no'
+    xml_lang: 'no'
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NOR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: nya
+  title:
+    en: Chichewa
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ny
+    ISO_639_3: nya
+    XML_LNG: ny
+    alpha_2: ny
+    xml_lang: ny
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/NYA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: oci
+  title:
+    en: Occitan (post 1500)
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: oc
+    ISO_639_3: oci
+    XML_LNG: oc
+    alpha_2: oc
+    xml_lang: oc
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/OCI
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: oji
+  title:
+    cs: odžibwejština
+    en: Ojibwa
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: oj
+    ISO_639_3: oji
+    XML_LNG: oj
+    alpha_2: oj
+    xml_lang: oj
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/OJI
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ori
+  title:
+    en: Oriya (macrolanguage)
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: or
+    ISO_639_3: ori
+    XML_LNG: or
+    alpha_2: or
+    xml_lang: or
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ORI
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: orm
+  title:
+    cs: Oromo (Afan)
+    en: Oromo
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: om
+    ISO_639_3: orm
+    XML_LNG: om
+    alpha_2: om
+    xml_lang: om
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ORM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: oss
+  title:
+    en: Ossetian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: os
+    ISO_639_3: oss
+    XML_LNG: os
+    alpha_2: os
+    xml_lang: os
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/OSS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: pan
+  title:
+    en: Panjabi
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: pa
+    ISO_639_3: pan
+    XML_LNG: pa
+    alpha_2: pa
+    xml_lang: pa
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/PAN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: pli
+  title:
+    cs: páli
+    en: Pali
+  tags:
+  - historical
+  - individual
+  props:
+    ISO_639_1: pi
+    ISO_639_3: pli
+    XML_LNG: pi
+    alpha_2: pi
+    xml_lang: pi
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/PLI
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: pol
+  title:
+    cs: polština
+    en: Polish
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: pl
+    ISO_639_3: pol
+    XML_LNG: pl
+    alpha_2: pl
+    xml_lang: pl
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/POL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: por
+  title:
+    cs: portugalština
+    en: Portuguese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: pt
+    ISO_639_3: por
+    XML_LNG: pt
+    alpha_2: pt
+    xml_lang: pt
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/POR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: pus
+  title:
+    cs: pašto
+    en: Pushto
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: ps
+    ISO_639_3: pus
+    XML_LNG: ps
+    alpha_2: ps
+    xml_lang: ps
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/PUS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: que
+  title:
+    cs: Kečuánština
+    en: Quechua
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: qu
+    ISO_639_3: que
+    XML_LNG: qu
+    alpha_2: qu
+    xml_lang: qu
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/QUE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: roh
+  title:
+    en: Romansh
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: rm
+    ISO_639_3: roh
+    XML_LNG: rm
+    alpha_2: rm
+    xml_lang: rm
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ROH
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ron
+  title:
+    cs: rumunština
+    en: Romanian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ro
+    ISO_639_3: ron
+    XML_LNG: ro
+    alpha_2: ro
+    xml_lang: ro
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/RON
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: run
+  title:
+    cs: Kirundi
+    en: Rundi
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: rn
+    ISO_639_3: run
+    XML_LNG: rn
+    alpha_2: rn
+    xml_lang: rn
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/RUN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: rus
+  title:
+    cs: ruština
+    en: Russian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ru
+    ISO_639_3: rus
+    XML_LNG: ru
+    alpha_2: ru
+    xml_lang: ru
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/RUS
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: sag
+  title:
+    cs: Sangho
+    en: Sango
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: sg
+    ISO_639_3: sag
+    XML_LNG: sg
+    alpha_2: sg
+    xml_lang: sg
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SAG
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: san
+  title:
+    cs: sanskrt
+    en: Sanskrit
+  tags:
+  - historical
+  - macrolanguage
+  props:
+    ISO_639_1: sa
+    ISO_639_3: san
+    XML_LNG: sa
+    alpha_2: sa
+    xml_lang: sa
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SAN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: sin
+  title:
+    en: Sinhala
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: si
+    ISO_639_3: sin
+    XML_LNG: si
+    alpha_2: si
+    xml_lang: si
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SIN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: slk
+  title:
+    cs: slovenština
+    en: Slovak
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: sk
+    ISO_639_3: slk
+    XML_LNG: sk
+    alpha_2: sk
+    xml_lang: sk
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SLK
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: slv
+  title:
+    cs: slovinština
+    en: Slovenian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: sl
+    ISO_639_3: slv
+    XML_LNG: sl
+    alpha_2: sl
+    xml_lang: sl
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SLV
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: sme
+  title:
+    en: Northern Sami
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: se
+    ISO_639_3: sme
+    XML_LNG: se
+    alpha_2: se
+    xml_lang: se
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SME
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: smo
+  title:
+    cs: Samoyština
+    en: Samoan
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: sm
+    ISO_639_3: smo
+    XML_LNG: sm
+    alpha_2: sm
+    xml_lang: sm
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SMO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: sna
+  title:
+    en: Shona
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: sn
+    ISO_639_3: sna
+    XML_LNG: sn
+    alpha_2: sn
+    xml_lang: sn
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SNA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: snd
+  title:
+    cs: sindhština
+    en: Sindhi
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: sd
+    ISO_639_3: snd
+    XML_LNG: sd
+    alpha_2: sd
+    xml_lang: sd
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SND
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: som
+  title:
+    cs: somálština
+    en: Somali
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: so
+    ISO_639_3: som
+    XML_LNG: so
+    alpha_2: so
+    xml_lang: so
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SOM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: sot
+  title:
+    en: Southern Sotho
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: st
+    ISO_639_3: sot
+    XML_LNG: st
+    alpha_2: st
+    xml_lang: st
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SOT
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: spa
+  title:
+    cs: španělština
+    en: Spanish
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: es
+    ISO_639_3: spa
+    XML_LNG: es
+    alpha_2: es
+    xml_lang: es
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SPA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: sqi
+  title:
+    cs: albánština
+    en: Albanian
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: sq
+    ISO_639_3: sqi
+    XML_LNG: sq
+    alpha_2: sq
+    xml_lang: sq
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SQI
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: srd
+  title:
+    cs: sardinština
+    en: Sardinian
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: sc
+    ISO_639_3: srd
+    XML_LNG: sc
+    alpha_2: sc
+    xml_lang: sc
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SRD
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: srp
+  title:
+    cs: srbština
+    en: Serbian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: sr
+    ISO_639_3: srp
+    XML_LNG: sr
+    alpha_2: sr
+    xml_lang: sr
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SRP
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ssw
+  title:
+    cs: Siswatština
+    en: Swati
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ss
+    ISO_639_3: ssw
+    XML_LNG: ss
+    alpha_2: ss
+    xml_lang: ss
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SSW
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: sun
+  title:
+    cs: Sundanština
+    en: Sundanese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: su
+    ISO_639_3: sun
+    XML_LNG: su
+    alpha_2: su
+    xml_lang: su
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SUN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: swa
+  title:
+    en: Swahili (macrolanguage)
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: sw
+    ISO_639_3: swa
+    XML_LNG: sw
+    alpha_2: sw
+    xml_lang: sw
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SWA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: swe
+  title:
+    cs: švédština
+    en: Swedish
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: sv
+    ISO_639_3: swe
+    XML_LNG: sv
+    alpha_2: sv
+    xml_lang: sv
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/SWE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tah
+  title:
+    cs: tahitština
+    en: Tahitian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ty
+    ISO_639_3: tah
+    XML_LNG: ty
+    alpha_2: ty
+    xml_lang: ty
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TAH
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tam
+  title:
+    cs: Tamilština
+    en: Tamil
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ta
+    ISO_639_3: tam
+    XML_LNG: ta
+    alpha_2: ta
+    xml_lang: ta
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TAM
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tat
+  title:
+    cs: tatarština
+    en: Tatar
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: tt
+    ISO_639_3: tat
+    XML_LNG: tt
+    alpha_2: tt
+    xml_lang: tt
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TAT
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tel
+  title:
+    cs: Telugština
+    en: Telugu
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: te
+    ISO_639_3: tel
+    XML_LNG: te
+    alpha_2: te
+    xml_lang: te
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TEL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tgk
+  title:
+    cs: Tádžičtina
+    en: Tajik
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: tg
+    ISO_639_3: tgk
+    XML_LNG: tg
+    alpha_2: tg
+    xml_lang: tg
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TGK
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tgl
+  title:
+    en: Tagalog
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: tl
+    ISO_639_3: tgl
+    XML_LNG: tl
+    alpha_2: tl
+    xml_lang: tl
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TGL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tha
+  title:
+    cs: thajština
+    en: Thai
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: th
+    ISO_639_3: tha
+    XML_LNG: th
+    alpha_2: th
+    xml_lang: th
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/THA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tir
+  title:
+    cs: Tigrinijština
+    en: Tigrinya
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ti
+    ISO_639_3: tir
+    XML_LNG: ti
+    alpha_2: ti
+    xml_lang: ti
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TIR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ton
+  title:
+    cs: Tonga
+    en: Tonga (Tonga Islands)
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: to
+    ISO_639_3: ton
+    XML_LNG: to
+    alpha_2: to
+    xml_lang: to
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TON
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tsn
+  title:
+    cs: Setswanština
+    en: Tswana
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: tn
+    ISO_639_3: tsn
+    XML_LNG: tn
+    alpha_2: tn
+    xml_lang: tn
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TSN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tso
+  title:
+    en: Tsonga
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ts
+    ISO_639_3: tso
+    XML_LNG: ts
+    alpha_2: ts
+    xml_lang: ts
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TSO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tuk
+  title:
+    cs: turkmenistánština
+    en: Turkmen
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: tk
+    ISO_639_3: tuk
+    XML_LNG: tk
+    alpha_2: tk
+    xml_lang: tk
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TUK
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: tur
+  title:
+    cs: turečtina
+    en: Turkish
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: tr
+    ISO_639_3: tur
+    XML_LNG: tr
+    alpha_2: tr
+    xml_lang: tr
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TUR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: twi
+  title:
+    en: Twi
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: tw
+    ISO_639_3: twi
+    XML_LNG: tw
+    alpha_2: tw
+    xml_lang: tw
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/TWI
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: uig
+  title:
+    cs: Uighurština
+    en: Uighur
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ug
+    ISO_639_3: uig
+    XML_LNG: ug
+    alpha_2: ug
+    xml_lang: ug
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/UIG
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ukr
+  title:
+    cs: ukrajinština
+    en: Ukrainian
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: uk
+    ISO_639_3: ukr
+    XML_LNG: uk
+    alpha_2: uk
+    xml_lang: uk
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/UKR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: und
+  title:
+    cs: neurčitý
+    en: Undetermined
+  tags:
+  - special-scope
+  - special-type
+  props:
+    ISO_639_3: und
+    XML_LNG: und
+    xml_lang: und
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/UND
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: urd
+  title:
+    cs: urdština
+    en: Urdu
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ur
+    ISO_639_3: urd
+    XML_LNG: ur
+    alpha_2: ur
+    xml_lang: ur
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/URD
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: uzb
+  title:
+    cs: uzbekistánština
+    en: Uzbek
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: uz
+    ISO_639_3: uzb
+    XML_LNG: uz
+    alpha_2: uz
+    xml_lang: uz
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/UZB
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: ven
+  title:
+    cs: vendština
+    en: Venda
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: ve
+    ISO_639_3: ven
+    XML_LNG: ve
+    alpha_2: ve
+    xml_lang: ve
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/VEN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: vie
+  title:
+    cs: vietnamština
+    en: Vietnamese
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: vi
+    ISO_639_3: vie
+    XML_LNG: vi
+    alpha_2: vi
+    xml_lang: vi
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/VIE
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: vol
+  title:
+    cs: volapük
+    en: Volapük
+  tags:
+  - constructed
+  - individual
+  props:
+    ISO_639_1: vo
+    ISO_639_3: vol
+    XML_LNG: vo
+    alpha_2: vo
+    xml_lang: vo
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/VOL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: wln
+  title:
+    cs: valonština
+    en: Walloon
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: wa
+    ISO_639_3: wln
+    XML_LNG: wa
+    alpha_2: wa
+    xml_lang: wa
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/WLN
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: wol
+  title:
+    en: Wolof
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: wo
+    ISO_639_3: wol
+    XML_LNG: wo
+    alpha_2: wo
+    xml_lang: wo
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/WOL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: xho
+  title:
+    en: Xhosa
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: xh
+    ISO_639_3: xho
+    XML_LNG: xh
+    alpha_2: xh
+    xml_lang: xh
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/XHO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: yid
+  title:
+    cs: Jidiš
+    en: Yiddish
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: yi
+    ISO_639_3: yid
+    XML_LNG: yi
+    alpha_2: yi
+    xml_lang: yi
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/YID
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: yor
+  title:
+    en: Yoruba
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: yo
+    ISO_639_3: yor
+    XML_LNG: yo
+    alpha_2: yo
+    xml_lang: yo
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/YOR
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: zha
+  title:
+    en: Zhuang
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: za
+    ISO_639_3: zha
+    XML_LNG: za
+    alpha_2: za
+    xml_lang: za
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ZHA
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: zho
+  title:
+    cs: čínština
+    en: Chinese
+  tags:
+  - living
+  - macrolanguage
+  props:
+    ISO_639_1: zh
+    ISO_639_3: zho
+    XML_LNG: zh
+    alpha_2: zh
+    xml_lang: zh
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ZHO
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch
+- id: zul
+  title:
+    en: Zulu
+  tags:
+  - individual
+  - living
+  props:
+    ISO_639_1: zu
+    ISO_639_3: zul
+    XML_LNG: zu
+    alpha_2: zu
+    xml_lang: zu
+  mappings:
+  - identifier: http://publications.europa.eu/resource/authority/language/ZUL
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: exactMatch

@@ -1,0 +1,91 @@
+# Interoperability props of the resource types vocabulary: the zenodo and
+# lindat resource types of each resource type, converted from the addon ttl
+# of the old pipeline (src/ccmm_invenio/input/addon_resource_types.ttl),
+# re-keyed from the COAR concepts to the InvenioRDM resource type ids.
+#
+# The zenodo community took its resource types over from InvenioRDM, so each
+# zenodo type carries the id of its RDM type; where zenodo is finer than
+# InvenioRDM, the RDM type carries all the zenodo types that convert to it:
+#   publication-dissertation <- publication-bachelorthesis, -mastersthesis,
+#       -doctorthesis, -thesis; presentation <- publication-abstract,
+#       publication-lecture; publication-annotationcollection <-
+#       publication-annotation, annotationcollection; publication-peerreview
+#       <- peerreview
+# The old addon bound some of these to COAR concepts that no RDM type maps
+# to (e.g. zenodo video to COAR c_12ce while the RDM video type maps to
+# c_8a7e); they are carried over by their evident meaning instead. The old
+# binding of zenodo image-diagram to the COAR software concept c_5ce6 is
+# corrected to the image-diagram RDM type.
+#
+# The openaire section of the old addon is not carried over: its values are
+# the DataCite general types the RDM resource types fixture already carries
+# as the datacite_general prop (Text, Dataset, Software, ...), and its
+# openaire codes live in the openaire_resourceType and openaire_type props.
+# The datacite section is superseded the same way. Lindat values that had no
+# RDM counterpart are dropped (bibliography, lexicalConceptualResource); the
+# lindat OBRAZ (image) is carried by the generic image type.
+#
+# The props are merged into the vocabulary graph by the converter, strictly:
+# a subject that is not a concept of the resource types vocabulary fails the
+# conversion instead of being silently dropped.
+
+@prefix resourcetypes: <https://nma.eosc.cz/vocabularies/resourcetypes/> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+
+resourcetypes:audio                            props:zenodo "audio" .
+resourcetypes:dataset                           props:zenodo "dataset" ;
+                                               props:lindat "Spreadsheet" .
+resourcetypes:event                             props:zenodo "event" .
+resourcetypes:image                             props:lindat "OBRAZ" .
+resourcetypes:image-diagram                     props:zenodo "image-diagram" .
+resourcetypes:image-drawing                     props:zenodo "image-drawing" .
+resourcetypes:image-figure                      props:zenodo "image-figure" .
+resourcetypes:image-other                       props:zenodo "image-other" .
+resourcetypes:image-photo                        props:zenodo "image-photo" .
+resourcetypes:image-plot                         props:zenodo "image-plot" .
+resourcetypes:lesson                            props:zenodo "lesson" ;
+                                               props:lindat "onlineCourse" .
+resourcetypes:model                             props:zenodo "model" .
+resourcetypes:other                             props:zenodo "other" .
+resourcetypes:physicalobject                     props:zenodo "physicalobject" .
+resourcetypes:poster                            props:zenodo "poster" .
+resourcetypes:presentation                      props:zenodo "presentation" ,
+                                                       "publication-abstract" ,
+                                                       "publication-lecture" .
+resourcetypes:publication                       props:zenodo "publication" ;
+                                               props:lindat "corpus" ,
+                                                       "languageDescription" .
+resourcetypes:publication-annotationcollection  props:zenodo "publication-annotation" ,
+                                                       "annotationcollection" .
+resourcetypes:publication-article              props:zenodo "publication-article" .
+resourcetypes:publication-book                  props:zenodo "publication-book" .
+resourcetypes:publication-conferencepaper       props:zenodo "publication-conferencepaper" .
+resourcetypes:publication-conferenceproceeding  props:zenodo "publication-conferenceproceeding" .
+resourcetypes:publication-datamanagementplan    props:zenodo "publication-datamanagementplan" .
+resourcetypes:publication-datapaper             props:zenodo "publication-datapaper" .
+resourcetypes:publication-deliverable          props:zenodo "publication-deliverable" .
+resourcetypes:publication-dissertation          props:zenodo "publication-bachelorthesis" ,
+                                                       "publication-mastersthesis" ,
+                                                       "publication-doctorthesis" ,
+                                                       "publication-thesis" ,
+                                                       "publication-dissertation" .
+resourcetypes:publication-journal              props:zenodo "publication-journal" .
+resourcetypes:publication-milestone             props:zenodo "publication-milestone" .
+resourcetypes:publication-other                 props:zenodo "publication-other" .
+resourcetypes:publication-patent                props:zenodo "publication-patent" .
+resourcetypes:publication-peerreview            props:zenodo "peerreview" ,
+                                                       "publication-peerreview" .
+resourcetypes:publication-preprint              props:zenodo "publication-preprint" .
+resourcetypes:publication-proposal              props:zenodo "publication-proposal" .
+resourcetypes:publication-report                props:zenodo "publication-report" .
+resourcetypes:publication-softwaredocumentation props:zenodo "publication-softwaredocumentation" .
+resourcetypes:publication-standard              props:zenodo "publication-standard" .
+resourcetypes:publication-taxonomictreatment    props:zenodo "publication-taxonomictreatment" .
+resourcetypes:publication-technicalnote         props:zenodo "publication-technicalnote" .
+resourcetypes:publication-workingpaper          props:zenodo "publication-workingpaper" .
+resourcetypes:software                          props:zenodo "software" ;
+                                               props:lindat "toolService" .
+resourcetypes:software-computationalnotebook    props:zenodo "software-computationalnotebook" .
+resourcetypes:video                             props:zenodo "video" ;
+                                               props:lindat "clip" .
+resourcetypes:workflow                         props:zenodo "workflow" .

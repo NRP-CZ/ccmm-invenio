@@ -1,0 +1,243 @@
+@prefix ccmm-timereference: <https://vocabs.ccmm.cz/registry/codelist/TimeReference/> .
+@prefix datacite-datetype: <https://w3id.org/tib/datacite/vocab/dateType/> .
+@prefix europa-language: <http://publications.europa.eu/resource/authority/language/> .
+@prefix europa-ontology: <http://publications.europa.eu/ontology/> .
+@prefix europa-web: <https://op.europa.eu/en/web/> .
+@prefix nma: <https://nma.eosc.cz/vocabularies/> .
+@prefix nma-datetypes: <https://nma.eosc.cz/vocabularies/datetypes/> .
+@prefix nma-vocabularies: <https://nma.eosc.cz/vocabularies/vocabularies/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tags: <https://nma.eosc.cz/vocabularies/vocabularies/inveniotags> .
+
+europa-ontology:euvoc a owl:Ontology ;
+    rdfs:label "EU Vocabularies ontology (euvoc)"@en ;
+    rdfs:comment "Ontology of the EU Publications Office; its terms are used as skos:notation datatypes to distinguish language code schemes (e.g. ISO_639_1, ISO_639_3, XML_LNG)."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+europa-language: a skos:ConceptScheme ;
+    rdfs:label "EU Publications Office language authority"@en ;
+    rdfs:comment "EU Publications Office language authority table; identifiers are ISO 639-3 codes."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+nma: a owl:Ontology ;
+    rdfs:label "NMA vocabularies"@en ;
+    rdfs:comment "Namespace of the NMA vocabularies; each sub-path is one vocabulary (e.g. languages)."@en .
+
+nma-vocabularies:invenioid a rdfs:Datatype ;
+    rdfs:label "NMA internal vocabulary id"@en ;
+    rdfs:comment "Marks skos:notation literals carrying the internal NMA vocabulary id, used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props: a owl:Ontology ;
+    rdfs:label "NMA vocabulary properties"@en ;
+    rdfs:comment "Namespace of internal vocabulary properties and datatypes used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props:alpha_2 a rdf:Property ;
+    rdfs:label "ISO 639-1 code"@en ;
+    rdfs:comment "Two-letter ISO 639-1 code of a language, when it has one."@en .
+
+props:csl a rdf:Property ;
+    rdfs:label "csl"@en ;
+    rdfs:comment "Citation Style Language (CSL) type of a resource type."@en .
+
+props:datacite a rdf:Property ;
+    rdfs:label "DataCite relationType name"@en ;
+    rdfs:comment "Name of the DataCite relationType (e.g. IsCitedBy) a relation type concept stands for."@en .
+
+props:datacite_general a rdf:Property ;
+    rdfs:label "datacite_general"@en ;
+    rdfs:comment "DataCite resourceTypeGeneral of a resource type."@en .
+
+props:datacite_type a rdf:Property ;
+    rdfs:label "datacite_type"@en ;
+    rdfs:comment "DataCite resource type name, when the general one is further specified."@en .
+
+props:eurepo a rdf:Property ;
+    rdfs:label "eurepo"@en ;
+    rdfs:comment "eu-repo semantics identifier of a resource type."@en .
+
+props:marc a rdf:Property ;
+    rdfs:label "MARC 21 relator code"@en ;
+    rdfs:comment "Three-letter MARC 21 relator code (e.g. prc) of a role concept."@en .
+
+props:marc21_subtype a rdf:Property ;
+    rdfs:label "marc21_subtype"@en ;
+    rdfs:comment "MARC 21 bibliographic level of a resource type."@en .
+
+props:marc21_type a rdf:Property ;
+    rdfs:label "marc21_type"@en ;
+    rdfs:comment "MARC 21 type of record of a resource type."@en .
+
+props:openaire_resourceType a rdf:Property ;
+    rdfs:label "openaire_resourceType"@en ;
+    rdfs:comment "OpenAIRE resource type code of a resource type."@en .
+
+props:openaire_type a rdf:Property ;
+    rdfs:label "openaire_type"@en ;
+    rdfs:comment "OpenAIRE type name of a resource type."@en .
+
+props:schema.org a rdf:Property ;
+    rdfs:label "schema.org"@en ;
+    rdfs:comment "schema.org type a resource type maps to."@en .
+
+props:subtype a rdf:Property ;
+    rdfs:label "subtype"@en ;
+    rdfs:comment "InvenioRDM resource subtype id; empty for top-level types."@en .
+
+props:type a rdf:Property ;
+    rdfs:label "type"@en ;
+    rdfs:comment "InvenioRDM resource type id a resource type belongs to."@en .
+
+props:xml_lang a rdf:Property ;
+    rdfs:label "xml:lang code"@en ;
+    rdfs:comment "Language tag suitable for an xml:lang attribute: the ISO 639-1 code when available, the ISO 639-3 code otherwise."@en .
+
+tags: a rdf:Property ;
+    rdfs:label "vocabulary tags"@en ;
+    rdfs:comment "Links a vocabulary concept to its tag values (e.g. the scope and type of a language); internal use."@en .
+
+nma-datetypes:accepted a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Accepted,
+        datacite-datetype:Accepted ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "accepted"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum přijetí"@cs,
+        "Date Accepted"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Accepted" ;
+    props:openaire "Accepted" .
+
+nma-datetypes:available a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Available,
+        datacite-datetype:Available ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "available"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum zveřejnění"@cs,
+        "Date Available"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Available" ;
+    props:openaire "Available" .
+
+nma-datetypes:collected a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Collected,
+        datacite-datetype:Collected ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "collected"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum sběru"@cs,
+        "Date Collected"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Collected" ;
+    props:openaire "Collected" .
+
+nma-datetypes:copyrighted a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Copyrighted,
+        datacite-datetype:Copyrighted ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "copyrighted"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum udělení copyrightu"@cs,
+        "Date Copyrighted"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Copyrighted" ;
+    props:openaire "Copyrighted" .
+
+nma-datetypes:coverage a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Coverage,
+        datacite-datetype:Coverage ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "coverage"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Časové pokrytí"@cs,
+        "Date Coverage"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Coverage" .
+
+nma-datetypes:created a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Created,
+        datacite-datetype:Created ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "created"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum vytvoření"@cs,
+        "Date Created"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Created" ;
+    props:openaire "Created" .
+
+nma-datetypes:issued a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Issued,
+        datacite-datetype:Issued ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "issued"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum vydání"@cs,
+        "Date Issued"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Issued" ;
+    props:openaire "Issued" .
+
+nma-datetypes:other a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Other,
+        datacite-datetype:Other ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "other"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Jiné datum"@cs,
+        "Other date"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Other" .
+
+nma-datetypes:submitted a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Submitted,
+        datacite-datetype:Submitted ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "submitted"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum podání"@cs,
+        "Date Submitted"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Submitted" ;
+    props:openaire "Submitted" .
+
+nma-datetypes:updated a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Updated,
+        datacite-datetype:Updated ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "updated"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum aktualizace"@cs,
+        "Date Updated"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Updated" ;
+    props:openaire "Updated" .
+
+nma-datetypes:valid a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Valid,
+        datacite-datetype:Valid ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "valid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum platnosti"@cs,
+        "Date Valid"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Valid" ;
+    props:openaire "Valid" .
+
+nma-datetypes:withdrawn a skos:Concept ;
+    skos:exactMatch ccmm-timereference:Withdrawn,
+        datacite-datetype:Withdrawn ;
+    skos:inScheme nma-datetypes: ;
+    skos:notation "withdrawn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datum odstranění"@cs,
+        "Date Withdrawn"@en ;
+    skos:topConceptOf nma-datetypes: ;
+    props:datacite "Withdrawn" .
+
+nma-datetypes: skos:hasTopConcept nma-datetypes:accepted,
+        nma-datetypes:available,
+        nma-datetypes:collected,
+        nma-datetypes:copyrighted,
+        nma-datetypes:coverage,
+        nma-datetypes:created,
+        nma-datetypes:issued,
+        nma-datetypes:other,
+        nma-datetypes:submitted,
+        nma-datetypes:updated,
+        nma-datetypes:valid,
+        nma-datetypes:withdrawn .
+
