@@ -22,10 +22,10 @@ from marshmallow import EXCLUDE, Schema, fields, post_dump, post_load, validate
 
 def _subject_id(iri: str) -> str | None:
     """Return the id of the subject with the iri among its identifiers, None if it is not in the vocabulary."""
-    hits = cast("Any", current_service_registry.get("subjects")).search(
+    results = cast("Any", current_service_registry.get("subjects")).search(
         system_identity, extra_filter=dsl.Q("term", **{"identifiers.identifier": iri})
     )
-    return next((hit["id"] for hit in hits), None)
+    return next((hit["id"] for hit in results.hits), None)
 
 
 class SubjectSchema(Schema):
