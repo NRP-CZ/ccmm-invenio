@@ -73,7 +73,7 @@ def metadata_records(record: dict[str, Any]) -> list[dict[str, Any]]:
     metadata of the record (see generated_metadata_record).
     """
     if stored := (record.get("metadata") or {}).get("metadata_identifications"):
-        return MetadataRecordSchema(many=True).dump(stored)
+        return list(MetadataRecordSchema(many=True).dump(stored))
     return [generated_metadata_record(record)]
 
 

@@ -18,7 +18,7 @@ Field names are the names of the model fields, data_key the names of the ccmm el
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING, Any, override
+from typing import TYPE_CHECKING, Any, cast, override
 
 from invenio_access.permissions import system_identity
 from invenio_vocabularies.proxies import current_service as vocab_service
@@ -260,5 +260,6 @@ def _file_format(ext: str | None, mimetype: str | None) -> str:
     )
     if not hits:
         return FALLBACK_FILE_FORMAT
-    hits.sort(key=lambda hit: (mimetype not in str((hit.get("props") or {}).get("IANA_MT", "")), len(hit["id"])))
-    return hits[0]["id"]
+    mimetype_str = mimetype or ""
+    hits.sort(key=lambda hit: (mimetype_str not in str((hit.get("props") or {}).get("IANA_MT", "")), len(hit["id"])))
+    return cast("str", hits[0]["id"])

@@ -16,7 +16,7 @@ related resources are. The stored record, the search index and the UI JSON (read
 
 from __future__ import annotations
 
-from typing import Any, override
+from typing import Any, cast, override
 
 from flask_resources.serializers import JSONSerializer
 
@@ -41,8 +41,8 @@ class JSONWithoutRelatedIdentifiersSerializer(JSONSerializer):
 
     @override
     def serialize_object(self, obj: Any) -> str:
-        return super().serialize_object(without_related_identifiers(obj))
+        return cast("str", super().serialize_object(without_related_identifiers(obj)))
 
     @override
     def serialize_object_list(self, obj_list: Any) -> str:
-        return super().serialize_object_list(list_without_related_identifiers(obj_list))
+        return cast("str", super().serialize_object_list(list_without_related_identifiers(obj_list)))

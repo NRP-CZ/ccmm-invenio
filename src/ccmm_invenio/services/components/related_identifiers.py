@@ -16,7 +16,7 @@ landing page, ...) sees the relations as well.
 from __future__ import annotations
 
 import logging
-from typing import TYPE_CHECKING, Any
+from typing import TYPE_CHECKING, Any, cast
 
 from invenio_rdm_records.services.schemas.metadata import RelatedIdentifierSchema
 from invenio_records_resources.services.records.components import ServiceComponent
@@ -54,7 +54,7 @@ def related_identifiers(related_resources: list[dict[str, Any]]) -> list[dict[st
         ]
         for candidate in candidates:
             try:
-                related_identifier = schema.load({**candidate, **common})
+                related_identifier = cast("dict[str, Any]", schema.load({**candidate, **common}))
             except ValidationError as e:
                 log.debug("Not a related identifier: %s, %s", candidate, e.messages)
                 continue

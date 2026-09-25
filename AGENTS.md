@@ -63,11 +63,11 @@ export:  record (service result, or search-index record for OAI) --CCMMXMLSerial
   best effort - XSD errors are logged as warnings, not raised.
 * The whole source XML is kept on the record in `ccmm_xml` (root field, copied between draft and
   record on publish / edit / new version by `RootRecordComponent`).
-* The model also registers the RDM complete exports (`CCMMRDMExportsPreset` - dublincore,
+* The model also registers the RDM complete exports (`RDMCompleteExportsPreset` - dublincore,
   datacite-json, geojson, csl, bibtex, jsonld, csv, datapackage, citation; the metadata is a
-  superset of what they need). `marcxml`, `dcat` and `datacite-xml` are left out: their
-  serializers need the expanded subject titles, and subjects are not expanded in this model
-  yet (only `{"id"}` arrives). Import is json + ccmm-xml (no ro-crate).
+  superset of what they need). `marcxml`, `dcat` and `datacite-xml` are registered but fail on
+  the expanded subject titles (subjects dump as `{"id"}` only, no title) until oarepo-rdm
+  expands the subjects relation - see the known gaps. Import is json + ccmm-xml (no ro-crate).
 
 ### The schemas (`resources/serializers/ccmm/schema/`)
 
@@ -191,7 +191,9 @@ Remaining differences of a CCMM XML → record → CCMM XML round trip (`ccmm_sa
 * Considered, not done: export the stored `ccmm_xml` as-is for records not edited since import
   (lossless for harvested records); fill RDM-less details back from `ccmm_xml` after edits.
 * **Subjects are not expanded** in the record dump (the `{id}` only, no title), so the RDM
-  exports that index `subject["subject"]` are not registered (`marcxml`, `dcat`, `datacite-xml`).
-  Wire the subject relation expansion before enabling them.
+  exports that index `subject["subject"]` (`marcxml`, `dcat`, `datacite-xml`) 500 on records
+  with subjects. The expansion (the subjects relation of `RDMSubject` in oarepo-rdm) is being
+  fixed upstream; `tests/test_rdm_exports.py` guards the flip (strict xfail → remove
+  `NEEDS_SUBJECT_EXPANSION` then).
 * The UI does not show / edit `metadata_identifications` yet; `related_identifiers` should not be
   editable in the deposit form (it is derived and overwritten).
