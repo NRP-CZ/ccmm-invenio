@@ -14,6 +14,12 @@ dependencies = [
     "oarepo-model>=5.0.0,<6.0.0",
     "oarepo-rdm>=8.0.0,<9.0.0",
     "langdetect>=1.0.9",
+    "idutils",
+    "pycountry",
+    "pygml>=0.3.2",
+    "pyproj>=3.8.0",
+    "shapely>=2.1.2",
+    "xmlschema>=4.3.2,<5.0.0",
     "oarepo-related-resources>=5.0.0,<6.0.0",
 
     # invenio dependencies
@@ -26,9 +32,13 @@ Homepage = "https://github.com/NRP-CZ/ccmm-invenio"
 [project.optional-dependencies]
 compile-vocabularies = [
     "click",
+    "idutils",
+    "pycountry",
+    "pygml>=0.3.2",
+    "pyproj>=3.8.0",
+    "shapely>=2.1.2",
     "pyyaml",
     "rdflib",
-    "tenacity",
     "tqdm",
 ]
 
