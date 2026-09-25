@@ -1,0 +1,78 @@
+- id: abstract
+  title:
+    cs: Abstrakt
+    en: Abstract
+  props:
+    datacite: Abstract
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Abstract
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/descriptionType/Abstract
+    scheme: https://w3id.org/tib/datacite/vocab/descriptionType/
+    relation: exactMatch
+- id: methods
+  title:
+    cs: Metodologie
+    en: Methods
+  props:
+    datacite: Methods
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Methods
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/descriptionType/Methods
+    scheme: https://w3id.org/tib/datacite/vocab/descriptionType/
+    relation: exactMatch
+- id: other
+  title:
+    cs: Jiný
+    en: Other
+  props:
+    datacite: Other
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/descriptionType/Other
+    scheme: https://w3id.org/tib/datacite/vocab/descriptionType/
+    relation: exactMatch
+- id: series-information
+  title:
+    cs: Informace o sérii
+    en: Series Information
+  props:
+    datacite: SeriesInformation
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/SeriesInformation
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/descriptionType/SeriesInformation
+    scheme: https://w3id.org/tib/datacite/vocab/descriptionType/
+    relation: exactMatch
+- id: table-of-contents
+  title:
+    cs: Obsah
+    en: Table Of Contents
+  props:
+    datacite: TableOfContents
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TableOfContents
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/descriptionType/TableOfContents
+    scheme: https://w3id.org/tib/datacite/vocab/descriptionType/
+    relation: exactMatch
+- id: technical-info
+  title:
+    cs: Technická informace
+    en: Technical Info
+  props:
+    datacite: TechnicalInfo
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/TechnicalInfo
+    scheme: https://vocabs.ccmm.cz/registry/codelist/DescriptionType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/descriptionType/TechnicalInfo
+    scheme: https://w3id.org/tib/datacite/vocab/descriptionType/
+    relation: exactMatch

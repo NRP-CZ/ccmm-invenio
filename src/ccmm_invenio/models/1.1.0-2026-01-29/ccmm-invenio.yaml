@@ -1,12 +1,10 @@
 #
-# This file is a "production" version of the CCMM schema. It takes types from CCMM
-# wherever it makes sense from the invenio point of view.
-# In many places, RDM fields are used instead so that we do not have to reimplement
-# the whole validation/ui logic.
+# The CCMM dataset in Invenio (CCMMDataset). RDM fields are used wherever RDM has an
+# equivalent, so that we do not have to reimplement the whole validation/ui logic;
+# the rest takes its types from CCMM (ccmm.yaml).
 #
-# Even though IRIs are left in the schema, they are not used in the Invenio implementation.
-# Because we can not know what they mean, they are not shown on the UI detail page
-# nor they are editable in the UI forms
+# The IRIs are stored and exported to CCMM XML as they came, but they are not shown on
+# the UI detail page nor are they editable in the UI forms.
 #
 CCMMRootRecord:
   type: object
@@ -14,9 +12,10 @@ CCMMRootRecord:
     ccmm_xml:
       type: keyword
       index: false
+
 CCMMInvenioRelatedResource:
   type: object
-  ui_marshmallow_schema_class: ccmm_invenio.serializers.related_resources_ui.CCMMRelatedResourceUISchema
+  ui_marshmallow_schema_class: ccmm_invenio.resources.serializers.ui.related_resources.CCMMRelatedResourceUISchema
   properties:
     publication_date:
       type: RDMPublicationDate
@@ -161,11 +160,85 @@ CCMMInvenioRelatedResource:
         en: Source identifier URL this related resource was imported from (e.g. DOI URL). Empty for manual entries.
         cs: URL identifikátoru zdroje, ze kterého byl tento související zdroj importován (např. DOI URL). Prázdné pro ručně zadané záznamy.
 
+    iri:
+      type: keyword
+      label:
+        en: IRI
+        cs: IRI
+      hint:
+        en: International Resource Identifier (IRI) of the related resource.
+        cs: International Resource Identifier (IRI) souvisejícího zdroje.
+
+    resource_url:
+      type: keyword
+      label:
+        en: Resource URL
+        cs: URL zdroje
+      hint:
+        en: URL of the related resource.
+        cs: URL souvisejícího zdroje.
+
+CCMMInvenioMetadataRecord:
+  # ccmm metadata record (CCMMMetadataRecord) with the agents as RDM contributors
+  type: object
+  properties:
+    iri:
+      type: keyword
+      label:
+        en: IRI
+        cs: IRI
+    conforms_to_standards:
+      type: array
+      items:
+        type: CCMMApplicationProfile
+      label:
+        en: Conforms to standards
+        cs: Odpovídá standardům
+    date_created:
+      type: date
+      label:
+        en: Date created
+        cs: Datum vytvoření
+    date_updated:
+      # 0..n in the ccmm xsd
+      type: array
+      items:
+        type: date
+      label:
+        en: Dates updated
+        cs: Data aktualizace
+    languages:
+      type: array
+      items:
+        type: CCMMLanguageSystem
+      label:
+        en: Languages
+        cs: Jazyky
+    original_repository:
+      type: CCMMRepository
+      required: true
+      label:
+        en: Original repository
+        cs: Původní repozitář
+    qualified_relations:
+      # the agents with their roles (at least one Data Manager in ccmm), as RDM contributors
+      type: RDMContributors
+      required: true
+      label:
+        en: Agents
+        cs: Agenti
+
 CCMMDataset:
   type: object
   properties:
-    # iri:
-    # IRI is not used inside schema as it is
+    iri:
+      type: keyword
+      label:
+        en: IRI
+        cs: IRI
+      hint:
+        en: International Resource Identifier (IRI) of the dataset.
+        cs: International Resource Identifier (IRI) datasetu.
 
     # we use RDM publication date as it is, publication_year is derived from it
     publication_date:
@@ -210,21 +283,8 @@ CCMMDataset:
 
     # publisher in ccmm is in qualified relations, in RDM it is a separate field
     # in ccmm it is a complex structure (org, person, ...), in RDM it is just a string
-    # let's use RDMCreatibutor here and have the type locked in the UI
-    # ccmm_publisher:
-    #   type: RDMCreatibutor
-    #   label:
-    #     en: Publisher
-    #     cs: Vydavatel
-    #   hint:
-    #     en: The entity responsible for making the resource available.
-    #     cs: Entita odpovědná za zpřístupnění zdroje.
-    #   help:
-    #     en: Provide the name of the organization or individual that published the dataset. This may differ from the creators or contributors.
-    #     cs: Uveďte název organizace nebo jednotlivce, který publikoval datovou sadu. To se může lišit od autorů nebo přispěvatelů.
-    #   ui:
-    #     options:
-    #       fixed_type: organization
+    # we will use the string for now, in datacite 4.7 it will be a complex structure
+    # and we migrate then.
 
     # alternate_titles:
     # we use RDM's additional_titles and re-format them for CCMM export
@@ -242,9 +302,19 @@ CCMMDataset:
         en: Additional descriptions
         cs: Další popisy záznamu
 
-    # metadata_identifications:
-    # not present in production repository as it is constructed from the technical
-    # invenio metadata
+    # the metadata records of a harvested (3rd party) dataset, stored as they came; a dataset
+    # created here has none - its metadata record is made from the technical invenio metadata
+    # on export. Not shown / edited in the UI yet.
+    metadata_identifications:
+      type: array
+      items:
+        type: CCMMInvenioMetadataRecord
+      label:
+        en: Metadata records
+        cs: Metadatové záznamy
+      hint:
+        en: Identification of the original metadata record of a harvested dataset.
+        cs: Identifikace původního metadatového záznamu sklizené datové sady.
 
     # identifiers:
     # invenio RDM identifiers are usede instead
@@ -273,7 +343,7 @@ CCMMDataset:
         cs: Uveďte, čeho se data prostorově týkají nebo kde byla sbírána. Použijte ohraničující boxy, geometrie a názvy míst.
 
     # provenances:
-    # not finalized in ccmm, therefore removed from production repositories
+    # not finalized in ccmm, therefore not stored
 
     # qualified_relations:
     # in Invenio, we have Creators and Contributors, not qualified relations
@@ -308,8 +378,6 @@ CCMMDataset:
         cs: Uveďte období pokrytí, datumy sběru nebo jiné časové aspekty pomocí okamžiků či intervalů.
 
     # taken from Invenio
-    # TODO: do we want to do it? Invenio does not have
-    # i18n for subjects right now
     subjects:
       label:
         en: Subjects
@@ -317,11 +385,20 @@ CCMMDataset:
       type: RDMSubjects
 
     # validation_results:
-    # not finalized in ccmm, therefore removed from production repositories
+    # not finalized in ccmm, therefore not stored
 
-    # distributions:
-    # At the moment, in RDM we support only file distributions, not services.
-    # and files have their own API, so this is not used.
+    distributions:
+      # data services and downloadable files described by the source (a harvested dataset); the files
+      # uploaded to the record are added as downloadable files on the ccmm export
+      type: array
+      items:
+        type: CCMMDistribution
+      label:
+        en: Distributions
+        cs: Distribuce
+      help:
+        en: Information about the available distributions of the dataset.
+        cs: Informace o dostupných distribucích datové sady.
 
     # funding_references:
     # we use RDM funding

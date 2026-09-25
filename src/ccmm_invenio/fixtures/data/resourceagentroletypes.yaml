@@ -1,0 +1,589 @@
+- id: contactperson
+  title:
+    cs: Kontaktní osoba
+    en: Contact Person
+  description:
+    cs: "Osoba se znalostí možností přístupu ke zdroji a jeho případná omezení, může\
+      \ řešit problémy související s dostupností zdroje. \r\nMůže být také „kontaktní\
+      \ osobou“ v organizaci, která určuje přístup ke zdroji, pokud se tato organizace\
+      \ liší od vydavatele, distributora a správce dat."
+    en: "Person with knowledge of how to access, troubleshoot, or otherwise field\
+      \ issues related to the resource.\r\nMay also be the “Point of Contact” in an\
+      \ organisation that controls access to the resource, if that organisation is\
+      \ different from the Publisher, Distributor, and Data Manager."
+  props:
+    datacite: ContactPerson
+    marc: prc
+    openaire: ContactPerson
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ContactPerson
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/ContactPerson
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: contributor
+  title:
+    cs: Přispěvatel
+    en: Contributor
+  description:
+    cs: Instituce nebo osoba, která přispěla k vytvoření, kompletaci, správě, distribuci
+      datasetu nebo se podílela na vzniku zdroje jiným způsobem. Chcete-li uvést více
+      přispěvatelů, uveďte tuto roli opakovaně.
+    en: The institution or person responsible for collecting, managing, distributing,
+      or otherwise contributing to the development of the resource. To supply multiple
+      contributors, repeat this property.
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+    relation: exactMatch
+- id: creator
+  title:
+    cs: Autor
+    en: Creator
+  description:
+    cs: Hlavní tvůrci (výzkumníci) zapojení do tvorby dat nebo autoři publikace, v
+      pořadí podle priority. U přístrojů se jedná o výrobce nebo vývojáře přístroje.
+      Chcete-li uvést více tvůrců, uveďte tuto roli opakovaně.
+    en: The main researchers involved in producing the data, or the authors of the
+      publication, in priority order. For instruments this is the manufacturer or
+      developer of the instrument. To supply multiple creators, repeat this property.
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+    relation: exactMatch
+- id: datacollector
+  title:
+    cs: Sběratel dat
+    en: Data Collector
+  description:
+    cs: "Osoba/instituce odpovědná za vyhledávání nebo shromažďování dat podle pokynů\
+      \ autora/autorek nebo hlavního řešitele. \r\nLze také použít pro autory průzkumu,\
+      \ tazatele, pozorovatele událostí nebo podmínek nebo osob odpovědných za monitorování\
+      \ klíčových dat z přístrojů."
+    en: "Person/institution responsible for finding or gathering/collecting data under\
+      \ the guidelines of the author(s) or Principal Investigator (PI).\r\nMay also\
+      \ be used when crediting survey conductors, interviewers, event or condition\
+      \ observers, or persons responsible for monitoring key instrument data."
+  props:
+    datacite: DataCollector
+    marc: col
+    openaire: DataCollector
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCollector
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/DataCollector
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: datacurator
+  title:
+    cs: Kurátor dat
+    en: Data Curator
+  description:
+    cs: "Osoba pověřená kontrolou, obohacením, čištěním nebo standardizací metadat\
+      \ a souvisejících dat odeslaných k uložení, použití a archivaci v datovém centru\
+      \ nebo repozitáři. \r\nZatímco správce dat se zabývá digitální údržbou, role\
+      \ kurátora dat zahrnuje zajištění kvality zaměřené na obsah a metadata. Mezi\
+      \ odpovědnosti kurátora dat patří: kontrola úplnosti odeslaného datasetu oproti\
+      \ obsahu datasetu popsaného odesílatelem; zajištění a kontrola metadatového\
+      \ popisu podle pravidel příslušného schématu či systému; přidávání nebo ověřování\
+      \ specializovaných metadat za účelem zvýšení hodnoty a zajištění přístupu napříč\
+      \ obory; a určení, jak by se metadata mohla mapovat na vyhledávače, databázové\
+      \ produkty atd. Do této kategorie spadají i správci repozitářů a také datoví\
+      \ knihovníci v roli kurátora daného repozitáře."
+    en: "Person tasked with reviewing, enhancing, cleaning, or standardizing metadata\
+      \ and the associated data submitted for storage, use, and maintenance within\
+      \ a data centre or repository.\r\nWhile the DataManager is concerned with digital\
+      \ maintenance, the DataCurator’s role encompasses quality assurance focused\
+      \ on content and metadata. DataCurator responsibilities include: checking completeness\
+      \ of the submitted dataset against the content as described by the submitter;\
+      \ verifying standard metadata according to the applicable system or schema;\
+      \ adding or verifying specialized metadata to add value and ensure access across\
+      \ disciplines; and determining how the metadata might map to search engines,\
+      \ database products, and automated feeds.\r\nRepository managers as well as\
+      \ data librarians working in the repository fall within this category."
+  props:
+    datacite: DataCurator
+    marc: cur
+    openaire: DataCurator
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataCurator
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/DataCurator
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: datamanager
+  title:
+    cs: Správce dat
+    en: Data Manager
+  description:
+    cs: "Osoba (nebo organizace s týmem správců dat, například datové centrum) odpovědná\
+      \ za údržbu hotového zdroje. \r\nOsoba nebo organizace v této roli zajišťuje,\
+      \ že zdroj je pravidelně „aktualizován“ z hlediska softwarové/hardwarové podpory,\
+      \ je zajištěna jeho dostupnost nebo ochrana před neoprávněným přístupem, uložení\
+      \ v souladu s oborovými standardy a že je se zdrojem nakládáno v souladu s platnými\
+      \ požadavky na správu záznamů."
+    en: "Person (or organisation with a staff of data managers, such as a data centre)\
+      \ responsible for maintaining the finished resource.\r\nThe work done by this\
+      \ person or organisation ensures that the resource is periodically “refreshed”\
+      \ in terms of software/hardware support, is kept available or is protected from\
+      \ unauthorized access, is stored in accordance with industry standards, and\
+      \ is handled in accordance with the records management requirements applicable\
+      \ to it."
+  props:
+    datacite: DataManager
+    marc: dtm
+    openaire: DataManager
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/DataManager
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/DataManager
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: distributor
+  title:
+    cs: Distributor
+    en: Distributor
+  description:
+    cs: "Instituce pověřená generováním/šířením kopií zdroje v elektronické nebo tištěné\
+      \ podobě. \r\nPokud jsou díla uložená ve více než jednom archivu/repozitáři,\
+      \ je možné jako distributora uvést oba archivy/repozitáře."
+    en: "Institution tasked with responsibility to generate/disseminate copies of\
+      \ the resource in either electronic or print form.\r\nWorks stored in more than\
+      \ one archive/repository may credit each as a distributor."
+  props:
+    datacite: Distributor
+    marc: dst
+    openaire: Distributor
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Distributor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/Distributor
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: editor
+  title:
+    cs: Editor
+    en: Editor
+  description:
+    cs: "Osoba, která dohlíží na detaily týkající se publikačního formátu zdroje.\
+      \ \r\nPoznámka: Pokud má být editor uveden místo více tvůrců, může být uveden\
+      \ i jako tvůrce s připojeným „(Ed.)“ za jménem."
+    en: "A person who oversees the details related to the publication format of the\
+      \ resource.\r\nNote: if the Editor is to be credited in place of multiple creators,\
+      \ the Editor’s name may be supplied as Creator, with “(Ed.)” appended to the\
+      \ name."
+  props:
+    datacite: Editor
+    marc: edt
+    openaire: Editor
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Editor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/Editor
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: hostinginstitution
+  title:
+    cs: Hostující instituce
+    en: Hosting Institution
+  description:
+    cs: "Obvykle se jedná o organizaci, která umožňuje zpřístupnění zdroje na internetu\
+      \ prostřednictvím poskytování hardwarové/softwarové/provozní podpory. \r\nTato\
+      \ role obvykle připadá univerzitě, výzkumnému centru nebo organizaci, která\
+      \ datové úložiště provozuje."
+    en: "Typically, the organisation allowing the resource to be available on the\
+      \ internet through the provision of its hardware/software/operating support.\r\
+      \nThis role normally falls on the University, research center or organization\
+      \ where the data center/data repository belongs."
+  props:
+    datacite: HostingInstitution
+    marc: his
+    openaire: HostingInstitution
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/HostingInstitution
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/HostingInstitution
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: other
+  title:
+    cs: Jiná role
+    en: Other
+  description:
+    cs: "Jakákoli osoba nebo instituce, která významně přispívá k vývoji a/nebo údržbě\
+      \ zdroje, ale jejíž příspěvek není dostatečně popsán žádnou z ostatních hodnot\
+      \ ve slovníku AgentRole. \r\nMůže se jednat o fotografa, umělce nebo spisovatele,\
+      \ jehož počin pomohl zdroj zveřejnit (na rozdíl od jeho vytvoření), recenzenta\
+      \ zdroje, někoho, kdo poskytuje autorovi administrativní služby (například ukládání\
+      \ aktualizací do online repozitáře, analýza používání atd.) nebo jednu z mnoha\
+      \ dalších rolí."
+    en: "Any person or institution making a significant contribution to the development\
+      \ and/or maintenance of the resource, but whose contribution is not adequately\
+      \ described by any of the other values for contributorType.\r\nCould be a photographer,\
+      \ artist, or writer whose contribution helped to publicize the resource (as\
+      \ opposed to creating it), a reviewer of the resource, someone providing administrative\
+      \ services to the author (such as depositing updates into an online repository,\
+      \ analysing usage, etc.), or one of many other roles."
+  props:
+    datacite: Other
+    marc: oth
+    openaire: Other
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/Other
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: producer
+  title:
+    cs: Producent
+    en: Producer
+  description:
+    cs: Obvykle osoba nebo organizace zodpovědná za umělecké zpracování a formu mediálního
+      produktu. V datovém průmyslu se může jednat o společnost „produkující“ DVD pro
+      budoucí šíření distributorem.
+    en: "Typically, a person or organisation responsible for the artistry and form\
+      \ of a media product.\r\nIn the data industry, this may be a company “producing”\
+      \ DVDs that package data for future dissemination by a distributor."
+  props:
+    datacite: Producer
+    marc: pro
+    openaire: Producer
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Producer
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/Producer
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: projectleader
+  title:
+    cs: Vedoucí projektu
+    en: Project Leader
+  description:
+    cs: "Osoba, která je oficiálně vedoucím projektového týmu nebo dílčího projektového\
+      \ týmu a podílí se na práci nezbytné pro vývoj zdroje.  \r\nVedoucí projektu\
+      \ zůstává úzce zapojen do práce po celou dobu existence daného projektového\
+      \ týmu."
+    en: "Person officially designated as head of project team or sub- project team\
+      \ instrumental in the work necessary to development of the resource.\r\nThe\
+      \ Project Leader is not “removed” from the work that resulted in the resource;\
+      \ he or she remains intimately involved throughout the life of the particular\
+      \ project team."
+  props:
+    datacite: ProjectLeader
+    marc: pdr
+    openaire: ProjectLeader
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectLeader
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/ProjectLeader
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: projectmanager
+  title:
+    cs: Projektový manažer
+    en: Project Manager
+  description:
+    cs: "Osoba, která je oficiálně manažerem projektu. Projekt se může skládat z jednoho\
+      \ nebo více projektových týmů a podtýmů. \r\nManažer projektu má obvykle více\
+      \ administrativní odpovědnosti než skutečné pracovní účasti."
+    en: "Person officially designated as manager of a project. Project may consist\
+      \ of one or many project teams and sub-teams.\r\nThe manager of a project normally\
+      \ has more administrative responsibility than actual work involvement."
+  props:
+    datacite: ProjectManager
+    marc: rth
+    openaire: ProjectManager
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectManager
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/ProjectManager
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: projectmember
+  title:
+    cs: Člen projektového týmu
+    en: Project Member
+  description:
+    cs: "Člen určitého projektu/projektového týmu. \r\nTento slovník neupřesňuje míru\
+      \ zapojení dané osoby."
+    en: "Person on the membership list of a designated project/project team.\r\nThis\
+      \ vocabulary may or may not indicate the quality, quantity, or substance of\
+      \ the person’s involvement."
+  props:
+    datacite: ProjectMember
+    marc: rtm
+    openaire: ProjectMember
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ProjectMember
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/ProjectMember
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: publisher
+  title:
+    cs: Vydavatel
+    en: Publisher
+  description:
+    cs: Název subjektu, který zdroj uchovává, archivuje, publikuje, distribuuje, zveřejňuje,
+      vydává nebo produkuje. Tento popisný údaj slouží následně k citování a žádosti
+      o DOI, proto je třeba zvážit určení této role.
+    en: The name of the entity that holds, archives, publishes, prints, distributes,
+      releases, issues, or produces the resource. This property will be used to formulate
+      the citation, so consider the prominence of the role.
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Publisher
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/
+    relation: exactMatch
+- id: registrationagency
+  title:
+    cs: Registrační agentura
+    en: Registration Agency
+  description:
+    cs: "Instituce/organizace oficiálně pověřená registračním orgánem k vyřizování\
+      \ specifických úkolů v rámci definované oblasti odpovědnosti. \r\nDataCite je\
+      \ jednou z registračních agentur Mezinárodní nadace DOI (IDF). Jedním z úkolů\
+      \ DataCite je přiřazovat prefixy DOI agentům (konsorciím či jednotlivým provozovatelům\
+      \ služeb), kteří poté přiřazují identifikátory DOI uživatelům, poskytují metadata\
+      \ zpět do registru DataCite atd."
+    en: "Institution/organisation officially appointed by a Registration Authority\
+      \ to handle specific tasks within a defined area of responsibility.\r\nDataCite\
+      \ is a Registration Agency for the International DOI Foundation (IDF). One of\
+      \ DataCite’s tasks is to assign DOI prefixes to the allocating agents who then\
+      \ assign the full, specific character string to data clients, provide metadata\
+      \ back to the DataCite registry, etc."
+  props:
+    datacite: RegistrationAgency
+    marc: cor
+    openaire: RegistrationAgency
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAgency
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/RegistrationAgency
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: registrationauthority
+  title:
+    cs: Registrační autorita
+    en: Registration Authority
+  description:
+    cs: Normalizační orgán, od kterého registrační agentury získávají oficiální uznání
+      a pokyny. IDF slouží jako registrační orgán pro Mezinárodní organizaci pro normalizaci
+      (ISO) v oblasti digitálních identifikátorů objektů.
+    en: "A standards-setting body from which Registration Agencies obtain official\
+      \ recognition and guidance.\r\nThe IDF serves as the Registration Authority\
+      \ for the International Standards Organisation (ISO) in the area/domain of Digital\
+      \ Object Identifiers."
+  props:
+    datacite: RegistrationAuthority
+    marc: cor
+    openaire: RegistrationAuthority
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RegistrationAuthority
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/RegistrationAuthority
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: relatedperson
+  title:
+    cs: Související osoba
+    en: Related Person
+  description:
+    cs: "Osoba bez konkrétně definované role při tvorbě datasetu, ale autor si přeje\
+      \ tuto osobu uvést. \r\nPoznámky k použití: Tato osoba může být autorův intelektuální\
+      \ mentor, osoba poskytující intelektuální vedení v daném oboru atd."
+    en: "A person without a specifically defined role in the development of the resource,\
+      \ but who is someone the author wishes to recognize.\r\nUsage Notes: This person\
+      \ could be an author’s intellectual mentor, a person providing intellectual\
+      \ leadership in the discipline or subject domain, etc."
+  props:
+    datacite: RelatedPerson
+    marc: oth
+    openaire: RelatedPerson
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RelatedPerson
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/RelatedPerson
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: researcher
+  title:
+    cs: Výzkumník
+    en: Researcher
+  description:
+    cs: "Osoba podílející se na analýze dat nebo na výsledích experimentu či studie.\
+      \ Může označovat i stážistu nebo asistenta jednoho z autorů, který sice pomáhal\
+      \ s výzkumem, ale nebyl natolik „klíčový“, aby byl uveden jako autor. \r\nMělo\
+      \ by se jednat o osobu, nikoli o instituci. Upozorňujeme, že osoba podílející\
+      \ se na shromažďování dat by spadala pod typ přispěvatele „Sběratel dat“. Výzkumník\
+      \ může například najít další data online a porovnat je s daty shromážděnými\
+      \ pro experiment nebo studii."
+    en: "A person involved in analysing data or the results of an experiment or formal\
+      \ study. May indicate an intern or assistant to one of the authors who helped\
+      \ with research but who was not so “key” as to be listed as an author.\r\nShould\
+      \ be a person, not an institution. Note that a person involved in the gathering\
+      \ of data would fall under the contributorType “DataCollector.” The researcher\
+      \ may find additional data online and correlate it to the data collected for\
+      \ the experiment or study, for example."
+  props:
+    datacite: Researcher
+    marc: res
+    openaire: Researcher
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Researcher
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/Researcher
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: researchgroup
+  title:
+    cs: Výzkumná skupina
+    en: Research Group
+  description:
+    cs: "Obvykle se vztahuje na skupinu jednotlivců, pracující v určité laboratoři,\
+      \ oddělení nebo divizi, která má specificky definované zaměření činnosti. \r\
+      \nMůže fungovat v užším rozsahu; může, ale nemusí mít menší administrativní\
+      \ odpovědnost než projektový tým."
+    en: "Typically refers to a group of individuals with a lab, department, or division\
+      \ that has a specifically defined focus of activity.\r\nMay operate at a narrower\
+      \ level of scope; may or may not hold less administrative responsibility than\
+      \ a project team."
+  props:
+    datacite: ResearchGroup
+    marc: rtm
+    openaire: ResearchGroup
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/ResearchGroup
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/ResearchGroup
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: rightsholder
+  title:
+    cs: Majitel práv
+    en: Rights Holder
+  description:
+    cs: Osoba nebo instituce, která vlastní nebo spravuje majetková práva, včetně
+      práv duševního vlastnictví k danému zdroji.
+    en: Person or institution owning or managing property rights, including intellectual
+      property rights over the resource.
+  props:
+    datacite: RightsHolder
+    marc: cph
+    openaire: RightsHolder
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/RightsHolder
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/RightsHolder
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: sponsor
+  title:
+    cs: Sponzor
+    en: Sponsor
+  description:
+    cs: "Osoba nebo organizace, která poskytla smlouvu na dotaci nebo pod jejíž záštitou\
+      \ byl zdroj vytvořen, sestaven či vyvinut atd. \r\nZahrnuje organizace, které\
+      \ poskytují věcnou podporu prostřednictvím darů, poskytnutí personálu, zařízení\
+      \ či přístrojů nezbytných pro vývoj zdroje atd."
+    en: "Person or organisation that issued a contract or under the auspices of which\
+      \ a work has been written, printed, published, developed, etc.\r\nIncludes organisations\
+      \ that provide in-kind support, through donation, provision of people or a facility\
+      \ or instrumentation necessary for the development of the resource, etc."
+  props:
+    datacite: Sponsor
+    marc: spn
+    openaire: Sponsor
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Sponsor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/Sponsor
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: supervisor
+  title:
+    cs: Supervizor
+    en: Supervisor
+  description:
+    cs: Určený supervizor nad jednou nebo více skupinami/týmy pracujícími na tvorbě
+      zdroje nebo nad jedním či více kroky vývojového procesu.
+    en: Designated administrator over one or more groups/teams working to produce
+      a resource, or over one or more steps of a development process.
+  props:
+    datacite: Supervisor
+    marc: dgs
+    openaire: Supervisor
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Supervisor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/Supervisor
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: translator
+  title:
+    cs: Překladatel
+    en: Translator
+  description:
+    cs: "Osoba, organizace nebo systém zodpovědný za převod obsahu zdroje z jednoho\
+      \ jazyka do jiného, ​​přičemž zachovává jeho význam a zamýšlené sdělení. \r\n\
+      Tento typ přispěvatele by měl být použit pro metadata DOI pro zdroj, který byl\
+      \ přeložen z jiného zdroje."
+    en: "A person, organization, or automated system responsible for converting the\
+      \ content of a resource from one language into another, preserving its meaning\
+      \ and intended message.\r\nThis contributor type should be applied to DOI metadata\
+      \ for a resource which has been translated from another resource."
+  props:
+    datacite: Translator
+    marc: trl
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/Translator
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/Translator
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch
+- id: workpackageleader
+  title:
+    cs: Vedoucí pracovního balíku
+    en: Work Package Leader
+  description:
+    cs: Pracovní balíček je uznaný datový produkt, jehož celý obsah nemusí být zahrnut
+      v publikaci. Balíček může však zahrnovat například poznámky, vyřazené dokumenty
+      apod. Vedoucí pracovního balíčku je odpovědný za zajištění úplnosti obsahu,
+      verzování a dostupnost pracovního balíčku během vývoje daného zdroje.
+    en: ' A Work Package is a recognized data product, not all of which is included
+      in publication. The package, instead, may include notes, discarded documents,
+      etc. The Work Package Leader is responsible for ensuring the comprehensive contents,
+      versioning, and availability of the Work Package during the development of the
+      resource.'
+  props:
+    datacite: WorkPackageLeader
+    marc: led
+    openaire: WorkPackageLeader
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/WorkPackageLeader
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/contributorType/WorkPackageLeader
+    scheme: https://w3id.org/tib/datacite/vocab/contributorType/
+    relation: exactMatch

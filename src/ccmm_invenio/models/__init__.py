@@ -6,23 +6,13 @@
 # ccmm-invenio is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 #
-"""ccmm-invenio preset."""
+"""The ccmm model preset (`ccmm_preset_1_1_0`, alias `ccmm_production_preset_1_1_0`)."""
 
 from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, override
 
-from flask_resources.deserializers import DeserializerMixin
-from invenio_access.permissions import system_identity
 from invenio_i18n import lazy_gettext as _
-from invenio_rdm_records.resources.config import csl_url_args_retriever
-from invenio_rdm_records.resources.serializers import (
-    CSLJSONSerializer,  # type: ignore[reportAttributeAccessIssue]
-    StringCitationSerializer,  # type: ignore[reportAttributeAccessIssue]
-)
-from invenio_records_resources.services.records.components import ServiceComponent
-from invenio_vocabularies.proxies import current_service as vocabulary_service
-from lxml.etree import fromstring
 from oarepo_model import from_yaml
 from oarepo_model.api import FunctionalPreset
 from oarepo_model.customizations import (
@@ -35,53 +25,40 @@ from oarepo_model.customizations import (
 )
 from oarepo_model.presets import Preset
 from oarepo_rdm.model.presets import rdm_minimal_preset
+from oarepo_rdm.model.presets.rdm.resources.records.exports import RDMCompleteExportsPreset
 from oarepo_rdm.model.presets.rdm.services.records.rdm_record_ui_schema import (
     RDMCompleteRecordUISchemaPreset,
 )
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
 
-from ccmm_invenio.parsers.production_1_1_0 import CCMMXMLProductionParser
-
-from ..serializers import (
-    CCMMNMADataCiteJSONSerializer_1_1_0,
-    CCMMProductionDataCiteJSONSerializer_1_1_0,
-)
+from ..resources.deserializers import CCMMJSONDeserializer
+from ..resources.serializers import CCMMXMLSerializer
+from ..resources.serializers.ccmm import CCMM_XML_MIMETYPE
+from ..resources.serializers.json import JSONWithoutRelatedIdentifiersSerializer
+from ..services.components import RelatedIdentifiersComponent, RootRecordComponent
+from .customizations import ReplaceExportSerializer
 
 if TYPE_CHECKING:
     from collections.abc import Generator
 
-    from flask_principal import Identity
-    from invenio_records.api import Record
     from oarepo_model.builder import InvenioModelBuilder
     from oarepo_model.model import InvenioModel
 
 
-def ccmm_1_1_0() -> dict[str, Any]:
-    """Return RDM specific model types."""
-    return {
-        **from_yaml("1.1.0-2026-01-29/ccmm.yaml", __file__),
-        **from_yaml("1.1.0-2026-01-29/ccmm-vocabularies.yaml", __file__),
-        **from_yaml("1.1.0-2026-01-29/geojson-1.1.0.yaml", __file__),
-        **from_yaml("1.1.0-2026-01-29/gml-1.1.0.yaml", __file__),
-    }
-
-
-def ccmm_production_1_1_0() -> dict[str, Any]:
-    """Return RDM specific model types."""
+def ccmm_types_1_1_0() -> dict[str, Any]:
+    """Return the model types: the used CCMM types, the dataset (RDM based) and the vocabularies."""
     return {
         **from_yaml("1.1.0-2026-01-29/ccmm.yaml", __file__),
         **from_yaml("1.1.0-2026-01-29/ccmm-invenio.yaml", __file__),
         **from_yaml("1.1.0-2026-01-29/ccmm-vocabularies.yaml", __file__),
-        **from_yaml("1.1.0-2026-01-29/geojson-1.1.0.yaml", __file__),
-        **from_yaml("1.1.0-2026-01-29/gml-1.1.0.yaml", __file__),
     }
 
 
-class CCMMBaseMetadataPreset(FunctionalPreset):
-    """Preset for CCMM metadata."""
+class CCMMMetadataPreset(FunctionalPreset):
+    """Preset adding the CCMM dataset (CCMMDataset) to the metadata of the model."""
 
-    types: dict[str, Any]
-    metadata_type: str
+    types = ccmm_types_1_1_0()
+    metadata_type = "CCMMDataset"
 
     @override
     def before_invenio_model(self, params: dict[str, Any]) -> None:
@@ -104,8 +81,8 @@ class CCMMBaseMetadataPreset(FunctionalPreset):
         merge_metadata(types, metadata_type, self.metadata_type)
 
 
-class CCMMProductionCustomizationPreset(Preset):
-    """Preset for CCMM production metadata customizations."""
+class CCMMExportPreset(Preset):
+    """Preset adding the CCMM XML export (also OAI-PMH)."""
 
     modifies = ("exports",)
 
@@ -118,79 +95,13 @@ class CCMMProductionCustomizationPreset(Preset):
     ) -> Generator[Customization]:
         """Apply the preset."""
         yield AddMetadataExport(
-            code="datacite",
-            name=_("Datacite export"),
-            mimetype="application/vnd.datacite.datacite+json",
-            serializer=CCMMProductionDataCiteJSONSerializer_1_1_0(),
-        )
-        yield AddMetadataExport(
-            code="citation",
-            name=_("Citation"),
-            mimetype="text/x-bibliography",
-            serializer=StringCitationSerializer(url_args_retriever=csl_url_args_retriever),
-            display=False,
-        )
-        yield AddMetadataExport(
-            code="citation-json",
-            name=_("Citation"),
-            mimetype="application/vnd.citationstyles.csl+json",
-            serializer=CSLJSONSerializer(),
-        )
-
-
-class CCMMProductionDeserializer(DeserializerMixin):
-    """CCMM Invenio metadata deserializer."""
-
-    def __init__(self, parser: type[CCMMXMLProductionParser], vocabulary_loader: Any):
-        """Construct."""
-        self.parser = parser
-        self.vocabulary_loader = vocabulary_loader
-        super().__init__()
-
-    def deserialize(self, data: bytes) -> dict:
-        """Deserialize data."""
-        root_el = fromstring(data)
-        return self.parser(vocabulary_loader=self.vocabulary_loader).parse(root_el)
-
-
-def invenio_vocabulary_loader(vocabulary_type: str, iri: str) -> str:
-    """Load vocabulary from IRI."""
-    if vocabulary_type == "resourcerelationtypes":
-        vocabulary_type = "relationtypes"
-
-    # TODO: add mediatypes to IRI
-    if vocabulary_type == "mediatypes":
-        return iri
-    if vocabulary_type == "fileformats":
-        vocabulary_type = "filetypes"
-
-    hits = vocabulary_service.search(identity=system_identity, type=vocabulary_type, params={"q": f'props.iri:"{iri}"'})
-    if hits.total == 0:
-        raise KeyError(f"iri {iri} not found for {vocabulary_type}")
-
-    voc = next(hits.hits)
-    return str(voc["id"])
-
-
-class SetCCMMImport(Customization):
-    """Set importer."""
-
-    def __init__(self, parser: type[CCMMXMLProductionParser], vocabulary_loader: Any):
-        """Construct importer with optional custom parser."""
-        self.parser = parser
-        self.vocabulary_loader = vocabulary_loader
-        super().__init__(name="SetCCMMImport")
-
-    def apply(self, builder: InvenioModelBuilder, model: InvenioModel) -> None:
-        """Apply importer with optional custom parser."""
-        AddMetadataImport(
             code="ccmm-xml",
-            name=_("CCMM import"),
-            mimetype="application/vnd.ccmm+xml",
-            description=_("CCMM XML export."),
-            deserializer=CCMMProductionDeserializer(parser=self.parser, vocabulary_loader=self.vocabulary_loader),
-            oai_name=("https://schema.ccmm.cz/research-data/1.1", "dataset"),
-        ).apply(builder, model)
+            name=_("CCMM export"),
+            mimetype=CCMM_XML_MIMETYPE,
+            serializer=CCMMXMLSerializer(),
+            oai_metadata_prefix="ccmm",
+            oai_namespace="https://schema.ccmm.cz/research-data/1.1",
+        )
 
 
 class CCMMImportPreset(Preset):
@@ -204,27 +115,13 @@ class CCMMImportPreset(Preset):
         dependencies: dict[str, Any],
     ) -> Generator[Customization]:
         """Apply the preset."""
-        yield SetCCMMImport(parser=CCMMXMLProductionParser, vocabulary_loader=invenio_vocabulary_loader)
-
-
-class CCMMNMACustomizationPreset(Preset):
-    """Preset for CCMM production metadata customizations."""
-
-    modifies = ("exports",)
-
-    @override
-    def apply(
-        self,
-        builder: InvenioModelBuilder,
-        model: InvenioModel,
-        dependencies: dict[str, Any],
-    ) -> Generator[Customization]:
-        """Apply the preset."""
-        yield AddMetadataExport(
-            code="datacite",
-            name=_("Datacite export"),
-            mimetype="application/vnd.datacite.datacite+json",
-            serializer=CCMMNMADataCiteJSONSerializer_1_1_0(),
+        yield AddMetadataImport(
+            code="ccmm-xml",
+            name=_("CCMM import"),
+            mimetype=CCMM_XML_MIMETYPE,
+            description=_("CCMM XML import."),
+            deserializer=CCMMJSONDeserializer(),
+            oai_name=("https://schema.ccmm.cz/research-data/1.1", "dataset"),
         )
 
 
@@ -241,36 +138,45 @@ class CCMMRootRecordComponentPreset(Preset):
     ) -> Generator[Customization]:
         """Yield component."""
         _, _, _ = builder, model, dependencies
-
-        class RootRecordComponent(ServiceComponent):
-            def create(
-                self,
-                identity: Identity,
-                data: dict | None = None,
-                record: Record | None = None,
-                errors: list | None = None,
-                **kwargs: Any,
-            ) -> None:
-                """Inject parsed metadata to the record."""
-                _, _, _ = identity, errors, kwargs
-                if data is not None and record is not None:
-                    record["ccmm_xml"] = data.get("ccmm_xml", "")
-
         yield AddToList("record_service_components", RootRecordComponent)
 
 
-class CCMMProductionPreset(CCMMBaseMetadataPreset):
-    """Preset for CCMM production metadata."""
+class CCMMRelatedIdentifiersComponentPreset(Preset):
+    """Preset deriving the RDM related identifiers from the ccmm related resources (see RelatedIdentifiersComponent)."""
 
-    types = ccmm_production_1_1_0()
-    metadata_type = "CCMMDataset"
+    modifies = ("record_service_components",)
+
+    @override
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Yield component."""
+        _, _, _ = builder, model, dependencies
+        yield AddToList("record_service_components", RelatedIdentifiersComponent)
 
 
-class CCMMNMAPreset(CCMMBaseMetadataPreset):
-    """Preset for CCMM production metadata."""
+class CCMMHideRelatedIdentifiersPreset(Preset):
+    """Preset removing the RDM related identifiers from the application/json export (provided by ExportsPreset).
 
-    types = ccmm_1_1_0()
-    metadata_type = "CCMMDataSet"
+    They are derived from the related resources (see CCMMRelatedIdentifiersComponentPreset) for RDM;
+    the API clients see the related resources. The UI JSON (read only) keeps them.
+    """
+
+    modifies = ("exports",)
+
+    @override
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Yield the customization."""
+        _, _, _ = builder, model, dependencies
+        yield ReplaceExportSerializer("json", JSONWithoutRelatedIdentifiersSerializer())
 
 
 class RootRecordFieldPreset(FunctionalPreset):
@@ -299,20 +205,19 @@ class CCMMIndexSettingsPreset(Preset):
         yield SetIndexNestedFieldsLimit(200)
 
 
-ccmm_nma_preset_1_1_0 = [
-    *rdm_minimal_preset,
-    CCMMNMAPreset,
-    CCMMIndexSettingsPreset,
-    CCMMNMACustomizationPreset,
-]
-
-ccmm_production_preset_1_1_0 = [
+ccmm_preset_1_1_0 = [
     *rdm_minimal_preset,
     RDMCompleteRecordUISchemaPreset,
-    CCMMProductionPreset,
+    CCMMMetadataPreset,
     CCMMImportPreset,
     CCMMIndexSettingsPreset,
-    CCMMProductionCustomizationPreset,
+    CCMMExportPreset,
+    RDMCompleteExportsPreset,
     RootRecordFieldPreset,
     CCMMRootRecordComponentPreset,
+    CCMMRelatedIdentifiersComponentPreset,
+    CCMMHideRelatedIdentifiersPreset,
 ]
+
+ccmm_production_preset_1_1_0 = ccmm_preset_1_1_0
+"""Alias of ccmm_preset_1_1_0, kept for compatibility."""

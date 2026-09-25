@@ -1,0 +1,2039 @@
+@prefix arche-category: <https://vocabs.acdh.oeaw.ac.at/archecategory/model/> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix coar-resource-type: <http://purl.org/coar/resource_type/> .
+@prefix datacite-metadata-schema: <https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#> .
+@prefix datacite-resourcetypegeneral: <https://w3id.org/tib/datacite/vocab/resourceTypeGeneral/> .
+@prefix datacite-v4.4: <http://purl.org/datacite/v4.4/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix efo: <http://www.ebi.ac.uk/efo/> .
+@prefix elter: <http://vocabs.lter-europe.net/elter_cl/> .
+@prefix elter-page: <https://vocabs.lter-europe.net/elter_cl/en/page/> .
+@prefix eprint-type: <http://purl.org/eprint/type/> .
+@prefix europa-language: <http://publications.europa.eu/resource/authority/language/> .
+@prefix europa-ontology: <http://publications.europa.eu/ontology/> .
+@prefix europa-web: <https://op.europa.eu/en/web/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix fabio-docs: <https://sparontologies.github.io/fabio/current/fabio.html#> .
+@prefix loc-contenttypes: <http://id.loc.gov/vocabulary/contentTypes/> .
+@prefix loc-resourcetypes: <https://id.loc.gov/vocabulary/resourceTypes/> .
+@prefix mesh: <http://purl.bioontology.org/ontology/MESH/> .
+@prefix ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#> .
+@prefix nma: <https://nma.eosc.cz/vocabularies/> .
+@prefix nma-resourcetypes: <https://nma.eosc.cz/vocabularies/resourcetypes/> .
+@prefix nma-vocabularies: <https://nma.eosc.cz/vocabularies/vocabularies/> .
+@prefix odo: <http://purl.dataone.org/odo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix purljp: <http://purl.jp/bio/4/id/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix snomedct: <http://purl.bioontology.org/ontology/SNOMEDCT/> .
+@prefix tags: <https://nma.eosc.cz/vocabularies/vocabularies/inveniotags> .
+
+europa-ontology:euvoc a owl:Ontology ;
+    rdfs:label "EU Vocabularies ontology (euvoc)"@en ;
+    rdfs:comment "Ontology of the EU Publications Office; its terms are used as skos:notation datatypes to distinguish language code schemes (e.g. ISO_639_1, ISO_639_3, XML_LNG)."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+europa-language: a skos:ConceptScheme ;
+    rdfs:label "EU Publications Office language authority"@en ;
+    rdfs:comment "EU Publications Office language authority table; identifiers are ISO 639-3 codes."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+nma: a owl:Ontology ;
+    rdfs:label "NMA vocabularies"@en ;
+    rdfs:comment "Namespace of the NMA vocabularies; each sub-path is one vocabulary (e.g. languages)."@en .
+
+nma-resourcetypes:1ytn-rjze a skos:Concept ;
+    skos:broadMatch mesh:D016418,
+        fabio-docs:d4e3790 ;
+    skos:broader nma-resourcetypes:rmp5-3gq6 ;
+    skos:definition "A set of judicial proceedings that record, physically or digitally, and in an orderly fashion, the development of a process or procedural actions so that they may be recorded and examined by the parties. This would include the set of judicial proceedings and any item within that set as a physical or electronic court document. Adapted from https://dpej.rae.es/lema/expediente-judicial with input from https://www.supremecourt.gov/case_documents.aspx"@en ;
+    skos:editorialNote "New concept included for version 4 or resource types Vocab"@en ;
+    skos:exactMatch coar-resource-type:1YTN-RJZE ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "1ytn-rjze"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "court documents"@en .
+
+nma-resourcetypes:2h0m-x761 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Dataset ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Geospatial data are any type of data with spatial coordinates that allow them to be mapped to the Earth's surface. They can represent physical objects, discrete areas or continuous surfaces. Discrete geospatial data are usually represented using vector data consisting of points, lines and polygons, while continuous geospatial data are usually represented by raster data, consisting of a grid of cells that each has its own value. Any number of applications in a wide range of areas produce geospatial data, such as GIS, Remote Sensing equipment, GPS units, archaeological total stations, manual mapping and computer-aided design (CAD), in a number of formats, including images, vector, text, and tabular data. Vector-based geospatial data include tables listing archaeological sites along with their coordinates, text-based files (e.g., XML) containing coordinates and topology for historic road networks, voting figures for political parties by administrative area. Raster-based geospatial data include satellite images, aerial photographs, scanned maps, and digital maps of elevations, vegetation, land-use, sea surface temperatures, air pollution, soil-types, etc. [Source: https://ddialliance.org/Specification/DDI-CV/GeneralDataFormat_2.0.html]"@en ;
+    skos:exactMatch coar-resource-type:2H0M-X761 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "2h0m-x761"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "geospatial data"@en ;
+    skos:relatedMatch mesh:D005842,
+        odo:SALMON_00000675 .
+
+nma-resourcetypes:43kc-t6dc a skos:Concept ;
+    skos:broader nma-resourcetypes:c_2cd9 ;
+    skos:definition "An Item appearing in a magazine (a general interest or specific focus periodical). This item is often shorter in length, is submitted by in-house and external authors. Adapted from MAGAZINE Definition & Meaning - Black's Law Dictionary (thelawdictionary.org)"@en ;
+    skos:editorialNote "New concept added to be included in upcoming version 4.0"@en ;
+    skos:exactMatch coar-resource-type:43KC-T6DC,
+        fabio-docs:d4e3866 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "43kc-t6dc"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "magazine article"@en .
+
+nma-resourcetypes:63ng-b465 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Dataset ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Data resulting from the experimental research method involving the manipulation of some or all of the independent variables included in the hypotheses. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
+    skos:exactMatch coar-resource-type:63NG-B465 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "63ng-b465"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "experimental data"@en .
+
+nma-resourcetypes:6nc7-gk9s a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Text ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "A written record of words spoken in court proceedings or in a speech, interview, broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]"@en ;
+    skos:exactMatch coar-resource-type:6NC7-GK9S ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "6nc7-gk9s"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "transcription"@en .
+
+nma-resourcetypes:9dkx-ksaf a skos:Concept ;
+    skos:broadMatch fabio-docs:d4e4175 ;
+    skos:broader nma-resourcetypes:publication-patent ;
+    skos:definition "A special form of patent right granted by a state or jurisdiction to an inventor or the inventor’s assignee for a fixed period of time. The terms and conditions for granting a utility model are slightly different from those for normal patents (including a shorter term of protection and less stringent patentability requirements). The term can also describe what are known in certain countries as “petty patents,” “short-term patents” or “innovation patents.” [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]"@en ;
+    skos:exactMatch coar-resource-type:9DKX-KSAF ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "9dkx-ksaf"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "utility model"@en .
+
+nma-resourcetypes:a8f1-npv9 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Dataset ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Genomic data refers to the genome and DNA data of an organism. They are used in bioinformatics for collecting, storing and processing the genomes of living things. Genomic data is a more extensive term than sequencing data. However genomic data mostly come from sequencing techniques. It may include non-sequencing data such as data from microarrays, data from real-time PCR panels and data from pharmacogenomics studies. [Source: Adapted from https://www.techopedia.com/definition/31247/genomic-data]"@en ;
+    skos:exactMatch coar-resource-type:A8F1-NPV9,
+        efo:EFO_0004600 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "a8f1-npv9"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "genomic data"@en .
+
+nma-resourcetypes:acf7-8yt9 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Dataset,
+        elter-page:10016 ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Statistics that relate to broad classes, groups, or categories. The data are averaged, totaled, or otherwise derived from individual-level data, and it is no longer possible to distinguish the characteristics of individuals within those classes, groups, or categories. For example, the number and age group of the unemployed in specific geographic regions, or national level statistics on the occurrence of specific offences, originally derived from the statistics of individual police districts. [Source: https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
+    skos:exactMatch coar-resource-type:ACF7-8YT9 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "acf7-8yt9"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "aggregated data"@en .
+
+nma-resourcetypes:am6w-6qaw a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Dataset ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Qualitative data (textual, video, audio or still-image) originally produced for other purposes into quantitative data (expressed in unit-by-variable matrices) by using coding techniques in accordance with pre-defined categorization schemes. For example, coded party manifesto data like the \"European Parliament Election Study 2009, Manifesto Study\" (doi:10.4232/1.10204)\". [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
+    skos:exactMatch coar-resource-type:AM6W-6QAW ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "am6w-6qaw"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "encoded data"@en .
+
+nma-resourcetypes:bw7t-ym2g a skos:Concept ;
+    skos:broadMatch <https://ncicb.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C1707689> ;
+    skos:broader nma-resourcetypes:542x-3s04 ;
+    skos:definition """Layout-design (topography) means the three-dimensional disposition, however expressed, of 
+the elements of an integrated circuit (at least one of which is an active element) and of some or all of the interconnections of an integrated circuit, or such a three-dimensional disposition prepared for 
+an integrated circuit intended for manufacture [Source: https://www.wipo.int/edocs/lexdocs/laws/en/hk/hk028en.pdf]"""@en ;
+    skos:exactMatch coar-resource-type:BW7T-YM2G ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "bw7t-ym2g"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "layout design"@en .
+
+nma-resourcetypes:c53b-jcy5 a skos:Concept ;
+    skos:broadMatch fabio-docs:d4e4551 ;
+    skos:broader nma-resourcetypes:publication-patent ;
+    skos:definition "A patent granted to any person who has invented any new and non-obvious ornamental design for an article of manufacture. The design patent protects only the appearance of an article, but not its structural or functional features. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/design-patent-application-guide#def]"@en ;
+    skos:exactMatch coar-resource-type:C53B-JCY5 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c53b-jcy5"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "design patent"@en .
+
+nma-resourcetypes:c_0040 a skos:Concept ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "A manuscript is a work of any kind (text, inscription, music score, map, etc.) written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch mesh:D020486,
+        coar-resource-type:c_0040,
+        fabio-docs:d4e4043 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_0040"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "manuscript"@en .
+
+nma-resourcetypes:c_0857 a skos:Concept ;
+    skos:broadMatch dcmitype:Text ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "A brief description of important new research, also known as “communication”. [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]"@en ;
+    skos:exactMatch coar-resource-type:c_0857,
+        bibo:Letter,
+        fabio-docs:d4e3803 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrowMatch mesh:D019531 ;
+    skos:notation "c_0857"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "dopis"@cs,
+        "letter"@en .
+
+nma-resourcetypes:c_1162 a skos:Concept ;
+    skos:broadMatch dcmitype:Text ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "An annotation in the sense of a legal note is a legally explanatory comment on a decision handed down by a court or arbitral tribunal. [Source: DRIVER info:eu-repo definition]"@en ;
+    skos:exactMatch coar-resource-type:c_1162 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_1162"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "právní komentář rozsudku nebo rozhodnutí"@cs,
+        "annotation"@en ;
+    skos:relatedMatch fabio-docs:d4e3790 .
+
+nma-resourcetypes:c_12cd a skos:Concept ;
+    skos:broader nma-resourcetypes:c_12cc ;
+    skos:definition "Defined as a representation normally to scale and on a flat medium, of a selection of material or abstract features on, or in relation to, the surface of the earth or of another celestial body. [Source: https://www.loc.gov/marc/bibliographic/bd007a.html]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_12cd ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_12cd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "mapa"@cs,
+        "map"@en .
+
+nma-resourcetypes:c_12ce a skos:Concept ;
+    skos:broadMatch dcmitype:MovingImage,
+        schema:Movie ;
+    skos:broader nma-resourcetypes:video ;
+    skos:definition "Media that makes use of images (usually \"moving\"), with or without sound, over a period of playback time. [Source :https://support.contributors.jstor.org/hc/en-us/articles/11971132444439-JSTOR-Content-and-Resource-Types]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_12ce,
+        fabio-docs:d4e4212 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_12ce"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "video"@cs,
+        "video"@en .
+
+nma-resourcetypes:c_186u a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Report ;
+    skos:broader nma-resourcetypes:publication-report ;
+    skos:definition "A policy report presents what is known about a particular issue or problem. It assembles facts and evidence to help readers understand complex issues and form a response. It might aim to be neutral, or it might aim to persuade readers in a particular direction. [Source: https://www.uow.edu.au/student/learning-co-op/assessments/policy-report/#]"@en ;
+    skos:editorialNote "Deprecated"@en ;
+    skos:exactMatch coar-resource-type:c_186u,
+        fabio-docs:d4e4801 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_186u"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "zpráva k politice nebo strategii"@cs,
+        "policy report"@en .
+
+nma-resourcetypes:c_18co a skos:Concept ;
+    skos:broader nma-resourcetypes:c_c94f ;
+    skos:definition "A display poster, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event. Use this label when the poster is not published in a proceeding. [Source: http://purl.org/spar/fabio/ConferencePoster]"@en ;
+    skos:editorialNote "Proposed deprecated"@en ;
+    skos:exactMatch coar-resource-type:c_18co ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_18co"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "konferenční poster nezahrnutý ve sborníku"@cs,
+        "conference poster not in proceedings"@en ;
+    skos:relatedMatch datacite-v4.4:ConferenceProceeding .
+
+nma-resourcetypes:c_18cp a skos:Concept ;
+    skos:broader nma-resourcetypes:c_c94f ;
+    skos:definition "A paper, typically the realization of a research paper reporting original research findings. Use this label when the paper is not published in a proceeding. [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]"@en ;
+    skos:editorialNote "Proposed deprecated"@en ;
+    skos:exactMatch coar-resource-type:c_18cp ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_18cp"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "konferenční příspěvek nezahrnutý ve sborníku"@cs,
+        "conference paper not in proceedings"@en .
+
+nma-resourcetypes:c_18cw a skos:Concept ;
+    skos:altLabel "noty"@cs,
+        "music notation"@en ;
+    skos:broadMatch fabio-docs:d4e4227 ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition """Symbols used to write music, as in a music score, and to express mathematical concepts.
+[Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_n.aspx]"""@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_18cw ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_18cw"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "hudební zápis"@cs,
+        "musical notation"@en .
+
+nma-resourcetypes:c_18gh a skos:Concept ;
+    skos:broader nma-resourcetypes:publication-report ;
+    skos:definition "A document that describes the process, progress, or results of technical or scientific research or the state of a technical or scientific research problem. It might also include recommendations and conclusions of the research. [Source: http://guides.library.cornell.edu/ecommons/types]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_18gh,
+        fabio-docs:d4e5659 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_18gh"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "technická zpráva"@cs,
+        "technical report"@en .
+
+nma-resourcetypes:c_18ws a skos:Concept ;
+    skos:broadMatch mesh:D058028,
+        datacite-v4.4:Report,
+        fabio-docs:d4e5170 ;
+    skos:broader nma-resourcetypes:publication-report ;
+    skos:definition "It is publication that reports on the findings of a research project or alternatively scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_18ws ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_18ws"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "výzkumná zpráva"@cs,
+        "research report"@en .
+
+nma-resourcetypes:c_18wz a skos:Concept ;
+    skos:broader nma-resourcetypes:publication-report ;
+    skos:definition "A formal note distributed internally to one or more persons in a company, agency, organization, or institution, with a header indicating the date it was sent and stating to whom it is addressed (To:), from whom it is sent (From:), and the subject of the text (Re:). Unlike a letter, a memo does not require a full salutation or signature at the end of the text--the sender may simply initial his or her name in the header. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx#memorandum]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_18wz ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_18wz"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "memorandum"@cs,
+        "memorandum"@en .
+
+nma-resourcetypes:c_2df8fbb1 a skos:Concept ;
+    skos:broadMatch bibo:Article ;
+    skos:broader nma-resourcetypes:publication-article ;
+    skos:definition "A research article is a primary source, that is, it reports the methods and results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_2df8fbb1,
+        fabio-docs:d4e5233 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_2df8fbb1"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "původní článek"@cs,
+        "research article"@en .
+
+nma-resourcetypes:c_545b a skos:Concept ;
+    skos:broadMatch fabio-docs:d4e3803 ;
+    skos:broader nma-resourcetypes:publication-journal ;
+    skos:definition "A letter addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership. [Source: Adapted from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e3803]"@en ;
+    skos:exactMatch coar-resource-type:c_545b ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_545b"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "dopis redakci"@cs,
+        "letter to the editor"@en .
+
+nma-resourcetypes:c_6947 a skos:Concept ;
+    skos:broadMatch mesh:D000069520,
+        fabio:WebContent,
+        schema:Blog,
+        fabio-docs:d4e5915 ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "A piece of writing or other item of content published on a blog. [Source: https://www.lexico.com/definition/blog_post]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_6947,
+        fabio-docs:d4e2248 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_6947"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "blog post"@en .
+
+nma-resourcetypes:c_7877 a skos:Concept ;
+    skos:broadMatch datacite-metadata-schema:studyregistration ;
+    skos:broader nma-resourcetypes:publication-report ;
+    skos:definition "A work that reports on the results of a research study to evaluate interventions or exposures on biomedical or health-related outcomes. The two main types of clinical studies are interventional studies (clinical trials) and observational studies. While most clinical studies concern humans, this publication type may be used for clinical veterinary articles meeting the requisites for humans. [Source: https://www.ncbi.nlm.nih.gov/mesh/2009830]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_7877 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_7877"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "clinical study"@en ;
+    skos:relatedMatch fabio-docs:d4e2502 .
+
+nma-resourcetypes:c_7a1f a skos:Concept ;
+    skos:altLabel "bachelor dissertation"@en ;
+    skos:broadMatch eprint-type:Thesis ;
+    skos:broader nma-resourcetypes:publication-dissertation ;
+    skos:definition "A thesis reporting a research project undertaken as part of an undergraduate course of education leading to a bachelor's degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2181]"@en ;
+    skos:exactMatch coar-resource-type:c_7a1f ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_7a1f"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "bakalářská práce"@cs,
+        "bachelor thesis"@en .
+
+nma-resourcetypes:c_7acd a skos:Concept ;
+    skos:broadMatch fabio-docs:d4e2698 ;
+    skos:broader nma-resourcetypes:publication-article ;
+    skos:definition "A formal correction to an error introduced by the author into a previously published document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_7acd,
+        fabio-docs:d4e2712 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_7acd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "corrigendum"@en ;
+    skos:relatedMatch fabio-docs:d4e3154 .
+
+nma-resourcetypes:c_7ad9 a skos:Concept ;
+    skos:altLabel "webové stránky"@cs,
+        "webpage"@en ;
+    skos:broader nma-resourcetypes:c_e9a0 ;
+    skos:definition """A collection of related web pages containing text, images, videos and/or other digital assets that are addressed relative to a common Uniform Resource Locator (URL). A web site is hosted on at least one web server, accessible via a network such as the Internet or a private local area network.
+[Source: http://purl.org/spar/fabio/WebSite]"""@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_7ad9,
+        schema:WebSite ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_7ad9"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "webové sídlo"@cs,
+        "website"@en .
+
+nma-resourcetypes:c_7bab a skos:Concept ;
+    skos:broadMatch datacite-v4.4:JournalArticle ;
+    skos:broader nma-resourcetypes:publication-article ;
+    skos:definition "A software paper should include the rationale for the development of the tool and details of the code used for its construction. [Source: Adapted from https://f1000research.com/for-authors/article-guidelines/software-tool-articles ]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_7bab ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_7bab"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "software paper"@en .
+
+nma-resourcetypes:c_86bc a skos:Concept ;
+    skos:altLabel "přehled literatury"@cs ;
+    skos:broadMatch dcmitype:Text ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "A list of the books and articles that have been used by someone when writing a particular book or article [Source: https://dictionary.cambridge.org/dictionary/english/bibliography]"@en ;
+    skos:exactMatch coar-resource-type:c_86bc ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrowMatch mesh:D016417 ;
+    skos:notation "c_86bc"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "bibliografie"@cs,
+        "bibliography"@en ;
+    skos:relatedMatch fabio-docs:d4e2195 .
+
+nma-resourcetypes:c_998f a skos:Concept ;
+    skos:broadMatch schema:Article ;
+    skos:broader nma-resourcetypes:c_2fe3 ;
+    skos:definition "Work consisting of a news item appearing in a general-interest newspaper or other general news periodical, containing information of current and timely interest in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html )"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_998f ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_998f"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "newspaper article"@en .
+
+nma-resourcetypes:c_b239 a skos:Concept ;
+    skos:broader nma-resourcetypes:publication-journal ;
+    skos:definition "A brief essay expressing the opinion or position of the chief editor(s) of a (academic) journal with respect to a current political, social, cultural, or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx ]"@en ;
+    skos:exactMatch coar-resource-type:c_b239,
+        fabio-docs:d4e3091 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrowMatch mesh:D016421 ;
+    skos:notation "c_b239"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "úvodník"@cs,
+        "editorial"@en ;
+    skos:relatedMatch mesh:D016420 .
+
+nma-resourcetypes:c_ba08 a skos:Concept ;
+    skos:broader nma-resourcetypes:c_efa0 ;
+    skos:definition "A written review and critical analysis of the content, scope and quality of a book or other monographic work. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300]"@en ;
+    skos:exactMatch coar-resource-type:c_ba08,
+        eprint-type:BookReview,
+        fabio-docs:d4e2300 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_ba08"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "recenze knihy"@cs,
+        "book review"@en .
+
+nma-resourcetypes:c_bdcc a skos:Concept ;
+    skos:altLabel "master dissertation"@en ;
+    skos:broadMatch eprint-type:Thesis ;
+    skos:broader nma-resourcetypes:publication-dissertation ;
+    skos:definition "A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4057]"@en ;
+    skos:exactMatch coar-resource-type:c_bdcc,
+        fabio-docs:d4e4057 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_bdcc"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "diplomová práce"@cs,
+        "master thesis"@en .
+
+nma-resourcetypes:c_c950 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Software ;
+    skos:broader nma-resourcetypes:software ;
+    skos:definition "Software that is used to generate, process or analyse results that you intend to appear in a publication (either in a journal, conference paper, monograph, book or thesis). Research software can be anything from a few lines of code written by yourself, to a professionally developed software package. [Source: https://datashare.ed.ac.uk/handle/10283/785]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_c950 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_c950"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "research software"@en .
+
+nma-resourcetypes:c_cb28 a skos:Concept ;
+    skos:altLabel "randomized control trial"@en ;
+    skos:broadMatch datacite-v4.4:Dataset,
+        datacite-metadata-schema:studyregistration ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Data resulting from a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes. [Source: Adapted from https://grants.nih.gov/policy/clinical-trials/definition.htm]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_cb28 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_cb28"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "clinical trial data"@en .
+
+nma-resourcetypes:c_db06 a skos:Concept ;
+    skos:altLabel "doktorská práce"@cs ;
+    skos:broadMatch eprint-type:Thesis ;
+    skos:broader nma-resourcetypes:publication-dissertation ;
+    skos:definition "A thesis reporting the research undertaken during a period of graduate study leading to a doctoral degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3051]"@en ;
+    skos:exactMatch coar-resource-type:c_db06,
+        fabio-docs:d4e3051 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_db06"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "disertační práce"@cs,
+        "doctoral thesis"@en .
+
+nma-resourcetypes:c_dcae04bc a skos:Concept ;
+    skos:broadMatch eprint-type:JournalArticle,
+        bibo:Article,
+        fabio-docs:d4e5310 ;
+    skos:broader nma-resourcetypes:publication-article ;
+    skos:definition "A review article is a secondary source, that is, it is written about other articles, and does not report original research of its own. [Source: Adapted from http://apus.libanswers.com/faq/2324]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_dcae04bc,
+        fabio-docs:d4e5287 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrowMatch mesh:D016454 ;
+    skos:notation "c_dcae04bc"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "přehledový článek"@cs,
+        "review article"@en .
+
+nma-resourcetypes:c_ecc8 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Image,
+        dcmitype:Image ;
+    skos:broader nma-resourcetypes:image ;
+    skos:definition "A recorded static visual representation. This class of image includes diagrams, drawings, graphs, graphic designs, plans, photographs and prints. [Source: Adapted from  http://purl.org/spar/fabio/StillImage]"@en ;
+    skos:exactMatch loc-contenttypes:sti,
+        coar-resource-type:c_ecc8,
+        dcmitype:StillImage,
+        fabio-docs:d4e5482 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_ecc8"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "nepohyblivý obraz"@cs,
+        "still image"@en .
+
+nma-resourcetypes:cqmr-7k63 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Dataset ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Data registered by mechanical or electronic means, in a form that allows the information to be retrieved and/or reproduced. For example, images or sounds on disc or magnetic tape. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
+    skos:exactMatch coar-resource-type:CQMR-7K63 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "cqmr-7k63"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "recorded data"@en ;
+    skos:relatedMatch elter:10021 .
+
+nma-resourcetypes:d97f-vb57 a skos:Concept ;
+    skos:broadMatch fabio-docs:d4e2568 ;
+    skos:broader nma-resourcetypes:c_efa0 ;
+    skos:definition "A commentary is a more in-depth analysis written to draw attention to a work already published. Commentaries are somewhat like “reviews” in that the author presents his or her analysis of a work and why it  would be of interest to a specific audience. [Source: https://www.enago.com/academy/perspective-opinion-and-commentary-pieces]"@en ;
+    skos:exactMatch coar-resource-type:D97F-VB57 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "d97f-vb57"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "commentary"@en .
+
+nma-resourcetypes:dd58-gfsx a skos:Concept ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Data resulting from assessing specific properties (or characteristics) of beings, things, phenomena, (and/ or processes) by applying pre-established standards and/or specialized instruments or techniques. [Source: Adapted from  https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
+    skos:exactMatch coar-resource-type:DD58-GFSX ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "dd58-gfsx"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "measurement and test data"@en ;
+    skos:relatedMatch elter:10017 .
+
+nma-resourcetypes:dx5j-ta9r a skos:Concept ;
+    skos:broadMatch mesh:D000078182,
+        fabio-docs:d4e5605 ;
+    skos:broader nma-resourcetypes:publication-report ;
+    skos:definition "In the context of systematic reviews and meta-analyses, a protocol is a document that presents an explicit plan for a systematic review. The protocol details the rationale and a priori methodological and analytical approach of the review. https://www.bmj.com/content/349/bmj.g7647"@en ;
+    skos:editorialNote "New concept included t be added to upcoming version 4.0"@en ;
+    skos:exactMatch coar-resource-type:DX5J-TA9R ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "dx5j-ta9r"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "knowledge synthesis protocol"@en .
+
+nma-resourcetypes:ff4c-28rk a skos:Concept ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Data resulting from observational research, which involves collecting observations as they occur (for example, observing behaviors, events, development of condition or disease, etc.), without attempting to manipulate any of the independent variables. [Source:  Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
+    skos:editorialNote "Data resulting from observational research, which involves collecting observations as they occur (for example, observing behaviors, events, development of condition or disease, etc.), without attempting to manipulate any of the independent variables. [Source:  Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
+    skos:exactMatch coar-resource-type:FF4C-28RK ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrowMatch elter:10018 ;
+    skos:notation "ff4c-28rk"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "observational data"@en .
+
+nma-resourcetypes:fxf3-d3g7 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Dataset ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Data collected or assembled from multiple, often heterogeneous sources that have one or more reference points in common, and at least one of the sources was originally produced for other purposes. The data are incorporated in a new entity. For example, providing data on the number of universities in the last 150 years using a variety of available sources (e.g. finance documents, official statistics, university registers), combining survey data with information about geographical areas from official statistics (e.g. population density, doctors per capita, etc.), or using RSS to collect blog posts or tweets, etc. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
+    skos:exactMatch coar-resource-type:FXF3-D3G7 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "fxf3-d3g7"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "compiled data"@en .
+
+nma-resourcetypes:gpq7-g5ve a skos:Concept ;
+    skos:broader nma-resourcetypes:publication-patent ;
+    skos:definition "Plant variety protection, also called a \"plant breeder's right\" (PBR), is a form of intellectual property right granted to the breeder of a new plant variety . According to this right, certain acts concerning the exploitation of the protected variety require the prior authorization of the breeder. Plant variety protection is an independent sui generis form of protection, tailored to protect new plant varieties and has certain features in common with other intellectual property rights. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]"@en ;
+    skos:exactMatch coar-resource-type:GPQ7-G5VE ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "gpq7-g5ve"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "plant variety protection"@en .
+
+nma-resourcetypes:h41y-fw7b a skos:Concept ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "A laboratory notebook (colloq. lab notebook or lab book) is a primary record of research. Researchers use a lab notebook to document their hypotheses, experiments and initial analysis or interpretation of these experiments. This label is used both for traditional and electronic laboratory notebook. [Source: Adapted from https://en.wikipedia.org/wiki/Lab_notebook]"@en ;
+    skos:exactMatch coar-resource-type:H41Y-FW7B ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrowMatch datacite-v4.4:ComputationalNotebook ;
+    skos:notation "h41y-fw7b"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "laboratory notebook"@en .
+
+nma-resourcetypes:jbnf-dyad a skos:Concept ;
+    skos:broadMatch <https://ncicb.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C1707689> ;
+    skos:broader nma-resourcetypes:542x-3s04 ;
+    skos:definition "Industrial designs are applied to a wide variety of industrial products and handicrafts. They refer to the ornamental or aesthetic aspects of a useful article,including compositions of lines or colors or any three-dimensional forms that give a special appearance to a product or handicraft. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]"@en ;
+    skos:exactMatch coar-resource-type:JBNF-DYAD ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "jbnf-dyad"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "industrial design"@en .
+
+nma-resourcetypes:mw8g-3cr8 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Software,
+        fabio-docs:d4e4551 ;
+    skos:broader nma-resourcetypes:publication-patent ;
+    skos:definition "In order to obtain a patent, a software invention must not fall under other non-patentable subject matter (for example, abstract ideas or mathematical theories) and has to fulfill the other substantive patentability criteria (for example, novelty, inventive step [non-obviousness] and industrial applicability [usefulness]). [Source: https://www.wipo.int/patents/en/faq_patents.html]"@en ;
+    skos:exactMatch coar-resource-type:MW8G-3CR8 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "mw8g-3cr8"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "software patent"@en .
+
+nma-resourcetypes:nhd0-w6sy a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Dataset ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Data resulting from a survey, which is defined as an investigation about the characteristics of a given population by means of collecting data from a sample of that population and estimating their characteristics through the systematic use of statistical methodology. Included are censuses, sample surveys, the collection of data from administrative records and derived statistical activities as well as questionnaires. [Source: Adapted from https://stats.oecd.org/glossary/detail.asp?ID=2620]"@en ;
+    skos:exactMatch coar-resource-type:NHD0-W6SY ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "nhd0-w6sy"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "survey data"@en .
+
+nma-resourcetypes:qh80-2r4e a skos:Concept ;
+    skos:broader nma-resourcetypes:software ;
+    skos:definition "Source code is any collection of code, with or without comments, written using a human-readable programming language, usually as plain text. [Source: https://en.wikipedia.org/wiki/Source_code]"@en ;
+    skos:exactMatch ncit:C47901,
+        coar-resource-type:QH80-2R4E ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "qh80-2r4e"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "source code"@en .
+
+nma-resourcetypes:qx5c-ar31 a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_18cf ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "A resource type that is not included in existing terms under the top concept \"Text\". [COAR definition]"@en ;
+    skos:exactMatch coar-resource-type:QX5C-AR31 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "qx5c-ar31"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "other periodical"@en .
+
+nma-resourcetypes:r60j-j5bd a skos:Concept ;
+    skos:broadMatch snomedct:246105001 ;
+    skos:broader nma-resourcetypes:c_c94f ;
+    skos:definition "A set of slides containing text, tables or figures, designed to communicate ideas or research results, for projection and viewing by an audience at a conference, symposium, seminar, lecture, workshop or other gatherings. [Source: Adapted from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e4880]"@en ;
+    skos:exactMatch coar-resource-type:R60J-J5BD,
+        fabio-docs:d4e4880 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "r60j-j5bd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "conference presentation"@en .
+
+nma-resourcetypes:sb3y-w4eh a skos:Concept ;
+    skos:broader nma-resourcetypes:publication-patent ;
+    skos:definition "A patent application filed through the WIPO-administered Patent Cooperation Treaty (PCT), also known as an international application. [Source: Adapted from https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]"@en ;
+    skos:exactMatch coar-resource-type:SB3Y-W4EH ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "sb3y-w4eh"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "PCT application"@en .
+
+nma-resourcetypes:w2xt-7017 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Dataset ;
+    skos:broader nma-resourcetypes:dataset ;
+    skos:definition "Data resulting from modeling or imitative representation of real-world processes, events, or systems, often using computer programs. For example, a program modeling household consumption responses to indirect tax changes; or a dataset on hypothetical patients and their drug exposure, background conditions, and known adverse events. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
+    skos:exactMatch <http://nmrML.org/nmrCV#NMR:1000221>,
+        coar-resource-type:W2XT-7017 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "w2xt-7017"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "simulation data"@en .
+
+nma-resourcetypes:yc9f-hgcf a skos:Concept ;
+    skos:broadMatch datacite-v4.4:Collection,
+        bibo:Collection ;
+    skos:broader nma-resourcetypes:rmp5-3gq6 ;
+    skos:definition "A collection of historical records and primary source documents. Documents may be tangible or digital. Adapted from “archive (groupings)” in Getty AAT: https://www.getty.edu/vow/AATFullDisplay?find=maiolica&logic=AND&note=&subjectid=300375748"@en ;
+    skos:editorialNote "New concept included for version 4 of resource type Vocab"@en ;
+    skos:exactMatch coar-resource-type:YC9F-HGCF ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "yc9f-hgcf"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "archival collection"@en .
+
+nma-resourcetypes:yz1n-zft9 a skos:Concept ;
+    skos:broadMatch datacite-metadata-schema:studyregistration ;
+    skos:broader nma-resourcetypes:publication-report ;
+    skos:definition "The protocol is a detailed plan of the research study including a project summary, project description covering the rationale, objectives, methodology, data management and analysis, ethical considerations, gender issues and references. [Source: Adapted from https://www.who.int/publications/i/item/a-practical-guide-for-health-researchers]"@en ;
+    skos:exactMatch coar-resource-type:YZ1N-ZFT9 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "yz1n-zft9"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "research protocol"@en .
+
+nma-resourcetypes:z907-ymbb a skos:Concept ;
+    skos:broadMatch ncit:C43358,
+        fabio-docs:d4e4551 ;
+    skos:broader nma-resourcetypes:publication-patent ;
+    skos:definition "A patent granted to anyone who has invented or discovered and asexually reproduced any distinct and new variety of plant, including cultivated sports, mutants, hybrids, and newly found seedlings, other than a tuber-propagated plant or a plant found in an uncultivated state. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/general-information-about-35-usc-161#heading-1]"@en ;
+    skos:exactMatch purljp:200906022454899687,
+        coar-resource-type:Z907-YMBB ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "z907-ymbb"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "plant patent"@en .
+
+nma-vocabularies:invenioid a rdfs:Datatype ;
+    rdfs:label "NMA internal vocabulary id"@en ;
+    rdfs:comment "Marks skos:notation literals carrying the internal NMA vocabulary id, used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props: a owl:Ontology ;
+    rdfs:label "NMA vocabulary properties"@en ;
+    rdfs:comment "Namespace of internal vocabulary properties and datatypes used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props:alpha_2 a rdf:Property ;
+    rdfs:label "ISO 639-1 code"@en ;
+    rdfs:comment "Two-letter ISO 639-1 code of a language, when it has one."@en .
+
+props:csl a rdf:Property ;
+    rdfs:label "csl"@en ;
+    rdfs:comment "Citation Style Language (CSL) type of a resource type."@en .
+
+props:datacite a rdf:Property ;
+    rdfs:label "DataCite relationType name"@en ;
+    rdfs:comment "Name of the DataCite relationType (e.g. IsCitedBy) a relation type concept stands for."@en .
+
+props:datacite_general a rdf:Property ;
+    rdfs:label "datacite_general"@en ;
+    rdfs:comment "DataCite resourceTypeGeneral of a resource type."@en .
+
+props:datacite_type a rdf:Property ;
+    rdfs:label "datacite_type"@en ;
+    rdfs:comment "DataCite resource type name, when the general one is further specified."@en .
+
+props:eurepo a rdf:Property ;
+    rdfs:label "eurepo"@en ;
+    rdfs:comment "eu-repo semantics identifier of a resource type."@en .
+
+props:marc a rdf:Property ;
+    rdfs:label "MARC 21 relator code"@en ;
+    rdfs:comment "Three-letter MARC 21 relator code (e.g. prc) of a role concept."@en .
+
+props:marc21_subtype a rdf:Property ;
+    rdfs:label "marc21_subtype"@en ;
+    rdfs:comment "MARC 21 bibliographic level of a resource type."@en .
+
+props:marc21_type a rdf:Property ;
+    rdfs:label "marc21_type"@en ;
+    rdfs:comment "MARC 21 type of record of a resource type."@en .
+
+props:openaire_resourceType a rdf:Property ;
+    rdfs:label "openaire_resourceType"@en ;
+    rdfs:comment "OpenAIRE resource type code of a resource type."@en .
+
+props:openaire_type a rdf:Property ;
+    rdfs:label "openaire_type"@en ;
+    rdfs:comment "OpenAIRE type name of a resource type."@en .
+
+props:schema.org a rdf:Property ;
+    rdfs:label "schema.org"@en ;
+    rdfs:comment "schema.org type a resource type maps to."@en .
+
+props:subtype a rdf:Property ;
+    rdfs:label "subtype"@en ;
+    rdfs:comment "InvenioRDM resource subtype id; empty for top-level types."@en .
+
+props:type a rdf:Property ;
+    rdfs:label "type"@en ;
+    rdfs:comment "InvenioRDM resource type id a resource type belongs to."@en .
+
+props:xml_lang a rdf:Property ;
+    rdfs:label "xml:lang code"@en ;
+    rdfs:comment "Language tag suitable for an xml:lang attribute: the ISO 639-1 code when available, the ISO 639-3 code otherwise."@en .
+
+tags: a rdf:Property ;
+    rdfs:label "vocabulary tags"@en ;
+    rdfs:comment "Links a vocabulary concept to its tag values (e.g. the scope and type of a language); internal use."@en .
+
+nma-resourcetypes:audio a skos:Concept ;
+    skos:broadMatch schema:MediaObject,
+        datacite-resourcetypegeneral:Sound ;
+    skos:exactMatch coar-resource-type:c_18cd ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "audio"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Audio"@cs,
+        "Audio"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "document" ;
+    props:datacite_general "Sound" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_type "audio" ;
+    props:openaire_resourceType "0033" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/MediaObject" ;
+    props:type "audio" ;
+    props:zenodo "audio" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:c_18cc a skos:Concept ;
+    skos:broadMatch schema:MediaObject ;
+    skos:definition "A resource primarily intended to be heard. Examples include a music playback file format, an audio compact disc, and recorded speech or sounds. [Source: http://dublincore.org/documents/dcmi-terms/#dcmitype-Sound]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_18cc ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_18cc"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "zvuk"@cs,
+        "sound"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:c_2cd9 a skos:Concept ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "A popular interest periodical usually containing articles on a variety of topics, written by various authors in a nonscholarly style or a trade publication, unlike a consumer publication, covers a specific topic for people who work in that particular field or industry. [Source: Adapted from https://www.thebalance.com/what-is-a-trade-publication-exactly-2316039 and http://www.abc-clio.com/ODLIS/odlis_m.aspx]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_2cd9,
+        fabio-docs:d4e3843 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_2cd9"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "magazine"@en .
+
+nma-resourcetypes:c_2fe3 a skos:Concept ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "A non-peer reviewed periodical, usually published daily or weekly, consisting primarily of editorials and news items concerning current or recent events and matters of public interest. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4291]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_2fe3,
+        fabio-docs:d4e4291 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_2fe3"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "newspaper"@en .
+
+nma-resourcetypes:c_e059 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:InteractiveResource ;
+    skos:definition """A digital resource that can be reused to enhance teaching and learning.
+Source https://icas-ca.org/archive/projects/coerc/oer-glossary/"""@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_e059 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_e059"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "learning object"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:event a skos:Concept ;
+    skos:broadMatch schema:Event,
+        datacite-resourcetypegeneral:Event ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "event"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Událost"@cs,
+        "Event"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "event" ;
+    props:datacite_general "Event" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_type "event" ;
+    props:openaire_resourceType "0023" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/Event" ;
+    props:type "event" ;
+    props:zenodo "event" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:f8rt-tjk0 a skos:Concept ;
+    skos:broadMatch schema:CreativeWork ;
+    skos:definition "A work of visual arts and performing arts, including musical works; dramatic works; pantomimes and choreographic works; motion picture and other audiovisual works; pictorial, graphic, sculptural and architectural works. Adapted from Law Insider: https://www.lawinsider.com/dictionary/artistic-works"@en ;
+    skos:editorialNote "New concept included for upcoming version 4.0"@en ;
+    skos:exactMatch coar-resource-type:F8RT-TJK0 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "f8rt-tjk0"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "artistic work"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:gsza-y7v7 a skos:Concept ;
+    skos:definition "All types of schemes for organizing information and promoting knowledge management. Knowledge organization systems include classification schemes that organize materials at a general level (such as books on a shelf), subject headings that provide more detailed access, and authority files that control variant versions of key information (such as geographic names and personal names). They also include less-traditional schemes, such as semantic artifacts, semantic networks and ontologies. https://www.clir.org/pubs/reports/pub91/1knowledge/"@en ;
+    skos:editorialNote "New concept included for upcoming version 3.2"@en ;
+    skos:exactMatch coar-resource-type:GSZA-Y7V7 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrowMatch <https://bioportal.bioontology.org/ontologies/MESH?p=classes&conceptid=D016437>,
+        fabio-docs:d4e5645,
+        fabio-docs:d4e5735,
+        fabio-docs:d4e5828,
+        arche-category:controlledVocabulary ;
+    skos:notation "gsza-y7v7"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "knowledge organization system"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:h6qp-sc1x a skos:Concept ;
+    skos:definition """A sign used to distinguish the goods or services of one undertaking from those
+of others. A trademark may consist of words and combinations of words (for
+instance, names or slogans), logos, figures and images, letters, numbers,
+sounds, or, in rare instances, smells or moving images, or a combination thereof. [Source: https://www.wipo.int/trademarks/en]"""@en ;
+    skos:exactMatch coar-resource-type:H6QP-SC1X ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "h6qp-sc1x"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "trademark"@en ;
+    skos:relatedMatch mesh:D010330 ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:image-diagram a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_ecc8,
+        schema:ImageObject,
+        datacite-resourcetypegeneral:Image ;
+    skos:broader nma-resourcetypes:image ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "image-diagram"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Diagram"@cs,
+        "Diagram"@en ;
+    props:csl "figure" ;
+    props:datacite_general "Image" ;
+    props:datacite_type "Diagram" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "diagram" ;
+    props:marc21_type "image" ;
+    props:openaire_resourceType "0025" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/ImageObject" ;
+    props:subtype "image-diagram" ;
+    props:type "image" ;
+    props:zenodo "image-diagram" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:image-drawing a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_ecc8,
+        schema:ImageObject,
+        datacite-resourcetypegeneral:Image ;
+    skos:broader nma-resourcetypes:image ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "image-drawing"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kresba"@cs,
+        "Drawing"@en ;
+    props:csl "graphic" ;
+    props:datacite_general "Image" ;
+    props:datacite_type "Drawing" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "drawing" ;
+    props:marc21_type "image" ;
+    props:openaire_resourceType "0025" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/ImageObject" ;
+    props:subtype "image-drawing" ;
+    props:type "image" ;
+    props:zenodo "image-drawing" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:image-figure a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_ecc8,
+        schema:ImageObject,
+        datacite-resourcetypegeneral:Image ;
+    skos:broader nma-resourcetypes:image ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "image-figure"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Schéma"@cs,
+        "Figure"@en ;
+    props:csl "figure" ;
+    props:datacite_general "Image" ;
+    props:datacite_type "Figure" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "figure" ;
+    props:marc21_type "image" ;
+    props:openaire_resourceType "0025" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/ImageObject" ;
+    props:subtype "image-figure" ;
+    props:type "image" ;
+    props:zenodo "image-figure" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:image-other a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_ecc8,
+        schema:ImageObject,
+        datacite-resourcetypegeneral:Image ;
+    skos:broader nma-resourcetypes:image ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "image-other"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Jiné"@cs,
+        "Other"@en ;
+    props:csl "graphic" ;
+    props:datacite_general "Image" ;
+    props:datacite_type "Other" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "other" ;
+    props:marc21_type "image" ;
+    props:openaire_resourceType "0025" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/ImageObject" ;
+    props:subtype "image-other" ;
+    props:type "image" ;
+    props:zenodo "image-other" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:image-photo a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_ecc8,
+        schema:Photograph,
+        datacite-resourcetypegeneral:Image ;
+    skos:broader nma-resourcetypes:image ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "image-photo"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fotografie"@cs,
+        "Photo"@en ;
+    props:csl "graphic" ;
+    props:datacite_general "Image" ;
+    props:datacite_type "Photo" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "photo" ;
+    props:marc21_type "image" ;
+    props:openaire_resourceType "0025" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/Photograph" ;
+    props:subtype "image-photo" ;
+    props:type "image" ;
+    props:zenodo "image-photo" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:image-plot a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_ecc8,
+        schema:ImageObject,
+        datacite-resourcetypegeneral:Image ;
+    skos:broader nma-resourcetypes:image ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "image-plot"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Graf"@cs,
+        "Plot"@en ;
+    props:csl "figure" ;
+    props:datacite_general "Image" ;
+    props:datacite_type "Plot" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "plot" ;
+    props:marc21_type "image" ;
+    props:openaire_resourceType "0025" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/ImageObject" ;
+    props:subtype "image-plot" ;
+    props:type "image" ;
+    props:zenodo "image-plot" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:instrument a skos:Concept ;
+    skos:broadMatch datacite-resourcetypegeneral:Instrument ;
+    skos:exactMatch coar-resource-type:8KJG-QS0Y ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "instrument"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Instrument"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:datacite_general "Instrument" ;
+    props:type "instrument" ;
+    tags: "linkable" .
+
+nma-resourcetypes:lesson a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_e059,
+        schema:CreativeWork,
+        datacite-resourcetypegeneral:InteractiveResource ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "lesson"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lekce"@cs,
+        "Lesson"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "speech" ;
+    props:datacite_general "InteractiveResource" ;
+    props:eurepo "info:eu-repo/semantics/lecture" ;
+    props:lindat "onlineCourse" ;
+    props:marc21_type "lesson" ;
+    props:openaire_resourceType "0010" ;
+    props:openaire_type "other" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:type "lesson" ;
+    props:zenodo "lesson" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:model a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:Model ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "model"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Model"@cs,
+        "Model"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "figure" ;
+    props:datacite_general "Model" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_type "model" ;
+    props:openaire_resourceType "0027" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:type "model" ;
+    props:zenodo "model" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:other a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:Other ;
+    skos:exactMatch coar-resource-type:c_1843 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "other"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Jiné"@cs,
+        "Other"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "article" ;
+    props:datacite_general "Other" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_type "other" ;
+    props:openaire_resourceType "0020" ;
+    props:openaire_type "other" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:type "other" ;
+    props:zenodo "other" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:physicalobject a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:PhysicalObject ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "physicalobject"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fyzický objekt"@cs,
+        "Physical object"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "graphic" ;
+    props:datacite_general "PhysicalObject" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_type "physicalobject" ;
+    props:openaire_resourceType "0010" ;
+    props:openaire_type "other" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:type "physicalobject" ;
+    props:zenodo "physicalobject" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:poster a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:Poster ;
+    skos:exactMatch coar-resource-type:c_6670 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "poster"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Poster"@cs,
+        "Poster"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "graphic" ;
+    props:datacite_general "Poster" ;
+    props:eurepo "info:eu-repo/semantics/conferencePoster" ;
+    props:marc21_type "poster" ;
+    props:openaire_resourceType "0004" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:type "poster" ;
+    props:zenodo "poster" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:presentation a skos:Concept ;
+    skos:broadMatch schema:PresentationDigitalDocument,
+        datacite-resourcetypegeneral:Presentation ;
+    skos:exactMatch coar-resource-type:c_8544 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "presentation"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Prezentace"@cs,
+        "Presentation"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "speech" ;
+    props:datacite_general "Presentation" ;
+    props:eurepo "info:eu-repo/semantics/lecture" ;
+    props:marc21_type "presentation" ;
+    props:openaire_resourceType "0004" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/PresentationDigitalDocument" ;
+    props:type "presentation" ;
+    props:zenodo "presentation",
+        "publication-abstract",
+        "publication-lecture" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:project a skos:Concept ;
+    skos:broadMatch datacite-resourcetypegeneral:Project ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "project"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Project"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:datacite_general "Project" ;
+    props:type "project" ;
+    tags: "linkable" .
+
+nma-resourcetypes:publication-annotationcollection a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_1162,
+        schema:Collection,
+        datacite-resourcetypegeneral:Collection ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-annotationcollection"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kolekce anotací"@cs,
+        "Annotation collection"@en ;
+    props:csl "report" ;
+    props:datacite_general "Collection" ;
+    props:eurepo "info:eu-repo/semantics/technicalDocumentation" ;
+    props:marc21_subtype "annotationcollection" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0009" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/Collection" ;
+    props:subtype "publication-annotationcollection" ;
+    props:type "publication" ;
+    props:zenodo "annotationcollection",
+        "publication-annotation" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-book a skos:Concept ;
+    skos:broadMatch schema:Book,
+        datacite-resourcetypegeneral:Book ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_2f33 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-book"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kniha"@cs,
+        "Book"@en ;
+    props:csl "book" ;
+    props:datacite_general "Book" ;
+    props:eurepo "info:eu-repo/semantics/book" ;
+    props:marc21_subtype "book" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0002" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/Book" ;
+    props:subtype "publication-book" ;
+    props:type "publication" ;
+    props:zenodo "publication-book" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-conferencepaper a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:ConferencePaper ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_5794 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-conferencepaper"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Konferenční příspěvek"@cs,
+        "Conference paper"@en ;
+    props:csl "paper-conference" ;
+    props:datacite_general "ConferencePaper" ;
+    props:eurepo "info:eu-repo/semantics/conferencePaper" ;
+    props:marc21_subtype "conferencepaper" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0004" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-conferencepaper" ;
+    props:type "publication" ;
+    props:zenodo "publication-conferencepaper" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-conferenceproceeding a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:ConferenceProceeding ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_f744 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-conferenceproceeding"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sborník konference"@cs,
+        "Conference proceeding"@en ;
+    props:csl "paper-conference" ;
+    props:datacite_general "ConferenceProceeding" ;
+    props:eurepo "info:eu-repo/semantics/conferenceProceedings" ;
+    props:marc21_subtype "conferenceproceeding" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0004" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-conferenceproceeding" ;
+    props:type "publication" ;
+    props:zenodo "publication-conferenceproceeding" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-datamanagementplan a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:OutputManagementPlan ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_ab20 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-datamanagementplan"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Plán správy dat"@cs,
+        "Output management plan"@en ;
+    props:csl "report" ;
+    props:datacite_general "OutputManagementPlan" ;
+    props:eurepo "info:eu-repo/semantics/technicalDocumentation" ;
+    props:marc21_subtype "datamanagementplan" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0045" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:subtype "publication-datamanagementplan" ;
+    props:type "publication" ;
+    props:zenodo "publication-datamanagementplan" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-datapaper a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:DataPaper ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_beb9 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-datapaper"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datový článek"@cs,
+        "Data paper"@en ;
+    props:csl "article" ;
+    props:datacite_general "DataPaper" ;
+    props:eurepo "info:eu-repo/semantics/workingPaper" ;
+    props:marc21_subtype "datapaper" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0031" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-datapaper" ;
+    props:type "publication" ;
+    props:zenodo "publication-datapaper" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-deliverable a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:Text ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_18op ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-deliverable"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Výstup projektu"@cs,
+        "Project deliverable"@en ;
+    props:csl "report" ;
+    props:datacite_general "Text" ;
+    props:datacite_type "Project deliverable" ;
+    props:eurepo "info:eu-repo/semantics/report" ;
+    props:marc21_subtype "deliverable" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0034" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:subtype "publication-deliverable" ;
+    props:type "publication" ;
+    props:zenodo "publication-deliverable" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-milestone a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_93fc,
+        schema:CreativeWork,
+        datacite-resourcetypegeneral:Text ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-milestone"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Mezník projektu"@cs,
+        "Project milestone"@en ;
+    props:csl "report" ;
+    props:datacite_general "Text" ;
+    props:datacite_type "Project milestone" ;
+    props:eurepo "info:eu-repo/semantics/report" ;
+    props:marc21_subtype "milestone" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0035" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:subtype "publication-milestone" ;
+    props:type "publication" ;
+    props:zenodo "publication-milestone" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-other a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:Text ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_1843 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-other"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Jiné"@cs,
+        "Other"@en ;
+    props:csl "article" ;
+    props:datacite_general "Text" ;
+    props:datacite_type "Other" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "other" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0020" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:subtype "publication-other" ;
+    props:type "publication" ;
+    props:zenodo "publication-other" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-peerreview a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:PeerReview ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:H9BQ-739P ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-peerreview"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Recenze"@cs,
+        "Peer review"@en ;
+    props:csl "article" ;
+    props:datacite_general "PeerReview" ;
+    props:eurepo "info:eu-repo/semantics/review" ;
+    props:marc21_subtype "peerreview" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0015" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-peerreview" ;
+    props:type "publication" ;
+    props:zenodo "peerreview",
+        "publication-peerreview" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-preprint a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:Preprint ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_816b ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-preprint"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Preprint"@cs,
+        "Preprint"@en ;
+    props:csl "article" ;
+    props:datacite_general "Preprint" ;
+    props:eurepo "info:eu-repo/semantics/preprint" ;
+    props:marc21_subtype "preprint" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0016" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-preprint" ;
+    props:type "publication" ;
+    props:zenodo "publication-preprint" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-proposal a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:Text ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_baaf ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-proposal"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Návrh"@cs,
+        "Proposal"@en ;
+    props:csl "article" ;
+    props:datacite_general "Text" ;
+    props:datacite_type "Proposal" ;
+    props:eurepo "info:eu-repo/semantics/researchProposal" ;
+    props:marc21_subtype "proposal" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0036" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:subtype "publication-proposal" ;
+    props:type "publication" ;
+    props:zenodo "publication-proposal" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-section a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:BookChapter ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_3248 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-section"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kapitola v knize"@cs,
+        "Book chapter"@en ;
+    props:csl "chapter" ;
+    props:datacite_general "BookChapter" ;
+    props:eurepo "info:eu-repo/semantics/bookPart" ;
+    props:marc21_subtype "section" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0013" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-section" ;
+    props:type "publication" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-softwaredocumentation a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:Text ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_71bd ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-softwaredocumentation"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Dokumentace softwaru"@cs,
+        "Software documentation"@en ;
+    props:csl "article" ;
+    props:datacite_general "Text" ;
+    props:datacite_type "Software documentation" ;
+    props:eurepo "info:eu-repo/semantics/technicalDocumentation" ;
+    props:marc21_subtype "softwaredocumentation" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0009" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:subtype "publication-softwaredocumentation" ;
+    props:type "publication" ;
+    props:zenodo "publication-softwaredocumentation" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-standard a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_18cf,
+        schema:other,
+        datacite-resourcetypegeneral:Standard ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-standard"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Standard"@cs,
+        "Standard"@en ;
+    props:csl "article" ;
+    props:datacite_general "Standard" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "standard" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0038" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/other" ;
+    props:subtype "publication-standard" ;
+    props:type "publication" ;
+    props:zenodo "publication-standard" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-studyregistration a skos:Concept ;
+    skos:broadMatch schema:other,
+        datacite-resourcetypegeneral:StudyRegistration ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-studyregistration"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Study Registration"@en ;
+    props:csl "article" ;
+    props:datacite_general "StudyRegistration" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "studyregistration" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0038" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/other" ;
+    props:subtype "publication-studyregistration" ;
+    props:type "publication" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-taxonomictreatment a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_18cf,
+        schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:Text ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-taxonomictreatment"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Taxonomické zpracování"@cs,
+        "Taxonomic treatment"@en ;
+    props:csl "article" ;
+    props:datacite_general "Text" ;
+    props:datacite_type "Taxonomic treatment" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "taxonomictreatment" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0020" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-taxonomictreatment" ;
+    props:type "publication" ;
+    props:zenodo "publication-taxonomictreatment" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-technicalnote a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_93fc,
+        schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:Text ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-technicalnote"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Technická poznámka"@cs,
+        "Technical note"@en ;
+    props:csl "article" ;
+    props:datacite_general "Text" ;
+    props:datacite_type "Technical note" ;
+    props:eurepo "info:eu-repo/semantics/technicalDocumentation" ;
+    props:marc21_subtype "technicalnote" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0009" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-technicalnote" ;
+    props:type "publication" ;
+    props:zenodo "publication-technicalnote" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-workingpaper a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:Text ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_8042 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-workingpaper"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Pracovní dokument"@cs,
+        "Working paper"@en ;
+    props:csl "article" ;
+    props:datacite_general "Text" ;
+    props:datacite_type "Working paper" ;
+    props:eurepo "info:eu-repo/semantics/workingPaper" ;
+    props:marc21_subtype "workingpaper" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0014" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-workingpaper" ;
+    props:type "publication" ;
+    props:zenodo "publication-workingpaper" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:s7r1-k5p0 a skos:Concept ;
+    skos:broadMatch datacite-v4.4:PhysicalObject ;
+    skos:definition """Physical samples include biological specimens, rock or mineral specimens, soil or sediment cores, plants and seeds, water quality samples, archaeological artefacts, or DNA and human tissue samples. Samples may be used in analyses and can be destroyed in this process, whereas specimens are preserved curated objects that can be continuously studied.
+Source: 23 Things Physical Samples https://eprints.gla.ac.uk/309016/1/309016.pdf"""@en ;
+    skos:editorialNote "New concept included for version 4 of resource types Vocab"@en ;
+    skos:exactMatch coar-resource-type:S7R1-K5P0 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "s7r1-k5p0"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "physical sample"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:software-computationalnotebook a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_c950,
+        schema:SoftwareSourceCode,
+        datacite-resourcetypegeneral:ComputationalNotebook ;
+    skos:broader nma-resourcetypes:software ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "software-computationalnotebook"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Výpočetní notebook"@cs,
+        "Computational notebook"@en ;
+    props:csl "software" ;
+    props:datacite_general "ComputationalNotebook" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "computationalnotebook" ;
+    props:marc21_type "software" ;
+    props:openaire_resourceType "0040" ;
+    props:openaire_type "software" ;
+    props:schema.org "https://schema.org/SoftwareSourceCode" ;
+    props:subtype "software-computationalnotebook" ;
+    props:type "software" ;
+    props:zenodo "software-computationalnotebook" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:workflow a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:Workflow ;
+    skos:exactMatch coar-resource-type:c_393c ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "workflow"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Workflow"@cs,
+        "Workflow"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "software" ;
+    props:datacite_general "Workflow" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_type "workflow" ;
+    props:openaire_resourceType "0020" ;
+    props:openaire_type "other" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:type "workflow" ;
+    props:zenodo "workflow" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:c_12cc a skos:Concept ;
+    skos:broadMatch schema:Map ;
+    skos:definition "Any material representing the whole or part of the earth or any celestial body at any scale. Cartographic materials include two- and three-dimensional maps and plans (including maps of imaginary places); aeronautical, navigational, and celestial charts; atlases; globes; block diagrams; sections; aerial photographs with a cartographic purpose; bird's-eye views (map views), etc. [Source: http://www.loc.gov/marc/cfmap.html]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_12cc,
+        loc-resourcetypes:car.html ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_12cc"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "kartografický dokument"@cs,
+        "cartographic material"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:c_e9a0 a skos:Concept ;
+    skos:definition """A resource requiring interaction from the user to be understood, executed, or experienced. Examples include forms on Web pages, applets, multimedia learning objects, chat services, or virtual reality environments.
+Source: http://purl.org/dc/dcmitype/InteractiveResource"""@en ;
+    skos:exactMatch coar-resource-type:c_e9a0,
+        datacite-v4.4:InteractiveResource ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_e9a0"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "interaktivní zdroj"@cs,
+        "interactive resource"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:c_efa0 a skos:Concept ;
+    skos:broadMatch dcmitype:Text ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "A review of others' published work. [Source: Adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e5273]"@en ;
+    skos:exactMatch coar-resource-type:c_efa0,
+        fabio-docs:d4e5273 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrowMatch mesh:D016454,
+        datacite-v4.4:PeerReview ;
+    skos:notation "c_efa0"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "recenze"@cs,
+        "review"@en .
+
+nma-resourcetypes:video a skos:Concept ;
+    skos:broadMatch schema:MediaObject,
+        datacite-resourcetypegeneral:Audiovisual ;
+    skos:exactMatch coar-resource-type:c_8a7e ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "video"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Video"@cs,
+        "Video"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "motion_picture" ;
+    props:datacite_general "Audiovisual" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:lindat "clip" ;
+    props:marc21_type "video" ;
+    props:openaire_resourceType "0033" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/MediaObject" ;
+    props:type "video" ;
+    props:zenodo "video" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:542x-3s04 a skos:Concept ;
+    skos:definition "Plans, drawing or set of drawings showing how something e.g. building, product is to be made and how it will work and look. [Source: Adapted from https://dictionary.cambridge.org/dictionary/english/design]"@en ;
+    skos:exactMatch coar-resource-type:542X-3S04,
+        <https://ncicb.nci.nih.gov/ncimbrowser/ConceptReport.jsp?dictionary=NCI%20Metathesaurus&code=C1707689> ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "542x-3s04"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "design"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:c_c94f a skos:Concept ;
+    skos:broadMatch dcmitype:Event ;
+    skos:broader nma-resourcetypes:c_18cf ;
+    skos:definition "All kind of digital resources contributed to a conference, like conference presentation (slides), conference report, conference lecture, abstracts, demonstrations. For conference papers, posters or proceedings the specific sub-concepts should be used. [COAR definition]"@en ;
+    skos:exactMatch coar-resource-type:c_c94f ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_c94f"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "conference output"@en .
+
+nma-resourcetypes:publication-journal a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:Journal ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_0640 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-journal"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Časopis"@cs,
+        "Journal"@en ;
+    props:csl "journal" ;
+    props:datacite_general "Journal" ;
+    props:eurepo "info:eu-repo/semantics/article" ;
+    props:marc21_subtype "journal" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0043" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-journal" ;
+    props:type "publication" ;
+    props:zenodo "publication-journal" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:rmp5-3gq6 a skos:Concept ;
+    skos:definition "An aggregation of resources, which may encompass collections of one resourceType as well as those of mixed types. A collection is described as a group; its parts may also be separately described. https://datacite-metadata-schema.readthedocs.io/en/4.5/appendices/appendix-1/resourceTypeGeneral/#collection"@en ;
+    skos:editorialNote "New concept included for version 4 of Resource types Vocab"@en ;
+    skos:exactMatch mesh:D020471,
+        coar-resource-type:RMP5-3GQ6,
+        bibo:Collection,
+        prov:Collection ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "rmp5-3gq6"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "collection"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:publication-dissertation a skos:Concept ;
+    skos:broadMatch schema:Thesis,
+        datacite-resourcetypegeneral:Dissertation ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_46ec ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-dissertation"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Závěrečná práce"@cs,
+        "Thesis"@en ;
+    props:csl "article" ;
+    props:datacite_general "Dissertation" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:marc21_subtype "dissertation" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0044" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/Thesis" ;
+    props:subtype "publication-dissertation" ;
+    props:type "publication" ;
+    props:zenodo "publication-bachelorthesis",
+        "publication-dissertation",
+        "publication-doctorthesis",
+        "publication-mastersthesis",
+        "publication-thesis" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:software a skos:Concept ;
+    skos:broadMatch schema:SoftwareSourceCode,
+        datacite-resourcetypegeneral:Software ;
+    skos:exactMatch coar-resource-type:c_5ce6 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrower nma-resourcetypes:software-computationalnotebook ;
+    skos:notation "software"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Software"@cs,
+        "Software"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "software" ;
+    props:datacite_general "Software" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:lindat "toolService" ;
+    props:marc21_type "software" ;
+    props:openaire_resourceType "0029" ;
+    props:openaire_type "software" ;
+    props:schema.org "https://schema.org/SoftwareSourceCode" ;
+    props:type "software" ;
+    props:zenodo "software" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-article a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:JournalArticle ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_6501 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-article"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Článek v časopise"@cs,
+        "Journal article"@en ;
+    props:csl "article-journal" ;
+    props:datacite_general "JournalArticle" ;
+    props:eurepo "info:eu-repo/semantics/article" ;
+    props:marc21_subtype "article" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0001" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-article" ;
+    props:type "publication" ;
+    props:zenodo "publication-article" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-patent a skos:Concept ;
+    skos:broadMatch schema:CreativeWork,
+        datacite-resourcetypegeneral:Text ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_15cd ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-patent"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Patent"@cs,
+        "Patent"@en ;
+    props:csl "patent" ;
+    props:datacite_general "Text" ;
+    props:datacite_type "Patent" ;
+    props:eurepo "info:eu-repo/semantics/patent" ;
+    props:marc21_subtype "patent" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0019" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:subtype "publication-patent" ;
+    props:type "publication" ;
+    props:zenodo "publication-patent" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:image a skos:Concept ;
+    skos:broadMatch schema:ImageObject,
+        datacite-resourcetypegeneral:Image ;
+    skos:exactMatch coar-resource-type:c_c513 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrower nma-resourcetypes:image-diagram,
+        nma-resourcetypes:image-drawing,
+        nma-resourcetypes:image-figure,
+        nma-resourcetypes:image-other,
+        nma-resourcetypes:image-photo,
+        nma-resourcetypes:image-plot ;
+    skos:notation "image"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Obrázek"@cs,
+        "Image"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "figure" ;
+    props:datacite_general "Image" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:lindat "OBRAZ" ;
+    props:marc21_type "image" ;
+    props:openaire_resourceType "0025" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/ImageObject" ;
+    props:type "image" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication-report a skos:Concept ;
+    skos:broadMatch schema:ScholarlyArticle,
+        datacite-resourcetypegeneral:Report ;
+    skos:broader nma-resourcetypes:publication ;
+    skos:exactMatch coar-resource-type:c_93fc ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "publication-report"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zpráva"@cs,
+        "Report"@en ;
+    props:csl "article" ;
+    props:datacite_general "Report" ;
+    props:eurepo "info:eu-repo/semantics/report" ;
+    props:marc21_subtype "report" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0017" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/ScholarlyArticle" ;
+    props:subtype "publication-report" ;
+    props:type "publication" ;
+    props:zenodo "publication-report" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:c_18cf a skos:Concept ;
+    skos:definition "A resource consisting primarily of words for reading. Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text. [Source: http://purl.org/dc/dcmitype/Text]"@en ;
+    skos:editorialNote "Published"@en ;
+    skos:exactMatch coar-resource-type:c_18cf,
+        datacite-v4.4:Text,
+        dcmitype:Text ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "c_18cf"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "text"@cs,
+        "text"@en ;
+    skos:topConceptOf nma-resourcetypes: .
+
+nma-resourcetypes:dataset a skos:Concept ;
+    skos:broadMatch schema:Dataset,
+        datacite-resourcetypegeneral:Dataset ;
+    skos:exactMatch coar-resource-type:c_ddb1 ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:notation "dataset"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Datová sada"@cs,
+        "Dataset"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "dataset" ;
+    props:datacite_general "Dataset" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:lindat "Spreadsheet" ;
+    props:marc21_type "dataset" ;
+    props:openaire_resourceType "0021" ;
+    props:openaire_type "dataset" ;
+    props:schema.org "https://schema.org/Dataset" ;
+    props:type "dataset" ;
+    props:zenodo "dataset" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes:publication a skos:Concept ;
+    skos:broadMatch coar-resource-type:c_18cf,
+        schema:CreativeWork,
+        datacite-resourcetypegeneral:Text ;
+    skos:inScheme nma-resourcetypes: ;
+    skos:narrower nma-resourcetypes:publication-annotationcollection,
+        nma-resourcetypes:publication-article,
+        nma-resourcetypes:publication-book,
+        nma-resourcetypes:publication-conferencepaper,
+        nma-resourcetypes:publication-conferenceproceeding,
+        nma-resourcetypes:publication-datamanagementplan,
+        nma-resourcetypes:publication-datapaper,
+        nma-resourcetypes:publication-deliverable,
+        nma-resourcetypes:publication-dissertation,
+        nma-resourcetypes:publication-journal,
+        nma-resourcetypes:publication-milestone,
+        nma-resourcetypes:publication-other,
+        nma-resourcetypes:publication-patent,
+        nma-resourcetypes:publication-peerreview,
+        nma-resourcetypes:publication-preprint,
+        nma-resourcetypes:publication-proposal,
+        nma-resourcetypes:publication-report,
+        nma-resourcetypes:publication-section,
+        nma-resourcetypes:publication-softwaredocumentation,
+        nma-resourcetypes:publication-standard,
+        nma-resourcetypes:publication-studyregistration,
+        nma-resourcetypes:publication-taxonomictreatment,
+        nma-resourcetypes:publication-technicalnote,
+        nma-resourcetypes:publication-workingpaper ;
+    skos:notation "publication"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Publikace"@cs,
+        "Publication"@en ;
+    skos:topConceptOf nma-resourcetypes: ;
+    props:csl "report" ;
+    props:datacite_general "Text" ;
+    props:eurepo "info:eu-repo/semantics/other" ;
+    props:lindat "corpus",
+        "languageDescription" ;
+    props:marc21_type "publication" ;
+    props:openaire_resourceType "0017" ;
+    props:openaire_type "publication" ;
+    props:schema.org "https://schema.org/CreativeWork" ;
+    props:type "publication" ;
+    props:zenodo "publication" ;
+    tags: "depositable",
+        "linkable" .
+
+nma-resourcetypes: skos:hasTopConcept nma-resourcetypes:542x-3s04,
+        nma-resourcetypes:audio,
+        nma-resourcetypes:c_12cc,
+        nma-resourcetypes:c_18cc,
+        nma-resourcetypes:c_18cf,
+        nma-resourcetypes:c_e059,
+        nma-resourcetypes:c_e9a0,
+        nma-resourcetypes:dataset,
+        nma-resourcetypes:event,
+        nma-resourcetypes:f8rt-tjk0,
+        nma-resourcetypes:gsza-y7v7,
+        nma-resourcetypes:h6qp-sc1x,
+        nma-resourcetypes:image,
+        nma-resourcetypes:instrument,
+        nma-resourcetypes:lesson,
+        nma-resourcetypes:model,
+        nma-resourcetypes:other,
+        nma-resourcetypes:physicalobject,
+        nma-resourcetypes:poster,
+        nma-resourcetypes:presentation,
+        nma-resourcetypes:project,
+        nma-resourcetypes:publication,
+        nma-resourcetypes:rmp5-3gq6,
+        nma-resourcetypes:s7r1-k5p0,
+        nma-resourcetypes:software,
+        nma-resourcetypes:video,
+        nma-resourcetypes:workflow .
+

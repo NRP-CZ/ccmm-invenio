@@ -1,6 +1,3 @@
-CCMMAccessRights:
-  type: vocabulary
-  vocabulary-type: accessrights # not in rdm
 CCMMAlternateTitleType:
   type: vocabulary
   vocabulary-type: titletypes # in RDM
@@ -10,9 +7,6 @@ CCMMChecksumAlgorithm:
 CCMMDateType:
   type: vocabulary
   vocabulary-type: datetypes # in RDM
-CCMMDescriptionType:
-  type: vocabulary
-  vocabulary-type: descriptiontypes # in RDM
 CCMMFormat:
   type: vocabulary
   vocabulary-type: fileformats # not in RDM
@@ -22,12 +16,6 @@ CCMMIdentifierScheme:
 CCMMLanguageSystem:
   type: vocabulary
   vocabulary-type: languages  # in CCMM language systems, renamed to be consistent with RDM
-CCMMLocationRelationType:
-  type: vocabulary
-  vocabulary-type: locationrelationtypes  # not in RDM
-CCMMRelationType:
-  type: vocabulary
-  vocabulary-type: relationtypes  # in RDM
 CCMMMediaType:
   type: vocabulary
   vocabulary-type: mediatypes # not in RDM
@@ -40,11 +28,6 @@ CCMMResourceRelationType:
 CCMMResourceType:
   type: vocabulary
   vocabulary-type: resourcetypes  # in RDM
-CCMMSubjectScheme:
-  type: vocabulary
-  vocabulary-type: subjectschemes # not in RDM, in RDM we have specialized Subject vocabulary
-# TODO: license for production repositories
-
 # Extra vocavbularies in RDM:
 #
 # Affiliation

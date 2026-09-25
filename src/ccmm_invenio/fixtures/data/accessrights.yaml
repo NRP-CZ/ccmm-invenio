@@ -1,0 +1,82 @@
+- id: embargoed
+  title:
+    cs: odložené zpřístupnění
+    en: embargoed access
+  description:
+    en: Embargoed access refers to a resource that is metadata only access until released
+      for open access on a certain date. Embargoes can be required by publishers and
+      funders policies, or set by the author (e.g such as in the case of theses and
+      dissertations).
+  props:
+    openaire: info:eu-repo/semantics/embargoedAccess
+  mappings:
+  - identifier: http://purl.org/coar/access_right/c_f1cf
+    scheme: http://purl.org/coar/access_right/
+    relation: exactMatch
+- id: metadata-only
+  title:
+    cs: pouze metadata
+    en: metadata only access
+  description:
+    en: Metadata only access refers to a resource in which access is limited to metadata
+      only. The resource itself is described by the metadata, but neither is directly
+      available through the system or platform nor can be referenced to an open access
+      copy in an external journal or trustworthy archive.
+  props:
+    openaire: info:eu-repo/semantics/closedAccess
+  mappings:
+  - identifier: http://purl.org/coar/access_right/c_14cb
+    scheme: http://purl.org/coar/access_right/
+    relation: exactMatch
+  - identifier: http://purl.org/eprint/accessRights/ClosedAccess
+    scheme: http://purl.org/eprint/accessRights/
+    relation: relatedMatch
+- id: open
+  title:
+    cs: otevřený přístup
+    en: open access
+  description:
+    en: Open access refers to a resource that is immediately and permanently online,
+      and free for all on the Web, without financial and technical barriers.The resource
+      is either stored in the repository or referenced to an external journal or trustworthy
+      archive.
+  props:
+    openaire: info:eu-repo/semantics/openAccess
+  mappings:
+  - identifier: http://purl.org/coar/access_right/c_abf2
+    scheme: http://purl.org/coar/access_right/
+    relation: exactMatch
+  - identifier: http://purl.org/eprint/accessRights/OpenAccess
+    scheme: http://purl.org/eprint/accessRights/
+    relation: relatedMatch
+  - identifier: https://vocabs.acdh.oeaw.ac.at/archeaccessrestrictions/public
+    scheme: https://vocabs.acdh.oeaw.ac.at/archeaccessrestrictions/
+    relation: relatedMatch
+- id: restricted
+  title:
+    cs: omezený přístup
+    en: restricted access
+  description:
+    en: 'Restricted access refers to a resource that is available in a system but
+      with some type of restriction for full open access. This type of access can
+      occur in a number of different situations. Some examples are described below:
+
+      The user must log-in to the system in order to access the resource
+
+      The user must send an email to the author or system administrator to access
+      the resource
+
+      Access to the resource is restricted to a specific community (e.g. limited to
+      a university community)'
+  props:
+    openaire: info:eu-repo/semantics/restrictedAccess
+  mappings:
+  - identifier: http://purl.org/coar/access_right/c_16ec
+    scheme: http://purl.org/coar/access_right/
+    relation: exactMatch
+  - identifier: http://purl.org/eprint/accessRights/RestrictedAccess
+    scheme: http://purl.org/eprint/accessRights/
+    relation: relatedMatch
+  - identifier: https://vocabs.acdh.oeaw.ac.at/archeaccessrestrictions/restricted
+    scheme: https://vocabs.acdh.oeaw.ac.at/archeaccessrestrictions/
+    relation: relatedMatch

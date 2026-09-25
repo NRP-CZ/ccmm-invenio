@@ -1,0 +1,3019 @@
+@prefix europa-language: <http://publications.europa.eu/resource/authority/language/> .
+@prefix europa-ontology: <http://publications.europa.eu/ontology/> .
+@prefix europa-web: <https://op.europa.eu/en/web/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix nma: <https://nma.eosc.cz/vocabularies/> .
+@prefix nma-languages: <https://nma.eosc.cz/vocabularies/languages/> .
+@prefix nma-vocabularies: <https://nma.eosc.cz/vocabularies/vocabularies/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tags: <https://nma.eosc.cz/vocabularies/vocabularies/inveniotags> .
+
+europa-ontology:euvoc a owl:Ontology ;
+    rdfs:label "EU Vocabularies ontology (euvoc)"@en ;
+    rdfs:comment "Ontology of the EU Publications Office; its terms are used as skos:notation datatypes to distinguish language code schemes (e.g. ISO_639_1, ISO_639_3, XML_LNG)."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+europa-language: a skos:ConceptScheme ;
+    rdfs:label "EU Publications Office language authority"@en ;
+    rdfs:comment "EU Publications Office language authority table; identifiers are ISO 639-3 codes."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+nma: a owl:Ontology ;
+    rdfs:label "NMA vocabularies"@en ;
+    rdfs:comment "Namespace of the NMA vocabularies; each sub-path is one vocabulary (e.g. languages)."@en .
+
+nma-vocabularies:invenioid a rdfs:Datatype ;
+    rdfs:label "NMA internal vocabulary id"@en ;
+    rdfs:comment "Marks skos:notation literals carrying the internal NMA vocabulary id, used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props: a owl:Ontology ;
+    rdfs:label "NMA vocabulary properties"@en ;
+    rdfs:comment "Namespace of internal vocabulary properties and datatypes used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props:alpha_2 a rdf:Property ;
+    rdfs:label "ISO 639-1 code"@en ;
+    rdfs:comment "Two-letter ISO 639-1 code of a language, when it has one."@en .
+
+props:classification_code a rdf:Property ;
+    rdfs:label "classification code"@en ;
+    rdfs:comment "Code of a subject in its classification scheme (e.g. the FORD code 10101 or the INSPIRE theme code EF)."@en .
+
+props:csl a rdf:Property ;
+    rdfs:label "csl"@en ;
+    rdfs:comment "Citation Style Language (CSL) type of a resource type."@en .
+
+props:datacite a rdf:Property ;
+    rdfs:label "DataCite relationType name"@en ;
+    rdfs:comment "Name of the DataCite relationType (e.g. IsCitedBy) a relation type concept stands for."@en .
+
+props:datacite_general a rdf:Property ;
+    rdfs:label "datacite_general"@en ;
+    rdfs:comment "DataCite resourceTypeGeneral of a resource type."@en .
+
+props:datacite_type a rdf:Property ;
+    rdfs:label "datacite_type"@en ;
+    rdfs:comment "DataCite resource type name, when the general one is further specified."@en .
+
+props:eurepo a rdf:Property ;
+    rdfs:label "eurepo"@en ;
+    rdfs:comment "eu-repo semantics identifier of a resource type."@en .
+
+props:marc a rdf:Property ;
+    rdfs:label "MARC 21 relator code"@en ;
+    rdfs:comment "Three-letter MARC 21 relator code (e.g. prc) of a role concept."@en .
+
+props:marc21_subtype a rdf:Property ;
+    rdfs:label "marc21_subtype"@en ;
+    rdfs:comment "MARC 21 bibliographic level of a resource type."@en .
+
+props:marc21_type a rdf:Property ;
+    rdfs:label "marc21_type"@en ;
+    rdfs:comment "MARC 21 type of record of a resource type."@en .
+
+props:openaire_resourceType a rdf:Property ;
+    rdfs:label "openaire_resourceType"@en ;
+    rdfs:comment "OpenAIRE resource type code of a resource type."@en .
+
+props:openaire_type a rdf:Property ;
+    rdfs:label "openaire_type"@en ;
+    rdfs:comment "OpenAIRE type name of a resource type."@en .
+
+props:schema.org a rdf:Property ;
+    rdfs:label "schema.org"@en ;
+    rdfs:comment "schema.org type a resource type maps to."@en .
+
+props:subtype a rdf:Property ;
+    rdfs:label "subtype"@en ;
+    rdfs:comment "InvenioRDM resource subtype id; empty for top-level types."@en .
+
+props:type a rdf:Property ;
+    rdfs:label "type"@en ;
+    rdfs:comment "InvenioRDM resource type id a resource type belongs to."@en .
+
+props:xml_lang a rdf:Property ;
+    rdfs:label "xml:lang code"@en ;
+    rdfs:comment "Language tag suitable for an xml:lang attribute: the ISO 639-1 code when available, the ISO 639-3 code otherwise."@en .
+
+tags: a rdf:Property ;
+    rdfs:label "vocabulary tags"@en ;
+    rdfs:comment "Links a vocabulary concept to its tag values (e.g. the scope and type of a language); internal use."@en .
+
+nma-languages:AAR a skos:Concept ;
+    skos:exactMatch europa-language:AAR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "aa"^^euvoc:ISO_639_1,
+        "aar"^^euvoc:ISO_639_3,
+        "aa"^^euvoc:XML_LNG,
+        "aar"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "afarština"@cs,
+        "Afar"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "aa" ;
+    props:xml_lang "aa" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:ABK a skos:Concept ;
+    skos:exactMatch europa-language:ABK ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ab"^^euvoc:ISO_639_1,
+        "abk"^^euvoc:ISO_639_3,
+        "ab"^^euvoc:XML_LNG,
+        "abk"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "abchazajština"@cs,
+        "Abkhazian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ab" ;
+    props:xml_lang "ab" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:AFR a skos:Concept ;
+    skos:exactMatch europa-language:AFR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "af"^^euvoc:ISO_639_1,
+        "afr"^^euvoc:ISO_639_3,
+        "af"^^euvoc:XML_LNG,
+        "afr"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "afrikánština"@cs,
+        "Afrikaans"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "af" ;
+    props:xml_lang "af" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:AKA a skos:Concept ;
+    skos:exactMatch europa-language:AKA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ak"^^euvoc:ISO_639_1,
+        "aka"^^euvoc:ISO_639_3,
+        "ak"^^euvoc:XML_LNG,
+        "aka"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "akanština"@cs,
+        "Akan"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ak" ;
+    props:xml_lang "ak" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:AMH a skos:Concept ;
+    skos:exactMatch europa-language:AMH ;
+    skos:inScheme nma-languages: ;
+    skos:notation "am"^^euvoc:ISO_639_1,
+        "amh"^^euvoc:ISO_639_3,
+        "am"^^euvoc:XML_LNG,
+        "amh"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Amharština"@cs,
+        "Amharic"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "am" ;
+    props:xml_lang "am" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:ARA a skos:Concept ;
+    skos:exactMatch europa-language:ARA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ar"^^euvoc:ISO_639_1,
+        "ara"^^euvoc:ISO_639_3,
+        "ar"^^euvoc:XML_LNG,
+        "ara"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "arabština"@cs,
+        "Arabic"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ar" ;
+    props:xml_lang "ar" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:ARG a skos:Concept ;
+    skos:exactMatch europa-language:ARG ;
+    skos:inScheme nma-languages: ;
+    skos:notation "an"^^euvoc:ISO_639_1,
+        "arg"^^euvoc:ISO_639_3,
+        "an"^^euvoc:XML_LNG,
+        "arg"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "aragonská španělština"@cs,
+        "Aragonese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "an" ;
+    props:xml_lang "an" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:ASM a skos:Concept ;
+    skos:exactMatch europa-language:ASM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "as"^^euvoc:ISO_639_1,
+        "asm"^^euvoc:ISO_639_3,
+        "as"^^euvoc:XML_LNG,
+        "asm"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ásámština"@cs,
+        "Assamese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "as" ;
+    props:xml_lang "as" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:AVA a skos:Concept ;
+    skos:exactMatch europa-language:AVA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "av"^^euvoc:ISO_639_1,
+        "ava"^^euvoc:ISO_639_3,
+        "av"^^euvoc:XML_LNG,
+        "ava"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "avarština"@cs,
+        "Avaric"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "av" ;
+    props:xml_lang "av" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:AVE a skos:Concept ;
+    skos:exactMatch europa-language:AVE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ae"^^euvoc:ISO_639_1,
+        "ave"^^euvoc:ISO_639_3,
+        "ae"^^euvoc:XML_LNG,
+        "ave"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "avestština"@cs,
+        "Avestan"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ae" ;
+    props:xml_lang "ae" ;
+    tags: "historical",
+        "individual" .
+
+nma-languages:AYM a skos:Concept ;
+    skos:exactMatch europa-language:AYM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ay"^^euvoc:ISO_639_1,
+        "aym"^^euvoc:ISO_639_3,
+        "ay"^^euvoc:XML_LNG,
+        "aym"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Aymárština"@cs,
+        "Aymara"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ay" ;
+    props:xml_lang "ay" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:AZE a skos:Concept ;
+    skos:exactMatch europa-language:AZE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "az"^^euvoc:ISO_639_1,
+        "aze"^^euvoc:ISO_639_3,
+        "az"^^euvoc:XML_LNG,
+        "aze"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "azerbajdžánština"@cs,
+        "Azerbaijani"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "az" ;
+    props:xml_lang "az" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:BAK a skos:Concept ;
+    skos:exactMatch europa-language:BAK ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ba"^^euvoc:ISO_639_1,
+        "bak"^^euvoc:ISO_639_3,
+        "ba"^^euvoc:XML_LNG,
+        "bak"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Baskirština"@cs,
+        "Bashkir"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ba" ;
+    props:xml_lang "ba" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:BAM a skos:Concept ;
+    skos:exactMatch europa-language:BAM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "bm"^^euvoc:ISO_639_1,
+        "bam"^^euvoc:ISO_639_3,
+        "bm"^^euvoc:XML_LNG,
+        "bam"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "bambarština"@cs,
+        "Bambara"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "bm" ;
+    props:xml_lang "bm" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:BEL a skos:Concept ;
+    skos:exactMatch europa-language:BEL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "be"^^euvoc:ISO_639_1,
+        "bel"^^euvoc:ISO_639_3,
+        "be"^^euvoc:XML_LNG,
+        "bel"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "běloruština"@cs,
+        "Belarusian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "be" ;
+    props:xml_lang "be" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:BEN a skos:Concept ;
+    skos:exactMatch europa-language:BEN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "bn"^^euvoc:ISO_639_1,
+        "ben"^^euvoc:ISO_639_3,
+        "bn"^^euvoc:XML_LNG,
+        "ben"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "bengálština"@cs,
+        "Bengali"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "bn" ;
+    props:xml_lang "bn" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:BIS a skos:Concept ;
+    skos:exactMatch europa-language:BIS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "bi"^^euvoc:ISO_639_1,
+        "bis"^^euvoc:ISO_639_3,
+        "bi"^^euvoc:XML_LNG,
+        "bis"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Bislámština"@cs,
+        "Bislama"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "bi" ;
+    props:xml_lang "bi" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:BOD a skos:Concept ;
+    skos:exactMatch europa-language:BOD ;
+    skos:inScheme nma-languages: ;
+    skos:notation "bo"^^euvoc:ISO_639_1,
+        "bod"^^euvoc:ISO_639_3,
+        "bo"^^euvoc:XML_LNG,
+        "bod"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "tibetština"@cs,
+        "Tibetan"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "bo" ;
+    props:xml_lang "bo" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:BOS a skos:Concept ;
+    skos:exactMatch europa-language:BOS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "bs"^^euvoc:ISO_639_1,
+        "bos"^^euvoc:ISO_639_3,
+        "bs"^^euvoc:XML_LNG,
+        "bos"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "bosenština"@cs,
+        "Bosnian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "bs" ;
+    props:xml_lang "bs" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:BRE a skos:Concept ;
+    skos:exactMatch europa-language:BRE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "br"^^euvoc:ISO_639_1,
+        "bre"^^euvoc:ISO_639_3,
+        "br"^^euvoc:XML_LNG,
+        "bre"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "bretonština"@cs,
+        "Breton"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "br" ;
+    props:xml_lang "br" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:BUL a skos:Concept ;
+    skos:exactMatch europa-language:BUL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "bg"^^euvoc:ISO_639_1,
+        "bul"^^euvoc:ISO_639_3,
+        "bg"^^euvoc:XML_LNG,
+        "bul"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "bulharština"@cs,
+        "Bulgarian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "bg" ;
+    props:xml_lang "bg" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:CAT a skos:Concept ;
+    skos:exactMatch europa-language:CAT ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ca"^^euvoc:ISO_639_1,
+        "cat"^^euvoc:ISO_639_3,
+        "ca"^^euvoc:XML_LNG,
+        "cat"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "katalánština"@cs,
+        "Catalan"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ca" ;
+    props:xml_lang "ca" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:CES a skos:Concept ;
+    skos:exactMatch europa-language:CES ;
+    skos:inScheme nma-languages: ;
+    skos:notation "cs"^^euvoc:ISO_639_1,
+        "ces"^^euvoc:ISO_639_3,
+        "cs"^^euvoc:XML_LNG,
+        "ces"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "čeština"@cs,
+        "Czech"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "cs" ;
+    props:xml_lang "cs" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:CHA a skos:Concept ;
+    skos:exactMatch europa-language:CHA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ch"^^euvoc:ISO_639_1,
+        "cha"^^euvoc:ISO_639_3,
+        "ch"^^euvoc:XML_LNG,
+        "cha"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "čamoro"@cs,
+        "Chamorro"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ch" ;
+    props:xml_lang "ch" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:CHE a skos:Concept ;
+    skos:exactMatch europa-language:CHE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ce"^^euvoc:ISO_639_1,
+        "che"^^euvoc:ISO_639_3,
+        "ce"^^euvoc:XML_LNG,
+        "che"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "čečenština"@cs,
+        "Chechen"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ce" ;
+    props:xml_lang "ce" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:CHU a skos:Concept ;
+    skos:exactMatch europa-language:CHU ;
+    skos:inScheme nma-languages: ;
+    skos:notation "cu"^^euvoc:ISO_639_1,
+        "chu"^^euvoc:ISO_639_3,
+        "cu"^^euvoc:XML_LNG,
+        "chu"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Church Slavic"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "cu" ;
+    props:xml_lang "cu" ;
+    tags: "historical",
+        "individual" .
+
+nma-languages:CHV a skos:Concept ;
+    skos:exactMatch europa-language:CHV ;
+    skos:inScheme nma-languages: ;
+    skos:notation "cv"^^euvoc:ISO_639_1,
+        "chv"^^euvoc:ISO_639_3,
+        "cv"^^euvoc:XML_LNG,
+        "chv"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "čuvaština"@cs,
+        "Chuvash"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "cv" ;
+    props:xml_lang "cv" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:COR a skos:Concept ;
+    skos:exactMatch europa-language:COR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "kw"^^euvoc:ISO_639_1,
+        "cor"^^euvoc:ISO_639_3,
+        "kw"^^euvoc:XML_LNG,
+        "cor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "kornština"@cs,
+        "Cornish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "kw" ;
+    props:xml_lang "kw" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:COS a skos:Concept ;
+    skos:exactMatch europa-language:COS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "co"^^euvoc:ISO_639_1,
+        "cos"^^euvoc:ISO_639_3,
+        "co"^^euvoc:XML_LNG,
+        "cos"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "korsičtina"@cs,
+        "Corsican"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "co" ;
+    props:xml_lang "co" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:CRE a skos:Concept ;
+    skos:exactMatch europa-language:CRE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "cr"^^euvoc:ISO_639_1,
+        "cre"^^euvoc:ISO_639_3,
+        "cr"^^euvoc:XML_LNG,
+        "cre"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "krí"@cs,
+        "Cree"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "cr" ;
+    props:xml_lang "cr" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:CYM a skos:Concept ;
+    skos:exactMatch europa-language:CYM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "cy"^^euvoc:ISO_639_1,
+        "cym"^^euvoc:ISO_639_3,
+        "cy"^^euvoc:XML_LNG,
+        "cym"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "velština"@cs,
+        "Welsh"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "cy" ;
+    props:xml_lang "cy" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:DAN a skos:Concept ;
+    skos:exactMatch europa-language:DAN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "da"^^euvoc:ISO_639_1,
+        "dan"^^euvoc:ISO_639_3,
+        "da"^^euvoc:XML_LNG,
+        "dan"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "dánština"@cs,
+        "Danish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "da" ;
+    props:xml_lang "da" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:DEU a skos:Concept ;
+    skos:exactMatch europa-language:DEU ;
+    skos:inScheme nma-languages: ;
+    skos:notation "de"^^euvoc:ISO_639_1,
+        "deu"^^euvoc:ISO_639_3,
+        "de"^^euvoc:XML_LNG,
+        "deu"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "němčina"@cs,
+        "German"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "de" ;
+    props:xml_lang "de" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:DIV a skos:Concept ;
+    skos:exactMatch europa-language:DIV ;
+    skos:inScheme nma-languages: ;
+    skos:notation "dv"^^euvoc:ISO_639_1,
+        "div"^^euvoc:ISO_639_3,
+        "dv"^^euvoc:XML_LNG,
+        "div"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Divehi"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "dv" ;
+    props:xml_lang "dv" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:DZO a skos:Concept ;
+    skos:exactMatch europa-language:DZO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "dz"^^euvoc:ISO_639_1,
+        "dzo"^^euvoc:ISO_639_3,
+        "dz"^^euvoc:XML_LNG,
+        "dzo"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Bhútánština"@cs,
+        "Dzongkha"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "dz" ;
+    props:xml_lang "dz" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:ELL a skos:Concept ;
+    skos:exactMatch europa-language:ELL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "el"^^euvoc:ISO_639_1,
+        "ell"^^euvoc:ISO_639_3,
+        "el"^^euvoc:XML_LNG,
+        "ell"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Modern Greek (1453-)"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "el" ;
+    props:xml_lang "el" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:ENG a skos:Concept ;
+    skos:exactMatch europa-language:ENG ;
+    skos:inScheme nma-languages: ;
+    skos:notation "en"^^euvoc:ISO_639_1,
+        "eng"^^euvoc:ISO_639_3,
+        "en"^^euvoc:XML_LNG,
+        "eng"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "angličtina"@cs,
+        "English"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "en" ;
+    props:xml_lang "en" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:EPO a skos:Concept ;
+    skos:exactMatch europa-language:EPO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "eo"^^euvoc:ISO_639_1,
+        "epo"^^euvoc:ISO_639_3,
+        "eo"^^euvoc:XML_LNG,
+        "epo"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "esperanto"@cs,
+        "Esperanto"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "eo" ;
+    props:xml_lang "eo" ;
+    tags: "constructed",
+        "individual" .
+
+nma-languages:EST a skos:Concept ;
+    skos:exactMatch europa-language:EST ;
+    skos:inScheme nma-languages: ;
+    skos:notation "et"^^euvoc:ISO_639_1,
+        "est"^^euvoc:ISO_639_3,
+        "et"^^euvoc:XML_LNG,
+        "est"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "estonština"@cs,
+        "Estonian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "et" ;
+    props:xml_lang "et" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:EUS a skos:Concept ;
+    skos:exactMatch europa-language:EUS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "eu"^^euvoc:ISO_639_1,
+        "eus"^^euvoc:ISO_639_3,
+        "eu"^^euvoc:XML_LNG,
+        "eus"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "baskičtina"@cs,
+        "Basque"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "eu" ;
+    props:xml_lang "eu" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:EWE a skos:Concept ;
+    skos:exactMatch europa-language:EWE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ee"^^euvoc:ISO_639_1,
+        "ewe"^^euvoc:ISO_639_3,
+        "ee"^^euvoc:XML_LNG,
+        "ewe"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "eweština"@cs,
+        "Ewe"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ee" ;
+    props:xml_lang "ee" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:FAO a skos:Concept ;
+    skos:exactMatch europa-language:FAO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "fo"^^euvoc:ISO_639_1,
+        "fao"^^euvoc:ISO_639_3,
+        "fo"^^euvoc:XML_LNG,
+        "fao"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "faerština"@cs,
+        "Faroese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "fo" ;
+    props:xml_lang "fo" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:FAS a skos:Concept ;
+    skos:exactMatch europa-language:FAS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "fa"^^euvoc:ISO_639_1,
+        "fas"^^euvoc:ISO_639_3,
+        "fa"^^euvoc:XML_LNG,
+        "fas"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "perština"@cs,
+        "Persian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "fa" ;
+    props:xml_lang "fa" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:FIJ a skos:Concept ;
+    skos:exactMatch europa-language:FIJ ;
+    skos:inScheme nma-languages: ;
+    skos:notation "fj"^^euvoc:ISO_639_1,
+        "fij"^^euvoc:ISO_639_3,
+        "fj"^^euvoc:XML_LNG,
+        "fij"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fidži"@cs,
+        "Fijian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "fj" ;
+    props:xml_lang "fj" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:FIN a skos:Concept ;
+    skos:exactMatch europa-language:FIN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "fi"^^euvoc:ISO_639_1,
+        "fin"^^euvoc:ISO_639_3,
+        "fi"^^euvoc:XML_LNG,
+        "fin"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "finština"@cs,
+        "Finnish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "fi" ;
+    props:xml_lang "fi" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:FRA a skos:Concept ;
+    skos:exactMatch europa-language:FRA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "fr"^^euvoc:ISO_639_1,
+        "fra"^^euvoc:ISO_639_3,
+        "fr"^^euvoc:XML_LNG,
+        "fra"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "francouzština"@cs,
+        "French"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "fr" ;
+    props:xml_lang "fr" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:FRY a skos:Concept ;
+    skos:exactMatch europa-language:FRY ;
+    skos:inScheme nma-languages: ;
+    skos:notation "fy"^^euvoc:ISO_639_1,
+        "fry"^^euvoc:ISO_639_3,
+        "fy"^^euvoc:XML_LNG,
+        "fry"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Western Frisian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "fy" ;
+    props:xml_lang "fy" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:FUL a skos:Concept ;
+    skos:exactMatch europa-language:FUL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ff"^^euvoc:ISO_639_1,
+        "ful"^^euvoc:ISO_639_3,
+        "ff"^^euvoc:XML_LNG,
+        "ful"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "fulahština"@cs,
+        "Fulah"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ff" ;
+    props:xml_lang "ff" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:GLA a skos:Concept ;
+    skos:exactMatch europa-language:GLA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "gd"^^euvoc:ISO_639_1,
+        "gla"^^euvoc:ISO_639_3,
+        "gd"^^euvoc:XML_LNG,
+        "gla"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Scottish Gaelic"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "gd" ;
+    props:xml_lang "gd" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:GLE a skos:Concept ;
+    skos:exactMatch europa-language:GLE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ga"^^euvoc:ISO_639_1,
+        "gle"^^euvoc:ISO_639_3,
+        "ga"^^euvoc:XML_LNG,
+        "gle"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "irština"@cs,
+        "Irish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ga" ;
+    props:xml_lang "ga" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:GLG a skos:Concept ;
+    skos:exactMatch europa-language:GLG ;
+    skos:inScheme nma-languages: ;
+    skos:notation "gl"^^euvoc:ISO_639_1,
+        "glg"^^euvoc:ISO_639_3,
+        "gl"^^euvoc:XML_LNG,
+        "glg"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Galician"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "gl" ;
+    props:xml_lang "gl" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:GLV a skos:Concept ;
+    skos:exactMatch europa-language:GLV ;
+    skos:inScheme nma-languages: ;
+    skos:notation "gv"^^euvoc:ISO_639_1,
+        "glv"^^euvoc:ISO_639_3,
+        "gv"^^euvoc:XML_LNG,
+        "glv"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "manština"@cs,
+        "Manx"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "gv" ;
+    props:xml_lang "gv" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:GRN a skos:Concept ;
+    skos:exactMatch europa-language:GRN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "gn"^^euvoc:ISO_639_1,
+        "grn"^^euvoc:ISO_639_3,
+        "gn"^^euvoc:XML_LNG,
+        "grn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Guaranština"@cs,
+        "Guarani"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "gn" ;
+    props:xml_lang "gn" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:GUJ a skos:Concept ;
+    skos:exactMatch europa-language:GUJ ;
+    skos:inScheme nma-languages: ;
+    skos:notation "gu"^^euvoc:ISO_639_1,
+        "guj"^^euvoc:ISO_639_3,
+        "gu"^^euvoc:XML_LNG,
+        "guj"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Gujaratština"@cs,
+        "Gujarati"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "gu" ;
+    props:xml_lang "gu" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:HAT a skos:Concept ;
+    skos:exactMatch europa-language:HAT ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ht"^^euvoc:ISO_639_1,
+        "hat"^^euvoc:ISO_639_3,
+        "ht"^^euvoc:XML_LNG,
+        "hat"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Haitian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ht" ;
+    props:xml_lang "ht" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:HAU a skos:Concept ;
+    skos:exactMatch europa-language:HAU ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ha"^^euvoc:ISO_639_1,
+        "hau"^^euvoc:ISO_639_3,
+        "ha"^^euvoc:XML_LNG,
+        "hau"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Hausa"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ha" ;
+    props:xml_lang "ha" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:HBS a skos:Concept ;
+    skos:exactMatch europa-language:HBS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sh"^^euvoc:ISO_639_1,
+        "hbs"^^euvoc:ISO_639_3,
+        "sh"^^euvoc:XML_LNG,
+        "hbs"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Serbo-Croatian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sh" ;
+    props:xml_lang "sh" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:HEB a skos:Concept ;
+    skos:exactMatch europa-language:HEB ;
+    skos:inScheme nma-languages: ;
+    skos:notation "he"^^euvoc:ISO_639_1,
+        "heb"^^euvoc:ISO_639_3,
+        "he"^^euvoc:XML_LNG,
+        "heb"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "hebrejština"@cs,
+        "Hebrew"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "he" ;
+    props:xml_lang "he" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:HER a skos:Concept ;
+    skos:exactMatch europa-language:HER ;
+    skos:inScheme nma-languages: ;
+    skos:notation "hz"^^euvoc:ISO_639_1,
+        "her"^^euvoc:ISO_639_3,
+        "hz"^^euvoc:XML_LNG,
+        "her"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "herero"@cs,
+        "Herero"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "hz" ;
+    props:xml_lang "hz" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:HIN a skos:Concept ;
+    skos:exactMatch europa-language:HIN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "hi"^^euvoc:ISO_639_1,
+        "hin"^^euvoc:ISO_639_3,
+        "hi"^^euvoc:XML_LNG,
+        "hin"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "hindština"@cs,
+        "Hindi"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "hi" ;
+    props:xml_lang "hi" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:HMO a skos:Concept ;
+    skos:exactMatch europa-language:HMO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ho"^^euvoc:ISO_639_1,
+        "hmo"^^euvoc:ISO_639_3,
+        "ho"^^euvoc:XML_LNG,
+        "hmo"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "hiri motu"@cs,
+        "Hiri Motu"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ho" ;
+    props:xml_lang "ho" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:HRV a skos:Concept ;
+    skos:exactMatch europa-language:HRV ;
+    skos:inScheme nma-languages: ;
+    skos:notation "hr"^^euvoc:ISO_639_1,
+        "hrv"^^euvoc:ISO_639_3,
+        "hr"^^euvoc:XML_LNG,
+        "hrv"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "chorvatština"@cs,
+        "Croatian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "hr" ;
+    props:xml_lang "hr" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:HUN a skos:Concept ;
+    skos:exactMatch europa-language:HUN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "hu"^^euvoc:ISO_639_1,
+        "hun"^^euvoc:ISO_639_3,
+        "hu"^^euvoc:XML_LNG,
+        "hun"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "maďarština"@cs,
+        "Hungarian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "hu" ;
+    props:xml_lang "hu" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:HYE a skos:Concept ;
+    skos:exactMatch europa-language:HYE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "hy"^^euvoc:ISO_639_1,
+        "hye"^^euvoc:ISO_639_3,
+        "hy"^^euvoc:XML_LNG,
+        "hye"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "arménština"@cs,
+        "Armenian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "hy" ;
+    props:xml_lang "hy" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:IBO a skos:Concept ;
+    skos:exactMatch europa-language:IBO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ig"^^euvoc:ISO_639_1,
+        "ibo"^^euvoc:ISO_639_3,
+        "ig"^^euvoc:XML_LNG,
+        "ibo"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "igbo"@cs,
+        "Igbo"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ig" ;
+    props:xml_lang "ig" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:IDO a skos:Concept ;
+    skos:exactMatch europa-language:IDO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "io"^^euvoc:ISO_639_1,
+        "ido"^^euvoc:ISO_639_3,
+        "io"^^euvoc:XML_LNG,
+        "ido"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ido"@cs,
+        "Ido"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "io" ;
+    props:xml_lang "io" ;
+    tags: "constructed",
+        "individual" .
+
+nma-languages:III a skos:Concept ;
+    skos:exactMatch europa-language:III ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ii"^^euvoc:ISO_639_1,
+        "iii"^^euvoc:ISO_639_3,
+        "ii"^^euvoc:XML_LNG,
+        "iii"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sichuan Yi"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ii" ;
+    props:xml_lang "ii" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:IKU a skos:Concept ;
+    skos:exactMatch europa-language:IKU ;
+    skos:inScheme nma-languages: ;
+    skos:notation "iu"^^euvoc:ISO_639_1,
+        "iku"^^euvoc:ISO_639_3,
+        "iu"^^euvoc:XML_LNG,
+        "iku"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Inuktitutština"@cs,
+        "Inuktitut"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "iu" ;
+    props:xml_lang "iu" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:ILE a skos:Concept ;
+    skos:exactMatch europa-language:ILE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ie"^^euvoc:ISO_639_1,
+        "ile"^^euvoc:ISO_639_3,
+        "ie"^^euvoc:XML_LNG,
+        "ile"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Interlingue"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ie" ;
+    props:xml_lang "ie" ;
+    tags: "constructed",
+        "individual" .
+
+nma-languages:INA a skos:Concept ;
+    skos:exactMatch europa-language:INA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ia"^^euvoc:ISO_639_1,
+        "ina"^^euvoc:ISO_639_3,
+        "ia"^^euvoc:XML_LNG,
+        "ina"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Interlingua (Mezinárodní pomocná jazyková asociace)"@cs,
+        "Interlingua (International Auxiliary Language Association)"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ia" ;
+    props:xml_lang "ia" ;
+    tags: "constructed",
+        "individual" .
+
+nma-languages:IND a skos:Concept ;
+    skos:exactMatch europa-language:IND ;
+    skos:inScheme nma-languages: ;
+    skos:notation "id"^^euvoc:ISO_639_1,
+        "ind"^^euvoc:ISO_639_3,
+        "id"^^euvoc:XML_LNG,
+        "ind"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "indonézština"@cs,
+        "Indonesian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "id" ;
+    props:xml_lang "id" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:IPK a skos:Concept ;
+    skos:exactMatch europa-language:IPK ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ik"^^euvoc:ISO_639_1,
+        "ipk"^^euvoc:ISO_639_3,
+        "ik"^^euvoc:XML_LNG,
+        "ipk"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Inupiakština"@cs,
+        "Inupiaq"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ik" ;
+    props:xml_lang "ik" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:ISL a skos:Concept ;
+    skos:exactMatch europa-language:ISL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "is"^^euvoc:ISO_639_1,
+        "isl"^^euvoc:ISO_639_3,
+        "is"^^euvoc:XML_LNG,
+        "isl"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "islandština"@cs,
+        "Icelandic"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "is" ;
+    props:xml_lang "is" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:ITA a skos:Concept ;
+    skos:exactMatch europa-language:ITA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "it"^^euvoc:ISO_639_1,
+        "ita"^^euvoc:ISO_639_3,
+        "it"^^euvoc:XML_LNG,
+        "ita"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "italština"@cs,
+        "Italian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "it" ;
+    props:xml_lang "it" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:JAV a skos:Concept ;
+    skos:exactMatch europa-language:JAV ;
+    skos:inScheme nma-languages: ;
+    skos:notation "jv"^^euvoc:ISO_639_1,
+        "jav"^^euvoc:ISO_639_3,
+        "jv"^^euvoc:XML_LNG,
+        "jav"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "jávština"@cs,
+        "Javanese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "jv" ;
+    props:xml_lang "jv" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:JPN a skos:Concept ;
+    skos:exactMatch europa-language:JPN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ja"^^euvoc:ISO_639_1,
+        "jpn"^^euvoc:ISO_639_3,
+        "ja"^^euvoc:XML_LNG,
+        "jpn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "japonština"@cs,
+        "Japanese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ja" ;
+    props:xml_lang "ja" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KAL a skos:Concept ;
+    skos:exactMatch europa-language:KAL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "kl"^^euvoc:ISO_639_1,
+        "kal"^^euvoc:ISO_639_3,
+        "kl"^^euvoc:XML_LNG,
+        "kal"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kalaallisut"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "kl" ;
+    props:xml_lang "kl" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KAN a skos:Concept ;
+    skos:exactMatch europa-language:KAN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "kn"^^euvoc:ISO_639_1,
+        "kan"^^euvoc:ISO_639_3,
+        "kn"^^euvoc:XML_LNG,
+        "kan"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kannadština"@cs,
+        "Kannada"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "kn" ;
+    props:xml_lang "kn" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KAS a skos:Concept ;
+    skos:exactMatch europa-language:KAS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ks"^^euvoc:ISO_639_1,
+        "kas"^^euvoc:ISO_639_3,
+        "ks"^^euvoc:XML_LNG,
+        "kas"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "kašmírština"@cs,
+        "Kashmiri"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ks" ;
+    props:xml_lang "ks" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KAT a skos:Concept ;
+    skos:exactMatch europa-language:KAT ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ka"^^euvoc:ISO_639_1,
+        "kat"^^euvoc:ISO_639_3,
+        "ka"^^euvoc:XML_LNG,
+        "kat"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Gruzínština"@cs,
+        "Georgian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ka" ;
+    props:xml_lang "ka" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KAU a skos:Concept ;
+    skos:exactMatch europa-language:KAU ;
+    skos:inScheme nma-languages: ;
+    skos:notation "kr"^^euvoc:ISO_639_1,
+        "kau"^^euvoc:ISO_639_3,
+        "kr"^^euvoc:XML_LNG,
+        "kau"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "kanuri"@cs,
+        "Kanuri"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "kr" ;
+    props:xml_lang "kr" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:KAZ a skos:Concept ;
+    skos:exactMatch europa-language:KAZ ;
+    skos:inScheme nma-languages: ;
+    skos:notation "kk"^^euvoc:ISO_639_1,
+        "kaz"^^euvoc:ISO_639_3,
+        "kk"^^euvoc:XML_LNG,
+        "kaz"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kazachština"@cs,
+        "Kazakh"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "kk" ;
+    props:xml_lang "kk" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KHM a skos:Concept ;
+    skos:exactMatch europa-language:KHM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "km"^^euvoc:ISO_639_1,
+        "khm"^^euvoc:ISO_639_3,
+        "km"^^euvoc:XML_LNG,
+        "khm"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Khmer"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "km" ;
+    props:xml_lang "km" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KIK a skos:Concept ;
+    skos:exactMatch europa-language:KIK ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ki"^^euvoc:ISO_639_1,
+        "kik"^^euvoc:ISO_639_3,
+        "ki"^^euvoc:XML_LNG,
+        "kik"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kikuyu"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ki" ;
+    props:xml_lang "ki" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KIN a skos:Concept ;
+    skos:exactMatch europa-language:KIN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "rw"^^euvoc:ISO_639_1,
+        "kin"^^euvoc:ISO_639_3,
+        "rw"^^euvoc:XML_LNG,
+        "kin"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kinyarwandština"@cs,
+        "Kinyarwanda"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "rw" ;
+    props:xml_lang "rw" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KIR a skos:Concept ;
+    skos:exactMatch europa-language:KIR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ky"^^euvoc:ISO_639_1,
+        "kir"^^euvoc:ISO_639_3,
+        "ky"^^euvoc:XML_LNG,
+        "kir"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kirgizština"@cs,
+        "Kirghiz"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ky" ;
+    props:xml_lang "ky" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KOM a skos:Concept ;
+    skos:exactMatch europa-language:KOM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "kv"^^euvoc:ISO_639_1,
+        "kom"^^euvoc:ISO_639_3,
+        "kv"^^euvoc:XML_LNG,
+        "kom"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "komijština"@cs,
+        "Komi"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "kv" ;
+    props:xml_lang "kv" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:KON a skos:Concept ;
+    skos:exactMatch europa-language:KON ;
+    skos:inScheme nma-languages: ;
+    skos:notation "kg"^^euvoc:ISO_639_1,
+        "kon"^^euvoc:ISO_639_3,
+        "kg"^^euvoc:XML_LNG,
+        "kon"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "konžština"@cs,
+        "Kongo"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "kg" ;
+    props:xml_lang "kg" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:KOR a skos:Concept ;
+    skos:exactMatch europa-language:KOR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ko"^^euvoc:ISO_639_1,
+        "kor"^^euvoc:ISO_639_3,
+        "ko"^^euvoc:XML_LNG,
+        "kor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "korejština"@cs,
+        "Korean"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ko" ;
+    props:xml_lang "ko" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KUA a skos:Concept ;
+    skos:exactMatch europa-language:KUA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "kj"^^euvoc:ISO_639_1,
+        "kua"^^euvoc:ISO_639_3,
+        "kj"^^euvoc:XML_LNG,
+        "kua"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kuanyama"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "kj" ;
+    props:xml_lang "kj" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:KUR a skos:Concept ;
+    skos:exactMatch europa-language:KUR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ku"^^euvoc:ISO_639_1,
+        "kur"^^euvoc:ISO_639_3,
+        "ku"^^euvoc:XML_LNG,
+        "kur"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "kurdština"@cs,
+        "Kurdish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ku" ;
+    props:xml_lang "ku" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:LAO a skos:Concept ;
+    skos:exactMatch europa-language:LAO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "lo"^^euvoc:ISO_639_1,
+        "lao"^^euvoc:ISO_639_3,
+        "lo"^^euvoc:XML_LNG,
+        "lao"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Laoština"@cs,
+        "Lao"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "lo" ;
+    props:xml_lang "lo" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:LAT a skos:Concept ;
+    skos:exactMatch europa-language:LAT ;
+    skos:inScheme nma-languages: ;
+    skos:notation "la"^^euvoc:ISO_639_1,
+        "lat"^^euvoc:ISO_639_3,
+        "la"^^euvoc:XML_LNG,
+        "lat"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "latina"@cs,
+        "Latin"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "la" ;
+    props:xml_lang "la" ;
+    tags: "historical",
+        "individual" .
+
+nma-languages:LAV a skos:Concept ;
+    skos:exactMatch europa-language:LAV ;
+    skos:inScheme nma-languages: ;
+    skos:notation "lv"^^euvoc:ISO_639_1,
+        "lav"^^euvoc:ISO_639_3,
+        "lv"^^euvoc:XML_LNG,
+        "lav"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "litevština"@cs,
+        "Latvian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "lv" ;
+    props:xml_lang "lv" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:LIM a skos:Concept ;
+    skos:exactMatch europa-language:LIM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "li"^^euvoc:ISO_639_1,
+        "lim"^^euvoc:ISO_639_3,
+        "li"^^euvoc:XML_LNG,
+        "lim"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Limburgan"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "li" ;
+    props:xml_lang "li" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:LIN a skos:Concept ;
+    skos:exactMatch europa-language:LIN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ln"^^euvoc:ISO_639_1,
+        "lin"^^euvoc:ISO_639_3,
+        "ln"^^euvoc:XML_LNG,
+        "lin"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lingalština"@cs,
+        "Lingala"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ln" ;
+    props:xml_lang "ln" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:LIT a skos:Concept ;
+    skos:exactMatch europa-language:LIT ;
+    skos:inScheme nma-languages: ;
+    skos:notation "lt"^^euvoc:ISO_639_1,
+        "lit"^^euvoc:ISO_639_3,
+        "lt"^^euvoc:XML_LNG,
+        "lit"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "litevština"@cs,
+        "Lithuanian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "lt" ;
+    props:xml_lang "lt" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:LTZ a skos:Concept ;
+    skos:exactMatch europa-language:LTZ ;
+    skos:inScheme nma-languages: ;
+    skos:notation "lb"^^euvoc:ISO_639_1,
+        "ltz"^^euvoc:ISO_639_3,
+        "lb"^^euvoc:XML_LNG,
+        "ltz"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Luxembourgish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "lb" ;
+    props:xml_lang "lb" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:LUB a skos:Concept ;
+    skos:exactMatch europa-language:LUB ;
+    skos:inScheme nma-languages: ;
+    skos:notation "lu"^^euvoc:ISO_639_1,
+        "lub"^^euvoc:ISO_639_3,
+        "lu"^^euvoc:XML_LNG,
+        "lub"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "lubu-katanžština"@cs,
+        "Luba-Katanga"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "lu" ;
+    props:xml_lang "lu" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:LUG a skos:Concept ;
+    skos:exactMatch europa-language:LUG ;
+    skos:inScheme nma-languages: ;
+    skos:notation "lg"^^euvoc:ISO_639_1,
+        "lug"^^euvoc:ISO_639_3,
+        "lg"^^euvoc:XML_LNG,
+        "lug"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ganda"@cs,
+        "Ganda"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "lg" ;
+    props:xml_lang "lg" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:MAH a skos:Concept ;
+    skos:exactMatch europa-language:MAH ;
+    skos:inScheme nma-languages: ;
+    skos:notation "mh"^^euvoc:ISO_639_1,
+        "mah"^^euvoc:ISO_639_3,
+        "mh"^^euvoc:XML_LNG,
+        "mah"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Marshallese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "mh" ;
+    props:xml_lang "mh" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:MAL a skos:Concept ;
+    skos:exactMatch europa-language:MAL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ml"^^euvoc:ISO_639_1,
+        "mal"^^euvoc:ISO_639_3,
+        "ml"^^euvoc:XML_LNG,
+        "mal"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Malabarština"@cs,
+        "Malayalam"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ml" ;
+    props:xml_lang "ml" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:MAR a skos:Concept ;
+    skos:exactMatch europa-language:MAR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "mr"^^euvoc:ISO_639_1,
+        "mar"^^euvoc:ISO_639_3,
+        "mr"^^euvoc:XML_LNG,
+        "mar"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "maráthština"@cs,
+        "Marathi"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "mr" ;
+    props:xml_lang "mr" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:MKD a skos:Concept ;
+    skos:exactMatch europa-language:MKD ;
+    skos:inScheme nma-languages: ;
+    skos:notation "mk"^^euvoc:ISO_639_1,
+        "mkd"^^euvoc:ISO_639_3,
+        "mk"^^euvoc:XML_LNG,
+        "mkd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "makedonština"@cs,
+        "Macedonian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "mk" ;
+    props:xml_lang "mk" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:MLG a skos:Concept ;
+    skos:exactMatch europa-language:MLG ;
+    skos:inScheme nma-languages: ;
+    skos:notation "mg"^^euvoc:ISO_639_1,
+        "mlg"^^euvoc:ISO_639_3,
+        "mg"^^euvoc:XML_LNG,
+        "mlg"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Malgaština"@cs,
+        "Malagasy"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "mg" ;
+    props:xml_lang "mg" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:MLT a skos:Concept ;
+    skos:exactMatch europa-language:MLT ;
+    skos:inScheme nma-languages: ;
+    skos:notation "mt"^^euvoc:ISO_639_1,
+        "mlt"^^euvoc:ISO_639_3,
+        "mt"^^euvoc:XML_LNG,
+        "mlt"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "maltézština"@cs,
+        "Maltese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "mt" ;
+    props:xml_lang "mt" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:MON a skos:Concept ;
+    skos:exactMatch europa-language:MON ;
+    skos:inScheme nma-languages: ;
+    skos:notation "mn"^^euvoc:ISO_639_1,
+        "mon"^^euvoc:ISO_639_3,
+        "mn"^^euvoc:XML_LNG,
+        "mon"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "mongolština"@cs,
+        "Mongolian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "mn" ;
+    props:xml_lang "mn" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:MRI a skos:Concept ;
+    skos:exactMatch europa-language:MRI ;
+    skos:inScheme nma-languages: ;
+    skos:notation "mi"^^euvoc:ISO_639_1,
+        "mri"^^euvoc:ISO_639_3,
+        "mi"^^euvoc:XML_LNG,
+        "mri"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "maorština"@cs,
+        "Maori"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "mi" ;
+    props:xml_lang "mi" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:MSA a skos:Concept ;
+    skos:exactMatch europa-language:MSA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ms"^^euvoc:ISO_639_1,
+        "msa"^^euvoc:ISO_639_3,
+        "ms"^^euvoc:XML_LNG,
+        "msa"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Malay (macrolanguage)"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ms" ;
+    props:xml_lang "ms" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:MYA a skos:Concept ;
+    skos:exactMatch europa-language:MYA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "my"^^euvoc:ISO_639_1,
+        "mya"^^euvoc:ISO_639_3,
+        "my"^^euvoc:XML_LNG,
+        "mya"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Barmština"@cs,
+        "Burmese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "my" ;
+    props:xml_lang "my" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:NAU a skos:Concept ;
+    skos:exactMatch europa-language:NAU ;
+    skos:inScheme nma-languages: ;
+    skos:notation "na"^^euvoc:ISO_639_1,
+        "nau"^^euvoc:ISO_639_3,
+        "na"^^euvoc:XML_LNG,
+        "nau"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "naurština"@cs,
+        "Nauru"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "na" ;
+    props:xml_lang "na" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:NAV a skos:Concept ;
+    skos:exactMatch europa-language:NAV ;
+    skos:inScheme nma-languages: ;
+    skos:notation "nv"^^euvoc:ISO_639_1,
+        "nav"^^euvoc:ISO_639_3,
+        "nv"^^euvoc:XML_LNG,
+        "nav"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Navajo"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "nv" ;
+    props:xml_lang "nv" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:NBL a skos:Concept ;
+    skos:exactMatch europa-language:NBL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "nr"^^euvoc:ISO_639_1,
+        "nbl"^^euvoc:ISO_639_3,
+        "nr"^^euvoc:XML_LNG,
+        "nbl"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "South Ndebele"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "nr" ;
+    props:xml_lang "nr" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:NDE a skos:Concept ;
+    skos:exactMatch europa-language:NDE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "nd"^^euvoc:ISO_639_1,
+        "nde"^^euvoc:ISO_639_3,
+        "nd"^^euvoc:XML_LNG,
+        "nde"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "North Ndebele"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "nd" ;
+    props:xml_lang "nd" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:NDO a skos:Concept ;
+    skos:exactMatch europa-language:NDO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ng"^^euvoc:ISO_639_1,
+        "ndo"^^euvoc:ISO_639_3,
+        "ng"^^euvoc:XML_LNG,
+        "ndo"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ndondština"@cs,
+        "Ndonga"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ng" ;
+    props:xml_lang "ng" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:NEP a skos:Concept ;
+    skos:exactMatch europa-language:NEP ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ne"^^euvoc:ISO_639_1,
+        "nep"^^euvoc:ISO_639_3,
+        "ne"^^euvoc:XML_LNG,
+        "nep"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Nepali (macrolanguage)"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ne" ;
+    props:xml_lang "ne" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:NLD a skos:Concept ;
+    skos:exactMatch europa-language:NLD ;
+    skos:inScheme nma-languages: ;
+    skos:notation "nl"^^euvoc:ISO_639_1,
+        "nld"^^euvoc:ISO_639_3,
+        "nl"^^euvoc:XML_LNG,
+        "nld"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "holandština"@cs,
+        "Dutch"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "nl" ;
+    props:xml_lang "nl" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:NNO a skos:Concept ;
+    skos:exactMatch europa-language:NNO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "nn"^^euvoc:ISO_639_1,
+        "nno"^^euvoc:ISO_639_3,
+        "nn"^^euvoc:XML_LNG,
+        "nno"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Norwegian Nynorsk"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "nn" ;
+    props:xml_lang "nn" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:NOB a skos:Concept ;
+    skos:exactMatch europa-language:NOB ;
+    skos:inScheme nma-languages: ;
+    skos:notation "nb"^^euvoc:ISO_639_1,
+        "nob"^^euvoc:ISO_639_3,
+        "nb"^^euvoc:XML_LNG,
+        "nob"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Norwegian Bokmål"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "nb" ;
+    props:xml_lang "nb" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:NOR a skos:Concept ;
+    skos:exactMatch europa-language:NOR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "no"^^euvoc:ISO_639_1,
+        "nor"^^euvoc:ISO_639_3,
+        "no"^^euvoc:XML_LNG,
+        "nor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "norština"@cs,
+        "Norwegian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "no" ;
+    props:xml_lang "no" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:NYA a skos:Concept ;
+    skos:exactMatch europa-language:NYA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ny"^^euvoc:ISO_639_1,
+        "nya"^^euvoc:ISO_639_3,
+        "ny"^^euvoc:XML_LNG,
+        "nya"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Chichewa"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ny" ;
+    props:xml_lang "ny" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:OCI a skos:Concept ;
+    skos:exactMatch europa-language:OCI ;
+    skos:inScheme nma-languages: ;
+    skos:notation "oc"^^euvoc:ISO_639_1,
+        "oci"^^euvoc:ISO_639_3,
+        "oc"^^euvoc:XML_LNG,
+        "oci"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Occitan (post 1500)"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "oc" ;
+    props:xml_lang "oc" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:OJI a skos:Concept ;
+    skos:exactMatch europa-language:OJI ;
+    skos:inScheme nma-languages: ;
+    skos:notation "oj"^^euvoc:ISO_639_1,
+        "oji"^^euvoc:ISO_639_3,
+        "oj"^^euvoc:XML_LNG,
+        "oji"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "odžibwejština"@cs,
+        "Ojibwa"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "oj" ;
+    props:xml_lang "oj" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:ORI a skos:Concept ;
+    skos:exactMatch europa-language:ORI ;
+    skos:inScheme nma-languages: ;
+    skos:notation "or"^^euvoc:ISO_639_1,
+        "ori"^^euvoc:ISO_639_3,
+        "or"^^euvoc:XML_LNG,
+        "ori"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Oriya (macrolanguage)"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "or" ;
+    props:xml_lang "or" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:ORM a skos:Concept ;
+    skos:exactMatch europa-language:ORM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "om"^^euvoc:ISO_639_1,
+        "orm"^^euvoc:ISO_639_3,
+        "om"^^euvoc:XML_LNG,
+        "orm"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Oromo (Afan)"@cs,
+        "Oromo"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "om" ;
+    props:xml_lang "om" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:OSS a skos:Concept ;
+    skos:exactMatch europa-language:OSS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "os"^^euvoc:ISO_639_1,
+        "oss"^^euvoc:ISO_639_3,
+        "os"^^euvoc:XML_LNG,
+        "oss"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ossetian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "os" ;
+    props:xml_lang "os" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:PAN a skos:Concept ;
+    skos:exactMatch europa-language:PAN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "pa"^^euvoc:ISO_639_1,
+        "pan"^^euvoc:ISO_639_3,
+        "pa"^^euvoc:XML_LNG,
+        "pan"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Panjabi"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "pa" ;
+    props:xml_lang "pa" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:PLI a skos:Concept ;
+    skos:exactMatch europa-language:PLI ;
+    skos:inScheme nma-languages: ;
+    skos:notation "pi"^^euvoc:ISO_639_1,
+        "pli"^^euvoc:ISO_639_3,
+        "pi"^^euvoc:XML_LNG,
+        "pli"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "páli"@cs,
+        "Pali"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "pi" ;
+    props:xml_lang "pi" ;
+    tags: "historical",
+        "individual" .
+
+nma-languages:POL a skos:Concept ;
+    skos:exactMatch europa-language:POL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "pl"^^euvoc:ISO_639_1,
+        "pol"^^euvoc:ISO_639_3,
+        "pl"^^euvoc:XML_LNG,
+        "pol"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "polština"@cs,
+        "Polish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "pl" ;
+    props:xml_lang "pl" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:POR a skos:Concept ;
+    skos:exactMatch europa-language:POR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "pt"^^euvoc:ISO_639_1,
+        "por"^^euvoc:ISO_639_3,
+        "pt"^^euvoc:XML_LNG,
+        "por"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "portugalština"@cs,
+        "Portuguese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "pt" ;
+    props:xml_lang "pt" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:PUS a skos:Concept ;
+    skos:exactMatch europa-language:PUS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ps"^^euvoc:ISO_639_1,
+        "pus"^^euvoc:ISO_639_3,
+        "ps"^^euvoc:XML_LNG,
+        "pus"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "pašto"@cs,
+        "Pushto"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ps" ;
+    props:xml_lang "ps" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:QUE a skos:Concept ;
+    skos:exactMatch europa-language:QUE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "qu"^^euvoc:ISO_639_1,
+        "que"^^euvoc:ISO_639_3,
+        "qu"^^euvoc:XML_LNG,
+        "que"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kečuánština"@cs,
+        "Quechua"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "qu" ;
+    props:xml_lang "qu" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:ROH a skos:Concept ;
+    skos:exactMatch europa-language:ROH ;
+    skos:inScheme nma-languages: ;
+    skos:notation "rm"^^euvoc:ISO_639_1,
+        "roh"^^euvoc:ISO_639_3,
+        "rm"^^euvoc:XML_LNG,
+        "roh"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Romansh"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "rm" ;
+    props:xml_lang "rm" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:RON a skos:Concept ;
+    skos:exactMatch europa-language:RON ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ro"^^euvoc:ISO_639_1,
+        "ron"^^euvoc:ISO_639_3,
+        "ro"^^euvoc:XML_LNG,
+        "ron"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "rumunština"@cs,
+        "Romanian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ro" ;
+    props:xml_lang "ro" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:RUN a skos:Concept ;
+    skos:exactMatch europa-language:RUN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "rn"^^euvoc:ISO_639_1,
+        "run"^^euvoc:ISO_639_3,
+        "rn"^^euvoc:XML_LNG,
+        "run"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kirundi"@cs,
+        "Rundi"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "rn" ;
+    props:xml_lang "rn" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:RUS a skos:Concept ;
+    skos:exactMatch europa-language:RUS ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ru"^^euvoc:ISO_639_1,
+        "rus"^^euvoc:ISO_639_3,
+        "ru"^^euvoc:XML_LNG,
+        "rus"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ruština"@cs,
+        "Russian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ru" ;
+    props:xml_lang "ru" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SAG a skos:Concept ;
+    skos:exactMatch europa-language:SAG ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sg"^^euvoc:ISO_639_1,
+        "sag"^^euvoc:ISO_639_3,
+        "sg"^^euvoc:XML_LNG,
+        "sag"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sangho"@cs,
+        "Sango"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sg" ;
+    props:xml_lang "sg" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SAN a skos:Concept ;
+    skos:exactMatch europa-language:SAN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sa"^^euvoc:ISO_639_1,
+        "san"^^euvoc:ISO_639_3,
+        "sa"^^euvoc:XML_LNG,
+        "san"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "sanskrt"@cs,
+        "Sanskrit"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sa" ;
+    props:xml_lang "sa" ;
+    tags: "historical",
+        "macrolanguage" .
+
+nma-languages:SIN a skos:Concept ;
+    skos:exactMatch europa-language:SIN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "si"^^euvoc:ISO_639_1,
+        "sin"^^euvoc:ISO_639_3,
+        "si"^^euvoc:XML_LNG,
+        "sin"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sinhala"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "si" ;
+    props:xml_lang "si" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SLK a skos:Concept ;
+    skos:exactMatch europa-language:SLK ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sk"^^euvoc:ISO_639_1,
+        "slk"^^euvoc:ISO_639_3,
+        "sk"^^euvoc:XML_LNG,
+        "slk"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "slovenština"@cs,
+        "Slovak"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sk" ;
+    props:xml_lang "sk" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SLV a skos:Concept ;
+    skos:exactMatch europa-language:SLV ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sl"^^euvoc:ISO_639_1,
+        "slv"^^euvoc:ISO_639_3,
+        "sl"^^euvoc:XML_LNG,
+        "slv"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "slovinština"@cs,
+        "Slovenian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sl" ;
+    props:xml_lang "sl" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SME a skos:Concept ;
+    skos:exactMatch europa-language:SME ;
+    skos:inScheme nma-languages: ;
+    skos:notation "se"^^euvoc:ISO_639_1,
+        "sme"^^euvoc:ISO_639_3,
+        "se"^^euvoc:XML_LNG,
+        "sme"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Northern Sami"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "se" ;
+    props:xml_lang "se" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SMO a skos:Concept ;
+    skos:exactMatch europa-language:SMO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sm"^^euvoc:ISO_639_1,
+        "smo"^^euvoc:ISO_639_3,
+        "sm"^^euvoc:XML_LNG,
+        "smo"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Samoyština"@cs,
+        "Samoan"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sm" ;
+    props:xml_lang "sm" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SNA a skos:Concept ;
+    skos:exactMatch europa-language:SNA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sn"^^euvoc:ISO_639_1,
+        "sna"^^euvoc:ISO_639_3,
+        "sn"^^euvoc:XML_LNG,
+        "sna"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Shona"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sn" ;
+    props:xml_lang "sn" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SND a skos:Concept ;
+    skos:exactMatch europa-language:SND ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sd"^^euvoc:ISO_639_1,
+        "snd"^^euvoc:ISO_639_3,
+        "sd"^^euvoc:XML_LNG,
+        "snd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "sindhština"@cs,
+        "Sindhi"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sd" ;
+    props:xml_lang "sd" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SOM a skos:Concept ;
+    skos:exactMatch europa-language:SOM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "so"^^euvoc:ISO_639_1,
+        "som"^^euvoc:ISO_639_3,
+        "so"^^euvoc:XML_LNG,
+        "som"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "somálština"@cs,
+        "Somali"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "so" ;
+    props:xml_lang "so" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SOT a skos:Concept ;
+    skos:exactMatch europa-language:SOT ;
+    skos:inScheme nma-languages: ;
+    skos:notation "st"^^euvoc:ISO_639_1,
+        "sot"^^euvoc:ISO_639_3,
+        "st"^^euvoc:XML_LNG,
+        "sot"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Southern Sotho"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "st" ;
+    props:xml_lang "st" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SPA a skos:Concept ;
+    skos:exactMatch europa-language:SPA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "es"^^euvoc:ISO_639_1,
+        "spa"^^euvoc:ISO_639_3,
+        "es"^^euvoc:XML_LNG,
+        "spa"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "španělština"@cs,
+        "Spanish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "es" ;
+    props:xml_lang "es" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SQI a skos:Concept ;
+    skos:exactMatch europa-language:SQI ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sq"^^euvoc:ISO_639_1,
+        "sqi"^^euvoc:ISO_639_3,
+        "sq"^^euvoc:XML_LNG,
+        "sqi"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "albánština"@cs,
+        "Albanian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sq" ;
+    props:xml_lang "sq" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:SRD a skos:Concept ;
+    skos:exactMatch europa-language:SRD ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sc"^^euvoc:ISO_639_1,
+        "srd"^^euvoc:ISO_639_3,
+        "sc"^^euvoc:XML_LNG,
+        "srd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "sardinština"@cs,
+        "Sardinian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sc" ;
+    props:xml_lang "sc" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:SRP a skos:Concept ;
+    skos:exactMatch europa-language:SRP ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sr"^^euvoc:ISO_639_1,
+        "srp"^^euvoc:ISO_639_3,
+        "sr"^^euvoc:XML_LNG,
+        "srp"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "srbština"@cs,
+        "Serbian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sr" ;
+    props:xml_lang "sr" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SSW a skos:Concept ;
+    skos:exactMatch europa-language:SSW ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ss"^^euvoc:ISO_639_1,
+        "ssw"^^euvoc:ISO_639_3,
+        "ss"^^euvoc:XML_LNG,
+        "ssw"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Siswatština"@cs,
+        "Swati"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ss" ;
+    props:xml_lang "ss" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SUN a skos:Concept ;
+    skos:exactMatch europa-language:SUN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "su"^^euvoc:ISO_639_1,
+        "sun"^^euvoc:ISO_639_3,
+        "su"^^euvoc:XML_LNG,
+        "sun"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sundanština"@cs,
+        "Sundanese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "su" ;
+    props:xml_lang "su" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:SWA a skos:Concept ;
+    skos:exactMatch europa-language:SWA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sw"^^euvoc:ISO_639_1,
+        "swa"^^euvoc:ISO_639_3,
+        "sw"^^euvoc:XML_LNG,
+        "swa"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Swahili (macrolanguage)"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sw" ;
+    props:xml_lang "sw" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:SWE a skos:Concept ;
+    skos:exactMatch europa-language:SWE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "sv"^^euvoc:ISO_639_1,
+        "swe"^^euvoc:ISO_639_3,
+        "sv"^^euvoc:XML_LNG,
+        "swe"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "švédština"@cs,
+        "Swedish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "sv" ;
+    props:xml_lang "sv" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TAH a skos:Concept ;
+    skos:exactMatch europa-language:TAH ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ty"^^euvoc:ISO_639_1,
+        "tah"^^euvoc:ISO_639_3,
+        "ty"^^euvoc:XML_LNG,
+        "tah"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "tahitština"@cs,
+        "Tahitian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ty" ;
+    props:xml_lang "ty" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TAM a skos:Concept ;
+    skos:exactMatch europa-language:TAM ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ta"^^euvoc:ISO_639_1,
+        "tam"^^euvoc:ISO_639_3,
+        "ta"^^euvoc:XML_LNG,
+        "tam"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Tamilština"@cs,
+        "Tamil"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ta" ;
+    props:xml_lang "ta" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TAT a skos:Concept ;
+    skos:exactMatch europa-language:TAT ;
+    skos:inScheme nma-languages: ;
+    skos:notation "tt"^^euvoc:ISO_639_1,
+        "tat"^^euvoc:ISO_639_3,
+        "tt"^^euvoc:XML_LNG,
+        "tat"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "tatarština"@cs,
+        "Tatar"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "tt" ;
+    props:xml_lang "tt" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TEL a skos:Concept ;
+    skos:exactMatch europa-language:TEL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "te"^^euvoc:ISO_639_1,
+        "tel"^^euvoc:ISO_639_3,
+        "te"^^euvoc:XML_LNG,
+        "tel"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Telugština"@cs,
+        "Telugu"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "te" ;
+    props:xml_lang "te" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TGK a skos:Concept ;
+    skos:exactMatch europa-language:TGK ;
+    skos:inScheme nma-languages: ;
+    skos:notation "tg"^^euvoc:ISO_639_1,
+        "tgk"^^euvoc:ISO_639_3,
+        "tg"^^euvoc:XML_LNG,
+        "tgk"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Tádžičtina"@cs,
+        "Tajik"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "tg" ;
+    props:xml_lang "tg" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TGL a skos:Concept ;
+    skos:exactMatch europa-language:TGL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "tl"^^euvoc:ISO_639_1,
+        "tgl"^^euvoc:ISO_639_3,
+        "tl"^^euvoc:XML_LNG,
+        "tgl"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Tagalog"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "tl" ;
+    props:xml_lang "tl" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:THA a skos:Concept ;
+    skos:exactMatch europa-language:THA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "th"^^euvoc:ISO_639_1,
+        "tha"^^euvoc:ISO_639_3,
+        "th"^^euvoc:XML_LNG,
+        "tha"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "thajština"@cs,
+        "Thai"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "th" ;
+    props:xml_lang "th" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TIR a skos:Concept ;
+    skos:exactMatch europa-language:TIR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ti"^^euvoc:ISO_639_1,
+        "tir"^^euvoc:ISO_639_3,
+        "ti"^^euvoc:XML_LNG,
+        "tir"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Tigrinijština"@cs,
+        "Tigrinya"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ti" ;
+    props:xml_lang "ti" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TON a skos:Concept ;
+    skos:exactMatch europa-language:TON ;
+    skos:inScheme nma-languages: ;
+    skos:notation "to"^^euvoc:ISO_639_1,
+        "ton"^^euvoc:ISO_639_3,
+        "to"^^euvoc:XML_LNG,
+        "ton"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Tonga"@cs,
+        "Tonga (Tonga Islands)"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "to" ;
+    props:xml_lang "to" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TSN a skos:Concept ;
+    skos:exactMatch europa-language:TSN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "tn"^^euvoc:ISO_639_1,
+        "tsn"^^euvoc:ISO_639_3,
+        "tn"^^euvoc:XML_LNG,
+        "tsn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Setswanština"@cs,
+        "Tswana"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "tn" ;
+    props:xml_lang "tn" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TSO a skos:Concept ;
+    skos:exactMatch europa-language:TSO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ts"^^euvoc:ISO_639_1,
+        "tso"^^euvoc:ISO_639_3,
+        "ts"^^euvoc:XML_LNG,
+        "tso"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Tsonga"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ts" ;
+    props:xml_lang "ts" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TUK a skos:Concept ;
+    skos:exactMatch europa-language:TUK ;
+    skos:inScheme nma-languages: ;
+    skos:notation "tk"^^euvoc:ISO_639_1,
+        "tuk"^^euvoc:ISO_639_3,
+        "tk"^^euvoc:XML_LNG,
+        "tuk"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "turkmenistánština"@cs,
+        "Turkmen"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "tk" ;
+    props:xml_lang "tk" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TUR a skos:Concept ;
+    skos:exactMatch europa-language:TUR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "tr"^^euvoc:ISO_639_1,
+        "tur"^^euvoc:ISO_639_3,
+        "tr"^^euvoc:XML_LNG,
+        "tur"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "turečtina"@cs,
+        "Turkish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "tr" ;
+    props:xml_lang "tr" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:TWI a skos:Concept ;
+    skos:exactMatch europa-language:TWI ;
+    skos:inScheme nma-languages: ;
+    skos:notation "tw"^^euvoc:ISO_639_1,
+        "twi"^^euvoc:ISO_639_3,
+        "tw"^^euvoc:XML_LNG,
+        "twi"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Twi"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "tw" ;
+    props:xml_lang "tw" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:UIG a skos:Concept ;
+    skos:exactMatch europa-language:UIG ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ug"^^euvoc:ISO_639_1,
+        "uig"^^euvoc:ISO_639_3,
+        "ug"^^euvoc:XML_LNG,
+        "uig"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Uighurština"@cs,
+        "Uighur"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ug" ;
+    props:xml_lang "ug" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:UKR a skos:Concept ;
+    skos:exactMatch europa-language:UKR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "uk"^^euvoc:ISO_639_1,
+        "ukr"^^euvoc:ISO_639_3,
+        "uk"^^euvoc:XML_LNG,
+        "ukr"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "ukrajinština"@cs,
+        "Ukrainian"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "uk" ;
+    props:xml_lang "uk" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:UND a skos:Concept ;
+    skos:exactMatch europa-language:UND ;
+    skos:inScheme nma-languages: ;
+    skos:notation "und"^^euvoc:ISO_639_3,
+        "und"^^euvoc:XML_LNG,
+        "und"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "neurčitý"@cs,
+        "Undetermined"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:xml_lang "und" ;
+    tags: "special-scope",
+        "special-type" .
+
+nma-languages:URD a skos:Concept ;
+    skos:exactMatch europa-language:URD ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ur"^^euvoc:ISO_639_1,
+        "urd"^^euvoc:ISO_639_3,
+        "ur"^^euvoc:XML_LNG,
+        "urd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "urdština"@cs,
+        "Urdu"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ur" ;
+    props:xml_lang "ur" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:UZB a skos:Concept ;
+    skos:exactMatch europa-language:UZB ;
+    skos:inScheme nma-languages: ;
+    skos:notation "uz"^^euvoc:ISO_639_1,
+        "uzb"^^euvoc:ISO_639_3,
+        "uz"^^euvoc:XML_LNG,
+        "uzb"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "uzbekistánština"@cs,
+        "Uzbek"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "uz" ;
+    props:xml_lang "uz" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:VEN a skos:Concept ;
+    skos:exactMatch europa-language:VEN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "ve"^^euvoc:ISO_639_1,
+        "ven"^^euvoc:ISO_639_3,
+        "ve"^^euvoc:XML_LNG,
+        "ven"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "vendština"@cs,
+        "Venda"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "ve" ;
+    props:xml_lang "ve" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:VIE a skos:Concept ;
+    skos:exactMatch europa-language:VIE ;
+    skos:inScheme nma-languages: ;
+    skos:notation "vi"^^euvoc:ISO_639_1,
+        "vie"^^euvoc:ISO_639_3,
+        "vi"^^euvoc:XML_LNG,
+        "vie"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "vietnamština"@cs,
+        "Vietnamese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "vi" ;
+    props:xml_lang "vi" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:VOL a skos:Concept ;
+    skos:exactMatch europa-language:VOL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "vo"^^euvoc:ISO_639_1,
+        "vol"^^euvoc:ISO_639_3,
+        "vo"^^euvoc:XML_LNG,
+        "vol"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "volapük"@cs,
+        "Volapük"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "vo" ;
+    props:xml_lang "vo" ;
+    tags: "constructed",
+        "individual" .
+
+nma-languages:WLN a skos:Concept ;
+    skos:exactMatch europa-language:WLN ;
+    skos:inScheme nma-languages: ;
+    skos:notation "wa"^^euvoc:ISO_639_1,
+        "wln"^^euvoc:ISO_639_3,
+        "wa"^^euvoc:XML_LNG,
+        "wln"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "valonština"@cs,
+        "Walloon"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "wa" ;
+    props:xml_lang "wa" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:WOL a skos:Concept ;
+    skos:exactMatch europa-language:WOL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "wo"^^euvoc:ISO_639_1,
+        "wol"^^euvoc:ISO_639_3,
+        "wo"^^euvoc:XML_LNG,
+        "wol"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Wolof"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "wo" ;
+    props:xml_lang "wo" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:XHO a skos:Concept ;
+    skos:exactMatch europa-language:XHO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "xh"^^euvoc:ISO_639_1,
+        "xho"^^euvoc:ISO_639_3,
+        "xh"^^euvoc:XML_LNG,
+        "xho"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Xhosa"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "xh" ;
+    props:xml_lang "xh" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:YID a skos:Concept ;
+    skos:exactMatch europa-language:YID ;
+    skos:inScheme nma-languages: ;
+    skos:notation "yi"^^euvoc:ISO_639_1,
+        "yid"^^euvoc:ISO_639_3,
+        "yi"^^euvoc:XML_LNG,
+        "yid"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Jidiš"@cs,
+        "Yiddish"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "yi" ;
+    props:xml_lang "yi" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:YOR a skos:Concept ;
+    skos:exactMatch europa-language:YOR ;
+    skos:inScheme nma-languages: ;
+    skos:notation "yo"^^euvoc:ISO_639_1,
+        "yor"^^euvoc:ISO_639_3,
+        "yo"^^euvoc:XML_LNG,
+        "yor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Yoruba"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "yo" ;
+    props:xml_lang "yo" ;
+    tags: "individual",
+        "living" .
+
+nma-languages:ZHA a skos:Concept ;
+    skos:exactMatch europa-language:ZHA ;
+    skos:inScheme nma-languages: ;
+    skos:notation "za"^^euvoc:ISO_639_1,
+        "zha"^^euvoc:ISO_639_3,
+        "za"^^euvoc:XML_LNG,
+        "zha"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zhuang"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "za" ;
+    props:xml_lang "za" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:ZHO a skos:Concept ;
+    skos:exactMatch europa-language:ZHO ;
+    skos:inScheme nma-languages: ;
+    skos:notation "zh"^^euvoc:ISO_639_1,
+        "zho"^^euvoc:ISO_639_3,
+        "zh"^^euvoc:XML_LNG,
+        "zho"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "čínština"@cs,
+        "Chinese"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "zh" ;
+    props:xml_lang "zh" ;
+    tags: "living",
+        "macrolanguage" .
+
+nma-languages:ZUL a skos:Concept ;
+    skos:exactMatch europa-language:ZUL ;
+    skos:inScheme nma-languages: ;
+    skos:notation "zu"^^euvoc:ISO_639_1,
+        "zul"^^euvoc:ISO_639_3,
+        "zu"^^euvoc:XML_LNG,
+        "zul"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zulu"@en ;
+    skos:topConceptOf nma-languages: ;
+    props:alpha_2 "zu" ;
+    props:xml_lang "zu" ;
+    tags: "individual",
+        "living" .
+
+nma-languages: skos:hasTopConcept nma-languages:AAR,
+        nma-languages:ABK,
+        nma-languages:AFR,
+        nma-languages:AKA,
+        nma-languages:AMH,
+        nma-languages:ARA,
+        nma-languages:ARG,
+        nma-languages:ASM,
+        nma-languages:AVA,
+        nma-languages:AVE,
+        nma-languages:AYM,
+        nma-languages:AZE,
+        nma-languages:BAK,
+        nma-languages:BAM,
+        nma-languages:BEL,
+        nma-languages:BEN,
+        nma-languages:BIS,
+        nma-languages:BOD,
+        nma-languages:BOS,
+        nma-languages:BRE,
+        nma-languages:BUL,
+        nma-languages:CAT,
+        nma-languages:CES,
+        nma-languages:CHA,
+        nma-languages:CHE,
+        nma-languages:CHU,
+        nma-languages:CHV,
+        nma-languages:COR,
+        nma-languages:COS,
+        nma-languages:CRE,
+        nma-languages:CYM,
+        nma-languages:DAN,
+        nma-languages:DEU,
+        nma-languages:DIV,
+        nma-languages:DZO,
+        nma-languages:ELL,
+        nma-languages:ENG,
+        nma-languages:EPO,
+        nma-languages:EST,
+        nma-languages:EUS,
+        nma-languages:EWE,
+        nma-languages:FAO,
+        nma-languages:FAS,
+        nma-languages:FIJ,
+        nma-languages:FIN,
+        nma-languages:FRA,
+        nma-languages:FRY,
+        nma-languages:FUL,
+        nma-languages:GLA,
+        nma-languages:GLE,
+        nma-languages:GLG,
+        nma-languages:GLV,
+        nma-languages:GRN,
+        nma-languages:GUJ,
+        nma-languages:HAT,
+        nma-languages:HAU,
+        nma-languages:HBS,
+        nma-languages:HEB,
+        nma-languages:HER,
+        nma-languages:HIN,
+        nma-languages:HMO,
+        nma-languages:HRV,
+        nma-languages:HUN,
+        nma-languages:HYE,
+        nma-languages:IBO,
+        nma-languages:IDO,
+        nma-languages:III,
+        nma-languages:IKU,
+        nma-languages:ILE,
+        nma-languages:INA,
+        nma-languages:IND,
+        nma-languages:IPK,
+        nma-languages:ISL,
+        nma-languages:ITA,
+        nma-languages:JAV,
+        nma-languages:JPN,
+        nma-languages:KAL,
+        nma-languages:KAN,
+        nma-languages:KAS,
+        nma-languages:KAT,
+        nma-languages:KAU,
+        nma-languages:KAZ,
+        nma-languages:KHM,
+        nma-languages:KIK,
+        nma-languages:KIN,
+        nma-languages:KIR,
+        nma-languages:KOM,
+        nma-languages:KON,
+        nma-languages:KOR,
+        nma-languages:KUA,
+        nma-languages:KUR,
+        nma-languages:LAO,
+        nma-languages:LAT,
+        nma-languages:LAV,
+        nma-languages:LIM,
+        nma-languages:LIN,
+        nma-languages:LIT,
+        nma-languages:LTZ,
+        nma-languages:LUB,
+        nma-languages:LUG,
+        nma-languages:MAH,
+        nma-languages:MAL,
+        nma-languages:MAR,
+        nma-languages:MKD,
+        nma-languages:MLG,
+        nma-languages:MLT,
+        nma-languages:MON,
+        nma-languages:MRI,
+        nma-languages:MSA,
+        nma-languages:MYA,
+        nma-languages:NAU,
+        nma-languages:NAV,
+        nma-languages:NBL,
+        nma-languages:NDE,
+        nma-languages:NDO,
+        nma-languages:NEP,
+        nma-languages:NLD,
+        nma-languages:NNO,
+        nma-languages:NOB,
+        nma-languages:NOR,
+        nma-languages:NYA,
+        nma-languages:OCI,
+        nma-languages:OJI,
+        nma-languages:ORI,
+        nma-languages:ORM,
+        nma-languages:OSS,
+        nma-languages:PAN,
+        nma-languages:PLI,
+        nma-languages:POL,
+        nma-languages:POR,
+        nma-languages:PUS,
+        nma-languages:QUE,
+        nma-languages:ROH,
+        nma-languages:RON,
+        nma-languages:RUN,
+        nma-languages:RUS,
+        nma-languages:SAG,
+        nma-languages:SAN,
+        nma-languages:SIN,
+        nma-languages:SLK,
+        nma-languages:SLV,
+        nma-languages:SME,
+        nma-languages:SMO,
+        nma-languages:SNA,
+        nma-languages:SND,
+        nma-languages:SOM,
+        nma-languages:SOT,
+        nma-languages:SPA,
+        nma-languages:SQI,
+        nma-languages:SRD,
+        nma-languages:SRP,
+        nma-languages:SSW,
+        nma-languages:SUN,
+        nma-languages:SWA,
+        nma-languages:SWE,
+        nma-languages:TAH,
+        nma-languages:TAM,
+        nma-languages:TAT,
+        nma-languages:TEL,
+        nma-languages:TGK,
+        nma-languages:TGL,
+        nma-languages:THA,
+        nma-languages:TIR,
+        nma-languages:TON,
+        nma-languages:TSN,
+        nma-languages:TSO,
+        nma-languages:TUK,
+        nma-languages:TUR,
+        nma-languages:TWI,
+        nma-languages:UIG,
+        nma-languages:UKR,
+        nma-languages:UND,
+        nma-languages:URD,
+        nma-languages:UZB,
+        nma-languages:VEN,
+        nma-languages:VIE,
+        nma-languages:VOL,
+        nma-languages:WLN,
+        nma-languages:WOL,
+        nma-languages:XHO,
+        nma-languages:YID,
+        nma-languages:YOR,
+        nma-languages:ZHA,
+        nma-languages:ZHO,
+        nma-languages:ZUL .
+

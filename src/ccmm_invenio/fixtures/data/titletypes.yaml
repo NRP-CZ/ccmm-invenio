@@ -1,0 +1,55 @@
+- id: alternative-title
+  title:
+    cs: Alternativní název
+    en: Alternative Title
+  props:
+    datacite: AlternativeTitle
+    openaire: Alternative Title
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/AlternativeTitle
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/titleType/AlternativeTitle
+    scheme: https://w3id.org/tib/datacite/vocab/titleType/
+    relation: exactMatch
+- id: other
+  title:
+    cs: Jiný
+    en: Other
+  props:
+    datacite: Other
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/titleType/Other
+    scheme: https://w3id.org/tib/datacite/vocab/titleType/
+    relation: exactMatch
+- id: subtitle
+  title:
+    cs: Podnázev
+    en: Subtitle
+  props:
+    datacite: Subtitle
+    openaire: Subtitle
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/Subtitle
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/titleType/Subtitle
+    scheme: https://w3id.org/tib/datacite/vocab/titleType/
+    relation: exactMatch
+- id: translated-title
+  title:
+    cs: Přeložený název
+    en: Translated Title
+  props:
+    datacite: TranslatedTitle
+    openaire: TranslatedTitle
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/TranslatedTitle
+    scheme: https://vocabs.ccmm.cz/registry/codelist/AlternateTitle/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/titleType/TranslatedTitle
+    scheme: https://w3id.org/tib/datacite/vocab/titleType/
+    relation: exactMatch

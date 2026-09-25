@@ -1,0 +1,733 @@
+@prefix ccmm-relationtype: <https://vocabs.ccmm.cz/registry/codelist/RelationType/> .
+@prefix datacite-relationtype: <https://w3id.org/tib/datacite/vocab/relationType/> .
+@prefix europa-language: <http://publications.europa.eu/resource/authority/language/> .
+@prefix europa-ontology: <http://publications.europa.eu/ontology/> .
+@prefix europa-web: <https://op.europa.eu/en/web/> .
+@prefix nma: <https://nma.eosc.cz/vocabularies/> .
+@prefix nma-relationtypes: <https://nma.eosc.cz/vocabularies/relationtypes/> .
+@prefix nma-vocabularies: <https://nma.eosc.cz/vocabularies/vocabularies/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tags: <https://nma.eosc.cz/vocabularies/vocabularies/inveniotags> .
+
+europa-ontology:euvoc a owl:Ontology ;
+    rdfs:label "EU Vocabularies ontology (euvoc)"@en ;
+    rdfs:comment "Ontology of the EU Publications Office; its terms are used as skos:notation datatypes to distinguish language code schemes (e.g. ISO_639_1, ISO_639_3, XML_LNG)."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+europa-language: a skos:ConceptScheme ;
+    rdfs:label "EU Publications Office language authority"@en ;
+    rdfs:comment "EU Publications Office language authority table; identifiers are ISO 639-3 codes."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+nma: a owl:Ontology ;
+    rdfs:label "NMA vocabularies"@en ;
+    rdfs:comment "Namespace of the NMA vocabularies; each sub-path is one vocabulary (e.g. languages)."@en .
+
+nma-vocabularies:invenioid a rdfs:Datatype ;
+    rdfs:label "NMA internal vocabulary id"@en ;
+    rdfs:comment "Marks skos:notation literals carrying the internal NMA vocabulary id, used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props: a owl:Ontology ;
+    rdfs:label "NMA vocabulary properties"@en ;
+    rdfs:comment "Namespace of internal vocabulary properties and datatypes used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props:alpha_2 a rdf:Property ;
+    rdfs:label "ISO 639-1 code"@en ;
+    rdfs:comment "Two-letter ISO 639-1 code of a language, when it has one."@en .
+
+props:csl a rdf:Property ;
+    rdfs:label "csl"@en ;
+    rdfs:comment "Citation Style Language (CSL) type of a resource type."@en .
+
+props:datacite a rdf:Property ;
+    rdfs:label "DataCite relationType name"@en ;
+    rdfs:comment "Name of the DataCite relationType (e.g. IsCitedBy) a relation type concept stands for."@en .
+
+props:datacite_general a rdf:Property ;
+    rdfs:label "datacite_general"@en ;
+    rdfs:comment "DataCite resourceTypeGeneral of a resource type."@en .
+
+props:datacite_type a rdf:Property ;
+    rdfs:label "datacite_type"@en ;
+    rdfs:comment "DataCite resource type name, when the general one is further specified."@en .
+
+props:eurepo a rdf:Property ;
+    rdfs:label "eurepo"@en ;
+    rdfs:comment "eu-repo semantics identifier of a resource type."@en .
+
+props:marc a rdf:Property ;
+    rdfs:label "MARC 21 relator code"@en ;
+    rdfs:comment "Three-letter MARC 21 relator code (e.g. prc) of a role concept."@en .
+
+props:marc21_subtype a rdf:Property ;
+    rdfs:label "marc21_subtype"@en ;
+    rdfs:comment "MARC 21 bibliographic level of a resource type."@en .
+
+props:marc21_type a rdf:Property ;
+    rdfs:label "marc21_type"@en ;
+    rdfs:comment "MARC 21 type of record of a resource type."@en .
+
+props:openaire_resourceType a rdf:Property ;
+    rdfs:label "openaire_resourceType"@en ;
+    rdfs:comment "OpenAIRE resource type code of a resource type."@en .
+
+props:openaire_type a rdf:Property ;
+    rdfs:label "openaire_type"@en ;
+    rdfs:comment "OpenAIRE type name of a resource type."@en .
+
+props:schema.org a rdf:Property ;
+    rdfs:label "schema.org"@en ;
+    rdfs:comment "schema.org type a resource type maps to."@en .
+
+props:subtype a rdf:Property ;
+    rdfs:label "subtype"@en ;
+    rdfs:comment "InvenioRDM resource subtype id; empty for top-level types."@en .
+
+props:type a rdf:Property ;
+    rdfs:label "type"@en ;
+    rdfs:comment "InvenioRDM resource type id a resource type belongs to."@en .
+
+props:xml_lang a rdf:Property ;
+    rdfs:label "xml:lang code"@en ;
+    rdfs:comment "Language tag suitable for an xml:lang attribute: the ISO 639-1 code when available, the ISO 639-3 code otherwise."@en .
+
+tags: a rdf:Property ;
+    rdfs:label "vocabulary tags"@en ;
+    rdfs:comment "Links a vocabulary concept to its tag values (e.g. the scope and type of a language); internal use."@en .
+
+nma-relationtypes:cites a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Cites.jsonld ;
+    skos:definition "indicates that A includes B in a citation"@en ;
+    skos:exactMatch ccmm-relationtype:Cites,
+        datacite-relationtype:Cites ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"ISBN\" relationType=\"Cites\">0761964312</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "cites"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "cituje (co)"@cs,
+        "cites"@en ;
+    skos:scopeNote "Recommended for discovery."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Cites" ;
+    props:openaire "Cites" ;
+    props:zenodo "cites" .
+
+nma-relationtypes:collects a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Collects.jsonld ;
+    skos:definition "Indicates A collects B"@en ;
+    skos:exactMatch ccmm-relationtype:Collects,
+        datacite-relationtype:Collects ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"Collects\">10.5072/data</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "collects"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "sbírá"@cs,
+        "collects"@en ;
+    skos:scopeNote "May indicate relationship between an instrument and a dataset it collected/observed."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Collects" .
+
+nma-relationtypes:compiles a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Compiles.jsonld ;
+    skos:definition "indicates B is the result of a compile or creation event using A"@en ;
+    skos:exactMatch ccmm-relationtype:Compiles,
+        datacite-relationtype:Compiles ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URN\" relationType=\"Compiles\">urn:nbn:de:bsz:21-opus-963</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "compiles"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "kompiluje (co)"@cs,
+        "compiles"@en ;
+    skos:scopeNote "May be used for software and text; a compiler can be a computer program or a person."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Compiles" ;
+    props:openaire "Compiles" ;
+    props:zenodo "compiles" .
+
+nma-relationtypes:continues a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Continues.jsonld ;
+    skos:definition "indicates A is a continuation of the work B"@en ;
+    skos:exactMatch ccmm-relationtype:Continues,
+        datacite-relationtype:Continues ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URN\" relationType=\"Continues\">urn:nbn:de:bsz:21-opus-4966</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "continues"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "pokračuje (čím)"@cs,
+        "continues"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Continues" ;
+    props:openaire "Continues" ;
+    props:zenodo "continues" .
+
+nma-relationtypes:describes a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Describes.jsonld ;
+    skos:definition "indicates A describes B"@en ;
+    skos:exactMatch ccmm-relationtype:Describes,
+        datacite-relationtype:Describes ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"Describes\">10.6084/m9.figshare.c.3288407</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "describes"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "popisuje (co)"@cs,
+        "describes"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Describes" ;
+    props:zenodo "describes" .
+
+nma-relationtypes:documents a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Documents.jsonld ;
+    skos:definition "indicates A is documentation about/explaining B"@en ;
+    skos:exactMatch ccmm-relationtype:Documents,
+        datacite-relationtype:Documents ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"Documents\">10.1234/7836</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "documents"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "dokumentuje (co)"@cs,
+        "documents"@en ;
+    skos:scopeNote "May be used for software documentation."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Documents" ;
+    props:openaire "Documents" ;
+    props:zenodo "documents" .
+
+nma-relationtypes:hasmetadata a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:HasMetadata.jsonld ;
+    skos:definition "indicates resource A has additional metadata B"@en ;
+    skos:exactMatch ccmm-relationtype:HasMetadata,
+        datacite-relationtype:HasMetadata ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"HasMetadata\" relatedMetadataScheme=\"DDI-L\" schemeURI=\"http://www.ddialliance.org/Specification/DDI-Lifecycle/3.1/XMLSchema/instance.xsd\">10.1234/567890</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "hasmetadata"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "má metadata"@cs,
+        "has metadata"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "HasMetadata" ;
+    props:openaire "HasMetadata" ;
+    props:zenodo "hasmetadata" .
+
+nma-relationtypes:haspart a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:HasPart.jsonld ;
+    skos:definition "indicates A includes the part B"@en ;
+    skos:exactMatch ccmm-relationtype:HasPart,
+        datacite-relationtype:HasPart ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URL\" relationType=\"HasPart\">https://zenodo.org/record/16564/files/dune-stuff-LSSC_15.zip</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "haspart"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "má část/i"@cs,
+        "has part"@en ;
+    skos:scopeNote "Recommended for discovery. Primarily applied to container-contained relationships. May be used for individual software modules; code repository-to-version should use IsVersionOf/HasVersion."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "HasPart" ;
+    props:openaire "HasPart" ;
+    props:zenodo "haspart" .
+
+nma-relationtypes:hastranslation a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:HasTranslation.jsonld ;
+    skos:definition "indicates A has a translation B"@en ;
+    skos:exactMatch ccmm-relationtype:HasTranslation,
+        datacite-relationtype:HasTranslation ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"HasTranslation\">10.21384/g01j-jm06</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "hastranslation"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "má překlad"@cs,
+        "has translation"@en ;
+    skos:scopeNote "When a resource is shared in one language and later translated, use HasTranslation to link original to translation. If released simultaneously in multiple languages, connect in both directions."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "HasTranslation" .
+
+nma-relationtypes:hasversion a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:HasVersion.jsonld ;
+    skos:definition "indicates A has a version B"@en ;
+    skos:exactMatch ccmm-relationtype:HasVersion,
+        datacite-relationtype:HasVersion ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"HasVersion\">10.5281/ZENODO.832053</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "hasversion"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "má verzi"@cs,
+        "has version"@en ;
+    skos:scopeNote "The registered resource such as a software package or code repository has a versioned instance (A has instance B). May relate an un-versioned code repository to a specific software version."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "HasVersion" ;
+    props:zenodo "hasversion" .
+
+nma-relationtypes:iscitedby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsCitedBy.jsonld ;
+    skos:definition "indicates that B includes A in a citation"@en ;
+    skos:exactMatch ccmm-relationtype:IsCitedBy,
+        datacite-relationtype:IsCitedBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsCitedBy\">10.4232/10.ASEAS-5.2-1</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "iscitedby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je citován (čím)"@cs,
+        "is cited by"@en ;
+    skos:scopeNote "Recommended for discovery."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsCitedBy" ;
+    props:openaire "IsCitedBy" ;
+    props:zenodo "iscitedby" .
+
+nma-relationtypes:iscollectedby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsCollectedBy.jsonld ;
+    skos:definition "Indicates A is collected by B"@en ;
+    skos:exactMatch ccmm-relationtype:IsCollectedBy,
+        datacite-relationtype:IsCollectedBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsCollectedBy\">10.5072/instrument</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "iscollectedby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je sbírán (čím)"@cs,
+        "is collected by"@en ;
+    skos:scopeNote "May indicate relationship between a dataset and an instrument used to collect/measure/observe data."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsCollectedBy" .
+
+nma-relationtypes:iscompiledby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsCompiledBy.jsonld ;
+    skos:definition "indicates B is used to compile or create A"@en ;
+    skos:exactMatch ccmm-relationtype:IsCompiledBy,
+        datacite-relationtype:IsCompiledBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URL\" relationType=\"IsCompiledBy\">http://d-nb.info/gnd/4513749-3</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "iscompiledby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "kompilován (čím)"@cs,
+        "is compiled by"@en ;
+    skos:scopeNote "May indicate a traditional text compilation, or the compiler program used to generate executable software."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsCompiledBy" ;
+    props:openaire "isCompiledBy" ;
+    props:zenodo "iscompiledby" .
+
+nma-relationtypes:iscontinuedby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsContinuedBy.jsonld ;
+    skos:definition "indicates A is continued by the work B"@en ;
+    skos:exactMatch ccmm-relationtype:IsContinuedBy,
+        datacite-relationtype:IsContinuedBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URN\" relationType=\"IsContinuedBy\">urn:nbn:de:bsz:21-opus-4967</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "iscontinuedby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je pokračováním (čeho)"@cs,
+        "is continued by"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsContinuedBy" ;
+    props:openaire "IsContinuedBy" ;
+    props:zenodo "iscontinuedby" .
+
+nma-relationtypes:isderivedfrom a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsDerivedFrom.jsonld ;
+    skos:definition "indicates B is a source upon which A is based"@en ;
+    skos:exactMatch ccmm-relationtype:IsDerivedFrom,
+        datacite-relationtype:IsDerivedFrom ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsDerivedFrom\">10.6078/M7DZ067C</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isderivedfrom"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je odvozen od (čeho)"@cs,
+        "is derived from"@en ;
+    skos:scopeNote "Use for a resource that is a derivative of an original resource. Example context: dataset derived from a larger dataset and manipulated."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsDerivedFrom" ;
+    props:openaire "IsDerivedFrom" ;
+    props:zenodo "isderivedfrom" .
+
+nma-relationtypes:isdescribedby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsDescribedBy.jsonld ;
+    skos:definition "indicates A is described by B"@en ;
+    skos:exactMatch ccmm-relationtype:IsDescribedBy,
+        datacite-relationtype:IsDescribedBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsDescribedBy\">10.1038/sdata.2016.123</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isdescribedby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je popsán (čím)"@cs,
+        "is described by"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsDescribedBy" ;
+    props:zenodo "isdescribedby" .
+
+nma-relationtypes:isdocumentedby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsDocumentedBy.jsonld ;
+    skos:definition "indicates B is documentation about/explaining A"@en ;
+    skos:exactMatch ccmm-relationtype:IsDocumentedBy,
+        datacite-relationtype:IsDocumentedBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URL\" relationType=\"IsDocumentedBy\">http://tobias-lib.uni-tuebingen.de/volltexte/2000/96/</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isdocumentedby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je zdokumentován (čím)"@cs,
+        "is documented by"@en ;
+    skos:scopeNote "May be used for software documentation."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsDocumentedBy" ;
+    props:openaire "IsDocumentedBy" ;
+    props:zenodo "isdocumentedby" .
+
+nma-relationtypes:isidenticalto a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsIdenticalTo.jsonld ;
+    skos:definition "indicates that A is identical to B, for use when there is a need to register two separate instances of the same resource"@en ;
+    skos:exactMatch ccmm-relationtype:IsIdenticalTo,
+        datacite-relationtype:IsIdenticalTo ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URL\" relationType=\"IsIdenticalTo\">http://oac.cdlib.org/findaid/ark:/13030/c8r78fzq</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isidenticalto"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je identický s"@cs,
+        "is identical to"@en ;
+    skos:scopeNote "Use when the same resource is saved in another location (e.g., another institution)."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsIdenticalTo" ;
+    props:openaire "IsIdenticalTo" ;
+    props:zenodo "isidenticalto" .
+
+nma-relationtypes:ismetadatafor a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsMetadataFor.jsonld ;
+    skos:definition "indicates additional metadata A for a resource B"@en ;
+    skos:exactMatch ccmm-relationtype:IsMetadataFor,
+        datacite-relationtype:IsMetadataFor ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsMetadataFor\" relatedMetadataScheme=\"DDI-L\" schemeURI=\"http://www.ddialliance.org/Specification/DDI-Lifecycle/3.1/XMLSchema/instance.xsd\">10.1234/567891</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "ismetadatafor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je metadaty pro"@cs,
+        "is metadata for"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsMetadataFor" ;
+    props:openaire "IsMetadataFor" ;
+    props:zenodo "ismetadatafor" .
+
+nma-relationtypes:isnewversionof a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsNewVersionOf.jsonld ;
+    skos:definition "indicates A is a new edition of B, where the new edition has been modified or updated"@en ;
+    skos:exactMatch ccmm-relationtype:IsNewVersionOf,
+        datacite-relationtype:IsNewVersionOf ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsNewVersionOf\">10.5438/0005</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isnewversionof"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je novou verzí (čeho)"@cs,
+        "is new version of"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsNewVersionOf" ;
+    props:openaire "IsNewVersionOf" ;
+    props:zenodo "isnewversionof" .
+
+nma-relationtypes:isobsoletedby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsObsoletedBy.jsonld ;
+    skos:definition "Indicates A is replaced by B"@en ;
+    skos:exactMatch ccmm-relationtype:IsObsoletedBy,
+        datacite-relationtype:IsObsoletedBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsObsoletedBy\">10.5438/0005</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isobsoletedby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je nahrazen (čím)"@cs,
+        "is obsoleted by"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsObsoletedBy" ;
+    props:zenodo "isobsoletedby" .
+
+nma-relationtypes:isoriginalformof a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsOriginalFormOf.jsonld ;
+    skos:definition "indicates A is the original form of B"@en ;
+    skos:exactMatch ccmm-relationtype:IsOriginalFormOf,
+        datacite-relationtype:IsOriginalFormOf ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsOriginalFormOf\">10.1234/9035</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isoriginalformof"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je původní variantou (čeho)"@cs,
+        "is original form of"@en ;
+    skos:scopeNote "May be used for different software operating systems or compiler formats."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsOriginalFormOf" ;
+    props:openaire "IsOriginalFormOf" ;
+    props:zenodo "isoriginalformof" .
+
+nma-relationtypes:ispartof a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsPartOf.jsonld ;
+    skos:definition "indicates A is a portion of B; may be used for elements of a series"@en ;
+    skos:exactMatch ccmm-relationtype:IsPartOf,
+        datacite-relationtype:IsPartOf ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsPartOf\">10.5281/zenodo.754312</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "ispartof"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je součástí"@cs,
+        "is part of"@en ;
+    skos:scopeNote "Recommended for discovery. Primarily applied to container-contained relationships. May be used for individual software modules; code repository-to-version should use IsVersionOf/HasVersion."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsPartOf" ;
+    props:openaire "IsPartOf" ;
+    props:zenodo "ispartof" .
+
+nma-relationtypes:ispreviousversionof a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsPreviousVersionOf.jsonld ;
+    skos:definition "indicates A is a previous edition of B"@en ;
+    skos:exactMatch ccmm-relationtype:IsPreviousVersionOf,
+        datacite-relationtype:IsPreviousVersionOf ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsPreviousVersionOf\">10.5438/0007</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "ispreviousversionof"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je předchozí verzí (čeho)"@cs,
+        "is previous version of"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsPreviousVersionOf" ;
+    props:openaire "IsPreviousVersionOf" ;
+    props:zenodo "ispreviousversionof" .
+
+nma-relationtypes:ispublishedin a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsPublishedIn.jsonld ;
+    skos:definition "indicates A is published inside B, but is independent of other things published inside of B"@en ;
+    skos:exactMatch ccmm-relationtype:IsPublishedIn,
+        datacite-relationtype:IsPublishedIn ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"ISSN\" relationType=\"IsPublishedIn\">2213-1337</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "ispublishedin"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je publikován v"@cs,
+        "is published in"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsPublishedIn" ;
+    props:zenodo "ispublishedin" .
+
+nma-relationtypes:isreferencedby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsReferencedBy.jsonld ;
+    skos:definition "indicates A is used as a source of information by B"@en ;
+    skos:exactMatch ccmm-relationtype:IsReferencedBy,
+        datacite-relationtype:IsReferencedBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URL\" relationType=\"IsReferencedBy\">http://www.testpubl.de</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isreferencedby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je na něj odkazováno z (čeho)"@cs,
+        "is referenced by"@en ;
+    skos:scopeNote "Recommended for discovery."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsReferencedBy" ;
+    props:openaire "IsReferencedBy" ;
+    props:zenodo "isreferencedby" .
+
+nma-relationtypes:isrequiredby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsRequiredBy.jsonld ;
+    skos:definition "Indicates A is required by B"@en ;
+    skos:exactMatch ccmm-relationtype:IsRequiredBy,
+        datacite-relationtype:IsRequiredBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsRequiredBy\">10.1234/8675</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isrequiredby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je požadován (čím)"@cs,
+        "is required by"@en ;
+    skos:scopeNote "May be used to indicate software dependencies."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsRequiredBy" ;
+    props:zenodo "isrequiredby" .
+
+nma-relationtypes:isreviewedby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsReviewedBy.jsonld ;
+    skos:definition "indicates that A is reviewed by B"@en ;
+    skos:exactMatch ccmm-relationtype:IsReviewedBy,
+        datacite-relationtype:IsReviewedBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsReviewedBy\">10.5256/F1000RESEARCH.4288.R4745</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isreviewedby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je recenzován (čím)"@cs,
+        "is reviewed by"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsReviewedBy" ;
+    props:openaire "IsReviewedBy" ;
+    props:zenodo "isreviewedby" .
+
+nma-relationtypes:issourceof a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsSourceOf.jsonld ;
+    skos:definition "indicates A is a source upon which B is based"@en ;
+    skos:exactMatch ccmm-relationtype:IsSourceOf,
+        datacite-relationtype:IsSourceOf ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URL\" relationType=\"IsSourceOf\">http://opencontext.org/projects/81204AF8-127C-4686-E9B0-1202C3A47959</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "issourceof"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je zdrojem odvozené verze"@cs,
+        "is source of"@en ;
+    skos:scopeNote "IsSourceOf is the original resource from which a derivative resource was created (e.g., original dataset without value manipulation)."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsSourceOf" ;
+    props:openaire "IsSourceOf" ;
+    props:zenodo "issourceof" .
+
+nma-relationtypes:issupplementedby a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsSupplementedBy.jsonld ;
+    skos:definition "indicates that B is a supplement to A"@en ;
+    skos:exactMatch ccmm-relationtype:IsSupplementedBy,
+        datacite-relationtype:IsSupplementedBy ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"PMID\" relationType=\"IsSupplementedBy\">16911322</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "issupplementedby"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "má doplněk"@cs,
+        "is supplemented by"@en ;
+    skos:scopeNote "Recommended for discovery."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsSupplementedBy" ;
+    props:openaire "IsSupplementedBy" ;
+    props:zenodo "issupplementedby" .
+
+nma-relationtypes:issupplementto a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsSupplementTo.jsonld ;
+    skos:definition "indicates that A is a supplement to B"@en ;
+    skos:exactMatch ccmm-relationtype:IsSupplementTo,
+        datacite-relationtype:IsSupplementTo ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URN\" relationType=\"IsSupplementTo\">urn:nbn:de:0168-ssoar-13172</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "issupplementto"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je doplňkem k (čemu)"@cs,
+        "is supplement to"@en ;
+    skos:scopeNote "Recommended for discovery."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsSupplementTo" ;
+    props:openaire "IsSupplementTo" ;
+    props:zenodo "issupplementto" .
+
+nma-relationtypes:istranslationof a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsTranslationOf.jsonld ;
+    skos:definition "indicates A is a translation of B"@en ;
+    skos:exactMatch ccmm-relationtype:IsTranslationOf,
+        datacite-relationtype:IsTranslationOf ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsTranslationOf\">10.21384/828a-cm38</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "istranslationof"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je překladem (čeho)"@cs,
+        "is translation of"@en ;
+    skos:scopeNote "When a resource is shared in one language and later translated, use IsTranslationOf to link translation to original."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsTranslationOf" .
+
+nma-relationtypes:isvariantformof a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsVariantFormOf.jsonld ;
+    skos:definition "indicates A is a variant or different form of B"@en ;
+    skos:exactMatch ccmm-relationtype:IsVariantFormOf,
+        datacite-relationtype:IsVariantFormOf ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsVariantFormOf\">10.1234/8675</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isvariantformof"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je variantou (čeho)"@cs,
+        "is variant form of"@en ;
+    skos:scopeNote "Use for a different form of one thing. May be used for different software operating systems or compiler formats."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsVariantFormOf" ;
+    props:openaire "IsVariantFormOf" ;
+    props:zenodo "isvariantformof" .
+
+nma-relationtypes:isversionof a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:IsVersionOf.jsonld ;
+    skos:definition "indicates A is a version of B"@en ;
+    skos:exactMatch ccmm-relationtype:IsVersionOf,
+        datacite-relationtype:IsVersionOf ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"IsVersionOf\">10.5281/ZENODO.832054</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "isversionof"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "je verzí"@cs,
+        "is version of"@en ;
+    skos:scopeNote "The registered resource is an instance of a target resource (A is an instance of B). May relate a specific software version to its code repository."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "IsVersionOf" ;
+    props:zenodo "isversionof" .
+
+nma-relationtypes:obsoletes a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Obsoletes.jsonld ;
+    skos:definition "Indicates A replaces B"@en ;
+    skos:exactMatch ccmm-relationtype:Obsoletes,
+        datacite-relationtype:Obsoletes ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"Obsoletes\">10.5438/0007</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "obsoletes"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "nahrazuje (co)"@cs,
+        "obsoletes"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Obsoletes" ;
+    props:zenodo "obsoletes" .
+
+nma-relationtypes:other a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Other.jsonld ;
+    skos:definition "indicates that A is related to B and the relationship does not fit into an existing category"@en ;
+    skos:exactMatch ccmm-relationtype:Other,
+        datacite-relationtype:Other ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"Other\" relationTypeInformation=\"is output of\" resourceTypeGeneral=\"Project\">10.21384/p27z-6n52</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "other"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "jiná role"@cs,
+        "other"@en ;
+    skos:scopeNote "If selected, supply a value for relationTypeInformation describing the nature of the relationship; applies to both relatedIdentifier and relatedItem."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Other" .
+
+nma-relationtypes:references a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:References.jsonld ;
+    skos:definition "indicates B is used as a source of information for A"@en ;
+    skos:exactMatch ccmm-relationtype:References,
+        datacite-relationtype:References ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"URN\" relationType=\"References\">urn:nbn:de:bsz:21-opus-963</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "references"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "odkazuje (na co)"@cs,
+        "references"@en ;
+    skos:scopeNote "Recommended for discovery."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "References" ;
+    props:openaire "References" ;
+    props:zenodo "references" .
+
+nma-relationtypes:requires a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Requires.jsonld ;
+    skos:definition "Indicates A requires B"@en ;
+    skos:exactMatch ccmm-relationtype:Requires,
+        datacite-relationtype:Requires ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"Requires\">10.1234/867</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "requires"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "požaduje (co)"@cs,
+        "requires"@en ;
+    skos:scopeNote "May be used to indicate software dependencies."@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Requires" ;
+    props:zenodo "requires" .
+
+nma-relationtypes:reviews a skos:Concept ;
+    rdfs:seeAlso datacite-relationtype:Reviews.jsonld ;
+    skos:definition "indicates that A is a review of B"@en ;
+    skos:exactMatch ccmm-relationtype:Reviews,
+        datacite-relationtype:Reviews ;
+    skos:example "<relatedIdentifier relatedIdentifierType=\"DOI\" relationType=\"Reviews\">10.12688/f1000research.4001.1</relatedIdentifier>" ;
+    skos:inScheme nma-relationtypes: ;
+    skos:notation "reviews"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "recenzuje (co)"@cs,
+        "reviews"@en ;
+    skos:topConceptOf nma-relationtypes: ;
+    props:datacite "Reviews" ;
+    props:openaire "Reviews" ;
+    props:zenodo "reviews" .
+
+nma-relationtypes: skos:hasTopConcept nma-relationtypes:cites,
+        nma-relationtypes:collects,
+        nma-relationtypes:compiles,
+        nma-relationtypes:continues,
+        nma-relationtypes:describes,
+        nma-relationtypes:documents,
+        nma-relationtypes:hasmetadata,
+        nma-relationtypes:haspart,
+        nma-relationtypes:hastranslation,
+        nma-relationtypes:hasversion,
+        nma-relationtypes:iscitedby,
+        nma-relationtypes:iscollectedby,
+        nma-relationtypes:iscompiledby,
+        nma-relationtypes:iscontinuedby,
+        nma-relationtypes:isderivedfrom,
+        nma-relationtypes:isdescribedby,
+        nma-relationtypes:isdocumentedby,
+        nma-relationtypes:isidenticalto,
+        nma-relationtypes:ismetadatafor,
+        nma-relationtypes:isnewversionof,
+        nma-relationtypes:isobsoletedby,
+        nma-relationtypes:isoriginalformof,
+        nma-relationtypes:ispartof,
+        nma-relationtypes:ispreviousversionof,
+        nma-relationtypes:ispublishedin,
+        nma-relationtypes:isreferencedby,
+        nma-relationtypes:isrequiredby,
+        nma-relationtypes:isreviewedby,
+        nma-relationtypes:issourceof,
+        nma-relationtypes:issupplementedby,
+        nma-relationtypes:issupplementto,
+        nma-relationtypes:istranslationof,
+        nma-relationtypes:isvariantformof,
+        nma-relationtypes:isversionof,
+        nma-relationtypes:obsoletes,
+        nma-relationtypes:other,
+        nma-relationtypes:references,
+        nma-relationtypes:requires,
+        nma-relationtypes:reviews .
+

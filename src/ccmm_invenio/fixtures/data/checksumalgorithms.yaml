@@ -1,0 +1,153 @@
+- id: adler32
+  title:
+    en: ADLER32
+  description:
+    en: Indicates the algorithm used was ADLER32.
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_adler32
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: blake2b256
+  title:
+    en: BLAKE2b-256
+  description:
+    en: Indicates the algorithm used was BLAKE2b-256.
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_blake2b256
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: blake2b384
+  title:
+    en: BLAKE2b-384
+  description:
+    en: Indicates the algorithm used was BLAKE2b-384.
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_blake2b384
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: blake2b512
+  title:
+    en: BLAKE2b-512
+  description:
+    en: Indicates the algorithm used was BLAKE2b-512.
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_blake2b512
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: blake3
+  title:
+    en: BLAKE3
+  description:
+    en: Indicates the algorithm used was BLAKE3.
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_blake3
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: md2
+  title:
+    en: MD2
+  description:
+    en: Indicates the algorithm used was MD2
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_md2
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: md4
+  title:
+    en: MD4
+  description:
+    en: Indicates the algorithm used was MD4
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_md4
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: md5
+  title:
+    en: MD5
+  description:
+    en: Indicates the algorithm used was MD5
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_md5
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: md6
+  title:
+    en: MD6
+  description:
+    en: Indicates the algorithm used was MD6
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_md6
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: sha1
+  title:
+    en: SHA-1
+  description:
+    en: Indicates the algorithm used was SHA-1
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_sha1
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: sha224
+  title:
+    en: SHA224
+  description:
+    en: Indicates the algorithm used was SHA224
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_sha224
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: sha256
+  title:
+    en: SHA256
+  description:
+    en: Indicates the algorithm used was SHA256
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_sha256
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: sha384
+  title:
+    en: SHA384
+  description:
+    en: Indicates the algorithm used was SHA384
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_sha384
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: sha3_256
+  title:
+    en: SHA3-256
+  description:
+    en: Indicates the algorithm used was SHA3-256.
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_sha3_256
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: sha3_384
+  title:
+    en: SHA3-384
+  description:
+    en: Indicates the algorithm used was SHA3-384.
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_sha3_384
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: sha3_512
+  title:
+    en: SHA3-512
+  description:
+    en: Indicates the algorithm used was SHA3-512.
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_sha3_512
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch
+- id: sha512
+  title:
+    en: SHA512
+  description:
+    en: Indicates the algorithm used was SHA512
+  mappings:
+  - identifier: http://spdx.org/rdf/terms#checksumAlgorithm_sha512
+    scheme: http://spdx.org/rdf/terms#
+    relation: exactMatch

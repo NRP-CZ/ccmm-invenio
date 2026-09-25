@@ -1,0 +1,165 @@
+- id: accepted
+  title:
+    cs: Datum přijetí
+    en: Date Accepted
+  props:
+    datacite: Accepted
+    openaire: Accepted
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Accepted
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Accepted
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: available
+  title:
+    cs: Datum zveřejnění
+    en: Date Available
+  props:
+    datacite: Available
+    openaire: Available
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Available
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Available
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: collected
+  title:
+    cs: Datum sběru
+    en: Date Collected
+  props:
+    datacite: Collected
+    openaire: Collected
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Collected
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Collected
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: copyrighted
+  title:
+    cs: Datum udělení copyrightu
+    en: Date Copyrighted
+  props:
+    datacite: Copyrighted
+    openaire: Copyrighted
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Copyrighted
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Copyrighted
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: coverage
+  title:
+    cs: Časové pokrytí
+    en: Date Coverage
+  props:
+    datacite: Coverage
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Coverage
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Coverage
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: created
+  title:
+    cs: Datum vytvoření
+    en: Date Created
+  props:
+    datacite: Created
+    openaire: Created
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Created
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Created
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: issued
+  title:
+    cs: Datum vydání
+    en: Date Issued
+  props:
+    datacite: Issued
+    openaire: Issued
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Issued
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Issued
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: other
+  title:
+    cs: Jiné datum
+    en: Other date
+  props:
+    datacite: Other
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Other
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: submitted
+  title:
+    cs: Datum podání
+    en: Date Submitted
+  props:
+    datacite: Submitted
+    openaire: Submitted
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Submitted
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Submitted
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: updated
+  title:
+    cs: Datum aktualizace
+    en: Date Updated
+  props:
+    datacite: Updated
+    openaire: Updated
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Updated
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Updated
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: valid
+  title:
+    cs: Datum platnosti
+    en: Date Valid
+  props:
+    datacite: Valid
+    openaire: Valid
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Valid
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Valid
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
+- id: withdrawn
+  title:
+    cs: Datum odstranění
+    en: Date Withdrawn
+  props:
+    datacite: Withdrawn
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/TimeReference/Withdrawn
+    scheme: https://vocabs.ccmm.cz/registry/codelist/TimeReference/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/dateType/Withdrawn
+    scheme: https://w3id.org/tib/datacite/vocab/dateType/
+    relation: exactMatch
