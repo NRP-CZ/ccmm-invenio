@@ -2,9 +2,9 @@
 
 This library provides:
 
-* Fixtures for vocabularies to support the CCMM model in NRP Invenio
-* Schema serializers for the CCMM model
-* Import and export modules for the CCMM model
+* an OARepo model preset for CCMM datasets (`ccmm_preset_1_1_0`)
+* CCMM XML import and export (REST, OAI-PMH)
+* vocabulary fixtures for the CCMM model
 * UI components for working with the CCMM model in NRP Invenio
 
 ## Installation
@@ -15,15 +15,17 @@ pip install ccmm-invenio
 
 ## Usage
 
-To use CCMM in production repository, add the following model:
+To use CCMM in a repository, add the following model:
 
 ```python
 # models/datasets.py
-production_dataset = model(
-    "production_dataset",
+from ccmm_invenio.models import ccmm_preset_1_1_0
+
+ccmm_dataset = model(
+    "ccmm_dataset",
     version="1.1.0",
     presets=[
-        ccmm_production_preset,
+        ccmm_preset_1_1_0,
     ],
     configuration={
         # "ui_blueprint": "myui
@@ -32,7 +34,7 @@ production_dataset = model(
         {
             "Metadata": {
                 "properties": {
-                    # your extensions come here, ccmm_production_preset will add
+                    # your extensions come here, ccmm_preset_1_1_0 will add
                     # all ccmm fields automatically
                 },
             },
@@ -43,10 +45,16 @@ production_dataset = model(
 )
 
 # invenio.cfg
-production_dataset.register()
+ccmm_dataset.register()
 ```
 
-## How to generate new NMA and Production CCMM model mappings
+`ccmm_production_preset_1_1_0` is an alias of `ccmm_preset_1_1_0`.
+
+The preset adds the CCMM XML import and export (`application/vnd.ccmm.research-data+xml`,
+also OAI-PMH with the `ccmm` metadata prefix). See [AGENTS.md](AGENTS.md) for the design of the
+model and of the CCMM conversion.
+
+## How to adapt to a new CCMM version
 
 ### Download and pre-process CCMM XML
 
@@ -57,42 +65,16 @@ the CCMM XML schemas for the desired version. This will create:
 * A diff file in `ccmm_versions/diffs/` comparing the new version to the previous one
 * A schema overview in `ccmm_versions/summaries/ccmm-<version>-<date>.summary.md`
 
-### Adapt CCMM model yaml files
+### Adapt the model yaml files
 
-Copy/paste the model in `src/ccmm_invenio/models/<previous-version>-<date>/` to
-`src/ccmm_invenio/models/<new-version>-<date>/`. 
+Copy the model in `src/ccmm_invenio/models/<previous-version>-<date>/` to
+`src/ccmm_invenio/models/<new-version>-<date>/`.
 
 Look at the diff file generated in the previous step and adapt the
-`ccmm.yaml`, `ccmm-invenio.yaml`, `ccmm-vocabularies.yaml`, and `gml-1.1.0.yaml` files
-in `src/ccmm_invenio/models/<version>-<date>/` accordingly.
+`ccmm.yaml` (the CCMM types used by the model), `ccmm-invenio.yaml` (the dataset, RDM based)
+and `ccmm-vocabularies.yaml` files in `src/ccmm_invenio/models/<version>-<date>/` accordingly.
 
-Then look at the `src/ccmm_invenio/models/__init__.py` file and add the new version
-there.
-
-### Generate NMA Parser
-
-```bash
-
-CCMM_VERSION_DIR=1.1.0a1-2025-10-25
-CCMM_VERSION=1.1.0
-
-python ./src/ccmm_invenio/parsers/generate_parser.py  \
-       ./src/ccmm_invenio/models/$CCMM_VERSION_DIR/ccmm.yaml \
-       ./src/ccmm_invenio/models/$CCMM_VERSION_DIR/ccmm-vocabularies.yaml \
-       ./src/ccmm_invenio/models/$CCMM_VERSION_DIR/gml-1.1.0.yaml \
-       ./src/ccmm_invenio/parsers/nma_$(echo "$CCMM_VERSION" | tr "." "_")$.py
-```
-
-### Update production parser manually based on NMA parser
-
-```python
-
-# file production_<version>.py
-from .nma_<version> import CCMMXMLNMAParser
-
-class CCMMXMLProductionParser(CCMMXMLProductionParserBase, CCMMXMLNMAParser):
-    """Parser for CCMM XML version 1.1.0 for production repository."""
-    # tweaks here
-```
-
-## TODO: imports, exports
+Then add the new version to `src/ccmm_invenio/models/__init__.py`, the new XSD to
+`src/ccmm_invenio/resources/serializers/ccmm/xsd/` (updating the path in
+`converter.py`) and adapt the marshmallow schemas in
+`src/ccmm_invenio/resources/serializers/ccmm/schema/`.
