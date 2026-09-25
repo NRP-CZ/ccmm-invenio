@@ -22,6 +22,14 @@ if TYPE_CHECKING:
 class RootRecordComponent(ServiceComponent):
     """Keep the source CCMM XML in the root-level ccmm_xml field of the record."""
 
+    # Set ccmm_xml only when a value is present; with an empty/absent source the destination
+    # is left alone - a JSON-created record does not get an empty ccmm_xml, and a publish/edit/new
+    # version on a source without one does not wipe an existing value.
+    @staticmethod
+    def _set_ccmm_xml(source: dict | None, destination: dict) -> None:
+        if ccmm_xml := (source or {}).get("ccmm_xml"):
+            destination["ccmm_xml"] = ccmm_xml
+
     def create(
         self,
         identity: Identity,
@@ -32,8 +40,8 @@ class RootRecordComponent(ServiceComponent):
     ) -> None:
         """Inject parsed metadata to the record."""
         _, _, _ = identity, errors, kwargs
-        if data is not None and record is not None:
-            record["ccmm_xml"] = data.get("ccmm_xml", "")
+        if record is not None:
+            self._set_ccmm_xml(data, record)
 
     # ccmm_xml is outside metadata, not copied between the draft and the record by the
     # invenio metadata component - copied the same way here
@@ -43,7 +51,7 @@ class RootRecordComponent(ServiceComponent):
         """Copy the source xml from the draft to the published record."""
         _, _ = identity, kwargs
         if draft is not None and record is not None:
-            record["ccmm_xml"] = draft.get("ccmm_xml", "")
+            self._set_ccmm_xml(draft, record)
 
     def edit(
         self, identity: Identity, draft: Record | None = None, record: Record | None = None, **kwargs: Any
@@ -51,7 +59,7 @@ class RootRecordComponent(ServiceComponent):
         """Copy the source xml from the record to its edit draft."""
         _, _ = identity, kwargs
         if draft is not None and record is not None:
-            draft["ccmm_xml"] = record.get("ccmm_xml", "")
+            self._set_ccmm_xml(record, draft)
 
     def new_version(
         self, identity: Identity, draft: Record | None = None, record: Record | None = None, **kwargs: Any
@@ -59,4 +67,4 @@ class RootRecordComponent(ServiceComponent):
         """Copy the source xml from the record to the draft of its new version."""
         _, _ = identity, kwargs
         if draft is not None and record is not None:
-            draft["ccmm_xml"] = record.get("ccmm_xml", "")
+            self._set_ccmm_xml(record, draft)
