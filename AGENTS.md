@@ -57,7 +57,7 @@ export:  record (service result, or search-index record for OAI) --CCMMXMLSerial
 ```
 
 * Import: `CCMMJSONDeserializer` (resources/deserializers/ccmm.py) is registered as the `ccmm-xml` import
-  (`application/vnd.ccmm.research-data+xml`). An invalid XML document is a 400; the loaded dict
+  (`application/vnd.ccmm+xml`). An invalid XML document is a 400; the loaded dict
   goes to the service as the create payload (`metadata`, `ccmm_xml`, `access`, `files`).
 * Export: `CCMMXMLSerializer` is the `ccmm-xml` export (also OAI-PMH, prefix `ccmm`). Export is
   best effort - XSD errors are logged as warnings, not raised.

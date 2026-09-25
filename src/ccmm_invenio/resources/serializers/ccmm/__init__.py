@@ -52,7 +52,7 @@ log = logging.getLogger(__name__)
 
 
 class CCMMXMLSerializer(BaseSerializer):
-    """Invenio record -> CCMM 1.1.0 XML document (application/vnd.ccmm.research-data+xml).
+    """Invenio record -> CCMM 1.1.0 XML document (application/vnd.ccmm+xml).
 
     The ccmm_xml of the record is not exported as-is, the xml is always regenerated
     from the record metadata (the record may have been edited since the import).

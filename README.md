@@ -50,7 +50,7 @@ ccmm_dataset.register()
 
 `ccmm_production_preset_1_1_0` is an alias of `ccmm_preset_1_1_0`.
 
-The preset adds the CCMM XML import and export (`application/vnd.ccmm.research-data+xml`,
+The preset adds the CCMM XML import and export (`application/vnd.ccmm+xml`,
 also OAI-PMH with the `ccmm` metadata prefix). See [AGENTS.md](AGENTS.md) for the design of the
 model and of the CCMM conversion.
 

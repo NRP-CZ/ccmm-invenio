@@ -28,7 +28,7 @@ if TYPE_CHECKING:
 
 NS_CCMM_1_1_0 = "https://schema.ccmm.cz/research-data/1.1"
 NS_GML = "http://www.opengis.net/gml/3.2"
-CCMM_XML_MIMETYPE = "application/vnd.ccmm.research-data+xml"
+CCMM_XML_MIMETYPE = "application/vnd.ccmm+xml"
 # the default namespace is the one whose names are just local names in the json (see map_qname),
 # the prefixes are used when serializing xml
 NAMESPACES = {
