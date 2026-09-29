@@ -400,6 +400,19 @@ CCMMDataset:
         en: Information about the available distributions of the dataset.
         cs: Informace o dostupných distribucích datové sady.
 
+    # RDM (DataCite) sizes and formats - no counterpart in CCMM, kept for RDM / harvested records
+    sizes:
+      type: RDMSizes
+      label:
+        en: Sizes
+        cs: Velikosti
+
+    formats:
+      type: RDMFormats
+      label:
+        en: Formats
+        cs: Formáty
+
     # funding_references:
     # we use RDM funding
     funding:

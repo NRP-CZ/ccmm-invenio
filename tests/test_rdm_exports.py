@@ -91,3 +91,19 @@ def test_export_serializes_after_subject_expansion(client, headers, vocabularies
     record_id = publish_sample(client, headers)
     response = client.get(f"/ccmm-dataset/{record_id}", headers={"Accept": export.mimetype})
     assert response.status_code == 200, response.get_data(as_text=True)[:500]
+
+
+def test_sizes_formats(client, headers, vocabularies, location):  # noqa: F811 - fixtures
+    """RDM sizes / formats (e.g. from a harvested DataCite record) are valid metadata and stored."""
+    record = client.post("/ccmm-dataset", headers=headers, data=SAMPLE.read_bytes()).get_json()
+    record["files"] = {"enabled": False}
+    record["metadata"] |= {"sizes": ["2 pages"], "formats": ["application/pdf"]}
+    response = client.put(
+        f"/ccmm-dataset/{record['id']}/draft",
+        json=record,
+        headers={"Content-Type": "application/json", "Accept": "application/json"},
+    )
+    assert response.status_code == 200, response.get_data(as_text=True)
+    assert not response.get_json().get("errors"), response.get_json()["errors"]
+    metadata = response.get_json()["metadata"]
+    assert (metadata["sizes"], metadata["formats"]) == (["2 pages"], ["application/pdf"])
