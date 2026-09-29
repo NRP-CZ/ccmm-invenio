@@ -1,0 +1,2700 @@
+@prefix europa-language: <http://publications.europa.eu/resource/authority/language/> .
+@prefix europa-ontology: <http://publications.europa.eu/ontology/> .
+@prefix europa-web: <https://op.europa.eu/en/web/> .
+@prefix nma: <https://nma.eosc.cz/vocabularies/> .
+@prefix nma-vocabularies: <https://nma.eosc.cz/vocabularies/vocabularies/> .
+@prefix ns1: <https://nma.eosc.cz/vocabularies/subjects/> .
+@prefix ns10: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/> .
+@prefix ns11: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/> .
+@prefix ns12: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/> .
+@prefix ns13: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/> .
+@prefix ns14: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/> .
+@prefix ns15: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/> .
+@prefix ns16: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/> .
+@prefix ns17: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/> .
+@prefix ns18: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/> .
+@prefix ns19: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/> .
+@prefix ns2: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/> .
+@prefix ns20: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/> .
+@prefix ns21: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100/> .
+@prefix ns22: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/> .
+@prefix ns23: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/> .
+@prefix ns24: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/> .
+@prefix ns25: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/> .
+@prefix ns26: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/> .
+@prefix ns27: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/> .
+@prefix ns28: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/> .
+@prefix ns29: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/> .
+@prefix ns3: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/> .
+@prefix ns30: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/> .
+@prefix ns31: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300/> .
+@prefix ns32: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/> .
+@prefix ns33: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/> .
+@prefix ns34: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/> .
+@prefix ns35: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/> .
+@prefix ns36: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/> .
+@prefix ns37: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/> .
+@prefix ns38: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/> .
+@prefix ns39: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/> .
+@prefix ns4: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/> .
+@prefix ns40: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/> .
+@prefix ns41: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/> .
+@prefix ns42: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/> .
+@prefix ns43: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/> .
+@prefix ns44: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/> .
+@prefix ns45: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/> .
+@prefix ns46: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/> .
+@prefix ns47: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/> .
+@prefix ns5: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200/> .
+@prefix ns6: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/> .
+@prefix ns7: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/> .
+@prefix ns8: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/> .
+@prefix ns9: <https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tags: <https://nma.eosc.cz/vocabularies/vocabularies/inveniotags> .
+
+europa-ontology:euvoc a owl:Ontology ;
+    rdfs:label "EU Vocabularies ontology (euvoc)"@en ;
+    rdfs:comment "Ontology of the EU Publications Office; its terms are used as skos:notation datatypes to distinguish language code schemes (e.g. ISO_639_1, ISO_639_3, XML_LNG)."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+europa-language: a skos:ConceptScheme ;
+    rdfs:label "EU Publications Office language authority"@en ;
+    rdfs:comment "EU Publications Office language authority table; identifiers are ISO 639-3 codes."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+nma: a owl:Ontology ;
+    rdfs:label "NMA vocabularies"@en ;
+    rdfs:comment "Namespace of the NMA vocabularies; each sub-path is one vocabulary (e.g. languages)."@en .
+
+nma-vocabularies:invenioid a rdfs:Datatype ;
+    rdfs:label "NMA internal vocabulary id"@en ;
+    rdfs:comment "Marks skos:notation literals carrying the internal NMA vocabulary id, used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props: a owl:Ontology ;
+    rdfs:label "NMA vocabulary properties"@en ;
+    rdfs:comment "Namespace of internal vocabulary properties and datatypes used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props:alpha_2 a rdf:Property ;
+    rdfs:label "ISO 639-1 code"@en ;
+    rdfs:comment "Two-letter ISO 639-1 code of a language, when it has one."@en .
+
+props:classification_code a rdf:Property ;
+    rdfs:label "classification code"@en ;
+    rdfs:comment "Code of a subject in its classification scheme (e.g. the FORD code 10101 or the INSPIRE theme code EF)."@en .
+
+props:csl a rdf:Property ;
+    rdfs:label "csl"@en ;
+    rdfs:comment "Citation Style Language (CSL) type of a resource type."@en .
+
+props:datacite a rdf:Property ;
+    rdfs:label "DataCite relationType name"@en ;
+    rdfs:comment "Name of the DataCite relationType (e.g. IsCitedBy) a relation type concept stands for."@en .
+
+props:datacite_general a rdf:Property ;
+    rdfs:label "datacite_general"@en ;
+    rdfs:comment "DataCite resourceTypeGeneral of a resource type."@en .
+
+props:datacite_type a rdf:Property ;
+    rdfs:label "datacite_type"@en ;
+    rdfs:comment "DataCite resource type name, when the general one is further specified."@en .
+
+props:eurepo a rdf:Property ;
+    rdfs:label "eurepo"@en ;
+    rdfs:comment "eu-repo semantics identifier of a resource type."@en .
+
+props:marc a rdf:Property ;
+    rdfs:label "MARC 21 relator code"@en ;
+    rdfs:comment "Three-letter MARC 21 relator code (e.g. prc) of a role concept."@en .
+
+props:marc21_subtype a rdf:Property ;
+    rdfs:label "marc21_subtype"@en ;
+    rdfs:comment "MARC 21 bibliographic level of a resource type."@en .
+
+props:marc21_type a rdf:Property ;
+    rdfs:label "marc21_type"@en ;
+    rdfs:comment "MARC 21 type of record of a resource type."@en .
+
+props:openaire_resourceType a rdf:Property ;
+    rdfs:label "openaire_resourceType"@en ;
+    rdfs:comment "OpenAIRE resource type code of a resource type."@en .
+
+props:openaire_type a rdf:Property ;
+    rdfs:label "openaire_type"@en ;
+    rdfs:comment "OpenAIRE type name of a resource type."@en .
+
+props:schema.org a rdf:Property ;
+    rdfs:label "schema.org"@en ;
+    rdfs:comment "schema.org type a resource type maps to."@en .
+
+props:subtype a rdf:Property ;
+    rdfs:label "subtype"@en ;
+    rdfs:comment "InvenioRDM resource subtype id; empty for top-level types."@en .
+
+props:type a rdf:Property ;
+    rdfs:label "type"@en ;
+    rdfs:comment "InvenioRDM resource type id a resource type belongs to."@en .
+
+props:xml_lang a rdf:Property ;
+    rdfs:label "xml:lang code"@en ;
+    rdfs:comment "Language tag suitable for an xml:lang attribute: the ISO 639-1 code when available, the ISO 639-3 code otherwise."@en .
+
+tags: a rdf:Property ;
+    rdfs:label "vocabulary tags"@en ;
+    rdfs:comment "Links a vocabulary concept to its tag values (e.g. the scope and type of a language); internal use."@en .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10101> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10100> ;
+    skos:exactMatch ns4:10101 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10101"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Čistá matematika"@cs,
+        "Pure mathematics"@en ;
+    props:classification_code "10101" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10102> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10100> ;
+    skos:exactMatch ns4:10102 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10102"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Aplikovaná matematika"@cs,
+        "Applied mathematics"@en ;
+    props:classification_code "10102" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10103> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10100> ;
+    skos:exactMatch ns4:10103 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10103"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Pravděpodobnost a statistika"@cs,
+        "Statistics and probability"@en ;
+    props:classification_code "10103" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10201> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10200> ;
+    skos:exactMatch ns5:10201 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10201"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Počítačové vědy, informační věda, bioinformatika"@cs,
+        "Computer sciences, information science, bioinformathics "@en ;
+    props:classification_code "10201" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10301> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10300> ;
+    skos:exactMatch ns6:10301 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10301"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Atomová fyzika, molekulární a chemická fyzika (fyzika atomů a molekul včetně srážek, interakcí s radiací, magnetická rezonance, Mössbauerův jev)"@cs,
+        "Atomic, molecular and chemical physics (physics of atoms and molecules including collision, interaction with radiation, magnetic resonances, Mössbauer effect)"@en ;
+    props:classification_code "10301" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10302> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10300> ;
+    skos:exactMatch ns6:10302 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10302"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fyzika kondenzovaných látek (zahrnuje fyziku pevných látek, supravodivost)"@cs,
+        "Condensed matter physics (including formerly solid state physics, supercond.)"@en ;
+    props:classification_code "10302" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10303> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10300> ;
+    skos:exactMatch ns6:10303 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10303"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fyzika částic"@cs,
+        "Particles and field physics"@en ;
+    props:classification_code "10303" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10304> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10300> ;
+    skos:exactMatch ns6:10304 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10304"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Atomová fyzika"@cs,
+        "Nuclear physics"@en ;
+    props:classification_code "10304" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10305> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10300> ;
+    skos:exactMatch ns6:10305 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10305"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fyzika kapalin a plazmatu (zahrnuje fyziku povrchů)"@cs,
+        "Fluids and plasma physics (including surface physics)"@en ;
+    props:classification_code "10305" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10306> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10300> ;
+    skos:exactMatch ns6:10306 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10306"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Optika (zahrnuje laserovou optiku, kvantovou optiku)"@cs,
+        "Optics (including laser optics and quantum optics)"@en ;
+    props:classification_code "10306" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10307> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10300> ;
+    skos:exactMatch ns6:10307 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10307"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Akustika"@cs,
+        "Acoustics"@en ;
+    props:classification_code "10307" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10308> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10300> ;
+    skos:exactMatch ns6:10308 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10308"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Astronomie (zahrnuje astrofyziku, vědu o vesmíru)"@cs,
+        "Astronomy (including astrophysics, space science)"@en ;
+    props:classification_code "10308" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10401> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10400> ;
+    skos:exactMatch ns7:10401 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10401"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Organická chemie"@cs,
+        "Organic chemistry"@en ;
+    props:classification_code "10401" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10402> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10400> ;
+    skos:exactMatch ns7:10402 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10402"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Anorganická a jaderná chemie"@cs,
+        "Inorganic and nuclear chemistry"@en ;
+    props:classification_code "10402" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10403> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10400> ;
+    skos:exactMatch ns7:10403 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10403"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fyzikální chemie"@cs,
+        "Physical chemistry"@en ;
+    props:classification_code "10403" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10404> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10400> ;
+    skos:exactMatch ns7:10404 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10404"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Chemie polymerů"@cs,
+        "Polymer science"@en ;
+    props:classification_code "10404" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10405> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10400> ;
+    skos:exactMatch ns7:10405 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10405"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Elektrochemie (zahrnuje suché články, baterie, palivové články, korozní kovy, elektrolýzu)"@cs,
+        "Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)"@en ;
+    props:classification_code "10405" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10406> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10400> ;
+    skos:exactMatch ns7:10406 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10406"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Analytická chemie"@cs,
+        "Analytical chemistry"@en ;
+    props:classification_code "10406" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10501> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10501 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10501"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Hydrologie"@cs,
+        "Hydrology"@en ;
+    props:classification_code "10501" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10502> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10502 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10502"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Oceánografie"@cs,
+        "Oceanography"@en ;
+    props:classification_code "10502" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10503> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10503 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10503"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vodní zdroje"@cs,
+        "Water resources"@en ;
+    props:classification_code "10503" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10504> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10504 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10504"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Mineralogie"@cs,
+        "Mineralogy"@en ;
+    props:classification_code "10504" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10505> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10505 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10505"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Geologie"@cs,
+        "Geology"@en ;
+    props:classification_code "10505" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10506> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10506 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10506"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Paleontologie"@cs,
+        "Paleontology"@en ;
+    props:classification_code "10506" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10507> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10507 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10507"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vulkanologie"@cs,
+        "Volcanology"@en ;
+    props:classification_code "10507" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10508> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10508 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10508"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fyzická geografie"@cs,
+        "Physical geography"@en ;
+    props:classification_code "10508" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10509> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10509 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10509"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Meteorologie, vědy o atmosféře"@cs,
+        "Meteorology and atmospheric sciences"@en ;
+    props:classification_code "10509" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10510> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10510 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10510"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Výzkum klimatu"@cs,
+        "Climatic research"@en ;
+    props:classification_code "10510" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10511> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10500> ;
+    skos:exactMatch ns8:10511 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10511"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Environmentální vědy "@cs,
+        "Environmental sciences "@en ;
+    props:classification_code "10511" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10601> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10601 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10601"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Buněčná biologie"@cs,
+        "Cell biology"@en ;
+    props:classification_code "10601" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10602> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10602 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10602"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Biologie (teoretická, matematická, termální, kryobiologie, biologický rytmus), evoluční biologie"@cs,
+        "Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm), evolutionary biology"@en ;
+    props:classification_code "10602" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10603> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10603 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10603"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Genetika a dědičnost"@cs,
+        "Genetics and heredity "@en ;
+    props:classification_code "10603" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10604> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10604 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10604"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Reprodukční biologie"@cs,
+        "Reproductive biology"@en ;
+    props:classification_code "10604" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10605> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10605 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10605"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vývojová biologie"@cs,
+        "Developmental biology"@en ;
+    props:classification_code "10605" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10606> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10606 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10606"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Mikrobiologie"@cs,
+        "Microbiology"@en ;
+    props:classification_code "10606" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10607> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10607 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10607"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Virologie"@cs,
+        "Virology"@en ;
+    props:classification_code "10607" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10608> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10608 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10608"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Biochemie a molekulární biologie"@cs,
+        "Biochemistry and molecular biology"@en ;
+    props:classification_code "10608" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10609> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10609 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10609"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Biochemické výzkumné metody"@cs,
+        "Biochemical research methods"@en ;
+    props:classification_code "10609" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10610> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10610 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10610"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Biofyzika"@cs,
+        "Biophysics"@en ;
+    props:classification_code "10610" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10611> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10611 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10611"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Botanika"@cs,
+        "Plant sciences, botany"@en ;
+    props:classification_code "10611" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10612> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10612 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10612"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Mykologie"@cs,
+        "Mycology"@en ;
+    props:classification_code "10612" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10613> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10613 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10613"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zoologie"@cs,
+        "Zoology"@en ;
+    props:classification_code "10613" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10614> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10614 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10614"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Behaviorální biologie"@cs,
+        "Behavioral sciences biology"@en ;
+    props:classification_code "10614" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10615> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10615 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10615"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ornitologie"@cs,
+        "Ornithology"@en ;
+    props:classification_code "10615" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10616> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10616 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10616"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Entomologie"@cs,
+        "Entomology"@en ;
+    props:classification_code "10616" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10617> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10617 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10617"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Mořská biologie, sladkovodní biologie, limnologie"@cs,
+        "Marine biology, freshwater biology, limnology"@en ;
+    props:classification_code "10617" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10618> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10618 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10618"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ekologie"@cs,
+        "Ecology"@en ;
+    props:classification_code "10618" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10619> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10619 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10619"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ochrana biodiverzity"@cs,
+        "Biodiversity conservation"@en ;
+    props:classification_code "10619" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10620> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10600> ;
+    skos:exactMatch ns9:10620 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10620"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní biologické vědy"@cs,
+        "Other biological topics"@en ;
+    props:classification_code "10620" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10700> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10000> ;
+    skos:exactMatch ns3:10700 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:10700"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní přírodní vědy"@cs,
+        "Other natural sciences"@en ;
+    props:classification_code "10700" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20101> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20100> ;
+    skos:exactMatch ns11:20101 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20101"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Stavební inženýrství"@cs,
+        "Civil engineering"@en ;
+    props:classification_code "20101" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20102> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20100> ;
+    skos:exactMatch ns11:20102 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20102"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Konstrukční inženýrství, výstavba měst"@cs,
+        "Construction engineering, municipal and structural engineering"@en ;
+    props:classification_code "20102" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20103> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20100> ;
+    skos:exactMatch ns11:20103 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20103"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Architektura"@cs,
+        "Architecture engineering"@en ;
+    props:classification_code "20103" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20104> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20100> ;
+    skos:exactMatch ns11:20104 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20104"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Dopravní inženýrství"@cs,
+        "Transport engineering"@en ;
+    props:classification_code "20104" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20201> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20200> ;
+    skos:exactMatch ns12:20201 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20201"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Elektrotechnika, elektronika"@cs,
+        "Electrical and electronic engineering"@en ;
+    props:classification_code "20201" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20202> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20200> ;
+    skos:exactMatch ns12:20202 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20202"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sdělovací technika a systémy"@cs,
+        "Communication engineering and systems"@en ;
+    props:classification_code "20202" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20203> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20200> ;
+    skos:exactMatch ns12:20203 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20203"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Telekomunikace"@cs,
+        "Telecommunications"@en ;
+    props:classification_code "20203" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20204> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20200> ;
+    skos:exactMatch ns12:20204 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20204"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Robotika a automatické řízení"@cs,
+        "Robotics and automatic control"@en ;
+    props:classification_code "20204" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20205> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20200> ;
+    skos:exactMatch ns12:20205 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20205"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Automatizace a kontrola systémů"@cs,
+        "Automation and control systems"@en ;
+    props:classification_code "20205" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20206> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20200> ;
+    skos:exactMatch ns12:20206 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20206"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Počítačový hardware a architektura"@cs,
+        "Computer hardware and architecture"@en ;
+    props:classification_code "20206" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20301> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20300> ;
+    skos:exactMatch ns13:20301 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20301"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Strojní inženýrství"@cs,
+        "Mechanical engineering"@en ;
+    props:classification_code "20301" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20302> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20300> ;
+    skos:exactMatch ns13:20302 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20302"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Aplikovaná mechanika"@cs,
+        "Applied mechanics"@en ;
+    props:classification_code "20302" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20303> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20300> ;
+    skos:exactMatch ns13:20303 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20303"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Termodynamika"@cs,
+        "Thermodynamics"@en ;
+    props:classification_code "20303" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20304> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20300> ;
+    skos:exactMatch ns13:20304 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20304"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Letecké inženýrství"@cs,
+        "Aerospace engineering"@en ;
+    props:classification_code "20304" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20305> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20300> ;
+    skos:exactMatch ns13:20305 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20305"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Jaderné inženýrství "@cs,
+        "Nuclear related engineering "@en ;
+    props:classification_code "20305" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20306> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20300> ;
+    skos:exactMatch ns13:20306 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20306"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Audio inženýrství, analýzy spolehlivosti"@cs,
+        "Audio engineering, reliability analysis"@en ;
+    props:classification_code "20306" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20401> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20400> ;
+    skos:exactMatch ns14:20401 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20401"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Chemické inženýrství (rostliny, výrobky)"@cs,
+        "Chemical engineering (plants, products)"@en ;
+    props:classification_code "20401" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20402> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20400> ;
+    skos:exactMatch ns14:20402 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20402"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Chemické procesní inženýrství"@cs,
+        "Chemical process engineering"@en ;
+    props:classification_code "20402" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20501> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20500> ;
+    skos:exactMatch ns15:20501 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20501"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Materiálové inženýrství"@cs,
+        "Materials engineering"@en ;
+    props:classification_code "20501" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20502> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20500> ;
+    skos:exactMatch ns15:20502 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20502"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Papír a dřevo"@cs,
+        "Paper and wood"@en ;
+    props:classification_code "20502" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20503> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20500> ;
+    skos:exactMatch ns15:20503 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20503"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Textilie (zahrnuje umělá barviva, barvy, vlákna)"@cs,
+        "Textiles (including synthetic dyes, colours, fibres)"@en ;
+    props:classification_code "20503" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20504> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20500> ;
+    skos:exactMatch ns15:20504 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20504"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Keramika"@cs,
+        "Ceramics"@en ;
+    props:classification_code "20504" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20505> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20500> ;
+    skos:exactMatch ns15:20505 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20505"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kompozity (zahrnuje lamináty, vyztužené plasty, cermety, kombinovaná přírodní a umělá vlákna a tkaniny, plněné kompozity)"@cs,
+        "Composites (including laminates, reinforced plastics, cermets, combined natural and synthetic fibre fabrics; filled composites)"@en ;
+    props:classification_code "20505" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20506> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20500> ;
+    skos:exactMatch ns15:20506 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20506"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Nátěry a fólie"@cs,
+        "Coating and films"@en ;
+    props:classification_code "20506" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20601> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20600> ;
+    skos:exactMatch ns16:20601 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20601"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lékařské inženýrství"@cs,
+        "Medical engineering"@en ;
+    props:classification_code "20601" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20602> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20600> ;
+    skos:exactMatch ns16:20602 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20602"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lékařské laboratorní technologie (laboratorní analýzy vzorků, diagnostické technologie)"@cs,
+        "Medical laboratory technology (including laboratory samples analysis, diagnostic technologies) "@en ;
+    props:classification_code "20602" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20701> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20700> ;
+    skos:exactMatch ns17:20701 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20701"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Environmentální a geologické inženýrství, geotechnika"@cs,
+        "Environmental and geological engineering, geotechnics"@en ;
+    props:classification_code "20701" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20702> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20700> ;
+    skos:exactMatch ns17:20702 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20702"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ropné inženýrství (paliva, oleje)"@cs,
+        "Petroleum engineering (fuel, oils)"@en ;
+    props:classification_code "20702" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20703> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20700> ;
+    skos:exactMatch ns17:20703 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20703"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Těžba a zpracování minerálů"@cs,
+        "Mining and mineral processing"@en ;
+    props:classification_code "20703" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20704> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20700> ;
+    skos:exactMatch ns17:20704 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20704"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Energie a paliva"@cs,
+        "Energy and fuels"@en ;
+    props:classification_code "20704" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20705> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20700> ;
+    skos:exactMatch ns17:20705 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20705"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Dálkový průzkum Země"@cs,
+        "Remote sensing"@en ;
+    props:classification_code "20705" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20706> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20700> ;
+    skos:exactMatch ns17:20706 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20706"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Námořní inženýrství, mořská plavidla"@cs,
+        "Marine engineering, sea vessels"@en ;
+    props:classification_code "20706" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20707> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20700> ;
+    skos:exactMatch ns17:20707 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20707"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Oceánské inženýrství"@cs,
+        "Ocean engineering"@en ;
+    props:classification_code "20707" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20801> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20800> ;
+    skos:exactMatch ns18:20801 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20801"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Environmentální biotechnologie"@cs,
+        "Environmental biotechnology"@en ;
+    props:classification_code "20801" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20802> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20800> ;
+    skos:exactMatch ns18:20802 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20802"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Bioléčba, diagnostické biotechnologie (zlomky DNA a biosenzory) v environmentálním managementu"@cs,
+        "Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices) in environmental management"@en ;
+    props:classification_code "20802" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20803> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20800> ;
+    skos:exactMatch ns18:20803 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20803"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Environmentální biotechnologie související s etikou"@cs,
+        "Environmental biotechnology related ethics"@en ;
+    props:classification_code "20803" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20901> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20900> ;
+    skos:exactMatch ns19:20901 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20901"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Průmyslové biotechnologie"@cs,
+        "Industrial biotechnology"@en ;
+    props:classification_code "20901" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20902> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20900> ;
+    skos:exactMatch ns19:20902 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20902"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Technologie biovýroby (průmyslové procesy spoléhající se na biologické činitele k řízení procesů), biokatalyzátory, fermentace"@cs,
+        "Bioprocessing technologies (industrial processes relying on biological agents to drive the process) biocatalysis, fermentation"@en ;
+    props:classification_code "20902" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20903> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20900> ;
+    skos:exactMatch ns19:20903 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:20903"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Biovýrobky (výrobky, které jsou vyráběny s použitím biologických materiálů jako výchozích produktů), biomateriály, bioplasty, biopaliva, bioodvozené celkové a čisté chemikálie, bioodvozené nové materiály"@cs,
+        "Bioproducts (products that are manufactured using biological material as feedstock) biomaterials, bioplastics, biofuels, bioderived bulk and fine chemicals, bio-derived novel materials"@en ;
+    props:classification_code "20903" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:21001> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:21000> ;
+    skos:exactMatch ns20:21001 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:21001"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Nanomateriály (výroba a vlastnosti)"@cs,
+        "Nano-materials (production and properties)"@en ;
+    props:classification_code "21001" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:21002> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:21000> ;
+    skos:exactMatch ns20:21002 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:21002"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Nanoprocesy (aplikace v nanoměřítku)"@cs,
+        "Nano-processes (applications on nano-scale)"@en ;
+    props:classification_code "21002" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:21101> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:21100> ;
+    skos:exactMatch ns21:21101 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:21101"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Výrobky potravinářského průmyslu a nápoje"@cs,
+        "Food and beverages"@en ;
+    props:classification_code "21101" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30101> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30100> ;
+    skos:exactMatch ns23:30101 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30101"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Genetika člověka"@cs,
+        "Human genetics"@en ;
+    props:classification_code "30101" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30102> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30100> ;
+    skos:exactMatch ns23:30102 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30102"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Imunologie"@cs,
+        "Immunology"@en ;
+    props:classification_code "30102" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30103> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30100> ;
+    skos:exactMatch ns23:30103 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30103"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Neurovědy (zahrnuje psychofyziologii)"@cs,
+        "Neurosciences (including psychophysiology)"@en ;
+    props:classification_code "30103" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30104> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30100> ;
+    skos:exactMatch ns23:30104 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30104"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Farmakologie a farmacie"@cs,
+        "Pharmacology and pharmacy"@en ;
+    props:classification_code "30104" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30105> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30100> ;
+    skos:exactMatch ns23:30105 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30105"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fyziologie (zahrnující cytologii)"@cs,
+        "Physiology (including cytology)"@en ;
+    props:classification_code "30105" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30106> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30100> ;
+    skos:exactMatch ns23:30106 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30106"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Anatomie a morfologie"@cs,
+        "Anatomy and morphology "@en ;
+    props:classification_code "30106" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30107> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30100> ;
+    skos:exactMatch ns23:30107 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30107"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lékařská chemie"@cs,
+        "Medicinal chemistry"@en ;
+    props:classification_code "30107" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30108> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30100> ;
+    skos:exactMatch ns23:30108 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30108"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Toxikologie"@cs,
+        "Toxicology"@en ;
+    props:classification_code "30108" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30109> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30100> ;
+    skos:exactMatch ns23:30109 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30109"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Patologie"@cs,
+        "Pathology"@en ;
+    props:classification_code "30109" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30201> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30201 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30201"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Srdeční a kardiovaskulární systémy"@cs,
+        "Cardiac and cardiovascular systems"@en ;
+    props:classification_code "30201" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30202> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30202 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30202"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Endokrinologie a metabolismus (zahrnuje cukrovku, hormony)"@cs,
+        "Endocrinology and metabolism (including diabetes, hormones)"@en ;
+    props:classification_code "30202" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30203> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30203 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30203"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Dýchací ústrojí"@cs,
+        "Respiratory systems"@en ;
+    props:classification_code "30203" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30204> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30204 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30204"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Onkologie"@cs,
+        "Oncology"@en ;
+    props:classification_code "30204" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30205> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30205 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30205"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Hematologie"@cs,
+        "Hematology"@en ;
+    props:classification_code "30205" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30206> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30206 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30206"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Otorinolaryngologie"@cs,
+        "Otorhinolaryngology"@en ;
+    props:classification_code "30206" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30207> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30207 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30207"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Oftalmologie"@cs,
+        "Ophthalmology"@en ;
+    props:classification_code "30207" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30208> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30208 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30208"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Stomatologie, ústní chirurgie a lékařství"@cs,
+        "Dentistry, oral surgery and medicine"@en ;
+    props:classification_code "30208" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30209> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30209 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30209"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Pediatrie"@cs,
+        "Paediatrics"@en ;
+    props:classification_code "30209" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30210> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30210 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30210"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Klinická neurologie"@cs,
+        "Clinical neurology"@en ;
+    props:classification_code "30210" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30211> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30211 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30211"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ortopedie"@cs,
+        "Orthopaedics"@en ;
+    props:classification_code "30211" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30212> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30212 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30212"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Chirurgie"@cs,
+        "Surgery"@en ;
+    props:classification_code "30212" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30213> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30213 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30213"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Transplantace"@cs,
+        "Transplantation"@en ;
+    props:classification_code "30213" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30214> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30214 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30214"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Porodnictví a gynekologie"@cs,
+        "Obstetrics and gynaecology"@en ;
+    props:classification_code "30214" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30215> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30215 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30215"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Psychiatrie"@cs,
+        "Psychiatry"@en ;
+    props:classification_code "30215" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30216> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30216 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30216"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Dermatologie a pohlavní nemoci"@cs,
+        "Dermatology and venereal diseases"@en ;
+    props:classification_code "30216" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30217> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30217 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30217"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Urologie a nefrologie"@cs,
+        "Urology and nephrology"@en ;
+    props:classification_code "30217" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30218> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30218 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30218"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Všeobecné a vnitřní lékařství"@cs,
+        "General and internal medicine"@en ;
+    props:classification_code "30218" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30219> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30219 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30219"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Gastroenterologie a hepatologie"@cs,
+        "Gastroenterology and hepatology"@en ;
+    props:classification_code "30219" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30220> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30220 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30220"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Andrologie"@cs,
+        "Andrology"@en ;
+    props:classification_code "30220" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30221> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30221 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30221"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Urgentní medicína a pohotovostní medicína"@cs,
+        "Critical care medicine and emergency medicine"@en ;
+    props:classification_code "30221" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30223> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30223 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30223"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Anesteziologie"@cs,
+        "Anaesthesiology"@en ;
+    props:classification_code "30223" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30224> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30224 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30224"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Radiologie, nukleární medicína a lékařské zobrazování"@cs,
+        "Radiology, nuclear medicine and medical imaging"@en ;
+    props:classification_code "30224" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30225> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30225 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30225"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Alergologie"@cs,
+        "Allergy"@en ;
+    props:classification_code "30225" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30226> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30226 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30226"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Revmatologie"@cs,
+        "Rheumatology"@en ;
+    props:classification_code "30226" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30227> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30227 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30227"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Geriatrie a gerontologie"@cs,
+        "Geriatrics and gerontology"@en ;
+    props:classification_code "30227" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30229> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30229 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30229"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Celostní a alternativní medicína (alternativní praktické systémy)"@cs,
+        "Integrative and complementary medicine (alternative practice systems)"@en ;
+    props:classification_code "30229" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30230> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30200> ;
+    skos:exactMatch ns24:30230 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30230"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní klinická lékařská témata"@cs,
+        "Other clinical medicine subjects"@en ;
+    props:classification_code "30230" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30301> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30301 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30301"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sociální biolékařské vědy (plánované rodičovství, sexuální zdraví, psychoonkologie, politické a sociální jevy biolékařského výzkumu)"@cs,
+        "Social biomedical sciences (includes family planning, sexual health, psycho-oncology, political and social effects of biomedical research)"@en ;
+    props:classification_code "30301" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30302> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30302 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30302"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Epidemiologie"@cs,
+        "Epidemiology"@en ;
+    props:classification_code "30302" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30303> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30303 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30303"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Infekční onemocnění"@cs,
+        "Infectious diseases"@en ;
+    props:classification_code "30303" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30304> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30304 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30304"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Veřejné a environmentální zdraví"@cs,
+        "Public and environmental health"@en ;
+    props:classification_code "30304" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30305> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30305 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30305"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ochrana zdraví při práci"@cs,
+        "Occupational health"@en ;
+    props:classification_code "30305" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30306> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30306 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30306"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sport a fitness"@cs,
+        "Sport and fitness sciences"@en ;
+    props:classification_code "30306" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30307> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30307 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30307"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ošetřovatelství"@cs,
+        "Nursing"@en ;
+    props:classification_code "30307" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30308> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30308 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30308"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Výživa, nauka o dietě"@cs,
+        "Nutrition, dietetics"@en ;
+    props:classification_code "30308" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30309> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30309 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30309"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Tropické lékařství"@cs,
+        "Tropical medicine"@en ;
+    props:classification_code "30309" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30310> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30310 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30310"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Parazitologie"@cs,
+        "Parasitology"@en ;
+    props:classification_code "30310" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30311> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30311 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30311"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lékařská etika"@cs,
+        "Medical ethics"@en ;
+    props:classification_code "30311" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30312> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30300> ;
+    skos:exactMatch ns25:30312 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30312"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zneužívání návykových látek"@cs,
+        "Substance abuse"@en ;
+    props:classification_code "30312" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30401> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30400> ;
+    skos:exactMatch ns26:30401 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30401"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Biotechnologie související se zdravím"@cs,
+        "Health-related biotechnology"@en ;
+    props:classification_code "30401" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30402> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30400> ;
+    skos:exactMatch ns26:30402 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30402"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Technologie zahrnující manipulace s buňkami, tkáněmi, orgány nebo celými organismy (asistovaná reprodukce)"@cs,
+        "Technologies involving the manipulation of cells, tissues, organs or the whole organism (assisted reproduction)"@en ;
+    props:classification_code "30402" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30403> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30400> ;
+    skos:exactMatch ns26:30403 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30403"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Technologie zahrnující identifikace činností DNA, proteinů a enzymů a jejich vlivy na nápor nemocí a zachování pocitů zdraví (genová diagnostika a terapeutické zákroky, farmakogenomika, genová terapeutika)"@cs,
+        "Technologies involving identifying the functioning of DNA, proteins and enzymes and how they influence the onset of disease and maintenance of well-being (gene-based diagnostics and therapeutic interventions - pharmacogenomics, gene-based therapeutics)"@en ;
+    props:classification_code "30403" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30404> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30400> ;
+    skos:exactMatch ns26:30404 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30404"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Biomateriály (související s lékařskými implantáty, přístroji, senzory)"@cs,
+        "Biomaterials (as related to medical implants, devices, sensors)"@en ;
+    props:classification_code "30404" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30405> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30400> ;
+    skos:exactMatch ns26:30405 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30405"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lékařské biotechnologie související s etikou"@cs,
+        "Medical biotechnology related ethics"@en ;
+    props:classification_code "30405" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30501> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30500> ;
+    skos:exactMatch ns27:30501 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30501"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Soudní lékařství"@cs,
+        "Forensic science"@en ;
+    props:classification_code "30501" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30502> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30500> ;
+    skos:exactMatch ns27:30502 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:30502"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní lékařské vědy"@cs,
+        "Other medical science"@en ;
+    props:classification_code "30502" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40101> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40100> ;
+    skos:exactMatch ns29:40101 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40101"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zemědělství"@cs,
+        "Agriculture"@en ;
+    props:classification_code "40101" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40102> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40100> ;
+    skos:exactMatch ns29:40102 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40102"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lesnictví"@cs,
+        "Forestry"@en ;
+    props:classification_code "40102" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40103> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40100> ;
+    skos:exactMatch ns29:40103 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40103"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Rybářství"@cs,
+        "Fishery"@en ;
+    props:classification_code "40103" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40104> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40100> ;
+    skos:exactMatch ns29:40104 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40104"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Půdoznalství"@cs,
+        "Soil science"@en ;
+    props:classification_code "40104" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40105> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40100> ;
+    skos:exactMatch ns29:40105 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40105"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zahradnictví, vinařství"@cs,
+        "Horticulture, viticulture"@en ;
+    props:classification_code "40105" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40106> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40100> ;
+    skos:exactMatch ns29:40106 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40106"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Agronomie, šlechtění a ochrana rostlin "@cs,
+        "Agronomy, plant breeding and plant protection "@en ;
+    props:classification_code "40106" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40201> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40200> ;
+    skos:exactMatch ns30:40201 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40201"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vědy o zvířatech a mléce "@cs,
+        "Animal and dairy science"@en ;
+    props:classification_code "40201" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40202> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40200> ;
+    skos:exactMatch ns30:40202 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40202"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Domácí zvířata"@cs,
+        "Pets"@en ;
+    props:classification_code "40202" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40203> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40200> ;
+    skos:exactMatch ns30:40203 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40203"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Chovatelství"@cs,
+        "Husbandry"@en ;
+    props:classification_code "40203" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40301> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40300> ;
+    skos:exactMatch ns31:40301 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40301"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Veterinární věda"@cs,
+        "Veterinary science"@en ;
+    props:classification_code "40301" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40401> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40400> ;
+    skos:exactMatch ns32:40401 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40401"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zemědělské biotechnologie a biotechnologie potravin"@cs,
+        "Agricultural biotechnology and food biotechnology"@en ;
+    props:classification_code "40401" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40402> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40400> ;
+    skos:exactMatch ns32:40402 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40402"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Technologie genetických modifikací (plodiny a dobytek), klonování dobytka, ukazatele selekce, diagnostika (zlomky DNA a biosenzory pro brzkou/přesnou detekci nemocí), technologie zpracování biomasy, biohospodářství"@cs,
+        "GM technology (crops and livestock), livestock cloning, marker assisted selection, diagnostics (DNA chips and biosensing devices for the early/accurate detection of diseases) biomass feedstock production technologies, biopharming"@en ;
+    props:classification_code "40402" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40403> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40400> ;
+    skos:exactMatch ns32:40403 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40403"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zemědělské biotechnologie související s etikou"@cs,
+        "Agricultural biotechnology related ethics"@en ;
+    props:classification_code "40403" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40500> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40000> ;
+    skos:exactMatch ns28:40500 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:40500"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní zemědělské vědy "@cs,
+        "Other agricultural sciences"@en ;
+    props:classification_code "40500" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50101> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50100> ;
+    skos:exactMatch ns34:50101 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50101"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Psychologie (zahrnuje vztahy mezi člověkem a strojem)"@cs,
+        "Psychology (including human - machine relations)"@en ;
+    props:classification_code "50101" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50102> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50100> ;
+    skos:exactMatch ns34:50102 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50102"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Speciální psychologie (zahrnuje terapii pro učení, řeč, poslech, zrakové a jiné fyzické a mentální handicapy)"@cs,
+        "Psychology, special (including therapy for learning, speech, hearing, visual and other physical and mental disabilities)"@en ;
+    props:classification_code "50102" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50103> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50100> ;
+    skos:exactMatch ns34:50103 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50103"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kognitivní vědy"@cs,
+        "Cognitive sciences"@en ;
+    props:classification_code "50103" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50201> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50200> ;
+    skos:exactMatch ns35:50201 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50201"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ekonomická teorice"@cs,
+        "Economic theory"@en ;
+    props:classification_code "50201" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50202> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50200> ;
+    skos:exactMatch ns35:50202 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50202"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Aplikovaná ekonomie, ekonometrie"@cs,
+        "Applied economics, econometrics"@en ;
+    props:classification_code "50202" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50203> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50200> ;
+    skos:exactMatch ns35:50203 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50203"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Pracovní vztahy"@cs,
+        "Industrial relations"@en ;
+    props:classification_code "50203" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50204> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50200> ;
+    skos:exactMatch ns35:50204 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50204"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Podnikání a management"@cs,
+        "Business and management"@en ;
+    props:classification_code "50204" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50205> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50200> ;
+    skos:exactMatch ns35:50205 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50205"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Účetnictví"@cs,
+        "Accounting"@en ;
+    props:classification_code "50205" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50206> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50200> ;
+    skos:exactMatch ns35:50206 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50206"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Finance"@cs,
+        "Finance"@en ;
+    props:classification_code "50206" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50301> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50300> ;
+    skos:exactMatch ns36:50301 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50301"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Všeobecné vzdělávání (zahrnuje výcvik, pedagogiku, didaktiku, vzdělávací systémy)"@cs,
+        "Education, general (including training, pedagogy, didactics and education systems)"@en ;
+    props:classification_code "50301" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50302> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50300> ;
+    skos:exactMatch ns36:50302 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50302"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Speciální vzdělávání (pro nadané osoby, pro osoby s poruchami učení)"@cs,
+        "Education, special (to gifted persons, those with learning disabilities)"@en ;
+    props:classification_code "50302" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50401> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50400> ;
+    skos:exactMatch ns37:50401 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50401"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sociologie"@cs,
+        "Sociology"@en ;
+    props:classification_code "50401" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50402> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50400> ;
+    skos:exactMatch ns37:50402 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50402"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Demografie"@cs,
+        "Demography"@en ;
+    props:classification_code "50402" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50403> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50400> ;
+    skos:exactMatch ns37:50403 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50403"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sociální témata (studie žen a pohlaví, sociální problémy, studie rodin, sociální práce)"@cs,
+        "Social topics (women´s and gender studies, social issues, family studies social work)"@en ;
+    props:classification_code "50403" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50404> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50400> ;
+    skos:exactMatch ns37:50404 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50404"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Antropologie, etnologie"@cs,
+        "Anthropology, ethnology"@en ;
+    props:classification_code "50404" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50501> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50500> ;
+    skos:exactMatch ns38:50501 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50501"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Právo"@cs,
+        "Law"@en ;
+    props:classification_code "50501" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50502> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50500> ;
+    skos:exactMatch ns38:50502 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50502"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kriminologie, penologie"@cs,
+        "Criminology, penology"@en ;
+    props:classification_code "50502" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50601> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50600> ;
+    skos:exactMatch ns39:50601 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50601"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Politologie"@cs,
+        "Political science"@en ;
+    props:classification_code "50601" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50602> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50600> ;
+    skos:exactMatch ns39:50602 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50602"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Veřejná správa"@cs,
+        "Public administration"@en ;
+    props:classification_code "50602" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50603> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50600> ;
+    skos:exactMatch ns39:50603 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50603"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Teorie organizace"@cs,
+        "Organisation theory"@en ;
+    props:classification_code "50603" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50701> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50700> ;
+    skos:exactMatch ns40:50701 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50701"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kulturní a ekonomická geografie"@cs,
+        "Cultural and economic geography"@en ;
+    props:classification_code "50701" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50702> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50700> ;
+    skos:exactMatch ns40:50702 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50702"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Urbanismus (plánování a rozvoj)"@cs,
+        "Urban studies (planning and development)"@en ;
+    props:classification_code "50702" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50703> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50700> ;
+    skos:exactMatch ns40:50703 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50703"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Plánování dopravy a sociální hlediska dopravy "@cs,
+        "Transport planning and social aspects of transport "@en ;
+    props:classification_code "50703" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50704> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50700> ;
+    skos:exactMatch ns40:50704 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50704"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Environmentální vědy (sociální hlediska)"@cs,
+        "Environmental sciences (social aspects)"@en ;
+    props:classification_code "50704" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50801> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50800> ;
+    skos:exactMatch ns41:50801 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50801"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Žurnalistika"@cs,
+        "Journalism"@en ;
+    props:classification_code "50801" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50802> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50800> ;
+    skos:exactMatch ns41:50802 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50802"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Mediální a sociokulturní komunikace"@cs,
+        "Media and socio-cultural communication"@en ;
+    props:classification_code "50802" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50803> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50800> ;
+    skos:exactMatch ns41:50803 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50803"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Informační věda (sociální aspekty)"@cs,
+        "Information science (social aspects)"@en ;
+    props:classification_code "50803" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50804> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50800> ;
+    skos:exactMatch ns41:50804 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50804"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Knihovnictví"@cs,
+        "Library science"@en ;
+    props:classification_code "50804" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50901> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50900> ;
+    skos:exactMatch ns42:50901 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50901"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní společenské vědy"@cs,
+        "Other social sciences"@en ;
+    props:classification_code "50901" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50902> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50900> ;
+    skos:exactMatch ns42:50902 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:50902"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Společenské vědy interdisciplinární"@cs,
+        "Social sciences, interdisciplinary"@en ;
+    props:classification_code "50902" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60101> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60100> ;
+    skos:exactMatch ns44:60101 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60101"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Historie "@cs,
+        "History "@en ;
+    props:classification_code "60101" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60102> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60100> ;
+    skos:exactMatch ns44:60102 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60102"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Archeologie"@cs,
+        "Archaeology"@en ;
+    props:classification_code "60102" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60201> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60200> ;
+    skos:exactMatch ns45:60201 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60201"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Všeobecné jazykové studie"@cs,
+        "General language studies"@en ;
+    props:classification_code "60201" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60202> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60200> ;
+    skos:exactMatch ns45:60202 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60202"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Specifické jazyky"@cs,
+        "Specific languages"@en ;
+    props:classification_code "60202" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60203> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60200> ;
+    skos:exactMatch ns45:60203 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60203"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lingvistika"@cs,
+        "Linguistics"@en ;
+    props:classification_code "60203" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60204> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60200> ;
+    skos:exactMatch ns45:60204 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60204"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Všeobecné studie literatury"@cs,
+        "General literature studies"@en ;
+    props:classification_code "60204" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60205> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60200> ;
+    skos:exactMatch ns45:60205 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60205"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Teorie literatury"@cs,
+        "Literary theory"@en ;
+    props:classification_code "60205" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60206> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60200> ;
+    skos:exactMatch ns45:60206 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60206"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Specifická literatura"@cs,
+        "Specific literatures"@en ;
+    props:classification_code "60206" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60301> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60300> ;
+    skos:exactMatch ns46:60301 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60301"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Filozofie, dějiny a filozofie vědy a techniky"@cs,
+        "Philosophy, history and philosophy of science and technology"@en ;
+    props:classification_code "60301" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60302> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60300> ;
+    skos:exactMatch ns46:60302 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60302"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Etika (vyjma etiky související s příslušnými kategoriemi)"@cs,
+        "Ethics (except ethics related to specific subfields)"@en ;
+    props:classification_code "60302" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60303> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60300> ;
+    skos:exactMatch ns46:60303 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60303"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Teologie"@cs,
+        "Theology"@en ;
+    props:classification_code "60303" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60304> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60300> ;
+    skos:exactMatch ns46:60304 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60304"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Religionistika"@cs,
+        "Religious studies"@en ;
+    props:classification_code "60304" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60401> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60400> ;
+    skos:exactMatch ns47:60401 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60401"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Umění, dějiny umění"@cs,
+        "Arts, art history"@en ;
+    props:classification_code "60401" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60402> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60400> ;
+    skos:exactMatch ns47:60402 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60402"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Architektonický design"@cs,
+        "Architectural design"@en ;
+    props:classification_code "60402" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60403> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60400> ;
+    skos:exactMatch ns47:60403 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60403"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Múzická umění (muzikologie, divadelní věda, dramaturgie)"@cs,
+        "Performing arts studies (musicology, theater science, dramaturgy)"@en ;
+    props:classification_code "60403" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60404> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60400> ;
+    skos:exactMatch ns47:60404 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60404"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Folkloristika"@cs,
+        "Folklore studies"@en ;
+    props:classification_code "60404" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60405> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60400> ;
+    skos:exactMatch ns47:60405 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60405"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Film, rádio a televize"@cs,
+        "Studies on film, radio and television"@en ;
+    props:classification_code "60405" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60500> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60000> ;
+    skos:exactMatch ns43:60500 ;
+    skos:inScheme ns1: ;
+    skos:notation "ford:60500"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní humanitní vědy a obory umění"@cs,
+        "Other humanities and the arts"@en ;
+    props:classification_code "60500" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10200> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10000> ;
+    skos:exactMatch ns3:10200 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:10201> ;
+    skos:notation "ford:10200"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Počítačové vědy a informační věda"@cs,
+        "Computer and information sciences"@en ;
+    props:classification_code "10200" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:21100> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:21100 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:21101> ;
+    skos:notation "ford:21100"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní inženýrství a technologie"@cs,
+        "Other engineering and technologies"@en ;
+    props:classification_code "21100" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40300> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40000> ;
+    skos:exactMatch ns28:40300 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:40301> ;
+    skos:notation "ford:40300"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Veterinární věda"@cs,
+        "Veterinary science"@en ;
+    props:classification_code "40300" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20400> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:20400 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20401>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20402> ;
+    skos:notation "ford:20400"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Chemické inženýrství"@cs,
+        "Chemical engineering"@en ;
+    props:classification_code "20400" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20600> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:20600 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20601>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20602> ;
+    skos:notation "ford:20600"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lékařské inženýrství"@cs,
+        "Medical engineering"@en ;
+    props:classification_code "20600" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:21000> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:21000 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:21001>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:21002> ;
+    skos:notation "ford:21000"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Nanotechnologie"@cs,
+        "Nano-technology"@en ;
+    props:classification_code "21000" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30500> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30000> ;
+    skos:exactMatch ns22:30500 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:30501>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30502> ;
+    skos:notation "ford:30500"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní lékařské vědy"@cs,
+        "Other medical sciences"@en ;
+    props:classification_code "30500" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50300> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50000> ;
+    skos:exactMatch ns33:50300 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50301>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50302> ;
+    skos:notation "ford:50300"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vzdělávání"@cs,
+        "Education"@en ;
+    props:classification_code "50300" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50500> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50000> ;
+    skos:exactMatch ns33:50500 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50501>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50502> ;
+    skos:notation "ford:50500"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Právo"@cs,
+        "Law"@en ;
+    props:classification_code "50500" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50900> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50000> ;
+    skos:exactMatch ns33:50900 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50901>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50902> ;
+    skos:notation "ford:50900"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ostatní společenské vědy"@cs,
+        "Other social sciences"@en ;
+    props:classification_code "50900" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60100> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60000> ;
+    skos:exactMatch ns43:60100 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:60101>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60102> ;
+    skos:notation "ford:60100"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Historie a archeologie"@cs,
+        "History and archaeology"@en ;
+    props:classification_code "60100" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10100> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10000> ;
+    skos:exactMatch ns3:10100 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:10101>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10102>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10103> ;
+    skos:notation "ford:10100"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Matematika"@cs,
+        "Mathematics"@en ;
+    props:classification_code "10100" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20800> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:20800 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20801>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20802>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20803> ;
+    skos:notation "ford:20800"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Environmentální biotechnologie"@cs,
+        "Environmental biotechnology"@en ;
+    props:classification_code "20800" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20900> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:20900 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20901>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20902>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20903> ;
+    skos:notation "ford:20900"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Průmyslové biotechnologie"@cs,
+        "Industrial biotechnology"@en ;
+    props:classification_code "20900" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40200> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40000> ;
+    skos:exactMatch ns28:40200 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:40201>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40202>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40203> ;
+    skos:notation "ford:40200"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vědy o zvířatech a mléce"@cs,
+        "Animal and dairy science"@en ;
+    props:classification_code "40200" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40400> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40000> ;
+    skos:exactMatch ns28:40400 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:40401>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40402>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40403> ;
+    skos:notation "ford:40400"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zemědělské biotechnologie"@cs,
+        "Agricultural biotechnology"@en ;
+    props:classification_code "40400" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50100> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50000> ;
+    skos:exactMatch ns33:50100 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50101>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50102>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50103> ;
+    skos:notation "ford:50100"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Psychologie a kognitivní věda"@cs,
+        "Psychology and cognitive sciences"@en ;
+    props:classification_code "50100" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50600> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50000> ;
+    skos:exactMatch ns33:50600 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50601>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50602>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50603> ;
+    skos:notation "ford:50600"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Politologie"@cs,
+        "Political science"@en ;
+    props:classification_code "50600" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20100> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:20100 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20101>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20102>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20103>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20104> ;
+    skos:notation "ford:20100"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Stavební inženýrství"@cs,
+        "Civil engineering"@en ;
+    props:classification_code "20100" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50400> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50000> ;
+    skos:exactMatch ns33:50400 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50401>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50402>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50403>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50404> ;
+    skos:notation "ford:50400"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sociologie"@cs,
+        "Sociology"@en ;
+    props:classification_code "50400" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50700> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50000> ;
+    skos:exactMatch ns33:50700 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50701>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50702>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50703>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50704> ;
+    skos:notation "ford:50700"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sociální a ekonomická geografie"@cs,
+        "Social and economic geography"@en ;
+    props:classification_code "50700" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50800> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50000> ;
+    skos:exactMatch ns33:50800 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50801>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50802>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50803>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50804> ;
+    skos:notation "ford:50800"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Média a komunikace"@cs,
+        "Media and communications"@en ;
+    props:classification_code "50800" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60300> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60000> ;
+    skos:exactMatch ns43:60300 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:60301>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60302>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60303>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60304> ;
+    skos:notation "ford:60300"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Filozofie, etika a náboženství"@cs,
+        "Philosophy, ethics and religion"@en ;
+    props:classification_code "60300" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30000> a skos:Concept ;
+    skos:exactMatch ns2:30000 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:30100>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30200>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30300>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30400>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30500> ;
+    skos:notation "ford:30000"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lékařské vědy"@cs,
+        "Medical and health sciences"@en ;
+    skos:topConceptOf ns1: ;
+    props:classification_code "30000" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30400> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30000> ;
+    skos:exactMatch ns22:30400 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:30401>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30402>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30403>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30404>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30405> ;
+    skos:notation "ford:30400"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lékařské biotechnologie"@cs,
+        "Medical biotechnology"@en ;
+    props:classification_code "30400" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40000> a skos:Concept ;
+    skos:exactMatch ns2:40000 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:40100>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40200>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40300>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40400>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40500> ;
+    skos:notation "ford:40000"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zemědělské a veterinární vědy"@cs,
+        "Agricultural and veterinary sciences"@en ;
+    skos:topConceptOf ns1: ;
+    props:classification_code "40000" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60000> a skos:Concept ;
+    skos:exactMatch ns2:60000 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:60100>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60200>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60300>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60400>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60500> ;
+    skos:notation "ford:60000"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Humanitní vědy a umění"@cs,
+        "Humanities and the arts"@en ;
+    skos:topConceptOf ns1: ;
+    props:classification_code "60000" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60400> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60000> ;
+    skos:exactMatch ns43:60400 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:60401>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60402>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60403>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60404>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60405> ;
+    skos:notation "ford:60400"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Umění (umění, dějiny umění, múzická umění, hudba)"@cs,
+        "Arts (arts, history of arts, performing arts, music)"@en ;
+    props:classification_code "60400" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10400> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10000> ;
+    skos:exactMatch ns3:10400 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:10401>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10402>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10403>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10404>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10405>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10406> ;
+    skos:notation "ford:10400"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Chemické vědy"@cs,
+        "Chemical sciences"@en ;
+    props:classification_code "10400" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20200> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:20200 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20201>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20202>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20203>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20204>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20205>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20206> ;
+    skos:notation "ford:20200"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Elektrotechnika, elektronika"@cs,
+        "Electrical engineering, electronic engineering, information engineering"@en ;
+    props:classification_code "20200" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20300> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:20300 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20301>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20302>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20303>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20304>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20305>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20306> ;
+    skos:notation "ford:20300"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Strojní inženýrství"@cs,
+        "Mechanical engineering"@en ;
+    props:classification_code "20300" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20500> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:20500 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20501>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20502>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20503>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20504>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20505>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20506> ;
+    skos:notation "ford:20500"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Materiálové inženýrství"@cs,
+        "Materials engineering"@en ;
+    props:classification_code "20500" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:40100> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:40000> ;
+    skos:exactMatch ns28:40100 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:40101>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40102>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40103>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40104>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40105>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40106> ;
+    skos:notation "ford:40100"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zemědělství, lesnictví, rybářství"@cs,
+        "Agriculture, forestry and fisheries"@en ;
+    props:classification_code "40100" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50200> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:50000> ;
+    skos:exactMatch ns33:50200 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50201>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50202>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50203>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50204>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50205>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50206> ;
+    skos:notation "ford:50200"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ekonomie a podnikání"@cs,
+        "Economics and business"@en ;
+    props:classification_code "50200" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:60200> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:60000> ;
+    skos:exactMatch ns43:60200 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:60201>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60202>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60203>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60204>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60205>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60206> ;
+    skos:notation "ford:60200"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Jazyky a literatura"@cs,
+        "Languages and literature"@en ;
+    props:classification_code "60200" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10000> a skos:Concept ;
+    skos:exactMatch ns2:10000 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:10100>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10200>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10300>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10400>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10500>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10600>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10700> ;
+    skos:notation "ford:10000"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Přírodní vědy"@cs,
+        "Natural sciences"@en ;
+    skos:topConceptOf ns1: ;
+    props:classification_code "10000" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20700> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:20000> ;
+    skos:exactMatch ns10:20700 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20701>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20702>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20703>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20704>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20705>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20706>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20707> ;
+    skos:notation "ford:20700"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Environmentální inženýrství "@cs,
+        "Environmental engineering"@en ;
+    props:classification_code "20700" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10300> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10000> ;
+    skos:exactMatch ns3:10300 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:10301>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10302>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10303>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10304>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10305>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10306>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10307>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10308> ;
+    skos:notation "ford:10300"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Fyzikální vědy"@cs,
+        "Physical sciences"@en ;
+    props:classification_code "10300" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30100> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30000> ;
+    skos:exactMatch ns22:30100 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:30101>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30102>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30103>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30104>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30105>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30106>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30107>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30108>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30109> ;
+    skos:notation "ford:30100"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Základní medicína"@cs,
+        "Basic medicine"@en ;
+    props:classification_code "30100" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:50000> a skos:Concept ;
+    skos:exactMatch ns2:50000 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:50100>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50200>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50300>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50400>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50500>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50600>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50700>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50800>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50900> ;
+    skos:notation "ford:50000"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Společenské vědy"@cs,
+        "Social sciences"@en ;
+    skos:topConceptOf ns1: ;
+    props:classification_code "50000" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10500> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10000> ;
+    skos:exactMatch ns3:10500 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:10501>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10502>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10503>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10504>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10505>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10506>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10507>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10508>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10509>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10510>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10511> ;
+    skos:notation "ford:10500"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vědy o Zemi a související environmentální vědy "@cs,
+        "Earth and related environmental sciences"@en ;
+    props:classification_code "10500" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:20000> a skos:Concept ;
+    skos:exactMatch ns2:20000 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:20100>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20200>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20300>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20400>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20500>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20600>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20700>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20800>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20900>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:21000>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:21100> ;
+    skos:notation "ford:20000"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Technické vědy, inženýrství"@cs,
+        "Engineering and technology"@en ;
+    skos:topConceptOf ns1: ;
+    props:classification_code "20000" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30300> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30000> ;
+    skos:exactMatch ns22:30300 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:30301>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30302>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30303>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30304>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30305>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30306>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30307>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30308>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30309>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30310>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30311>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30312> ;
+    skos:notation "ford:30300"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zdravotní vědy"@cs,
+        "Health sciences"@en ;
+    props:classification_code "30300" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:10600> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:10000> ;
+    skos:exactMatch ns3:10600 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:10601>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10602>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10603>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10604>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10605>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10606>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10607>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10608>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10609>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10610>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10611>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10612>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10613>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10614>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10615>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10616>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10617>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10618>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10619>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:10620> ;
+    skos:notation "ford:10600"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Biologie"@cs,
+        "Biological sciences"@en ;
+    props:classification_code "10600" .
+
+<https://nma.eosc.cz/vocabularies/subjects/ford:30200> a skos:Concept ;
+    skos:broader <https://nma.eosc.cz/vocabularies/subjects/ford:30000> ;
+    skos:exactMatch ns22:30200 ;
+    skos:inScheme ns1: ;
+    skos:narrower <https://nma.eosc.cz/vocabularies/subjects/ford:30201>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30202>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30203>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30204>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30205>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30206>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30207>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30208>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30209>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30210>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30211>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30212>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30213>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30214>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30215>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30216>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30217>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30218>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30219>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30220>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30221>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30223>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30224>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30225>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30226>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30227>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30229>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30230> ;
+    skos:notation "ford:30200"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Klinická medicína"@cs,
+        "Clinical medicine"@en ;
+    props:classification_code "30200" .
+
+ns1: skos:hasTopConcept <https://nma.eosc.cz/vocabularies/subjects/ford:10000>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:20000>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:30000>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:40000>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:50000>,
+        <https://nma.eosc.cz/vocabularies/subjects/ford:60000> .
+

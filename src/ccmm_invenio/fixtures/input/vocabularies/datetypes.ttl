@@ -1,0 +1,25 @@
+# Interoperability props of the date types vocabulary: the openaire date
+# type of each date type, converted from the addon csv of the old pipeline
+# (src/ccmm_invenio/input/addon_time_reference_types.csv). The subjects are
+# the NMA date type URIs (the ids the CCMM CamelCase names kebab-case to);
+# the date types the old addon gave no openaire type carry none either
+# (coverage, withdrawn, other). The datacite column of the addon csv is not
+# carried over - the vocabulary already links to the DataCite date types
+# through the exact matches of its concepts.
+#
+# The props are merged into the vocabulary graph by the converter, strictly:
+# a subject that is not a concept of the date types vocabulary fails the
+# conversion instead of being silently dropped.
+
+@prefix datetypes: <https://nma.eosc.cz/vocabularies/datetypes/> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+
+datetypes:accepted    props:openaire "Accepted" .
+datetypes:available   props:openaire "Available" .
+datetypes:collected   props:openaire "Collected" .
+datetypes:copyrighted props:openaire "Copyrighted" .
+datetypes:created     props:openaire "Created" .
+datetypes:issued      props:openaire "Issued" .
+datetypes:submitted   props:openaire "Submitted" .
+datetypes:updated     props:openaire "Updated" .
+datetypes:valid       props:openaire "Valid" .

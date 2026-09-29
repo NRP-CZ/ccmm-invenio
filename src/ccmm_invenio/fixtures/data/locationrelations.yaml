@@ -1,0 +1,40 @@
+- id: collected
+  title:
+    cs: Získáno v lokaci
+    en: Collected in
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Collected
+    scheme: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
+    relation: exactMatch
+- id: other
+  title:
+    cs: Jiné
+    en: Other
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
+    relation: exactMatch
+- id: processed
+  title:
+    cs: Zpracováno v lokaci
+    en: Processed at location
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Processed
+    scheme: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
+    relation: exactMatch
+- id: refers
+  title:
+    cs: Týká se lokace
+    en: Refers to the location
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Refers
+    scheme: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
+    relation: exactMatch
+- id: stored
+  title:
+    cs: Uchováno v lokaci
+    en: Stored at location
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/Stored
+    scheme: https://vocabs.ccmm.cz/registry/codelist/LocationRelation/
+    relation: exactMatch

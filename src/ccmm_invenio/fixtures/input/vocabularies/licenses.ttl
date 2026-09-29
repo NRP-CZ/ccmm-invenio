@@ -1,0 +1,201 @@
+# Curated Czech labels, descriptions and hierarchy of the Creative Commons
+# licenses, converted from the fixture of the old pipeline
+# (src/ccmm_invenio/input/licenses.yaml). The RDM ids are kept: the leaves
+# are the licenses of the RDM fixture (they carry only what it does not have
+# themselves - their Czech labels and their parent), the tree nodes the
+# fixture does not carry are introduced here as concepts (typed, with their
+# id notations).
+#
+# Only the international licenses are carried over - the jurisdiction ports
+# of the old fixture (the CC 3.0 Czech ports) are not. The 3.0 texts are
+# adapted from them (the only 3.0 the old fixture had): the "Czech Republic"
+# of the titles dropped, the note about the Czech legal adaptation of the
+# version container replaced with the generic older-version note the other
+# version containers carry.
+#
+# The fragment is merged into the RDM licenses by the converter, strictly:
+# an untyped subject that is not a concept of the licenses vocabulary
+# fails the conversion instead of being silently created.
+
+@prefix invenio: <https://nma.eosc.cz/vocabularies/vocabularies/invenio> .
+@prefix licenses: <https://nma.eosc.cz/vocabularies/licenses/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+# the tree nodes the RDM fixture does not carry, introduced as concepts
+
+licenses:cc a skos:Concept ;
+            skos:inScheme licenses: ;
+            skos:notation "cc"^^invenio:id ;
+            skos:prefLabel "Licence Creative Commons"@cs ,
+                           "License Creative Commons"@en .
+
+licenses:cc-1.0 a skos:Concept ;
+                 skos:broader licenses:cc ;
+                 skos:inScheme licenses: ;
+                 skos:notation "cc-1.0"^^invenio:id ;
+                 skos:prefLabel "verze 1.0 Obecná licence"@cs ,
+                                "version 1.0 Generic License"@en ;
+                 skos:definition "Toto je starší verze licencí (1.0). Pokud licencujete své vlastní dílo, které ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou z variant licence 4.0."@cs ,
+                                 "This is an older version of the license (1.0). If you are licensing your own work that has not yet been published under any license, we recommend using one of the 4.0 license variants instead."@en .
+
+licenses:cc-2.0 a skos:Concept ;
+                 skos:broader licenses:cc ;
+                 skos:inScheme licenses: ;
+                 skos:notation "cc-2.0"^^invenio:id ;
+                 skos:prefLabel "verze 2.0 Obecná licence"@cs ,
+                                "version 2.0 Generic License"@en ;
+                 skos:definition "Toto je starší verze licencí 2.0. Pokud licencujete své vlastní dílo, které ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou z variant licence 4.0."@cs ,
+                                 "This is an older version of the license (2.0). If you are licensing your own work that has not yet been published under any license, we recommend using one of the 4.0 license variants instead."@en .
+
+licenses:cc-2.5 a skos:Concept ;
+                 skos:broader licenses:cc ;
+                 skos:inScheme licenses: ;
+                 skos:notation "cc-2.5"^^invenio:id ;
+                 skos:prefLabel "verze 2.5 Obecná licence"@cs ,
+                                "version 2.5 Generic License"@en ;
+                 skos:definition "Toto je starší verze licencí 2.5. Pokud licencujete své vlastní dílo, které ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou z variant licence 4.0."@cs ,
+                                 "This is an older version of the license (2.5). If you are licensing your own work that has not yet been published under any license, we recommend using one of the 4.0 license variants instead."@en .
+
+licenses:cc-3.0 a skos:Concept ;
+                 skos:broader licenses:cc ;
+                 skos:inScheme licenses: ;
+                 skos:notation "cc-3.0"^^invenio:id ;
+                 skos:prefLabel "verze 3.0"@cs ,
+                                "version 3.0"@en ;
+                 skos:definition "Toto je starší verze licencí 3.0. Pokud licencujete své vlastní dílo, které ještě nebylo pod žádnou licencí zveřejněno, doporučujeme místo toho použít některou z variant licence 4.0."@cs ,
+                                 "This is an older version of the license (3.0). If you are licensing your own work that has not yet been published under any license, we recommend using one of the 4.0 license variants instead."@en .
+
+licenses:cc-4.0 a skos:Concept ;
+                 skos:broader licenses:cc ;
+                 skos:inScheme licenses: ;
+                 skos:notation "cc-4.0"^^invenio:id ;
+                 skos:prefLabel "verze 4.0 mezinárodní licence"@cs ,
+                                "version 4.0 International License"@en ;
+                 skos:definition "Aktuální verze 4.0 existuje pouze jako mezinárodní, nebyla nutná adaptace do národních právních řádů."@cs ,
+                                 "The current version 4.0 exists only as an international version, no adaptation to national legal systems was necessary."@en .
+
+# the RDM licenses, carrying only what the fixture does not: their Czech
+# labels and descriptions, and their parent version
+
+licenses:cc-by-1.0     skos:broader licenses:cc-1.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ 1.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora. V češtině: Uveďte autora; v angličtině: Attribution; zkratka CC BY."@cs .
+
+licenses:cc-by-sa-1.0  skos:broader licenses:cc-1.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Zachovejte licenci 1.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozšiřovat odvozená díla pouze za podmínek identické či slučitelné licence, je nutné uvést autora. V češtině: Uveďte autora-Zachovejte licenci; v angličtině: Attribution-ShareAlike; zkratka CC BY-SA."@cs .
+
+licenses:cc-by-nc-1.0  skos:broader licenses:cc-1.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte komerčně 1.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora a pouze pro nevýdělečné účely. V češtině: Uveďte autora-Neužívejte komerčně; v angličtině: Attribution-NonCommercial; zkratka CC BY-NC."@cs .
+
+licenses:cc-by-nc-sa-1.0 skos:broader licenses:cc-1.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci 1.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo (případně z něj odvozená díla) pouze pro nevýdělečné účely a pouze za podmínek identické či slučitelné licence. Je nutné uvést autora. V češtině: Uveďte autora-Neužívejte dílo komerčně-Zachovejte licenci; v angličtině: Attribution-NonCommercial-ShareAlike; zkratka CC BY-NC-SA."@cs .
+
+licenses:cc-by-nd-1.0  skos:broader licenses:cc-1.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Nezpracovávejte 1.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, je nutné uvést autora. V češtině: Uveďte autora-Nezasahujte do díla; v angličtině: Attribution-NoDerivs; zkratka CC BY-ND."@cs .
+
+licenses:cc-by-nc-nd-1.0 skos:broader licenses:cc-1.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 1.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, pouze pro nevýdělečné účely, je nutné uvést autora. V češtině: Uveďte autora-Neužívejte komerčně-Nezasahujte do díla; v angličtině: Attribution-Noncommercial-NoDerivs; zkratka CC BY-NC-ND."@cs .
+
+licenses:cc-by-2.0     skos:broader licenses:cc-2.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ 2.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora. V češtině: Uveďte autora; v angličtině: Attribution; zkratka CC BY."@cs .
+
+licenses:cc-by-sa-2.0  skos:broader licenses:cc-2.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Zachovejte licenci 2.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozšiřovat odvozená díla pouze za podmínek identické či slučitelné licence, je nutné uvést autora. V češtině: Uveďte autora-Zachovejte licenci; v angličtině: Attribution-ShareAlike; zkratka CC BY-SA."@cs .
+
+licenses:cc-by-nc-2.0  skos:broader licenses:cc-2.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte komerčně 2.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora a pouze pro nevýdělečné účely. V češtině: Uveďte autora-Neužívejte komerčně; v angličtině: Attribution-NonCommercial; zkratka CC BY-NC."@cs .
+
+licenses:cc-by-nc-sa-2.0 skos:broader licenses:cc-2.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci 2.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo (případně z něj odvozená díla) pouze pro nevýdělečné účely a pouze za podmínek identické či slučitelné licence. Je nutné uvést autora. V češtině: Uveďte autora-Neužívejte dílo komerčně-Zachovejte licenci; v angličtině: Attribution-NonCommercial-ShareAlike; zkratka CC BY-NC-SA."@cs .
+
+licenses:cc-by-nd-2.0  skos:broader licenses:cc-2.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Nezpracovávejte 2.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, je nutné uvést autora. V češtině: Uveďte autora-Nezasahujte do díla; v angličtině: Attribution-NoDerivs; zkratka CC BY-ND."@cs .
+
+licenses:cc-by-nc-nd-2.0 skos:broader licenses:cc-2.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 2.0 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, pouze pro nevýdělečné účely, je nutné uvést autora. V češtině: Uveďte autora-Neužívejte komerčně-Nezasahujte do díla; v angličtině: Attribution-Noncommercial-NoDerivs; zkratka CC BY-NC-ND."@cs .
+
+licenses:cc-by-2.5     skos:broader licenses:cc-2.5 ;
+                       skos:prefLabel "Creative Commons Uveďte původ 2.5 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora. V češtině: Uveďte autora; v angličtině: Attribution; zkratka CC BY."@cs .
+
+licenses:cc-by-sa-2.5  skos:broader licenses:cc-2.5 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Zachovejte licenci 2.5 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozšiřovat odvozená díla pouze za podmínek identické či slučitelné licence, je nutné uvést autora. V češtině: Uveďte autora-Zachovejte licenci; v angličtině: Attribution-ShareAlike; zkratka CC BY-SA."@cs .
+
+licenses:cc-by-nc-2.5  skos:broader licenses:cc-2.5 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte komerčně 2.5 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora a pouze pro nevýdělečné účely. V češtině: Uveďte autora-Neužívejte komerčně; v angličtině: Attribution-NonCommercial; zkratka CC BY-NC."@cs .
+
+licenses:cc-by-nc-sa-2.5 skos:broader licenses:cc-2.5 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte dílo komerčně-Zachovejte licenci 2.5 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo (případně z něj odvozená díla) pouze pro nevýdělečné účely a pouze za podmínek identické či slučitelné licence. Je nutné uvést autora. V češtině: Uveďte autora-Neužívejte dílo komerčně-Zachovejte licenci; v angličtině: Attribution-NonCommercial-ShareAlike; zkratka CC BY-NC-SA."@cs .
+
+licenses:cc-by-nd-2.5  skos:broader licenses:cc-2.5 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Nezpracovávejte 2.5 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, je nutné uvést autora. V češtině: Uveďte autora-Nezasahujte do díla; v angličtině: Attribution-NoDerivs; zkratka CC BY-ND."@cs .
+
+licenses:cc-by-nc-nd-2.5 skos:broader licenses:cc-2.5 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 2.5 Obecná licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, pouze pro nevýdělečné účely, je nutné uvést autora. V češtině: Uveďte autora-Neužívejte komerčně-Nezasahujte do díla; v angličtině: Attribution-Noncommercial-NoDerivs; zkratka CC BY-NC-ND."@cs .
+
+licenses:cc-by-3.0     skos:broader licenses:cc-3.0 ;
+                       skos:prefLabel "Creative Commons Uveďte autora 3.0"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora. V češtině: Uveďte autora; v angličtině: Attribution; zkratka CC BY."@cs .
+
+licenses:cc-by-sa-3.0  skos:broader licenses:cc-3.0 ;
+                       skos:prefLabel "Creative Commons Uveďte autora-Zachovejte licenci 3.0"@cs ;
+                       skos:definition "Umožňuje ostatním rozšiřovat odvozená díla pouze za podmínek identické či slučitelné licence, je nutné uvést autora. V češtině: Uveďte autora-Zachovejte licenci; v angličtině: Attribution-ShareAlike; zkratka CC BY-SA."@cs .
+
+licenses:cc-by-nc-3.0  skos:broader licenses:cc-3.0 ;
+                       skos:prefLabel "Creative Commons Uveďte autora-Neužívejte komerčně 3.0"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora a pouze pro nevýdělečné účely. V češtině: Uveďte autora-Neužívejte komerčně; v angličtině: Attribution-NonCommercial; zkratka CC BY-NC."@cs .
+
+licenses:cc-by-nc-sa-3.0 skos:broader licenses:cc-3.0 ;
+                       skos:prefLabel "Creative Commons Uveďte autora-Neužívejte dílo komerčně-Zachovejte licenci 3.0"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo (případně z něj odvozená díla) pouze pro nevýdělečné účely a pouze za podmínek identické či slučitelné licence. Je nutné uvést autora. V češtině: Uveďte autora-Neužívejte dílo komerčně-Zachovejte licenci; v angličtině: Attribution-NonCommercial-ShareAlike; zkratka CC BY-NC-SA."@cs .
+
+licenses:cc-by-nd-3.0  skos:broader licenses:cc-3.0 ;
+                       skos:prefLabel "Creative Commons Uveďte autora-Nezasahujte do díla 3.0"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, je nutné uvést autora. V češtině: Uveďte autora-Nezasahujte do díla; v angličtině: Attribution-NoDerivs; zkratka CC BY-ND."@cs .
+
+licenses:cc-by-nc-nd-3.0 skos:broader licenses:cc-3.0 ;
+                       skos:prefLabel "Creative Commons Uveďte autora-Neužívejte komerčně-Nezasahujte do díla 3.0"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, pouze pro nevýdělečné účely, je nutné uvést autora. V češtině: Uveďte autora-Neužívejte komerčně-Nezasahujte do díla; v angličtině: Attribution-Noncommercial-NoDerivs; zkratka CC BY-NC-ND."@cs .
+
+licenses:cc-by-4.0     skos:broader licenses:cc-4.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ 4.0 Mezinárodní licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora. V češtině: Uveďte původ (v češtině dříve označováno jako Uveďte autora); v angličtině: Attribution; zkratka CC BY."@cs .
+
+licenses:cc-by-sa-4.0  skos:broader licenses:cc-4.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Zachovejte licenci 4.0 Mezinárodní licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozšiřovat odvozená díla pouze za podmínek identické či slučitelné licence, je nutné uvést autora. V češtině: Uveďte původ-Zachovejte licenci (v češtině dříve označováno jako Uveďte autora-Zachovejte licenci); v angličtině: Attribution-ShareAlike; zkratka CC BY-SA."@cs .
+
+licenses:cc-by-nc-4.0  skos:broader licenses:cc-4.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte komerčně 4.0 Mezinárodní licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo a z něj odvozená díla pouze při uvedení autora a pouze pro nevýdělečné účely. V češtině: Uveďte původ-Neužívejte komerčně (v češtině dříve označováno jako Uveďte autora-Neužívejte komerčně); v angličtině: Attribution-NonCommercial; zkratka CC BY-NC."@cs .
+
+licenses:cc-by-nc-sa-4.0 skos:broader licenses:cc-4.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte komerčně-Zachovejte licenci 4.0 Mezinárodní licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat dílo (případně z něj odvozená díla) pouze pro nevýdělečné účely a pouze za podmínek identické či slučitelné licence. Je nutné uvést autora. V češtině: Uveďte původ-Neužívejte komerčně-Zachovejte licenci (v češtině dříve označováno jako Uveďte autora-Neužívejte dílo komerčně-Zachovejte licenci); v angličtině: Attribution-NonCommercial-ShareAlike; zkratka CC BY-NC-SA."@cs .
+
+licenses:cc-by-nd-4.0  skos:broader licenses:cc-4.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Nezpracovávejte 4.0 Mezinárodní licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, je nutné uvést autora. V češtině: Uveďte původ-Nezpracovávejte (v češtině dříve označováno jako Uveďte autora-Nezasahujte do díla); v angličtině: Attribution-NoDerivs; zkratka BY-ND."@cs .
+
+licenses:cc-by-nc-nd-4.0 skos:broader licenses:cc-4.0 ;
+                       skos:prefLabel "Creative Commons Uveďte původ-Neužívejte komerčně-Nezpracovávejte 4.0 Mezinárodní licence"@cs ;
+                       skos:definition "Umožňuje ostatním rozmnožovat, rozšiřovat, vystavovat a sdělovat pouze dílo v původní podobě, nikoli díla z něj odvozená, pouze pro nevýdělečné účely, je nutné uvést autora. V češtině: Uveďte původ-Neužívejte komerčně-Nezpracovávejte (v češtině dříve označováno jako Uveďte autora-Neužívejte komerčně-Nezasahujte do díla); v angličtině: Attribution-NonCommercial-NoDerivs; zkratka CC BY-NC-ND."@cs .
+
+licenses:cc0-1.0       skos:broader licenses:cc ;
+                       skos:prefLabel "Creative Commons Univerzální – Prohlášení o poskytnutí díla do veřejné domény"@cs .

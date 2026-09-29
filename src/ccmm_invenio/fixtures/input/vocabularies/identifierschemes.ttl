@@ -1,0 +1,50 @@
+# The identifier schemes of the old pipeline (its
+# src/ccmm_invenio/input/identifier_schemes.yaml fixture) the RDM configs do
+# not carry: the Czech ARES business registry and the generic IRI, plus the
+# researcher identifiers of Web of Science and Scopus. All four are introduced
+# here as concepts, with the resolver IRIs CCMM identifies the schemes by
+# linked back via skos:exactMatch.
+#
+# The fragment is merged into the RDM identifier schemes by the converter,
+# strictly: an untyped subject that is not a concept of the identifier
+# schemes vocabulary fails the conversion instead of being silently
+# created.
+
+@prefix identifierschemes: <https://nma.eosc.cz/vocabularies/identifierschemes/> .
+@prefix invenio: <https://nma.eosc.cz/vocabularies/vocabularies/invenio> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tags: <https://nma.eosc.cz/vocabularies/vocabularies/inveniotags> .
+
+identifierschemes:ares a skos:Concept ;
+                       skos:definition "Administrativní registr ekonomických subjektů"@cs ,
+                                        "Administrative Register of Economic Subjects"@en ;
+                       skos:exactMatch <https://ares.gov.cz/> ;
+                       skos:inScheme identifierschemes: ;
+                       skos:notation "ares"^^invenio:id ;
+                       skos:prefLabel "ARES"@cs ,
+                                      "ARES"@en ;
+                       tags: "person-organization" .
+
+identifierschemes:iri a skos:Concept ;
+                      skos:exactMatch <urn:iri> ;
+                      skos:inScheme identifierschemes: ;
+                      skos:notation "iri"^^invenio:id ;
+                      skos:prefLabel "IRI"@cs ,
+                                     "IRI"@en ;
+                      tags: "record" .
+
+identifierschemes:researcherid a skos:Concept ;
+                               skos:exactMatch <https://www.webofscience.com/> ;
+                               skos:inScheme identifierschemes: ;
+                               skos:notation "researcherid"^^invenio:id ;
+                               skos:prefLabel "Researcher ID"@cs ,
+                                              "Researcher ID"@en ;
+                               tags: "person-organization" .
+
+identifierschemes:scopusid a skos:Concept ;
+                            skos:exactMatch <https://www.scopus.com/> ;
+                            skos:inScheme identifierschemes: ;
+                            skos:notation "scopusid"^^invenio:id ;
+                            skos:prefLabel "Scopus ID"@cs ,
+                                           "Scopus ID"@en ;
+                            tags: "person-organization" .
