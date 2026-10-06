@@ -9,6 +9,7 @@ jobs:
     name: Bump, Test, and Publish the Release
     uses: oarepo/oarepo/.github/workflows/release.yaml@main
     permissions:
+      contents: read
       pages: write
       id-token: write
     secrets:
