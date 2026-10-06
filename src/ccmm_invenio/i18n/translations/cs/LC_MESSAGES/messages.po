@@ -124,6 +124,12 @@ msgstr ""
 "Zachováno bylo pouze prvních {{max}} DOI; {{dropped}} dalších DOI bylo "
 "vyřazeno. Odešlete tuto dávku a poté vložte zbytek."
 
+msgid "The following text was removed because it is not a valid DOI:"
+msgstr "Následující text byl odstraněn, protože nejde o platné DOI:"
+
+msgid "A DOI starts with \"10.\", followed by 4–9 digits, a slash and a suffix, e.g. 10.1234/abcd or https://doi.org/10.1234/abcd."
+msgstr "DOI začíná „10.“, za kterým následují 4–9 číslic, lomítko a přípona, např. 10.1234/abcd nebo https://doi.org/10.1234/abcd."
+
 msgid "Already tied to the record (will be skipped on Load):"
 msgstr "Již přidruženo k záznamu (při načtení bude přeskočeno):"
 
