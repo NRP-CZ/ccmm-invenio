@@ -1,0 +1,36 @@
+# Interoperability props of the roles vocabulary: the openaire contributor
+# type of each role, converted from the addon csv of the old pipeline
+# (src/ccmm_invenio/input/addon_agent_roles.csv). The subjects are the NMA
+# role URIs (the ids the CCMM CamelCase names lowercase to); the roles the
+# old addon gave no openaire type carry none either (translator), and the
+# general agent roles (creator, contributor, publisher) had none to begin
+# with - openaire knows no such contributor types.
+#
+# The props are merged into the vocabulary graph by the converter, strictly:
+# a subject that is not a concept of the roles vocabulary fails the
+# conversion instead of being silently dropped.
+
+@prefix roles: <https://nma.eosc.cz/vocabularies/roles/> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+
+roles:contactperson        props:openaire "ContactPerson" .
+roles:datacollector        props:openaire "DataCollector" .
+roles:datacurator          props:openaire "DataCurator" .
+roles:datamanager          props:openaire "DataManager" .
+roles:distributor          props:openaire "Distributor" .
+roles:editor               props:openaire "Editor" .
+roles:hostinginstitution   props:openaire "HostingInstitution" .
+roles:other                props:openaire "Other" .
+roles:producer             props:openaire "Producer" .
+roles:projectleader        props:openaire "ProjectLeader" .
+roles:projectmanager       props:openaire "ProjectManager" .
+roles:projectmember        props:openaire "ProjectMember" .
+roles:registrationagency   props:openaire "RegistrationAgency" .
+roles:registrationauthority props:openaire "RegistrationAuthority" .
+roles:relatedperson        props:openaire "RelatedPerson" .
+roles:researcher          props:openaire "Researcher" .
+roles:researchgroup        props:openaire "ResearchGroup" .
+roles:rightsholder         props:openaire "RightsHolder" .
+roles:sponsor              props:openaire "Sponsor" .
+roles:supervisor           props:openaire "Supervisor" .
+roles:workpackageleader    props:openaire "WorkPackageLeader" .

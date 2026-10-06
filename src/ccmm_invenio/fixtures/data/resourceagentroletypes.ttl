@@ -1,0 +1,502 @@
+@prefix ccmm-agentrole: <https://vocabs.ccmm.cz/registry/codelist/AgentRole/> .
+@prefix ccmm-agentrole-contributor: <https://vocabs.ccmm.cz/registry/codelist/AgentRole/Contributor/> .
+@prefix datacite-contributortype: <https://w3id.org/tib/datacite/vocab/contributorType/> .
+@prefix europa-language: <http://publications.europa.eu/resource/authority/language/> .
+@prefix europa-ontology: <http://publications.europa.eu/ontology/> .
+@prefix europa-web: <https://op.europa.eu/en/web/> .
+@prefix nma: <https://nma.eosc.cz/vocabularies/> .
+@prefix nma-roles: <https://nma.eosc.cz/vocabularies/roles/> .
+@prefix nma-vocabularies: <https://nma.eosc.cz/vocabularies/vocabularies/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tags: <https://nma.eosc.cz/vocabularies/vocabularies/inveniotags> .
+
+europa-ontology:euvoc a owl:Ontology ;
+    rdfs:label "EU Vocabularies ontology (euvoc)"@en ;
+    rdfs:comment "Ontology of the EU Publications Office; its terms are used as skos:notation datatypes to distinguish language code schemes (e.g. ISO_639_1, ISO_639_3, XML_LNG)."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+europa-language: a skos:ConceptScheme ;
+    rdfs:label "EU Publications Office language authority"@en ;
+    rdfs:comment "EU Publications Office language authority table; identifiers are ISO 639-3 codes."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+nma: a owl:Ontology ;
+    rdfs:label "NMA vocabularies"@en ;
+    rdfs:comment "Namespace of the NMA vocabularies; each sub-path is one vocabulary (e.g. languages)."@en .
+
+nma-vocabularies:invenioid a rdfs:Datatype ;
+    rdfs:label "NMA internal vocabulary id"@en ;
+    rdfs:comment "Marks skos:notation literals carrying the internal NMA vocabulary id, used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props: a owl:Ontology ;
+    rdfs:label "NMA vocabulary properties"@en ;
+    rdfs:comment "Namespace of internal vocabulary properties and datatypes used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props:alpha_2 a rdf:Property ;
+    rdfs:label "ISO 639-1 code"@en ;
+    rdfs:comment "Two-letter ISO 639-1 code of a language, when it has one."@en .
+
+props:csl a rdf:Property ;
+    rdfs:label "csl"@en ;
+    rdfs:comment "Citation Style Language (CSL) type of a resource type."@en .
+
+props:datacite a rdf:Property ;
+    rdfs:label "DataCite relationType name"@en ;
+    rdfs:comment "Name of the DataCite relationType (e.g. IsCitedBy) a relation type concept stands for."@en .
+
+props:datacite_general a rdf:Property ;
+    rdfs:label "datacite_general"@en ;
+    rdfs:comment "DataCite resourceTypeGeneral of a resource type."@en .
+
+props:datacite_type a rdf:Property ;
+    rdfs:label "datacite_type"@en ;
+    rdfs:comment "DataCite resource type name, when the general one is further specified."@en .
+
+props:eurepo a rdf:Property ;
+    rdfs:label "eurepo"@en ;
+    rdfs:comment "eu-repo semantics identifier of a resource type."@en .
+
+props:marc a rdf:Property ;
+    rdfs:label "MARC 21 relator code"@en ;
+    rdfs:comment "Three-letter MARC 21 relator code (e.g. prc) of a role concept."@en .
+
+props:marc21_subtype a rdf:Property ;
+    rdfs:label "marc21_subtype"@en ;
+    rdfs:comment "MARC 21 bibliographic level of a resource type."@en .
+
+props:marc21_type a rdf:Property ;
+    rdfs:label "marc21_type"@en ;
+    rdfs:comment "MARC 21 type of record of a resource type."@en .
+
+props:openaire_resourceType a rdf:Property ;
+    rdfs:label "openaire_resourceType"@en ;
+    rdfs:comment "OpenAIRE resource type code of a resource type."@en .
+
+props:openaire_type a rdf:Property ;
+    rdfs:label "openaire_type"@en ;
+    rdfs:comment "OpenAIRE type name of a resource type."@en .
+
+props:schema.org a rdf:Property ;
+    rdfs:label "schema.org"@en ;
+    rdfs:comment "schema.org type a resource type maps to."@en .
+
+props:subtype a rdf:Property ;
+    rdfs:label "subtype"@en ;
+    rdfs:comment "InvenioRDM resource subtype id; empty for top-level types."@en .
+
+props:type a rdf:Property ;
+    rdfs:label "type"@en ;
+    rdfs:comment "InvenioRDM resource type id a resource type belongs to."@en .
+
+props:xml_lang a rdf:Property ;
+    rdfs:label "xml:lang code"@en ;
+    rdfs:comment "Language tag suitable for an xml:lang attribute: the ISO 639-1 code when available, the ISO 639-3 code otherwise."@en .
+
+tags: a rdf:Property ;
+    rdfs:label "vocabulary tags"@en ;
+    rdfs:comment "Links a vocabulary concept to its tag values (e.g. the scope and type of a language); internal use."@en .
+
+nma-roles:contactperson a skos:Concept ;
+    skos:definition """Osoba se znalostí možností přístupu ke zdroji a jeho případná omezení, může řešit problémy související s dostupností zdroje. \r
+Může být také „kontaktní osobou“ v organizaci, která určuje přístup ke zdroji, pokud se tato organizace liší od vydavatele, distributora a správce dat."""@cs,
+        """Person with knowledge of how to access, troubleshoot, or otherwise field issues related to the resource.\r
+May also be the “Point of Contact” in an organisation that controls access to the resource, if that organisation is different from the Publisher, Distributor, and Data Manager."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:ContactPerson,
+        datacite-contributortype:ContactPerson ;
+    skos:inScheme nma-roles: ;
+    skos:notation "contactperson"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kontaktní osoba"@cs,
+        "Contact Person"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "ContactPerson" ;
+    props:marc "prc" ;
+    props:openaire "ContactPerson" .
+
+nma-roles:contributor a skos:Concept ;
+    skos:definition "Instituce nebo osoba, která přispěla k vytvoření, kompletaci, správě, distribuci datasetu nebo se podílela na vzniku zdroje jiným způsobem. Chcete-li uvést více přispěvatelů, uveďte tuto roli opakovaně."@cs,
+        "The institution or person responsible for collecting, managing, distributing, or otherwise contributing to the development of the resource. To supply multiple contributors, repeat this property."@en ;
+    skos:exactMatch ccmm-agentrole:Contributor ;
+    skos:inScheme nma-roles: ;
+    skos:notation "contributor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Přispěvatel"@cs,
+        "Contributor"@en ;
+    skos:topConceptOf nma-roles: .
+
+nma-roles:creator a skos:Concept ;
+    skos:definition "Hlavní tvůrci (výzkumníci) zapojení do tvorby dat nebo autoři publikace, v pořadí podle priority. U přístrojů se jedná o výrobce nebo vývojáře přístroje. Chcete-li uvést více tvůrců, uveďte tuto roli opakovaně."@cs,
+        "The main researchers involved in producing the data, or the authors of the publication, in priority order. For instruments this is the manufacturer or developer of the instrument. To supply multiple creators, repeat this property."@en ;
+    skos:exactMatch ccmm-agentrole:Creator ;
+    skos:inScheme nma-roles: ;
+    skos:notation "creator"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Autor"@cs,
+        "Creator"@en ;
+    skos:topConceptOf nma-roles: .
+
+nma-roles:datacollector a skos:Concept ;
+    skos:definition """Osoba/instituce odpovědná za vyhledávání nebo shromažďování dat podle pokynů autora/autorek nebo hlavního řešitele. \r
+Lze také použít pro autory průzkumu, tazatele, pozorovatele událostí nebo podmínek nebo osob odpovědných za monitorování klíčových dat z přístrojů."""@cs,
+        """Person/institution responsible for finding or gathering/collecting data under the guidelines of the author(s) or Principal Investigator (PI).\r
+May also be used when crediting survey conductors, interviewers, event or condition observers, or persons responsible for monitoring key instrument data."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:DataCollector,
+        datacite-contributortype:DataCollector ;
+    skos:inScheme nma-roles: ;
+    skos:notation "datacollector"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sběratel dat"@cs,
+        "Data Collector"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "DataCollector" ;
+    props:marc "col" ;
+    props:openaire "DataCollector" .
+
+nma-roles:datacurator a skos:Concept ;
+    skos:definition """Osoba pověřená kontrolou, obohacením, čištěním nebo standardizací metadat a souvisejících dat odeslaných k uložení, použití a archivaci v datovém centru nebo repozitáři. \r
+Zatímco správce dat se zabývá digitální údržbou, role kurátora dat zahrnuje zajištění kvality zaměřené na obsah a metadata. Mezi odpovědnosti kurátora dat patří: kontrola úplnosti odeslaného datasetu oproti obsahu datasetu popsaného odesílatelem; zajištění a kontrola metadatového popisu podle pravidel příslušného schématu či systému; přidávání nebo ověřování specializovaných metadat za účelem zvýšení hodnoty a zajištění přístupu napříč obory; a určení, jak by se metadata mohla mapovat na vyhledávače, databázové produkty atd. Do této kategorie spadají i správci repozitářů a také datoví knihovníci v roli kurátora daného repozitáře."""@cs,
+        """Person tasked with reviewing, enhancing, cleaning, or standardizing metadata and the associated data submitted for storage, use, and maintenance within a data centre or repository.\r
+While the DataManager is concerned with digital maintenance, the DataCurator’s role encompasses quality assurance focused on content and metadata. DataCurator responsibilities include: checking completeness of the submitted dataset against the content as described by the submitter; verifying standard metadata according to the applicable system or schema; adding or verifying specialized metadata to add value and ensure access across disciplines; and determining how the metadata might map to search engines, database products, and automated feeds.\r
+Repository managers as well as data librarians working in the repository fall within this category."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:DataCurator,
+        datacite-contributortype:DataCurator ;
+    skos:inScheme nma-roles: ;
+    skos:notation "datacurator"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Kurátor dat"@cs,
+        "Data Curator"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "DataCurator" ;
+    props:marc "cur" ;
+    props:openaire "DataCurator" .
+
+nma-roles:datamanager a skos:Concept ;
+    skos:definition """Osoba (nebo organizace s týmem správců dat, například datové centrum) odpovědná za údržbu hotového zdroje. \r
+Osoba nebo organizace v této roli zajišťuje, že zdroj je pravidelně „aktualizován“ z hlediska softwarové/hardwarové podpory, je zajištěna jeho dostupnost nebo ochrana před neoprávněným přístupem, uložení v souladu s oborovými standardy a že je se zdrojem nakládáno v souladu s platnými požadavky na správu záznamů."""@cs,
+        """Person (or organisation with a staff of data managers, such as a data centre) responsible for maintaining the finished resource.\r
+The work done by this person or organisation ensures that the resource is periodically “refreshed” in terms of software/hardware support, is kept available or is protected from unauthorized access, is stored in accordance with industry standards, and is handled in accordance with the records management requirements applicable to it."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:DataManager,
+        datacite-contributortype:DataManager ;
+    skos:inScheme nma-roles: ;
+    skos:notation "datamanager"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Správce dat"@cs,
+        "Data Manager"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "DataManager" ;
+    props:marc "dtm" ;
+    props:openaire "DataManager" .
+
+nma-roles:distributor a skos:Concept ;
+    skos:definition """Instituce pověřená generováním/šířením kopií zdroje v elektronické nebo tištěné podobě. \r
+Pokud jsou díla uložená ve více než jednom archivu/repozitáři, je možné jako distributora uvést oba archivy/repozitáře."""@cs,
+        """Institution tasked with responsibility to generate/disseminate copies of the resource in either electronic or print form.\r
+Works stored in more than one archive/repository may credit each as a distributor."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:Distributor,
+        datacite-contributortype:Distributor ;
+    skos:inScheme nma-roles: ;
+    skos:notation "distributor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Distributor"@cs,
+        "Distributor"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "Distributor" ;
+    props:marc "dst" ;
+    props:openaire "Distributor" .
+
+nma-roles:editor a skos:Concept ;
+    skos:definition """Osoba, která dohlíží na detaily týkající se publikačního formátu zdroje. \r
+Poznámka: Pokud má být editor uveden místo více tvůrců, může být uveden i jako tvůrce s připojeným „(Ed.)“ za jménem."""@cs,
+        """A person who oversees the details related to the publication format of the resource.\r
+Note: if the Editor is to be credited in place of multiple creators, the Editor’s name may be supplied as Creator, with “(Ed.)” appended to the name."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:Editor,
+        datacite-contributortype:Editor ;
+    skos:inScheme nma-roles: ;
+    skos:notation "editor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Editor"@cs,
+        "Editor"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "Editor" ;
+    props:marc "edt" ;
+    props:openaire "Editor" .
+
+nma-roles:hostinginstitution a skos:Concept ;
+    skos:definition """Obvykle se jedná o organizaci, která umožňuje zpřístupnění zdroje na internetu prostřednictvím poskytování hardwarové/softwarové/provozní podpory. \r
+Tato role obvykle připadá univerzitě, výzkumnému centru nebo organizaci, která datové úložiště provozuje."""@cs,
+        """Typically, the organisation allowing the resource to be available on the internet through the provision of its hardware/software/operating support.\r
+This role normally falls on the University, research center or organization where the data center/data repository belongs."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:HostingInstitution,
+        datacite-contributortype:HostingInstitution ;
+    skos:inScheme nma-roles: ;
+    skos:notation "hostinginstitution"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Hostující instituce"@cs,
+        "Hosting Institution"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "HostingInstitution" ;
+    props:marc "his" ;
+    props:openaire "HostingInstitution" .
+
+nma-roles:other a skos:Concept ;
+    skos:definition """Jakákoli osoba nebo instituce, která významně přispívá k vývoji a/nebo údržbě zdroje, ale jejíž příspěvek není dostatečně popsán žádnou z ostatních hodnot ve slovníku AgentRole. \r
+Může se jednat o fotografa, umělce nebo spisovatele, jehož počin pomohl zdroj zveřejnit (na rozdíl od jeho vytvoření), recenzenta zdroje, někoho, kdo poskytuje autorovi administrativní služby (například ukládání aktualizací do online repozitáře, analýza používání atd.) nebo jednu z mnoha dalších rolí."""@cs,
+        """Any person or institution making a significant contribution to the development and/or maintenance of the resource, but whose contribution is not adequately described by any of the other values for contributorType.\r
+Could be a photographer, artist, or writer whose contribution helped to publicize the resource (as opposed to creating it), a reviewer of the resource, someone providing administrative services to the author (such as depositing updates into an online repository, analysing usage, etc.), or one of many other roles."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:Other,
+        datacite-contributortype:Other ;
+    skos:inScheme nma-roles: ;
+    skos:notation "other"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Jiná role"@cs,
+        "Other"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "Other" ;
+    props:marc "oth" ;
+    props:openaire "Other" .
+
+nma-roles:producer a skos:Concept ;
+    skos:definition "Obvykle osoba nebo organizace zodpovědná za umělecké zpracování a formu mediálního produktu. V datovém průmyslu se může jednat o společnost „produkující“ DVD pro budoucí šíření distributorem."@cs,
+        """Typically, a person or organisation responsible for the artistry and form of a media product.\r
+In the data industry, this may be a company “producing” DVDs that package data for future dissemination by a distributor."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:Producer,
+        datacite-contributortype:Producer ;
+    skos:inScheme nma-roles: ;
+    skos:notation "producer"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Producent"@cs,
+        "Producer"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "Producer" ;
+    props:marc "pro" ;
+    props:openaire "Producer" .
+
+nma-roles:projectleader a skos:Concept ;
+    skos:definition """Osoba, která je oficiálně vedoucím projektového týmu nebo dílčího projektového týmu a podílí se na práci nezbytné pro vývoj zdroje.  \r
+Vedoucí projektu zůstává úzce zapojen do práce po celou dobu existence daného projektového týmu."""@cs,
+        """Person officially designated as head of project team or sub- project team instrumental in the work necessary to development of the resource.\r
+The Project Leader is not “removed” from the work that resulted in the resource; he or she remains intimately involved throughout the life of the particular project team."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:ProjectLeader,
+        datacite-contributortype:ProjectLeader ;
+    skos:inScheme nma-roles: ;
+    skos:notation "projectleader"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vedoucí projektu"@cs,
+        "Project Leader"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "ProjectLeader" ;
+    props:marc "pdr" ;
+    props:openaire "ProjectLeader" .
+
+nma-roles:projectmanager a skos:Concept ;
+    skos:definition """Osoba, která je oficiálně manažerem projektu. Projekt se může skládat z jednoho nebo více projektových týmů a podtýmů. \r
+Manažer projektu má obvykle více administrativní odpovědnosti než skutečné pracovní účasti."""@cs,
+        """Person officially designated as manager of a project. Project may consist of one or many project teams and sub-teams.\r
+The manager of a project normally has more administrative responsibility than actual work involvement."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:ProjectManager,
+        datacite-contributortype:ProjectManager ;
+    skos:inScheme nma-roles: ;
+    skos:notation "projectmanager"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Projektový manažer"@cs,
+        "Project Manager"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "ProjectManager" ;
+    props:marc "rth" ;
+    props:openaire "ProjectManager" .
+
+nma-roles:projectmember a skos:Concept ;
+    skos:definition """Člen určitého projektu/projektového týmu. \r
+Tento slovník neupřesňuje míru zapojení dané osoby."""@cs,
+        """Person on the membership list of a designated project/project team.\r
+This vocabulary may or may not indicate the quality, quantity, or substance of the person’s involvement."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:ProjectMember,
+        datacite-contributortype:ProjectMember ;
+    skos:inScheme nma-roles: ;
+    skos:notation "projectmember"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Člen projektového týmu"@cs,
+        "Project Member"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "ProjectMember" ;
+    props:marc "rtm" ;
+    props:openaire "ProjectMember" .
+
+nma-roles:publisher a skos:Concept ;
+    skos:definition "Název subjektu, který zdroj uchovává, archivuje, publikuje, distribuuje, zveřejňuje, vydává nebo produkuje. Tento popisný údaj slouží následně k citování a žádosti o DOI, proto je třeba zvážit určení této role."@cs,
+        "The name of the entity that holds, archives, publishes, prints, distributes, releases, issues, or produces the resource. This property will be used to formulate the citation, so consider the prominence of the role."@en ;
+    skos:exactMatch ccmm-agentrole:Publisher ;
+    skos:inScheme nma-roles: ;
+    skos:notation "publisher"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vydavatel"@cs,
+        "Publisher"@en ;
+    skos:topConceptOf nma-roles: .
+
+nma-roles:registrationagency a skos:Concept ;
+    skos:definition """Instituce/organizace oficiálně pověřená registračním orgánem k vyřizování specifických úkolů v rámci definované oblasti odpovědnosti. \r
+DataCite je jednou z registračních agentur Mezinárodní nadace DOI (IDF). Jedním z úkolů DataCite je přiřazovat prefixy DOI agentům (konsorciím či jednotlivým provozovatelům služeb), kteří poté přiřazují identifikátory DOI uživatelům, poskytují metadata zpět do registru DataCite atd."""@cs,
+        """Institution/organisation officially appointed by a Registration Authority to handle specific tasks within a defined area of responsibility.\r
+DataCite is a Registration Agency for the International DOI Foundation (IDF). One of DataCite’s tasks is to assign DOI prefixes to the allocating agents who then assign the full, specific character string to data clients, provide metadata back to the DataCite registry, etc."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:RegistrationAgency,
+        datacite-contributortype:RegistrationAgency ;
+    skos:inScheme nma-roles: ;
+    skos:notation "registrationagency"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Registrační agentura"@cs,
+        "Registration Agency"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "RegistrationAgency" ;
+    props:marc "cor" ;
+    props:openaire "RegistrationAgency" .
+
+nma-roles:registrationauthority a skos:Concept ;
+    skos:definition "Normalizační orgán, od kterého registrační agentury získávají oficiální uznání a pokyny. IDF slouží jako registrační orgán pro Mezinárodní organizaci pro normalizaci (ISO) v oblasti digitálních identifikátorů objektů."@cs,
+        """A standards-setting body from which Registration Agencies obtain official recognition and guidance.\r
+The IDF serves as the Registration Authority for the International Standards Organisation (ISO) in the area/domain of Digital Object Identifiers."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:RegistrationAuthority,
+        datacite-contributortype:RegistrationAuthority ;
+    skos:inScheme nma-roles: ;
+    skos:notation "registrationauthority"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Registrační autorita"@cs,
+        "Registration Authority"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "RegistrationAuthority" ;
+    props:marc "cor" ;
+    props:openaire "RegistrationAuthority" .
+
+nma-roles:relatedperson a skos:Concept ;
+    skos:definition """Osoba bez konkrétně definované role při tvorbě datasetu, ale autor si přeje tuto osobu uvést. \r
+Poznámky k použití: Tato osoba může být autorův intelektuální mentor, osoba poskytující intelektuální vedení v daném oboru atd."""@cs,
+        """A person without a specifically defined role in the development of the resource, but who is someone the author wishes to recognize.\r
+Usage Notes: This person could be an author’s intellectual mentor, a person providing intellectual leadership in the discipline or subject domain, etc."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:RelatedPerson,
+        datacite-contributortype:RelatedPerson ;
+    skos:inScheme nma-roles: ;
+    skos:notation "relatedperson"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Související osoba"@cs,
+        "Related Person"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "RelatedPerson" ;
+    props:marc "oth" ;
+    props:openaire "RelatedPerson" .
+
+nma-roles:researcher a skos:Concept ;
+    skos:definition """Osoba podílející se na analýze dat nebo na výsledích experimentu či studie. Může označovat i stážistu nebo asistenta jednoho z autorů, který sice pomáhal s výzkumem, ale nebyl natolik „klíčový“, aby byl uveden jako autor. \r
+Mělo by se jednat o osobu, nikoli o instituci. Upozorňujeme, že osoba podílející se na shromažďování dat by spadala pod typ přispěvatele „Sběratel dat“. Výzkumník může například najít další data online a porovnat je s daty shromážděnými pro experiment nebo studii."""@cs,
+        """A person involved in analysing data or the results of an experiment or formal study. May indicate an intern or assistant to one of the authors who helped with research but who was not so “key” as to be listed as an author.\r
+Should be a person, not an institution. Note that a person involved in the gathering of data would fall under the contributorType “DataCollector.” The researcher may find additional data online and correlate it to the data collected for the experiment or study, for example."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:Researcher,
+        datacite-contributortype:Researcher ;
+    skos:inScheme nma-roles: ;
+    skos:notation "researcher"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Výzkumník"@cs,
+        "Researcher"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "Researcher" ;
+    props:marc "res" ;
+    props:openaire "Researcher" .
+
+nma-roles:researchgroup a skos:Concept ;
+    skos:definition """Obvykle se vztahuje na skupinu jednotlivců, pracující v určité laboratoři, oddělení nebo divizi, která má specificky definované zaměření činnosti. \r
+Může fungovat v užším rozsahu; může, ale nemusí mít menší administrativní odpovědnost než projektový tým."""@cs,
+        """Typically refers to a group of individuals with a lab, department, or division that has a specifically defined focus of activity.\r
+May operate at a narrower level of scope; may or may not hold less administrative responsibility than a project team."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:ResearchGroup,
+        datacite-contributortype:ResearchGroup ;
+    skos:inScheme nma-roles: ;
+    skos:notation "researchgroup"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Výzkumná skupina"@cs,
+        "Research Group"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "ResearchGroup" ;
+    props:marc "rtm" ;
+    props:openaire "ResearchGroup" .
+
+nma-roles:rightsholder a skos:Concept ;
+    skos:definition "Osoba nebo instituce, která vlastní nebo spravuje majetková práva, včetně práv duševního vlastnictví k danému zdroji."@cs,
+        "Person or institution owning or managing property rights, including intellectual property rights over the resource."@en ;
+    skos:exactMatch ccmm-agentrole-contributor:RightsHolder,
+        datacite-contributortype:RightsHolder ;
+    skos:inScheme nma-roles: ;
+    skos:notation "rightsholder"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Majitel práv"@cs,
+        "Rights Holder"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "RightsHolder" ;
+    props:marc "cph" ;
+    props:openaire "RightsHolder" .
+
+nma-roles:sponsor a skos:Concept ;
+    skos:definition """Osoba nebo organizace, která poskytla smlouvu na dotaci nebo pod jejíž záštitou byl zdroj vytvořen, sestaven či vyvinut atd. \r
+Zahrnuje organizace, které poskytují věcnou podporu prostřednictvím darů, poskytnutí personálu, zařízení či přístrojů nezbytných pro vývoj zdroje atd."""@cs,
+        """Person or organisation that issued a contract or under the auspices of which a work has been written, printed, published, developed, etc.\r
+Includes organisations that provide in-kind support, through donation, provision of people or a facility or instrumentation necessary for the development of the resource, etc."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:Sponsor,
+        datacite-contributortype:Sponsor ;
+    skos:inScheme nma-roles: ;
+    skos:notation "sponsor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Sponzor"@cs,
+        "Sponsor"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "Sponsor" ;
+    props:marc "spn" ;
+    props:openaire "Sponsor" .
+
+nma-roles:supervisor a skos:Concept ;
+    skos:definition "Určený supervizor nad jednou nebo více skupinami/týmy pracujícími na tvorbě zdroje nebo nad jedním či více kroky vývojového procesu."@cs,
+        "Designated administrator over one or more groups/teams working to produce a resource, or over one or more steps of a development process."@en ;
+    skos:exactMatch ccmm-agentrole-contributor:Supervisor,
+        datacite-contributortype:Supervisor ;
+    skos:inScheme nma-roles: ;
+    skos:notation "supervisor"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Supervizor"@cs,
+        "Supervisor"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "Supervisor" ;
+    props:marc "dgs" ;
+    props:openaire "Supervisor" .
+
+nma-roles:translator a skos:Concept ;
+    skos:definition """Osoba, organizace nebo systém zodpovědný za převod obsahu zdroje z jednoho jazyka do jiného, ​​přičemž zachovává jeho význam a zamýšlené sdělení. \r
+Tento typ přispěvatele by měl být použit pro metadata DOI pro zdroj, který byl přeložen z jiného zdroje."""@cs,
+        """A person, organization, or automated system responsible for converting the content of a resource from one language into another, preserving its meaning and intended message.\r
+This contributor type should be applied to DOI metadata for a resource which has been translated from another resource."""@en ;
+    skos:exactMatch ccmm-agentrole-contributor:Translator,
+        datacite-contributortype:Translator ;
+    skos:inScheme nma-roles: ;
+    skos:notation "translator"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Překladatel"@cs,
+        "Translator"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "Translator" ;
+    props:marc "trl" .
+
+nma-roles:workpackageleader a skos:Concept ;
+    skos:definition "Pracovní balíček je uznaný datový produkt, jehož celý obsah nemusí být zahrnut v publikaci. Balíček může však zahrnovat například poznámky, vyřazené dokumenty apod. Vedoucí pracovního balíčku je odpovědný za zajištění úplnosti obsahu, verzování a dostupnost pracovního balíčku během vývoje daného zdroje."@cs,
+        " A Work Package is a recognized data product, not all of which is included in publication. The package, instead, may include notes, discarded documents, etc. The Work Package Leader is responsible for ensuring the comprehensive contents, versioning, and availability of the Work Package during the development of the resource."@en ;
+    skos:exactMatch ccmm-agentrole-contributor:WorkPackageLeader,
+        datacite-contributortype:WorkPackageLeader ;
+    skos:inScheme nma-roles: ;
+    skos:notation "workpackageleader"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vedoucí pracovního balíku"@cs,
+        "Work Package Leader"@en ;
+    skos:topConceptOf nma-roles: ;
+    props:datacite "WorkPackageLeader" ;
+    props:marc "led" ;
+    props:openaire "WorkPackageLeader" .
+
+nma-roles: skos:hasTopConcept nma-roles:contactperson,
+        nma-roles:contributor,
+        nma-roles:creator,
+        nma-roles:datacollector,
+        nma-roles:datacurator,
+        nma-roles:datamanager,
+        nma-roles:distributor,
+        nma-roles:editor,
+        nma-roles:hostinginstitution,
+        nma-roles:other,
+        nma-roles:producer,
+        nma-roles:projectleader,
+        nma-roles:projectmanager,
+        nma-roles:projectmember,
+        nma-roles:publisher,
+        nma-roles:registrationagency,
+        nma-roles:registrationauthority,
+        nma-roles:relatedperson,
+        nma-roles:researcher,
+        nma-roles:researchgroup,
+        nma-roles:rightsholder,
+        nma-roles:sponsor,
+        nma-roles:supervisor,
+        nma-roles:translator,
+        nma-roles:workpackageleader .
+

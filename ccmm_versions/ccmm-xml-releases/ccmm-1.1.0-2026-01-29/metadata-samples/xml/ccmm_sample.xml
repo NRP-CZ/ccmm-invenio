@@ -5,7 +5,7 @@
     <iri>https://organization.cz/dataset_server/dataset_id</iri>
     <metadata_identification>
         <!-- references the original metadata IRI -->
-        <iri>https://original-catalogue/dataset_metadata_id</iri>
+        <iri>https://original-repository.cz/dataset_metadata_id</iri>
         <language>
             <iri>http://publications.europa.eu/resource/authority/language/CES</iri>
             <label xml:lang="cs">čeština</label>
@@ -14,8 +14,8 @@
             <relation>
                 <person>
                     <identifier>
-                        <iri>https://orcid.org/0030-04X2-2030-4X26</iri>
-                        <value>0030-04X2-2030-4X26</value>
+                        <iri>https://orcid.org/0000-0002-1825-0097</iri>
+                        <value>0000-0002-1825-0097</value>
                         <scheme>
                             <iri>https://orcid.org/</iri>
                             <label xml:lang="">ORCID</label>
@@ -96,8 +96,8 @@
         <relation>
             <person>
                 <identifier>
-                    <iri>https://orcid.org/0030-04X2-2030-4X26</iri>
-                    <value>0030-04X2-2030-4X26</value>
+                    <iri>https://orcid.org/0000-0002-1825-0097</iri>
+                    <value>0000-0002-1825-0097</value>
                     <scheme>
                         <iri>https://orcid.org/</iri>
                         <label xml:lang="">ORCID</label>
@@ -136,8 +136,8 @@
         <relation>
             <person>
                 <identifier>
-                    <iri>https://orcid.org/0023-0802-44X6-26X0</iri>
-                    <value>0023-0802-44X6-26X0</value>
+                    <iri>https://orcid.org/0000-0001-9999-9990</iri>
+                    <value>0000-0001-9999-9990</value>
                     <scheme>
                         <iri>https://orcid.org/</iri>
                         <label xml:lang="">ORCID</label>
@@ -260,7 +260,7 @@
             etc.) by or on behalf of public authorities.</definition>
         <classification_code>EF</classification_code>
         <subject_scheme>
-            <iri>https://inspire.ec.europa.eu/theme/</iri>
+            <iri>http://inspire.ec.europa.eu/theme</iri>
             <label xml:lang="en">INSPIRE theme register</label>
         </subject_scheme>
     </subject>
@@ -276,8 +276,8 @@
     <location>
         <!-- this sample shows all ways of representing location -->
         <bounding_box>
-            <gml:lowerCorner>13.394972457505816 49.50127042751268</gml:lowerCorner>
-            <gml:upperCorner>15.585575400519133 50.61421606255462</gml:upperCorner>
+            <gml:lowerCorner>13.411503893003527 49.50408988161226</gml:lowerCorner>
+            <gml:upperCorner>15.5246155982382 50.61835182571946</gml:upperCorner>
         </bounding_box>
         <name>Středočeský kraj</name>
         <geometry>
@@ -287,13 +287,31 @@
                     <gml:Polygon gml:id="S.AU.2.27.1">
                         <gml:exterior>
                             <gml:LinearRing>
-                                <gml:posList>-700345.18 -989088.81 -700397.4 -989124.72 -700413.72
-                                    -989135.06 -700460.36 -989161.37 -700464.2 -989163.4 -700499.66
-                                    -989177.78 -700543.38 -989185.44 -700547.56 -989186.17
-                                    -734005.2 -1034221.4 -734000.7 -1034206.55 -733990.88 -1034174.1
-                                    -733982.57 -1034166.93 -733980.5 -1034165.15 -733970.63
-                                    -1034131.76 -733969.44 -1034127.73 -733973.52 -1034126.34
-                                    -733972.62 -1034123.26</gml:posList>
+                                <gml:posList>-730237.41 -997136.95 -732295.54 -996116.80 -733233.89 -1003002.16 -736507.17 -1006360.57
+                                    -741263.00 -1002889.53 -743139.28 -1012077.01
+                                    -751130.65 -1014387.48 -766969.05 -1009329.15
+                                    -778426.71 -1018774.77 -785442.86 -1016943.02
+                                    -806859.10 -1023460.07 -814019.53 -1030676.18
+                                    -814787.59 -1038460.37 -786725.29 -1052162.12
+                                    -791636.01 -1067696.79 -788796.36 -1079091.98
+                                    -798516.24 -1082581.28 -798971.78 -1098250.78
+                                    -784046.57 -1101456.14 -777536.86 -1096739.79
+                                    -775235.03 -1102186.84 -762255.14 -1100341.67
+                                    -753514.15 -1103789.24 -740663.57 -1103689.53
+                                    -735505.65 -1109484.66 -728532.06 -1106345.48
+                                    -726448.02 -1096843.45 -714422.44 -1107990.80
+                                    -708306.87 -1101858.37 -692000.29 -1103743.06
+                                    -690509.35 -1098444.09 -695340.57 -1093171.03
+                                    -691268.56 -1086770.28 -668695.95 -1078860.15
+                                    -666088.23 -1066035.84 -676631.34 -1056242.59
+                                    -671704.62 -1047572.26 -677555.34 -1044220.93
+                                    -671442.93 -1037329.18 -673634.71 -1029010.00
+                                    -684225.05 -1028280.03 -691317.88 -1017529.60
+                                    -685112.49 -1008299.57 -688076.27 -998515.42
+                                    -700091.24 -989167.62 -704843.81 -993332.49 -707873.66
+                                    -996533.96 -711109.80 -993705.66 -713552.03 -996982.65
+                                    -717957.32 -1001401.33 -724010.30 -1001589.31
+                                    -730237.41 -997136.95</gml:posList>
                             </gml:LinearRing>
                         </gml:exterior>
                     </gml:Polygon>
@@ -364,7 +382,7 @@
             vnějšího ovzduší a čistším ovzduší pro Evropu</title>
         <resource_url>https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=CELEX:32008L0050&amp;qid=1754039487879</resource_url>
         <resource_type>
-            <iri>http://purl.org/coar/resource_type/c_18cf/</iri>
+            <iri>http://purl.org/coar/resource_type/c_18cf</iri>
             <label xml:lang="en">text</label>
             <label xml:lang="cs">text</label>
         </resource_type>
@@ -428,7 +446,8 @@
                 </endpoint_url>
             </access_service>
             <conforms_to_specification>
-                <iri/>
+                <!-- ELI of the regulation -->
+                <iri>http://data.europa.eu/eli/reg/2009/976/oj</iri>
                 <label xml:lang="cs">NAŘÍZENÍ KOMISE (ES) č. 976/2009 ze dne 19. října 2009, kterým
                     se provádí směrnice Evropského parlamentu a Rady 2007/2/ES, pokud jde o síťové
                     služby</label>
@@ -467,17 +486,17 @@
                 <label xml:lang="en">Environmental monitoring facilities</label>
             </conforms_to_schema>
             <format>
-                <iri>https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/GPKG</iri>
+                <iri>http://publications.europa.eu/resource/authority/file-type/GPKG</iri>
                 <label xml:lang="en">GeoPackage</label>
             </format>
             <media_type>
-                <iri>https://op.europa.eu/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/ZIP</iri>
-                <label xml:lang="en">ZIP</label>
+                <iri>http://www.iana.org/assignments/media-types/application/zip</iri>
+                <label xml:lang="en">application/zip</label>
             </media_type>
             <byte_size>256</byte_size>
             <checksum>
                 <checksum_value>9c56cc51b374d3a94e096e3f5483c05c6e69e221ae5d62a5435c5f3a9fc84938</checksum_value>
-                <algorithm><iri>https://www.iana.org/go/rfc6920</iri></algorithm>
+                <algorithm><iri>http://spdx.org/rdf/terms#checksumAlgorithm_sha256</iri></algorithm>
             </checksum>
         </distribution_downloadable_file>
     </distribution>

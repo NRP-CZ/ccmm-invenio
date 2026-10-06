@@ -1,0 +1,3107 @@
+- id: ford:10000
+  scheme: FORD
+  title:
+    cs: Přírodní vědy
+    en: Natural sciences
+  subject: Natural sciences
+  props:
+    classification_code: '10000'
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000
+- id: ford:10100
+  scheme: FORD
+  title:
+    cs: Matematika
+    en: Mathematics
+  subject: Mathematics
+  props:
+    classification_code: '10100'
+    parents: ford:10000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100
+- id: ford:10101
+  scheme: FORD
+  title:
+    cs: Čistá matematika
+    en: Pure mathematics
+  subject: Pure mathematics
+  props:
+    classification_code: '10101'
+    parents: ford:10100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10101
+- id: ford:10102
+  scheme: FORD
+  title:
+    cs: Aplikovaná matematika
+    en: Applied mathematics
+  subject: Applied mathematics
+  props:
+    classification_code: '10102'
+    parents: ford:10100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10102
+- id: ford:10103
+  scheme: FORD
+  title:
+    cs: Pravděpodobnost a statistika
+    en: Statistics and probability
+  subject: Statistics and probability
+  props:
+    classification_code: '10103'
+    parents: ford:10100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10100/10103
+- id: ford:10200
+  scheme: FORD
+  title:
+    cs: Počítačové vědy a informační věda
+    en: Computer and information sciences
+  subject: Computer and information sciences
+  props:
+    classification_code: '10200'
+    parents: ford:10000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200
+- id: ford:10201
+  scheme: FORD
+  title:
+    cs: Počítačové vědy, informační věda, bioinformatika
+    en: 'Computer sciences, information science, bioinformathics '
+  subject: 'Computer sciences, information science, bioinformathics '
+  props:
+    classification_code: '10201'
+    parents: ford:10200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10200/10201
+- id: ford:10300
+  scheme: FORD
+  title:
+    cs: Fyzikální vědy
+    en: Physical sciences
+  subject: Physical sciences
+  props:
+    classification_code: '10300'
+    parents: ford:10000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300
+- id: ford:10301
+  scheme: FORD
+  title:
+    cs: Atomová fyzika, molekulární a chemická fyzika (fyzika atomů a molekul včetně
+      srážek, interakcí s radiací, magnetická rezonance, Mössbauerův jev)
+    en: Atomic, molecular and chemical physics (physics of atoms and molecules including
+      collision, interaction with radiation, magnetic resonances, Mössbauer effect)
+  subject: Atomic, molecular and chemical physics (physics of atoms and molecules
+    including collision, interaction with radiation, magnetic resonances, Mössbauer
+    effect)
+  props:
+    classification_code: '10301'
+    parents: ford:10300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10301
+- id: ford:10302
+  scheme: FORD
+  title:
+    cs: Fyzika kondenzovaných látek (zahrnuje fyziku pevných látek, supravodivost)
+    en: Condensed matter physics (including formerly solid state physics, supercond.)
+  subject: Condensed matter physics (including formerly solid state physics, supercond.)
+  props:
+    classification_code: '10302'
+    parents: ford:10300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10302
+- id: ford:10303
+  scheme: FORD
+  title:
+    cs: Fyzika částic
+    en: Particles and field physics
+  subject: Particles and field physics
+  props:
+    classification_code: '10303'
+    parents: ford:10300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10303
+- id: ford:10304
+  scheme: FORD
+  title:
+    cs: Atomová fyzika
+    en: Nuclear physics
+  subject: Nuclear physics
+  props:
+    classification_code: '10304'
+    parents: ford:10300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10304
+- id: ford:10305
+  scheme: FORD
+  title:
+    cs: Fyzika kapalin a plazmatu (zahrnuje fyziku povrchů)
+    en: Fluids and plasma physics (including surface physics)
+  subject: Fluids and plasma physics (including surface physics)
+  props:
+    classification_code: '10305'
+    parents: ford:10300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10305
+- id: ford:10306
+  scheme: FORD
+  title:
+    cs: Optika (zahrnuje laserovou optiku, kvantovou optiku)
+    en: Optics (including laser optics and quantum optics)
+  subject: Optics (including laser optics and quantum optics)
+  props:
+    classification_code: '10306'
+    parents: ford:10300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10306
+- id: ford:10307
+  scheme: FORD
+  title:
+    cs: Akustika
+    en: Acoustics
+  subject: Acoustics
+  props:
+    classification_code: '10307'
+    parents: ford:10300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10307
+- id: ford:10308
+  scheme: FORD
+  title:
+    cs: Astronomie (zahrnuje astrofyziku, vědu o vesmíru)
+    en: Astronomy (including astrophysics, space science)
+  subject: Astronomy (including astrophysics, space science)
+  props:
+    classification_code: '10308'
+    parents: ford:10300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10300/10308
+- id: ford:10400
+  scheme: FORD
+  title:
+    cs: Chemické vědy
+    en: Chemical sciences
+  subject: Chemical sciences
+  props:
+    classification_code: '10400'
+    parents: ford:10000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400
+- id: ford:10401
+  scheme: FORD
+  title:
+    cs: Organická chemie
+    en: Organic chemistry
+  subject: Organic chemistry
+  props:
+    classification_code: '10401'
+    parents: ford:10400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10401
+- id: ford:10402
+  scheme: FORD
+  title:
+    cs: Anorganická a jaderná chemie
+    en: Inorganic and nuclear chemistry
+  subject: Inorganic and nuclear chemistry
+  props:
+    classification_code: '10402'
+    parents: ford:10400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10402
+- id: ford:10403
+  scheme: FORD
+  title:
+    cs: Fyzikální chemie
+    en: Physical chemistry
+  subject: Physical chemistry
+  props:
+    classification_code: '10403'
+    parents: ford:10400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10403
+- id: ford:10404
+  scheme: FORD
+  title:
+    cs: Chemie polymerů
+    en: Polymer science
+  subject: Polymer science
+  props:
+    classification_code: '10404'
+    parents: ford:10400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10404
+- id: ford:10405
+  scheme: FORD
+  title:
+    cs: Elektrochemie (zahrnuje suché články, baterie, palivové články, korozní kovy,
+      elektrolýzu)
+    en: Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)
+  subject: Electrochemistry (dry cells, batteries, fuel cells, corrosion metals, electrolysis)
+  props:
+    classification_code: '10405'
+    parents: ford:10400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10405
+- id: ford:10406
+  scheme: FORD
+  title:
+    cs: Analytická chemie
+    en: Analytical chemistry
+  subject: Analytical chemistry
+  props:
+    classification_code: '10406'
+    parents: ford:10400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10400/10406
+- id: ford:10500
+  scheme: FORD
+  title:
+    cs: 'Vědy o Zemi a související environmentální vědy '
+    en: Earth and related environmental sciences
+  subject: Earth and related environmental sciences
+  props:
+    classification_code: '10500'
+    parents: ford:10000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500
+- id: ford:10501
+  scheme: FORD
+  title:
+    cs: Hydrologie
+    en: Hydrology
+  subject: Hydrology
+  props:
+    classification_code: '10501'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10501
+- id: ford:10502
+  scheme: FORD
+  title:
+    cs: Oceánografie
+    en: Oceanography
+  subject: Oceanography
+  props:
+    classification_code: '10502'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10502
+- id: ford:10503
+  scheme: FORD
+  title:
+    cs: Vodní zdroje
+    en: Water resources
+  subject: Water resources
+  props:
+    classification_code: '10503'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10503
+- id: ford:10504
+  scheme: FORD
+  title:
+    cs: Mineralogie
+    en: Mineralogy
+  subject: Mineralogy
+  props:
+    classification_code: '10504'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10504
+- id: ford:10505
+  scheme: FORD
+  title:
+    cs: Geologie
+    en: Geology
+  subject: Geology
+  props:
+    classification_code: '10505'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10505
+- id: ford:10506
+  scheme: FORD
+  title:
+    cs: Paleontologie
+    en: Paleontology
+  subject: Paleontology
+  props:
+    classification_code: '10506'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10506
+- id: ford:10507
+  scheme: FORD
+  title:
+    cs: Vulkanologie
+    en: Volcanology
+  subject: Volcanology
+  props:
+    classification_code: '10507'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10507
+- id: ford:10508
+  scheme: FORD
+  title:
+    cs: Fyzická geografie
+    en: Physical geography
+  subject: Physical geography
+  props:
+    classification_code: '10508'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10508
+- id: ford:10509
+  scheme: FORD
+  title:
+    cs: Meteorologie, vědy o atmosféře
+    en: Meteorology and atmospheric sciences
+  subject: Meteorology and atmospheric sciences
+  props:
+    classification_code: '10509'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10509
+- id: ford:10510
+  scheme: FORD
+  title:
+    cs: Výzkum klimatu
+    en: Climatic research
+  subject: Climatic research
+  props:
+    classification_code: '10510'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10510
+- id: ford:10511
+  scheme: FORD
+  title:
+    cs: 'Environmentální vědy '
+    en: 'Environmental sciences '
+  subject: 'Environmental sciences '
+  props:
+    classification_code: '10511'
+    parents: ford:10500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10500/10511
+- id: ford:10600
+  scheme: FORD
+  title:
+    cs: Biologie
+    en: Biological sciences
+  subject: Biological sciences
+  props:
+    classification_code: '10600'
+    parents: ford:10000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600
+- id: ford:10601
+  scheme: FORD
+  title:
+    cs: Buněčná biologie
+    en: Cell biology
+  subject: Cell biology
+  props:
+    classification_code: '10601'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10601
+- id: ford:10602
+  scheme: FORD
+  title:
+    cs: Biologie (teoretická, matematická, termální, kryobiologie, biologický rytmus),
+      evoluční biologie
+    en: Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm),
+      evolutionary biology
+  subject: Biology (theoretical, mathematical, thermal, cryobiology, biological rhythm),
+    evolutionary biology
+  props:
+    classification_code: '10602'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10602
+- id: ford:10603
+  scheme: FORD
+  title:
+    cs: Genetika a dědičnost
+    en: 'Genetics and heredity '
+  subject: 'Genetics and heredity '
+  props:
+    classification_code: '10603'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10603
+- id: ford:10604
+  scheme: FORD
+  title:
+    cs: Reprodukční biologie
+    en: Reproductive biology
+  subject: Reproductive biology
+  props:
+    classification_code: '10604'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10604
+- id: ford:10605
+  scheme: FORD
+  title:
+    cs: Vývojová biologie
+    en: Developmental biology
+  subject: Developmental biology
+  props:
+    classification_code: '10605'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10605
+- id: ford:10606
+  scheme: FORD
+  title:
+    cs: Mikrobiologie
+    en: Microbiology
+  subject: Microbiology
+  props:
+    classification_code: '10606'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10606
+- id: ford:10607
+  scheme: FORD
+  title:
+    cs: Virologie
+    en: Virology
+  subject: Virology
+  props:
+    classification_code: '10607'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10607
+- id: ford:10608
+  scheme: FORD
+  title:
+    cs: Biochemie a molekulární biologie
+    en: Biochemistry and molecular biology
+  subject: Biochemistry and molecular biology
+  props:
+    classification_code: '10608'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10608
+- id: ford:10609
+  scheme: FORD
+  title:
+    cs: Biochemické výzkumné metody
+    en: Biochemical research methods
+  subject: Biochemical research methods
+  props:
+    classification_code: '10609'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10609
+- id: ford:10610
+  scheme: FORD
+  title:
+    cs: Biofyzika
+    en: Biophysics
+  subject: Biophysics
+  props:
+    classification_code: '10610'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10610
+- id: ford:10611
+  scheme: FORD
+  title:
+    cs: Botanika
+    en: Plant sciences, botany
+  subject: Plant sciences, botany
+  props:
+    classification_code: '10611'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10611
+- id: ford:10612
+  scheme: FORD
+  title:
+    cs: Mykologie
+    en: Mycology
+  subject: Mycology
+  props:
+    classification_code: '10612'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10612
+- id: ford:10613
+  scheme: FORD
+  title:
+    cs: Zoologie
+    en: Zoology
+  subject: Zoology
+  props:
+    classification_code: '10613'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10613
+- id: ford:10614
+  scheme: FORD
+  title:
+    cs: Behaviorální biologie
+    en: Behavioral sciences biology
+  subject: Behavioral sciences biology
+  props:
+    classification_code: '10614'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10614
+- id: ford:10615
+  scheme: FORD
+  title:
+    cs: Ornitologie
+    en: Ornithology
+  subject: Ornithology
+  props:
+    classification_code: '10615'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10615
+- id: ford:10616
+  scheme: FORD
+  title:
+    cs: Entomologie
+    en: Entomology
+  subject: Entomology
+  props:
+    classification_code: '10616'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10616
+- id: ford:10617
+  scheme: FORD
+  title:
+    cs: Mořská biologie, sladkovodní biologie, limnologie
+    en: Marine biology, freshwater biology, limnology
+  subject: Marine biology, freshwater biology, limnology
+  props:
+    classification_code: '10617'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10617
+- id: ford:10618
+  scheme: FORD
+  title:
+    cs: Ekologie
+    en: Ecology
+  subject: Ecology
+  props:
+    classification_code: '10618'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10618
+- id: ford:10619
+  scheme: FORD
+  title:
+    cs: Ochrana biodiverzity
+    en: Biodiversity conservation
+  subject: Biodiversity conservation
+  props:
+    classification_code: '10619'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10619
+- id: ford:10620
+  scheme: FORD
+  title:
+    cs: Ostatní biologické vědy
+    en: Other biological topics
+  subject: Other biological topics
+  props:
+    classification_code: '10620'
+    parents: ford:10600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10600/10620
+- id: ford:10700
+  scheme: FORD
+  title:
+    cs: Ostatní přírodní vědy
+    en: Other natural sciences
+  subject: Other natural sciences
+  props:
+    classification_code: '10700'
+    parents: ford:10000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/10000/10700
+- id: ford:20000
+  scheme: FORD
+  title:
+    cs: Technické vědy, inženýrství
+    en: Engineering and technology
+  subject: Engineering and technology
+  props:
+    classification_code: '20000'
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000
+- id: ford:20100
+  scheme: FORD
+  title:
+    cs: Stavební inženýrství
+    en: Civil engineering
+  subject: Civil engineering
+  props:
+    classification_code: '20100'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100
+- id: ford:20101
+  scheme: FORD
+  title:
+    cs: Stavební inženýrství
+    en: Civil engineering
+  subject: Civil engineering
+  props:
+    classification_code: '20101'
+    parents: ford:20100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20101
+- id: ford:20102
+  scheme: FORD
+  title:
+    cs: Konstrukční inženýrství, výstavba měst
+    en: Construction engineering, municipal and structural engineering
+  subject: Construction engineering, municipal and structural engineering
+  props:
+    classification_code: '20102'
+    parents: ford:20100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20102
+- id: ford:20103
+  scheme: FORD
+  title:
+    cs: Architektura
+    en: Architecture engineering
+  subject: Architecture engineering
+  props:
+    classification_code: '20103'
+    parents: ford:20100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20103
+- id: ford:20104
+  scheme: FORD
+  title:
+    cs: Dopravní inženýrství
+    en: Transport engineering
+  subject: Transport engineering
+  props:
+    classification_code: '20104'
+    parents: ford:20100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20100/20104
+- id: ford:20200
+  scheme: FORD
+  title:
+    cs: Elektrotechnika, elektronika
+    en: Electrical engineering, electronic engineering, information engineering
+  subject: Electrical engineering, electronic engineering, information engineering
+  props:
+    classification_code: '20200'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200
+- id: ford:20201
+  scheme: FORD
+  title:
+    cs: Elektrotechnika, elektronika
+    en: Electrical and electronic engineering
+  subject: Electrical and electronic engineering
+  props:
+    classification_code: '20201'
+    parents: ford:20200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20201
+- id: ford:20202
+  scheme: FORD
+  title:
+    cs: Sdělovací technika a systémy
+    en: Communication engineering and systems
+  subject: Communication engineering and systems
+  props:
+    classification_code: '20202'
+    parents: ford:20200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20202
+- id: ford:20203
+  scheme: FORD
+  title:
+    cs: Telekomunikace
+    en: Telecommunications
+  subject: Telecommunications
+  props:
+    classification_code: '20203'
+    parents: ford:20200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20203
+- id: ford:20204
+  scheme: FORD
+  title:
+    cs: Robotika a automatické řízení
+    en: Robotics and automatic control
+  subject: Robotics and automatic control
+  props:
+    classification_code: '20204'
+    parents: ford:20200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20204
+- id: ford:20205
+  scheme: FORD
+  title:
+    cs: Automatizace a kontrola systémů
+    en: Automation and control systems
+  subject: Automation and control systems
+  props:
+    classification_code: '20205'
+    parents: ford:20200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20205
+- id: ford:20206
+  scheme: FORD
+  title:
+    cs: Počítačový hardware a architektura
+    en: Computer hardware and architecture
+  subject: Computer hardware and architecture
+  props:
+    classification_code: '20206'
+    parents: ford:20200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20200/20206
+- id: ford:20300
+  scheme: FORD
+  title:
+    cs: Strojní inženýrství
+    en: Mechanical engineering
+  subject: Mechanical engineering
+  props:
+    classification_code: '20300'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300
+- id: ford:20301
+  scheme: FORD
+  title:
+    cs: Strojní inženýrství
+    en: Mechanical engineering
+  subject: Mechanical engineering
+  props:
+    classification_code: '20301'
+    parents: ford:20300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20301
+- id: ford:20302
+  scheme: FORD
+  title:
+    cs: Aplikovaná mechanika
+    en: Applied mechanics
+  subject: Applied mechanics
+  props:
+    classification_code: '20302'
+    parents: ford:20300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20302
+- id: ford:20303
+  scheme: FORD
+  title:
+    cs: Termodynamika
+    en: Thermodynamics
+  subject: Thermodynamics
+  props:
+    classification_code: '20303'
+    parents: ford:20300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20303
+- id: ford:20304
+  scheme: FORD
+  title:
+    cs: Letecké inženýrství
+    en: Aerospace engineering
+  subject: Aerospace engineering
+  props:
+    classification_code: '20304'
+    parents: ford:20300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20304
+- id: ford:20305
+  scheme: FORD
+  title:
+    cs: 'Jaderné inženýrství '
+    en: 'Nuclear related engineering '
+  subject: 'Nuclear related engineering '
+  props:
+    classification_code: '20305'
+    parents: ford:20300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20305
+- id: ford:20306
+  scheme: FORD
+  title:
+    cs: Audio inženýrství, analýzy spolehlivosti
+    en: Audio engineering, reliability analysis
+  subject: Audio engineering, reliability analysis
+  props:
+    classification_code: '20306'
+    parents: ford:20300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20300/20306
+- id: ford:20400
+  scheme: FORD
+  title:
+    cs: Chemické inženýrství
+    en: Chemical engineering
+  subject: Chemical engineering
+  props:
+    classification_code: '20400'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400
+- id: ford:20401
+  scheme: FORD
+  title:
+    cs: Chemické inženýrství (rostliny, výrobky)
+    en: Chemical engineering (plants, products)
+  subject: Chemical engineering (plants, products)
+  props:
+    classification_code: '20401'
+    parents: ford:20400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20401
+- id: ford:20402
+  scheme: FORD
+  title:
+    cs: Chemické procesní inženýrství
+    en: Chemical process engineering
+  subject: Chemical process engineering
+  props:
+    classification_code: '20402'
+    parents: ford:20400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20400/20402
+- id: ford:20500
+  scheme: FORD
+  title:
+    cs: Materiálové inženýrství
+    en: Materials engineering
+  subject: Materials engineering
+  props:
+    classification_code: '20500'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500
+- id: ford:20501
+  scheme: FORD
+  title:
+    cs: Materiálové inženýrství
+    en: Materials engineering
+  subject: Materials engineering
+  props:
+    classification_code: '20501'
+    parents: ford:20500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20501
+- id: ford:20502
+  scheme: FORD
+  title:
+    cs: Papír a dřevo
+    en: Paper and wood
+  subject: Paper and wood
+  props:
+    classification_code: '20502'
+    parents: ford:20500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20502
+- id: ford:20503
+  scheme: FORD
+  title:
+    cs: Textilie (zahrnuje umělá barviva, barvy, vlákna)
+    en: Textiles (including synthetic dyes, colours, fibres)
+  subject: Textiles (including synthetic dyes, colours, fibres)
+  props:
+    classification_code: '20503'
+    parents: ford:20500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20503
+- id: ford:20504
+  scheme: FORD
+  title:
+    cs: Keramika
+    en: Ceramics
+  subject: Ceramics
+  props:
+    classification_code: '20504'
+    parents: ford:20500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20504
+- id: ford:20505
+  scheme: FORD
+  title:
+    cs: Kompozity (zahrnuje lamináty, vyztužené plasty, cermety, kombinovaná přírodní
+      a umělá vlákna a tkaniny, plněné kompozity)
+    en: Composites (including laminates, reinforced plastics, cermets, combined natural
+      and synthetic fibre fabrics; filled composites)
+  subject: Composites (including laminates, reinforced plastics, cermets, combined
+    natural and synthetic fibre fabrics; filled composites)
+  props:
+    classification_code: '20505'
+    parents: ford:20500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20505
+- id: ford:20506
+  scheme: FORD
+  title:
+    cs: Nátěry a fólie
+    en: Coating and films
+  subject: Coating and films
+  props:
+    classification_code: '20506'
+    parents: ford:20500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20500/20506
+- id: ford:20600
+  scheme: FORD
+  title:
+    cs: Lékařské inženýrství
+    en: Medical engineering
+  subject: Medical engineering
+  props:
+    classification_code: '20600'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600
+- id: ford:20601
+  scheme: FORD
+  title:
+    cs: Lékařské inženýrství
+    en: Medical engineering
+  subject: Medical engineering
+  props:
+    classification_code: '20601'
+    parents: ford:20600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20601
+- id: ford:20602
+  scheme: FORD
+  title:
+    cs: Lékařské laboratorní technologie (laboratorní analýzy vzorků, diagnostické
+      technologie)
+    en: 'Medical laboratory technology (including laboratory samples analysis, diagnostic
+      technologies) '
+  subject: 'Medical laboratory technology (including laboratory samples analysis,
+    diagnostic technologies) '
+  props:
+    classification_code: '20602'
+    parents: ford:20600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20600/20602
+- id: ford:20700
+  scheme: FORD
+  title:
+    cs: 'Environmentální inženýrství '
+    en: Environmental engineering
+  subject: Environmental engineering
+  props:
+    classification_code: '20700'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700
+- id: ford:20701
+  scheme: FORD
+  title:
+    cs: Environmentální a geologické inženýrství, geotechnika
+    en: Environmental and geological engineering, geotechnics
+  subject: Environmental and geological engineering, geotechnics
+  props:
+    classification_code: '20701'
+    parents: ford:20700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20701
+- id: ford:20702
+  scheme: FORD
+  title:
+    cs: Ropné inženýrství (paliva, oleje)
+    en: Petroleum engineering (fuel, oils)
+  subject: Petroleum engineering (fuel, oils)
+  props:
+    classification_code: '20702'
+    parents: ford:20700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20702
+- id: ford:20703
+  scheme: FORD
+  title:
+    cs: Těžba a zpracování minerálů
+    en: Mining and mineral processing
+  subject: Mining and mineral processing
+  props:
+    classification_code: '20703'
+    parents: ford:20700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20703
+- id: ford:20704
+  scheme: FORD
+  title:
+    cs: Energie a paliva
+    en: Energy and fuels
+  subject: Energy and fuels
+  props:
+    classification_code: '20704'
+    parents: ford:20700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20704
+- id: ford:20705
+  scheme: FORD
+  title:
+    cs: Dálkový průzkum Země
+    en: Remote sensing
+  subject: Remote sensing
+  props:
+    classification_code: '20705'
+    parents: ford:20700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20705
+- id: ford:20706
+  scheme: FORD
+  title:
+    cs: Námořní inženýrství, mořská plavidla
+    en: Marine engineering, sea vessels
+  subject: Marine engineering, sea vessels
+  props:
+    classification_code: '20706'
+    parents: ford:20700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20706
+- id: ford:20707
+  scheme: FORD
+  title:
+    cs: Oceánské inženýrství
+    en: Ocean engineering
+  subject: Ocean engineering
+  props:
+    classification_code: '20707'
+    parents: ford:20700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20700/20707
+- id: ford:20800
+  scheme: FORD
+  title:
+    cs: Environmentální biotechnologie
+    en: Environmental biotechnology
+  subject: Environmental biotechnology
+  props:
+    classification_code: '20800'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800
+- id: ford:20801
+  scheme: FORD
+  title:
+    cs: Environmentální biotechnologie
+    en: Environmental biotechnology
+  subject: Environmental biotechnology
+  props:
+    classification_code: '20801'
+    parents: ford:20800
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20801
+- id: ford:20802
+  scheme: FORD
+  title:
+    cs: Bioléčba, diagnostické biotechnologie (zlomky DNA a biosenzory) v environmentálním
+      managementu
+    en: Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices)
+      in environmental management
+  subject: Bioremediation, diagnostic biotechnologies (DNA chips and biosensing devices)
+    in environmental management
+  props:
+    classification_code: '20802'
+    parents: ford:20800
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20802
+- id: ford:20803
+  scheme: FORD
+  title:
+    cs: Environmentální biotechnologie související s etikou
+    en: Environmental biotechnology related ethics
+  subject: Environmental biotechnology related ethics
+  props:
+    classification_code: '20803'
+    parents: ford:20800
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20800/20803
+- id: ford:20900
+  scheme: FORD
+  title:
+    cs: Průmyslové biotechnologie
+    en: Industrial biotechnology
+  subject: Industrial biotechnology
+  props:
+    classification_code: '20900'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900
+- id: ford:20901
+  scheme: FORD
+  title:
+    cs: Průmyslové biotechnologie
+    en: Industrial biotechnology
+  subject: Industrial biotechnology
+  props:
+    classification_code: '20901'
+    parents: ford:20900
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20901
+- id: ford:20902
+  scheme: FORD
+  title:
+    cs: Technologie biovýroby (průmyslové procesy spoléhající se na biologické činitele
+      k řízení procesů), biokatalyzátory, fermentace
+    en: Bioprocessing technologies (industrial processes relying on biological agents
+      to drive the process) biocatalysis, fermentation
+  subject: Bioprocessing technologies (industrial processes relying on biological
+    agents to drive the process) biocatalysis, fermentation
+  props:
+    classification_code: '20902'
+    parents: ford:20900
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20902
+- id: ford:20903
+  scheme: FORD
+  title:
+    cs: Biovýrobky (výrobky, které jsou vyráběny s použitím biologických materiálů
+      jako výchozích produktů), biomateriály, bioplasty, biopaliva, bioodvozené celkové
+      a čisté chemikálie, bioodvozené nové materiály
+    en: Bioproducts (products that are manufactured using biological material as feedstock)
+      biomaterials, bioplastics, biofuels, bioderived bulk and fine chemicals, bio-derived
+      novel materials
+  subject: Bioproducts (products that are manufactured using biological material as
+    feedstock) biomaterials, bioplastics, biofuels, bioderived bulk and fine chemicals,
+    bio-derived novel materials
+  props:
+    classification_code: '20903'
+    parents: ford:20900
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/20900/20903
+- id: ford:21000
+  scheme: FORD
+  title:
+    cs: Nanotechnologie
+    en: Nano-technology
+  subject: Nano-technology
+  props:
+    classification_code: '21000'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000
+- id: ford:21001
+  scheme: FORD
+  title:
+    cs: Nanomateriály (výroba a vlastnosti)
+    en: Nano-materials (production and properties)
+  subject: Nano-materials (production and properties)
+  props:
+    classification_code: '21001'
+    parents: ford:21000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21001
+- id: ford:21002
+  scheme: FORD
+  title:
+    cs: Nanoprocesy (aplikace v nanoměřítku)
+    en: Nano-processes (applications on nano-scale)
+  subject: Nano-processes (applications on nano-scale)
+  props:
+    classification_code: '21002'
+    parents: ford:21000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21000/21002
+- id: ford:21100
+  scheme: FORD
+  title:
+    cs: Ostatní inženýrství a technologie
+    en: Other engineering and technologies
+  subject: Other engineering and technologies
+  props:
+    classification_code: '21100'
+    parents: ford:20000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100
+- id: ford:21101
+  scheme: FORD
+  title:
+    cs: Výrobky potravinářského průmyslu a nápoje
+    en: Food and beverages
+  subject: Food and beverages
+  props:
+    classification_code: '21101'
+    parents: ford:21100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/20000/21100/21101
+- id: ford:30000
+  scheme: FORD
+  title:
+    cs: Lékařské vědy
+    en: Medical and health sciences
+  subject: Medical and health sciences
+  props:
+    classification_code: '30000'
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000
+- id: ford:30100
+  scheme: FORD
+  title:
+    cs: Základní medicína
+    en: Basic medicine
+  subject: Basic medicine
+  props:
+    classification_code: '30100'
+    parents: ford:30000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100
+- id: ford:30101
+  scheme: FORD
+  title:
+    cs: Genetika člověka
+    en: Human genetics
+  subject: Human genetics
+  props:
+    classification_code: '30101'
+    parents: ford:30100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30101
+- id: ford:30102
+  scheme: FORD
+  title:
+    cs: Imunologie
+    en: Immunology
+  subject: Immunology
+  props:
+    classification_code: '30102'
+    parents: ford:30100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30102
+- id: ford:30103
+  scheme: FORD
+  title:
+    cs: Neurovědy (zahrnuje psychofyziologii)
+    en: Neurosciences (including psychophysiology)
+  subject: Neurosciences (including psychophysiology)
+  props:
+    classification_code: '30103'
+    parents: ford:30100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30103
+- id: ford:30104
+  scheme: FORD
+  title:
+    cs: Farmakologie a farmacie
+    en: Pharmacology and pharmacy
+  subject: Pharmacology and pharmacy
+  props:
+    classification_code: '30104'
+    parents: ford:30100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30104
+- id: ford:30105
+  scheme: FORD
+  title:
+    cs: Fyziologie (zahrnující cytologii)
+    en: Physiology (including cytology)
+  subject: Physiology (including cytology)
+  props:
+    classification_code: '30105'
+    parents: ford:30100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30105
+- id: ford:30106
+  scheme: FORD
+  title:
+    cs: Anatomie a morfologie
+    en: 'Anatomy and morphology '
+  subject: 'Anatomy and morphology '
+  props:
+    classification_code: '30106'
+    parents: ford:30100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30106
+- id: ford:30107
+  scheme: FORD
+  title:
+    cs: Lékařská chemie
+    en: Medicinal chemistry
+  subject: Medicinal chemistry
+  props:
+    classification_code: '30107'
+    parents: ford:30100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30107
+- id: ford:30108
+  scheme: FORD
+  title:
+    cs: Toxikologie
+    en: Toxicology
+  subject: Toxicology
+  props:
+    classification_code: '30108'
+    parents: ford:30100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30108
+- id: ford:30109
+  scheme: FORD
+  title:
+    cs: Patologie
+    en: Pathology
+  subject: Pathology
+  props:
+    classification_code: '30109'
+    parents: ford:30100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30100/30109
+- id: ford:30200
+  scheme: FORD
+  title:
+    cs: Klinická medicína
+    en: Clinical medicine
+  subject: Clinical medicine
+  props:
+    classification_code: '30200'
+    parents: ford:30000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200
+- id: ford:30201
+  scheme: FORD
+  title:
+    cs: Srdeční a kardiovaskulární systémy
+    en: Cardiac and cardiovascular systems
+  subject: Cardiac and cardiovascular systems
+  props:
+    classification_code: '30201'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30201
+- id: ford:30202
+  scheme: FORD
+  title:
+    cs: Endokrinologie a metabolismus (zahrnuje cukrovku, hormony)
+    en: Endocrinology and metabolism (including diabetes, hormones)
+  subject: Endocrinology and metabolism (including diabetes, hormones)
+  props:
+    classification_code: '30202'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30202
+- id: ford:30203
+  scheme: FORD
+  title:
+    cs: Dýchací ústrojí
+    en: Respiratory systems
+  subject: Respiratory systems
+  props:
+    classification_code: '30203'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30203
+- id: ford:30204
+  scheme: FORD
+  title:
+    cs: Onkologie
+    en: Oncology
+  subject: Oncology
+  props:
+    classification_code: '30204'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30204
+- id: ford:30205
+  scheme: FORD
+  title:
+    cs: Hematologie
+    en: Hematology
+  subject: Hematology
+  props:
+    classification_code: '30205'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30205
+- id: ford:30206
+  scheme: FORD
+  title:
+    cs: Otorinolaryngologie
+    en: Otorhinolaryngology
+  subject: Otorhinolaryngology
+  props:
+    classification_code: '30206'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30206
+- id: ford:30207
+  scheme: FORD
+  title:
+    cs: Oftalmologie
+    en: Ophthalmology
+  subject: Ophthalmology
+  props:
+    classification_code: '30207'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30207
+- id: ford:30208
+  scheme: FORD
+  title:
+    cs: Stomatologie, ústní chirurgie a lékařství
+    en: Dentistry, oral surgery and medicine
+  subject: Dentistry, oral surgery and medicine
+  props:
+    classification_code: '30208'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30208
+- id: ford:30209
+  scheme: FORD
+  title:
+    cs: Pediatrie
+    en: Paediatrics
+  subject: Paediatrics
+  props:
+    classification_code: '30209'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30209
+- id: ford:30210
+  scheme: FORD
+  title:
+    cs: Klinická neurologie
+    en: Clinical neurology
+  subject: Clinical neurology
+  props:
+    classification_code: '30210'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30210
+- id: ford:30211
+  scheme: FORD
+  title:
+    cs: Ortopedie
+    en: Orthopaedics
+  subject: Orthopaedics
+  props:
+    classification_code: '30211'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30211
+- id: ford:30212
+  scheme: FORD
+  title:
+    cs: Chirurgie
+    en: Surgery
+  subject: Surgery
+  props:
+    classification_code: '30212'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30212
+- id: ford:30213
+  scheme: FORD
+  title:
+    cs: Transplantace
+    en: Transplantation
+  subject: Transplantation
+  props:
+    classification_code: '30213'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30213
+- id: ford:30214
+  scheme: FORD
+  title:
+    cs: Porodnictví a gynekologie
+    en: Obstetrics and gynaecology
+  subject: Obstetrics and gynaecology
+  props:
+    classification_code: '30214'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30214
+- id: ford:30215
+  scheme: FORD
+  title:
+    cs: Psychiatrie
+    en: Psychiatry
+  subject: Psychiatry
+  props:
+    classification_code: '30215'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30215
+- id: ford:30216
+  scheme: FORD
+  title:
+    cs: Dermatologie a pohlavní nemoci
+    en: Dermatology and venereal diseases
+  subject: Dermatology and venereal diseases
+  props:
+    classification_code: '30216'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30216
+- id: ford:30217
+  scheme: FORD
+  title:
+    cs: Urologie a nefrologie
+    en: Urology and nephrology
+  subject: Urology and nephrology
+  props:
+    classification_code: '30217'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30217
+- id: ford:30218
+  scheme: FORD
+  title:
+    cs: Všeobecné a vnitřní lékařství
+    en: General and internal medicine
+  subject: General and internal medicine
+  props:
+    classification_code: '30218'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30218
+- id: ford:30219
+  scheme: FORD
+  title:
+    cs: Gastroenterologie a hepatologie
+    en: Gastroenterology and hepatology
+  subject: Gastroenterology and hepatology
+  props:
+    classification_code: '30219'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30219
+- id: ford:30220
+  scheme: FORD
+  title:
+    cs: Andrologie
+    en: Andrology
+  subject: Andrology
+  props:
+    classification_code: '30220'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30220
+- id: ford:30221
+  scheme: FORD
+  title:
+    cs: Urgentní medicína a pohotovostní medicína
+    en: Critical care medicine and emergency medicine
+  subject: Critical care medicine and emergency medicine
+  props:
+    classification_code: '30221'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30221
+- id: ford:30223
+  scheme: FORD
+  title:
+    cs: Anesteziologie
+    en: Anaesthesiology
+  subject: Anaesthesiology
+  props:
+    classification_code: '30223'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30223
+- id: ford:30224
+  scheme: FORD
+  title:
+    cs: Radiologie, nukleární medicína a lékařské zobrazování
+    en: Radiology, nuclear medicine and medical imaging
+  subject: Radiology, nuclear medicine and medical imaging
+  props:
+    classification_code: '30224'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30224
+- id: ford:30225
+  scheme: FORD
+  title:
+    cs: Alergologie
+    en: Allergy
+  subject: Allergy
+  props:
+    classification_code: '30225'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30225
+- id: ford:30226
+  scheme: FORD
+  title:
+    cs: Revmatologie
+    en: Rheumatology
+  subject: Rheumatology
+  props:
+    classification_code: '30226'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30226
+- id: ford:30227
+  scheme: FORD
+  title:
+    cs: Geriatrie a gerontologie
+    en: Geriatrics and gerontology
+  subject: Geriatrics and gerontology
+  props:
+    classification_code: '30227'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30227
+- id: ford:30229
+  scheme: FORD
+  title:
+    cs: Celostní a alternativní medicína (alternativní praktické systémy)
+    en: Integrative and complementary medicine (alternative practice systems)
+  subject: Integrative and complementary medicine (alternative practice systems)
+  props:
+    classification_code: '30229'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30229
+- id: ford:30230
+  scheme: FORD
+  title:
+    cs: Ostatní klinická lékařská témata
+    en: Other clinical medicine subjects
+  subject: Other clinical medicine subjects
+  props:
+    classification_code: '30230'
+    parents: ford:30200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30200/30230
+- id: ford:30300
+  scheme: FORD
+  title:
+    cs: Zdravotní vědy
+    en: Health sciences
+  subject: Health sciences
+  props:
+    classification_code: '30300'
+    parents: ford:30000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300
+- id: ford:30301
+  scheme: FORD
+  title:
+    cs: Sociální biolékařské vědy (plánované rodičovství, sexuální zdraví, psychoonkologie,
+      politické a sociální jevy biolékařského výzkumu)
+    en: Social biomedical sciences (includes family planning, sexual health, psycho-oncology,
+      political and social effects of biomedical research)
+  subject: Social biomedical sciences (includes family planning, sexual health, psycho-oncology,
+    political and social effects of biomedical research)
+  props:
+    classification_code: '30301'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30301
+- id: ford:30302
+  scheme: FORD
+  title:
+    cs: Epidemiologie
+    en: Epidemiology
+  subject: Epidemiology
+  props:
+    classification_code: '30302'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30302
+- id: ford:30303
+  scheme: FORD
+  title:
+    cs: Infekční onemocnění
+    en: Infectious diseases
+  subject: Infectious diseases
+  props:
+    classification_code: '30303'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30303
+- id: ford:30304
+  scheme: FORD
+  title:
+    cs: Veřejné a environmentální zdraví
+    en: Public and environmental health
+  subject: Public and environmental health
+  props:
+    classification_code: '30304'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30304
+- id: ford:30305
+  scheme: FORD
+  title:
+    cs: Ochrana zdraví při práci
+    en: Occupational health
+  subject: Occupational health
+  props:
+    classification_code: '30305'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30305
+- id: ford:30306
+  scheme: FORD
+  title:
+    cs: Sport a fitness
+    en: Sport and fitness sciences
+  subject: Sport and fitness sciences
+  props:
+    classification_code: '30306'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30306
+- id: ford:30307
+  scheme: FORD
+  title:
+    cs: Ošetřovatelství
+    en: Nursing
+  subject: Nursing
+  props:
+    classification_code: '30307'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30307
+- id: ford:30308
+  scheme: FORD
+  title:
+    cs: Výživa, nauka o dietě
+    en: Nutrition, dietetics
+  subject: Nutrition, dietetics
+  props:
+    classification_code: '30308'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30308
+- id: ford:30309
+  scheme: FORD
+  title:
+    cs: Tropické lékařství
+    en: Tropical medicine
+  subject: Tropical medicine
+  props:
+    classification_code: '30309'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30309
+- id: ford:30310
+  scheme: FORD
+  title:
+    cs: Parazitologie
+    en: Parasitology
+  subject: Parasitology
+  props:
+    classification_code: '30310'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30310
+- id: ford:30311
+  scheme: FORD
+  title:
+    cs: Lékařská etika
+    en: Medical ethics
+  subject: Medical ethics
+  props:
+    classification_code: '30311'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30311
+- id: ford:30312
+  scheme: FORD
+  title:
+    cs: Zneužívání návykových látek
+    en: Substance abuse
+  subject: Substance abuse
+  props:
+    classification_code: '30312'
+    parents: ford:30300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30300/30312
+- id: ford:30400
+  scheme: FORD
+  title:
+    cs: Lékařské biotechnologie
+    en: Medical biotechnology
+  subject: Medical biotechnology
+  props:
+    classification_code: '30400'
+    parents: ford:30000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400
+- id: ford:30401
+  scheme: FORD
+  title:
+    cs: Biotechnologie související se zdravím
+    en: Health-related biotechnology
+  subject: Health-related biotechnology
+  props:
+    classification_code: '30401'
+    parents: ford:30400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30401
+- id: ford:30402
+  scheme: FORD
+  title:
+    cs: Technologie zahrnující manipulace s buňkami, tkáněmi, orgány nebo celými organismy
+      (asistovaná reprodukce)
+    en: Technologies involving the manipulation of cells, tissues, organs or the whole
+      organism (assisted reproduction)
+  subject: Technologies involving the manipulation of cells, tissues, organs or the
+    whole organism (assisted reproduction)
+  props:
+    classification_code: '30402'
+    parents: ford:30400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30402
+- id: ford:30403
+  scheme: FORD
+  title:
+    cs: Technologie zahrnující identifikace činností DNA, proteinů a enzymů a jejich
+      vlivy na nápor nemocí a zachování pocitů zdraví (genová diagnostika a terapeutické
+      zákroky, farmakogenomika, genová terapeutika)
+    en: Technologies involving identifying the functioning of DNA, proteins and enzymes
+      and how they influence the onset of disease and maintenance of well-being (gene-based
+      diagnostics and therapeutic interventions - pharmacogenomics, gene-based therapeutics)
+  subject: Technologies involving identifying the functioning of DNA, proteins and
+    enzymes and how they influence the onset of disease and maintenance of well-being
+    (gene-based diagnostics and therapeutic interventions - pharmacogenomics, gene-based
+    therapeutics)
+  props:
+    classification_code: '30403'
+    parents: ford:30400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30403
+- id: ford:30404
+  scheme: FORD
+  title:
+    cs: Biomateriály (související s lékařskými implantáty, přístroji, senzory)
+    en: Biomaterials (as related to medical implants, devices, sensors)
+  subject: Biomaterials (as related to medical implants, devices, sensors)
+  props:
+    classification_code: '30404'
+    parents: ford:30400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30404
+- id: ford:30405
+  scheme: FORD
+  title:
+    cs: Lékařské biotechnologie související s etikou
+    en: Medical biotechnology related ethics
+  subject: Medical biotechnology related ethics
+  props:
+    classification_code: '30405'
+    parents: ford:30400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30400/30405
+- id: ford:30500
+  scheme: FORD
+  title:
+    cs: Ostatní lékařské vědy
+    en: Other medical sciences
+  subject: Other medical sciences
+  props:
+    classification_code: '30500'
+    parents: ford:30000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500
+- id: ford:30501
+  scheme: FORD
+  title:
+    cs: Soudní lékařství
+    en: Forensic science
+  subject: Forensic science
+  props:
+    classification_code: '30501'
+    parents: ford:30500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30501
+- id: ford:30502
+  scheme: FORD
+  title:
+    cs: Ostatní lékařské vědy
+    en: Other medical science
+  subject: Other medical science
+  props:
+    classification_code: '30502'
+    parents: ford:30500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/30000/30500/30502
+- id: ford:40000
+  scheme: FORD
+  title:
+    cs: Zemědělské a veterinární vědy
+    en: Agricultural and veterinary sciences
+  subject: Agricultural and veterinary sciences
+  props:
+    classification_code: '40000'
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000
+- id: ford:40100
+  scheme: FORD
+  title:
+    cs: Zemědělství, lesnictví, rybářství
+    en: Agriculture, forestry and fisheries
+  subject: Agriculture, forestry and fisheries
+  props:
+    classification_code: '40100'
+    parents: ford:40000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100
+- id: ford:40101
+  scheme: FORD
+  title:
+    cs: Zemědělství
+    en: Agriculture
+  subject: Agriculture
+  props:
+    classification_code: '40101'
+    parents: ford:40100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40101
+- id: ford:40102
+  scheme: FORD
+  title:
+    cs: Lesnictví
+    en: Forestry
+  subject: Forestry
+  props:
+    classification_code: '40102'
+    parents: ford:40100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40102
+- id: ford:40103
+  scheme: FORD
+  title:
+    cs: Rybářství
+    en: Fishery
+  subject: Fishery
+  props:
+    classification_code: '40103'
+    parents: ford:40100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40103
+- id: ford:40104
+  scheme: FORD
+  title:
+    cs: Půdoznalství
+    en: Soil science
+  subject: Soil science
+  props:
+    classification_code: '40104'
+    parents: ford:40100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40104
+- id: ford:40105
+  scheme: FORD
+  title:
+    cs: Zahradnictví, vinařství
+    en: Horticulture, viticulture
+  subject: Horticulture, viticulture
+  props:
+    classification_code: '40105'
+    parents: ford:40100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40105
+- id: ford:40106
+  scheme: FORD
+  title:
+    cs: 'Agronomie, šlechtění a ochrana rostlin '
+    en: 'Agronomy, plant breeding and plant protection '
+  subject: 'Agronomy, plant breeding and plant protection '
+  props:
+    classification_code: '40106'
+    parents: ford:40100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40100/40106
+- id: ford:40200
+  scheme: FORD
+  title:
+    cs: Vědy o zvířatech a mléce
+    en: Animal and dairy science
+  subject: Animal and dairy science
+  props:
+    classification_code: '40200'
+    parents: ford:40000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200
+- id: ford:40201
+  scheme: FORD
+  title:
+    cs: 'Vědy o zvířatech a mléce '
+    en: Animal and dairy science
+  subject: Animal and dairy science
+  props:
+    classification_code: '40201'
+    parents: ford:40200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40201
+- id: ford:40202
+  scheme: FORD
+  title:
+    cs: Domácí zvířata
+    en: Pets
+  subject: Pets
+  props:
+    classification_code: '40202'
+    parents: ford:40200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40202
+- id: ford:40203
+  scheme: FORD
+  title:
+    cs: Chovatelství
+    en: Husbandry
+  subject: Husbandry
+  props:
+    classification_code: '40203'
+    parents: ford:40200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40200/40203
+- id: ford:40300
+  scheme: FORD
+  title:
+    cs: Veterinární věda
+    en: Veterinary science
+  subject: Veterinary science
+  props:
+    classification_code: '40300'
+    parents: ford:40000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300
+- id: ford:40301
+  scheme: FORD
+  title:
+    cs: Veterinární věda
+    en: Veterinary science
+  subject: Veterinary science
+  props:
+    classification_code: '40301'
+    parents: ford:40300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40300/40301
+- id: ford:40400
+  scheme: FORD
+  title:
+    cs: Zemědělské biotechnologie
+    en: Agricultural biotechnology
+  subject: Agricultural biotechnology
+  props:
+    classification_code: '40400'
+    parents: ford:40000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400
+- id: ford:40401
+  scheme: FORD
+  title:
+    cs: Zemědělské biotechnologie a biotechnologie potravin
+    en: Agricultural biotechnology and food biotechnology
+  subject: Agricultural biotechnology and food biotechnology
+  props:
+    classification_code: '40401'
+    parents: ford:40400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40401
+- id: ford:40402
+  scheme: FORD
+  title:
+    cs: Technologie genetických modifikací (plodiny a dobytek), klonování dobytka,
+      ukazatele selekce, diagnostika (zlomky DNA a biosenzory pro brzkou/přesnou detekci
+      nemocí), technologie zpracování biomasy, biohospodářství
+    en: GM technology (crops and livestock), livestock cloning, marker assisted selection,
+      diagnostics (DNA chips and biosensing devices for the early/accurate detection
+      of diseases) biomass feedstock production technologies, biopharming
+  subject: GM technology (crops and livestock), livestock cloning, marker assisted
+    selection, diagnostics (DNA chips and biosensing devices for the early/accurate
+    detection of diseases) biomass feedstock production technologies, biopharming
+  props:
+    classification_code: '40402'
+    parents: ford:40400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40402
+- id: ford:40403
+  scheme: FORD
+  title:
+    cs: Zemědělské biotechnologie související s etikou
+    en: Agricultural biotechnology related ethics
+  subject: Agricultural biotechnology related ethics
+  props:
+    classification_code: '40403'
+    parents: ford:40400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40400/40403
+- id: ford:40500
+  scheme: FORD
+  title:
+    cs: 'Ostatní zemědělské vědy '
+    en: Other agricultural sciences
+  subject: Other agricultural sciences
+  props:
+    classification_code: '40500'
+    parents: ford:40000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/40000/40500
+- id: ford:50000
+  scheme: FORD
+  title:
+    cs: Společenské vědy
+    en: Social sciences
+  subject: Social sciences
+  props:
+    classification_code: '50000'
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000
+- id: ford:50100
+  scheme: FORD
+  title:
+    cs: Psychologie a kognitivní věda
+    en: Psychology and cognitive sciences
+  subject: Psychology and cognitive sciences
+  props:
+    classification_code: '50100'
+    parents: ford:50000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100
+- id: ford:50101
+  scheme: FORD
+  title:
+    cs: Psychologie (zahrnuje vztahy mezi člověkem a strojem)
+    en: Psychology (including human - machine relations)
+  subject: Psychology (including human - machine relations)
+  props:
+    classification_code: '50101'
+    parents: ford:50100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50101
+- id: ford:50102
+  scheme: FORD
+  title:
+    cs: Speciální psychologie (zahrnuje terapii pro učení, řeč, poslech, zrakové a
+      jiné fyzické a mentální handicapy)
+    en: Psychology, special (including therapy for learning, speech, hearing, visual
+      and other physical and mental disabilities)
+  subject: Psychology, special (including therapy for learning, speech, hearing, visual
+    and other physical and mental disabilities)
+  props:
+    classification_code: '50102'
+    parents: ford:50100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50102
+- id: ford:50103
+  scheme: FORD
+  title:
+    cs: Kognitivní vědy
+    en: Cognitive sciences
+  subject: Cognitive sciences
+  props:
+    classification_code: '50103'
+    parents: ford:50100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50100/50103
+- id: ford:50200
+  scheme: FORD
+  title:
+    cs: Ekonomie a podnikání
+    en: Economics and business
+  subject: Economics and business
+  props:
+    classification_code: '50200'
+    parents: ford:50000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200
+- id: ford:50201
+  scheme: FORD
+  title:
+    cs: Ekonomická teorice
+    en: Economic theory
+  subject: Economic theory
+  props:
+    classification_code: '50201'
+    parents: ford:50200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50201
+- id: ford:50202
+  scheme: FORD
+  title:
+    cs: Aplikovaná ekonomie, ekonometrie
+    en: Applied economics, econometrics
+  subject: Applied economics, econometrics
+  props:
+    classification_code: '50202'
+    parents: ford:50200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50202
+- id: ford:50203
+  scheme: FORD
+  title:
+    cs: Pracovní vztahy
+    en: Industrial relations
+  subject: Industrial relations
+  props:
+    classification_code: '50203'
+    parents: ford:50200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50203
+- id: ford:50204
+  scheme: FORD
+  title:
+    cs: Podnikání a management
+    en: Business and management
+  subject: Business and management
+  props:
+    classification_code: '50204'
+    parents: ford:50200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50204
+- id: ford:50205
+  scheme: FORD
+  title:
+    cs: Účetnictví
+    en: Accounting
+  subject: Accounting
+  props:
+    classification_code: '50205'
+    parents: ford:50200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50205
+- id: ford:50206
+  scheme: FORD
+  title:
+    cs: Finance
+    en: Finance
+  subject: Finance
+  props:
+    classification_code: '50206'
+    parents: ford:50200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50200/50206
+- id: ford:50300
+  scheme: FORD
+  title:
+    cs: Vzdělávání
+    en: Education
+  subject: Education
+  props:
+    classification_code: '50300'
+    parents: ford:50000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300
+- id: ford:50301
+  scheme: FORD
+  title:
+    cs: Všeobecné vzdělávání (zahrnuje výcvik, pedagogiku, didaktiku, vzdělávací systémy)
+    en: Education, general (including training, pedagogy, didactics and education
+      systems)
+  subject: Education, general (including training, pedagogy, didactics and education
+    systems)
+  props:
+    classification_code: '50301'
+    parents: ford:50300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50301
+- id: ford:50302
+  scheme: FORD
+  title:
+    cs: Speciální vzdělávání (pro nadané osoby, pro osoby s poruchami učení)
+    en: Education, special (to gifted persons, those with learning disabilities)
+  subject: Education, special (to gifted persons, those with learning disabilities)
+  props:
+    classification_code: '50302'
+    parents: ford:50300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50300/50302
+- id: ford:50400
+  scheme: FORD
+  title:
+    cs: Sociologie
+    en: Sociology
+  subject: Sociology
+  props:
+    classification_code: '50400'
+    parents: ford:50000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400
+- id: ford:50401
+  scheme: FORD
+  title:
+    cs: Sociologie
+    en: Sociology
+  subject: Sociology
+  props:
+    classification_code: '50401'
+    parents: ford:50400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50401
+- id: ford:50402
+  scheme: FORD
+  title:
+    cs: Demografie
+    en: Demography
+  subject: Demography
+  props:
+    classification_code: '50402'
+    parents: ford:50400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50402
+- id: ford:50403
+  scheme: FORD
+  title:
+    cs: Sociální témata (studie žen a pohlaví, sociální problémy, studie rodin, sociální
+      práce)
+    en: Social topics (women´s and gender studies, social issues, family studies social
+      work)
+  subject: Social topics (women´s and gender studies, social issues, family studies
+    social work)
+  props:
+    classification_code: '50403'
+    parents: ford:50400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50403
+- id: ford:50404
+  scheme: FORD
+  title:
+    cs: Antropologie, etnologie
+    en: Anthropology, ethnology
+  subject: Anthropology, ethnology
+  props:
+    classification_code: '50404'
+    parents: ford:50400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50400/50404
+- id: ford:50500
+  scheme: FORD
+  title:
+    cs: Právo
+    en: Law
+  subject: Law
+  props:
+    classification_code: '50500'
+    parents: ford:50000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500
+- id: ford:50501
+  scheme: FORD
+  title:
+    cs: Právo
+    en: Law
+  subject: Law
+  props:
+    classification_code: '50501'
+    parents: ford:50500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50501
+- id: ford:50502
+  scheme: FORD
+  title:
+    cs: Kriminologie, penologie
+    en: Criminology, penology
+  subject: Criminology, penology
+  props:
+    classification_code: '50502'
+    parents: ford:50500
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50500/50502
+- id: ford:50600
+  scheme: FORD
+  title:
+    cs: Politologie
+    en: Political science
+  subject: Political science
+  props:
+    classification_code: '50600'
+    parents: ford:50000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600
+- id: ford:50601
+  scheme: FORD
+  title:
+    cs: Politologie
+    en: Political science
+  subject: Political science
+  props:
+    classification_code: '50601'
+    parents: ford:50600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50601
+- id: ford:50602
+  scheme: FORD
+  title:
+    cs: Veřejná správa
+    en: Public administration
+  subject: Public administration
+  props:
+    classification_code: '50602'
+    parents: ford:50600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50602
+- id: ford:50603
+  scheme: FORD
+  title:
+    cs: Teorie organizace
+    en: Organisation theory
+  subject: Organisation theory
+  props:
+    classification_code: '50603'
+    parents: ford:50600
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50600/50603
+- id: ford:50700
+  scheme: FORD
+  title:
+    cs: Sociální a ekonomická geografie
+    en: Social and economic geography
+  subject: Social and economic geography
+  props:
+    classification_code: '50700'
+    parents: ford:50000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700
+- id: ford:50701
+  scheme: FORD
+  title:
+    cs: Kulturní a ekonomická geografie
+    en: Cultural and economic geography
+  subject: Cultural and economic geography
+  props:
+    classification_code: '50701'
+    parents: ford:50700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50701
+- id: ford:50702
+  scheme: FORD
+  title:
+    cs: Urbanismus (plánování a rozvoj)
+    en: Urban studies (planning and development)
+  subject: Urban studies (planning and development)
+  props:
+    classification_code: '50702'
+    parents: ford:50700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50702
+- id: ford:50703
+  scheme: FORD
+  title:
+    cs: 'Plánování dopravy a sociální hlediska dopravy '
+    en: 'Transport planning and social aspects of transport '
+  subject: 'Transport planning and social aspects of transport '
+  props:
+    classification_code: '50703'
+    parents: ford:50700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50703
+- id: ford:50704
+  scheme: FORD
+  title:
+    cs: Environmentální vědy (sociální hlediska)
+    en: Environmental sciences (social aspects)
+  subject: Environmental sciences (social aspects)
+  props:
+    classification_code: '50704'
+    parents: ford:50700
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50700/50704
+- id: ford:50800
+  scheme: FORD
+  title:
+    cs: Média a komunikace
+    en: Media and communications
+  subject: Media and communications
+  props:
+    classification_code: '50800'
+    parents: ford:50000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800
+- id: ford:50801
+  scheme: FORD
+  title:
+    cs: Žurnalistika
+    en: Journalism
+  subject: Journalism
+  props:
+    classification_code: '50801'
+    parents: ford:50800
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50801
+- id: ford:50802
+  scheme: FORD
+  title:
+    cs: Mediální a sociokulturní komunikace
+    en: Media and socio-cultural communication
+  subject: Media and socio-cultural communication
+  props:
+    classification_code: '50802'
+    parents: ford:50800
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50802
+- id: ford:50803
+  scheme: FORD
+  title:
+    cs: Informační věda (sociální aspekty)
+    en: Information science (social aspects)
+  subject: Information science (social aspects)
+  props:
+    classification_code: '50803'
+    parents: ford:50800
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50803
+- id: ford:50804
+  scheme: FORD
+  title:
+    cs: Knihovnictví
+    en: Library science
+  subject: Library science
+  props:
+    classification_code: '50804'
+    parents: ford:50800
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50800/50804
+- id: ford:50900
+  scheme: FORD
+  title:
+    cs: Ostatní společenské vědy
+    en: Other social sciences
+  subject: Other social sciences
+  props:
+    classification_code: '50900'
+    parents: ford:50000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900
+- id: ford:50901
+  scheme: FORD
+  title:
+    cs: Ostatní společenské vědy
+    en: Other social sciences
+  subject: Other social sciences
+  props:
+    classification_code: '50901'
+    parents: ford:50900
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50901
+- id: ford:50902
+  scheme: FORD
+  title:
+    cs: Společenské vědy interdisciplinární
+    en: Social sciences, interdisciplinary
+  subject: Social sciences, interdisciplinary
+  props:
+    classification_code: '50902'
+    parents: ford:50900
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/50000/50900/50902
+- id: ford:60000
+  scheme: FORD
+  title:
+    cs: Humanitní vědy a umění
+    en: Humanities and the arts
+  subject: Humanities and the arts
+  props:
+    classification_code: '60000'
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000
+- id: ford:60100
+  scheme: FORD
+  title:
+    cs: Historie a archeologie
+    en: History and archaeology
+  subject: History and archaeology
+  props:
+    classification_code: '60100'
+    parents: ford:60000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100
+- id: ford:60101
+  scheme: FORD
+  title:
+    cs: 'Historie '
+    en: 'History '
+  subject: 'History '
+  props:
+    classification_code: '60101'
+    parents: ford:60100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60101
+- id: ford:60102
+  scheme: FORD
+  title:
+    cs: Archeologie
+    en: Archaeology
+  subject: Archaeology
+  props:
+    classification_code: '60102'
+    parents: ford:60100
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60100/60102
+- id: ford:60200
+  scheme: FORD
+  title:
+    cs: Jazyky a literatura
+    en: Languages and literature
+  subject: Languages and literature
+  props:
+    classification_code: '60200'
+    parents: ford:60000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200
+- id: ford:60201
+  scheme: FORD
+  title:
+    cs: Všeobecné jazykové studie
+    en: General language studies
+  subject: General language studies
+  props:
+    classification_code: '60201'
+    parents: ford:60200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60201
+- id: ford:60202
+  scheme: FORD
+  title:
+    cs: Specifické jazyky
+    en: Specific languages
+  subject: Specific languages
+  props:
+    classification_code: '60202'
+    parents: ford:60200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60202
+- id: ford:60203
+  scheme: FORD
+  title:
+    cs: Lingvistika
+    en: Linguistics
+  subject: Linguistics
+  props:
+    classification_code: '60203'
+    parents: ford:60200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60203
+- id: ford:60204
+  scheme: FORD
+  title:
+    cs: Všeobecné studie literatury
+    en: General literature studies
+  subject: General literature studies
+  props:
+    classification_code: '60204'
+    parents: ford:60200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60204
+- id: ford:60205
+  scheme: FORD
+  title:
+    cs: Teorie literatury
+    en: Literary theory
+  subject: Literary theory
+  props:
+    classification_code: '60205'
+    parents: ford:60200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60205
+- id: ford:60206
+  scheme: FORD
+  title:
+    cs: Specifická literatura
+    en: Specific literatures
+  subject: Specific literatures
+  props:
+    classification_code: '60206'
+    parents: ford:60200
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60200/60206
+- id: ford:60300
+  scheme: FORD
+  title:
+    cs: Filozofie, etika a náboženství
+    en: Philosophy, ethics and religion
+  subject: Philosophy, ethics and religion
+  props:
+    classification_code: '60300'
+    parents: ford:60000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300
+- id: ford:60301
+  scheme: FORD
+  title:
+    cs: Filozofie, dějiny a filozofie vědy a techniky
+    en: Philosophy, history and philosophy of science and technology
+  subject: Philosophy, history and philosophy of science and technology
+  props:
+    classification_code: '60301'
+    parents: ford:60300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60301
+- id: ford:60302
+  scheme: FORD
+  title:
+    cs: Etika (vyjma etiky související s příslušnými kategoriemi)
+    en: Ethics (except ethics related to specific subfields)
+  subject: Ethics (except ethics related to specific subfields)
+  props:
+    classification_code: '60302'
+    parents: ford:60300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60302
+- id: ford:60303
+  scheme: FORD
+  title:
+    cs: Teologie
+    en: Theology
+  subject: Theology
+  props:
+    classification_code: '60303'
+    parents: ford:60300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60303
+- id: ford:60304
+  scheme: FORD
+  title:
+    cs: Religionistika
+    en: Religious studies
+  subject: Religious studies
+  props:
+    classification_code: '60304'
+    parents: ford:60300
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60300/60304
+- id: ford:60400
+  scheme: FORD
+  title:
+    cs: Umění (umění, dějiny umění, múzická umění, hudba)
+    en: Arts (arts, history of arts, performing arts, music)
+  subject: Arts (arts, history of arts, performing arts, music)
+  props:
+    classification_code: '60400'
+    parents: ford:60000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400
+- id: ford:60401
+  scheme: FORD
+  title:
+    cs: Umění, dějiny umění
+    en: Arts, art history
+  subject: Arts, art history
+  props:
+    classification_code: '60401'
+    parents: ford:60400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60401
+- id: ford:60402
+  scheme: FORD
+  title:
+    cs: Architektonický design
+    en: Architectural design
+  subject: Architectural design
+  props:
+    classification_code: '60402'
+    parents: ford:60400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60402
+- id: ford:60403
+  scheme: FORD
+  title:
+    cs: Múzická umění (muzikologie, divadelní věda, dramaturgie)
+    en: Performing arts studies (musicology, theater science, dramaturgy)
+  subject: Performing arts studies (musicology, theater science, dramaturgy)
+  props:
+    classification_code: '60403'
+    parents: ford:60400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60403
+- id: ford:60404
+  scheme: FORD
+  title:
+    cs: Folkloristika
+    en: Folklore studies
+  subject: Folklore studies
+  props:
+    classification_code: '60404'
+    parents: ford:60400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60404
+- id: ford:60405
+  scheme: FORD
+  title:
+    cs: Film, rádio a televize
+    en: Studies on film, radio and television
+  subject: Studies on film, radio and television
+  props:
+    classification_code: '60405'
+    parents: ford:60400
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60400/60405
+- id: ford:60500
+  scheme: FORD
+  title:
+    cs: Ostatní humanitní vědy a obory umění
+    en: Other humanities and the arts
+  subject: Other humanities and the arts
+  props:
+    classification_code: '60500'
+    parents: ford:60000
+  identifiers:
+  - scheme: url
+    identifier: https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/60000/60500

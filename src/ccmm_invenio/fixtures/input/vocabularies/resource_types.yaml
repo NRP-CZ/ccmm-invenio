@@ -1,0 +1,335 @@
+# SSSOM mapping set of the NMA InvenioRDM resource types (the subject, the
+# https://nma.eosc.cz/vocabularies/resourcetypes/ namespace) to the COAR
+# resource types (the object, https://vocabularies.coar-repositories.org/resource_types/,
+# version 3.2), written in the slot names and meanings of
+# https://mapping-commons.github.io/sssom/spec/: the mapping set metadata and
+# the curie map at the top, one entry per mapping below. The conversion
+# pipeline consumes this file directly via SSSOMMappingsReader.
+#
+# predicate_id relates the RDM type (the subject) to the COAR concept (the object):
+#   skos:exactMatch - the RDM type and the COAR concept are equivalent
+#   skos:broadMatch - the COAR concept is broader than the RDM type
+#
+# Entries without predicate_id and object_id have no suitable COAR equivalent -
+# see their comment.
+#
+
+mapping_set_id: https://nma.eosc.cz/vocabularies/resourcetypes/sssom/resource_types.sssom.tsv
+mapping_set_description: >-
+  Alignment of the NMA InvenioRDM resource types with the COAR resource types
+  vocabulary, version 3.2.
+mapping_date: 2026-09-19
+license: https://creativecommons.org/licenses/by/4.0/
+subject_type: skos concept
+object_type: skos concept
+subject_source: https://nma.eosc.cz/vocabularies/resourcetypes/
+object_source: https://vocabularies.coar-repositories.org/resource_types/
+
+curie_map:
+  coar_resourceType: http://purl.org/coar/resource_type/
+  nma_resourcetypes: https://nma.eosc.cz/vocabularies/resourcetypes/
+
+mappings:
+  - subject_id: nma_resourcetypes:publication
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_18cf
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR 3.2 has no generic "publication" concept; "text" (c_18cf) is the
+      closest broader concept covering most textual publications (note that
+      e.g. musical compositions and sounds are not texts).
+
+  - subject_id: nma_resourcetypes:publication-annotationcollection
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_1162
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR "annotation" (c_1162) does not capture that the resource is a
+      collection of annotations.
+
+  - subject_id: nma_resourcetypes:publication-book
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_2f33
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:publication-section
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_3248
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR label for a book chapter is "book part".
+
+  - subject_id: nma_resourcetypes:publication-conferencepaper
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_5794
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      RDM does not distinguish papers published in proceedings (c_5794) from
+      papers not in proceedings (c_18cp).
+
+  - subject_id: nma_resourcetypes:publication-conferenceproceeding
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_f744
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:publication-datamanagementplan
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_ab20
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      RDM label follows DataCite's "Output management plan"; the COAR concept
+      is labelled "data management plan".
+
+  - subject_id: nma_resourcetypes:publication-journal
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_0640
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:publication-article
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_6501
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      RDM does not distinguish research articles (c_2df8fbb1) from other
+      journal articles (c_6501).
+
+  - subject_id: nma_resourcetypes:publication-patent
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_15cd
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR further distinguishes design (C53B-JCY5), software (MW8G-3CR8) and
+      plant (Z907-YMBB) patents; RDM does not.
+
+  - subject_id: nma_resourcetypes:publication-peerreview
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:H9BQ-739P
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:publication-preprint
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_816b
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:publication-deliverable
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_18op
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:publication-milestone
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_93fc
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No direct COAR equivalent for project milestones; milestone reports
+      are treated as reports (RDM itself maps this type to the eurepo
+      "report" semantics).
+
+  - subject_id: nma_resourcetypes:publication-proposal
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_baaf
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR concept is specifically "research proposal".
+
+  - subject_id: nma_resourcetypes:publication-report
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_93fc
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR further distinguishes e.g. technical (c_18gh), policy (c_186u) and
+      funding agency (c_18hj) reports; RDM does not.
+
+  - subject_id: nma_resourcetypes:publication-softwaredocumentation
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_71bd
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:publication-taxonomictreatment
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_18cf
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No direct COAR equivalent; a taxonomic treatment is a kind of text.
+
+  - subject_id: nma_resourcetypes:publication-technicalnote
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_93fc
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No direct COAR equivalent; technical notes are treated as reports.
+
+  - subject_id: nma_resourcetypes:publication-workingpaper
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_8042
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:publication-datapaper
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_beb9
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:publication-dissertation
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_46ec
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR further distinguishes bachelor (c_7a1f), master (c_bdcc) and
+      doctoral (c_db06) theses; RDM does not.
+
+  - subject_id: nma_resourcetypes:publication-standard
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_18cf
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No direct COAR equivalent; a standard is a normative text.
+
+  - subject_id: nma_resourcetypes:publication-studyregistration
+    comment: >-
+      No COAR equivalent. The closest concept is "research protocol"
+      (YZ1N-ZFT9), but a study registration is a registration record rather
+      than a protocol.
+
+  - subject_id: nma_resourcetypes:publication-other
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_1843
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:poster
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_6670
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR "conference poster" is slightly more specific than the generic RDM
+      "poster"; RDM does not distinguish posters (not) in proceedings
+      (c_6670 vs c_18co).
+
+  - subject_id: nma_resourcetypes:presentation
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_8544
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR "lecture" is the closest equivalent of the generic RDM
+      "presentation"; conference presentations (R60J-J5BD) are a narrower
+      COAR concept.
+
+  - subject_id: nma_resourcetypes:event
+    comment: >-
+      The COAR resource types vocabulary has no concept for events.
+
+  - subject_id: nma_resourcetypes:dataset
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_ddb1
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:image
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_c513
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:image-figure
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_ecc8
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No COAR equivalent for "figure"; figures are still images.
+
+  - subject_id: nma_resourcetypes:image-plot
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_ecc8
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No COAR equivalent for "plot"; plots are still images.
+
+  - subject_id: nma_resourcetypes:image-drawing
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_ecc8
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No COAR equivalent for "drawing"; drawings are still images.
+
+  - subject_id: nma_resourcetypes:image-diagram
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_ecc8
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No COAR equivalent for "diagram"; diagrams are still images.
+
+  - subject_id: nma_resourcetypes:image-photo
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_ecc8
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR has no specific "photo" concept; photos are still images.
+
+  - subject_id: nma_resourcetypes:image-other
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_ecc8
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No more specific COAR concept for "other" images; mapped to still
+      image.
+
+  - subject_id: nma_resourcetypes:model
+    comment: >-
+      The COAR resource types vocabulary has no concept for models.
+
+  - subject_id: nma_resourcetypes:video
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_8a7e
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:audio
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_18cd
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:software
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_5ce6
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      RDM does not distinguish research software (c_c950) or source code
+      (QH80-2R4E) from software in general.
+
+  - subject_id: nma_resourcetypes:lesson
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_e059
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR "learning object" is broader than RDM "lesson".
+
+  - subject_id: nma_resourcetypes:software-computationalnotebook
+    predicate_id: skos:broadMatch
+    object_id: coar_resourceType:c_c950
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      No COAR equivalent for computational notebooks; they are treated as
+      research software.
+
+  - subject_id: nma_resourcetypes:other
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_1843
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:physicalobject
+    comment: >-
+      The COAR resource types vocabulary has no generic physical object
+      concept; its "physical sample" (S7R1-K5P0) covers research samples
+      only.
+
+  - subject_id: nma_resourcetypes:workflow
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:c_393c
+    mapping_justification: semapv:ManualMappingCuration
+
+  - subject_id: nma_resourcetypes:project
+    comment: >-
+      The COAR resource types vocabulary has no concept for projects.
+
+  - subject_id: nma_resourcetypes:instrument
+    predicate_id: skos:exactMatch
+    object_id: coar_resourceType:8KJG-QS0Y
+    mapping_justification: semapv:ManualMappingCuration
+    comment: >-
+      COAR concept is labelled "research instrument".

@@ -1,0 +1,648 @@
+- id: cites
+  title:
+    cs: cituje (co)
+    en: cites
+  description:
+    en: indicates that A includes B in a citation
+  props:
+    datacite: Cites
+    openaire: Cites
+    zenodo: cites
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Cites
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Cites
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: collects
+  title:
+    cs: sbírá
+    en: collects
+  description:
+    en: Indicates A collects B
+  props:
+    datacite: Collects
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Collects
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Collects
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: compiles
+  title:
+    cs: kompiluje (co)
+    en: compiles
+  description:
+    en: indicates B is the result of a compile or creation event using A
+  props:
+    datacite: Compiles
+    openaire: Compiles
+    zenodo: compiles
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Compiles
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Compiles
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: continues
+  title:
+    cs: pokračuje (čím)
+    en: continues
+  description:
+    en: indicates A is a continuation of the work B
+  props:
+    datacite: Continues
+    openaire: Continues
+    zenodo: continues
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Continues
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Continues
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: describes
+  title:
+    cs: popisuje (co)
+    en: describes
+  description:
+    en: indicates A describes B
+  props:
+    datacite: Describes
+    zenodo: describes
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Describes
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Describes
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: documents
+  title:
+    cs: dokumentuje (co)
+    en: documents
+  description:
+    en: indicates A is documentation about/explaining B
+  props:
+    datacite: Documents
+    openaire: Documents
+    zenodo: documents
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Documents
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Documents
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: hasmetadata
+  title:
+    cs: má metadata
+    en: has metadata
+  description:
+    en: indicates resource A has additional metadata B
+  props:
+    datacite: HasMetadata
+    openaire: HasMetadata
+    zenodo: hasmetadata
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasMetadata
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/HasMetadata
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: haspart
+  title:
+    cs: má část/i
+    en: has part
+  description:
+    en: indicates A includes the part B
+  props:
+    datacite: HasPart
+    openaire: HasPart
+    zenodo: haspart
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasPart
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/HasPart
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: hastranslation
+  title:
+    cs: má překlad
+    en: has translation
+  description:
+    en: indicates A has a translation B
+  props:
+    datacite: HasTranslation
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasTranslation
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/HasTranslation
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: hasversion
+  title:
+    cs: má verzi
+    en: has version
+  description:
+    en: indicates A has a version B
+  props:
+    datacite: HasVersion
+    zenodo: hasversion
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/HasVersion
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/HasVersion
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: iscitedby
+  title:
+    cs: je citován (čím)
+    en: is cited by
+  description:
+    en: indicates that B includes A in a citation
+  props:
+    datacite: IsCitedBy
+    openaire: IsCitedBy
+    zenodo: iscitedby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCitedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsCitedBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: iscollectedby
+  title:
+    cs: je sbírán (čím)
+    en: is collected by
+  description:
+    en: Indicates A is collected by B
+  props:
+    datacite: IsCollectedBy
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCollectedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsCollectedBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: iscompiledby
+  title:
+    cs: kompilován (čím)
+    en: is compiled by
+  description:
+    en: indicates B is used to compile or create A
+  props:
+    datacite: IsCompiledBy
+    openaire: isCompiledBy
+    zenodo: iscompiledby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsCompiledBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsCompiledBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: iscontinuedby
+  title:
+    cs: je pokračováním (čeho)
+    en: is continued by
+  description:
+    en: indicates A is continued by the work B
+  props:
+    datacite: IsContinuedBy
+    openaire: IsContinuedBy
+    zenodo: iscontinuedby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsContinuedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsContinuedBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isderivedfrom
+  title:
+    cs: je odvozen od (čeho)
+    en: is derived from
+  description:
+    en: indicates B is a source upon which A is based
+  props:
+    datacite: IsDerivedFrom
+    openaire: IsDerivedFrom
+    zenodo: isderivedfrom
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDerivedFrom
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsDerivedFrom
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isdescribedby
+  title:
+    cs: je popsán (čím)
+    en: is described by
+  description:
+    en: indicates A is described by B
+  props:
+    datacite: IsDescribedBy
+    zenodo: isdescribedby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDescribedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsDescribedBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isdocumentedby
+  title:
+    cs: je zdokumentován (čím)
+    en: is documented by
+  description:
+    en: indicates B is documentation about/explaining A
+  props:
+    datacite: IsDocumentedBy
+    openaire: IsDocumentedBy
+    zenodo: isdocumentedby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsDocumentedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsDocumentedBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isidenticalto
+  title:
+    cs: je identický s
+    en: is identical to
+  description:
+    en: indicates that A is identical to B, for use when there is a need to register
+      two separate instances of the same resource
+  props:
+    datacite: IsIdenticalTo
+    openaire: IsIdenticalTo
+    zenodo: isidenticalto
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsIdenticalTo
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsIdenticalTo
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: ismetadatafor
+  title:
+    cs: je metadaty pro
+    en: is metadata for
+  description:
+    en: indicates additional metadata A for a resource B
+  props:
+    datacite: IsMetadataFor
+    openaire: IsMetadataFor
+    zenodo: ismetadatafor
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsMetadataFor
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsMetadataFor
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isnewversionof
+  title:
+    cs: je novou verzí (čeho)
+    en: is new version of
+  description:
+    en: indicates A is a new edition of B, where the new edition has been modified
+      or updated
+  props:
+    datacite: IsNewVersionOf
+    openaire: IsNewVersionOf
+    zenodo: isnewversionof
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsNewVersionOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsNewVersionOf
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isobsoletedby
+  title:
+    cs: je nahrazen (čím)
+    en: is obsoleted by
+  description:
+    en: Indicates A is replaced by B
+  props:
+    datacite: IsObsoletedBy
+    zenodo: isobsoletedby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsObsoletedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsObsoletedBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isoriginalformof
+  title:
+    cs: je původní variantou (čeho)
+    en: is original form of
+  description:
+    en: indicates A is the original form of B
+  props:
+    datacite: IsOriginalFormOf
+    openaire: IsOriginalFormOf
+    zenodo: isoriginalformof
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsOriginalFormOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsOriginalFormOf
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: ispartof
+  title:
+    cs: je součástí
+    en: is part of
+  description:
+    en: indicates A is a portion of B; may be used for elements of a series
+  props:
+    datacite: IsPartOf
+    openaire: IsPartOf
+    zenodo: ispartof
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPartOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsPartOf
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: ispreviousversionof
+  title:
+    cs: je předchozí verzí (čeho)
+    en: is previous version of
+  description:
+    en: indicates A is a previous edition of B
+  props:
+    datacite: IsPreviousVersionOf
+    openaire: IsPreviousVersionOf
+    zenodo: ispreviousversionof
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPreviousVersionOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsPreviousVersionOf
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: ispublishedin
+  title:
+    cs: je publikován v
+    en: is published in
+  description:
+    en: indicates A is published inside B, but is independent of other things published
+      inside of B
+  props:
+    datacite: IsPublishedIn
+    zenodo: ispublishedin
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsPublishedIn
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsPublishedIn
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isreferencedby
+  title:
+    cs: je na něj odkazováno z (čeho)
+    en: is referenced by
+  description:
+    en: indicates A is used as a source of information by B
+  props:
+    datacite: IsReferencedBy
+    openaire: IsReferencedBy
+    zenodo: isreferencedby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReferencedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsReferencedBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isrequiredby
+  title:
+    cs: je požadován (čím)
+    en: is required by
+  description:
+    en: Indicates A is required by B
+  props:
+    datacite: IsRequiredBy
+    zenodo: isrequiredby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsRequiredBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsRequiredBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isreviewedby
+  title:
+    cs: je recenzován (čím)
+    en: is reviewed by
+  description:
+    en: indicates that A is reviewed by B
+  props:
+    datacite: IsReviewedBy
+    openaire: IsReviewedBy
+    zenodo: isreviewedby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsReviewedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsReviewedBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: issourceof
+  title:
+    cs: je zdrojem odvozené verze
+    en: is source of
+  description:
+    en: indicates A is a source upon which B is based
+  props:
+    datacite: IsSourceOf
+    openaire: IsSourceOf
+    zenodo: issourceof
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSourceOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsSourceOf
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: issupplementedby
+  title:
+    cs: má doplněk
+    en: is supplemented by
+  description:
+    en: indicates that B is a supplement to A
+  props:
+    datacite: IsSupplementedBy
+    openaire: IsSupplementedBy
+    zenodo: issupplementedby
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementedBy
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsSupplementedBy
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: issupplementto
+  title:
+    cs: je doplňkem k (čemu)
+    en: is supplement to
+  description:
+    en: indicates that A is a supplement to B
+  props:
+    datacite: IsSupplementTo
+    openaire: IsSupplementTo
+    zenodo: issupplementto
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsSupplementTo
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsSupplementTo
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: istranslationof
+  title:
+    cs: je překladem (čeho)
+    en: is translation of
+  description:
+    en: indicates A is a translation of B
+  props:
+    datacite: IsTranslationOf
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsTranslationOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsTranslationOf
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isvariantformof
+  title:
+    cs: je variantou (čeho)
+    en: is variant form of
+  description:
+    en: indicates A is a variant or different form of B
+  props:
+    datacite: IsVariantFormOf
+    openaire: IsVariantFormOf
+    zenodo: isvariantformof
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVariantFormOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsVariantFormOf
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: isversionof
+  title:
+    cs: je verzí
+    en: is version of
+  description:
+    en: indicates A is a version of B
+  props:
+    datacite: IsVersionOf
+    zenodo: isversionof
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/IsVersionOf
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/IsVersionOf
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: obsoletes
+  title:
+    cs: nahrazuje (co)
+    en: obsoletes
+  description:
+    en: Indicates A replaces B
+  props:
+    datacite: Obsoletes
+    zenodo: obsoletes
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Obsoletes
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Obsoletes
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: other
+  title:
+    cs: jiná role
+    en: other
+  description:
+    en: indicates that A is related to B and the relationship does not fit into an
+      existing category
+  props:
+    datacite: Other
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Other
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Other
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: references
+  title:
+    cs: odkazuje (na co)
+    en: references
+  description:
+    en: indicates B is used as a source of information for A
+  props:
+    datacite: References
+    openaire: References
+    zenodo: references
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/References
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/References
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: requires
+  title:
+    cs: požaduje (co)
+    en: requires
+  description:
+    en: Indicates A requires B
+  props:
+    datacite: Requires
+    zenodo: requires
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Requires
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Requires
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch
+- id: reviews
+  title:
+    cs: recenzuje (co)
+    en: reviews
+  description:
+    en: indicates that A is a review of B
+  props:
+    datacite: Reviews
+    openaire: Reviews
+    zenodo: reviews
+  mappings:
+  - identifier: https://vocabs.ccmm.cz/registry/codelist/RelationType/Reviews
+    scheme: https://vocabs.ccmm.cz/registry/codelist/RelationType/
+    relation: exactMatch
+  - identifier: https://w3id.org/tib/datacite/vocab/relationType/Reviews
+    scheme: https://w3id.org/tib/datacite/vocab/relationType/
+    relation: exactMatch

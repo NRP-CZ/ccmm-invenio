@@ -609,15 +609,13 @@ EN: Conversion JSON (dmq82-ed856) → CCMM XML
         <iri>http://publications.europa.eu/resource/authority/file-type/TAR</iri>
         <label xml:lang="en">TAR</label>
       </format>
-      <media_type>
-        <!-- There is no official registered media type for TAR in IANA (see https://www.iana.org/assignments/media-types/media-types.xhtml);
+      <!-- media_type (0..1) is omitted: there is no official registered media type for TAR in IANA
+        (see https://www.iana.org/assignments/media-types/media-types.xhtml);
         CCMM specification note: "This property SHOULD be used when the media type of the distribution is defined
         in IANA (using value from https://www.iana.org/assignments/media-types/media-types.xhtml),
         otherwise Format MAY be used with values from Publication Office of the EU File type
-        codelist http://publications.europa.eu/resource/dataset/file-type." Thus, publications.europa.eu iri is used Q: how to update label though? -->
-        <iri>http://publications.europa.eu/resource/authority/file-type/TAR</iri>
-        <label xml:lang="en">TAR</label>
-      </media_type>
+        codelist http://publications.europa.eu/resource/dataset/file-type." The format above is used instead,
+        media_type takes IANA media types only. -->
       <byte_size>294809088</byte_size>
       <!-- The JSON has only "etag:" without a value — checksum is optional; once a value
             exists (e.g., SHA-256), we can add checksum_value and algorithm, e.g. as shown:

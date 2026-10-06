@@ -1,0 +1,22 @@
+# Interoperability props of the access rights vocabulary: the openaire
+# access rights regime of each access right, converted from the addon ttl of
+# the old pipeline (src/ccmm_invenio/input/addon_access_rights.ttl,
+# re-keyed from the COAR concepts to the InvenioRDM access status ids).
+# The Czech labels the old addon added are not carried over - the COAR
+# access rights vocabulary carries them itself now.
+#
+# Note: metadata-only is closedAccess (the old addon had openAccess), as in the
+# InvenioRDM DataCite serializer (metadata-only -> info:eu-repo/semantics/closedAccess)
+# and in line with the eprint ClosedAccess related match of the COAR concept.
+#
+# The props are merged into the vocabulary graph by the converter, strictly:
+# a subject that is not a concept of the access rights vocabulary fails the
+# conversion instead of being silently dropped.
+
+@prefix accessrights: <https://nma.eosc.cz/vocabularies/accessrights/> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+
+accessrights:embargoed     props:openaire "info:eu-repo/semantics/embargoedAccess" .
+accessrights:metadata-only props:openaire "info:eu-repo/semantics/closedAccess" .
+accessrights:open          props:openaire "info:eu-repo/semantics/openAccess" .
+accessrights:restricted    props:openaire "info:eu-repo/semantics/restrictedAccess" .

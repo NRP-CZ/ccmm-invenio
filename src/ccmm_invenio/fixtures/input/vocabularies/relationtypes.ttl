@@ -1,0 +1,76 @@
+# Interoperability props of the relation types vocabulary: the zenodo and
+# openaire relation types of each relation type, converted from the addon
+# csvs of the old pipeline (src/ccmm_invenio/input/addon_relation_types.csv
+# and addon_relation_types_openaire.csv). The subjects are the NMA relation
+# type URIs (the ids the CamelCase names lowercase to); the relation types
+# the old addons gave no zenodo or openaire type carry none (collects,
+# iscollectedby, hastranslation, istranslationof, other). The datacite addon
+# is not carried over - the vocabulary already links to the DataCite
+# relation types through the exact matches of its concepts.
+#
+# The props are merged into the vocabulary graph by the converter, strictly:
+# a subject that is not a concept of the relation types vocabulary fails the
+# conversion instead of being silently dropped.
+
+@prefix relationtypes: <https://nma.eosc.cz/vocabularies/relationtypes/> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+
+relationtypes:cites            props:zenodo "cites" ;
+                               props:openaire "Cites" .
+relationtypes:compiles         props:zenodo "compiles" ;
+                               props:openaire "Compiles" .
+relationtypes:continues        props:zenodo "continues" ;
+                               props:openaire "Continues" .
+relationtypes:describes        props:zenodo "describes" .
+relationtypes:documents        props:zenodo "documents" ;
+                               props:openaire "Documents" .
+relationtypes:hasmetadata      props:zenodo "hasmetadata" ;
+                               props:openaire "HasMetadata" .
+relationtypes:haspart          props:zenodo "haspart" ;
+                               props:openaire "HasPart" .
+relationtypes:hasversion       props:zenodo "hasversion" .
+relationtypes:iscitedby        props:zenodo "iscitedby" ;
+                               props:openaire "IsCitedBy" .
+relationtypes:iscompiledby     props:zenodo "iscompiledby" ;
+                               props:openaire "isCompiledBy" .
+relationtypes:iscontinuedby    props:zenodo "iscontinuedby" ;
+                               props:openaire "IsContinuedBy" .
+relationtypes:isderivedfrom    props:zenodo "isderivedfrom" ;
+                               props:openaire "IsDerivedFrom" .
+relationtypes:isdescribedby    props:zenodo "isdescribedby" .
+relationtypes:isdocumentedby   props:zenodo "isdocumentedby" ;
+                               props:openaire "IsDocumentedBy" .
+relationtypes:isidenticalto    props:zenodo "isidenticalto" ;
+                               props:openaire "IsIdenticalTo" .
+relationtypes:ismetadatafor    props:zenodo "ismetadatafor" ;
+                               props:openaire "IsMetadataFor" .
+relationtypes:isnewversionof   props:zenodo "isnewversionof" ;
+                               props:openaire "IsNewVersionOf" .
+relationtypes:isobsoletedby    props:zenodo "isobsoletedby" .
+relationtypes:isoriginalformof props:zenodo "isoriginalformof" ;
+                               props:openaire "IsOriginalFormOf" .
+relationtypes:ispartof         props:zenodo "ispartof" ;
+                               props:openaire "IsPartOf" .
+relationtypes:ispreviousversionof props:zenodo "ispreviousversionof" ;
+                               props:openaire "IsPreviousVersionOf" .
+relationtypes:ispublishedin    props:zenodo "ispublishedin" .
+relationtypes:isreferencedby   props:zenodo "isreferencedby" ;
+                               props:openaire "IsReferencedBy" .
+relationtypes:isrequiredby     props:zenodo "isrequiredby" .
+relationtypes:isreviewedby     props:zenodo "isreviewedby" ;
+                               props:openaire "IsReviewedBy" .
+relationtypes:issourceof       props:zenodo "issourceof" ;
+                               props:openaire "IsSourceOf" .
+relationtypes:issupplementedby props:zenodo "issupplementedby" ;
+                               props:openaire "IsSupplementedBy" .
+relationtypes:issupplementto   props:zenodo "issupplementto" ;
+                               props:openaire "IsSupplementTo" .
+relationtypes:isvariantformof  props:zenodo "isvariantformof" ;
+                               props:openaire "IsVariantFormOf" .
+relationtypes:isversionof      props:zenodo "isversionof" .
+relationtypes:obsoletes        props:zenodo "obsoletes" .
+relationtypes:references       props:zenodo "references" ;
+                               props:openaire "References" .
+relationtypes:requires         props:zenodo "requires" .
+relationtypes:reviews          props:zenodo "reviews" ;
+                               props:openaire "Reviews" .

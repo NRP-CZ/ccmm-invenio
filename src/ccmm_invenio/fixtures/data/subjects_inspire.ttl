@@ -1,0 +1,513 @@
+@prefix europa-language: <http://publications.europa.eu/resource/authority/language/> .
+@prefix europa-ontology: <http://publications.europa.eu/ontology/> .
+@prefix europa-web: <https://op.europa.eu/en/web/> .
+@prefix nma: <https://nma.eosc.cz/vocabularies/> .
+@prefix nma-vocabularies: <https://nma.eosc.cz/vocabularies/vocabularies/> .
+@prefix ns1: <http://inspire.ec.europa.eu/theme/> .
+@prefix ns2: <https://nma.eosc.cz/vocabularies/subjects/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix props: <https://nma.eosc.cz/vocabularies/vocabularies/invenioprops> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tags: <https://nma.eosc.cz/vocabularies/vocabularies/inveniotags> .
+
+europa-ontology:euvoc a owl:Ontology ;
+    rdfs:label "EU Vocabularies ontology (euvoc)"@en ;
+    rdfs:comment "Ontology of the EU Publications Office; its terms are used as skos:notation datatypes to distinguish language code schemes (e.g. ISO_639_1, ISO_639_3, XML_LNG)."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+europa-language: a skos:ConceptScheme ;
+    rdfs:label "EU Publications Office language authority"@en ;
+    rdfs:comment "EU Publications Office language authority table; identifiers are ISO 639-3 codes."@en ;
+    rdfs:seeAlso europa-web:eu-vocabularies .
+
+nma: a owl:Ontology ;
+    rdfs:label "NMA vocabularies"@en ;
+    rdfs:comment "Namespace of the NMA vocabularies; each sub-path is one vocabulary (e.g. languages)."@en .
+
+nma-vocabularies:invenioid a rdfs:Datatype ;
+    rdfs:label "NMA internal vocabulary id"@en ;
+    rdfs:comment "Marks skos:notation literals carrying the internal NMA vocabulary id, used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props: a owl:Ontology ;
+    rdfs:label "NMA vocabulary properties"@en ;
+    rdfs:comment "Namespace of internal vocabulary properties and datatypes used for round-tripping vocabulary data; not intended for external compatibility."@en .
+
+props:alpha_2 a rdf:Property ;
+    rdfs:label "ISO 639-1 code"@en ;
+    rdfs:comment "Two-letter ISO 639-1 code of a language, when it has one."@en .
+
+props:classification_code a rdf:Property ;
+    rdfs:label "classification code"@en ;
+    rdfs:comment "Code of a subject in its classification scheme (e.g. the FORD code 10101 or the INSPIRE theme code EF)."@en .
+
+props:csl a rdf:Property ;
+    rdfs:label "csl"@en ;
+    rdfs:comment "Citation Style Language (CSL) type of a resource type."@en .
+
+props:datacite a rdf:Property ;
+    rdfs:label "DataCite relationType name"@en ;
+    rdfs:comment "Name of the DataCite relationType (e.g. IsCitedBy) a relation type concept stands for."@en .
+
+props:datacite_general a rdf:Property ;
+    rdfs:label "datacite_general"@en ;
+    rdfs:comment "DataCite resourceTypeGeneral of a resource type."@en .
+
+props:datacite_type a rdf:Property ;
+    rdfs:label "datacite_type"@en ;
+    rdfs:comment "DataCite resource type name, when the general one is further specified."@en .
+
+props:eurepo a rdf:Property ;
+    rdfs:label "eurepo"@en ;
+    rdfs:comment "eu-repo semantics identifier of a resource type."@en .
+
+props:marc a rdf:Property ;
+    rdfs:label "MARC 21 relator code"@en ;
+    rdfs:comment "Three-letter MARC 21 relator code (e.g. prc) of a role concept."@en .
+
+props:marc21_subtype a rdf:Property ;
+    rdfs:label "marc21_subtype"@en ;
+    rdfs:comment "MARC 21 bibliographic level of a resource type."@en .
+
+props:marc21_type a rdf:Property ;
+    rdfs:label "marc21_type"@en ;
+    rdfs:comment "MARC 21 type of record of a resource type."@en .
+
+props:openaire_resourceType a rdf:Property ;
+    rdfs:label "openaire_resourceType"@en ;
+    rdfs:comment "OpenAIRE resource type code of a resource type."@en .
+
+props:openaire_type a rdf:Property ;
+    rdfs:label "openaire_type"@en ;
+    rdfs:comment "OpenAIRE type name of a resource type."@en .
+
+props:schema.org a rdf:Property ;
+    rdfs:label "schema.org"@en ;
+    rdfs:comment "schema.org type a resource type maps to."@en .
+
+props:subtype a rdf:Property ;
+    rdfs:label "subtype"@en ;
+    rdfs:comment "InvenioRDM resource subtype id; empty for top-level types."@en .
+
+props:type a rdf:Property ;
+    rdfs:label "type"@en ;
+    rdfs:comment "InvenioRDM resource type id a resource type belongs to."@en .
+
+props:xml_lang a rdf:Property ;
+    rdfs:label "xml:lang code"@en ;
+    rdfs:comment "Language tag suitable for an xml:lang attribute: the ISO 639-1 code when available, the ISO 639-3 code otherwise."@en .
+
+tags: a rdf:Property ;
+    rdfs:label "vocabulary tags"@en ;
+    rdfs:comment "Links a vocabulary concept to its tag values (e.g. the scope and type of a language); internal use."@en .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:ac> a skos:Concept ;
+    skos:definition "Fyzikální stav ovzduší. Zahrnuje prostorová data založená na měřeních, modelech nebo jejich kombinaci, jakož i místa měření."@cs,
+        "Physical conditions in the atmosphere. Includes spatial data based on measurements, on models or on a combination thereof and includes measurement locations."@en ;
+    skos:exactMatch ns1:ac ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:ac"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Stav ovzduší"@cs,
+        "Atmospheric conditions"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "AC" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:ad> a skos:Concept ;
+    skos:definition "Poloha nemovitostí podle adresních identifikátorů, obvykle pomocí názvu ulice, čísla domu, poštovního směrovacího čísla."@cs,
+        "Location of properties based on address identifiers, usually by road name, house number, postal code."@en ;
+    skos:exactMatch ns1:ad ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:ad"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Adresy"@cs,
+        "Addresses"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "AD" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:af> a skos:Concept ;
+    skos:definition "Vybavení a zařízení zemědělské výroby (včetně zavlažovacích systémů, skleníků a stájí)."@cs,
+        "Farming equipment and production facilities (including irrigation systems, greenhouses and stables)."@en ;
+    skos:exactMatch ns1:af ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:af"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zemědělská a akvakulturní zařízení"@cs,
+        "Agricultural and aquaculture facilities"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "AF" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:am> a skos:Concept ;
+    skos:definition "Oblasti spravované, regulované nebo používané pro hlášení na mezinárodní, evropské, celostátní, regionální nebo místní úrovni. Zahrnuje skládky, pásma hygienické ochrany vodních zdrojů, oblasti zranitelné dusičnany, regulované plavební dráhy na moři nebo rozsáhlých vnitrozemských vodních plochách, oblasti pro ukládání odpadů, pásma s omezením hladiny hluku, povolená průzkumná a těžební území, oblasti povodí, příslušné jednotky pro podávání hlášení a pásma pobřežní správy."@cs,
+        "Areas managed, regulated or used for reporting at international, European, national, regional and local levels. Includes dumping sites, restricted areas around drinking water sources, nitrate-vulnerable zones, regulated fairways at sea or large inland waters, areas for the dumping of waste, noise restriction zones, prospecting and mining permit areas, river basin districts, relevant reporting units and coastal zone management areas."@en ;
+    skos:exactMatch ns1:am ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:am"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Správní oblasti/chráněná pásma/regulovaná území a jednotky podávající hlášení"@cs,
+        "Area management/restriction/regulation zones and reporting units"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "AM" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:au> a skos:Concept ;
+    skos:definition "Správní jednotky rozdělující území, ve kterém členské státy mají nebo vykonávají svrchovaná práva, pro účely místní, regionální a státní správy, oddělené správními hranicemi."@cs,
+        "Units of administration, dividing areas where Member States have and/or exercise jurisdictional rights, for local, regional and national governance, separated by administrative boundaries."@en ;
+    skos:exactMatch ns1:au ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:au"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Správní jednotky"@cs,
+        "Administrative units"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "AU" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:br> a skos:Concept ;
+    skos:definition "Oblasti s poměrně stejnorodými ekologickými podmínkami a společnými vlastnostmi."@cs,
+        "Areas of relatively homogeneous ecological conditions with common characteristics."@en ;
+    skos:exactMatch ns1:br ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:br"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Bioregiony"@cs,
+        "Bio-geographical regions"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "BR" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:bu> a skos:Concept ;
+    skos:definition "Zeměpisná poloha budov."@cs,
+        "Geographical location of buildings."@en ;
+    skos:exactMatch ns1:bu ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:bu"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Budovy"@cs,
+        "Buildings"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "BU" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:cp> a skos:Concept ;
+    skos:definition "Území vymezená v katastru nemovitostí nebo v obdobném rejstříku."@cs,
+        "Areas defined by cadastral registers or equivalent."@en ;
+    skos:exactMatch ns1:cp ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:cp"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Katastrální parcely"@cs,
+        "Cadastral parcels"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "CP" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:ef> a skos:Concept ;
+    skos:definition "Rozmístění a provoz zařízení pro sledování životního prostředí zahrnuje pozorování a měření emisí, stavu složek životního prostředí a dalších ukazatelů ekosystému (druhové rozmanitosti, ekologických podmínek rostlinstva atd.) orgány veřejné správy nebo jejich jménem."@cs,
+        "Location and operation of environmental monitoring facilities includes observation and measurement of emissions, of the state of environmental media and of other ecosystem parameters (biodiversity, ecological conditions of vegetation, etc.) by or on behalf of public authorities."@en ;
+    skos:exactMatch ns1:ef ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:ef"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zařízení pro sledování životního prostředí"@cs,
+        "Environmental monitoring facilities"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "EF" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:el> a skos:Concept ;
+    skos:definition "Digitální výškový model pevniny, povrchu ledovců a oceánů. Zahrnuje nadmořské výšky pevnin, vodní hloubky a pobřežní čáru."@cs,
+        "Digital elevation models for land, ice and ocean surface. Includes terrestrial elevation, bathymetry and shoreline."@en ;
+    skos:exactMatch ns1:el ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:el"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Nadmořská výška"@cs,
+        "Elevation"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "EL" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:er> a skos:Concept ;
+    skos:definition "Energetické zdroje, včetně uhlovodíků, vodní energie, bioenergie, sluneční a větrné energie atd., případně včetně informací o hloubce nebo výšce týkajících se rozsahu zdroje."@cs,
+        "Energy resources including hydrocarbons, hydropower, bio-energy, solar, wind, etc., where relevant including depth/height information on the extent of the resource."@en ;
+    skos:exactMatch ns1:er ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:er"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Energetické zdroje"@cs,
+        "Energy resources"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "ER" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:ge> a skos:Concept ;
+    skos:definition "Geologie charakterizovaná podle složení a struktury. Zahrnuje skalní podloží, zvodně a geomorfologii."@cs,
+        "Geology characterised according to composition and structure. Includes bedrock, aquifers and geomorphology."@en ;
+    skos:exactMatch ns1:ge ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:ge"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Geologie"@cs,
+        "Geology"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "GE" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:gg> a skos:Concept ;
+    skos:definition "Harmonizovaná souřadnicová síť s víceúrovňovým rozlišením, normalizovanou polohou a velikostí buněk souřadnicové sítě, a společným vztažným bodem."@cs,
+        "Harmonised multi-resolution grid with a common point of origin and standardised location and size of grid cells."@en ;
+    skos:exactMatch ns1:gg ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:gg"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zeměpisné soustavy souřadnicových sítí"@cs,
+        "Geographical grid systems"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "GG" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:gn> a skos:Concept ;
+    skos:definition "Jména oblastí, regionů, míst, velkoměst, předměstí, měst nebo sídel nebo jakýchkoli zeměpisných nebo topografických útvarů veřejného zájmu nebo historického významu."@cs,
+        "Names of areas, regions, localities, cities, suburbs, towns or settlements, or any geographical or topographical feature of public or historical interest."@en ;
+    skos:exactMatch ns1:gn ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:gn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zeměpisné názvy"@cs,
+        "Geographical names"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "GN" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:hb> a skos:Concept ;
+    skos:definition "Zeměpisné oblasti vyznačující se zvláštními ekologickými podmínkami, procesy, strukturami a (životně důležitými) funkcemi, které skýtají fyzickou podporu organismům, které v nich žijí. Zahrnují pozemské a vodní oblasti rozlišené podle zeměpisných, abiotických a biotických prvků, přirozené i částečně přirozené povahy."@cs,
+        "Geographical areas characterised by specific ecological conditions, processes, structure, and (life support) functions that physically support the organisms that live there. Includes terrestrial and aquatic areas distinguished by geographical, abiotic and biotic features, whether entirely natural or semi-natural."@en ;
+    skos:exactMatch ns1:hb ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:hb"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Stanoviště a biotopy"@cs,
+        "Habitats and biotopes"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "HB" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:hh> a skos:Concept ;
+    skos:definition "Zeměpisné rozložení převládajícího výskytu patologických stavů (alergií, rakovin, nemocí dýchacího ústrojí atd.), informace o dopadu na zdraví (biomarkery, pokles plodnosti, epidemie) nebo životní podmínky (únava, stres atd.) související přímo (znečištění ovzduší, chemikálie, ztenčování ozonové vrstvy, hluk atd.) nebo nepřímo (potraviny, geneticky modifikované organismy atd.) s kvalitou životního prostředí."@cs,
+        "Geographical distribution of dominance of pathologies (allergies, cancers, respiratory diseases, etc.), information indicating the effect on health (biomarkers, decline of fertility, epidemics) or well-being of humans (fatigue, stress, etc.) linked directly (air pollution, chemicals, depletion of the ozone layer, noise, etc.) or indirectly (food, genetically modified organisms, etc.) to the quality of the environment."@en ;
+    skos:exactMatch ns1:hh ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:hh"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Lidské zdraví a bezpečnost"@cs,
+        "Human health and safety"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "HH" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:hy> a skos:Concept ;
+    skos:definition "Přírodní prvky, včetně mořských oblastí a všech ostatních s nimi souvisejících vodních těles a prvků, včetně povodí a dílčích povodí. Případně v souladu s definicemi uvedenými ve směrnici Evropského parlamentu a Rady 2000/60/ES ze dne 23. října 2000, kterou se stanoví rámec pro činnost Společenství v oblasti vodní politiky (2), a v podobě sítí."@cs,
+        "Hydrographic elements, including marine areas and all other water bodies and items related to them, including river basins and sub-basins. Where appropriate, according to the definitions set out in Directive 2000/60/EC of the European Parliament and of the Council of 23 October 2000 establishing a framework for Community action in the field of water policy (2) and in the form of networks."@en ;
+    skos:exactMatch ns1:hy ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:hy"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Vodopis"@cs,
+        "Hydrography"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "HY" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:lc> a skos:Concept ;
+    skos:definition "Fyzický a biologický pokryv zemského povrchu, včetně uměle vytvořených ploch, zemědělských oblastí, lesů, přirozených a částečně přirozených oblastí, mokřadů, vodních těles."@cs,
+        "Physical and biological cover of the earth's surface including artificial surfaces, agricultural areas, forests, (semi-)natural areas, wetlands, water bodies."@en ;
+    skos:exactMatch ns1:lc ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:lc"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Krajinný pokryv"@cs,
+        "Land cover"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "LC" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:lu> a skos:Concept ;
+    skos:definition "Území popsané podle své současné a plánované funkce nebo společensko-hospodářských účelů (např. obytné, průmyslové, obchodní, zemědělské, lesnické, rekreační)."@cs,
+        "Territory characterised according to its current and future planned functional dimension or socio-economic purpose (e.g. residential, industrial, commercial, agricultural, forestry, recreational)."@en ;
+    skos:exactMatch ns1:lu ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:lu"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Využití území"@cs,
+        "Land use"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "LU" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:mf> a skos:Concept ;
+    skos:definition "Povětrnostní podmínky a jejich měření; srážky, teplota, výpar z půdy a rostlinného pokryvu, rychlost a směr větru."@cs,
+        "Weather conditions and their measurements; precipitation, temperature, evapotranspiration, wind speed and direction."@en ;
+    skos:exactMatch ns1:mf ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:mf"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zeměpisné meteorologické prvky"@cs,
+        "Meteorological geographical features"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "MF" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:mr> a skos:Concept ;
+    skos:definition "Nerostné suroviny, včetně kovových rud, průmyslových surovin atd., případně včetně informací o hloubce nebo výšce týkajících se rozsahu zdroje."@cs,
+        "Mineral resources including metal ores, industrial minerals, etc., where relevant including depth/height information on the extent of the resource."@en ;
+    skos:exactMatch ns1:mr ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:mr"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Nerostné suroviny"@cs,
+        "Mineral resources"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "MR" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:nz> a skos:Concept ;
+    skos:definition "Zranitelné oblasti označené podle přírodního nebezpečí (všechny povětrnostní, hydrologické, seismické a sopečné úkazy, jakož i ničivé požáry, které mohou mít vzhledem ke svému výskytu, závažnosti a četnosti vážný dopad na společnost), např. povodně, sesuvy a sesedání půdy, laviny, lesní požáry, zemětřesení, sopečné výbuchy."@cs,
+        "Vulnerable areas characterised according to natural hazards (all atmospheric, hydrologic, seismic, volcanic and wildfire phenomena that, because of their location, severity, and frequency, have the potential to seriously affect society), e.g. floods, landslides and subsidence, avalanches, forest fires, earthquakes, volcanic eruptions."@en ;
+    skos:exactMatch ns1:nz ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:nz"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Oblasti ohrožené přírodními riziky"@cs,
+        "Natural risk zones"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "NZ" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:of> a skos:Concept ;
+    skos:definition "Fyzikální stav oceánů (proudy, slanost, výška vln atd.)."@cs,
+        "Physical conditions of oceans (currents, salinity, wave heights, etc.)."@en ;
+    skos:exactMatch ns1:of ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:of"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Zeměpisné oceánografické prvky"@cs,
+        "Oceanographic geographical features"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "OF" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:oi> a skos:Concept ;
+    skos:definition "Obrazová data pořízená satelitními nebo leteckými čidly vztažená k zemskému povrchu pomocí zeměpisné soustavy souřadnic."@cs,
+        "Geo-referenced image data of the Earth's surface, from either satellite or airborne sensors."@en ;
+    skos:exactMatch ns1:oi ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:oi"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Ortofotosnímky"@cs,
+        "Orthoimagery"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "OI" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:pd> a skos:Concept ;
+    skos:definition "Zeměpisné rozložení osob, včetně charakteristik obyvatelstva a druhů činnosti, seskupených podle souřadnicové sítě, regionu, správní jednotky nebo jiné analytické jednotky."@cs,
+        "Geographical distribution of people, including population characteristics and activity levels, aggregated by grid, region, administrative unit or other analytical unit."@en ;
+    skos:exactMatch ns1:pd ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:pd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Rozložení obyvatelstva – demografie"@cs,
+        "Population distribution — demography"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "PD" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:pf> a skos:Concept ;
+    skos:definition "Místa s průmyslovou výrobou, včetně zařízení, na která se vztahuje směrnice Rady 96/61/ES ze dne 24. září 1996 o integrované prevenci a omezování znečištění (1), a zařízení na jímání vody, těžbu, skladiště a úložiště."@cs,
+        "Industrial production sites, including installations covered by Council Directive 96/61/EC of 24 September 1996 concerning integrated pollution prevention and control (1) and water abstraction facilities, mining, storage sites."@en ;
+    skos:exactMatch ns1:pf ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:pf"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Výrobní a průmyslová zařízení"@cs,
+        "Production and industrial facilities"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "PF" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:ps> a skos:Concept ;
+    skos:definition "Území určená nebo spravovaná v rámci mezinárodních právních předpisů a právních předpisů Společenství a členských států pro dosažení konkrétních cílů jejich ochrany."@cs,
+        "Area designated or managed within a framework of international, Community and Member States' legislation to achieve specific conservation objectives."@en ;
+    skos:exactMatch ns1:ps ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:ps"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Chráněná území"@cs,
+        "Protected sites"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "PS" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:rs> a skos:Concept ;
+    skos:definition "Systémy umožňující jednoznačné přiřazení polohy prostorovým informacím pomocí souboru souřadnic (x, y, z) nebo zeměpisné šířky, zeměpisné délky a výšky, vycházející z údajů polohových a výškových geodetických systémů."@cs,
+        "Systems for uniquely referencing spatial information in space as a set of coordinates (x, y, z) and/or latitude and longitude and height, based on a geodetic horizontal and vertical datum."@en ;
+    skos:exactMatch ns1:rs ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:rs"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Souřadnicové referenční systémy"@cs,
+        "Coordinate reference systems"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "RS" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:sd> a skos:Concept ;
+    skos:definition "Zeměpisné rozložení výskytu živočišných a rostlinných druhů seskupených podle souřadnicové sítě, regionu, správní jednotky nebo jiné analytické jednotky."@cs,
+        "Geographical distribution of occurrence of animal and plant species aggregated by grid, region, administrative unit or other analytical unit."@en ;
+    skos:exactMatch ns1:sd ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:sd"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Rozložení druhů"@cs,
+        "Species distribution"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "SD" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:so> a skos:Concept ;
+    skos:definition "Půda a její podloží popsané podle hloubky, zrnitosti, struktury a obsahu částic a organického materiálu, podílu skeletu, erozí, případně průměrného sklonu svahu a očekávané kapacity jímavosti vody."@cs,
+        "Soils and subsoil characterised according to depth, texture, structure and content of particles and organic material, stoniness, erosion, where appropriate mean slope and anticipated water storage capacity."@en ;
+    skos:exactMatch ns1:so ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:so"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Půda"@cs,
+        "Soil"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "SO" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:sr> a skos:Concept ;
+    skos:definition "Fyzikální stav moří a slaných vod rozdělených do regionů a subregionů se společnými vlastnostmi."@cs,
+        "Physical conditions of seas and saline water bodies divided into regions and sub-regions with common characteristics."@en ;
+    skos:exactMatch ns1:sr ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:sr"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Mořské oblasti"@cs,
+        "Sea regions"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "SR" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:su> a skos:Concept ;
+    skos:definition "Jednotky pro šíření nebo používání statistických informací."@cs,
+        "Units for dissemination or use of statistical information."@en ;
+    skos:exactMatch ns1:su ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:su"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Statistické jednotky"@cs,
+        "Statistical units"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "SU" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:tn> a skos:Concept ;
+    skos:definition "Silniční, železniční, letecké a vodní dopravní sítě a související infrastruktura. Zahrnují spojnice mezi jednotlivými sítěmi. Zahrnují rovněž transevropskou dopravní síť, jak je vymezena v rozhodnutí Evropského parlamentu a Rady č. 1692/96/ES ze dne 23. července 1996 o hlavních směrech Společenství pro rozvoj transevropské dopravní sítě (1) a v budoucích změnách uvedeného rozhodnutí."@cs,
+        "Road, rail, air and water transport networks and related infrastructure. Includes links between different networks. Also includes the trans-European transport network as defined in Decision No 1692/96/EC of the European Parliament and of the Council of 23 July 1996 on Community Guidelines for the development of the trans-European transport network (1) and future revisions of that Decision."@en ;
+    skos:exactMatch ns1:tn ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:tn"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Dopravní sítě"@cs,
+        "Transport networks"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "TN" .
+
+<https://nma.eosc.cz/vocabularies/subjects/inspire:us> a skos:Concept ;
+    skos:definition "Zahrnují zařízení, jako například kanalizace, nakládání s odpady, zásobování energií a zásobování vodou, správní a sociální státní služby, jako například veřejnou správu, zařízení civilní ochrany, školy a nemocnice."@cs,
+        "Includes utility facilities such as sewage, waste management, energy supply and water supply, administrative and social governmental services such as public administrations, civil protection sites, schools and hospitals."@en ;
+    skos:exactMatch ns1:us ;
+    skos:inScheme ns2: ;
+    skos:notation "inspire:us"^^nma-vocabularies:invenioid ;
+    skos:prefLabel "Veřejné služby a služby veřejné správy"@cs,
+        "Utility and governmental services"@en ;
+    skos:topConceptOf ns2: ;
+    props:classification_code "US" .
+
+ns2: skos:hasTopConcept <https://nma.eosc.cz/vocabularies/subjects/inspire:ac>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:ad>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:af>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:am>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:au>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:br>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:bu>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:cp>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:ef>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:el>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:er>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:ge>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:gg>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:gn>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:hb>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:hh>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:hy>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:lc>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:lu>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:mf>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:mr>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:nz>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:of>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:oi>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:pd>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:pf>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:ps>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:rs>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:sd>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:so>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:sr>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:su>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:tn>,
+        <https://nma.eosc.cz/vocabularies/subjects/inspire:us> .
+

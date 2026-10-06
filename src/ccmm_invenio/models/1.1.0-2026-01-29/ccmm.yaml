@@ -1,9 +1,9 @@
 # Version 2025-08-31
 #
-# This file is hand crafted from the xml schemas at https://github.com/techlib/ccmm 
+# This file is hand crafted from the xml schemas at https://github.com/techlib/ccmm
 # in the state from 2025-08-31. Changes, that were performed to the xsd:
 #
-# 1. Pluralization: for elements with maxoccurs=unbounded, the corresponding 
+# 1. Pluralization: for elements with maxoccurs=unbounded, the corresponding
 #    properties were made arrays and their names were pluralized
 # 2. Introduction of vocabularies: most of properties that have IRI and label
 #    were made into vocabularies. Currently there is no indication in xsd which
@@ -220,6 +220,7 @@ CCMMAgent:
       help:
         en: Use this field to link a person involved with the resource (e.g., author, contact point).
         cs: Toto pole použijte pro propojení osoby spojené se zdrojem (např. autor, kontaktní osoba).
+
 CCMMAlternateTitle:
   type: object
   xml: alternate_title
@@ -260,11 +261,12 @@ CCMMAlternateTitle:
       help:
         en: Use for abbreviations, translations, or other title variants by which the resource is known.
         cs: Použijte pro zkratky, překlady nebo jiné varianty názvu, pod nimiž je zdroj znám.
+
 CCMMApplicationProfile:
   type: object
   xml: application_profile
   properties:
-    iri: 
+    iri:
       type: keyword
       label:
         en: IRI
@@ -278,7 +280,7 @@ CCMMApplicationProfile:
     label:
       # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#label
       type: multilingual
-      required: true
+      # 0..n in the ccmm xsd (the iri is 1..1)
       label:
         en: Label
         cs: Popisek
@@ -288,6 +290,7 @@ CCMMApplicationProfile:
       help:
         en: Provide the name/description of the application profile used (e.g., "CCMM Basic Profile").
         cs: Uveďte název/popis používaného aplikačního profilu (např. „CCMM Základní profil“).
+
 CCMMChecksum:
   type: object
   xml: checksum
@@ -305,7 +308,7 @@ CCMMChecksum:
         cs: Volitelný globální identifikátor záznamu kontrolního součtu.
     algorithm:
       # sawsdl:modelReference=http://spdx.org/rdf/terms#algorithm
-      # TODO: in CCMM XML, this is not a vocabulary item, it is a simple URI. 
+      # TODO: in CCMM XML, this is not a vocabulary item, it is a simple URI.
       # Here we represent it as vocabulary for better data quality.
       type: CCMMChecksumAlgorithm
       xml: algorithm
@@ -331,6 +334,7 @@ CCMMChecksum:
       help:
         en: Provide the computed digest of the file in the format required by the selected algorithm (e.g., hex‑encoded SHA‑256).
         cs: Uveďte vypočtený otisk souboru ve formátu požadovaném zvoleným algoritmem (např. hex kódovaný SHA‑256).
+
 CCMMContactDetails:
   type: object
   xml: contact_details
@@ -406,6 +410,7 @@ CCMMContactDetails:
       help:
         en: Provide one or more telephone numbers in international format (e.g., +420 123 456 789).
         cs: Uveďte jedno nebo více telefonních čísel v mezinárodním formátu (např. +420 123 456 789).
+
 CCMMDataService:
   type: object
   xml: data_service
@@ -452,362 +457,14 @@ CCMMDataService:
       help:
         en: Provide a short service name for display.
         cs: Uveďte krátký název služby pro zobrazení.
-CCMMDataSet:
-  type: object
-  xml: data_set
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of the dataset.
-        cs: Perzistentní IRI datové sady.
-      help:
-        en: Enter a stable, globally unique identifier for the dataset (e.g., a handle or HTTP IRI).
-        cs: Zadejte stabilní, globálně jedinečný identifikátor datové sady (např. handle nebo HTTP IRI).
-    alternate_titles:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#hasAlternateTitle
-      type: array
-      xml: alternate_title
-      items:
-        type: CCMMAlternateTitle
-      label:
-        en: Alternate titles
-        cs: Alternativní názvy
-      hint:
-        en: Title variants (translations, abbreviations).
-        cs: Varianty názvu (překlady, zkratky).
-      help:
-        en: Provide variant titles to improve discovery across languages and communities.
-        cs: Uveďte varianty názvů pro lepší dohledatelnost napříč jazyky a komunitami.
-    descriptions:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasDescription
-      type: array
-      xml: description
-      items:
-        type: CCMMDescription
-      label:
-        en: Descriptions
-        cs: Popisy
-      hint:
-        en: One or more descriptive notes about the dataset.
-        cs: Jeden nebo více popisů datové sady.
-      help:
-        en: Add descriptive text such as abstracts, methods, provenance, or usage notes. Use multiple entries for different description types.
-        cs: Přidejte popisné texty jako abstrakt, metodiku, původ či poznámky k použití. Pro různé typy popisu použijte více položek.
-    distributions:
-      # sawsdl:modelReference=http://www.w3.org/ns/dcat#distribution
-      type: array
-      xml: distribution
-      items:
-        type: CCMMDistribution
-      label:
-        en: Distributions
-        cs: Distribuce
-      hint:
-        en: Available files and services providing the data.
-        cs: Dostupné soubory a služby poskytující data.
-      help:
-        en: List downloadable files and/or access services through which the dataset can be obtained.
-        cs: Uveďte stahovatelné soubory a/nebo přístupové služby, přes které lze datovou sadu získat.
-    funding_references:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasFundingReference
-      type: array
-      xml: funding_reference
-      items:
-        type: CCMMFundingReference
-      label:
-        en: Funding references
-        cs: Odkazy na financování
-      hint:
-        en: Information about grants or funding.
-        cs: Informace o grantech či financování.
-      help:
-        en: Cite funding programs, awards, and funders that supported the dataset.
-        cs: Uveďte programy, ocenění a poskytovatele financí, kteří datovou sadu podpořili.
-    identifiers:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#hasIdentifier
-      type: array
-      xml: identifier
-      required: true
-      min_items: 1
-      items:
-        type: CCMMIdentifier
-      label:
-        en: Identifiers
-        cs: Identifikátory
-      hint:
-        en: DOIs, handles, URNs or other identifiers.
-        cs: DOI, handle, URN či jiné identifikátory.
-      help:
-        en: Add all persistent identifiers assigned to the dataset. Include type/scheme where possible.
-        cs: Přidejte všechny perzistentní identifikátory přiřazené datové sadě. Pokud možno uveďte i typ/schéma.
-    locations:
-      # sawsdl:modelReference=http://purl.org/dc/terms/spatial
-      type: array
-      xml: location
-      items:
-        type: CCMMLocation
-      label:
-        en: Locations
-        cs: Lokace
-      hint:
-        en: Spatial coverage or place references.
-        cs: Prostorové pokrytí či odkazy na místa.
-      help:
-        en: Specify where the dataset applies or was collected. Use bounding boxes, geometries, and place names.
-        cs: Uveďte, čeho se data prostorově týkají nebo kde byla sbírána. Použijte ohraničující boxy, geometrie a názvy míst.
-    metadata_identifications:
-      # TODO: why is this an array?
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#isDescribedBy
-      type: array
-      xml: metadata_identification
-      required: true
-      min_items: 1
-      items:
-        type: CCMMMetadataRecord
-      label:
-        en: Described by
-        cs: Popis uveden v
-      hint:
-        en: Links to metadata records describing this dataset.
-        cs: Odkazy na záznamy metadat popisující tuto datovou sadu.
-      help:
-        en: Reference one or more metadata records (e.g., catalog entries) that provide additional description of the dataset.
-        cs: Odkazujte na jeden nebo více metadatových záznamů (např. katalogové záznamy), které poskytují doplňující popis datové sady.
-    other_languages:
-      # sawsdl:modelReference=http://purl.org/dc/terms/language
-      type: array
-      xml: other_language
-      items:
-        type: CCMMLanguageSystem
-      label:
-        en: Other languages
-        cs: Další jazyky
-      hint:
-        en: Additional languages used in the dataset.
-        cs: Další jazyky použité v datové sadě.
-      help:
-        en: Choose all languages present besides the primary language.
-        cs: Zvolte všechny jazyky, které se vyskytují kromě primárního jazyka.
-    primary_language:
-      # sawsdl:modelReference=http://purl.org/dc/terms/language
-      type: CCMMLanguageSystem
-      label:
-        en: Primary language
-        cs: Primární jazyk
-      hint:
-        en: Main language of the dataset.
-        cs: Hlavní jazyk datové sady.
-      help:
-        en: Select the language primarily used for data labels.
-        cs: Vyberte jazyk, který je primárně použit pro popisky dat.
-    provenances:
-      # sawsdl:modelReference=http://purl.org/dc/terms/provenance
-      type: array
-      xml: provenance
-      items:
-        type: CCMMProvenanceStatement
-      label:
-        en: Provenance
-        cs: Původ
-      hint:
-        en: Statements about the dataset's origin and history.
-        cs: Prohlášení o původu a historii datové sady.
-      help:
-        en: Include information about how the data were created, collected, processed, or transformed.
-        cs: Uveďte informace o tom, jak byla data vytvořena, sbírána, zpracována či transformována.
-    publication_year:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#relatedItemPublicationYear
-      type: int
-      required: true
-      label:
-        en: Publication year
-        cs: Rok zveřejnění
-      hint:
-        en: Year when the dataset was first published.
-        cs: Rok, kdy byla datová sada poprvé zveřejněna.
-      help:
-        en: Provide the year the dataset became publicly available. Use four digits (e.g., 2025).
-        cs: Uveďte rok, kdy se datová sada stala veřejně dostupnou. Použijte čtyři číslice (např. 2025).
-    qualified_relations:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#qualifiedRelation
-      type: array
-      xml: qualified_relation
-      items:
-        type: CCMMResourceToAgentRelationship
-      label:
-        en: Qualified relations
-        cs: Kvalifikované vztahy
-      hint:
-        en: Detailed relations to agents with roles.
-        cs: Podrobné vztahy k agentům s rolemi.
-      help:
-        en: Use to link people or organizations to the dataset with explicit roles (e.g., creator, curator).
-        cs: Slouží k propojení osob či organizací s datovou sadou s explicitní rolí (např. tvůrce, kurátor).
-    related_resources:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource
-      type: array
-      xml: related_resource
-      items:
-        type: CCMMRelatedResource
-      label:
-        en: Related resources
-        cs: Související zdroje
-      hint:
-        en: Links to related datasets, publications, or services.
-        cs: Odkazy na související datové sady, publikace či služby.
-      help:
-        en: Add references to resources related by citation, derivation, supplement, or other relationships.
-        cs: Přidejte odkazy na zdroje související citací, odvozením, doplněním či jiným vztahem.
-    resource_type:
-      # sawsdl:modelReference=http://purl.org/dc/terms/type
-      type: CCMMResourceType
-      label:
-        en: Resource type
-        cs: Typ zdroje
-      hint:
-        en: Kind of resource (e.g., dataset, software, service).
-        cs: Typ zdroje (např. datová sada, software, služba).
-      help:
-        en: Choose the type that best describes the resource to improve discovery and display.
-        cs: Zvolte typ, který nejlépe popisuje zdroj, pro lepší dohledatelnost a zobrazení.
-    subjects:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasSubject
-      type: array
-      xml: subject
-      required: true
-      min_items: 1
-      items:
-        type: CCMMSubject
-      label:
-        en: Subjects
-        cs: Témata
-      hint:
-        en: Keywords or controlled subject terms.
-        cs: Klíčová slova nebo řízené předmětové termíny.
-      help:
-        en: Add topical descriptors to improve discovery. Prefer controlled vocabularies when available.
-        cs: Přidejte tematické deskriptory pro lepší dohledatelnost. Preferujte řízené slovníky, pokud jsou k dispozici.
-    terms_of_use:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasVersion
-      type: CCMMTermsOfUse
-      required: true
-      label:
-        en: Terms of use
-        cs: Podmínky užití
-      hint:
-        en: License, access rights, and usage conditions.
-        cs: Licence, přístupová práva a podmínky použití.
-      help:
-        en: Specify legal terms governing access and reuse. Include license documents and any restrictions.
-        cs: Uveďte právní podmínky upravující přístup a opětovné použití. Zahrňte licenční dokumenty a případná omezení.
-    time_references:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#hasTimeReference
-      type: array
-      xml: time_reference
-      required: true
-      min_items: 1
-      items:
-        type: CCMMTimeReference
-      label:
-        en: Time references
-        cs: Časové odkazy
-      hint:
-        en: Important dates or periods relating to the dataset.
-        cs: Důležité datumy nebo období vztahující se k datové sadě.
-      help:
-        en: Provide coverage periods, collection dates, or other temporal aspects, using instants or intervals.
-        cs: Uveďte období pokrytí, datumy sběru nebo jiné časové aspekty pomocí okamžiků či intervalů.
-    title:
-      # sawsdl:modelReference=http://purl.org/dc/terms/title
-      type: keyword
-      required: true
-      label:
-        en: Title
-        cs: Název
-      hint:
-        en: Main title of the dataset.
-        cs: Hlavní název datové sady.
-      help:
-        en: Provide a clear, descriptive title that identifies the dataset. Avoid internal codes or acronyms unless widely known.
-        cs: Uveďte jasný a výstižný název identifikující datovou sadu. Vyhněte se interním kódům či zkratkám, pokud nejsou všeobecně známé.
-    validation_results:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#hasValidationResult
-      type: array
-      xml: validation_result
-      items:
-        type: CCMMValidationResult
-      label:
-        en: Validation results
-        cs: Výsledky validace
-      hint:
-        en: Outcomes of automated or manual checks.
-        cs: Výstupy automatických či manuálních kontrol.
-      help:
-        en: Reference validation reports or status entries documenting quality checks for the dataset.
-        cs: Uveďte odkazy na validační zprávy nebo stavové záznamy dokumentující kontroly kvality datové sady.
-    version:
-      # sawsdl:modelReference=http://www.w3.org/ns/dcat#version
-      type: keyword
-      label:
-        en: Version
-        cs: Verze
-      hint:
-        en: Dataset version label (e.g., 1.0.0).
-        cs: Označení verze datové sady (např. 1.0.0).
-      help:
-        en: Use semantic versioning or your repository’s version scheme to distinguish releases and updates.
-        cs: Použijte sémantické verzování nebo schéma verzí vašeho repozitáře pro rozlišení vydání a aktualizací.
-CCMMDescription:
-  type: object
-  xml: description
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of this description record.
-        cs: Perzistentní IRI tohoto záznamu popisu.
-      help:
-        en: Optional globally unique identifier for the description entry.
-        cs: Volitelný globální identifikátor záznamu popisu.
-    description_text:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#descriptionText
-      type: multilingual
-      required: true
-      label:
-        en: Description
-        cs: Popis
-      hint:
-        en: Descriptive text.
-        cs: Popisný text.
-      help:
-        en: Provide the content of the description. Use clear, informative language; include context, methods, or caveats as needed.
-        cs: Uveďte obsah popisu. Použijte jasný, informativní jazyk; dle potřeby přidejte kontext, metodiku či upozornění.
-    description_type:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasDescriptionType
-      type: CCMMDescriptionType
-      label:
-        en: Description type
-        cs: Typ popisu
-      hint:
-        en: Nature of this description (e.g., abstract, methods).
-        cs: Povaha tohoto popisu (např. abstrakt, metodika).
-      help:
-        en: Choose a category that best characterizes the description content to aid display and reuse.
-        cs: Zvolte kategorii, která nejlépe charakterizuje obsah popisu, pro lepší zobrazení a znovupoužití.
+
 CCMMDistribution:
   type: object
   xml: distribution
   properties:
     # this is a choice in CCMM XML, but cannot be represented in JSON schema
     # so both properties are defined and application logic must ensure only one is used
-    # one of them should be required. 
+    # one of them should be required.
     # TODO: custom marshmallow schema validation to ensure exactly one is present
     distribution_data_service:
       type: CCMMDistributionDataService
@@ -1035,7 +692,6 @@ CCMMDistributionDownloadableFile:
         cs: Uveďte stabilní, přímé odkazy ke stažení souboru, pokud je to možné.
     format:
       # sawsdl:modelReference=http://purl.org/dc/terms/format
-      # TODO: check if we can support it in production repositories
       type: CCMMFormat
       required: true
       label:
@@ -1124,126 +780,6 @@ CCMMFile:
       help:
         en: Provide a display name for the file, which may differ from the technical filename.
         cs: Uveďte zobrazovaný název souboru, který se může lišit od technického názvu.
-CCMMFundingReference:
-  type: object
-  xml: funding_reference
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of the funding reference.
-        cs: Perzistentní IRI odkazu na financování.
-      help:
-        en: Optional stable identifier for this funding reference record.
-        cs: Volitelný stabilní identifikátor tohoto záznamu o financování.
-    award_title:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#awardTitle
-      type: keyword
-      label:
-        en: Award title
-        cs: Název grantu/ocenění
-      hint:
-        en: Title or name of the grant or award.
-        cs: Název grantu nebo ocenění.
-      help:
-        en: Provide the grant or award title as stated by the funding body.
-        cs: Uveďte název grantu nebo ocenění tak, jak jej uvádí poskytovatel financí.
-    funders:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#hasFunderIdentifier
-      type: array
-      xml: funder
-      required: true
-      min_items: 1
-      items:
-        type: CCMMAgent
-      label:
-        en: Funders
-        cs: Poskytovatelé financí
-      hint:
-        en: Organizations or persons providing funding.
-        cs: Organizace nebo osoby poskytující financování.
-      help:
-        en: List the funding bodies associated with the program or award. Prefer organizational identifiers when available.
-        cs: Uveďte poskytovatele financí související s programem či grantem. Preferujte identifikátory organizací, pokud jsou k dispozici.
-    funding_program:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#fundingProgram
-      # TODO: vocabulary item? anyURI in ccmm
-      type: keyword
-      label:
-        en: Funding program
-        cs: Program financování
-      hint:
-        en: Name of the funding program or call.
-        cs: Název programu nebo výzvy financování.
-      help:
-        en: Provide the official name of the program or call under which the work was funded.
-        cs: Uveďte oficiální název programu či výzvy, v rámci které bylo dílo financováno.
-    local_identifier:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#awardNumber
-      type: keyword
-      label:
-        en: Award number
-        cs: Číslo grantu
-      hint:
-        en: Local or official grant identifier.
-        cs: Lokální nebo oficiální identifikátor grantu.
-      help:
-        en: Enter the funding award number or code assigned by the funder.
-        cs: Zadejte číslo či kód grantu přidělený poskytovatelem financí.
-CCMMGeometry:
-  type: object
-  xml: geometry
-  parser:
-    generate: false
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of the geometry record.
-        cs: Perzistentní IRI záznamu geometrie.
-      help:
-        en: Optional stable identifier for the geometry entity.
-        cs: Volitelný stabilní identifikátor entity geometrie.
-    geometry:
-      # in xsd it is a substitution group, see view-source:https://schemas.opengis.net/gml/2.1.2/geometry.xsd
-      # sawsdl:modelReference=http://www.opengis.net/ont/geosparql#AbstractGeometry
-      # TODO: we need a schema with pre-load and post-dump hooks to handle it.
-      type: RawGMLAbstractGeometry
-      label:
-        en: Geometry
-        cs: Geometrie
-      hint:
-        en: Geometry serialization as GML XML.
-        cs: Reprezentace geometrie jako GML XML.
-    label:
-      # sawsdl:modelReference=http://www.w3.org/2000/01/rdf-schema#label
-      type: multilingual
-      label:
-        en: Label
-        cs: Popisek
-      hint:
-        en: Human‑readable name of the geometry.
-        cs: Lidsky čitelný název geometrie.
-      help:
-        en: Provide a brief label to distinguish this geometry among others.
-        cs: Uveďte stručný název pro odlišení této geometrie od ostatních.
-    wkt:
-      type: CCMMWKT
-      label:
-        en: WKT geometry
-        cs: Geometrie WKT
-      hint:
-        en: Well‑Known Text representations with optional CRS.
-        cs: Reprezentace Well‑Known Text s volitelným CRS.
-      help:
-        en: Provide WKT string (and SRS names) for straightforward geometry exchange and display.
-        cs: Uveďte WKT řetězec (a názvy SRS) pro snadnou výměnu a zobrazení geometrií.
 CCMMIdentifier:
   type: object
   xml: identifier
@@ -1298,212 +834,6 @@ CCMMIdentifier:
       help:
         en: Use true if the represented person/organization officially claims/uses this identifier.
         cs: Nastavte, pokud osoba/organizace tento identifikátor oficiálně používá nebo uvádí.
-CCMMLicenseDocument:
-  type: object
-  xml: license_document
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: IRI of the license document.
-        cs: IRI licenčního dokumentu.
-      help:
-        en: Provide a resolvable IRI to the full license text if possible.
-        cs: Uveďte dohledatelné IRI na plné znění licence, pokud je to možné.
-    label:
-      # sawsdl:modelReference=http://www.w3.org/2000/01/rdf-schema#label
-      type: multilingual
-      label:
-        en: License label
-        cs: Název licence
-      hint:
-        en: Short name of the license.
-        cs: Krátký název licence.
-      help:
-        en: Use a common license name (e.g., CC BY 4.0, MIT, EUPL‑1.2).
-        cs: Použijte běžný název licence (např. CC BY 4.0, MIT, EUPL‑1.2).
-CCMMLocation:
-  type: object
-  xml: location
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of the location record.
-        cs: Perzistentní IRI záznamu lokace.
-      help:
-        en: Optional stable identifier for the location entity.
-        cs: Volitelný stabilní identifikátor pro entitu lokace.
-    bounding_boxes:
-      # sawsdl:modelReference=http://www.w3.org/ns/dcat#bbox
-      type: array
-      xml: bounding_box
-      items:
-        type: GMLEnvelopeType
-      label:
-        en: Bounding boxes
-        cs: Ohraničující obdélníky
-      hint:
-        en: Spatial extents in coordinates.
-        cs: Prostorové rozsahy v souřadnicích.
-      help:
-        en: Provide one or more bounding boxes defining the spatial coverage of the dataset.
-        cs: Uveďte jeden nebo více ohraničujících obdélníků vymezujících prostorové pokrytí datové sady.
-    geometry:
-      # sawsdl:modelReference=http://www.w3.org/ns/locn#geometry
-      type: CCMMGeometry
-      label:
-        en: Geometry
-        cs: Geometrie
-      hint:
-        en: Geometric shapes representing the area.
-        cs: Geometrické tvary reprezentující území.
-      help:
-        en: Use points, lines, polygons, or multi‑geometries to represent spatial coverage precisely.
-        cs: Použijte body, linie, polygony či vícenásobné geometrie pro přesné vyjádření prostorového pokrytí.
-    names:
-      # sawsdl:modelReference=http://purl.org/dc/terms/title
-      type: array
-      xml: name
-      items:
-        type: keyword
-      label:
-        en: Place names
-        cs: Názvy míst
-      hint:
-        en: Names of locations covered by the dataset.
-        cs: Názvy lokalit, které datová sada pokrývá.
-      help:
-        en: Provide human‑readable names of places relevant to the dataset’s spatial coverage.
-        cs: Uveďte lidsky čitelné názvy míst relevantní k prostorovému pokrytí datové sady.
-    related_objects:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#hasRelatedResource
-      type: array
-      xml: related_object
-      items:
-        type: CCMMRelatedResource
-      label:
-        en: Related resources
-        cs: Související zdroje
-      hint:
-        en: Resources related to this location.
-        cs: Zdroje související s touto lokací.
-      help:
-        en: Link to resources that describe or are associated with the location.
-        cs: Propojte zdroje, které tuto lokaci popisují nebo s ní souvisejí.
-    relation_type:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#hasType
-      type: CCMMLocationRelationType
-      required: true
-      label:
-        en: Relation type
-        cs: Typ vztahu
-      hint:
-        en: How the location relates to the resource.
-        cs: Jak se lokace vztahuje ke zdroji.
-      help:
-        en: Choose a relation type such as coverage, origin, or place of publication.
-        cs: Zvolte typ vztahu, např. pokrytí, původ, místo zveřejnění.
-CCMMMetadataRecord:
-  type: object
-  xml: metadata_record
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of the metadata record.
-        cs: Perzistentní IRI metadatového záznamu.
-      help:
-        en: Use the stable identifier of the catalog or metadata record where available.
-        cs: Použijte stabilní identifikátor katalogového či metadatového záznamu, pokud je k dispozici.
-    conforms_to_standards:
-      # sawsdl:modelReference=http://purl.org/dc/terms/conformsTo
-      type: array
-      xml: conforms_to_standard
-      items:
-        type: CCMMApplicationProfile
-      label:
-        en: Conforms to
-        cs: Odpovídá standardům
-      hint:
-        en: Standards or application profiles used by this record.
-        cs: Standardy nebo aplikační profily použité tímto záznamem.
-      help:
-        en: Reference metadata standards implemented (e.g., DCAT‑AP, Dublin Core, DataCite).
-        cs: Uveďte metadatové standardy, které jsou implementovány (např. DCAT‑AP, Dublin Core, DataCite).
-    date_created:
-      # sawsdl:modelReference=http://purl.org/dc/terms/created
-      type: date
-      label:
-        en: Date created
-        cs: Datum vytvoření
-      hint:
-        en: When the metadata record was created.
-        cs: Kdy byl metadatový záznam vytvořen.
-      help:
-        en: Provide the initial creation date of the metadata record.
-        cs: Uveďte datum, kdy byl metadatový záznam poprvé vytvořen.
-    date_updated:
-      # sawsdl:modelReference=http://purl.org/dc/terms/modified
-      type: date
-      label:
-        en: Date updated
-        cs: Datum aktualizace
-      hint:
-        en: Date when the metadata was modified.
-        cs: Datum, kdy byla metadata změněna.
-    languages:
-      # sawsdl:modelReference=http://purl.org/dc/terms/language
-      type: array
-      xml: language
-      items:
-        type: CCMMLanguageSystem
-      label:
-        en: Languages
-        cs: Jazyky
-      hint:
-        en: Languages used in the metadata record.
-        cs: Jazyky použité v metadatovém záznamu.
-      help:
-        en: List all languages present in titles, descriptions, and other metadata fields.
-        cs: Uveďte všechny jazyky obsažené v názvech, popisech a dalších metadatových polích.
-    original_repository:
-      type: CCMMRepository
-      required: true
-      label:
-        en: Original Repository
-        cs: Původní repozitář
-      hint:
-        en: Source repository where the record originated.
-        cs: Zdrojový repozitář, ve kterém záznam vznikl.
-      help:
-        en: Add repository that originally hosted the metadata or dataset to track provenance.
-        cs: Uveďte repozitář, který původně hostoval metadata nebo datovou sadu, pro sledování původu.
-    qualified_relations:
-      type: array
-      xml: qualified_relation
-      required: true
-      min_items: 1
-      items:
-        type: CCMMResourceToAgentRelationship
-      label:
-        en: Qualified relations
-        cs: Kvalifikované vztahy
-      hint:
-        en: Relations to agents with specified roles.
-        cs: Vztahy k agentům s určenými rolemi.
-      help:
-        en: Link contributors to the metadata record with explicit roles.
-        cs: Propojte přispěvatele k metadatovému záznamu s explicitními rolemi.
 CCMMOrganization:
   type: object
   xml: organization
@@ -1684,33 +1014,6 @@ CCMMPerson:
       help:
         en: Use the preferred display form of the person’s name (may include titles if relevant).
         cs: Použijte preferovanou zobrazovanou formu jména osoby (může zahrnovat tituly, pokud je to relevantní).
-CCMMProvenanceStatement:
-  type: object
-  xml: provenance_statement
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of the provenance statement.
-        cs: Perzistentní IRI prohlášení o původu.
-      help:
-        en: Optional stable identifier for this provenance entry.
-        cs: Volitelný stabilní identifikátor tohoto záznamu o původu.
-    label:
-      # sawsdl:modelReference=http://www.w3.org/2000/01/rdf-schema#label
-      type: multilingual
-      label:
-        en: Statement
-        cs: Prohlášení
-      hint:
-        en: Human‑readable provenance text.
-        cs: Lidsky čitelný text o původu.
-      help:
-        en: Describe the origin, derivation, or processing history of the resource.
-        cs: Popište původ, odvození nebo historii zpracování zdroje.
 CCMMRepository:
   type: object
   xml: repository
@@ -1904,138 +1207,6 @@ CCMMResourceToAgentRelationship:
       help:
         en: Select the function of the person or organization in relation to the resource.
         cs: Zvolte funkci osoby či organizace ve vztahu ke zdroji.
-CCMMSubject:
-  type: object
-  xml: subject
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of the subject term.
-        cs: Perzistentní IRI předmětového termínu.
-      help:
-        en: Provide a stable IRI for the subject if using a controlled vocabulary.
-        cs: Uveďte stabilní IRI pro předmětový termín, pokud používáte řízený slovník.
-    classification_code:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/datacite#subjectClassificationCode
-      type: keyword
-      label:
-        en: Classification code
-        cs: Klasifikační kód
-      hint:
-        en: Code from a classification system.
-        cs: Kód z klasifikačního systému.
-      help:
-        en: Enter the code (e.g., ACM, JEL, Fields of Science) corresponding to this subject.
-        cs: Zadejte kód (např. ACM, JEL, Obory vědy) odpovídající tomuto tématu.
-    definition:
-      # sawsdl:modelReference=http://www.w3.org/2004/02/skos/core#definition
-      type: multilingual
-      label:
-        en: Definition
-        cs: Definice
-      hint:
-        en: Explanation of the subject term.
-        cs: Vysvětlení předmětového termínu.
-      help:
-        en: Include the authoritative definition from the vocabulary when available.
-        cs: Uveďte autoritativní definici ze slovníku, pokud je k dispozici.
-    subject_scheme:
-      # sawsdl:modelReference=https://model.ccmm.cz/vocabulary/ccmm#inSubjectScheme
-      type: CCMMSubjectScheme
-      label:
-        en: Subject scheme
-        cs: Předmětové schéma
-      hint:
-        en: Vocabulary or scheme used for the subject.
-        cs: Slovník nebo schéma použité pro předmět.
-      help:
-        en: Choose the controlled vocabulary or classification from which the subject is taken.
-        cs: Zvolte řízený slovník nebo klasifikaci, ze které je předmět převzat.
-    title:
-      # sawsdl:modelReference=http://purl.org/dc/terms/title
-      type: multilingual
-      required: true
-      label:
-        en: Subject label
-        cs: Název tématu
-      hint:
-        en: Preferred label of the subject.
-        cs: Preferovaný název tématu.
-      help:
-        en: Provide the human‑readable label of the subject term; include language where applicable.
-        cs: Uveďte lidsky čitelný název předmětového termínu; případně uveďte jazyk.
-CCMMTermsOfUse:
-  type: object
-  xml: terms_of_use
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of the terms record.
-        cs: Perzistentní IRI záznamu podmínek.
-      help:
-        en: Optional stable identifier for this Terms of Use entry.
-        cs: Volitelný stabilní identifikátor tohoto záznamu Podmínek užití.
-    access_rights:
-      # sawsdl:modelReference=http://purl.org/dc/terms/accessRights
-      type: CCMMAccessRights
-      required: true
-      label:
-        en: Access rights
-        cs: Přístupová práva
-      hint:
-        en: Who may access the dataset.
-        cs: Kdo může přistupovat k datové sadě.
-      help:
-        en: Choose the access level (e.g., open, restricted, embargoed) and specify any conditions.
-        cs: Zvolte úroveň přístupu (např. otevřený, omezený, pod embargem) a uveďte případné podmínky.
-    contact_points:
-      # sawsdl:modelReference=http://www.w3.org/ns/dcat#contactPoint
-      type: array
-      xml: contact_point
-      items:
-        type: CCMMAgent
-      label:
-        en: Rights contacts
-        cs: Kontakty k právům
-      hint:
-        en: People or organizations to contact about rights or access.
-        cs: Osoby nebo organizace pro dotazy k právům či přístupu.
-      help:
-        en: Provide contacts responsible for licensing, permissions, or access management.
-        cs: Uveďte kontakty odpovědné za licencování, oprávnění nebo správu přístupu.
-    description:
-      # sawsdl:modelReference=http://purl.org/dc/terms/description
-      type: multilingual
-      label:
-        en: Terms description
-        cs: Popis podmínek
-      hint:
-        en: Summary of access and reuse conditions.
-        cs: Shrnutí podmínek přístupu a opětovného použití.
-      help:
-        en: Provide a human‑readable explanation of the applicable rights and restrictions.
-        cs: Uveďte lidsky srozumitelné vysvětlení platných práv a omezení.
-    license:
-      # sawsdl:modelReference=http://purl.org/dc/terms/license
-      type: CCMMLicenseDocument
-      required: true
-      label:
-        en: License
-        cs: Licence
-      hint:
-        en: License that applies to the dataset.
-        cs: Licence, která se vztahuje na datovou sadu.
-      help:
-        en: Select a standard license and provide a link to its full text.
-        cs: Zvolte standardní licenci a uveďte odkaz na její plné znění.
 CCMMTimeInstant:
   type: object
   xml: time_instant
@@ -2174,58 +1345,3 @@ CCMMTimeRepresentation:
       help:
         en: Link or define a single point in time relevant to the resource.
         cs: Propojte nebo definujte jediný časový bod relevantní ke zdroji.
-
-CCMMValidationResult:
-  type: object
-  xml: validation_result
-  properties:
-    iri:
-      type: keyword
-      label:
-        en: IRI
-        cs: IRI
-      hint:
-        en: Persistent IRI of the validation result.
-        cs: Perzistentní IRI výsledku validace.
-      help:
-        en: Optional stable identifier for this validation result entry.
-        cs: Volitelný stabilní identifikátor tohoto záznamu výsledku validace.
-    label:
-      # sawsdl:modelReference=http://www.w3.org/2000/01/rdf-schema#label
-      type: multilingual
-      label:
-        en: Result label
-        cs: Název výsledku
-      hint:
-        en: Summary title of the validation outcome.
-        cs: Stručný název výsledku validace.
-      help:
-        en: "Provide a brief label such as “Schema validation OK” or “Missing required field: title”."
-        cs: "Uveďte stručný název jako „Validace schématu v pořádku“ nebo „Chybí povinné pole: název“."
-CCMMWKT:
-  # TODO: internal anonymous type in CCMM XML
-  type: object
-  xml: wkt
-  properties:
-    value:
-      type: keyword
-      label:
-        en: WKT value
-        cs: Hodnota WKT
-      hint:
-        en: Well‑Known Text geometry string.
-        cs: Řetězec geometrie ve formátu Well‑Known Text.
-      help:
-        en: Paste the geometry in WKT format (e.g., POINT(14.42 50.08)).
-        cs: Vložte geometrii ve formátu WKT (např. POINT(14.42 50.08)).
-    srs_name:
-      type: keyword
-      label:
-        en: SRS name
-        cs: Název SRS
-      hint:
-        en: Spatial reference system identifier (e.g., EPSG:4326).
-        cs: Identifikátor souřadnicového systému (např. EPSG:4326).
-      help:
-        en: Provide the CRS/SRS identifier corresponding to the WKT coordinates.
-        cs: Uveďte identifikátor CRS/SRS odpovídající souřadnicím ve WKT.
