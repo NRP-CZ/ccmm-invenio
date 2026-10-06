@@ -74,6 +74,37 @@ export const extractDois = (raw) => {
   return [...new Set(matches)].map((doi) => `https://doi.org/${doi}`);
 };
 
+/** Input tokens split on whitespace, comma and semicolon */
+const INPUT_TOKEN_RE = /[^\s,;]+/g;
+
+/** Leading/trailing whitespace and separators. */
+const SEPARATOR_TRIM_RE = /^[\s,;]+|[\s,;]+$/g;
+
+/**
+ * Return the text that {@link extractDois} would throw away, so we can tell
+ * the user what was removed.
+ */
+export const findNonDoiFragments = (raw) => {
+  if (!raw) return [];
+  const prepared = splitConcatenatedUrls(safeDecodeURI(raw));
+  const doiRe = new RegExp(DOI_RE.source, "i");
+  const fragments = [];
+  for (const line of prepared.split(/\r?\n/)) {
+    let start = 0;
+    const pushFragment = (end) => {
+      const text = line.slice(start, end).replace(SEPARATOR_TRIM_RE, "");
+      if (text) fragments.push(text);
+    };
+    for (const match of line.matchAll(INPUT_TOKEN_RE)) {
+      if (!doiRe.test(match[0])) continue;
+      pushFragment(match.index);
+      start = match.index + match[0].length;
+    }
+    pushFragment(line.length);
+  }
+  return [...new Set(fragments)];
+};
+
 /**
  * Build a `Set` of canonical DOI URLs already represented on the record.
  *
