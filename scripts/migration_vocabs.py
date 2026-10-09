@@ -344,7 +344,7 @@ def remove_deprecated() -> None:
         {"types": tuple(vocabs_to_clean)},
     )
     db.session.commit()
-    print(f"Marked {result.rowcount} vocabulary records as deprecated.")
+    print(f"{result.rowcount} deprecated vocabulary records have been removed.")
 
 
 if not current_app:
