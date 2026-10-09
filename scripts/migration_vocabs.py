@@ -333,6 +333,20 @@ def migrate_data(modify: bool = False) -> None:
                 db.session.commit()
 
 
+def remove_deprecated() -> None:
+    """Remove deprecated vocabulary items."""
+    result = db.session.execute(
+        text("""
+            DELETE FROM vocabularies_metadata
+            WHERE json->'type'->>'id' IN :types
+              AND (COALESCE(json->'tags', '[]'::jsonb) ? 'deprecated')
+        """),
+        {"types": tuple(vocabs_to_clean)},
+    )
+    db.session.commit()
+    print(f"Marked {result.rowcount} vocabulary records as deprecated.")
+
+
 if not current_app:
     raise SystemExit(
         "No Flask application context active. Run this script via:\n    invenio shell scripts/migration_vocabs.py"
@@ -522,7 +536,7 @@ No command specified. Call in the following order:
   * migrate_types
   * load
   * migrate_data
-
+  * remove_deprecated (after a thorough check)
 
         """)
 
@@ -537,5 +551,7 @@ match sys.argv[1]:
         load_new_vocabularies()
     case "migrate_data":
         migrate_data(modify="--modify" in sys.argv[2:])
+    case "remove_deprecated":
+        remove_deprecated()
     case _:
         raise SystemExit(f"Unknown command: {sys.argv[1]}")
