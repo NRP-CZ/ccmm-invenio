@@ -13,7 +13,12 @@ import {
 import { httpApplicationJson } from "@js/oarepo_ui";
 import { SchemaField } from "@js/invenio_rdm_records/src/deposit/serializers";
 import { i18next } from "@translations/ccmm_invenio";
-import { MAX_DOIS_PER_BATCH, collectExistingDois, extractDois } from "./utils";
+import {
+  MAX_DOIS_PER_BATCH,
+  collectExistingDois,
+  extractDois,
+  findNonDoiFragments,
+} from "./utils";
 import { RelatedResourceSchema } from "./RelatedResourceSchema";
 
 // Run the same per-field deserializer the top-level form uses, so imported
@@ -49,6 +54,8 @@ export const LoadFromDoiModal = ({
   const [relationType, setRelationType] = useState(null);
   const [results, setResults] = useState([]);
   const [lastDroppedCount, setLastDroppedCount] = useState(0);
+  // Non-DOI text removed by the last cleanup, shown so the user knows why.
+  const [removedFragments, setRemovedFragments] = useState([]);
   // Tracks the current in-flight AbortController so the modal can cancel it
   // on close (Close button, X icon, or Esc — all funnel through closeModal).
   const abortRef = useRef(null);
@@ -110,6 +117,7 @@ export const LoadFromDoiModal = ({
     setRelationType(null);
     setResults([]);
     setLastDroppedCount(0);
+    setRemovedFragments([]);
     mutation.reset();
     // It seems that save is not necessary now that we have proper UI serialization
     // of related_resources, but leaving this here for now, in case some bug of this type occurs.
@@ -118,9 +126,10 @@ export const LoadFromDoiModal = ({
 
   const normalizeAndCap = (raw) => {
     const all = extractDois(raw);
-    const capped = all.slice(0, MAX_DOIS_PER_BATCH);
+    const next = all.slice(0, MAX_DOIS_PER_BATCH).join("\n");
     setLastDroppedCount(Math.max(0, all.length - MAX_DOIS_PER_BATCH));
-    return capped.join("\n");
+    setRemovedFragments(findNonDoiFragments(raw));
+    return next;
   };
 
   const handlePaste = (e) => {
@@ -140,9 +149,14 @@ export const LoadFromDoiModal = ({
 
   const currentDois = extractDois(input).slice(0, MAX_DOIS_PER_BATCH);
   const duplicateDois = currentDois.filter((d) => existingDoiSet.has(d));
-  const newDois = currentDois.filter((d) => !existingDoiSet.has(d));
 
   const handleLoad = () => {
+    // Clean up here, not on blur, so a single click is enough to submit.
+    const normalized = normalizeAndCap(input);
+    if (normalized !== input) setInput(normalized);
+    const newDois = extractDois(normalized).filter(
+      (d) => !existingDoiSet.has(d)
+    );
     if (newDois.length === 0) return;
     const controller = new AbortController();
     abortRef.current = controller;
@@ -242,6 +256,36 @@ export const LoadFromDoiModal = ({
                 )}
               </Message>
             )}
+            {removedFragments.length > 0 && (
+              <Message
+                warning
+                size="tiny"
+                role="status"
+                data-testid="non-doi-warning"
+                onDismiss={() => setRemovedFragments([])}
+              >
+                <Message.Header>
+                  {i18next.t(
+                    "The following text was removed because it is not a valid DOI:"
+                  )}
+                </Message.Header>
+                <List bulleted>
+                  {removedFragments.map((fragment) => (
+                    <List.Item
+                      key={fragment}
+                      style={{ overflowWrap: "anywhere" }}
+                    >
+                      {fragment}
+                    </List.Item>
+                  ))}
+                </List>
+                <p>
+                  {i18next.t(
+                    'A DOI starts with "10.", followed by 4–9 digits, a slash and a suffix, e.g. 10.1234/abcd or https://doi.org/10.1234/abcd.'
+                  )}
+                </p>
+              </Message>
+            )}
             {duplicateDois.length > 0 && (
               <Message negative size="tiny" data-testid="duplicate-doi-warning">
                 <Message.Header>
@@ -331,7 +375,8 @@ export const LoadFromDoiModal = ({
           icon
           labelPosition="left"
           loading={mutation.isPending}
-          disabled={mutation.isPending || newDois.length === 0 || !relationType}
+          onMouseDown={(e) => e.preventDefault()}
+          disabled={mutation.isPending || !input.trim() || !relationType}
         >
           <Icon name="download" />
           {i18next.t("Add to record")}

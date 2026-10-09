@@ -118,6 +118,12 @@ msgid ""
 "discarded. Submit this batch, then paste the rest."
 msgstr ""
 
+msgid "The following text was removed because it is not a valid DOI:"
+msgstr ""
+
+msgid "A DOI starts with \"10.\", followed by 4–9 digits, a slash and a suffix, e.g. 10.1234/abcd or https://doi.org/10.1234/abcd."
+msgstr ""
+
 msgid "Already tied to the record (will be skipped on Load):"
 msgstr ""
 
