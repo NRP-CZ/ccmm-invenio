@@ -98,3 +98,5 @@ build-tests/test_import.py
 .eslintrc.yaml
 node_modules/
 pnpm-lock.yaml
+
+uv.lock
