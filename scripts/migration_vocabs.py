@@ -334,15 +334,28 @@ def migrate_data(modify: bool = False) -> None:
 
 
 def remove_deprecated() -> None:
-    """Remove deprecated vocabulary items."""
-    result = db.session.execute(
+    """Remove deprecated vocabulary items (and their vocabularies_hierarchy rows)."""
+    rows = db.session.execute(
         text("""
-            DELETE FROM vocabularies_metadata
+            SELECT id FROM vocabularies_metadata
             WHERE json->'type'->>'id' IN :types
               AND (COALESCE(json->'tags', '[]'::jsonb) ? 'deprecated')
         """),
         {"types": tuple(vocabs_to_clean)},
     )
+    ids = tuple(row[0] for row in rows)
+    if not ids:
+        print("No deprecated vocabulary records to remove.")
+        return
+    params = {"ids": ids}
+    # the hierarchy FKs have no ON DELETE CASCADE: detach the surviving children
+    # of removed parents, then remove the hierarchy rows of the removed items
+    db.session.execute(
+        text("UPDATE vocabularies_hierarchy SET parent_id = NULL WHERE parent_id IN :ids"),
+        params,
+    )
+    db.session.execute(text("DELETE FROM vocabularies_hierarchy WHERE id IN :ids"), params)
+    result = db.session.execute(text("DELETE FROM vocabularies_metadata WHERE id IN :ids"), params)
     db.session.commit()
     print(f"{result.rowcount} deprecated vocabulary records have been removed.")
 
@@ -353,27 +366,24 @@ if not current_app:
     )
 
 vocabs_to_clean: list[str] = [
-    "creatorsroles",
-    "contributorsroles",
-    "code:programmingLanguages",
     "accessrights",
     "checksumalgorithms",
+    "contributorsroles",
+    "creatorsroles",
     "datetypes",
-    "languages",
-    "communitytypes",
-    "locationrelationtypes",
-    "titletypes",
-    "filetypes",
-    "relationtypes",
     "descriptiontypes",
+    "filetypes",
     "identifierschemes",
-    "code:developmentStatus",
+    "languages",
     "licenses",
+    "locationrelationtypes",
+    "relationtypes",
+    "removalreasons",
+    "resourceagentroletypes",
     "resourcetypes",
     "subjectcategories",
-    "resourceagentroletypes",
-    "removalreasons",
     "subjectschemes",
+    "titletypes",
 ]
 
 
@@ -550,7 +560,7 @@ match sys.argv[1]:
     case "load":
         load_new_vocabularies()
     case "migrate_data":
-        migrate_data(modify="--modify" in sys.argv[2:])
+        migrate_data(modify=True)
     case "remove_deprecated":
         remove_deprecated()
     case _:
