@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "click>=8.2.1",
-    "lxml>=6.0.0",
+    "lxml>=6.1.0",
     "xmldiff>=2.7.0",
     "semver"
 ]
