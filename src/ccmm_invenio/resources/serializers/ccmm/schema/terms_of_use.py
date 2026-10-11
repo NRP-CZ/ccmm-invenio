@@ -59,7 +59,10 @@ class TermsOfUseSchema(Schema):
         """Dump the license from the vocabulary, or the free-text one."""
         if obj.get("id"):
             return LICENSES.serialize("license", {"license": {"id": obj["id"]}})
-        return {"iri": obj.get("link"), "label": SingleLocaleTextField().serialize("title", obj)}
+        license_ = {"label": SingleLocaleTextField().serialize("title", obj)}
+        if obj.get("link"):  # ccmm 0..1
+            license_["iri"] = obj["link"]
+        return license_
 
     @post_load
     def merge_license(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:

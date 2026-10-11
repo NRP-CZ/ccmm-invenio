@@ -78,8 +78,10 @@ class XMLToGenericJSONConverter(XMLSchemaConverter):
         # see _push_source_element
         self._source_elements: list[ElementType] = []
 
-    def xml_to_json(self, schema: XMLSchemaBase, xml_data: str) -> tuple[Any, list[XMLSchemaValidationError]]:
-        """Convert an XML document, passed as a string, to generic JSON.
+    def xml_to_json(
+        self, schema: XMLSchemaBase, xml_data: str | ElementType
+    ) -> tuple[Any, list[XMLSchemaValidationError]]:
+        """Convert an XML document, passed as a string or an (lxml) element, to generic JSON.
 
         :return: the converted data and a list of validation errors (empty if the document is valid).
         """
@@ -188,14 +190,14 @@ class XMLToGenericJSONConverter(XMLSchemaConverter):
 ccmm_1_1_0_schema = xmlschema.XMLSchema11(Path(__file__).parent / "xsd" / "ccmm-1.1.0-2026-01-29.xsd")
 
 
-def convert_xml_to_json(xml_data: str) -> tuple[Any, list[XMLSchemaValidationError]]:
-    """Convert a CCMM 1.1.0 XML document, passed as a string, to generic JSON.
+def convert_xml_to_json(xml_data: str | ElementType) -> tuple[Any, list[XMLSchemaValidationError]]:
+    """Convert a CCMM 1.1.0 XML document, passed as a string or an (lxml) element, to generic JSON.
 
-    The source xml is kept as the "ccmm_xml" field of the returned json.
+    The source xml is kept as the "ccmm_xml" field of the returned json (serialized if an element is passed).
     """
     data, errors = XMLToGenericJSONConverter().xml_to_json(ccmm_1_1_0_schema, xml_data)
     if isinstance(data, dict):
-        data["ccmm_xml"] = xml_data
+        data["ccmm_xml"] = xml_data if isinstance(xml_data, str) else xmlschema.etree_tostring(xml_data)
     return data, errors
 
 

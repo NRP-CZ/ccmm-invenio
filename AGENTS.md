@@ -120,6 +120,7 @@ Conventions in the schemas:
 | `location` | RDM `locations` (GeoJSON features, WGS84) | GML is reprojected; a multi-polygon is split |
 | `resource_type` missing | `dataset` | RDM requires a resource type |
 | `publication_year` | `publication_date` | the "Created" time reference wins, else `<year>-01-01` |
+| `identifier`, `time_reference`, `subject`, `terms_of_use/license` (required in ccmm) | — | **export fallbacks** (`DatasetSchema.required_fallbacks`): the record `pids` (doi; oai as `other`) and the landing page are always added to the identifiers; no dates → the record `created` as a Created time reference; no subjects → keyword `<no subject defined>`; no rights → free-text license "No license specified in the metadata of the record" |
 
 ## Vocabularies
 
