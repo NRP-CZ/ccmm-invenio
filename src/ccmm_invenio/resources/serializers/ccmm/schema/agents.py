@@ -17,7 +17,11 @@ from invenio_vocabularies.proxies import current_service as vocab_service
 from marshmallow import EXCLUDE, Schema, ValidationError, fields, missing, post_dump, post_load, pre_load, validate
 from marshmallow_utils.fields import SanitizedUnicode
 
-from ccmm_invenio.resources.serializers.ccmm.schema.identifiers import IdentifierSchema, service_item_exists
+from ccmm_invenio.resources.serializers.ccmm.schema.identifiers import (
+    IdentifierSchema,
+    dump_ror_identifiers,
+    service_item_exists,
+)
 from ccmm_invenio.resources.serializers.ccmm.schema.vocabs import CCMMVocabularyField
 
 CCMM_ROLE_CREATOR = "https://vocabs.ccmm.cz/registry/codelist/AgentRole/Creator"
@@ -125,9 +129,10 @@ class AffiliationSchema(Schema):
 
     @post_dump(pass_original=True)
     def dump_ror(self, data: dict[str, Any], original: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:
-        """Dump the id as the ROR identifier of the organization."""
-        if original.get("id"):
-            data["identifier"] = IdentifierSchema(many=True).dump([{"identifier": original["id"], "scheme": "ror"}])
+        """Dump the id as the ROR identifier of the organization (if it is a ROR)."""
+        identifiers = dump_ror_identifiers(original.get("id"))
+        if identifiers:
+            data["identifier"] = identifiers
         return data
 
 

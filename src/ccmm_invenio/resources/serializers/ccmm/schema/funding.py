@@ -19,6 +19,7 @@ from marshmallow_utils.fields import SanitizedUnicode
 from ccmm_invenio.resources.serializers.ccmm.schema.identifiers import (
     AwardIdentifiersField,
     IdentifierSchema,
+    dump_ror_identifiers,
     service_item_exists,
 )
 
@@ -53,10 +54,9 @@ class FunderField(fields.Field):
         if not value:
             return None
         organization: dict[str, Any] = {"name": value.get("name")}
-        if value.get("id"):
-            organization["identifier"] = IdentifierSchema(many=True).dump(
-                [{"identifier": value["id"], "scheme": "ror"}]
-            )
+        identifiers = dump_ror_identifiers(value.get("id"))
+        if identifiers:
+            organization["identifier"] = identifiers
         return [{"organization": organization}]
 
 
