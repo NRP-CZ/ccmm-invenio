@@ -88,9 +88,10 @@ class LanguageTextMixin:
             if len(text) > 1:
                 raise ValidationError(f"Expected a single language variant of {self.ccmm_element}, use SplitNested")
             text = text[0] if text else {}
-        # keys only when present, so that a missing text is reported as missing
+        # keys only when present, so that a missing text is reported as missing; an empty xml:lang
+        # ("no language", e.g. the exported main RDM description) is no lang - RDM lang is optional, not nullable
         data.update(
-            {key: text[ccmm_key] for key, ccmm_key in ((self.text_field, "$"), ("lang", "lang")) if ccmm_key in text}
+            {key: text[ccmm_key] for key, ccmm_key in ((self.text_field, "$"), ("lang", "lang")) if text.get(ccmm_key)}
         )
         return data
 

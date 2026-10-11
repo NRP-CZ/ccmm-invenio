@@ -35,7 +35,9 @@ class TimeRepresentationField(fields.Field):
         if "time_interval" in value:
             interval = value["time_interval"]
             # RDM (EDTF level 0) intervals are date-only - the time of day is dropped
-            return "/".join(self._load_instant(interval.get(key) or {})[:10] for key in ("beginning", "end"))
+            beginning, end = (self._load_instant(interval.get(key) or {})[:10] for key in ("beginning", "end"))
+            # an interval ending before it begins is invalid in RDM - swapped (sources we can not fix have them)
+            return f"{end}/{beginning}" if end < beginning else f"{beginning}/{end}"
         raise ValidationError("Expected time_instant or time_interval")
 
     @staticmethod
