@@ -119,6 +119,7 @@ Conventions in the schemas:
 | funder / affiliation | RDM funder / affiliation (`id`, `name`) | the id is set when the ROR is in the funders / affiliations vocabulary; other identifiers are dropped (RDM does not accept them) |
 | `location` | RDM `locations` (GeoJSON features, WGS84) | GML is reprojected; a multi-polygon is split |
 | `resource_type` missing | `dataset` | RDM requires a resource type |
+| `time_interval` ending before it begins | `dates` | swapped on import (RDM rejects it; sources we can not fix have them) |
 | `publication_year` | `publication_date` | the "Created" time reference wins (of an interval its start - RDM `edtf` is a single date), else `<year>-01-01` |
 | `identifier`, `time_reference`, `subject`, `terms_of_use/license` (required in ccmm) | — | **export fallbacks** (`DatasetSchema.required_fallbacks`): the record `pids` (doi; oai as `other`) and the landing page are always added to the identifiers; no dates → the record `created` as a Created time reference; no subjects → keyword `<no subject defined>`; no rights → free-text license "No license specified in the metadata of the record". On import (`drop_required_fallbacks`) the subject / license placeholders are dropped again |
 

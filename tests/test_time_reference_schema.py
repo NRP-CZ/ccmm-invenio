@@ -51,6 +51,11 @@ def date_types(app, database, search):
             {"time_interval": {"beginning": {"date": "2024-01-01"}, "end": {"date_time": "2024-12-31T10:00:00Z"}}},
             "2024-01-01/2024-12-31",
         ),
+        # an interval ending before it begins is swapped (invalid in RDM)
+        (
+            {"time_interval": {"beginning": {"date": "2025-06-30"}, "end": {"date": "2025-01-01"}}},
+            "2025-01-01/2025-06-30",
+        ),
     ],
 )
 def test_load_time_representation(ccmm, edtf):
