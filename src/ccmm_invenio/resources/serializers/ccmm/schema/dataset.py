@@ -404,6 +404,16 @@ class DatasetSchema(Schema):
             metadata["rights"] = [{"title": {"en": NO_LICENSE}}]
         return {**data, "metadata": metadata}
 
+    @post_load
+    def drop_required_fallbacks(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:
+        """Drop the NO_SUBJECT / NO_LICENSE placeholders (see required_fallbacks), e.g. of a harvested record."""
+        metadata = data.get("metadata") or {}
+        if metadata.get("subjects") == [{"subject": NO_SUBJECT}]:
+            del metadata["subjects"]
+        if metadata.get("rights") == [{"title": {"en": NO_LICENSE}}]:
+            del metadata["rights"]
+        return data
+
     @post_dump
     def flatten_metadata(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:
         """Merge the dumped metadata back to the top level, next to ccmm_xml; access rights to terms_of_use."""

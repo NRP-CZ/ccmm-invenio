@@ -45,7 +45,12 @@ class TermsOfUseSchema(Schema):
     description = SingleLocaleTextField()
 
     def load_license(self, value: Any) -> dict[str, Any]:
-        """Load the license from the vocabulary, or as a free-text license with the iri as the link."""
+        """Load the license from the vocabulary, or as a free-text license with the iri as the link.
+
+        The iri is optional in ccmm (0..1) - a license with a label only is a free-text license without a link.
+        """
+        if isinstance(value, dict) and not value.get("iri") and value.get("label"):
+            return {"title": SingleLocaleTextField().deserialize(value["label"])}
         try:
             return cast("dict[str, Any]", LICENSES.deserialize(value))
         except ValidationError:

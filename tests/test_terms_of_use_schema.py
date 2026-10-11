@@ -87,6 +87,14 @@ def test_license_not_in_vocabulary(licenses):
     assert TermsOfUseSchema().load({"license": {"iri": UNKNOWN_LICENSE}})["title"] == {"en": UNKNOWN_LICENSE}
 
 
+def test_license_without_iri(licenses):
+    # the iri of a license is optional in ccmm (0..1) - a free-text license without a link
+    loaded = TermsOfUseSchema().load({"license": {"label": [{"lang": "en", "$": "Local license"}]}})
+    assert loaded == {"title": {"en": "Local license"}}
+    assert RightsSchema().validate(loaded) == {}
+    assert TermsOfUseSchema().dump(loaded)["license"] == {"label": [{"lang": "en", "$": "Local license"}]}
+
+
 def test_dump(licenses):
     dumped = DatasetMetadataSchema(only=("rights",)).dump(
         {

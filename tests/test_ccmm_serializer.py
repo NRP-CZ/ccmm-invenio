@@ -193,3 +193,8 @@ def test_required_fallbacks(app, vocabularies):
     assert exported["terms_of_use"]["license"] == {
         "label": [{"lang": "en", "$": "No license specified in the metadata of the record"}]
     }
+
+    # harvested by another repository: the placeholders are dropped again (and the license without an iri loads)
+    harvested = DatasetSchema().load(exported)
+    assert "subjects" not in harvested["metadata"]
+    assert "rights" not in harvested["metadata"]

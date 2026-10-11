@@ -110,7 +110,7 @@ Conventions in the schemas:
 | `qualified_relation` | `creators` (Creator), `publisher` (Publisher, a string), `contributors` (other roles) | publisher: names joined by `", "`, exported as one organization |
 | `metadata_identification` | `metadata.metadata_identifications` (`CCMMInvenioMetadataRecord`, agents as RDM contributors) | **stored as it came** (harvested records) and exported **without changes**. Without a stored one (records created here) it is generated from `created`/`updated`/`links`; contributors with role `datamanager` are copied into it (and stay contributors), otherwise the repository (`THEME_SITENAME`) is the Data Manager. Not in the UI yet |
 | `terms_of_use/access_rights` | record `access` (+ `files.enabled` for metadata-only) | `open` / `restricted` / `metadata-only` / `embargoed` (= RDM access status ids). Embargo end = the "Available" date; export uses `access.status`. See `access.py` |
-| `terms_of_use/license` (+ description) | `rights` | RDM rejects a description next to a vocabulary license - it is dropped then |
+| `terms_of_use/license` (+ description) | `rights` | RDM rejects a description next to a vocabulary license - it is dropped then. A license without an iri (0..1 in ccmm) is a free-text one without a link |
 | `iri` (dataset, related resource), `resource_url` | stored as they are | not converted to identifiers |
 | `related_resource` | `related_resources` (`CCMMInvenioRelatedResource`) | related resource without a title gets the iri / resource url as title (required in the model) |
 | — | `related_identifiers` | **derived** from `related_resources` by `RelatedIdentifiersComponent` on create/update (overwrites whatever the client sent), validated with RDM's `RelatedIdentifierSchema`. Hidden from the `application/json` API (the UI JSON keeps them); DataCite registration uses the record, not the response |
@@ -120,7 +120,7 @@ Conventions in the schemas:
 | `location` | RDM `locations` (GeoJSON features, WGS84) | GML is reprojected; a multi-polygon is split |
 | `resource_type` missing | `dataset` | RDM requires a resource type |
 | `publication_year` | `publication_date` | the "Created" time reference wins (of an interval its start - RDM `edtf` is a single date), else `<year>-01-01` |
-| `identifier`, `time_reference`, `subject`, `terms_of_use/license` (required in ccmm) | — | **export fallbacks** (`DatasetSchema.required_fallbacks`): the record `pids` (doi; oai as `other`) and the landing page are always added to the identifiers; no dates → the record `created` as a Created time reference; no subjects → keyword `<no subject defined>`; no rights → free-text license "No license specified in the metadata of the record" |
+| `identifier`, `time_reference`, `subject`, `terms_of_use/license` (required in ccmm) | — | **export fallbacks** (`DatasetSchema.required_fallbacks`): the record `pids` (doi; oai as `other`) and the landing page are always added to the identifiers; no dates → the record `created` as a Created time reference; no subjects → keyword `<no subject defined>`; no rights → free-text license "No license specified in the metadata of the record". On import (`drop_required_fallbacks`) the subject / license placeholders are dropped again |
 
 ## Vocabularies
 
