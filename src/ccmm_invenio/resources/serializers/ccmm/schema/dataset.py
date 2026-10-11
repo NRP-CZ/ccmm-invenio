@@ -27,9 +27,13 @@ from ccmm_invenio.resources.serializers.ccmm.schema.agents import (
 from ccmm_invenio.resources.serializers.ccmm.schema.distribution import DistributionsField
 from ccmm_invenio.resources.serializers.ccmm.schema.fields import LanguageTextMixin, SingleItemListNested, SplitNested
 from ccmm_invenio.resources.serializers.ccmm.schema.funding import FundingReferenceSchema
-from ccmm_invenio.resources.serializers.ccmm.schema.identifiers import IdentifierSchema
+from ccmm_invenio.resources.serializers.ccmm.schema.identifiers import IdentifierSchema, vocabulary_item_exists
 from ccmm_invenio.resources.serializers.ccmm.schema.locations import LocationsField
-from ccmm_invenio.resources.serializers.ccmm.schema.metadata_record import MetadataRecordSchema, metadata_records
+from ccmm_invenio.resources.serializers.ccmm.schema.metadata_record import (
+    MetadataRecordSchema,
+    iso_date,
+    metadata_records,
+)
 from ccmm_invenio.resources.serializers.ccmm.schema.subjects import SubjectSchema
 from ccmm_invenio.resources.serializers.ccmm.schema.terms_of_use import TermsOfUseSchema
 from ccmm_invenio.resources.serializers.ccmm.schema.time_references import TimeReferenceSchema
@@ -289,6 +293,31 @@ class DatasetMetadataSchema(CommonResourceFieldsMixin, Schema):
         return data
 
 
+NO_SUBJECT = "<no subject defined>"
+"""Keyword exported for a record without subjects (ccmm subject is 1..n)."""
+
+NO_LICENSE = "No license specified in the metadata of the record"
+"""Free-text license exported for a record without rights (ccmm terms_of_use/license is 1..1)."""
+
+
+def _record_identifiers(record: dict[str, Any]) -> list[dict[str, Any]]:
+    """Return the identifiers of the invenio record - its pids (doi, oai, ...) and the landing page.
+
+    A pid whose scheme is not in the identifierschemes vocabulary (e.g. oai) has the "other" scheme.
+    """
+    identifiers = [
+        {
+            "identifier": pid["identifier"],
+            "scheme": scheme if vocabulary_item_exists("identifierschemes", scheme) else "other",
+        }
+        for scheme, pid in (record.get("pids") or {}).items()
+        if (pid or {}).get("identifier")
+    ]
+    if landing_page := (record.get("links") or {}).get("self_html"):
+        identifiers.append({"identifier": landing_page, "scheme": "url"})
+    return identifiers
+
+
 class DatasetSchema(Schema):
     """ccmm dataset (generic json from convert_xml_to_json) <-> invenio record.
 
@@ -346,6 +375,30 @@ class DatasetSchema(Schema):
         if not data.get("access"):
             return data
         return {**data, "access_rights": {"id": access_right(data["access"], data.get("files"))}}
+
+    @pre_dump
+    def required_fallbacks(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:
+        """Fill the metadata ccmm requires, but RDM does not, so that the exported xml is valid.
+
+        identifier (1..n)            - the record pids (doi, oai) and the landing page are always added
+        time_reference (1..n)        - the creation of the invenio record (created), when there are no dates
+        subject (1..n)               - NO_SUBJECT keyword, when there are no subjects
+        terms_of_use/license (1..1)  - NO_LICENSE free-text license, when there are no rights
+        """
+        metadata = dict(data.get("metadata") or {})
+        identifiers = list(metadata.get("identifiers") or [])
+        for identifier in _record_identifiers(data):
+            if identifier not in identifiers:
+                identifiers.append(identifier)
+        if identifiers:
+            metadata["identifiers"] = identifiers
+        if not metadata.get("dates") and (created := iso_date(data.get("created"))):
+            metadata["dates"] = [{"date": created, "type": {"id": "created"}}]
+        if not metadata.get("subjects"):
+            metadata["subjects"] = [{"subject": NO_SUBJECT}]
+        if not metadata.get("rights"):
+            metadata["rights"] = [{"title": {"en": NO_LICENSE}}]
+        return {**data, "metadata": metadata}
 
     @post_dump
     def flatten_metadata(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:

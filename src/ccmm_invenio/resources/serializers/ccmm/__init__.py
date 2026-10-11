@@ -73,7 +73,9 @@ class CCMMXMLSerializer(BaseSerializer):
             # the access rights are made from them
             "access": obj.get("access"),
             "files": obj.get("files"),
-            # the metadata record (metadata_identification) is made from them
+            # dataset identifiers (doi, oai), next to the landing page from links
+            "pids": obj.get("pids"),
+            # the metadata record (metadata_identification) and the fallback time reference are made from them
             "created": obj.get("created") or getattr(obj, "created", None),
             "updated": obj.get("updated") or getattr(obj, "updated", None),
             "links": self._links(obj),

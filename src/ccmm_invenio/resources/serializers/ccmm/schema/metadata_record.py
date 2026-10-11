@@ -104,9 +104,9 @@ def generated_metadata_record(record: dict[str, Any]) -> dict[str, Any]:
     if iri := (record.get("links") or {}).get("self"):
         ret["iri"] = iri
     ret["qualified_relation"] = ContributorSchema().dump(data_managers, many=True)
-    if updated := _date(record.get("updated")):
+    if updated := iso_date(record.get("updated")):
         ret["date_updated"] = [updated]
-    if created := _date(record.get("created")):
+    if created := iso_date(record.get("created")):
         ret["date_created"] = created
     ret["conforms_to_standard"] = [CCMM_STANDARD]
     ret["original_repository"] = {"iri": site_url}
@@ -115,7 +115,7 @@ def generated_metadata_record(record: dict[str, Any]) -> dict[str, Any]:
     return ret
 
 
-def _date(value: str | datetime | None) -> str | None:
+def iso_date(value: str | datetime | None) -> str | None:
     """Return the date (xs:date) of an ISO datetime string or a datetime."""
     if isinstance(value, datetime):
         return value.date().isoformat()

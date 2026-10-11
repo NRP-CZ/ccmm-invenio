@@ -155,3 +155,41 @@ def test_dataset_iri(vocabularies):
     exported, errors = convert_xml_to_json(CCMMXMLSerializer().serialize_object(record))
     assert errors == []
     assert exported["iri"] == "https://organization.cz/dataset_server/dataset_id"
+
+
+def test_required_fallbacks(app, vocabularies):
+    """A record without the metadata ccmm requires (but RDM does not) is exported as a valid ccmm xml."""
+    record = {
+        "metadata": {
+            "title": "A dataset",
+            "publication_date": "2025-03-01",
+            "resource_type": {"id": "dataset"},
+            "creators": [{"person_or_org": {"type": "organizational", "name": "Data centre"}}],
+        },
+        "access": {"record": "public", "files": "public", "status": "open"},
+        "pids": {
+            "doi": {"identifier": "10.1234/abcde-12345", "provider": "datacite"},
+            "oai": {"identifier": "oai:repo:abcde-12345", "provider": "oai"},
+        },
+        "created": "2026-09-01T10:00:00+00:00",
+        "updated": "2026-09-24T12:00:00+00:00",
+        "links": {"self_html": "https://127.0.0.1:5000/records/abcde-12345"},
+    }
+    exported, errors = convert_xml_to_json(CCMMXMLSerializer().serialize_object(record))
+    assert errors == []
+    # the record pids (oai is not in the identifierschemes vocabulary - other) and the landing page
+    assert [identifier["value"] for identifier in exported["identifier"]] == [
+        "10.1234/abcde-12345",
+        "oai:repo:abcde-12345",
+        "https://127.0.0.1:5000/records/abcde-12345",
+    ]
+    assert "iri" in exported["identifier"][0]  # https://doi.org/10.1234/abcde-12345
+    # the creation of the record as the Created time reference
+    (time_reference,) = exported["time_reference"]
+    assert time_reference["temporal_representation"] == {"time_instant": {"date": "2026-09-01"}}
+    assert time_reference["date_type"]["iri"].endswith("Created")
+    (subject,) = exported["subject"]
+    assert subject["title"] == [{"lang": "", "$": "<no subject defined>"}]
+    assert exported["terms_of_use"]["license"] == {
+        "label": [{"lang": "en", "$": "No license specified in the metadata of the record"}]
+    }
