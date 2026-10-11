@@ -99,3 +99,12 @@ def test_dump_no_main_description(description_types):
     """Without the main RDM description (a record imported from ccmm), nothing is added."""
     dumped = DatasetMetadataSchema().dump({"title": "A dataset"})
     assert "description" not in dumped
+
+
+def test_empty_xml_lang(description_types):
+    """An empty xml:lang (e.g. the exported main RDM description) loads without a language, not a null one."""
+    schema = DescriptionSchema()
+    loaded = schema.load({"description_text": {"lang": "", "$": "The main description of the dataset."}})
+    assert loaded == {"description": "The main description of the dataset.", "type": {"id": "other"}}
+    # ... and dumps back with the empty xml:lang
+    assert schema.dump(loaded)["description_text"] == {"lang": "", "$": "The main description of the dataset."}
