@@ -545,8 +545,24 @@ No command specified. Call in the following order:
   * mark
   * migrate_types
   * load
+  * run reindex
   * migrate_data
+  * run reindex
   * remove_deprecated (after a thorough check)
+  * run reindex
+
+To run reindex:
+  invenio index destroy --yes-i-know
+  invenio index init
+  invenio rdm-records custom-fields init
+  invenio communities custom-fields init
+  invenio rdm-records rebuild-index
+  invenio rdm rebuild-all-indices
+
+If migrated from production to stage/test:
+  * switch s3 bucket
+  * update SECRET_KEY
+  * update DOI configuration
 
         """)
 
