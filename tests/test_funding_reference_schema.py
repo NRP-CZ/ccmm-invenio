@@ -123,3 +123,9 @@ def test_dump(vocabularies, sample):
 
     # loading the dumped funding references gives the same funding
     assert DatasetMetadataSchema(only=("funding",)).load({"funding_reference": dumped})["funding"] == funding
+
+
+def test_dump_local_funder_id(vocabularies):
+    """A funder with a local (non-ROR) vocabulary id is exported without an identifier."""
+    dumped = DatasetMetadataSchema(only=("funding",)).dump({"funding": [{"funder": {"id": "local", "name": "Funder"}}]})
+    assert dumped["funding_reference"][0]["funder"] == [{"organization": {"name": "Funder"}}]

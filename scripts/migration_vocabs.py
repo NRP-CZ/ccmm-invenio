@@ -30,7 +30,7 @@ import re
 import sys
 from functools import lru_cache
 from importlib.resources import files
-from os.path import commonprefix
+from itertools import takewhile
 from typing import TYPE_CHECKING, Any
 
 import yaml
@@ -154,7 +154,7 @@ def merge_descriptions(start: str, end: str) -> str:
     the range)..."``), so the common prefix is cut back to the last
     punctuation mark and terminated with a dot.
     """
-    prefix = commonprefix([start, end]).rstrip()
+    prefix = "".join(a for a, _ in takewhile(lambda pair: pair[0] == pair[1], zip(start, end, strict=False))).rstrip()
     for i in range(len(prefix) - 1, -1, -1):
         char = prefix[i]
         if char.isalnum() or char.isspace():

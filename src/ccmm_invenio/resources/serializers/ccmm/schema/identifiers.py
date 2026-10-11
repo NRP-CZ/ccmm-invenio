@@ -15,6 +15,7 @@ from typing import Any, cast, override
 from flask import current_app
 from idutils.detectors import detect_identifier_schemes
 from idutils.normalizers import normalize_pid, to_url
+from idutils.validators import is_ror
 from invenio_access.permissions import system_identity
 from invenio_pidstore.errors import PIDDoesNotExistError
 from invenio_records_resources.proxies import current_service_registry
@@ -99,6 +100,16 @@ class IdentifierSchema(Schema):
         else:
             data["scheme"] = "other"
         return data
+
+
+def dump_ror_identifiers(item_id: str | None) -> list[dict[str, Any]] | None:
+    """Dump an affiliation / funder id as its ccmm ROR identifier, None if the id is not a ROR.
+
+    The affiliations and funders vocabularies may contain local (non-ROR) ids as well.
+    """
+    if not item_id or not is_ror(item_id):
+        return None
+    return cast("list[dict[str, Any]]", IdentifierSchema(many=True).dump([{"identifier": item_id, "scheme": "ror"}]))
 
 
 def service_item_exists(service_id: str, item_id: str) -> bool:

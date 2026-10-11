@@ -144,3 +144,19 @@ def test_affiliation_ror_dumped(vocabularies, affiliations):
     (affiliation,) = dumped[0]["relation"]["person"]["affiliation"]
     assert affiliation["name"] == "Univerzita Karlova"
     assert [identifier["value"] for identifier in affiliation["identifier"]] == [CUNI]
+
+
+def test_affiliation_local_id_dumped(vocabularies):
+    """An affiliation with a local (non-ROR) vocabulary id is exported without an identifier."""
+    dumped = DatasetMetadataSchema(only=FIELDS).dump(
+        {
+            "creators": [
+                {
+                    "person_or_org": {"type": "personal", "name": "Novák, Jan", "family_name": "Novák"},
+                    "affiliations": [{"id": "cesnet", "name": "CESNET"}],
+                }
+            ]
+        }
+    )["qualified_relation"]
+    (affiliation,) = dumped[0]["relation"]["person"]["affiliation"]
+    assert affiliation == {"name": "CESNET"}
