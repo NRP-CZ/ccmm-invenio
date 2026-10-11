@@ -238,13 +238,17 @@ class DatasetMetadataSchema(CommonResourceFieldsMixin, Schema):
 
     @post_load
     def use_created_date(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:
-        """Use the date of the "Created" time reference as the publication date, if there is one."""
+        """Use the date of the "Created" time reference as the publication date, if there is one.
+
+        publication_date is a single date (no interval, no time of day): of an interval, the start
+        date is used (the earliest known date); an interval with an open start keeps the publication year.
+        """
         created = next(
             (date["date"] for date in data.get("dates", []) if date.get("type", {}).get("id") == "created"), None
         )
-        if created:
-            # publication_date is a date or a date interval, the time of day is dropped
-            data["publication_date"] = created if "/" in created else created.split("T")[0]
+        start = created.split("/")[0].split("T")[0] if created else None
+        if start and start != "..":
+            data["publication_date"] = start
         return data
 
     @pre_load

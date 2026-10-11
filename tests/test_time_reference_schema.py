@@ -127,7 +127,7 @@ def test_date_information(date_types):
     ("sample", "publication_date"),
     [
         ("dataset-mini.xml", "2024-05-01"),  # created date
-        ("1m3t2-78951.xml", "2025-04-02/2025-04-03"),  # created interval
+        ("1m3t2-78951.xml", "2025-04-02"),  # created interval - its start (RDM edtf is a single date)
         ("ccmm_sample.xml", "2025-01-01"),  # no created date - publication year
     ],
 )
@@ -142,3 +142,13 @@ def test_publication_date_from_created_date_time():
     created = {"date": "2025-04-27T12:00:01+02:00", "type": {"id": "created"}}
     # publication_date can not have the time of day
     assert schema.use_created_date({"dates": [created]})["publication_date"] == "2025-04-27"
+
+
+def test_publication_date_from_created_interval():
+    schema = DatasetMetadataSchema()
+    created = {"date": "2022-10-24T08:00:00/2024-11-17", "type": {"id": "created"}}
+    assert schema.use_created_date({"dates": [created]})["publication_date"] == "2022-10-24"
+    # an open start - the publication year stays
+    open_start = {"date": "../2024-11-17", "type": {"id": "created"}}
+    data = {"publication_date": "2024-01-01", "dates": [open_start]}
+    assert schema.use_created_date(data)["publication_date"] == "2024-01-01"
