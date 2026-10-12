@@ -107,6 +107,8 @@ class CCMMExportPreset(Preset):
 class CCMMImportPreset(Preset):
     """Preset for CCMM imports."""
 
+    modifies = ("imports",)
+
     @override
     def apply(
         self,
