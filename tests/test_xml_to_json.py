@@ -8,6 +8,8 @@
 #
 from __future__ import annotations
 
+import subprocess
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -18,9 +20,9 @@ from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     NS_GML,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_json_to_xml,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 
 SAMPLES_DIR = (
@@ -84,7 +86,7 @@ def test_no_attribute_element_conflicts():
     # Only ccmm types are checked - gml (and xlink used by gml) is kept as an xml string.
     converter = XMLToGenericJSONConverter()
     conflicts = {}
-    for xsd_type in ccmm_1_1_0_schema.maps.iter_components():
+    for xsd_type in get_ccmm_1_1_0_schema().maps.iter_components():
         if not isinstance(xsd_type, XsdComplexType) or xsd_type.target_namespace != NS_CCMM_1_1_0:
             continue
         attributes = {converter.map_qname(name) for name in xsd_type.attributes if name}
@@ -96,3 +98,14 @@ def test_no_attribute_element_conflicts():
         if attributes & elements:
             conflicts[xsd_type.name] = attributes & elements
     assert conflicts == {}
+
+
+def test_schema_offline_and_lazy():
+    # the remote schemas (gml, xlink, xml) are read from the local copies - the schema allows local files only
+    assert NS_GML in get_ccmm_1_1_0_schema().maps.namespaces
+    # importing the serializers (at the server start) does not build the schema
+    check = (
+        "import ccmm_invenio.resources.serializers.ccmm as ccmm;"
+        "assert ccmm.get_ccmm_1_1_0_schema.cache_info().currsize == 0"
+    )
+    subprocess.run([sys.executable, "-c", check], check=True)  # noqa: S603

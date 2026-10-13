@@ -20,8 +20,8 @@ from marshmallow_utils.schemas import IdentifierSchema as RDMIdentifierSchema
 from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema
 from ccmm_invenio.resources.serializers.ccmm.schema.identifiers import IdentifierSchema
@@ -101,7 +101,9 @@ def test_dump(identifier_schemes):
     # the iri is derived from the identifier and scheme
     assert dumped["iri"] == "https://doi.org/10.45321/as36sl"
     # the dumped identifier is a valid ccmm identifier
-    _xml, errors = XMLToGenericJSONConverter().json_to_xml(ccmm_1_1_0_schema, dumped, f"{{{NS_CCMM_1_1_0}}}identifier")
+    _xml, errors = XMLToGenericJSONConverter().json_to_xml(
+        get_ccmm_1_1_0_schema(), dumped, f"{{{NS_CCMM_1_1_0}}}identifier"
+    )
     assert errors == []
 
     # no url for the "other" scheme - no iri

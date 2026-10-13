@@ -20,8 +20,8 @@ from invenio_vocabularies.proxies import current_service as vocab_service
 from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema
 
@@ -117,7 +117,7 @@ def test_dump(vocabularies, sample):
 
     for funding_reference in dumped:
         _xml, errors = XMLToGenericJSONConverter().json_to_xml(
-            ccmm_1_1_0_schema, funding_reference, f"{{{NS_CCMM_1_1_0}}}funding_reference"
+            get_ccmm_1_1_0_schema(), funding_reference, f"{{{NS_CCMM_1_1_0}}}funding_reference"
         )
         assert errors == []
 

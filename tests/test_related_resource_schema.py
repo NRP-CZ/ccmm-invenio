@@ -19,8 +19,8 @@ from marshmallow import ValidationError
 from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 from ccmm_invenio.resources.serializers.ccmm.schema.dataset import RelatedResourceSchema
 
@@ -111,7 +111,7 @@ def test_round_trip(vocabularies):
     dumped = schema.dump(loaded)
 
     _xml, errors = XMLToGenericJSONConverter().json_to_xml(
-        ccmm_1_1_0_schema, dumped, f"{{{NS_CCMM_1_1_0}}}related_resource"
+        get_ccmm_1_1_0_schema(), dumped, f"{{{NS_CCMM_1_1_0}}}related_resource"
     )
     assert errors == []
     # the doi identifier carries the iri of the resource; the iri and resource_url are dumped as they are

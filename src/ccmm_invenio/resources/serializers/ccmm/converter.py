@@ -11,8 +11,10 @@
 from __future__ import annotations
 
 from collections.abc import MutableMapping
+from functools import cache
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, cast
+from urllib.parse import urlsplit
 
 import xmlschema
 from xmlschema import ElementData, XMLSchemaConverter
@@ -187,7 +189,29 @@ class XMLToGenericJSONConverter(XMLSchemaConverter):
         return data._replace(attributes={**(data.attributes or {}), **attributes})
 
 
-ccmm_1_1_0_schema = xmlschema.XMLSchema11(Path(__file__).parent / "xsd" / "ccmm-1.1.0-2026-01-29.xsd")
+XSD_DIR = Path(__file__).parent / "xsd"
+REMOTE_XSD_DIR = XSD_DIR / "remote"
+"""Local copies of the remote schemas the ccmm xsd imports (gml, xlink, xml), as <host>/<path> of their url."""
+
+
+def _local_schema_uri(uri: str) -> str:
+    """Map the url of an imported remote schema to its local copy in REMOTE_XSD_DIR."""
+    parts = urlsplit(uri)
+    if parts.scheme in ("http", "https"):
+        local = REMOTE_XSD_DIR / parts.netloc / parts.path.lstrip("/")
+        if local.is_file():
+            return local.as_uri()
+    return uri
+
+
+@cache
+def get_ccmm_1_1_0_schema() -> xmlschema.XMLSchema11:
+    """Return the CCMM 1.1.0 xml schema, built on the first use (not at import - it takes a while).
+
+    The imported remote schemas are read from their local copies, the network is never accessed
+    (a schema without a local copy is an error).
+    """
+    return xmlschema.XMLSchema11(XSD_DIR / "ccmm-1.1.0-2026-01-29.xsd", uri_mapper=_local_schema_uri, allow="local")
 
 
 def convert_xml_to_json(xml_data: str | ElementType) -> tuple[Any, list[XMLSchemaValidationError]]:
@@ -195,7 +219,7 @@ def convert_xml_to_json(xml_data: str | ElementType) -> tuple[Any, list[XMLSchem
 
     The source xml is kept as the "ccmm_xml" field of the returned json (serialized if an element is passed).
     """
-    data, errors = XMLToGenericJSONConverter().xml_to_json(ccmm_1_1_0_schema, xml_data)
+    data, errors = XMLToGenericJSONConverter().xml_to_json(get_ccmm_1_1_0_schema(), xml_data)
     if isinstance(data, dict):
         data["ccmm_xml"] = xml_data if isinstance(xml_data, str) else xmlschema.etree_tostring(xml_data)
     return data, errors
@@ -203,4 +227,4 @@ def convert_xml_to_json(xml_data: str | ElementType) -> tuple[Any, list[XMLSchem
 
 def convert_json_to_xml(data: dict[str, Any]) -> tuple[str, list[XMLSchemaValidationError]]:
     """Convert generic JSON (as returned by convert_xml_to_json) back to a CCMM 1.1.0 XML document."""
-    return XMLToGenericJSONConverter().json_to_xml(ccmm_1_1_0_schema, data, f"{{{NS_CCMM_1_1_0}}}dataset")
+    return XMLToGenericJSONConverter().json_to_xml(get_ccmm_1_1_0_schema(), data, f"{{{NS_CCMM_1_1_0}}}dataset")

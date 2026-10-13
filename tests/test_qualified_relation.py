@@ -21,8 +21,8 @@ from invenio_vocabularies.proxies import current_service as vocab_service
 from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 from ccmm_invenio.resources.serializers.ccmm.schema.agents import CCMM_ROLE_CREATOR, CCMM_ROLE_PUBLISHER
 from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema
@@ -123,7 +123,7 @@ def test_round_trip(vocabularies, sample):
 
     for relation in dumped:
         _xml, errors = XMLToGenericJSONConverter().json_to_xml(
-            ccmm_1_1_0_schema, relation, f"{{{NS_CCMM_1_1_0}}}resource_to_agent_relationship"
+            get_ccmm_1_1_0_schema(), relation, f"{{{NS_CCMM_1_1_0}}}resource_to_agent_relationship"
         )
         assert errors == [], relation
     assert {relation["role"]["iri"] for relation in dumped} <= {CCMM_ROLE_CREATOR, CCMM_ROLE_PUBLISHER, DATA_MANAGER}
