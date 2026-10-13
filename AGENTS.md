@@ -34,7 +34,7 @@ Intentions guiding the current work:
 |---|---|
 | `src/ccmm_invenio/models/__init__.py` | the preset (`ccmm_preset_1_1_0`, alias `ccmm_production_preset_1_1_0`); the oarepo-model customization classes live in `models/customizations.py` |
 | `src/ccmm_invenio/models/1.1.0-2026-01-29/` | model yaml: `ccmm.yaml` (the CCMM types the model stores in their CCMM shape - distributions, agents, identifiers, …; `mapping.md` lists their XSD differences), `ccmm-invenio.yaml` (the dataset `CCMMDataset` and its own types), `ccmm-vocabularies.yaml` (CCMM vocabulary types → invenio vocabulary types). Keep them free of unused types |
-| `src/ccmm_invenio/resources/serializers/ccmm/converter.py` | XML ↔ generic JSON (`convert_xml_to_json`, `convert_json_to_xml`, `XMLToGenericJSONConverter`, xmlschema based, validated against `xsd/ccmm-1.1.0-2026-01-29.xsd` in the same package) |
+| `src/ccmm_invenio/resources/serializers/ccmm/converter.py` | XML ↔ generic JSON (`convert_xml_to_json`, `convert_json_to_xml`, `XMLToGenericJSONConverter`, xmlschema based, validated against `xsd/ccmm-1.1.0-2026-01-29.xsd` in the same package). The schema is built lazily by `get_ccmm_1_1_0_schema()` (cached) - never at import; the remote schemas it imports (GML 3.2.1 + ISO 19139, xlink, xml) are committed in `xsd/remote/<host>/<path>` and the network is never used (`allow="local"`) |
 | `src/ccmm_invenio/resources/serializers/ccmm/schema/` | marshmallow schemas generic JSON ↔ invenio record (see below) |
 | `src/ccmm_invenio/resources/deserializers/ccmm.py` | `CCMMJSONDeserializer` (the import deserializer) |
 | `src/ccmm_invenio/resources/serializers/ccmm/__init__.py` | `CCMMXMLSerializer` (REST + OAI-PMH export) |

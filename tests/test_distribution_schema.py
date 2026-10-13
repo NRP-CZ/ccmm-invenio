@@ -19,8 +19,8 @@ from marshmallow import ValidationError
 from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema
 from ccmm_invenio.resources.serializers.ccmm.schema.distribution import file_distributions
@@ -217,7 +217,7 @@ def test_round_trip(vocabularies, sample):
     dumped = dump(distributions)
     for distribution in dumped:
         _xml, errors = XMLToGenericJSONConverter().json_to_xml(
-            ccmm_1_1_0_schema, distribution, f"{{{NS_CCMM_1_1_0}}}distribution"
+            get_ccmm_1_1_0_schema(), distribution, f"{{{NS_CCMM_1_1_0}}}distribution"
         )
         assert errors == []
     # loading the dumped distributions gives the same distributions
@@ -319,6 +319,6 @@ def test_file_distributions(vocabularies, ext, mimetype, file_format, media_type
     # the distribution dumps to valid ccmm
     (dumped,) = dump([distribution])
     _xml, errors = XMLToGenericJSONConverter().json_to_xml(
-        ccmm_1_1_0_schema, dumped, f"{{{NS_CCMM_1_1_0}}}distribution"
+        get_ccmm_1_1_0_schema(), dumped, f"{{{NS_CCMM_1_1_0}}}distribution"
     )
     assert errors == []

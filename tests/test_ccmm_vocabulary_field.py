@@ -16,7 +16,7 @@ from marshmallow import ValidationError
 from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
+    get_ccmm_1_1_0_schema,
 )
 from ccmm_invenio.resources.serializers.ccmm.schema.vocabs import CCMMVocabularyField
 
@@ -74,7 +74,7 @@ def test_serialize(access_rights):
 
     # the serialized value is a valid ccmm vocabulary element
     _xml, errors = XMLToGenericJSONConverter().json_to_xml(
-        ccmm_1_1_0_schema, open_access, f"{{{NS_CCMM_1_1_0}}}access_rights"
+        get_ccmm_1_1_0_schema(), open_access, f"{{{NS_CCMM_1_1_0}}}access_rights"
     )
     assert errors == []
 

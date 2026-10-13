@@ -20,8 +20,8 @@ from invenio_vocabularies.records.models import VocabularyScheme
 from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema
 from ccmm_invenio.resources.serializers.ccmm.schema.subjects import SubjectSchema
@@ -119,7 +119,7 @@ def test_round_trip(subjects, sample):
 
     for subject in dumped:
         _xml, errors = XMLToGenericJSONConverter().json_to_xml(
-            ccmm_1_1_0_schema, subject, f"{{{NS_CCMM_1_1_0}}}subject"
+            get_ccmm_1_1_0_schema(), subject, f"{{{NS_CCMM_1_1_0}}}subject"
         )
         assert errors == []
 

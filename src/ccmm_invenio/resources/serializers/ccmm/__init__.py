@@ -29,9 +29,9 @@ from .converter import (
     NS_CCMM_1_1_0,
     NS_GML,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_json_to_xml,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 from .schema.dataset import DatasetSchema
 from .schema.distribution import file_distributions
@@ -43,9 +43,9 @@ __all__ = [
     "NS_GML",
     "CCMMXMLSerializer",
     "XMLToGenericJSONConverter",
-    "ccmm_1_1_0_schema",
     "convert_json_to_xml",
     "convert_xml_to_json",
+    "get_ccmm_1_1_0_schema",
 ]
 
 log = logging.getLogger(__name__)

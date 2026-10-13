@@ -23,8 +23,8 @@ from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     NS_GML,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema
 from ccmm_invenio.resources.serializers.ccmm.schema.locations import WGS84
@@ -140,7 +140,9 @@ def test_round_trip(vocabularies, sample_location):
     (location,) = dumped
     assert location["geometry"]["wkt"]["srsName"] == WGS84
     assert location["relation_type"]["iri"] == COLLECTED["iri"]
-    _xml, errors = XMLToGenericJSONConverter().json_to_xml(ccmm_1_1_0_schema, location, f"{{{NS_CCMM_1_1_0}}}location")
+    _xml, errors = XMLToGenericJSONConverter().json_to_xml(
+        get_ccmm_1_1_0_schema(), location, f"{{{NS_CCMM_1_1_0}}}location"
+    )
     assert errors == []
 
     assert load_features(*dumped) == features

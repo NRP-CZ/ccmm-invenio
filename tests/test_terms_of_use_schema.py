@@ -19,8 +19,8 @@ from invenio_vocabularies.proxies import current_service as vocab_service
 from ccmm_invenio.resources.serializers.ccmm.converter import (
     NS_CCMM_1_1_0,
     XMLToGenericJSONConverter,
-    ccmm_1_1_0_schema,
     convert_xml_to_json,
+    get_ccmm_1_1_0_schema,
 )
 from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema
 from ccmm_invenio.resources.serializers.ccmm.schema.terms_of_use import TermsOfUseSchema
@@ -111,7 +111,7 @@ def test_dump(licenses):
 
     # access_rights is not mapped (see TermsOfUseSchema), it is the only thing missing for a valid ccmm element
     _xml, errors = XMLToGenericJSONConverter().json_to_xml(
-        ccmm_1_1_0_schema, dumped, f"{{{NS_CCMM_1_1_0}}}terms_of_use"
+        get_ccmm_1_1_0_schema(), dumped, f"{{{NS_CCMM_1_1_0}}}terms_of_use"
     )
     assert len(errors) == 1
     assert "access_rights" in errors[0].reason
