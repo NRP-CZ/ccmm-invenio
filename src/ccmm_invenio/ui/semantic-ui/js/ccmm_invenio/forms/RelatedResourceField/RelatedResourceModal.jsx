@@ -20,8 +20,8 @@ import {
   PublisherField,
   LicenseField,
   SubjectsField,
-  DatesField,
 } from "@js/invenio_rdm_records";
+import { CCMMDatesField } from "../CCMMDatesField";
 import { AdditionalDescriptionsField } from "@js/invenio_rdm_records/src/deposit/fields/DescriptionsField/components";
 import { AccordionField } from "react-invenio-forms";
 
@@ -282,7 +282,7 @@ export class RelatedResourceModal extends Component {
                     includesPaths={["metadata.dates", "metadata.subjects"]}
                     label={i18next.t("Dates and Subjects")}
                   >
-                    <DatesField
+                    <CCMMDatesField
                       fieldPath="metadata.dates"
                       options={vocabularies?.dates}
                       showEmptyValue

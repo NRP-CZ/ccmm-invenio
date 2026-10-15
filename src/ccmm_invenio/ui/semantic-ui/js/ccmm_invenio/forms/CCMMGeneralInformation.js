@@ -12,9 +12,9 @@ import {
   VersionField,
   LicenseField,
   SubjectsField,
-  DatesField,
   DescriptionsField,
 } from "@js/invenio_rdm_records";
+import { CCMMDatesField } from "./CCMMDatesField";
 import { PIDFieldList } from "@js/oarepo_rdm/form/components";
 
 export const CCMMGeneralInformation = {
@@ -176,7 +176,7 @@ export const CCMMGeneralInformation = {
           />
         </Overridable>
         <Overridable id={buildUID(overridableIdPrefix, "Dates")} {...tabConfig}>
-          <DatesField
+          <CCMMDatesField
             fieldPath="metadata.dates"
             options={vocabularies?.dates}
             showEmptyValue
