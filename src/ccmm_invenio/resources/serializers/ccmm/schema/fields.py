@@ -34,6 +34,8 @@ class SplitNested(fields.Nested):
 
     With unique=True, equal loaded items are kept only once (e.g. a subject from a vocabulary
     loads to the same {"id": ...} for all the language variants of its title).
+
+    Items the nested schema loads to None (e.g. a subject without content) are dropped.
     """
 
     def __init__(self, nested: Any, *, split_on: str, unique: bool = False, **kwargs: Any):
@@ -46,7 +48,9 @@ class SplitNested(fields.Nested):
     def _deserialize(self, value: Any, attr: str | None, data: Any, partial: Any = None, **kwargs: Any) -> Any:
         if isinstance(value, list):  # anything else is reported as invalid by Nested
             value = [split_item for item in value for split_item in self._split(item)]
-        loaded = super()._deserialize(value, attr, data, partial=partial, **kwargs)
+        loaded = [
+            item for item in super()._deserialize(value, attr, data, partial=partial, **kwargs) if item is not None
+        ]
         if not self.unique:
             return loaded
         return [item for idx, item in enumerate(loaded) if item not in loaded[:idx]]

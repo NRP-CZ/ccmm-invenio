@@ -34,7 +34,8 @@ class SubjectSchema(Schema):
     Expects a single language variant of the title, use it with SplitNested(unique=True).
     A subject whose iri is in the subjects vocabulary (among the identifiers of a subject)
     becomes {"id": ...}, otherwise it is a keyword {"subject": <title>} - RDM keywords have no
-    language, so there is one keyword per language variant of the title.
+    language, so there is one keyword per language variant of the title. A subject that is not in
+    the vocabulary and has an empty title loads to None (dropped by SplitNested).
     Types as in invenio_vocabularies.contrib.subjects.schema.SubjectRelationSchema.
     """
 
@@ -56,11 +57,15 @@ class SubjectSchema(Schema):
     subject = fields.String(dump_only=True)
 
     @post_load
-    def to_rdm(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:
-        """Convert to the vocabulary subject or a keyword."""
+    def to_rdm(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any] | None:
+        """Convert to the vocabulary subject or a keyword, None for a subject without content."""
         if data.get("iri") and (subject_id := _subject_id(data["iri"])):
             return {"id": subject_id}
-        return {"subject": data["title"][0]["$"]}
+        # an empty <title xml:lang="en"/> has no text ("$") - nothing to keep (e.g. ArchaeoVault records)
+        keyword = data["title"][0].get("$")
+        if not keyword or not keyword.strip():
+            return None
+        return {"subject": keyword}
 
     @post_dump
     def to_ccmm(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:
