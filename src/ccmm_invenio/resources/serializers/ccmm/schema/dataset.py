@@ -408,7 +408,8 @@ class DatasetSchema(Schema):
     def drop_required_fallbacks(self, data: dict[str, Any], **_kwargs: Any) -> dict[str, Any]:
         """Drop the NO_SUBJECT / NO_LICENSE placeholders (see required_fallbacks), e.g. of a harvested record."""
         metadata = data.get("metadata") or {}
-        if metadata.get("subjects") == [{"subject": NO_SUBJECT}]:
+        # [] when all the subjects were dropped as empty (see SubjectSchema)
+        if "subjects" in metadata and metadata["subjects"] in ([], [{"subject": NO_SUBJECT}]):
             del metadata["subjects"]
         if metadata.get("rights") == [{"title": {"en": NO_LICENSE}}]:
             del metadata["rights"]

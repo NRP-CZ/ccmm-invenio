@@ -8,6 +8,7 @@
 #
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pytest
@@ -23,7 +24,7 @@ from ccmm_invenio.resources.serializers.ccmm.converter import (
     convert_xml_to_json,
     get_ccmm_1_1_0_schema,
 )
-from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema
+from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema, DatasetSchema
 from ccmm_invenio.resources.serializers.ccmm.schema.subjects import SubjectSchema
 
 FIXTURES = Path(__file__).parent.parent / "src/ccmm_invenio/fixtures" / "data"
@@ -32,7 +33,16 @@ SAMPLES_DIR = (
 )
 FORD = "https://vocabs.ccmm.cz/registry/codelist/SubjectCategory/"
 INSPIRE = "http://inspire.ec.europa.eu/theme"
-USED_SUBJECTS = {"ford:10509", "ford:10601", "ford:10606", "ford:30102", "ford:30304", "ford:20501", "inspire:ef"}
+USED_SUBJECTS = {
+    "ford:10509",
+    "ford:10601",
+    "ford:10606",
+    "ford:30102",
+    "ford:30304",
+    "ford:20501",
+    "ford:60102",
+    "inspire:ef",
+}
 
 
 @pytest.fixture(scope="module")
@@ -52,6 +62,15 @@ def load_subjects(sample: str) -> list:
     data, errors = convert_xml_to_json((SAMPLES_DIR / sample).read_text(encoding="utf-8"))
     assert errors == []
     return DatasetMetadataSchema(only=("subjects",)).load(data)["subjects"]
+
+
+def mini_dataset_with_subjects(subjects_xml: str) -> dict:
+    """Return the generic json of dataset-mini.xml with its subject replaced by subjects_xml."""
+    xml = (SAMPLES_DIR / "dataset-mini.xml").read_text(encoding="utf-8")
+    xml = re.sub(r"<subject>.*?</subject>", lambda _match: subjects_xml, xml, count=1, flags=re.DOTALL)
+    data, errors = convert_xml_to_json(xml)
+    assert errors == []
+    return data
 
 
 def test_ccmm_sample(subjects):
@@ -135,3 +154,34 @@ def test_classification_code_from_id(subjects):
     )
     service.indexer.refresh()
     assert SubjectSchema().dump({"id": "ford:99999"})["classification_code"] == "99999"
+
+
+def test_empty_subject_is_dropped(subjects):
+    # as harvested from ArchaeoVault (e.g. oai:archaeo-vault.cz:node-4045)
+    data = mini_dataset_with_subjects(
+        f"""
+        <subject>
+          <iri>{FORD}60000/60100/60102</iri>
+          <title xml:lang="en">Archaeology</title>
+        </subject>
+        <subject><title xml:lang="en"/></subject>
+        <subject><title xml:lang="cs">  </title></subject>
+        <subject><iri>http://example.org/not-in-vocabulary</iri><title xml:lang="en"/></subject>
+        """
+    )
+    assert DatasetMetadataSchema(only=("subjects",)).load(data)["subjects"] == [{"id": "ford:60102"}]
+
+
+def test_vocabulary_subject_with_empty_title(subjects):
+    data = mini_dataset_with_subjects(f'<subject><iri>{FORD}60000/60100/60102</iri><title xml:lang="en"/></subject>')
+    assert DatasetMetadataSchema(only=("subjects",)).load(data)["subjects"] == [{"id": "ford:60102"}]
+
+
+def test_only_empty_subject(subjects):
+    data = mini_dataset_with_subjects('<subject><title xml:lang="en"/></subject>')
+    assert DatasetMetadataSchema(only=("subjects",)).load(data)["subjects"] == []
+    # no subjects on the record, the export falls back to the NO_SUBJECT keyword
+    schema = DatasetSchema(only=("metadata.subjects",))
+    loaded = schema.load(data)
+    assert "subjects" not in loaded["metadata"]
+    assert schema.dump(loaded) == {"subject": [{"title": [{"lang": "", "$": "<no subject defined>"}]}]}
