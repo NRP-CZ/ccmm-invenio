@@ -98,6 +98,8 @@ class CCMMExportPreset(Preset):
             code="ccmm-xml",
             name=_("CCMM export"),
             mimetype=CCMM_XML_MIMETYPE,
+            # the mimetype guess maps +xml types to .xsl
+            extension=".xml",
             serializer=CCMMXMLSerializer(),
             oai_metadata_prefix="ccmm",
             oai_namespace="https://schema.ccmm.cz/research-data/1.1",
