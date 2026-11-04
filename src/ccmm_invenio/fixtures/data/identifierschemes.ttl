@@ -7,6 +7,7 @@
 @prefix europa-web: <https://op.europa.eu/en/web/> .
 @prefix gnd: <https://d-nb.info/gnd/> .
 @prefix hdl: <https://hdl.handle.net/> .
+@prefix n2t-info: <https://n2t.net/.info/> .
 @prefix nbn: <https://nbn-resolving.org/> .
 @prefix nma: <https://nma.eosc.cz/vocabularies/> .
 @prefix nma-identifierschemes: <https://nma.eosc.cz/vocabularies/identifierschemes/> .
@@ -49,6 +50,10 @@ props: a owl:Ontology ;
 props:alpha_2 a rdf:Property ;
     rdfs:label "ISO 639-1 code"@en ;
     rdfs:comment "Two-letter ISO 639-1 code of a language, when it has one."@en .
+
+props:classification_code a rdf:Property ;
+    rdfs:label "classification code"@en ;
+    rdfs:comment "Code of a subject in its classification scheme (e.g. the FORD code 10101 or the INSPIRE theme code EF)."@en .
 
 props:csl a rdf:Property ;
     rdfs:label "csl"@en ;
@@ -131,6 +136,7 @@ nma-identifierschemes:ares a skos:Concept ;
     tags: "person-organization" .
 
 nma-identifierschemes:ark a skos:Concept ;
+    skos:exactMatch n2t-info:ark ;
     skos:inScheme nma-identifierschemes: ;
     skos:notation "ark"^^nma-vocabularies:invenioid ;
     skos:prefLabel "ARK"@en ;

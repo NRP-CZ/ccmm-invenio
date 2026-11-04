@@ -122,6 +122,7 @@ TURTLE_PREFIXES = {
     "gnd": "https://d-nb.info/gnd/",
     "doi": "https://doi.org/",
     "hdl": "https://hdl.handle.net/",
+    "n2t-info": "https://n2t.net/.info/",
     "nbn": "https://nbn-resolving.org/",
     "orcid": "https://orcid.org/",
     "ror": "https://ror.org/",
