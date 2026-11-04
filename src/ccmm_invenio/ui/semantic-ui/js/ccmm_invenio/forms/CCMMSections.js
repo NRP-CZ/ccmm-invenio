@@ -7,6 +7,7 @@ import { CCMMGeneralInformation } from "./CCMMGeneralInformation";
 import { CCMMFunding } from "./CCMMFunding";
 import { CCMMAlternativeIdentifiers } from "./CCMMAlternativeIdentifiers";
 import { CCMMRelatedWorks } from "./CCMMRelatedWorks";
+import { CCMMGeolocations } from "./CCMMGeolocations";
 
 export const CCMMSections = [
   CCMMCommunityAndAccess,
@@ -15,4 +16,5 @@ export const CCMMSections = [
   CCMMFunding,
   CCMMAlternativeIdentifiers,
   CCMMRelatedWorks,
+  CCMMGeolocations,
 ];
