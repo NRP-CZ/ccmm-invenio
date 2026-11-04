@@ -160,8 +160,9 @@ class IdentifiersMerger(CuratedVocabularyMerger):
     concepts into the same NMA identifierschemes namespace, so the concepts
     are matched by URI: the concepts the fragment introduces (the schemes
     the RDM configs do not carry - ares, iri, researcherid, scopusid) are
-    created in the vocabulary with their labels, tags and authority links.
-    An untyped subject of the fragment that is not a concept of the
+    created in the vocabulary with their labels, tags and authority links;
+    the untyped subjects add to the RDM concepts (the CCMM IRI of ark, which
+    idutils has no landing URL template for). An untyped subject of the fragment that is not a concept of the
     vocabulary fails the merge - the fragment has gone stale.
     """
 

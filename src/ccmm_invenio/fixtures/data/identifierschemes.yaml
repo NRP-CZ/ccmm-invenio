@@ -29,6 +29,10 @@
   - record
   props:
     datacite: ARK
+  mappings:
+  - identifier: https://n2t.net/.info/ark
+    scheme: https://n2t.net/.info/
+    relation: exactMatch
 - id: arxiv
   title:
     en: arXiv

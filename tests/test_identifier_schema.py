@@ -78,6 +78,8 @@ def test_dataset_iri(identifier_schemes):
     [
         ("https://doi.org/10.2342/234234", {"identifier": "10.2342/234234", "scheme": "doi"}),
         ("https://hdl.handle.net/20.500.12345/1", {"identifier": "20.500.12345/1", "scheme": "handle"}),
+        # https ARKs need ccmm_invenio.idutils_ark
+        ("https://n2t.net/ark:/13030/tf5p30086k", {"identifier": "ark:/13030/tf5p30086k", "scheme": "ark"}),
         # no known scheme - the iri is an url
         ("https://example.org/local/123", {"identifier": "https://example.org/local/123", "scheme": "url"}),
     ],
@@ -85,6 +87,26 @@ def test_dataset_iri(identifier_schemes):
 def test_unknown_scheme_detected_from_iri(identifier_schemes, iri, identifier):
     ccmm = {"iri": iri, "value": "123", "scheme": {"iri": "https://example.org/unknown-scheme/"}}
     assert IdentifierSchema().load(ccmm) == identifier
+
+
+def test_ark(identifier_schemes):
+    # the CCMM ARK scheme iri is mapped to the ark scheme (identifierschemes fragment)
+    ccmm = {
+        "iri": "https://n2t.net/ark:/13030/tf5p30086k",
+        "value": "https://n2t.net/ark:/13030/tf5p30086k",
+        "scheme": {"iri": "https://n2t.net/.info/ark"},
+    }
+    loaded = IdentifierSchema().load(ccmm)
+    assert loaded == {"identifier": "https://n2t.net/ark:/13030/tf5p30086k", "scheme": "ark"}
+    # RDM accepts the https ARK and normalizes it (ccmm_invenio.idutils_ark)
+    assert RDMIdentifierSchema(allowed_schemes=record_identifiers_schemes).load(loaded) == {
+        "identifier": "ark:/13030/tf5p30086k",
+        "scheme": "ark",
+    }
+
+    dumped = IdentifierSchema().dump({"identifier": "ark:/13030/tf5p30086k", "scheme": "ark"})
+    assert dumped["scheme"]["iri"] == "https://n2t.net/.info/ark"
+    assert dumped["iri"] == "https://n2t.net/ark:/13030/tf5p30086k"
 
 
 def test_unknown_scheme_without_iri(identifier_schemes):

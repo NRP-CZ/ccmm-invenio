@@ -5,6 +5,10 @@
 # here as concepts, with the resolver IRIs CCMM identifies the schemes by
 # linked back via skos:exactMatch.
 #
+# The RDM schemes idutils has no landing URL template for get the IRI CCMM
+# identifies them by here (an untyped subject adding to the RDM concept):
+# ark - the scheme IRI of the CCMM identifier scheme vocabulary.
+#
 # The fragment is merged into the RDM identifier schemes by the converter,
 # strictly: an untyped subject that is not a concept of the identifier
 # schemes vocabulary fails the conversion instead of being silently
@@ -24,6 +28,8 @@ identifierschemes:ares a skos:Concept ;
                        skos:prefLabel "ARES"@cs ,
                                       "ARES"@en ;
                        tags: "person-organization" .
+
+identifierschemes:ark skos:exactMatch <https://n2t.net/.info/ark> .
 
 identifierschemes:iri a skos:Concept ;
                       skos:exactMatch <urn:iri> ;
