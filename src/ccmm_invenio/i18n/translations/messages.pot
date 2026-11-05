@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-07-08 15:01+0200\n"
+"POT-Creation-Date: 2026-11-05 16:20+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:119
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:222
-msgid "Datacite export"
+#: /home/martin/Projects/CESNET/NRP-CZ/ccmm-invenio/src/ccmm_invenio/models/__init__.py:99
+msgid "CCMM export"
 msgstr ""
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:125
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:132
-msgid "Citation"
-msgstr ""
-
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:185
+#: /home/martin/Projects/CESNET/NRP-CZ/ccmm-invenio/src/ccmm_invenio/models/__init__.py:124
 msgid "CCMM import"
 msgstr ""
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:187
-msgid "CCMM XML export."
+#: /home/martin/Projects/CESNET/NRP-CZ/ccmm-invenio/src/ccmm_invenio/models/__init__.py:126
+msgid "CCMM XML import."
 msgstr ""
 
 msgid "Alternative identifiers"
@@ -107,21 +101,19 @@ msgid ""
 "discarded. Submit this batch, then paste the rest."
 msgstr ""
 
+msgid "The following text was removed because it is not a valid DOI:"
+msgstr ""
+
+msgid ""
+"A DOI starts with \"10.\", followed by 4–9 digits, a slash and a suffix, "
+"e.g. 10.1234/abcd or https://doi.org/10.1234/abcd."
+msgstr ""
+
 msgid "Already tied to the record (will be skipped on Load):"
 msgstr ""
 
 msgid "Imported {{success}} of {{total}}"
 msgstr ""
-
-msgid "{{count}} field(s) need attention."
-msgid_plural "{{count}} field(s) need attention."
-msgstr[0] ""
-msgstr[1] ""
-
-msgid "Imported with {{count}} warning(s)."
-msgid_plural "Imported with {{count}} warning(s)."
-msgstr[0] ""
-msgstr[1] ""
 
 msgid "Use the Edit button on the entry in the list to fix it manually."
 msgstr ""

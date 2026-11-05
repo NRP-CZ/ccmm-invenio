@@ -2,16 +2,12 @@
 msgid ""
 msgstr ""
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:115
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:205
 msgid "Datacite export"
 msgstr ""
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:168
 msgid "CCMM import"
 msgstr ""
 
-#: /Users/dusanstojanovic/Projects/ccmm-invenio/src/ccmm_invenio/models/__init__.py:170
 msgid "CCMM XML export."
 msgstr ""
 
@@ -121,7 +117,9 @@ msgstr ""
 msgid "The following text was removed because it is not a valid DOI:"
 msgstr ""
 
-msgid "A DOI starts with \"10.\", followed by 4–9 digits, a slash and a suffix, e.g. 10.1234/abcd or https://doi.org/10.1234/abcd."
+msgid ""
+"A DOI starts with \"10.\", followed by 4–9 digits, a slash and a suffix, "
+"e.g. 10.1234/abcd or https://doi.org/10.1234/abcd."
 msgstr ""
 
 msgid "Already tied to the record (will be skipped on Load):"
@@ -194,4 +192,10 @@ msgstr ""
 msgid ""
 "General description of the record. Use Add description below to add methods,"
 " technical details, or other specialized content as separate sections."
+msgstr ""
+
+msgid "CCMM export"
+msgstr ""
+
+msgid "CCMM XML import."
 msgstr ""
