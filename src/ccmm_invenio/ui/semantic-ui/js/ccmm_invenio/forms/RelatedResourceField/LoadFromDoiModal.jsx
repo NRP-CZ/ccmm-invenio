@@ -216,6 +216,7 @@ export const LoadFromDoiModal = ({
             <label>{i18next.t("Relation type")}</label>
             <Form.Dropdown
               selection
+              search
               clearable
               options={relationTypeOptions}
               value={relationType}
