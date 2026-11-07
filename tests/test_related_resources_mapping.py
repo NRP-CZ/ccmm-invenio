@@ -184,7 +184,7 @@ def test_handle_rejects_invalid_date(app, date):
 @pytest.mark.parametrize(
     ("config_key", "mapper"),
     [
-        ("RELATED_RESOURCES_DATACITE_MAPPER", "ccmm_invenio.resources.deserializers.datacite:map_datacite"),
+        ("RELATED_RESOURCES_DATACITE_MAPPER", "ccmm_invenio.related_resources.datacite:map_datacite"),
         ("RELATED_RESOURCES_CROSSREF_MAPPER", "ccmm_invenio.related_resources.crossref:map_crossref"),
         ("RELATED_RESOURCES_HANDLE_MAPPER", "ccmm_invenio.related_resources.handle:map_handle"),
     ],
@@ -192,3 +192,8 @@ def test_handle_rejects_invalid_date(app, date):
 def test_related_resources_mappers_are_configured(app, config_key, mapper):
     """ccmm-invenio's initial_config points the related-resources resolvers to its mappings."""
     assert app.config[config_key] == mapper
+
+
+def test_default_resource_type_is_configured(app):
+    """The mappings' fallback resource type is ccmm's (oarepo-related-resources no longer sets it)."""
+    assert app.config["RELATED_RESOURCES_DEFAULT_RESOURCE_TYPE"] == "dataset"

@@ -13,8 +13,10 @@ import pytest
 from marshmallow import ValidationError
 from oarepo_related_resources.resolvers.base import ResolverProblem, ResolverProblemLevel
 
-from ccmm_invenio.resources.deserializers import datacite as datacite_module
-from ccmm_invenio.resources.deserializers.datacite import DataCiteJSONDeserializer, DataCiteMapping, map_datacite
+from ccmm_invenio.related_resources import datacite as datacite_module
+from ccmm_invenio.related_resources.datacite import DataCiteMapping, map_datacite
+from ccmm_invenio.resources.deserializers import datacite as deserializer_module
+from ccmm_invenio.resources.deserializers.datacite import DataCiteJSONDeserializer
 
 
 def test_datacite_descriptions_and_subjects(app, monkeypatch):
@@ -238,7 +240,7 @@ def test_related_resources_ui_schema_is_configured(app):
 )
 def test_deserializer_maps_attributes(app, monkeypatch, document):
     mapper = Mock(return_value=({"title": "Main"}, []))
-    monkeypatch.setattr(datacite_module, "map_datacite", mapper)
+    monkeypatch.setattr(deserializer_module, "map_datacite", mapper)
 
     assert DataCiteJSONDeserializer().deserialize(json.dumps(document).encode()) == {"metadata": {"title": "Main"}}
     mapper.assert_called_once_with({"titles": [{"title": "Main"}]})
@@ -249,7 +251,7 @@ def test_deserializer_fails_on_mapping_errors(app, monkeypatch):
         ResolverProblem(resolver="Datacite", message="dropped", level=ResolverProblemLevel.INFO),
         ResolverProblem(resolver="Datacite", message="broken creators", level=ResolverProblemLevel.ERROR),
     ]
-    monkeypatch.setattr(datacite_module, "map_datacite", Mock(return_value=({}, problems)))
+    monkeypatch.setattr(deserializer_module, "map_datacite", Mock(return_value=({}, problems)))
 
     with pytest.raises(ValidationError) as exc:
         DataCiteJSONDeserializer().deserialize(b"{}")

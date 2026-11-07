@@ -17,15 +17,15 @@ from typing import TYPE_CHECKING, Any, override
 import dateutil.parser
 from flask import current_app
 from invenio_i18n import lazy_gettext as _
+from oarepo_related_resources.resolvers.mapping import ResolverMapping
 from oarepo_related_resources.resolvers.utils import (
-    build_person_or_org,
     handle_errors,
     resolve_language,
     split_personal_name,
     validate_edtf,
 )
 
-from .mapping import ResolverMapping
+from ccmm_invenio.related_resources.utils import build_person_or_org
 
 if TYPE_CHECKING:
     from oarepo_related_resources.resolvers.base import ResolverProblem

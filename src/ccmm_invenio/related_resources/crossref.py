@@ -15,9 +15,10 @@ from typing import TYPE_CHECKING, Any, override
 from defusedxml.ElementTree import fromstring
 from flask import current_app
 from invenio_i18n import lazy_gettext as _
-from oarepo_related_resources.resolvers.utils import build_person_or_org, handle_errors
+from oarepo_related_resources.resolvers.mapping import ResolverMapping
+from oarepo_related_resources.resolvers.utils import handle_errors
 
-from .mapping import ResolverMapping
+from ccmm_invenio.related_resources.utils import build_person_or_org
 
 if TYPE_CHECKING:
     from oarepo_related_resources.resolvers.base import ResolverProblem
