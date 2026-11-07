@@ -50,6 +50,9 @@ tests = [
     "pytest-invenio>=4.0.0,<5.0.0",
 ]
 
+[project.entry-points."invenio_config.module"]
+ccmm_invenio = "ccmm_invenio.initial_config"
+
 [project.entry-points."invenio_rdm_records.fixtures"]
 ccmm_invenio = "ccmm_invenio.fixtures"
 

@@ -11,7 +11,9 @@
 from __future__ import annotations
 
 from .ccmm import CCMMJSONDeserializer
+from .datacite import DataCiteJSONDeserializer
 
 __all__ = [
     "CCMMJSONDeserializer",
+    "DataCiteJSONDeserializer",
 ]

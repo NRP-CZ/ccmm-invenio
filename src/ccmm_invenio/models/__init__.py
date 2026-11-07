@@ -31,7 +31,8 @@ from oarepo_rdm.model.presets.rdm.services.records.rdm_record_ui_schema import (
 )
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
 
-from ..resources.deserializers import CCMMJSONDeserializer
+from ..resources.deserializers import CCMMJSONDeserializer, DataCiteJSONDeserializer
+from ..resources.deserializers.datacite import DATACITE_JSON_MIMETYPE
 from ..resources.serializers import CCMMXMLSerializer
 from ..resources.serializers.ccmm import CCMM_XML_MIMETYPE
 from ..resources.serializers.json import JSONWithoutRelatedIdentifiersSerializer
@@ -126,6 +127,13 @@ class CCMMImportPreset(Preset):
             description=_("CCMM XML import."),
             deserializer=CCMMJSONDeserializer(),
             oai_name=("https://schema.ccmm.cz/research-data/1.1", "dataset"),
+        )
+        yield AddMetadataImport(
+            code="datacite-json",
+            name=_("DataCite JSON import"),
+            mimetype=DATACITE_JSON_MIMETYPE,
+            description=_("DataCite JSON import (the attributes object of the DataCite REST API)."),
+            deserializer=DataCiteJSONDeserializer(),
         )
 
 

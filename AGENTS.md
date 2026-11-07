@@ -37,6 +37,8 @@ Intentions guiding the current work:
 | `src/ccmm_invenio/resources/serializers/ccmm/converter.py` | XML ↔ generic JSON (`convert_xml_to_json`, `convert_json_to_xml`, `XMLToGenericJSONConverter`, xmlschema based, validated against `xsd/ccmm-1.1.0-2026-01-29.xsd` in the same package). The schema is built lazily by `get_ccmm_1_1_0_schema()` (cached) - never at import; the remote schemas it imports (GML 3.2.1 + ISO 19139, xlink, xml) are committed in `xsd/remote/<host>/<path>` and the network is never used (`allow="local"`) |
 | `src/ccmm_invenio/resources/serializers/ccmm/schema/` | marshmallow schemas generic JSON ↔ invenio record (see below) |
 | `src/ccmm_invenio/resources/deserializers/ccmm.py` | `CCMMJSONDeserializer` (the import deserializer) |
+| `src/ccmm_invenio/resources/deserializers/datacite.py` | DataCite JSON → CCMM metadata: `DataCiteMapping`/`map_datacite` (also the mapping of oarepo-related-resources' DataCite resolver, via `RELATED_RESOURCES_DATACITE_MAPPER`) and `DataCiteJSONDeserializer` (the `datacite-json` import) |
+| `src/ccmm_invenio/initial_config.py` | config defaults (`invenio_config.module` entry point): `RELATED_RESOURCES_DATACITE_MAPPER` |
 | `src/ccmm_invenio/resources/serializers/ccmm/__init__.py` | `CCMMXMLSerializer` (REST + OAI-PMH export) |
 | `src/ccmm_invenio/resources/serializers/json.py` | the `application/json` serializer (without `metadata.related_identifiers` - those are derived, see `services/components/related_identifiers.py`) |
 | `src/ccmm_invenio/resources/serializers/ui/` | UI serialization schemas (related resources) |
@@ -67,7 +69,9 @@ export:  record (service result, or search-index record for OAI) --CCMMXMLSerial
   datacite-json, geojson, csl, bibtex, jsonld, csv, datapackage, citation; the metadata is a
   superset of what they need). `marcxml`, `dcat` and `datacite-xml` are registered but fail on
   the expanded subject titles (subjects dump as `{"id"}` only, no title) until oarepo-rdm
-  expands the subjects relation - see the known gaps. Import is json + ccmm-xml (no ro-crate).
+  expands the subjects relation - see the known gaps. Import is json + ccmm-xml + datacite-json
+  (`application/vnd.datacite.datacite+json`, the import oarepo-formats' RO-Crate import hands its
+  converted metadata to; unmapped values are logged, an error-level problem is a 400).
 
 ### The schemas (`resources/serializers/ccmm/schema/`)
 
