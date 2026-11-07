@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """Marshmallow schemas for the CCMM dataset and the related resource."""
 
 from __future__ import annotations
@@ -51,7 +46,7 @@ class AlternateTitleSchema(LanguageTextMixin, Schema):
     text_field = "title"
     ccmm_element_many = True
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # iri (0..1): no counterpart in invenio
@@ -72,7 +67,7 @@ class DescriptionSchema(LanguageTextMixin, Schema):
     ccmm_element = "description_text"  # 1..1
     text_field = "description"
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # iri (0..1): no counterpart in invenio
@@ -144,7 +139,7 @@ class CommonResourceFieldsMixin:
 class RelatedResourceSchema(CommonResourceFieldsMixin, Schema):
     """CCMM related resource <-> ccmm-invenio related resource (CCMMInvenioRelatedResource in the model)."""
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         unknown = EXCLUDE
@@ -177,7 +172,7 @@ class DatasetMetadataSchema(CommonResourceFieldsMixin, Schema):
     Field names are the names of the invenio fields, data_key the names of the ccmm elements.
     """
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # the generic json contains elements that are not mapped (see "Not mapped" below)
@@ -332,7 +327,7 @@ class DatasetSchema(Schema):
     (and "files" for metadata-only access), see access.py.
     """
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         unknown = EXCLUDE

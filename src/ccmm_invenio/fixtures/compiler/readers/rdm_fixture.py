@@ -1,11 +1,5 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
 
 """Base reader for the vocabulary fixtures bundled with invenio_rdm_records."""
 
@@ -139,14 +133,13 @@ class RDMFixtureReader(VocabularyReader):
         graph: Graph,
         vocabulary: Namespace,
         concept_uri: URIRef,
-        _entry: dict[str, Any],
+        entry: dict[str, Any],  # noqa: ARG002 - used by the overrides, the parameter name is part of the signature
     ) -> None:
         """Add the entry-specific triples of a concept.
 
         By default the concept is placed as a top concept of the scheme;
         subclasses override this to build their hierarchy and map their
-        extra fixture data (the entry is passed as ``_entry`` here because
-        the default does not need it).
+        extra fixture data (the default does not need the entry).
         """
         graph.add((concept_uri, SKOS.topConceptOf, URIRef(vocabulary)))
         graph.add((URIRef(vocabulary), SKOS.hasTopConcept, concept_uri))

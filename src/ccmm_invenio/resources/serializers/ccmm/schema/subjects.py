@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """ccmm subject <-> RDM subject (vocabulary item or keyword)."""
 
 from __future__ import annotations
@@ -39,7 +34,7 @@ class SubjectSchema(Schema):
     Types as in invenio_vocabularies.contrib.subjects.schema.SubjectRelationSchema.
     """
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # definition (0..n), classification_code (0..1), subject_scheme (0..1): not stored in the record,

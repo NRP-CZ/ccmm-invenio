@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """Shared marshmallow fields of the ccmm schemas (language text, locale text, split nesting)."""
 
 from __future__ import annotations
@@ -198,7 +193,7 @@ class MultilingualField(fields.Field):
 class IriLabelSchema(Schema):
     """ccmm entity with an iri and a multilingual label (file, documentation)."""
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         unknown = EXCLUDE
