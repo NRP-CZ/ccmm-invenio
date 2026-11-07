@@ -18,7 +18,7 @@ from __future__ import annotations
 
 import json
 import re
-from typing import Any
+from typing import Any, override
 
 from flask import current_app
 from flask_resources.deserializers import DeserializerMixin
@@ -46,6 +46,8 @@ from oarepo_related_resources.resolvers.utils import (
     vocabulary_entry_exists,
 )
 
+from ccmm_invenio.related_resources.mapping import ResolverMapping
+
 DATACITE_JSON_MIMETYPE = "application/vnd.datacite.datacite+json"
 
 
@@ -72,35 +74,12 @@ def _non_empty_str(value: Any) -> str | None:
     return value if isinstance(value, str) and value.strip() else None
 
 
-class DataCiteMapping:
-    """Map one DataCite attributes object to CCMM record metadata.
-
-    Each ``resolve_*`` method fills a part of `processed_metadata`; a failing method is logged and skipped
-    (``handle_errors``), so one bad value does not lose the whole record.
-    """
+class DataCiteMapping(ResolverMapping):
+    """Map one DataCite attributes object to CCMM record metadata."""
 
     provider = "Datacite"
-    """Name the problems are reported under (the resolver name in oarepo-related-resources)."""
 
-    def __init__(self, metadata: dict[str, Any]):
-        """Create the mapping of the DataCite attributes ``metadata``."""
-        self.metadata = metadata
-        self.processed_metadata: dict[str, Any] = {}
-        self.problems: list[ResolverProblem] = []
-
-    def _add_problem(
-        self,
-        message: Any,
-        *,
-        level: ResolverProblemLevel = ResolverProblemLevel.WARNING,
-        exc: Exception | None = None,
-    ) -> None:
-        """Report a value that could not be mapped."""
-        problem = ResolverProblem(resolver=self.provider, message=str(message), level=level, original_exception=exc)
-        self.problems.append(problem)
-        if level == ResolverProblemLevel.ERROR:
-            current_app.logger.error("DataCite mapping problem: %s", problem.message, exc_info=exc)
-
+    @override
     def resolve_metadata(self) -> tuple[dict[str, Any], list[ResolverProblem]]:
         """Map the whole attributes object, return the metadata and the problems."""
         self.resolve_title()

@@ -221,10 +221,10 @@ def test_map_datacite_returns_metadata_and_problems(app, monkeypatch):
     assert [p.level for p in problems] == [ResolverProblemLevel.WARNING]
 
 
-def test_related_resources_mapper_is_configured(app):
-    """ccmm-invenio's initial_config points the related-resources DataCite resolver to `map_datacite`."""
-    assert app.config["RELATED_RESOURCES_DATACITE_MAPPER"] == (
-        "ccmm_invenio.resources.deserializers.datacite:map_datacite"
+def test_related_resources_ui_schema_is_configured(app):
+    """ccmm-invenio's initial_config wins over the RDM default of oarepo-related-resources (setdefault)."""
+    assert app.config["RELATED_RESOURCES_RECORD_UI_SCHEMA"] == (
+        "ccmm_invenio.resources.serializers.ui.related_resources.CCMMRelatedResourceUISchema"
     )
 
 

@@ -35,8 +35,9 @@ from ..services.components import RelatedIdentifiersComponent, RootRecordCompone
 from .customizations import ReplaceExportSerializer
 
 if TYPE_CHECKING:
-    from collections.abc import Generator
+    from collections.abc import Generator, Sequence
 
+    from oarepo_model.api import PresetList
     from oarepo_model.builder import InvenioModelBuilder
     from oarepo_model.model import InvenioModel
 
@@ -67,14 +68,15 @@ class CCMMMetadataPreset(FunctionalPreset):
     def before_populate_type_registry(
         self,
         model: InvenioModel,
-        types: list[dict[str, Any]],
-        presets: list[type[Preset] | list[type[Preset]] | tuple[type[Preset]]],
-        customizations: list[Customization],
+        types: Sequence[dict[str, Any]],
+        presets: PresetList,
+        customizations: Sequence[Customization],
         params: dict[str, Any],
     ) -> None:
         """Perform extra action before populating the type registry."""
         metadata_type = params["metadata_type"]
-        merge_metadata(types, metadata_type, self.metadata_type)
+        # merge_metadata modifies the type dicts in place (not the list), a list copy shares them
+        merge_metadata(list(types), metadata_type, self.metadata_type)
 
 
 class CCMMExportPreset(Preset):

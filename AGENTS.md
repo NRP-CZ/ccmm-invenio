@@ -38,8 +38,9 @@ Intentions guiding the current work:
 | `src/ccmm_invenio/resources/serializers/ccmm/schema/` | marshmallow schemas generic JSON ↔ invenio record (see below) |
 | `src/ccmm_invenio/resources/deserializers/ccmm.py` | `CCMMJSONDeserializer` (the import deserializer) |
 | `src/ccmm_invenio/resources/deserializers/datacite.py` | DataCite JSON → CCMM metadata: `DataCiteMapping`/`map_datacite` (also the mapping of oarepo-related-resources' DataCite resolver, via `RELATED_RESOURCES_DATACITE_MAPPER`) and `DataCiteJSONDeserializer` (the `datacite-json` import) |
+| `src/ccmm_invenio/related_resources/` | the CCMM mappings of the other oarepo-related-resources resolvers: `crossref.py` (`map_crossref`, the Crossref work), `handle.py` (`map_handle`, the `<head>` of a Handle landing page); `mapping.py` has their base `ResolverMapping` (also of `DataCiteMapping`). The resolvers only fetch, the mapping is the model's |
 | `src/ccmm_invenio/idutils_ark.py` | **temporary** idutils monkeypatch (applied from `ccmm_invenio/__init__.py`): `is_ark` accepts https ARK URLs, ARK normalization (→ `ark:/…`) and the `https://n2t.net/` landing URL. Each part retires itself once idutils has it - remove the module then |
-| `src/ccmm_invenio/initial_config.py` | config defaults (`invenio_config.module` entry point): `RELATED_RESOURCES_DATACITE_MAPPER` |
+| `src/ccmm_invenio/initial_config.py` | config defaults (`invenio_config.module` entry point): the oarepo-related-resources hooks `RELATED_RESOURCES_<DATACITE/CROSSREF/HANDLE>_MAPPER` and `RELATED_RESOURCES_RECORD_UI_SCHEMA` (related-resources does not know ccmm-invenio; it only `setdefault`s its RDM defaults) |
 | `src/ccmm_invenio/resources/serializers/ccmm/__init__.py` | `CCMMXMLSerializer` (REST + OAI-PMH export) |
 | `src/ccmm_invenio/resources/serializers/json.py` | the `application/json` serializer (without `metadata.related_identifiers` - those are derived, see `services/components/related_identifiers.py`) |
 | `src/ccmm_invenio/resources/serializers/ui/` | UI serialization schemas (related resources) |
@@ -67,10 +68,10 @@ export:  record (service result, or search-index record for OAI) --CCMMXMLSerial
 * The whole source XML is kept on the record in `ccmm_xml` (root field, copied between draft and
   record on publish / edit / new version by `RootRecordComponent`).
 * The model also registers the RDM complete exports (`RDMCompleteExportsPreset` - dublincore,
-  datacite-json, geojson, csl, bibtex, jsonld, csv, datapackage, citation; the metadata is a
-  superset of what they need). `marcxml`, `dcat` and `datacite-xml` are registered but fail on
-  the expanded subject titles (subjects dump as `{"id"}` only, no title) until oarepo-rdm
-  expands the subjects relation - see the known gaps. Import is json + ccmm-xml + datacite-json
+  datacite-json, datacite-xml, geojson, csl, bibtex, jsonld, csv, datapackage, marcxml, dcat,
+  bibliography (formerly `citation`); the metadata is a superset of what they need). `marcxml`,
+  `dcat` and `datacite-xml` read the expanded subject title - the subjects relation of oarepo-rdm
+  (`RDMSubject` is a subjects vocabulary since oarepo-rdm 9.1.1) fills it in. Import is json + ccmm-xml + datacite-json
   (`application/vnd.datacite.datacite+json`, the import oarepo-formats' RO-Crate import hands its
   converted metadata to; unmapped values are logged, an error-level problem is a 400).
 
@@ -208,10 +209,5 @@ Remaining differences of a CCMM XML → record → CCMM XML round trip (`ccmm_sa
   WKT whitespace is normalised.
 * Considered, not done: export the stored `ccmm_xml` as-is for records not edited since import
   (lossless for harvested records); fill RDM-less details back from `ccmm_xml` after edits.
-* **Subjects are not expanded** in the record dump (the `{id}` only, no title), so the RDM
-  exports that index `subject["subject"]` (`marcxml`, `dcat`, `datacite-xml`) 500 on records
-  with subjects. The expansion (the subjects relation of `RDMSubject` in oarepo-rdm) is being
-  fixed upstream; `tests/test_rdm_exports.py` guards the flip (strict xfail → remove
-  `NEEDS_SUBJECT_EXPANSION` then).
 * The UI does not show / edit `metadata_identifications` yet; `related_identifiers` should not be
   editable in the deposit form (it is derived and overwritten).
