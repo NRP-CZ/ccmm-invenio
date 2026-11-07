@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """ccmm time reference <-> RDM EDTF date."""
 
 from __future__ import annotations
@@ -85,7 +80,7 @@ class TimeReferenceSchema(Schema):
     Types as in invenio_rdm_records.services.schemas.metadata.DateSchema.
     """
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # iri (0..1), also iri of the time instant/interval: no counterpart in invenio

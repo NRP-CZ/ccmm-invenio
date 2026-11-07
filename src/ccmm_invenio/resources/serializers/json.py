@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """The JSON serializer (application/json) without the RDM related identifiers.
 
 metadata.related_identifiers are derived from metadata.related_resources (see
@@ -16,7 +11,7 @@ related resources are. The stored record, the search index and the UI JSON (read
 
 from __future__ import annotations
 
-from typing import Any, cast, override
+from typing import Any, override
 
 from flask_resources.serializers import JSONSerializer
 
@@ -41,8 +36,8 @@ class JSONWithoutRelatedIdentifiersSerializer(JSONSerializer):
 
     @override
     def serialize_object(self, obj: Any) -> str:
-        return cast("str", super().serialize_object(without_related_identifiers(obj)))
+        return super().serialize_object(without_related_identifiers(obj))
 
     @override
     def serialize_object_list(self, obj_list: Any) -> str:
-        return cast("str", super().serialize_object_list(list_without_related_identifiers(obj_list)))
+        return super().serialize_object_list(list_without_related_identifiers(obj_list))

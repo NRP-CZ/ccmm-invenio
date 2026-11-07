@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2025 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2025-2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """The ccmm model preset (`ccmm_preset_1_1_0`, alias `ccmm_production_preset_1_1_0`)."""
 
 from __future__ import annotations
@@ -31,7 +26,8 @@ from oarepo_rdm.model.presets.rdm.services.records.rdm_record_ui_schema import (
 )
 from oarepo_rdm.model.presets.rdm_metadata import merge_metadata
 
-from ..resources.deserializers import CCMMJSONDeserializer
+from ..resources.deserializers import CCMMJSONDeserializer, DataCiteJSONDeserializer
+from ..resources.deserializers.datacite import DATACITE_JSON_MIMETYPE
 from ..resources.serializers import CCMMXMLSerializer
 from ..resources.serializers.ccmm import CCMM_XML_MIMETYPE
 from ..resources.serializers.json import JSONWithoutRelatedIdentifiersSerializer
@@ -39,8 +35,9 @@ from ..services.components import RelatedIdentifiersComponent, RootRecordCompone
 from .customizations import ReplaceExportSerializer
 
 if TYPE_CHECKING:
-    from collections.abc import Generator
+    from collections.abc import Generator, Sequence
 
+    from oarepo_model.api import PresetList
     from oarepo_model.builder import InvenioModelBuilder
     from oarepo_model.model import InvenioModel
 
@@ -71,14 +68,15 @@ class CCMMMetadataPreset(FunctionalPreset):
     def before_populate_type_registry(
         self,
         model: InvenioModel,
-        types: list[dict[str, Any]],
-        presets: list[type[Preset] | list[type[Preset]] | tuple[type[Preset]]],
-        customizations: list[Customization],
+        types: Sequence[dict[str, Any]],
+        presets: PresetList,
+        customizations: Sequence[Customization],
         params: dict[str, Any],
     ) -> None:
         """Perform extra action before populating the type registry."""
         metadata_type = params["metadata_type"]
-        merge_metadata(types, metadata_type, self.metadata_type)
+        # merge_metadata modifies the type dicts in place (not the list), a list copy shares them
+        merge_metadata(list(types), metadata_type, self.metadata_type)
 
 
 class CCMMExportPreset(Preset):
@@ -126,6 +124,13 @@ class CCMMImportPreset(Preset):
             description=_("CCMM XML import."),
             deserializer=CCMMJSONDeserializer(),
             oai_name=("https://schema.ccmm.cz/research-data/1.1", "dataset"),
+        )
+        yield AddMetadataImport(
+            code="datacite-json",
+            name=_("DataCite JSON import"),
+            mimetype=DATACITE_JSON_MIMETYPE,
+            description=_("DataCite JSON import (the attributes object of the DataCite REST API)."),
+            deserializer=DataCiteJSONDeserializer(),
         )
 
 

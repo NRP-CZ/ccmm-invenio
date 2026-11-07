@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 CESNET z.s.p.o.
+// SPDX-License-Identifier: MIT
+
 import { i18next } from "@translations/ccmm_invenio";
 import React from "react";
 import { useDrag, useDrop } from "react-dnd";

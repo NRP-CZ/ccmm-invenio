@@ -37,6 +37,10 @@ Intentions guiding the current work:
 | `src/ccmm_invenio/resources/serializers/ccmm/converter.py` | XML ↔ generic JSON (`convert_xml_to_json`, `convert_json_to_xml`, `XMLToGenericJSONConverter`, xmlschema based, validated against `xsd/ccmm-1.1.0-2026-01-29.xsd` in the same package). The schema is built lazily by `get_ccmm_1_1_0_schema()` (cached) - never at import; the remote schemas it imports (GML 3.2.1 + ISO 19139, xlink, xml) are committed in `xsd/remote/<host>/<path>` and the network is never used (`allow="local"`) |
 | `src/ccmm_invenio/resources/serializers/ccmm/schema/` | marshmallow schemas generic JSON ↔ invenio record (see below) |
 | `src/ccmm_invenio/resources/deserializers/ccmm.py` | `CCMMJSONDeserializer` (the import deserializer) |
+| `src/ccmm_invenio/resources/deserializers/datacite.py` | `DataCiteJSONDeserializer` (the `datacite-json` import), using `map_datacite` |
+| `src/ccmm_invenio/related_resources/` | the CCMM mappings of the oarepo-related-resources resolvers (`RELATED_RESOURCES_<PROVIDER>_MAPPER`): `datacite.py` (`DataCiteMapping`/`map_datacite`, the DataCite attributes; also the `datacite-json` import), `crossref.py` (`map_crossref`, the Crossref work), `handle.py` (`map_handle`, the `<head>` of a Handle landing page), `utils.py` (`build_person_or_org`, the RDM `person_or_org` shape). They subclass oarepo-related-resources' `ResolverMapping` and use its model-independent helpers (`resolvers.utils`: `handle_errors`, vocabulary lookups, …). The resolvers only fetch, the mapping is the model's |
+| `src/ccmm_invenio/idutils_ark.py` | **temporary** idutils monkeypatch (applied from `ccmm_invenio/__init__.py`): `is_ark` accepts https ARK URLs, ARK normalization (→ `ark:/…`) and the `https://n2t.net/` landing URL. Each part retires itself once idutils has it - remove the module then |
+| `src/ccmm_invenio/initial_config.py` | config defaults (`invenio_config.module` entry point): the oarepo-related-resources hooks `RELATED_RESOURCES_<DATACITE/CROSSREF/HANDLE>_MAPPER` and `RELATED_RESOURCES_RECORD_UI_SCHEMA` (related-resources does not know ccmm-invenio; it only `setdefault`s its RDM defaults), and `RELATED_RESOURCES_DEFAULT_RESOURCE_TYPE` (the mappings' fallback resource type; only ccmm sets it) |
 | `src/ccmm_invenio/resources/serializers/ccmm/__init__.py` | `CCMMXMLSerializer` (REST + OAI-PMH export) |
 | `src/ccmm_invenio/resources/serializers/json.py` | the `application/json` serializer (without `metadata.related_identifiers` - those are derived, see `services/components/related_identifiers.py`) |
 | `src/ccmm_invenio/resources/serializers/ui/` | UI serialization schemas (related resources) |
@@ -64,10 +68,12 @@ export:  record (service result, or search-index record for OAI) --CCMMXMLSerial
 * The whole source XML is kept on the record in `ccmm_xml` (root field, copied between draft and
   record on publish / edit / new version by `RootRecordComponent`).
 * The model also registers the RDM complete exports (`RDMCompleteExportsPreset` - dublincore,
-  datacite-json, geojson, csl, bibtex, jsonld, csv, datapackage, citation; the metadata is a
-  superset of what they need). `marcxml`, `dcat` and `datacite-xml` are registered but fail on
-  the expanded subject titles (subjects dump as `{"id"}` only, no title) until oarepo-rdm
-  expands the subjects relation - see the known gaps. Import is json + ccmm-xml (no ro-crate).
+  datacite-json, datacite-xml, geojson, csl, bibtex, jsonld, csv, datapackage, marcxml, dcat,
+  bibliography (formerly `citation`); the metadata is a superset of what they need). `marcxml`,
+  `dcat` and `datacite-xml` read the expanded subject title - the subjects relation of oarepo-rdm
+  (`RDMSubject` is a subjects vocabulary since oarepo-rdm 9.1.1) fills it in. Import is json + ccmm-xml + datacite-json
+  (`application/vnd.datacite.datacite+json`, the import oarepo-formats' RO-Crate import hands its
+  converted metadata to; unmapped values are logged, an error-level problem is a 400).
 
 ### The schemas (`resources/serializers/ccmm/schema/`)
 
@@ -111,6 +117,7 @@ Conventions in the schemas:
 | `metadata_identification` | `metadata.metadata_identifications` (`CCMMInvenioMetadataRecord`, agents as RDM contributors) | **stored as it came** (harvested records) and exported **without changes**. Without a stored one (records created here) it is generated from `created`/`updated`/`links`; contributors with role `datamanager` are copied into it (and stay contributors), otherwise the repository (`THEME_SITENAME`) is the Data Manager. Not in the UI yet |
 | `terms_of_use/access_rights` | record `access` (+ `files.enabled` for metadata-only) | `open` / `restricted` / `metadata-only` / `embargoed` (= RDM access status ids). Embargo end = the "Available" date; export uses `access.status`. See `access.py` |
 | `terms_of_use/license` (+ description) | `rights` | RDM rejects a description next to a vocabulary license - it is dropped then. A license without an iri (0..1 in ccmm) is a free-text one without a link |
+| identifier scheme IRI | `identifierschemes` `{id}` | via the vocabulary mappings; schemes RDM has but idutils knows no landing URL of get their CCMM IRI in `fixtures/input/vocabularies/identifierschemes.ttl` (`ark` ← `https://n2t.net/.info/ark`). An unknown scheme is detected from the identifier IRI (`url` for an unknown one, see the known gaps). ARK values are stored normalized (`ark:/…`, see `idutils_ark.py`) |
 | `iri` (dataset, related resource), `resource_url` | stored as they are | not converted to identifiers |
 | `related_resource` | `related_resources` (`CCMMInvenioRelatedResource`) | related resource without a title gets the iri / resource url as title (required in the model) |
 | — | `related_identifiers` | **derived** from `related_resources` by `RelatedIdentifiersComponent` on create/update (overwrites whatever the client sent), validated with RDM's `RelatedIdentifierSchema`. Hidden from the `application/json` API (the UI JSON keeps them); DataCite registration uses the record, not the response |
@@ -155,10 +162,20 @@ metadata IRI outside its original repository.
 ## Working on the code
 
 * Run the tests with the project virtualenv: `.venv/bin/pytest tests` (services from
-  `.env-services`; see `run.sh`). The full suite takes ~2.5 minutes; the HTTP tests
+  `.env-services`, started with `./run.sh start`, stopped with `./run.sh stop`; without them the
+  service-backed tests error with "Connection refused" on `localhost:9200`). The full suite takes ~2.5 minutes; the HTTP tests
   (`test_ccmm_import_http.py`, `test_ccmm_file_distributions.py`) are the slow ones.
-* Lint / format: `.venv/bin/ruff check src tests` and `.venv/bin/ruff format src tests`
-  (line length 120).
+  After pulling a change of the entry points in `pyproject.toml` (e.g. `invenio_config.module`),
+  reinstall the package (`uv pip install --python .venv/bin/python --no-deps -e .`) - the editable
+  install keeps the entry points of the time it was made.
+* Lint / format: `./run.sh lint` (ruff check + format check, license headers, `from __future__
+  import annotations`, ty type check; line length 120) and `./run.sh format`. ruff and ty are not
+  in `.venv` - do not call them directly. `ty.toml` is regenerated by every lint run from the
+  oarepo-cli template - do not edit it, silence a false positive inline with
+  `# ty: ignore[<rule>]`.
+* marshmallow schema options: `class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]`
+  - subclassing `Schema.Meta` gets the options type-checked (no runtime change, it only declares
+  types); ty still reports any nested `Meta` override, hence the ignore.
 * **Throwaway probes**: when inspecting data through a pytest probe, write the results to a file
   (e.g. `/tmp/<name>.json`) and read it afterwards - the output of a passing test is discarded.
   Delete the probe afterwards.
@@ -192,10 +209,5 @@ Remaining differences of a CCMM XML → record → CCMM XML round trip (`ccmm_sa
   WKT whitespace is normalised.
 * Considered, not done: export the stored `ccmm_xml` as-is for records not edited since import
   (lossless for harvested records); fill RDM-less details back from `ccmm_xml` after edits.
-* **Subjects are not expanded** in the record dump (the `{id}` only, no title), so the RDM
-  exports that index `subject["subject"]` (`marcxml`, `dcat`, `datacite-xml`) 500 on records
-  with subjects. The expansion (the subjects relation of `RDMSubject` in oarepo-rdm) is being
-  fixed upstream; `tests/test_rdm_exports.py` guards the flip (strict xfail → remove
-  `NEEDS_SUBJECT_EXPANSION` then).
 * The UI does not show / edit `metadata_identifications` yet; `related_identifiers` should not be
   editable in the deposit form (it is derived and overwritten).

@@ -1,12 +1,7 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
-"""The exports registered on the ccmm model (the RDM complete set minus marcxml/dcat, plus ccmm-xml)."""
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
+"""The exports registered on the ccmm model (the RDM complete set plus ccmm-xml)."""
 
 from __future__ import annotations
 
@@ -30,7 +25,7 @@ def test_rdm_exports_registered(app):
         "datacite-xml",
         "datapackage",
         "dublincore",
-        "citation",
+        "bibliography",
         "bibtex",
         "marcxml",
         "dcat",
@@ -58,39 +53,22 @@ def publish_sample(client, headers) -> str:  # noqa: F811 - fixtures
 # (a pre-existing problem, unrelated to the RDM exports added here)
 SIGNPOSTING = {"lset", "jsonlset"}
 
-# marcxml, dcat and datacite-xml index subject["subject"] (the expanded title) and subjects
-# are not expanded in this model yet (only {"id"} arrives) - they fail until oarepo-rdm
-# expands the subjects relation
-NEEDS_SUBJECT_EXPANSION = {"marcxml", "dcat", "datacite-xml"}
-
 
 @pytest.mark.parametrize(
     "export",
-    [export for export in ccmm_dataset.exports if export.code not in SIGNPOSTING | NEEDS_SUBJECT_EXPANSION],
+    [export for export in ccmm_dataset.exports if export.code not in SIGNPOSTING],
     ids=lambda export: export.code,
 )
 def test_export_serializes(client, headers, vocabularies, location, export):  # noqa: F811 - fixtures
-    """Every registered export serializes the published ccmm sample without an error."""
+    """Every registered export serializes the published ccmm sample without an error.
+
+    marcxml, dcat and datacite-xml read the expanded subject title (``subject["subject"]``) - the subjects
+    relation of oarepo-rdm (>= 9.1.1) fills it in.
+    """
     record_id = publish_sample(client, headers)
     response = client.get(f"/ccmm-dataset/{record_id}", headers={"Accept": export.mimetype})
     assert response.status_code == 200, f"{export.code}: {response.get_data(as_text=True)[:500]}"
     assert response.get_data(as_text=True), export.code
-
-
-@pytest.mark.parametrize(
-    "export",
-    [export for export in ccmm_dataset.exports if export.code in NEEDS_SUBJECT_EXPANSION],
-    ids=lambda export: export.code,
-)
-@pytest.mark.xfail(
-    strict=True,
-    reason="subject titles not expanded yet; drop from NEEDS_SUBJECT_EXPANSION when oarepo-rdm expands them",
-)
-def test_export_serializes_after_subject_expansion(client, headers, vocabularies, location, export):  # noqa: F811
-    """Guard: an XPASS here means oarepo-rdm expands subjects - remove the export from the skip set above."""
-    record_id = publish_sample(client, headers)
-    response = client.get(f"/ccmm-dataset/{record_id}", headers={"Accept": export.mimetype})
-    assert response.status_code == 200, response.get_data(as_text=True)[:500]
 
 
 def test_sizes_formats(client, headers, vocabularies, location):  # noqa: F811 - fixtures

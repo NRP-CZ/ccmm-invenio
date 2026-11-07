@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2025 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2025-2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """UI serialization schemas for CCMM related resources."""
 
 from __future__ import annotations
@@ -25,7 +20,7 @@ from invenio_rdm_records.resources.serializers.ui.schema import (
     make_affiliation_index as rdm_make_affiliation_index,
 )
 from invenio_rdm_records.services.schemas.metadata import (
-    record_related_identifiers_schemes,  # type: ignore[attr-defined]
+    record_related_identifiers_schemes,
 )
 from invenio_vocabularies.resources import VocabularyL10Schema
 from marshmallow import Schema, fields

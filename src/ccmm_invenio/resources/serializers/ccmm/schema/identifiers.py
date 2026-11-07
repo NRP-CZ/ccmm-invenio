@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """ccmm identifiers (identifier/scheme, award identifiers) and the vocabulary existence checks."""
 
 from __future__ import annotations
@@ -57,7 +52,7 @@ class IdentifierSchema(Schema):
     against its scheme here, invenio does that when the record is stored.
     """
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # authorized (0..1): no counterpart in invenio
@@ -124,7 +119,7 @@ def service_item_exists(service_id: str, item_id: str) -> bool:
 def vocabulary_item_exists(vocabulary_type: str, item_id: str) -> bool:
     """Return True if the item is in the vocabulary."""
     try:
-        vocab_service.read(system_identity, (vocabulary_type, item_id))  # ty: ignore[invalid-argument-type]  # pyright: ignore[reportArgumentType]
+        vocab_service.read(system_identity, (vocabulary_type, item_id))
     except PIDDoesNotExistError:
         return False
     return True

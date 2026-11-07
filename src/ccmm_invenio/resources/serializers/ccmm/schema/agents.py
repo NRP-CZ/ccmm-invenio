@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """ccmm agents (persons, organizations) and their roles <-> RDM creators, contributors, publisher."""
 
 from __future__ import annotations
@@ -56,7 +51,7 @@ class PersonOrOrgSchema(Schema):
     Types as in invenio_rdm_records.services.schemas.metadata.PersonOrOrganizationSchema.
     """
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # iri (0..1), alternate_name (0..n, organization), contact_point (0..n): no counterpart in invenio;
@@ -106,7 +101,7 @@ class AffiliationSchema(Schema):
     Types as in invenio_vocabularies.contrib.affiliations.schema.AffiliationRelationSchema.
     """
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # iri (0..1), alternate_name (0..n), contact_point (0..n): no counterpart in invenio
@@ -144,7 +139,7 @@ class CreatibutorSchema(Schema):
     Types as in invenio_rdm_records.services.schemas.metadata.CreatorSchema.
     """
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # iri (0..1): no counterpart in invenio

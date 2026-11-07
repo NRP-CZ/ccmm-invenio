@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """Marshmallow fields converting between Invenio vocabulary references and CCMM IRIs."""
 
 from __future__ import annotations
@@ -71,7 +66,7 @@ class CCMMVocabularyField(Field):
         # invenio vocabularies are addressed by (type, id) tuple, the type hint says str
         vocab = vocab_service.read(
             system_identity,
-            (self.vocab_type, value["id"]),  # ty: ignore[invalid-argument-type]  # pyright: ignore[reportArgumentType]
+            (self.vocab_type, value["id"]),
         )
         mappings = cast("list[dict[str, Any]]", vocab.data.get("mappings", []))
         # relations usable for export, see oarepo_vocabularies.services.schema.SKOSMappingSchema.relation
@@ -118,7 +113,7 @@ class CCMMVocabularyField(Field):
         if self.id_prefix and iri.startswith(self.id_prefix):
             item_id = iri.removeprefix(self.id_prefix).lower()
             try:
-                vocab_service.read(system_identity, (self.vocab_type, item_id))  # ty: ignore[invalid-argument-type]  # pyright: ignore[reportArgumentType]
+                vocab_service.read(system_identity, (self.vocab_type, item_id))
             except PIDDoesNotExistError:
                 pass
             else:

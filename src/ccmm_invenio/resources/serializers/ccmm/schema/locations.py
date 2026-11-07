@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """ccmm location <-> RDM locations (GeoJSON features, WGS84)."""
 
 from __future__ import annotations
@@ -153,7 +148,7 @@ class LocationsField(fields.Field):
         relation_id = cast("dict[str, Any]", LOCATION_RELATIONS.deserialize(relation_type))["id"]
         title = vocab_service.read(
             system_identity,
-            ("locationrelations", relation_id),  # ty: ignore[invalid-argument-type]  # pyright: ignore[reportArgumentType]
+            ("locationrelations", relation_id),
         ).data.get("title", {})
         return title.get(current_app.config.get("BABEL_DEFAULT_LOCALE", "en")) or next(iter(title.values()), None)
 
