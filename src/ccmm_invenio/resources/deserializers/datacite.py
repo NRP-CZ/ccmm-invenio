@@ -31,10 +31,11 @@ class DataCiteJSONDeserializer(DeserializerMixin):
     def deserialize(self, data: str | bytes) -> dict:
         """Deserialize a DataCite JSON document - the attributes object or the REST API ``{"data": ...}``."""
         attributes = json.loads(data)
+        if isinstance(attributes, dict) and isinstance(attributes.get("data"), dict):
+            attributes = attributes["data"].get("attributes")
+        # checked after unwrapping: the REST API attributes may be missing / null / not an object as well
         if not isinstance(attributes, dict):
             raise ValidationError("Not a DataCite JSON object.")
-        if isinstance(attributes.get("data"), dict):
-            attributes = attributes["data"].get("attributes", {})
         metadata, problems = map_datacite(attributes)
         errors = [p.message for p in problems if p.level == ResolverProblemLevel.ERROR]
         if errors:

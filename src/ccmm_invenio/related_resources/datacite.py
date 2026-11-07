@@ -136,13 +136,21 @@ class DataCiteMapping(ResolverMapping):
 
     @handle_errors()
     def resolve_description(self) -> None:
-        """Extract the abstract description from DataCite metadata."""
+        """Extract the abstract description (the first usable one) from DataCite metadata."""
         for d in self.metadata.get("descriptions", []):
-            _type = d.get("descriptionType")
-            description = d.get("description")
-            if _type == "Abstract":
-                self.processed_metadata["description"] = description
-                break
+            if d.get("descriptionType") != "Abstract":
+                continue
+            description = _non_empty_str(d.get("description"))
+            if description is None:
+                # source records may contain nulls or other types - the record schema would reject them
+                self._add_problem(
+                    _("The abstract '%(description)s' is not a text, so it was omitted.")
+                    % {"description": d.get("description")},
+                    level=ResolverProblemLevel.INFO,
+                )
+                continue
+            self.processed_metadata["description"] = description
+            break
 
     @handle_errors()
     def resolve_language(self) -> None:
@@ -510,6 +518,9 @@ class DataCiteMapping(ResolverMapping):
                         check_existing=True,
                     )
                     identifier = identifier_dict["id"]
+                # deliberately broad: missing ORCID dump credentials, S3/network errors or an invalid names entry
+                # must not fail the whole record - the ORCID is dropped, the traceback logged (which is also why
+                # ruff's BLE001 accepts it)
                 except Exception:
                     current_app.logger.exception(
                         "Error resolving ORCID identifier '%s'.",

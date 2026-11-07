@@ -54,6 +54,33 @@ def test_datacite_descriptions_and_subjects(app, monkeypatch):
     }
 
 
+@pytest.mark.parametrize("unusable", [None, "", "   ", ["a list"], {"an": "object"}])
+def test_datacite_unusable_abstract_is_skipped(app, unusable):
+    """An abstract that is not a non-empty text is reported and skipped, the next usable one is taken."""
+    mapping = DataCiteMapping(
+        {
+            "descriptions": [
+                {"descriptionType": "Abstract", "description": unusable},
+                {"descriptionType": "Abstract", "description": "Usable abstract"},
+            ]
+        }
+    )
+
+    mapping.resolve_description()
+
+    assert mapping.processed_metadata == {"description": "Usable abstract"}
+    assert [p.level for p in mapping.problems] == [datacite_module.ResolverProblemLevel.INFO]
+
+
+def test_datacite_no_usable_abstract(app):
+    mapping = DataCiteMapping({"descriptions": [{"descriptionType": "Abstract", "description": None}]})
+
+    mapping.resolve_description()
+
+    assert "description" not in mapping.processed_metadata
+    assert len(mapping.problems) == 1
+
+
 def test_datacite_related_titles_and_contributors(app, monkeypatch):
     mapping = DataCiteMapping({})
     mapping.metadata = {
@@ -258,6 +285,17 @@ def test_deserializer_fails_on_mapping_errors(app, monkeypatch):
     assert exc.value.messages == ["broken creators"]
 
 
-def test_deserializer_rejects_non_object(app):
+@pytest.mark.parametrize(
+    "document",
+    [
+        [],
+        # a REST API response whose attributes are missing / null / not an object
+        {"data": {}},
+        {"data": {"attributes": None}},
+        {"data": {"attributes": ["not", "an", "object"]}},
+    ],
+)
+def test_deserializer_rejects_non_object(app, document):
+    """Not an attributes object (also after unwrapping a REST API response) is a validation error, not a crash."""
     with pytest.raises(ValidationError):
-        DataCiteJSONDeserializer().deserialize(b"[]")
+        DataCiteJSONDeserializer().deserialize(json.dumps(document).encode())
