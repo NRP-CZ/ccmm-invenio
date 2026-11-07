@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """Marshmallow schemas for CCMM distributions.
 
 ccmm distribution (generic json of the xml) <-> CCMMDistribution of the model (ccmm.yaml),
@@ -45,7 +40,7 @@ CHECKSUM_ALGORITHM_PREFIX = "http://spdx.org/rdf/terms#checksumAlgorithm_"
 class EndpointSchema(Schema):
     """ccmm related resource as an endpoint url of a data service (CCMMRelatedResource in the model)."""
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # alternate_title, identifier, qualified_relation, resource_relation_type, resource_type,
@@ -74,7 +69,7 @@ class DataServiceSchema(IriLabelSchema):
 class ChecksumSchema(Schema):
     """ccmm checksum."""
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         unknown = EXCLUDE
@@ -92,7 +87,7 @@ class ChecksumSchema(Schema):
 class DownloadableFileSchema(Schema):
     """ccmm distribution downloadable file."""
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         unknown = EXCLUDE
@@ -130,7 +125,7 @@ class DownloadableFileSchema(Schema):
 class DataServiceDistributionSchema(Schema):
     """ccmm distribution data service."""
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         unknown = EXCLUDE
@@ -159,7 +154,7 @@ class DataServiceDistributionSchema(Schema):
 class DistributionSchema(Schema):
     """ccmm distribution; exactly one of a data service or a downloadable file (xs:choice)."""
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         unknown = EXCLUDE

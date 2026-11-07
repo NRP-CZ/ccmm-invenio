@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 CESNET z.s.p.o.
+// SPDX-License-Identifier: MIT
+
 import { i18next } from "@translations/ccmm_invenio";
 import { Formik } from "formik";
 import * as Yup from "yup";

@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 CESNET z.s.p.o.
+// SPDX-License-Identifier: MIT
+
 import React, { useContext, useMemo } from "react";
 import { OverridableContext } from "react-overridable";
 import { DatesField } from "@js/invenio_rdm_records";

@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """DataCite JSON -> CCMM metadata (moved here from oarepo-related-resources' DataCite resolver)."""
 
 from __future__ import annotations
@@ -125,7 +120,7 @@ def test_datacite_affiliations_and_name_identifiers(app, monkeypatch):
     monkeypatch.setattr(services, "resolve_orcid", Mock(return_value={"id": "0000-0001"}))
 
     assert (
-        mapping._resolve_datacite_affiliations(  # noqa: SLF001 - the helpers are tested directly
+        mapping._resolve_datacite_affiliations(
             [
                 "Institute",
                 "Institute",
@@ -133,7 +128,7 @@ def test_datacite_affiliations_and_name_identifiers(app, monkeypatch):
                 {"name": "Named institute"},
             ]
         ),
-        mapping._resolve_datacite_name_identifiers(  # noqa: SLF001
+        mapping._resolve_datacite_name_identifiers(
             name_identifiers=[
                 {"nameIdentifier": "https://orcid.org/0000-0001", "nameIdentifierScheme": "ORCID"},
                 {"nameIdentifier": "https://orcid.org/0000-0001", "nameIdentifierScheme": "ORCID"},

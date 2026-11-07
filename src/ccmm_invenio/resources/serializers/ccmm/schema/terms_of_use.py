@@ -1,11 +1,6 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
+
 """ccmm terms of use (license) <-> RDM rights item."""
 
 from __future__ import annotations
@@ -28,7 +23,7 @@ class TermsOfUseSchema(Schema):
     licenses vocabulary ({"id": ...}), or a free-text one ({"title": {...}, "link": ...}).
     """
 
-    class Meta:
+    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
         """Schema options."""
 
         # iri (0..1): no counterpart in invenio
