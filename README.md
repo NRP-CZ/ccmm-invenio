@@ -231,12 +231,12 @@ class MyCrossrefMapping(CrossrefMapping):
         return self.processed_metadata, self.problems
 
     @handle_errors()
-    def resolve_container_title(self):
-        ...
+    def resolve_container_title(self): ...
 
 
 def map_crossref(work):
     return MyCrossrefMapping(work).resolve_metadata()
+
 
 # invenio.cfg
 RELATED_RESOURCES_CROSSREF_MAPPER = "my_repository.related_resources:map_crossref"

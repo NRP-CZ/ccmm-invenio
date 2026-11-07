@@ -119,7 +119,7 @@ def service_item_exists(service_id: str, item_id: str) -> bool:
 def vocabulary_item_exists(vocabulary_type: str, item_id: str) -> bool:
     """Return True if the item is in the vocabulary."""
     try:
-        vocab_service.read(system_identity, (vocabulary_type, item_id))  # pyright: ignore[reportArgumentType]
+        vocab_service.read(system_identity, (vocabulary_type, item_id))
     except PIDDoesNotExistError:
         return False
     return True

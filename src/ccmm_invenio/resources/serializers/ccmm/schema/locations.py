@@ -148,7 +148,7 @@ class LocationsField(fields.Field):
         relation_id = cast("dict[str, Any]", LOCATION_RELATIONS.deserialize(relation_type))["id"]
         title = vocab_service.read(
             system_identity,
-            ("locationrelations", relation_id),  # pyright: ignore[reportArgumentType]
+            ("locationrelations", relation_id),
         ).data.get("title", {})
         return title.get(current_app.config.get("BABEL_DEFAULT_LOCALE", "en")) or next(iter(title.values()), None)
 

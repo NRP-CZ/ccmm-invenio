@@ -66,7 +66,7 @@ class CCMMVocabularyField(Field):
         # invenio vocabularies are addressed by (type, id) tuple, the type hint says str
         vocab = vocab_service.read(
             system_identity,
-            (self.vocab_type, value["id"]),  # pyright: ignore[reportArgumentType]
+            (self.vocab_type, value["id"]),
         )
         mappings = cast("list[dict[str, Any]]", vocab.data.get("mappings", []))
         # relations usable for export, see oarepo_vocabularies.services.schema.SKOSMappingSchema.relation
@@ -113,7 +113,7 @@ class CCMMVocabularyField(Field):
         if self.id_prefix and iri.startswith(self.id_prefix):
             item_id = iri.removeprefix(self.id_prefix).lower()
             try:
-                vocab_service.read(system_identity, (self.vocab_type, item_id))  # pyright: ignore[reportArgumentType]
+                vocab_service.read(system_identity, (self.vocab_type, item_id))
             except PIDDoesNotExistError:
                 pass
             else:
