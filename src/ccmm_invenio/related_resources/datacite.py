@@ -21,6 +21,7 @@ import re
 from typing import Any, override
 
 from flask import current_app
+from idutils import is_ror, normalize_ror
 from invenio_access.permissions import system_identity
 from invenio_i18n import lazy_gettext as _
 from invenio_rdm_records.services.schemas.metadata import (
@@ -46,6 +47,7 @@ from oarepo_related_resources.resolvers.utils import (
 )
 
 from ccmm_invenio.related_resources.utils import build_person_or_org
+from ccmm_invenio.resources.serializers.ccmm.schema.identifiers import AwardIdentifiersField, service_item_exists
 
 
 def _is_valid_identifier(identifier: Any, scheme: str, schemes: Any) -> bool:
@@ -97,6 +99,7 @@ class DataCiteMapping(ResolverMapping):
         self.resolve_version()
         self.resolve_rights()
         self.resolve_identifiers()
+        self.resolve_funding()
         return self.processed_metadata, self.problems
 
     @handle_errors()
@@ -253,6 +256,74 @@ class DataCiteMapping(ResolverMapping):
             rights_list.append({"id": code})
         if rights_list:
             self.processed_metadata["rights"] = rights_list
+
+    @handle_errors()
+    def resolve_funding(self) -> None:
+        """Map ``fundingReferences`` to RDM funding, the same way as the CCMM import.
+
+        The ROR becomes the funder id when it is in the funders vocabulary, or always with
+        CCMM_KEEP_UNKNOWN_FUNDER_ROR; other funder identifiers have no counterpart in RDM.
+        """
+        funding = []
+        for reference in self.metadata.get("fundingReferences", []):
+            if not isinstance(reference, dict):
+                continue
+            funder = {}
+            if name := _non_empty_str(reference.get("funderName")):
+                funder["name"] = name
+            identifier = _non_empty_str(reference.get("funderIdentifier"))
+            if identifier and str(reference.get("funderIdentifierType")).upper() == "ROR" and is_ror(identifier):
+                ror = normalize_ror(identifier)
+                if current_app.config.get("CCMM_KEEP_UNKNOWN_FUNDER_ROR") or service_item_exists("funders", ror):
+                    funder["id"] = ror
+            if not funder:
+                if identifier:
+                    self._add_problem(
+                        _(
+                            "The funder with the identifier '%(identifier)s' could not be mapped, "
+                            "so the funding reference was omitted."
+                        )
+                        % {"identifier": identifier},
+                        level=ResolverProblemLevel.INFO,
+                    )
+                else:
+                    self._add_problem(
+                        _("A funding reference without a funder name or identifier was omitted."),
+                        level=ResolverProblemLevel.INFO,
+                    )
+                continue
+            item: dict[str, Any] = {"funder": funder}
+            if award := self._resolve_award(reference):
+                item["award"] = award
+            funding.append(item)
+        if funding:
+            self.processed_metadata["funding"] = funding
+
+    def _resolve_award(self, reference: dict[str, Any]) -> dict[str, Any]:
+        """Map the award of a funding reference; RDM needs its number or title."""
+        award: dict[str, Any] = {}
+        if number := _non_empty_str(reference.get("awardNumber")):
+            award["number"] = number
+        if title := _non_empty_str(reference.get("awardTitle")):
+            # the language is not known, as in AwardTitleField of the CCMM import
+            award["title"] = {current_app.config.get("BABEL_DEFAULT_LOCALE", "en"): title}
+        uri = _non_empty_str(reference.get("awardUri"))
+        if uri:
+            if not award:
+                # RDM rejects an award without an id, number or title, so the uri can not be kept alone
+                self._add_problem(
+                    _("The award URI '%(uri)s' was omitted, as RDM needs the award number or title.") % {"uri": uri},
+                    level=ResolverProblemLevel.INFO,
+                )
+            else:
+                try:
+                    award["identifiers"] = AwardIdentifiersField().deserialize(uri)
+                except ValidationError:
+                    self._add_problem(
+                        _("The award URI '%(uri)s' is not valid, so it was omitted.") % {"uri": uri},
+                        level=ResolverProblemLevel.INFO,
+                    )
+        return award
 
     @handle_errors()
     def resolve_publisher(self) -> None:
