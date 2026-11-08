@@ -123,7 +123,7 @@ Conventions in the schemas:
 | — | `related_identifiers` | **derived** from `related_resources` by `RelatedIdentifiersComponent` on create/update (overwrites whatever the client sent), validated with RDM's `RelatedIdentifierSchema`. Hidden from the `application/json` API (the UI JSON keeps them); DataCite registration uses the record, not the response |
 | `distribution` | `distributions` (CCMM-shaped) | a downloadable file with an access/download url on this server is **not loaded** (it is an uploaded file). On export the record's **uploaded files are added** as downloadable files - only those the reader may see (REST: `files.entries` exist only with `read_files`; OAI: only public record + public files; hidden files never) |
 | `subject` | `subjects` | vocabulary subject (FORD, INSPIRE themes) → `{id}`, otherwise a keyword per language variant. Export adds `classification_code` (vocabulary prop, or the id without the scheme prefix) and the scheme name |
-| funder / affiliation | RDM funder / affiliation (`id`, `name`) | the id is set when the ROR is in the funders / affiliations vocabulary; other identifiers are dropped (RDM does not accept them) |
+| funder / affiliation | RDM funder / affiliation (`id`, `name`) | the id is set when the ROR is in the funders / affiliations vocabulary (for funders, always with `CCMM_KEEP_UNKNOWN_FUNDER_ROR`); other identifiers are dropped (RDM does not accept them) |
 | `location` | RDM `locations` (GeoJSON features, WGS84) | GML is reprojected; a multi-polygon is split |
 | `resource_type` missing | `dataset` | RDM requires a resource type |
 | `time_interval` ending before it begins | `dates` | swapped on import (RDM rejects it; sources we can not fix have them) |

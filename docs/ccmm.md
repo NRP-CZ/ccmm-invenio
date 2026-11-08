@@ -47,7 +47,7 @@ The following table summarizes what does not survive the import unchanged (schem
 | `date_time`/tz on dates, time-of-day in intervals, `xs:date` timezones | **trimmed** | RDM EDTF has dates and level-0 intervals only (e.g. `2025`) |
 | `primary_language` | **merged** | goes first into `languages` together with `other_language`; which one was primary is not stored |
 | `subject` | **modified** | IRI in the subjects vocabulary → `{id}`; otherwise one keyword per language variant of the title (RDM keywords have no language); `definition`, `classification_code`, `subject_scheme` not stored (re-derived from the vocabulary on export) |
-| funder / affiliation identifiers | **modified** | only a ROR present in the funders/affiliations vocabulary becomes the `id`; other identifiers not converted; a person funder becomes a name (RDM funders are organizations) |
+| funder / affiliation identifiers | **modified** | only a ROR present in the funders/affiliations vocabulary becomes the `id` (with `CCMM_KEEP_UNKNOWN_FUNDER_ROR`, a funder's ROR always does, and a service component must create the missing funders); other identifiers not converted; a person funder becomes a name (RDM funders are organizations) |
 | `location` | **modified** | GML/WKT reprojected to WGS84 GeoJSON; a multi-polygon is **split** into polygons; geometry label, `bounding_box` (when a geometry exists), original CRS and `related_object.title` not converted; names joined with `; "`; only the configured RDM location identifier schemes kept |
 | downloadable-file `distribution` with access/download URL on this server | **not converted** | its metadata would duplicate the uploaded file entry (see `DistributionsField`) |
 | `resource_type` missing | **defaulted** | `dataset` (RDM requires it) |

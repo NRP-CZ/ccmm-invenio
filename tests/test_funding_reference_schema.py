@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+from types import SimpleNamespace
 
 import pytest
 import yaml
@@ -18,6 +19,7 @@ from ccmm_invenio.resources.serializers.ccmm.converter import (
     convert_xml_to_json,
     get_ccmm_1_1_0_schema,
 )
+from ccmm_invenio.resources.serializers.ccmm.schema import funding as funding_schema
 from ccmm_invenio.resources.serializers.ccmm.schema.dataset import DatasetMetadataSchema
 
 FIXTURES = Path(__file__).parent.parent / "src/ccmm_invenio/fixtures" / "data"
@@ -26,6 +28,7 @@ SAMPLES_DIR = (
 )
 GACR = "01pv73b02"  # Grantová agentura České republiky, in the funders vocabulary
 MSMT = "037n8p820"  # Ministerstvo školství, mládeže a tělovýchovy, not in the funders vocabulary
+ROR = [{"identifier": MSMT, "scheme": "ror"}]
 
 
 @pytest.fixture(scope="module")
@@ -79,6 +82,14 @@ def test_funder_not_in_vocabulary(vocabularies):
         "title": {"en": "Development of special wire semiproducts for welding and 3D printing"},
         "program": "Operační program Jan Amos Komenský",
     }
+
+
+@pytest.mark.parametrize(("keep", "expected"), [(False, {"name": "MSMT"}), (True, {"name": "MSMT", "id": MSMT})])
+def test_unknown_funder_ror_is_kept_only_when_configured(app, monkeypatch, keep, expected):
+    monkeypatch.setattr(funding_schema, "service_item_exists", lambda *_args: False)
+    monkeypatch.setattr(funding_schema, "IdentifierSchema", lambda **_kwargs: SimpleNamespace(load=lambda _value: ROR))
+    monkeypatch.setitem(app.config, "CCMM_KEEP_UNKNOWN_FUNDER_ROR", keep)
+    assert funding_schema.FunderField().deserialize([{"organization": {"name": "MSMT"}}]) == expected
 
 
 @pytest.mark.parametrize("sample", ["ccmm_sample.xml", "dmq82-ed856.xml"])
