@@ -25,7 +25,7 @@ class FunderField(fields.Field):
     Expects a single funder (a list with a single item), use it with SplitNested.
     RDM funder has a name (free text) and an id from the funders vocabulary (invenio FunderRelationSchema).
     The id is set when the ROR of the agent is in the funders vocabulary, or always with
-    CCMM_KEEP_UNKNOWN_FUNDER_ROR (a service component must then create the missing funders).
+    CCMM_FETCH_IDENTIFIERS (FetchIdentifiersComponent then creates the missing funders).
     Other identifiers have no counterpart in RDM and are dropped.
     On dump, the id is the ROR identifier of the organization.
     A person is a funder by name, as RDM does not distinguish persons and organizations here -
@@ -42,7 +42,7 @@ class FunderField(fields.Field):
         funder: dict[str, Any] = {"name": agent.get("name")}
         identifiers = IdentifierSchema(many=True).load(agent.get("identifier", [])) or []
         ror = next((identifier["identifier"] for identifier in identifiers if identifier["scheme"] == "ror"), None)
-        if ror and (current_app.config.get("CCMM_KEEP_UNKNOWN_FUNDER_ROR") or service_item_exists("funders", ror)):
+        if ror and (current_app.config.get("CCMM_FETCH_IDENTIFIERS") or service_item_exists("funders", ror)):
             funder["id"] = ror
         return funder
 

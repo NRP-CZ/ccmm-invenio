@@ -31,7 +31,7 @@ from ..resources.deserializers.datacite import DATACITE_JSON_MIMETYPE
 from ..resources.serializers import CCMMXMLSerializer
 from ..resources.serializers.ccmm import CCMM_XML_MIMETYPE
 from ..resources.serializers.json import JSONWithoutRelatedIdentifiersSerializer
-from ..services.components import RelatedIdentifiersComponent, RootRecordComponent
+from ..services.components import FetchIdentifiersComponent, RelatedIdentifiersComponent, RootRecordComponent
 from .customizations import ReplaceExportSerializer
 
 if TYPE_CHECKING:
@@ -167,6 +167,23 @@ class CCMMRelatedIdentifiersComponentPreset(Preset):
         yield AddToList("record_service_components", RelatedIdentifiersComponent)
 
 
+class CCMMFetchIdentifiersComponentPreset(Preset):
+    """Preset creating the vocabulary records missing for a record (see FetchIdentifiersComponent)."""
+
+    modifies = ("record_service_components",)
+
+    @override
+    def apply(
+        self,
+        builder: InvenioModelBuilder,
+        model: InvenioModel,
+        dependencies: dict[str, Any],
+    ) -> Generator[Customization]:
+        """Yield component."""
+        _, _, _ = builder, model, dependencies
+        yield AddToList("record_service_components", FetchIdentifiersComponent)
+
+
 class CCMMHideRelatedIdentifiersPreset(Preset):
     """Preset removing the RDM related identifiers from the application/json export (provided by ExportsPreset).
 
@@ -225,6 +242,7 @@ ccmm_preset_1_1_0 = [
     RootRecordFieldPreset,
     CCMMRootRecordComponentPreset,
     CCMMRelatedIdentifiersComponentPreset,
+    CCMMFetchIdentifiersComponentPreset,
     CCMMHideRelatedIdentifiersPreset,
 ]
 
