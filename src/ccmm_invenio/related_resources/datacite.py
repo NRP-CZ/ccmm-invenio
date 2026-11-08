@@ -21,7 +21,7 @@ import re
 from typing import Any, override
 
 from flask import current_app
-from idutils import is_ror, normalize_ror
+from idutils import is_ror, normalize_pid, normalize_ror
 from invenio_access.permissions import system_identity
 from invenio_i18n import lazy_gettext as _
 from invenio_rdm_records.services.schemas.metadata import (
@@ -455,8 +455,13 @@ class DataCiteMapping(ResolverMapping):
 
     @handle_errors()
     def resolve_identifiers(self) -> None:
-        """Resolve and map identifiers from DataCite metadata."""
+        """Resolve and map identifiers from DataCite metadata.
+
+        The same identifier may be there more times (a DOI also as an alternate identifier, as Zenodo does),
+        the record schema refuses that. DOIs and Handles are case insensitive.
+        """
         identifiers = []
+        seen = set()
         for id_with_scheme in self.metadata.get("identifiers", []):
             identifier = _non_empty_str(id_with_scheme.get("identifier"))
             scheme = (_non_empty_str(id_with_scheme.get("identifierType")) or "").lower()
@@ -469,7 +474,11 @@ class DataCiteMapping(ResolverMapping):
                     level=ResolverProblemLevel.INFO,
                 )
                 continue
-            identifiers.append({"identifier": identifier, "scheme": scheme})
+            normalized = normalize_pid(identifier, scheme)
+            key = (scheme, normalized.lower() if scheme in ("doi", "handle") else normalized)
+            if key not in seen:
+                seen.add(key)
+                identifiers.append({"identifier": identifier, "scheme": scheme})
         if identifiers:
             self.processed_metadata["identifiers"] = identifiers
 

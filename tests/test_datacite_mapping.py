@@ -204,6 +204,32 @@ def test_datacite_additional_title_without_value_is_omitted(app, monkeypatch):
     assert "additional_titles" not in mapping.processed_metadata
 
 
+def test_datacite_repeated_identifiers_are_dropped(app):
+    """Zenodo has the DOI also as an alternate identifier; the schema refuses it twice, it isn't worth a problem."""
+    mapping = DataCiteMapping(
+        {
+            "identifiers": [
+                {"identifier": "10.1234/ABC", "identifierType": "DOI"},
+                {"identifier": "10.1234/abc", "identifierType": "DOI"},
+                {"identifier": "https://doi.org/10.1234/abc", "identifierType": "DOI"},
+                {"identifier": "10.1234/other", "identifierType": "DOI"},
+                {"identifier": "ark:/99999/AbC", "identifierType": "ARK"},
+                {"identifier": "ark:/99999/abc", "identifierType": "ARK"},
+            ]
+        }
+    )
+
+    mapping.resolve_identifiers()
+
+    assert mapping.processed_metadata["identifiers"] == [
+        {"identifier": "10.1234/ABC", "scheme": "doi"},
+        {"identifier": "10.1234/other", "scheme": "doi"},
+        {"identifier": "ark:/99999/AbC", "scheme": "ark"},
+        {"identifier": "ark:/99999/abc", "scheme": "ark"},
+    ]
+    assert mapping.problems == []
+
+
 def test_datacite_invalid_values_are_omitted(app, monkeypatch):
     """Values the record schema would reject are dropped, the rest of the record is kept."""
     mapping = DataCiteMapping({})
