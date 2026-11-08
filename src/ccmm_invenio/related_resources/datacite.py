@@ -262,7 +262,7 @@ class DataCiteMapping(ResolverMapping):
         """Map ``fundingReferences`` to RDM funding, the same way as the CCMM import.
 
         The ROR becomes the funder id when it is in the funders vocabulary, or always with
-        CCMM_KEEP_UNKNOWN_FUNDER_ROR; other funder identifiers have no counterpart in RDM.
+        CCMM_FETCH_IDENTIFIERS; other funder identifiers have no counterpart in RDM.
         """
         funding = []
         for reference in self.metadata.get("fundingReferences", []):
@@ -274,7 +274,7 @@ class DataCiteMapping(ResolverMapping):
             identifier = _non_empty_str(reference.get("funderIdentifier"))
             if identifier and str(reference.get("funderIdentifierType")).upper() == "ROR" and is_ror(identifier):
                 ror = normalize_ror(identifier)
-                if current_app.config.get("CCMM_KEEP_UNKNOWN_FUNDER_ROR") or service_item_exists("funders", ror):
+                if current_app.config.get("CCMM_FETCH_IDENTIFIERS") or service_item_exists("funders", ror):
                     funder["id"] = ror
             if not funder:
                 if identifier:

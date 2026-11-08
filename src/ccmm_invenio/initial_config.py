@@ -8,11 +8,13 @@ They are loaded before ``invenio.cfg``, so a deployment can override them there.
 
 from __future__ import annotations
 
-CCMM_KEEP_UNKNOWN_FUNDER_ROR = False
-"""Keep the ROR of a funder that is not in the funders vocabulary as its id on CCMM and DataCite import.
+CCMM_FETCH_IDENTIFIERS = False
+"""Create the vocabulary records missing for a record from ORCID and ROR when it is saved.
 
-Off by default: the record would fail relation validation. Turn it on only when a service component
-creates the missing funders (from ROR) before the record is committed.
+`FetchIdentifiersComponent` does that for people, affiliations and funders. CCMM and DataCite imports
+then also keep the ROR of a funder that is not in the funders vocabulary as its id. Off by default: a
+save would call external services and write to the vocabularies, and a funder's ROR not in the
+vocabulary is dropped on import, leaving the name only.
 """
 
 RELATED_RESOURCES_DATACITE_MAPPER = "ccmm_invenio.related_resources.datacite:map_datacite"

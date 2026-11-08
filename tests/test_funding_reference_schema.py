@@ -88,7 +88,7 @@ def test_funder_not_in_vocabulary(vocabularies):
 def test_unknown_funder_ror_is_kept_only_when_configured(app, monkeypatch, keep, expected):
     monkeypatch.setattr(funding_schema, "service_item_exists", lambda *_args: False)
     monkeypatch.setattr(funding_schema, "IdentifierSchema", lambda **_kwargs: SimpleNamespace(load=lambda _value: ROR))
-    monkeypatch.setitem(app.config, "CCMM_KEEP_UNKNOWN_FUNDER_ROR", keep)
+    monkeypatch.setitem(app.config, "CCMM_FETCH_IDENTIFIERS", keep)
     assert funding_schema.FunderField().deserialize([{"organization": {"name": "MSMT"}}]) == expected
 
 

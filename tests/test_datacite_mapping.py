@@ -316,7 +316,7 @@ def test_datacite_funding_omitted_parts_are_reported(app, monkeypatch):
 
 
 def test_datacite_funding_keeps_unknown_ror_when_configured(app, monkeypatch):
-    monkeypatch.setitem(app.config, "CCMM_KEEP_UNKNOWN_FUNDER_ROR", True)  # noqa
+    monkeypatch.setitem(app.config, "CCMM_FETCH_IDENTIFIERS", True)  # noqa
     mapping = DataCiteMapping(
         {"fundingReferences": [{"funderName": "MSMT", "funderIdentifier": "037n8p820", "funderIdentifierType": "ROR"}]}
     )

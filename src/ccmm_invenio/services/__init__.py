@@ -5,9 +5,10 @@
 
 from __future__ import annotations
 
-from .components import RelatedIdentifiersComponent, RootRecordComponent
+from .components import FetchIdentifiersComponent, RelatedIdentifiersComponent, RootRecordComponent
 
 __all__ = [
+    "FetchIdentifiersComponent",
     "RelatedIdentifiersComponent",
     "RootRecordComponent",
 ]
