@@ -10,6 +10,7 @@ from unittest.mock import Mock
 
 import oarepo_related_resources.services as services
 import pytest
+from invenio_rdm_records.services.schemas.metadata import FundingSchema
 from marshmallow import ValidationError
 from oarepo_related_resources.resolvers.base import ResolverProblem, ResolverProblemLevel
 
@@ -248,6 +249,81 @@ def test_map_datacite_returns_metadata_and_problems(app, monkeypatch):
     # the unmapped resource type falls back to the default and is reported
     assert metadata["resource_type"] == {"id": app.config["RELATED_RESOURCES_DEFAULT_RESOURCE_TYPE"]}
     assert [p.level for p in problems] == [ResolverProblemLevel.WARNING]
+
+
+def test_datacite_funding(app, monkeypatch):
+    """Every reference is kept with its award, also two awards of one funder; only a known ROR becomes the id."""
+    monkeypatch.setattr(datacite_module, "service_item_exists", lambda _service, ror: ror == "024d6js02")
+    uk = {"funderName": "Charles University", "funderIdentifier": "024d6js02", "funderIdentifierType": "ROR"}
+    mapping = DataCiteMapping(
+        {
+            "fundingReferences": [
+                {**uk, "awardNumber": "131224", "awardTitle": "QM4ST", "awardUri": "https://example.org/131224"},
+                {**uk, "funderIdentifier": "https://ror.org/024d6js02", "awardNumber": "295023"},
+                {"funderName": "Unknown ROR", "funderIdentifier": "037n8p820", "funderIdentifierType": "ROR"},
+                {"funderName": "Crossref", "funderIdentifier": "10.13039/1", "funderIdentifierType": "Crossref"},
+                {"funderIdentifier": "037n8p820", "funderIdentifierType": "ROR", "awardNumber": "no name, unknown ROR"},
+                "invalid",
+            ]
+        }
+    )
+
+    mapping.resolve_funding()
+
+    assert mapping.processed_metadata["funding"] == [
+        {
+            "funder": {"name": "Charles University", "id": "024d6js02"},
+            "award": {
+                "number": "131224",
+                "title": {"en": "QM4ST"},
+                "identifiers": [{"identifier": "https://example.org/131224", "scheme": "url"}],
+            },
+        },
+        {"funder": {"name": "Charles University", "id": "024d6js02"}, "award": {"number": "295023"}},
+        {"funder": {"name": "Unknown ROR"}},
+        {"funder": {"name": "Crossref"}},
+    ]
+    assert len(mapping.problems) == 1
+
+    # the output is what the record schema accepts
+    FundingSchema(many=True).load(mapping.processed_metadata["funding"])
+
+
+def test_datacite_funding_omitted_parts_are_reported(app, monkeypatch):
+    """An omitted funder or award URI is reported, with the identifier or the reason (never 'None')."""
+    monkeypatch.setattr(datacite_module, "service_item_exists", lambda _service, _ror: False)
+    mapping = DataCiteMapping(
+        {
+            "fundingReferences": [
+                # no award number or title - RDM can not keep the award uri alone
+                {"funderName": "Funder", "awardUri": "https://example.org/award"},
+                # an identifier RDM has no counterpart for and no funder name
+                {"funderIdentifier": "10.13039/1", "funderIdentifierType": "Crossref", "awardNumber": "1"},
+                # neither a funder name nor an identifier
+                {"awardNumber": "2"},
+            ]
+        }
+    )
+
+    mapping.resolve_funding()
+
+    assert mapping.processed_metadata["funding"] == [{"funder": {"name": "Funder"}}]
+    messages = [p.message for p in mapping.problems]
+    assert len(messages) == 3
+    assert "https://example.org/award" in messages[0]
+    assert "10.13039/1" in messages[1]
+    assert "None" not in "".join(messages)
+
+
+def test_datacite_funding_keeps_unknown_ror_when_configured(app, monkeypatch):
+    monkeypatch.setitem(app.config, "CCMM_KEEP_UNKNOWN_FUNDER_ROR", True)  # noqa
+    mapping = DataCiteMapping(
+        {"fundingReferences": [{"funderName": "MSMT", "funderIdentifier": "037n8p820", "funderIdentifierType": "ROR"}]}
+    )
+
+    mapping.resolve_funding()
+
+    assert mapping.processed_metadata["funding"] == [{"funder": {"name": "MSMT", "id": "037n8p820"}}]
 
 
 def test_related_resources_ui_schema_is_configured(app):

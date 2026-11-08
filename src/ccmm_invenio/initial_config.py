@@ -9,7 +9,7 @@ They are loaded before ``invenio.cfg``, so a deployment can override them there.
 from __future__ import annotations
 
 CCMM_KEEP_UNKNOWN_FUNDER_ROR = False
-"""Keep the ROR of a funder that is not in the funders vocabulary as its id on CCMM import.
+"""Keep the ROR of a funder that is not in the funders vocabulary as its id on CCMM and DataCite import.
 
 Off by default: the record would fail relation validation. Turn it on only when a service component
 creates the missing funders (from ROR) before the record is committed.
