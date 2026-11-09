@@ -16,7 +16,7 @@ from flask_resources.deserializers import DeserializerMixin
 from marshmallow import ValidationError
 from oarepo_related_resources.resolvers.base import ResolverProblemLevel
 
-from ccmm_invenio.related_resources.datacite import map_datacite
+from ccmm_invenio.related_resources.datacite import map_datacite, map_datacite_access
 
 DATACITE_JSON_MIMETYPE = "application/vnd.datacite.datacite+json"
 
@@ -42,4 +42,4 @@ class DataCiteJSONDeserializer(DeserializerMixin):
             raise ValidationError(errors)
         for problem in problems:
             current_app.logger.info("DataCite import: %s", problem.message)
-        return {"metadata": metadata}
+        return {"metadata": metadata, **map_datacite_access(attributes, metadata)}

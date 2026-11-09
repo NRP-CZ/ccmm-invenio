@@ -90,7 +90,7 @@ export:  record (service result, or search-index record for OAI) --CCMMXMLSerial
 | `locations.py` | locations ↔ RDM GeoJSON features (GML/WKT → WGS84) |
 | `distribution.py` | distributions (data services, downloadable files; CCMM-shaped in the model), `DistributionsField`, `file_distributions` (uploaded files → distributions) |
 | `metadata_record.py` | `metadata_identification` (stored or generated) |
-| `access.py` | CCMM access rights ↔ RDM record `access` |
+| `access.py` | CCMM access rights ↔ RDM record `access` (`rdm_access` also used for the DataCite access statements, see `map_datacite_access`) |
 | `vocabs.py` | `CCMMVocabularyField` (CCMM `{iri, label}` ↔ invenio `{id}`), `XMLLangField` |
 | `urls.py` | `is_local_url` (SITE_UI_URL / SITE_API_URL) |
 

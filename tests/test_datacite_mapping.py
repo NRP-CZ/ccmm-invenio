@@ -10,12 +10,12 @@ from unittest.mock import Mock
 
 import oarepo_related_resources.services as services
 import pytest
-from invenio_rdm_records.services.schemas.metadata import FundingSchema
+from invenio_rdm_records.services.schemas.metadata import FundingSchema, RightsSchema
 from marshmallow import ValidationError
 from oarepo_related_resources.resolvers.base import ResolverProblem, ResolverProblemLevel
 
 from ccmm_invenio.related_resources import datacite as datacite_module
-from ccmm_invenio.related_resources.datacite import DataCiteMapping, map_datacite
+from ccmm_invenio.related_resources.datacite import DataCiteMapping, map_datacite, map_datacite_access
 from ccmm_invenio.resources.deserializers import datacite as deserializer_module
 from ccmm_invenio.resources.deserializers.datacite import DataCiteJSONDeserializer
 
@@ -228,6 +228,94 @@ def test_datacite_repeated_identifiers_are_dropped(app):
         {"identifier": "ark:/99999/abc", "scheme": "ark"},
     ]
     assert mapping.problems == []
+
+
+def test_datacite_rights(app, monkeypatch):
+    """A license from the vocabulary if possible, else free text; access statements are not licenses."""
+    monkeypatch.setattr(datacite_module, "vocabulary_entry_exists", lambda _type, code: code == "cc-by-4.0")
+    mapping = DataCiteMapping(
+        {
+            "rightsList": [
+                {"rightsIdentifier": "CC-BY-4.0", "rights": "ignored", "rightsUri": "https://example.org/ignored"},
+                {"rights": "Unknown code", "rightsIdentifier": "unknown", "rightsUri": "https://example.org/unknown"},
+                {"rights": " Text only\n"},
+                {"rights": "Text only"},
+                {"rightsUri": "https://example.org/url-only"},
+                {"rights": "Link is not a url", "rightsUri": "ftp.example.org/not-a-url"},
+                {"rightsUri": "not-a-url"},
+                {"rightsUri": "info:eu-repo/semantics/openAccess"},
+                {"rights": "Open Access", "rightsUri": "info:eu-repo/semantics/openAccess"},
+                {"rights": "   "},
+                "invalid",
+            ]
+        }
+    )
+
+    mapping.resolve_rights()
+
+    assert mapping.processed_metadata["rights"] == [
+        {"id": "cc-by-4.0"},
+        {"title": {"en": "Unknown code"}, "link": "https://example.org/unknown"},
+        {"title": {"en": "Text only"}},
+        {"title": {"en": "https://example.org/url-only"}, "link": "https://example.org/url-only"},
+        {"title": {"en": "Link is not a url"}},
+    ]
+    # a problem would send the user to the form to fix the metadata, nothing is wrong here
+    assert mapping.problems == []
+
+    # the output is what the record schema accepts
+    RightsSchema(many=True).load(mapping.processed_metadata["rights"])
+
+
+def test_datacite_only_access_statements_give_no_rights(app):
+    mapping = DataCiteMapping({"rightsList": [{"rightsUri": "info:eu-repo/semantics/restrictedAccess"}]})
+
+    mapping.resolve_rights()
+
+    assert "rights" not in mapping.processed_metadata
+
+
+AVAILABLE_LATER = [{"type": {"id": "available"}, "date": "2999-01-01"}]
+AVAILABLE_BEFORE = [{"type": {"id": "available"}, "date": "2020-01-01"}]
+EMBARGOED_UNTIL_LATER = {
+    "record": "public",
+    "files": "restricted",
+    "embargo": {"active": True, "until": "2999-01-01"},
+}
+EMBARGO_OVER = {"record": "public", "files": "public", "embargo": {"active": False, "until": "2020-01-01"}}
+
+
+@pytest.mark.parametrize(
+    ("statement", "dates", "expected"),
+    [
+        ("openAccess", [], {"access": {"record": "public", "files": "public"}}),
+        ("restrictedAccess", [], {"access": {"record": "public", "files": "restricted"}}),
+        ("closedAccess", [], {"access": {"record": "public", "files": "public"}, "files": {"enabled": False}}),
+        ("embargoedAccess", AVAILABLE_LATER, {"access": EMBARGOED_UNTIL_LATER}),
+        ("embargoedAccess", AVAILABLE_BEFORE, {"access": EMBARGO_OVER}),
+        ("embargoedAccess", [], {"access": {"record": "public", "files": "restricted"}}),
+        ("somethingElse", [], {}),
+    ],
+)
+def test_datacite_access_statement_gives_the_record_access(statement, dates, expected):
+    rights = [{"rights": "CC", "rightsIdentifier": "cc-by-4.0"}, {"rightsUri": f"info:eu-repo/semantics/{statement}"}]
+
+    assert map_datacite_access({"rightsList": rights}, {"dates": dates}) == expected
+
+
+@pytest.mark.parametrize("attributes", [{}, {"rightsList": None}, {"rightsList": ["invalid", {"rights": "Text"}]}])
+def test_datacite_without_an_access_statement_keeps_the_default_access(attributes):
+    assert map_datacite_access(attributes, {}) == {}
+
+
+def test_deserializer_sets_the_access(app, monkeypatch):
+    monkeypatch.setattr(deserializer_module, "map_datacite", lambda _attributes: ({"title": "T"}, []))
+    document = {"rightsList": [{"rightsUri": "info:eu-repo/semantics/restrictedAccess"}]}
+
+    assert DataCiteJSONDeserializer().deserialize(json.dumps(document)) == {
+        "metadata": {"title": "T"},
+        "access": {"record": "public", "files": "restricted"},
+    }
 
 
 def test_datacite_invalid_values_are_omitted(app, monkeypatch):

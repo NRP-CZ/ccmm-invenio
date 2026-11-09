@@ -30,7 +30,7 @@ from invenio_rdm_records.services.schemas.metadata import (
     record_related_identifiers_schemes,
 )
 from invenio_records_resources.proxies import current_service_registry
-from marshmallow import ValidationError
+from marshmallow import ValidationError, validate
 from marshmallow_utils.fields import EDTFDateTimeString
 from marshmallow_utils.schemas import IdentifierSchema
 from oarepo_related_resources.resolvers.base import ResolverProblem, ResolverProblemLevel
@@ -47,13 +47,35 @@ from oarepo_related_resources.resolvers.utils import (
 )
 
 from ccmm_invenio.related_resources.utils import build_person_or_org
+from ccmm_invenio.resources.serializers.ccmm.schema.access import rdm_access
 from ccmm_invenio.resources.serializers.ccmm.schema.identifiers import AwardIdentifiersField, service_item_exists
+
+
+ACCESS_RIGHTS_URI_PREFIX = "info:eu-repo/semantics/"
+"""DataCite rights with such a uri say how the resource may be accessed, they are not licenses."""
+
+ACCESS_RIGHTS = {
+    "openAccess": "open",
+    "restrictedAccess": "restricted",
+    "embargoedAccess": "embargoed",
+    "closedAccess": "metadata-only",
+}
+"""The access statements after the prefix -> the ids of the accessrights vocabulary (its ``openaire`` property)."""
 
 
 def _is_valid_identifier(identifier: Any, scheme: str, schemes: Any) -> bool:
     """Check the identifier the same way as the record schema does."""
     try:
         IdentifierSchema(allowed_schemes=schemes).load({"identifier": identifier, "scheme": scheme})
+    except ValidationError:
+        return False
+    return True
+
+
+def _is_valid_url(value: str) -> bool:
+    """Check the url the way the record schema checks the link of a license."""
+    try:
+        validate.URL(schemes={"http", "https"})(value)
     except ValidationError:
         return False
     return True
@@ -239,23 +261,40 @@ class DataCiteMapping(ResolverMapping):
 
     @handle_errors()
     def resolve_rights(self) -> None:
-        """Resolve and validate rights identifiers against the licenses vocabulary."""
-        rights_list = []
+        """Map ``rightsList`` to licenses: from the vocabulary if possible, else as free text, as the CCMM import does.
+
+        The access statements (info:eu-repo/semantics/openAccess, ...) are not licenses and are left out.
+        """
+        rights_list: list[dict[str, Any]] = []
         for r in self.metadata.get("rightsList", []):
-            code = r.get("rightsIdentifier")
-            if not code:
+            if not isinstance(r, dict):
                 continue
-            if not vocabulary_entry_exists("licenses", code):
-                # SPDX ids are lowercase in the vocabulary, while DataCite
-                # commonly emits mixed/upper case (e.g. "CC-BY-4.0")
-                lowered = code.lower()
-                if lowered != code and vocabulary_entry_exists("licenses", lowered):
-                    code = lowered
-                else:
-                    continue
-            rights_list.append({"id": code})
+            uri = _non_empty_str(r.get("rightsUri"))
+            if uri and uri.startswith(ACCESS_RIGHTS_URI_PREFIX):
+                continue
+            item = self._resolve_license(r, uri)
+            if item and item not in rights_list:
+                rights_list.append(item)
         if rights_list:
             self.processed_metadata["rights"] = rights_list
+
+    def _resolve_license(self, rights: dict[str, Any], uri: str | None) -> dict[str, Any] | None:
+        """Return the license from the vocabulary, or a free-text one, None if there is nothing to keep."""
+        if code := _non_empty_str(rights.get("rightsIdentifier")):
+            # SPDX ids are lowercase in the vocabulary, while DataCite
+            # commonly emits mixed/upper case (e.g. "CC-BY-4.0")
+            for candidate in (code, code.lower()):
+                if vocabulary_entry_exists("licenses", candidate):
+                    return {"id": candidate}
+        link = uri if uri and _is_valid_url(uri) else None
+        # RDM requires a title - the link when there is no text
+        title = (_non_empty_str(rights.get("rights")) or "").strip() or link
+        if not title:
+            return None
+        item: dict[str, Any] = {"title": {current_app.config.get("BABEL_DEFAULT_LOCALE", "en"): title}}
+        if link:
+            item["link"] = link
+        return item
 
     @handle_errors()
     def resolve_funding(self) -> None:
@@ -612,6 +651,20 @@ class DataCiteMapping(ResolverMapping):
             obj["scheme"] = scheme
             identifiers.append(obj)
         return identifiers
+
+
+def map_datacite_access(attributes: dict[str, Any], metadata: dict[str, Any]) -> dict[str, Any]:
+    """Return the record ``access`` (and ``files``, for metadata-only access) of the DataCite access statement.
+
+    The same as for the CCMM import, see `rdm_access`; nothing without a statement, the first one is used.
+    Not a part of `map_datacite`: that gives the metadata only, also for the related resources.
+    """
+    for rights in attributes.get("rightsList") or []:
+        uri = _non_empty_str(rights.get("rightsUri")) if isinstance(rights, dict) else None
+        if uri and (status := ACCESS_RIGHTS.get(uri.removeprefix(ACCESS_RIGHTS_URI_PREFIX))):
+            access, files = rdm_access(status, metadata.get("dates", []))
+            return {"access": access, **({"files": files} if files else {})}
+    return {}
 
 
 def map_datacite(attributes: dict[str, Any]) -> tuple[dict[str, Any], list[ResolverProblem]]:
