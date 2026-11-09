@@ -50,7 +50,6 @@ from ccmm_invenio.related_resources.utils import build_person_or_org
 from ccmm_invenio.resources.serializers.ccmm.schema.access import rdm_access
 from ccmm_invenio.resources.serializers.ccmm.schema.identifiers import AwardIdentifiersField, service_item_exists
 
-
 ACCESS_RIGHTS_URI_PREFIX = "info:eu-repo/semantics/"
 """DataCite rights with such a uri say how the resource may be accessed, they are not licenses."""
 
@@ -126,13 +125,15 @@ class DataCiteMapping(ResolverMapping):
 
     @handle_errors()
     def resolve_additional_descriptions(self) -> None:
-        """Extract and map non-abstract descriptions from DataCite metadata."""
+        """Extract and map all descriptions except the one used as the main description."""
         des_list = []
         for d in self.metadata.get("descriptions", []):
             _type = d.get("descriptionType")
             description = d.get("description")
+            if _type == "Abstract" and description == self.processed_metadata.get("description"):
+                continue
 
-            if description and isinstance(_type, str) and _type != "Abstract" and isinstance(description, str):
+            if description and isinstance(_type, str) and isinstance(description, str):
                 d_type = re.sub(r"(?<!^)([A-Z])", r"-\1", _type).lower()
                 if not vocabulary_entry_exists("descriptiontypes", d_type):
                     self._add_problem(

@@ -73,6 +73,29 @@ def test_datacite_unusable_abstract_is_skipped(app, unusable):
     assert [p.level for p in mapping.problems] == [datacite_module.ResolverProblemLevel.INFO]
 
 
+def test_datacite_other_abstracts_are_additional_descriptions(app, monkeypatch):
+    """The first abstract is the main description, the other languages must not get lost."""
+    monkeypatch.setattr(datacite_module, "vocabulary_entry_exists", Mock(return_value=True))
+    monkeypatch.setattr(datacite_module, "resolve_language", Mock(return_value="eng"))
+    mapping = DataCiteMapping(
+        {
+            "descriptions": [
+                {"descriptionType": "Abstract", "description": "Czech abstract", "lang": "ces"},
+                {"descriptionType": "Abstract", "description": "English abstract", "lang": "eng"},
+                {"descriptionType": "Abstract", "description": "Czech abstract", "lang": "ces"},
+            ]
+        }
+    )
+
+    mapping.resolve_description()
+    mapping.resolve_additional_descriptions()
+
+    assert mapping.processed_metadata["description"] == "Czech abstract"
+    assert mapping.processed_metadata["additional_descriptions"] == [
+        {"type": {"id": "abstract"}, "description": "English abstract", "lang": {"id": "eng"}}
+    ]
+
+
 def test_datacite_no_usable_abstract(app):
     mapping = DataCiteMapping({"descriptions": [{"descriptionType": "Abstract", "description": None}]})
 
