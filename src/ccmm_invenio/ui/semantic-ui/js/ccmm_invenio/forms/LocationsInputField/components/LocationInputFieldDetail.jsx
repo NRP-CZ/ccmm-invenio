@@ -56,7 +56,7 @@ export function LocationInputFieldDetail({
         updateLocationName(fieldPath, activeTabIndex, typedName);
       }
     },
-    [updateLocationName]
+    [updateLocationName, fieldPath, activeTabIndex]
   );
 
   const handleDescriptionChange = useCallback(
@@ -76,7 +76,7 @@ export function LocationInputFieldDetail({
         setFieldValue(`${basePath}.description`, typedDescription);
       }
     },
-    [setFieldValue]
+    [setFieldValue, basePath]
   );
 
   const panes = [

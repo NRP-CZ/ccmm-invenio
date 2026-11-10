@@ -1,4 +1,10 @@
-import React, { useCallback, useState, useEffect, useRef } from "react";
+import React, {
+  useCallback,
+  useState,
+  useEffect,
+  useRef,
+  useMemo,
+} from "react";
 import PropTypes from "prop-types";
 import { i18next } from "@translations/ccmm_invenio";
 import { FieldLabel } from "react-invenio-forms";
@@ -25,7 +31,7 @@ function LocationInputFieldBody({ fieldPath, label, icon, children }) {
       <FieldLabel htmlFor={fieldPath} label={label} icon={icon} />
       <label className="helptext">
         {i18next.t(
-          "Add geographic locations for your record. You can use the interactive map or search for the place."
+          "Add geographic locations for your record. You can use the interactive map or search for the place.",
         )}
       </label>
       <div className="rel-pt-1">{children}</div>
@@ -58,6 +64,12 @@ export function LocationsInputField({
     activeTabIndexRef.current = activeTabIndex;
   }, [activeTabIndex]);
 
+  const updateLocationNameRef = useRef(updateLocationName);
+
+  useEffect(() => {
+    updateLocationNameRef.current = updateLocationName;
+  }, [updateLocationName]);
+
   const { values, setFieldValue } = useFormikContext();
   const currentLocations = getIn(values, `${fieldPath}.features`, []);
 
@@ -65,26 +77,31 @@ export function LocationsInputField({
     (geometry) => {
       setFieldValue(
         `${fieldPath}.features.${activeTabIndex}.geometry`,
-        geometry
+        geometry,
       );
     },
-    [fieldPath, activeTabIndex, setFieldValue]
+    [fieldPath, activeTabIndex, setFieldValue],
   );
 
   const activeGeometry = currentLocations[activeTabIndex]?.geometry ?? null;
 
-  const performReverseSearch = useCallback(
-    debounce(async (lat, lon) => {
-      if (lat && lon && !isNaN(lat) && !isNaN(lon)) {
-        const result = await reverseLocation(lat, lon);
-        if (result && result.display_name) {
-          const placeName = result.name ? result.name : result.display_name;
-          updateLocationName(fieldPath, activeTabIndexRef.current, placeName);
-          setSearchValue(result.display_name);
+  const performReverseSearch = useMemo(
+    () =>
+      debounce(async (lat, lon) => {
+        if (lat && lon && !isNaN(lat) && !isNaN(lon)) {
+          const result = await reverseLocation(lat, lon);
+          if (result && result.display_name) {
+            const placeName = result.name ? result.name : result.display_name;
+            updateLocationNameRef.current(
+              fieldPath,
+              activeTabIndexRef.current,
+              placeName,
+            );
+            setSearchValue(result.display_name);
+          }
         }
-      }
-    }, 600),
-    [reverseLocation, setFieldValue, setSearchValue, fieldPath]
+      }, 600),
+    [reverseLocation, fieldPath],
   );
 
   // Throw away any pending invocation of the debounced reverse search function.
@@ -102,7 +119,7 @@ export function LocationsInputField({
           place: getUniqueLocationName(
             fieldPath,
             currentLocations.length,
-            `${i18next.t("Location")}`
+            `${i18next.t("Location")}`,
           ),
         },
       ],
@@ -114,7 +131,7 @@ export function LocationsInputField({
     (indexToRemove) => {
       const originalLength = currentLocations.length;
       const updatedLocations = currentLocations.filter(
-        (_, index) => index !== indexToRemove
+        (_, index) => index !== indexToRemove,
       );
       if (updatedLocations.length === 0) {
         setFieldValue(fieldPath, null);
@@ -128,7 +145,7 @@ export function LocationsInputField({
         setActiveTabIndex(0);
       }
     },
-    [currentLocations, setFieldValue, fieldPath]
+    [currentLocations, setFieldValue, fieldPath],
   );
 
   const handleTabChange = useCallback(
@@ -140,7 +157,7 @@ export function LocationsInputField({
       }
       setSearchValue("");
     },
-    [currentLocations, handleAddLocation, setActiveTabIndex, setSearchValue]
+    [currentLocations, handleAddLocation, setActiveTabIndex, setSearchValue],
   );
 
   const onGeometryChangeHandler = useCallback(
@@ -153,13 +170,7 @@ export function LocationsInputField({
         setSearchValue("");
       }
     },
-    [
-      fieldPath,
-      activeTabIndex,
-      setFieldValue,
-      performReverseSearch,
-      setSearchValue,
-    ]
+    [updateLocationGeometry, performReverseSearch, setSearchValue],
   );
 
   if (currentLocations.length === 0) {
@@ -194,7 +205,7 @@ export function LocationsInputField({
       >
         {currentLocations.map((location, index) => (
           <Menu.Item
-            key={index}
+            key={index} // eslint-disable-line react/no-array-index-key
             active={activeTabIndex === index}
             onClick={(e) => handleTabChange(e, { activeIndex: index })}
           >
