@@ -26,8 +26,11 @@ SAMPLES_DIR = (
 )
 # only the items used here, the vocabularies are big
 VOCABULARIES = {
-    "fileformats": ("v-ft", {"pdf", "tiff", "txt", "tar", "gpkg", "jpeg", "bin"}),
-    "mediatypes": ("v-mt", {"application/pdf", "image/tiff", "text/plain", "application/zip", "image/jpeg"}),
+    "fileformats": ("v-ft", {"pdf", "tiff", "txt", "tar", "gpkg", "jpeg", "bin", "xml", "xslt"}),
+    "mediatypes": (
+        "v-mt",
+        {"application/pdf", "image/tiff", "text/plain", "application/zip", "image/jpeg", "application/xml"},
+    ),
     "checksumalgorithms": ("v-ca", {"sha256", "md5"}),
 }
 
@@ -293,15 +296,17 @@ def test_exactly_one_distribution_kind(vocabularies):
 
 
 @pytest.mark.parametrize(
-    ("ext", "mimetype", "file_format", "media_type"),
+    ("key", "ext", "mimetype", "file_format", "media_type"),
     [
-        ("pdf", "application/pdf", "pdf", "application/pdf"),  # the extension is the id
-        ("jpg", "image/jpeg", "jpeg", "image/jpeg"),  # by props.FILE_EXT (".jpeg, .jpg")
-        ("h5", "application/x-hdf5", "bin", None),  # not in the vocabularies - binary data, no media type
+        ("a b.pdf", "pdf", "application/pdf", "pdf", "application/pdf"),  # the extension is the id
+        ("a b.jpg", "jpg", "image/jpeg", "jpeg", "image/jpeg"),  # by props.FILE_EXT (".jpeg, .jpg")
+        ("a b.h5", "h5", "application/x-hdf5", "bin", None),  # not in the vocabularies - binary data, no media type
+        ("a b.xml", "xsl", "application/xml", "xml", "application/xml"),  # invenio guesses "xsl" from the mimetype
+        ("a b", "pdf", "application/pdf", "pdf", "application/pdf"),  # no extension in the name - invenio's ext
     ],
 )
-def test_file_distributions(vocabularies, ext, mimetype, file_format, media_type):
-    entry = {"key": f"a b.{ext}", "size": 3, "checksum": "md5:abc123", "ext": ext, "mimetype": mimetype}
+def test_file_distributions(vocabularies, key, ext, mimetype, file_format, media_type):
+    entry = {"key": key, "size": 3, "checksum": "md5:abc123", "ext": ext, "mimetype": mimetype}
     (distribution,) = file_distributions(
         [entry], access_url="https://repo.cz/records/x", download_url=lambda key: f"https://repo.cz/{key}"
     )
@@ -310,7 +315,7 @@ def test_file_distributions(vocabularies, ext, mimetype, file_format, media_type
     assert file.get("media_type") == ({"id": media_type} if media_type else None)
     assert file["checksum"] == {"checksum_value": "abc123", "algorithm": {"id": "md5"}}
     assert file["access_urls"] == [{"iri": "https://repo.cz/records/x"}]
-    assert file["download_urls"] == [{"iri": f"https://repo.cz/a b.{ext}"}]
+    assert file["download_urls"] == [{"iri": f"https://repo.cz/{key}"}]
     # the distribution dumps to valid ccmm
     (dumped,) = dump([distribution])
     _xml, errors = XMLToGenericJSONConverter().json_to_xml(

@@ -13,6 +13,7 @@ Field names are the names of the model fields, data_key the names of the ccmm el
 
 from __future__ import annotations
 
+from pathlib import PurePosixPath
 from typing import TYPE_CHECKING, Any, cast, override
 
 from invenio_access.permissions import system_identity
@@ -217,11 +218,13 @@ def file_distributions(
     """
     distributions = []
     for entry in entries:
+        # invenio's "ext" is guessed from the mimetype (application/xml -> "xsl"), prefer the file name
+        ext = PurePosixPath(entry["key"]).suffix[1:] or entry.get("ext")
         file: dict[str, Any] = {
             "title": entry["key"],
             "access_urls": [{"iri": access_url}],
             "download_urls": [{"iri": download_url(entry["key"])}],
-            "format": {"id": _file_format(entry.get("ext"), entry.get("mimetype"))},
+            "format": {"id": _file_format(ext, entry.get("mimetype"))},
             "byte_size": entry["size"],
         }
         if (mimetype := entry.get("mimetype")) and vocabulary_item_exists("mediatypes", mimetype):
