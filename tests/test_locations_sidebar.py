@@ -27,11 +27,13 @@ from flask import Flask
 from jinja2 import Environment, FileSystemLoader
 from markupsafe import Markup
 
+from ccmm_invenio.ui import views
 from ccmm_invenio.ui.ext import LOCATIONS_SIDEBAR_TEMPLATE, CCMMInvenioUI
-from ccmm_invenio.ui.views import create_blueprint
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-UI_DIR = REPO_ROOT / "src" / "ccmm_invenio" / "ui"
+# the ui package as it is installed: with a non-editable install (CI) its templates are under
+# site-packages, not under src/, and that copy - not this checkout - is what the blueprint serves
+UI_DIR = Path(views.__file__).resolve().parent
 TEMPLATE_DIR = UI_DIR / "templates" / "semantic-ui"
 TEMPLATE = "ccmm_invenio/record_detail/side_bar/locations.html"
 SIDEBAR_KEY = "APP_RDM_DETAIL_SIDE_BAR_TEMPLATES"
@@ -218,7 +220,7 @@ def test_sidebar_constant_points_to_an_existing_template():
 
 
 def test_blueprint_exposes_the_templates_folder():
-    blueprint = create_blueprint(Flask(__name__))
+    blueprint = views.create_blueprint(Flask(__name__))
 
     template_root = (Path(blueprint.root_path) / blueprint.template_folder).resolve()
     assert template_root == TEMPLATE_DIR.parent.resolve()
