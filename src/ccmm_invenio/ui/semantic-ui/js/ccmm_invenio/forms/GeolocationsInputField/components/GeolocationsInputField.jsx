@@ -7,6 +7,7 @@ import {
   GridRow,
   GridColumn,
   Grid,
+  Form,
   TabPane,
   Menu,
   Button,
@@ -20,7 +21,7 @@ import { useNominatim } from "../hooks/useNominatim";
 
 function GeolocationInputFieldBody({ fieldPath, label, icon, children }) {
   return (
-    <div>
+    <Form.Field>
       <FieldLabel htmlFor={fieldPath} label={label} icon={icon} />
       <label className="helptext">
         {i18next.t(
@@ -28,7 +29,7 @@ function GeolocationInputFieldBody({ fieldPath, label, icon, children }) {
         )}
       </label>
       <div className="rel-pt-1">{children}</div>
-    </div>
+    </Form.Field>
   );
 }
 
