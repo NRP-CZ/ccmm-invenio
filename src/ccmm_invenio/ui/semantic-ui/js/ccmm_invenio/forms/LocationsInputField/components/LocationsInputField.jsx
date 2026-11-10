@@ -13,19 +13,19 @@ import {
   Button,
   Icon,
 } from "semantic-ui-react";
-import { GeolocationInputFieldDetail } from "./GeolocationInputFieldDetail";
-import { GeolocationInteractiveMap } from "./GeolocationInteractiveMap";
+import { LocationInputFieldDetail } from "./LocationInputFieldDetail";
+import { LocationInteractiveMap } from "./LocationInteractiveMap";
 import debounce from "lodash/debounce";
 import { useUpdateLocationName } from "../hooks/useUpdateLocationName";
 import { useNominatim } from "../hooks/useNominatim";
 
-function GeolocationInputFieldBody({ fieldPath, label, icon, children }) {
+function LocationInputFieldBody({ fieldPath, label, icon, children }) {
   return (
     <Form.Field>
       <FieldLabel htmlFor={fieldPath} label={label} icon={icon} />
       <label className="helptext">
         {i18next.t(
-          "Add geolocations for your record. You can use the interactive map or search for the place.",
+          "Add geographic locations for your record. You can use the interactive map or search for the place.",
         )}
       </label>
       <div className="rel-pt-1">{children}</div>
@@ -33,13 +33,13 @@ function GeolocationInputFieldBody({ fieldPath, label, icon, children }) {
   );
 }
 
-GeolocationInputFieldBody.propTypes = {
+LocationInputFieldBody.propTypes = {
   fieldPath: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
 };
 
-export function GeolocationsInputField({
+export function LocationsInputField({
   fieldPath,
   label,
   icon,
@@ -163,11 +163,7 @@ export function GeolocationsInputField({
 
   if (currentLocations.length === 0) {
     return (
-      <GeolocationInputFieldBody
-        fieldPath={fieldPath}
-        label={label}
-        icon={icon}
-      >
+      <LocationInputFieldBody fieldPath={fieldPath} label={label} icon={icon}>
         <Button
           type="button"
           primary
@@ -178,12 +174,12 @@ export function GeolocationsInputField({
           <Icon name="add" />
           {i18next.t("Add location")}
         </Button>
-      </GeolocationInputFieldBody>
+      </LocationInputFieldBody>
     );
   }
 
   return (
-    <GeolocationInputFieldBody fieldPath={fieldPath} label={label} icon={icon}>
+    <LocationInputFieldBody fieldPath={fieldPath} label={label} icon={icon}>
       <Menu
         secondary
         pointing
@@ -229,7 +225,7 @@ export function GeolocationsInputField({
           <GridColumn>
             {currentLocations[activeTabIndex] && (
               <TabPane>
-                <GeolocationInputFieldDetail
+                <LocationInputFieldDetail
                   key={`${fieldPath}.features.${activeTabIndex}`}
                   fieldPath={fieldPath}
                   basePath={`${fieldPath}.features.${activeTabIndex}`}
@@ -245,7 +241,7 @@ export function GeolocationsInputField({
             )}
           </GridColumn>
           <GridColumn>
-            <GeolocationInteractiveMap
+            <LocationInteractiveMap
               initialMapSettings={{ center: [50, 14], zoom: 4 }}
               geometry={activeGeometry}
               onGeometryChange={onGeometryChangeHandler}
@@ -253,11 +249,11 @@ export function GeolocationsInputField({
           </GridColumn>
         </GridRow>
       </Grid>
-    </GeolocationInputFieldBody>
+    </LocationInputFieldBody>
   );
 }
 
-GeolocationsInputField.propTypes = {
+LocationsInputField.propTypes = {
   fieldPath: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,

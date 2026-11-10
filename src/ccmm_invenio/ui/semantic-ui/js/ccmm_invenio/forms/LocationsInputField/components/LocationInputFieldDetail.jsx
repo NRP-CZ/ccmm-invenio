@@ -22,7 +22,7 @@ import { LongitudeAndLatitudeGroupField } from "./LongitudeAndLatitudeGroupField
 import { WktEditor } from "./WktEditor";
 import { useUpdateLocationName } from "../hooks/useUpdateLocationName";
 
-export function GeolocationInputFieldDetail({
+export function LocationInputFieldDetail({
   fieldPath,
   basePath,
   activeTabIndex,
@@ -112,7 +112,7 @@ export function GeolocationInputFieldDetail({
         placeholder={i18next.t("Use map, search bar or advanced editor...")}
         onBlur={handleNameBlur}
         required
-        />
+      />
 
       <TextAreaField
         label={i18next.t("Description")}
@@ -188,7 +188,7 @@ export function GeolocationInputFieldDetail({
   );
 }
 
-GeolocationInputFieldDetail.propTypes = {
+LocationInputFieldDetail.propTypes = {
   fieldPath: PropTypes.string.isRequired,
   basePath: PropTypes.string.isRequired,
   activeTabIndex: PropTypes.number.isRequired,

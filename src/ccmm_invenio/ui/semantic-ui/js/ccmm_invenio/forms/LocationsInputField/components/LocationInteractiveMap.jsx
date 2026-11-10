@@ -70,7 +70,7 @@ function mergeGeometries(geometries) {
     : { type: "GeometryCollection", geometries: parts };
 }
 
-export function GeolocationInteractiveMap({
+export function LocationInteractiveMap({
   initialMapSettings,
   geometry,
   onGeometryChange,
@@ -271,7 +271,7 @@ export function GeolocationInteractiveMap({
   );
 }
 
-GeolocationInteractiveMap.propTypes = {
+LocationInteractiveMap.propTypes = {
   initialMapSettings: PropTypes.shape({
     center: PropTypes.array,
     zoom: PropTypes.number,

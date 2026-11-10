@@ -2,11 +2,11 @@ import React from "react";
 import Overridable from "react-overridable";
 import { buildUID } from "react-searchkit";
 import { i18next } from "@translations/i18next";
-import { GeolocationsInputField } from "./GeolocationsInputField/components/GeolocationsInputField";
+import { LocationsInputField } from "./LocationsInputField/components/LocationsInputField";
 
-export const CCMMGeolocations = {
-  key: "geolocations",
-  label: i18next.t("Geolocations"),
+export const CCMMLocations = {
+  key: "locations",
+  label: i18next.t("Geographic locations"),
 
   component: (tabConfig) => {
     const { formConfig } = tabConfig;
@@ -19,12 +19,12 @@ export const CCMMGeolocations = {
 
     return (
       <Overridable
-        id={buildUID(overridableIdPrefix, "Geolocations")}
+        id={buildUID(overridableIdPrefix, "locations")}
         {...tabConfig}
       >
-        <GeolocationsInputField
+        <LocationsInputField
           fieldPath="metadata.locations"
-          label={i18next.t("Geolocations")}
+          label={i18next.t("Geographic locations")}
           icon="map marker alternate"
           identifiersScheme={scheme}
         />

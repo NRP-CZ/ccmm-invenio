@@ -6,7 +6,7 @@ import { SchemaField } from "@js/invenio_rdm_records/src/deposit/serializers";
 import { RDMDepositRecordSerializer } from "@js/invenio_rdm_records/src/deposit/api/DepositRecordSerializer";
 import { OARepoDepositSerializer } from "@js/oarepo_ui/api";
 import { RelatedResourceSchema } from "./RelatedResourceField/RelatedResourceSchema";
-import { LocationsSchema } from "./LocationsField/LocationsSchema";
+import { LocationsSchema } from "./LocationsInputField/schema/LocationsSchema";
 
 const KEYS_TO_REMOVE = ["__key"];
 const keyStripper = new OARepoDepositSerializer([], KEYS_TO_REMOVE);
@@ -30,7 +30,7 @@ export class CCMMDepositRecordSerializer extends RDMDepositRecordSerializer {
   serialize(record) {
     const serialized = keyStripper.removeKeysFromNestedObjects(
       _cloneDeep(super.serialize(record)) || {},
-      KEYS_TO_REMOVE
+      KEYS_TO_REMOVE,
     );
 
     const features = serialized?.metadata?.locations?.features;
