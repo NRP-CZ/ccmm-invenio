@@ -62,7 +62,7 @@ function mergeGeometries(geometries) {
   const parts = Object.entries(geometriesByType).map(([type, coords]) =>
     coords.length === 1
       ? { type, coordinates: coords[0] }
-      : { type: `Multi${type}`, coordinates: coords },
+      : { type: `Multi${type}`, coordinates: coords }
   );
 
   return parts.length === 1

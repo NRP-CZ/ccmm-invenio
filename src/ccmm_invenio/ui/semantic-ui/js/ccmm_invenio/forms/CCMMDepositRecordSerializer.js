@@ -30,7 +30,7 @@ export class CCMMDepositRecordSerializer extends RDMDepositRecordSerializer {
   serialize(record) {
     const serialized = keyStripper.removeKeysFromNestedObjects(
       _cloneDeep(super.serialize(record)) || {},
-      KEYS_TO_REMOVE,
+      KEYS_TO_REMOVE
     );
 
     const features = serialized?.metadata?.locations?.features;

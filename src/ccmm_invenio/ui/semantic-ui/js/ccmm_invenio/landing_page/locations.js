@@ -9,7 +9,7 @@ function renderLocations() {
 
   if (recordLocationsContainer) {
     const locations = JSON.parse(
-      recordLocationsContainer.getAttribute("data-locations"),
+      recordLocationsContainer.getAttribute("data-locations")
     );
 
     if (!locations || !Array.isArray(locations)) {
@@ -17,7 +17,7 @@ function renderLocations() {
         <ErrorElement
           error={new Error(i18next.t("No valid locations were found!"))}
         />,
-        recordLocationsContainer,
+        recordLocationsContainer
       );
       return;
     }
@@ -27,7 +27,7 @@ function renderLocations() {
         <ErrorElement
           error={new Error(i18next.t("No locations were found!"))}
         />,
-        recordLocationsContainer,
+        recordLocationsContainer
       );
       return;
     }
@@ -55,14 +55,14 @@ function renderLocations() {
         <ErrorElement
           error={new Error(i18next.t("No valid locations were found!"))}
         />,
-        recordLocationsContainer,
+        recordLocationsContainer
       );
       return;
     }
 
     ReactDOM.render(
       <Locations locationEntries={locationEntries} />,
-      recordLocationsContainer,
+      recordLocationsContainer
     );
   }
 }

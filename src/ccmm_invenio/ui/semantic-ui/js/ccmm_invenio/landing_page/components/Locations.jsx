@@ -20,16 +20,16 @@ function Locations({ locationEntries }) {
     (locationData) => {
       setActiveLocationId(locationData.id);
     },
-    [setActiveLocationId],
+    [setActiveLocationId]
   );
 
   const onPopupClose = useCallback(
     (closedId) => {
       setActiveLocationId((currentActiveId) =>
-        currentActiveId === closedId ? null : currentActiveId,
+        currentActiveId === closedId ? null : currentActiveId
       );
     },
-    [setActiveLocationId],
+    [setActiveLocationId]
   );
 
   return (
@@ -55,7 +55,7 @@ Locations.propTypes = {
       id: PropTypes.string.isRequired,
       location: PropTypes.object.isRequired,
       geometry: PropTypes.object.isRequired,
-    }),
+    })
   ).isRequired,
 };
 

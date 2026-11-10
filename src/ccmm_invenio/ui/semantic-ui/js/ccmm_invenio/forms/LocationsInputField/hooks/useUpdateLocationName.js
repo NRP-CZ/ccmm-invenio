@@ -14,7 +14,7 @@ export function useUpdateLocationName() {
       if (!placeName) {
         return placeName;
       }
-      
+
       const currentLocations = getIn(values, `${fieldPath}.features`, []);
 
       const pattern = PLACE_NAME_PATTERN(placeName);
@@ -44,7 +44,7 @@ export function useUpdateLocationName() {
 
       return `${placeName}${suffix}`;
     },
-    [values],
+    [values]
   );
 
   const updateLocationName = useCallback(
@@ -52,15 +52,15 @@ export function useUpdateLocationName() {
       const uniqueName = getUniqueLocationName(
         fieldPath,
         activeTabIndex,
-        placeName,
+        placeName
       );
 
       setFieldValue(
         `${fieldPath}.features.${activeTabIndex}.place`,
-        uniqueName,
+        uniqueName
       );
     },
-    [getUniqueLocationName, setFieldValue],
+    [getUniqueLocationName, setFieldValue]
   );
 
   return { getUniqueLocationName, updateLocationName };

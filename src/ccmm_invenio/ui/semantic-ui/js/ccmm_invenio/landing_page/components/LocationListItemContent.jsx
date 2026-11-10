@@ -56,7 +56,7 @@ export function LocationListItemContent({ locationEntry, active, onClick }) {
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
           >
-            {point.lat}, {point.lon} <i className="external alternate icon"></i>
+            {point.lat}, {point.lon} <i className="external alternate icon" />
           </a>
           )
           <span className="ml-5">

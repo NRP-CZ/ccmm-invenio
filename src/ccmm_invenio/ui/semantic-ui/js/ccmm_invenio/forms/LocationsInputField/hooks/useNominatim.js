@@ -24,7 +24,7 @@ export function useNominatim() {
         {
           params: { q: query, format: "jsonv2", addressdetails: 1 },
           signal: searchAbortControllerRef.current.signal,
-        },
+        }
       );
       return response.data;
     } catch (e) {
@@ -54,7 +54,7 @@ export function useNominatim() {
         {
           params: { lat: lat, lon: lon, format: "jsonv2" },
           signal: reverseAbortControllerRef.current.signal,
-        },
+        }
       );
       return response.data;
     } catch (e) {

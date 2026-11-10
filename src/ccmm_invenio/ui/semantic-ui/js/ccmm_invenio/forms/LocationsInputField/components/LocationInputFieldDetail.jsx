@@ -37,7 +37,7 @@ export function LocationInputFieldDetail({
   const { updateLocationName } = useUpdateLocationName();
 
   const [description, setDescription] = useState(
-    getIn(values, `${basePath}.description`, null),
+    getIn(values, `${basePath}.description`, null)
   );
 
   const currentGeometryType = getIn(values, `${basePath}.geometry.type`, null);
@@ -56,7 +56,7 @@ export function LocationInputFieldDetail({
         updateLocationName(fieldPath, activeTabIndex, typedName);
       }
     },
-    [updateLocationName],
+    [updateLocationName]
   );
 
   const handleDescriptionChange = useCallback(
@@ -66,7 +66,7 @@ export function LocationInputFieldDetail({
         setDescription(typedDescription);
       }
     },
-    [setDescription],
+    [setDescription]
   );
 
   const handleDescriptionBlur = useCallback(
@@ -76,7 +76,7 @@ export function LocationInputFieldDetail({
         setFieldValue(`${basePath}.description`, typedDescription);
       }
     },
-    [setFieldValue],
+    [setFieldValue]
   );
 
   const panes = [
@@ -98,7 +98,7 @@ export function LocationInputFieldDetail({
           <WktEditor
             basePath={basePath}
             onReverseSearch={performReverseSearch}
-          ></WktEditor>
+          />
         </TabPane>
       ),
     },
@@ -127,7 +127,7 @@ export function LocationInputFieldDetail({
         <IdentifiersField
           fieldPath={`${basePath}.identifiers`}
           label={i18next.t("Identifiers")}
-          labelIcon={""}
+          labelIcon=""
           schemeOptions={identifiersScheme}
           showEmptyValue={false}
         />

@@ -47,7 +47,9 @@ function buildPopUp(location) {
   if (location.place) {
     popupHtml += `
       <div>
-        <h6 class="ui horizontal fitted divider header">${i18next.t("Place")}</h6>
+        <h6 class="ui horizontal fitted divider header">${i18next.t(
+          "Place"
+        )}</h6>
         ${sanitizeHtml(location.place, sanitizeOpts)}
       </div>`;
   }
@@ -58,7 +60,10 @@ function buildPopUp(location) {
       const formattedValue = buildFormattedValue(key, value);
       popupHtml += `
         <div class="rel-mt-1">
-          <h6 class="ui horizontal fitted divider header">${sanitizeHtml(formattedKey, sanitizeOpts)}</h6>
+          <h6 class="ui horizontal fitted divider header">${sanitizeHtml(
+            formattedKey,
+            sanitizeOpts
+          )}</h6>
           <span>${sanitizeHtml(formattedValue, sanitizeOpts)}</span>
         </div>`;
     }
@@ -168,7 +173,7 @@ function LocationsMap({
     }
   }, [flyToId]);
 
-  return <div ref={mapContainerRef} className="locations-map"></div>;
+  return <div ref={mapContainerRef} className="locations-map" />;
 }
 
 LocationsMap.propTypes = {
@@ -177,7 +182,7 @@ LocationsMap.propTypes = {
       id: PropTypes.string.isRequired,
       location: PropTypes.object.isRequired,
       geometry: PropTypes.object.isRequired,
-    }).isRequired,
+    }).isRequired
   ),
   flyToId: PropTypes.string,
   onLocationClick: PropTypes.func,

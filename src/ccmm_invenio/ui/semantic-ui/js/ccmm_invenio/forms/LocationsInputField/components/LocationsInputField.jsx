@@ -25,7 +25,7 @@ function LocationInputFieldBody({ fieldPath, label, icon, children }) {
       <FieldLabel htmlFor={fieldPath} label={label} icon={icon} />
       <label className="helptext">
         {i18next.t(
-          "Add geographic locations for your record. You can use the interactive map or search for the place.",
+          "Add geographic locations for your record. You can use the interactive map or search for the place."
         )}
       </label>
       <div className="rel-pt-1">{children}</div>
@@ -64,10 +64,10 @@ export function LocationsInputField({
     (geometry) => {
       setFieldValue(
         `${fieldPath}.features.${activeTabIndex}.geometry`,
-        geometry,
+        geometry
       );
     },
-    [fieldPath, activeTabIndex, setFieldValue],
+    [fieldPath, activeTabIndex, setFieldValue]
   );
 
   const activeGeometry = currentLocations[activeTabIndex]?.geometry ?? null;
@@ -83,7 +83,7 @@ export function LocationsInputField({
         }
       }
     }, 600),
-    [reverseLocation, setFieldValue, setSearchValue, fieldPath],
+    [reverseLocation, setFieldValue, setSearchValue, fieldPath]
   );
 
   // Throw away any pending invocation of the debounced reverse search function.
@@ -101,7 +101,7 @@ export function LocationsInputField({
           place: getUniqueLocationName(
             fieldPath,
             currentLocations.length,
-            `${i18next.t("Location")}`,
+            `${i18next.t("Location")}`
           ),
         },
       ],
@@ -113,7 +113,7 @@ export function LocationsInputField({
     (indexToRemove) => {
       const originalLength = currentLocations.length;
       const updatedLocations = currentLocations.filter(
-        (_, index) => index !== indexToRemove,
+        (_, index) => index !== indexToRemove
       );
       if (updatedLocations.length == 0) {
         setFieldValue(fieldPath, null);
@@ -127,7 +127,7 @@ export function LocationsInputField({
         setActiveTabIndex(0);
       }
     },
-    [currentLocations, setFieldValue, fieldPath],
+    [currentLocations, setFieldValue, fieldPath]
   );
 
   const handleTabChange = useCallback(
@@ -139,7 +139,7 @@ export function LocationsInputField({
       }
       setSearchValue("");
     },
-    [currentLocations, handleAddLocation, setActiveTabIndex, setSearchValue],
+    [currentLocations, handleAddLocation, setActiveTabIndex, setSearchValue]
   );
 
   const onGeometryChangeHandler = useCallback(
@@ -158,7 +158,7 @@ export function LocationsInputField({
       setFieldValue,
       performReverseSearch,
       setSearchValue,
-    ],
+    ]
   );
 
   if (currentLocations.length === 0) {

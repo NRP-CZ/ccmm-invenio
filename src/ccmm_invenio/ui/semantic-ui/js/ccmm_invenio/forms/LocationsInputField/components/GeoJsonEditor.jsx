@@ -20,7 +20,7 @@ export function GeoJsonEditor({ basePath, onReverseSearch }) {
         setTextValue(JSON.stringify(geometry, null, 2));
       } catch (e) {
         console.error(
-          `There seems to be application error as received geometry is invalid! Details: <${e}>.`,
+          `There seems to be application error as received geometry is invalid! Details: <${e}>.`
         );
         setError(i18next.t("Invalid JSON!"));
       }
@@ -46,7 +46,7 @@ export function GeoJsonEditor({ basePath, onReverseSearch }) {
 
       if (!parsedObj.type) {
         throw new Error(
-          i18next.t("Missing 'type' property (e.g., 'Point', 'Polygon')"),
+          i18next.t("Missing 'type' property (e.g., 'Point', 'Polygon')")
         );
       }
 
@@ -57,8 +57,8 @@ export function GeoJsonEditor({ basePath, onReverseSearch }) {
             parsedObj.type +
             "'." +
             i18next.t(
-              "We currently support only 'Point', 'MultiPoint' and 'Polygon'.",
-            ),
+              "We currently support only 'Point', 'MultiPoint' and 'Polygon'."
+            )
         );
       }
 
@@ -79,7 +79,7 @@ export function GeoJsonEditor({ basePath, onReverseSearch }) {
           i18next.t(`Details`) +
           `: <` +
           `${err.message}` +
-          ">.",
+          ">."
       );
     }
   };
@@ -90,7 +90,7 @@ export function GeoJsonEditor({ basePath, onReverseSearch }) {
       onBlur={handleBlur}
       value={textValue}
       placeholder={i18next.t(
-        'Enter the location manually using GeoJSON format. E.g.:\n\n{\n  "type": "Point",\n  "coordinates": [0, 0]\n}',
+        'Enter the location manually using GeoJSON format. E.g.:\n\n{\n  "type": "Point",\n  "coordinates": [0, 0]\n}'
       )}
       rows={7}
       error={error}

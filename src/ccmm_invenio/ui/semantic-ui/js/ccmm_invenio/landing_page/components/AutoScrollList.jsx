@@ -16,7 +16,7 @@ function AutoScrollList({ items, scrollToId }) {
     }
 
     const item = containerRef.current.querySelector(
-      `[data-scroll-id="${CSS.escape(String(scrollToId))}"]`,
+      `[data-scroll-id="${CSS.escape(String(scrollToId))}"]`
     );
 
     if (item) {
@@ -42,7 +42,7 @@ AutoScrollList.propTypes = {
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
       component: PropTypes.node.isRequired,
-    }),
+    })
   ).isRequired,
   scrollToId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };

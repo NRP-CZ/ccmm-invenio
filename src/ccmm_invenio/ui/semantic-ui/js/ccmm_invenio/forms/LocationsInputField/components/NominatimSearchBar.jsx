@@ -60,13 +60,13 @@ export function NominatimSearchBar({
           const uniqueName = getUniqueLocationName(
             currentFieldPath,
             currentTabIndex,
-            item.name ? item.name : item.display_name,
+            item.name ? item.name : item.display_name
           );
 
           const uniqueDisplayName = getUniqueLocationName(
             currentFieldPath,
             currentTabIndex,
-            item.display_name,
+            item.display_name
           );
 
           return {
@@ -83,7 +83,7 @@ export function NominatimSearchBar({
           setResults(formattedResults);
         }
       }, 600),
-    [searchLocation, getUniqueLocationName],
+    [searchLocation, getUniqueLocationName]
   );
 
   // Throw away any pending invocation of the debounced search function.
@@ -98,7 +98,7 @@ export function NominatimSearchBar({
       onSearchValueChange(value);
       searchNominatim(value, fieldPath, activeTabIndex);
     },
-    [onSearchValueChange, searchNominatim, fieldPath, activeTabIndex],
+    [onSearchValueChange, searchNominatim, fieldPath, activeTabIndex]
   );
 
   const handleResultSelect = useCallback(
@@ -110,7 +110,7 @@ export function NominatimSearchBar({
         coordinates: [parseFloat(result.lon), parseFloat(result.lat)],
       });
     },
-    [onSearchValueChange, setFieldValue, basePath],
+    [onSearchValueChange, setFieldValue, basePath]
   );
 
   return (
