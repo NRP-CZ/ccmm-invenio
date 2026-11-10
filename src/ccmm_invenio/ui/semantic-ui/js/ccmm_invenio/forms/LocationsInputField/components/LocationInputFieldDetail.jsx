@@ -105,75 +105,76 @@ export function LocationInputFieldDetail({
   ];
 
   return (
-    <div>
-      <TextField
-        fieldPath={`${basePath}.place`}
-        label={i18next.t("Name")}
-        placeholder={i18next.t("Use map, search bar or advanced editor...")}
-        onBlur={handleNameBlur}
-        required
-      />
-
-      <TextAreaField
-        label={i18next.t("Description")}
-        placeholder={i18next.t("Additional details about this location...")}
-        onChange={handleDescriptionChange}
-        onBlur={handleDescriptionBlur}
-        value={description ?? ""}
-        rows={5}
-      />
-
-      <IdentifiersField
-        fieldPath={`${basePath}.identifiers`}
-        label={i18next.t("Identifiers")}
-        labelIcon={""}
-        schemeOptions={identifiersScheme}
-        showEmptyValue={false}
-      />
-
-      <Form.Field>
-        <FieldLabel
-          htmlFor={`${basePath}.search`}
-          label={i18next.t("Location")}
+    <>
+      <div className="ccmm-location-detail">
+        <TextField
+          fieldPath={`${basePath}.place`}
+          label={i18next.t("Name")}
+          placeholder={i18next.t("Use map, search bar or advanced editor...")}
+          onBlur={handleNameBlur}
+          required
         />
-        <NominatimSearchBar
-          fieldPath={fieldPath}
-          basePath={basePath}
-          activeTabIndex={activeTabIndex}
-          searchValue={searchValue}
-          onSearchValueChange={onSearchValueChange}
-        />
-      </Form.Field>
 
-      {isLocationPoint && (
-        <LongitudeAndLatitudeGroupField
-          basePath={basePath}
-          isLoading={isReverseLoading}
-          onReverseSearch={performReverseSearch}
+        <TextAreaField
+          label={i18next.t("Description")}
+          placeholder={i18next.t("Additional details about this location...")}
+          onChange={handleDescriptionChange}
+          onBlur={handleDescriptionBlur}
+          value={description ?? ""}
+          rows={5}
         />
-      )}
 
-      <Accordion>
-        <AccordionTitle
-          style={{ fontSize: "0.875em", fontWeight: "bold" }}
-          active={isAdvancedOpen}
-          onClick={() => {
-            setIsManuallyOpened(!isAdvancedOpen);
-          }}
-        >
-          <Icon
-            name={isAdvancedOpen ? "caret down" : "caret right"}
-            style={{ transform: "none" }}
+        <IdentifiersField
+          fieldPath={`${basePath}.identifiers`}
+          label={i18next.t("Identifiers")}
+          labelIcon={""}
+          schemeOptions={identifiersScheme}
+          showEmptyValue={false}
+        />
+
+        <Form.Field>
+          <FieldLabel
+            htmlFor={`${basePath}.search`}
+            label={i18next.t("Location")}
           />
-          {i18next.t("Advanced")}
-        </AccordionTitle>
-        <AccordionContent active={isAdvancedOpen}>
-          <Tab menu={{ secondary: true, pointing: true }} panes={panes} />
-        </AccordionContent>
-      </Accordion>
+          <NominatimSearchBar
+            fieldPath={fieldPath}
+            basePath={basePath}
+            activeTabIndex={activeTabIndex}
+            searchValue={searchValue}
+            onSearchValueChange={onSearchValueChange}
+          />
+        </Form.Field>
 
-      {!isAdvancedOpen && <Divider />}
+        {isLocationPoint && (
+          <LongitudeAndLatitudeGroupField
+            basePath={basePath}
+            isLoading={isReverseLoading}
+            onReverseSearch={performReverseSearch}
+          />
+        )}
 
+        <Accordion>
+          <AccordionTitle
+            style={{ fontSize: "0.875em", fontWeight: "bold" }}
+            active={isAdvancedOpen}
+            onClick={() => {
+              setIsManuallyOpened(!isAdvancedOpen);
+            }}
+          >
+            <Icon
+              name={isAdvancedOpen ? "caret down" : "caret right"}
+              style={{ transform: "none" }}
+            />
+            {i18next.t("Advanced")}
+          </AccordionTitle>
+          <AccordionContent active={isAdvancedOpen}>
+            <Tab menu={{ secondary: true, pointing: true }} panes={panes} />
+          </AccordionContent>
+        </Accordion>
+
+        {!isAdvancedOpen && <Divider />}
+      </div>
       <Button
         type="button"
         color="red"
@@ -184,7 +185,7 @@ export function LocationInputFieldDetail({
         <Icon name="trash alternate outline" />
         {i18next.t("Remove location")}
       </Button>
-    </div>
+    </>
   );
 }
 
