@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import PropTypes from "prop-types";
 import { ClipboardCopyButton } from "@js/oarepo_ui/components/ClipboardCopyButton";
 import {
@@ -35,6 +35,18 @@ function getValidPointCoordinates(geometry) {
 export function LocationListItemContent({ locationEntry, active, onClick }) {
   const { location, geometry } = locationEntry || {};
 
+  const handleKeyDown = useCallback(
+    (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        if (onClick) {
+          onClick();
+        }
+      }
+    },
+    [onClick]
+  );
+
   if (!location || !location.place || !geometry) {
     console.warn(`Skipping invalid location: `, location);
     return null;
@@ -44,7 +56,14 @@ export function LocationListItemContent({ locationEntry, active, onClick }) {
 
   return (
     <>
-      <span onClick={onClick} style={{ cursor: "pointer" }}>
+      <span
+        role="button"
+        tabIndex={0}
+        aria-current={active ? "true" : undefined}
+        style={{ cursor: "pointer" }}
+        onClick={onClick}
+        onKeyDown={handleKeyDown}
+      >
         {active ? <b>{location.place}</b> : location.place}
       </span>
       {point && (

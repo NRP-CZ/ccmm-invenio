@@ -37,6 +37,7 @@ LocationInputFieldBody.propTypes = {
   fieldPath: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   icon: PropTypes.string.isRequired,
+  children: PropTypes.node,
 };
 
 export function LocationsInputField({
@@ -115,7 +116,7 @@ export function LocationsInputField({
       const updatedLocations = currentLocations.filter(
         (_, index) => index !== indexToRemove
       );
-      if (updatedLocations.length == 0) {
+      if (updatedLocations.length === 0) {
         setFieldValue(fieldPath, null);
       } else {
         setFieldValue(fieldPath, { features: updatedLocations });

@@ -22,7 +22,7 @@ function renderLocations() {
       return;
     }
 
-    if (locations.length == 0) {
+    if (locations.length === 0) {
       ReactDOM.render(
         <ErrorElement
           error={new Error(i18next.t("No locations were found!"))}
@@ -50,7 +50,7 @@ function renderLocations() {
       })
       .filter(Boolean);
 
-    if (locationEntries.length == 0) {
+    if (locationEntries.length === 0) {
       ReactDOM.render(
         <ErrorElement
           error={new Error(i18next.t("No valid locations were found!"))}
