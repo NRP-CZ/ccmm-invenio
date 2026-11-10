@@ -14,15 +14,26 @@ The default position of locations sidebar box is at the end of the list. To chan
 `configure_detail_sidebar` from `oarepo_config` package inside `invenio.cfg` of given repository.
 """
 
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from flask import Flask
+
 LOCATIONS_SIDEBAR_TEMPLATE = "ccmm_invenio/record_detail/side_bar/locations.html"
 
 
 class CCMMInvenioUI:
-    def __init__(self, app=None):
+    """Flask extension registering the ccmm-invenio UI parts on an Invenio application."""
+
+    def __init__(self, app: Flask | None = None) -> None:
+        """Register the extension on `app`, if it is given (otherwise call `init_app` later)."""
         if app:
             self.init_app(app)
 
-    def init_app(self, app):
+    def init_app(self, app: Flask) -> None:
+        """Append the locations sidebar template to APP_RDM_DETAIL_SIDE_BAR_TEMPLATES."""
         if not app.config.get("CCMM_INVENIO_LOCATIONS_SIDEBAR", True):
             return
         sidebar = list(app.config.get("APP_RDM_DETAIL_SIDE_BAR_TEMPLATES", []))

@@ -1,6 +1,11 @@
-# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o.
-# SPDX-License-Identifier: MIT
-
+#
+# Copyright (c) 2026 CESNET z.s.p.o.
+#
+# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
+#
+# ccmm-invenio is free software; you can redistribute it and/or modify it
+# under the terms of the MIT License; see LICENSE file for more details.
+#
 """Tests for the `Geographic locations` record-detail sidebar.
 
 The template is rendered against a bare Jinja environment rather than a booted
@@ -15,6 +20,7 @@ import re
 import tomllib
 from html import unescape
 from pathlib import Path
+from typing import Any
 
 import pytest
 from flask import Flask
@@ -122,7 +128,7 @@ class _Webpack:
 def render():
     """Render the sidebar template for a given list of UI-serialized locations."""
 
-    def _render(locations):
+    def _render(locations: list[dict] | None) -> tuple[str, _Webpack]:
         env = Environment(
             loader=FileSystemLoader(TEMPLATE_DIR),
             autoescape=True,
@@ -130,13 +136,7 @@ def render():
         env.globals["_"] = lambda message: message
         webpack = _Webpack()
         html = env.get_template(TEMPLATE).render(
-            record_ui={
-                "ui": (
-                    {"locations": {"features": locations}}
-                    if locations is not None
-                    else {}
-                )
-            },
+            record_ui={"ui": {"locations": {"features": locations}} if locations is not None else {}},
             webpack=webpack,
         )
         return html, webpack
@@ -204,9 +204,7 @@ def test_metadata_is_escaped(render):
     assert _data_locations(html)[0]["place"] == "<script>alert(1)</script>"
 
 
-@pytest.mark.parametrize(
-    "locations", [None, []], ids=["no locations key", "empty list"]
-)
+@pytest.mark.parametrize("locations", [None, []], ids=["no locations key", "empty list"])
 def test_block_is_omitted_when_there_is_no_coverage(render, locations):
     html, _ = render(locations)
 
@@ -230,17 +228,11 @@ def test_entry_points_are_declared():
     pyproject = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text("utf-8"))
     entry_points = pyproject["project"]["entry-points"]
 
-    assert (
-        entry_points["invenio_base.apps"]["ccmm_invenio_ui"]
-        == "ccmm_invenio.ui.ext:CCMMInvenioUI"
-    )
-    assert (
-        entry_points["invenio_base.blueprints"]["ccmm_invenio_ui"]
-        == "ccmm_invenio.ui.views:create_blueprint"
-    )
+    assert entry_points["invenio_base.apps"]["ccmm_invenio_ui"] == "ccmm_invenio.ui.ext:CCMMInvenioUI"
+    assert entry_points["invenio_base.blueprints"]["ccmm_invenio_ui"] == "ccmm_invenio.ui.views:create_blueprint"
 
 
-def _app(**config):
+def _app(**config: Any) -> Flask:
     app = Flask(__name__)
     app.config.update(config)
     return app
