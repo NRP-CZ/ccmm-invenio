@@ -18,6 +18,8 @@ theme = WebpackThemeBundle(
             "entry": {
                 "ccmm_invenio": "./js/ccmm_invenio/index.js",
                 "ccmm_invenio_geolocations_css": "./less/ccmm_invenio/forms/ccmm_geolocations.less",
+                "locations_js": "./js/ccmm_invenio/landing_page/locations.js",
+                "locations_css": "./less/ccmm_invenio/landing_page/locations.less",
             },
             "dependencies": {
                 "leaflet": "^1.9.4",

@@ -66,6 +66,9 @@ ccmm_invenio_i18n = "ccmm_invenio.i18n.webpack:theme"
 [project.entry-points."invenio_i18n.translations"]
 ccmm_invenio_messages = "ccmm_invenio.i18n"
 
+[project.entry-points."invenio_base.blueprints"]
+ccmm_invenio_ui = "ccmm_invenio.ui.views:create_blueprint"
+
 [tool.hatch.build.targets.sdist]
 include = [
     "/src/ccmm_invenio",
