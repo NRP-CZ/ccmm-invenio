@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { i18next } from "@translations/i18next";
+import { i18next } from "@translations/ccmm_invenio";
 import { TextField, GroupField } from "react-invenio-forms";
 import { useFormikContext, getIn } from "formik";
 import { validateCoordinate } from "@js/ccmm_invenio/locationHelpers/coordinateValidator";

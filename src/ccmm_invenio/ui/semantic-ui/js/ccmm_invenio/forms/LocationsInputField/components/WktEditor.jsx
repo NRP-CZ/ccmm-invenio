@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useFormikContext, getIn } from "formik";
 import { TextAreaField } from "react-invenio-forms";
-import { i18next } from "@translations/i18next";
+import { i18next } from "@translations/ccmm_invenio";
 import { wktToGeoJSON, geojsonToWKT } from "@terraformer/wkt";
 import { SUPPORTED_GEOMETRY_TYPES } from "@js/ccmm_invenio/locationHelpers/constants";
 

@@ -14,7 +14,7 @@ import {
   TabPane,
   Form,
 } from "semantic-ui-react";
-import { i18next } from "@translations/i18next";
+import { i18next } from "@translations/ccmm_invenio";
 import { IdentifiersField } from "@js/invenio_rdm_records";
 import { NominatimSearchBar } from "./NominatimSearchBar";
 import { GeoJsonEditor } from "./GeoJsonEditor";

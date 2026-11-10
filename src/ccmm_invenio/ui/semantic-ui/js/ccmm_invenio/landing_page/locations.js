@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { i18next } from "@translations/i18next";
+import { i18next } from "@translations/ccmm_invenio";
 import { ErrorElement } from "@js/oarepo_ui/search";
 import Locations from "./components/Locations";
 

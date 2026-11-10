@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import L from "leaflet";
-import { i18next } from "@translations/i18next";
+import { i18next } from "@translations/ccmm_invenio";
 import sanitizeHtml from "sanitize-html";
 import _capitalize from "lodash/capitalize";
 

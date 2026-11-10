@@ -1,11 +1,11 @@
 import { useState, useCallback, useRef } from "react";
-import { i18next } from "@translations/i18next";
+import { i18next } from "@translations/ccmm_invenio";
 import axios from "axios";
 
 export function useNominatim() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  
+
   // References to hold the current abort controllers.
   const searchAbortControllerRef = useRef(null);
   const reverseAbortControllerRef = useRef(null);
@@ -24,7 +24,7 @@ export function useNominatim() {
         {
           params: { q: query, format: "jsonv2", addressdetails: 1 },
           signal: searchAbortControllerRef.current.signal,
-        }
+        },
       );
       return response.data;
     } catch (e) {
@@ -54,7 +54,7 @@ export function useNominatim() {
         {
           params: { lat: lat, lon: lon, format: "jsonv2" },
           signal: reverseAbortControllerRef.current.signal,
-        }
+        },
       );
       return response.data;
     } catch (e) {

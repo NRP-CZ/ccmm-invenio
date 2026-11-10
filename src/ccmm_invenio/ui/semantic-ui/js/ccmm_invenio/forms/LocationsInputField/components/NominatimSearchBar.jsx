@@ -6,7 +6,7 @@ import React, {
   useRef,
 } from "react";
 import PropTypes from "prop-types";
-import { i18next } from "@translations/i18next";
+import { i18next } from "@translations/ccmm_invenio";
 import { Search, Label } from "semantic-ui-react";
 import { useFormikContext } from "formik";
 import debounce from "lodash/debounce";
