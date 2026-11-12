@@ -1,11 +1,5 @@
-#
-# Copyright (c) 2026 CESNET z.s.p.o.
-#
-# This file is a part of ccmm-invenio (see https://github.com/NRP-CZ/ccmm-invenio).
-#
-# ccmm-invenio is free software; you can redistribute it and/or modify it
-# under the terms of the MIT License; see LICENSE file for more details.
-#
+# SPDX-FileCopyrightText: 2026 CESNET z.s.p.o
+# SPDX-License-Identifier: MIT
 """Tests for the `Geographic locations` record-detail sidebar.
 
 The template is rendered against a bare Jinja environment rather than a booted
@@ -138,7 +132,7 @@ def render():
         env.globals["_"] = lambda message: message
         webpack = _Webpack()
         html = env.get_template(TEMPLATE).render(
-            record_ui={"ui": {"locations": {"features": locations}} if locations is not None else {}},
+            record_ui={"ui": ({"locations": {"features": locations}} if locations is not None else {})},
             webpack=webpack,
         )
         return html, webpack
