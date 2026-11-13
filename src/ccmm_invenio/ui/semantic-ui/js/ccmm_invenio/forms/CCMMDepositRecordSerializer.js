@@ -6,7 +6,7 @@ import { SchemaField } from "@js/invenio_rdm_records/src/deposit/serializers";
 import { RDMDepositRecordSerializer } from "@js/invenio_rdm_records/src/deposit/api/DepositRecordSerializer";
 import { OARepoDepositSerializer } from "@js/oarepo_ui/api";
 import { RelatedResourceSchema } from "./RelatedResourceField/RelatedResourceSchema";
-import { LocationsSchema } from "./LocationsField/LocationsSchema";
+import { LocationsSchema } from "./LocationsInputField/schema/LocationsSchema";
 
 const KEYS_TO_REMOVE = ["__key"];
 const keyStripper = new OARepoDepositSerializer([], KEYS_TO_REMOVE);

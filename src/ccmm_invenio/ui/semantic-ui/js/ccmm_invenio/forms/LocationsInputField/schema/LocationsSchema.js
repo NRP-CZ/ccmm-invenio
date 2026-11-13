@@ -6,7 +6,6 @@ import {
   SchemaField,
 } from "@js/invenio_rdm_records/src/deposit/serializers";
 
-
 export const LocationsSchema = {
   place: new Field({ fieldpath: "place", deserializedDefault: "" }),
   description: new Field({ fieldpath: "description", deserializedDefault: "" }),
