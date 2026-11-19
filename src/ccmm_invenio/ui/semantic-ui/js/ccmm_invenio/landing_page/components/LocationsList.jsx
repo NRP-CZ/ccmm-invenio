@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import AutoScrollList from "./AutoScrollList";
+import { AutoScrollList } from "@js/oarepo_ui/components/AutoScrollList";
 import LocationListItemContent from "./LocationListItemContent";
 
 export function LocationsList({
@@ -30,7 +30,7 @@ LocationsList.propTypes = {
       id: PropTypes.string.isRequired,
       location: PropTypes.object.isRequired,
       geometry: PropTypes.object.isRequired,
-    })
+    }),
   ).isRequired,
   activeLocationId: PropTypes.string,
   onItemClick: PropTypes.func,
