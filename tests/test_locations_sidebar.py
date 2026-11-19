@@ -26,14 +26,25 @@ from markupsafe import Markup
 import ccmm_invenio.ui as ccmm_ui
 from ccmm_invenio.ui import create_blueprint
 
-LOCATIONS_SIDEBAR_TEMPLATE = "ccmm_invenio/record_detail/side_bar/locations.html"
-
 REPO_ROOT = Path(__file__).resolve().parent.parent
 # the ui package as it is installed: with a non-editable install (CI) its templates are under
 # site-packages, not under src/, and that copy - not this checkout - is what the blueprint serves
 UI_DIR = Path(ccmm_ui.__file__).resolve().parent
 TEMPLATE_DIR = UI_DIR / "templates" / "semantic-ui"
 TEMPLATE = "ccmm_invenio/record_detail/side_bar/locations.html"
+
+
+def _blueprint_root() -> Path:
+    """The directory Flask searches for this blueprint's templates."""
+    blueprint = create_blueprint(Flask(__name__))
+    return (Path(blueprint.root_path) / blueprint.template_folder).resolve()
+
+
+_TEMPLATE_ROOT = _blueprint_root()
+
+LOCATIONS_SIDEBAR_TEMPLATE = (
+    (TEMPLATE_DIR / TEMPLATE).relative_to(_TEMPLATE_ROOT).as_posix()
+)
 
 GEOJSON_POINT = {
     "place": "Prostějov Center",
@@ -220,10 +231,8 @@ def test_block_is_omitted_when_there_is_no_coverage(render, locations):
 
 
 def test_blueprint_exposes_the_templates_folder():
-    blueprint = create_blueprint(Flask(__name__))
-
-    template_root = (Path(blueprint.root_path) / blueprint.template_folder).resolve()
-    assert template_root == TEMPLATE_DIR.parent.resolve()
+    assert _TEMPLATE_ROOT.is_dir()
+    assert (TEMPLATE_DIR / TEMPLATE).is_relative_to(_TEMPLATE_ROOT)
 
 
 def test_template_resolves_through_the_blueprint_loader():
