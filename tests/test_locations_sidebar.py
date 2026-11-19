@@ -3,8 +3,11 @@
 """Tests for the `Geographic locations` record-detail sidebar.
 
 The template is rendered against a bare Jinja environment rather than a booted
-Invenio app: it only needs `_`, `webpack` and `record_ui`. The wiring into
-`APP_RDM_DETAIL_SIDE_BAR_TEMPLATES` is covered by the extension tests below.
+Invenio app: it only needs `_`, `webpack` and `record_ui`.
+
+Registration is the consuming repository's job (it appends the template to
+`APP_RDM_DETAIL_SIDE_BAR_TEMPLATES`). What ccmm-invenio must guarantee is that
+the name it documents actually resolves through the blueprint's loader.
 """
 
 from __future__ import annotations
@@ -14,23 +17,23 @@ import re
 import tomllib
 from html import unescape
 from pathlib import Path
-from typing import Any
 
 import pytest
 from flask import Flask
 from jinja2 import Environment, FileSystemLoader
 from markupsafe import Markup
 
-from ccmm_invenio.ui import views
-from ccmm_invenio.ui.ext import LOCATIONS_SIDEBAR_TEMPLATE, CCMMInvenioUI
+import ccmm_invenio.ui as ccmm_ui
+from ccmm_invenio.ui import create_blueprint
+
+LOCATIONS_SIDEBAR_TEMPLATE = "ccmm_invenio/record_detail/side_bar/locations.html"
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 # the ui package as it is installed: with a non-editable install (CI) its templates are under
 # site-packages, not under src/, and that copy - not this checkout - is what the blueprint serves
-UI_DIR = Path(views.__file__).resolve().parent
+UI_DIR = Path(ccmm_ui.__file__).resolve().parent
 TEMPLATE_DIR = UI_DIR / "templates" / "semantic-ui"
 TEMPLATE = "ccmm_invenio/record_detail/side_bar/locations.html"
-SIDEBAR_KEY = "APP_RDM_DETAIL_SIDE_BAR_TEMPLATES"
 
 GEOJSON_POINT = {
     "place": "Prostějov Center",
@@ -132,7 +135,13 @@ def render():
         env.globals["_"] = lambda message: message
         webpack = _Webpack()
         html = env.get_template(TEMPLATE).render(
-            record_ui={"ui": ({"locations": {"features": locations}} if locations is not None else {})},
+            record_ui={
+                "ui": (
+                    {"locations": {"features": locations}}
+                    if locations is not None
+                    else {}
+                )
+            },
             webpack=webpack,
         )
         return html, webpack
@@ -186,7 +195,7 @@ def test_map_receives_every_location_as_json(render):
 def test_bundles_are_requested(render):
     _, webpack = render([GEOJSON_POINT])
 
-    # Keys are the entry names from ccmm_invenio/ui/webpack.py plus the extension.
+    # Keys are the entry names from ccmm_invenio/ui/webpack.py.
     assert set(webpack.requested) == {
         "ccmm_invenio_landing_page_locations_js.js",
         "ccmm_invenio_landing_page_locations_css.css",
@@ -200,7 +209,9 @@ def test_metadata_is_escaped(render):
     assert _data_locations(html)[0]["place"] == "<script>alert(1)</script>"
 
 
-@pytest.mark.parametrize("locations", [None, []], ids=["no locations key", "empty list"])
+@pytest.mark.parametrize(
+    "locations", [None, []], ids=["no locations key", "empty list"]
+)
 def test_block_is_omitted_when_there_is_no_coverage(render, locations):
     html, _ = render(locations)
 
@@ -208,60 +219,39 @@ def test_block_is_omitted_when_there_is_no_coverage(render, locations):
     assert html.strip() == ""
 
 
-def test_sidebar_constant_points_to_an_existing_template():
-    assert LOCATIONS_SIDEBAR_TEMPLATE == TEMPLATE
-    assert (TEMPLATE_DIR / TEMPLATE).is_file()
-
-
 def test_blueprint_exposes_the_templates_folder():
-    blueprint = views.create_blueprint(Flask(__name__))
+    blueprint = create_blueprint(Flask(__name__))
 
     template_root = (Path(blueprint.root_path) / blueprint.template_folder).resolve()
     assert template_root == TEMPLATE_DIR.parent.resolve()
+
+
+def test_template_resolves_through_the_blueprint_loader():
+    """The name repositories are told to list must be resolvable by Flask.
+
+    This is the test the old extension tests were really guarding: without a
+    blueprint the name is `TemplateNotFound`, and no config can fix that.
+    """
+    app = Flask(__name__)
+    app.register_blueprint(create_blueprint(app))
+
+    resolved = app.jinja_env.get_template(LOCATIONS_SIDEBAR_TEMPLATE).filename
+    assert Path(resolved).resolve() == (TEMPLATE_DIR / TEMPLATE).resolve()
 
 
 def test_entry_points_are_declared():
     pyproject = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text("utf-8"))
     entry_points = pyproject["project"]["entry-points"]
 
-    assert entry_points["invenio_base.apps"]["ccmm_invenio_ui"] == "ccmm_invenio.ui.ext:CCMMInvenioUI"
-    assert entry_points["invenio_base.blueprints"]["ccmm_invenio_ui"] == "ccmm_invenio.ui.views:create_blueprint"
+    assert entry_points["invenio_base.blueprints"]["ccmm_invenio_ui"] == (
+        "ccmm_invenio.ui:create_blueprint"
+    )
 
 
-def _app(**config: Any) -> Flask:
-    app = Flask(__name__)
-    app.config.update(config)
-    return app
+def test_no_sidebar_registration_extension():
+    """Registration is the consuming repository's job - keep it that way."""
+    pyproject = tomllib.loads((REPO_ROOT / "pyproject.toml").read_text("utf-8"))
+    apps = pyproject["project"]["entry-points"].get("invenio_base.apps", {})
 
-
-def test_extension_appends_box_when_missing():
-    app = _app(**{SIDEBAR_KEY: ["a.html", "b.html"]})
-
-    CCMMInvenioUI(app)
-
-    assert app.config[SIDEBAR_KEY] == ["a.html", "b.html", TEMPLATE]
-
-
-def test_extension_keeps_an_existing_position():
-    app = _app(**{SIDEBAR_KEY: ["a.html", TEMPLATE, "b.html"]})
-
-    CCMMInvenioUI(app)
-
-    assert app.config[SIDEBAR_KEY] == ["a.html", TEMPLATE, "b.html"]
-
-
-def test_extension_is_idempotent():
-    app = _app(**{SIDEBAR_KEY: ["a.html"]})
-
-    CCMMInvenioUI(app)
-    CCMMInvenioUI(app)
-
-    assert app.config[SIDEBAR_KEY].count(TEMPLATE) == 1
-
-
-def test_extension_can_be_disabled():
-    app = _app(**{SIDEBAR_KEY: ["a.html"], "CCMM_INVENIO_LOCATIONS_SIDEBAR": False})
-
-    CCMMInvenioUI(app)
-
-    assert app.config[SIDEBAR_KEY] == ["a.html"]
+    assert not any(value.startswith("ccmm_invenio") for value in apps.values())
+    assert not (UI_DIR / "ext.py").exists()
