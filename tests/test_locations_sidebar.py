@@ -35,7 +35,7 @@ TEMPLATE = "ccmm_invenio/record_detail/side_bar/locations.html"
 
 
 def _blueprint_root() -> Path:
-    """The directory Flask searches for this blueprint's templates."""
+    """Search blueprint's templates."""
     blueprint = create_blueprint(Flask(__name__))
     return (Path(blueprint.root_path) / blueprint.template_folder).resolve()
 
