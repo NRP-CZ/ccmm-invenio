@@ -34,7 +34,10 @@ if TYPE_CHECKING:
 
 # namespaces of the vocabulary iris, the rest of the iri lower-cased is the vocabulary id
 FILE_TYPE_PREFIX = "http://publications.europa.eu/resource/authority/file-type/"
-MEDIA_TYPE_PREFIX = "http://www.iana.org/assignments/media-types/"
+MEDIA_TYPE_PREFIX = (
+      "http://www.iana.org/assignments/media-types/",
+      "https://www.iana.org/assignments/media-types/",
+)
 CHECKSUM_ALGORITHM_PREFIX = "http://spdx.org/rdf/terms#checksumAlgorithm_"
 
 

@@ -110,14 +110,18 @@ class CCMMVocabularyField(Field):
                 type=self.vocab_type,
             ):
                 return {"id": hit["id"]}
-        if self.id_prefix and iri.startswith(self.id_prefix):
-            item_id = iri.removeprefix(self.id_prefix).lower()
-            try:
-                vocab_service.read(system_identity, (self.vocab_type, item_id))
-            except PIDDoesNotExistError:
-                pass
-            else:
+
+        prefixes = (self.id_prefix,) if isinstance(self.id_prefix, str) else self.id_prefix or ()
+
+        for prefix in prefixes:
+            if iri.startswith(prefix):
+                item_id = iri.removeprefix(prefix).lower()
+                try:
+                    vocab_service.read(system_identity, (self.vocab_type, item_id))
+                except PIDDoesNotExistError:
+                    continue
                 return {"id": item_id}
+
         raise ValidationError(f"Could not find vocabulary for {iri}")
 
 
