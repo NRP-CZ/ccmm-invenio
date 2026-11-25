@@ -21,13 +21,14 @@ import re
 from typing import Any, override
 
 from flask import current_app
-from idutils import is_ror, normalize_pid, normalize_ror
+from idutils.normalizers import normalize_pid, normalize_ror
+from idutils.validators import is_ror
 from invenio_access.permissions import system_identity
 from invenio_i18n import lazy_gettext as _
 from invenio_rdm_records.services.schemas.metadata import (
     record_identifiers_schemes,
     record_personorg_schemes,
-    record_related_identifiers_schemes,
+    record_related_identifiers_schemes,  # ty: ignore[missing-module-member]
 )
 from invenio_records_resources.proxies import current_service_registry
 from marshmallow import ValidationError, validate
@@ -566,7 +567,7 @@ class DataCiteMapping(ResolverMapping):
                             continue
                         try:
                             affiliations_service = current_service_registry.get("affiliations")
-                            affiliations_service.read(system_identity, ror_id)  # ty: ignore[unresolved-attribute]
+                            affiliations_service.read(system_identity, ror_id)  # ty: ignore[missing-attribute]
                         except Exception:  # noqa: BLE001
                             name = a.get("name") or a_identifier
                         else:

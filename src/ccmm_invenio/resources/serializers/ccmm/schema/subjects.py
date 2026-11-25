@@ -34,7 +34,7 @@ class SubjectSchema(Schema):
     Types as in invenio_vocabularies.contrib.subjects.schema.SubjectRelationSchema.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # definition (0..n), classification_code (0..1), subject_scheme (0..1): not stored in the record,

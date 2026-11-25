@@ -53,7 +53,7 @@ class CCMMVocabularyField(Field):
     lower-cased (vocabulary ids are lower case, e.g. ".../file-type/TAR" -> "tar").
     """
 
-    def __init__(self, vocab_name: str, id_prefix: str | None = None, **kwargs: Any):
+    def __init__(self, vocab_name: str, id_prefix: str | tuple[str, ...] | None = None, **kwargs: Any):
         """Initialize the field with the vocabulary name."""
         self.vocab_type = vocab_name
         self.id_prefix = id_prefix

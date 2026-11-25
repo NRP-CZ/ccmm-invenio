@@ -46,7 +46,7 @@ class AlternateTitleSchema(LanguageTextMixin, Schema):
     text_field = "title"
     ccmm_element_many = True
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # iri (0..1): no counterpart in invenio
@@ -67,7 +67,7 @@ class DescriptionSchema(LanguageTextMixin, Schema):
     ccmm_element = "description_text"  # 1..1
     text_field = "description"
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # iri (0..1): no counterpart in invenio
@@ -139,7 +139,7 @@ class CommonResourceFieldsMixin:
 class RelatedResourceSchema(CommonResourceFieldsMixin, Schema):
     """CCMM related resource <-> ccmm-invenio related resource (CCMMInvenioRelatedResource in the model)."""
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         unknown = EXCLUDE
@@ -172,7 +172,7 @@ class DatasetMetadataSchema(CommonResourceFieldsMixin, Schema):
     Field names are the names of the invenio fields, data_key the names of the ccmm elements.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # the generic json contains elements that are not mapped (see "Not mapped" below)
@@ -327,7 +327,7 @@ class DatasetSchema(Schema):
     (and "files" for metadata-only access), see access.py.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         unknown = EXCLUDE

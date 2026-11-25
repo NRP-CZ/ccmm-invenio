@@ -155,7 +155,6 @@ class SingleLocaleTextField(fields.Field):
         locale = next((locale for locale in locales if locale in variants), default_locale)
         return {locale: variants.get(locale, next(iter(variants.values())))}
 
-
     @override
     def _serialize(self, value: Any, attr: str | None, obj: Any, **kwargs: Any) -> Any:
         return [{"lang": locale, "$": text} for locale, text in value.items()] if value else None
@@ -194,7 +193,7 @@ class MultilingualField(fields.Field):
 class IriLabelSchema(Schema):
     """ccmm entity with an iri and a multilingual label (file, documentation)."""
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         unknown = EXCLUDE
