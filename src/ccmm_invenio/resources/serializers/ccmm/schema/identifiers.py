@@ -52,7 +52,7 @@ class IdentifierSchema(Schema):
     against its scheme here, invenio does that when the record is stored.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # authorized (0..1): no counterpart in invenio

@@ -4374,6 +4374,9 @@
   - identifier: http://publications.europa.eu/resource/authority/language/APC
     scheme: http://publications.europa.eu/resource/authority/language/
     relation: exactMatch
+  - identifier: http://publications.europa.eu/resource/authority/language/AJP
+    scheme: http://publications.europa.eu/resource/authority/language/
+    relation: narrowMatch
 - id: apd
   title:
     en: Sudanese Arabic
