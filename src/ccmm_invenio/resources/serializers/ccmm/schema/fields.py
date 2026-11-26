@@ -152,6 +152,7 @@ class SingleLocaleTextField(fields.Field):
             locale.language for locale in current_app.extensions["invenio-i18n"].get_locales()
         ]
         variants = {(variant.get("lang") or default_locale).split("-")[0]: variant.get("$") for variant in value}
+        # unknown locales fall back to the default locale to preserve the value
         locale = next((locale for locale in locales if locale in variants), default_locale)
         return {locale: variants.get(locale, next(iter(variants.values())))}
 
