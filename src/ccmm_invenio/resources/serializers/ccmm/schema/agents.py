@@ -51,7 +51,7 @@ class PersonOrOrgSchema(Schema):
     Types as in invenio_rdm_records.services.schemas.metadata.PersonOrOrganizationSchema.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # iri (0..1), alternate_name (0..n, organization), contact_point (0..n): no counterpart in invenio;
@@ -101,7 +101,7 @@ class AffiliationSchema(Schema):
     Types as in invenio_vocabularies.contrib.affiliations.schema.AffiliationRelationSchema.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # iri (0..1), alternate_name (0..n), contact_point (0..n): no counterpart in invenio
@@ -139,7 +139,7 @@ class CreatibutorSchema(Schema):
     Types as in invenio_rdm_records.services.schemas.metadata.CreatorSchema.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # iri (0..1): no counterpart in invenio

@@ -82,7 +82,7 @@ class FundingReferenceSchema(Schema):
     The award is not looked up in the awards vocabulary, it is always a free-text one.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         unknown = EXCLUDE

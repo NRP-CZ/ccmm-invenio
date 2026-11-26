@@ -23,7 +23,7 @@ class TermsOfUseSchema(Schema):
     licenses vocabulary ({"id": ...}), or a free-text one ({"title": {...}, "link": ...}).
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # iri (0..1): no counterpart in invenio

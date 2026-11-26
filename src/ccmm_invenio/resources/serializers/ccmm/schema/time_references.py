@@ -80,7 +80,7 @@ class TimeReferenceSchema(Schema):
     Types as in invenio_rdm_records.services.schemas.metadata.DateSchema.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # iri (0..1), also iri of the time instant/interval: no counterpart in invenio

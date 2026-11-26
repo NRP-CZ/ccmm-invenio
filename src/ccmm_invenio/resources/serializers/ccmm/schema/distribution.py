@@ -34,14 +34,17 @@ if TYPE_CHECKING:
 
 # namespaces of the vocabulary iris, the rest of the iri lower-cased is the vocabulary id
 FILE_TYPE_PREFIX = "http://publications.europa.eu/resource/authority/file-type/"
-MEDIA_TYPE_PREFIX = "http://www.iana.org/assignments/media-types/"
+MEDIA_TYPE_PREFIX = (
+    "http://www.iana.org/assignments/media-types/",
+    "https://www.iana.org/assignments/media-types/",
+)
 CHECKSUM_ALGORITHM_PREFIX = "http://spdx.org/rdf/terms#checksumAlgorithm_"
 
 
 class EndpointSchema(Schema):
     """ccmm related resource as an endpoint url of a data service (CCMMRelatedResource in the model)."""
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         # alternate_title, identifier, qualified_relation, resource_relation_type, resource_type,
@@ -70,7 +73,7 @@ class DataServiceSchema(IriLabelSchema):
 class ChecksumSchema(Schema):
     """ccmm checksum."""
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         unknown = EXCLUDE
@@ -88,7 +91,7 @@ class ChecksumSchema(Schema):
 class DownloadableFileSchema(Schema):
     """ccmm distribution downloadable file."""
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         unknown = EXCLUDE
@@ -126,7 +129,7 @@ class DownloadableFileSchema(Schema):
 class DataServiceDistributionSchema(Schema):
     """ccmm distribution data service."""
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         unknown = EXCLUDE
@@ -155,7 +158,7 @@ class DataServiceDistributionSchema(Schema):
 class DistributionSchema(Schema):
     """ccmm distribution; exactly one of a data service or a downloadable file (xs:choice)."""
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         unknown = EXCLUDE

@@ -34,7 +34,7 @@ class MetadataRecordSchema(Schema):
     (see ContributorSchema); the fields are declared in the order of the ccmm xsd.
     """
 
-    class Meta(Schema.Meta):  # ty: ignore[invalid-attribute-override]
+    class Meta(Schema.Meta):
         """Schema options."""
 
         unknown = EXCLUDE
